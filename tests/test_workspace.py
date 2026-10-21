@@ -101,6 +101,10 @@ class WorkspaceTest(unittest.TestCase):
     def test_editorial_expansion_inventory_is_controlled(self) -> None:
         result = subprocess.run([sys.executable, "tools/validate/audit_editorial_expansion.py"], cwd=ROOT, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        with (ROOT / "manifests/editorial-expansion.csv").open(encoding="utf-8-sig", newline="") as stream:
+            rows = list(csv.DictReader(stream, delimiter=";"))
+        self.assertEqual(len(rows), 12)
+        self.assertTrue(all(row["status_aquisicao"] == "adquirido_pendente_reconciliacao" for row in rows))
 
     def test_update_frequencies_are_declared(self) -> None:
         collection = (ROOT / ".github/workflows/collect-legislation.yml").read_text(encoding="utf-8")
@@ -133,6 +137,20 @@ class WorkspaceTest(unittest.TestCase):
                 self.assertEqual(result["status"], "http_error")
                 self.assertEqual(result["http_status"], status)
 
+    def test_official_fetch_request_uses_compatible_headers(self) -> None:
+        registry = load_registry()
+        with patch("collect_legislation.urlopen") as opener:
+            response = opener.return_value.__enter__.return_value
+            response.geturl.return_value = "https://www.planalto.gov.br/example"
+            response.headers = {"Content-Type": "text/html; charset=utf-8"}
+            response.status = 200
+            response.read.return_value = b"Art. 1"
+            result = fetch_one("https://www.planalto.gov.br/example", registry)
+            self.assertEqual(result["status"], "fetched")
+            request = opener.call_args.args[0]
+            self.assertTrue(request.headers["User-agent"].startswith("Mozilla/5.0"))
+            self.assertEqual(request.headers["Accept-encoding"], "identity")
+
     def test_collection_plan_covers_matrix_without_network(self) -> None:
         plan = build_plan(date(2026, 10, 21))
         self.assertEqual(len(plan), 360)
@@ -141,6 +159,14 @@ class WorkspaceTest(unittest.TestCase):
         self.assertEqual(len(select_plan(plan, ["P0"])), 30)
         self.assertEqual(len(select_plan(plan, ["P1"])), 324)
         self.assertEqual(len(select_plan(plan, ["P2"])), 6)
+
+    def test_collection_plan_supports_editorial_expansion_without_corpus_mutation(self) -> None:
+        expansion = ROOT / "manifests/editorial-expansion.csv"
+        plan = build_plan(date(2026, 10, 21), expansion)
+        self.assertEqual(len(plan), 12)
+        self.assertTrue(all(item["matrix_id"].startswith("EXP-") for item in plan))
+        self.assertTrue(all(item["status"] == "planned" for item in plan))
+        self.assertTrue(all(item["current_sha256"] is None for item in plan))
 
     def test_freshness_policy_is_explicit(self) -> None:
         self.assertEqual(stale_after_days("P0"), 1)

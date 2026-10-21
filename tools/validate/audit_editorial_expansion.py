@@ -19,6 +19,7 @@ REQUIRED = {
     "id", "tipo", "numero", "ano", "dominio", "prioridade", "instrumento",
     "motivo_inclusao", "fonte_oficial", "status_cobertura", "status_integridade",
     "status_atualidade",
+    "status_aquisicao", "data_aquisicao", "sha256_origem", "sha256_corpo", "fonte_oficial_count",
 }
 
 
@@ -54,6 +55,11 @@ def main() -> int:
         identities.add(identity)
         if row.get("status_cobertura") != "candidato_gap":
             errors.append(f"status de cobertura inválido: {row.get('id')}")
+        if row.get("status_aquisicao") != "adquirido_pendente_reconciliacao":
+            errors.append(f"aquisição não materializada: {row.get('id')}")
+        for field in ("sha256_origem", "sha256_corpo"):
+            if not re.fullmatch(r"[0-9a-f]{64}", row.get(field, "")):
+                errors.append(f"hash inválido em {field}: {row.get('id')}")
         if row.get("prioridade") not in {"P0", "P1", "P2"}:
             errors.append(f"prioridade inválida: {row.get('id')}")
         if not official(row.get("fonte_oficial", "")):

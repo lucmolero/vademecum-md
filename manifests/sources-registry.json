@@ -9,7 +9,7 @@
     "max_response_bytes": 20971520,
     "request_timeout_seconds": 30,
     "max_retries": 2,
-    "user_agent": "vademecum-md-source-monitor/0.1"
+    "user_agent": "Mozilla/5.0 (compatible; vademecum-md-source-monitor/0.1; +https://github.com/lucmolero/vademecum-md)"
   },
   "sources": [
     {

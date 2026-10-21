@@ -38,8 +38,8 @@ def registry_sources(registry: dict[str, object]) -> list[dict[str, object]]:
     return sorted(registry.get("sources", []), key=lambda item: int(item.get("rank", 999)))
 
 
-def load_rows() -> list[dict[str, str]]:
-    with MATRIX.open(encoding="utf-8-sig", newline="") as stream:
+def load_rows(path: Path = MATRIX) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8-sig", newline="") as stream:
         return list(csv.DictReader(stream, delimiter=";"))
 
 
@@ -123,12 +123,12 @@ def stale_after_days(priority: str) -> int:
     return {"P0": 1, "P1": 7, "P2": 30}.get(priority, 30)
 
 
-def build_plan(as_of: date | None = None) -> list[dict[str, object]]:
+def build_plan(as_of: date | None = None, input_path: Path = MATRIX) -> list[dict[str, object]]:
     as_of = as_of or date.today()
     registry = load_registry()
     manifest = load_source_manifest()
     plan: list[dict[str, object]] = []
-    for row in load_rows():
+    for row in load_rows(input_path):
         urls = urls_for_row(row, registry)
         source_entries = manifest_entries_for(urls, manifest)
         exact_entries = exact_manifest_entries_for(urls, manifest)
@@ -192,7 +192,12 @@ def fetch_one(url: str, registry: dict[str, object]) -> dict[str, object]:
     policy = registry["policy"]
     timeout = int(policy.get("request_timeout_seconds", 30))
     max_bytes = int(policy.get("max_response_bytes", 20 * 1024 * 1024))
-    request = Request(url, headers={"User-Agent": str(policy.get("user_agent", "vademecum-md-monitor/0.1")), "Accept": "text/html, text/plain, application/xhtml+xml"})
+    request = Request(url, headers={
+        "User-Agent": str(policy.get("user_agent", "Mozilla/5.0 (compatible; vademecum-md-monitor/0.1)")),
+        "Accept": "text/html, text/plain, application/xhtml+xml",
+        "Accept-Encoding": "identity",
+        "Connection": "close",
+    })
     info = source_info(url, registry)
     try:
         with urlopen(request, timeout=timeout) as response:
@@ -294,13 +299,14 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--priority", action="append", choices=("P0", "P1", "P2"), help="restrict the run to one or more matrix priorities")
     parser.add_argument("--report", type=Path)
+    parser.add_argument("--input", type=Path, default=MATRIX, help="CSV de escopo; por padrão, a matriz curada")
     args = parser.parse_args()
     registry = load_registry()
-    all_plan = build_plan(args.as_of)
+    all_plan = build_plan(args.as_of, args.input)
     plan = select_plan(all_plan, args.priority)
     if args.limit:
         plan = plan[:args.limit]
-    report: dict[str, object] = {"schema": "legislation-collection-report/v1", "generated_at": datetime.now(timezone.utc).isoformat(), "mode": "fetch" if args.fetch else "dry-run", "command": " ".join(sys.argv), "python": sys.version.split()[0], "as_of": args.as_of.isoformat(), "matrix_count": len(load_rows()), "planned_count": len(plan), "priority_filter": args.priority or ["P0", "P1", "P2"], "source_registry": REGISTRY.relative_to(ROOT).as_posix(), "source_registry_sha256": hashlib.sha256(REGISTRY.read_bytes()).hexdigest(), "plan": plan}
+    report: dict[str, object] = {"schema": "legislation-collection-report/v1", "generated_at": datetime.now(timezone.utc).isoformat(), "mode": "fetch" if args.fetch else "dry-run", "command": " ".join(sys.argv), "python": sys.version.split()[0], "as_of": args.as_of.isoformat(), "input_path": args.input.relative_to(ROOT).as_posix() if args.input.is_relative_to(ROOT) else str(args.input), "matrix_count": len(all_plan), "planned_count": len(plan), "priority_filter": args.priority or ["P0", "P1", "P2"], "source_registry": REGISTRY.relative_to(ROOT).as_posix(), "source_registry_sha256": hashlib.sha256(REGISTRY.read_bytes()).hexdigest(), "plan": plan}
     if args.fetch:
         stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         fetched = fetch_plan(plan, registry, DEFAULT_PRIVATE / "snapshots" / stamp)
