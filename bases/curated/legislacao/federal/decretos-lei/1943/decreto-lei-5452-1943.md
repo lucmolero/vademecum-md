@@ -21,8 +21,8 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "7ca9b07f974b74ed494881a67b3a2a080ac2617620df091e4bbe25eabd22063d"
-alterada_por: ["br-federal-lei_complementar-123-2006", "br-federal-lei_complementar-75-1993", "br-federal-lei_ordinaria-11457-2007", "br-federal-lei_ordinaria-11648-2008", "br-federal-lei_ordinaria-11788-2008", "br-federal-lei_ordinaria-12594-2012", "br-federal-lei_ordinaria-12619-2012", "br-federal-lei_ordinaria-12761-2012", "br-federal-lei_ordinaria-13146-2015", "br-federal-lei_ordinaria-13257-2016", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14438-2022", "br-federal-lei_ordinaria-14442-2022", "br-federal-lei_ordinaria-14457-2022", "br-federal-lei_ordinaria-5584-1970", "br-federal-lei_ordinaria-5889-1973", "br-federal-lei_ordinaria-9601-1998"]
-revogada_por: ["br-federal-lei_ordinaria-11648-2008", "br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-5584-1970"]
+alterada_por: ["br-federal-lei_complementar-123-2006", "br-federal-lei_complementar-75-1993", "br-federal-lei_ordinaria-11457-2007", "br-federal-lei_ordinaria-11648-2008", "br-federal-lei_ordinaria-11788-2008", "br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-12506-2011", "br-federal-lei_ordinaria-12594-2012", "br-federal-lei_ordinaria-12619-2012", "br-federal-lei_ordinaria-12761-2012", "br-federal-lei_ordinaria-13146-2015", "br-federal-lei_ordinaria-13257-2016", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14438-2022", "br-federal-lei_ordinaria-14442-2022", "br-federal-lei_ordinaria-14457-2022", "br-federal-lei_ordinaria-5584-1970", "br-federal-lei_ordinaria-5889-1973", "br-federal-lei_ordinaria-9601-1998"]
+revogada_por: ["br-federal-lei_ordinaria-12690-2012", "br-federal-lei_ordinaria-13874-2019"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

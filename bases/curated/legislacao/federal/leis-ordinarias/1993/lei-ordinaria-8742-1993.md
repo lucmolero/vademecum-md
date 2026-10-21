@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "a12d041de271f27948f86e4f7530bb11d82607827167247e70032673a46f0827"
 alterada_por: ["br-federal-lei_ordinaria-10684-2003", "br-federal-lei_ordinaria-13146-2015"]
 revogada_por: []
-regulamentada_por: ["br-federal-lei_ordinaria-13146-2015"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

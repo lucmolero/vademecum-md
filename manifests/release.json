@@ -13,8 +13,8 @@
     "requer_reconciliacao": 109,
     "consolidada_reconciliada": 5
   },
-  "relation_count": 1655,
-  "unresolved_relation_count": 2258,
+  "relation_count": 1611,
+  "unresolved_relation_count": 2221,
   "publication_policy": "automatic_only_after_validation",
   "rag": "deferred_until_1_0"
 }

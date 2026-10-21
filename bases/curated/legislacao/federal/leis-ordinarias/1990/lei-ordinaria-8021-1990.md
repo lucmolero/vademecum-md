@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "585128f9863231691008171d43e94ff41e77c31bc92a35364c6beadec1ff802c"
 alterada_por: []
-revogada_por: ["br-federal-lei_ordinaria-4729-1965", "br-federal-lei_ordinaria-6404-1976", "br-federal-lei_ordinaria-9430-1996"]
+revogada_por: ["br-federal-lei_ordinaria-9430-1996"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

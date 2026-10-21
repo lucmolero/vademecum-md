@@ -22,8 +22,8 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "80e87539d461a53c89a6e6616d506d9f99244db5dee543d91f2dbfa87e46a0a1"
 alterada_por: ["br-federal-lei_complementar-123-2006", "br-federal-lei_complementar-150-2015", "br-federal-lei_ordinaria-10820-2003", "br-federal-lei_ordinaria-13146-2015", "br-federal-lei_ordinaria-13457-2017", "br-federal-lei_ordinaria-8870-1994"]
-revogada_por: ["br-federal-lei_ordinaria-13457-2017", "br-federal-lei_ordinaria-14438-2022", "br-federal-lei_ordinaria-6830-1980", "br-federal-lei_ordinaria-8870-1994"]
-regulamentada_por: ["br-federal-decreto_lei-4657-1942", "br-federal-lei_complementar-123-2006", "br-federal-lei_ordinaria-10820-2003", "br-federal-lei_ordinaria-8212-1991", "br-federal-lei_ordinaria-9784-1999"]
+revogada_por: ["br-federal-lei_complementar-150-2015", "br-federal-lei_ordinaria-13457-2017", "br-federal-lei_ordinaria-14438-2022", "br-federal-lei_ordinaria-8870-1994"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

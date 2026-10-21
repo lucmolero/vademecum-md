@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "9bdb48876c784583da18f561dca8d237b44444abc0f2c38c3e73c327e5592c40"
-alterada_por: []
+alterada_por: ["br-federal-lei_ordinaria-13105-2015"]
 revogada_por: ["br-federal-lei_ordinaria-13105-2015"]
 regulamentada_por: []
 retificada_por: []

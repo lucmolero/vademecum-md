@@ -21,10 +21,10 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "d00e488c2973df969f0feacf6267f9281074129aa82107230bc5e9c832c9a075"
-alterada_por: ["br-federal-lei_ordinaria-11284-2006", "br-federal-lei_ordinaria-12651-2012", "br-federal-lei_ordinaria-15190-2025"]
-revogada_por: ["br-federal-lei_ordinaria-9985-2000"]
+alterada_por: ["br-federal-lei_ordinaria-11284-2006", "br-federal-lei_ordinaria-12651-2012", "br-federal-lei_ordinaria-15190-2025", "br-federal-lei_ordinaria-9985-2000"]
+revogada_por: []
 regulamentada_por: []
-retificada_por: ["br-federal-lei_ordinaria-11284-2006"]
+retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"

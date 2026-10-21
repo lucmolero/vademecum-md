@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "45250310372f1d7a66738e8381b782c712792adf8c2c5c1a437b7f00adee3969"
 alterada_por: []
-revogada_por: ["br-federal-decreto_lei-2848-1940"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

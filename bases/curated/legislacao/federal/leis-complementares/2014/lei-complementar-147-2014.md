@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "0c2e6f42c952fdfb527a01dcb17e38f99e579807731d44333dd88e547c01bd08"
 alterada_por: []
-revogada_por: ["br-federal-lei_complementar-123-2006"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

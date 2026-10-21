@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -21,6 +22,9 @@ INVERSE_TYPES = {
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--strict", action="store_true", help="falha se houver conflito inverso ou duplicata")
+    args = parser.parse_args()
     relations = [json.loads(line) for line in GRAPH.read_text(encoding="utf-8").splitlines() if line.strip()]
     by_pair: dict[tuple[str, str], set[str]] = defaultdict(set)
     duplicates = Counter()
@@ -51,6 +55,8 @@ def main() -> int:
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({k: report[k] for k in ("relations", "without_device", "without_effect_date", "duplicate_records", "inverse_type_conflicts", "unresolved_candidates")}, ensure_ascii=False))
+    if args.strict and (report["duplicate_records"] or report["inverse_type_conflicts"]):
+        return 1
     return 0
 
 

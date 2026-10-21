@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "2a49a4f28e3d7da0a784819ea1b24b303c61dba79bbcba257982cf51d056183d"
 alterada_por: ["br-federal-lei_complementar-225-2026", "br-federal-lei_ordinaria-10028-2000", "br-federal-lei_ordinaria-10741-2003", "br-federal-lei_ordinaria-11340-2006", "br-federal-lei_ordinaria-12694-2012", "br-federal-lei_ordinaria-12850-2013", "br-federal-lei_ordinaria-13188-2015", "br-federal-lei_ordinaria-13344-2016", "br-federal-lei_ordinaria-13445-2017", "br-federal-lei_ordinaria-13606-2018", "br-federal-lei_ordinaria-14133-2021", "br-federal-lei_ordinaria-14344-2022", "br-federal-lei_ordinaria-14478-2022", "br-federal-lei_ordinaria-14811-2024", "br-federal-lei_ordinaria-15358-2026", "br-federal-lei_ordinaria-4729-1965", "br-federal-lei_ordinaria-5474-1968", "br-federal-lei_ordinaria-5478-1968", "br-federal-lei_ordinaria-8069-1990", "br-federal-lei_ordinaria-8072-1990", "br-federal-lei_ordinaria-8137-1990"]
-revogada_por: ["br-federal-lei_ordinaria-13344-2016", "br-federal-lei_ordinaria-13869-2019", "br-federal-lei_ordinaria-15358-2026", "br-federal-lei_ordinaria-8137-1990", "br-federal-lei_ordinaria-9279-1996"]
+revogada_por: ["br-federal-lei_ordinaria-13344-2016", "br-federal-lei_ordinaria-13869-2019", "br-federal-lei_ordinaria-8137-1990", "br-federal-lei_ordinaria-9279-1996"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

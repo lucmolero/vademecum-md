@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "349e6ffc457182f1d919d86072ade430be36ff4287360864ee98024fddba6f25"
 alterada_por: []
-revogada_por: ["br-federal-lei_ordinaria-5197-1967"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

@@ -27,6 +27,7 @@ from discover_legislation import build_queue  # noqa: E402
 from normalize_source import normalize_bytes  # noqa: E402
 from migrate_public_corpus import parse_frontmatter  # noqa: E402
 from repair_encoding import candidate  # noqa: E402
+from build_public_indexes import relation_is_plausible, relation_type  # noqa: E402
 
 
 ROOT = Path(__file__).parents[1]
@@ -255,6 +256,15 @@ class WorkspaceTest(unittest.TestCase):
     def test_encoding_repair_only_accepts_real_mojibake_improvement(self) -> None:
         self.assertEqual(candidate("ConstituiÃ§Ã£o"), "Constituição")
         self.assertIsNone(candidate("Constituição"))
+
+    def test_relation_direction_respects_active_and_passive_legal_language(self) -> None:
+        self.assertEqual(relation_type("altera a Lei nº 12.345"), "altera")
+        self.assertEqual(relation_type("com redação dada pela Lei nº 12.345"), "alterada_por")
+        self.assertEqual(relation_type("revoga dispositivos do Decreto-Lei nº 2.848"), "revoga")
+        self.assertEqual(relation_type("foi revogada pela Lei nº 12.345"), "revogada_por")
+        self.assertEqual(relation_type("regulamenta a Lei nº 12.345"), "regulamenta")
+        self.assertFalse(relation_is_plausible("altera", {"data_assinatura": "1991-01-01"}, {"data_assinatura": "1994-01-01"}))
+        self.assertTrue(relation_is_plausible("alterada_por", {"data_assinatura": "1991-01-01"}, {"data_assinatura": "1994-01-01"}))
 
     def test_derived_index_build_is_idempotent(self) -> None:
         paths = sorted((ROOT / "bases/curated").rglob("*.md"))

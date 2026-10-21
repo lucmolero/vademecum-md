@@ -21,8 +21,8 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "163692a616dedb0efc4078aacf2b7e9319502fc0ea2c1a2159825bb0d9f6e3c5"
-alterada_por: ["br-federal-lei_ordinaria-10303-2001", "br-federal-lei_ordinaria-11638-2007", "br-federal-lei_ordinaria-13506-2017", "br-federal-lei_ordinaria-9447-1997"]
-revogada_por: ["br-federal-lei_ordinaria-10303-2001", "br-federal-lei_ordinaria-13506-2017", "br-federal-lei_ordinaria-9873-1999"]
+alterada_por: ["br-federal-lei_ordinaria-10303-2001", "br-federal-lei_ordinaria-11638-2007", "br-federal-lei_ordinaria-13506-2017", "br-federal-lei_ordinaria-9447-1997", "br-federal-lei_ordinaria-9873-1999"]
+revogada_por: ["br-federal-lei_ordinaria-10303-2001", "br-federal-lei_ordinaria-13506-2017"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

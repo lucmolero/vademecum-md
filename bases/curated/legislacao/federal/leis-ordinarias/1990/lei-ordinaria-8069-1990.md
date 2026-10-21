@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "ea34ae97e2413cb05a307f2cff25ce1ccf7223d5889268830ea35ef88a63e05d"
-alterada_por: ["br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-12594-2012", "br-federal-lei_ordinaria-13010-2014", "br-federal-lei_ordinaria-13257-2016", "br-federal-lei_ordinaria-13431-2017", "br-federal-lei_ordinaria-13869-2019", "br-federal-lei_ordinaria-14344-2022", "br-federal-lei_ordinaria-14811-2024", "br-federal-lei_ordinaria-8072-1990"]
+alterada_por: ["br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-12318-2010", "br-federal-lei_ordinaria-12594-2012", "br-federal-lei_ordinaria-13010-2014", "br-federal-lei_ordinaria-13257-2016", "br-federal-lei_ordinaria-13431-2017", "br-federal-lei_ordinaria-13869-2019", "br-federal-lei_ordinaria-14344-2022", "br-federal-lei_ordinaria-14811-2024", "br-federal-lei_ordinaria-9249-1995"]
 revogada_por: ["br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-13431-2017", "br-federal-lei_ordinaria-9455-1997"]
 regulamentada_por: []
 retificada_por: []

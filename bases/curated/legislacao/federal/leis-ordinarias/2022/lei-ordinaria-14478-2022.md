@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "0d8625f2140b275d81aa2029a130d38134a2ac02803d629bf720b9bddf8cce58"
 alterada_por: []
 revogada_por: []
-regulamentada_por: ["br-federal-decreto_lei-2848-1940"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]

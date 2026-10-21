@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "56618bc2bfd884ad6c417aa65d5f04441be7ec1c28c15253945652cfb43661ac"
 alterada_por: []
 revogada_por: []
-regulamentada_por: ["br-federal-lei_ordinaria-8213-1991"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

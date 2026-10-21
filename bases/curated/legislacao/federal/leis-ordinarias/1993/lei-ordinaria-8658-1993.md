@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "94a760ed7716a5206c14cd4967ac14a64976051abeda974a4a4b3e519bd4f062"
 alterada_por: []
-revogada_por: ["br-federal-decreto_lei-3689-1941"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

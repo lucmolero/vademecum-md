@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "32df784b81d46fcbd99d9b5ef2e2eb00441ed2fc5909227eb2bd50a529cd3d2e"
-alterada_por: ["br-federal-lei_complementar-214-2025", "br-federal-lei_complementar-227-2026", "br-federal-lei_complementar-24-1975", "br-federal-lei_complementar-35-1979"]
+alterada_por: ["br-federal-lei_complementar-214-2025", "br-federal-lei_complementar-227-2026", "br-federal-lei_complementar-24-1975", "br-federal-lei_complementar-35-1979", "br-federal-lei_ordinaria-8212-1991"]
 revogada_por: ["br-federal-decreto_lei-406-1968", "br-federal-lei_complementar-227-2026"]
 regulamentada_por: []
 retificada_por: []

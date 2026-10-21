@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "7a08efe28fe624f866b445c2b230500ee1c98a6f9fee236face6c46aa7366d91"
 alterada_por: ["br-federal-lei_complementar-147-2014", "br-federal-lei_complementar-155-2016", "br-federal-lei_complementar-167-2019", "br-federal-lei_complementar-214-2025", "br-federal-lei_complementar-227-2026"]
 revogada_por: ["br-federal-lei_complementar-147-2014", "br-federal-lei_complementar-155-2016", "br-federal-lei_complementar-214-2025", "br-federal-lei_complementar-227-2026"]
-regulamentada_por: ["br-federal-lei_complementar-214-2025"]
+regulamentada_por: ["br-federal-lei_complementar-147-2014", "br-federal-lei_complementar-214-2025"]
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

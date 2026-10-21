@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "abec200d880f76204141dc8fc7e1222080c8a5ccb6cb7ceabfb6c620e713cbe8"
-alterada_por: ["br-federal-lei_complementar-159-2017", "br-federal-lei_complementar-178-2021", "br-federal-lei_complementar-214-2025", "br-federal-lei_complementar-224-2025"]
+alterada_por: ["br-federal-lei_complementar-148-2014", "br-federal-lei_complementar-159-2017", "br-federal-lei_complementar-178-2021", "br-federal-lei_complementar-214-2025", "br-federal-lei_complementar-224-2025"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "d6a4b801f62cbbb5765ee38b2fa647324f7911e8146248da9bad017af87efd95"
 alterada_por: []
 revogada_por: []
-regulamentada_por: ["br-federal-lei_ordinaria-9784-1999"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]

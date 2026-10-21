@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "3181b81960767bc789ac43b050ff0feb0165827e06dcfeabbaabd59b0a1aee87"
 alterada_por: ["br-federal-lei_ordinaria-14344-2022"]
-revogada_por: ["br-federal-lei_ordinaria-8069-1990"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

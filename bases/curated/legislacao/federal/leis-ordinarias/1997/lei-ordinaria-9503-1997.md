@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "f35c330e64a3b96be164c5f6ac6986b90862f5e70fff27eab57e63bd37c6e38f"
 alterada_por: ["br-federal-lei_ordinaria-11705-2008", "br-federal-lei_ordinaria-12009-2009", "br-federal-lei_ordinaria-12619-2012", "br-federal-lei_ordinaria-12694-2012", "br-federal-lei_ordinaria-13097-2015", "br-federal-lei_ordinaria-13146-2015"]
-revogada_por: ["br-federal-lei_ordinaria-11705-2008"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

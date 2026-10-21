@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "fac5552d99916fe3fd9ac05979446bfbdd18a34875f2c61d87daa7589a0a1af4"
-alterada_por: []
+alterada_por: ["br-federal-lei_complementar-147-2014"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

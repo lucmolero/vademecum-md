@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "78352c6aac2c9503c63e77d387cc4c1383c0306c2208f8725ab7416eb51d99d4"
 alterada_por: ["br-federal-lei_complementar-225-2026", "br-federal-lei_complementar-227-2026", "br-federal-lei_ordinaria-10637-2002", "br-federal-lei_ordinaria-10833-2003", "br-federal-lei_ordinaria-13097-2015"]
-revogada_por: []
+revogada_por: ["br-federal-lei_ordinaria-11457-2007"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

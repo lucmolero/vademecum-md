@@ -22,8 +22,8 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "abeb4857511098a3db8d187b00af0b143d267b5f9ffabfbd394a637c3570af04"
 alterada_por: []
-revogada_por: ["br-federal-lei_ordinaria-9610-1998"]
-regulamentada_por: ["br-federal-lei_ordinaria-9610-1998"]
+revogada_por: []
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]

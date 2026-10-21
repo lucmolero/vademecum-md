@@ -22,9 +22,9 @@ origem_formato: "html"
 baixado_em: "2026-10-21"
 sha256_origem: "eeb810c7ca20490a43ca468174fcd48a28653e328ceef731e87c7204a0d13589"
 alterada_por: ["br-federal-lei_complementar-227-2026"]
-revogada_por: ["br-federal-lei_complementar-123-2006", "br-federal-lei_complementar-227-2026"]
-regulamentada_por: ["br-federal-lei_ordinaria-9784-1999"]
-retificada_por: ["br-federal-lei_complementar-227-2026"]
+revogada_por: ["br-federal-lei_complementar-227-2026"]
+regulamentada_por: []
+retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto consolidado conforme página oficial compilada do Planalto, consultada em 2026-10-21.", "A Lei Complementar nº 227, de 2026, foi identificada como alteração relacionada e será detalhada no grafo normativo."]
 camada: "core_codigos"

@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "b789183d7d6ad89ccb257c78ed975e1dca443d12c029e539bb41da54d5d6e232"
 alterada_por: []
 revogada_por: []
-regulamentada_por: ["br-federal-lei_ordinaria-13506-2017"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]

@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "688b7790b3ed6119679d982ec59f18f9456301fb1e80646a49c0cde1d1599b02"
 alterada_por: []
-revogada_por: ["br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14711-2023"]
+revogada_por: ["br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14711-2023", "br-federal-lei_ordinaria-15040-2024"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

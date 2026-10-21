@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "f222f676923380ebebef376b8eda9547c60a30b55dacdec63bead93ad376a4db"
 alterada_por: ["br-federal-decreto_lei-2321-1987", "br-federal-lei_ordinaria-13506-2017"]
 revogada_por: ["br-federal-lei_complementar-105-2001", "br-federal-lei_ordinaria-13506-2017"]
-regulamentada_por: ["br-federal-lei_complementar-101-2000"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

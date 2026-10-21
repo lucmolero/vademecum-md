@@ -21,10 +21,10 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "47f4fbcbb78694c49003c2c41c5631c0db1c3a1e7cdd19b5c244db5639312156"
-alterada_por: ["br-federal-lei_complementar-214-2025"]
-revogada_por: ["br-federal-lei_ordinaria-10833-2003"]
+alterada_por: []
+revogada_por: []
 regulamentada_por: []
-retificada_por: ["br-federal-lei_complementar-214-2025"]
+retificada_por: []
 relacionada_a: ["br-federal-lei_complementar-214-2025"]
 observacoes_proveniencia: ["Texto oficial do Planalto preservado no snapshot local de 2026-10-15.", "A lei contém dispositivos com efeitos em datas futuras; as datas de efeito serão detalhadas no grafo normativo."]
 camada: "cobertura_especializada"

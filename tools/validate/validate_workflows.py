@@ -33,6 +33,8 @@ def main() -> int:
                 errors.append(f"{path.name}: gate da matriz editorial ausente")
             if "audit_editorial_expansion.py" not in text:
                 errors.append(f"{path.name}: inventário de expansão editorial ausente")
+            if "audit_normative_graph.py --strict" not in text:
+                errors.append(f"{path.name}: auditoria estrita do grafo normativo ausente")
         if "contents: read" not in text:
             errors.append(f"{path.name}: permissao de conteudo nao e somente leitura")
         if "pull_request_target" in text:

@@ -21,8 +21,8 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "3c01d1a5f5351594e8867689e1c66cd6de0268cb397541688e0ce87ab6459bd5"
-alterada_por: []
-revogada_por: ["br-federal-lei_complementar-116-2003", "br-federal-lei_ordinaria-5172-1966"]
+alterada_por: ["br-federal-lei_complementar-116-2003"]
+revogada_por: ["br-federal-lei_complementar-116-2003"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "ea529ec768c7ded1eb33d9b45c94528687cfde2eeeb325ca5223feea152213b0"
 alterada_por: ["br-federal-lei_complementar-224-2025", "br-federal-lei_ordinaria-12529-2011"]
-revogada_por: ["br-federal-decreto_lei-2848-1940", "br-federal-lei_ordinaria-12529-2011", "br-federal-lei_ordinaria-8176-1991"]
+revogada_por: ["br-federal-lei_ordinaria-12529-2011", "br-federal-lei_ordinaria-8176-1991"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

@@ -21,9 +21,13 @@ MONTHS = {
     "outubro": "10", "novembro": "11", "dezembro": "12",
 }
 RELATION_TYPES = {
+    "altera": "alterada_por",
     "alterada_por": "altera",
+    "revoga": "revogada_por",
     "revogada_por": "revoga",
+    "regulamenta": "regulamentada_por",
     "regulamentada_por": "regulamenta",
+    "retifica": "retificada_por",
     "retificada_por": "retifica",
 }
 
@@ -42,15 +46,34 @@ def norm_number(value: str) -> str:
 
 
 def relation_type(context: str) -> str | None:
-    context = context.lower()
-    if re.search(r"revog\w*.{0,80}$", context):
-        return "revogada_por"
-    if re.search(r"retific\w*.{0,80}$", context):
-        return "retificada_por"
-    if re.search(r"(redação dada|redacao dada|alterad\w*|acrescid\w*|incluíd\w*|incluid\w*).{0,80}$", context):
+    """Classify the relation direction for the referenced diploma.
+
+    A citation can occur in two legally opposite constructions: ``altera a
+    Lei X`` (the current document acts on X) and ``redação dada pela Lei X``
+    (the current document was acted on by X). Passive constructions must be
+    classified before active verbs; ambiguous prose remains unresolved.
+    """
+    context = re.sub(r"\s+", " ", context.lower()).strip()
+    passive = r"(?:por|pela|pelo|pelas|pelos)"
+    if re.search(rf"(?:redação|redacao)\s+(?:dada|dado)\s+{passive}", context):
         return "alterada_por"
-    if re.search(r"regulament\w*.{0,80}$", context):
+    if re.search(rf"(?:alterad\w*|acrescid\w*|incluíd\w*|incluid\w*)\s+{passive}", context):
+        return "alterada_por"
+    if re.search(rf"revogad\w*\s+{passive}", context):
+        return "revogada_por"
+    if re.search(rf"retificad\w*\s+{passive}", context):
+        return "retificada_por"
+    if re.search(rf"regulamentad\w*\s+{passive}", context):
         return "regulamentada_por"
+
+    if re.search(r"\b(?:altera|alteram|alterou|alterar|acresce|acrescem|inclui|incluem|incluiu)\b", context):
+        return "altera"
+    if re.search(r"\b(?:revoga|revogam|revogou|revogar)\b", context):
+        return "revoga"
+    if re.search(r"\b(?:retifica|retificam|retificou|retificar)\b", context):
+        return "retifica"
+    if re.search(r"\b(?:regulamenta|regulamentam|regulamentou|regulamentar)\b", context):
+        return "regulamenta"
     return None
 
 
@@ -70,6 +93,25 @@ def effect_date(context: str) -> str | None:
         if month_number:
             return f"{year}-{month_number}-{int(day):02d}"
     return None
+
+
+def relation_is_plausible(relation: str, source: dict[str, object], target: dict[str, object]) -> bool:
+    """Reject or correct inferred edges that run backwards in time.
+
+    A later diploma can amend, repeal, rectify, or regulate an earlier one.
+    The converse is not a plausible interpretation of a citation in a
+    current text. This is a conservative guard against citations in
+    consolidated provisions being classified with the wrong direction.
+    """
+    source_date = str(source.get("data_assinatura") or "")
+    target_date = str(target.get("data_assinatura") or "")
+    if not source_date or not target_date:
+        return True
+    if relation in {"altera", "revoga", "retifica", "regulamenta"}:
+        return source_date >= target_date
+    if relation in {"alterada_por", "revogada_por", "retificada_por", "regulamentada_por"}:
+        return source_date <= target_date
+    return True
 
 
 def target_candidates(kind: str, number: str, docs: list[tuple[Path, dict[str, object], str]]) -> list[dict[str, object]]:
@@ -123,6 +165,13 @@ def build_relations(docs: list[tuple[Path, dict[str, object], str]]) -> tuple[li
                 target_id = str(target["id"])
                 if target_id == source_id:
                     continue
+                if not relation_is_plausible(relation, metadata, target):
+                    corrected = RELATION_TYPES.get(relation)
+                    if corrected and relation_is_plausible(corrected, metadata, target):
+                        relation = corrected
+                    else:
+                        unresolved.add((source_id, kind, number, relation))
+                        continue
                 effect = effect_date(context)
                 inverse = RELATION_TYPES[relation]
                 if (source_id, relation, target_id) not in exclusions:
@@ -178,7 +227,7 @@ def write_sources(docs: list[tuple[Path, dict[str, object], str]]) -> None:
             "sha256_origem": metadata.get("sha256_origem"),
         })
     target = ROOT / "manifests/sources-official.json"
-    target.write_text(json.dumps({"schema": "official-source-manifest/v1", "generated_at": TODAY, "documents": entries}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    target.write_text(json.dumps({"schema": "official-source-manifest/v1", "generated_at": TODAY, "documents": entries}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_vocabulary() -> None:
@@ -190,7 +239,7 @@ def write_vocabulary() -> None:
         "relacoes": ["altera", "alterada_por", "revoga", "revogada_por", "regulamenta", "regulamentada_por", "retifica", "retificada_por", "suspende", "suspensa_por", "regulamenta_parcialmente", "relacionada_a"],
         "prioridades": ["P0", "P1", "P2"],
     }
-    (ROOT / "manifests/vocabulary.json").write_text(json.dumps(vocabulary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "manifests/vocabulary.json").write_text(json.dumps(vocabulary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_release(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]], unresolved: list[dict[str, str]]) -> None:
@@ -211,7 +260,7 @@ def write_release(docs: list[tuple[Path, dict[str, object], str]], relations: li
         "publication_policy": "automatic_only_after_validation",
         "rag": "deferred_until_1_0",
     }
-    (ROOT / "manifests/release.json").write_text(json.dumps(release, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "manifests/release.json").write_text(json.dumps(release, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]], unresolved: list[dict[str, str]]) -> None:
@@ -238,7 +287,7 @@ def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relation
         "errors": errors,
         "status": "pass" if not errors else "fail",
     }
-    (ROOT / "manifests/completeness.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "manifests/completeness.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     report = [
         "# Relatório de completude",
         "",

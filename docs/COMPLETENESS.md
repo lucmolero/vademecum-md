@@ -7,8 +7,8 @@ Data de geração: `2026-10-21`.
 - Fontes oficiais: **360/360**
 - Hashes: **360/360**
 - P0 consolidado: **30/30**
-- Relações normativas materializadas: **1655**
-- Relações ainda não resolvidas: **2258**
+- Relações normativas materializadas: **1611**
+- Relações ainda não resolvidas: **2221**
 
 ## Regra de interpretação
 

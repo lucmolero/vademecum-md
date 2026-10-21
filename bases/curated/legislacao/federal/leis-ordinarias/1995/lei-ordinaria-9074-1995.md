@@ -21,9 +21,9 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "dd47dbe3bb4be2c3225a78a3aebba5f10e751f2cb47e6f678676ed4ecfe31b40"
-alterada_por: ["br-federal-lei_ordinaria-10684-2003", "br-federal-lei_ordinaria-13097-2015", "br-federal-lei_ordinaria-8987-1995"]
-revogada_por: ["br-federal-lei_ordinaria-8987-1995"]
-regulamentada_por: ["br-federal-lei_ordinaria-8987-1995"]
+alterada_por: ["br-federal-lei_ordinaria-10684-2003", "br-federal-lei_ordinaria-13097-2015"]
+revogada_por: []
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

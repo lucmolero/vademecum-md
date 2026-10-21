@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "6c7372ddd002118ec3bd175813f415dcfbc80c61213b01f311a5396218007a3d"
 alterada_por: []
-revogada_por: ["br-federal-lei_ordinaria-9503-1997"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

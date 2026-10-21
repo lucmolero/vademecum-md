@@ -21,9 +21,9 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "267fa5c6226b89479a80bab19bbe53763edafc24b4467e838a2fc9a6e2279d40"
-alterada_por: ["br-federal-lei_complementar-225-2026", "br-federal-lei_ordinaria-10637-2002", "br-federal-lei_ordinaria-13606-2018", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-13988-2020", "br-federal-lei_ordinaria-8036-1990"]
+alterada_por: ["br-federal-lei_complementar-225-2026", "br-federal-lei_ordinaria-10637-2002", "br-federal-lei_ordinaria-13606-2018", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-13988-2020"]
 revogada_por: ["br-federal-lei_ordinaria-13874-2019"]
-regulamentada_por: ["br-federal-lei_ordinaria-13988-2020"]
+regulamentada_por: ["br-federal-lei_ordinaria-13606-2018"]
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

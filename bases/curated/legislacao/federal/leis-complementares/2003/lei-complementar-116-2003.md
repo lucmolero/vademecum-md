@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "bd58e9d6784f856929ab45c95f629b9a0d39d9e6ec95e00438470e9ee892da77"
 alterada_por: ["br-federal-lei_complementar-157-2016"]
-revogada_por: []
+revogada_por: ["br-federal-lei_complementar-157-2016"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

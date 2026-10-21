@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "2ef46db53bed087d98f26ae2e63b0f0af00b23bb98085637a645214f0ec82eb3"
 alterada_por: ["br-federal-lei_ordinaria-12874-2013", "br-federal-lei_ordinaria-6515-1977"]
 revogada_por: []
-regulamentada_por: []
+regulamentada_por: ["br-federal-decreto-9830-2019"]
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

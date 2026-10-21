@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "90a1288be0cdfa2dc03dcd3f243f7740d90b4e96ab10694e92d30674625649ea"
 alterada_por: []
-revogada_por: ["br-federal-lei_complementar-64-1990"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

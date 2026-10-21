@@ -21,8 +21,8 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "e7f65a164e82b21975c3bf134fc3794a8c0ff37aaf7cd663aa19e8826b590e0b"
-alterada_por: ["br-federal-lei_complementar-147-2014", "br-federal-lei_ordinaria-10931-2004", "br-federal-lei_ordinaria-11107-2005", "br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-13105-2015", "br-federal-lei_ordinaria-13146-2015", "br-federal-lei_ordinaria-13465-2017", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14193-2021", "br-federal-lei_ordinaria-14382-2022", "br-federal-lei_ordinaria-14711-2023", "br-federal-lei_ordinaria-8069-1990"]
-revogada_por: ["br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-13105-2015", "br-federal-lei_ordinaria-13146-2015", "br-federal-lei_ordinaria-14382-2022"]
+alterada_por: ["br-federal-lei_complementar-147-2014", "br-federal-lei_ordinaria-10931-2004", "br-federal-lei_ordinaria-11107-2005", "br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-13105-2015", "br-federal-lei_ordinaria-13146-2015", "br-federal-lei_ordinaria-13465-2017", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14193-2021", "br-federal-lei_ordinaria-14382-2022", "br-federal-lei_ordinaria-14711-2023"]
+revogada_por: ["br-federal-lei_ordinaria-12010-2009", "br-federal-lei_ordinaria-13105-2015", "br-federal-lei_ordinaria-13146-2015", "br-federal-lei_ordinaria-14382-2022", "br-federal-lei_ordinaria-15040-2024"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []
