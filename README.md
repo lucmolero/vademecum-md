@@ -9,8 +9,8 @@ O produto principal é um diploma por arquivo em `bases/curated/legislacao/feder
 - 360 documentos federais materializados;
 - texto integral preservado em Markdown;
 - fonte oficial, data de corte e hash em cada documento;
-- 241 documentos consolidados por fonte oficial;
-- 119 documentos marcados como `requer_reconciliacao`;
+- 246 documentos consolidados por fonte oficial;
+- 109 documentos marcados como `requer_reconciliacao`;
 - relações normativas geradas em `bases/derived/relacoes/`;
 - RAG deliberadamente adiado até a estabilização da release 1.0.
 
