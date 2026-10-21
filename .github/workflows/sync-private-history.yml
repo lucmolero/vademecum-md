@@ -2,6 +2,11 @@ name: sync-private-history
 
 on:
   workflow_dispatch:
+    inputs:
+      matrix_id:
+        description: "Optional single matrix ID for a fast smoke test; empty collects the full corpus"
+        required: false
+        type: string
   repository_dispatch:
     types: [sync-private-history]
 
@@ -16,6 +21,7 @@ jobs:
   sync:
     if: vars.HISTORY_REPOSITORY != ''
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: read
     steps:
@@ -36,7 +42,15 @@ jobs:
       - name: Install project dependencies
         run: python -m pip install -e .
       - name: Collect official snapshots
-        run: python tools/acquire/collect_legislation.py --mode proposal --report reports/private-history-collection.json
+        env:
+          MATRIX_ID: ${{ inputs.matrix_id }}
+        shell: bash
+        run: |
+          args=(--mode proposal --report reports/private-history-collection.json)
+          if [[ -n "$MATRIX_ID" ]]; then
+            args+=(--matrix-id "$MATRIX_ID")
+          fi
+          python tools/acquire/collect_legislation.py "${args[@]}"
       - name: Build private ledger
         run: python tools/history/build_private_ledger.py --output private-ledger
       - name: Checkout private history repository
