@@ -283,11 +283,18 @@ def write_vocabulary() -> None:
 
 def write_release(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]], unresolved: list[dict[str, str]]) -> None:
     statuses = Counter(str(meta.get("consolidacao_status")) for _, meta, _ in docs)
+    release_path = ROOT / "manifests/release.json"
+    prior_release: dict[str, object] = {}
+    if release_path.is_file():
+        try:
+            prior_release = json.loads(release_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            prior_release = {}
     release = {
         "product": "vademecum-md",
-        "version": "0.3.0",
+        "version": str(prior_release.get("version") or "0.3.0"),
         "generated_at": TODAY,
-        "status": "pre_release",
+        "status": str(prior_release.get("status") or "pre_release"),
         "scope": "legislacao_federal",
         "corpus_count": len(docs),
         "integral_count": sum(bool(body.strip()) for _, _, body in docs),
@@ -297,9 +304,9 @@ def write_release(docs: list[tuple[Path, dict[str, object], str]], relations: li
         "relation_count": len(relations),
         "unresolved_relation_count": len(unresolved),
         "publication_policy": "autonomous_pr_gates; no direct main mutation",
-        "rag": "deferred_until_1_0",
+        "rag": str(prior_release.get("rag") or "deferred_until_1_0"),
     }
-    (ROOT / "manifests/release.json").write_text(json.dumps(release, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    release_path.write_text(json.dumps(release, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]], unresolved: list[dict[str, str]]) -> None:

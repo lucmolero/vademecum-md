@@ -1,8 +1,8 @@
 {
   "product": "vademecum-md",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "generated_at": "2026-10-21",
-  "status": "pre_release",
+  "status": "release",
   "scope": "legislacao_federal",
   "corpus_count": 375,
   "integral_count": 375,
@@ -15,5 +15,5 @@
   "relation_count": 1841,
   "unresolved_relation_count": 2177,
   "publication_policy": "autonomous_pr_gates; no direct main mutation",
-  "rag": "deferred_until_1_0"
+  "rag": "deferred_until_post_release"
 }
