@@ -163,6 +163,20 @@ def main() -> int:
             rows = list(csv.DictReader(stream, delimiter=";"))
         if len(rows) != len(docs):
             errors.append("matriz e corpus têm quantidades diferentes")
+        required_matrix_columns = {"document_id", "document_path", "status_consolidacao", "status_situacao", "data_corte", "sha256_origem", "fonte_oficial_count"}
+        if rows and not required_matrix_columns <= set(rows[0]):
+            errors.append("matriz editorial sem colunas canonicas completas")
+        elif rows:
+            matrix_ids = {str(row.get("document_id")) for row in rows}
+            if matrix_ids != ids:
+                errors.append("matriz editorial e corpus possuem IDs canonicos diferentes")
+            for row in rows:
+                if row.get("status_consolidacao") not in ALLOWED_STATUS:
+                    errors.append(f"matriz: status de consolidacao invalido {row.get('id')}")
+                if not re.fullmatch(r"[0-9a-f]{64}", str(row.get("sha256_origem") or "")):
+                    errors.append(f"matriz: hash invalido {row.get('id')}")
+                if not row.get("document_path") or not (ROOT / str(row.get("document_path"))).is_file():
+                    errors.append(f"matriz: caminho canonico ausente {row.get('id')}")
         if {row["camada"] for row in rows} - {"core_constitucional", "core_codigos", "core_profissional", "cobertura_especializada", "auditoria_especialista"}:
             errors.append("camada editorial não neutra")
 

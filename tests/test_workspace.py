@@ -51,6 +51,8 @@ class WorkspaceTest(unittest.TestCase):
             {"core_constitucional", "core_codigos", "core_profissional", "cobertura_especializada", "auditoria_especialista"},
         )
         self.assertTrue(all(row["status_cobertura"] == "incluido" for row in rows))
+        self.assertTrue({"document_id", "document_path", "status_consolidacao", "status_situacao", "data_corte", "sha256_origem", "fonte_oficial_count"} <= set(rows[0]))
+        self.assertEqual(len({row["document_id"] for row in rows}), 360)
 
     def test_corpus_documents_have_canonical_contract(self) -> None:
         documents = list((ROOT / "bases/curated/legislacao").rglob("*.md"))
@@ -86,6 +88,15 @@ class WorkspaceTest(unittest.TestCase):
     def test_workflows_cannot_mutate_main_directly(self) -> None:
         result = subprocess.run([sys.executable, "tools/validate/validate_workflows.py"], cwd=ROOT, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_editorial_matrix_audit_is_complete(self) -> None:
+        result = subprocess.run([sys.executable, "tools/validate/sync_editorial_matrix.py"], cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        report = json.loads((ROOT / "reports/editorial-matrix-audit.json").read_text(encoding="utf-8"))
+        self.assertEqual(report["matrix_rows"], report["canonical_documents"])
+        self.assertEqual(report["matched_rows"], report["matrix_rows"])
+        self.assertEqual(report["missing_or_ambiguous"], [])
+        self.assertEqual(report["drift"], [])
 
     def test_update_frequencies_are_declared(self) -> None:
         collection = (ROOT / ".github/workflows/collect-legislation.yml").read_text(encoding="utf-8")

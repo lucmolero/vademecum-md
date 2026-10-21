@@ -28,6 +28,8 @@ def main() -> int:
     errors: list[str] = []
     for path in sorted(WORKFLOWS.glob("*.yml")):
         text = path.read_text(encoding="utf-8")
+        if path.name in {"quality.yml", "release.yml", "weekly-completeness.yml"} and "sync_editorial_matrix.py" not in text:
+            errors.append(f"{path.name}: gate da matriz editorial ausente")
         if "contents: read" not in text:
             errors.append(f"{path.name}: permissao de conteudo nao e somente leitura")
         if "pull_request_target" in text:
