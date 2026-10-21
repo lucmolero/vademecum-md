@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9029-1995"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "0224a4a3aa88b816dbbcae34a803a9825435800e167046b582084617505be21c"
 sha256_source_normalized: "4180fa69f3d96b1ef412b63127549bcb9c931ada05bcc2c4df47d87f94db9fa1"
-sha256_source_body: "613cedc3f2f20abdc71bcf93f46ecdbe6b14654c744da238ff3d695a9c64bd2f"
-sha256_published_body: "a703e9c53d516f4243d174147dd3fe285a8ac7370634f898554c17cc6b02e793"
+sha256_source_body: "b849f71da3984c516545103b02c1088d1cdc20e8050cc7a00f70acdde9c63d1d"
+sha256_published_body: "69ff21a02c00c8d3d157aaa94b471c00fc44bd74c359594c694de9f526cfd586"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.029 de 13/04/1995

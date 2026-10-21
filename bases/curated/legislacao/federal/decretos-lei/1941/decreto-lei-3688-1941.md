@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-3688-1941"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "918b32a603fd37150ec17e51e9b3331ad087b27e5a90966fedf12dc6b894bfd3"
-sha256_source_normalized: "f8373f6d6ffe5916e3fdb1ab7be46bb3bf382112b2b224a84b407c3fe8b8e6ab"
-sha256_source_body: "1f5d5c70e8c5945faf6f2fbfdbc3be0967b30adaed3d55fbcd3870aa5f59be4f"
-sha256_published_body: "1f5d5c70e8c5945faf6f2fbfdbc3be0967b30adaed3d55fbcd3870aa5f59be4f"
+sha256_source_normalized: "f6bfdd1ba52802cfdd471ca6dc41193a4a3e32243383f1a822347142393a683e"
+sha256_source_body: "81a511a5c545af8d12b487861ba043d40a0a18cca3d28e19cc916bedefa68417"
+sha256_published_body: "c86f04374eb7921697717fd8dae3d128d2d096ae65db8325167dd1f644a03c94"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei das Contravencoes Penais

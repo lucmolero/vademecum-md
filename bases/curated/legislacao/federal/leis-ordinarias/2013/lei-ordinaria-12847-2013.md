@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12847-2013"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "520ca37fda47d37b3cde0f4d0610b97e7f750bc759895593bd5085b66efd762b"
 sha256_source_normalized: "cc8a7adced150bb1a0539b40f65d16da4d0781336e4f5bb8dcd8e9a5cb3cfc0b"
-sha256_source_body: "ff083c5ae71371c14817e51d2c6572ef77830952a76bd0169072d60d6c6b23c4"
-sha256_published_body: "ff083c5ae71371c14817e51d2c6572ef77830952a76bd0169072d60d6c6b23c4"
+sha256_source_body: "28f4675ba0b330f3e4778fed8b289d78084f4285464d1fd77c9d730af6d728cc"
+sha256_published_body: "28f4675ba0b330f3e4778fed8b289d78084f4285464d1fd77c9d730af6d728cc"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.847 de 02/08/2013

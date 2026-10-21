@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-109-2001"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "916cb1a4cf5904057a890a6e4e14c9d651dff0dbf768ac7f37876f0201595f37"
 sha256_source_normalized: "fc8858fdc464dd07c4610d9ea61c70ee29985235f5c3c693ffdf609666d1ce6e"
-sha256_source_body: "e569b223b237cb56f4eb6462f1274166d81796e878eb14906e57cabbd3aa2999"
-sha256_published_body: "d6867ebf23fab4635ab85722c373946ada24d413319eebaefb9d155b2a493910"
+sha256_source_body: "6c647da5a9fbedb91734d279d2be41b3fcff347ef32b0e97cdbe73b485a0b990"
+sha256_published_body: "b3e737685bfdeb2f682b2ad157dc690ba8da2363a71b328f7676b76f2fb5ee38"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 109 de 29/05/2001

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-3931-1941"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "97b43d326fde0ced46b1cec1cd0fd67377946c6fe36ea3c6168af5275ed1fd30"
 sha256_source_normalized: "3d3e9acc7242d90a69d25ccd5b7d475c9bb5a206d6dff8dbf53da48b27f1ec5c"
-sha256_source_body: "317577afe475a19e918c9b2e3d4aed25079bbe9074b61c73f5cfa48e8a8a9097"
-sha256_published_body: "317577afe475a19e918c9b2e3d4aed25079bbe9074b61c73f5cfa48e8a8a9097"
+sha256_source_body: "56be47a89e9c5d41cbe54903598ae53efa210c8c74adce04e2a2ef01b99e3f5f"
+sha256_published_body: "56be47a89e9c5d41cbe54903598ae53efa210c8c74adce04e2a2ef01b99e3f5f"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei de Introdução ao Código de Processo Penal

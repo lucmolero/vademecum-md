@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14711-2023"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "36755e7cf33da833107bdc43f0efb8dfc3005e5cd995d10aeb70bcc25af0699e"
 sha256_source_normalized: "8bb08a4a22020697cb079dfaa0877cdc38dff5b4b4ba9f5caacd5711041d332f"
-sha256_source_body: "44caf016713aa8bb7788e96beedf7c4f8f85686a102a194721cc8eb10026ef94"
-sha256_published_body: "44caf016713aa8bb7788e96beedf7c4f8f85686a102a194721cc8eb10026ef94"
+sha256_source_body: "6344ed098c34bae7337d7b35c26933527d361c33089d5ea180b6fda1484b3ce3"
+sha256_published_body: "6344ed098c34bae7337d7b35c26933527d361c33089d5ea180b6fda1484b3ce3"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.711 de 30/10/2023

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12153-2009"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "d1b4d73c4fe9584fbf7597cf12ce7cbaec184c7c98c668eeb87ba3610e0144e7"
 sha256_source_normalized: "03abce8c81b5d966f939a71b40711f2d345b2c999556bf306080522744fe1a02"
-sha256_source_body: "feeaeba8db253cf2873446a7080233c4b147a2d88b3e8f13ddeb8037f9cd8b0d"
-sha256_published_body: "feeaeba8db253cf2873446a7080233c4b147a2d88b3e8f13ddeb8037f9cd8b0d"
+sha256_source_body: "c0ff7dc8ade7dcb4cefca5ef008d8051cd29b8456ccf03dd4bac9e6f7e08ca21"
+sha256_published_body: "c0ff7dc8ade7dcb4cefca5ef008d8051cd29b8456ccf03dd4bac9e6f7e08ca21"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.153 de 22/12/2009

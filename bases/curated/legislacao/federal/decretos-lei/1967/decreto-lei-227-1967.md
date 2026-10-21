@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-227-1967"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "b528b38c1c3d9db8e151f0c33fff8dfb3f54d7c860f396acd6d74089c90682a0"
-sha256_source_normalized: "d2935f7ccc5d914bc389f44111dd248272a3f9d91d56dc092342a8e03901f5f0"
-sha256_source_body: "983d362ea30d0b8276622990bffa9d80e4c8284b79d7087669920af52d20beab"
-sha256_published_body: "60c31601cb46db1352f3d52ffda315b0894484c0f329e167f01fe2e0d9116f94"
+sha256_source_normalized: "739a43a8a76b7e32533d5ac0012015702191003c3565f1d29f6ebf36f17f2092"
+sha256_source_body: "94f6940ca67254c5e1903339fd73a72c60e44eb004f0190c4669783b72f18439"
+sha256_published_body: "91da7c23c20dcfb2ea42adab0451316ce1833462ab465fe373669866ab89e2b6"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 227 de 28/02/1967

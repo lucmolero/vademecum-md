@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13775-2018"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "cc435b943ea79ade5d8b1a40f1b91ebaceecabea5991a69e35e7cb0bbe867e4d"
 sha256_source_normalized: "3d4ba98403a61265ab0432281267b9f8708b0546085461397268d8f4ec7b19da"
-sha256_source_body: "fb8899e4c4339da8244a5cdce799e1cd4776efa9a288b0d53773691124004f01"
-sha256_published_body: "fb8899e4c4339da8244a5cdce799e1cd4776efa9a288b0d53773691124004f01"
+sha256_source_body: "18c52a52a26dddd546c4dcf282a3b301ee7c707a587a9e3b8317a9125b65accf"
+sha256_published_body: "18c52a52a26dddd546c4dcf282a3b301ee7c707a587a9e3b8317a9125b65accf"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.775 de 20/12/2018

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-8560-1992"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "39292569943500710f2a5e3f3cec40864a33e564bf112afe649750a3437e6de8"
 sha256_source_normalized: "ef202052142bc6e713b4fc85710935a4667e36bf15a911ef6a88b1ed2c70dbd5"
-sha256_source_body: "83cee80f474e68121a3ec0dfa092aea5686daa58070d370dc2d0ab7fcf7d2596"
-sha256_published_body: "6c7eafefb26396c64165b7518a905088af6fd57c25e373e2b3bebeb4dd7c84d2"
+sha256_source_body: "65a20e35d7ce1879f9712b6c11fb5ab75884ac5c21d97afa495160548b242efe"
+sha256_published_body: "480c4b4232d5c93717f6704f73e9193fa83f75ee399178b90ff44caa8d680adf"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.560 de 29/12/1992

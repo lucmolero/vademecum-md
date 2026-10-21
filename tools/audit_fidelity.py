@@ -26,17 +26,30 @@ sys.path.insert(0, str(ROOT / "tools" / "normalize"))
 from migrate_public_corpus import CURATED, parse_frontmatter  # noqa: E402
 import official_html_to_markdown as official_converter  # noqa: E402
 
-NORMALIZATION_VERSION = "norm-v2"
+NORMALIZATION_VERSION = "norm-v3"
 SOURCE_UNITS = ROOT / "manifests/source-units.json"
+SOURCE_REGISTRY = ROOT / "manifests/sources-registry.json"
+SOURCE_RESOLUTION = ROOT / "manifests/source-resolution.json"
 DEFAULT_REPORTS = (
     ROOT / "reports/collection-full-2026-10-21-v5.json",
     ROOT / "reports/editorial-expansion-collection-v2.json",
 )
-ARTICLE_RE = re.compile(r"(?im)^[ \t]*(?:\*\*)?art\.?\s+([0-9]+(?:-[A-Z])?(?:[ºª°])?)\.?\s*", re.UNICODE)
+ARTICLE_RE = re.compile(
+    r"(?im)^[ \t]*(?:\*\*)?art\.?\s+"
+    r"([0-9]+(?:\s*[ºª°�])?(?:\s*-\s*[A-Za-z])?)\.?\s*",
+    re.UNICODE,
+)
 
 
 def sha256_text(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+ARTICLE_RE_COMPAT = re.compile(
+    r"(?im)^[ \t]*(?:\*\*)?art\.?\s+"
+    r"([0-9]+(?:\s*[\u00ba\u00aa\u00b0\ufffd])?(?:\s*-\s*[A-Za-z]|[A-Za-z](?=\.))?)\.?\s*",
+    re.UNICODE,
+)
 
 
 def normalize_text(value: str) -> str:
@@ -52,19 +65,60 @@ def strip_markdown(value: str) -> str:
     value = re.sub(r"^>\s?", "", value, flags=re.MULTILINE)
     value = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", value)
     value = re.sub(r"[*_`~]", "", value)
+    # Markdown tables are a presentation layer. For normative comparison,
+    # retain cell text while removing pipes and separator rows so that an
+    # official HTML table and its Markdown rendering share one lexical view.
+    lines: list[str] = []
+    for line in value.splitlines():
+        if re.fullmatch(r"\s*\|?[\s:|-]+\|?\s*", line):
+            continue
+        if line.count("|") >= 2:
+            line = line.replace("|", " ")
+        lines.append(line)
+    value = "\n".join(lines)
     return normalize_text(value)
 
 
+def repair_legacy_article_markers(value: str) -> str:
+    """Repair parser-visible HTML spacing artifacts for comparison only.
+
+    Legacy official pages contain malformed markup such as ``A rt. 1`` and
+    ``Art. 4 6-A``. These repairs are confined to the audit view; the
+    canonical Markdown body is never rewritten by this function.
+    """
+    value = value.replace("A rt.", "Art.").replace("a rt.", "art.")
+    value = value.replace("Art .", "Art.").replace("art .", "art.")
+    value = re.sub(r"\b(Art\.?\s+\d+)\s+([ºª°�])", r"\1\2", value, flags=re.IGNORECASE)
+    value = re.sub(r"\b(Art\.?\s+\d+)\s+([0-9])", r"\1\2", value, flags=re.IGNORECASE)
+    value = re.sub(r"\b(Art\.?\s+\d+)\s+([A-Za-z])", r"\1-\2", value, flags=re.IGNORECASE)
+    value = re.sub(r"\b(Art\.?\s+\d+)\s*-\s*([A-Za-z])", r"\1-\2", value, flags=re.IGNORECASE)
+    value = re.sub(r"\b(Art\.?\s+\d+)-([oa])\b", r"\1\2", value, flags=re.IGNORECASE)
+    value = re.sub(r"\b(Art\.?\s+\d+[A-Za-z])\s+\.", r"\1.", value, flags=re.IGNORECASE)
+    return value
+
+
 def article_tree(value: str) -> list[dict[str, str]]:
-    text = strip_markdown(value)
-    matches = list(ARTICLE_RE.finditer(text))
+    text = repair_legacy_article_markers(strip_markdown(value))
+    matches = list(ARTICLE_RE_COMPAT.finditer(text))
     result: list[dict[str, str]] = []
     for index, match in enumerate(matches):
         end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
         article = normalize_text(text[match.start():end])
-        label = re.sub(r"\s+", " ", match.group(1)).strip()
+        label = re.sub(r"\s+", "", match.group(1)).strip().upper()
         result.append({"label": label, "text": article})
     return result
+
+
+def normative_article_text(article: str) -> str:
+    """Return the normative portion of an article for fidelity hashing.
+
+    Signatures, participant rosters and closing publication material are
+    editorial metadata, not operative provisions. Official Constitution and
+    ADCT pages append those blocks after the final article; excluding them
+    prevents a source-layout difference from becoming a false legal mismatch.
+    """
+    article = re.split(r"\n{2,}Bras.{0,3}lia,", article, maxsplit=1, flags=re.IGNORECASE)[0]
+    return normalize_text(article)
 
 
 def load_unit_rules() -> dict[str, Any]:
@@ -130,6 +184,64 @@ def load_reports(paths: list[Path]) -> dict[str, dict[str, Any]]:
     return evidence
 
 
+def load_source_resolutions() -> dict[str, dict[str, Any]]:
+    if not SOURCE_RESOLUTION.is_file():
+        return {}
+    payload = json.loads(SOURCE_RESOLUTION.read_text(encoding="utf-8"))
+    return {
+        str(key): value
+        for key, value in (payload.get("documents") or {}).items()
+        if isinstance(value, dict)
+    }
+
+
+def load_source_ranks() -> dict[str, int]:
+    if not SOURCE_REGISTRY.is_file():
+        return {}
+    payload = json.loads(SOURCE_REGISTRY.read_text(encoding="utf-8"))
+    return {
+        str(source.get("id")): int(source.get("rank", 999))
+        for source in payload.get("sources", [])
+        if source.get("id")
+    }
+
+
+def select_attempt(
+    evidence: dict[str, Any],
+    resolutions: dict[str, dict[str, Any]],
+    source_ranks: dict[str, int],
+) -> tuple[dict[str, Any] | None, dict[str, Any]]:
+    attempts = [attempt for attempt in evidence.get("attempts", []) if attempt.get("status") == "fetched"]
+    resolution = resolutions.get(str(evidence.get("matrix_id") or ""))
+    if isinstance(resolution, dict) and resolution.get("status") == "approved":
+        source_id = str(resolution.get("selected_source_id") or "")
+        selected = [attempt for attempt in attempts if str(attempt.get("source_id")) == source_id]
+        if selected:
+            attempt = selected[0]
+            return attempt, {
+                "method": "approved_source_resolution",
+                "source_id": source_id,
+                "expected_sha256": resolution.get("expected_source_sha256"),
+                "expected_sha256_matches": not resolution.get("expected_source_sha256")
+                or resolution.get("expected_source_sha256") == attempt.get("sha256_raw"),
+            }
+    if attempts:
+        attempt = sorted(
+            attempts,
+            key=lambda candidate: (
+                source_ranks.get(str(candidate.get("source_id")), 999),
+                str(candidate.get("source_id") or ""),
+            ),
+        )[0]
+        return attempt, {
+            "method": "official_source_precedence",
+            "source_id": attempt.get("source_id"),
+            "expected_sha256": None,
+            "expected_sha256_matches": None,
+        }
+    return None, {"method": "no_fetched_attempt", "source_id": None}
+
+
 def canonical_source_body(converted: str, document_id: str, rules: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     selected, selector = select_unit(converted, unit_rule(document_id, rules))
     articles = article_tree(selected)
@@ -144,7 +256,13 @@ def published_body(path: Path) -> tuple[dict[str, Any], str]:
     return metadata, body
 
 
-def convert_html_anchor_section(source_path: Path, anchor_name: str, before: bool) -> str:
+def convert_html_anchor_section(
+    source_path: Path,
+    anchor_name: str,
+    before: bool,
+    fallback_anchors: list[dict[str, Any]] | None = None,
+    raw_article_anchor_pattern: str | None = None,
+) -> str:
     """Convert one anchored section of the legacy compiled Constitution page."""
     raw = source_path.read_bytes()
     try:
@@ -158,7 +276,7 @@ def convert_html_anchor_section(source_path: Path, anchor_name: str, before: boo
     anchor = soup.find("a", attrs={"name": anchor_name})
     if anchor is None:
         raise ValueError(f"official anchor not found: {anchor_name}")
-    paragraphs = soup.find_all("p")
+    paragraphs = soup.find_all(["p", "table", "h1", "h2", "h3", "h4", "h5", "h6"])
     anchor_index = next(
         (index for index, paragraph in enumerate(paragraphs)
          if paragraph is anchor or anchor in paragraph.descendants),
@@ -170,6 +288,8 @@ def convert_html_anchor_section(source_path: Path, anchor_name: str, before: boo
     blocks: list[str] = []
     started = not before
     for paragraph in selected:
+        if paragraph.name == "p" and paragraph.find_parent("table") is not None:
+            continue
         value = official_converter.clean_text(paragraph.get_text(" ", strip=True))
         if not value:
             continue
@@ -190,6 +310,124 @@ def convert_html_anchor_section(source_path: Path, anchor_name: str, before: boo
         if blocks and formatted == blocks[-1]:
             continue
         blocks.append(formatted)
+    # A few legacy paragraphs are malformed: the article anchor is present in
+    # the raw HTML, but the HTML parser exposes an empty paragraph and loses
+    # the article heading. Recover only explicitly declared anchors and keep
+    # the recovery auditable in the source-unit contract.
+    if fallback_anchors or raw_article_anchor_pattern:
+        fallback_items: list[tuple[int, str, str]] = []
+        raw_overrides: list[tuple[str, str]] = []
+        raw_text = decoded
+        section_start = 0 if before else raw_text.lower().find(f'name="{anchor_name.lower()}"')
+        section_end = raw_text.lower().find(f'name="{anchor_name.lower()}"') if before else len(raw_text)
+        base_labels = [item["label"] for item in article_tree("\n\n".join(blocks))]
+        if raw_article_anchor_pattern:
+            anchor_sequence = re.compile(
+                rf'name=["\'][^"\']*{re.escape(raw_article_anchor_pattern)}\d+[^"\']*["\']',
+                re.IGNORECASE,
+            )
+            article_anchors = [
+                match
+                for match in anchor_sequence.finditer(raw_text)
+                if section_start <= match.start() < section_end
+            ]
+            for index, match in enumerate(article_anchors):
+                anchor_end = article_anchors[index + 1].start() if index + 1 < len(article_anchors) else section_end
+                end = anchor_end
+                fragment = raw_text[match.start() : end]
+                text = official_converter.clean_text(BeautifulSoup(fragment, "html.parser").get_text(" ", strip=True))
+                article_start = re.search(r"(?i)\bArt\.?\s+", text)
+                article_matches = article_tree(text[article_start.start():]) if article_start else []
+                if article_matches:
+                    article = article_matches[0]
+                    try:
+                        current_index = next(
+                            index
+                            for index, value in enumerate(base_labels)
+                            if value.upper() == article["label"].upper()
+                        )
+                        next_label = base_labels[current_index + 1]
+                    except (StopIteration, IndexError):
+                        next_label = ""
+                    if next_label:
+                        next_number = re.match(r"\d+", next_label)
+                        if next_number:
+                            suffix = next_label[len(next_number.group(0)) :].replace("º", "").replace("ª", "").replace("°", "").replace("�", "")
+                            next_pattern = rf"\bArt\.?\s*{next_number.group(0)}{re.escape(suffix)}\s*\."
+                            next_text = raw_text[match.end() : anchor_end]
+                            next_article = re.search(next_pattern, next_text, re.IGNORECASE)
+                            if next_article:
+                                end = match.end() + next_article.start()
+                                fragment = raw_text[match.start() : end]
+                                text = official_converter.clean_text(BeautifulSoup(fragment, "html.parser").get_text(" ", strip=True))
+                                article_start = re.search(r"(?i)\bArt\.?\s+", text)
+                                article_matches = article_tree(text[article_start.start():]) if article_start else []
+                                if article_matches:
+                                    article = article_matches[0]
+                    raw_overrides.append((article["label"], official_converter.format_block(article["text"])))
+        for item in fallback_anchors or []:
+            pattern = str(item.get("anchor_pattern") or item.get("anchor") or "")
+            label = str(item.get("label") or "")
+            if not pattern or not label:
+                continue
+            match = re.search(rf'name=["\'][^"\']*{re.escape(pattern)}[^"\']*["\']', raw_text, re.IGNORECASE)
+            if not match or not (section_start <= match.start() < section_end):
+                continue
+            if item.get("replace_full_article"):
+                anchor_sequence = r'name=["\'][^"\']*(?:artigo-\d+|sadctart\d+)[^"\']*["\']'
+                next_anchor = re.search(anchor_sequence, raw_text[match.end() : section_end], re.IGNORECASE)
+                end = match.end() + next_anchor.start() if next_anchor else section_end
+                fragment = raw_text[match.start() : end]
+                text = official_converter.clean_text(BeautifulSoup(fragment, "html.parser").get_text(" ", strip=True))
+                article_match = re.search(r"(?i)\bArt\.?\s+[^ ]+.*", text)
+                if article_match:
+                    raw_overrides.append((label, official_converter.format_block(article_match.group(0))))
+                continue
+            paragraph_end = raw_text.find("</p>", match.end())
+            fragment = raw_text[match.start() : paragraph_end + 4 if paragraph_end >= 0 else match.end()]
+            text = official_converter.clean_text(BeautifulSoup(fragment, "html.parser").get_text(" ", strip=True))
+            article_match = re.search(r"(?i)\bArt\.?\s+[^ ]+.*", text)
+            if article_match:
+                fallback_items.append((match.start(), label, official_converter.format_block(article_match.group(0))))
+        fallback_items.sort(key=lambda item: item[0])
+        existing_labels = [item["label"] for item in article_tree("\n\n".join(blocks))]
+        for _, label, block in fallback_items:
+            if label.upper() in {value.upper() for value in existing_labels}:
+                continue
+            target_number = int(re.match(r"\d+", label).group(0)) if re.match(r"\d+", label) else 10**9
+            insert_at = len(blocks)
+            for index, current_block in enumerate(blocks):
+                current_articles = article_tree(current_block)
+                current_match = re.match(r"\d+", current_articles[0]["label"]) if current_articles else None
+                if current_match and int(current_match.group(0)) > target_number:
+                    insert_at = index
+                    break
+            blocks.insert(insert_at, block)
+            existing_labels.append(label)
+        for label, replacement in raw_overrides:
+            article_indices = [
+                index
+                for index, current_block in enumerate(blocks)
+                if any(article["label"].upper() == label.upper() for article in article_tree(current_block))
+            ]
+            if not article_indices:
+                target_number = int(re.match(r"\d+", label).group(0)) if re.match(r"\d+", label) else 10**9
+                insert_at = len(blocks)
+                for index, current_block in enumerate(blocks):
+                    current_articles = article_tree(current_block)
+                    current_match = re.match(r"\d+", current_articles[0]["label"]) if current_articles else None
+                    if current_match and int(current_match.group(0)) > target_number:
+                        insert_at = index
+                        break
+                blocks.insert(insert_at, replacement)
+                continue
+            start = article_indices[0]
+            end = len(blocks)
+            for index in range(start + 1, len(blocks)):
+                if article_tree(blocks[index]):
+                    end = index
+                    break
+            blocks[start:end] = [replacement]
     if not blocks:
         raise ValueError(f"official anchor section is empty: {anchor_name}")
     return "\n\n".join(blocks).rstrip() + "\n"
@@ -202,12 +440,18 @@ def snapshot_path(raw: str) -> Path:
     return ROOT / path
 
 
-def audit_document(path: Path, evidence: dict[str, Any] | None, rules: dict[str, Any]) -> dict[str, Any]:
+def audit_document(
+    path: Path,
+    evidence: dict[str, Any] | None,
+    rules: dict[str, Any],
+    resolutions: dict[str, dict[str, Any]] | None = None,
+    source_ranks: dict[str, int] | None = None,
+) -> dict[str, Any]:
     metadata, body = published_body(path)
     document_id = str(metadata.get("id") or "")
     anomalies: list[str] = []
     published_articles = article_tree(body)
-    published_norm = "\n\n".join(article["text"] for article in published_articles)
+    published_norm = "\n\n".join(normative_article_text(article["text"]) for article in published_articles)
     result: dict[str, Any] = {
         "document_id": document_id,
         "path": path.relative_to(ROOT).as_posix(),
@@ -222,7 +466,7 @@ def audit_document(path: Path, evidence: dict[str, Any] | None, rules: dict[str,
         result.update({"equivalence_status": "needs_source_evidence", "evidence_status": "missing_snapshot"})
         anomalies.append("official_snapshot_not_available_in_local_evidence")
         return result
-    attempt = evidence.get("attempts", [None])[0]
+    attempt, source_selection = select_attempt(evidence, resolutions or {}, source_ranks or {})
     if not attempt or not attempt.get("snapshot_file"):
         result.update({"equivalence_status": "needs_source_evidence", "evidence_status": "missing_snapshot"})
         anomalies.append("official_snapshot_not_available_in_local_evidence")
@@ -246,6 +490,8 @@ def audit_document(path: Path, evidence: dict[str, Any] | None, rules: dict[str,
                 source_path,
                 str(selector.get("anchor") or "adct"),
                 before=selector_type == "html_before_anchor",
+                fallback_anchors=selector.get("fallback_anchors") or [],
+                raw_article_anchor_pattern=selector.get("raw_article_anchor_pattern"),
             )
         else:
             converted = official_converter.convert(source_path, "auto")
@@ -255,8 +501,8 @@ def audit_document(path: Path, evidence: dict[str, Any] | None, rules: dict[str,
         return result
     source_selected, selector = canonical_source_body(converted, document_id, rules)
     source_articles = article_tree(source_selected)
-    source_norm = normalize_text(source_selected)
-    published_norm = normalize_text(published_norm)
+    source_norm = normalize_text("\n\n".join(normative_article_text(article["text"]) for article in source_articles))
+    published_norm = normalize_text("\n\n".join(normative_article_text(article["text"]) for article in published_articles))
     labels_match = [a["label"] for a in source_articles] == [a["label"] for a in published_articles]
     # ``ratio`` is quadratic on large codes. ``quick_ratio`` is a deterministic
     # linear-time upper bound suitable for a release gate; exact hashes remain
@@ -275,6 +521,7 @@ def audit_document(path: Path, evidence: dict[str, Any] | None, rules: dict[str,
         "source_snapshot_date": evidence.get("data_corte") or evidence.get("generated_at"),
         "source_url": attempt.get("final_url") or attempt.get("url"),
         "source_snapshot_file_private": True,
+        "source_selection": source_selection,
         "sha256_source_raw": hashlib.sha256(raw).hexdigest(),
         "sha256_source_normalized": sha256_text(normalize_text(converted)),
         "sha256_source_body": source_hash,
@@ -303,6 +550,8 @@ def main() -> int:
     report_paths = args.reports or list(DEFAULT_REPORTS)
     evidence = load_reports(report_paths)
     rules = load_unit_rules()
+    resolutions = load_source_resolutions()
+    source_ranks = load_source_ranks()
     documents = [p for p in sorted(CURATED.rglob("*.md")) if p.name.lower() != "readme.md"]
     audited = []
     for path in documents:
@@ -316,7 +565,7 @@ def main() -> int:
                 item_evidence = evidence.get(f"__url__:{str(source).rstrip('/')}" )
                 if item_evidence:
                     break
-        audited.append(audit_document(path, item_evidence, rules))
+        audited.append(audit_document(path, item_evidence, rules, resolutions, source_ranks))
     counts: dict[str, int] = {}
     for item in audited:
         key = str(item.get("equivalence_status"))

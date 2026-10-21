@@ -1,4 +1,4 @@
-"""Attach the v2 fidelity and explicit-nullability contract to corpus files."""
+"""Attach the current fidelity and explicit-nullability contract to corpus files."""
 
 from __future__ import annotations
 
@@ -42,16 +42,16 @@ def apply_contract(audit_path: Path, *, write: bool) -> dict[str, int]:
             if metadata.get("consolidacao_status") in {"consolidada_fonte_oficial", "consolidada_reconciliada"}
             else "texto_original"
         )
-        metadata["canonicalization_version"] = item.get("canonicalization_version", "norm-v2")
+        metadata["canonicalization_version"] = item.get("canonicalization_version", "norm-v3")
         metadata["source_unit_id"] = item.get("source_unit_id", str(metadata.get("id")))
         metadata["source_unit_selector"] = item.get("selector_applied") or item.get("source_unit_selector") or {"selector_type": "full_official_document", "selector": None}
         metadata["fidelity_status"] = item.get("equivalence_status", "needs_source_evidence")
         metadata["fidelity_anomalies"] = item.get("anomalies", [])
         metadata["hash_scope"] = {
             "sha256_source_raw": "official_snapshot_bytes",
-            "sha256_source_normalized": "selected_source_text_norm_v2",
-            "sha256_source_body": "selected_normative_body_norm_v2",
-            "sha256_published_body": "published_normative_body_norm_v2",
+            "sha256_source_normalized": "selected_source_text_norm_v3",
+            "sha256_source_body": "selected_normative_body_norm_v3",
+            "sha256_published_body": "published_normative_body_norm_v3",
         }
         for key in ("sha256_source_raw", "sha256_source_normalized", "sha256_source_body", "sha256_published_body"):
             if item.get(key):

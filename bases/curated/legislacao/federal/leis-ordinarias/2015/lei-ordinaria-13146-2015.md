@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13146-2015"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "0fa6dd1ca3cec7065453fb85b787d225168167c02f23efc506647d0183ca59e5"
 sha256_source_normalized: "86de354d86e3136d2691f0d728c25df1be36948b19fc64a92e9caf8de3e25ab4"
-sha256_source_body: "43aa591071cdb7ffe650941bca7b8c2552caedb14b33cddf8e0f3324639495ca"
-sha256_published_body: "43aa591071cdb7ffe650941bca7b8c2552caedb14b33cddf8e0f3324639495ca"
+sha256_source_body: "9fb6969f2f9eab622bc1441271503915e121916f5a626a1e8bc2f461937f03f0"
+sha256_published_body: "9fb6969f2f9eab622bc1441271503915e121916f5a626a1e8bc2f461937f03f0"
 source_snapshot_date: "2026-10-21"
 ---
 # Estatuto da Pessoa com Deficiencia

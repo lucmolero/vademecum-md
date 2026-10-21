@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10637-2002"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "8b3ccac420436c491d89df580991c859584987f0fbd9dff744bc2a381b3d3d55"
 sha256_source_normalized: "762c29e16c19f8c1ee57bf91eb05530bf1e0050b0b8fab59639fd9ae70e54c20"
-sha256_source_body: "72b9ced685bb493915eb41f36f9fb2d0dd210e1b40359078628a97107d5905b7"
-sha256_published_body: "c4877aba69d38978513188d2bc37c4601f0df333a12571a308415711d478fa9a"
+sha256_source_body: "af4d0602c1284138156fc87f3ea5f33fc24d2374816fdf06937bb503e69b2e08"
+sha256_published_body: "e4dab8fdff2265f0a3c45a72091d88604ab05dd1d6e11c9f36763dcca3964483"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.637 de 30/12/2002

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10446-2002"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "8f75657cdb94096d56e9c7b7b5d166656f888b92b86c3f2df2c1eea08b86eabe"
 sha256_source_normalized: "8d88c7a915d673a39c99f9eb49b92f5c161f85add5f1bb7008f1962e41ef27af"
-sha256_source_body: "a50b415745c0420aebb531f48cb9934715b2ecfea96635ac359f85eabaf22f81"
-sha256_published_body: "7de904b8d7286cb9268103a8c817ac61aef13275e11ebb250c103c7b5da49288"
+sha256_source_body: "ce0e4b49a1e7980565152decf59ac688fe3aca290d38a84091ac5a495e1add03"
+sha256_published_body: "ce77f3ae87f3d752016988b44bb53f346fbb6d442bc2edf890c10a6bfc8c2d03"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.446 de 08/05/2002

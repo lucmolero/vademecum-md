@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9447-1997"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "d5ac5b89d3745d37aa3bdf0cd951b360d05832c60931170374c4c601baefde29"
 sha256_source_normalized: "fe93cd01e7803e212a8b62347f4e4e63c3d49401cfe1ee6bfacc7415acf3a368"
-sha256_source_body: "05663a15c9d3cca81c4241ce64858739dfe68f5aa89eaac44bb030e364831ca5"
-sha256_published_body: "fd36f82dfe2e92328457ffc46b29e59a2baacf7d8d668edb02182dfcae423236"
+sha256_source_body: "179bf1d08e426f0506ab0f2dd62463b9d023339d57ba3945cacbba54713acace"
+sha256_published_body: "ef30b347c496edc6a5a3c742f675d5600a22e21206e842723b47a9b347d5bf4f"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.447 de 14/03/1997

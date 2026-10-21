@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-58-1937"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "86060f863ee0f1a2223918acd06e49c155012a4faf5739b0f504d46cb7524bdb"
-sha256_source_normalized: "f23ddb1698d3a2eb2e90ed3eea7f946a9ca4032921603416871065855813630c"
-sha256_source_body: "1c60ceda42b92fa0ab06b7ce42df9384b65f064677178829a29f802860fb196f"
-sha256_published_body: "1c60ceda42b92fa0ab06b7ce42df9384b65f064677178829a29f802860fb196f"
+sha256_source_normalized: "4b1364694fbd4bc78a8333dc75a2922935d460e8557512ee97a07795beffe3a4"
+sha256_source_body: "8581fd300030b66dbda0bcf94407c142137cbf29fc29f61721d192290957226e"
+sha256_published_body: "78a7bc2082367b45c18d4d289d6890e1b9cf1b994df0a813a0beccefe427eb95"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 58 de 10/12/1937

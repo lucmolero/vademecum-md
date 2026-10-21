@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14478-2022"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "d90220af084395c2dbbb14ef9bd058851ed87595a7e1451df71a2a66a304753f"
 sha256_source_normalized: "81709a0d48a492fc25d6c357086e95c4565dfa32db2e2976447a0c0b0c346ad5"
-sha256_source_body: "842dfaadfed0abedd74b8bb066ec723b86ba68282e06c3ed6bf7c86f2c96202f"
-sha256_published_body: "842dfaadfed0abedd74b8bb066ec723b86ba68282e06c3ed6bf7c86f2c96202f"
+sha256_source_body: "aee6ce45183b4514de7e26c5047656a5273dc9b8008972185ae66f33656ac8a9"
+sha256_published_body: "aee6ce45183b4514de7e26c5047656a5273dc9b8008972185ae66f33656ac8a9"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.478 de 21/12/2022

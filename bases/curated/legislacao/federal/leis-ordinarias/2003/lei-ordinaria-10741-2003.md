@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10741-2003"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "c6078c4f84e29156fc6bd3a84d8b22b1a6b4ec86217fa9cec07f0b3627496349"
 sha256_source_normalized: "8205e1e01d020c1094220cba9444728d4eea64d960fea4ad189a9bb995fe3432"
-sha256_source_body: "8d9654f974667dca0a8133e0c41f756d916bfef30635d14f4d075b01a7d06547"
-sha256_published_body: "c35b61c9f864af8c747cf0fec0951e99fb9c94ad6a9478c70926fd18f656c1e6"
+sha256_source_body: "ad9b3c741974a3349c565d8f7597cbd6e54b41e7a2d802e3c36becaaf7692273"
+sha256_published_body: "693e24475ba477f76ee5e9d2b874f5cfaac6a7fbe3267a10f3017c3986bfe739"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.741 de 01/10/2003

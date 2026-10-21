@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12984-2014"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "ce3c52a163645aaf3638b5abfe69066db52fc7d43c9a2d9ac079a7dabaf5dbcf"
 sha256_source_normalized: "c33a89395691ebefba7b3c97a202003134a9be923932a7df99c3b25bf4ee1be4"
-sha256_source_body: "71a594f2380e3bed45d9a3a688ea198ef3a5fb7c8b25d395f052dd3a7bb6c05f"
-sha256_published_body: "71a594f2380e3bed45d9a3a688ea198ef3a5fb7c8b25d395f052dd3a7bb6c05f"
+sha256_source_body: "f039271e2bd07a4447352d59059e53b8c3c317ec102981bbe38227f8b09ee23f"
+sha256_published_body: "f039271e2bd07a4447352d59059e53b8c3c317ec102981bbe38227f8b09ee23f"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.984 de 02/06/2014

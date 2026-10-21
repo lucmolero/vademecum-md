@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10406-2002"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "e819a6cfbcde4213d6bb58b7ed77a7edee3e3310ff800f7d70433877054ac2e6"
-sha256_source_normalized: "f8b5b001990e438e8959c31ba06b7b6a7046bc28f98d60363c9f181b29cec674"
-sha256_source_body: "48ec1f278d3ef6a4a69d25edae911d5dbdcbde2b41a600938b3694667b46b41c"
-sha256_published_body: "48ec1f278d3ef6a4a69d25edae911d5dbdcbde2b41a600938b3694667b46b41c"
+sha256_source_normalized: "d6e1ad22c7d5c749889283d0ddc69c6a0e922803cca62f5e61b5659038b13bcf"
+sha256_source_body: "3373c2aeeb827a8f469d5d5dc11d44d37ca3f7ab6dfaed513312069d6120a5d3"
+sha256_published_body: "057525576b4dd5bc09503cd2030fa5d09ffa0c43f83e28b4e9796fc698d08f89"
 source_snapshot_date: "2026-10-21"
 ---
 # Codigo Civil

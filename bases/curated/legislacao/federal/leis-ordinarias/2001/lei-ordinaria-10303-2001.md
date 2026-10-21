@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10303-2001"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "9840fae190cbecec434163d6f826513a64d0678ef0fdd48eab9a7521150b233d"
 sha256_source_normalized: "b260de81ccabde32173df89bcaca2e210a9e9ae9aad0de1a39031e2ee3830431"
-sha256_source_body: "94cd16e63cf856115b67d4014e355a20bf4bfec81d0f3cf581def5c3ea03a3a5"
-sha256_published_body: "94cd16e63cf856115b67d4014e355a20bf4bfec81d0f3cf581def5c3ea03a3a5"
+sha256_source_body: "f3eb9149b2c1b57e4a2048d74398dd3000fbd351f354030e55e7ba3148a115c4"
+sha256_published_body: "f3eb9149b2c1b57e4a2048d74398dd3000fbd351f354030e55e7ba3148a115c4"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.303 de 31/10/2001

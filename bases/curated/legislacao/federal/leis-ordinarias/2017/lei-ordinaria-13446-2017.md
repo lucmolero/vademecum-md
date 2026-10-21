@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13446-2017"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "1f42d66337a5184dc9d3f64bd7bc972bf4f4f22c284b3280b786cca5c29a00a6"
 sha256_source_normalized: "202adff35b87c5a13c7cb3906c950f37c9b71cefa943072223908243d620372a"
-sha256_source_body: "2e7e081c0510ee149d976436dce7246009165682db871e4c9c423c8bf751aa68"
-sha256_published_body: "2e7e081c0510ee149d976436dce7246009165682db871e4c9c423c8bf751aa68"
+sha256_source_body: "16b96e2120f4dd0b43e934a2c8a62de50ca95d1586040ebd8e4e95151c036093"
+sha256_published_body: "16b96e2120f4dd0b43e934a2c8a62de50ca95d1586040ebd8e4e95151c036093"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.446 de 25/05/2017

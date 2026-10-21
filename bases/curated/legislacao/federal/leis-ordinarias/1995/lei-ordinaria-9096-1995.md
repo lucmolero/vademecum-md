@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9096-1995"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
-fidelity_status: "review"
-fidelity_anomalies: ["article_tree_mismatch"]
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "a30e47fa0c1071b8c2164061ca77cd5c975624faa3d1862f274672f552703a08"
-sha256_source_normalized: "faa7a2def85c7758aed6810a196ecf03f1cf5189e81d27045f94c1a9fcec2917"
-sha256_source_body: "5e9e581ae96b72e01c70693117e1017e45b11057577b9deac931a243f1956551"
-sha256_published_body: "14c557b13f710a40bd98ae007be36c265828f4db222249fae75cf50d0fb32bdf"
+sha256_source_normalized: "7440c3de56e86723b4da0e5cceada79194fa2d6a29b83b954f4351e3242a8644"
+sha256_source_body: "6d378f2da02cd8a12f3c0441683bb675d086e60318c47e6318082640fe6a8c6e"
+sha256_published_body: "f9512f0e83dfc782c3d8e17f5d54435f2fee175d60c970f9cda513950088b174"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.096 de 19/09/1995

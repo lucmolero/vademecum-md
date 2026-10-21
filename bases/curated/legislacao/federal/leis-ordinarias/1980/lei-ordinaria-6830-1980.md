@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-6830-1980"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "7f422efdf885506f9fe034cea39e73a5b61c308ca5bfb8f8ad2377203bbb53fa"
 sha256_source_normalized: "71e21c25ad3e3b507bf6811a951eb84ae9982c0d41a283ff71f237f41dc673b0"
-sha256_source_body: "a7518e085ac63dd65decf2f7ed61dd23f60fa148ce065ec5badea5fb7db4fa93"
-sha256_published_body: "7f068d20cec29569ca32e4f01da45e4997712cc6603965d344e950730cd215e1"
+sha256_source_body: "b9e95d3d74e2b22c05243f7722a7c4374f5420714884fb2075bd48b7524ad5fc"
+sha256_published_body: "94ecd4c5c93f35a5db47fba6c1bf9c1463ccb5483ba9d5d7d0715ef69a096b35"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.830 de 22/09/1980

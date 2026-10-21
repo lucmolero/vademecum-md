@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10188-2001"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "858727f36fdd1338a7fedc2aac73c420a1f192768176fbcfb19be16c4ad5dc24"
 sha256_source_normalized: "521f71ba7f64a038511a84a39d94ffd7800b246a17e5e293c9c24ba781ac6e49"
-sha256_source_body: "3cacefd43f34b29b6d98a6214a535cc4773221aff1beb9328cea8ce804b5b919"
-sha256_published_body: "84058b121289b95ec2def1c59979a7f1943c94ea5c1f1536d4d1ae56b9ba1d7f"
+sha256_source_body: "1e941bf1a0246cea00f38107488851aeb0011068f41dc85054d162e3f3ce74a8"
+sha256_published_body: "28c6bf4785a7e3e076b5701141577f01846992353cffa1d136393a56ddf80c45"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.188 de 12/02/2001

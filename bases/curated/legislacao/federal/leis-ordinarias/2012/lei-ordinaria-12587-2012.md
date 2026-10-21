@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12587-2012"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "7171e0d4504002517e484da9a3aabf33523bf9d1103ab024a268d8d6f10cec64"
 sha256_source_normalized: "b7bdcb09898a7496b7cd98ab98e3583d4297190a7a9cac8bc33b78aefd658ba8"
-sha256_source_body: "b05f1977fb98dfd1b8e1da86c0055580907ede321b27223bc698fadc0c50eb9b"
-sha256_published_body: "ba48bb1328f56eadc4d8dceb1c49a2cac4ae55621318399a1186b2587793b5c8"
+sha256_source_body: "b9d240212c0858daee3a3cf8d83f361493104f1edcdcf28a48703766ce466428"
+sha256_published_body: "7709d883f44897911744ec4e73344e4da4267e222deadc736410afc86cf0427e"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.587 de 03/01/2012

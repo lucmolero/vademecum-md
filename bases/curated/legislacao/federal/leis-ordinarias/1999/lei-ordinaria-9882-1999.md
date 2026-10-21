@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9882-1999"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "5182c118e7a037990c3b724b1730221c4c1cf651cde94e476cbcfa6ffb72dec6"
 sha256_source_normalized: "160459efa2f7c4ba25aa631b36b39d71a42d1eab94dcf7507709a80cec215dc5"
-sha256_source_body: "0ed95782099a776db040e2cef2d883a09a97d9835aaa817826c4ddb531bb464c"
-sha256_published_body: "0ed95782099a776db040e2cef2d883a09a97d9835aaa817826c4ddb531bb464c"
+sha256_source_body: "47031e6ecb4636b1f1c95ae1ecd79449ac6f52b9cb4e6306b6c4b0c241b19377"
+sha256_published_body: "47031e6ecb4636b1f1c95ae1ecd79449ac6f52b9cb4e6306b6c4b0c241b19377"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.882 de 03/12/1999

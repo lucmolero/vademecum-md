@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-224-2025"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0"
 sha256_source_normalized: "bf15d9e6af9b3b21e47fa4b25826c6a7104c0f9afba9b62a675d85f101dd9a2a"
-sha256_source_body: "9639dedf841845b9f8689c347bb50ef94a3a46deb33ffe386f1fdf0f8993fb4c"
-sha256_published_body: "9639dedf841845b9f8689c347bb50ef94a3a46deb33ffe386f1fdf0f8993fb4c"
+sha256_source_body: "3333abf6a7fa06a183dad43a9b3523e5453a3db5e6f23e7b319c20463c531329"
+sha256_published_body: "3333abf6a7fa06a183dad43a9b3523e5453a3db5e6f23e7b319c20463c531329"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 224 de 26/12/2025

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13060-2014"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "5c6e906ae741790cd9c6ca97ad2ef7bcff25e2b7879b0f1d75b817cc331ccac8"
 sha256_source_normalized: "8bcee8af74eec6c6b97391f742fdb32edb684904e426988b380595fc2f2200eb"
-sha256_source_body: "e716c8f0a2a8eecc68763281b049a32d52cf318b8def74782fa7d7616630c93d"
-sha256_published_body: "e716c8f0a2a8eecc68763281b049a32d52cf318b8def74782fa7d7616630c93d"
+sha256_source_body: "fbdaaa1b40c412acce5e22c8123b4a59611e27bcbb4a7022e318abb85016eb42"
+sha256_published_body: "fbdaaa1b40c412acce5e22c8123b4a59611e27bcbb4a7022e318abb85016eb42"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.060 de 22/12/2014

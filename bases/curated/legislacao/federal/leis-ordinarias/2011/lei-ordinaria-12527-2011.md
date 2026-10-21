@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12527-2011"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "86c1a679d6e37456d1e1f7757901b7fad41b74e67b8b03fa6a0e060baf37c890"
 sha256_source_normalized: "537dff1b9122d3b73bf437b0cc8858d53a36dac6e3b27f66615799e4f02e8025"
-sha256_source_body: "36b35af2c9b839dbecfbbce51809278beb6844dcf97453b0f48b57785ef43b63"
-sha256_published_body: "9ce4e7993559e7d680051f0e1890a926a066673fddf9c53f463674951b907d3a"
+sha256_source_body: "bf23a894bf0420699b75360f09443379cee450f2b8e7e5051c8dd4bb2cd059aa"
+sha256_published_body: "b3c9e65d8f8735537154d39633cc97e4174a445b08cfb05b556b186fe8f1e013"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.527 de 18/11/2011

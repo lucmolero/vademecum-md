@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10684-2003"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "80215588cffb9b7b10fa07fee63a72e257f8ff9491f506e7927a485592af32c4"
 sha256_source_normalized: "ee32eb8cd94185bd9a581b2aceae876145ccf64d79fca1c330b7871f0872bc55"
-sha256_source_body: "8730ffaf334bb5b3808d0de405687bd3bac0ce293160cb5a1651b8c2eb186609"
-sha256_published_body: "c1d9143f796b7f7b733e9f69cd00f5b8b074ae831d6d34b2b12cf852b12c447e"
+sha256_source_body: "d2ce59ee69347c37d287e88b535147905754c35d6682edb6b2a8b4d025e776e2"
+sha256_published_body: "17ee67f1032b07f99e1816856a8aadb2df81bc8156b2d2e8a9ebe7aa6aefb496"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.684 de 30/05/2003

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12037-2009"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "dbf216808efa8c796d824a8b8db3ed53bb141f97b73e3be89a735f470e01b701"
-sha256_source_normalized: "13c6a8102b06215da90fa543a479efa7b88cc567cca3a46f044687a72c6ab80f"
-sha256_source_body: "02ed17a402046deb42789791e92ef1d5ee2538da3856b174937158fc7e992890"
-sha256_published_body: "02ed17a402046deb42789791e92ef1d5ee2538da3856b174937158fc7e992890"
+sha256_source_normalized: "40224270d3b5d51b5e5bec247c96cf4afa221ac4345c486a42e5cbdb5306c947"
+sha256_source_body: "81b3de6f7d699232585f85c17b6589ce77270487a3d02491940cdfcac022e56f"
+sha256_published_body: "81b3de6f7d699232585f85c17b6589ce77270487a3d02491940cdfcac022e56f"
 ---
 # Lei nº 12.037, de 1º de outubro de 2009
 

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12879-2013"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "eebb95c51da6488008b74e133d6760c24700c905af055f1daf4b949088d0e155"
 sha256_source_normalized: "d7f7becc51230a33d240bed293c7c578fa823690bff32ae2a999824f3aa54830"
-sha256_source_body: "9fedde9645f03e7722f93110eb829f76647f8cd636c4d366a146deeadf22e5f2"
-sha256_published_body: "9fedde9645f03e7722f93110eb829f76647f8cd636c4d366a146deeadf22e5f2"
+sha256_source_body: "ece4fd1b40a79c947db6d357fa08d4038e41e6b8a8da7d3cc127d7f6483c6e64"
+sha256_published_body: "ece4fd1b40a79c947db6d357fa08d4038e41e6b8a8da7d3cc127d7f6483c6e64"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.879 de 05/11/2013

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-24-1975"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "82e712eb7c5b3d4fe9127894eb52ee1a609891e9ab74141a4e146f4d940f88b6"
 sha256_source_normalized: "617a53d6f9cbba415fb19dcbefd5776b435d6f1a5358e6158de5584d276e7179"
-sha256_source_body: "aef89d9c3cdebe8af75743451467883d72ce2aafc95c725f565a555f832dda31"
-sha256_published_body: "aef89d9c3cdebe8af75743451467883d72ce2aafc95c725f565a555f832dda31"
+sha256_source_body: "23360bd87bf3ccb6259d4612b6dc90d451e7193669c9f981646c34f0175f4e2d"
+sha256_published_body: "23360bd87bf3ccb6259d4612b6dc90d451e7193669c9f981646c34f0175f4e2d"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 24 de 07/01/1975

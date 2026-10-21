@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-8971-1994"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "14b93b30ea63d477820e2f0591450e828c3dc11a4659c2d87996b46a2c60744d"
-sha256_source_normalized: "0e9b5681e0d49a5e4578051f5139be6798f7e1ca69f67b236ba2ae0971b5c43c"
-sha256_source_body: "5010c2d3b2006e806ff834e8d8b03ed2ee43171d73c7693f10fa234657936927"
-sha256_published_body: "5010c2d3b2006e806ff834e8d8b03ed2ee43171d73c7693f10fa234657936927"
+sha256_source_normalized: "d09929d402b7befd05466776ee58f13bca0dfb9bb7a07cbc5104e28ed748b718"
+sha256_source_body: "69fda316b9bd65140aea3a620243c371e104f7144095d3cbcfc900919d21bdf1"
+sha256_published_body: "69fda316b9bd65140aea3a620243c371e104f7144095d3cbcfc900919d21bdf1"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.971 de 29/12/1994

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-7783-1989"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "844246f2e22613d15eaa135856b75dc48a7e03495da8e73edcce692d0d31e1a4"
 sha256_source_normalized: "8f5fca4282a734d5b89697c1dc955d79414640999c7bfac91ecf2de60446af41"
-sha256_source_body: "c9e66dfd1df2cf6beed95291c2ca51b2bebaad8f25da16e6ccd465fbda7eb5f7"
-sha256_published_body: "fa13d6554c110e8ab92e68c8cb7e2b6d079a8495f789111a3f9165d12f6c8224"
+sha256_source_body: "0a5d5a8602fe960e738ad2c7267ca613623c0a76650d2c8af551f43c00420f7c"
+sha256_published_body: "22a5780c8d9bbbde27f6cb36e8f8fd639aeef710efc890115d26bd9b391e4586"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.783 de 28/06/1989

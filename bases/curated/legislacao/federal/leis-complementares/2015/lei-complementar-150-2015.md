@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-150-2015"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "d2ea9d3301c29688bfefe490e88ff3cefaeac147848fa65755ce9a2e92e90aeb"
 sha256_source_normalized: "7ab0feeaed209983b2ce24f2d4fcaa29d9025090a6767d618ec3eb7b1a0afcb0"
-sha256_source_body: "313fe9e0ef4fd2e95bdbb5f428c259c9c5fca77a07e158012954297e59a7fbc4"
-sha256_published_body: "78f9477a4c1c16daff236a829a663bd1e848d257cd7145350c1e9cec8b2ecaf4"
+sha256_source_body: "c9bbaa9e729a1bd983ed7fdf26e1905e6a6c5df462feb7cfe1e3b902072de87c"
+sha256_published_body: "245300a54300f9be710ea64a76f566b14427bc169859354774183b41b9f78fdf"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 150 de 01/06/2015

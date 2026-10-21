@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13019-2014"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
-fidelity_status: "review"
-fidelity_anomalies: ["article_tree_mismatch"]
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "96d6fadebc60cace4971ef32078b9a9f842d57ca56357a6ff569ce26f786b436"
 sha256_source_normalized: "7a714c817adeb78cf378978daf87fe42a98c72dbe38c00cf7c016b8417089f9e"
-sha256_source_body: "b629cae665218438bf9e0404f54efcae6a10339a660ae5eb28b76e43009aa8b6"
-sha256_published_body: "cb0028ff68d1e109a9d65d7cc92c5e324e59be747605c1ac31017cff8b68cc88"
+sha256_source_body: "890a6e680042a09c2435875fbe1ac05622ed36d78430bfb0b8fdf4d6ae484ecc"
+sha256_published_body: "1c9af98c6f70db08d3abbd6ce5dcf58ff2313fbdf9d80672fb17612409804525"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.019 de 31/07/2014

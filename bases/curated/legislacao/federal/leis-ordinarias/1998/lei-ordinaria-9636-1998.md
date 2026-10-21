@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9636-1998"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "2b7b1e93abb058095a697f924168017aa3a3386546a4e2b203671f0a44ecbc29"
-sha256_source_normalized: "69490a6f3ad9c8a02abedafdf87ffa24b50cd7f453b545673cb721b91bbd540f"
-sha256_source_body: "e964bf6ca3059127388c61e119f771156c61acf236385f0942b578139ec9c3fc"
-sha256_published_body: "599690c27d1935f9e26489c997a75b1a4a713c2175070de1f8dc65b52ce2ef39"
+sha256_source_normalized: "733bfd9312ac7031adcd45972e95dd0d2dc2be294217b269ca20265e51cecf52"
+sha256_source_body: "9a35c910f628eead005389a900be6e38ea68a60f7209fcb0218850c9c63e11ad"
+sha256_published_body: "ce5e7759e96224010556d9aa91fa4d534283738e080cd8dd5d15f204968e2ada"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.636 de 15/05/1998

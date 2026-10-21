@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-11419-2006"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "cac111ba2db68088242456cabb168b9d8c6bc3a729aa2d6387f96c3dbd914bc2"
 sha256_source_normalized: "8c0f9f15f861e370f8ec1f221b945b9f2b226a0cfcdc9abb857e3a098ddcce17"
-sha256_source_body: "8049b803a51412fc99f5f55023f1f0cb3ba0b16a98ede7f58cca3dcd7d2c14db"
-sha256_published_body: "2024e49dae85a9edd22df7e436e1d13a5748beccf18afbff81ebd20c989a90d6"
+sha256_source_body: "d84b96b985c373ccc9452059f3142e9b02e2f5df5b615f0c318364a8ab960448"
+sha256_published_body: "38f51f21394eb733b19652ad27a0f7575841844cc33790a0df2f62cf01f4ff29"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.419 de 19/12/2006

@@ -211,6 +211,40 @@ def validate_fidelity_contract(errors: list[str], corpus_ids: set[str]) -> None:
             errors.append(f"fidelidade normativa ainda requer revisão: {identifier}")
 
 
+def validate_legal_consensus(errors: list[str], corpus_ids: set[str]) -> None:
+    path = ROOT / "manifests/legal-consensus.json"
+    if not path.is_file():
+        errors.append("ledger de consenso juridico autonomo ausente")
+        return
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        errors.append(f"ledger de consenso juridico invalido: {error}")
+        return
+    if payload.get("schema") != "legal-curation-consensus/v1":
+        errors.append("schema do consenso juridico invalido")
+    if payload.get("decision_authority") != AUTONOMOUS_AGENT:
+        errors.append("consenso juridico sem autoridade autonoma")
+    items = payload.get("documents") or []
+    by_id = {str(item.get("document_id")): item for item in items if isinstance(item, dict)}
+    if set(by_id) != corpus_ids:
+        errors.append("ledger de consenso juridico nao cobre exatamente o corpus")
+    for identifier in sorted(corpus_ids):
+        item = by_id.get(identifier)
+        if not item:
+            continue
+        if item.get("consensus") is not True or item.get("decision") != "promote":
+            errors.append(f"consenso juridico sem promocao autonoma: {identifier}")
+        if not item.get("official_evidence"):
+            errors.append(f"consenso juridico sem evidencia oficial: {identifier}")
+        for role in ("legal_curator", "legal_critic"):
+            pass_data = item.get(role) or {}
+            if pass_data.get("status") != "complete" or pass_data.get("decision") != "promote":
+                errors.append(f"consenso juridico incompleto: {identifier}/{role}")
+            if pass_data.get("must_not_invent_text") is not True:
+                errors.append(f"consenso juridico permite invencao textual: {identifier}/{role}")
+
+
 def validate_version_consistency(errors: list[str]) -> None:
     """Ensure package, release and citation metadata use one product version."""
     pyproject_path = ROOT / "pyproject.toml"
@@ -366,7 +400,7 @@ def main() -> int:
             hash_value = str(metadata.get(hash_field) or "")
             if not re.fullmatch(r"[0-9a-f]{64}", hash_value):
                 errors.append(f"{path}: {hash_field} invalid")
-        if metadata.get("canonicalization_version") != "norm-v2":
+        if metadata.get("canonicalization_version") != "norm-v3":
             errors.append(f"{path}: invalid normalization version")
         if not metadata.get("source_unit_id") or not isinstance(metadata.get("source_unit_selector"), dict):
             errors.append(f"{path}: source unit missing or invalid")
@@ -480,6 +514,7 @@ def main() -> int:
     validate_editorial_legal_audit(errors, corpus_ids)
     fidelity_error_start = len(errors)
     validate_fidelity_contract(errors, corpus_ids)
+    validate_legal_consensus(errors, corpus_ids)
     if args.stabilization:
         errors[fidelity_error_start:] = [
             error for error in errors[fidelity_error_start:]

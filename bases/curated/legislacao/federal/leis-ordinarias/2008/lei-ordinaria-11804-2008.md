@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-11804-2008"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "2766121ff29e7846b592fcf714705a3dd0ba46c206dcff4f99234285023bead3"
 sha256_source_normalized: "6a0966f73efe84fe857db3b39a5f0a5c5030515bbed5396d88dabf4878e7dbf8"
-sha256_source_body: "f95e9f5fa7ebbf0ba40dc533c7dfa4e98f3b7ca61bd62d390b2edb9941bd333b"
-sha256_published_body: "f95e9f5fa7ebbf0ba40dc533c7dfa4e98f3b7ca61bd62d390b2edb9941bd333b"
+sha256_source_body: "f4815b6a8886bd7c7ed42c48bd48aeec2aec3ada7bdebb275d6e6b234312403a"
+sha256_published_body: "f4815b6a8886bd7c7ed42c48bd48aeec2aec3ada7bdebb275d6e6b234312403a"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.804 de 05/11/2008

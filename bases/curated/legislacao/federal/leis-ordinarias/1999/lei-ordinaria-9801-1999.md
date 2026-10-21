@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9801-1999"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "eef4fc88ba59be63bfd4911de2ba1d4bf6985273537d78e40a31dabe15625c82"
 sha256_source_normalized: "f67d4055fe70ab2fcdc2e42f92077ecce96fdb39d4e73efbbeacefb8625f68b2"
-sha256_source_body: "875a51be76c62aae55a04a971cff109589b74d5d77556116ab1bb60344e366ba"
-sha256_published_body: "875a51be76c62aae55a04a971cff109589b74d5d77556116ab1bb60344e366ba"
+sha256_source_body: "f7681e7c87e280a92f85633ee808252fa3a3a1bbaab6700bfc02f9ff3eac9890"
+sha256_published_body: "f7681e7c87e280a92f85633ee808252fa3a3a1bbaab6700bfc02f9ff3eac9890"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.801 de 14/06/1999

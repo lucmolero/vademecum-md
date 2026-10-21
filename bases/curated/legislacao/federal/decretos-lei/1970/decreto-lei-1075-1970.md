@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-1075-1970"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "c7f70446250e26502a0b088a16e3a1ef6c6169ca8b7b75a9ad27d3f718557f65"
-sha256_source_normalized: "235f9cb3645ac26568168212ed1fc233dc25879fa57efc987b1b274419f34771"
-sha256_source_body: "0f28877e733bcdfe579e9ea805997e8dca1727a88bf1cb424b5ddad898d9c219"
-sha256_published_body: "0f28877e733bcdfe579e9ea805997e8dca1727a88bf1cb424b5ddad898d9c219"
+sha256_source_normalized: "a8ced8e3e4f4ddb1ab20bfb2fd3c9762f1cbadf64862c61ff9d27b75b866eff6"
+sha256_source_body: "60758d6f56ac27da16a8c53cde5451ae8dc1fd9342afe73d56c77ca9a9ac88bb"
+sha256_published_body: "60758d6f56ac27da16a8c53cde5451ae8dc1fd9342afe73d56c77ca9a9ac88bb"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 1.075 de 22/01/1970

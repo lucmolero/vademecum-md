@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9503-1997"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "56c01cacd7a6ea46d242b31ba7c672d70efa09339220727f6fe063ff458b1df5"
-sha256_source_normalized: "e0b9eb8b9daebc2d966a745136304474d70b52b449d09453af8704b35d8e7ddb"
-sha256_source_body: "4fb073e0a429d65d4191c7ea82b87c868a4812ef13ac6a8f14102f5c79b0af15"
-sha256_published_body: "24ad47236eb4bfaacf9bb14660c61126ccfa503bee69446d801cf2438147faf1"
+sha256_source_normalized: "1fcb0446ce54aaeb4053615fc0ea2d51d934eee224cfeac362f8696739e4c31e"
+sha256_source_body: "641ead59b01590af487466727471b6bfec94d6c93d9e67020b4dab9b58894ff3"
+sha256_published_body: "0b330c7a22a8b04bac4020074e63e814566823bfc4c8ef28f1b61eec27fc82f4"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.503 de 23/09/1997

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-146-2014"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "bfbb836852a88b1ef103c7323980613a0b8f375eb1ca72b75f101b501de1f1a4"
 sha256_source_normalized: "0347b49e7ab845e734865bdb6808b4ae6a433f97c56dcbfae8f3b2d1adb95e0a"
-sha256_source_body: "31f9f2ca55ce36e679d0b6c1d7f08d540413dffeca48d03bc4c75a4e87a23922"
-sha256_published_body: "31f9f2ca55ce36e679d0b6c1d7f08d540413dffeca48d03bc4c75a4e87a23922"
+sha256_source_body: "ff762e45868b5da743870bf06633201d63237ccaf3ffe6d040a8d23fb1d04e8a"
+sha256_published_body: "ff762e45868b5da743870bf06633201d63237ccaf3ffe6d040a8d23fb1d04e8a"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 146 de 25/06/2014

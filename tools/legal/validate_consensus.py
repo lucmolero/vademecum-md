@@ -39,6 +39,8 @@ def validate(path: Path) -> tuple[bool, list[str]]:
         seen.add(identifier)
         if item.get("decision") not in REQUIRED_DECISIONS:
             errors.append(f"{identifier}: invalid decision")
+        if not item.get("official_evidence"):
+            errors.append(f"{identifier}: consensus without official_evidence")
         curator = item.get("legal_curator") or {}
         critic = item.get("legal_critic") or {}
         for role, pass_data in (("legal_curator", curator), ("legal_critic", critic)):

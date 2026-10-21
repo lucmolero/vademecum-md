@@ -12,7 +12,7 @@ class FidelityContractTest(unittest.TestCase):
         self.assertEqual(len(documents), 375)
         for path in documents:
             text = path.read_text(encoding="utf-8")
-            self.assertIn("canonicalization_version: \"norm-v2\"", text, path)
+            self.assertIn("canonicalization_version: \"norm-v3\"", text, path)
             self.assertRegex(text, r"source_unit_id: \"[^\"]+\"")
             for field in ("sha256_source_raw", "sha256_source_normalized", "sha256_source_body", "sha256_published_body"):
                 self.assertRegex(text, rf"{field}: \"[0-9a-f]{{64}}\"", path)

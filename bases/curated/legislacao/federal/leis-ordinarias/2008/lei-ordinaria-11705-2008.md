@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-11705-2008"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "d9d985545ed6682d0b2b7b166e949e566dc5bc5b21a6be26cb2962596f363f93"
 sha256_source_normalized: "92e710d4dff2c086d943eb1819e45e3a84ef09696531cc03f38029658a92375d"
-sha256_source_body: "e09266cee2f462471924bc8f1ccda335fca20cd947083f8b2babc2fd0e32a56c"
-sha256_published_body: "e09266cee2f462471924bc8f1ccda335fca20cd947083f8b2babc2fd0e32a56c"
+sha256_source_body: "61dbda8bf8619fb1c5abcfd8356af4e33c194247b2f9ae999d86e96df3a63441"
+sha256_published_body: "61dbda8bf8619fb1c5abcfd8356af4e33c194247b2f9ae999d86e96df3a63441"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.705 de 19/06/2008

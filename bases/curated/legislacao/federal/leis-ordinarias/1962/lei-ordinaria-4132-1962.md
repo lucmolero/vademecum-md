@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-4132-1962"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "74aa4edfa0a9b368970162edf9b4fb59edf683fe42b5efd36eab8286e28c1baf"
 sha256_source_normalized: "d5ef1ed4365a15e64a4c8d81ae030d29056c1cebd973b65783a798f2eed8fd21"
-sha256_source_body: "200c2f01609f170da8ed84cd8e9f857724c000ce6b609da3c9e6f3f1559dee2d"
-sha256_published_body: "200c2f01609f170da8ed84cd8e9f857724c000ce6b609da3c9e6f3f1559dee2d"
+sha256_source_body: "8efd159c224ad59658784947ef05d03d5db7539cabe2c4cb76c4ac33d4f8ffbd"
+sha256_published_body: "8efd159c224ad59658784947ef05d03d5db7539cabe2c4cb76c4ac33d4f8ffbd"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.132 de 10/09/1962

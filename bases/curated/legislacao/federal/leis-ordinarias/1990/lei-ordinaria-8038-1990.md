@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-8038-1990"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "d0e1f203e88efd0288863f8c1e20068457681d1cbf686b04b6c8fb9852467b2b"
 sha256_source_normalized: "751f7d859e22435605d1c5da50f68001af807bd0bc33bcd8db29e21edd36e774"
-sha256_source_body: "30131dbada4068dfccf96506d05307ee96add4587d2f914b31fb32e0221dd07d"
-sha256_published_body: "91bd8896a329dea2cf3d977a08f054b0e50e772e1d94201028a9e7dd45fc5586"
+sha256_source_body: "ca018c0f1e1e00c10f997be10b7fc987a26cd42c0875b91e93a1ae558e38f633"
+sha256_published_body: "f2b6be514fb64911cf9d7fac278816bc5aae983914ab91db2dad14689ba06679"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.038 de 28/05/1990

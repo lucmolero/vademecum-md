@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "ausente_na_publicacao:ementa"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-4375-1964"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "be35606e79fb9bdc1cf6047db2385ba9ac93ed01d94711bddcf7803b195b0183"
-sha256_source_normalized: "eb8e1568a38db12455a8dac17eb457747d3d36d656b35cba5785855b34ad077b"
-sha256_source_body: "d3f3470b84fbbdaabf2ee9222457d2819a62e9459cdb9b593a3a06cc34a7bc77"
-sha256_published_body: "e53ae269e72f9d7afebdef37646d7935f6b026fc0390ff8cc988670c43e44425"
+sha256_source_normalized: "ff3d5bb84a20f2b42506042faf0426d5833b8fc2a0f6cb87aa3b77d1d9a6d438"
+sha256_source_body: "eeb2b810b595e13d0a3f3f3917e20e810522ba75c17ae3d2bf340488b46a9203"
+sha256_published_body: "a87b783d6d76fd5580c8d8d9a93f27cdeba58812c99df1733f3144bd5b0cd638"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.375 de 17/08/1964

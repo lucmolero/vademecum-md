@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-227-2026"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "4ee0cb1d81b898ad3e2e8609dfa7f2d235b14002683bee195a5cff5b2141df47"
-sha256_source_normalized: "702fcfef923dfaae7f42fae6a3d6396635e4166495231b6c27a10e1ba51eca9a"
-sha256_source_body: "103fd762b1383b031bb616864e370dbaeb2d0427ad4341b8bb548bcfc3dcf0e1"
-sha256_published_body: "300c2be2f170c04701a47ee1728bc27724da93c5a188a16f9805a33478f8fcf9"
+sha256_source_normalized: "b87e23771b09232e7f2b1043cc7724d5560537c67c2312a361d456fd35242dba"
+sha256_source_body: "70188fa055e7db2f328dbe1a7f8c0345806f9a9c2fd50722ada0c0fc229400e7"
+sha256_published_body: "fc7855a3ff1ce703bfe47bfd74b636f7ccd5d826dec59f23c450efdb0eb7748e"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 227 de 13/01/2026

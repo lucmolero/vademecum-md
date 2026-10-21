@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12852-2013"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "1aa961244b319c77be14db5c250d87b82e34cea6726bb1167395a20be8574584"
 sha256_source_normalized: "d947fbd058696f62ec243510819ad133148a987358ce0f6c304502f06cab8da6"
-sha256_source_body: "0a9d433846ca1a022679b802e829d52dd46149cd103671eb44c5ad3d094181da"
-sha256_published_body: "a12ac192501bccf47663ae1286b49dc1ad7ef2c9b423eb3371e4237780bce085"
+sha256_source_body: "f71eb8127017c2be1a88e04303598eeccb072b4543d81d6f3e71554d2d61e419"
+sha256_published_body: "bc90d04c7b2a2cd463c7aff29ed7cf6e13be6a0ab0ba5e5c52192b5481d8dfdf"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.852 de 05/08/2013

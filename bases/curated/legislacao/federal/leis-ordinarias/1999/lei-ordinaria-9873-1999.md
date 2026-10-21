@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9873-1999"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "9279d9dce9556b8163500d4c616c052ad449c822b1464673309cedb07567c1ad"
-sha256_source_normalized: "6bdbeb778ec6ce90fab086875d3a1ebfe30c8c7bf4b94b0ad3cfc8bb13560dd3"
-sha256_source_body: "a072f322d986299f5a272f2d53d841dc5c01da1392d46c8863862dba85c8d2d4"
-sha256_published_body: "682c695ce9d39d971eb5244967060945124d961e606823659f02a5a10ed08950"
+sha256_source_normalized: "c9e36c15fbb1b4c3112b71d866b21d5e92c7a2cacd83877871ddea017b51a851"
+sha256_source_body: "68d0158c02b0a40c86f10bd5712b5e2ceee0c78c337f6dc6d4cd8cc7fe3dc45d"
+sha256_published_body: "56f2eccbce8c4bcdd462946172552afeb7564c633625ff18e4c0c313c1cf9e0f"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.873 de 23/11/1999

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-105-2001"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "0d174df149b08a94ca83dbb23717e125656c3f5dad7808720c76de5260db7c8e"
 sha256_source_normalized: "158498597e3d5a50f96af204c1ebb16cff69e0d0acb6f653b6236ac3c253cb7f"
-sha256_source_body: "38f3dd858d6f962d8d91e3b4e2c511f31a94371ea2fbe704a36843a585b5fad9"
-sha256_published_body: "38f3dd858d6f962d8d91e3b4e2c511f31a94371ea2fbe704a36843a585b5fad9"
+sha256_source_body: "5eac35baaadc05d82297b72f91461737f5ba05174abd79e2a5973b9849b39f86"
+sha256_published_body: "5eac35baaadc05d82297b72f91461737f5ba05174abd79e2a5973b9849b39f86"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 105 de 10/01/2001

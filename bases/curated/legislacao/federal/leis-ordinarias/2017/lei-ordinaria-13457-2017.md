@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13457-2017"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "46fff5fc621bdacd446888f49548341069c9c181de27d4e924a3574a966f2496"
 sha256_source_normalized: "df459892c5d8215449e1de2fb4d837256126ac1287d6783a0e02fcf3b0cd650e"
-sha256_source_body: "ebf7b12c34e8739715043c71b70572f7b32c278fa4e97f96cf9b701d81b187c0"
-sha256_published_body: "ebf7b12c34e8739715043c71b70572f7b32c278fa4e97f96cf9b701d81b187c0"
+sha256_source_body: "f726f161c4af7603fd93927403d90d5d01d9d7ba9536fe48f606677e58ba0ca1"
+sha256_published_body: "f726f161c4af7603fd93927403d90d5d01d9d7ba9536fe48f606677e58ba0ca1"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.457 de 26/06/2017

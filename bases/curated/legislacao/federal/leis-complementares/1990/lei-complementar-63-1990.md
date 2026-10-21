@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-63-1990"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "273e2cd5e98ed91372a999a8d2fcd1be1f2be5864f94f02e45fdf82a78cb8848"
 sha256_source_normalized: "3fa9831e44404e91ce179963b63dfb2939be3bdd8910074efe1dad7a0dc206ee"
-sha256_source_body: "4cb78ff8e0cf028596fb65451469d236e7c2b63f75939f92239a666b228e557e"
-sha256_published_body: "4cb78ff8e0cf028596fb65451469d236e7c2b63f75939f92239a666b228e557e"
+sha256_source_body: "800fc37785ad72d18da2f91f356595bc6b928af20727db6de396a4d98d0bc81f"
+sha256_published_body: "800fc37785ad72d18da2f91f356595bc6b928af20727db6de396a4d98d0bc81f"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 63 de 11/01/1990

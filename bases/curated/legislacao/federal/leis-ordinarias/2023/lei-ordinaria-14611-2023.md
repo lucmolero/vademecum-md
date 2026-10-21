@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14611-2023"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "6ec8fd5b7873924ea27a827b2b2cf8102265f619dfa3b16296cd6a5f26216cfa"
-sha256_source_normalized: "0651ec1ba1342e99be02820d25b6f7fecb549cc77237280ee87b7733bcfd0d97"
-sha256_source_body: "948dc331fd1ee28e8bcbdaee4d0920a809a61dc62b8bb0abf72277178652062c"
-sha256_published_body: "948dc331fd1ee28e8bcbdaee4d0920a809a61dc62b8bb0abf72277178652062c"
+sha256_source_normalized: "741bda7ec06af8b42c476fa625edbf883ecd99df536a1e1b76b973db0a2ca43c"
+sha256_source_body: "62baaf249f22bb41ad4714f7ff46d996d70afd9df075f1a0cfa314e4c373973a"
+sha256_published_body: "62baaf249f22bb41ad4714f7ff46d996d70afd9df075f1a0cfa314e4c373973a"
 ---
 # Lei nº 14.611, de 3 de julho de 2023
 

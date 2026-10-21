@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-4886-1965"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
-fidelity_status: "review"
-fidelity_anomalies: ["article_tree_mismatch"]
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "643b2d52410c875565ce959b163a6f21964d993e13274ed1b7065babf537bb8c"
 sha256_source_normalized: "b89f81360ce534ab43e729fddb72035c3c81841562dd18a0ccf450c7fb44079f"
-sha256_source_body: "0de6c666e154c477d477b4a717cb30bcf2980d59f20c169f24f6ef66f872278f"
-sha256_published_body: "7c1db24cae76eb7a2825c4736a7ed8a861001e4cb9a59bd5f0f1e6a5cc0c1eca"
+sha256_source_body: "9492684b47b977051257c601e2040ba1fdccc7b6e5c0ce0d5e3cfd5e49d3ffd0"
+sha256_published_body: "0980755f7ef6375d2b121c6f12e0ca52c3a920cc6b71c87f1ace94bbf917cacd"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.886 de 09/12/1965

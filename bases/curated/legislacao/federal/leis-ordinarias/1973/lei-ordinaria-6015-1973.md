@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-6015-1973"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "47f367393517842a8a38a69f0b78aeafd076c24adcb03e2e87cb81ded4ffc9d2"
-sha256_source_normalized: "ea1012e4747a12bfac7eb17ccd8863002ff8ebec0293ffc72a71c118c6ccb777"
-sha256_source_body: "badc35550eb6453d3bae6e9c60f056d61dbd8220bb318ae157d987a91ce1767f"
-sha256_published_body: "682c2a95f1ac43a1c6b485dc20c90bd28e13d215503a05a73e57e1f419e4b3df"
+sha256_source_normalized: "c7d35a56967df2dc3368b907e9cdb2b9f3a16e7168e7abf5b77aad574a04bc60"
+sha256_source_body: "414ff334f51b18b537ba2082de4042d263c83cb7d05a5971ce1f886808c442e7"
+sha256_published_body: "7da78e4664d56ab02866d7142c8adfb629dd88f2439e63c43d58a53b4184b417"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.015 de 31/12/1973

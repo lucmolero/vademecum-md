@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-8658-1993"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "e7596cd803d055b2adb11f700ac7394987e3fa5c0fe06c0c9982583f5f530b8e"
 sha256_source_normalized: "489f4e16a3e2195d6fa9d9e68fcb82f3352fe5238b5660a344244f371eeb284a"
-sha256_source_body: "3e55fba408615bb3162d7b6bbd8930156a40fa0e22172ae4991a93e8e38eba76"
-sha256_published_body: "3e55fba408615bb3162d7b6bbd8930156a40fa0e22172ae4991a93e8e38eba76"
+sha256_source_body: "1f2447a3ea6a0907e2974b9a4a0c8901915b679697b2c4bc6f18c09d008447d0"
+sha256_published_body: "1f2447a3ea6a0907e2974b9a4a0c8901915b679697b2c4bc6f18c09d008447d0"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.658 de 26/05/1993

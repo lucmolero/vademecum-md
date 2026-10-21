@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-11770-2008"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "64766aa22ff138a8dfa2625d67b55290c07d51527746619e89759f36a0b2b66b"
 sha256_source_normalized: "1e672931ec7f53f9d07adba433904bfbd79aa40b0498a72c7e7da4fe5f255688"
-sha256_source_body: "a15f209a41e0844dcbe7d9d58e3fa9186c530e3e2419a60e108da8b831b71f79"
-sha256_published_body: "a15f209a41e0844dcbe7d9d58e3fa9186c530e3e2419a60e108da8b831b71f79"
+sha256_source_body: "165647b3308e833db95656198c82775880addf5337bbbb4c2f6e15a127f86d1f"
+sha256_published_body: "165647b3308e833db95656198c82775880addf5337bbbb4c2f6e15a127f86d1f"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.770 de 09/09/2008

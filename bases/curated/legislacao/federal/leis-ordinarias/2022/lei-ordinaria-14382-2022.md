@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14382-2022"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "37070362bb28e327e3f19ccd7aedb9fc686fec64517f49f05931a516e4bf7294"
 sha256_source_normalized: "220286b4b4b95707736d631a956d4a7c18e8487b6e7d9c73de73987d86d45012"
-sha256_source_body: "28a7bb711dbdcd6439f5e93ea4728cb4fdc128fd0dac12fdba9645e0eea4f6e6"
-sha256_published_body: "28a7bb711dbdcd6439f5e93ea4728cb4fdc128fd0dac12fdba9645e0eea4f6e6"
+sha256_source_body: "9e6e192cba22a422792d48e632d6238235fe4450d3e083990529fff3e96decb8"
+sha256_published_body: "9e6e192cba22a422792d48e632d6238235fe4450d3e083990529fff3e96decb8"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.382 de 27/06/2022

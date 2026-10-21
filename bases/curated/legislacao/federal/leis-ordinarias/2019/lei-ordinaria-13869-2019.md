@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13869-2019"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "bc3390c2a5ba658a4d48fbfc182dca124fe68ce0848955bd1e62eca21e9305d2"
 sha256_source_normalized: "07772b5a8b904ad0d7af1ebc9b6ffee30868f7aed168d3a3723a453f8ea01bb8"
-sha256_source_body: "3ff5d3d24fe76f06e5fb934cd5908741391fb0d9d9859be239fd966341e6ce86"
-sha256_published_body: "c152d7304fa6e4aa70973630184a295f1abcdececaffaceb17c516cf0a6eaff0"
+sha256_source_body: "af1ab84c102f6b8cb4fc7dd8fda049cd2001a4c47a03f91a9d4b421e7e3c8c4d"
+sha256_published_body: "323c842fa9643a626137bfa86a4411d4fc44eb3fb9a25268840baa28592f3b45"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.869 de 05/09/2019

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13344-2016"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "68ba75c5015d9880fe219582f62f6a7e041280b84813d3532e4c4ee46cb955e5"
 sha256_source_normalized: "caecd4558fb8573622b5e3e85ff184a5cf9f26d4d0f348ed1aa8ba1f550f2531"
-sha256_source_body: "4d9e4050ffe12ab6cbc5f86669b145a48f4a6d16736b4bf35db6686f056f108d"
-sha256_published_body: "4d9e4050ffe12ab6cbc5f86669b145a48f4a6d16736b4bf35db6686f056f108d"
+sha256_source_body: "4296f385e4eac6e450fc807cf89a3607e0c6986f59c3f945c4fb3ae4b76f3f93"
+sha256_published_body: "4296f385e4eac6e450fc807cf89a3607e0c6986f59c3f945c4fb3ae4b76f3f93"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.344 de 06/10/2016

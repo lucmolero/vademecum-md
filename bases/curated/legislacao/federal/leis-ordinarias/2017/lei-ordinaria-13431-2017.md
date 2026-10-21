@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13431-2017"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "76d7c194c850b70305ce77d3b9755d2a7aac21e70e6eef572989b585eb49029e"
 sha256_source_normalized: "25537bd953aeeda6e1f6c9e07f9b5c4e3477bc9be9a4c009fceeaeeb933f0853"
-sha256_source_body: "416d7c24d8d234f5d771628fc29b2dd1ce1bffce15b7cdb194738ae7c11000af"
-sha256_published_body: "4c878f240dea70882d66378aec8f0d9884f395ec8528dcf2063e16b3a4c74559"
+sha256_source_body: "1531cb5c83ca65e79c15584b37cc577d3f68cc7ae9a28015332b51ffab9074bf"
+sha256_published_body: "43b58f92bcf2c257fe51af86bd7eebedd4881b58691d08fec65355452290dc28"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.431 de 04/04/2017

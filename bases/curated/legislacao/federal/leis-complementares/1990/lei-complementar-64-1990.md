@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-64-1990"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "9da7bd025723299c3fedccf902a8cd7b297f22673a543ace681571f399696aaa"
 sha256_source_normalized: "8c4f32ce39fff6232fa8ffa797c37e06967fc21cacaf0f64acc9d74f3098bc0c"
-sha256_source_body: "09391d94af5fc1006cf74d45c5e93ee4f26299a5e29e87d81e22967ab297562a"
-sha256_published_body: "8afeb07781d8698819add21e8f770719654ec5f4b9a7bcc5fcf0cd2bc5530607"
+sha256_source_body: "d337aa3ee8493c8e0e064a8cc309f931fcbb30f7f44dc9a07af2f1e571f6ae54"
+sha256_published_body: "0596900b6edd15e8bd2e0a45e2ffca6e75d0489d38bcb7e1ab62f6f16f32e987"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 64 de 18/05/1990

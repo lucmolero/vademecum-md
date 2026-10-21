@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-406-1968"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "ffe59625c8fc11dec1211ca2352c7a0465c94e45c827c1c4d4fd16e08e8eabeb"
 sha256_source_normalized: "a6552cdc6991a0f911b5d4af41e0c2c9de2dbe0c5b2c253002df2fb87ef0c743"
-sha256_source_body: "5b7ade7d6c7b418cf3a8f9681d63ef3c013c284d993b478387971b936163a568"
-sha256_published_body: "7dbbf265062d912049d6c5173305693c0e77516e82b7a4b826c2855a5f776068"
+sha256_source_body: "41255e9ad6e7a4811639a5fd74ef2270d95ecf847a496a2a13b0d1f1eb288a41"
+sha256_published_body: "9f4140f968673b0d4159bbc0e215b62ea4424e494ff0cdc3b2ff10d057220195"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 406 de 31/12/1968

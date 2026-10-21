@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13465-2017"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "8f747c01cacc488a1ef248bdd04f651010106694a8f24b287c0f5d0fda6bda21"
 sha256_source_normalized: "a919641440c4f97fa19f8bd28f17599c1bb6222c713a8d1a934c11c53c2743ff"
-sha256_source_body: "ffb22beb8923cf6bec8a148e3af40536082b0861d3086933e4e5278acd4f2688"
-sha256_published_body: "20665b1d9b601859563ef9e32ebdf10b41601965dbab60670bd87ce3d075f029"
+sha256_source_body: "61fec4697b2b3df0779766fc3715a35b609fc7c7d36a7b0eaa74d6d8ef98cbff"
+sha256_published_body: "690f42a997af1c0ca2b16309707f2acd9dbca7b0bab6dad5e949039b7ef2c579"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.465 de 11/07/2017

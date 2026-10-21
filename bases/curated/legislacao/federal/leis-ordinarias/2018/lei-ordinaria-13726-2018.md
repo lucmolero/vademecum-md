@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13726-2018"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "6d3c9585f4443a091b14a474b00cb844964cf2990e32e724b94f1c6c31d798f7"
-sha256_source_normalized: "9b252d266afdf76e1b8a68d60a76b873223676d5b817670e1371f7f0b9f16fc2"
-sha256_source_body: "907b6b9a8d33f7376a284ea657753257fbefa0c737074aa57775c3322337aaa7"
-sha256_published_body: "282ab85f02e72186c1054a11492e98f1bc288f81ee4663bd22fc5288b920b7b4"
+sha256_source_normalized: "521280e2da1409eb483156c75846032a5daa7715aa0bb2928901358c1b6d397d"
+sha256_source_body: "f0e73e58d6912750cc8d0434120e6000921bdbc643efc91cf907a23f9880f2c5"
+sha256_published_body: "f0e73e58d6912750cc8d0434120e6000921bdbc643efc91cf907a23f9880f2c5"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.726 de 08/10/2018

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12187-2009"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "2e7719bea92e00f12d8ba349dbba65a49c7d823d92a0843f1116344f9f96bc88"
-sha256_source_normalized: "0c0fb986209dfdd0f91d1c48359d06b1bd956830a91e6413ebe408255175799b"
-sha256_source_body: "7ff5bbbe20d2e3f7a17b2232dc69bd29cb495dc84b761baa3e4c990982fb9c40"
-sha256_published_body: "7ff5bbbe20d2e3f7a17b2232dc69bd29cb495dc84b761baa3e4c990982fb9c40"
+sha256_source_normalized: "1549115064ea3f8c4af5300c28be45bc52e798bc3e3ad4ba300397850596ffc5"
+sha256_source_body: "59a28c5acf7987cb31acf68a913697984f53b71acf3703302e7c266854dda34a"
+sha256_published_body: "59a28c5acf7987cb31acf68a913697984f53b71acf3703302e7c266854dda34a"
 ---
 # Lei nº 12.187, de 29 de dezembro de 2009
 

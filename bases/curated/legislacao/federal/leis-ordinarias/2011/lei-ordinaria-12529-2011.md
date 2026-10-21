@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12529-2011"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "499405288bf4efc30a633df47a19d476ec1137b695784e179c5f30c90e2d0502"
 sha256_source_normalized: "613b9befc5bca774582ad1c6d338c84ab1e7330356a6ac46d5d543438b6cf445"
-sha256_source_body: "c4c6eb6b397e24609ef805a250bd9518deafc82554c757d7a2e267085e576a26"
-sha256_published_body: "e9affe631e36a01227976e27a2ef834d92839ab7f01170f7002c2cededd6a5f9"
+sha256_source_body: "0965b03757c7019b3b0be62974f0394dd188be76e556588c13fa9d6106b7214a"
+sha256_published_body: "09a56f5e80072c479d95a8766aae56800e403df41d640f29d845a9d753c2e716"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.529 de 30/11/2011

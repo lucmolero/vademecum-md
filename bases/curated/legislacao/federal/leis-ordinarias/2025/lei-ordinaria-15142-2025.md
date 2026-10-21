@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-15142-2025"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61"
 sha256_source_normalized: "5e10e2c207e5e77c7afe00ac0d8dc5736ae91990fff02a6823b6104cc68e13ff"
-sha256_source_body: "b9dc9e9897f5d3d095eb91ae201de8857ae5ccda079e8ccd627e03505097f6f9"
-sha256_published_body: "12302e087e9b08ae21f9a2d9fda39583b953366f995b177822e9cf40ee329f26"
+sha256_source_body: "9354ef856ec71657aadd012e2eae540321e0c7231fc715d480b2eddad27bf323"
+sha256_published_body: "afad0248afd2b2e7be52bd02b5f04f357208230f1b4a80fa0ae54ed5b332ec12"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 15.142 de 03/06/2025

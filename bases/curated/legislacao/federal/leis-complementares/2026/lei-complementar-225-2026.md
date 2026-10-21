@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-225-2026"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "b598899fa80445297c6b05704c88589ea8e320aded64cba359601a47240f35a7"
 sha256_source_normalized: "606cfaa1660c0ceb9a716ba283f9395fbb2fb53b3367259e72b0f15e867d5a95"
-sha256_source_body: "12e613c0d8a6b64806c8b9eed42670e777520ff47e53ccbf68ec6f6600e54da5"
-sha256_published_body: "12e613c0d8a6b64806c8b9eed42670e777520ff47e53ccbf68ec6f6600e54da5"
+sha256_source_body: "2278fa1a1753084e891cafc8114e8827c615c3f4539e031b38f6c872409b9fd8"
+sha256_published_body: "2278fa1a1753084e891cafc8114e8827c615c3f4539e031b38f6c872409b9fd8"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 225, de 8 de janeiro de 2026

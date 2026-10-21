@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14717-2023"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "f1e58f4ac891a2d51ad06b06fb73f90f392f5e55969fdb60ef8da8c1f00008cb"
 sha256_source_normalized: "90999aad6e2d1f09084c14cc66d89f22bd9c989f65bd7fdcdd75a6360f383d2c"
-sha256_source_body: "0e181c9b967ccc1f4fc3992ac70a2ef01fe3f1f02fc7c81c4b4c1b11b4a28997"
-sha256_published_body: "0e181c9b967ccc1f4fc3992ac70a2ef01fe3f1f02fc7c81c4b4c1b11b4a28997"
+sha256_source_body: "da40a3597c1dc4bc3c3a9a67c72be0aa3368b5273af88db5d4b1f12c48741a16"
+sha256_published_body: "da40a3597c1dc4bc3c3a9a67c72be0aa3368b5273af88db5d4b1f12c48741a16"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.717 de 31/10/2023

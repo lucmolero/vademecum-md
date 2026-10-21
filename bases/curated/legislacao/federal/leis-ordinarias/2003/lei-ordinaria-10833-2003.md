@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10833-2003"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "c5ca0d93e92a5f53c3922a21aad2a606bae78cbc53374af614db3e255581feae"
 sha256_source_normalized: "90463fd6211aa21a146fa7a0650102824f003ec79295f1576d3ebad5efa3779b"
-sha256_source_body: "407a2f23e5f79ae8e16261e3e10bbe9f2b41181e7c3faa1bf0d09514403646db"
-sha256_published_body: "2e3eeae5989f645c7ce3cdad9cf5521b0d714613b23f7924464844f3165ce8b2"
+sha256_source_body: "7de58844597cbc5caf79cec798ea3aad0531150e4bf595a5db4206dd3361fad7"
+sha256_published_body: "073f720ff93c84f8c98d3074a54b522e43a2a1910a7497fd7d75005941eb384d"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.833 de 29/12/2003

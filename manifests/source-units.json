@@ -12,6 +12,12 @@
       "selector_type": "html_before_anchor",
       "selector": {
         "anchor": "adct",
+        "fallback_anchors": [
+          {"label": "57", "anchor_pattern": "artigo-57", "replace_full_article": true},
+          {"label": "62", "anchor_pattern": "artigo-62", "replace_full_article": true},
+          {"label": "126", "anchor_pattern": "artigo-126", "replace_full_article": true},
+          {"label": "222", "anchor_pattern": "artigo-222", "replace_full_article": true}
+        ],
       "start": "Constituição da República Federativa do Brasil de 1988",
       "end": "Ato das Disposições Constitucionais Transitórias"
       },
@@ -23,6 +29,9 @@
       "selector_type": "html_anchor_to_end",
       "selector": {
         "anchor": "adct",
+        "fallback_anchors": [
+          {"label": "52", "anchor_pattern": "sadctart52", "replace_full_article": true}
+        ],
       "start": "Ato das Disposições Constitucionais Transitórias"
       },
       "unit_scope": "adct",

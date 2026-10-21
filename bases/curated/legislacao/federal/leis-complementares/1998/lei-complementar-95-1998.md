@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-95-1998"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "a7e9d2718f28f21f80f941f0709147c2ef94453e4d58f16998c6b3bfd9338fed"
 sha256_source_normalized: "ea967d88b6b6b49c6337a7214809d0ccbcffdab317a764bbbab7f5b480f55ddc"
-sha256_source_body: "173cd35921ba2d175665e45690477be1671fadf0b31a7cb6d363b60ccd1aa817"
-sha256_published_body: "112f521503702df460dd54eb45a20de1b04fe6bd252a046305261995c5e1cef8"
+sha256_source_body: "08f4e7bebd0e144b820b15e8d3e4e33c99c3c1f1ed191431a1686852bbe19ed8"
+sha256_published_body: "b003506e5276454fc8cc887a8daa6a1896e90bd27901b86103c8e5ecd5904e03"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 95 de 26/02/1998

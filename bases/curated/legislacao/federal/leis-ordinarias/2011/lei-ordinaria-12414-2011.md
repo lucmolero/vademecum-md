@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12414-2011"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "841c573153fb3de00c6ecbff6e2d853191b045dc4fbd325588d3b21f4153d15a"
 sha256_source_normalized: "246f9dedbe48ca39488731037445a4cbb9306c5916fe304caad969093616a332"
-sha256_source_body: "1a36d2f1a67ea038b38bab6211892a477e3263bb02e3608cd26e3a1c696d98d9"
-sha256_published_body: "f90b266f32aca06292e5254c8692452aeacd99ccfb589a600356c0dd600dd381"
+sha256_source_body: "feab3c019f0838af7170df94c6f481a3039a54411dc37517eeb6032c49d08efc"
+sha256_published_body: "2ee8eb9e1da57a7c8dfc95e1bdbdf820dead7c8492d84998c0bb41c975de969e"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.414 de 09/06/2011

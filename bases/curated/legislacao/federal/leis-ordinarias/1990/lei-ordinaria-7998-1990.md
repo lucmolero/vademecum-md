@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-7998-1990"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "dcb2a36176654bd38d38e24d00b369944eed7db1599d9c2777a7d48b7809704a"
-sha256_source_normalized: "a3eef170fac8a451b71b5652757ae5d511b3add1f7a3410d5d01a5644309964e"
-sha256_source_body: "c2abf7703486b344b203913f3d8ec78b00531b9224235fb0f79bf53a1796201e"
-sha256_published_body: "e0b997b09e1a571a29c2f313c2c47b8a69cd4ffdb44f53118aaf3745fd9cf76b"
+sha256_source_normalized: "f89c31545dca1d2adb0d50d396192477b371d6690d0ea106caf7229b49a95547"
+sha256_source_body: "263182680cc4604b44e1072bd634ad50b69443bc3e02bfbbd9e34e60e4c030d2"
+sha256_published_body: "c2d9fe411d707f4548af91cc185272c40d1d1e67454c83d7dfa303f6499af876"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.998 de 11/01/1990

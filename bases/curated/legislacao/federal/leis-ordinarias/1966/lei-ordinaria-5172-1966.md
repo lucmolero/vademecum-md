@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-5172-1966"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "1aec7c006f6bbadb0ca05ef114171f0d2f7b574389a77ccf0e511b99d7e84f1d"
-sha256_source_normalized: "ec4301bdb8ea8ac7966be8df9cd919f6f11e558ee97dd3558427ce3ff7d77239"
-sha256_source_body: "cb533f46c355454a6a13555359b73c203fe2d92b81c7eaf8542c99c8ce14ed02"
-sha256_published_body: "cb533f46c355454a6a13555359b73c203fe2d92b81c7eaf8542c99c8ce14ed02"
+sha256_source_normalized: "9cf93ba7846a92707276e4a64d7f9bc1f42dcda5008fca963fef28cae7f47771"
+sha256_source_body: "a75a67029f341374770181c39313ff4d22050403c3538c2c36da1309b1ed6c48"
+sha256_published_body: "8aaa283439b69d52f994bda5758eeeff2b99e00d766946ccd57fa0971a454506"
 source_snapshot_date: "2026-10-21"
 ---
 # Codigo Tributario Nacional

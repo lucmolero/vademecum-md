@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-11636-2007"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "cf321f7dc474a715d9f87061fb1b6db645d37a081d8905efd0a9e8a7923d4b3f"
 sha256_source_normalized: "ad437cb991185838c8f8a668c7c7cef49af0f035979b658e309240df960b4e71"
-sha256_source_body: "e5209e739103cda4f21883319805d1012b262cd19b0b5d877fe9128d9923b031"
-sha256_published_body: "e5209e739103cda4f21883319805d1012b262cd19b0b5d877fe9128d9923b031"
+sha256_source_body: "77a71cca5fbf5c230c98ce22c2bcc97347afe55bbaec4dde00d5ba0b69141cf3"
+sha256_published_body: "77a71cca5fbf5c230c98ce22c2bcc97347afe55bbaec4dde00d5ba0b69141cf3"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.636 de 28/12/2007

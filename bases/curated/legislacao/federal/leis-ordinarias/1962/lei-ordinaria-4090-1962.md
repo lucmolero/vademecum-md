@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-4090-1962"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "0ce7d067320f42cbb5cf57121defafb5993e6e65aa840154d79ccd0cbb728272"
 sha256_source_normalized: "da678546ff982a1a239e9a3bbc6a6ef06aea729a2980f5e84736aaec7ab6cc32"
-sha256_source_body: "29a7319208b8ee59f24d6b5a9afd80c66b4a6b176be816a487c40d54084a0905"
-sha256_published_body: "29a7319208b8ee59f24d6b5a9afd80c66b4a6b176be816a487c40d54084a0905"
+sha256_source_body: "8fc6558826d2aca3d066eca0b3b9ca5022f704a54924365f3211859d385abee9"
+sha256_published_body: "8fc6558826d2aca3d066eca0b3b9ca5022f704a54924365f3211859d385abee9"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.090 de 13/07/1962

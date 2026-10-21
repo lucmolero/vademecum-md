@@ -23,6 +23,7 @@ fonte oficial → snapshot privado → normalização → auditoria
 
 - escopo: legislação federal;
 - corpus: 375 documentos;
+- fidelidade normativa: 375/375 documentos aprovados pelo auditor estrutural;
 - data de corte do snapshot: 2026-10-21;
 - RAG: deliberadamente fora desta etapa;
 - release `1.0.3`: snapshot histórico, sujeito à revalidação textual prevista.

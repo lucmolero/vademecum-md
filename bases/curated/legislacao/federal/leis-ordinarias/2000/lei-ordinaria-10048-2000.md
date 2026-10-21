@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10048-2000"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "82db38f7e2f6c1d99c45eb68c6dc33bf9d28633a5b95c2bec293379e3a5ead63"
 sha256_source_normalized: "22d4cc39813de93c146d80f66fdf3bdf979e09177427167fcc1fa92f0f32343b"
-sha256_source_body: "0b07f7ea03cbef5c85b00e59f8b7f8464a2a95e89bfbaabcbf2735706545d363"
-sha256_published_body: "ef55163e058480b2f397b2bd03f6b95ad3fd0efc24ff9f55f95aadb4b073eb04"
+sha256_source_body: "bee4c96b58da70a06cf90df93048875e2a0a95c0197b041ffa9c9c1e5bd0859b"
+sha256_published_body: "358001c5f3cbb13f520f570f91b57ab5af89e284aff6b89f5ff6bd72592120eb"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.048 de 08/11/2000

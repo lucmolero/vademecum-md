@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12737-2012"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "f7ad7a5a150f2e8e4a200043246d0368259ba6cd9a1cc14d1c19d80797bfb5e6"
-sha256_source_normalized: "7cdd184c05dcf7b9014ce1d8733bc29b9feba516c00eeb67a50dd403297e7320"
-sha256_source_body: "9453c829169613bb36f2d980289f43737f62987b674d86d99bddd1f94e30b85c"
-sha256_published_body: "9453c829169613bb36f2d980289f43737f62987b674d86d99bddd1f94e30b85c"
+sha256_source_normalized: "5ea05ee0cf56396b8ee042f31988ccf26047d8c5b63d2e787ff2654d17d2a2fe"
+sha256_source_body: "160425f3531bbb539daa9b35765395056a71350e7976adb4867e4430949602f9"
+sha256_published_body: "160425f3531bbb539daa9b35765395056a71350e7976adb4867e4430949602f9"
 ---
 # Lei nº 12.737, de 30 de novembro de 2012
 

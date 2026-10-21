@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-1608-1939"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "4bd9660b5767d312a57ae75bc690353c76778a62d844419bb1f74cab3742df1d"
-sha256_source_normalized: "5716b5afcf5a043e94a3889b3b2d5488465bb267f8dae54eee0150ed6a4b6955"
-sha256_source_body: "0140ac6de87353c5c3d912a4a924a33604d38557b6d19e8b589521139d67cc9c"
-sha256_published_body: "0140ac6de87353c5c3d912a4a924a33604d38557b6d19e8b589521139d67cc9c"
+sha256_source_normalized: "e5b853adf2d7102c5b14769f327a8316609cda708d8681cf0e1d98689d141b87"
+sha256_source_body: "e424894e77abb6dd7d024286b9b559b1762ca145312b98224cd360e9801ef71a"
+sha256_published_body: "e9fd919fe47756f4f84269c945199e36e76d307e6f4ba210161b8435c90a8143"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 1.608 de 18/09/1939

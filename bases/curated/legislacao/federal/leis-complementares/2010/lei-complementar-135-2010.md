@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-135-2010"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "2b6b22b2dc209c2d8382e961fb623356ce9b469c8ed785b67de9b993d485573c"
 sha256_source_normalized: "24b3b99c6ea5e4d0160551e07f44f2376a2dbd01dc2bea7dc526aa611f6e1774"
-sha256_source_body: "9356daf15f6064b906f347e61dfc064a7e13c8351f8378386680fd3bf927854f"
-sha256_published_body: "9356daf15f6064b906f347e61dfc064a7e13c8351f8378386680fd3bf927854f"
+sha256_source_body: "3713bcd643e47ec196cbbcc206866e4cf06394d1ab9992bfe2f5f5ffe9a6096c"
+sha256_published_body: "3713bcd643e47ec196cbbcc206866e4cf06394d1ab9992bfe2f5f5ffe9a6096c"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 135 de 04/06/2010

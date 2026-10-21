@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14119-2021"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "748716e4d1ff126ab7e1c8b0afd1359d5961ce60e84cc956eda526c37050050d"
 sha256_source_normalized: "73c19c646e796aa0d96d8548a2b93a6ab15e649dc602e759fa4ed70a06addf0a"
-sha256_source_body: "2b4aaa0bbaa1551d0a05561493e393d8b1b321a446df2318e1238ae095180e8b"
-sha256_published_body: "2b4aaa0bbaa1551d0a05561493e393d8b1b321a446df2318e1238ae095180e8b"
+sha256_source_body: "a35767ea9af27176b8b94b576391b90ddbe2872f7be557dc0fe8c8955d2ba7dd"
+sha256_published_body: "a35767ea9af27176b8b94b576391b90ddbe2872f7be557dc0fe8c8955d2ba7dd"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.119 de 13/01/2021

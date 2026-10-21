@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9868-1999"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "658a5f623e053f270e5e37f27d8cd5500f7bc3e32eacd2d5cbd0f663f7b87521"
 sha256_source_normalized: "02ecd7b082d2f3e2af0ef222327de6dab9a18642fc823534d348da75d834014a"
-sha256_source_body: "82c79d4ff1ec61ce22f48d6f9ba52f8f220d18f5319770823fea8067608cf052"
-sha256_published_body: "dc845da3c6d1ed968f79bcd73564cf40851727e675e15799262889da65a76600"
+sha256_source_body: "3d4001f2216c10576678af89cc7f61b79cfa4b73b58f803173478fa671c62c5c"
+sha256_published_body: "ebea1264b31eaeafd66caa9cbb3cd1ca57e8d6f69a87cdfee9028e9ed0d157a8"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.868 de 10/11/1999

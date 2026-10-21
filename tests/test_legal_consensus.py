@@ -22,6 +22,7 @@ def ledger(decision: str = "preserve_current", consensus: bool = True) -> dict:
         "documents": [{
             "document_id": "br-federal-lei_ordinaria-1-1900",
             "decision": decision,
+            "official_evidence": ["https://www.planalto.gov.br/"],
             "legal_curator": pass_data,
             "legal_critic": dict(pass_data),
             "consensus": consensus,

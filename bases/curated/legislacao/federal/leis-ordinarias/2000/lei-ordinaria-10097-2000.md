@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-10097-2000"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "8b687588249e89d350f313a8767800b45b13fbbe64aa73658c681e6982d8ead5"
-sha256_source_normalized: "1d362aeb0366d99d85b26c2e9bf977515628183647b0081d7d8776e43f8e44a2"
-sha256_source_body: "f170af9fd4b16babdf9fe40d279cf46bb9df95ef106801fe2a3bdfbd283bb1e0"
-sha256_published_body: "f170af9fd4b16babdf9fe40d279cf46bb9df95ef106801fe2a3bdfbd283bb1e0"
+sha256_source_normalized: "53d867ea99640d388921d36cb63aa97c06e35388c3d9c66ebdfab53280617b1f"
+sha256_source_body: "782d3069f10c060828903d9af67c050a0fec0c322d2a475b1e581caf630a8fb5"
+sha256_published_body: "782d3069f10c060828903d9af67c050a0fec0c322d2a475b1e581caf630a8fb5"
 ---
 # Lei nº 10.097, de 19 de dezembro de 2000
 

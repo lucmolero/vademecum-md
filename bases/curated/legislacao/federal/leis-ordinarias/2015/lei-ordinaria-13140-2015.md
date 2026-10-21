@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13140-2015"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "851a08c2a0152e4cf4e52d7702bef4dc577fc1d75cf7aeba7432381c17e1f4b0"
 sha256_source_normalized: "aea1e9c32bc89e38b82b4184732dd650e3b369c63699c1319ec28e7787969282"
-sha256_source_body: "601f4dc4acce422d1ba9d6799883f583ca16f67c7517e936a21ec74525836aa4"
-sha256_published_body: "9e4f51005660577e97ee005811794decd2f5a2b2272f6aa54dfe7a88690d6d6e"
+sha256_source_body: "3b10dc8f3e50e9b16452b8fdd3757af7f8b4053dfd8a28dd99b133b57d1baca0"
+sha256_published_body: "d8074c0bb2bff5cf94b543657634967c6e9b934e88f3aed9bc497d67e55feef6"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.140 de 26/06/2015

@@ -166,7 +166,7 @@ def main() -> int:
         metadata["sha256_origem"] = attempt.get("sha256_raw") or item.get("sha256_raw")
         metadata["sha256_normalizado"] = attempt.get("sha256_normalized")
         metadata["sha256_corpo"] = attempt.get("sha256_body")
-        metadata["canonicalization_version"] = "norm-v2"
+        metadata["canonicalization_version"] = "norm-v3"
         metadata["source_unit_id"] = str(metadata.get("source_unit_id") or document_id)
         metadata["source_unit_selector"] = metadata.get("source_unit_selector") or {
             "selector_type": "full_official_document",
@@ -177,9 +177,9 @@ def main() -> int:
         metadata["fidelity_anomalies"] = ["post_update_fidelity_audit_required"]
         metadata["hash_scope"] = {
             "sha256_source_raw": "official_snapshot_bytes",
-            "sha256_source_normalized": "selected_source_text_norm_v2",
-            "sha256_source_body": "selected_normative_body_norm_v2",
-            "sha256_published_body": "published_normative_body_norm_v2",
+            "sha256_source_normalized": "selected_source_text_norm_v3",
+            "sha256_source_body": "selected_normative_body_norm_v3",
+            "sha256_published_body": "published_normative_body_norm_v3",
         }
         metadata["sha256_source_raw"] = str(attempt.get("sha256_raw") or item.get("sha256_raw") or "")
         metadata["sha256_source_normalized"] = str(attempt.get("sha256_normalized") or sha256_text(candidate_body))

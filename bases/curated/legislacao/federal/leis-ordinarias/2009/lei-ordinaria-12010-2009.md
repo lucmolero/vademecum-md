@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12010-2009"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "60053d1a4c05add877030842f3cd8b353c3e915740bac26e16fe664c11912c87"
 sha256_source_normalized: "acd78b6fe6962992e1701302f9dc3aa04dc30ad3792500f6bf6f970c053073ec"
-sha256_source_body: "957cca8b7899f9a4ad799fc590b526c91da9791067a648d4d5de9631516c17a2"
-sha256_published_body: "957cca8b7899f9a4ad799fc590b526c91da9791067a648d4d5de9631516c17a2"
+sha256_source_body: "c820d6845815da214000297be1d7fe1745d3363e77823551abfb9ab405c23f06"
+sha256_published_body: "c820d6845815da214000297be1d7fe1745d3363e77823551abfb9ab405c23f06"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.010 de 03/08/2009

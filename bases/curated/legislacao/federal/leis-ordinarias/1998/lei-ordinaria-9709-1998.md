@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9709-1998"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "330e2bdd12439d3043a0b503751b16ac303e2445cd220243054dbf1ea50b68f8"
 sha256_source_normalized: "f61a9c2855a92f0a7bce8d297b90183ca26b310f3605d0147ed5508922eb973b"
-sha256_source_body: "f54b7a72bd3f5229a37bf7bde3d339ba25c1f36ab6ac1ac17973a73f5120e4f0"
-sha256_published_body: "f54b7a72bd3f5229a37bf7bde3d339ba25c1f36ab6ac1ac17973a73f5120e4f0"
+sha256_source_body: "5b9e69edcc72e28f2e7fc69de0b1391db26dd45f7680c207de60e6e84e413f67"
+sha256_published_body: "5b9e69edcc72e28f2e7fc69de0b1391db26dd45f7680c207de60e6e84e413f67"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.709 de 18/11/1998

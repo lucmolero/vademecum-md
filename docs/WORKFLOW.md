@@ -88,5 +88,5 @@ análises, suas evidências e a decisão. Sem consenso, a versão pública anter
 preservada e o caso é registrado para a próxima execução.
 
 `fidelity-audit.json` verifica unidades de fonte, árvore de artigos e hashes
-`norm-v2`. Constituição e ADCT possuem seletores independentes mesmo quando
+`norm-v3`. Constituição e ADCT possuem seletores independentes mesmo quando
 compartilham a mesma página oficial.

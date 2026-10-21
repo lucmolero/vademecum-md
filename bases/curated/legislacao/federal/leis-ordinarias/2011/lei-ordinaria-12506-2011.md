@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12506-2011"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "29c45da5e68798e2bdecdc2292e8c55dccbd371d41487fe2f5d287c8829a91bc"
 sha256_source_normalized: "ffd7944b8a8123b8dc584472d0d982d7f10950d734dbd05647a6ee32d3e83dc1"
-sha256_source_body: "959fbc6191c89a0a462b733201f01d88ab468d4371fd02f10054dcc35e8c4374"
-sha256_published_body: "959fbc6191c89a0a462b733201f01d88ab468d4371fd02f10054dcc35e8c4374"
+sha256_source_body: "895718644854a3ab8eb0c06bff02e7dcf18edcaa3b891471c412a7744907d8b0"
+sha256_published_body: "895718644854a3ab8eb0c06bff02e7dcf18edcaa3b891471c412a7744907d8b0"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.506 de 11/10/2011

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9807-1999"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "8645ad83460b91ba1eff4ecfe0a0dfb822ba3253b152cb3e158179dad44f0236"
 sha256_source_normalized: "cacf51da942b67e0523a26deb1526a86348c616d0a70c0ce8a6a41e0f5d873b6"
-sha256_source_body: "700d1a377f9b2712e9a4c7974fe9c97242dcde12409ba0c1482e232e43983d0b"
-sha256_published_body: "10f432b232857c2a964b3def98dbe15bceac0f3a3f4a09f95b6618b7fba67de0"
+sha256_source_body: "a6cee1e8f35fd948c8f51c8a1fc79a9e9c11fededa84d049c6bba0b164b1abea"
+sha256_published_body: "9f92037eb4f3f1dbec1fe6ec0941f052222db3e59215bc41f6f5cb901b2fc629"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.807 de 13/07/1999

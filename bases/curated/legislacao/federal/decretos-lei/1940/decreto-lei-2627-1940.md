@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-2627-1940"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "4a3109bb64bdea24532e03e6cdf72209148cb10293697b4a9515fdb8bba2d24f"
 sha256_source_normalized: "b02a384a02cf68d635b382d3c8fa047ac47eb4056d9e99ae5d286f25fdb994f5"
-sha256_source_body: "3c59a493c9aedd32aa4c153c809d8e7c1f3b239f104894b490ef029bd9c20b39"
-sha256_published_body: "3c59a493c9aedd32aa4c153c809d8e7c1f3b239f104894b490ef029bd9c20b39"
+sha256_source_body: "3032d5f52b4e55e563f74e33e658cd235b1681edf2b36213e607991fd5063767"
+sha256_published_body: "3032d5f52b4e55e563f74e33e658cd235b1681edf2b36213e607991fd5063767"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 2.627 de 26/09/1940

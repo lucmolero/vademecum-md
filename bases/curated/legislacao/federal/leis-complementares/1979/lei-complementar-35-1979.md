@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-35-1979"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "9094f7b608ff8aed6838d173499e5c8367667f7d1b5b277e3b861070c95997cb"
-sha256_source_normalized: "5ac01610bf71657f2d1aa04bac84a77164afc9687b26c59f9341e52101c6d662"
-sha256_source_body: "5e72479353538c1497f41d70bf654502b3d5e3cf4032d0141054e9fea74f2e19"
-sha256_published_body: "0dcd514ce46edafb2d24fe58a17f25fda4b12ce51d88a3a99054b2e5cb3ad760"
+sha256_source_normalized: "564a7123a3eff28ffee0fafdb83ab072428134a7ade10c2fda1f50e4c257ae02"
+sha256_source_body: "0a96f7ff600306ed6c4cec5612d305841f84b45e3fb788ae8aa9b16e394e8801"
+sha256_published_body: "793b011a5c8f35ac305e7c7c3e3c2033a2a934f4bfce9ec3dc343d88ec7706fd"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 35 de 14/03/1979

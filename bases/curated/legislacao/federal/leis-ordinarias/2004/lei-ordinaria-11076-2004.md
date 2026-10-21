@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-11076-2004"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "59bf2fe201ec4be590b55fc308fac6d215be8fbd1dc92e6cce752b3d79721f87"
-sha256_source_normalized: "f1f70eecf797dd2013ad9698f9fa72b26bb12a4540f569d74d6c68523426a812"
-sha256_source_body: "8180456f00700959c763f7e15cff9a9fdb022573ef784db16cec00bb314dfcc7"
-sha256_published_body: "fd1a65ad2645999c39414473c8197be9d6cfe738c92bcbeeba4eeeb2888ba793"
+sha256_source_normalized: "f258ecb2bb58ef8af96d28a6134ca9a45d63fffeb268fdc7bd8bc89ec9ad173b"
+sha256_source_body: "0966002938addc2858fadef1dbf9b459f7987fcc4314e47fc1ca19ac3411ebc5"
+sha256_published_body: "923da5d5377f267d0202583593f20dc70890a7c21f2add4b447dc439f5d8a62f"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.076 de 30/12/2004

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12682-2012"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "87d0986078d6ee0f86ddff71822554bf8a5b6b0cf3ef5e3bb244b929c9bdc6d8"
 sha256_source_normalized: "8362f7a73cabb9f1208c19cda8fc01e87f4081dade7e4297d8f627df727f2e7c"
-sha256_source_body: "9e45ca84905034be1813065aab221f0968e7e877b8a05c1274266d4876bb81aa"
-sha256_published_body: "06c24954eb780592c1cafcdab6a01ed652129d7b1bc705fb5ce5bc339b53dbec"
+sha256_source_body: "9f4fa141b7dce2947cbc48f460db2689e49a909c8a7d2b3d1e300fea3f2167fe"
+sha256_published_body: "565afe55c3ab0cd2bac0697b046163fd3a176ad8c9cdaf644de63f4c1891007d"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.682 de 09/07/2012

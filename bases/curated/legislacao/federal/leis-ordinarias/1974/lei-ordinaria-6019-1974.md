@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-6019-1974"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
-fidelity_status: "review"
-fidelity_anomalies: ["article_tree_mismatch"]
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "3390f27f3e08bdfb0b3055acdfb11e109e7a96a75a878514b1b2aab024dd8776"
 sha256_source_normalized: "8c2be8befd3cbab000da37ff500b5fbffeede40646cc40687f2eac6ee828b16a"
-sha256_source_body: "16268cb791dec88cee73f63cef18df66f8e5f8f1186ed48030e323f0c9e8ceff"
-sha256_published_body: "48dc6dbd56290547701bb4fd6bf911e7933446ffcde40508103a1ed249fb5b22"
+sha256_source_body: "055feadf361e9a3841a1829dc08ea6bbce957522d1ae8939d80146ba3f4056e3"
+sha256_published_body: "e5c8758378e7759216d390354fb0b321d3b4fbaa9435a392befc78d4415a13dd"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.019 de 03/01/1974

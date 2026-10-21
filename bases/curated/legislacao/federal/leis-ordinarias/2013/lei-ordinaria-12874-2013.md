@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12874-2013"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "394795f89d90ddf182253f58cbd7355d593bd3879058448144697fecd37dcc40"
 sha256_source_normalized: "b8a66d46d3c28d78baef8aefebf2025824f144aa0003a87a15ad862139510ac1"
-sha256_source_body: "0427566a400a60ba896685022141d52bfe2cfec8d0e33d52fb86c9d7b3cbc982"
-sha256_published_body: "0427566a400a60ba896685022141d52bfe2cfec8d0e33d52fb86c9d7b3cbc982"
+sha256_source_body: "bcc72eff3347e6a8a01f12bcab929861f9ad3c333c2f4540172bffbe65b75703"
+sha256_published_body: "bcc72eff3347e6a8a01f12bcab929861f9ad3c333c2f4540172bffbe65b75703"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.874 de 29/10/2013

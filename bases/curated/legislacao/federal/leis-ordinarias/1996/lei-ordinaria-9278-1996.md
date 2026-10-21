@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9278-1996"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "f2ef0f33a4b12a219c4df3b880c8427fc0b1b122a7076977e1860a6689558c23"
-sha256_source_normalized: "97e40094b5a133af7c7c4f465725859e63b614ee6544d5f806e936fa111be8fe"
-sha256_source_body: "429f7600496ba726d0c6c96831a92e9f72b4e46f8c8035c8138f22f1d80e3b93"
-sha256_published_body: "429f7600496ba726d0c6c96831a92e9f72b4e46f8c8035c8138f22f1d80e3b93"
+sha256_source_normalized: "4a98f2f55b6b14f7a5c5081bdd5eca133f5efd1641e636462fb85884d6958085"
+sha256_source_body: "c62fa59446e01589713d80ecf152a9e75a62471ca11f7f8b10b161454ad7da45"
+sha256_published_body: "c62fa59446e01589713d80ecf152a9e75a62471ca11f7f8b10b161454ad7da45"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.278 de 10/05/1996

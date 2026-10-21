@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14597-2023"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "50c6ddf104ba9d1170b214ddbe50f8e98e664be7f5cd6525a7bf463e6442d6b0"
 sha256_source_normalized: "7a8db6ed701be88ceba4654ead23dd39fd2c8abae6ba1260ff849426292e6443"
-sha256_source_body: "3104f47f0d7a99ea050215fd55ef23c2f948001b62c76c2a2de3313db0501a26"
-sha256_published_body: "9e7c0c1129bd5df52e5f018c2559f890b19da2527722411ce2f9fd69a4b7c624"
+sha256_source_body: "97dd72dc6af37961b30e553016da0cb1d92551c25b6cb47ef7d16be6301f1ed1"
+sha256_published_body: "88210d277fedee264a95aedddae6f2cbeea521fb606ce8110945c816c890a2c1"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.597 de 14/06/2023

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-8137-1990"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "04eadc17343c839fffd4823ffb8d61d1049cbebdc2e919848c0702b882ef2733"
-sha256_source_normalized: "14c8c1f5ceefa9dbbb5783566969d468073296db2a3ce441f829f68132f50ad6"
-sha256_source_body: "0af9655bb33fa0a1f06a64a9b7e126f80bdfe61792fee109ca4df5bfc361c17c"
-sha256_published_body: "ed5355e22823545a9e4edbe981bfc341255a87245723e4f87e32b5381dbba628"
+sha256_source_normalized: "1754acc6f8c5352e1d03bd45d9492c12ba641b039ce582a9548e7a240ec241aa"
+sha256_source_body: "a5bc9806298000ed585a8697d69cee498377fdf06bff88e0ff7215eea5bcb7c9"
+sha256_published_body: "aa65548a26cf5e393e2fb5e0da3327e2ad184dc2938fb1ee0dd7b2c289576c4c"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.137 de 27/12/1990

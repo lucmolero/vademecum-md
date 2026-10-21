@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12030-2009"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "befe7b73fec84b978de5149cd5852613f3f709b44f2bf0d95dd8da554987a8d9"
 sha256_source_normalized: "12a2925656e6673707c071c9f4dc7ef26d8703733a9f17db61bfaef7578c44b4"
-sha256_source_body: "40bc1c32dc6f4c91ee7faf98bcea19362023b6f5012ccf77726694b5eceb2f2a"
-sha256_published_body: "40bc1c32dc6f4c91ee7faf98bcea19362023b6f5012ccf77726694b5eceb2f2a"
+sha256_source_body: "94b3b2798d541082094e8efd7244638eb056affeee0e7a4046e2aad05130ebbc"
+sha256_published_body: "94b3b2798d541082094e8efd7244638eb056affeee0e7a4046e2aad05130ebbc"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.030 de 17/09/2009

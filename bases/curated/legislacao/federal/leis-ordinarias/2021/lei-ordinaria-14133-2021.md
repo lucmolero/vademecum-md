@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14133-2021"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
-fidelity_status: "review"
-fidelity_anomalies: ["article_tree_mismatch", "normative_text_similarity_below_threshold"]
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
-sha256_source_raw: "ebe13a6371ad7d16761f15acafbbef8cc6319f732216e0d7e7143c1861dbd68b"
-sha256_source_normalized: "2bc5ddb59f8e972279062e89770e7dc103669d3f79c8d7ac19807480f859f9cf"
-sha256_source_body: "9bc715e80a5684342aad372102262df5faf1d3be499c0b696177a3c89eb2f9af"
-sha256_published_body: "3962c2078a118e81be73f7af38e444ad784033ddd064f6781fb17127aaa2080c"
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "148ebc3e3c6e1566cf5749b8808f560f27f270a610164f4f6c96492643c01452"
+sha256_source_normalized: "27f1855664cb6cdd75b0ab82cac6a81e2d911e52e64798b65619fb7e0f87f0a4"
+sha256_source_body: "b2e5822cb7f2515b220a18da03abf5cf38b7dd5087f1e349d27100ec59f6ae4a"
+sha256_published_body: "b2e5822cb7f2515b220a18da03abf5cf38b7dd5087f1e349d27100ec59f6ae4a"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.133, de 1º de abril de 2021

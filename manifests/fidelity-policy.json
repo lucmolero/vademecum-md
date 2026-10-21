@@ -1,6 +1,6 @@
 {
   "schema": "normative-fidelity-policy/v1",
-  "canonicalization_version": "norm-v2",
+  "canonicalization_version": "norm-v3",
   "official_authority": "official_source_only",
   "required_hashes": [
     "sha256_source_raw",
@@ -16,7 +16,7 @@
     "anomalies"
   ],
   "equivalence_policy": {
-    "pass": "article_tree_and_normative_text_match_after_norm_v2",
+    "pass": "article_tree_and_normative_text_match_after_norm_v3",
     "review": "source_and_public_structure_are_not_equivalent_or_evidence_is_incomplete",
     "never_silent_correction": true,
     "preserve_official_anomalies": true

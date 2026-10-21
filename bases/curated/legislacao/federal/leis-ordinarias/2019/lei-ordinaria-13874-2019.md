@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13874-2019"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "9564acac4c9bd884bb993c5fcc6cad950227f2e46bb03c3c0a054385aa89574c"
 sha256_source_normalized: "ef34b6e6aeca21dfce0c5cafa363828e4dc4058cce517d1f523aaa18abeff7dd"
-sha256_source_body: "eef9e7dc64d2868f5e2f78d2f46858df615aa8795aacea5c95d821809cbde359"
-sha256_published_body: "984505a8c40c3ee775cd33ffc8349749eb62a6a8e7e0f45ed2cf414e94981252"
+sha256_source_body: "43fdd83cdbb9e6185f069c76c5bd3515fb20f7805eb73c9b80fd568199847b08"
+sha256_published_body: "e6c2477a4cafcccd9fc7847138085346b1fa6eb6f4dbeeeb8dbaf0dd255c8f21"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.874 de 20/09/2019

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-15378-2026"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026"
 sha256_source_normalized: "d3bb25737dde649bd680d6e887b12a5194c069306209a94247d4a8b2d09061c5"
-sha256_source_body: "ed24260cd721ce774f975fde560540cc027bd1b745872cbdb919d01c2e5d7eee"
-sha256_published_body: "a3111eb768e631185c369391f3c15986a2d04f94fb0283462ae4c4abf8f4020c"
+sha256_source_body: "16fd269c13887e6a05c78c22cfd9a648817f2f49a145435e18939f2e8cd0864e"
+sha256_published_body: "4893bad52295d67f4e2894c9a80b8125e4089b7668b3a6e2d8222d2384473283"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 15.378 de 06/04/2026

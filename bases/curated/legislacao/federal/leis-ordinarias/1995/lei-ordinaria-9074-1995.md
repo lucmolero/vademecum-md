@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9074-1995"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "031489e40bfa6b336c20479139fb7c33341161eb5c408435adbe42cff37e1b10"
-sha256_source_normalized: "d22dbf1a9f085432f414d4d17c08d0859295d6b6943915d8fe454b2a138e1868"
-sha256_source_body: "ee8f3d4567021f0b4b80a6f4b0a8ee08a4df0d943675b273dcd10ba37faa2a56"
-sha256_published_body: "086b473a33ca97684e13100ec60795832c164881091f6bfffe22e38420daf0e4"
+sha256_source_normalized: "d2e0454fe4a34cf581a8250f51421aec3b4027e11bcab30ebdd8ef6ca7d4f7d2"
+sha256_source_body: "21bed14f8b039a91c2f74063eb9d6b2e15178ac086c2d365f528c91577e77804"
+sha256_published_body: "00a92b201c31b7d1dbadb82a189ad829309ea12150b9bd8156a0d769f6badb3b"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.074 de 07/07/1995

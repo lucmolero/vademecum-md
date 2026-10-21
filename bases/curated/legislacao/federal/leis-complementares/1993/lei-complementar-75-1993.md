@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_complementar-75-1993"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "bf747f5c5a2770a7ea78bf9a039afb38c340c892adcaf15817b8b8442b307c54"
 sha256_source_normalized: "7bfba53f878a40a4b2c4403f6a3958c9ec03d4934f13b94c9c87992d20169d0b"
-sha256_source_body: "b0d9a38cbef9ad02903453053ca7bdffee1af900e09b3d42b8ebe3365aa9751a"
-sha256_published_body: "3f6b45304c0a4e8f5164fd0976062af9c8e62a478702cd7891c4fa92164b03ec"
+sha256_source_body: "d9ac03afdd472958ee9133241d0b218fa7b929dce38a991ead42064589936c16"
+sha256_published_body: "d7035fc281bd972738c77a9e6d6df984c8334abcc7adcaa1bc9c5ae655a291be"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 75 de 20/05/1993

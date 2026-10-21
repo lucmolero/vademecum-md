@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-5010-1966"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
-fidelity_status: "review"
-fidelity_anomalies: ["normative_text_similarity_below_threshold"]
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "28d99096f0cb480c79b36efb8d4cf28145b60bd116e1fafd1186a3ec56dd3d35"
-sha256_source_normalized: "d277e574cdd378a43b471aaa595485162b68e839281b49a530f07735aab3d151"
-sha256_source_body: "403c776b57da178184d1c0df43fbb701870eec6ab648f638b0b1355cd8ce49c7"
-sha256_published_body: "2411933f5fc2a4dc9c5fdad30d5e2532af043307510b5c1bee84170908664717"
+sha256_source_normalized: "630058784e7cbffa97926e103a2ae54d8738773c7f68b8c3ff50e84b0c1806b6"
+sha256_source_body: "881eb730709bc83f3f82e2a342e88b7929db1a18237e125a1313afa5c72140f4"
+sha256_published_body: "8cb1c16ed94ec79268a2617ceca177fff90a7d7d69115cb0122921da7e07bb4b"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.010 de 30/05/1966

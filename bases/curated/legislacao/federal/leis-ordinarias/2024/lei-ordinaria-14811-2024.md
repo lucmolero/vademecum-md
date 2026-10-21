@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14811-2024"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "797f528cf62425b039c0ff37294507310582b3161a7f98066993e2fedfe8f21a"
 sha256_source_normalized: "14251d637096fd6b17b36d5a3776663566366ad5b969c49e6960f4ceb8faf9f7"
-sha256_source_body: "58c5b645b31d01ddec930bd15e575ac32c48b7e21862c5d24a6aa2ef6d984f51"
-sha256_published_body: "58c5b645b31d01ddec930bd15e575ac32c48b7e21862c5d24a6aa2ef6d984f51"
+sha256_source_body: "f66a8cc9c7b907d527542edad812227afbf2c026c7aa9b0aaa4ca6a957018d49"
+sha256_published_body: "f66a8cc9c7b907d527542edad812227afbf2c026c7aa9b0aaa4ca6a957018d49"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.811 de 12/01/2024

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-779-1969"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "08222804e46356fc9fa5960f609a39890765dada7e31c1db324d0a421f9c16a2"
 sha256_source_normalized: "a26f06c33405b5834c8dd3f9e265260aa250471fcf5b5120fdf8a4240022d67f"
-sha256_source_body: "776d849724c770be60bf8ac2841e4638315a7774ccbc1e2ecf08c225f91d6a03"
-sha256_published_body: "776d849724c770be60bf8ac2841e4638315a7774ccbc1e2ecf08c225f91d6a03"
+sha256_source_body: "68609ba4c56acdc9602e584663f6012ac02e2615c5ad88c25deca2a3547e03cb"
+sha256_published_body: "68609ba4c56acdc9602e584663f6012ac02e2615c5ad88c25deca2a3547e03cb"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 779 de 21/08/1969

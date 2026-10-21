@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-1521-1951"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "35802f57ea65d736e23f6b103f3c276f516ff5009251ad4a8f7d6768e0663869"
 sha256_source_normalized: "2639394e1facf91b23960b3221a31e2de4fb009ab1e125b556cc357c9d8d797e"
-sha256_source_body: "68c72578a43a8c03b764da1121d9dec3f1a587b31194ab8c1f624b64c5ebaafc"
-sha256_published_body: "123449c6cf94a7aff1579b23db08759f15f669b413ed5f2f0256af8d663cce72"
+sha256_source_body: "51078b4c1e28a2d6f1131c18ebdcfe6e7fbe84bc1a97100986cd15cdb4205486"
+sha256_published_body: "8e825024c48cfca568c0688fe20f373adc79635b0d65906f2cd24828d5dd8ccd"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 1.521 de 26/12/1951

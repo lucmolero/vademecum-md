@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-1002-1969"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "2cc18935923c6c80f68890ac43d8cc75757d197e1720694815b8d0f8a370d58c"
-sha256_source_normalized: "aeadc964c693aedad722c0b7ed8cfaa02b92bad9a35736cb84d988145066b961"
-sha256_source_body: "c1d2b1667f41f950fac3bcf2d5a6774cb0e5da12803ba983de3afe69e8fd1d01"
-sha256_published_body: "15d9cd35c00225173b2976d24214ba5551eb18c4823bbb63942eff5102d39533"
+sha256_source_normalized: "8408d7e870fcefebb2b6472ca1a349e69a9cb6aab7ae708cc05c0431c4430e70"
+sha256_source_body: "1c7596404df8e151ce6b565919ab4927f5dc9a5a148435d0507640c5a685654a"
+sha256_published_body: "76d4ee530dc777769dabc5cf9a3eb9434ed2d53e00d59d3586f69f15af7b87d9"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 1.002 de 21/10/1969

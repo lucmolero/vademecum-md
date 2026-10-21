@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9985-2000"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "e108d0fdf3a6d258cae1cafcaeb03ff55a0401d1492ba0706dadd7beb04df554"
-sha256_source_normalized: "c12a14fa9a0eeea3d750fc80de39591c4f24d83397b1f427fd1a83d0fd7abf96"
-sha256_source_body: "ce73293fb76426a5286ac9bbba96346411b05e30a6477934ab9cc30a37916384"
-sha256_published_body: "94a8b708fa27cae8e0fda9e5fff11311ac5cdc514e534dc2929d9af20a800bf1"
+sha256_source_normalized: "ad2b30900f161624597abff18601f35ef7d46b984e6b03d0441a39f440fc1388"
+sha256_source_body: "f5a633ed20c606ee286564b3b97c13f18953e86fb8d068ed7bba508bdfd332c7"
+sha256_published_body: "51212bd0748b8a63b005e154b2abefa137648dbfb28affd8f180800f02fcb2d0"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.985 de 18/07/2000

@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13445-2017"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "8ccec08814e72e68764057d450e1753bb1246b84c46dc2c336285fe80e5f47d0"
 sha256_source_normalized: "0736cca7e66e8a54f8ac3c354b5e3dcdaef14a6f7ef77d97c1295a9e5ea0fbb5"
-sha256_source_body: "33cbeec9abd9d08a0104d8f553280169636129322e6881504fc708ed65d216a1"
-sha256_published_body: "33cbeec9abd9d08a0104d8f553280169636129322e6881504fc708ed65d216a1"
+sha256_source_body: "508bc75c37fa33f1b7e1ce8d96efae4191f0cc019403520702bb0373e56efd06"
+sha256_published_body: "508bc75c37fa33f1b7e1ce8d96efae4191f0cc019403520702bb0373e56efd06"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.445 de 24/05/2017

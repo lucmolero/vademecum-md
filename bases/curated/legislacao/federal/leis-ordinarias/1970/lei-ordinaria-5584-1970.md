@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-5584-1970"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "fb0fef4583d30a6d8fef663c1d90a620e3fcba8ff3309e730118171539ca21a8"
-sha256_source_normalized: "5c377ca9520b4a590c449f6d9af2cf75ef139506875051a5c0724a86aae2ebaa"
-sha256_source_body: "d045bb266ded37fbbe982f003b92be67304b6fa62f7dd1a0591ee6d8b3ded228"
-sha256_published_body: "490fea57d05c65607de41655ab40a2f71b82a6314bba45bbafc2ca888e559825"
+sha256_source_normalized: "5831c30c4a7e1587da8ffd9b2a73f53dc3c28f14fd04fdec2168c8dea40a565d"
+sha256_source_body: "d516aae69ea87d49fc428b978b94aa77e449203a6eea9cf135c4f3b436f05d11"
+sha256_published_body: "d61b3ae060070b403ad365df4b509dbb1527fe43c619b832f09b98e21cdebe52"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.584 de 26/06/1970

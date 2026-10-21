@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-5764-1971"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "ff36c2aa9014f38d66980a1e4aeb4ab662990b5ff5c17f73122e7f50bc481c81"
-sha256_source_normalized: "fe2f85a70bd86366040c85122af80e805e7c6842135d6c70b7b513f166155ac9"
-sha256_source_body: "5cb9c60ec1ffb56d329e18b4e33a6202beb1c15f9eb26ee9ff75f895dccef464"
-sha256_published_body: "e5c39c6bc039856b075dd307daba8bfe299fd07551d6de3acbe106aae6d32407"
+sha256_source_normalized: "437625605e97e6ac48d54ebc3e10e80b4cc38c4f1981e755345f91cef4d5b279"
+sha256_source_body: "87f6c64feb536c06f7389b77ffe5482418ae7d39b619ed7c212794da68250c2b"
+sha256_published_body: "76e0f6387cccbac0a19e84bbccd5fbe5d36e41893c933f5fd8b2295414f779d8"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.764 de 16/12/1971

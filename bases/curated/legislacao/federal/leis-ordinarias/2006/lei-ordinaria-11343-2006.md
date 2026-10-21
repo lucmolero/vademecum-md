@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-11343-2006"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "eb6d3fb0719114bff27c2b9156bb786f7ba4919a360a26dd20c601dbb879d5d8"
 sha256_source_normalized: "37a9fe091ab9ec6a6ab31432f3ea2803ec17b9706c88b1e6fb8bf63ad8b29c6a"
-sha256_source_body: "78f6b2bee18d1997a511ab922cbbe030d02f3df1d5f95bd28267f1230b9f3702"
-sha256_published_body: "78f6b2bee18d1997a511ab922cbbe030d02f3df1d5f95bd28267f1230b9f3702"
+sha256_source_body: "e1306f7048dd2fef0ae503849ab7302490d912a54f060ba871a0bb98993fceb4"
+sha256_published_body: "e1306f7048dd2fef0ae503849ab7302490d912a54f060ba871a0bb98993fceb4"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei Antidrogas

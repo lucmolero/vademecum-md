@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-7565-1986"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "b1854d18725c2ae3776ae71ce08446c3eea96e7c4f7ea1fc04795ff2720a4c18"
-sha256_source_normalized: "ba6a56dee1a0b6ed1ddd702471217173d69a5a55a23b22cd58c64e9a8d4e58ef"
-sha256_source_body: "3783f74a95d3e9987d8626c52e29e06ac55e4ab752b1ff1b79c4996047c6aa7b"
-sha256_published_body: "4014f1cad9cbfe7ececd7815692a91b8e0c662c7ef3401443288b9e31b642000"
+sha256_source_normalized: "a3e3809fbbdb88524331a9e1f7133d5b4b2a9f852b6fafcb3a1f9dda86ac0309"
+sha256_source_body: "3338d1350d9298722a505224e1b62e56cb4036abbc687793b54caf92e16a7a2a"
+sha256_published_body: "56596884bf6bf007b56be4f403c21e14b3d09a97dad3ded9b64945335ff4b9e4"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.565 de 19/12/1986

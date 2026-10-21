@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-1579-1952"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
-fidelity_status: "review"
-fidelity_anomalies: ["article_tree_mismatch"]
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "72b1f821afce4cb91b56499108a61cf7b0d79d209209c584afb7c5dffd7b3f94"
 sha256_source_normalized: "0f40a58c051ba2a56e234f1f282d8e96b7de262de70c1d056b3e73742549225c"
-sha256_source_body: "f7634cce07dc61e25f4d0409865f50e90614703977c684e5d7c5815dc3d18c31"
-sha256_published_body: "17849b7bf29d64ebcbca4de8416807861a9e4810747a03b943617304e8d16bd0"
+sha256_source_body: "f5a241a14a4767722cecdcfbcf15719a4ade2e6853163dd6cfa18928d226c170"
+sha256_published_body: "9530f42511e0e93e2af59c6c4495dafb87f771c664cf5c4e832d65c21c31d7da"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 1.579 de 18/03/1952

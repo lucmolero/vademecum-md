@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9514-1997"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "74630184265140ed32b517ce563574efc6c1c163f3273e6bc42c3038ef8e94fd"
-sha256_source_normalized: "bbd37cb8c4caa36964fda7554bdc22cf1fbaef2bc44bfd1ee1c70418169238bd"
-sha256_source_body: "1debdb1fa465c6d6dceac2ff17773f324ad84807ca45770d7ae51216b1060eea"
-sha256_published_body: "ee3ab1100899b8579d8a9ca650ba33503a0532f3c565f612d160e97d5b7cb6f8"
+sha256_source_normalized: "eb3f1d6d154fc635318ddf6453ea32f6690c2551f6c175f6e415118fbae95e9a"
+sha256_source_body: "26fb32b73cfb2d2a85e93d16412afaecf15e587f31af17ae9cc2eb162b561abb"
+sha256_published_body: "6fa9ff4ed5ea397d8c433ab55390ebc306114e88f12d91f50294bec7c165a44c"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.514 de 20/11/1997

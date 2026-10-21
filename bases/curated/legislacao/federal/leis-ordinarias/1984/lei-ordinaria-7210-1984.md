@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-7210-1984"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "722d34b3281f03a56d25bd6a6e7a6f6a17d91d339c9a3ddd87c51b510c417072"
-sha256_source_normalized: "f0d014caba315756af94b6566bdc01727add6b8e47bcc9dd1f971f8014ef3bab"
-sha256_source_body: "8a07ee43b663666b1e5f181316d2527cc970d75eaa8b8645dafdf40311d1712b"
-sha256_published_body: "8a07ee43b663666b1e5f181316d2527cc970d75eaa8b8645dafdf40311d1712b"
+sha256_source_normalized: "dbb56caeb70714d382ad28c8248294e8c2469ff4db6af1df532354041bfce5d8"
+sha256_source_body: "ae2b42098a47f59f0d8392d3130a2e78d4b2c386647156e433018bc77f47ec91"
+sha256_published_body: "ae2b42098a47f59f0d8392d3130a2e78d4b2c386647156e433018bc77f47ec91"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei de Execucao Penal

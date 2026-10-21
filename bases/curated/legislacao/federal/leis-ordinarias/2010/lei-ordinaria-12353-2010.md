@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-12353-2010"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "5602dfd46cb16e4938e664b286f47dd1485faf02e1bea036832b72bd630599ab"
 sha256_source_normalized: "407e339a32c19534caac316a49f75046abe9f37587846c937a62c09119caa738"
-sha256_source_body: "668ad4df956d87a250b3fa961ed41fc2c6068da61416770d33a1984360361395"
-sha256_published_body: "668ad4df956d87a250b3fa961ed41fc2c6068da61416770d33a1984360361395"
+sha256_source_body: "86ead65b5a74013b3bc5191cadccfa3f7d24973690a51a339c90c00bb1514a08"
+sha256_published_body: "86ead65b5a74013b3bc5191cadccfa3f7d24973690a51a339c90c00bb1514a08"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.353 de 28/12/2010

@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-25-1937"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "7cfcd8a5641743a0282ec7e5cbadb2ac6655334eb9ef0035213543e43a22f0df"
 sha256_source_normalized: "208a1c4007ab8d281a970e5b8ebee01b2ae2c5bcc3aba1f2d60580626aa5ea27"
-sha256_source_body: "e0a74ab57f8ae8d079296f00db0bc9f8421d2baf3ec6e6386e666d785d9f94e9"
-sha256_published_body: "1df4572af294e48364320e072991de874c08b91c04a9d846df44f58debc51971"
+sha256_source_body: "b05038ec1c35c1bb6c554ff0080db7174d265e3c05fb7bd14d92902bf785d711"
+sha256_published_body: "ae6a0a803934efc6fb9677e0366e8245c8926f707cb40750d22d62002e11696f"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 25 de 30/11/1937

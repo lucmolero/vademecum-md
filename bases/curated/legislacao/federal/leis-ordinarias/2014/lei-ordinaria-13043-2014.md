@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13043-2014"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "9481a5635117bf0dca0cebaa1490d1f37d37af95badec9f7df60e92bf2308cc6"
-sha256_source_normalized: "cb3f6977ceded896687f03c6f4e6f083ea4c0c0e73ef5d661bba9842b6009a73"
-sha256_source_body: "4ab0cb7551217a160e5ca8f38e5a12d21fcab3188dfd61ecd0e2c40c0d402371"
-sha256_published_body: "4ab0cb7551217a160e5ca8f38e5a12d21fcab3188dfd61ecd0e2c40c0d402371"
+sha256_source_normalized: "d1be29bc850be742b40c3eccdfeef651d34b4f6d3361ebb45751930207c23805"
+sha256_source_body: "4f2d670e7a422b91f9a0d3a47b4fad5a986841647fc0bdec300b74420b7af11f"
+sha256_published_body: "4f2d670e7a422b91f9a0d3a47b4fad5a986841647fc0bdec300b74420b7af11f"
 ---
 # Lei nº 13.043, de 13 de novembro de 2014
 

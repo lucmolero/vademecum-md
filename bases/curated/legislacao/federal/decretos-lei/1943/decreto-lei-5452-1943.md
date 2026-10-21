@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-5452-1943"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "b5049725e32f80f90da539acc918d07b0146bd36ecbd78cafad11863a42dc152"
-sha256_source_normalized: "31f3cbb6432e2aff6c4ab6d7ac42abb6e85dd2a65ece98589fe0e12fd8336097"
-sha256_source_body: "36d91096d9feaedf40fe0a92ac65f69258b904d62f4c0c0f7e556f9fedddd8b4"
-sha256_published_body: "36d91096d9feaedf40fe0a92ac65f69258b904d62f4c0c0f7e556f9fedddd8b4"
+sha256_source_normalized: "4a39ecd1ba40283a870a2d348fba8886ef88b3796fdaa20789536213c0149b30"
+sha256_source_body: "4d0a5579a45e6cbca67f83931548ca4321fd4ee02bc56aec5e9c160445e5d36c"
+sha256_published_body: "aa92faac779b809505020667087679ffac4bd770915e001bf19069672601c510"
 source_snapshot_date: "2026-10-21"
 ---
 # Consolidacao das Leis do Trabalho

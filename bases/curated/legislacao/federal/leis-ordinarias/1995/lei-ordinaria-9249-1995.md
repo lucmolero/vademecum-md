@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9249-1995"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "92384512f746ddf20c0b6924f2d49f998af46538790b67d4299ea9bcfb79341b"
-sha256_source_normalized: "13c8d7b4e51a0c7d69a8ab4861dd02dc87364a6332a03d02c9768792c247a5b9"
-sha256_source_body: "5054256131abdbd754221278ea8ed76561db2595de78d84b367ad51b6a04ba95"
-sha256_published_body: "a4a5dfd805a4b0895c9361fc1706976a66becaeb2d054c5ab67a025399cfefd7"
+sha256_source_normalized: "2dd84dc22dc771334bb95b2a73388bfd0d3e77bba136cf2021bef210f6c6f8c0"
+sha256_source_body: "d21ead4d2b1debf564a59a90ee453ce98dfe69f3828eeefb5b2037f44ac486fa"
+sha256_published_body: "98fe5337794a8c62cbd8061b0a8a82d31f1c0f5cf68ffc4a1ec3960ebfa65bd3"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.249 de 26/12/1995

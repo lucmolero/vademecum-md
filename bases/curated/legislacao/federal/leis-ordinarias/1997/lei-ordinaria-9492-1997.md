@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-9492-1997"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "ece5efba12e1ee95d30581d4823de404c965dd11abf5cc9172f5443f62447ff3"
-sha256_source_normalized: "749dfccfc2b18e9b40ef9fd598d614ec2b434e9ee5e065dfffc30e22db2c3562"
-sha256_source_body: "234b026222a10ecd7410efa458cbe6bb0226fbf84b338a1612c837a07570f3f4"
-sha256_published_body: "f6da969a44ebc62bf8f6679e25edd511528166ce8d364e80c4b6de71005dac74"
+sha256_source_normalized: "46d009beef7edff64c9528f795e3dcac37d4812d7bc2e1230147e4a449ddc6b0"
+sha256_source_body: "6aebd36e4b124e3564d1c38715fa4a92740e8c3d50137d3d95085c2ccc6e083a"
+sha256_published_body: "c92f1d5753965a995fa406138810fc62686f45baa5b339541862275930f6f183"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.492 de 10/09/1997

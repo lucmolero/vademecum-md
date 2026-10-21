@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-8742-1993"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "107311b2df420555b3d1ab07533ce339d02ab910dfc1e13a1f71139b87f326e4"
-sha256_source_normalized: "c2f6d0a2b42d5ff7bf68247eb2b39edf25bba87c4e1ebbcd13a4f47b0d60399e"
-sha256_source_body: "59e3d08ec281e659f49429e7db29b6c5bc74c1c9b39a52b27691221a84b67c16"
-sha256_published_body: "ef1c782beb14704060add7e8a44af5e9593c5509e0d6a9dcd7164a9808060e1c"
+sha256_source_normalized: "54219025d506b4b43c86b1ead4d6be7e1e5e748285eb5d53e336dcad3371b5e7"
+sha256_source_body: "92f7b33f4393d9568de214ec7fb617c5d8fc17cbafd041b6fd694c44e2b21a1e"
+sha256_published_body: "66c05ca195092d7a994af1ccda2a1b1b8c1bedcab54502459a354ba5c6ce039b"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.742 de 07/12/1993

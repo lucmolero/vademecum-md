@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-11445-2007"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "85accb2d508f2ff9b330f643d344fce249fa49acddff98a964fda0ed2a1de8b2"
-sha256_source_normalized: "18ab168bbb145ffe562e31eb82fd8b5738ff057839042c838ec2b32b31f45bc7"
-sha256_source_body: "d125eb7afc4dd544f8fec4cb6f82187c14478aa6f980e337fb24d84687f944c4"
-sha256_published_body: "d125eb7afc4dd544f8fec4cb6f82187c14478aa6f980e337fb24d84687f944c4"
+sha256_source_normalized: "b671b683460fdee9052bc0eef036234fedd23545655cfcfb1e09b3a4fc4df222"
+sha256_source_body: "f2cd95d2460a711fba35fefc44e78a83828fdf97d2d951057192c4da7dacde04"
+sha256_published_body: "f2cd95d2460a711fba35fefc44e78a83828fdf97d2d951057192c4da7dacde04"
 ---
 # Lei nº 11.445, de 5 de janeiro de 2007
 

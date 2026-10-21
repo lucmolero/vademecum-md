@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13097-2015"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "5dacc39ccccee76b47fa25311245794f1804b4547c666c075e5b5dd5f45f79e4"
-sha256_source_normalized: "3a9217d02cba407fc08a5fc81bf4d357dd35f56eed885088b9a5eace78ea12e7"
-sha256_source_body: "7d2832035111c4e59ca901e6964431f9b885ff1a32e4805e7ce90d248c41f054"
-sha256_published_body: "e58d6b9f272c91e841c5e4da8a49718088db61f586947ec3376900cc92907105"
+sha256_source_normalized: "66df9489977203194ffb17a171ee6cf7db1c3176467faca0c67132c160c167f2"
+sha256_source_body: "84a018651285f2472d9976fea56287186f2ce5cbec89feef35f7e32cb00b4580"
+sha256_published_body: "4b537556a7bf34ecc3a209db7ac6e90fd40f3bfaea3b392aa83597fe4633db43"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.097 de 19/01/2015

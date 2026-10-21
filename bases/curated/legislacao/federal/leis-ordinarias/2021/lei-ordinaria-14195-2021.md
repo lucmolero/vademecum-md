@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-14195-2021"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "67f2d02d81118be956d3dec1fc874f9f415c5e111d00cdef2d5916354a62f501"
-sha256_source_normalized: "d91ac90a9efb8d81b11582625b1d31e9531b3791175918741f7df03a1b75b09d"
-sha256_source_body: "6666f22e55c5baa9ba36fbc0324ccde8042e4632af044065d9ae587878c0e914"
-sha256_published_body: "6666f22e55c5baa9ba36fbc0324ccde8042e4632af044065d9ae587878c0e914"
+sha256_source_normalized: "874b155ee76b942b08d253a77ddec92ace1ccc2747cd72f268ed4986d5751988"
+sha256_source_body: "901d7418dff5b2c0c5d78bfb7c617c9275ed3a9659a65f0273e26dc4b9d7c22d"
+sha256_published_body: "901d7418dff5b2c0c5d78bfb7c617c9275ed3a9659a65f0273e26dc4b9d7c22d"
 ---
 # Lei nº 14.195, de 26 de agosto de 2021
 

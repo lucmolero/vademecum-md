@@ -35,16 +35,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-lei_ordinaria-13966-2019"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "b1090ea106c28bd8abd306729e3ef128d24046d8b3ce6e57b33221736d5d902e"
 sha256_source_normalized: "d0a4f7549d5161a105f29323ea0840cb828374603e92d22c94b61aef1a40062c"
-sha256_source_body: "7175684da4ef3cd9c5f929906cab15b5efd2b792a12e26b484f07fa23c67c70f"
-sha256_published_body: "7175684da4ef3cd9c5f929906cab15b5efd2b792a12e26b484f07fa23c67c70f"
+sha256_source_body: "cf28e3da818756154ebf150aa86f3ea65d286efd3040bdd24a884a6a55d591e2"
+sha256_published_body: "cf28e3da818756154ebf150aa86f3ea65d286efd3040bdd24a884a6a55d591e2"
 source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.966 de 26/12/2019

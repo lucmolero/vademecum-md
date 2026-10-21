@@ -33,16 +33,16 @@ numero_status: "presente"
 ementa_status: "presente"
 data_assinatura_status: "presente"
 texto_classificacao: "texto_consolidado"
-canonicalization_version: "norm-v2"
+canonicalization_version: "norm-v3"
 source_unit_id: "br-federal-decreto_lei-3365-1941"
 source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
 fidelity_status: "pass"
 fidelity_anomalies: []
-hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
 sha256_source_raw: "cde71c796392b8c23da6924f0c2a9c212f2187af2d8ee447926de3e0c73f47f0"
-sha256_source_normalized: "5ed68c57c0168988328df16fff2fb4caad49217af97cd84f8c94734cc3a95aa4"
-sha256_source_body: "ae9187b7e89ff11aa89de24b9fa8889c9376cb99c6f37945060f31c46151312d"
-sha256_published_body: "3b457803a1487bbd97e00470b1083e2702dda2f0eda6da77e3b82d21b918b072"
+sha256_source_normalized: "c8f7928faa57bb77b928d526dcbbc723b3a0f429729036a7a0e2e4122179dc88"
+sha256_source_body: "bb146c924bbc664b87424389d3523429cf4afed9751a6e799474ec4cfe64321e"
+sha256_published_body: "a04887a2e0e4c0f91170eecb4241b044d574d297f8cd28d040e3c42e8342c37d"
 source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 3.365 de 21/06/1941
