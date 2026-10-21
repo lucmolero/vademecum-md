@@ -32,6 +32,7 @@ from migrate_public_corpus import parse_frontmatter  # noqa: E402
 from repair_encoding import candidate  # noqa: E402
 from build_public_indexes import relation_is_plausible, relation_type  # noqa: E402
 from build_structural_diffs import article_diff  # noqa: E402
+from build_candidate_diffs import classify_change  # noqa: E402
 from pipeline_modes import load_modes, resolve_mode  # noqa: E402
 
 
@@ -520,6 +521,30 @@ class WorkspaceTest(unittest.TestCase):
         self.assertEqual(details["incisos"]["added"], 1)
         self.assertEqual(details["incisos"]["changed"], 1)
         self.assertEqual(details["alineas"]["changed"], 1)
+
+    def test_candidate_diff_classifies_legal_effect_markers(self) -> None:
+        structure = {"alterados": 1, "adicionados": 0, "removidos": 0}
+        cases = {
+            "O artigo foi revogado parcialmente.": "possivel_revogacao",
+            "O veto foi mantido.": "possivel_veto",
+            "A lei foi retificada.": "possivel_retificacao",
+            "A vigência terá início em 1º de janeiro.": "possivel_efeito_de_vigencia",
+            "A produção de efeitos ocorrerá posteriormente.": "possivel_efeito_de_vigencia",
+        }
+        for body, expected in cases.items():
+            with self.subTest(expected=expected):
+                self.assertIn(expected, classify_change("changed_candidate", "Art. 1º antigo.", body, structure))
+
+    def test_candidate_diff_classifies_source_failures_without_inference(self) -> None:
+        for status, expected in (
+            ("source_conflict", "conflito_de_fontes"),
+            ("source_unavailable", "fonte_indisponivel"),
+            ("source_invalid", "fonte_invalida"),
+        ):
+            with self.subTest(status=status):
+                labels = classify_change(status, "", "", {})
+                self.assertIn(expected, labels)
+                self.assertIn("requer_reconciliacao", labels)
 
     def test_frontmatter_parser_fails_closed_in_strict_mode(self) -> None:
         with self.assertRaises(ValueError):

@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -102,6 +103,7 @@ def classify_change(status: str, old_body: str, new_body: str, structure: dict[s
         return ["fonte_invalida", "requer_reconciliacao"]
     classifications: list[str] = []
     lower = new_body.lower()
+    semantic_text = unicodedata.normalize("NFKD", lower).encode("ascii", "ignore").decode("ascii")
     if structure.get("alterados", 0) or structure.get("adicionados", 0) or structure.get("removidos", 0):
         classifications.append("alteracao_normativa")
     else:
@@ -110,11 +112,10 @@ def classify_change(status: str, old_body: str, new_body: str, structure: dict[s
         ("revog", "possivel_revogacao"),
         ("vet", "possivel_veto"),
         ("retific", "possivel_retificacao"),
-        ("vigência", "possivel_efeito_de_vigencia"),
         ("vigencia", "possivel_efeito_de_vigencia"),
-        ("produção de efeitos", "possivel_efeito_de_vigencia"),
+        ("producao de efeitos", "possivel_efeito_de_vigencia"),
     ):
-        if marker in lower and label not in classifications:
+        if marker in semantic_text and label not in classifications:
             classifications.append(label)
     classifications.append("requer_reconciliacao")
     return classifications
