@@ -1,0 +1,123 @@
+{
+  "schema": "candidate-normative-diff-index/v1",
+  "documents": [
+    {
+      "matrix_id": "VM-047",
+      "status": "generated",
+      "file": "VM-047.json",
+      "artigos_alterados": 17,
+      "artigos_adicionados": 0,
+      "artigos_removidos": 0,
+      "classificacao": [
+        "decisao_de_fonte_aprovada",
+        "alteracao_normativa",
+        "possivel_revogacao",
+        "possivel_veto",
+        "possivel_retificacao",
+        "possivel_efeito_de_vigencia"
+      ],
+      "risco": "alto",
+      "relacoes_impactadas": 6,
+      "hashes": {
+        "current_body_sha256": "de53ad8fc5abe006b49989709a0b28a0f4b7823e370ef3e8d4bf348a05963b07",
+        "candidate_body_sha256": "eeeed161546e113c956b48f08593c9a70b1144b352dd05ffa43297981849ec1a",
+        "source_raw_sha256": "81a42e7952ef703179e67e4560a10db2d7bde8fd44a3739482525777f6266a77",
+        "source_normalized_sha256": "4a38a840aedf29b7e33a82eac2c35a86ab9881064cf6b5464cb37fa87bf03509",
+        "source_legal_body_sha256": "f48ae1d016d9df18a63b94b288d7ca58fceda070370229bda3257d93d045f5d1"
+      }
+    },
+    {
+      "matrix_id": "VM-069",
+      "status": "generated",
+      "file": "VM-069.json",
+      "artigos_alterados": 4,
+      "artigos_adicionados": 0,
+      "artigos_removidos": 0,
+      "classificacao": [
+        "decisao_de_fonte_aprovada",
+        "alteracao_normativa",
+        "possivel_retificacao"
+      ],
+      "risco": "alto",
+      "relacoes_impactadas": 0,
+      "hashes": {
+        "current_body_sha256": "0fc6b5dcd0dfa1d98d04732d9f8c7e4332b5e7f609c923d10d0d02561ef6b9cc",
+        "candidate_body_sha256": "b5e932904ec90e09eff0fd408cf29e5518aef454a1f4253d9d16cb7d95331763",
+        "source_raw_sha256": "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026",
+        "source_normalized_sha256": "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026",
+        "source_legal_body_sha256": "837e0857963ce8b3fb5b9caf629c8be927c367ea7f9d7856322639d595907648"
+      }
+    },
+    {
+      "matrix_id": "VM-092",
+      "status": "generated",
+      "file": "VM-092.json",
+      "artigos_alterados": 11,
+      "artigos_adicionados": 0,
+      "artigos_removidos": 0,
+      "classificacao": [
+        "decisao_de_fonte_aprovada",
+        "alteracao_normativa",
+        "possivel_veto",
+        "possivel_efeito_de_vigencia"
+      ],
+      "risco": "alto",
+      "relacoes_impactadas": 12,
+      "hashes": {
+        "current_body_sha256": "1071308ee91d39b61558f07a7e55c9b76ff4d7ce47b0e190a05dc05b248fcdb9",
+        "candidate_body_sha256": "4263b50d4d021e3ef2288fb86edaa6125ba91dd84b28b48bb968678c986ce4f1",
+        "source_raw_sha256": "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0",
+        "source_normalized_sha256": "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0",
+        "source_legal_body_sha256": "8326e101b0f8a81578d7f254c3d34a2d00c79647d7e9c8345ee6e54c94f21dca"
+      }
+    },
+    {
+      "matrix_id": "VM-312",
+      "status": "generated",
+      "file": "VM-312.json",
+      "artigos_alterados": 3,
+      "artigos_adicionados": 0,
+      "artigos_removidos": 0,
+      "classificacao": [
+        "decisao_de_fonte_aprovada",
+        "alteracao_normativa",
+        "possivel_revogacao",
+        "possivel_veto"
+      ],
+      "risco": "alto",
+      "relacoes_impactadas": 0,
+      "hashes": {
+        "current_body_sha256": "fef1a697033ac179a02755c2c931fae897de10da8e52add0d8461909202ddf45",
+        "candidate_body_sha256": "2e2ede9370c53ae2daf887013aba1216fd87921a17381784d445de6d5b3de32c",
+        "source_raw_sha256": "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61",
+        "source_normalized_sha256": "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61",
+        "source_legal_body_sha256": "d2bdc92ce5dcb5ee3ef6ac1692bc5d25b97720c4d45327d7a9f8d851870fdaf9"
+      }
+    },
+    {
+      "matrix_id": "VM-313",
+      "status": "generated",
+      "file": "VM-313.json",
+      "artigos_alterados": 22,
+      "artigos_adicionados": 0,
+      "artigos_removidos": 0,
+      "classificacao": [
+        "decisao_de_fonte_aprovada",
+        "alteracao_normativa",
+        "possivel_revogacao",
+        "possivel_veto"
+      ],
+      "risco": "alto",
+      "relacoes_impactadas": 18,
+      "hashes": {
+        "current_body_sha256": "ba803e0e13aff2d916f6a5ec2bc7ac41f4770e5f3bac71d0d82b6289e99bcb21",
+        "candidate_body_sha256": "5862732600462d6cbd4d4f5aa4f4eb0bf64b754adefe1ada3c4632d5437f02b6",
+        "source_raw_sha256": "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4",
+        "source_normalized_sha256": "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4",
+        "source_legal_body_sha256": "6472dd8229d64f945c445dfc7def7261b0547d957f2bc01d1c098d6a7a411b0f"
+      }
+    }
+  ],
+  "generated_count": 5,
+  "unavailable_count": 0
+}

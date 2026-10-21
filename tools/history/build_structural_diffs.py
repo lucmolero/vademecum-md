@@ -15,14 +15,17 @@ sys.path.insert(0, str(TOOLS))
 from migrate_public_corpus import parse_frontmatter  # noqa: E402
 
 
-ARTICLE_RE = re.compile(r"(?im)^\s*(?:\*\*)?Art\.?\s+([0-9]+(?:-[A-Z])?)\b")
-PARAGRAPH_RE = re.compile(r"(?im)^\s*(?:\*\*)?(?:§|Â§)\s*([0-9]+(?:º|o)?|único|unico)\b")
-INCISO_RE = re.compile(r"(?im)^\s*(?:\*\*)?([IVXLCDM]+)\s*[-–—]")
-ALINEA_RE = re.compile(r"(?im)^\s*(?:\*\*)?([a-z])\s*[-–—]")
+ARTICLE_RE = re.compile(r"(?im)^\s*(?:\*\*)?Art\s*\.?\s+([0-9]+(?:-[A-Z])?)(?:[\u00ba\u00aa\u00b0o])?\b")
+PARAGRAPH_RE = re.compile(r"(?im)^\s*(?:\*\*)?\u00a7\s*([0-9]+(?:\u00ba|o)?|\u00fanico|unico)\b")
+INCISO_RE = re.compile(r"(?im)^\s*(?:\*\*)?([IVXLCDM]+)\s*[-\u2013\u2014]")
+ALINEA_RE = re.compile(r"(?m)^\s*(?:\*\*)?([a-z])\s*[-\u2013\u2014]")
 
 
 def digest(text: str) -> str:
-    return hashlib.sha256(re.sub(r"\s+", " ", text).strip().encode("utf-8")).hexdigest()
+    # Compare legal content, not the Markdown presentation layer. The curated
+    # corpus uses emphasis around article labels while official HTML does not.
+    comparable = re.sub(r"[*_`]", "", text)
+    return hashlib.sha256(re.sub(r"\s+", " ", comparable).strip().encode("utf-8")).hexdigest()
 
 
 def sections(body: str, pattern: re.Pattern[str]) -> dict[str, str]:

@@ -1,0 +1,844 @@
+{
+  "schema": "candidate-normative-diff/v1",
+  "matrix_id": "VM-036",
+  "document_id": "br-federal-lei_complementar-225-2026",
+  "status": "source_conflict",
+  "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2026-01-08;225",
+  "source_status_before_resolution": "source_conflict",
+  "resolution": {
+    "status": "approved",
+    "selected_source_id": "normas-leg-br",
+    "expected_source_sha256": "b598899fa80445297c6b05704c88589ea8e320aded64cba359601a47240f35a7",
+    "reason": "Both official sources expose the same 58-article instrument. The Normas current compilation is selected as the cleaner machine-readable body; Planalto remains corroborating publication evidence, including its official publication note.",
+    "review_scope": "article_level_comparison"
+  },
+  "selected_source_id": "normas-leg-br",
+  "diff_status": "generated",
+  "current_path": "bases/curated/legislacao/federal/leis-complementares/2026/lei-complementar-225-2026.md",
+  "structure": {
+    "artigos": {
+      "total_anterior": 58,
+      "total_atual": 58,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 26,
+      "inalterados": 32
+    },
+    "detalhes": [
+      {
+        "artigo": "2",
+        "status": "alterado",
+        "hash_anterior": "b3890c6058a8ba959f725d298c2b095699c9f752b16524215144e9c1b388b0c5",
+        "hash_atual": "2506b4f243f7fc36ad191262b335de811e82b0b13d0d87a15b316a002f6f9297",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "7",
+        "status": "alterado",
+        "hash_anterior": "11136cf4b72a7a8e997499613d35b27679812d6fb22714bf268be62d6c7f4aa8",
+        "hash_atual": "2bef6bb9cc96e34ca88a208d98fdbfc14a22fe5993916acc60740f3c504702a7",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "8",
+        "status": "alterado",
+        "hash_anterior": "b54027478295993e3f296cbc9a1771c42e3398e2f05bfd7ae159bcd4758f3e1d",
+        "hash_atual": "b95cece0263726a0c5adcf1250dc7755fbe9613ad49ea07b0f60120aa6ec5d2b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 1,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "10",
+        "status": "alterado",
+        "hash_anterior": "0c98e93c9200a9d45dd42969b8e1d9a71dfbd9b463b175659ec561ecfbe6f333",
+        "hash_atual": "8bda2dc5adf9c0d809055153f97b179525249e06eb7ff79ba71c0170b048f977",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "17",
+        "status": "alterado",
+        "hash_anterior": "d5baa186fb3aba645b6ef46cf21d9c322d4e6204b7c8c2bd8d22f19888fe50ff",
+        "hash_atual": "fc4b496571a36e1376f1b88fd1c523809032dff59c5da678ebd977ba79479d12",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "18",
+        "status": "alterado",
+        "hash_anterior": "40f4bff619e99f011e9564fa375d71e12bd1d83445ffff7580a83b3554ae34a0",
+        "hash_atual": "05bbdc4e093a4f806413938932151244a940b089aa1938893932074412c99fab",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "19",
+        "status": "alterado",
+        "hash_anterior": "6763d4e493aa7dd264cfa7a9bf26d8403a9d804927131386ef34199c3d738e02",
+        "hash_atual": "1c74e2c6e6818364d195891d5b53bbcaed0b01befeee4a959a02633d6d0c98fd",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "20",
+        "status": "alterado",
+        "hash_anterior": "ee8e6c095511d28038c4897a57f3961a38eb8fe8849cd6c8c7b6f5a395e363a0",
+        "hash_atual": "3f57e785ab1e5e168ded3b14fe2370f2d14f10a30591e74ae72d05e0d8448837",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 6
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "23",
+        "status": "alterado",
+        "hash_anterior": "5d85066a5ced016fd7520157108e695192549435c4e9c8c4c2f3f58840e6ad78",
+        "hash_atual": "ba6fcb8b8dc34bdf8723dd9a1d7d36505ca794d5eb79dc2e8be5a52695b92202",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 5
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "26",
+        "status": "alterado",
+        "hash_anterior": "3597ab982d8cbc3277795a9d8701665316d06994f151fd009ccf5a5b7520219d",
+        "hash_atual": "664704893b9f7048011202524286ffc2c7c14f64b9cc79d4e502824958fc573d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 4
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "29",
+        "status": "alterado",
+        "hash_anterior": "5cddb55447407a61e0be1eee570d1f4c75b719e1f7ce6e6ad8c2676655001523",
+        "hash_atual": "fa2860e712c1f1b1e7d33ab9c40c9f148ab75780a3cab6c9b3b29d662eeda482",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "31",
+        "status": "alterado",
+        "hash_anterior": "109441eaac5e7e28e0e4e62d3ca9254b0e0b6fb26b4af3a0f0699a48d985ef42",
+        "hash_atual": "bff49dd93077ccdda7e749696901c050adc2b6b5f7021036b2d77f7fd3f98ca2",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "32",
+        "status": "alterado",
+        "hash_anterior": "01bc514c50ec06bd76baf84df92154585a329cb44b20c1a92c575bdd4a1d58e4",
+        "hash_atual": "f59206c6d9d1b79c8f204b3ddd6963172e02a351f603fe88f56f8b12281f0b6b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 3
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "39",
+        "status": "alterado",
+        "hash_anterior": "2c9813290b31a950333c4e8a2f49f16150f63ac9686af7079c0b0f9934fd19e0",
+        "hash_atual": "18235a253491553bfdb9ff5723b1716f94e648e74ca68cc51227c69b30f3e0a7",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "40",
+        "status": "alterado",
+        "hash_anterior": "26ea1e11fe46b254e6a30fb2b1f768fab47f55b1298906f5477e73392b4c4553",
+        "hash_atual": "73c462f4114d163ba3ab21968dcfdd259ffa98df8d36041ded4a673f428d2673",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "42",
+        "status": "alterado",
+        "hash_anterior": "5e7f2be474c6426baa56f4dbadc705fe0364dc0df7846c76af5e2eab35a49b85",
+        "hash_atual": "a1e795f46980da5afd2facd9455a041226a24881a3b560dc3e8ad78a2b8dac81",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "45",
+        "status": "alterado",
+        "hash_anterior": "61f43a2e8b66e51da53d2bc38b773632df64e749ef6a1229370fec56ad6d4b60",
+        "hash_atual": "b56b6ec5aa2b2852c2581ac6d4735e9a15afbc65770f7379c6020959716d1073",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "47",
+        "status": "alterado",
+        "hash_anterior": "3897e498adfcb94ac2355d2b2781bff60aa9627cfd06597c49cc2957164c8f87",
+        "hash_atual": "9c658af9a276da316f1425f5f31d95c6f3e94c015456eb49b7ea0d4336814107",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "48",
+        "status": "alterado",
+        "hash_anterior": "6342c89cb2d05372ae43597858f8470608d4b9913831fe8fe71a55ea7b7e4a95",
+        "hash_atual": "f007bab81f00667fdd8270d101b874255e54011cb83db1eb3b12a780b961acef",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "49",
+        "status": "alterado",
+        "hash_anterior": "21db02eaff27d818a007e8927d5753a463093ede43b2162f6b4a96eadf4efac2",
+        "hash_atual": "0a2576f47051aadbcc8e6be0f971f419ffa7b87b629a017bc56dfa470fcc4c12",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "50",
+        "status": "alterado",
+        "hash_anterior": "49984e660717ebb56a78b179b4cdbbfba1b16c57dc4a9c2faf1d84caa4cff2a5",
+        "hash_atual": "fdf77d0b06513b100f3350d080cf40b7e029213847e2295306e04ea556462c9d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "51",
+        "status": "alterado",
+        "hash_anterior": "aa815a6bfa2bc6f32e3f5a09327aba4cd95dab8b02f1918505240b6e206ef8a8",
+        "hash_atual": "0bfe1f076f15a8e1b4821297e3381cfd93c13cb6c0b6b915f82cde8488ee6cee",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 3
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 2
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "52",
+        "status": "alterado",
+        "hash_anterior": "a424c8154187933b4e262966e4431a523e6051d291e161b406547ea8b899b4b3",
+        "hash_atual": "acb6f5bcd4605293796bb91702e61131bc21c58154cdfe79bd345cfebe75d58d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 5
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 3
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "53",
+        "status": "alterado",
+        "hash_anterior": "899a339a844a22c0c1c43e410f042beb3ebcea3f54e43faa15bb6b7dab20843e",
+        "hash_atual": "50a1656d879fdcc77affc62506bf616dde6fdf87e6a71e1a06b517543c7a3fde",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "55",
+        "status": "alterado",
+        "hash_anterior": "d3738e7783718005cda2b269f78c9ea7df5d6d1a7f66c0b589e1fa00d649d64c",
+        "hash_atual": "7d9486a7cdc4196eaaa521e979b5859cdd0b875e41c2fa178f1d064c5ae58914",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 1
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "58",
+        "status": "alterado",
+        "hash_anterior": "7358488a1cc779ab8318bac5a42f2c1380f2f6ac0016fa807e503291de63c2a1",
+        "hash_atual": "2d4aefcd1a036149a9db9305b3fdd192635ec3bd00823840bca406ed972567b2",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      }
+    ]
+  },
+  "classificacao": [
+    "decisao_de_fonte_aprovada",
+    "alteracao_normativa",
+    "possivel_revogacao",
+    "possivel_veto",
+    "possivel_retificacao",
+    "possivel_efeito_de_vigencia"
+  ],
+  "hashes": {
+    "current_body_sha256": "66a29f1980e44d6da7250b65b69f785a91f21f53f147055a8afeda958f920bb2",
+    "candidate_body_sha256": "7c9f0fabf66b269035f8f3926b42eb93834f42f6b699ced0196e011a6f940058",
+    "source_raw_sha256": "b598899fa80445297c6b05704c88589ea8e320aded64cba359601a47240f35a7",
+    "source_normalized_sha256": "b598899fa80445297c6b05704c88589ea8e320aded64cba359601a47240f35a7",
+    "source_legal_body_sha256": "9f86d45542c9339be23ee71d1871c9c22433c646ca9fa51b8c1e52d41872eb9e"
+  },
+  "risk": "alto",
+  "relations_before": [
+    {
+      "source_id": "br-federal-decreto_lei-2848-1940",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-225-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1940-12-07;2848",
+      "evidencia_textual": "o Cadastro Informativo dos créditos não quitados do setor público federal (Cadin), previsto na Lei nº 10.522, de 19 de julho de 2002. (Parágrafo acrescido pela Lei Complementar nº 225, de 8/1/2026) § 6º O fato de o agente deixar de ser considerado devedor contumaz não afasta o disposto no § 5º deste artigo em relação aos atos praticados no período em que era a",
+      "evidencia_sha256": "1da569bec7dd42e6f9a83ccd9d2533396f2a2f564776ecee8ccaeb68b9bdb975",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-225-2026",
+      "type": "altera",
+      "target_id": "br-federal-decreto_lei-2848-1940",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+      "evidencia_textual": "o Cadastro Informativo dos créditos não quitados do setor público federal (Cadin), previsto na Lei nº 10.522, de 19 de julho de 2002. (Parágrafo acrescido pela Lei Complementar nº 225, de 8/1/2026) § 6º O fato de o agente deixar de ser considerado devedor contumaz não afasta o disposto no § 5º deste artigo em relação aos atos praticados no período em que era a",
+      "evidencia_sha256": "1da569bec7dd42e6f9a83ccd9d2533396f2a2f564776ecee8ccaeb68b9bdb975",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-225-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-10522-2002",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+      "evidencia_textual": "ciso acrescido pela Lei nº 14.973, de 16/9/2024)* VI - sejam enquadradas como devedores contumazes, na forma da legislação Específica. *(Inciso acrescido pela Lei Complementar nº 225, de 8/1/2026)* **§ 1º** Os órgãos e as entidades a que se refere o inciso I procederão, segundo normas próprias e sob sua exclusiva responsabilidade, às inclusões no Cadin, de pe",
+      "evidencia_sha256": "d5127463b276f1ebc1e823db5de3cf571fae8d3c83d2c35e97c8c2d7967b15d2",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-225-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-10684-2003",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+      "evidencia_textual": "Cadastro Informativo dos créditos não quitados do setor público federal (Cadin), previsto na Lei nº 10.522, de 19 de julho de 2002. *(Parágrafo acrescido pela Lei Complementar nº 225, de 8/1/2026)* **§ 4º** O fato de o agente deixar de ser considerado devedor contumaz não afasta o disposto no § 3º deste artigo em relação aos atos praticados no período em que",
+      "evidencia_sha256": "7b5acb4a69858c07e63fca01a7aecf12ed6765b270ce2d5d5b3bd4eafa549551",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-225-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-9249-1995",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+      "evidencia_textual": "Cadastro Informativo dos créditos não quitados do setor público federal (Cadin), previsto na Lei nº 10.522, de 19 de julho de 2002. *(Parágrafo acrescido pela Lei Complementar nº 225, de 8/1/2026)* **§ 4º** O fato de o agente deixar de ser considerado devedor contumaz não afasta o disposto no § 3º deste artigo em relação aos atos praticados no período em que",
+      "evidencia_sha256": "7b5acb4a69858c07e63fca01a7aecf12ed6765b270ce2d5d5b3bd4eafa549551",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-225-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-9430-1996",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+      "evidencia_textual": "nº 12.382, de 25/2/2011)* **§ 5º** O disposto nos §§ 1º a 4º não se aplica: *(Parágrafo acrescido pela Lei nº 12.382, de 25/2/2011*, *e com redação dada pela Lei Complementar nº 225, de 8/1/2026)* I - às hipóteses de vedação legal de parcelamento; e *(Inciso acrescido pela Lei Complementar nº 225, de 8/1/2026)* II - ao agente declarado devedor contumaz em d",
+      "evidencia_sha256": "570fe9aae7845ead1491797ea0710f2b97c09ccf57e31673404637ab23c62378",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-225-2026",
+      "type": "revoga",
+      "target_id": "br-federal-lei_ordinaria-10637-2002",
+      "dispositivo": "art. 38",
+      "data_efeito": "2006-01-01",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+      "evidencia_textual": "panhamento e transparência relativa aos impostos e às contribuições relacionadas com os serviços por eles prestados.” (NR) **Art. 56.** Revoga-se o art. 38 da Lei nº 10.637, de 30 de dezembro de 2002 (Legislação Tributária Federal). **Art. 57.** A União, os Estados, o Distrito Federal e os Municípios adaptarão suas respectivas legislações ao dispost",
+      "evidencia_sha256": "685917e40c8411579b8aaa255db46233be8d001a696a434c04d64a41d71f528a",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-10522-2002",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-225-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-07-19;10522",
+      "evidencia_textual": "ciso acrescido pela Lei nº 14.973, de 16/9/2024)* VI - sejam enquadradas como devedores contumazes, na forma da legislação Específica. *(Inciso acrescido pela Lei Complementar nº 225, de 8/1/2026)* **§ 1º** Os órgãos e as entidades a que se refere o inciso I procederão, segundo normas próprias e sob sua exclusiva responsabilidade, às inclusões no Cadin, de pe",
+      "evidencia_sha256": "d5127463b276f1ebc1e823db5de3cf571fae8d3c83d2c35e97c8c2d7967b15d2",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-10684-2003",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-225-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2003-05-30;10684",
+      "evidencia_textual": "Cadastro Informativo dos créditos não quitados do setor público federal (Cadin), previsto na Lei nº 10.522, de 19 de julho de 2002. *(Parágrafo acrescido pela Lei Complementar nº 225, de 8/1/2026)* **§ 4º** O fato de o agente deixar de ser considerado devedor contumaz não afasta o disposto no § 3º deste artigo em relação aos atos praticados no período em que",
+      "evidencia_sha256": "7b5acb4a69858c07e63fca01a7aecf12ed6765b270ce2d5d5b3bd4eafa549551",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-9249-1995",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-225-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-12-26;9249",
+      "evidencia_textual": "Cadastro Informativo dos créditos não quitados do setor público federal (Cadin), previsto na Lei nº 10.522, de 19 de julho de 2002. *(Parágrafo acrescido pela Lei Complementar nº 225, de 8/1/2026)* **§ 4º** O fato de o agente deixar de ser considerado devedor contumaz não afasta o disposto no § 3º deste artigo em relação aos atos praticados no período em que",
+      "evidencia_sha256": "7b5acb4a69858c07e63fca01a7aecf12ed6765b270ce2d5d5b3bd4eafa549551",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-9430-1996",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-225-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-01-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1996-12-27;9430",
+      "evidencia_textual": "nº 12.382, de 25/2/2011)* **§ 5º** O disposto nos §§ 1º a 4º não se aplica: *(Parágrafo acrescido pela Lei nº 12.382, de 25/2/2011*, *e com redação dada pela Lei Complementar nº 225, de 8/1/2026)* I - às hipóteses de vedação legal de parcelamento; e *(Inciso acrescido pela Lei Complementar nº 225, de 8/1/2026)* II - ao agente declarado devedor contumaz em d",
+      "evidencia_sha256": "570fe9aae7845ead1491797ea0710f2b97c09ccf57e31673404637ab23c62378",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    }
+  ],
+  "relation_impact_count": 11,
+  "source_evidence": {
+    "data_corte": "2026-10-21",
+    "primary_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2026-01-08;225",
+    "selected_source_id": "normas-leg-br",
+    "attempts": [
+      {
+        "source_id": "planalto-br",
+        "adapter": "planalto_html",
+        "adapter_version": "0.1.0",
+        "authority": "primary",
+        "status": "fetched",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+        "final_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 221478,
+        "sha256_raw": "38086496cfd9d132b6d8b04179efe6be4ab8420b5f03e520d7a4314ae5dfb9b4",
+        "sha256_normalized": "b19087bd7c124ada5dc46d487bd4f513b4c2e6679e4ec3ee79b8ddcb0196ed5c",
+        "sha256_body": "2dd6b54ee37924a65e863fc459280f99b567b1c69ba327b1d2c06e7b64af34fe"
+      },
+      {
+        "source_id": "normas-leg-br",
+        "adapter": "normas_leg_current_compilation",
+        "adapter_version": "0.2.0",
+        "authority": "official_machine_readable_compilation",
+        "status": "fetched",
+        "url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2026-01-08;225",
+        "fetch_url": "https://normas.leg.br/api/public/binario/3ad77d99-88fd-4732-b5ff-cadaf916996e/texto",
+        "metadata_url": "https://normas.leg.br/api/public/normas?urn=urn%3Alex%3Abr%3Afederal%3Alei.complementar%3A2026-01-08%3B225&tipo_documento=maior-detalhe",
+        "final_url": "https://normas.leg.br/api/public/binario/3ad77d99-88fd-4732-b5ff-cadaf916996e/texto",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 142519,
+        "sha256_raw": "b598899fa80445297c6b05704c88589ea8e320aded64cba359601a47240f35a7",
+        "sha256_normalized": "b598899fa80445297c6b05704c88589ea8e320aded64cba359601a47240f35a7",
+        "sha256_body": "9f86d45542c9339be23ee71d1871c9c22433c646ca9fa51b8c1e52d41872eb9e"
+      }
+    ]
+  }
+}

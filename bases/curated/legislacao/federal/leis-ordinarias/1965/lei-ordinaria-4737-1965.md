@@ -18,9 +18,9 @@ consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-07-15;4737"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "506589532e407c8f97e7243b93b497cc26f9e7a74b5e03d0b9d2aa9e08892e24"
+sha256_origem: "8495f57b1ca3ce36cf8d45597bd6970f45cd10b8b4b2982a5c3f90f7dcd09288"
 alterada_por: ["br-federal-lei_ordinaria-12034-2009", "br-federal-lei_ordinaria-13105-2015", "br-federal-lei_ordinaria-13146-2015", "br-federal-lei_ordinaria-15358-2026", "br-federal-lei_ordinaria-9504-1997"]
 revogada_por: ["br-federal-lei_ordinaria-9504-1997"]
 regulamentada_por: []
@@ -28,42 +28,36 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+sha256_normalizado: "8495f57b1ca3ce36cf8d45597bd6970f45cd10b8b4b2982a5c3f90f7dcd09288"
+sha256_corpo: "a5a8656324de8d9aa209c48f3a61bfba92837261bc87fcfb9ddff47038afedfa"
 ---
-# Lei nº 4.737 de 15/07/1965
+# Codigo Eleitoral
 
-LEI Nº 4.737, DE 15 DE JULHO DE 1965
+O PRESIDENTE DA REPÚBLICA
 
-Institui o Código Eleitoral.
+Faço saber que sanciono a seguinte Lei, aprovada pelo Congresso Nacional, nos termos do art. 4º, caput , do Ato Institucional, de 9 de abril de 1964.
 
-**O PRESIDENTE DA REPÚBLICA**
+Art.1º Este Código contém normas destinadas a assegurar a organização e o exercício de direitos políticos precipuamente os de votar e ser votado.
 
-Faço saber que sanciono a seguinte Lei, aprovada pelo Congresso Nacional, nos termos do art. 4º, *caput*, do Ato Institucional, de 9 de abril de 1964.
-
-PARTE PRIMEIRA
-
-INTRODUÇÃO
-
-**Art.1º** Este Código contém normas destinadas a assegurar a organização e o exercício de direitos políticos precipuamente os de votar e ser votado.
-
-**Parágrafo único.** O Tribunal Superior Eleitoral expedirá Instruções para sua fiel execução.
+Parágrafo único. O Tribunal Superior Eleitoral expedirá Instruções para sua fiel execução.
 
 **Art. 2º** Todo poder emana do povo e será exercido, em seu nome, por mandatários escolhidos, direta e secretamente, dentre candidatos indicados por partidos políticos nacionais, ressalvada a eleição indireta nos casos previstos na Constituição e leis específicas.
 
 **Art. 3º** Qualquer cidadão pode pretender investidura em cargo eletivo, respeitadas as condições constitucionais e legais de elegibilidade e incompatibilidade.
 
-**Art. 4º** São eleitores os brasileiros maiores de 18 (dezoito) anos que se alistarem na forma da lei. *(Vide art. 14 da Constituição de 1988)*
+**Art. 4º** São eleitores os brasileiros maiores de 18 (dezoito) anos que se alistarem na forma da lei. (Vide art. 14 da Constituição de 1988)
 
 **Art. 5º** Não podem alistar-se eleitores:
 
-I - os analfabetos; *(Vide art. 14 da Constituição de 1988)*
+I - os analfabetos; (Vide art. 14 da Constituição de 1988)
 
 II - os que não saibam exprimir-se na língua nacional;
 
 III - os que estejam privados, temporária ou definitivamente, dos direitos políticos.
 
-IV - as pessoas recolhidas a estabelecimento prisional, enquanto perdurar a privação de liberdade, ainda que sem condenação definitiva. *(Inciso acrescido pela Lei nº 15.358, de 24/3/2026)*
+IV - as pessoas recolhidas a estabelecimento prisional, enquanto perdurar a privação de liberdade, ainda que sem condenação definitiva. (Inciso acrescido pela Lei nº 15.358, de 24/3/2026)
 
-**Parágrafo único.** Os militares são alistáveis, desde que oficiais, aspirantes a oficiais, guardas-marinha, subtenentes ou suboficiais, sargentos ou alunos das escolas militares de ensino superior para formação de oficiais.
+Parágrafo único. Os militares são alistáveis, desde que oficiais, aspirantes a oficiais, guardas-marinha, subtenentes ou suboficiais, sargentos ou alunos das escolas militares de ensino superior para formação de oficiais.
 
 **Art. 6º** O alistamento e o voto são obrigatórios para os brasileiros de um e outro sexo, salvo:
 
@@ -83,9 +77,9 @@ b) os que se encontrem fora do seu domicílio;
 
 c) os funcionários civis e os militares, em serviço que os impossibilite de votar.
 
-**Art. 7º** O eleitor que deixar de votar e não se justificar perante o juiz eleitoral até trinta dias após a realização da eleição incorrerá na multa de três a dez por cento sobre o salário mínimo da região, imposta pelo juiz eleitoral e cobrada na forma prevista no art. 367*. (“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+**Art. 7º** O eleitor que deixar de votar e não se justificar perante o juiz eleitoral até trinta dias após a realização da eleição incorrerá na multa de três a dez por cento sobre o salário mínimo da região, imposta pelo juiz eleitoral e cobrada na forma prevista no art. 367 . (“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-**§1º** Sem a prova de que votou na última eleição, pagou a respectiva multa ou de que se justificou devidamente, não poderá o eleitor:
+§1º Sem a prova de que votou na última eleição, pagou a respectiva multa ou de que se justificou devidamente, não poderá o eleitor:
 
 I - inscrever-se em concurso ou prova para cargo ou função pública, investir-se ou empossar-se neles;
 
@@ -93,7 +87,7 @@ II - receber vencimentos, remuneração, salário ou proventos de função ou em
 
 III - participar de concorrência pública ou administrativa da União, dos Estados, dos Territórios, do Distrito Federal ou dos Municípios, ou das respectivas autarquias;
 
-IV - *(Revogado pela Lei nº 14.690, de 3/10/2023)*
+IV - (Revogado pela Lei nº 14.690, de 3/10/2023)
 
 V - obter passaporte ou carteira de identidade;
 
@@ -101,15 +95,15 @@ VI - renovar matrícula em estabelecimento de ensino oficial ou fiscalizado pelo
 
 VII - praticar qualquer ato para o qual se exija quitação do serviço militar ou imposto de renda.
 
-**§2º** Os brasileiros natos ou naturalizados, maiores de 18 (dezoito) anos, salvo os excetuados nos artigos 5º e 6º, número I, sem prova de estarem alistados não poderão praticar os atos relacionados no parágrafo anterior.
+§2º Os brasileiros natos ou naturalizados, maiores de 18 (dezoito) anos, salvo os excetuados nos artigos 5º e 6º, número I, sem prova de estarem alistados não poderão praticar os atos relacionados no parágrafo anterior.
 
-**§3º** Realizado o alistamento eleitoral pelo processo eletrônico de dados, será cancelada a inscrição do eleitor que não votar em 3 (três) eleições consecutivas, não pagar a multa ou não se justificar no prazo de 6 (seis) meses, a contar da data da última eleição a que deveria ter comparecido. *(Parágrafo acrescido pela Lei nº 7.663, de 27/5/1988)*
+§3º Realizado o alistamento eleitoral pelo processo eletrônico de dados, será cancelada a inscrição do eleitor que não votar em 3 (três) eleições consecutivas, não pagar a multa ou não se justificar no prazo de 6 (seis) meses, a contar da data da última eleição a que deveria ter comparecido. (Parágrafo acrescido pela Lei nº 7.663, de 27/5/1988 )
 
-**§ 4º** O disposto no inciso V do § 1º não se aplica ao eleitor no exterior que requeira novo passaporte para identificação e retorno ao Brasil. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+§ 4º O disposto no inciso V do § 1º não se aplica ao eleitor no exterior que requeira novo passaporte para identificação e retorno ao Brasil. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
-**Art. 8º** O brasileiro nato que não se alistar até os 19 (dezenove) anos ou o naturalizado que não se alistar até um ano depois de adquirida a nacionalidade brasileira incorrerá na multa de três a dez por cento sobre o valor do salário mínimo da região, imposta pelo juiz e cobrada no ato da inscrição eleitoral através de selo federal inutilizado no próprio requerimento. *(“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+**Art. 8º** O brasileiro nato que não se alistar até os 19 (dezenove) anos ou o naturalizado que não se alistar até um ano depois de adquirida a nacionalidade brasileira incorrerá na multa de três a dez por cento sobre o valor do salário mínimo da região, imposta pelo juiz e cobrada no ato da inscrição eleitoral através de selo federal inutilizado no próprio requerimento. (“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-**Parágrafo único.** Não se aplicará a pena ao não alistado que requerer sua inscrição eleitoral até o centésimo primeiro dia anterior à eleição subseqüente à data em que completar dezenove anos. *(Parágrafo único com redação dada pela Lei nº 9.041, de 9/5/1995, publicada no DO de 10/5/1995, em vigor 45 dias após a publicação)*
+Parágrafo único. Não se aplicará a pena ao não alistado que requerer sua inscrição eleitoral até o centésimo primeiro dia anterior à eleição subseqüente à data em que completar dezenove anos. (Parágrafo único com redação dada pela Lei nº 9.041, de 9/5/1995, publicada no DO de 10/5/1995, em vigor 45 dias após a publicação)
 
 **Art. 9º** Os responsáveis pela inobservância do disposto nos artigos 7º e 8º incorrerão na multa de 1 (um) a 3 (três) salários mínimos vigentes na zona eleitoral ou de suspensão disciplinar até 30 (trinta) dias.
 
@@ -117,13 +111,11 @@ VII - praticar qualquer ato para o qual se exija quitação do serviço militar 
 
 **Art. 11.** O eleitor que não votar e não pagar a multa, se se encontrar fora de sua zona e necessitar documento de quitação com a Justiça Eleitoral, poderá efetuar o pagamento perante o Juízo da zona em que estiver.
 
-**§1º** A multa será cobrada no máximo previsto, salvo se o eleitor quiser aguardar que o Juiz da zona em que se encontrar solicite informações sobre o arbitramento ao Juízo da inscrição.
+§1º A multa será cobrada no máximo previsto, salvo se o eleitor quiser aguardar que o Juiz da zona em que se encontrar solicite informações sobre o arbitramento ao Juízo da inscrição.
 
-**§2º** Em qualquer das hipóteses, efetuado o pagamento através de selos federais inutilizados no próprio requerimento, o juiz que recolheu a multa comunicará o fato ao da zona de inscrição e fornecerá ao requerente comprovante do pagamento.
+§2º Em qualquer das hipóteses, efetuado o pagamento através de selos federais inutilizados no próprio requerimento, o juiz que recolheu a multa comunicará o fato ao da zona de inscrição e fornecerá ao requerente comprovante do pagamento.
 
-PARTE SEGUNDA
-
-DOS ÓRGÃOS DA JUSTIÇA ELEITORAL
+### DOS ÓRGÃOS DA JUSTIÇA ELEITORAL
 
 **Art. 12.** São órgãos da Justiça Eleitoral:
 
@@ -139,17 +131,19 @@ IV - juízes eleitorais.
 
 **Art. 14.** Os juízes dos Tribunais Eleitorais, salvo motivo justificado, servirão obrigatoriamente por dois anos, e nunca por mais de dois biênios consecutivos.
 
-**§1º** Os biênios serão contados, ininterruptamente, sem o desconto de qualquer afastamento, nem mesmo o decorrente de licença, férias, ou licença especial, salvo no caso do § 3º. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§1º Os biênios serão contados, ininterruptamente, sem o desconto de qualquer afastamento, nem mesmo o decorrente de licença, férias, ou licença especial, salvo no caso do § 3º. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 )
 
-**§2º** Os juízes afastados por motivo de licença, férias e licença especial, de suas funções na Justiça comum, ficarão automaticamente afastados da Justiça Eleitoral pelo tempo correspondente, exceto quando, com períodos de férias coletivas, coincidir a realização de eleição, apuração ou encerramento de alistamento. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§2º Os juízes afastados por motivo de licença, férias e licença especial, de suas funções na Justiça comum, ficarão automaticamente afastados da Justiça Eleitoral pelo tempo correspondente, exceto quando, com períodos de férias coletivas, coincidir a realização de eleição, apuração ou encerramento de alistamento. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§3º** Da homologação da respectiva convenção partidária até a diplomação e nos feitos decorrentes do processo eleitoral, não poderão servir como juízes nos Tribunais Eleitorais, ou como juiz eleitoral, o cônjuge ou o parente consanguíneo ou afim, até o segundo grau, de candidato a cargo eletivo registrado na circunscrição.*(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 e com redação dada pela Lei nº 13.165, de 29/9/2015)*
+§3º Da homologação da respectiva convenção partidária até a diplomação e nos feitos decorrentes do processo eleitoral, não poderão servir como juízes nos Tribunais Eleitorais, ou como juiz eleitoral, o cônjuge ou o parente consanguíneo ou afim, até o segundo grau, de candidato a cargo eletivo registrado na circunscrição. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 e com redação dada pela Lei nº 13.165, de 29/9/2015)
 
-**§4º** No caso de recondução para o segundo biênio, observar-se-ão as mesmas formalidades indispensáveis à primeira investidura. *(Primitivo parágrafo único renumerado pela Lei nº 4.961, de 4/5/1966)*
+§4º No caso de recondução para o segundo biênio, observar-se-ão as mesmas formalidades indispensáveis à primeira investidura. (Primitivo parágrafo único renumerado pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 15.** Os substitutos dos membros efetivos dos Tribunais Eleitorais serão escolhidos, na mesma ocasião e pelo mesmo processo, em número igual para cada categoria.
 
-### TÍTULO I — DO TRIBUNAL SUPERIOR
+### TÍTULO I
+
+### DO TRIBUNAL SUPERIOR
 
 **Art. 16.** Compõe-se o Tribunal Superior Eleitoral:
 
@@ -161,15 +155,15 @@ b) de dois juízes, dentre os membros do Tribunal Federal de Recursos;
 
 II - por nomeação do Presidente da República de dois dentre seis advogados de notável saber jurídico e idoneidade moral, indicados pelo Supremo Tribunal Federal.
 
-**§1º** Não podem fazer parte do Tribunal Superior Eleitoral cidadãos que tenham entre si parentesco, ainda que por afinidade, até o quarto grau, seja o vínculo legítimo ou ilegítimo, excluindo-se neste caso o que tiver sido escolhido por último.
+§1º Não podem fazer parte do Tribunal Superior Eleitoral cidadãos que tenham entre si parentesco, ainda que por afinidade, até o quarto grau, seja o vínculo legítimo ou ilegítimo, excluindo-se neste caso o que tiver sido escolhido por último.
 
-**§2º** A nomeação de que trata o inciso II deste artigo não poderá recair em cidadão que ocupe cargo público de que seja demissível *ad nutum*; que seja diretor, proprietário ou sócio de empresa beneficiada com subvenção, privilégio, isenção ou favor em virtude de contrato com a administração pública; ou que exerça mandato de caráter político, federal, estadual ou municipal. *(Artigo com redação dada pela Lei nº 7.191, de 4/6/1984)*
+§2º A nomeação de que trata o inciso II deste artigo não poderá recair em cidadão que ocupe cargo público de que seja demissível ad nutum ; que seja diretor, proprietário ou sócio de empresa beneficiada com subvenção, privilégio, isenção ou favor em virtude de contrato com a administração pública; ou que exerça mandato de caráter político, federal, estadual ou municipal. (Artigo com redação dada pela Lei nº 7.191, de 4/6/1984)
 
 **Art. 17.** O Tribunal Superior Eleitoral elegerá para seu presidente um dos ministros do Supremo Tribunal Federal, cabendo ao outro a vice presidência, e para Corregedor Geral da Justiça Eleitoral um dos seus membros.
 
-**§1º** As atribuições do Corregedor Geral serão fixadas pelo Tribunal Superior Eleitoral.
+§1º As atribuições do Corregedor Geral serão fixadas pelo Tribunal Superior Eleitoral.
 
-**§2º** No desempenho de suas atribuições o Corregedor Geral se locomoverá para os Estados e Territórios nos seguintes casos:
+§2º No desempenho de suas atribuições o Corregedor Geral se locomoverá para os Estados e Territórios nos seguintes casos:
 
 I - por determinação do Tribunal Superior Eleitoral;
 
@@ -179,19 +173,19 @@ III - a requerimento de Partido deferido pelo Tribunal Superior Eleitoral;
 
 IV - sempre que entender necessário.
 
-**§3º** Os provimentos emanados da Corregedoria Geral vinculam os Corregedores Regionais, que lhes devem dar imediato e preciso cumprimento.
+§3º Os provimentos emanados da Corregedoria Geral vinculam os Corregedores Regionais, que lhes devem dar imediato e preciso cumprimento.
 
 **Art. 18.** Exercerá as funções de Procurador Geral, junto ao Tribunal Superior Eleitoral, o Procurador Geral da República, funcionando, em suas faltas e impedimentos, seu substituto legal.
 
-**Parágrafo único.** O Procurador Geral poderá designar outros membros do Ministério Público da União, com exercício no Distrito Federal, e sem prejuízo das respectivas funções, para auxiliá-lo junto ao Tribunal Superior Eleitoral, onde não poderão ter assento.
+Parágrafo único. O Procurador Geral poderá designar outros membros do Ministério Público da União, com exercício no Distrito Federal, e sem prejuízo das respectivas funções, para auxiliá-lo junto ao Tribunal Superior Eleitoral, onde não poderão ter assento.
 
 **Art. 19.** O Tribunal Superior delibera por maioria de votos, em sessão pública, com a presença da maioria de seus membros.
 
-**Parágrafo único.** As decisões do Tribunal Superior, assim na interpretação do Código Eleitoral em face da Constituição e cassação de registro de partidos políticos, como sobre quaisquer recursos que importem anulação geral de eleições ou perda de diplomas, só poderão ser tomadas com a presença de todos os seus membros. Se ocorrer impedimento de algum juiz, será convocado o substituto ou o respectivo suplente.
+Parágrafo único. As decisões do Tribunal Superior, assim na interpretação do Código Eleitoral em face da Constituição e cassação de registro de partidos políticos, como sobre quaisquer recursos que importem anulação geral de eleições ou perda de diplomas, só poderão ser tomadas com a presença de todos os seus membros. Se ocorrer impedimento de algum juiz, será convocado o substituto ou o respectivo suplente.
 
 **Art. 20.** Perante o Tribunal Superior, qualquer interessado poderá argüir a suspeição ou impedimento dos seus membros, do Procurador Geral ou de funcionários de sua Secretaria, nos casos previstos na lei processual civil ou penal e por motivo de parcialidade partidária, mediante o processo previsto em regimento.
 
-**Parágrafo único.** Será ilegítima a suspeição quando o excipiente a provocar ou, depois de manifestada a causa, praticar ato que importe aceitação do argüido.
+Parágrafo único. Será ilegítima a suspeição quando o excipiente a provocar ou, depois de manifestada a causa, praticar ato que importe aceitação do argüido.
 
 **Art. 21.** Os Tribunais e juízes inferiores devem dar imediato cumprimento às decisões, mandados, instruções e outros atos emanados do Tribunal Superior Eleitoral.
 
@@ -207,21 +201,21 @@ c) a suspeição ou impedimento aos seus membros, ao Procurador Geral e aos func
 
 d) os crimes eleitorais e os comuns que lhes forem conexos cometidos pelos seus próprios juízes e pelos juízes dos Tribunais Regionais;
 
-e) o *habeas corpus* ou mandado de segurança, em matéria eleitoral, relativos a atos do Presidente da República, dos Ministros de Estado e dos Tribunais Regionais; ou, ainda, o *habeas corpus*, quando houver perigo de se consumar a violência antes que o juiz competente possa prover sobre a impetração; *(Execução suspensa pelo Senado Federal, da locução “ou mandado de segurança”, constante desta alínea, na forma do art. 52, X da Constituição Federal, pela Resolução nº 132, de 7/12/1984)*
+e) o habeas corpus ou mandado de segurança, em matéria eleitoral, relativos a atos do Presidente da República, dos Ministros de Estado e dos Tribunais Regionais; ou, ainda, o habeas corpus , quando houver perigo de se consumar a violência antes que o juiz competente possa prover sobre a impetração; (Execução suspensa pelo Senado Federal, da locução “ou mandado de segurança”, constante desta alínea, na forma do art. 52, X da Constituição Federal, pela Resolução nº 132, de 7/12/1984)
 
 f) as reclamações relativas a obrigações impostas por lei aos partidos políticos, quanto à sua contabilidade e à apuração da origem dos seus recursos;
 
 g) as impugnações à apuração do resultado geral, proclamação dos eleitos e expedição de diploma na eleição de Presidente e Vice Presidente da República;
 
-h) os pedidos de desaforamento dos feitos não decididos nos Tribunais Regionais dentro de trinta dias da conclusão ao relator, formulados por partido, candidato, Ministério Público ou parte legitimamente interessada; *(Alínea com redação dada pela Lei nº 4.961, de 4/5/1966)*
+h) os pedidos de desaforamento dos feitos não decididos nos Tribunais Regionais dentro de trinta dias da conclusão ao relator, formulados por partido, candidato, Ministério Público ou parte legitimamente interessada; (Alínea com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-i) as reclamações contra os seus próprios juízes que, no prazo de trinta dias a contar da conclusão, não houverem julgado os feitos a eles distribuídos. *(Alínea acrescida pela Lei nº 4.961, de 4/5/1966)*
+i) as reclamações contra os seus próprios juízes que, no prazo de trinta dias a contar da conclusão, não houverem julgado os feitos a eles distribuídos. (Alínea acrescida pela Lei nº 4.961, de 4/5/1966)
 
-j) a ação rescisória, nos casos de inelegibilidade, desde que intentada dentro do prazo de cento e vinte dias de decisão irrecorrível, possibilitando-se o exercício do mandato eletivo até o seu trânsito em julgado. *(Alínea acrescida pela Lei Complementar nº 86, de 14/5/1996).*
+j) a ação rescisória, nos casos de inelegibilidade, desde que intentada dentro do prazo de cento e vinte dias de decisão irrecorrível, possibilitando-se o exercício do mandato eletivo até o seu trânsito em julgado. (Alínea acrescida pela Lei Complementar nº 86, de 14/5/1996).
 
 II - julgar os recursos interpostos das decisões dos Tribunais Regionais nos termos do art. 276, inclusive os que versarem matéria administrativa.
 
-**Parágrafo único.** As decisões do Tribunal Superior são irrecorríveis, salvo nos casos do art. 281.
+Parágrafo único. As decisões do Tribunal Superior são irrecorríveis, salvo nos casos do art. 281.
 
 **Art. 23.** Compete, ainda, privativamente, ao Tribunal Superior:
 
@@ -251,7 +245,7 @@ XII - responder, sobre matéria eleitoral, às consultas que lhe forem feitas em
 
 XIII - autorizar a contagem dos votos pelas mesas receptoras nos Estados em que essa providência for solicitada pelo Tribunal Regional respectivo;
 
-XIV - requisitar força federal necessária ao cumprimento da lei, de suas próprias decisões ou das decisões dos Tribunais Regionais que o solicitarem, e para garantir a votação e a apuração; *(Inciso com redação dada pela Lei nº 4.961, de 4/5/1966)*
+XIV - requisitar força federal necessária ao cumprimento da lei, de suas próprias decisões ou das decisões dos Tribunais Regionais que o solicitarem, e para garantir a votação e a apuração; (Inciso com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
 XV - organizar e divulgar a Súmula de sua jurisprudência;
 
@@ -261,7 +255,7 @@ XVII - publicar um boletim eleitoral;
 
 XVIII - tomar quaisquer outras providências que julgar convenientes à execução da legislação eleitoral.
 
-**Art. 23-A.** A competência normativa regulamentar prevista no parágrafo único do art. 1º e no inciso IX do *caput* do art. 23 deste Código restringe-se a matérias especificamente autorizadas em lei, sendo vedado ao Tribunal Superior Eleitoral tratar de matéria relativa à organização dos partidos políticos. *(Artigo acrescido pela Lei nº 14.211, de 1º/10/2021)*
+**Art. 23-A.** A competência normativa regulamentar prevista no parágrafo único do art. 1º e no inciso IX do caput do art. 23 deste Código restringe-se a matérias especificamente autorizadas em lei, sendo vedado ao Tribunal Superior Eleitoral tratar de matéria relativa à organização dos partidos políticos. (Artigo acrescido pela Lei nº 14.211, de 1º/10/2021)
 
 **Art. 24.** Compete ao Procurador Geral, como Chefe do Ministério Público Eleitoral:
 
@@ -283,7 +277,7 @@ VIII - expedir instruções aos órgãos do Ministério Público junto aos Tribu
 
 IX - acompanhar, quando solicitado, o Corregedor Geral, pessoalmente ou por intermédio de Procurador que designe, nas diligências a serem realizadas.
 
-### TÍTULO II — DOS TRIBUNAIS REGIONAIS
+### DOS TRIBUNAIS REGIONAIS
 
 **Art. 25.** Os Tribunais Regionais Eleitorais compor-se-ão:
 
@@ -295,13 +289,13 @@ b) de dois juízes de direito, escolhidos pelo Tribunal de Justiça;
 
 II - do juiz federal e, havendo mais de um, do que for escolhido pelo Tribunal Federal de Recursos; e
 
-III - por nomeação do Presidente da República de dois dentre seis cidadãos de notável saber jurídico e idoneidade moral, indicados pelo Tribunal de Justiça. *(Artigo com redação dada pela Lei nº 7.191, de 4/6/1984)*
+III - por nomeação do Presidente da República de dois dentre seis cidadãos de notável saber jurídico e idoneidade moral, indicados pelo Tribunal de Justiça. (Artigo com redação dada pela Lei nº 7.191, de 4/6/1984)
 
 **Art. 26.** O Presidente e o Vice-Presidente do Tribunal Regional serão eleitos por este, dentre os 3 (três) desembargadores do Tribunal de Justiça; o terceiro desembargador será o Corregedor Regional da Justiça Eleitoral.
 
-**§1º** As atribuições do Corregedor Regional serão fixadas pelo Tribunal Superior Eleitoral e, em caráter supletivo ou complementar, pelo Tribunal Regional Eleitoral perante o qual servir.
+§1º As atribuições do Corregedor Regional serão fixadas pelo Tribunal Superior Eleitoral e, em caráter supletivo ou complementar, pelo Tribunal Regional Eleitoral perante o qual servir.
 
-**§2º** No desempenho de suas atribuições o Corregedor Regional se locomoverá para as zonas eleitorais nos seguintes casos:
+§2º No desempenho de suas atribuições o Corregedor Regional se locomoverá para as zonas eleitorais nos seguintes casos:
 
 I - por determinação do Tribunal Superior Eleitoral ou do Tribunal Regional Eleitoral;
 
@@ -313,25 +307,25 @@ IV - sempre que entender necessário.
 
 **Art. 27.** Servirá como Procurador Regional junto a cada Tribunal Regional Eleitoral o Procurador da República no respectivo Estado e, onde houver mais de um, aquele que for designado pelo Procurador Geral da República.
 
-**§1º** No Distrito Federal, serão as funções de Procurador Regional Eleitoral exercidas pelo Procurador Geral da Justiça do Distrito Federal.
+§1º No Distrito Federal, serão as funções de Procurador Regional Eleitoral exercidas pelo Procurador Geral da Justiça do Distrito Federal.
 
-**§2º** Substituirá o Procurador Regional, em suas faltas ou impedimentos, o seu substituto legal.
+§2º Substituirá o Procurador Regional, em suas faltas ou impedimentos, o seu substituto legal.
 
-**§3º** Compete aos Procuradores Regionais exercer, perante os Tribunais junto aos quais servirem, as atribuições do Procurador Geral.
+§3º Compete aos Procuradores Regionais exercer, perante os Tribunais junto aos quais servirem, as atribuições do Procurador Geral.
 
-**§4º** Mediante prévia autorização do Procurador Geral, podendo os Procuradores Regionais requisitar, para auxiliá-los nas suas funções, membros do Ministério Público local, não tendo estes, porém, assento nas sessões do Tribunal.
+§4º Mediante prévia autorização do Procurador Geral, podendo os Procuradores Regionais requisitar, para auxiliá-los nas suas funções, membros do Ministério Público local, não tendo estes, porém, assento nas sessões do Tribunal.
 
 **Art. 28.** Os Tribunais Regionais deliberam por maioria de votos, em sessão pública, com a presença da maioria de seus membros.
 
-**§1º** No caso de impedimento e não existindo *quorum*, será o membro do Tribunal substituído por outro da mesma categoria, designado na forma prevista na Constituição.
+§1º No caso de impedimento e não existindo quorum , será o membro do Tribunal substituído por outro da mesma categoria, designado na forma prevista na Constituição.
 
-**§2º** Perante o Tribunal Regional, e com recurso voluntário para o Tribunal Superior qualquer interessado poderá argüir a suspeição dos seus membros, do Procurador Regional, ou de funcionários da sua Secretaria, assim como dos juízes e escrivães eleitorais, nos casos previstos na lei processual civil e por motivo de parcialidade partidária, mediante o processo previsto em regimento.
+§2º Perante o Tribunal Regional, e com recurso voluntário para o Tribunal Superior qualquer interessado poderá argüir a suspeição dos seus membros, do Procurador Regional, ou de funcionários da sua Secretaria, assim como dos juízes e escrivães eleitorais, nos casos previstos na lei processual civil e por motivo de parcialidade partidária, mediante o processo previsto em regimento.
 
-**§3º** No caso previsto no parágrafo anterior será observado o disposto no parágrafo único do art. 20. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§3º No caso previsto no parágrafo anterior será observado o disposto no parágrafo único do art. 20. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 )
 
-**§ 4º** As decisões dos Tribunais Regionais sobre quaisquer ações que importem cassação de registro, anulação geral de eleições ou perda de diplomas somente poderão ser tomadas com a presença de todos os seus membros. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+§ 4º As decisões dos Tribunais Regionais sobre quaisquer ações que importem cassação de registro, anulação geral de eleições ou perda de diplomas somente poderão ser tomadas com a presença de todos os seus membros. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
-**§ 5º** No caso do § 4º, se ocorrer impedimento de algum juiz, será convocado o suplente da mesma classe. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+§ 5º No caso do § 4º, se ocorrer impedimento de algum juiz, será convocado o suplente da mesma classe. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
 **Art. 29.** Compete aos Tribunais Regionais:
 
@@ -345,19 +339,19 @@ c) a suspeição ou impedimentos aos seus membros, ao Procurador Regional e aos 
 
 d) os crimes eleitorais cometidos pelos juízes eleitorais;
 
-e) o *habeas corpus* ou mandado de segurança, em matéria eleitoral, contra ato de autoridades que respondam perante os Tribunais de Justiça por crime de responsabilidade e, em grau de recurso, os denegados ou concedidos pelos juízes eleitorais; ou, ainda, o *habeas corpus*, quando houver perigo de se consumar a violência antes que o juiz competente possa prover sobre a impetração;
+e) o habeas corpus ou mandado de segurança, em matéria eleitoral, contra ato de autoridades que respondam perante os Tribunais de Justiça por crime de responsabilidade e, em grau de recurso, os denegados ou concedidos pelos juízes eleitorais; ou, ainda, o habeas corpus , quando houver perigo de se consumar a violência antes que o juiz competente possa prover sobre a impetração;
 
 f) as reclamações relativas a obrigações impostas por lei aos partidos políticos, quanto à sua contabilidade e à apuração da origem dos seus recursos;
 
-g) os pedidos de desaforamento dos feitos não decididos pelos juízes eleitorais em trinta dias da sua conclusão para julgamento, formulados por partido, candidato, Ministério Público ou parte legitimamente interessada, sem prejuízo das sanções decorrentes do excesso de prazo. *(Alínea com redação dada pela Lei nº 4.961, de 4/5/1966)*
+g) os pedidos de desaforamento dos feitos não decididos pelos juízes eleitorais em trinta dias da sua conclusão para julgamento, formulados por partido, candidato, Ministério Público ou parte legitimamente interessada, sem prejuízo das sanções decorrentes do excesso de prazo. (Alínea com redação dada pela Lei nº 4.961, de 4/5/1966)
 
 II - julgar os recursos interpostos:
 
 a) dos atos e das decisões proferidas pelos juízes e juntas eleitorais;
 
-b) das decisões dos juízes eleitorais que concederem ou denegarem *habeas corpus* ou mandado de segurança.
+b) das decisões dos juízes eleitorais que concederem ou denegarem habeas corpus ou mandado de segurança.
 
-**Parágrafo único.** As decisões dos Tribunais Regionais são irrecorríveis, salvo nos casos do art. 276.
+Parágrafo único. As decisões dos Tribunais Regionais são irrecorríveis, salvo nos casos do art. 276.
 
 **Art. 30.** Compete, ainda, privativamente, aos Tribunais Regionais:
 
@@ -381,7 +375,7 @@ IX - dividir a respectiva circunscrição em zonas eleitorais, submetendo essa d
 
 X - aprovar a designação do Ofício de Justiça que deva responder pela escrivania eleitoral durante o biênio;
 
-XI - *(Revogado pela Lei nº 8.868, de 14/4/1994).*
+XI - (Revogado pela Lei nº 8.868, de 14/4/1994).
 
 XII - requisitar a força necessária ao cumprimento de suas decisões e solicitar ao Tribunal Superior a requisição de força federal;
 
@@ -407,21 +401,21 @@ c) a supressão dos mapas parciais de apuração só será admitida até seis me
 
 d) os boletins e mapas de apuração serão impressos pelos Tribunais Regionais, depois de aprovados pelo Tribunal Superior;
 
-e) o Tribunal Regional ouvirá os partidos na elaboração dos modelos dos boletins e mapas de apuração a fim de que estes atendam às peculiaridades locais, encaminhando os modelos que aprovar, acompanhados das sugestões ou impugnações formuladas pelos partidos, à decisão do Tribunal Superior. *(Inciso acrescido pela Lei nº 4.961, de 4/5/1966)*
+e) o Tribunal Regional ouvirá os partidos na elaboração dos modelos dos boletins e mapas de apuração a fim de que estes atendam às peculiaridades locais, encaminhando os modelos que aprovar, acompanhados das sugestões ou impugnações formuladas pelos partidos, à decisão do Tribunal Superior. (Inciso acrescido pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 31.** Faltando num Território o Tribunal Regional, ficará a respectiva circunscrição eleitoral sob a jurisdição do Tribunal Regional que o Tribunal Superior designar.
 
-### TÍTULO III — DOS JUÍZES ELEITORAIS
+### DOS JUÍZES ELEITORAIS
 
 **Art. 32.** Cabe a jurisdição de cada uma das zonas eleitorais a um juiz de direito em efetivo exercício e, na falta deste, ao seu substituto legal que goze das prerrogativas do art. 95 da Constituição.
 
-**Parágrafo único.** Onde houver mais de uma vara o Tribunal Regional designará aquela ou aquelas, a que incumbe o serviço eleitoral.
+Parágrafo único. Onde houver mais de uma vara o Tribunal Regional designará aquela ou aquelas, a que incumbe o serviço eleitoral.
 
 **Art. 33.** Nas zonas eleitorais onde houver mais de uma serventia de justiça, o juiz indicará ao Tribunal Regional a que deve ter o anexo da escrivania eleitoral pelo prazo de 2 (dois) anos.
 
-**§1º** Não poderá servir como escrivão eleitoral, sob pena de demissão, o membro de diretório de partido político, nem o candidato a cargo eletivo, seu cônjuge e parente consangüíneo ou afim até o segundo grau.
+§1º Não poderá servir como escrivão eleitoral, sob pena de demissão, o membro de diretório de partido político, nem o candidato a cargo eletivo, seu cônjuge e parente consangüíneo ou afim até o segundo grau.
 
-**§2º** O escrivão eleitoral, em suas faltas e impedimentos, será substituído na forma prevista pela lei de organização judiciária local.
+§2º O escrivão eleitoral, em suas faltas e impedimentos, será substituído na forma prevista pela lei de organização judiciária local.
 
 **Art. 34.** Os juízes despacharão todos os dias na sede da sua zona eleitoral.
 
@@ -431,7 +425,7 @@ I - cumprir e fazer cumprir as decisões e determinações do Tribunal Superior 
 
 II - processar e julgar os crimes eleitorais e os comuns que lhe forem conexos, ressalvada a competência originária do Tribunal Superior e dos Tribunais Regionais;
 
-III - decidir *habeas corpus* e mandado de segurança, em matéria eleitoral, desde que essa competência não esteja atribuída privativamente à instância superior;
+III - decidir habeas corpus e mandado de segurança, em matéria eleitoral, desde que essa competência não esteja atribuída privativamente à instância superior;
 
 IV - fazer as diligências que julgar necessárias à ordem e presteza do serviço eleitoral;
 
@@ -439,7 +433,7 @@ V - tomar conhecimento das reclamações que lhe forem feitas verbalmente ou por
 
 VI - indicar, para aprovação do Tribunal Regional, a serventia de justiça que deve ter o anexo da escrivania eleitoral;
 
-VII - *(Revogado pela Lei nº 8.868, de 14/4/1994).*
+VII - (Revogado pela Lei nº 8.868, de 14/4/1994 ).
 
 VIII - dirigir os processos eleitorais e determinar a inscrição e a exclusão de eleitores;
 
@@ -465,15 +459,15 @@ XVIII - fornecer aos que não votaram por motivo justificado e aos não alistado
 
 XIX - comunicar, até às 12 horas do dia seguinte à realização da eleição, ao Tribunal Regional e aos delegados de partidos credenciados, o número de eleitores que votaram em cada uma das seções da zona sob sua jurisdição, bem como o total de votantes da zona.
 
-### TÍTULO IV — DAS JUNTAS ELEITORAIS
+### DAS JUNTAS ELEITORAIS
 
 **Art. 36.** Compor-se-ão as juntas eleitorais de um juiz de direito, que será o presidente, e de 2 (dois) ou 4 (quatro) cidadãos de notória idoneidade.
 
-**§1º** Os membros das juntas eleitorais serão nomeados 60 (sessenta) dias antes da eleição, depois de aprovação do Tribunal Regional, pelo presidente deste, a quem cumpre também designar-lhes a sede.
+§1º Os membros das juntas eleitorais serão nomeados 60 (sessenta) dias antes da eleição, depois de aprovação do Tribunal Regional, pelo presidente deste, a quem cumpre também designar-lhes a sede.
 
-**§2º** Até 10 (dez) dias antes da nomeação os nomes das pessoas indicadas para compor as Juntas serão publicados no órgão oficial do Estado, podendo qualquer partido, no prazo de 3 (três) dias, em petição fundamentada, impugnar as indicações.
+§2º Até 10 (dez) dias antes da nomeação os nomes das pessoas indicadas para compor as Juntas serão publicados no órgão oficial do Estado, podendo qualquer partido, no prazo de 3 (três) dias, em petição fundamentada, impugnar as indicações.
 
-**§3º** Não podem ser nomeados membros das Juntas, escrutinadores ou auxiliares:
+§3º Não podem ser nomeados membros das Juntas, escrutinadores ou auxiliares:
 
 I - os candidatos e seus parentes, ainda que por afinidade, até o segundo grau, inclusive, e bem assim o cônjuge;
 
@@ -485,15 +479,15 @@ IV - os que pertencerem ao serviço eleitoral.
 
 **Art. 37.** Poderão ser organizadas tantas Juntas quantas permitir o número de juízes de direito que gozem das garantias do art. 95 da Constituição, mesmo que não sejam juízes eleitorais.
 
-**Parágrafo único.** Nas zonas em que houver de ser organizada mais de uma Junta, ou quando estiver vago o cargo de juiz eleitoral ou estiver este impedido, o presidente do Tribunal Regional, com a aprovação deste, designará juízes de direito da mesma ou de outras comarcas para presidirem as juntes eleitorais.
+Parágrafo único. Nas zonas em que houver de ser organizada mais de uma Junta, ou quando estiver vago o cargo de juiz eleitoral ou estiver este impedido, o presidente do Tribunal Regional, com a aprovação deste, designará juízes de direito da mesma ou de outras comarcas para presidirem as juntes eleitorais.
 
 **Art. 38.** Ao presidente da Junta é facultado nomear, dentre cidadãos de notória idoneidade, escrutinadores e auxiliares em número capaz de atender à boa marcha dos trabalhos.
 
-**§1º** É obrigatória essa nomeação sempre que houver mais de dez urnas a apurar.
+§1º É obrigatória essa nomeação sempre que houver mais de dez urnas a apurar.
 
-**§2º** Na hipótese do desdobramento da Junta em turmas, o respectivo presidente nomeará um escrutinador para servir como secretário em cada turma.
+§2º Na hipótese do desdobramento da Junta em turmas, o respectivo presidente nomeará um escrutinador para servir como secretário em cada turma.
 
-**§3º** Além dos secretários a que se refere o parágrafo anterior, será designado pelo presidente da Junta um escrutinador para secretário-geral competindo-lhe:
+§3º Além dos secretários a que se refere o parágrafo anterior, será designado pelo presidente da Junta um escrutinador para secretário-geral competindo-lhe:
 
 I - lavrar as atas;
 
@@ -513,19 +507,19 @@ III - expedir os boletins de apuração mencionados no art. 179;
 
 IV - expedir diploma aos eleitos para cargos municipais.
 
-**Parágrafo único.** Nos municípios onde houver mais de uma junta eleitoral a expedição dos diplomas será feita pela que for presidida pelo juiz eleitoral mais antigo, à qual as demais enviarão os documentos da eleição.
+Parágrafo único. Nos municípios onde houver mais de uma junta eleitoral a expedição dos diplomas será feita pela que for presidida pelo juiz eleitoral mais antigo, à qual as demais enviarão os documentos da eleição.
 
 **Art. 41.** Nas zonas eleitorais em que for autorizada a contagem prévia dos votos pelas mesas receptoras, compete à Junta Eleitoral tomar as providências mencionadas no art. 195.
 
-PARTE TERCEIRA
+### DO ALISTAMENTO
 
-DO ALISTAMENTO
+### TÍTULO I
 
-### TÍTULO I — DA QUALIFICAÇÃO E INSCRIÇÃO
+### DA QUALIFICAÇÃO E INSCRIÇÃO
 
 **Art. 42.** O alistamento se faz mediante a qualificação e inscrição do eleitor.
 
-**Parágrafo único.** Para o efeito da inscrição, é domicílio eleitoral o lugar de residência ou moradia do requerente, e, verificado ter o alistando mais de uma, considerar-se-á domicílio qualquer delas.
+Parágrafo único. Para o efeito da inscrição, é domicílio eleitoral o lugar de residência ou moradia do requerente, e, verificado ter o alistando mais de uma, considerar-se-á domicílio qualquer delas.
 
 **Art. 43.** O alistando apresentará em cartório ou local previamente designado, requerimento em fórmula que obedecerá ao modelo aprovado pelo Tribunal Superior.
 
@@ -541,103 +535,105 @@ IV - instrumento público do qual se infira, por direito, ter o requerente idade
 
 V - documento do qual se infira a nacionalidade brasileira, originária ou adquirida, do requerente.
 
-**Parágrafo único.** Será devolvido o requerimento que não contenha os dados constantes do modelo oficial, na mesma ordem, e em caracteres inequívocos.
+Parágrafo único. Será devolvido o requerimento que não contenha os dados constantes do modelo oficial, na mesma ordem, e em caracteres inequívocos.
 
 **Art. 45.** O escrivão, o funcionário ou o preparador, recebendo a fórmula e documentos, determinará que o alistando date e assine a petição e em ato contínuo, atestará terem sido a data e a assinatura lançados na sua presença; em seguida, tomará a assinatura do requerente na "folha individual de votação" e nas duas vias do título eleitoral, dando recibo da petição e do documento.
 
-**§1º** O requerimento será submetido ao despacho do juiz nas 48 (quarenta e oito) horas seguintes.
+§1º O requerimento será submetido ao despacho do juiz nas 48 (quarenta e oito) horas seguintes.
 
-**§2º** Poderá o juiz, se tiver dúvida quanto à identidade do requerente ou sobre qualquer outro requisito para o alistamento, converter o julgamento em diligência para que o alistando esclareça ou complete a prova ou, se for necessário, compareça pessoalmente à sua presença.
+§2º Poderá o juiz, se tiver dúvida quanto à identidade do requerente ou sobre qualquer outro requisito para o alistamento, converter o julgamento em diligência para que o alistando esclareça ou complete a prova ou, se for necessário, compareça pessoalmente à sua presença.
 
-**§3º** Se se tratar de qualquer omissão ou irregularidade que possa ser sanada, fixará o juiz para isso prazo razoável.
+§3º Se se tratar de qualquer omissão ou irregularidade que possa ser sanada, fixará o juiz para isso prazo razoável.
 
-**§4º** Deferido o pedido, no prazo de cinco dias, o título e o documento que instruiu o pedido serão entregues pelo juiz, escrivão, funcionário ou preparador. A entrega far-se-á ao próprio eleitor, mediante recibo, ou a quem o eleitor autorizar por escrito o recebimento, cancelando-se o título cuja assinatura não for idêntica à do requerimento de inscrição e à do recibo. O recibo será obrigatoriamente anexado ao processo eleitoral, incorrendo o juiz que não o fizer na multa de um a cinco salários mínimos regionais, na qual incorrerão ainda o escrivão, funcionário ou preparador, se responsáveis, bem como qualquer deles, se entregarem ao eleitor o título cuja assinatura não for idêntica à do requerimento de inscrição e do recibo ou o fizerem a pessoa não autorizada por escrito. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§4º Deferido o pedido, no prazo de cinco dias, o título e o documento que instruiu o pedido serão entregues pelo juiz, escrivão, funcionário ou preparador. A entrega far-se-á ao próprio eleitor, mediante recibo, ou a quem o eleitor autorizar por escrito o recebimento, cancelando-se o título cuja assinatura não for idêntica à do requerimento de inscrição e à do recibo. O recibo será obrigatoriamente anexado ao processo eleitoral, incorrendo o juiz que não o fizer na multa de um a cinco salários mínimos regionais, na qual incorrerão ainda o escrivão, funcionário ou preparador, se responsáveis, bem como qualquer deles, se entregarem ao eleitor o título cuja assinatura não for idêntica à do requerimento de inscrição e do recibo ou o fizerem a pessoa não autorizada por escrito. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
-**§5º** A restituição de qualquer documento não poderá ser feita antes de despachado o pedido de alistamento pelo juiz eleitoral.
+§5º A restituição de qualquer documento não poderá ser feita antes de despachado o pedido de alistamento pelo juiz eleitoral.
 
-**§6º** Quinzenalmente o juiz eleitoral fará publicar pela imprensa, onde houver, ou por editais, a lista dos pedidos de inscrição, mencionando os deferidos, os indeferidos e os convertidos em diligência, contando-se dessa publicação o prazo para os recursos a que se refere o parágrafo seguinte.
+§6º Quinzenalmente o juiz eleitoral fará publicar pela imprensa, onde houver, ou por editais, a lista dos pedidos de inscrição, mencionando os deferidos, os indeferidos e os convertidos em diligência, contando-se dessa publicação o prazo para os recursos a que se refere o parágrafo seguinte.
 
-**§7º** Do despacho que indeferir o requerimento de inscrição caberá recurso interposto pelo alistando e do que o deferir poderá recorrer qualquer delegado de partido.
+§7º Do despacho que indeferir o requerimento de inscrição caberá recurso interposto pelo alistando e do que o deferir poderá recorrer qualquer delegado de partido.
 
-**§8º** Os recursos referidos no parágrafo anterior serão julgados pelo Tribunal Regional Eleitoral dentro de 5 (cinco) dias.
+§8º Os recursos referidos no parágrafo anterior serão julgados pelo Tribunal Regional Eleitoral dentro de 5 (cinco) dias.
 
-**§9º** Findo esse prazo, sem que o alistando se manifeste, ou logo que seja desprovido o recurso em instância superior, o juiz inutilizará a folha individual de votação assinada pelo requerente, a qual ficará fazendo parte integrante do processo e não poderá, em qualquer tempo, ser substituída, nem dele retirada, sob pena de incorrer o responsável nas sanções previstas no art. 293.
+§9º Findo esse prazo, sem que o alistando se manifeste, ou logo que seja desprovido o recurso em instância superior, o juiz inutilizará a folha individual de votação assinada pelo requerente, a qual ficará fazendo parte integrante do processo e não poderá, em qualquer tempo, ser substituída, nem dele retirada, sob pena de incorrer o responsável nas sanções previstas no art. 293.
 
-**§10.** No caso de indeferimento do pedido, o Cartório devolverá ao requerente, mediante recibo, as fotografias e o documento com que houver instruído o seu requerimento.
+§10. No caso de indeferimento do pedido, o Cartório devolverá ao requerente, mediante recibo, as fotografias e o documento com que houver instruído o seu requerimento.
 
-**§11.** O título eleitoral e a folha individual de votação somente serão assinados pelo juiz eleitoral depois de preenchidos pelo cartório e de deferido o pedido, sob as penas do art. 293. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§11. O título eleitoral e a folha individual de votação somente serão assinados pelo juiz eleitoral depois de preenchidos pelo cartório e de deferido o pedido, sob as penas do art. 293. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
-**§12.** É obrigatória a remessa ao Tribunal Regional da ficha do eleitor, após a expedição do seu título. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§12. É obrigatória a remessa ao Tribunal Regional da ficha do eleitor, após a expedição do seu título. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 46.** As folhas individuais de votação e os títulos serão confeccionados de acordo com o modelo aprovado pelo Tribunal Superior Eleitoral.
 
-**§1º** Da folha individual de votação e do título eleitoral constará a indicação da seção em que o eleitor tiver sido inscrito a qual será localizada dentro do distrito judiciário ou administrativo de sua residência e o mais próximo dela, considerados a distância e os meios de transporte.
+§1º Da folha individual de votação e do título eleitoral constará a indicação da seção em que o eleitor tiver sido inscrito a qual será localizada dentro do distrito judiciário ou administrativo de sua residência e o mais próximo dela, considerados a distância e os meios de transporte.
 
-**§2º** As folhas individuais de votação serão conservadas em pastas, uma para cada seção eleitoral; remetidas, por ocasião das eleições, às mesas receptoras, serão por estas encaminhadas com a urna e os demais documentos da eleição às Juntas Eleitorais, que as devolverão, findos os trabalhos da apuração, ao respectivo cartório, onde ficarão guardadas.
+§2º As folhas individuais de votação serão conservadas em pastas, uma para cada seção eleitoral; remetidas, por ocasião das eleições, às mesas receptoras, serão por estas encaminhadas com a urna e os demais documentos da eleição às Juntas Eleitorais, que as devolverão, findos os trabalhos da apuração, ao respectivo cartório, onde ficarão guardadas.
 
-**§3º** O eleitor ficará vinculado permanentemente à seção eleitoral indicada no seu título, salvo:
+§3º O eleitor ficará vinculado permanentemente à seção eleitoral indicada no seu título, salvo:
 
 I - se se transferir de zona ou Município, hipótese em que deverá requerer transferência;
 
 II - se, até 100 (cem) dias antes da eleição, provar, perante o Juiz Eleitoral, que mudou de residência dentro do mesmo Município, de um distrito para outro ou para lugar muito distante da seção em que se acha inscrito, caso em que serão feitas na folha de votação e no título eleitoral, para esse fim exibido, as alterações correspondentes, devidamente autenticadas pela autoridade judiciária.
 
-**§4º** O eleitor poderá, a qualquer tempo, requerer ao juiz eleitoral a retificação de seu título eleitoral ou de sua folha individual de votação, quando neles constar erro evidente, ou indicação de seção diferente daquela a que devesse corresponder a residência indicada no pedido de inscrição ou transferência. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§4º O eleitor poderá, a qualquer tempo, requerer ao juiz eleitoral a retificação de seu título eleitoral ou de sua folha individual de votação, quando neles constar erro evidente, ou indicação de seção diferente daquela a que devesse corresponder a residência indicada no pedido de inscrição ou transferência. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§5º** O título eleitoral servirá de prova de que o eleitor está inscrito na seção em que deve votar. E, uma vez datado e assinado pelo presidente da mesa receptora, servirá também de prova de haver o eleitor votado. *(Primitivo § 4º renumerado pela Lei nº 4.961, de 4/5/1966)*
+§5º O título eleitoral servirá de prova de que o eleitor está inscrito na seção em que deve votar. E, uma vez datado e assinado pelo presidente da mesa receptora, servirá também de prova de haver o eleitor votado. (Primitivo § 4º renumerado pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 47.** As certidões de nascimento ou casamento, quando destinadas ao alistamento eleitoral, serão fornecidas gratuitamente, segundo a ordem dos pedidos apresentados em cartório pelos alistandos ou delegados de partido.
 
-**§1º** Os cartórios de Registro Civil farão, ainda, gratuitamente, o registro de nascimento, visando ao fornecimento de certidão aos alistandos, desde que provem carência de recursos, ou aos Delegados de Partido, para fins eleitorais. *(Parágrafo acrescido pela Lei nº 6.018, de 2/1/1974)*
+§1º Os cartórios de Registro Civil farão, ainda, gratuitamente, o registro de nascimento, visando ao fornecimento de certidão aos alistandos, desde que provem carência de recursos, ou aos Delegados de Partido, para fins eleitorais. (Parágrafo acrescido pela Lei nº 6.018, de 2/1/1974)
 
-**§2º** Em cada Cartório de Registro Civil haverá um livro especial, aberto e rubricado pelo Juiz Eleitoral, onde o cidadão, ou o delegado de partido deixará expresso o pedido de certidão para fins eleitorais, datando-o. *(Primitivo § 1º acrescido pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.018, de 2/1/1974)*
+§2º Em cada Cartório de Registro Civil haverá um livro especial, aberto e rubricado pelo Juiz Eleitoral, onde o cidadão, ou o delegado de partido deixará expresso o pedido de certidão para fins eleitorais, datando-o. (Primitivo § 1º acrescido pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.018, de 2/1/1974 )
 
-**§3º** O escrivão, dentro de 15 (quinze) dias da data do pedido, concederá a certidão, ou justificará, perante o Juiz Eleitoral, por que deixa de fazê-lo. *(Primitivo § 2º acrescido pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.018, de 2/1/1974)*
+§3º O escrivão, dentro de 15 (quinze) dias da data do pedido, concederá a certidão, ou justificará, perante o Juiz Eleitoral, por que deixa de fazê-lo. (Primitivo § 2º acrescido pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.018, de 2/1/1974)
 
-**§4º** A infração ao disposto neste artigo sujeitará o escrivão às penas do art. 293. *(Primitivo § 3º acrescido pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.018, de 2/1/1974)*
+§4º A infração ao disposto neste artigo sujeitará o escrivão às penas do art. 293. (Primitivo § 3º acrescido pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.018, de 2/1/1974)
 
 **Art. 48.** O empregado mediante comunicação com 48 (quarenta e oito) horas de antecedência, poderá deixar de comparecer ao serviço, sem prejuízo do salário e por tempo não excedente a 2 (dois) dias, para o fim de se alistar eleitor ou requerer transferência.
 
 **Art. 49.** Os cegos alfabetizados pelo sistema "Braille", que reunirem as demais condições de alistamento, podem qualificar-se mediante o preenchimento da fórmula impressa e a aposição do nome com as letras do referido alfabeto.
 
-**§1º** De forma idêntica serão assinadas a folha individual de votação e as vias do título.
+§1º De forma idêntica serão assinadas a folha individual de votação e as vias do título.
 
-**§2º** Esses atos serão feitos na presença também de funcionários de estabelecimento especializado de amparo e proteção de cegos, conhecedor do sistema, "Braille", que subscreverá, com o Escrivão ou funcionário designado a seguinte declaração a ser lançada no modelo de requerimento: "Atestamos que a presente fórmula bem como a folha individual de votação e vias do título foram subscritas pelo próprio, em nossa presença.
+§2º Esses atos serão feitos na presença também de funcionários de estabelecimento especializado de amparo e proteção de cegos, conhecedor do sistema, "Braille", que subscreverá, com o Escrivão ou funcionário designado a seguinte declaração a ser lançada no modelo de requerimento: "Atestamos que a presente fórmula bem como a folha individual de votação e vias do título foram subscritas pelo próprio, em nossa presença.
 
 **Art. 50.** O juiz eleitoral providenciará para que se proceda ao alistamento nas próprias sedes dos estabelecimentos de proteção aos cegos, marcando, previamente, dia e hora para tal fim, podendo se inscrever na zona eleitoral correspondente todos os cegos do município.
 
-**§1º** Os eleitores inscritos em tais condições deverão ser localizados em uma mesma seção da respectiva zona.
+§1º Os eleitores inscritos em tais condições deverão ser localizados em uma mesma seção da respectiva zona.
 
-**§2º** Se no alistamento realizado pela forma prevista nos artigos anteriores, o número de eleitores não alcançar o mínimo exigido, este se completará com a inclusão de outros ainda que não sejam cegos.
+§2º Se no alistamento realizado pela forma prevista nos artigos anteriores, o número de eleitores não alcançar o mínimo exigido, este se completará com a inclusão de outros ainda que não sejam cegos.
 
-**Art. 51.** *(Revogado pela Lei nº 7.914, de 7/12/1989)*
+**Art. 51.** (Revogado pela Lei nº 7.914, de 7/12/1989 )
 
-#### CAPÍTULO I — DA SEGUNDA VIA
+### DA SEGUNDA VIA
 
 **Art. 52.** No caso de perda ou extravio de seu título, requererá o eleitor ao juiz do seu domicílio eleitoral, até 10 (dez) dias antes da eleição, que lhe expeça segunda via.
 
-**§1º** O pedido de segunda via será apresentado em cartório, pessoalmente, pelo eleitor, instruído o requerimento, no caso de inutilização ou dilaceração, com a primeira via do título.
+§1º O pedido de segunda via será apresentado em cartório, pessoalmente, pelo eleitor, instruído o requerimento, no caso de inutilização ou dilaceração, com a primeira via do título.
 
-**§2º** No caso de perda ou extravio do título, o juiz, após receber o requerimento de segunda via, fará publicar, pelo prazo de 5 (cinco) dias, pela imprensa, onde houver, ou por editais, a notícia do extravio ou perda e do requerimento de segunda via, deferindo o pedido, findo este prazo, se não houver impugnação.
+§2º No caso de perda ou extravio do título, o juiz, após receber o requerimento de segunda via, fará publicar, pelo prazo de 5 (cinco) dias, pela imprensa, onde houver, ou por editais, a notícia do extravio ou perda e do requerimento de segunda via, deferindo o pedido, findo este prazo, se não houver impugnação.
 
 **Art. 53.** Se o eleitor estiver fora do seu domicílio eleitoral poderá requerer a segunda via ao juiz da zona em que se encontrar, esclarecendo se vai recebê-la na sua zona ou na em que requereu.
 
-**§1º** O requerimento, acompanhado de um novo título assinado pelo eleitor na presença do escrivão ou de funcionário designado e de uma fotografia, será encaminhado ao juiz da zona do eleitor.
+§1º O requerimento, acompanhado de um novo título assinado pelo eleitor na presença do escrivão ou de funcionário designado e de uma fotografia, será encaminhado ao juiz da zona do eleitor.
 
-**§2º** Antes de processar o pedido, na forma prevista no artigo anterior, o juiz determinará que se confira a assinatura constante do novo título com a da folha individual de votação ou do requerimento de inscrição.
+§2º Antes de processar o pedido, na forma prevista no artigo anterior, o juiz determinará que se confira a assinatura constante do novo título com a da folha individual de votação ou do requerimento de inscrição.
 
-**§3º** Deferido o pedido, o título será enviado ao juiz da Zona que remeteu o requerimento, caso o eleitor haja solicitado essa providência, ou ficará em cartório aguardando que o interessado o procure.
+§3º Deferido o pedido, o título será enviado ao juiz da Zona que remeteu o requerimento, caso o eleitor haja solicitado essa providência, ou ficará em cartório aguardando que o interessado o procure.
 
-**§4º** O pedido de segunda via formulado nos termos deste artigo só poderá ser recebido até 60 (sessenta) dias antes do pleito.
+§4º O pedido de segunda via formulado nos termos deste artigo só poderá ser recebido até 60 (sessenta) dias antes do pleito.
 
 **Art. 54.** O requerimento de segunda via, em qualquer das hipóteses, deverá ser assinado sobre selos federais, correspondentes a 2% (dois por cento) do salário mínimo da zona eleitoral de inscrição.
 
-**Parágrafo único.** Somente será expedida segunda via ao eleitor que estiver quite com a Justiça Eleitoral, exigindo-se, para o que foi multado e ainda não liquidou dívida, o prévio pagamento, através de selo federal inutilizado nos autos.
+Parágrafo único. Somente será expedida segunda via ao eleitor que estiver quite com a Justiça Eleitoral, exigindo-se, para o que foi multado e ainda não liquidou dívida, o prévio pagamento, através de selo federal inutilizado nos autos.
 
-#### CAPÍTULO II — DA TRANSFERÊNCIA
+#### CAPÍTULO II
+
+### DA TRANSFERÊNCIA
 
 **Art. 55.** Em caso de mudança de domicílio, cabe ao eleitor requerer ao juiz do novo domicílio sua transferência, juntando o título anterior.
 
-**§1º** A transferência só será admitida satisfeitas as seguintes exigências:
+§1º A transferência só será admitida satisfeitas as seguintes exigências:
 
 I - entrada do requerimento no cartório eleitoral do novo domicílio até 100 (cem) dias antes da data da eleição;
 
@@ -645,33 +641,33 @@ II - transcorrência de pelo menos 1 (um) ano da inscrição primitiva;
 
 III - residência mínima de 3 (três) meses no novo domicílio, atestada pela autoridade policial ou provada por outros meios convincentes.
 
-**§2º** O disposto nos incisos II e III do parágrafo anterior não se aplica quando se tratar de transferência de título eleitoral de servidor público civil, militar, autárquico, ou de membro de sua família, por motivo de remoção ou transferência. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§2º O disposto nos incisos II e III do parágrafo anterior não se aplica quando se tratar de transferência de título eleitoral de servidor público civil, militar, autárquico, ou de membro de sua família, por motivo de remoção ou transferência. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 56.** No caso de perda ou extravio do título anterior declarado esse fato na petição de transferência, o juiz do novo domicílio, como ato preliminar, requisitará, por telegrama, a confirmação do alegado à Zona Eleitoral onde o requerente se achava inscrito.
 
-**§1º** O Juiz do antigo domicílio, no prazo de 5 (cinco) dias, responderá por ofício ou telegrama, esclarecendo se o interessado é realmente eleitor, se a inscrição está em vigor, e, ainda, qual o número e a data da inscrição respectiva.
+§1º O Juiz do antigo domicílio, no prazo de 5 (cinco) dias, responderá por ofício ou telegrama, esclarecendo se o interessado é realmente eleitor, se a inscrição está em vigor, e, ainda, qual o número e a data da inscrição respectiva.
 
-**§2º** A informação mencionada no parágrafo anterior suprirá a falta do título extraviado, ou perdido, para o efeito da transferência, devendo fazer parte integrante do processo.
+§2º A informação mencionada no parágrafo anterior suprirá a falta do título extraviado, ou perdido, para o efeito da transferência, devendo fazer parte integrante do processo.
 
-**Art. 57.** O requerimento de transferência de domicílio eleitoral será imediatamente publicado na imprensa oficial na Capital, e em cartório nas demais localidades, podendo os interessados impugná-lo no prazo de 10 (dez) dias. *(“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+**Art. 57.** O requerimento de transferência de domicílio eleitoral será imediatamente publicado na imprensa oficial na Capital, e em cartório nas demais localidades, podendo os interessados impugná-lo no prazo de 10 (dez) dias. (“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-**§1º** Certificado o cumprimento do disposto neste artigo, o pedido deverá ser desde logo decidido, devendo o despacho do juiz ser publicado pela mesma forma. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§1º Certificado o cumprimento do disposto neste artigo, o pedido deverá ser desde logo decidido, devendo o despacho do juiz ser publicado pela mesma forma. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-**§2º** Poderá recorrer para o Tribunal Regional Eleitoral, no prazo de 3 (três) dias, o eleitor que pediu a transferência, sendo-lhe a mesma negada, ou qualquer delegado de partido, quando o pedido for deferido.
+§2º Poderá recorrer para o Tribunal Regional Eleitoral, no prazo de 3 (três) dias, o eleitor que pediu a transferência, sendo-lhe a mesma negada, ou qualquer delegado de partido, quando o pedido for deferido.
 
-**§3º** Dentro de 5 (cinco) dias, o Tribunal Regional Eleitoral decidirá do recurso interposto nos termos do parágrafo anterior.
+§3º Dentro de 5 (cinco) dias, o Tribunal Regional Eleitoral decidirá do recurso interposto nos termos do parágrafo anterior.
 
-**§4º** Só será expedido o novo título decorridos os prazos previstos neste artigo e respectivos parágrafos.
+§4º Só será expedido o novo título decorridos os prazos previstos neste artigo e respectivos parágrafos.
 
 **Art. 58.** Expedido o novo título o juiz comunicará a transferência ao Tribunal Regional competente, no prazo de 10 (dez) dias, enviando-lhe o título eleitoral, se houver, ou documento a que se refere o § 1º do art. 56.
 
-**§1º** Na mesma data comunicará ao juiz da zona de origem a concessão da transferência e requisitará a "folha individual de votação".
+§1º Na mesma data comunicará ao juiz da zona de origem a concessão da transferência e requisitará a "folha individual de votação".
 
-**§2º** Na nova folha individual de votação ficará consignado, na coluna destinada a "anotações", que a inscrição foi obtida por transferência, e, de acordo com os elementos constantes do título primitivo, qual o último pleito em que o eleitor transferido votou. Esta anotação constará, também, de seu título.
+§2º Na nova folha individual de votação ficará consignado, na coluna destinada a "anotações", que a inscrição foi obtida por transferência, e, de acordo com os elementos constantes do título primitivo, qual o último pleito em que o eleitor transferido votou. Esta anotação constará, também, de seu título.
 
-**§3º** O processo de transferência só será arquivado após o recebimento da folha individual de votação da Zona de origem, que dele ficará constando, devidamente inutilizada, mediante aposição de carimbo a tinta vermelha.
+§3º O processo de transferência só será arquivado após o recebimento da folha individual de votação da Zona de origem, que dele ficará constando, devidamente inutilizada, mediante aposição de carimbo a tinta vermelha.
 
-**§4º** No caso de transferência de município ou distrito dentro da mesma zona, deferido o pedido, o juiz determinará a transposição da folha individual de votação para a pasta correspondente ao novo domicílio, a anotação de mudança no título eleitoral e comunicará ao Tribunal Regional para a necessária averbação na ficha do eleitor.
+§4º No caso de transferência de município ou distrito dentro da mesma zona, deferido o pedido, o juiz determinará a transposição da folha individual de votação para a pasta correspondente ao novo domicílio, a anotação de mudança no título eleitoral e comunicará ao Tribunal Regional para a necessária averbação na ficha do eleitor.
 
 **Art. 59.** Na Zona de origem, recebida do juiz do novo domicílio a comunicação de transferência, o juiz tomará as seguintes providências:
 
@@ -687,17 +683,21 @@ IV - se o eleitor havia assinado ficha de registro de partido, comunicará ao ju
 
 **Art. 61.** Somente será concedida transferência ao eleitor que estiver quite com a Justiça Eleitoral.
 
-**§1º** Se o requerente não instruir o pedido de transferência com o título anterior, o juiz do novo domicílio, ao solicitar informação ao da zona de origem, indagará se a eleitor está quite com a Justiça Eleitoral, ou não o estando, qual a importância da multa imposta e não paga.
+§1º Se o requerente não instruir o pedido de transferência com o título anterior, o juiz do novo domicílio, ao solicitar informação ao da zona de origem, indagará se a eleitor está quite com a Justiça Eleitoral, ou não o estando, qual a importância da multa imposta e não paga.
 
-**§2º** Instruído o pedido com o título, e verificado que o eleitor não votou em eleição anterior, o juiz do novo domicílio solicitará informações sobre o valor da multa arbitrada na zona de origem, salvo se o eleitor não quiser aguardar a resposta, hipótese em que pagará o máximo previsto.
+§2º Instruído o pedido com o título, e verificado que o eleitor não votou em eleição anterior, o juiz do novo domicílio solicitará informações sobre o valor da multa arbitrada na zona de origem, salvo se o eleitor não quiser aguardar a resposta, hipótese em que pagará o máximo previsto.
 
-**§3º** O pagamento da multa, em qualquer das hipóteses dos parágrafos anteriores, será comunicado ao juízo de origem para as necessárias anotações.
+§3º O pagamento da multa, em qualquer das hipóteses dos parágrafos anteriores, será comunicado ao juízo de origem para as necessárias anotações.
 
-#### CAPÍTULO III — DOS PREPARADORES
+#### CAPÍTULO III
 
-Arts. 62. a 65. *(Revogados pela Lei nº 8.868, de 14/4/1994)*
+### DOS PREPARADORES
 
-#### CAPÍTULO IV — DOS DELEGADOS DE PARTIDO PERANTE O ALISTAMENTO
+Arts. 62. a 65. (Revogados pela Lei nº 8.868, de 14/4/1994)
+
+#### CAPÍTULO IV
+
+### DOS DELEGADOS DE PARTIDO PERANTE O ALISTAMENTO
 
 **Art. 66.** É lícito aos partidos políticos, por seus delegados:
 
@@ -707,31 +707,35 @@ II - promover a exclusão de qualquer eleitor inscrito ilegalmente e assumir a d
 
 III - examinar, sem perturbação do serviço e em presença dos servidores designados, os documentos relativos ao alistamento eleitoral, podendo deles tirar cópias ou fotocópias.
 
-**§1º** Perante o juízo eleitoral, cada partido poderá nomear 3 (três) delegados.
+§1º Perante o juízo eleitoral, cada partido poderá nomear 3 (três) delegados.
 
-**§2º** Perante os preparadores, cada partido poderá nomear até 2 (dois) delegados, que assistam e fiscalizem os seus atos.
+§2º Perante os preparadores, cada partido poderá nomear até 2 (dois) delegados, que assistam e fiscalizem os seus atos.
 
-**§3º** Os delegados a que se refere este artigo serão registrados perante os juízes eleitorais, a requerimento do presidente do Diretório Municipal.
+§3º Os delegados a que se refere este artigo serão registrados perante os juízes eleitorais, a requerimento do presidente do Diretório Municipal.
 
-**§4º** O delegado credenciado junto ao Tribunal Regional Eleitoral poderá representar o partido junto a qualquer juízo ou preparador do Estado, assim como o delegado credenciado perante o Tribunal Superior Eleitoral poderá representar o partido perante qualquer Tribunal Regional, juízo ou preparador.
+§4º O delegado credenciado junto ao Tribunal Regional Eleitoral poderá representar o partido junto a qualquer juízo ou preparador do Estado, assim como o delegado credenciado perante o Tribunal Superior Eleitoral poderá representar o partido perante qualquer Tribunal Regional, juízo ou preparador.
 
-#### CAPÍTULO V — DO ENCERRAMENTO DO ALISTAMENTO
+#### CAPÍTULO V
+
+### DO ENCERRAMENTO DO ALISTAMENTO
 
 **Art. 67.** Nenhum requerimento de inscrição eleitoral ou a transferência será recebido dentro dos 100 (cem) dias anteriores à data da eleição.
 
 **Art. 68.** Em audiência pública, que se realizará às 14 (quatorze) horas do 69º (sexagésimo nono) dia anterior à eleição, o juiz eleitoral declarará encerrada a inscrição de eleitores na respectiva zona e proclamará o número dos inscritos até às 18 (dezoito) horas do dia anterior, o que comunicará incontinenti ao Tribunal Regional Eleitoral, por telegrama, e fará público em edital, imediatamente afixado no lugar próprio do juízo e divulgado pela imprensa, onde houver, declarando nele o nome do último eleitor inscrito e o número do respectivo título, fornecendo aos diretórios municipais dos partidos cópia autêntica desse edital.
 
-**§1º** Na mesma data será encerrada a transferência de eleitores, devendo constar do telegrama do juiz eleitoral ao Tribunal Regional Eleitoral, do edital e da cópia deste fornecida aos diretórios municipais dos partidos e da publicação da imprensa, os nomes dos 10 (dez) últimos eleitores, cujos processos de transferência estejam definitivamente ultimados e o números dos respectivos títulos eleitorais.
+§1º Na mesma data será encerrada a transferência de eleitores, devendo constar do telegrama do juiz eleitoral ao Tribunal Regional Eleitoral, do edital e da cópia deste fornecida aos diretórios municipais dos partidos e da publicação da imprensa, os nomes dos 10 (dez) últimos eleitores, cujos processos de transferência estejam definitivamente ultimados e o números dos respectivos títulos eleitorais.
 
-**§2º** O despacho de pedido de inscrição, transferência, ou segunda via, proferido após esgotado o prazo legal, sujeita o juiz eleitoral às penas do art. 291.
+§2º O despacho de pedido de inscrição, transferência, ou segunda via, proferido após esgotado o prazo legal, sujeita o juiz eleitoral às penas do art. 291.
 
 **Art. 69.** Os títulos eleitorais resultantes dos pedidos de inscrição ou de transferência serão entregues até 30 (trinta) dias antes da eleição.
 
-**Parágrafo único.** A segunda via poderá ser entregue ao eleitor até a véspera do pleito.
+Parágrafo único. A segunda via poderá ser entregue ao eleitor até a véspera do pleito.
 
 **Art. 70.** O alistamento reabrir-se-á em cada zona, logo que estejam concluídos os trabalhos de sua junta eleitoral.
 
-### TÍTULO II — DO CANCELAMENTO E DA EXCLUSÃO
+### TÍTULO II
+
+### DO CANCELAMENTO E DA EXCLUSÃO
 
 **Art. 71.** São causas de cancelamento:
 
@@ -743,25 +747,25 @@ III - a pluralidade de inscrição;
 
 IV - o falecimento do eleitor;
 
-V - deixar de votar em 3 (três) eleições consecutivas. *(Inciso com redação dada pela Lei nº 7.663, de 27/5/1988)*
+V - deixar de votar em 3 (três) eleições consecutivas. (Inciso com redação dada pela Lei nº 7.663, de 27/5/1988)
 
-VI - a prisão provisória, em quaisquer de suas modalidades. *(Inciso acrescido pela Lei nº 15.358, de 24/3/2026)*
+VI - a prisão provisória, em quaisquer de suas modalidades. (Inciso acrescido pela Lei nº 15.358, de 24/3/2026)
 
-**§1º** A ocorrência de qualquer das causas enumeradas neste artigo acarretará a exclusão do eleitor, que poderá ser promovida *ex officio*, a requerimento de delegado de partido ou de qualquer eleitor.
+§1º A ocorrência de qualquer das causas enumeradas neste artigo acarretará a exclusão do eleitor, que poderá ser promovida ex officio , a requerimento de delegado de partido ou de qualquer eleitor.
 
-**§2º** No caso de ser algum cidadão maior de 18 (dezoito) anos privado temporária ou definitivamente dos direitos políticos, a autoridade que impuser essa pena providenciará para que o fato seja comunicado ao juiz eleitoral ou ao Tribunal Regional da circunscrição em que residir o réu.
+§2º No caso de ser algum cidadão maior de 18 (dezoito) anos privado temporária ou definitivamente dos direitos políticos, a autoridade que impuser essa pena providenciará para que o fato seja comunicado ao juiz eleitoral ou ao Tribunal Regional da circunscrição em que residir o réu.
 
-**§3º** Os oficiais de Registro Civil, sob as penas do art. 293, enviarão, até o dia 15 (quinze) de cada mês, ao juiz eleitoral da zona em que oficiarem, comunicação dos óbitos de cidadãos alistáveis, ocorridos no mês anterior, para cancelamento das inscrições.
+§3º Os oficiais de Registro Civil, sob as penas do art. 293, enviarão, até o dia 15 (quinze) de cada mês, ao juiz eleitoral da zona em que oficiarem, comunicação dos óbitos de cidadãos alistáveis, ocorridos no mês anterior, para cancelamento das inscrições.
 
-**§4º** Quando houver denúncia fundamentada de fraude no alistamento de uma zona ou município, o Tribunal Regional poderá determinar a realização de correição e, provada a fraude em proporção comprometedora, ordenará a revisão do eleitorado, obedecidas as Instruções do Tribunal Superior e as recomendações que, subsidiariamente, baixar, com o cancelamento de ofício das inscrições correspondentes aos títulos que não forem apresentados à revisão. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§4º Quando houver denúncia fundamentada de fraude no alistamento de uma zona ou município, o Tribunal Regional poderá determinar a realização de correição e, provada a fraude em proporção comprometedora, ordenará a revisão do eleitorado, obedecidas as Instruções do Tribunal Superior e as recomendações que, subsidiariamente, baixar, com o cancelamento de ofício das inscrições correspondentes aos títulos que não forem apresentados à revisão. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 72.** Durante o processo e até a exclusão pode o eleitor votar validamente.
 
-**Parágrafo único.** Tratando-se de inscrições contra as quais hajam sido interpostos recursos das decisões que as deferiram, desde que tais recursos venham a ser providos pelo Tribunal Regional ou Tribunal Superior, serão nulos os votos se o seu número for suficiente para alterar qualquer representação partidária ou classificação de candidato eleito pelo princípio majoritário.
+Parágrafo único. Tratando-se de inscrições contra as quais hajam sido interpostos recursos das decisões que as deferiram, desde que tais recursos venham a ser providos pelo Tribunal Regional ou Tribunal Superior, serão nulos os votos se o seu número for suficiente para alterar qualquer representação partidária ou classificação de candidato eleito pelo princípio majoritário.
 
 **Art. 73.** No caso de exclusão, a defesa pode ser feita pelo interessado, por outro eleitor ou por delegado de partido.
 
-**Art. 74.** A exclusão será mandada processar *ex officio* pelo juiz eleitoral, sempre que tiver conhecimento de alguma das causas do cancelamento.
+**Art. 74.** A exclusão será mandada processar ex officio pelo juiz eleitoral, sempre que tiver conhecimento de alguma das causas do cancelamento.
 
 **Art. 75.** O Tribunal Regional, tomando conhecimento através de seu fichário, da inscrição do mesmo eleitor em mais de uma zona sob sua jurisdição, comunicará o fato ao juiz competente para o cancelamento, que de preferência deverá recair:
 
@@ -803,15 +807,15 @@ V - comunicará o cancelamento ao Tribunal Regional para anotação no seu fich�
 
 **Art. 81.** Cessada a causa do cancelamento, poderá o interessado requerer novamente a sua qualificação e inscrição.
 
-PARTE QUARTA
+### DAS ELEIÇÕES
 
-DAS ELEIÇÕES
+### TÍTULO I
 
-### TÍTULO I — DO SISTEMA ELEITORAL
+### DO SISTEMA ELEITORAL
 
 **Art. 82.** O sufrágio é universal e direto; o voto, obrigatório e secreto.
 
-**Art. 83.** Na eleição direta para o Senado Federal, para Prefeito e Vice-Prefeito, adotar-se-á o princípio majoritário. *(Artigo com redação dada pela Lei nº 6.534, de 26/5/1978)*
+**Art. 83.** Na eleição direta para o Senado Federal, para Prefeito e Vice-Prefeito, adotar-se-á o princípio majoritário. (Artigo com redação dada pela Lei nº 6.534, de 26/5/1978)
 
 **Art. 84.** A eleição para a Câmara dos Deputados, Assembléias Legislativas e Câmaras Municipais, obedecerá ao princípio da representação proporcional na forma desta Lei.
 
@@ -819,15 +823,17 @@ DAS ELEIÇÕES
 
 **Art. 86.** Nas eleições presidenciais a circunscrição será o País; nas eleições federais e estaduais, o Estado; e, nas municipais, o respectivo município.
 
-#### CAPÍTULO I — DO REGISTRO DOS CANDIDATOS
+#### CAPÍTULO I
+
+### DO REGISTRO DOS CANDIDATOS
 
 **Art. 87.** Somente podem concorrer às eleições candidatos registrados por partidos.
 
-**Parágrafo único.** Nenhum registro será admitido fora do período de 6 (seis) meses antes da eleição.
+Parágrafo único. Nenhum registro será admitido fora do período de 6 (seis) meses antes da eleição.
 
 **Art. 88.** Não é permitido registro de candidato embora para cargos diferentes, por mais de uma circunscrição ou para mais de um cargo na mesma circunscrição.
 
-**Parágrafo único.** Nas eleições realizadas pelo sistema proporcional o candidato deverá ser filiado ao partido, na circunscrição em que concorrer, pelo tempo que for fixado nos respectivos estatutos.
+Parágrafo único. Nas eleições realizadas pelo sistema proporcional o candidato deverá ser filiado ao partido, na circunscrição em que concorrer, pelo tempo que for fixado nos respectivos estatutos.
 
 **Art. 89.** Serão registrados:
 
@@ -841,25 +847,25 @@ III - nos Juízos Eleitorais os candidatos a vereador, prefeito e vice-prefeito 
 
 **Art. 91.** O registro de candidatos a presidente e vice-presidente, governador e vice-governador, ou prefeito e vice-prefeito, far-se-á sempre em chapa única e indivisível, ainda que resulte a indicação de aliança de partidos.
 
-**§ 1º** O registro de candidatos a senador far-se-á com o do suplente partidário.
+§ 1º O registro de candidatos a senador far-se-á com o do suplente partidário.
 
-**§ 2º** Nos Territórios far-se-á o registro do candidato a deputado com o do suplente.
+§ 2º Nos Territórios far-se-á o registro do candidato a deputado com o do suplente.
 
-**§ 3º** É facultado aos partidos políticos celebrar coligações no registro de candidatos às eleições majoritárias. *(Parágrafo acrescido pela Lei nº 14.211, de 1º/10/2021)*
+§ 3º É facultado aos partidos políticos celebrar coligações no registro de candidatos às eleições majoritárias. (Parágrafo acrescido pela Lei nº 14.211, de 1º/10/2021)
 
-**Art. 92.** *(Revogado pela Lei nº 9.504, de 30/9/1997).*
+**Art. 92.** (Revogado pela Lei nº 9.504, de 30/9/1997 ).
 
-**Art. 93.** O prazo de entrada em cartório ou na Secretaria do Tribunal, conforme o caso, de requerimento de registro de candidato a cargo eletivo terminará, improrrogavelmente, às dezenove horas do dia 15 de agosto do ano em que se realizarem as eleições. *(“Caput” do artigo com redação dada pela Lei nº 13.165, de 29/9/2015)*
+**Art. 93.** O prazo de entrada em cartório ou na Secretaria do Tribunal, conforme o caso, de requerimento de registro de candidato a cargo eletivo terminará, improrrogavelmente, às dezenove horas do dia 15 de agosto do ano em que se realizarem as eleições. (“Caput” do artigo com redação dada pela Lei nº 13.165, de 29/9/2015)
 
-**§ 1º** Até vinte dias antes da data das eleições, todos os requerimentos, inclusive os que tiverem sido impugnados, devem estar julgados pelas instâncias ordinárias, e publicadas as decisões a eles relativas. *(Parágrafo com redação dada pela Lei nº 13.165, de 29/9/2015)*
+§ 1º Até vinte dias antes da data das eleições, todos os requerimentos, inclusive os que tiverem sido impugnados, devem estar julgados pelas instâncias ordinárias, e publicadas as decisões a eles relativas. (Parágrafo com redação dada pela Lei nº 13.165, de 29/9/2015)
 
-**§ 2º** As convenções partidárias para a escolha dos candidatos serão realizadas, no máximo, até 5 de agosto do ano em que se realizarem as eleições. *(Parágrafo com redação dada pela Lei nº 13.165, de 29/9/2015)*
+§ 2º As convenções partidárias para a escolha dos candidatos serão realizadas, no máximo, até 5 de agosto do ano em que se realizarem as eleições. (Parágrafo com redação dada pela Lei nº 13.165, de 29/9/2015)
 
-**§ 3º** Nesse caso, se se tratar de eleição municipal, o juiz eleitoral deverá apresentar a sentença no prazo de 2 (dois) dias, podendo o recorrente, nos 2 (dois) dias seguintes, aditar as razões do recurso; no caso de registro feito perante o Tribunal, se o relator não apresentar o acórdão no prazo de 2 (dois) dias, será designado outro relator, na ordem da votação, o qual deverá lavrar o acórdão no prazo de 3 (três) dias, podendo o recorrente, nesse mesmo prazo, aditar as suas razões.
+§ 3º Nesse caso, se se tratar de eleição municipal, o juiz eleitoral deverá apresentar a sentença no prazo de 2 (dois) dias, podendo o recorrente, nos 2 (dois) dias seguintes, aditar as razões do recurso; no caso de registro feito perante o Tribunal, se o relator não apresentar o acórdão no prazo de 2 (dois) dias, será designado outro relator, na ordem da votação, o qual deverá lavrar o acórdão no prazo de 3 (três) dias, podendo o recorrente, nesse mesmo prazo, aditar as suas razões.
 
 **Art. 94.** O registro pode ser promovido por delegado de partido, autorizado em documento autêntico, inclusive telegrama de quem responda pela direção partidária e sempre com assinatura reconhecida por tabelião.
 
-**§1º** O requerimento de registro deverá ser instruído:
+§1º O requerimento de registro deverá ser instruído:
 
 I - com a cópia autêntica da ata da convenção que houver feito a escolha do candidato, a qual deverá ser conferida com o original na Secretaria do Tribunal ou no cartório eleitoral;
 
@@ -869,11 +875,11 @@ III - com certidão fornecida pelo cartório eleitoral da zona de inscrição, e
 
 IV - com prova de filiação partidária, salvo para os candidatos a presidente e vice-presidente, senador e respectivo suplente, governador e vice-governador, prefeito e vice-prefeito;
 
-V - com folha corrida fornecida pelos cartórios competentes, para que se verifique se o candidato está no gozo dos direitos políticos (artigos 132, III e 135 da Constituição Federal); *(Inciso com redação dada pela Lei nº 4.961, de 4/5/1966)*
+V - com folha corrida fornecida pelos cartórios competentes, para que se verifique se o candidato está no gozo dos direitos políticos (artigos 132, III e 135 da Constituição Federal); (Inciso com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
 VI - com declaração de bens, de que constem a origem e as mutações patrimoniais.
 
-**§2º** A autorização do candidato pode ser dirigida diretamente ao órgão ou juiz competente para o registro.
+§2º A autorização do candidato pode ser dirigida diretamente ao órgão ou juiz competente para o registro.
 
 **Art. 95.** O candidato poderá ser registrado sem o prenome, ou com o nome abreviado, desde que a supressão não estabeleça dúvida quanto à sua identidade.
 
@@ -881,13 +887,13 @@ VI - com declaração de bens, de que constem a origem e as mutações patrimoni
 
 **Art. 97.** Protocolado o requerimento de registro, o presidente do Tribunal ou o juiz eleitoral, no caso de eleição municipal ou distrital, fará publicar imediatamente edital para ciência dos interessados.
 
-**§1º** O edital será publicado na Imprensa Oficial, nas capitais, e afixado em cartório, no local de costume, nas demais zonas.
+§1º O edital será publicado na Imprensa Oficial, nas capitais, e afixado em cartório, no local de costume, nas demais zonas.
 
-**§2º** Do pedido de registro caberá, no prazo de 2 (dois) dias, a contar da publicação ou afixação do edital, impugnação articulada por parte de candidato ou de partido político.
+§2º Do pedido de registro caberá, no prazo de 2 (dois) dias, a contar da publicação ou afixação do edital, impugnação articulada por parte de candidato ou de partido político.
 
-**§3º** Poderá, também, qualquer eleitor, com fundamento em inelegibilidade ou incompatibilidade do candidato ou na incidência deste no art. 96 impugnar o pedido de registro, dentro do mesmo prazo, oferecendo prova do alegado.
+§3º Poderá, também, qualquer eleitor, com fundamento em inelegibilidade ou incompatibilidade do candidato ou na incidência deste no art. 96 impugnar o pedido de registro, dentro do mesmo prazo, oferecendo prova do alegado.
 
-**§4º** Havendo impugnação, o partido requerente do registro terá vista dos autos, por 2 (dois) dias, para falar sobre a mesma, feita a respectiva intimação na forma do § 1º.
+§4º Havendo impugnação, o partido requerente do registro terá vista dos autos, por 2 (dois) dias, para falar sobre a mesma, feita a respectiva intimação na forma do § 1º.
 
 **Art. 98.** Os militares alistáveis são elegíveis, atendidas as seguintes condições:
 
@@ -897,41 +903,43 @@ II - o militar em atividade com 5 (cinco) ou mais anos de serviço, ao se candid
 
 III - o militar não excluído e que vier a ser eleito, será, no ato da diplomação, transferido para a reserva ou reformado (Emenda Constitucional nº 9, art. 3).
 
-**Parágrafo único.** O juízo ou Tribunal que deferir o registro de militar candidato a cargo eletivo, comunicará imediatamente a decisão à autoridade a que o mesmo estiver subordinado, cabendo igual obrigação ao Partido, quando lançar a candidatura.
+Parágrafo único. O juízo ou Tribunal que deferir o registro de militar candidato a cargo eletivo, comunicará imediatamente a decisão à autoridade a que o mesmo estiver subordinado, cabendo igual obrigação ao Partido, quando lançar a candidatura.
 
 **Art. 99.** Nas eleições majoritárias poderá qualquer partido registrar na mesma circunscrição candidato já por outro registrado, desde que o outro partido e o candidato o consintam por escrito até 10 (dez) dias antes da eleição, observadas as formalidades do art. 94.
 
-**Parágrafo único.** A falta de consentimento expresso acarretará a anulação do registro promovido, podendo o partido prejudicado requerê-la ou recorrer da resolução que ordenar o registro.
+Parágrafo único. A falta de consentimento expresso acarretará a anulação do registro promovido, podendo o partido prejudicado requerê-la ou recorrer da resolução que ordenar o registro.
 
 **Art. 100.** Nas eleições realizadas pelo sistema proporcional, o Tribunal Superior Eleitoral, até 6 (seis) meses antes do pleito, reservará para cada Partido, por sorteio, em sessão realizada com a presença dos Delegados de Partido, uma série de números a partir de 100 (cem).
 
-**§1º** A sessão a que se refere o *caput* deste artigo será anunciada aos Partidos com antecedência mínima de 5 (cinco) dias.
+§1º A sessão a que se refere o caput deste artigo será anunciada aos Partidos com antecedência mínima de 5 (cinco) dias.
 
-**§2º** As convenções partidárias para escolha dos candidatos sortearão, por sua vez, em cada Estado e município, os números que devam corresponder a cada candidato.
+§2º As convenções partidárias para escolha dos candidatos sortearão, por sua vez, em cada Estado e município, os números que devam corresponder a cada candidato.
 
-**§3º** Nas eleições para Deputado Federal, se o número de Partidos não for superior a 9 (nove), a cada um corresponderá obrigatoriamente uma centena, devendo a numeração dos candidatos ser sorteada a partir da unidade, para que ao primeiro candidato do primeiro Partido corresponda o nº 101 (cento e um), ao do segundo partido, 201 (duzentos e um), e assim sucessivamente.
+§3º Nas eleições para Deputado Federal, se o número de Partidos não for superior a 9 (nove), a cada um corresponderá obrigatoriamente uma centena, devendo a numeração dos candidatos ser sorteada a partir da unidade, para que ao primeiro candidato do primeiro Partido corresponda o nº 101 (cento e um), ao do segundo partido, 201 (duzentos e um), e assim sucessivamente.
 
-**§4º** Concorrendo 10 (dez) ou mais Partidos, a cada um corresponderá uma centena a partir de 1.101 (um mil, cento e um), de maneira que a todos os candidatos sejam atribuídos sempre 4 (quatro) algarismos, suprimindo-se a numeração correspondente à série 2.001 (dois mil e um) a 2.100 (dois mil e cem), para reiniciá-la em 2.101 (dois mil, cento e um), a partir do décimo Partido.
+§4º Concorrendo 10 (dez) ou mais Partidos, a cada um corresponderá uma centena a partir de 1.101 (um mil, cento e um), de maneira que a todos os candidatos sejam atribuídos sempre 4 (quatro) algarismos, suprimindo-se a numeração correspondente à série 2.001 (dois mil e um) a 2.100 (dois mil e cem), para reiniciá-la em 2.101 (dois mil, cento e um), a partir do décimo Partido.
 
-**§5º** Na mesma sessão, o Tribunal Superior Eleitoral sorteará as séries correspondentes aos Deputados Estaduais e Vereadores, observando, no que couber, as normas constantes dos parágrafos anteriores, e de maneira que a todos os candidatos, sejam atribuídos sempre número de 4 (quatro) algarismos. *(Artigo com redação dada pela Lei nº 7.015, de 16/7/1982)*
+§5º Na mesma sessão, o Tribunal Superior Eleitoral sorteará as séries correspondentes aos Deputados Estaduais e Vereadores, observando, no que couber, as normas constantes dos parágrafos anteriores, e de maneira que a todos os candidatos, sejam atribuídos sempre número de 4 (quatro) algarismos. (Artigo com redação dada pela Lei nº 7.015, de 16/7/1982)
 
-**Art. 101.** Pode qualquer candidato requerer, em petição com firma reconhecida, o cancelamento do registro do seu nome. *(“Caput” do artigo com redação dada pela Lei nº 6.553, de 19/8/1978)*
+**Art. 101.** Pode qualquer candidato requerer, em petição com firma reconhecida, o cancelamento do registro do seu nome. (“Caput” do artigo com redação dada pela Lei nº 6.553, de 19/8/1978)
 
-**§1º** Desse fato, o presidente do Tribunal ou o juiz, conforme o caso, dará ciência imediata ao partido que tenha feito a inscrição, ao qual ficará ressalvado o direito de substituir por outro o nome cancelado, observadas todas as formalidades exigidas para o registro e desde que o novo pedido seja apresentado até 60 (sessenta) dias antes do pleito.
+§1º Desse fato, o presidente do Tribunal ou o juiz, conforme o caso, dará ciência imediata ao partido que tenha feito a inscrição, ao qual ficará ressalvado o direito de substituir por outro o nome cancelado, observadas todas as formalidades exigidas para o registro e desde que o novo pedido seja apresentado até 60 (sessenta) dias antes do pleito.
 
-**§2º** Nas eleições majoritárias, se o candidato vier a falecer ou renunciar dentro do período de 60 (sessenta) dias mencionados no parágrafo anterior, o partido poderá substituí-lo; se o registro do novo candidato estiver deferido até 30 (trinta) dias antes do pleito serão confeccionadas novas cédulas, caso contrário serão utilizadas as já impressas, computando-se para o novo candidato os votos dados ao anteriormente registrado.
+§2º Nas eleições majoritárias, se o candidato vier a falecer ou renunciar dentro do período de 60 (sessenta) dias mencionados no parágrafo anterior, o partido poderá substituí-lo; se o registro do novo candidato estiver deferido até 30 (trinta) dias antes do pleito serão confeccionadas novas cédulas, caso contrário serão utilizadas as já impressas, computando-se para o novo candidato os votos dados ao anteriormente registrado.
 
-**§3º** Considerar-se-á nulo o voto dado ao candidato que haja pedido o cancelamento de sua inscrição, salvo na hipótese prevista no parágrafo anterior, " in fine".
+§3º Considerar-se-á nulo o voto dado ao candidato que haja pedido o cancelamento de sua inscrição, salvo na hipótese prevista no parágrafo anterior, " in fine".
 
-**§4º** Nas eleições proporcionais, ocorrendo a hipótese prevista neste artigo, ao substituto será atribuído o número anteriormente dado ao candidato cujo registro foi cancelado.
+§4º Nas eleições proporcionais, ocorrendo a hipótese prevista neste artigo, ao substituto será atribuído o número anteriormente dado ao candidato cujo registro foi cancelado.
 
-**§5º** Em caso de morte, renúncia, inelegibilidade e preenchimento de vagas existentes nas respectivas chapas, tanto em eleições proporcionais quanto majoritárias, as substituições e indicações se processarão pelas Comissões Executivas. *(Parágrafo acrescido pela Lei nº 6.553, de 19/8/1978)*
+§5º Em caso de morte, renúncia, inelegibilidade e preenchimento de vagas existentes nas respectivas chapas, tanto em eleições proporcionais quanto majoritárias, as substituições e indicações se processarão pelas Comissões Executivas. (Parágrafo acrescido pela Lei nº 6.553, de 19/8/1978)
 
 **Art. 102.** Os registros efetuados pelo Tribunal Superior serão imediatamente comunicados aos Tribunais Regionais e por estes aos juízes eleitorais.
 
-**Parágrafo único.** Os Tribunais Regionais comunicarão também ao Tribunal Superior os registros efetuados por eles e pelos juízes eleitorais.
+Parágrafo único. Os Tribunais Regionais comunicarão também ao Tribunal Superior os registros efetuados por eles e pelos juízes eleitorais.
 
-#### CAPÍTULO II — DO VOTO SECRETO
+#### CAPÍTULO II
+
+### DO VOTO SECRETO
 
 **Art. 103.** O sigilo do voto é assegurado mediante as seguintes providências:
 
@@ -943,17 +951,19 @@ III - verificação da autenticidade da cédula oficial à vista das rubricas;
 
 IV - emprego de urna que assegure a inviolabilidade do sufrágio e seja suficientemente ampla para que não se acumulem as cédulas na ordem em que forem introduzidas.
 
-#### CAPÍTULO III — DA CÉDULA OFICIAL
+#### CAPÍTULO III
+
+### DA CÉDULA OFICIAL
 
 **Art. 104.** As cédulas oficiais serão confeccionadas e distribuídas exclusivamente pela Justiça Eleitoral, devendo ser impressas em papel branco, opaco e pouco absorvente. A impressão será em tinta preta, com tipos uniformes de letra.
 
-**§1º** Os nomes dos candidatos para as eleições majoritárias devem figurar na ordem determinada por sorteio.
+§1º Os nomes dos candidatos para as eleições majoritárias devem figurar na ordem determinada por sorteio.
 
-**§2º** O sorteio será realizado após o deferimento do último pedido de registro, em audiência presidida pelo juiz ou presidente do Tribunal, na presença dos candidatos e delegados de partido.
+§2º O sorteio será realizado após o deferimento do último pedido de registro, em audiência presidida pelo juiz ou presidente do Tribunal, na presença dos candidatos e delegados de partido.
 
-**§3º** A realização da audiência será anunciada com 3 (três) dias de antecedência, no mesmo dia em que for deferido o último pedido de registro, devendo os delegados de partido ser intimados por ofício sob protocolo.
+§3º A realização da audiência será anunciada com 3 (três) dias de antecedência, no mesmo dia em que for deferido o último pedido de registro, devendo os delegados de partido ser intimados por ofício sob protocolo.
 
-**§4º** Havendo substituição de candidatos após o sorteio, o nome do novo candidato deverá figurar na cédula na seguinte ordem:
+§4º Havendo substituição de candidatos após o sorteio, o nome do novo candidato deverá figurar na cédula na seguinte ordem:
 
 I - se forem apenas 2 (dois), em último lugar;
 
@@ -963,39 +973,41 @@ III - se forem mais de 3 (três), em penúltimo lugar;
 
 IV - se permanecer apenas 1 (um) candidato e forem substituídos 2 (dois) ou mais, aquele ficará em primeiro lugar, sendo realizado novo sorteio em relação aos demais.
 
-**§5º** Para as eleições realizadas pelo sistema proporcional a cédula conterá espaço para que o eleitor escreva o nome ou o número do candidato de sua preferência e indique a sigla do partido.
+§5º Para as eleições realizadas pelo sistema proporcional a cédula conterá espaço para que o eleitor escreva o nome ou o número do candidato de sua preferência e indique a sigla do partido.
 
-**§6º** As cédulas oficiais serão confeccionadas de maneira tal que, dobradas, resguardem o sigilo do voto, sem que seja necessário o emprego de cola para fechá-las.
+§6º As cédulas oficiais serão confeccionadas de maneira tal que, dobradas, resguardem o sigilo do voto, sem que seja necessário o emprego de cola para fechá-las.
 
-#### CAPÍTULO IV — DA REPRESENTAÇÃO PROPORCIONAL
+#### CAPÍTULO IV
 
-**Art. 105.** *(Revogado pela Lei nº 14.211, de 1º/10/2021)*
+### DA REPRESENTAÇÃO PROPORCIONAL
+
+**Art. 105.** (Revogado pela Lei nº 14.211, de 1º/10/2021)
 
 **Art. 106.** Determina-se o quociente eleitoral dividindo-se o número de votos válidos apurados pelo de lugares a preencher em cada circunscrição eleitoral, desprezada a fração se igual ou inferior a meio, equivalente a um, se superior.
 
-**Parágrafo único.** *(Revogado pela Lei nº 9.504, de 30/9/1997)*
+Parágrafo único. (Revogado pela Lei nº 9.504, de 30/9/1997 )
 
-**Art. 107.** Determina-se para cada partido o quociente partidário dividindo-se pelo quociente eleitoral o número de votos válidos dados sob a mesma legenda, desprezada a fração. *(Artigo com redação dada pela Lei nº 14.211, de 1º/10/2021)*
+**Art. 107.** Determina-se para cada partido o quociente partidário dividindo-se pelo quociente eleitoral o número de votos válidos dados sob a mesma legenda, desprezada a fração. (Artigo com redação dada pela Lei nº 14.211, de 1º/10/2021)
 
-**Art. 108.** Estarão eleitos, entre os candidatos registrados por um partido que tenham obtido votos em número igual ou superior a 10% (dez por cento) do quociente eleitoral, tantos quantos o respectivo quociente partidário indicar, na ordem da votação nominal que cada um tenha recebido. *(“Caput” do artigo com redação dada pela Lei nº 14.211, de 1º/10/2021)*
+**Art. 108.** Estarão eleitos, entre os candidatos registrados por um partido que tenham obtido votos em número igual ou superior a 10% (dez por cento) do quociente eleitoral, tantos quantos o respectivo quociente partidário indicar, na ordem da votação nominal que cada um tenha recebido. (“Caput” do artigo com redação dada pela Lei nº 14.211, de 1º/10/2021)
 
-**Parágrafo único.** Os lugares não preenchidos em razão da exigência de votação nominal mínima a que se refere o *caput* serão distribuídos de acordo com as regras do art. 109. *(Parágrafo único com redação dada pela Lei nº 13.165, de 29/9/2015)*
+Parágrafo único. Os lugares não preenchidos em razão da exigência de votação nominal mínima a que se refere o caput serão distribuídos de acordo com as regras do art. 109. (Parágrafo único com redação dada pela Lei nº 13.165, de 29/9/2015)
 
-**Art. 109.** Os lugares não preenchidos com a aplicação dos quocientes partidários e em razão da exigência de votação nominal mínima a que se refere o art. 108 serão distribuídos de acordo com as seguintes regras: *(“Caput” do artigo com redação dada pela Lei nº 13.165, de 29/9/2015)*
+**Art. 109.** Os lugares não preenchidos com a aplicação dos quocientes partidários e em razão da exigência de votação nominal mínima a que se refere o art. 108 serão distribuídos de acordo com as seguintes regras: (“Caput” do artigo com redação dada pela Lei nº 13.165, de 29/9/2015)
 
-I - dividir-se-á o número de votos válidos atribuídos a cada partido pelo número de lugares por ele obtido mais 1 (um), cabendo ao partido que apresentar a maior média um dos lugares a preencher, desde que tenha candidato que atenda à exigência de votação nominal mínima; *(Inciso com redação dada pela Lei nº 14.211, de 1º/10/2021)*
+I - dividir-se-á o número de votos válidos atribuídos a cada partido pelo número de lugares por ele obtido mais 1 (um), cabendo ao partido que apresentar a maior média um dos lugares a preencher, desde que tenha candidato que atenda à exigência de votação nominal mínima; (Inciso com redação dada pela Lei nº 14.211, de 1º/10/2021)
 
-II - repetir-se-á a operação para cada um dos lugares a preencher; *(Inciso com redação dada pela Lei nº 13.165, de 29/9/2015)*
+II - repetir-se-á a operação para cada um dos lugares a preencher; (Inciso com redação dada pela Lei nº 13.165, de 29/9/2015)
 
-III - quando não houver mais partidos com candidatos que atendam às duas exigências do inciso I deste *caput*, as cadeiras serão distribuídas aos partidos que apresentarem as maiores médias. *(Inciso com redação dada pela Lei nº 14.211, de 1º/10/2021) (Vide ADIs nºs 7.228, 7.263 e 7.325, cujas decisões foram publicadas no DOU de 4/3/2023)*
+III - quando não houver mais partidos com candidatos que atendam às duas exigências do inciso I deste caput , as cadeiras serão distribuídas aos partidos que apresentarem as maiores médias. (Inciso com redação dada pela Lei nº 14.211, de 1º/10/2021) (Vide ADIs nºs 7.228 , 7.263 e 7.325 , cujas decisões foram publicadas no DOU de 4/3/2023)
 
-**§ 1º** O preenchimento dos lugares com que cada partido for contemplado far-se- á segundo a ordem de votação recebida por seus candidatos. *(Parágrafo com redação dada pela Lei nº 14.211, de 1º/10/2021)*
+§ 1º O preenchimento dos lugares com que cada partido for contemplado far-se- á segundo a ordem de votação recebida por seus candidatos. (Parágrafo com redação dada pela Lei nº 14.211, de 1º/10/2021)
 
-**§ 2º** Poderão concorrer à distribuição dos lugares todos os partidos que participaram do pleito, desde que tenham obtido pelo menos 80% (oitenta por cento) do quociente eleitoral, e os candidatos que tenham obtido votos em número igual ou superior a 20% (vinte por cento) desse quociente. *(Parágrafo com redação dada pela Lei nº 14.211, de 1º/10/2021) (Vide ADIs nºs 7.228, 7.263 e 7.325, cujas decisões foram publicadas no DOU de 4/3/2023)*
+§ 2º Poderão concorrer à distribuição dos lugares todos os partidos que participaram do pleito, desde que tenham obtido pelo menos 80% (oitenta por cento) do quociente eleitoral, e os candidatos que tenham obtido votos em número igual ou superior a 20% (vinte por cento) desse quociente. (Parágrafo com redação dada pela Lei nº 14.211, de 1º/10/2021) (Vide ADIs nºs 7.228 , 7.263 e 7.325 , cujas decisões foram publicadas no DOU de 4/3/2023)
 
 **Art. 110.** Em caso de empate, haver-se-á por eleito o candidato mais idoso.
 
-**Art. 111.** Se nenhum partido alcançar o quociente eleitoral, considerar-se-ão eleitos, até serem preenchidos todos os lugares, os candidatos mais votados. *(Artigo com redação dada pela Lei nº 14.211, de 1º/10/2021) (Artigo declarado inconstitucional, em controle concentrado, pelo Supremo Tribunal Federal, pelas ADIs nºs 7.228, 7.263 e 7.325, publicadas no DOU de 4/3/2023) (Vide ADIs nºs 7.228, 7.263 e 7.325, cujas decisões foram publicadas no DOU de 4/3/2023)*
+**Art. 111.** Se nenhum partido alcançar o quociente eleitoral, considerar-se-ão eleitos, até serem preenchidos todos os lugares, os candidatos mais votados. (Artigo com redação dada pela Lei nº 14.211, de 1º/10/2021) (Artigo declarado inconstitucional, em controle concentrado, pelo Supremo Tribunal Federal, pelas ADIs nºs 7.228 , 7.263 e 7.325 , publicadas no DOU de 4/3/2023) (Vide ADIs nºs 7.228 , 7.263 e 7.325 , cujas decisões foram publicadas no DOU de 4/3/2023)
 
 **Art. 112.** Considerar-se-ão suplentes da representação partidária:
 
@@ -1003,37 +1015,41 @@ I - os mais votados sob a mesma legenda e não eleitos efetivos das listas dos r
 
 II - em caso de empate na votação, na ordem decrescente da idade.
 
-**Parágrafo único.** Na definição dos suplentes da representação partidária, não há exigência de votação nominal mínima prevista pelo art. 108. *(Parágrafo único acrescido pela Lei nº 13.165, de 29/9/2015)*
+Parágrafo único. Na definição dos suplentes da representação partidária, não há exigência de votação nominal mínima prevista pelo art. 108. (Parágrafo único acrescido pela Lei nº 13.165, de 29/9/2015)
 
 **Art. 113.** Na ocorrência de vaga, não havendo suplente para preenchê-la, far-se-á eleição, salvo se faltarem menos de nove meses para findar o período de mandato.
 
-### TÍTULO II — DOS ATOS PREPARATÓRIOS DA VOTAÇÃO
+### DOS ATOS PREPARATÓRIOS DA VOTAÇÃO
 
 **Art. 114.** Até 70 (setenta) dias antes da data marcada para a eleição, todos os que requererem inscrição como eleitor, ou transferência, já devem estar devidamente qualificados e os respectivos títulos prontos para a entrega, se deferidos pelo juiz eleitoral.
 
-**Parágrafo único.** Será punido nos termos do art. 293 o juiz eleitoral, o escrivão eleitoral, o preparador ou o funcionário responsável pela transgressão do preceituado neste artigo ou pela não-entrega do título pronto ao eleitor que o procurar.
+Parágrafo único. Será punido nos termos do art. 293 o juiz eleitoral, o escrivão eleitoral, o preparador ou o funcionário responsável pela transgressão do preceituado neste artigo ou pela não-entrega do título pronto ao eleitor que o procurar.
 
 **Art. 115.** Os juízes eleitorais, sob pena de responsabilidade, comunicarão ao Tribunal Regional, até 30 (trinta) dias antes de cada eleição, o número de eleitores alistados.
 
 **Art. 116.** A Justiça Eleitoral fará ampla divulgação, através dos comunicados transmitidos em obediência ao disposto no art. 250, § 5º, pelo rádio e televisão, bem assim por meio de cartazes afixados em lugares públicos, dos nomes dos candidatos registrados, com indicação do partido a que pertençam, bem como do número sob que foram inscritos, no caso dos candidatos a deputado e a vereador.
 
-#### CAPÍTULO I — DAS SEÇÕES ELEITORAIS
+#### CAPÍTULO I
+
+### DAS SEÇÕES ELEITORAIS
 
 **Art. 117.** As seções eleitorais, organizadas à medida em que forem sendo deferidos os pedidos de inscrição, não terão mais de 400 (quatrocentos) eleitores nas capitais e de 300 (trezentos) nas demais localidades, nem menos de 50 (cinqüenta) eleitores.
 
-**§1º** Em casos excepcionais, devidamente justificados, o Tribunal Regional poderá autorizar que sejam ultrapassados os índices previstos neste artigo, desde que essa providência venha facilitar o exercício do voto, aproximando o eleitor do local designado para a votação.
+§1º Em casos excepcionais, devidamente justificados, o Tribunal Regional poderá autorizar que sejam ultrapassados os índices previstos neste artigo, desde que essa providência venha facilitar o exercício do voto, aproximando o eleitor do local designado para a votação.
 
-**§2º** Se em seção destinada aos cegos, o número de eleitores não alcançar o mínimo exigido, este se completará com outros, ainda que não sejam cegos.
+§2º Se em seção destinada aos cegos, o número de eleitores não alcançar o mínimo exigido, este se completará com outros, ainda que não sejam cegos.
 
 **Art. 118.** Os juízes eleitorais organizarão relação de eleitores de cada seção, a qual será remetida aos presidentes das mesas receptoras para facilitação do processo de votação.
 
-#### CAPÍTULO II — DAS MESAS RECEPTORAS
+#### CAPÍTULO II
+
+### DAS MESAS RECEPTORAS
 
 **Art. 119.** A cada seção eleitoral corresponde uma mesa receptora de votos.
 
-**Art. 120.** Constituem a mesa receptora um presidente, um primeiro e um segundo mesários, dois secretários e um suplente, nomeados pelo juiz eleitoral sessenta dias antes da eleição, em audiência pública, anunciada pelo menos com cinco dias de antecedência. *(“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+**Art. 120.** Constituem a mesa receptora um presidente, um primeiro e um segundo mesários, dois secretários e um suplente, nomeados pelo juiz eleitoral sessenta dias antes da eleição, em audiência pública, anunciada pelo menos com cinco dias de antecedência. (“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
-**§1º** Não podem ser nomeados presidentes e mesários:
+§1º Não podem ser nomeados presidentes e mesários:
 
 I - os candidatos e seus parentes ainda que por afinidade, até o segundo grau, inclusive, e bem assim o cônjuge;
 
@@ -1043,51 +1059,51 @@ III - as autoridades e agentes policiais, bem como os funcionários no desempenh
 
 IV - Os que pertencerem ao serviço eleitoral.
 
-**§2º** Os mesários serão nomeados, de preferência entre os eleitores da própria seção, e, dentre estes, os diplomados em escola superior, os professores e os serventuários da Justiça.
+§2º Os mesários serão nomeados, de preferência entre os eleitores da própria seção, e, dentre estes, os diplomados em escola superior, os professores e os serventuários da Justiça.
 
-**§3º** O juiz eleitoral mandará publicar no jornal oficial, onde houver, e, não havendo, em cartório, as nomeações que tiver feito, e intimará os mesários através dessa publicação, para constituírem as mesas no dia e lugares designados, às 7 h.
+§3º O juiz eleitoral mandará publicar no jornal oficial, onde houver, e, não havendo, em cartório, as nomeações que tiver feito, e intimará os mesários através dessa publicação, para constituírem as mesas no dia e lugares designados, às 7 h.
 
-**§4º** Os motivos justos que tiverem os nomeados para recusar a nomeação, e que ficarão à livre apreciação do juiz eleitoral, somente poderão ser alegados até 5 (cinco) dias a contar da nomeação, salvo se sobrevindos depois desse prazo.
+§4º Os motivos justos que tiverem os nomeados para recusar a nomeação, e que ficarão à livre apreciação do juiz eleitoral, somente poderão ser alegados até 5 (cinco) dias a contar da nomeação, salvo se sobrevindos depois desse prazo.
 
-**§5º** Os nomeados que não declararem a existência de qualquer dos impedimentos referidos no § 1º incorrem na pena estabelecida pelo art. 310.
+§5º Os nomeados que não declararem a existência de qualquer dos impedimentos referidos no § 1º incorrem na pena estabelecida pelo art. 310.
 
 **Art. 121.** Da nomeação da mesa receptora qualquer partido poderá reclamar ao juiz eleitoral, no prazo de 2 (dois) dias, a contar da audiência, devendo a decisão ser proferida em igual prazo.
 
-**§1º** Da decisão do juiz eleitoral caberá recurso para o Tribunal Regional, interposto dentro de 3 (três) dias, devendo, dentro de igual prazo, ser resolvido.
+§1º Da decisão do juiz eleitoral caberá recurso para o Tribunal Regional, interposto dentro de 3 (três) dias, devendo, dentro de igual prazo, ser resolvido.
 
-**§2º** Se o vício da constituição da mesa resultar da incompatibilidade prevista no n I, do § 1º, do art. 120, e o registro do candidato for posterior à nomeação do mesário, o prazo para reclamação será contado da publicação dos nomes dos candidatos registrados. Se resultar de qualquer das proibições dos ns. II, III e IV, e em virtude de fato superveniente, o prazo se contará do ato da nomeação ou eleição.
+§2º Se o vício da constituição da mesa resultar da incompatibilidade prevista no n I, do § 1º, do art. 120, e o registro do candidato for posterior à nomeação do mesário, o prazo para reclamação será contado da publicação dos nomes dos candidatos registrados. Se resultar de qualquer das proibições dos ns. II, III e IV, e em virtude de fato superveniente, o prazo se contará do ato da nomeação ou eleição.
 
-**§3º** O partido que não houver reclamado contra a composição da mesa não poderá argüir, sob esse fundamento, a nulidade da seção respectiva.
+§3º O partido que não houver reclamado contra a composição da mesa não poderá argüir, sob esse fundamento, a nulidade da seção respectiva.
 
 **Art. 122.** Os juízes deverão instruir os mesários sobre o processo da eleição, em reuniões para esse fim convocadas com a necessária antecedência.
 
 **Art. 123.** Os mesários substituirão o presidente, de modo que haja sempre quem responda pessoalmente pela ordem e regularidade do processo eleitoral, e assinarão a ata da eleição.
 
-**§1º** O presidente deve estar presente ao ato de abertura e de encerramento da eleição, salvo força maior, comunicando o impedimento aos mesários e secretários, pelo menos 24 (vinte e quatro) horas antes da abertura dos trabalhos, ou imediatamente, se o impedimento se der dentro desse prazo ou no curso da eleição.
+§1º O presidente deve estar presente ao ato de abertura e de encerramento da eleição, salvo força maior, comunicando o impedimento aos mesários e secretários, pelo menos 24 (vinte e quatro) horas antes da abertura dos trabalhos, ou imediatamente, se o impedimento se der dentro desse prazo ou no curso da eleição.
 
-**§2º** Não comparecendo o presidente até as sete horas e trinta minutos, assumirá a presidência, o primeiro mesário e, na sua falta ou impedimento, o segundo mesário, um dos secretários ou o suplente.
+§2º Não comparecendo o presidente até as sete horas e trinta minutos, assumirá a presidência, o primeiro mesário e, na sua falta ou impedimento, o segundo mesário, um dos secretários ou o suplente.
 
-**§3º** Poderá o presidente, ou membro da mesa que assumir a presidência, nomear *ad hoc*, dentre os eleitores presentes e obedecidas as prescrições do § 1º, do art. 120, os que forem necessários para completar a mesa.
+§3º Poderá o presidente, ou membro da mesa que assumir a presidência, nomear ad hoc , dentre os eleitores presentes e obedecidas as prescrições do § 1º, do art. 120, os que forem necessários para completar a mesa.
 
 **Art. 124.** O membro da mesa receptora que não comparecer no local, em dia e hora determinados para a realização de eleição, sem justa causa apresentada ao juiz eleitoral até 30 (trinta) dias após, incorrerá na multa de 50% (cinqüenta por cento) a 1 (um) salário mínimo vigente na zona eleitoral, cobrada mediante selo federal inutilizado no requerimento em que for solicitado o arbitramento ou através de executivo fiscal.
 
-**§1º** Se o arbitramento e pagamento da multa não for requerido pelo mesário faltoso, a multa será arbitrada e cobrada na forma prevista no art. 367.
+§1º Se o arbitramento e pagamento da multa não for requerido pelo mesário faltoso, a multa será arbitrada e cobrada na forma prevista no art. 367.
 
-**§2º** Se o faltoso for servidor público ou autárquico, a pena será de suspensão até 15 (quinze) dias.
+§2º Se o faltoso for servidor público ou autárquico, a pena será de suspensão até 15 (quinze) dias.
 
-**§3º** As penas previstas neste artigo serão aplicadas em dobro se a mesa receptora deixar de funcionar por culpa dos faltosos.
+§3º As penas previstas neste artigo serão aplicadas em dobro se a mesa receptora deixar de funcionar por culpa dos faltosos.
 
-**§4º** Será também aplicada em dobro observado o disposto nos parágrafos 1º e 2º, a pena ao membro da mesa que abandonar os trabalhos no decurso da votação sem justa causa apresentada ao juiz até 3 (três) dias após a ocorrência.
+§4º Será também aplicada em dobro observado o disposto nos parágrafos 1º e 2º, a pena ao membro da mesa que abandonar os trabalhos no decurso da votação sem justa causa apresentada ao juiz até 3 (três) dias após a ocorrência.
 
 **Art. 125.** Não se reunindo, por qualquer motivo, a mesa receptora, poderão os eleitores pertencentes à respectiva seção votar na seção mais próxima, sob jurisdição do mesmo juiz, recolhendo-se os seus votos à urna da seção em que deveriam votar, a qual será transportada para aquela em que tiverem de votar.
 
-**§1º** As assinaturas dos eleitores serão recolhidas nas folhas de votação da seção a que pertencerem, as quais, juntamente com as cédulas oficiais e o material restante, acompanharão a urna.
+§1º As assinaturas dos eleitores serão recolhidas nas folhas de votação da seção a que pertencerem, as quais, juntamente com as cédulas oficiais e o material restante, acompanharão a urna.
 
-**§2º** O transporte da urna e dos documentos da seção será providenciado pelo presidente da mesa, mesário ou secretário que comparecer, ou pelo próprio juiz, ou pessoa que ele designar para esse fim acompanhando-a os fiscais que o desejarem.
+§2º O transporte da urna e dos documentos da seção será providenciado pelo presidente da mesa, mesário ou secretário que comparecer, ou pelo próprio juiz, ou pessoa que ele designar para esse fim acompanhando-a os fiscais que o desejarem.
 
 **Art. 126.** Se no dia designado para o pleito deixarem de se reunir todas as mesas de um município, o presidente do Tribunal Regional determinará dia para se realizar o mesmo, instaurando-se inquérito para a apuração das causas da irregularidade e punição dos responsáveis.
 
-**Parágrafo único.** Essa eleição deverá ser marcada dentro de 15 (quinze) dias, pelo menos, para se realizar no prazo máximo de 30 (trinta) dias.
+Parágrafo único. Essa eleição deverá ser marcada dentro de 15 (quinze) dias, pelo menos, para se realizar no prazo máximo de 30 (trinta) dias.
 
 **Art. 127.** Compete ao presidente da mesa receptora, e, em sua falta, a quem o substituir;
 
@@ -1107,7 +1123,7 @@ VII - assinar as fórmulas de observações dos fiscais ou delegados de partido,
 
 VIII - fiscalizar a distribuição das senhas e, verificando que não estão sendo distribuídas segundo a sua ordem numérica, recolher as de numeração intercalada, acaso retidas, as quais não se poderão mais distribuir;
 
-IX - anotar o não-comparecimento do eleitor no verso da folha individual de votação. *(Inciso acrescido pela Lei nº 4.961, de 4/5/1966)*
+IX - anotar o não-comparecimento do eleitor no verso da folha individual de votação. (Inciso acrescido pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 128.** Compete aos secretários:
 
@@ -1117,39 +1133,41 @@ II - lavrar a ata da eleição;
 
 III - cumprir as demais obrigações que lhes forem atribuídas em instruções.
 
-**Parágrafo único.** As atribuições mencionadas no número I serão exercidas por um dos secretários e os constantes dos ns. II e III pelo outro.
+Parágrafo único. As atribuições mencionadas no número I serão exercidas por um dos secretários e os constantes dos ns. II e III pelo outro.
 
 **Art. 129.** Nas eleições proporcionais os presidentes das mesas receptoras deverão zelar pela preservação das listas de candidatos afixadas dentro das cabinas indevassáveis, tomando imediatas providências para a colocação de nova lista no caso de inutilização total ou parcial.
 
-**Parágrafo único.** O eleitor que inutilizar ou arrebatar as listas afixadas nas cabinas indevassáveis ou nos edifícios onde funcionarem mesas receptoras, incorrerá nas penas do art. 297.
+Parágrafo único. O eleitor que inutilizar ou arrebatar as listas afixadas nas cabinas indevassáveis ou nos edifícios onde funcionarem mesas receptoras, incorrerá nas penas do art. 297.
 
 **Art. 130.** Nos estabelecimentos de internação coletiva de hansenianos os membros das mesas receptoras serão escolhidos de preferência entre os médicos e funcionários sadios do próprio estabelecimento.
 
-#### CAPÍTULO III — DA FISCALIZAÇÃO PERANTE AS MESAS RECEPTORAS
+### DA FISCALIZAÇÃO PERANTE AS MESAS RECEPTORAS
 
 **Art. 131.** Cada partido poderá nomear 2 (dois) delegados em cada município e 2 (dois) fiscais junto a cada mesa receptora, funcionando um de cada vez.
 
-**§1º** Quando o município abranger mais de uma zona eleitoral cada partido poderá nomear 2 (dois) delegados junto a cada uma delas.
+§1º Quando o município abranger mais de uma zona eleitoral cada partido poderá nomear 2 (dois) delegados junto a cada uma delas.
 
-**§2º** A escolha de fiscal e delegado de partido não poderá recair em quem, por nomeação do juiz eleitoral, já faça parte da mesa receptora.
+§2º A escolha de fiscal e delegado de partido não poderá recair em quem, por nomeação do juiz eleitoral, já faça parte da mesa receptora.
 
-**§3º** As credenciais expedidas pelos partidos, para os fiscais, deverão ser visadas pelo juiz eleitoral.
+§3º As credenciais expedidas pelos partidos, para os fiscais, deverão ser visadas pelo juiz eleitoral.
 
-**§4º** Para esse fim, o delegado do partido encaminhará as credenciais ao Cartório, juntamente com os títulos eleitorais dos fiscais credenciados, para que, verificado pelo escrivão que as inscrições correspondentes aos títulos estão em vigor e se referem aos nomeados, carimbe as credenciais e as apresente ao juiz para o visto.
+§4º Para esse fim, o delegado do partido encaminhará as credenciais ao Cartório, juntamente com os títulos eleitorais dos fiscais credenciados, para que, verificado pelo escrivão que as inscrições correspondentes aos títulos estão em vigor e se referem aos nomeados, carimbe as credenciais e as apresente ao juiz para o visto.
 
-**§5º** As credenciais que não forem encaminhadas ao Cartório pelos delegados de partido, para os fins do parágrafo anterior, poderão ser apresentadas pelos próprios fiscais para a obtenção do visto do juiz eleitoral.
+§5º As credenciais que não forem encaminhadas ao Cartório pelos delegados de partido, para os fins do parágrafo anterior, poderão ser apresentadas pelos próprios fiscais para a obtenção do visto do juiz eleitoral.
 
-**§6º** Se a credencial apresentada ao presidente da mesa receptora não estiver autenticada na forma do § 4º, o fiscal poderá funcionar perante a mesa, mas o seu voto não será admitido, a não ser na seção em que o seu nome estiver incluído.
+§6º Se a credencial apresentada ao presidente da mesa receptora não estiver autenticada na forma do § 4º, o fiscal poderá funcionar perante a mesa, mas o seu voto não será admitido, a não ser na seção em que o seu nome estiver incluído.
 
-**§7º** O fiscal de cada partido poderá ser substituído por outro no curso dos trabalhos eleitorais.
+§7º O fiscal de cada partido poderá ser substituído por outro no curso dos trabalhos eleitorais.
 
 **Art. 132.** Pelas mesas receptoras serão admitidos a fiscalizar a votação, formular protestos e fazer impugnações, inclusive sobre a identidade do eleitor, os candidatos registrados, os delegados e os fiscais dos partidos.
 
-### TÍTULO III — DO MATERIAL PARA A VOTAÇÃO
+### TÍTULO III
+
+### DO MATERIAL PARA A VOTAÇÃO
 
 **Art. 133.** Os juízes eleitorais enviarão ao presidente de cada mesa receptora, pelo menos 72 (setenta e duas) horas antes da eleição, o seguinte material:
 
-I - relação dos eleitores da seção, que poderá ser dispensada, no todo em parte, pelo respectivo Tribunal Regional Eleitoral em decisão fundamentada e aprovada pelo Tribunal Superior Eleitoral. *(Inciso com redação dada pela Lei nº 6.055, de 17/6/1974)*
+I - relação dos eleitores da seção, que poderá ser dispensada, no todo em parte, pelo respectivo Tribunal Regional Eleitoral em decisão fundamentada e aprovada pelo Tribunal Superior Eleitoral. (Inciso com redação dada pela Lei nº 6.055, de 17/6/1974 )
 
 II - relações dos partidos e dos candidatos registrados, as quais deverão ser afixadas no recinto das seções eleitorais em lugar visível, e dentro das cabinas indevassáveis as relações de candidatos a eleições proporcionais;
 
@@ -1159,99 +1177,107 @@ IV - uma folha de votação para os eleitores de outras seções, devidamente ru
 
 V - uma urna vazia, vedada pelo juiz eleitoral, com tiras de papel ou pano forte;
 
-VI - sobrecartas maiores para os votos impugnados ou sobre os quais haja dúvida; *(Primitivo inciso VII renumerado pela Lei nº 4.961, de 4/5/1966)*
+VI - sobrecartas maiores para os votos impugnados ou sobre os quais haja dúvida; (Primitivo inciso VII renumerado pela Lei nº 4.961, de 4/5/1966)
 
-VII - cédulas oficiais; *(Primitivo inciso VIII renumerado pela Lei nº 4.961, de 4/5/1966)*
+VII - cédulas oficiais; (Primitivo inciso VIII renumerado pela Lei nº 4.961, de 4/5/1966)
 
-VIII - sobrecartas especiais para remessa à Junta Eleitoral, dos documentos relativos à eleição; *(Primitivo inciso IX renumerado pela Lei nº 4.961, de 4/5/1966)*
+VIII - sobrecartas especiais para remessa à Junta Eleitoral, dos documentos relativos à eleição; (Primitivo inciso IX renumerado pela Lei nº 4.961, de 4/5/1966)
 
-IX - senhas para serem distribuídas aos eleitores; *(Primitivo inciso X renumerado pela Lei nº 4.961, de 4/5/1966)*
+IX - senhas para serem distribuídas aos eleitores; (Primitivo inciso X renumerado pela Lei nº 4.961, de 4/5/1966)
 
-X - tinta, canetas, penas, lápis e papel, necessários aos trabalhos; *(Primitivo inciso XI renumerado pela Lei nº 4.961, de 4/5/1966)*
+X - tinta, canetas, penas, lápis e papel, necessários aos trabalhos; (Primitivo inciso XI renumerado pela Lei nº 4.961, de 4/5/1966)
 
-XI - folhas apropriadas para impugnação e folhas para observação de fiscais de partidos; *(Primitivo inciso XII renumerado pela Lei nº 4.961, de 4/5/1966)*
+XI - folhas apropriadas para impugnação e folhas para observação de fiscais de partidos; (Primitivo inciso XII renumerado pela Lei nº 4.961, de 4/5/1966)
 
-XII - modelo da ata a ser lavrada pela mesa receptora; *(Primitivo inciso XIII renumerado pela Lei nº 4.961, de 4/5/1966)*
+XII - modelo da ata a ser lavrada pela mesa receptora; (Primitivo inciso XIII renumerado pela Lei nº 4.961, de 4/5/1966)
 
-XIII - material necessário para vedar, após a votação, a fenda da urna; *(Primitivo inciso XIV renumerado pela Lei nº 4.961, de 4/5/1966)*
+XIII - material necessário para vedar, após a votação, a fenda da urna; (Primitivo inciso XIV renumerado pela Lei nº 4.961, de 4/5/1966)
 
-XIV - um exemplar das Instruções do Tribunal Superior Eleitoral; *(Primitivo inciso XV renumerado pela Lei nº 4.961, de 4/5/1966)*
+XIV - um exemplar das Instruções do Tribunal Superior Eleitoral; (Primitivo inciso XV renumerado pela Lei nº 4.961, de 4/5/1966)
 
-XV - material necessário à contagem dos votos, quando autorizada; *(Primitivo inciso XVI renumerado pela Lei nº 4.961, de 4/5/1966)*
+XV - material necessário à contagem dos votos, quando autorizada; (Primitivo inciso XVI renumerado pela Lei nº 4.961, de 4/5/1966)
 
-XVI – outro qualquer material que o Tribunal Regional julgue necessário ao regular funcionamento da mesa. *(Primitivo inciso XVII renumerado pela Lei nº 4.961, de 4/5/1966)*
+XVI – outro qualquer material que o Tribunal Regional julgue necessário ao regular funcionamento da mesa. (Primitivo inciso XVII renumerado pela Lei nº 4.961, de 4/5/1966)
 
-**§1º** O material de que trata este artigo deverá ser remetido por protocolo ou pelo correio, acompanhado de uma relação ao pé da qual o destinatário declarará o que recebeu e como o recebeu, e aporá sua assinatura.
+§1º O material de que trata este artigo deverá ser remetido por protocolo ou pelo correio, acompanhado de uma relação ao pé da qual o destinatário declarará o que recebeu e como o recebeu, e aporá sua assinatura.
 
-**§2º** Os presidentes da mesa que não tiverem recebido até 48 (quarenta e oito) horas antes do pleito o referido material, deverão diligenciar para o seu recebimento.
+§2º Os presidentes da mesa que não tiverem recebido até 48 (quarenta e oito) horas antes do pleito o referido material, deverão diligenciar para o seu recebimento.
 
-**§3º** O juiz eleitoral, em dia e hora previamente designados, em presença dos fiscais e delegados dos partidos, verificará, antes de fechar e lacrar as urnas, se estas estão completamente vazias; fechadas, enviará uma das chaves, se houver, ao presidente da Junta Eleitoral, e a da fenda, também se houver, ao presidente da mesa receptora, juntamente com a urna.
+§3º O juiz eleitoral, em dia e hora previamente designados, em presença dos fiscais e delegados dos partidos, verificará, antes de fechar e lacrar as urnas, se estas estão completamente vazias; fechadas, enviará uma das chaves, se houver, ao presidente da Junta Eleitoral, e a da fenda, também se houver, ao presidente da mesa receptora, juntamente com a urna.
 
 **Art. 134.** Nos estabelecimentos de internação coletiva para hansenianos serão sempre utilizadas urnas de lona.
 
-### TÍTULO IV — DA VOTAÇÃO
+### TÍTULO IV
 
-#### CAPÍTULO I — DOS LUGARES DA VOTAÇÃO
+### DA VOTAÇÃO
+
+#### CAPÍTULO I
+
+### DOS LUGARES DA VOTAÇÃO
 
 **Art. 135.** Funcionarão as mesas receptoras nos lugares designados pelos juízes eleitorais 60 (sessenta) dias antes da eleição, publicando-se a designação.
 
-**§ 1º** A publicação deverá conter a seção com a numeração ordinal e local em que deverá funcionar com a indicação da rua, número e qualquer outro elemento que facilite a localização pelo eleitor.
+§ 1º A publicação deverá conter a seção com a numeração ordinal e local em que deverá funcionar com a indicação da rua, número e qualquer outro elemento que facilite a localização pelo eleitor.
 
-**§ 2º** Dar-se-á preferência aos edifícios públicos, recorrendo-se aos particulares se faltarem aqueles em número e condições adequadas.
+§ 2º Dar-se-á preferência aos edifícios públicos, recorrendo-se aos particulares se faltarem aqueles em número e condições adequadas.
 
-**§ 3º** A propriedade particular será obrigatória e gratuitamente cedida para esse fim.
+§ 3º A propriedade particular será obrigatória e gratuitamente cedida para esse fim.
 
-**§ 4º** É expressamente vedado o uso de propriedade pertencente a candidato, membro do diretório de partido, delegado de partido ou autoridade policial, bem como dos respectivos cônjuges e parentes, consangüíneos ou afins, até o 2º grau, inclusive.
+§ 4º É expressamente vedado o uso de propriedade pertencente a candidato, membro do diretório de partido, delegado de partido ou autoridade policial, bem como dos respectivos cônjuges e parentes, consangüíneos ou afins, até o 2º grau, inclusive.
 
-**§ 5º** Não poderão ser localizadas seções eleitorais em fazenda, sítio ou qualquer propriedade rural privada, mesmo existindo no local prédio público, incorrendo o juiz nas penas do Art. 312, em caso de infringência. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966).*
+§ 5º Não poderão ser localizadas seções eleitorais em fazenda, sítio ou qualquer propriedade rural privada, mesmo existindo no local prédio público, incorrendo o juiz nas penas do Art. 312, em caso de infringência. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966) .
 
-**§ 6º** Os Tribunais Regionais, nas capitais, e os juízes eleitorais, nas demais zonas, farão ampla divulgação da localização das seções.
+§ 6º Os Tribunais Regionais, nas capitais, e os juízes eleitorais, nas demais zonas, farão ampla divulgação da localização das seções.
 
-**§ 6º-A.** Os Tribunais Regionais Eleitorais deverão, a cada eleição, expedir instruções aos Juízes Eleitorais para orientá-los na escolha dos locais de votação, de maneira a garantir acessibilidade para o eleitor com deficiência ou com mobilidade reduzida, inclusive em seu entorno e nos sistemas de transporte que lhe dão acesso. *(Parágrafo acrescido pela Lei nº 10.226, de 15/5/2001,* *com redação dada pela Lei nº 13.146, de 6/7/2015, publicada no DOU de 7/7/2015, em vigor 180 dias após a publicação)*
+§ 6º-A. Os Tribunais Regionais Eleitorais deverão, a cada eleição, expedir instruções aos Juízes Eleitorais para orientá-los na escolha dos locais de votação, de maneira a garantir acessibilidade para o eleitor com deficiência ou com mobilidade reduzida, inclusive em seu entorno e nos sistemas de transporte que lhe dão acesso. (Parágrafo acrescido pela Lei nº 10.226, de 15/5/2001, com redação dada pela Lei nº 13.146, de 6/7/2015, publicada no DOU de 7/7/2015, em vigor 180 dias após a publicação)
 
-**§ 7º** Da designação dos lugares de votação poderá qualquer partido reclamar ao juiz eleitoral, dentro de três dias a contar da publicação, devendo a decisão ser proferida dentro de quarenta e oito horas. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§ 7º Da designação dos lugares de votação poderá qualquer partido reclamar ao juiz eleitoral, dentro de três dias a contar da publicação, devendo a decisão ser proferida dentro de quarenta e oito horas. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 )
 
-**§ 8º** Da decisão do juiz eleitoral caberá recurso para o Tribunal Regional, interposto dentro de três dias, devendo, no mesmo prazo, ser resolvido. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§ 8º Da decisão do juiz eleitoral caberá recurso para o Tribunal Regional, interposto dentro de três dias, devendo, no mesmo prazo, ser resolvido. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§ 9º** Esgotados os prazos referidos nos parágrafos 7º e 8º deste artigo, não mais poderá ser alegada, no processo eleitoral, a proibição contida em seu §5º. *(Parágrafo acrescido pela Lei nº 6.336, de 1/6/1976)*
+§ 9º Esgotados os prazos referidos nos parágrafos 7º e 8º deste artigo, não mais poderá ser alegada, no processo eleitoral, a proibição contida em seu §5º. (Parágrafo acrescido pela Lei nº 6.336, de 1/6/1976)
 
 **Art. 136.** Deverão ser instaladas seções nas vilas e povoados, assim como nos estabelecimentos de internação coletiva, inclusive para cegos, e nos leprosários, onde haja, pelo menos, 50 (cinqüenta) eleitores.
 
-**Parágrafo único.** A mesa receptora designada para qualquer dos estabelecimentos de internação coletiva deverá funcionar em local indicado pelo respectivo diretor; o mesmo critério será adotado para os estabelecimentos especializados para proteção dos cegos.
+Parágrafo único. A mesa receptora designada para qualquer dos estabelecimentos de internação coletiva deverá funcionar em local indicado pelo respectivo diretor; o mesmo critério será adotado para os estabelecimentos especializados para proteção dos cegos.
 
 **Art. 137.** Até 10 (dez) dias antes da eleição, pelo menos, comunicarão os juízes eleitorais aos chefes das repartições públicas e aos proprietários, arrendatários ou administradores das propriedades particulares a resolução de que serão os respectivos edifícios, ou parte deles, utilizados para o funcionamento das mesas receptoras.
 
 **Art. 138.** No local destinado à votação, a mesa ficará em recinto separado do público; ao lado haverá uma cabina indevassável onde os eleitores, à medida que comparecerem, possam assinalar a sua preferência na cédula.
 
-**Parágrafo único.** O juiz eleitoral providenciará para que nos edifícios escolhidos sejam feitas as necessárias adaptações.
+Parágrafo único. O juiz eleitoral providenciará para que nos edifícios escolhidos sejam feitas as necessárias adaptações.
 
-#### CAPÍTULO II — DA POLÍCIA DOS TRABALHOS ELEITORAIS
+#### CAPÍTULO II
+
+### DA POLÍCIA DOS TRABALHOS ELEITORAIS
 
 **Art. 139.** Ao presidente da mesa receptora e ao juiz eleitoral cabe a polícia dos trabalhos eleitorais.
 
 **Art. 140.** Somente podem permanecer no recinto da mesa receptora os seus membros, os candidatos, um fiscal, um delegado de cada partido e, durante o tempo necessário à votação, o eleitor.
 
-**§1º** O presidente da mesa, que é, durante os trabalhos, a autoridade superior, fará retirar do recinto ou do edifício quem não guardar a ordem e compostura devidas e estiver praticando qualquer ato atentatório da liberdade eleitoral.
+§1º O presidente da mesa, que é, durante os trabalhos, a autoridade superior, fará retirar do recinto ou do edifício quem não guardar a ordem e compostura devidas e estiver praticando qualquer ato atentatório da liberdade eleitoral.
 
-**§2º** Nenhuma autoridade estranha à mesa poderá intervir, sob pretexto algum, em seu funcionamento, salvo o juiz eleitoral.
+§2º Nenhuma autoridade estranha à mesa poderá intervir, sob pretexto algum, em seu funcionamento, salvo o juiz eleitoral.
 
 **Art. 141.** A força armada conservar-se-á a cem metros da seção eleitoral e não poderá aproximar-se do lugar da votação, ou nele penetrar, sem ordem do presidente da mesa.
 
-#### CAPÍTULO III — DO INÍCIO DA VOTAÇÃO
+#### CAPÍTULO III
+
+### DO INÍCIO DA VOTAÇÃO
 
 **Art. 142.** No dia marcado para a eleição, às 7 (sete) horas, o presidente da mesa receptora, os mesários e os secretários verificarão se no lugar designado estão em ordem o material remetido pelo juiz e a urna destinada a recolher os votos, bem como se estão presentes os fiscais de partido.
 
 **Art. 143.** Às 8 (oito) horas, supridas as deficiências declarará o presidente iniciados os trabalhos, procedendo-se em seguida à votação, que começará pelos candidatos e eleitores presentes.
 
-**§1º** Os membros da mesa e os fiscais de partido deverão votar no correr da votação, depois que tiverem votado os eleitores que já se encontravam presentes no momento da abertura dos trabalhos, ou no encerramento da votação. *(Parágrafo único transformado em § 1º pela Lei nº 4.961, de 4/5/1966)*
+§1º Os membros da mesa e os fiscais de partido deverão votar no correr da votação, depois que tiverem votado os eleitores que já se encontravam presentes no momento da abertura dos trabalhos, ou no encerramento da votação. (Parágrafo único transformado em § 1º pela Lei nº 4.961, de 4/5/1966)
 
-**§2º** Observada a prioridade assegurada aos candidatos, têm preferência para votar o juiz eleitoral da zona, seus auxiliares de serviço, os eleitores de idade avançada, os enfermos e as mulheres grávidas. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§2º Observada a prioridade assegurada aos candidatos, têm preferência para votar o juiz eleitoral da zona, seus auxiliares de serviço, os eleitores de idade avançada, os enfermos e as mulheres grávidas. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 144.** O recebimento dos votos começará às 8 (oito) e terminará, salvo o disposto no art. 153, às 17 (dezessete) horas.
 
-**Art. 145.** O presidente, mesários, secretários, suplentes e os delegados e fiscais de partido votarão perante as mesas em que servirem, sendo que os delegados e fiscais desde que a credencial esteja visada na forma do art. 131, § 3º; quando eleitores de outras seções, seus votos serão tomados em separado. *(“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+**Art. 145.** O presidente, mesários, secretários, suplentes e os delegados e fiscais de partido votarão perante as mesas em que servirem, sendo que os delegados e fiscais desde que a credencial esteja visada na forma do art. 131, § 3º; quando eleitores de outras seções, seus votos serão tomados em separado. (“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-**Parágrafo único.** Com as cautelas constantes do art. 147, § 2º, poderão ainda votar fora da respectiva seção:
+Parágrafo único. Com as cautelas constantes do art. 147, § 2º, poderão ainda votar fora da respectiva seção:
 
 I - o juiz eleitoral, em qualquer seção da zona sob sua jurisdição, salvo em eleições municipais, nas quais poderá votar em qualquer seção do município em que for eleitor;
 
@@ -1267,11 +1293,13 @@ VI - os prefeitos, vice-prefeitos e vereadores, em qualquer seção de municípi
 
 VII - os candidatos a prefeito, vice-prefeito e vereador, em qualquer seção de município, desde que dele sejam eleitores;
 
-VIII - os militares, removidos ou transferidos dentro do período de 6 (seis) meses antes do pleito, poderão votar nas eleições para presidente e vice-presidente da República na localidade em que estiverem servindo. *(Primitivo § 2º transformado em parágrafo único com a revogação dos §§ 1º e 3º pela Lei nº 4.961, de 4/5/1966)*
+VIII - os militares, removidos ou transferidos dentro do período de 6 (seis) meses antes do pleito, poderão votar nas eleições para presidente e vice-presidente da República na localidade em que estiverem servindo. (Primitivo § 2º transformado em parágrafo único com a revogação dos §§ 1º e 3º pela Lei nº 4.961, de 4/5/1966 )
 
-IX - os policiais militares em serviço. *(Inciso acrescido pela Lei nº 9.504, de 30/9/1997).*
+IX - os policiais militares em serviço. (Inciso acrescido pela Lei nº 9.504, de 30/9/1997).
 
-#### CAPÍTULO IV — DO ATO DE VOTAR
+#### CAPÍTULO IV
+
+### DO ATO DE VOTAR
 
 **Art. 146.** Observar-se-á na votação o seguinte:
 
@@ -1295,9 +1323,9 @@ IX - na cabina indevassável, onde não poderá permanecer mais de um minuto, o 
 
 a) assinalando com uma cruz, ou de modo que torne expressa a sua intenção, o quadrilátero correspondente ao candidato majoritário de sua preferência;
 
-b) escrevendo o nome, o prenome, ou o número do candidato de sua preferência nas eleições proporcionais*; (Alínea com redação dada pela Lei nº 7.434, de 19/12/1985)*
+b) escrevendo o nome, o prenome, ou o número do candidato de sua preferência nas eleições proporcionais ; (Alínea com redação dada pela Lei nº 7.434, de 19/12/1985)
 
-c) escrevendo apenas a sigla do partido de sua preferência, se pretender votar só na legenda; *(Alínea revogada pela Lei nº 6.989, de 5/5/1982 e revigorada pela Lei nº 7.332, de 1/7/1985)*
+c) escrevendo apenas a sigla do partido de sua preferência, se pretender votar só na legenda; (Alínea revogada pela Lei nº 6.989, de 5/5/1982 e revigorada pela Lei nº 7.332, de 1/7/1985)
 
 X - ao sair da cabina o eleitor depositará na urna a cédula;
 
@@ -1311,9 +1339,9 @@ XIV - introduzida a sobrecarta na urna, o presidente da mesa devolverá o títul
 
 **Art. 147.** O presidente da mesa dispensará especial atenção à identidade de cada eleitor admitido a votar. Existindo dúvida a respeito, deverá exigir-lhe a exibição da respectiva carteira, e, na falta desta, interrogá-lo sobre os dados constantes do título, ou da folha individual de votação, confrontando a assinatura do mesmo com a feita na sua presença pelo eleitor, e mencionando na ata a dúvida suscitada.
 
-**§1º** A impugnação à identidade do eleitor, formulada pelos membros da mesa, fiscais, delegados, candidatos ou qualquer eleitor, será apresentada verbalmente ou por escrito, antes de ser o mesmo admitido a votar.
+§1º A impugnação à identidade do eleitor, formulada pelos membros da mesa, fiscais, delegados, candidatos ou qualquer eleitor, será apresentada verbalmente ou por escrito, antes de ser o mesmo admitido a votar.
 
-**§2º** Se persistir a dúvida ou for mantida a impugnação, tomará o presidente da mesa as seguintes providências:
+§2º Se persistir a dúvida ou for mantida a impugnação, tomará o presidente da mesa as seguintes providências:
 
 I - escreverá numa sobrecarta branca o seguinte: "Impugnado por "F"";
 
@@ -1323,19 +1351,19 @@ III - determinar ao eleitor que feche a sobrecarta branca e a deposite na urna;
 
 IV - anotará a impugnação na ata.
 
-**§3º** O voto em separado, por qualquer motivo, será sempre tomado na forma prevista no parágrafo anterior.
+§3º O voto em separado, por qualquer motivo, será sempre tomado na forma prevista no parágrafo anterior.
 
 **Art. 148.** O eleitor somente poderá votar na seção eleitoral em que estiver incluído o seu nome.
 
-**§1º** Essa exigência somente poderá ser dispensada nos casos previstos no art. 145 e seus parágrafos.
+§1º Essa exigência somente poderá ser dispensada nos casos previstos no art. 145 e seus parágrafos.
 
-**§2º** Aos eleitores mencionados no art. 145 não será permitido votar sem a exibição do título, e nas folhas de votação modelo 2 (dois), nas quais lançarão suas assinaturas, serão sempre anotadas na coluna própria as seções mencionadas nos títulos retidos.
+§2º Aos eleitores mencionados no art. 145 não será permitido votar sem a exibição do título, e nas folhas de votação modelo 2 (dois), nas quais lançarão suas assinaturas, serão sempre anotadas na coluna própria as seções mencionadas nos títulos retidos.
 
-**§3º** Quando se tratar de candidato, o presidente da mesa receptora verificará, previamente, se o nome figura na relação enviada à seção, e quando se tratar de fiscal de partido, se a credencial está devidamente visada pelo juiz eleitoral.
+§3º Quando se tratar de candidato, o presidente da mesa receptora verificará, previamente, se o nome figura na relação enviada à seção, e quando se tratar de fiscal de partido, se a credencial está devidamente visada pelo juiz eleitoral.
 
-**§4º** *(Revogado pela Lei nº 4.961, de 4/5/1966).*
+§4º (Revogado pela Lei nº 4.961, de 4/5/1966 ).
 
-**§5º** *(Revogado pela Lei nº 4.961, de 4/5/1966).*
+§5º (Revogado pela Lei nº 4.961, de 4/5/1966 ).
 
 **Art. 149.** Não será admitido recurso contra a votação, se não tiver havido impugnação perante a mesa receptora, no ato da votação, contra as nulidades argüidas.
 
@@ -1347,19 +1375,21 @@ II - assinalar a cédula oficial, utilizando também qualquer sistema;
 
 III - usar qualquer elemento mecânico que trouxer consigo, ou lhe for fornecido pela mesa, e que lhe possibilite exercer o direito de voto.
 
-**Art. 151.** *(Revogado pela Lei nº 7.914, de 7/12/1989).*
+**Art. 151.** (Revogado pela Lei nº 7.914, de 7/12/1989 ).
 
 **Art. 152.** Poderão ser utilizadas máquinas de votar, a critério e mediante regulamentação do Tribunal Superior Eleitoral.
 
-#### CAPÍTULO V — DO ENCERRAMENTO DA VOTAÇÃO
+#### CAPÍTULO V
+
+### DO ENCERRAMENTO DA VOTAÇÃO
 
 **Art. 153.** Às 17 (dezessete) horas, o presidente fará entregar as senhas a todos os eleitores presentes e, em seguida, os convidará, em voz alta, a entregar à mesa seus títulos, para que sejam admitidos a votar.
 
-**Parágrafo único.** A votação continuará na ordem numérica das senhas e o título será devolvido ao eleitor, logo que tenha votado.
+Parágrafo único. A votação continuará na ordem numérica das senhas e o título será devolvido ao eleitor, logo que tenha votado.
 
 **Art. 154.** Terminada a votação e declarado o seu encerramento pelo presidente, tomará este as seguintes providências:
 
-I - vedará a fenda de introdução da cédula na urna, de modo a cobri-la inteiramente com tiras de papel ou pano forte, rubricadas pelo presidente e mesários e, facultativamente, pelos fiscais presentes; separará todas as folhas de votação correspondentes aos eleitores faltosos e fará constar, no verso de cada uma delas, na parte destinada à assinatura do eleitor, a falta verificada, por meio de breve registro, que autenticará com a sua assinatura; *(Inciso com redação dada pela Lei nº 4.961, de 4/5/1966)*
+I - vedará a fenda de introdução da cédula na urna, de modo a cobri-la inteiramente com tiras de papel ou pano forte, rubricadas pelo presidente e mesários e, facultativamente, pelos fiscais presentes; separará todas as folhas de votação correspondentes aos eleitores faltosos e fará constar, no verso de cada uma delas, na parte destinada à assinatura do eleitor, a falta verificada, por meio de breve registro, que autenticará com a sua assinatura; (Inciso com redação dada pela Lei nº 4.961, de 4/5/1966)
 
 II - encerrará, com a sua assinatura, a folha de votação modelo 2 (dois), que poderá ser também assinada pelos fiscais;
 
@@ -1395,29 +1425,33 @@ VII - comunicará em ofício, ou impresso próprio, ao juiz eleitoral da zona a 
 
 VIII - enviará em sobrecarta fechada uma das vias do recibo do Correio à Junta Eleitoral e a outra ao Tribunal Regional.
 
-**§1º** Os Tribunais Regionais poderão prescrever outros meios de vedação das urnas.
+§1º Os Tribunais Regionais poderão prescrever outros meios de vedação das urnas.
 
-**§2º** No Distrito Federal e nas capitais dos Estados poderão os Tribunais Regionais determinar normas diversas para a entrega de urnas e papéis eleitorais, com as cautelas destinadas a evitar violação ou extravio.
+§2º No Distrito Federal e nas capitais dos Estados poderão os Tribunais Regionais determinar normas diversas para a entrega de urnas e papéis eleitorais, com as cautelas destinadas a evitar violação ou extravio.
 
 **Art. 155.** O presidente da Junta Eleitoral e as agências do Correio tomarão as providências necessárias para o recebimento da urna e dos documentos referidos no artigo anterior.
 
-**§1º** Os fiscais e delegados de partidos têm direito de vigiar e acompanhar a urna desde o momento da eleição, durante a permanência nas agências do Correio e até a entrega à Junta Eleitoral.
+§1º Os fiscais e delegados de partidos têm direito de vigiar e acompanhar a urna desde o momento da eleição, durante a permanência nas agências do Correio e até a entrega à Junta Eleitoral.
 
-**§2º** A urna ficará permanentemente à vista dos interessados e sob a guarda de pessoa designada pelo presidente da Junta Eleitoral.
+§2º A urna ficará permanentemente à vista dos interessados e sob a guarda de pessoa designada pelo presidente da Junta Eleitoral.
 
 **Art. 156.** Até as 12 (doze) horas do dia seguinte à realização da eleição, o juiz eleitoral é obrigado, sob pena de responsabilidade e multa de 1 (um) a 2 (dois) salários mínimos, a comunicar ao Tribunal Regional, e aos delegados de partido perante ele credenciados, o número de eleitores que votaram em cada uma das seções da zona sob sua jurisdição, bem como o total de votantes da zona.
 
-**§1º** Se houver retardamento nas medidas referidas no art. 154, o juiz eleitoral, assim que receba o ofício constante desse dispositivo, número VII, fará a comunicação constante deste artigo.
+§1º Se houver retardamento nas medidas referidas no art. 154, o juiz eleitoral, assim que receba o ofício constante desse dispositivo, número VII, fará a comunicação constante deste artigo.
 
-**§2º** Essa comunicação será feita por via postal, em ofícios registrados de que o juiz eleitoral guardará cópia no arquivo da zona, acompanhada do recibo do Correio.
+§2º Essa comunicação será feita por via postal, em ofícios registrados de que o juiz eleitoral guardará cópia no arquivo da zona, acompanhada do recibo do Correio.
 
-**§3º** Qualquer candidato, delegado ou fiscal de partido poderá obter, por certidão, o teor da comunicação a que se refere este artigo, sendo defeso ao juiz eleitoral recusá-la ou procrastinar a sua entrega ao requerente.
+§3º Qualquer candidato, delegado ou fiscal de partido poderá obter, por certidão, o teor da comunicação a que se refere este artigo, sendo defeso ao juiz eleitoral recusá-la ou procrastinar a sua entrega ao requerente.
 
-**Art. 157.** *(Revogado pela Lei nº 7.914, de 7/12/1989).*
+**Art. 157.** (Revogado pela Lei nº 7.914, de 7/12/1989 ).
 
-### TÍTULO V — DA APURAÇÃO
+### TÍTULO V
 
-#### CAPÍTULO I — DOS ÓRGÃOS APURADORES
+### DA APURAÇÃO
+
+#### CAPÍTULO I
+
+### DOS ÓRGÃOS APURADORES
 
 **Art. 158.** A apuração compete:
 
@@ -1427,45 +1461,49 @@ II - aos Tribunais Regionais a referente às eleições para governador, vice-go
 
 III - ao Tribunal Superior Eleitoral nas eleições para presidente e vice-presidente da República, pelos resultados parciais remetidos pelos Tribunais Regionais.
 
-#### CAPÍTULO II — DA APURAÇÃO NAS JUNTAS
+#### CAPÍTULO II
 
-##### Seção I — Disposições Preliminares
+### DA APURAÇÃO NAS JUNTAS
+
+##### Seção I
 
 **Art. 159.** A apuração começará no dia seguinte ao das eleições e, salvo motivo justificado, deverá terminar dentro de 10 (dez) dias.
 
-**§1º** Iniciada a apuração, os trabalhos não serão interrompidos aos sábados, domingos e dias feriados, devendo a Junta funcionar das 8 (oito) às 18 (dezoito) horas, pelo menos.
+§1º Iniciada a apuração, os trabalhos não serão interrompidos aos sábados, domingos e dias feriados, devendo a Junta funcionar das 8 (oito) às 18 (dezoito) horas, pelo menos.
 
-**§2º** Em caso de impossibilidade de observância do prazo previsto neste artigo, o fato deverá ser imediatamente justificado perante o Tribunal Regional, mencionando-se as horas ou dias necessários para o adiamento, que não poderá exceder a cinco dias. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§2º Em caso de impossibilidade de observância do prazo previsto neste artigo, o fato deverá ser imediatamente justificado perante o Tribunal Regional, mencionando-se as horas ou dias necessários para o adiamento, que não poderá exceder a cinco dias. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
-**§3º** Esgotado o prazo e a prorrogação estipulada neste artigo, ou não tendo havido em tempo hábil o pedido de prorrogação, a respectiva Junta Eleitoral perde a competência para prosseguir na apuração, devendo o seu presidente remeter, imediatamente, ao Tribunal Regional, todo o material relativo à votação. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§3º Esgotado o prazo e a prorrogação estipulada neste artigo, ou não tendo havido em tempo hábil o pedido de prorrogação, a respectiva Junta Eleitoral perde a competência para prosseguir na apuração, devendo o seu presidente remeter, imediatamente, ao Tribunal Regional, todo o material relativo à votação. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§4º** Ocorrendo a hipótese prevista no parágrafo anterior, competirá ao Tribunal Regional fazer a apuração. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§4º Ocorrendo a hipótese prevista no parágrafo anterior, competirá ao Tribunal Regional fazer a apuração. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 )
 
-**§5º** Os membros da Junta Eleitoral responsáveis pela inobservância injustificada dos prazos fixados neste artigo estarão sujeitos à multa de dois a dez salários mínimos, aplicada pelo Tribunal Regional. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§5º Os membros da Junta Eleitoral responsáveis pela inobservância injustificada dos prazos fixados neste artigo estarão sujeitos à multa de dois a dez salários mínimos, aplicada pelo Tribunal Regional. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 160.** Havendo conveniência, em razão do número de urnas a apurar, a Junta poderá subdividir-se em turmas, até o limite de 5 (cinco), todas presididas por algum dos seus componentes.
 
-**Parágrafo único.** As dúvidas que forem levantadas em cada turma serão decididas por maioria de votos dos membros da Junta.
+Parágrafo único. As dúvidas que forem levantadas em cada turma serão decididas por maioria de votos dos membros da Junta.
 
 **Art. 161.** Cada partido poderá credenciar perante as Juntas até 3 (três) fiscais, que se revezem na fiscalização dos trabalhos.
 
-**§1º** Em caso de divisão da Junta em turmas, cada partido poderá credenciar até 3 (três) fiscais para cada turma.
+§1º Em caso de divisão da Junta em turmas, cada partido poderá credenciar até 3 (três) fiscais para cada turma.
 
-**§2º** Não será permitida, na Junta ou turma, a atuação de mais de 1 (um) fiscal de cada partido.
+§2º Não será permitida, na Junta ou turma, a atuação de mais de 1 (um) fiscal de cada partido.
 
 **Art. 162.** Cada partido poderá credenciar mais de 1 (um) delegado perante a Junta, mas no decorrer da apuração só funcionará 1 (um) de cada vez.
 
 **Art. 163.** Iniciada a apuração da urna, não será a mesma interrompida, devendo ser concluída.
 
-**Parágrafo único.** Em caso de interrupção por motivo de força maior, as cédulas e as folhas de apuração serão recolhidas à urna e esta fechada e lacrada o que constará da ata.
+Parágrafo único. Em caso de interrupção por motivo de força maior, as cédulas e as folhas de apuração serão recolhidas à urna e esta fechada e lacrada o que constará da ata.
 
 **Art. 164.** É vedado às Juntas Eleitorais a divulgação, por qualquer meio, de expressões, frases ou desenhos estranhos ao pleito, apostos ou contidos nas cédulas.
 
-**§1º** Aos membros, escrutinadores e auxiliares das Juntas que infringirem o disposto neste artigo será aplicada a multa de 1 (um) a 2 (dois) salários mínimos vigentes na Zona Eleitoral, cobrados através de executivo fiscal ou da inutilização de selos federais no processo em que for arbitrada a multa.
+§1º Aos membros, escrutinadores e auxiliares das Juntas que infringirem o disposto neste artigo será aplicada a multa de 1 (um) a 2 (dois) salários mínimos vigentes na Zona Eleitoral, cobrados através de executivo fiscal ou da inutilização de selos federais no processo em que for arbitrada a multa.
 
-**§2º** Será considerada dívida líquida e certa, para efeito de cobrança, a que for arbitrada pelo Tribunal Regional e inscrita em livro próprio na Secretaria desse órgão.
+§2º Será considerada dívida líquida e certa, para efeito de cobrança, a que for arbitrada pelo Tribunal Regional e inscrita em livro próprio na Secretaria desse órgão.
 
-##### Seção II — Da Abertura da Urna
+##### Seção II
+
+Da Abertura da Urna
 
 **Art. 165.** Antes de abrir cada urna a Junta verificará:
 
@@ -1489,9 +1527,9 @@ IX - se votou eleitor de outra seção, a não ser nos casos expressamente admit
 
 X - se houve demora na entrega da urna e dos documentos conforme determina o número VI, do art. 154;
 
-XI - se consta nas folhas individuais de votação dos eleitores faltosos o devido registro de sua falta. *(Inciso acrescido pela Lei nº 4.961, de 4/5/1966)*
+XI - se consta nas folhas individuais de votação dos eleitores faltosos o devido registro de sua falta. (Inciso acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§1º** Se houver indício de violação da urna, proceder-se-á da seguinte forma:
+§1º Se houver indício de violação da urna, proceder-se-á da seguinte forma:
 
 I - antes da apuração, o presidente da Junta indicará pessoa idônea para servir como perito e examinar a urna com assistência do representante do Ministério Público;
 
@@ -1503,65 +1541,67 @@ IV - se apenas o representante do Ministério Público entender que a urna foi v
 
 V - não poderão servir de peritos os referidos no art. 36, § 3º, ns. I a IV.
 
-**§2º** As impugnações fundadas em violação da urna somente poderão ser apresentadas até a abertura desta.
+§2º As impugnações fundadas em violação da urna somente poderão ser apresentadas até a abertura desta.
 
-**§3º** Verificado qualquer dos casos dos ns. II, III, IV e V do artigo, a Junta anulará a votação, fará a apuração dos votos em separado e recorrerá de ofício para o Tribunal Regional.
+§3º Verificado qualquer dos casos dos ns. II, III, IV e V do artigo, a Junta anulará a votação, fará a apuração dos votos em separado e recorrerá de ofício para o Tribunal Regional.
 
-**§4º** Nos casos dos ns. VI, VII, VIII, IX e X, a Junta decidirá se a votação é válida, procedendo à apuração definitiva em caso afirmativo, ou na forma do parágrafo anterior, se resolver pela nulidade da votação.
+§4º Nos casos dos ns. VI, VII, VIII, IX e X, a Junta decidirá se a votação é válida, procedendo à apuração definitiva em caso afirmativo, ou na forma do parágrafo anterior, se resolver pela nulidade da votação.
 
-**§5º** A Junta deixará de apurar os votos de urna que não estiver acompanhada dos documentos legais e lavrará termo relativo ao fato, remetendo-a, com cópia da sua decisão, ao Tribunal Regional.
+§5º A Junta deixará de apurar os votos de urna que não estiver acompanhada dos documentos legais e lavrará termo relativo ao fato, remetendo-a, com cópia da sua decisão, ao Tribunal Regional.
 
-**Art. 166.** Aberta a urna, a Junta verificará se o número de cédulas oficiais corresponde ao de votantes. *(“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+**Art. 166.** Aberta a urna, a Junta verificará se o número de cédulas oficiais corresponde ao de votantes. (“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-**§1º** A incoincidência entre o número de votantes e o de cédulas oficiais encontradas na urna não constituirá motivo de nulidade da votação, desde que não resulte de fraude comprovada. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§1º A incoincidência entre o número de votantes e o de cédulas oficiais encontradas na urna não constituirá motivo de nulidade da votação, desde que não resulte de fraude comprovada. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
-**§2º** Se a Junta entender que a incoincidência resulta de fraude, anulará a votação, fará a apuração em separado e recorrerá de ofício para o Tribunal Regional.
+§2º Se a Junta entender que a incoincidência resulta de fraude, anulará a votação, fará a apuração em separado e recorrerá de ofício para o Tribunal Regional.
 
 **Art. 167.** Resolvida a apuração da urna, deverá a Junta inicialmente:
 
-I - examinar as sobrecartas brancas contidas na urna, anulando os votos referentes aos eleitores que não podiam votar; *(Inciso com redação dada pela Lei nº 4.961, de 4/5/1966)*
+I - examinar as sobrecartas brancas contidas na urna, anulando os votos referentes aos eleitores que não podiam votar; (Inciso com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-II - misturar as cédulas oficiais dos que podiam votar com as demais existentes na urna. *(Inciso com redação dada pela Lei nº 4.961, de 4/5/1966)*
+II - misturar as cédulas oficiais dos que podiam votar com as demais existentes na urna. (Inciso com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-III - *(Revogado pela Lei nº 4.961, de 4/5/1966)*
+III - (Revogado pela Lei nº 4.961, de 4/5/1966 )
 
-IV - *(Revogado pela Lei nº 4.961, de 4/5/1966)*
+IV - (Revogado pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 168.** As questões relativas à existência de rasuras, emendas e entrelinhas nas folhas de votação e na ata da eleição, somente poderão ser suscitadas na fase correspondente à abertura das urnas.
 
-##### Seção III — Das Impugnações e dos Recursos
+##### Seção III
+
+Das Impugnações e dos Recursos
 
 **Art. 169.** À medida que os votos forem sendo apurados, poderão os fiscais e delegados de partido, assim como os candidatos, apresentar impugnações que serão decididas de plano pela Junta.
 
-**§1º** As Juntas decidirão por maioria de votos as impugnações.
+§1º As Juntas decidirão por maioria de votos as impugnações.
 
-**§2º** De suas decisões cabe recurso imediato, interposto verbalmente ou por escrito, que deverá ser fundamentado no prazo de 48 (quarenta e oito) horas para que tenha seguimento.
+§2º De suas decisões cabe recurso imediato, interposto verbalmente ou por escrito, que deverá ser fundamentado no prazo de 48 (quarenta e oito) horas para que tenha seguimento.
 
-**§3º** O recurso, quando ocorrerem eleições simultâneas, indicará expressamente a eleição a que se refere.
+§3º O recurso, quando ocorrerem eleições simultâneas, indicará expressamente a eleição a que se refere.
 
-**§4º** Os recursos serão instruídos de ofício, com certidão da decisão recorrida; se interpostos verbalmente, constará também da certidão o trecho correspondente do boletim*. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§4º Os recursos serão instruídos de ofício, com certidão da decisão recorrida; se interpostos verbalmente, constará também da certidão o trecho correspondente do boletim . (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 170.** As impugnações quanto à identidade do eleitor, apresentadas no ato da votação, serão resolvidas pelo confronto da assinatura tomada no verso da folha individual de votação com a existente no anverso; se o eleitor votou em separado, no caso de omissão da folha individual na respectiva pasta, confrontando-se a assinatura da folha modelo 2 (dois) com a do título eleitoral.
 
 **Art. 171.** Não será admitido recurso contra a apuração, se não tiver havido impugnação perante a Junta, no ato da apuração, contra as nulidades argüidas.
 
-**Art. 172.** Sempre que houver recurso fundado em contagem errônea de votos, vícios de cédulas ou de sobrecartas para votos em separado, deverão as cédulas ser conservadas em invólucro lacrado, que acompanhará o recurso e deverá ser rubricado pelo juiz eleitoral, pelo recorrente e pelos delegados de partido que o desejarem. *(Artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+**Art. 172.** Sempre que houver recurso fundado em contagem errônea de votos, vícios de cédulas ou de sobrecartas para votos em separado, deverão as cédulas ser conservadas em invólucro lacrado, que acompanhará o recurso e deverá ser rubricado pelo juiz eleitoral, pelo recorrente e pelos delegados de partido que o desejarem. (Artigo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
-##### Seção IV — Da Contagem dos Votos
+Da Contagem dos Votos
 
 **Art. 173.** Resolvidas as impugnações a Junta passará a apurar os votos.
 
-**Parágrafo único.** Na apuração, poderá ser utilizado sistema eletrônico, a critério do Tribunal Superior Eleitoral e na forma por ele estabelecida. *(Parágrafo único acrescido pela Lei nº 6.978, de 19/1/1982)*
+Parágrafo único. Na apuração, poderá ser utilizado sistema eletrônico, a critério do Tribunal Superior Eleitoral e na forma por ele estabelecida. (Parágrafo único acrescido pela Lei nº 6.978, de 19/1/1982)
 
 **Art. 174.** As cédulas oficiais, à medida em que forem sendo abertas, serão examinadas e lidas em voz alta por um dos componentes da Junta.
 
-**§1º** Após fazer a declaração dos votos em branco e antes de ser anunciado o seguinte, será aposto na cédula, no lugar correspondente à indicação do voto um carimbo com a expressão "em branco", além da rubrica do presidente da turma. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 e com nova redação dada pela Lei nº 6.055, de 17/6/1974).*
+§1º Após fazer a declaração dos votos em branco e antes de ser anunciado o seguinte, será aposto na cédula, no lugar correspondente à indicação do voto um carimbo com a expressão "em branco", além da rubrica do presidente da turma. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 e com nova redação dada pela Lei nº 6.055, de 17/6/1974 ).
 
-**§2º** O mesmo processo será adaptado para o voto nulo. *(Parágrafo acrescido pela Lei nº 6.055, de 17/6/1974).*
+§2º O mesmo processo será adaptado para o voto nulo. (Parágrafo acrescido pela Lei nº 6.055, de 17/6/1974).
 
-**§3º** Não poderá ser iniciada a apuração dos votos da urna subseqüente, sob as penas do art. 345, sem que os votos em branco da anterior estejam todos registrados pela forma referida no § 1º. *(Primitivo §2º acrescido pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.055, de 17/6/1974)*
+§3º Não poderá ser iniciada a apuração dos votos da urna subseqüente, sob as penas do art. 345, sem que os votos em branco da anterior estejam todos registrados pela forma referida no § 1º. (Primitivo §2º acrescido pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.055, de 17/6/1974)
 
-**§4º** As questões relativas às cédulas somente poderão ser suscitadas nessa oportunidade. *(Primitivo parágrafo único transformado em §3º pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.055, de 17/6/1974)*
+§4º As questões relativas às cédulas somente poderão ser suscitadas nessa oportunidade. (Primitivo parágrafo único transformado em §3º pela Lei nº 4.961, de 4/5/1966 e renumerado pela Lei nº 6.055, de 17/6/1974)
 
 **Art. 175.** Serão nulas as cédulas:
 
@@ -1571,23 +1611,23 @@ II - que não estiverem devidamente autenticadas;
 
 III - que contiverem expressões, frases ou sinais que possam identificar o voto.
 
-**§1º** Serão nulos os votos, em cada eleição majoritária;
+§1º Serão nulos os votos, em cada eleição majoritária;
 
 I - quando forem assinalados os nomes de dois ou mais candidatos para o mesmo cargo;
 
 II - quando a assinalação estiver colocada fora do quadrilátero próprio, desde que torne duvidosa a manifestação da vontade do eleitor.
 
-**§2º** Serão nulos os votos, em cada eleição pelo sistema proporcional:
+§2º Serão nulos os votos, em cada eleição pelo sistema proporcional:
 
 I - quando o candidato não for indicado, através do nome ou do número, com clareza suficiente para distingui-lo de outro candidato ao mesmo cargo, mas de outro partido, e o eleitor não indicar a legenda;
 
 II - se o eleitor escrever o nome de mais de um candidato ao mesmo cargo, pertencentes a partidos diversos ou, indicando apenas os números, o fizer também de candidatos de partidos diferentes;
 
-III - se o eleitor, não manifestando preferência por candidato, ou o fazendo de modo que não se possa identificar o de sua preferência, escrever duas ou mais legendas diferentes no espaço relativo à mesma eleição; *(Primitivo § 3º renumerado pela Lei nº 4.961, de 4/5/1966)*
+III - se o eleitor, não manifestando preferência por candidato, ou o fazendo de modo que não se possa identificar o de sua preferência, escrever duas ou mais legendas diferentes no espaço relativo à mesma eleição; (Primitivo § 3º renumerado pela Lei nº 4.961, de 4/5/1966)
 
-**§3º** Serão nulos, para todos os efeitos, os votos dados a candidatos inelegíveis ou não registrados. *(Primitivo § 4º renumerado pela Lei nº 4.961, de 4/5/1966)*
+§3º Serão nulos, para todos os efeitos, os votos dados a candidatos inelegíveis ou não registrados. (Primitivo § 4º renumerado pela Lei nº 4.961, de 4/5/1966)
 
-**§4º** O disposto no parágrafo anterior não se aplica quando a decisão de inelegibilidade ou de cancelamento de registro for proferida após a realização da eleição a que concorreu o candidato alcançado pela sentença, caso em que os votos serão contados para o partido pelo qual tiver sido feito o seu registro. *(Parágrafo acrescido pela Lei nº 7.179, de 19/12/1983)*
+§4º O disposto no parágrafo anterior não se aplica quando a decisão de inelegibilidade ou de cancelamento de registro for proferida após a realização da eleição a que concorreu o candidato alcançado pela sentença, caso em que os votos serão contados para o partido pelo qual tiver sido feito o seu registro. (Parágrafo acrescido pela Lei nº 7.179, de 19/12/1983)
 
 **Art. 176.** Contar-se-á o voto apenas para a legenda, nas eleições pelo sistema proporcional:
 
@@ -1597,7 +1637,7 @@ II - se o eleitor escrever o nome de mais de 1 (um) candidato do mesmo partido;
 
 III - se o eleitor, escrevendo apenas os números, indicar mais de 1 (um) candidato do mesmo Partido;
 
-IV - se o eleitor não indicar o candidato através do nome ou do número com clareza suficiente para distingui-lo de outro candidato do mesmo Partido. *(Artigo com redação dada pela Lei nº 8.037, de 25/5/1990)*
+IV - se o eleitor não indicar o candidato através do nome ou do número com clareza suficiente para distingui-lo de outro candidato do mesmo Partido. (Artigo com redação dada pela Lei nº 8.037, de 25/5/1990)
 
 **Art. 177.** Na contagem dos votos para as eleições realizadas pelo sistema proporcional observar-se-ão, ainda, as seguintes normas:
 
@@ -1609,7 +1649,7 @@ III - se o eleitor escrever o nome ou o número de 1 (um) candidato e a legenda 
 
 IV - se o eleitor escrever o nome ou o número de 1 (um) candidato a Deputado Federal na parte da cédula referente a Deputado Estadual ou vice-versa, o voto será contado para o candidato cujo nome ou número for escrito;
 
-V - se o eleitor escrever o nome ou o número de candidatos em espaço da cédula que não seja o correspondente ao cargo para o qual o candidato foi registrado, será o voto computado para o candidato e respectiva legenda, conforme o registro. *(Artigo com redação dada pela Lei nº 8.037, de 25/5/1990)*
+V - se o eleitor escrever o nome ou o número de candidatos em espaço da cédula que não seja o correspondente ao cargo para o qual o candidato foi registrado, será o voto computado para o candidato e respectiva legenda, conforme o registro. (Artigo com redação dada pela Lei nº 8.037, de 25/5/1990)
 
 **Art. 178.** O voto dado ao candidato a Presidente da República entender-se-á dado também ao candidato a vice-presidente, assim como o dado aos candidatos a governador, senador, deputado federal nos territórios, prefeito e juiz de paz entender-se-á dado ao respectivo vice ou suplente.
 
@@ -1619,23 +1659,23 @@ I - transcrever nos mapas referentes à urna a votação apurada;
 
 II - expedir boletim contendo o resultado da respectiva seção, no qual serão consignados o número de votantes, a votação individual de cada candidato, os votos de cada legenda partidária, os votos nulos e os em branco, bem como recursos, se houver.
 
-**§1º** Os mapas, em todas as suas folhas, e os boletins de apuração, serão assinados pelo presidente e membros da Junta e pelos fiscais de partido que o desejarem.
+§1º Os mapas, em todas as suas folhas, e os boletins de apuração, serão assinados pelo presidente e membros da Junta e pelos fiscais de partido que o desejarem.
 
-**§2º** O boletim a que se refere este artigo obedecerá a modelo aprovado pelo Tribunal Superior Eleitoral, podendo porém, na sua falta, ser substituído por qualquer outro expedido por Tribunal Regional ou pela própria Junta Eleitoral.
+§2º O boletim a que se refere este artigo obedecerá a modelo aprovado pelo Tribunal Superior Eleitoral, podendo porém, na sua falta, ser substituído por qualquer outro expedido por Tribunal Regional ou pela própria Junta Eleitoral.
 
-**§3º** Um dos exemplares do boletim de apuração será imediatamente afixado na sede da Junta, em local que possa ser copiado por qualquer pessoa.
+§3º Um dos exemplares do boletim de apuração será imediatamente afixado na sede da Junta, em local que possa ser copiado por qualquer pessoa.
 
-**§4º** Cópia autenticada do boletim de apuração será entregue a cada partido, por intermédio do delegado ou fiscal presente, mediante recibo.
+§4º Cópia autenticada do boletim de apuração será entregue a cada partido, por intermédio do delegado ou fiscal presente, mediante recibo.
 
-**§5º** O boletim de apuração ou sua cópia autenticada com a assinatura do juiz e pelo menos de um dos membros da Junta, fará prova do resultado apurado, podendo ser apresentado ao Tribunal Regional, nas eleições federais e estaduais, sempre que o número de votos constantes dos mapas recebidos pela Comissão Apuradora não coincidir com os nele consignados.
+§5º O boletim de apuração ou sua cópia autenticada com a assinatura do juiz e pelo menos de um dos membros da Junta, fará prova do resultado apurado, podendo ser apresentado ao Tribunal Regional, nas eleições federais e estaduais, sempre que o número de votos constantes dos mapas recebidos pela Comissão Apuradora não coincidir com os nele consignados.
 
-**§6º** O partido ou candidato poderá apresentar o boletim na oportunidade concedida pelo art. 200, quando terá vista do relatório da Comissão Apuradora, ou antes, se durante os trabalhos da Comissão tiver conhecimento da incoincidência de qualquer resultado.
+§6º O partido ou candidato poderá apresentar o boletim na oportunidade concedida pelo art. 200, quando terá vista do relatório da Comissão Apuradora, ou antes, se durante os trabalhos da Comissão tiver conhecimento da incoincidência de qualquer resultado.
 
-**§7º** Apresentado o boletim, será aberta vista aos demais partidos, pelo prazo de 2 (dois) dias, os quais somente poderão contestar o erro indicado com a apresentação de boletim da mesma urna, revestido das mesmas formalidades.
+§7º Apresentado o boletim, será aberta vista aos demais partidos, pelo prazo de 2 (dois) dias, os quais somente poderão contestar o erro indicado com a apresentação de boletim da mesma urna, revestido das mesmas formalidades.
 
-**§8º** Se o boletim apresentado na contestação consignar outro resultado, coincidente ou não com o que figurar no mapa enviado pela Junta, a urna será requisitada e recontada pelo próprio Tribunal Regional, em sessão.
+§8º Se o boletim apresentado na contestação consignar outro resultado, coincidente ou não com o que figurar no mapa enviado pela Junta, a urna será requisitada e recontada pelo próprio Tribunal Regional, em sessão.
 
-**§9º** A não-expedição do boletim imediatamente após a apuração de cada urna e antes de se passar à subseqüente, sob qualquer pretexto, constitui o crime previsto no art. 313.
+§9º A não-expedição do boletim imediatamente após a apuração de cada urna e antes de se passar à subseqüente, sob qualquer pretexto, constitui o crime previsto no art. 313.
 
 **Art. 180.** O disposto no artigo anterior e em todos os seus parágrafos aplica-se às eleições municipais, observadas somente as seguintes alterações:
 
@@ -1645,31 +1685,31 @@ II - apresentado o boletim será observado o disposto nos parágrafos 7º e 8º,
 
 **Art. 181.** Salvo nos casos mencionados nos artigos anteriores, a recontagem de votos só poderá ser deferida pelos Tribunais Regionais, em recurso interposto imediatamente após a apuração de cada urna.
 
-**Parágrafo único.** Em nenhuma outra hipótese poderá a Junta determinar a reabertura de urnas já apuradas para recontagem de votos.
+Parágrafo único. Em nenhuma outra hipótese poderá a Junta determinar a reabertura de urnas já apuradas para recontagem de votos.
 
 **Art. 182.** Os títulos dos eleitores estranhos à seção serão separados, para remessa, depois de terminados os trabalhos da Junta, ao juiz eleitoral da zona neles mencionada, a fim de que seja anotado na folha individual de votação o voto dado em outra seção.
 
-**Parágrafo único.** Se, ao ser feita a anotação, no confronto do título com a folha individual, se verificar incoincidência ou outro indício de fraude, serão autuados tais documentos e o juiz determinará as providências necessárias para apuração do fato e conseqüentes medidas legais.
+Parágrafo único. Se, ao ser feita a anotação, no confronto do título com a folha individual, se verificar incoincidência ou outro indício de fraude, serão autuados tais documentos e o juiz determinará as providências necessárias para apuração do fato e conseqüentes medidas legais.
 
 **Art. 183.** Concluída a apuração, e antes de se passar à subseqüente, as cédulas serão recolhidas à urna, sendo esta fechada e lacrada, não podendo ser reaberta senão depois de transitada em julgado a diplomação, salvo nos casos de recontagem de votos.
 
-**Parágrafo único.** O descumprimento do disposto no presente artigo, sob qualquer pretexto, constitui o crime eleitoral previsto no art. 314.
+Parágrafo único. O descumprimento do disposto no presente artigo, sob qualquer pretexto, constitui o crime eleitoral previsto no art. 314.
 
 **Art. 184.** Terminada a apuração, a Junta remeterá ao Tribunal Regional, no prazo de vinte e quatro horas, todos os papéis eleitorais referentes às eleições estaduais ou federais, acompanhados dos documentos referentes à apuração, juntamente com a ata geral dos seus trabalhos, na qual serão consignadas as votações apuradas para cada legenda e candidato e os votos não apurados, com a declaração dos motivos por que o não foram.
 
-**§1º** Essa remessa será feita em invólucro fechado, lacrado e rubricado pelos membros da Junta, delegados e fiscais de Partido, por via postal ou sob protocolo, conforme for mais rápida e segura a chegada ao destino.
+§1º Essa remessa será feita em invólucro fechado, lacrado e rubricado pelos membros da Junta, delegados e fiscais de Partido, por via postal ou sob protocolo, conforme for mais rápida e segura a chegada ao destino.
 
-**§2º** Se a remessa dos papéis eleitorais de que trata este artigo não se verificar no prazo nele estabelecido, os membros da Junta estarão sujeitos à multa correspondente à metade do salário mínimo regional por dia de retardamento.
+§2º Se a remessa dos papéis eleitorais de que trata este artigo não se verificar no prazo nele estabelecido, os membros da Junta estarão sujeitos à multa correspondente à metade do salário mínimo regional por dia de retardamento.
 
-**§3º** Decorridos quinze dias sem que o Tribunal Regional tenha recebido os papéis referidos neste artigo ou comunicação de sua expedição, determinará ao Corregedor Regional ou Juiz Eleitoral mais próximo que os faça apreender e enviar imediatamente, transferindo-se para o Tribunal Regional a competência para decidir sobre os mesmos. *(Artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§3º Decorridos quinze dias sem que o Tribunal Regional tenha recebido os papéis referidos neste artigo ou comunicação de sua expedição, determinará ao Corregedor Regional ou Juiz Eleitoral mais próximo que os faça apreender e enviar imediatamente, transferindo-se para o Tribunal Regional a competência para decidir sobre os mesmos. (Artigo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
-**Art. 185.** Sessenta dias após o trânsito em julgado da diplomação de todos os candidatos eleitos nos pleitos eleitorais realizados simultaneamente e prévia publicação de edital de convocação, as cédulas serão retiradas das urnas e imediatamente incineradas, na presença do Juiz Eleitoral e em ato público, vedado a qualquer pessoa, inclusive ao Juiz, o seu exame na ocasião da incineração. *(“Caput” do artigo com redação dada pela Lei nº 6.055, de 17/6/1974).*
+**Art. 185.** Sessenta dias após o trânsito em julgado da diplomação de todos os candidatos eleitos nos pleitos eleitorais realizados simultaneamente e prévia publicação de edital de convocação, as cédulas serão retiradas das urnas e imediatamente incineradas, na presença do Juiz Eleitoral e em ato público, vedado a qualquer pessoa, inclusive ao Juiz, o seu exame na ocasião da incineração. (“Caput” do artigo com redação dada pela Lei nº 6.055, de 17/6/1974).
 
-Parágrafo Único. Poderá ainda a Justiça Eleitoral, tomadas as medidas necessárias à garantia do sigilo, autorizar a reciclagem industrial das cédulas, em proveito do ensino público de primeiro grau ou de instituições beneficentes. *(Parágrafo único acrescido pela Lei nº 7.977, de 27/12/1989)*
+Parágrafo Único. Poderá ainda a Justiça Eleitoral, tomadas as medidas necessárias à garantia do sigilo, autorizar a reciclagem industrial das cédulas, em proveito do ensino público de primeiro grau ou de instituições beneficentes. (Parágrafo único acrescido pela Lei nº 7.977, de 27/12/1989)
 
 **Art. 186.** Com relação às eleições municipais e distritais, uma vez terminada a apuração de todas as urnas, a Junta resolverá as dúvidas não decididas, verificará o total dos votos apurados, inclusive os votos em branco, determinará o quociente eleitoral e os quocientes partidários e proclamará os candidatos eleitos.
 
-**§1º** O presidente da Junta fará lavrar, por um dos secretários, a ata geral concernente às eleições referidas neste artigo, da qual constará o seguinte:
+§1º O presidente da Junta fará lavrar, por um dos secretários, a ata geral concernente às eleições referidas neste artigo, da qual constará o seguinte:
 
 I - as seções apuradas e o número de votos apurados em cada urna;
 
@@ -1687,19 +1727,19 @@ VII - a votação dos candidatos a vereador, incluídos em cada lista registrada
 
 VIII - a votação dos candidatos a prefeito, vice-prefeito e a juiz de paz, na ordem da votação recebida.
 
-**§2º** Cópia da ata geral da eleição municipal, devidamente autenticada pelo juiz, será enviada ao Tribunal Regional e ao Tribunal Superior Eleitoral.
+§2º Cópia da ata geral da eleição municipal, devidamente autenticada pelo juiz, será enviada ao Tribunal Regional e ao Tribunal Superior Eleitoral.
 
 **Art. 187.** Verificando a Junta Apuradora que os votos das seções anuladas e daquelas cujos eleitores foram impedidos de votar, poderão alterar a representação de qualquer partido ou classificação de candidato eleito pelo princípio majoritário, nas eleições municipais, fará imediata comunicação do fato ao Tribunal Regional, que marcará, se for o caso, dia para a renovação da votação naquelas seções.
 
-**§1º** Nas eleições suplementares municipais observar-se-á, no que couber, o disposto no art. 201.
+§1º Nas eleições suplementares municipais observar-se-á, no que couber, o disposto no art. 201.
 
-**§2º** Essas eleições serão realizadas perante novas mesas receptoras, nomeadas pelo juiz eleitoral, e apuradas pela própria Junta que, considerando os anteriores e os novos resultados confirmará ou invalidará os diplomas que houver expedido.
+§2º Essas eleições serão realizadas perante novas mesas receptoras, nomeadas pelo juiz eleitoral, e apuradas pela própria Junta que, considerando os anteriores e os novos resultados confirmará ou invalidará os diplomas que houver expedido.
 
-**§3º** Havendo renovação de eleições para os cargos de prefeito e vice-prefeito, os diplomas somente serão expedidos depois de apuradas as eleições suplementares.
+§3º Havendo renovação de eleições para os cargos de prefeito e vice-prefeito, os diplomas somente serão expedidos depois de apuradas as eleições suplementares.
 
-**§4º** Nas eleições suplementares, quando se referirem a mandatos de representação proporcional, a votação e a apuração far-se-ão exclusivamente para as legendas registradas.
+§4º Nas eleições suplementares, quando se referirem a mandatos de representação proporcional, a votação e a apuração far-se-ão exclusivamente para as legendas registradas.
 
-##### Seção V — Da Contagem dos Votos pela Mesa Receptora
+Da Contagem dos Votos pela Mesa Receptora
 
 **Art. 188.** O Tribunal Superior Eleitoral poderá autorizar a contagem de votos pelas mesas receptoras, nos Estados em que o Tribunal Regional indicar as zonas ou seções em que esse sistema deva ser adotado.
 
@@ -1711,21 +1751,21 @@ VIII - a votação dos candidatos a prefeito, vice-prefeito e a juiz de paz, na 
 
 **Art. 192.** Lavrada e assinada a ata, o presidente da mesa, na presença dos demais membros, fiscais e delegados do partido, abrirá a urna e o invólucro e verificará se o número de cédulas oficiais coincide com o de votantes.
 
-**§1º** Se não houver coincidência entre o número de votantes e o de cédulas oficiais encontradas na urna e no invólucro, a mesa receptora não fará a contagem dos votos.
+§1º Se não houver coincidência entre o número de votantes e o de cédulas oficiais encontradas na urna e no invólucro, a mesa receptora não fará a contagem dos votos.
 
-**§2º** Ocorrendo a hipótese prevista no parágrafo anterior, o presidente da mesa determinará que as cédulas e as sobrecartas sejam novamente recolhidas à urna e ao invólucro, os quais serão fechados e lacrados, procedendo, em seguida, na forma recomendada pelas alíneas VI, VII e VIII do art. 154.
+§2º Ocorrendo a hipótese prevista no parágrafo anterior, o presidente da mesa determinará que as cédulas e as sobrecartas sejam novamente recolhidas à urna e ao invólucro, os quais serão fechados e lacrados, procedendo, em seguida, na forma recomendada pelas alíneas VI, VII e VIII do art. 154.
 
 **Art. 193.** Havendo coincidência entre o número de cédulas e o de votantes deverá a mesa, inicialmente, misturar as cédulas contidas nas sobrecartas brancas, da urna e do invólucro, com as demais.
 
-**§1º** Em seguida proceder-se-á à abertura das cédulas e contagem dos votos, observando-se o disposto nos artigos 169 e seguintes, no que couber.
+§1º Em seguida proceder-se-á à abertura das cédulas e contagem dos votos, observando-se o disposto nos artigos 169 e seguintes, no que couber.
 
-**§2º** Terminada a contagem dos votos será lavrada ata resumida, de acordo com modelo aprovado pelo Tribunal Superior e da qual constarão apenas as impugnações acaso apresentadas, figurando os resultados no boletim que se incorporará à ata e do qual se dará cópia aos fiscais dos partidos.
+§2º Terminada a contagem dos votos será lavrada ata resumida, de acordo com modelo aprovado pelo Tribunal Superior e da qual constarão apenas as impugnações acaso apresentadas, figurando os resultados no boletim que se incorporará à ata e do qual se dará cópia aos fiscais dos partidos.
 
 **Art. 194.** Após a lavratura da ata, que deverá ser assinada pelos membros da mesa e fiscais e delegados de partido, as cédulas e as sobrecartas serão recolhidas à urna, sendo esta fechada, lacrada e entregue ao juiz eleitoral pelo presidente da mesa ou por um dos mesários, mediante recibo.
 
-**§1º** O juiz eleitoral poderá, havendo possibilidade, designar funcionários para recolher as urnas e demais documentos nos próprios locais da votação ou instalar postos e locais diversos para o seu recebimento.
+§1º O juiz eleitoral poderá, havendo possibilidade, designar funcionários para recolher as urnas e demais documentos nos próprios locais da votação ou instalar postos e locais diversos para o seu recebimento.
 
-**§2º** Os fiscais e delegados de partido podem vigiar e acompanhar a urna desde o momento da eleição, durante a permanência nos postos arrecadadores e até a entrega à Junta.
+§2º Os fiscais e delegados de partido podem vigiar e acompanhar a urna desde o momento da eleição, durante a permanência nos postos arrecadadores e até a entrega à Junta.
 
 **Art. 195.** Recebida a urna e documentos, a Junta deverá:
 
@@ -1743,9 +1783,11 @@ VI - praticar todos os atos previstos na competência das Juntas Eleitorais.
 
 **Art. 196.** De acordo com as instruções recebidas a Junta Apuradora poderá reunir os membros das mesas receptoras e demais componentes da Junta em local amplo e adequado no dia seguinte ao da eleição, em horário previamente fixado, e a proceder à apuração na forma estabelecida nos artigos 159 e seguintes, de uma só vez ou em duas ou mais etapas.
 
-**Parágrafo único.** Nesse caso cada partido poderá credenciar um fiscal para acompanhar a apuração de cada urna, realizando-se esta sob a supervisão do juiz e dos demais membros da Junta, aos quais caberá decidir, em cada caso, as impugnações e demais incidentes verificados durante os trabalhos.
+Parágrafo único. Nesse caso cada partido poderá credenciar um fiscal para acompanhar a apuração de cada urna, realizando-se esta sob a supervisão do juiz e dos demais membros da Junta, aos quais caberá decidir, em cada caso, as impugnações e demais incidentes verificados durante os trabalhos.
 
-#### CAPÍTULO III — DA APURAÇÃO NOS TRIBUNAIS REGIONAIS
+#### CAPÍTULO III
+
+### DA APURAÇÃO NOS TRIBUNAIS REGIONAIS
 
 **Art. 197.** Na apuração, compete ao Tribunal Regional:
 
@@ -1761,21 +1803,21 @@ V - fazer a apuração parcial das eleições para Presidente e Vice-Presidente 
 
 **Art. 198.** A apuração pelo Tribunal Regional começará no dia seguinte ao em que receber os primeiros resultados parciais das Juntas e prosseguirá sem interrupção, inclusive nos sábados, domingos e feriados, de acordo com o horário previamente publicado, devendo terminar 30 (trinta) dias depois da eleição.
 
-**§1º** Ocorrendo motivos relevantes, expostos com a necessária antecedência, o Tribunal Superior poderá conceder prorrogação desse prazo, uma só vez e por quinze dias. *(Parágrafo único transformado em § 1º e com nova redação dada pela Lei nº 4.961, de 4/5/1966)*
+§1º Ocorrendo motivos relevantes, expostos com a necessária antecedência, o Tribunal Superior poderá conceder prorrogação desse prazo, uma só vez e por quinze dias. (Parágrafo único transformado em § 1º e com nova redação dada pela Lei nº 4.961, de 4/5/1966 )
 
-**§2º** Se o Tribunal Regional não terminar a apuração no prazo legal, seus membros estarão sujeitos à multa correspondente à metade do salário mínimo regional por dia de retardamento. *(Parágrafo acrescido dada pela Lei nº 4.961, de 4/5/1966)*
+§2º Se o Tribunal Regional não terminar a apuração no prazo legal, seus membros estarão sujeitos à multa correspondente à metade do salário mínimo regional por dia de retardamento. (Parágrafo acrescido dada pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 199.** Antes de iniciar a apuração o Tribunal Regional constituirá, com 3 (três) de seus membros, presidida por um destes, uma Comissão Apuradora.
 
-**§1º** O Presidente da Comissão designará um funcionário do Tribunal para servir de secretário e para auxiliarem os seus trabalhos, tantos outros quantos julgar necessários.
+§1º O Presidente da Comissão designará um funcionário do Tribunal para servir de secretário e para auxiliarem os seus trabalhos, tantos outros quantos julgar necessários.
 
-**§2º** De cada sessão da Comissão Apuradora será lavrada ata resumida.
+§2º De cada sessão da Comissão Apuradora será lavrada ata resumida.
 
-**§3º** A Comissão Apuradora fará publicar no órgão oficial, diariamente, um boletim com a indicação dos trabalhos realizados e do número de votos atribuídos a cada candidato.
+§3º A Comissão Apuradora fará publicar no órgão oficial, diariamente, um boletim com a indicação dos trabalhos realizados e do número de votos atribuídos a cada candidato.
 
-**§4º** Os trabalhos da Comissão Apuradora poderão ser acompanhados por delegados dos partidos interessados, sem que, entretanto, neles intervenham com protestos, impugnações ou recursos.
+§4º Os trabalhos da Comissão Apuradora poderão ser acompanhados por delegados dos partidos interessados, sem que, entretanto, neles intervenham com protestos, impugnações ou recursos.
 
-**§5º** Ao final dos trabalhos, a Comissão Apuradora apresentará ao Tribunal Regional os mapas gerais da apuração e um relatório, que mencione:
+§5º Ao final dos trabalhos, a Comissão Apuradora apresentará ao Tribunal Regional os mapas gerais da apuração e um relatório, que mencione:
 
 I - o número de votos válidos e anulados em cada Junta Eleitoral, relativos a cada eleição;
 
@@ -1799,13 +1841,13 @@ X - a distribuição das sobras.
 
 **Art. 200.** O relatório a que se refere o artigo anterior ficará na Secretaria do Tribunal, pelo prazo de 3 (três) dias, para exame dos partidos e candidatos interessados, que poderão examinar também os documentos em que ele se baseou.
 
-**§1º** Terminado o prazo supra, os partidos poderão apresentar as suas reclamações, dentro de 2 (dois) dias, sendo estas submetidas a parecer da Comissão Apuradora que, no prazo de 3 (três) dias, apresentará aditamento ao relatório com a proposta das modificações que julgar procedentes, ou com a justificação da improcedência das argüições. *(Parágrafo único transformado em §1º pela Lei nº 4.961, de 4/5/1966)*
+§1º Terminado o prazo supra, os partidos poderão apresentar as suas reclamações, dentro de 2 (dois) dias, sendo estas submetidas a parecer da Comissão Apuradora que, no prazo de 3 (três) dias, apresentará aditamento ao relatório com a proposta das modificações que julgar procedentes, ou com a justificação da improcedência das argüições. (Parágrafo único transformado em §1º pela Lei nº 4.961, de 4/5/1966)
 
-**§2º** O Tribunal Regional, antes de aprovar o relatório da Comissão Apuradora e, em três dias improrrogáveis, julgará as impugnações e as reclamações não providas pela Comissão Apuradora, e, se as deferir, voltará o relatório à Comissão para que sejam feitas as alterações resultantes da decisão. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§2º O Tribunal Regional, antes de aprovar o relatório da Comissão Apuradora e, em três dias improrrogáveis, julgará as impugnações e as reclamações não providas pela Comissão Apuradora, e, se as deferir, voltará o relatório à Comissão para que sejam feitas as alterações resultantes da decisão. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 201.** De posse do relatório referido no artigo anterior, reunir-se-á o Tribunal, no dia seguinte, para o conhecimento do total dos votos apurados, e, em seguida, se verificar que os votos das seções anuladas e daquelas cujos eleitores foram impedidos de votar, poderão alterar a representação de qualquer partido ou classificação de candidato eleito pelo princípio majoritário, ordenará a realização de novas eleições.
 
-**Parágrafo único.** As novas eleições obedecerão às seguintes normas:
+Parágrafo único. As novas eleições obedecerão às seguintes normas:
 
 I - o Presidente do Tribunal fixará, imediatamente, a data, para que se realizem dentro de 15 (quinze) dias, no mínimo, e de 30 (trinta) dias no máximo, a contar do despacho que a fixar, desde que não tenha havido recurso contra a anulação das seções;
 
@@ -1841,25 +1883,25 @@ IX - os nomes dos eleitos;
 
 X - os nomes dos suplentes, na ordem em que devem substituir ou suceder.
 
-**§1º** Na mesma sessão o Tribunal Regional proclamará os eleitos e os respectivos suplentes e marcará a data para a expedição solene dos diplomas em sessão pública, salvo quanto a governador e vice-governador, se ocorrer a hipótese prevista na Emenda Constitucional nº 13, de 1965.
+§1º Na mesma sessão o Tribunal Regional proclamará os eleitos e os respectivos suplentes e marcará a data para a expedição solene dos diplomas em sessão pública, salvo quanto a governador e vice-governador, se ocorrer a hipótese prevista na Emenda Constitucional nº 13, de 1965.
 
-**§2º** O vice-governador e o suplente de senador, considerar-se-ão eleitos em virtude da eleição do governador e do senador com os quais se candidatarem.
+§2º O vice-governador e o suplente de senador, considerar-se-ão eleitos em virtude da eleição do governador e do senador com os quais se candidatarem.
 
-**§3º** Os candidatos a governador e vice-governador somente serão diplomados depois de realizadas as eleições suplementares referentes a esses cargos.
+§3º Os candidatos a governador e vice-governador somente serão diplomados depois de realizadas as eleições suplementares referentes a esses cargos.
 
-**§4º** Um traslado da ata da sessão, autenticado com a assinatura de todos os membros do Tribunal que assinaram a ata original, será remetido ao Presidente do Tribunal Superior.
+§4º Um traslado da ata da sessão, autenticado com a assinatura de todos os membros do Tribunal que assinaram a ata original, será remetido ao Presidente do Tribunal Superior.
 
-**§5º** O Tribunal Regional comunicará o resultado da eleição ao Senado Federal, Câmara dos Deputados e Assembléia Legislativa.
+§5º O Tribunal Regional comunicará o resultado da eleição ao Senado Federal, Câmara dos Deputados e Assembléia Legislativa.
 
 **Art. 203.** Sempre que forem realizadas eleições de âmbito estadual juntamente com eleições para presidente e vice-presidente da República, o Tribunal Regional desdobrará os seus trabalhos de apuração, fazendo tanto para aquelas como para esta, uma ata geral.
 
-**§1º** A Comissão Apuradora deverá, também, apresentar relatórios distintos, um dos quais referente apenas às eleições presidenciais.
+§1º A Comissão Apuradora deverá, também, apresentar relatórios distintos, um dos quais referente apenas às eleições presidenciais.
 
-**§2º** Concluídos os trabalhos da apuração o Tribunal Regional remeterá ao Tribunal Superior os resultados parciais das eleições para presidente e vice-presidente da República, acompanhados de todos os papéis que lhe digam respeito.
+§2º Concluídos os trabalhos da apuração o Tribunal Regional remeterá ao Tribunal Superior os resultados parciais das eleições para presidente e vice-presidente da República, acompanhados de todos os papéis que lhe digam respeito.
 
 **Art. 204.** O Tribunal Regional julgando conveniente, poderá determinar que a totalização dos resultados de cada urna seja realizada pela própria Comissão Apuradora.
 
-**Parágrafo único.** Ocorrendo essa hipótese serão observadas as seguintes regras:
+Parágrafo único. Ocorrendo essa hipótese serão observadas as seguintes regras:
 
 I - a decisão do Tribunal será comunicada, até 30 (trinta) dias antes da eleição aos juízes eleitorais, aos diretórios dos partidos e ao Tribunal Superior;
 
@@ -1877,7 +1919,9 @@ VII - a Comissão Apuradora, à medida em que for recebendo os mapas, passará a
 
 VIII - no caso de extravio de mapa o juiz eleitoral providenciará a remessa de 2ª via, preenchida à vista dos delegados de partido especialmente convocados para esse fim e pelos resultados constantes do boletim de apuração que deverá ficar arquivado no juízo.
 
-#### CAPÍTULO IV — DA APURAÇÃO NO TRIBUNAL SUPERIOR
+#### CAPÍTULO IV
+
+### DA APURAÇÃO NO TRIBUNAL SUPERIOR
 
 **Art. 205.** O Tribunal Superior fará a apuração geral das eleições para presidente e vice-presidente da República pelos resultados verificados pelos Tribunais Regionais em cada Estado.
 
@@ -1897,61 +1941,65 @@ V - o resumo das decisões do Tribunal Regional sobre as dúvidas e impugnaçõe
 
 **Art. 208.** O relatório referente a cada Estado ficará na Secretaria do Tribunal, pelo prazo de dois dias, para exame dos partidos e candidatos interessados, que poderão examinar também os documentos em que ele se baseou e apresentar alegações ou documentos sobre o relatório, no prazo de 2 (dois) dias.
 
-**Parágrafo único.** Findo esse prazo serão os autos conclusos ao relator, que, dentro em 2 (dois) dias, os apresentará a julgamento, que será previamente anunciado.
+Parágrafo único. Findo esse prazo serão os autos conclusos ao relator, que, dentro em 2 (dois) dias, os apresentará a julgamento, que será previamente anunciado.
 
 **Art. 209.** Na sessão designada será o feito chamado a julgamento de preferência a qualquer outro processo.
 
-**§1º** Se o relatório tiver sido impugnado, os partidos interessados poderão, no prazo de 15 (quinze) minutos, sustentar oralmente as suas conclusões.
+§1º Se o relatório tiver sido impugnado, os partidos interessados poderão, no prazo de 15 (quinze) minutos, sustentar oralmente as suas conclusões.
 
-**§2º** Se do julgamento resultarem alterações na apuração efetuada pelo Tribunal Regional, o acórdão determinará que a Secretaria, dentro em 5 (cinco) dias, levante as folhas de apuração parcial das seções cujos resultados tiverem sido alterados, bem como o mapa geral da respectiva circunscrição, de acordo com as alterações decorrentes do julgado, devendo o mapa, após o visto do relator, ser publicado na Secretaria.
+§2º Se do julgamento resultarem alterações na apuração efetuada pelo Tribunal Regional, o acórdão determinará que a Secretaria, dentro em 5 (cinco) dias, levante as folhas de apuração parcial das seções cujos resultados tiverem sido alterados, bem como o mapa geral da respectiva circunscrição, de acordo com as alterações decorrentes do julgado, devendo o mapa, após o visto do relator, ser publicado na Secretaria.
 
-**§3º** A esse mapa admitir-se-á, dentro em 48 (quarenta e oito) horas de sua publicação, impugnação fundada em erro de conta ou de cálculo, decorrente da própria sentença.
+§3º A esse mapa admitir-se-á, dentro em 48 (quarenta e oito) horas de sua publicação, impugnação fundada em erro de conta ou de cálculo, decorrente da própria sentença.
 
 **Art. 210.** Os mapas gerais de todas as circunscrições com as impugnações, se houver, e a folha de apuração final levantada pela Secretaria, serão autuados e distribuídos a um relator geral, designado pelo Presidente.
 
-**Parágrafo único.** Recebidos os autos, após a audiência do Procurador Geral, o relator, dentro de 48 (quarenta e oito) horas, resolverá as impugnações relativas aos erros de conta ou de cálculo, mandando fazer as correções, se for o caso, e apresentará, a seguir, o relatório final com os nomes dos candidatos que deverão ser proclamados eleitos e os dos demais candidatos, na ordem decrescente das votações.
+Parágrafo único. Recebidos os autos, após a audiência do Procurador Geral, o relator, dentro de 48 (quarenta e oito) horas, resolverá as impugnações relativas aos erros de conta ou de cálculo, mandando fazer as correções, se for o caso, e apresentará, a seguir, o relatório final com os nomes dos candidatos que deverão ser proclamados eleitos e os dos demais candidatos, na ordem decrescente das votações.
 
 **Art. 211.** Aprovada em sessão especial a apuração geral, o Presidente anunciará a votação dos candidatos proclamando a seguir eleito presidente da República o candidato mais votado que tiver obtido maioria absoluta de votos, excluídos, para a apuração desta, os em branco e os nulos.
 
-**§1º** O vice-presidente considerar-se-á eleito em virtude da eleição do presidente com o qual se candidatar.
+§1º O vice-presidente considerar-se-á eleito em virtude da eleição do presidente com o qual se candidatar.
 
-**§2º** Na mesma sessão o Presidente do Tribunal Superior designará a data para a expedição solene dos diplomas em sessão pública.
+§2º Na mesma sessão o Presidente do Tribunal Superior designará a data para a expedição solene dos diplomas em sessão pública.
 
 **Art. 212.** Verificando que os votos das seções anuladas e daquelas cujos eleitores foram impedidos de votar, em todo o País, poderão alterar a classificação de candidato, ordenará o Tribunal Superior a realização de novas eleições.
 
-**§1º** Essas eleições serão marcadas desde logo pelo Presidente do Tribunal Superior e terão lugar no primeiro domingo ou feriado que ocorrer após o 15º (décimo quinto) dia a contar da data do despacho, devendo ser observado o disposto nos ns. II a VI do parágrafo único do art. 201.
+§1º Essas eleições serão marcadas desde logo pelo Presidente do Tribunal Superior e terão lugar no primeiro domingo ou feriado que ocorrer após o 15º (décimo quinto) dia a contar da data do despacho, devendo ser observado o disposto nos ns. II a VI do parágrafo único do art. 201.
 
-**§2º** Os candidatos a presidente e vice-presidente da República somente serão diplomados depois de realizadas as eleições suplementares referentes a esses cargos.
+§2º Os candidatos a presidente e vice-presidente da República somente serão diplomados depois de realizadas as eleições suplementares referentes a esses cargos.
 
 **Art. 213.** Não se verificando a maioria absoluta, o Congresso Nacional, dentro de quinze dias após haver recebido a respectiva comunicação do Presidente do Tribunal Superior Eleitoral, reunir-se-á em sessão pública para se manifestar sobre o candidato mais votado, que será considerado eleito se, em escrutínio secreto, obtiver metade mais um dos votos dos seus membros.
 
-**§1º** Se não ocorrer a maioria absoluta referida no *caput* deste artigo, renovar-se-á, até 30 (trinta) dias depois, a eleição em todo o País, à qual concorrerão os dois candidatos mais votados, cujos registros estarão automaticamente revalidados.
+§1º Se não ocorrer a maioria absoluta referida no caput deste artigo, renovar-se-á, até 30 (trinta) dias depois, a eleição em todo o País, à qual concorrerão os dois candidatos mais votados, cujos registros estarão automaticamente revalidados.
 
-**§2º** No caso de renúncia ou morte, concorrerá à eleição prevista no parágrafo anterior o substituto registrado pelo mesmo partido político ou coligação partidária.
+§2º No caso de renúncia ou morte, concorrerá à eleição prevista no parágrafo anterior o substituto registrado pelo mesmo partido político ou coligação partidária.
 
 **Art. 214.** O presidente e o vice-presidente da República tomarão posse a 15 (quinze) de março, em sessão do Congresso Nacional.
 
-**Parágrafo único.** No caso do § 1º do artigo anterior, a posse realizar-se-á dentro de 15 (quinze) dias a contar da proclamação do resultado da segunda eleição, expirando, porém, o mandato a 15 (quinze) de março do quarto ano.
+Parágrafo único. No caso do § 1º do artigo anterior, a posse realizar-se-á dentro de 15 (quinze) dias a contar da proclamação do resultado da segunda eleição, expirando, porém, o mandato a 15 (quinze) de março do quarto ano.
 
-#### CAPÍTULO V — DOS DIPLOMAS
+#### CAPÍTULO V
+
+### DOS DIPLOMAS
 
 **Art. 215.** Os candidatos eleitos, assim como os suplentes, receberão diploma assinado pelo Presidente do Tribunal Superior, do Tribunal Regional ou da Junta Eleitoral, conforme o caso.
 
-**Parágrafo único.** Do diploma deverá constar o nome do candidato, a indicação da legenda sob a qual concorreu, o cargo para o qual foi eleito ou a sua classificação como suplente, e, facultativamente, outros dados a critério do juiz ou do Tribunal.
+Parágrafo único. Do diploma deverá constar o nome do candidato, a indicação da legenda sob a qual concorreu, o cargo para o qual foi eleito ou a sua classificação como suplente, e, facultativamente, outros dados a critério do juiz ou do Tribunal.
 
 **Art. 216.** Enquanto o Tribunal Superior não decidir o recurso interposto contra a expedição do diploma, poderá o diplomado exercer o mandato em toda a sua plenitude.
 
 **Art. 217.** Apuradas as eleições suplementares o juiz ou o Tribunal reverá a apuração anterior, confirmando ou invalidando os diplomas que houver expedido.
 
-**Parágrafo único.** No caso de provimento, após a diplomação, de recurso contra o registro de candidato ou de recurso parcial, será também revista a apuração anterior, para confirmação ou invalidação de diplomas, observado o disposto no § 3º do art. 261.
+Parágrafo único. No caso de provimento, após a diplomação, de recurso contra o registro de candidato ou de recurso parcial, será também revista a apuração anterior, para confirmação ou invalidação de diplomas, observado o disposto no § 3º do art. 261.
 
 **Art. 218.** O presidente de Junta ou de Tribunal que diplomar militar candidato a cargo eletivo, comunicará imediatamente a diplomação à autoridade a que o mesmo estiver subordinado, para os fins do art. 98.
 
-#### CAPÍTULO VI — DAS NULIDADES DA VOTAÇÃO
+#### CAPÍTULO VI
+
+### DAS NULIDADES DA VOTAÇÃO
 
 **Art. 219.** Na aplicação da lei eleitoral o juiz atenderá sempre aos fins e resultados a que ela se dirige, abstendo-se de pronunciar nulidades sem demonstração de prejuízo.
 
-**Parágrafo único.** A declaração de nulidade não poderá ser requerida pela parte que lhe deu causa nem a ela aproveitar.
+Parágrafo único. A declaração de nulidade não poderá ser requerida pela parte que lhe deu causa nem a ela aproveitar.
 
 **Art. 220.** É nula a votação:
 
@@ -1963,9 +2011,9 @@ III - quando realizada em dia, hora, ou local diferentes do designado ou encerra
 
 IV - quando preterida formalidade essencial do sigilo dos sufrágios;
 
-V - quando a seção eleitoral tiver sido localizada com infração do disposto nos parágrafos 4º e 5º do art. 135.)
+V - quando a seção eleitoral tiver sido localizada com infração do disposto nos parágrafos 4º e 5º do art. 135. )
 
-**Parágrafo único.** A nulidade será pronunciada quando o órgão apurador conhecer do ato ou dos seus efeitos e a encontrar provada, não lhe sendo lícito supri-la, ainda que haja consenso das partes.
+Parágrafo único. A nulidade será pronunciada quando o órgão apurador conhecer do ato ou dos seus efeitos e a encontrar provada, não lhe sendo lícito supri-la, ainda que haja consenso das partes.
 
 **Art. 221.** É anulável a votação:
 
@@ -1973,7 +2021,7 @@ I - quando houver extravio de documento reputado essencial;
 
 II - quando for negado ou sofrer restrição o direito de fiscalizar, e o fato constar da ata ou de protesto interposto, por escrito, no momento;
 
-III - quando votar, sem as cautelas do art. 147, § 2º: *(Revogado o inciso I e renumerados os demais pela Lei nº 4.961, de 4/5/1966)*
+III - quando votar, sem as cautelas do art. 147, § 2º: (Revogado o inciso I e renumerados os demais pela Lei nº 4.961, de 4/5/1966)
 
 a) eleitor excluído por sentença não cumprida por ocasião da remessa das folhas individuais de votação à mesa, desde que haja oportuna reclamação de partido;
 
@@ -1983,61 +2031,63 @@ c) alguém com falsa identidade em lugar do eleitor chamado.
 
 **Art. 222.** É também anulável a votação, quando viciada de falsidade, fraude, coação, uso de meios de que trata o art. 237, ou emprego de processo de propaganda ou captação de sufrágios vedado por lei.
 
-**§1º** *(Revogado pela Lei nº 4.961, de 4/5/1966)*
+§1º (Revogado pela Lei nº 4.961, de 4/5/1966)
 
-**§2º** *(Revogado pela Lei nº 4.961, de 4/5/1966)*
+§2º (Revogado pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 223.** A nulidade de qualquer ato, não decretada de ofício pela junta, só poderá ser argüida quando de sua prática, não mais podendo ser alegada, salvo se a argüição se basear em motivo superveniente ou de ordem constitucional.
 
-**§ 1º** Se a nulidade ocorrer em fase na qual não possa ser alegada no ato, poderá ser argüida na primeira oportunidade que para tanto se apresente.
+§ 1º Se a nulidade ocorrer em fase na qual não possa ser alegada no ato, poderá ser argüida na primeira oportunidade que para tanto se apresente.
 
-**§ 2º** Se se basear em motivo superveniente deverá ser alegada imediatamente, assim que se tornar conhecida, podendo as razões do recurso ser aditadas no prazo de 2 (dois) dias.
+§ 2º Se se basear em motivo superveniente deverá ser alegada imediatamente, assim que se tornar conhecida, podendo as razões do recurso ser aditadas no prazo de 2 (dois) dias.
 
-**§ 3º** A nulidade de qualquer ato, baseada em motivo de ordem constitucional, não poderá ser conhecida em recurso interposto fora de prazo. Perdido o prazo numa fase própria, só em outra que se apresentar poderá ser argüida. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§ 3º A nulidade de qualquer ato, baseada em motivo de ordem constitucional, não poderá ser conhecida em recurso interposto fora de prazo. Perdido o prazo numa fase própria, só em outra que se apresentar poderá ser argüida. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 224.** Se a nulidade atingir a mais de metade dos votos do País nas eleições presidenciais, do Estado nas eleições federais e estaduais ou do município nas eleições municipais, julgar-se-ão prejudicadas as demais votações e o Tribunal marcará dia para nova eleição dentro do prazo de 20 (vinte) a 40 (quarenta) dias.
 
-**§1º** Se o Tribunal Regional na área de sua competência, deixar de cumprir o disposto neste artigo, o Procurador Regional levará o fato ao conhecimento do Procurador Geral, que providenciará junto ao Tribunal Superior para que seja marcada imediatamente nova eleição.
+§1º Se o Tribunal Regional na área de sua competência, deixar de cumprir o disposto neste artigo, o Procurador Regional levará o fato ao conhecimento do Procurador Geral, que providenciará junto ao Tribunal Superior para que seja marcada imediatamente nova eleição.
 
-**§ 2º** Ocorrendo qualquer dos casos previstos neste capítulo, o Ministério Público promoverá, imediatamente, a punição dos culpados.
+§ 2º Ocorrendo qualquer dos casos previstos neste capítulo, o Ministério Público promoverá, imediatamente, a punição dos culpados.
 
-**§ 3º** A decisão da Justiça Eleitoral que importe o indeferimento do registro, a cassação do diploma ou a perda do mandato de candidato eleito em pleito majoritário acarreta, após o trânsito em julgado, a realização de novas eleições, independentemente do número de votos anulados. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015) (Locução "após o trânsito em julgado" declarada inconstitucional, em controle concentrado, pelo Supremo Tribunal Federal, pela ADI nº 5.525, publicada no DOU de 19/3/2018, p. 1)*
+§ 3º A decisão da Justiça Eleitoral que importe o indeferimento do registro, a cassação do diploma ou a perda do mandato de candidato eleito em pleito majoritário acarreta, após o trânsito em julgado, a realização de novas eleições, independentemente do número de votos anulados. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015) (Locução "após o trânsito em julgado" declarada inconstitucional, em controle concentrado, pelo Supremo Tribunal Federal, pela ADI nº 5.525, publicada no DOU de 19/3/2018, p. 1)
 
-**§ 4º** A eleição a que se refere o § 3º correrá a expensas da Justiça Eleitoral e será:
+§ 4º A eleição a que se refere o § 3º correrá a expensas da Justiça Eleitoral e será:
 
 I - indireta, se a vacância do cargo ocorrer a menos de seis meses do final do mandato;
 
-II - direta, nos demais casos. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015) (Vide ADI nº 5.525/2016)*
+II - direta, nos demais casos. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015) (Vide ADI nº 5.525/2016)
 
-#### CAPÍTULO VII — DO VOTO NO EXTERIOR
+#### CAPÍTULO VII
+
+### DO VOTO NO EXTERIOR
 
 **Art. 225.** Nas eleições para presidente e vice-presidente da República poderá votar o eleitor que se encontrar no exterior.
 
-**§1º** Para esse fim serão organizadas seções eleitorais, nas sedes das Embaixadas e Consulados Gerais.
+§1º Para esse fim serão organizadas seções eleitorais, nas sedes das Embaixadas e Consulados Gerais.
 
-**§2º** Sendo necessário instalar duas ou mais seções poderá ser utilizado local em que funcione serviço do governo brasileiro.
+§2º Sendo necessário instalar duas ou mais seções poderá ser utilizado local em que funcione serviço do governo brasileiro.
 
 **Art. 226.** Para que se organize uma seção eleitoral no exterior é necessário que na circunscrição sob a jurisdição da Missão Diplomática ou do Consulado Geral haja um mínimo de 30 (trinta) eleitores inscritos.
 
-**Parágrafo único.** Quando o número de eleitores não atingir o mínimo previsto no parágrafo anterior, os eleitores poderão votar na mesa receptora mais próxima, desde que localizada no mesmo país, de acordo com a comunicação que lhes for feita.
+Parágrafo único. Quando o número de eleitores não atingir o mínimo previsto no parágrafo anterior, os eleitores poderão votar na mesa receptora mais próxima, desde que localizada no mesmo país, de acordo com a comunicação que lhes for feita.
 
 **Art. 227.** As mesas receptoras serão organizadas pelo Tribunal Regional do Distrito Federal mediante proposta dos chefes de Missão e cônsules gerais, que ficarão investidos, no que for aplicável, das funções administrativas de juiz eleitoral.
 
-**Parágrafo único.** Será aplicável às mesas receptoras o processo de composição e fiscalização partidária vigente para as que funcionam no território nacional.
+Parágrafo único. Será aplicável às mesas receptoras o processo de composição e fiscalização partidária vigente para as que funcionam no território nacional.
 
 **Art. 228.** Até 30 (trinta) dias antes da realização da eleição todos os brasileiros eleitores, residentes no estrangeiro, comunicarão à sede da Missão Diplomática, ou ao consulado geral, em carta, telegrama ou qualquer outra via, a sua condição de eleitor e sua residência.
 
-**§1º** Com a relação dessas comunicações e com os dados do registro consular, serão organizadas as folhas de votação, e notificados os eleitores da hora e local da votação.
+§1º Com a relação dessas comunicações e com os dados do registro consular, serão organizadas as folhas de votação, e notificados os eleitores da hora e local da votação.
 
-**§2º** No dia da eleição só serão admitidos a votar os que constem da folha de votação e os passageiros e tripulantes de navios e aviões de guerra e mercantes que, no dia, estejam na sede das sessões eleitorais.
+§2º No dia da eleição só serão admitidos a votar os que constem da folha de votação e os passageiros e tripulantes de navios e aviões de guerra e mercantes que, no dia, estejam na sede das sessões eleitorais.
 
 **Art. 229.** Encerrada a votação, as urnas serão enviadas pelos cônsules gerais às sedes das Missões Diplomáticas. Estas as remeterão, pela mala diplomática, ao Ministério das Relações Exteriores, que delas fará entrega ao Tribunal Regional Eleitoral do Distrito Federal, a quem competirá a apuração dos votos e julgamento das dúvidas e recursos que hajam sido interpostos.
 
-**Parágrafo único.** Todo o serviço de transporte do material eleitoral será feito por via aérea.
+Parágrafo único. Todo o serviço de transporte do material eleitoral será feito por via aérea.
 
 **Art. 230.** Todos os eleitores que votarem no exterior terão os seus títulos apreendidos pela mesa receptora.
 
-**Parágrafo único.** A todo eleitor que votar no exterior será concedido comprovante para a comunicação legal ao juiz eleitoral de sua zona.
+Parágrafo único. A todo eleitor que votar no exterior será concedido comprovante para a comunicação legal ao juiz eleitoral de sua zona.
 
 **Art. 231.** Todo aquele que, estando obrigado a votar, não o fizer, fica sujeito, além das penalidades previstas para o eleitor que não vota no território nacional, à proibição de requerer qualquer documento perante a repartição diplomática a que estiver subordinado, enquanto não se justificar.
 
@@ -2045,63 +2095,65 @@ II - direta, nos demais casos. *(Parágrafo acrescido pela Lei nº 13.165, de 29
 
 **Art. 233.** O Tribunal Superior Eleitoral e o Ministério das Relações Exteriores baixarão as instruções necessárias e adotarão as medidas adequadas para o voto no exterior.
 
-**Art. 233-A.** Aos eleitores em trânsito no território nacional é assegurado o direito de votar para Presidente da República, Governador, Senador, Deputado Federal, Deputado Estadual e Deputado Distrital em urnas especialmente instaladas nas capitais e nos Municípios com mais de cem mil eleitores. *(“Caput” do artigo acrescido pela Lei nº 12.034, de 29/9/2009,* *com redação dada pela Lei nº 13.165, de 29/9/2015)*
+**Art. 233-A.** Aos eleitores em trânsito no território nacional é assegurado o direito de votar para Presidente da República, Governador, Senador, Deputado Federal, Deputado Estadual e Deputado Distrital em urnas especialmente instaladas nas capitais e nos Municípios com mais de cem mil eleitores. (“Caput” do artigo acrescido pela Lei nº 12.034, de 29/9/2009, com redação dada pela Lei nº 13.165, de 29/9/2015)
 
-**§ 1º** O exercício do direito previsto neste artigo sujeita-se à observância das regras seguintes:
+§ 1º O exercício do direito previsto neste artigo sujeita-se à observância das regras seguintes:
 
 I - para votar em trânsito, o eleitor deverá habilitar-se perante a Justiça Eleitoral no período de até quarenta e cinco dias da data marcada para a eleição, indicando o local em que pretende votar;
 
 II - aos eleitores que se encontrarem fora da unidade da Federação de seu domicílio eleitoral somente é assegurado o direito à habilitação para votar em trânsito nas eleições para Presidente da República;
 
-III - os eleitores que se encontrarem em trânsito dentro da unidade da Federação de seu domicílio eleitoral poderão votar nas eleições para Presidente da República, Governador, Senador, Deputado Federal, Deputado Estadual e Deputado Distrital. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+III - os eleitores que se encontrarem em trânsito dentro da unidade da Federação de seu domicílio eleitoral poderão votar nas eleições para Presidente da República, Governador, Senador, Deputado Federal, Deputado Estadual e Deputado Distrital. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
-**§ 2º** Os membros das Forças Armadas, os integrantes dos órgãos de segurança pública a que se refere o art. 144 da Constituição Federal, bem como os integrantes das guardas municipais mencionados no § 8º do mesmo art. 144, poderão votar em trânsito se estiverem em serviço por ocasião das eleições. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+§ 2º Os membros das Forças Armadas, os integrantes dos órgãos de segurança pública a que se refere o art. 144 da Constituição Federal, bem como os integrantes das guardas municipais mencionados no § 8º do mesmo art. 144, poderão votar em trânsito se estiverem em serviço por ocasião das eleições. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
-**§ 3º** As chefias ou comandos dos órgãos a que estiverem subordinados os eleitores mencionados no § 2º enviarão obrigatoriamente à Justiça Eleitoral, em até quarenta e cinco dias da data das eleições, a listagem dos que estarão em serviço no dia da eleição com indicação das seções eleitorais de origem e destino. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+§ 3º As chefias ou comandos dos órgãos a que estiverem subordinados os eleitores mencionados no § 2º enviarão obrigatoriamente à Justiça Eleitoral, em até quarenta e cinco dias da data das eleições, a listagem dos que estarão em serviço no dia da eleição com indicação das seções eleitorais de origem e destino. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
-**§ 4º** Os eleitores mencionados no § 2º, uma vez habilitados na forma do § 3º, serão cadastrados e votarão nas seções eleitorais indicadas nas listagens mencionadas no § 3º independentemente do número de eleitores do Município. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+§ 4º Os eleitores mencionados no § 2º, uma vez habilitados na forma do § 3º, serão cadastrados e votarão nas seções eleitorais indicadas nas listagens mencionadas no § 3º independentemente do número de eleitores do Município. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
-PARTE QUINTA
+## PARTE QUINTA
 
-DISPOSIÇÕES VÁRIAS
+### DISPOSIÇÕES VÁRIAS
 
-### TÍTULO I — DAS GARANTIAS ELEITORAIS
+### TÍTULO I
 
 **Art. 234.** Ninguém poderá impedir ou embaraçar o exercício do sufrágio.
 
 **Art. 235.** O juiz eleitoral, ou o presidente da mesa receptora, pode expedir salvo-conduto com a cominação de prisão por desobediência até 5 (cinco) dias, em favor do eleitor que sofrer violência, moral ou física, na sua liberdade de votar, ou pelo fato de haver votado.
 
-**Parágrafo único.** A medida será válida para o período compreendido entre 72 (setenta e duas) horas antes até 48 (quarenta e oito) horas depois do pleito.
+Parágrafo único. A medida será válida para o período compreendido entre 72 (setenta e duas) horas antes até 48 (quarenta e oito) horas depois do pleito.
 
 **Art. 236.** Nenhuma autoridade poderá, desde 5 (cinco) dias antes e até 48 (quarenta e oito) horas depois do encerramento da eleição, prender ou deter qualquer eleitor, salvo em flagrante delito ou em virtude de sentença criminal condenatória por crime inafiançável, ou, ainda, por desrespeito a salvo-conduto.
 
-**§1º** Os membros das mesas receptoras e os fiscais de partido, durante o exercício de suas funções, não poderão ser detidos ou presos, salvo o caso de flagrante delito; da mesma garantia gozarão os candidatos desde 15 (quinze) dias antes da eleição. *(Vide ADPF nº 1.017/2022)*
+§1º Os membros das mesas receptoras e os fiscais de partido, durante o exercício de suas funções, não poderão ser detidos ou presos, salvo o caso de flagrante delito; da mesma garantia gozarão os candidatos desde 15 (quinze) dias antes da eleição. (Vide ADPF nº 1.017/2022)
 
-**§2º** Ocorrendo qualquer prisão o preso será imediatamente conduzido à presença do juiz competente que, se verificar a ilegalidade da detenção, a relaxará e promoverá a responsabilidade do coator.
+§2º Ocorrendo qualquer prisão o preso será imediatamente conduzido à presença do juiz competente que, se verificar a ilegalidade da detenção, a relaxará e promoverá a responsabilidade do coator.
 
 **Art. 237.** A interferência do poder econômico e o desvio ou abuso do poder de autoridade, em desfavor da liberdade do voto, serão coibidos e punidos.
 
-**§1º** O eleitor é parte legítima para denunciar os culpados e promover-lhes a responsabilidade, e a nenhum servidor público, inclusive de autarquia, de entidade paraestatal e de sociedade de economia mista, será lícito negar ou retardar ato de ofício tendente a esse fim.
+§1º O eleitor é parte legítima para denunciar os culpados e promover-lhes a responsabilidade, e a nenhum servidor público, inclusive de autarquia, de entidade paraestatal e de sociedade de economia mista, será lícito negar ou retardar ato de ofício tendente a esse fim.
 
-**§2º** Qualquer eleitor ou partido político poderá se dirigir ao Corregedor Geral ou Regional, relatando fatos e indicando provas, e pedir abertura de investigação para apurar ato indevido do poder econômico, desvio ou abuso do poder de autoridade, em benefício de candidato ou de partido político.
+§2º Qualquer eleitor ou partido político poderá se dirigir ao Corregedor Geral ou Regional, relatando fatos e indicando provas, e pedir abertura de investigação para apurar ato indevido do poder econômico, desvio ou abuso do poder de autoridade, em benefício de candidato ou de partido político.
 
-**§3º** O Corregedor, verificada a seriedade da denúncia procederá ou mandará proceder a investigações, regendo-se estas, no que lhes for aplicável, pela Lei nº 1.579, de 18 de março de 1952.
+§3º O Corregedor, verificada a seriedade da denúncia procederá ou mandará proceder a investigações, regendo-se estas, no que lhes for aplicável, pela Lei nº 1.579, de 18 de março de 1952.
 
 **Art. 238.** É proibida, durante o ato eleitoral, a presença de força pública no edifício em que funcionar mesa receptora, ou nas imediações, observado o disposto no art. 141.
 
 **Art. 239.** Aos partidos políticos é assegurada a prioridade postal durante os 60 (sessenta) dias anteriores à realização das eleições, para remessa de material de propaganda de seus candidatos registrados.
 
-### TÍTULO II — DA PROPAGANDA PARTIDÁRIA
+### TÍTULO II
 
-**Art. 240.** A propaganda de candidatos a cargos eletivos somente é permitida após o dia 15 de agosto do ano da eleição. *(“Caput” do artigo com redação dada pela Lei nº 13.165, de 29/9/2015)*
+### DA PROPAGANDA PARTIDÁRIA
 
-**Parágrafo único.** É vedada, desde quarenta e oito horas antes até vinte e quatro horas depois da eleição, qualquer propaganda política mediante radiodifusão, televisão, comícios ou reuniões públicas.
+**Art. 240.** A propaganda de candidatos a cargos eletivos somente é permitida após o dia 15 de agosto do ano da eleição. (“Caput” do artigo com redação dada pela Lei nº 13.165, de 29/9/2015)
+
+Parágrafo único. É vedada, desde quarenta e oito horas antes até vinte e quatro horas depois da eleição, qualquer propaganda política mediante radiodifusão, televisão, comícios ou reuniões públicas.
 
 **Art. 241.** Toda propaganda eleitoral será realizada sob a responsabilidade dos partidos e por eles paga, imputando-se-lhes solidariedade nos excessos praticados pelos seus candidatos e adeptos.
 
-**Parágrafo único.** A solidariedade prevista neste artigo é restrita aos candidatos e aos respectivos partidos, não alcançando outros partidos, mesmo quando integrantes de uma mesma coligação. *(Parágrafo único acrescido pela Lei nº 12.891, de 11/12/2013)*
+Parágrafo único. A solidariedade prevista neste artigo é restrita aos candidatos e aos respectivos partidos, não alcançando outros partidos, mesmo quando integrantes de uma mesma coligação. (Parágrafo único acrescido pela Lei nº 12.891, de 11/12/2013)
 
-**Art. 242.** A propaganda, qualquer que seja a sua forma ou modalidade, mencionará sempre a legenda partidária e só poderá ser feita em língua nacional, não devendo empregar meios publicitários destinados a criar, artificialmente, na opinião pública, estados mentais, emocionais ou passionais. *(Artigo com redação dada pela Lei nº 7.476, de 15/5/1986)*
+**Art. 242.** A propaganda, qualquer que seja a sua forma ou modalidade, mencionará sempre a legenda partidária e só poderá ser feita em língua nacional, não devendo empregar meios publicitários destinados a criar, artificialmente, na opinião pública, estados mentais, emocionais ou passionais. (Artigo com redação dada pela Lei nº 7.476, de 15/5/1986)
 
 **Art. 243.** Não será tolerada propaganda:
 
@@ -2123,13 +2175,13 @@ VIII - que prejudique a higiene e a estética urbana ou contravenha a posturas m
 
 IX - que caluniar, difamar ou injuriar quaisquer pessoas, bem como órgãos ou entidades que exerçam autoridade pública.
 
-X - que deprecie a condição de mulher ou estimule sua discriminação em razão do sexo feminino, ou em relação à sua cor, raça ou etnia. *(Inciso acrescido pela Lei nº 14.192, de 4/8/2021)*
+X - que deprecie a condição de mulher ou estimule sua discriminação em razão do sexo feminino, ou em relação à sua cor, raça ou etnia. (Inciso acrescido pela Lei nº 14.192, de 4/8/2021)
 
-**§1º** O ofendido por calúnia, difamação ou injúria, sem prejuízo e independentemente da ação penal competente, poderá demandar, no Juízo Cível, a reparação do dano moral respondendo por este o ofensor e, solidariamente, o partido político deste, quando responsável por ação ou omissão, e quem quer que favorecido pelo crime, haja de qualquer modo contribuído para ele. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§1º O ofendido por calúnia, difamação ou injúria, sem prejuízo e independentemente da ação penal competente, poderá demandar, no Juízo Cível, a reparação do dano moral respondendo por este o ofensor e, solidariamente, o partido político deste, quando responsável por ação ou omissão, e quem quer que favorecido pelo crime, haja de qualquer modo contribuído para ele. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§2º** No que couber, aplicar-se-ão na reparação do dano moral, referido no parágrafo anterior, os artigos 81 a 88 da Lei nº 4.117, de 27 de agosto de 1962. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§2º No que couber, aplicar-se-ão na reparação do dano moral, referido no parágrafo anterior, os artigos 81 a 88 da Lei nº 4.117, de 27 de agosto de 1962. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§3º** É assegurado o direito de resposta a quem for injuriado, difamado ou caluniado através da imprensa, rádio, televisão, ou alto falante, aplicando-se, no que couber, os artigos 90 e 96 da Lei nº 4.117, de 27 de agosto de 1962. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§3º É assegurado o direito de resposta a quem for injuriado, difamado ou caluniado através da imprensa, rádio, televisão, ou alto falante, aplicando-se, no que couber, os artigos 90 e 96 da Lei nº 4.117, de 27 de agosto de 1962. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 244.** É assegurado aos partidos políticos registrados o direito de, independentemente de licença da autoridade pública e do pagamento de qualquer contribuição:
 
@@ -2137,7 +2189,7 @@ I - fazer inscrever, na fachada de suas sedes e dependências, o nome que os des
 
 II - instalar e fazer funcionar, normalmente, das quatorze às vinte e duas horas, nos três meses que antecederem as eleições, alto falantes, ou amplificadores de voz, nos locais referidos, assim como em veículos seus, ou à sua disposição, em território nacional, com observância da legislação comum.
 
-**Parágrafo único.** Os meios de propaganda a que se refere o nº II deste artigo não serão permitidos, a menos de 500 metros:
+Parágrafo único. Os meios de propaganda a que se refere o nº II deste artigo não serão permitidos, a menos de 500 metros:
 
 I - das sedes do Executivo Federal, dos Estados, Territórios e respectivas Prefeituras Municipais;
 
@@ -2153,177 +2205,181 @@ VI - dos quartéis e outros estabelecimentos militares.
 
 **Art. 245.** A realização de qualquer ato de propaganda partidária ou eleitoral, em recinto aberto, não depende de licença da polícia.
 
-**§1º** Quando o ato de propaganda tiver de realizar-se em lugar designado para a celebração de comício, na forma do disposto no art. 3 da Lei nº 1.207, de 25 de outubro de 1950, deverá ser feita comunicação à autoridade policial, pelo menos 24 (vinte e quatro) horas antes de sua realização.
+§1º Quando o ato de propaganda tiver de realizar-se em lugar designado para a celebração de comício, na forma do disposto no art. 3 da Lei nº 1.207, de 25 de outubro de 1950, deverá ser feita comunicação à autoridade policial, pelo menos 24 (vinte e quatro) horas antes de sua realização.
 
-**§2º** Não havendo local anteriormente fixado para a celebração de comício, ou sendo impossível ou difícil nele realizar-se o ato de propaganda eleitoral, ou havendo pedido para designação de outro local, a comunicação a que se refere o parágrafo anterior será feita, no mínimo, com antecedência, de 72 (setenta e duas) horas, devendo a autoridade policial, em qualquer desses casos, nas 24 (vinte e quatro) horas seguintes, designar local amplo e de fácil acesso, de modo que não impossibilite ou frustre a reunião.
+§2º Não havendo local anteriormente fixado para a celebração de comício, ou sendo impossível ou difícil nele realizar-se o ato de propaganda eleitoral, ou havendo pedido para designação de outro local, a comunicação a que se refere o parágrafo anterior será feita, no mínimo, com antecedência, de 72 (setenta e duas) horas, devendo a autoridade policial, em qualquer desses casos, nas 24 (vinte e quatro) horas seguintes, designar local amplo e de fácil acesso, de modo que não impossibilite ou frustre a reunião.
 
-**§3º** Aos órgãos da Justiça Eleitoral compete julgar das reclamações sobre a localização dos comícios e providências sobre a distribuição eqüitativa dos locais aos partidos.
+§3º Aos órgãos da Justiça Eleitoral compete julgar das reclamações sobre a localização dos comícios e providências sobre a distribuição eqüitativa dos locais aos partidos.
 
-**Art. 246.** *(Revogado pela Lei nº 9.504, de 30/9/1997)*
+**Art. 246.** (Revogado pela Lei nº 9.504, de 30/9/1997)
 
-**Art. 247.** *(Revogado pela Lei nº 9.504, de 30/9/1997)*
+**Art. 247.** (Revogado pela Lei nº 9.504, de 30/9/1997 )
 
 **Art. 248.** Ninguém poderá impedir a propaganda eleitoral, nem inutilizar, alterar ou perturbar os meios lícitos nela empregados.
 
 **Art. 249.** O direito de propaganda não importa restrição ao poder de polícia quando este deva ser exercido em benefício da ordem pública.
 
-**Art. 250.** *(Revogado pela Lei nº 9.504, de 30/9/1997)*
+**Art. 250.** (Revogado pela Lei nº 9.504, de 30/9/1997 )
 
 **Art. 251.** No período destinado à propaganda eleitoral gratuita não prevalecerão quaisquer contratos ou ajustes firmados pelas empresas que possam burlar ou tornar inexeqüível qualquer dispositivo deste Código ou das instruções baixadas pelo Tribunal Superior Eleitoral.
 
-Arts. 252 a 254. *(Revogados pelo Decreto-lei nº 1.538, de 14/4/1977).*
+Arts. 252 a 254. (Revogados pelo Decreto-lei nº 1.538, de 14/4/1977) .
 
 **Art. 255.** Nos 15 (quinze) dias anteriores ao pleito é proibida a divulgação, por qualquer forma, de resultados de prévias ou testes pré-eleitorais.
 
 **Art. 256.** As autoridades administrativas federais, estatuais e municipais proporcionarão aos partidos, em igualdade de condições, as facilidades permitidas para a respectiva propaganda.
 
-**§1º** No período da campanha eleitoral, independentemente do critério de prioridade, os serviços telefônicos, oficiais ou concedidos, farão instalar, na sede dos diretórios devidamente registrados, telefones necessários, mediante requerimento do respectivo presidente e pagamento das taxas devidas. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§1º No período da campanha eleitoral, independentemente do critério de prioridade, os serviços telefônicos, oficiais ou concedidos, farão instalar, na sede dos diretórios devidamente registrados, telefones necessários, mediante requerimento do respectivo presidente e pagamento das taxas devidas. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§2º** O Tribunal Superior Eleitoral baixará as instruções necessárias ao cumprimento do disposto no parágrafo anterior fixando as condições a serem observadas. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§2º O Tribunal Superior Eleitoral baixará as instruções necessárias ao cumprimento do disposto no parágrafo anterior fixando as condições a serem observadas. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-### TÍTULO III — DOS RECURSOS
+### TÍTULO III
 
-#### CAPÍTULO I — DISPOSIÇÕES PRELIMINARES
+#### CAPÍTULO I
+
+### DISPOSIÇÕES PRELIMINARES
 
 **Art. 257.** Os recursos eleitorais não terão efeito suspensivo.
 
-**§ 1º.** A execução de qualquer acórdão será feita imediatamente, através de comunicação por ofício, telegrama, ou, em casos especiais, a critério do presidente do Tribunal, através de cópia do acórdão. *(Parágrafo único transformado em § 1º pela Lei nº 13.165, de 29/9/2015)*
+§ 1º. A execução de qualquer acórdão será feita imediatamente, através de comunicação por ofício, telegrama, ou, em casos especiais, a critério do presidente do Tribunal, através de cópia do acórdão. (Parágrafo único transformado em § 1º pela Lei nº 13.165, de 29/9/2015)
 
-**§ 2º** O recurso ordinário interposto contra decisão proferida por juiz eleitoral ou por Tribunal Regional Eleitoral que resulte em cassação de registro, afastamento do titular ou perda de mandato eletivo será recebido pelo Tribunal competente com efeito suspensivo. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+§ 2º O recurso ordinário interposto contra decisão proferida por juiz eleitoral ou por Tribunal Regional Eleitoral que resulte em cassação de registro, afastamento do titular ou perda de mandato eletivo será recebido pelo Tribunal competente com efeito suspensivo. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
-**§ 3º** O Tribunal dará preferência ao recurso sobre quaisquer outros processos, ressalvados os de *habeas corpus* e de mandado de segurança. *(Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)*
+§ 3º O Tribunal dará preferência ao recurso sobre quaisquer outros processos, ressalvados os de habeas corpus e de mandado de segurança. (Parágrafo acrescido pela Lei nº 13.165, de 29/9/2015)
 
 **Art. 258.** Sempre que a lei não fixar prazo especial, o recurso deverá ser interposto em três dias da publicação do ato, resolução ou despacho.
 
 **Art. 259.** São preclusivos os prazos para interposição de recurso, salvo quando neste se discutir matéria constitucional.
 
-**Parágrafo único.** O recurso em que se discutir matéria constitucional não poderá ser interposto fora do prazo. Perdido o prazo numa fase própria, só em outra que se apresentar poderá ser interposto.
+Parágrafo único. O recurso em que se discutir matéria constitucional não poderá ser interposto fora do prazo. Perdido o prazo numa fase própria, só em outra que se apresentar poderá ser interposto.
 
 **Art. 260.** A distribuição do primeiro recurso que chegar ao Tribunal Regional ou Tribunal Superior, prevenirá a competência do relator para todos os demais casos do mesmo município ou Estado.
 
 **Art. 261.** Os recursos parciais, entre os quais não se incluem os que versarem matéria referente ao registro de candidatos, interpostos para os Tribunais Regionais no caso de eleições municipais e para o Tribunal Superior no caso de eleições estaduais ou federais, serão julgados à medida que derem entrada nas respectivas Secretarias.
 
-**§1º** Havendo dois ou mais recursos parciais de um mesmo município ou Estado, ou se todos, inclusive os de diplomação já estiverem no Tribunal Regional ou no Tribunal Superior, serão eles julgados seguidamente, em uma ou mais sessões.
+§1º Havendo dois ou mais recursos parciais de um mesmo município ou Estado, ou se todos, inclusive os de diplomação já estiverem no Tribunal Regional ou no Tribunal Superior, serão eles julgados seguidamente, em uma ou mais sessões.
 
-**§2º** As decisões com os esclarecimentos necessários ao cumprimento serão comunicadas de uma só vez ao juiz eleitoral ou ao presidente do Tribunal Regional.
+§2º As decisões com os esclarecimentos necessários ao cumprimento serão comunicadas de uma só vez ao juiz eleitoral ou ao presidente do Tribunal Regional.
 
-**§3º** Se os recursos de um mesmo município ou Estado deram entrada em datas diversas, sendo julgados separadamente, o juiz eleitoral ou o presidente do Tribunal Regional aguardará a comunicação de todas as decisões para cumpri-las, salvo se o julgamento dos demais importar em alteração do resultado do pleito que não tenha relação com o recurso já julgado.
+§3º Se os recursos de um mesmo município ou Estado deram entrada em datas diversas, sendo julgados separadamente, o juiz eleitoral ou o presidente do Tribunal Regional aguardará a comunicação de todas as decisões para cumpri-las, salvo se o julgamento dos demais importar em alteração do resultado do pleito que não tenha relação com o recurso já julgado.
 
-**§4º** Em todos os recursos, no despacho que determinar a remessa dos autos à instância superior, o juízo *a quo* esclarecerá quais os ainda em fase de processamento e, no último, quais os anteriormente remetidos.
+§4º Em todos os recursos, no despacho que determinar a remessa dos autos à instância superior, o juízo a quo esclarecerá quais os ainda em fase de processamento e, no último, quais os anteriormente remetidos.
 
-**§5º** Ao se realizar a diplomação, se ainda houver recurso pendente de decisão em outra instância, será consignado que os resultados poderão sofrer alterações decorrentes desse julgamento.
+§5º Ao se realizar a diplomação, se ainda houver recurso pendente de decisão em outra instância, será consignado que os resultados poderão sofrer alterações decorrentes desse julgamento.
 
-**§6º** Realizada a diplomação, e decorrido o prazo para recurso, o juiz ou presidente do Tribunal Regional comunicará à instância superior se foi ou não interposto recurso.
+§6º Realizada a diplomação, e decorrido o prazo para recurso, o juiz ou presidente do Tribunal Regional comunicará à instância superior se foi ou não interposto recurso.
 
-**Art. 262.** O recurso contra expedição de diploma caberá somente nos casos de inelegibilidade superveniente ou de natureza constitucional e de falta de condição de elegibilidade. *(Artigo com redação dada pela Lei nº 12.891, de 11/12/2013)*
+**Art. 262.** O recurso contra expedição de diploma caberá somente nos casos de inelegibilidade superveniente ou de natureza constitucional e de falta de condição de elegibilidade. (Artigo com redação dada pela Lei nº 12.891, de 11/12/2013)
 
-I - *(Revogado pela Lei nº 12.891, de 11/12/2013*, *retificada no DOU de 9/1/2014)*
+I - (Revogado pela Lei nº 12.891, de 11/12/2013 , retificada no DOU de 9/1/2014)
 
-II - *(Revogado pela Lei nº 12.891, de 11/12/2013*, *retificada no DOU de 9/1/2014)*
+II - (Revogado pela Lei nº 12.891, de 11/12/2013 , retificada no DOU de 9/1/2014)
 
-III - *(Revogado pela Lei nº 12.891, de 11/12/2013*, *retificada no DOU de 9/1/2014)*
+III - (Revogado pela Lei nº 12.891, de 11/12/2013 , retificada no DOU de 9/1/2014)
 
-IV - *(Revogado pela Lei nº 12.891, de 11/12/2013*, *retificada no DOU de 9/1/2014)*
+IV - (Revogado pela Lei nº 12.891, de 11/12/2013 , retificada no DOU de 9/1/2014)
 
-**§ 1º** A inelegibilidade superveniente que atrai restrição à candidatura, se formulada no âmbito do processo de registro, não poderá ser deduzida no recurso contra expedição de diploma. *(Parágrafo acrescido pela Lei nº 13.877, de 27/9/2019, vetado pelo Presidente da República, mantido pelo Congresso Nacional e publicado na edição extra do DOU de 13/12/2019)*
+§ 1º A inelegibilidade superveniente que atrai restrição à candidatura, se formulada no âmbito do processo de registro, não poderá ser deduzida no recurso contra expedição de diploma. (Parágrafo acrescido pela Lei nº 13.877, de 27/9/2019, vetado pelo Presidente da República, mantido pelo Congresso Nacional e publicado na edição extra do DOU de 13/12/2019)
 
-**§ 2º** A inelegibilidade superveniente apta a viabilizar o recurso contra a expedição de diploma, decorrente de alterações fáticas ou jurídicas, deverá ocorrer até a data fixada para que os partidos políticos e as coligações apresentem os seus requerimentos de registros de candidatos. *(Parágrafo acrescido pela Lei nº 13.877, de 27/9/2019, vetado pelo Presidente da República, mantido pelo Congresso Nacional e publicado na edição extra do DOU de 13/12/2019)*
+§ 2º A inelegibilidade superveniente apta a viabilizar o recurso contra a expedição de diploma, decorrente de alterações fáticas ou jurídicas, deverá ocorrer até a data fixada para que os partidos políticos e as coligações apresentem os seus requerimentos de registros de candidatos. (Parágrafo acrescido pela Lei nº 13.877, de 27/9/2019, vetado pelo Presidente da República, mantido pelo Congresso Nacional e publicado na edição extra do DOU de 13/12/2019)
 
-**§ 3º** O recurso de que trata este artigo deverá ser interposto no prazo de 3 (três) dias após o último dia limite fixado para a diplomação e será suspenso no período compreendido entre os dias 20 de dezembro e 20 de janeiro, a partir do qual retomará seu cômputo. *(Parágrafo acrescido pela Lei nº 13.877, de 27/9/2019, vetado pelo Presidente da República, mantido pelo Congresso Nacional e publicado na edição extra do DOU de 13/12/2019)*
+§ 3º O recurso de que trata este artigo deverá ser interposto no prazo de 3 (três) dias após o último dia limite fixado para a diplomação e será suspenso no período compreendido entre os dias 20 de dezembro e 20 de janeiro, a partir do qual retomará seu cômputo. (Parágrafo acrescido pela Lei nº 13.877, de 27/9/2019, vetado pelo Presidente da República, mantido pelo Congresso Nacional e publicado na edição extra do DOU de 13/12/2019)
 
 **Art. 263.** No julgamento de um mesmo pleito eleitoral, as decisões anteriores sobre questões de direito constituem prejulgados para os demais casos, salvo se contra a tese votarem dois terços dos membros do Tribunal.
 
 **Art. 264.** Para os Tribunais Regionais e para o Tribunal Superior caberá, dentro de 3 (três) dias, recurso dos atos, resoluções ou despachos dos respectivos presidentes.
 
-#### CAPÍTULO II — DOS RECURSOS PERANTE AS JUNTAS E JUÍZOS ELEITORAIS
+#### CAPÍTULO II
+
+### DOS RECURSOS PERANTE AS JUNTAS E JUÍZOS ELEITORAIS
 
 **Art. 265.** Dos atos, resoluções ou despachos dos juízes ou juntas eleitorais caberá recurso para o Tribunal Regional.
 
-**Parágrafo único.** Os recursos das decisões das Juntas serão processados na forma estabelecida pelos artigos 169 e seguintes.
+Parágrafo único. Os recursos das decisões das Juntas serão processados na forma estabelecida pelos artigos 169 e seguintes.
 
 **Art. 266.** O recurso independerá de termo e será interposto por petição devidamente fundamentada, dirigida ao juiz eleitoral e acompanhada, se o entender o recorrente, de novos documentos.
 
-**Parágrafo único.** Se o recorrente se reportar a coação, fraude, uso de meios de que trata o art. 237 ou emprego de processo de propaganda ou captação de sufrágios vedado por lei, dependentes de prova a ser determinada pelo Tribunal, bastar-lhe-á indicar os meios a elas conducentes. *(Parágrafo único acrescido pela Lei nº 4.961, de 4/5/1966)*
+Parágrafo único. Se o recorrente se reportar a coação, fraude, uso de meios de que trata o art. 237 ou emprego de processo de propaganda ou captação de sufrágios vedado por lei, dependentes de prova a ser determinada pelo Tribunal, bastar-lhe-á indicar os meios a elas conducentes. (Parágrafo único acrescido pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 267.** Recebida a petição, mandará o juiz intimar o recorrido para ciência do recurso, abrindo-se-lhe vista dos autos a fim de, em prazo igual ao estabelecido para a sua interposição, oferecer razões, acompanhadas ou não de novos documentos.
 
-**§1º** A intimação se fará pela publicação da notícia da vista no jornal que publicar o expediente da Justiça Eleitoral, onde houver, e nos demais lugares, pessoalmente pelo escrivão, independente de iniciativa do recorrente.
+§1º A intimação se fará pela publicação da notícia da vista no jornal que publicar o expediente da Justiça Eleitoral, onde houver, e nos demais lugares, pessoalmente pelo escrivão, independente de iniciativa do recorrente.
 
-**§2º** Onde houver jornal oficial, se a publicação não ocorrer no prazo de 3 (três) dias, a intimação se fará pessoalmente ou na forma prevista no parágrafo seguinte.
+§2º Onde houver jornal oficial, se a publicação não ocorrer no prazo de 3 (três) dias, a intimação se fará pessoalmente ou na forma prevista no parágrafo seguinte.
 
-**§3º** Nas zonas em que se fizer intimação pessoal, se não for encontrado e recorrido dentro de 48 (quarenta e oito) horas, a intimação se fará por edital afixados no fórum, no local de costume.
+§3º Nas zonas em que se fizer intimação pessoal, se não for encontrado e recorrido dentro de 48 (quarenta e oito) horas, a intimação se fará por edital afixados no fórum, no local de costume.
 
-**§4º** Todas as citações e intimações serão feitas na forma estabelecida neste artigo.
+§4º Todas as citações e intimações serão feitas na forma estabelecida neste artigo.
 
-**§5º** Se o recorrido juntar novos documentos, terá o recorrente vista dos autos por 48 (quarenta e oito) horas para falar sobre os mesmos, contado o prazo na forma deste artigo.
+§5º Se o recorrido juntar novos documentos, terá o recorrente vista dos autos por 48 (quarenta e oito) horas para falar sobre os mesmos, contado o prazo na forma deste artigo.
 
-**§6º** Findos os prazos a que se referem os parágrafos anteriores, o juiz eleitoral fará, dentro de quarenta e oito horas, subir os autos ao Tribunal Regional com a sua resposta e os documentos em que se fundar, sujeito à multa de dez por cento do salário mínimo regional por dia de retardamento, salvo se entender de reformar a sua decisão. *(Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§6º Findos os prazos a que se referem os parágrafos anteriores, o juiz eleitoral fará, dentro de quarenta e oito horas, subir os autos ao Tribunal Regional com a sua resposta e os documentos em que se fundar, sujeito à multa de dez por cento do salário mínimo regional por dia de retardamento, salvo se entender de reformar a sua decisão. (Parágrafo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
-**§7º** Se o juiz reformar a decisão recorrida, poderá o recorrido, dentro de 3 (três) dias, requerer suba o recurso como se por ele interposto.
+§7º Se o juiz reformar a decisão recorrida, poderá o recorrido, dentro de 3 (três) dias, requerer suba o recurso como se por ele interposto.
 
-#### CAPÍTULO III — DOS RECURSOS NOS TRIBUNAIS REGIONAIS
+### DOS RECURSOS NOS TRIBUNAIS REGIONAIS
 
-**Art. 268.** No Tribunal Regional nenhuma alegação escrita ou nenhum documento poderá ser oferecido por qualquer das partes, salvo o disposto no art. 270. *(Artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+**Art. 268.** No Tribunal Regional nenhuma alegação escrita ou nenhum documento poderá ser oferecido por qualquer das partes, salvo o disposto no art. 270. (Artigo com redação dada pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 269.** Os recursos serão distribuídos a um relator em 24 (vinte e quatro) horas e na ordem rigorosa da antiguidade dos respectivos membros, esta última exigência sob pena de nulidade de qualquer ato ou decisão do relator ou do tribunal.
 
-**§1º** Feita a distribuição, a Secretaria do Tribunal abrirá vista dos autos à Procuradoria Regional, que deverá emitir parecer no prazo de 5 (cinco) dias.
+§1º Feita a distribuição, a Secretaria do Tribunal abrirá vista dos autos à Procuradoria Regional, que deverá emitir parecer no prazo de 5 (cinco) dias.
 
-**§2º** Se a Procuradoria não emitir parecer no prazo fixado, poderá a parte interessada requerer a inclusão do processo na pauta, devendo o Procurador, nesse caso, proferir parecer oral na assentada do julgamento.
+§2º Se a Procuradoria não emitir parecer no prazo fixado, poderá a parte interessada requerer a inclusão do processo na pauta, devendo o Procurador, nesse caso, proferir parecer oral na assentada do julgamento.
 
 **Art. 270.** Se o recurso versar sobre coação, fraude, uso de meios de que trata o art. 237, ou emprego de processo de propaganda ou captação de sufrágios vedado por lei dependente de prova indicada pelas partes ao interpô-lo ou ao impugná-lo, o relator no Tribunal Regional deferi-la-á em vinte e quatro horas da conclusão, realizando-se ela no prazo improrrogável de cinco dias.
 
-**§1º** Admitir-se-ão como meios de prova para apreciação pelo Tribunal as justificações e as perícias processadas perante o juiz eleitoral da zona, com citação dos partidos que concorreram ao pleito e do representante de Ministério Público.
+§1º Admitir-se-ão como meios de prova para apreciação pelo Tribunal as justificações e as perícias processadas perante o juiz eleitoral da zona, com citação dos partidos que concorreram ao pleito e do representante de Ministério Público.
 
-**§2º** Indeferindo o relator a prova, serão os autos, a requerimento do interessado, nas vinte e quatro horas seguintes, presentes à primeira sessão do Tribunal, que deliberará a respeito.
+§2º Indeferindo o relator a prova, serão os autos, a requerimento do interessado, nas vinte e quatro horas seguintes, presentes à primeira sessão do Tribunal, que deliberará a respeito.
 
-**§3º** Protocoladas as diligências probatórias, ou com a juntada das justificações ou diligências, a Secretaria do Tribunal abrirá, sem demora, vista dos autos, por vinte e quatro horas, seguidamente, ao recorrente e ao recorrido para dizerem a respeito.
+§3º Protocoladas as diligências probatórias, ou com a juntada das justificações ou diligências, a Secretaria do Tribunal abrirá, sem demora, vista dos autos, por vinte e quatro horas, seguidamente, ao recorrente e ao recorrido para dizerem a respeito.
 
-**§4º** Findo o prazo acima, serão os autos conclusos ao relator. *(Artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+§4º Findo o prazo acima, serão os autos conclusos ao relator. (Artigo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 271.** O relator devolverá os autos à Secretaria no prazo improrrogável de 8 (oito) dias para, nas 24 (vinte e quatro) horas seguintes, ser o caso incluído na pauta de julgamento do Tribunal.
 
-**§1º** Tratando-se de recurso contra a expedição de diploma, os autos, uma vez devolvidos pelo relator, serão conclusos ao juiz imediato em antigüidade como revisor, o qual deverá devolvê-los em 4 (quatro) dias.
+§1º Tratando-se de recurso contra a expedição de diploma, os autos, uma vez devolvidos pelo relator, serão conclusos ao juiz imediato em antigüidade como revisor, o qual deverá devolvê-los em 4 (quatro) dias.
 
-**§2º** As pautas serão organizadas com um número de processos que possam ser realmente julgados, obedecendo-se rigorosamente a ordem da devolução dos mesmos à Secretaria pelo relator, ou revisor, nos recursos contra a expedição de diploma, ressalvadas as preferências determinadas pelo regimento do Tribunal.
+§2º As pautas serão organizadas com um número de processos que possam ser realmente julgados, obedecendo-se rigorosamente a ordem da devolução dos mesmos à Secretaria pelo relator, ou revisor, nos recursos contra a expedição de diploma, ressalvadas as preferências determinadas pelo regimento do Tribunal.
 
 **Art. 272.** Na sessão do julgamento, uma vez feito o relatório pelo relator, cada uma das partes poderá, no prazo improrrogável de dez minutos, sustentar oralmente as suas conclusões.
 
-**Parágrafo único.** Quando se tratar de julgamento de recursos contra a expedição de diploma, cada parte terá vinte minutos para sustentação oral.
+Parágrafo único. Quando se tratar de julgamento de recursos contra a expedição de diploma, cada parte terá vinte minutos para sustentação oral.
 
 **Art. 273.** Realizado o julgamento, o relator, se vitorioso, ou o relator designado para redigir o acórdão, apresentará a redação deste, o mais tardar, dentro em 5 (cinco) dias.
 
-**§1º** O acórdão conterá uma síntese das questões debatidas e decididas.
+§1º O acórdão conterá uma síntese das questões debatidas e decididas.
 
-**§2º** Sem prejuízo do disposto no parágrafo anterior, se o Tribunal dispuser de serviço taquigráfico, serão juntas ao processo as notas respectivas.
+§2º Sem prejuízo do disposto no parágrafo anterior, se o Tribunal dispuser de serviço taquigráfico, serão juntas ao processo as notas respectivas.
 
 **Art. 274.** O acórdão, devidamente assinado, será publicado, valendo como tal a inserção da sua conclusão no órgão oficial.
 
-**§1º** Se o órgão oficial não publicar o acórdão no prazo de 3 (três) dias, as partes serão intimadas pessoalmente e, se não forem encontradas no prazo de 48 (quarenta e oito) horas, a intimação se fará por edital afixado no Tribunal, no local de costume.
+§1º Se o órgão oficial não publicar o acórdão no prazo de 3 (três) dias, as partes serão intimadas pessoalmente e, se não forem encontradas no prazo de 48 (quarenta e oito) horas, a intimação se fará por edital afixado no Tribunal, no local de costume.
 
-**§2º** O disposto no parágrafo anterior aplicar-se-á a todos os casos de citação ou intimação.
+§2º O disposto no parágrafo anterior aplicar-se-á a todos os casos de citação ou intimação.
 
-**Art. 275.** São admissíveis embargos de declaração nas hipóteses previstas no Código de Processo Civil. *(“Caput” do artigo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+**Art. 275.** São admissíveis embargos de declaração nas hipóteses previstas no Código de Processo Civil. (“Caput” do artigo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-**§ 1º** Os embargos de declaração serão opostos no prazo de 3 (três) dias, contado da data de publicação da decisão embargada, em petição dirigida ao juiz ou relator, com a indicação do ponto que lhes deu causa. *(Parágrafo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+§ 1º Os embargos de declaração serão opostos no prazo de 3 (três) dias, contado da data de publicação da decisão embargada, em petição dirigida ao juiz ou relator, com a indicação do ponto que lhes deu causa. (Parágrafo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-**§ 2º** Os embargos de declaração não estão sujeitos a preparo. *(Parágrafo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+§ 2º Os embargos de declaração não estão sujeitos a preparo. (Parágrafo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-**§ 3º** O juiz julgará os embargos em 5 (cinco) dias. *(Parágrafo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+§ 3º O juiz julgará os embargos em 5 (cinco) dias. (Parágrafo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-**§ 4º** Nos tribunais: *(Parágrafo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+§ 4º Nos tribunais: (Parágrafo com redação dada pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-I - o relator apresentará os embargos em mesa na sessão subsequente, proferindo voto; *(Inciso acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+I - o relator apresentará os embargos em mesa na sessão subsequente, proferindo voto; (Inciso acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-II - não havendo julgamento na sessão referida no inciso I, será o recurso incluído em pauta; *(Inciso acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+II - não havendo julgamento na sessão referida no inciso I, será o recurso incluído em pauta; (Inciso acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-III - vencido o relator, outro será designado para lavrar o acórdão. *(Inciso acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+III - vencido o relator, outro será designado para lavrar o acórdão. (Inciso acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-**§ 5º** Os embargos de declaração interrompem o prazo para a interposição de recurso. *(Parágrafo acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+§ 5º Os embargos de declaração interrompem o prazo para a interposição de recurso. (Parágrafo acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-**§ 6º** Quando manifestamente protelatórios os embargos de declaração, o juiz ou o tribunal, em decisão fundamentada, condenará o embargante a pagar ao embargado multa não excedente a 2 (dois) salários-mínimos. *(Parágrafo acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+§ 6º Quando manifestamente protelatórios os embargos de declaração, o juiz ou o tribunal, em decisão fundamentada, condenará o embargante a pagar ao embargado multa não excedente a 2 (dois) salários-mínimos. (Parágrafo acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
-**§ 7º** Na reiteração de embargos de declaração manifestamente protelatórios, a multa será elevada a até 10 (dez) salários-mínimos. *(Parágrafo acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)*
+§ 7º Na reiteração de embargos de declaração manifestamente protelatórios, a multa será elevada a até 10 (dez) salários-mínimos. (Parágrafo acrescido pela Lei nº 13.105, de 16/3/2015, publicada no DOU de 17/3/2015, em vigor 1 ano após a publicação)
 
 **Art. 276.** As decisões dos Tribunais Regionais são terminativas, salvo os casos seguintes em que cabe recurso para o Tribunal Superior:
 
@@ -2337,27 +2393,27 @@ II - ordinário:
 
 a) quando versarem sobre expedição de diplomas nas eleições federais e estaduais;
 
-b) quando denegarem *habeas corpus* ou mandado de segurança.
+b) quando denegarem habeas corpus ou mandado de segurança.
 
-**§1º** É de 3 (três) dias o prazo para a interposição do recurso, contado da publicação da decisão nos casos dos ns. I, letras *a* e *b* e II, letra *b* e da sessão da diplomação no caso do nº II, letra *a*.
+§1º É de 3 (três) dias o prazo para a interposição do recurso, contado da publicação da decisão nos casos dos ns. I, letras a e b e II, letra b e da sessão da diplomação no caso do nº II, letra a .
 
-**§2º** Sempre que o Tribunal Regional determinar a realização de novas eleições, o prazo para a interposição dos recursos, no caso do nº II, *a*, contar-se-á da sessão em que, feita a apuração das sessões renovadas, for proclamado o resultado das eleições suplementares.
+§2º Sempre que o Tribunal Regional determinar a realização de novas eleições, o prazo para a interposição dos recursos, no caso do nº II, a , contar-se-á da sessão em que, feita a apuração das sessões renovadas, for proclamado o resultado das eleições suplementares.
 
 **Art. 277.** Interposto recurso ordinário contra decisão do Tribunal Regional, o presidente poderá, na própria petição, mandar abrir vista ao recorrido para que, no mesmo prazo, ofereça as suas razões.
 
-**Parágrafo único.** Juntadas as razões do recorrido, serão os autos remetidos ao Tribunal Superior.
+Parágrafo único. Juntadas as razões do recorrido, serão os autos remetidos ao Tribunal Superior.
 
 **Art. 278.** Interposto recurso especial contra decisão do Tribunal Regional, a petição será juntada nas 48 (quarenta e oito) horas seguintes e os autos conclusos ao presidente dentro de 24 (vinte e quatro) horas.
 
-**§1º** O presidente, dentro em 48 (quarenta e oito) horas do recebimento dos autos conclusos, proferirá despacho fundamentado, admitindo ou não o recurso.
+§1º O presidente, dentro em 48 (quarenta e oito) horas do recebimento dos autos conclusos, proferirá despacho fundamentado, admitindo ou não o recurso.
 
-**§2º** Admitido o recurso, será aberta vista dos autos ao recorrido para que, no mesmo prazo, apresente as suas razões.
+§2º Admitido o recurso, será aberta vista dos autos ao recorrido para que, no mesmo prazo, apresente as suas razões.
 
-**§3º** Em seguida serão os autos conclusos ao presidente, que mandará remetê-los ao Tribunal Superior.
+§3º Em seguida serão os autos conclusos ao presidente, que mandará remetê-los ao Tribunal Superior.
 
 **Art. 279.** Denegado o recurso especial, o recorrente poderá interpor, dentro em 3 (três) dias, agravo de instrumento.
 
-**§1º** O agravo de instrumento será interposto por petição que conterá:
+§1º O agravo de instrumento será interposto por petição que conterá:
 
 I - a exposição do fato e do direito;
 
@@ -2365,35 +2421,41 @@ II - as razões do pedido de reforma da decisão;
 
 III - a indicação das peças do processo que devem ser trasladadas.
 
-**§2º** Serão obrigatoriamente trasladadas a decisão recorrida e a certidão da intimação.
+§2º Serão obrigatoriamente trasladadas a decisão recorrida e a certidão da intimação.
 
-**§3º** Deferida a formação do agravo, será intimado o recorrido para, no prazo de 3 (três) dias, apresentar as suas razões e indicar as peças dos autos que serão também trasladadas.
+§3º Deferida a formação do agravo, será intimado o recorrido para, no prazo de 3 (três) dias, apresentar as suas razões e indicar as peças dos autos que serão também trasladadas.
 
-**§4º** Concluída a formação do instrumento o presidente do Tribunal determinará a remessa dos autos ao Tribunal Superior, podendo, ainda, ordenar a extração e a juntada de peças não indicadas pelas partes.
+§4º Concluída a formação do instrumento o presidente do Tribunal determinará a remessa dos autos ao Tribunal Superior, podendo, ainda, ordenar a extração e a juntada de peças não indicadas pelas partes.
 
-**§5º** O presidente do Tribunal não poderá negar seguimento ao agravo, ainda que interposto fora do prazo legal.
+§5º O presidente do Tribunal não poderá negar seguimento ao agravo, ainda que interposto fora do prazo legal.
 
-**§6º** Se o agravo de instrumento não for conhecido, porque interposto fora do prazo legal, o Tribunal Superior imporá ao recorrente multa correspondente ao valor do maior salário mínimo vigente no País, multa essa que será inscrita e cobrada na forma prevista no art. 367.
+§6º Se o agravo de instrumento não for conhecido, porque interposto fora do prazo legal, o Tribunal Superior imporá ao recorrente multa correspondente ao valor do maior salário mínimo vigente no País, multa essa que será inscrita e cobrada na forma prevista no art. 367.
 
-**§7º** Se o Tribunal Regional dispuser de aparelhamento próprio, o instrumento deverá ser formado com fotocópias ou processos semelhantes, pagas as despesas, pelo preço do custo, pelas partes, em relação às peças que indicarem.
+§7º Se o Tribunal Regional dispuser de aparelhamento próprio, o instrumento deverá ser formado com fotocópias ou processos semelhantes, pagas as despesas, pelo preço do custo, pelas partes, em relação às peças que indicarem.
 
-#### CAPÍTULO IV — DOS RECURSOS NO TRIBUNAL SUPERIOR
+#### CAPÍTULO IV
 
-**Art. 280.** Aplicam-se ao Tribunal Superior as disposições dos artigos 268, 269, 270, 271 *caput*, 272, 273, 274 e 275.
+### DOS RECURSOS NO TRIBUNAL SUPERIOR
 
-**Art. 281.** São irrecorríveis as decisões do Tribunal Superior, salvo as que declararem a invalidade de lei ou ato contrário à Constituição Federal e as denegatórias de *habeas corpus* ou mandado de segurança, das quais caberá recurso ordinário para o Supremo Tribunal Federal, interposto no prazo de 3 (três) dias.
+**Art. 280.** Aplicam-se ao Tribunal Superior as disposições dos artigos 268, 269, 270, 271 caput , 272, 273, 274 e 275.
 
-**§1º** Juntada a petição nas 48 (quarenta e oito) horas seguintes, os autos serão conclusos ao presidente do Tribunal, que, no mesmo prazo, proferirá despacho fundamentado, admitindo ou não o recurso.
+**Art. 281.** São irrecorríveis as decisões do Tribunal Superior, salvo as que declararem a invalidade de lei ou ato contrário à Constituição Federal e as denegatórias de habeas corpus ou mandado de segurança, das quais caberá recurso ordinário para o Supremo Tribunal Federal, interposto no prazo de 3 (três) dias.
 
-**§2º** Admitido o recurso será aberta vista dos autos ao recorrido para que, dentro de 3 (três) dias, apresente as suas razões.
+§1º Juntada a petição nas 48 (quarenta e oito) horas seguintes, os autos serão conclusos ao presidente do Tribunal, que, no mesmo prazo, proferirá despacho fundamentado, admitindo ou não o recurso.
 
-**§3º** Findo esse prazo os autos serão remetidos ao Supremo Tribunal Federal.
+§2º Admitido o recurso será aberta vista dos autos ao recorrido para que, dentro de 3 (três) dias, apresente as suas razões.
+
+§3º Findo esse prazo os autos serão remetidos ao Supremo Tribunal Federal.
 
 **Art. 282.** Denegado o recurso, o recorrente poderá interpor, dentro de 3 (três) dias, agravo de instrumento, observado o disposto no art. 279 e seus parágrafos, aplicada a multa a que se refere o § 6º pelo Supremo Tribunal Federal.
 
-### TÍTULO IV — DISPOSIÇÕES PENAIS
+### TÍTULO IV
 
-#### CAPÍTULO I — DISPOSIÇÕES PRELIMINARES
+### DISPOSIÇÕES PENAIS
+
+#### CAPÍTULO I
+
+### DISPOSIÇÕES PRELIMINARES
 
 **Art. 283.** Para os efeitos penais são considerados membros e funcionários da Justiça Eleitoral:
 
@@ -2405,25 +2467,27 @@ III - os cidadãos que hajam sido nomeados para as mesas receptoras ou Juntas Ap
 
 IV - os funcionários requisitados pela Justiça Eleitoral.
 
-**§1º** Considera-se funcionário público, para os efeitos penais, além dos indicados no presente artigo, quem, embora transitoriamente ou sem remuneração, exerce cargo, emprego ou função pública.
+§1º Considera-se funcionário público, para os efeitos penais, além dos indicados no presente artigo, quem, embora transitoriamente ou sem remuneração, exerce cargo, emprego ou função pública.
 
-**§2º** Equipara-se a funcionário público quem exerce cargo, emprego ou função em entidade paraestatal ou em sociedade de economia mista.
+§2º Equipara-se a funcionário público quem exerce cargo, emprego ou função em entidade paraestatal ou em sociedade de economia mista.
 
 **Art. 284.** Sempre que este Código não indicar o grau mínimo, entende-se que será ele de 15 (quinze) dias para a pena de detenção e de 1 (um) ano para a de reclusão.
 
-**Art. 285.** Quando a lei determina a agravação ou atenuação da pena sem mencionar o *quantum*, deve o juiz fixá-lo entre um quinto e um terço, guardados os limites da pena cominada ao crime.
+**Art. 285.** Quando a lei determina a agravação ou atenuação da pena sem mencionar o quantum , deve o juiz fixá-lo entre um quinto e um terço, guardados os limites da pena cominada ao crime.
 
 **Art. 286.** A pena de multa consiste no pagamento, ao Tesouro Nacional, de uma soma de dinheiro, que é fixada em dias-multa. Seu montante é, no mínimo, 1 (um) dia-multa e, no máximo, 300 (trezentos) dias-multa.
 
-**§1º** O montante do dia-multa é fixado segundo o prudente arbítrio do juiz, devendo este ter em conta as condições pessoais e econômicas do condenado, mas não pode ser inferior ao salário mínimo diário da região, nem superior ao valor de um salário mínimo mensal.
+§1º O montante do dia-multa é fixado segundo o prudente arbítrio do juiz, devendo este ter em conta as condições pessoais e econômicas do condenado, mas não pode ser inferior ao salário mínimo diário da região, nem superior ao valor de um salário mínimo mensal.
 
-**§2º** A multa pode ser aumentada até o triplo, embora não possa exceder o máximo genérico (*caput*), se o juiz considerar que, em virtude da situação econômica do condenado, é ineficaz a cominada, ainda que no máximo, ao crime de que se trate.
+§2º A multa pode ser aumentada até o triplo, embora não possa exceder o máximo genérico ( caput ), se o juiz considerar que, em virtude da situação econômica do condenado, é ineficaz a cominada, ainda que no máximo, ao crime de que se trate.
 
 **Art. 287.** Aplicam-se aos fatos incriminados nesta Lei as regras gerais do Código Penal.
 
 **Art. 288.** Nos crimes eleitorais cometidos por meio da imprensa, do rádio ou da televisão, aplicam-se exclusivamente as normas deste Código e as remissões a outra lei nele contempladas.
 
-#### CAPÍTULO II — DOS CRIMES ELEITORAIS
+#### CAPÍTULO II
+
+### DOS CRIMES ELEITORAIS
 
 **Art. 289.** Inscrever-se fraudulentamente eleitor:
 
@@ -2445,7 +2509,7 @@ Pena - pagamento de 30 a 60 dias-multa.
 
 Pena - detenção de 15 dias a seis meses ou pagamento de 30 a 60 dias-multa.
 
-**Art. 294.** *(Revogado pela Lei nº 8.868, de 14/4/1994)*
+**Art. 294.** (Revogado pela Lei nº 8.868, de 14/4/1994 )
 
 **Art. 295.** Reter título eleitoral contra a vontade do eleitor:
 
@@ -2471,7 +2535,7 @@ Pena - reclusão até quatro anos e pagamento de cinco a quinze dias-multa.
 
 Pena - detenção até seis meses e pagamento de 60 a 100 dias-multa.
 
-**Parágrafo único.** Se o agente é membro ou funcionário da Justiça Eleitoral e comete o crime prevalecendo-se do cargo a pena é agravada.
+Parágrafo único. Se o agente é membro ou funcionário da Justiça Eleitoral e comete o crime prevalecendo-se do cargo a pena é agravada.
 
 **Art. 301.** Usar da violência ou grave ameaça para coagir alguém a votar, ou não votar, em determinado candidato ou partido, ainda que os fins visados não sejam conseguidos:
 
@@ -2479,7 +2543,7 @@ Pena - reclusão até quatro anos e pagamento de cinco a quinze dias-multa.
 
 **Art. 302.** Promover, no dia da eleição, com o fim de impedir, embaraçar ou fraudar o exercício do voto a concentração de eleitores, sob qualquer forma, inclusive o fornecimento gratuito de alimento e transporte coletivo:
 
-Pena - reclusão de 4 (quatro) a 6 (seis) anos e pagamento de 200 a 300 dias-multa. *(Artigo com redação dada pelo Decreto-lei nº 1.064, de 24/10/1969)*
+Pena - reclusão de 4 (quatro) a 6 (seis) anos e pagamento de 200 a 300 dias-multa. (Artigo com redação dada pelo Decreto-lei nº 1.064, de 24/10/1969 )
 
 **Art. 303.** Majorar os preços de utilidades e serviços necessários à realização de eleições, tais como transporte e alimentação de eleitores, impressão, publicidade e divulgação de matéria eleitoral:
 
@@ -2525,13 +2589,13 @@ Pena - detenção até dois anos.
 
 Pena - pagamento de 90 a 120 dias-multa.
 
-**Parágrafo único.** Nas seções eleitorais em que a contagem for procedida pela mesa receptora incorrerão na mesma pena o presidente e os mesários que não expedirem imediatamente o respectivo boletim.
+Parágrafo único. Nas seções eleitorais em que a contagem for procedida pela mesa receptora incorrerão na mesma pena o presidente e os mesários que não expedirem imediatamente o respectivo boletim.
 
 **Art. 314.** Deixar o juiz e os membros da Junta de recolher as cédulas apuradas na respectiva urna, fechá-la, e lacrá-la, assim que terminar a apuração de cada seção e antes de passar à subseqüente, sob qualquer pretexto e ainda que dispensada a providência pelos fiscais, delegados ou candidatos presentes:
 
 Pena - detenção até dois meses ou pagamento de 90 a 120 dias-multa.
 
-**Parágrafo único.** Nas seções eleitorais em que a contagem dos votos for procedida pela mesa receptora incorrerão na mesma pena o presidente e os mesários que não fecharem e lacrarem a urna após a contagem.
+Parágrafo único. Nas seções eleitorais em que a contagem dos votos for procedida pela mesa receptora incorrerão na mesma pena o presidente e os mesários que não fecharem e lacrarem a urna após a contagem.
 
 **Art. 315.** Alterar nos mapas ou nos boletins de apuração a votação obtida por qualquer candidato ou lançar nesses documentos votação que não corresponda às cédulas apuradas:
 
@@ -2561,29 +2625,29 @@ Pena - pagamento de 10 a 20 dias-multa.
 
 Pena - detenção até dois meses ou pagamento de 20 a 40 dias-multa.
 
-**Art. 322.** *(Revogado pela Lei nº 9.504, de 30/9/1997)*
+**Art. 322.** (Revogado pela Lei nº 9.504, de 30/9/1997)
 
-**Art. 323.** Divulgar, na propaganda eleitoral ou durante período de campanha eleitoral, fatos que sabe inverídicos em relação a partidos ou a candidatos e capazes de exercer influência perante o eleitorado: *(“Caput” do artigo com redação dada pela Lei nº 14.192, de 4/8/2021)*
+**Art. 323.** Divulgar, na propaganda eleitoral ou durante período de campanha eleitoral, fatos que sabe inverídicos em relação a partidos ou a candidatos e capazes de exercer influência perante o eleitorado: (“Caput” do artigo com redação dada pela Lei nº 14.192, de 4/8/2021)
 
 Pena - detenção de dois meses a um ano, ou pagamento de 120 a 150 dias-multa.
 
-**Parágrafo único.** *(Revogado pela Lei nº 14.192, de 4/8/2021)*
+Parágrafo único. (Revogado pela Lei nº 14.192, de 4/8/2021)
 
-**§ 1º** Nas mesmas penas incorre quem produz, oferece ou vende vídeo com conteúdo inverídico acerca de partidos ou candidatos. *(Parágrafo acrescido pela Lei nº 14.192, de 4/8/2021)*
+§ 1º Nas mesmas penas incorre quem produz, oferece ou vende vídeo com conteúdo inverídico acerca de partidos ou candidatos. (Parágrafo acrescido pela Lei nº 14.192, de 4/8/2021)
 
-**§ 2º** Aumenta-se a pena de 1/3 (um terço) até metade se o crime:
+§ 2º Aumenta-se a pena de 1/3 (um terço) até metade se o crime:
 
 I - é cometido por meio da imprensa, rádio ou televisão, ou por meio da internet ou de rede social, ou é transmitido em tempo real;
 
-II - envolve menosprezo ou discriminação à condição de mulher ou à sua cor, raça ou etnia. *(Parágrafo acrescido pela Lei nº 14.192, de 4/8/2021)*
+II - envolve menosprezo ou discriminação à condição de mulher ou à sua cor, raça ou etnia. (Parágrafo acrescido pela Lei nº 14.192, de 4/8/2021)
 
 **Art. 324.** Caluniar alguém, na propaganda eleitoral, ou visando afins de propaganda, imputando-lhe falsamente fato definido como crime:
 
 Pena - detenção de seis meses a dois anos, e pagamento de 10 a 40 dias-multa.
 
-**§ 1º** Nas mesmas penas incorre quem, sabendo falsa a imputação, a propala ou divulga.
+§ 1º Nas mesmas penas incorre quem, sabendo falsa a imputação, a propala ou divulga.
 
-**§ 2º** A prova da verdade do fato imputado exclui o crime, mas não é admitida:
+§ 2º A prova da verdade do fato imputado exclui o crime, mas não é admitida:
 
 I - se, constituindo o fato imputado crime de ação privada, o ofendido não foi condenado por sentença irrecorrível;
 
@@ -2595,45 +2659,45 @@ III - se do crime imputado, embora de ação pública, o ofendido foi absolvido 
 
 Pena - detenção de três meses a um ano, e pagamento de 5 a 30 dias-multa.
 
-**Parágrafo único.** A exceção da verdade somente se admite se o ofendido é funcionário público e a ofensa é relativa ao exercício de suas funções.
+Parágrafo único. A exceção da verdade somente se admite se o ofendido é funcionário público e a ofensa é relativa ao exercício de suas funções.
 
 **Art. 326.** Injuriar alguém, na propaganda eleitoral, ou visando a fins de propaganda, ofendendo-lhe a dignidade ou o decoro:
 
 Pena - detenção até seis meses, ou pagamento de 30 a 60 dias-multa.
 
-**§1º** O juiz pode deixar de aplicar a pena:
+§1º O juiz pode deixar de aplicar a pena:
 
 I - se o ofendido, de forma reprovável, provocou diretamente a injúria;
 
 II - no caso de retorsão imediata, que consista em outra injúria.
 
-**§2º** Se a injúria consiste em violência ou vias de fato, que, por sua natureza ou meio empregado, se considerem aviltantes:
+§2º Se a injúria consiste em violência ou vias de fato, que, por sua natureza ou meio empregado, se considerem aviltantes:
 
 Pena - detenção de três meses a um ano e pagamento de 5 a 20 dias-multa, além das penas correspondentes à violência prevista no Código Penal.
 
 **Art. 326-A.** Dar causa à instauração de investigação policial, de processo judicial, de investigação administrativa, de inquérito civil ou ação de improbidade administrativa, atribuindo a alguém a prática de crime ou ato infracional de que o sabe inocente, com finalidade eleitoral:
 
-Pena - reclusão, de 2 (dois) a 8 (oito) anos, e multa. *(“Caput” do artigo acrescido pela Lei nº 13.834, de 4/6/2019)*
+Pena - reclusão, de 2 (dois) a 8 (oito) anos, e multa. (“Caput” do artigo acrescido pela Lei nº 13.834, de 4/6/2019)
 
-**§ 1º** A pena é aumentada de sexta parte, se o agente se serve do anonimato ou de nome suposto. *(Parágrafo acrescido pela Lei nº 13.834, de 4/6/2019)*
+§ 1º A pena é aumentada de sexta parte, se o agente se serve do anonimato ou de nome suposto. (Parágrafo acrescido pela Lei nº 13.834, de 4/6/2019)
 
-**§ 2º** A pena é diminuída de metade, se a imputação é de prática de contravenção. *(Parágrafo acrescido pela Lei nº 13.834, de 4/6/2019)*
+§ 2º A pena é diminuída de metade, se a imputação é de prática de contravenção. (Parágrafo acrescido pela Lei nº 13.834, de 4/6/2019)
 
-**§ 3º** Incorrerá nas mesmas penas deste artigo quem, comprovadamente ciente da inocência do denunciado e com finalidade eleitoral, divulga ou propala, por qualquer meio ou forma, o ato ou fato que lhe foi falsamente atribuído. *(Parágrafo vetado pelo Presidente da República na Lei nº 13.834, de 4/6/2019, mantido pelo Congresso Nacional e publicado no DOU de 11/11/2019)*
+§ 3º Incorrerá nas mesmas penas deste artigo quem, comprovadamente ciente da inocência do denunciado e com finalidade eleitoral, divulga ou propala, por qualquer meio ou forma, o ato ou fato que lhe foi falsamente atribuído. (Parágrafo vetado pelo Presidente da República na Lei nº 13.834, de 4/6/2019, mantido pelo Congresso Nacional e publicado no DOU de 11/11/2019)
 
 **Art. 326-B.** Assediar, constranger, humilhar, perseguir ou ameaçar, por qualquer meio, candidata a cargo eletivo ou detentora de mandato eletivo, utilizando-se de menosprezo ou discriminação à condição de mulher ou à sua cor, raça ou etnia, com a finalidade de impedir ou de dificultar a sua campanha eleitoral ou o desempenho de seu mandato eletivo.
 
 Pena - reclusão, de 1 (um) a 4 (quatro) anos, e multa.
 
-**Parágrafo único.** Aumenta-se a pena em 1/3 (um terço), se o crime é cometido contra mulher:
+Parágrafo único. Aumenta-se a pena em 1/3 (um terço), se o crime é cometido contra mulher:
 
 I - gestante;
 
 II - maior de 60 (sessenta) anos;
 
-III - com deficiência. *(Artigo acrescido pela Lei nº 14.192, de 4/8/2021)*
+III - com deficiência. (Artigo acrescido pela Lei nº 14.192, de 4/8/2021)
 
-**Art. 327.** As penas cominadas nos arts. 324, 325 e 326 aumentam-se de 1/3 (um terço) até metade, se qualquer dos crimes é cometido: *(“Caput” do artigo com redação dada pela Lei nº 14.192, de 4/8/2021)*
+**Art. 327.** As penas cominadas nos arts. 324, 325 e 326 aumentam-se de 1/3 (um terço) até metade, se qualquer dos crimes é cometido: (“Caput” do artigo com redação dada pela Lei nº 14.192, de 4/8/2021)
 
 I - contra o Presidente da República ou chefe de governo estrangeiro;
 
@@ -2641,13 +2705,13 @@ II - contra funcionário público, em razão de suas funções;
 
 III - na presença de várias pessoas, ou por meio que facilite a divulgação da ofensa.
 
-IV - com menosprezo ou discriminação à condição de mulher ou à sua cor, raça ou etnia; *(Inciso acrescido pela Lei nº 14.192, de 4/8/2021)*
+IV - com menosprezo ou discriminação à condição de mulher ou à sua cor, raça ou etnia; (Inciso acrescido pela Lei nº 14.192, de 4/8/2021)
 
-V - por meio da internet ou de rede social ou com transmissão em tempo real. *(Inciso acrescido pela Lei nº 14.192, de 4/8/2021)*
+V - por meio da internet ou de rede social ou com transmissão em tempo real. (Inciso acrescido pela Lei nº 14.192, de 4/8/2021)
 
-**Art.328.** *(Revogado pela Lei nº 9.504, de 30/9/1997)*
+Art.328. (Revogado pela Lei nº 9.504, de 30/9/1997 )
 
-**Art.329.** *(Revogado pela Lei nº 9.504, de 30/9/1997)*
+Art.329. (Revogado pela Lei nº 9.504, de 30/9/1997 )
 
 **Art. 330.** Nos casos dos artigos 328 e 329, se o agente repara o dano antes da sentença final, o juiz pode reduzir a pena.
 
@@ -2659,7 +2723,7 @@ Pena - detenção até seis meses ou pagamento de 90 a 120 dias-multa.
 
 Pena - detenção até seis meses e pagamento de 30 a 60 dias-multa.
 
-**Art. 333.** *(Revogado pela Lei nº 9.504, de 30/9/1997)*
+**Art. 333.** (Revogado pela Lei nº 9.504, de 30/9/1997 )
 
 **Art. 334.** Utilizar organização comercial de vendas, distribuição de mercadorias, prêmios e sorteios para propaganda ou aliciamento de eleitores:
 
@@ -2669,17 +2733,17 @@ Pena - detenção de seis meses a um ano e cassação do registro se o responsá
 
 Pena - detenção de três a seis meses e pagamento de 30 a 60 dias-multa.
 
-**Parágrafo único.** Além da pena cominada, a infração ao presente artigo importa na apreensão e perda do material utilizado na propaganda.
+Parágrafo único. Além da pena cominada, a infração ao presente artigo importa na apreensão e perda do material utilizado na propaganda.
 
-**Art. 336.** Na sentença que julgar ação penal pela infração de qualquer dos artigos 322, 323, 324, 325, 326, 328, 329, 331, 332, 333, 334 e 335, deve o juiz verificar, de acordo com o seu livre convencimento, se o diretório local do partido, por qualquer dos seus membros, concorreu para a prática de delito, ou dela se beneficiou conscientemente. *(Arts. 322, 328, 329 e 333 revogados pela Lei nº 9.504, de 30/9/1997)*
+**Art. 336.** Na sentença que julgar ação penal pela infração de qualquer dos artigos 322, 323, 324, 325, 326, 328, 329, 331, 332, 333, 334 e 335, deve o juiz verificar, de acordo com o seu livre convencimento, se o diretório local do partido, por qualquer dos seus membros, concorreu para a prática de delito, ou dela se beneficiou conscientemente. (Arts. 322, 328, 329 e 333 revogados pela Lei nº 9.504, de 30/9/1997)
 
-**Parágrafo único.** Nesse caso, imporá o juiz ao diretório responsável pena de suspensão de sua atividade eleitoral, por prazo de 6 (seis) a 12 (doze) meses, agravada até o dobro nas reincidências.
+Parágrafo único. Nesse caso, imporá o juiz ao diretório responsável pena de suspensão de sua atividade eleitoral, por prazo de 6 (seis) a 12 (doze) meses, agravada até o dobro nas reincidências.
 
 **Art. 337.** Participar, o estrangeiro ou brasileiro que não estiver no gozo dos seus direitos políticos, de atividades partidárias, inclusive comícios e atos de propaganda em recintos fechados ou abertos:
 
 Pena - detenção até seis meses e pagamento de 90 a 120 dias-multa.
 
-**Parágrafo único.** Na mesma pena incorrerá o responsável pelas emissoras de rádio ou televisão que autorizar transmissões de que participem os mencionados neste artigo, bem como o diretor de jornal que lhes divulgar os pronunciamentos.
+Parágrafo único. Na mesma pena incorrerá o responsável pelas emissoras de rádio ou televisão que autorizar transmissões de que participem os mencionados neste artigo, bem como o diretor de jornal que lhes divulgar os pronunciamentos.
 
 **Art. 338.** Não assegurar o funcionário postal a prioridade prevista no art. 239:
 
@@ -2689,13 +2753,13 @@ Pena - pagamento de 30 a 60 dias-multa.
 
 Pena - reclusão de 2 (dois) a 6 (seis) anos e pagamento de 5 (cinco) a 15 (quinze) dias-multa.
 
-**Parágrafo único.** Se o agente é membro ou funcionário da Justiça Eleitoral e comete o crime prevalecendo-se do cargo, a pena é agravada.
+Parágrafo único. Se o agente é membro ou funcionário da Justiça Eleitoral e comete o crime prevalecendo-se do cargo, a pena é agravada.
 
 **Art. 340.** Fabricar, mandar fabricar, adquirir, fornecer, ainda que gratuitamente, subtrair ou guardar urnas, objetos, mapas, cédulas ou papéis de uso exclusivo da Justiça Eleitoral:
 
 Pena - reclusão até 3 (três) anos de pagamento de 3 (três) a 15 (quinze) dias-multa.
 
-**Parágrafo único.** Se o agente é membro ou funcionário da Justiça Eleitoral e comete o crime prevalecendo-se do cargo, a pena é agravada.
+Parágrafo único. Se o agente é membro ou funcionário da Justiça Eleitoral e comete o crime prevalecendo-se do cargo, a pena é agravada.
 
 **Art. 341.** Retardar a publicação ou não publicar, o diretor ou qualquer outro funcionário de órgão oficial federal, estadual, ou municipal, as decisões, citações ou intimações da Justiça Eleitoral:
 
@@ -2715,13 +2779,13 @@ Pena - detenção até dois meses ou pagamento de 90 a 120 dias-multa.
 
 **Art. 345.** Não cumprir a autoridade judiciária, ou qualquer funcionário dos órgãos da Justiça Eleitoral, nos prazos legais, os deveres impostos por este Código, se a infração não estiver sujeita a outra penalidade:
 
-Pena - pagamento de trinta a noventa dias-multa. *(Artigo com redação dada pela Lei nº 4.961, de 4/5/1966)*
+Pena - pagamento de trinta a noventa dias-multa. (Artigo com redação dada pela Lei nº 4.961, de 4/5/1966)
 
 **Art. 346.** Violar o disposto no art. 377:
 
 Pena - detenção até 6 (seis) meses e pagamento de 30 (trinta) a 60 (sessenta) dias-multa.
 
-**Parágrafo único.** Incorrerão na pena, além da autoridade responsável, os servidores que prestarem serviços e os candidatos, membros ou diretores de partido que derem causa à infração.
+Parágrafo único. Incorrerão na pena, além da autoridade responsável, os servidores que prestarem serviços e os candidatos, membros ou diretores de partido que derem causa à infração.
 
 **Art. 347.** Recusar alguém cumprimento ou obediência a diligências, ordens ou instruções da Justiça Eleitoral ou opor embaraços à sua execução:
 
@@ -2731,9 +2795,9 @@ Pena - detenção de 3 (três) meses a 1 (um) ano e pagamento de 10 (dez) a 20 (
 
 Pena - reclusão de dois a seis anos e pagamento de 15 a 30 dias-multa.
 
-**§1º** Se o agente é funcionário público e comete o crime prevalecendo-se do cargo, a pena é agravada.
+§1º Se o agente é funcionário público e comete o crime prevalecendo-se do cargo, a pena é agravada.
 
-**§2º** Para os efeitos penais, equipara-se a documento público o emanado de entidade paraestatal inclusive Fundação do Estado.
+§2º Para os efeitos penais, equipara-se a documento público o emanado de entidade paraestatal inclusive Fundação do Estado.
 
 **Art. 349.** Falsificar, no todo ou em parte, documento particular, ou alterar documento particular verdadeiro, para fins eleitorais:
 
@@ -2743,7 +2807,7 @@ Pena - reclusão até 5 (cinco) anos e pagamento de 3 (três) a 10 (dez) dias-mu
 
 Pena - reclusão até cinco anos e pagamento de 5 a 15 dias-multa, se o documento é público, e reclusão até três anos e pagamento de 3 a 10 dias-multa se o documento é particular.
 
-**Parágrafo único.** Se o agente da falsidade documental é funcionário público e comete o crime prevalecendo-se do cargo, ou se a falsificação ou alteração é de assentamentos de registro civil, a pena é agravada.
+Parágrafo único. Se o agente da falsidade documental é funcionário público e comete o crime prevalecendo-se do cargo, ou se a falsificação ou alteração é de assentamentos de registro civil, a pena é agravada.
 
 **Art. 351.** Equipara-se a documento (348, 349 e 350), para os efeitos penais, a fotografia, o filme cinematográfico, o disco fonográfico ou fita de ditafone a que se incorpore declaração ou imagem destinada a prova de fato juridicamente relevante.
 
@@ -2761,29 +2825,31 @@ Pena - a cominada à falsificação ou à alteração.
 
 **Art. 354-A.** Apropriar-se o candidato, o administrador financeiro da campanha, ou quem de fato exerça essa função, de bens, recursos ou valores destinados ao financiamento eleitoral, em proveito próprio ou alheio:
 
-Pena - reclusão, de dois a seis anos, e multa. *(Artigo acrescido pela Lei nº 13.488, de 6/10/2017)*
+Pena - reclusão, de dois a seis anos, e multa. (Artigo acrescido pela Lei nº 13.488, de 6/10/2017)
 
-#### CAPÍTULO III — DO PROCESSO DAS INFRAÇÕES
+#### CAPÍTULO III
+
+### DO PROCESSO DAS INFRAÇÕES
 
 **Art. 355.** As infrações penais definidas neste Código são de ação pública.
 
 **Art. 356.** Todo cidadão que tiver conhecimento de infração penal deste Código deverá comunicá-la ao juiz eleitoral da zona onde a mesma se verificou.
 
-**§1º** Quando a comunicação for verbal, mandará a autoridade judicial reduzi-la a termo, assinado pelo apresentante e por duas testemunhas, e a remeterá ao órgão do Ministério Público local, que procederá na forma deste Código.
+§1º Quando a comunicação for verbal, mandará a autoridade judicial reduzi-la a termo, assinado pelo apresentante e por duas testemunhas, e a remeterá ao órgão do Ministério Público local, que procederá na forma deste Código.
 
-**§2º** Se o Ministério Público julgar necessários maiores esclarecimentos e documentos complementares ou outros elementos de convicção, deverá requisitá-los diretamente de quaisquer autoridades ou funcionários que possam fornecê-los.
+§2º Se o Ministério Público julgar necessários maiores esclarecimentos e documentos complementares ou outros elementos de convicção, deverá requisitá-los diretamente de quaisquer autoridades ou funcionários que possam fornecê-los.
 
 **Art. 357.** Verificada a infração penal, o Ministério Público oferecerá a denúncia dentro do prazo de 10 (dez) dias.
 
-**§1º** Se o órgão do Ministério Público, ao invés de apresentar a denúncia, requerer o arquivamento da comunicação, o juiz, no caso de considerar improcedentes as razões invocadas, fará remessa da comunicação ao Procurador Regional, e este oferecerá a denúncia, designará outro Promotor para oferecê-la, ou insistirá no pedido de arquivamento, ao qual só então estará o juiz obrigado a atender.
+§1º Se o órgão do Ministério Público, ao invés de apresentar a denúncia, requerer o arquivamento da comunicação, o juiz, no caso de considerar improcedentes as razões invocadas, fará remessa da comunicação ao Procurador Regional, e este oferecerá a denúncia, designará outro Promotor para oferecê-la, ou insistirá no pedido de arquivamento, ao qual só então estará o juiz obrigado a atender.
 
-**§2º** A denúncia conterá a exposição do fato criminoso com todas as suas circunstâncias, a qualificação do acusado ou esclarecimentos pelos quais se possa identificá-lo, a classificação do crime e, quando necessário, o rol das testemunhas.
+§2º A denúncia conterá a exposição do fato criminoso com todas as suas circunstâncias, a qualificação do acusado ou esclarecimentos pelos quais se possa identificá-lo, a classificação do crime e, quando necessário, o rol das testemunhas.
 
-**§3º** Se o órgão do Ministério Público não oferecer a denúncia no prazo legal representará contra ele a autoridade judiciária, sem prejuízo da apuração da responsabilidade penal.
+§3º Se o órgão do Ministério Público não oferecer a denúncia no prazo legal representará contra ele a autoridade judiciária, sem prejuízo da apuração da responsabilidade penal.
 
-**§4º** Ocorrendo a hipótese prevista no parágrafo anterior o juiz solicitará ao Procurador Regional a designação de outro promotor, que, no mesmo prazo, oferecerá a denúncia.
+§4º Ocorrendo a hipótese prevista no parágrafo anterior o juiz solicitará ao Procurador Regional a designação de outro promotor, que, no mesmo prazo, oferecerá a denúncia.
 
-**§5º** Qualquer eleitor poderá provocar a representação contra o órgão do Ministério Público se o juiz, no prazo de 10 (dez) dias, não agir de ofício.
+§5º Qualquer eleitor poderá provocar a representação contra o órgão do Ministério Público se o juiz, no prazo de 10 (dez) dias, não agir de ofício.
 
 **Art. 358.** A denúncia será rejeitada quando:
 
@@ -2793,11 +2859,11 @@ II - já estiver extinta a punibilidade, pela prescrição ou outra causa;
 
 III - for manifesta a ilegitimidade da parte ou faltar condição exigida pela lei para o exercício da ação penal.
 
-**Parágrafo único.** Nos casos do nº III, a rejeição da denúncia não obstará ao exercício da ação penal, desde que promovida por parte legítima ou satisfeita a condição.
+Parágrafo único. Nos casos do nº III, a rejeição da denúncia não obstará ao exercício da ação penal, desde que promovida por parte legítima ou satisfeita a condição.
 
 **Art. 359.** Recebida a denúncia, o juiz designará dia e hora para o depoimento pessoal do acusado, ordenando a citação deste e a notificação do Ministério Público.
 
-**Parágrafo único.** O réu ou seu defensor terá o prazo de 10 (dez) dias para oferecer alegações escritas e arrolar testemunhas. *(Artigo com redação dada pela Lei nº 10.732, de 5/9/2003, publicada no DO de 8/9/2003, em vigor 45 dias após a publicação)*
+Parágrafo único. O réu ou seu defensor terá o prazo de 10 (dez) dias para oferecer alegações escritas e arrolar testemunhas. (Artigo com redação dada pela Lei nº 10.732, de 5/9/2003, publicada no DO de 8/9/2003, em vigor 45 dias após a publicação)
 
 **Art. 360.** Ouvidas as testemunhas da acusação e da defesa e praticadas as diligências requeridas pelo Ministério Público e deferidas ou ordenadas pelo juiz, abrir-se-á o prazo de 5 (cinco) dias a cada uma das partes - acusação e defesa - para alegações finais.
 
@@ -2807,11 +2873,11 @@ III - for manifesta a ilegitimidade da parte ou faltar condição exigida pela l
 
 **Art. 363.** Se a decisão do Tribunal Regional for condenatória, baixarão imediatamente os autos à instância inferior para a execução da sentença, que será feita no prazo de 5 (cinco) dias, contados da data da vista ao Ministério Público.
 
-**Parágrafo único.** Se o órgão do Ministério Público deixar de promover a execução da sentença serão aplicadas as normas constantes dos parágrafos 3º, 4º e 5º do art. 357.
+Parágrafo único. Se o órgão do Ministério Público deixar de promover a execução da sentença serão aplicadas as normas constantes dos parágrafos 3º, 4º e 5º do art. 357.
 
 **Art. 364.** No processo e julgamento dos crimes eleitorais e dos comuns que lhes forem conexos, assim como nos recursos e na execução, que lhes digam respeito, aplicar-se-á, como lei subsidiária ou supletiva, o Código de Processo Penal.
 
-### TÍTULO V — DISPOSIÇÕES GERAIS E TRANSITÓRIAS
+### DISPOSIÇÕES GERAIS E TRANSITÓRIAS
 
 **Art. 365.** O serviço eleitoral prefere a qualquer outro, é obrigatório e não interrompe o interstício de promoção dos funcionários para ele requisitados.
 
@@ -2839,19 +2905,19 @@ IX - os juízes eleitorais comunicarão aos Tribunais Regionais, trimestralmente
 
 X - idêntica comunicação será feita pelos Tribunais Regionais ao Tribunal Superior.
 
-**§1º** As multas aplicadas pelos Tribunais Eleitorais serão consideradas líquidas e certas, para efeito de cobrança mediante executivo fiscal desde que inscritas em livro próprio na Secretaria do Tribunal competente. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§1º As multas aplicadas pelos Tribunais Eleitorais serão consideradas líquidas e certas, para efeito de cobrança mediante executivo fiscal desde que inscritas em livro próprio na Secretaria do Tribunal competente. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§2º** A multa pode ser aumentada até dez vezes, se o juiz, ou Tribunal considerar que, em virtude da situação econômica do infrator, é ineficaz, embora aplicada no máximo. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§2º A multa pode ser aumentada até dez vezes, se o juiz, ou Tribunal considerar que, em virtude da situação econômica do infrator, é ineficaz, embora aplicada no máximo. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§3º** O alistando, ou o eleitor, que comprovar devidamente o seu estado de pobreza, ficará isento do pagamento de multa. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§3º O alistando, ou o eleitor, que comprovar devidamente o seu estado de pobreza, ficará isento do pagamento de multa. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§4º** Fica autorizado o Tesouro Nacional a emitir selos, sob a designação "Selo Eleitoral" destinados ao pagamento de emolumentos, custas, despesas e multas, tanto as administrativas como as penais, devidas à Justiça Eleitoral. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§4º Fica autorizado o Tesouro Nacional a emitir selos, sob a designação "Selo Eleitoral" destinados ao pagamento de emolumentos, custas, despesas e multas, tanto as administrativas como as penais, devidas à Justiça Eleitoral. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)
 
-**§5º** Os pagamentos de multas poderão ser feitos através de guias de recolhimento, se a Justiça Eleitoral não dispuser de selo eleitoral em quantidade suficiente para atender aos interessados. *(Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966)*
+§5º Os pagamentos de multas poderão ser feitos através de guias de recolhimento, se a Justiça Eleitoral não dispuser de selo eleitoral em quantidade suficiente para atender aos interessados. (Parágrafo acrescido pela Lei nº 4.961, de 4/5/1966 )
 
 **Art. 368.** Os atos requeridos ou propostos em tempo oportuno, mesmo que não sejam apreciados no prazo legal, não prejudicarão aos interessados.
 
-**Art. 368-A.** A prova testemunhal singular, quando exclusiva, não será aceita nos processos que possam levar à perda do mandato. *(Artigo acrescido pela Lei nº 13.165, de 29/9/2015)*
+**Art. 368-A.** A prova testemunhal singular, quando exclusiva, não será aceita nos processos que possam levar à perda do mandato. (Artigo acrescido pela Lei nº 13.165, de 29/9/2015)
 
 **Art. 369.** O Governo da União fornecerá, para ser distribuído por intermédio dos Tribunais Regionais, todo o material destinado ao alistamento eleitoral e às eleições.
 
@@ -2863,37 +2929,37 @@ X - idêntica comunicação será feita pelos Tribunais Regionais ao Tribunal Su
 
 **Art. 373.** São isentos de selo os requerimentos e todos os papéis destinados a fins eleitorais e é gratuito o reconhecimento de firma pelos tabeliães, para os mesmos fins.
 
-**Parágrafo único.** Nos processos-crimes e nos executivos fiscais referentes à cobrança de multas serão pagas custas nos termos do Regimento de Custas de cada Estado, sendo as devidas à União pagas através de selos federais inutilizados nos autos.
+Parágrafo único. Nos processos-crimes e nos executivos fiscais referentes à cobrança de multas serão pagas custas nos termos do Regimento de Custas de cada Estado, sendo as devidas à União pagas através de selos federais inutilizados nos autos.
 
-**Art. 374.** Os membros dos tribunais eleitorais, os juízes eleitorais e os servidores públicos requisitados para os órgãos da Justiça Eleitoral que, em virtude de suas funções nos mencionados órgãos, não tiverem as férias que lhes couberem, poderão gozá-las no ano seguinte, acumuladas ou não. *(“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966.)*
+**Art. 374.** Os membros dos tribunais eleitorais, os juízes eleitorais e os servidores públicos requisitados para os órgãos da Justiça Eleitoral que, em virtude de suas funções nos mencionados órgãos, não tiverem as férias que lhes couberem, poderão gozá-las no ano seguinte, acumuladas ou não. (“Caput” do artigo com redação dada pela Lei nº 4.961, de 4/5/1966.)
 
-**Parágrafo único.** *(Revogado pela Lei nº 4.961, de 4/5/1966).*
+Parágrafo único. (Revogado pela Lei nº 4.961, de 4/5/1966 ).
 
 **Art. 375.** Nas áreas contestadas, enquanto não forem fixados definitivamente os limites interestaduais, far-se-ão as eleições sob a jurisdição do Tribunal Regional da circunscrição eleitoral em que, do ponto de vista da administração judiciária estadual, estejam elas incluídas.
 
 **Art. 376.** A proposta orçamentária da Justiça Eleitoral será anualmente elaborada pelo Tribunal Superior, de acordo com as propostas parciais que lhe forem remetidas pelos Tribunais Regionais, e dentro das normas legais vigentes.
 
-**Parágrafo único.** Os pedidos de créditos adicionais que se fizerem necessários ao bom andamento dos serviços eleitorais, durante o exercício, serão encaminhados em relação trimestral à Câmara dos Deputados, por intermédio do Tribunal Superior.
+Parágrafo único. Os pedidos de créditos adicionais que se fizerem necessários ao bom andamento dos serviços eleitorais, durante o exercício, serão encaminhados em relação trimestral à Câmara dos Deputados, por intermédio do Tribunal Superior.
 
 **Art. 377.** O serviço de qualquer repartição, federal, estadual, municipal, autarquia, fundação do Estado, sociedade de economia mista, entidade mantida ou subvencionada pelo poder público, ou que realiza contrato com este, inclusive o respectivo prédio e suas dependências não poderá ser utilizado para beneficiar partido ou organização de caráter político.
 
-**Parágrafo único.** O disposto neste artigo será tornado efetivo, a qualquer tempo, pelo órgão competente da Justiça Eleitoral, conforme o âmbito nacional, regional ou municipal do órgão infrator, mediante representação fundamentada de autoridade pública, representante partidário, ou de qualquer eleitor.
+Parágrafo único. O disposto neste artigo será tornado efetivo, a qualquer tempo, pelo órgão competente da Justiça Eleitoral, conforme o âmbito nacional, regional ou municipal do órgão infrator, mediante representação fundamentada de autoridade pública, representante partidário, ou de qualquer eleitor.
 
 **Art. 378.** O Tribunal Superior organizará, mediante proposta do Corregedor Geral, os serviços da Corregedoria, designando para desempenhá-los funcionários efetivos do seu quadro e transformando o cargo de um deles, diplomado em direito e de conduta moral irrepreensível, no de Escrivão da Corregedoria, símbolo PJ-l, a cuja nomeação serão inerentes, assim na Secretaria como nas diligências, as atribuições de titular de ofício de Justiça.
 
 **Art. 379.** Serão considerados de relevância os serviços prestados pelos mesários e componentes das Juntas Apuradoras.
 
-**§1º** Tratando-se de servidor público, em caso de promoção, a prova de haver prestado tais serviços será levada em consideração para efeito de desempate, depois de observados os critérios já previstos em leis ou regulamentos.
+§1º Tratando-se de servidor público, em caso de promoção, a prova de haver prestado tais serviços será levada em consideração para efeito de desempate, depois de observados os critérios já previstos em leis ou regulamentos.
 
-**§2º** Persistindo o empate de que trata o parágrafo anterior, terá preferência, para a promoção, o funcionário que tenha servido maior número de vezes.
+§2º Persistindo o empate de que trata o parágrafo anterior, terá preferência, para a promoção, o funcionário que tenha servido maior número de vezes.
 
-**§3º** O disposto neste artigo não se aplica aos membros ou servidores da Justiça Eleitoral.
+§3º O disposto neste artigo não se aplica aos membros ou servidores da Justiça Eleitoral.
 
 **Art. 380.** Será feriado nacional o dia em que se realizarem eleições de data fixada pela Constituição Federal; nos demais casos, serão as eleições marcadas para um domingo ou dia já considerado feriado por lei anterior.
 
 **Art. 381.** Esta Lei não altera a situação das candidaturas a Presidente ou Vice-Presidente da República e a Governador ou Vice-Governador de Estado, desde que resultantes de convenções partidárias regulares e já registradas ou em processo de registro, salvo a ocorrência de outros motivos de ordem legal ou constitucional que as prejudiquem.
 
-**Parágrafo único.** Se o registro requerido se referir isoladamente a Presidente ou a Vice-Presidente da República e a Governador ou Vice-Governador de Estado, a validade respectiva dependerá de complementação da chapa conjunta na forma e nos prazos previstos neste Código (Constituição, art. 81, com a redação dada pela Emenda Constitucional nº 9).
+Parágrafo único. Se o registro requerido se referir isoladamente a Presidente ou a Vice-Presidente da República e a Governador ou Vice-Governador de Estado, a validade respectiva dependerá de complementação da chapa conjunta na forma e nos prazos previstos neste Código (Constituição, art. 81, com a redação dada pela Emenda Constitucional nº 9).
 
 **Art. 382.** Este Código entrará em vigor 30 dias após a sua publicação.
 
@@ -2901,6 +2967,6 @@ X - idêntica comunicação será feita pelos Tribunais Regionais ao Tribunal Su
 
 Brasília, 15 de julho de 1965; 144º da Independência e 77º da República.
 
-H. CASTELLO BRANCO
+### H. CASTELLO BRANCO
 
-MILTON SOARES CAMPOS
+### MILTON SOARES CAMPOS

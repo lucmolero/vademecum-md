@@ -12,15 +12,15 @@ publicos: ["concursos", "pratica"]
 sensibilidade_atualizacao: "media"
 data_assinatura: "2014-08-08"
 ementa: "Dispõe sobre o Estatuto Geral das Guardas Municipais."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2014-08-08;13022"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "9a54b384523ff622955abb446b4770194ec7f92ebb7b6155403b447f018a32a5"
+sha256_origem: "978ac881506e3a55db6882f676c73266045ad8bc60fdde1cba16f57c04651dda"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,24 +28,26 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "978ac881506e3a55db6882f676c73266045ad8bc60fdde1cba16f57c04651dda"
+sha256_corpo: "dadc3cc5c72d63f7dc7c3e7a11d216eed1de957d181d60fbd96a76af9f1dbdc9"
 ---
 # Lei nº 13.022 de 08/08/2014
 
-LEI Nº 13.022, DE 8 DE AGOSTO DE 2014
-
-***Dispõe sobre o Estatuto Geral das Guardas Municipais.***
-
-**A PRESIDENTA DA REPÚBLICA**
+### A PRESIDENTA DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-#### CAPÍTULO I — DISPOSIÇÕES PRELIMINARES
+#### CAPÍTULO I
 
-**Art. 1°** Esta Lei institui normas gerais para as guardas municipais, disciplinando o § 8º do art. 144 da Constituição Federal.
+### DISPOSIÇÕES PRELIMINARES
+
+**Art. 1**° Esta Lei institui normas gerais para as guardas municipais, disciplinando o § 8º do art. 144 da Constituição Federal.
 
 **Art. 2º** Incumbe às guardas municipais, instituições de caráter civil, uniformizadas e armadas conforme previsto em lei, a função de proteção municipal preventiva, ressalvadas as competências da União, dos Estados e do Distrito Federal.
 
-#### CAPÍTULO II — DOS PRINCÍPIOS
+#### CAPÍTULO II
+
+### DOS PRINCÍPIOS
 
 **Art. 3º** São princípios mínimos de atuação das guardas municipais:
 
@@ -59,11 +61,13 @@ IV - compromisso com a evolução social da comunidade; e
 
 V - uso progressivo da força.
 
-#### CAPÍTULO III — DAS COMPETÉNCIAS
+#### CAPÍTULO III
+
+### DAS COMPETÉNCIAS
 
 **Art. 4º** É competência geral das guardas municipais a proteção de bens, serviços, logradouros públicos municipais e instalações do Município.
 
-**Parágrafo único.** Os bens mencionados no **caput** abrangem os de uso comum, os de uso especial e os dominiais.
+Parágrafo único. Os bens mencionados no caput abrangem os de uso comum, os de uso especial e os dominiais.
 
 **Art. 5º** São competências específicas das guardas municipais, respeitadas as competências dos órgãos federais e estaduais:
 
@@ -103,13 +107,15 @@ XVII - auxiliar na segurança de grandes eventos e na proteção de autoridades 
 
 XVIII - atuar mediante ações preventivas na segurança escolar, zelando pelo entorno e participando de ações educativas com o corpo discente e docente das unidades de ensino municipal, de forma a colaborar com a implantação da cultura de paz na comunidade local.
 
-**Parágrafo único.** No exercício de suas competências, a guarda municipal poderá colaborar ou atuar conjuntamente com órgãos de segurança pública da União, dos Estados e do Distrito Federal ou de congêneres de Municípios vizinhos e, nas hipóteses previstas nos incisos XIII e XIV deste artigo, diante do comparecimento de órgão descrito nos incisos do **caput** do art. 144 da Constituição Federal, deverá a guarda municipal prestar todo o apoio à continuidade do atendimento.
+Parágrafo único. No exercício de suas competências, a guarda municipal poderá colaborar ou atuar conjuntamente com órgãos de segurança pública da União, dos Estados e do Distrito Federal ou de congêneres de Municípios vizinhos e, nas hipóteses previstas nos incisos XIII e XIV deste artigo, diante do comparecimento de órgão descrito nos incisos do caput do art. 144 da Constituição Federal, deverá a guarda municipal prestar todo o apoio à continuidade do atendimento.
 
-#### CAPÍTULO IV — DA CRIAÇÃO
+#### CAPÍTULO IV
+
+### DA CRIAÇÃO
 
 **Art. 6º** O Município pode criar, por lei, sua guarda municipal.
 
-**Parágrafo único.** A guarda municipal é subordinada ao chefe do Poder Executivo municipal.
+Parágrafo único. A guarda municipal é subordinada ao chefe do Poder Executivo municipal.
 
 **Art. 7º** As guardas municipais não poderão ter efetivo superior a:
 
@@ -119,13 +125,15 @@ II - 0,3% (três décimos por cento) da população, em Municípios com mais de 
 
 III - 0,2% (dois décimos por cento) da população, em Municípios com mais de 500.000 (quinhentos mil) habitantes, desde que o efetivo não seja inferior ao disposto no inciso II.
 
-**Parágrafo único.** Se houver redução da população referida em censo ou estimativa oficial da Fundação Instituto Brasileiro de Geografia e Estatística (IBGE), é garantida a preservação do efetivo existente, o qual deverá ser ajustado à variação populacional, nos termos de lei municipal.
+Parágrafo único. Se houver redução da população referida em censo ou estimativa oficial da Fundação Instituto Brasileiro de Geografia e Estatística (IBGE), é garantida a preservação do efetivo existente, o qual deverá ser ajustado à variação populacional, nos termos de lei municipal.
 
 **Art. 8º** Municípios limítrofes podem, mediante consórcio público, utilizar, reciprocamente, os serviços da guarda municipal de maneira compartilhada.
 
-**Art. 9°** A guarda municipal é formada por servidores públicos integrantes de carreira única e plano de cargos e salários, conforme disposto em lei municipal.
+**Art. 9**° A guarda municipal é formada por servidores públicos integrantes de carreira única e plano de cargos e salários, conforme disposto em lei municipal.
 
-#### CAPÍTULO V — DAS EXIGÊNCIAS PARA INVESTIDURA
+#### CAPÍTULO V
+
+### DAS EXIGÊNCIAS PARA INVESTIDURA
 
 **Art. 10.** São requisitos básicos para investidura em cargo público na guarda municipal:
 
@@ -143,23 +151,27 @@ VI - aptidão física, mental e psicológica; e
 
 VII - idoneidade moral comprovada por investigação social e certidões expedidas perante o Poder Judiciário estadual, federal e distrital.
 
-**Parágrafo único.** Outros requisitos poderão ser estabelecidos em lei municipal.
+Parágrafo único. Outros requisitos poderão ser estabelecidos em lei municipal.
 
-#### CAPÍTULO VI — DA CAPACITAÇÃO
+#### CAPÍTULO VI
+
+### DA CAPACITAÇÃO
 
 **Art. 11.** O exercício das atribuições dos cargos da guarda municipal requer capacitação específica, com matriz curricular compatível com suas atividades.
 
-**Parágrafo único.** Para fins do disposto no **caput**, poderá ser adaptada a matriz curricular nacional para formação em segurança pública, elaborada pela Secretaria Nacional de Segurança Pública (Senasp) do Ministério da Justiça.
+Parágrafo único. Para fins do disposto no caput , poderá ser adaptada a matriz curricular nacional para formação em segurança pública, elaborada pela Secretaria Nacional de Segurança Pública (Senasp) do Ministério da Justiça.
 
 **Art. 12.** É facultada ao Município a criação de órgão de formação, treinamento e aperfeiçoamento dos integrantes da guarda municipal, tendo como princípios norteadores os mencionados no art. 3°.
 
-**§ 1º** Os Municípios poderão firmar convênios ou consorciarse, visando ao atendimento do disposto no **caput** deste artigo.
+§ 1º Os Municípios poderão firmar convênios ou consorciarse, visando ao atendimento do disposto no caput deste artigo.
 
-**§ 2º** O Estado poderá, mediante convênio com os Municípios interessados, manter órgão de formação e aperfeiçoamento centralizado, em cujo conselho gestor seja assegurada a participação dos Municípios conveniados.
+§ 2º O Estado poderá, mediante convênio com os Municípios interessados, manter órgão de formação e aperfeiçoamento centralizado, em cujo conselho gestor seja assegurada a participação dos Municípios conveniados.
 
-**§ 3º** O órgão referido no § 2° não pode ser o mesmo destinado a formação, treinamento ou aperfeiçoamento de forças militares.
+§ 3º O órgão referido no § 2° não pode ser o mesmo destinado a formação, treinamento ou aperfeiçoamento de forças militares.
 
-#### CAPÍTULO VII — DO CONTROLE
+#### CAPÍTULO VII
+
+### DO CONTROLE
 
 **Art. 13.** O funcionamento das guardas municipais será acompanhado por órgãos próprios, permanentes, autônomos e com atribuições de fiscalização, investigação e auditoria, mediante:
 
@@ -167,53 +179,61 @@ I - controle interno, exercido por corregedoria, naquelas com efetivo superior a
 
 II - controle externo, exercido por ouvidoria, independente em relação à direção da respectiva guarda, qualquer que seja o número de servidores da guarda municipal, para receber, examinar e encaminhar reclamações, sugestões, elogios e denúncias acerca da conduta de seus dirigentes e integrantes e das atividades do órgão, propor soluções, oferecer recomendações e informar os resultados aos interessados, garantindo-lhes orientação, informação e resposta.
 
-**§ 1º** O Poder Executivo municipal poderá criar órgão colegiado para exercer o controle social das atividades de segurança do Município, analisar a alocação e aplicação dos recursos públicos e monitorar os objetivos e metas da política municipal de segurança e, posteriormente, a adequação e eventual necessidade de adaptação das medidas adotadas face aos resultados obtidos.
+§ 1º O Poder Executivo municipal poderá criar órgão colegiado para exercer o controle social das atividades de segurança do Município, analisar a alocação e aplicação dos recursos públicos e monitorar os objetivos e metas da política municipal de segurança e, posteriormente, a adequação e eventual necessidade de adaptação das medidas adotadas face aos resultados obtidos.
 
-**§ 2°** Os corregedores e ouvidores terão mandato cuja perda será decidida pela maioria absoluta da Câmara Municipal, fundada em razão relevante e específica prevista em lei municipal.
+§ 2° Os corregedores e ouvidores terão mandato cuja perda será decidida pela maioria absoluta da Câmara Municipal, fundada em razão relevante e específica prevista em lei municipal.
 
-**Art. 14.** Para efeito do disposto no inciso I do **caput** do art. 13, a guarda municipal terá código de conduta próprio, conforme dispuser lei municipal.
+**Art. 14.** Para efeito do disposto no inciso I do caput do art. 13, a guarda municipal terá código de conduta próprio, conforme dispuser lei municipal.
 
-**Parágrafo único.** As guardas municipais não podem ficar sujeitas a regulamentos disciplinares de natureza militar.
+Parágrafo único. As guardas municipais não podem ficar sujeitas a regulamentos disciplinares de natureza militar.
 
-#### CAPÍTULO VIII — DAS PRERROGATIVAS
+#### CAPÍTULO VIII
+
+### DAS PRERROGATIVAS
 
 **Art. 15.** Os cargos em comissão das guardas municipais deverão ser providos por membros efetivos do quadro de carreira do órgão ou entidade.
 
-**§ 1º** Nos primeiros 4 (quatro) anos de funcionamento, a guarda municipal poderá ser dirigida por profissional estranho a seus quadros, preferencialmente com experiência ou formação na área de segurança ou defesa social, atendido o disposto no **caput**.
+§ 1º Nos primeiros 4 (quatro) anos de funcionamento, a guarda municipal poderá ser dirigida por profissional estranho a seus quadros, preferencialmente com experiência ou formação na área de segurança ou defesa social, atendido o disposto no caput .
 
-**§ 2º** Para ocupação dos cargos em todos os níveis da carreira da guarda municipal, deverá ser observado o percentual mínimo para o sexo feminino, definido em lei municipal.
+§ 2º Para ocupação dos cargos em todos os níveis da carreira da guarda municipal, deverá ser observado o percentual mínimo para o sexo feminino, definido em lei municipal.
 
-**§ 3º** Deverá ser garantida a progressão funcional da carreira em todos os níveis.
+§ 3 º Deverá ser garantida a progressão funcional da carreira em todos os níveis.
 
 **Art. 16.** Aos guardas municipais é autorizado o porte de arma de fogo, conforme previsto em lei.
 
-**Parágrafo único.** Suspende-se o direito ao porte de arma de fogo em razão de restrição médica, decisão judicial ou justificativa da adoção da medida pelo respectivo dirigente.
+Parágrafo único. Suspende-se o direito ao porte de arma de fogo em razão de restrição médica, decisão judicial ou justificativa da adoção da medida pelo respectivo dirigente.
 
 **Art. 17.** A Agência Nacional de Telecomunicações (Anatel) destinará linha telefônica de número 153 e faixa exclusiva de frequência de rádio aos Municípios que possuam guarda municipal.
 
 **Art. 18.** É assegurado ao guarda municipal o recolhimento à cela, isoladamente dos demais presos, quando sujeito à prisão antes de condenação definitiva.
 
-#### CAPÍTULO IX — DAS VEDAÇÕES
+#### CAPÍTULO IX
+
+### DAS VEDAÇÕES
 
 **Art. 19.** A estrutura hierárquica da guarda municipal não pode utilizar denominação idêntica à das forças militares, quanto aos postos e graduações, títulos, uniformes, distintivos e condecorações.
 
-#### CAPÍTULO X — DA REPRESENTATIVIDADE
+#### CAPÍTULO X
+
+### DA REPRESENTATIVIDADE
 
 **Art. 20.** É reconhecida a representatividade das guardas municipais no Conselho Nacional de Segurança Pública, no Conselho Nacional das Guardas Municipais e, no interesse dos Municípios, no Conselho Nacional de Secretários e Gestores Municipais de Segurança Pública.
 
-#### CAPÍTULO XI — DISPOSIÇÕES DIVERSAS E TRANSITÓRIAS
+#### CAPÍTULO XI
+
+### DISPOSIÇÕES DIVERSAS E TRANSITÓRIAS
 
 **Art. 21.** As guardas municipais utilizarão uniforme e equipamentos padronizados, preferencialmente, na cor azul-marinho.
 
 **Art. 22.** Aplica-se esta Lei a todas as guardas municipais existentes na data de sua publicação, a cujas disposições devem adaptar-se no prazo de 2 (dois) anos.
 
-**Parágrafo único.** É assegurada a utilização de outras denominações consagradas pelo uso, como guarda civil, guarda civil municipal, guarda metropolitana e guarda civil metropolitana.
+Parágrafo único. É assegurada a utilização de outras denominações consagradas pelo uso, como guarda civil, guarda civil municipal, guarda metropolitana e guarda civil metropolitana.
 
 **Art. 23.** Esta Lei entra em vigor na data de sua publicação.
 
 Brasília, 8 de agosto de 2014; 193º da Independência e 126º da República.
 
-**DILMA ROUSSEFF**
+### DILMA ROUSSEFF
 
 José Eduardo Cardozo
 

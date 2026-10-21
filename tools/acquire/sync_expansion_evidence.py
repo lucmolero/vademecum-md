@@ -1,7 +1,7 @@
 """Synchronize private acquisition evidence into the public expansion inventory.
 
 Only official-source hashes and acquisition status are published. Raw snapshots
-remain private and candidate texts are never promoted to the curated corpus.
+remain private; explicit promotions remain marked as corpus entries.
 """
 
 from __future__ import annotations
@@ -34,6 +34,9 @@ def enrich(rows: list[dict[str, str]], report: dict[str, object]) -> tuple[list[
     enriched: list[dict[str, str]] = []
     acquired_at = str(report.get("generated_at") or "")[:10]
     for row in rows:
+        if row.get("status_aquisicao") == "promovido_corpus":
+            enriched.append(dict(row))
+            continue
         result = results.get(str(row.get("id")))
         if not result:
             drift.append({"id": row.get("id"), "kind": "missing_collection_result"})

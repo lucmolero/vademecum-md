@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "24bbbabd34c9819275bc40bf5f771c53679fe92e42be34e9abbbdbb743d28b9a"
-alterada_por: ["br-federal-lei_ordinaria-10257-2001", "br-federal-lei_ordinaria-10931-2004", "br-federal-lei_ordinaria-11284-2006", "br-federal-lei_ordinaria-12662-2012", "br-federal-lei_ordinaria-13105-2015", "br-federal-lei_ordinaria-13465-2017", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14119-2021", "br-federal-lei_ordinaria-14382-2022", "br-federal-lei_ordinaria-14711-2023", "br-federal-lei_ordinaria-8069-1990", "br-federal-lei_ordinaria-8245-1991", "br-federal-lei_ordinaria-9096-1995", "br-federal-lei_ordinaria-9503-1997", "br-federal-lei_ordinaria-9514-1997", "br-federal-lei_ordinaria-9807-1999"]
+alterada_por: ["br-federal-lei_ordinaria-10257-2001", "br-federal-lei_ordinaria-10931-2004", "br-federal-lei_ordinaria-11284-2006", "br-federal-lei_ordinaria-12662-2012", "br-federal-lei_ordinaria-13105-2015", "br-federal-lei_ordinaria-13465-2017", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14119-2021", "br-federal-lei_ordinaria-14382-2022", "br-federal-lei_ordinaria-14620-2023", "br-federal-lei_ordinaria-14711-2023", "br-federal-lei_ordinaria-8069-1990", "br-federal-lei_ordinaria-8245-1991", "br-federal-lei_ordinaria-9096-1995", "br-federal-lei_ordinaria-9503-1997", "br-federal-lei_ordinaria-9514-1997", "br-federal-lei_ordinaria-9807-1999"]
 revogada_por: ["br-federal-lei_ordinaria-13465-2017", "br-federal-lei_ordinaria-14382-2022", "br-federal-lei_ordinaria-9514-1997"]
 regulamentada_por: []
 retificada_por: []

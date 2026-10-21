@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "f03aed1e7e15d5d7570922abc61fe58a87316e716f947e052fa6f00659dcabb4"
-alterada_por: []
+alterada_por: ["br-federal-lei_ordinaria-14195-2021"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

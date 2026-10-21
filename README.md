@@ -6,11 +6,13 @@ O produto principal é um diploma por arquivo em `bases/curated/legislacao/feder
 
 ## Estado do corpus
 
-- 360 documentos federais materializados;
+- 375 documentos federais materializados;
 - texto integral preservado em Markdown;
 - fonte oficial, data de corte e hash em cada documento;
-- 246 documentos consolidados por fonte oficial;
-- 109 documentos marcados como `requer_reconciliacao`;
+- 372 documentos consolidados por fonte oficial e 3 por reconciliação;
+- 33/33 documentos P0 consolidados;
+- 1.841 relações normativas materializadas;
+- 2.177 ocorrências de relações ainda não materializadas, sendo 2.088 destinadas ao histórico e 89 mantidas no grafo sem expansão automática do corpus;
 - relações normativas geradas em `bases/derived/relacoes/`;
 - RAG deliberadamente adiado até a estabilização da release 1.0.
 
@@ -46,8 +48,8 @@ python tools/check_markdown.py
 python tools/build_public_indexes.py --apply
 ```
 
-Os artefatos técnicos de aquisição e transformação ficam em `.private/` e `bases/raw/`, ambos ignorados pelo Git. O repositório público contém somente a proveniência oficial necessária para auditar o corpus.
+Os artefatos técnicos de aquisição e transformação ficam em uma área privada ignorada pelo Git. O repositório público contém somente a proveniência oficial necessária para auditar o corpus. A proveniência bruta e os logs completos devem ser sincronizados para um repositório privado separado.
 
 ## Publicação
 
-A publicação deve ocorrer apenas após os gates locais e do workflow passarem. O workflow não promove documentos sem fonte oficial, hash, texto integral ou consolidação verificável. Alterações ambíguas permanecem pendentes; não são convertidas em uma redação presumida.
+A publicação deve ocorrer apenas após os gates locais e do workflow passarem. O fluxo de atualização gera propostas por Pull Request e não escreve diretamente na `main`. O workflow não promove documentos sem fonte oficial, hash, texto integral, análise jurídica autônoma e consolidação verificável. Alterações ambíguas recebem disposição segura no histórico ou no grafo; nunca são convertidas em uma redação presumida.

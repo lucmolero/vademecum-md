@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2018-04-30"
 ementa: "Isenta os candidatos que especifica do pagamento de taxa de inscrição em concursos para provimento de cargo efetivo ou emprego permanente em órgãos ou entidades da administração pública direta e indireta da União."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2018-04-30;13656"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "b3af6efe9ed06774b1ce7c5cb1980558650450a432e5ac6b7098691d71bef3bd"
+sha256_origem: "342be0afaea247cc44baefd7d98a46713ac39105443684fbf68dd11d2337082c"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,14 +28,16 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "342be0afaea247cc44baefd7d98a46713ac39105443684fbf68dd11d2337082c"
+sha256_corpo: "b6951555e82bed97f7306dcdcbec252e946c41d48fcff8f8fcb30eb056cfbcc5"
 ---
 # Lei nº 13.656 de 30/04/2018
 
-LEI Nº 13.656, DE 30 DE ABRIL DE 2018
+### LEI Nº 13.656, DE 30 DE ABRIL DE 2018
 
 Isenta os candidatos que especifica do pagamento de taxa de inscrição em concursos para provimento de cargo efetivo ou emprego permanente em órgãos ou entidades da administração pública direta e indireta da União.
 
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -45,7 +47,7 @@ I – os candidatos que pertençam a família inscrita no Cadastro Único para P
 
 II – os candidatos doadores de medula óssea em entidades reconhecidas pelo Ministério da Saúde.
 
-**Parágrafo único.** O cumprimento dos requisitos para a concessão da isenção deverá ser comprovado pelo candidato no momento da inscrição, nos termos do edital do concurso.
+Parágrafo único. O cumprimento dos requisitos para a concessão da isenção deverá ser comprovado pelo candidato no momento da inscrição, nos termos do edital do concurso.
 
 **Art. 2º** Sem prejuízo das sanções penais cabíveis, o candidato que prestar informação falsa com o intuito de usufruir da isenção de que trata o art. 1º estará sujeito a:
 
@@ -63,7 +65,7 @@ III – declaração de nulidade do ato de nomeação, se a falsidade for consta
 
 Brasília, 30 de abril de 2018; 197º da Independência e 130º da República.
 
-**MICHEL TEMER**
+### MICHEL TEMER
 
 Torquato Jardim
 

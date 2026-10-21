@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "b753142c7b7aae19c615e39adfdcf7a32e0ed540744a78ac2aa6111744ad8013"
-alterada_por: ["br-federal-lei_complementar-225-2026"]
+alterada_por: ["br-federal-lei_complementar-225-2026", "br-federal-lei_ordinaria-13043-2014"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

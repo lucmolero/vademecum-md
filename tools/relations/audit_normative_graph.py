@@ -18,6 +18,7 @@ INVERSE_TYPES = {
     frozenset(("revoga", "revogada_por")),
     frozenset(("regulamenta", "regulamentada_por")),
     frozenset(("retifica", "retificada_por")),
+    frozenset(("suspende", "suspensa_por")),
 }
 
 
@@ -46,6 +47,9 @@ def main() -> int:
         "relation_types": dict(Counter(r["type"] for r in relations)),
         "without_device": sum(r.get("dispositivo") is None for r in relations),
         "without_effect_date": sum(r.get("data_efeito") is None for r in relations),
+        "without_evidence": sum(not r.get("evidencia_textual") or not r.get("evidencia_sha256") for r in relations),
+        "confidence": dict(Counter(str(r.get("confianca") or "desconhecida") for r in relations)),
+        "review_status": dict(Counter(str(r.get("status_revisao") or "ausente") for r in relations)),
         "duplicate_records": sum(count - 1 for count in duplicates.values() if count > 1),
         "inverse_type_conflicts": len(conflicts),
         "inverse_type_conflict_examples": conflicts[:100],
@@ -53,7 +57,7 @@ def main() -> int:
         "policy": "audit_only; no relation is promoted without official textual evidence",
     }
     REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    REPORT.write_bytes((json.dumps(report, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
     print(json.dumps({k: report[k] for k in ("relations", "without_device", "without_effect_date", "duplicate_records", "inverse_type_conflicts", "unresolved_candidates")}, ensure_ascii=False))
     if args.strict and (report["duplicate_records"] or report["inverse_type_conflicts"]):
         return 1

@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2013-08-14"
 ementa: "Altera os arts. 5º, 68, 97, 98, 99 e 100, acrescenta arts. 98-A, 98-B, 98-C, 99-A, 99-B, 100-A, 100-B e 109-A e revoga o art. 94 da Lei nº 9.610, de 19 de fevereiro de 1998, para dispor sobre a gestão coletiva de direitos autorais, e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-08-14;12853"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "abeb4857511098a3db8d187b00af0b143d267b5f9ffabfbd394a637c3570af04"
+sha256_origem: "a603f29fd775dd9993e88b5e8bbcbb4fcfbdd6c780f8fce41d43fd506243cd23"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,98 +28,96 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "a603f29fd775dd9993e88b5e8bbcbb4fcfbdd6c780f8fce41d43fd506243cd23"
+sha256_corpo: "0c25122f428b541cd1d51fb50a14e14e8fca729f9fe2f0b95defb2b97fec7ee1"
 ---
 # Lei nº 12.853 de 14/08/2013
 
-**LEI Nº - 12.853, DE 14 DE AGOSTO DE 2013**
-
-***Altera os arts. 5º , 68, 97, 98, 99 e 100, acrescenta arts. 98-A, 98-B, 98-C, 99-A, 99-B, 100-A, 100-B e 109-A e revoga o art. 94 da Lei nº 9.610, de 19 de fevereiro de 1998, para dispor sobre a gestão coletiva de direitos autorais, e dá outras providências.***
-
-**A PRESIDENTA DA REPÚBLICA** Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
+A PRESIDENTA DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 1º** Esta Lei dispõe sobre a gestão coletiva de direitos autorais, altera, revoga e acrescenta dispositivos à Lei n] 9.610, de 19 de fevereiro de 1998.
 
 **Art. 2º** Os arts. 5º , 68, 97, 98, 99 e 100 da Lei nº 9.610, de 19 de fevereiro de 1998, passam a vigorar com as seguintes alterações:
 
-"Art. 5º ........................................................................................................
+"Art. 5º ..................................................................................... ...................
 
 XIV - titular originário - o autor de obra intelectual, o intérprete, o executante, o produtor fonográfico e as empresas de radiodifusão." (NR)
 
-"Art. 68. ......................................................................................................
+"Art. 68. ................................................................................... ...................
 
-**§ 6º** O usuário entregará à entidade responsável pela arrecadação dos direitos relativos à execução ou exibição pública, imediatamente após o ato de comunicação ao público, relação completa das obras e fonogramas utilizados, e a tornará pública e de livre acesso, juntamente com os valores pagos, em seu sítio eletrônico ou, em não havendo este, no local da comunicação e em sua sede.
+§ 6º O usuário entregará à entidade responsável pela arrecadação dos direitos relativos à execução ou exibição pública, imediatamente após o ato de comunicação ao público, relação completa das obras e fonogramas utilizados, e a tornará pública e de livre acesso, juntamente com os valores pagos, em seu sítio eletrônico ou, em não havendo este, no local da comunicação e em sua sede.
 
-..................................................................................................................
+### .......................................................................................................... ........
 
-**§ 8º** Para as empresas mencionadas no § 7º, o prazo para cumprimento do disposto no § 6º será até o décimo dia útil de cada mês, relativamente à relação completa das obras e fonogramas utilizados no mês anterior." (NR)
+§ 8º Para as empresas mencionadas no § 7º, o prazo para cumprimento do disposto no § 6º será até o décimo dia útil de cada mês, relativamente à relação completa das obras e fonogramas utilizados no mês anterior." (NR)
 
-"Art. 97. ..................................................................................................
+"Art. 97. .................................................................................. ............... .
 
-**§ 1º** As associações reguladas por este artigo exercem atividade de interesse público, por determinação desta Lei, devendo atender a sua função social.
+§ 1º As associações reguladas por este artigo exercem atividade de interesse público, por determinação desta Lei, devendo atender a sua função social.
 
-**§ 2º** É vedado pertencer, simultaneamente, a mais de uma associação para a gestão coletiva de direitos da mesma natureza.
+§ 2º É vedado pertencer, simultaneamente, a mais de uma associação para a gestão coletiva de direitos da mesma natureza.
 
-**§ 3º** Pode o titular transferir-se, a qualquer momento, para outra associação, devendo comunicar o fato, por escrito, à associação de origem.
+§ 3º Pode o titular transferir-se, a qualquer momento, para outra associação, devendo comunicar o fato, por escrito, à associação de origem.
 
-**§ 4º** As associações com sede no exterior far-se-ão representar, no País, por associações nacionais constituídas na forma prevista nesta Lei.
+§ 4º As associações com sede no exterior far-se-ão representar, no País, por associações nacionais constituídas na forma prevista nesta Lei.
 
-**§ 5º** Apenas os titulares originários de direitos de autor ou de direitos conexos filiados diretamente às associações nacionais poderão votar ou ser votados nas associações reguladas por este artigo.
+§ 5º Apenas os titulares originários de direitos de autor ou de direitos conexos filiados diretamente às associações nacionais poderão votar ou ser votados nas associações reguladas por este artigo.
 
-**§ 6º** Apenas os titulares originários de direitos de autor ou de direitos conexos, nacionais ou estrangeiros domiciliados no Brasil, filiados diretamente às associações nacionais poderão assumir cargos de direção nas associações reguladas por este artigo." (NR)
+§ 6º Apenas os titulares originários de direitos de autor ou de direitos conexos, nacionais ou estrangeiros domiciliados no Brasil, filiados diretamente às associações nacionais poderão assumir cargos de direção nas associações reguladas por este artigo." (NR)
 
 "Art. 98. Com o ato de filiação, as associações de que trata o art. 97 tornam-se mandatárias de seus associados para a prática de todos os atos necessários à defesa judicial ou extrajudicial de seus direitos autorais, bem como para o exercício da atividade de cobrança desses direitos.
 
-**§ 1º** O exercício da atividade de cobrança citada no caput somente será lícito para as associações que obtiverem habilitação em órgão da Administração Pública Federal, nos termos do art. 98-A.
+§ 1º O exercício da atividade de cobrança citada no caput somente será lícito para as associações que obtiverem habilitação em órgão da Administração Pública Federal, nos termos do art. 98-A.
 
-**§ 2º** As associações deverão adotar os princípios da isonomia, eficiência e transparência na cobrança pela utilização de qualquer obra ou fonograma.
+§ 2º As associações deverão adotar os princípios da isonomia, eficiência e transparência na cobrança pela utilização de qualquer obra ou fonograma.
 
-**§ 3º** Caberá às associações, no interesse dos seus associados, estabelecer os preços pela utilização de seus repertórios, considerando a razoabilidade, a boa-fé e os usos do local de utilização das obras.
+§ 3º Caberá às associações, no interesse dos seus associados, estabelecer os preços pela utilização de seus repertórios, considerando a razoabilidade, a boa-fé e os usos do local de utilização das obras.
 
-**§ 4º** A cobrança será sempre proporcional ao grau de utilização das obras e fonogramas pelos usuários, considerando a importância da execução pública no exercício de suas atividades, e as particularidades de cada segmento, conforme disposto no regulamento desta Lei.
+§ 4º A cobrança será sempre proporcional ao grau de utilização das obras e fonogramas pelos usuários, considerando a importância da execução pública no exercício de suas atividades, e as particularidades de cada segmento, conforme disposto no regulamento desta Lei.
 
-**§ 5º** As associações deverão tratar seus associados de forma equitativa, sendo vedado o tratamento desigual.
+§ 5º As associações deverão tratar seus associados de forma equitativa, sendo vedado o tratamento desigual.
 
-**§ 6º** As associações deverão manter um cadastro centralizado de todos os contratos, declarações ou documentos de qualquer natureza que comprovem a autoria e a titularidade das obras e dos fonogramas, bem como as participações individuais em cada obra e em cada fonograma, prevenindo o falseamento de dados e fraudes e promovendo a desambiguação de títulos similares de obras.
+§ 6º As associações deverão manter um cadastro centralizado de todos os contratos, declarações ou documentos de qualquer natureza que comprovem a autoria e a titularidade das obras e dos fonogramas, bem como as participações individuais em cada obra e em cada fonograma, prevenindo o falseamento de dados e fraudes e promovendo a desambiguação de títulos similares de obras.
 
-**§ 7º** As informações mencionadas no § 6º são de interesse público e o acesso a elas deverá ser disponibilizado por meio eletrônico a qualquer interessado, de forma gratuita, permitindo-se ainda ao Ministério da Cultura o acesso contínuo e integral a tais informações.
+§ 7º As informações mencionadas no § 6º são de interesse público e o acesso a elas deverá ser disponibilizado por meio eletrônico a qualquer interessado, de forma gratuita, permitindo-se ainda ao Ministério da Cultura o acesso contínuo e integral a tais informações.
 
-**§ 8º** Mediante comunicação do interessado e preservada a ampla defesa e o direito ao contraditório, o Ministério da Cultura poderá, no caso de inconsistência nas informações mencionadas no § 6º deste artigo, determinar sua retificação e demais medidas necessárias à sua regularização, conforme disposto em regulamento.
+§ 8º Mediante comunicação do interessado e preservada a ampla defesa e o direito ao contraditório, o Ministério da Cultura poderá, no caso de inconsistência nas informações mencionadas no § 6º deste artigo, determinar sua retificação e demais medidas necessárias à sua regularização, conforme disposto em regulamento.
 
-**§ 9º** As associações deverão disponibilizar sistema de informação para comunicação periódica, pelo usuário, da totalidade das obras e fonogramas utilizados, bem como para acompanhamento, pelos titulares de direitos, dos valores arrecadados e distribuídos.
+§ 9º As associações deverão disponibilizar sistema de informação para comunicação periódica, pelo usuário, da totalidade das obras e fonogramas utilizados, bem como para acompanhamento, pelos titulares de direitos, dos valores arrecadados e distribuídos.
 
-**§ 10.** Os créditos e valores não identificados deverão permanecer retidos e à disposição dos titulares pelo período de 5 (cinco) anos, devendo ser distribuídos à medida da sua identificação.
+§ 10. Os créditos e valores não identificados deverão permanecer retidos e à disposição dos titulares pelo período de 5 (cinco) anos, devendo ser distribuídos à medida da sua identificação.
 
-**§ 11.** Findo o período de 5 (cinco) anos previsto no § 10 sem que tenha ocorrido a identificação dos créditos e valores retidos, estes serão distribuídos aos titulares de direitos de autor e de direitos conexos dentro da mesma rubrica em que foram arrecadados e na proporção de suas respectivas arrecadações durante o período da retenção daqueles créditos e valores, sendo vedada a sua destinação para outro fim.
+§ 11. Findo o período de 5 (cinco) anos previsto no § 10 sem que tenha ocorrido a identificação dos créditos e valores retidos, estes serão distribuídos aos titulares de direitos de autor e de direitos conexos dentro da mesma rubrica em que foram arrecadados e na proporção de suas respectivas arrecadações durante o período da retenção daqueles créditos e valores, sendo vedada a sua destinação para outro fim.
 
-**§ 12.** A taxa de administração praticada pelas associações no exercício da cobrança e distribuição de direitos autorais deverá ser proporcional ao custo efetivo de suas operações, considerando as peculiaridades de cada uma delas.
+§ 12. A taxa de administração praticada pelas associações no exercício da cobrança e distribuição de direitos autorais deverá ser proporcional ao custo efetivo de suas operações, considerando as peculiaridades de cada uma delas.
 
-**§ 13.** Os dirigentes das associações serão eleitos para mandato de 3 (três) anos, permitida uma única recondução precedida de nova eleição.
+§ 13. Os dirigentes das associações serão eleitos para mandato de 3 (três) anos, permitida uma única recondução precedida de nova eleição.
 
-**§ 14.** Os dirigentes das associações atuarão diretamente em sua gestão, por meio de voto pessoal, sendo vedado que atuem representados por terceiros.
+§ 14. Os dirigentes das associações atuarão diretamente em sua gestão, por meio de voto pessoal, sendo vedado que atuem representados por terceiros.
 
-**§ 15.** Os titulares de direitos autorais poderão praticar pessoalmente os atos referidos no caput e no § 3º deste artigo, mediante comunicação à associação a que estiverem filiados, com até 48 (quarenta e oito) horas de antecedência da sua prática.
+§ 15. Os titulares de direitos autorais poderão praticar pessoalmente os atos referidos no caput e no § 3º deste artigo, mediante comunicação à associação a que estiverem filiados, com até 48 (quarenta e oito) horas de antecedência da sua prática.
 
-**§ 16.** As associações, por decisão do seu órgão máximo de deliberação e conforme previsto em seus estatutos, poderão destinar até 20% (vinte por cento) da totalidade ou de parte dos recursos oriundos de suas atividades para ações de natureza cultural e social que beneficiem seus associados de forma coletiva." (NR)
+§ 16. As associações, por decisão do seu órgão máximo de deliberação e conforme previsto em seus estatutos, poderão destinar até 20% (vinte por cento) da totalidade ou de parte dos recursos oriundos de suas atividades para ações de natureza cultural e social que beneficiem seus associados de forma coletiva." (NR)
 
 "Art. 99. A arrecadação e distribuição dos direitos relativos à execução pública de obras musicais e literomusicais e de fonogramas será feita por meio das associações de gestão coletiva criadas para este fim por seus titulares, as quais deverão unificar a cobrança em um único escritório central para arrecadação e distribuição, que funcionará como ente arrecadador com personalidade jurídica própria e observará os §§ 1º a 12 do art. 98 e os arts. 98-A, 98-B, 98-C, 99-B, 100, 100-A e 100-B.
 
-**§ 1º** O ente arrecadador organizado na forma prevista no caput não terá finalidade de lucro e será dirigido e administrado por meio do voto unitário de cada associação que o integra.
+§ 1º O ente arrecadador organizado na forma prevista no caput não terá finalidade de lucro e será dirigido e administrado por meio do voto unitário de cada associação que o integra.
 
-**§ 2º** O ente arrecadador e as associações a que se refere este Título atuarão em juízo e fora dele em seus próprios nomes como substitutos processuais dos titulares a eles vinculados.
+§ 2º O ente arrecadador e as associações a que se refere este Título atuarão em juízo e fora dele em seus próprios nomes como substitutos processuais dos titulares a eles vinculados.
 
-**§ 3º** O recolhimento de quaisquer valores pelo ente arrecadador somente se fará por depósito bancário.
+§ 3º O recolhimento de quaisquer valores pelo ente arrecadador somente se fará por depósito bancário.
 
-**§ 4º** A parcela destinada à distribuição aos autores e demais titulares de direitos não poderá, em um ano da data de publicação desta Lei, ser inferior a 77,5% (setenta e sete inteiros e cinco décimos por cento) dos valores arrecadados, aumentando-se tal parcela à razão de 2,5% a.a. (dois inteiros e cinco décimos por cento ao ano), até que, em 4 (quatro) anos da data de publicação desta Lei, ela não seja inferior a 85% (oitenta e cinco por cento) dos valores arrecadados.
+§ 4º A parcela destinada à distribuição aos autores e demais titulares de direitos não poderá, em um ano da data de publicação desta Lei, ser inferior a 77,5% (setenta e sete inteiros e cinco décimos por cento) dos valores arrecadados, aumentando-se tal parcela à razão de 2,5% a.a. (dois inteiros e cinco décimos por cento ao ano), até que, em 4 (quatro) anos da data de publicação desta Lei, ela não seja inferior a 85% (oitenta e cinco por cento) dos valores arrecadados.
 
-**§ 5º** O ente arrecadador poderá manter fiscais, aos quais é vedado receber do usuário numerário a qualquer título.
+§ 5º O ente arrecadador poderá manter fiscais, aos quais é vedado receber do usuário numerário a qualquer título.
 
-**§ 6º** A inobservância da norma do § 5º tornará o faltoso inabilitado à função de fiscal, sem prejuízo da comunicação do fato ao Ministério Público e da aplicação das sanções civis e penais cabíveis.
+§ 6º A inobservância da norma do § 5º tornará o faltoso inabilitado à função de fiscal, sem prejuízo da comunicação do fato ao Ministério Público e da aplicação das sanções civis e penais cabíveis.
 
-**§ 7º** Cabe ao ente arrecadador e às associações de gestão coletiva zelar pela continuidade da arrecadação e, no caso de perda da habilitação por alguma associação, cabe a ela cooperar para que a transição entre associações seja realizada sem qualquer prejuízo aos titulares, transferindo-se todas as informações necessárias ao processo de arrecadação e distribuição de direitos.
+§ 7º Cabe ao ente arrecadador e às associações de gestão coletiva zelar pela continuidade da arrecadação e, no caso de perda da habilitação por alguma associação, cabe a ela cooperar para que a transição entre associações seja realizada sem qualquer prejuízo aos titulares, transferindo-se todas as informações necessárias ao processo de arrecadação e distribuição de direitos.
 
-**§ 8º** Sem prejuízo do disposto no § 3º do art. 98, as associações devem estabelecer e unificar o preço de seus repertórios junto ao ente arrecadador para a sua cobrança, atuando este como mandatário das associações que o integram.
+§ 8º Sem prejuízo do disposto no § 3º do art. 98, as associações devem estabelecer e unificar o preço de seus repertórios junto ao ente arrecadador para a sua cobrança, atuando este como mandatário das associações que o integram.
 
-**§ 9º** O ente arrecadador cobrará do usuário de forma unificada, e se encarregará da devida distribuição da arrecadação às associações, observado o disposto nesta Lei, especialmente os critérios estabelecidos nos §§ 3º e 4º do art. 98." (NR)
+§ 9º O ente arrecadador cobrará do usuário de forma unificada, e se encarregará da devida distribuição da arrecadação às associações, observado o disposto nesta Lei, especialmente os critérios estabelecidos nos §§ 3º e 4º do art. 98." (NR)
 
 "Art. 100. O sindicato ou associação profissional que congregue filiados de uma associação de gestão coletiva de direitos autorais poderá, 1 (uma) vez por ano, às suas expensas, após notificação, com 8 (oito) dias de antecedência, fiscalizar, por intermédio de auditor independente, a exatidão das contas prestadas por essa associação autoral a seus representados." (NR)
 
@@ -155,19 +153,19 @@ k) plano de cargos e salários, incluindo valor das remunerações dos dirigente
 
 III - outras informações estipuladas em regulamento por órgão da Administração Pública Federal, como as que demonstrem o cumprimento das obrigações internacionais contratuais da entidade solicitante que possam ensejar questionamento ao Estado Brasileiro no âmbito dos acordos internacionais dos quais é parte.
 
-**§ 1º** Os documentos e informações a que se referem os incisos II e III do caput deste artigo deverão ser apresentados anualmente ao Ministério da Cultura.
+§ 1º Os documentos e informações a que se referem os incisos II e III do caput deste artigo deverão ser apresentados anualmente ao Ministério da Cultura.
 
-**§ 2º** A habilitação de que trata o § 1º do art. 98 é um ato de qualificação vinculado ao cumprimento dos requisitos instituídos por esta Lei e por seu regulamento e não precisará ser renovada periodicamente, mas poderá ser anulada mediante decisão proferida em processo administrativo ou judicial, quando verificado que a associação não atende ao disposto nesta Lei, assegurados sempre o contraditório e ampla defesa, bem como a comunicação do fato ao Ministério Público.
+§ 2º A habilitação de que trata o § 1º do art. 98 é um ato de qualificação vinculado ao cumprimento dos requisitos instituídos por esta Lei e por seu regulamento e não precisará ser renovada periodicamente, mas poderá ser anulada mediante decisão proferida em processo administrativo ou judicial, quando verificado que a associação não atende ao disposto nesta Lei, assegurados sempre o contraditório e ampla defesa, bem como a comunicação do fato ao Ministério Público.
 
-**§ 3º** A anulação da habilitação a que se refere o § 1º do art. 98 levará em consideração a gravidade e a relevância das irregularidades identificadas, a boa-fé do infrator e a reincidência nas irregularidades, conforme disposto em regulamento, e somente se efetivará após a aplicação de advertência, quando se concederá prazo razoável para atendimento das exigências apontadas pela autoridade competente.
+§ 3º A anulação da habilitação a que se refere o § 1º do art. 98 levará em consideração a gravidade e a relevância das irregularidades identificadas, a boa-fé do infrator e a reincidência nas irregularidades, conforme disposto em regulamento, e somente se efetivará após a aplicação de advertência, quando se concederá prazo razoável para atendimento das exigências apontadas pela autoridade competente.
 
-**§ 4º** A ausência de uma associação que seja mandatária de determinada categoria de titulares em função da aplicação do § 2º deste artigo não isenta os usuários das obrigações previstas no art. 68, que deverão ser quitadas em relação ao período compreendido entre o indeferimento do pedido de habilitação, a anulação ou o cancelamento da habilitação e a obtenção de nova habilitação ou constituição de entidade sucessora nos termos deste artigo, ficando a entidade sucessora responsável pela fixação dos valores dos direitos autorais ou conexos em relação ao período compreendido entre o indeferimento do pedido de habilitação ou sua anulação e a obtenção de nova habilitação pela entidade sucessora.
+§ 4º A ausência de uma associação que seja mandatária de determinada categoria de titulares em função da aplicação do § 2º deste artigo não isenta os usuários das obrigações previstas no art. 68, que deverão ser quitadas em relação ao período compreendido entre o indeferimento do pedido de habilitação, a anulação ou o cancelamento da habilitação e a obtenção de nova habilitação ou constituição de entidade sucessora nos termos deste artigo, ficando a entidade sucessora responsável pela fixação dos valores dos direitos autorais ou conexos em relação ao período compreendido entre o indeferimento do pedido de habilitação ou sua anulação e a obtenção de nova habilitação pela entidade sucessora.
 
-**§ 5º** A associação cuja habilitação, nos termos deste artigo, seja anulada, inexistente ou pendente de apreciação pela autoridade competente, ou apresente qualquer outra forma de irregularidade, não poderá utilizar tais fatos como impedimento para distribuição de eventuais valores já arrecadados, sob pena de responsabilização direta de seus dirigentes nos termos do art.
+§ 5º A associação cuja habilitação, nos termos deste artigo, seja anulada, inexistente ou pendente de apreciação pela autoridade competente, ou apresente qualquer outra forma de irregularidade, não poderá utilizar tais fatos como impedimento para distribuição de eventuais valores já arrecadados, sob pena de responsabilização direta de seus dirigentes nos termos do art.
 
 100-A, sem prejuízo das sanções penais cabíveis.
 
-**§ 6º** As associações de gestão coletiva de direitos autorais deverão manter atualizados e disponíveis aos associados os documentos e as informações previstos nos incisos II e III deste artigo."
+§ 6º As associações de gestão coletiva de direitos autorais deverão manter atualizados e disponíveis aos associados os documentos e as informações previstos nos incisos II e III deste artigo."
 
 "Art. 98-B. As associações de gestão coletiva de direitos autorais, no desempenho de suas funções, deverão:
 
@@ -185,17 +183,17 @@ VI - garantir aos associados o acesso às informações referentes às obras sob
 
 VII - garantir ao usuário o acesso às informações referentes às utilizações por ele realizadas.
 
-**Parágrafo único.** As informações contidas nos incisos I e II devem ser atualizadas periodicamente, em intervalo nunca superior a 6 (seis) meses."
+Parágrafo único. As informações contidas nos incisos I e II devem ser atualizadas periodicamente, em intervalo nunca superior a 6 (seis) meses."
 
 "Art. 98-C. As associações de gestão coletiva de direitos autorais deverão prestar contas dos valores devidos, em caráter regular e de modo direto, aos seus associados.
 
-**§ 1º** O direito à prestação de contas poderá ser exercido diretamente pelo associado.
+§ 1º O direito à prestação de contas poderá ser exercido diretamente pelo associado.
 
-**§ 2º** Se as contas não forem prestadas na forma do § 1º, o pedido do associado poderá ser encaminhado ao Ministério da Cultura que, após sua apreciação, poderá determinar a prestação de contas pela associação, na forma do regulamento."
+§ 2º Se as contas não forem prestadas na forma do § 1º, o pedido do associado poderá ser encaminhado ao Ministério da Cultura que, após sua apreciação, poderá determinar a prestação de contas pela associação, na forma do regulamento."
 
 "Art. 99-A. O ente arrecadador de que trata o caput do art. 99 deverá admitir em seus quadros, além das associações que o constituíram, as associações de titulares de direitos autorais que tenham pertinência com sua área de atuação e estejam habilitadas em órgão da Administração Pública Federal na forma do art. 98-A.
 
-**Parágrafo único.** As deliberações quanto aos critérios de distribuição dos recursos arrecadados serão tomadas por meio do voto unitário de cada associação que integre o ente arrecadador."
+Parágrafo único. As deliberações quanto aos critérios de distribuição dos recursos arrecadados serão tomadas por meio do voto unitário de cada associação que integre o ente arrecadador."
 
 "Art. 99-B. As associações referidas neste Título estão sujeitas às regras concorrenciais definidas em legislação específica que trate da prevenção e repressão às infrações contra a ordem econômica."
 
@@ -205,7 +203,7 @@ VII - garantir ao usuário o acesso às informações referentes às utilizaçõ
 
 "Art. 109-A. A falta de prestação ou a prestação de informações falsas no cumprimento do disposto no § 6º do art. 68 e no § 9º do art. 98 sujeitará os responsáveis, por determinação da autoridade competente e nos termos do regulamento desta Lei, a multa de 10 (dez) a 30% (trinta por cento) do valor que deveria ser originariamente pago, sem prejuízo das perdas e danos.
 
-**Parágrafo único.** Aplicam-se as regras da legislação civil quanto ao inadimplemento das obrigações no caso de descumprimento, pelos usuários, dos seus deveres legais e contratuais junto às associações referidas neste Título."
+Parágrafo único. Aplicam-se as regras da legislação civil quanto ao inadimplemento das obrigações no caso de descumprimento, pelos usuários, dos seus deveres legais e contratuais junto às associações referidas neste Título."
 
 **Art. 4º** As associações de gestão coletiva de direitos autorais que, antes da vigência da presente Lei, estejam legalmente constituídas e arrecadando e distribuindo os direitos autorais de obras e fonogramas considerar-se-ão habilitadas para exercerem a atividade econômica de cobrança pelo prazo definido em regulamento, devendo obedecer às disposições constantes do art. 98-A da Lei nº 9.610, de 1998.
 
@@ -223,6 +221,6 @@ VII - garantir ao usuário o acesso às informações referentes às utilizaçõ
 
 Brasília, 14 de agosto de 2013; 192º da Independência e 125º da República.
 
-**DILMA ROUSSEFF**
+### DILMA ROUSSEFF
 
 Marta Suplicy

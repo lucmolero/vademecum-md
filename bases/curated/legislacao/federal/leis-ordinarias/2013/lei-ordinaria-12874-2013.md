@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2013-10-29"
 ementa: "Altera o art. 18 do Decreto-Lei nº 4.657, de 4 de setembro de 1942, para possibilitar às autoridades consulares brasileiras celebrarem a separação e o divórcio consensuais de brasileiros no exterior."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-10-29;12874"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "e9daeaa917c2fa1a48f9385b4137795e8173d2534964c8c79e8e368f1e0d6757"
+sha256_origem: "394795f89d90ddf182253f58cbd7355d593bd3879058448144697fecd37dcc40"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,30 +28,32 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "394795f89d90ddf182253f58cbd7355d593bd3879058448144697fecd37dcc40"
+sha256_corpo: "6ee4b00cc6ee41058e306535065d6229416bc82b14e664a74c25dab2776dabb6"
 ---
 # Lei nº 12.874 de 29/10/2013
 
-LEI No 12.874, DE 29 DE OUTUBRO DE 2013
+LEI N o 12.874, DE 29 DE OUTUBRO DE 2013
 
-Altera o art. 18 do Decreto-Lei nº 4.657, de 4 de setembro de 1942, para possibilitar às autoridades consulares brasileiras celebrarem a separação e o divórcio consensuais de brasileiros no exterior.
+Altera o art. 18 do Decreto-Lei n º 4.657, de 4 de setembro de 1942, para possibilitar às autoridades consulares brasileiras celebrarem a separação e o divórcio consensuais de brasileiros no exterior.
 
-**A P R E S I D E N T A D A R E P Ú B L I C A** Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
+A P R E S I D E N T A D A R E P Ú B L I C A Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-**Art. 1º** Esta Lei dispõe sobre a possibilidade de as autoridades consulares brasileiras celebrarem a separação consensual e o divórcio consensual de brasileiros no exterior, nas hipóteses que especifica.
+**Art. 1** º Esta Lei dispõe sobre a possibilidade de as autoridades consulares brasileiras celebrarem a separação consensual e o divórcio consensual de brasileiros no exterior, nas hipóteses que especifica.
 
-**Art. 2º** O art. 18 do Decreto-Lei nº 4.657, de 4 de setembro de 1942, passa a vigorar acrescido dos seguintes §§ 1º e 2º:
+**Art. 2** º O art. 18 do Decreto-Lei n º 4.657, de 4 de setembro de 1942, passa a vigorar acrescido dos seguintes §§ 1 º e 2 º :
 
-"Art. 18. ..................................................................................................
+"Art. 18. ................................................................................. .................
 
-**§ 1º** As autoridades consulares brasileiras também poderão celebrar a separação consensual e o divórcio consensual de brasileiros, não havendo filhos menores ou incapazes do casal e observados os requisitos legais quanto aos prazos, devendo constar da respectiva escritura pública as disposições relativas à descrição e à partilha dos bens comuns e à pensão alimentícia e, ainda, ao acordo quanto à retomada pelo cônjuge de seu nome de solteiro ou à manutenção do nome adotado quando se deu o casamento.
+§ 1 º As autoridades consulares brasileiras também poderão celebrar a separação consensual e o divórcio consensual de brasileiros, não havendo filhos menores ou incapazes do casal e observados os requisitos legais quanto aos prazos, devendo constar da respectiva escritura pública as disposições relativas à descrição e à partilha dos bens comuns e à pensão alimentícia e, ainda, ao acordo quanto à retomada pelo cônjuge de seu nome de solteiro ou à manutenção do nome adotado quando se deu o casamento.
 
-**§ 2º** É indispensável a assistência de advogado, devidamente constituído, que se dará mediante a subscrição de petição, juntamente com ambas as partes, ou com apenas uma delas, caso a outra constitua advogado próprio, não se fazendo necessário que a assinatura do advogado conste da escritura pública." (NR)
+§ 2 º É indispensável a assistência de advogado, devidamente constituído, que se dará mediante a subscrição de petição, juntamente com ambas as partes, ou com apenas uma delas, caso a outra constitua advogado próprio, não se fazendo necessário que a assinatura do advogado conste da escritura pública." (NR)
 
-**Art. 3º** Esta Lei entra em vigor após decorridos 120 (cento e vinte) dias de sua publicação oficial.
+**Art. 3** º Esta Lei entra em vigor após decorridos 120 (cento e vinte) dias de sua publicação oficial.
 
-Brasília, 29 de outubro de 2013; 192º da Independência e 125º da República.
+Brasília, 29 de outubro de 2013; 192 º da Independência e 125 º da República.
 
-DILMA ROUSSEFF
+### DILMA ROUSSEFF
 
 José Eduardo Cardozo
 

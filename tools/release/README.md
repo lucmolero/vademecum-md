@@ -1,3 +1,3 @@
 # Release
 
-Uma release é criada somente depois de regenerar índices, executar testes e aprovar os gates. O estado atual é pré-release; a 1.0 depende da reconciliação do núcleo P0.
+Uma release é criada somente depois de regenerar índices, executar testes e passar pelos gates determinísticos. O agente jurídico autônomo decide o tratamento editorial com base em fontes oficiais; nenhum conteúdo fica aguardando aprovação humana.

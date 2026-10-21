@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2021-11-19"
 ementa: "Institui o Estatuto da Pessoa com Câncer; e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2021-11-19;14238"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "572c4db6ed3b260040adfcef37b294fbbd49d45d808598ba845f7867f43ba67c"
+sha256_origem: "6c723b10e4452ec31cc52665811851e9c789e761db137f843ee977a31a6a06c7"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,24 +28,26 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "6c723b10e4452ec31cc52665811851e9c789e761db137f843ee977a31a6a06c7"
+sha256_corpo: "2dfb3b1034598404604f5f332cbb8376f39dcd9b922e479bdcfcd6f05ae55649"
 ---
 # Lei nº 14.238 de 19/11/2021
 
-LEI Nº 14.238, DE 19 DE NOVEMBRO DE 2021
-
-Institui o Estatuto da Pessoa com Câncer; e dá outras providências.
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-#### CAPÍTULO I — DISPOSIÇÕES PRELIMINARES
+#### CAPÍTULO I
+
+### DISPOSIÇÕES PRELIMINARES
 
 **Art. 1º** Fica instituído o Estatuto da Pessoa com Câncer, destinado a assegurar e a promover, em condições de igualdade, o acesso ao tratamento adequado e o exercício dos direitos e das liberdades fundamentais da pessoa com câncer, com vistas a garantir o respeito à dignidade, à cidadania e à sua inclusão social.
 
-**Parágrafo único.** Esta Lei estabelece princípios e objetivos essenciais à proteção dos direitos da pessoa com câncer e à efetivação de políticas públicas de prevenção e combate ao câncer.
+Parágrafo único. Esta Lei estabelece princípios e objetivos essenciais à proteção dos direitos da pessoa com câncer e à efetivação de políticas públicas de prevenção e combate ao câncer.
 
-#### CAPÍTULO II — DOS PRINCÍPIOS E DOS OBJETIVOS
+#### CAPÍTULO II
+
+### DOS PRINCÍPIOS E DOS OBJETIVOS
 
 **Art. 2º** São princípios essenciais deste Estatuto:
 
@@ -115,7 +117,9 @@ XIX – estimular a expansão contínua, sustentável e responsável da rede de 
 
 XX – estimular a humanização do tratamento, prestando atenção diferenciada ao paciente e à sua família.
 
-#### CAPÍTULO III — DOS DIREITOS FUNDAMENTAIS
+#### CAPÍTULO III
+
+### DOS DIREITOS FUNDAMENTAIS
 
 **Art. 4º** São direitos fundamentais da pessoa com câncer:
 
@@ -139,9 +143,9 @@ IX – tratamento domiciliar priorizado;
 
 X – atendimento educacional em classe hospitalar ou regime domiciliar, conforme interesse da pessoa com câncer e de sua família, nos termos do respectivo sistema de ensino.
 
-**§ 1º** Para os efeitos desta Lei, considera-se pessoa com câncer aquela que tenha o regular diagnóstico, nos termos de relatório elaborado por médico devidamente inscrito no conselho profissional, acompanhado pelos laudos e exames diagnósticos complementares necessários para a correta caracterização da doença.
+§ 1º Para os efeitos desta Lei, considera-se pessoa com câncer aquela que tenha o regular diagnóstico, nos termos de relatório elaborado por médico devidamente inscrito no conselho profissional, acompanhado pelos laudos e exames diagnósticos complementares necessários para a correta caracterização da doença.
 
-**§ 2º** Entende-se por direito à prioridade, previsto no inciso V do **caput** deste artigo, as seguintes garantias concedidas à pessoa com câncer clinicamente ativo, respeitadas e conciliadas as normas que garantem o mesmo direito aos idosos, às gestantes e às pessoas com deficiência:
+§ 2º Entende-se por direito à prioridade, previsto no inciso V do caput deste artigo, as seguintes garantias concedidas à pessoa com câncer clinicamente ativo, respeitadas e conciliadas as normas que garantem o mesmo direito aos idosos, às gestantes e às pessoas com deficiência:
 
 I – assistência preferencial, respeitada a precedência dos casos mais graves e outras prioridades legais;
 
@@ -151,15 +155,17 @@ III – prioridade no acesso a mecanismos que favoreçam a divulgação de infor
 
 IV – prioridade na tramitação dos processos judiciais e administrativos.
 
-#### CAPÍTULO IV — DOS DEVERES
+#### CAPÍTULO IV
+
+### DOS DEVERES
 
 **Art. 5º** É dever da família, da comunidade, da sociedade e do poder público assegurar à pessoa com câncer, prioritariamente, a plena efetivação dos direitos referentes à vida, à saúde, à alimentação, à assistência social e jurídica, à convivência familiar e comunitária, entre outros decorrentes da Constituição Federal e das leis.
 
 **Art. 6º** Nenhuma pessoa com câncer será objeto de qualquer tipo de negligência, discriminação ou violência, e todo atentado aos seus direitos, por ação ou omissão, será punido na forma da lei.
 
-**§ 1º** Considera-se discriminação qualquer distinção, restrição ou exclusão em razão da doença, mediante ação ou omissão, que tenha o propósito ou o efeito de prejudicar, de impedir ou de anular o reconhecimento dos direitos assegurados nesta Lei.
+§ 1º Considera-se discriminação qualquer distinção, restrição ou exclusão em razão da doença, mediante ação ou omissão, que tenha o propósito ou o efeito de prejudicar, de impedir ou de anular o reconhecimento dos direitos assegurados nesta Lei.
 
-**§ 2º** Todo cidadão tem o dever de comunicar à autoridade competente qualquer forma de violação a esta Lei que tenha testemunhado ou de que tenha conhecimento.
+§ 2º Todo cidadão tem o dever de comunicar à autoridade competente qualquer forma de violação a esta Lei que tenha testemunhado ou de que tenha conhecimento.
 
 **Art. 7º** É dever do Estado desenvolver políticas públicas de saúde específicas direcionadas à pessoa com câncer, que incluam, entre outras medidas:
 
@@ -167,7 +173,7 @@ I – promover ações e campanhas preventivas da doença;
 
 II – garantir acesso universal, igualitário e gratuito aos serviços de saúde;
 
-III – (VETADO);
+### III – (VETADO);
 
 IV – promover avaliação periódica do tratamento ofertado ao paciente com câncer na rede pública de saúde e adotar as medidas necessárias para diminuir as desigualdades existentes;
 
@@ -183,27 +189,31 @@ IX – organizar programa de rastreamento e diagnóstico que favoreça o início
 
 X – promover campanhas de conscientização a respeito de direitos e de benefícios previdenciários, tributários, trabalhistas, processuais e de tratamentos de saúde, entre outros, da pessoa com câncer.
 
-**Art. 8º** O direito à assistência social, previsto no inciso IV do **caput** do art. 4º desta Lei, será prestado de forma articulada e com base nos princípios e diretrizes previstos na Lei nº 8.742, de 7 de dezembro de 1993 (Lei Orgânica da Assistência Social), de forma harmonizada com as demais políticas sociais, observadas as demais normas pertinentes.
+**Art. 8º** O direito à assistência social, previsto no inciso IV do caput do art. 4º desta Lei, será prestado de forma articulada e com base nos princípios e diretrizes previstos na Lei nº 8.742, de 7 de dezembro de 1993 (Lei Orgânica da Assistência Social), de forma harmonizada com as demais políticas sociais, observadas as demais normas pertinentes.
 
-**§ 1º** O poder público deverá promover o acesso da pessoa com câncer ao Ministério Público, à Defensoria Pública e ao Poder Judiciário em todas suas instâncias.
+§ 1º O poder público deverá promover o acesso da pessoa com câncer ao Ministério Público, à Defensoria Pública e ao Poder Judiciário em todas suas instâncias.
 
-**§ 2º** O poder público estimulará, por meio de assistência jurídica, o conhecimento e o acesso aos incentivos fiscais e aos subsídios devidos à pessoa com câncer.
+§ 2º O poder público estimulará, por meio de assistência jurídica, o conhecimento e o acesso aos incentivos fiscais e aos subsídios devidos à pessoa com câncer.
 
 **Art. 9º** O Estado deverá formular políticas direcionadas à pessoa com câncer que esteja em situação de vulnerabilidade social, de forma a facilitar o andamento dos procedimentos de diagnóstico e de tratamento.
 
-#### CAPÍTULO V — DO ATENDIMENTO ESPECIAL ÀS CRIANÇAS E AOS ADOLESCENTES
+#### CAPÍTULO V
+
+### DO ATENDIMENTO ESPECIAL ÀS CRIANÇAS E AOS ADOLESCENTES
 
 **Art. 10.** O atendimento prestado às crianças e aos adolescentes com câncer, ou em suspeição, deverá ser especial em todas suas fases, devendo ser garantido tratamento universal e integral, priorizados a prevenção e o diagnóstico precoce.
 
-#### CAPÍTULO VI — DISPOSIÇÕES FINAIS
+#### CAPÍTULO VI
+
+### DISPOSIÇÕES FINAIS
 
 **Art. 11.** O direito à saúde da pessoa com câncer será assegurado mediante a efetivação de políticas sociais públicas, de modo a garantir seu bem-estar físico, psíquico, emocional e social com vistas à preservação ou à recuperação de sua saúde.
 
 **Art. 12.** É obrigatório o atendimento integral à saúde da pessoa com câncer por intermédio do SUS, na forma de regulamento.
 
-**§ 1º** Para efeitos desta Lei, entende-se por atendimento integral aquele realizado nos diversos níveis de complexidade e hierarquia, bem como nas diversas especialidades médicas, de acordo com as necessidades de saúde da pessoa com câncer, incluídos assistência médica e de fármacos, assistência psicológica, atendimentos especializados e, sempre que possível, atendimento e internação domiciliares.
+§ 1º Para efeitos desta Lei, entende-se por atendimento integral aquele realizado nos diversos níveis de complexidade e hierarquia, bem como nas diversas especialidades médicas, de acordo com as necessidades de saúde da pessoa com câncer, incluídos assistência médica e de fármacos, assistência psicológica, atendimentos especializados e, sempre que possível, atendimento e internação domiciliares.
 
-**§ 2º** O atendimento integral deverá garantir, ainda, tratamento adequado da dor, atendimento multidisciplinar e cuidados paliativos.
+§ 2º O atendimento integral deverá garantir, ainda, tratamento adequado da dor, atendimento multidisciplinar e cuidados paliativos.
 
 **Art. 13.** A conscientização e o apoio à família da pessoa com câncer constituem compromissos fundamentais do Estado e fazem parte indispensáveis deste Estatuto.
 
@@ -213,7 +223,7 @@ X – promover campanhas de conscientização a respeito de direitos e de benef�
 
 Brasília, 19 de novembro de 2021; 200º da Independência e 133º da República.
 
-**JAIR MESSIAS BOLSONARO**
+### JAIR MESSIAS BOLSONARO
 
 Marcelo Antônio Cartaxo Queiroga Lopes
 

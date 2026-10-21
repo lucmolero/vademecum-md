@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "3972cb3fdf1f4d3ddd8bb0fc63f9eb76d0723494a53d5ef89e1b1a8d7690c359"
-alterada_por: ["br-federal-lei_complementar-214-2025", "br-federal-lei_ordinaria-10684-2003", "br-federal-lei_ordinaria-10833-2003", "br-federal-lei_ordinaria-10996-2004", "br-federal-lei_ordinaria-13097-2015"]
+alterada_por: ["br-federal-lei_complementar-214-2025", "br-federal-lei_ordinaria-10684-2003", "br-federal-lei_ordinaria-10833-2003", "br-federal-lei_ordinaria-10996-2004", "br-federal-lei_ordinaria-13043-2014", "br-federal-lei_ordinaria-13097-2015"]
 revogada_por: ["br-federal-lei_ordinaria-10833-2003", "br-federal-lei_ordinaria-13097-2015"]
 regulamentada_por: []
 retificada_por: []

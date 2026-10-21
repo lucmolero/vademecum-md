@@ -1,20 +1,29 @@
 {
   "schema": "normative-graph-audit/v1",
   "generated_at": "2026-10-21",
-  "relations": 1611,
+  "relations": 1841,
   "relation_types": {
-    "alterada_por": 598,
+    "alterada_por": 686,
+    "suspensa_por": 1,
     "regulamenta": 5,
-    "revogada_por": 202,
-    "altera": 598,
-    "revoga": 203,
-    "regulamentada_por": 5
+    "revogada_por": 228,
+    "altera": 686,
+    "revoga": 229,
+    "regulamentada_por": 5,
+    "suspende": 1
   },
-  "without_device": 746,
-  "without_effect_date": 106,
+  "without_device": 882,
+  "without_effect_date": 114,
+  "without_evidence": 0,
+  "confidence": {
+    "alta": 1841
+  },
+  "review_status": {
+    "aprovado_autonomamente": 1841
+  },
   "duplicate_records": 0,
   "inverse_type_conflicts": 0,
   "inverse_type_conflict_examples": [],
-  "unresolved_candidates": 2221,
+  "unresolved_candidates": 2177,
   "policy": "audit_only; no relation is promoted without official textual evidence"
 }

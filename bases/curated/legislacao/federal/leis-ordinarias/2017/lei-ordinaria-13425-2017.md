@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2017-03-30"
 ementa: "Estabelece diretrizes gerais sobre medidas de prevenção e combate a incêndio e a desastres em estabelecimentos, edificações e áreas de reunião de público; altera as Leis nºs 8.078, de 11 de setembro de 1990, e 10.406, de 10 de janeiro de 2002 – Código Civil; e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-03-30;13425"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "8b9b543aafba336c6fe50566734958b463916bde7af601969346daabf45c45aa"
+sha256_origem: "7cb5c18a6717a30b5b19afad1b7e0d3a21663b51e73f9f759288c8f82bb62092"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,28 +28,26 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "7cb5c18a6717a30b5b19afad1b7e0d3a21663b51e73f9f759288c8f82bb62092"
+sha256_corpo: "92de843b1671f36423929c1894e0de831a524ede5cac0b452ae693bf6d00ef7d"
 ---
 # Lei nº 13.425 de 30/03/2017
 
-LEI Nº 13.425, DE 30 DE MARÇO DE 2017
-
-Estabelece diretrizes gerais sobre medidas de prevenção e combate a incêndio e a desastres em estabelecimentos, edificações e áreas de reunião de público; altera as Leis nºs 8.078, de 11 de setembro de 1990, e 10.406, de 10 de janeiro de 2002 - Código Civil; e dá outras providências.
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 1º** Esta Lei:
 
-I – estabelece diretrizes gerais e ações complementares sobre prevenção e combate a incêndio e a desastres em estabelecimentos, edificações e áreas de reunião de público, atendendo ao disposto no inciso XX do art. 21, no inciso I, **in fine**, do art. 24, no § 5º, **in fine**, do art. 144 e no **caput** do art. 182 da Constituição Federal;
+I – estabelece diretrizes gerais e ações complementares sobre prevenção e combate a incêndio e a desastres em estabelecimentos, edificações e áreas de reunião de público, atendendo ao disposto no inciso XX do art. 21, no inciso I, in fine , do art. 24, no § 5º, in fine , do art. 144 e no caput do art. 182 da Constituição Federal ;
 
 II – altera as seguintes Leis:
 
-a) Lei nº 8.078, de 11 de setembro de 1990, que dispõe sobre a proteção do consumidor e dá outras providências; e
+a) Lei nº 8.078, de 11 de setembro de 1990 , que dispõe sobre a proteção do consumidor e dá outras providências; e
 
 b) Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil;
 
-III – define atos sujeitos à aplicação da Lei nº 8.429, de 2 de junho de 1992, que dispõe sobre as sanções aplicáveis aos agentes públicos nos casos de enriquecimento ilícito no exercício de mandato, cargo, emprego ou função na administração pública direta, indireta ou fundacional e dá outras providências;
+III – define atos sujeitos à aplicação da Lei nº 8.429, de 2 de junho de 1992 , que dispõe sobre as sanções aplicáveis aos agentes públicos nos casos de enriquecimento ilícito no exercício de mandato, cargo, emprego ou função na administração pública direta, indireta ou fundacional e dá outras providências;
 
 IV – caracteriza a prevenção de incêndios e desastres como condição para a execução de projetos artísticos, culturais, esportivos, científicos e outros que envolvam incentivos fiscais da União; e
 
@@ -57,11 +55,11 @@ V – prevê responsabilidades para os órgãos de fiscalização do exercício 
 
 **Art. 2º** O planejamento urbano a cargo dos Municípios deverá observar normas especiais de prevenção e combate a incêndio e a desastres para locais de grande concentração e circulação de pessoas, editadas pelo poder público municipal, respeitada a legislação estadual pertinente ao tema.
 
-**§ 1º** As normas especiais previstas no **caput** deste artigo abrangem estabelecimentos, edificações de comércio e serviços e áreas de reunião de público, cobertos ou descobertos, cercados ou não, com ocupação simultânea potencial igual ou superior a cem pessoas.
+§ 1º As normas especiais previstas no caput deste artigo abrangem estabelecimentos, edificações de comércio e serviços e áreas de reunião de público, cobertos ou descobertos, cercados ou não, com ocupação simultânea potencial igual ou superior a cem pessoas.
 
-**§ 2º** Mesmo que a ocupação simultânea potencial seja inferior a cem pessoas, as normas especiais previstas no **caput** deste artigo serão estendidas aos estabelecimentos, edificações de comércio e serviços e áreas de reunião de público:
+§ 2º Mesmo que a ocupação simultânea potencial seja inferior a cem pessoas, as normas especiais previstas no caput deste artigo serão estendidas aos estabelecimentos, edificações de comércio e serviços e áreas de reunião de público:
 
-I – (VETADO);
+### I – (VETADO);
 
 II – que, pela sua destinação:
 
@@ -69,21 +67,21 @@ a) sejam ocupados predominantemente por idosos, crianças ou pessoas com dificul
 
 b) contenham em seu interior grande quantidade de material de alta inflamabilidade.
 
-**§ 3º** Desde que se assegure a adoção das medidas necessárias de prevenção e combate a incêndio e a desastres, ato do prefeito municipal poderá conceder autorização especial para a realização de eventos que integram o patrimônio cultural local ou regional.
+§ 3º Desde que se assegure a adoção das medidas necessárias de prevenção e combate a incêndio e a desastres, ato do prefeito municipal poderá conceder autorização especial para a realização de eventos que integram o patrimônio cultural local ou regional.
 
-**§ 4º** As medidas de prevenção referidas no § 3º deste artigo serão analisadas previamente pelo Corpo de Bombeiros Militar, com a realização de vistoria in loco.
+§ 4º As medidas de prevenção referidas no § 3º deste artigo serão analisadas previamente pelo Corpo de Bombeiros Militar, com a realização de vistoria in loco.
 
-**§ 5º** Nos locais onde não houver possibilidade de realização da vistoria prevista no § 4º deste artigo pelo Corpo de Bombeiros Militar, a análise das medidas de prevenção ficará a cargo da equipe técnica da prefeitura municipal com treinamento em prevenção e combate a incêndio e emergências, mediante o convênio referido no § 2º do art. 3º desta Lei.
+§ 5º Nos locais onde não houver possibilidade de realização da vistoria prevista no § 4º deste artigo pelo Corpo de Bombeiros Militar, a análise das medidas de prevenção ficará a cargo da equipe técnica da prefeitura municipal com treinamento em prevenção e combate a incêndio e emergências, mediante o convênio referido no § 2º do art. 3º desta Lei.
 
-**§ 6º** As disposições deste artigo aplicam-se, também, a imóveis públicos ou ocupados pelo poder público e a instalações temporárias.
+§ 6º As disposições deste artigo aplicam-se, também, a imóveis públicos ou ocupados pelo poder público e a instalações temporárias.
 
-**§ 7º** Regulamento disporá sobre o licenciamento simplificado de microempresas e empresas de pequeno porte, cuja atividade não ofereça risco de incêndios.
+§ 7º Regulamento disporá sobre o licenciamento simplificado de microempresas e empresas de pequeno porte, cuja atividade não ofereça risco de incêndios.
 
 **Art. 3º** Cabe ao Corpo de Bombeiros Militar planejar, analisar, avaliar, vistoriar, aprovar e fiscalizar as medidas de prevenção e combate a incêndio e a desastres em estabelecimentos, edificações e áreas de reunião de público, sem prejuízo das prerrogativas municipais no controle das edificações e do uso, do parcelamento e da ocupação do solo urbano e das atribuições dos profissionais responsáveis pelos respectivos projetos.
 
-**§ 1º** Inclui-se nas atividades de fiscalização previstas no **caput** deste artigo a aplicação de advertência, multa, interdição e embargo, na forma da legislação estadual pertinente.
+§ 1º Inclui-se nas atividades de fiscalização previstas no caput deste artigo a aplicação de advertência, multa, interdição e embargo, na forma da legislação estadual pertinente.
 
-**§ 2º** Os Municípios que não contarem com unidade do Corpo de Bombeiros Militar instalada poderão criar e manter serviços de prevenção e combate a incêndio e atendimento a emergências, mediante convênio com a respectiva corporação militar estadual.
+§ 2º Os Municípios que não contarem com unidade do Corpo de Bombeiros Militar instalada poderão criar e manter serviços de prevenção e combate a incêndio e atendimento a emergências, mediante convênio com a respectiva corporação militar estadual.
 
 **Art. 4º** O processo de aprovação da construção, instalação, reforma, ocupação ou uso de estabelecimentos, edificações e áreas de reunião de público perante o poder público municipal, voltado à emissão de alvará de licença ou autorização, ou documento equivalente, deverá observar:
 
@@ -97,13 +95,13 @@ IV – (VETADO); e
 
 V – as exigências fixadas no laudo ou documento similar expedido pelo Corpo de Bombeiros Militar, por força do disposto no art. 3º desta Lei.
 
-**§ 1º** Nos Municípios onde não houver possibilidade de realização de vistoria in loco pelo Corpo de Bombeiros Militar, a emissão do laudo referido no inciso V do **caput** deste artigo fica a cargo da equipe técnica da prefeitura municipal com treinamento em prevenção e combate a incêndio e a emergências, mediante o convênio referido no § 2º do art. 3º desta Lei.
+§ 1º Nos Municípios onde não houver possibilidade de realização de vistoria in loco pelo Corpo de Bombeiros Militar, a emissão do laudo referido no inciso V do caput deste artigo fica a cargo da equipe técnica da prefeitura municipal com treinamento em prevenção e combate a incêndio e a emergências, mediante o convênio referido no § 2º do art. 3º desta Lei.
 
-**§ 2º** A validade do alvará de licença ou autorização, ou documento equivalente expedido pelo poder público municipal na forma deste artigo, fica condicionada ao prazo de validade do laudo referido no inciso V do **caput** deste artigo.
+§ 2º A validade do alvará de licença ou autorização, ou documento equivalente expedido pelo poder público municipal na forma deste artigo, fica condicionada ao prazo de validade do laudo referido no inciso V do caput deste artigo.
 
-**§ 3º** Sem prejuízo de outras medidas cabíveis e do disposto na Lei nº 11.901, de 12 de janeiro de 2009, o laudo referido no inciso V do **caput** deste artigo poderá exigir a existência de bombeiros civis e a fixação do seu quantitativo nos estabelecimentos, edificações e áreas de reunião de público, bem como de funcionários treinados para agir em situações de emergência, certificados por cursos oficialmente reconhecidos.
+§ 3º Sem prejuízo de outras medidas cabíveis e do disposto na Lei nº 11.901, de 12 de janeiro de 2009 , o laudo referido no inciso V do caput deste artigo poderá exigir a existência de bombeiros civis e a fixação do seu quantitativo nos estabelecimentos, edificações e áreas de reunião de público, bem como de funcionários treinados para agir em situações de emergência, certificados por cursos oficialmente reconhecidos.
 
-**§ 4º** Além do disposto neste artigo, cabe ao poder público municipal requerer outros requisitos de segurança nos estabelecimentos, nas edificações e nas áreas de reunião de público, considerando-se:
+§ 4º Além do disposto neste artigo, cabe ao poder público municipal requerer outros requisitos de segurança nos estabelecimentos, nas edificações e nas áreas de reunião de público, considerando-se:
 
 I – a capacidade e a estrutura física do local;
 
@@ -113,41 +111,41 @@ III – os riscos à incolumidade física das pessoas.
 
 **Art. 5º** O poder público municipal e o Corpo de Bombeiros Militar realizarão fiscalizações e vistorias periódicas nos estabelecimentos comerciais e de serviços e nos edifícios residenciais multifamiliares, tendo em vista o controle da observância das determinações decorrentes dos processos de licenciamento ou autorização sob sua responsabilidade.
 
-**§ 1º** (VETADO).
+§ 1º (VETADO).
 
-**§ 2º** Nos locais onde não houver possibilidade de realização de vistoria in loco pelo Corpo de Bombeiros Militar, a vistoria será realizada apenas pelo poder público municipal, garantida a participação da equipe técnica da prefeitura municipal com treinamento em prevenção e combate a incêndio e a emergências, mediante o convênio referido no § 2º do art. 3º desta Lei.
+§ 2º Nos locais onde não houver possibilidade de realização de vistoria in loco pelo Corpo de Bombeiros Militar, a vistoria será realizada apenas pelo poder público municipal, garantida a participação da equipe técnica da prefeitura municipal com treinamento em prevenção e combate a incêndio e a emergências, mediante o convênio referido no § 2º do art. 3º desta Lei.
 
-**§ 3º** Constatadas irregularidades nas vistorias previstas neste artigo, serão aplicadas as sanções administrativas cabíveis previstas nas legislações estadual e municipal, incluindo advertência, multa, interdição, embargo e outras medidas pertinentes.
+§ 3º Constatadas irregularidades nas vistorias previstas neste artigo, serão aplicadas as sanções administrativas cabíveis previstas nas legislações estadual e municipal, incluindo advertência, multa, interdição, embargo e outras medidas pertinentes.
 
-**§ 4º** Constatadas condições de alto risco pelo poder público municipal ou pelo Corpo de Bombeiros Militar, o estabelecimento ou a edificação serão imediatamente interditados pelo ente público que fizer a constatação, assegurando-se, mediante provocação do interessado, a ampla defesa e o contraditório em processo administrativo posterior.
+§ 4º Constatadas condições de alto risco pelo poder público municipal ou pelo Corpo de Bombeiros Militar, o estabelecimento ou a edificação serão imediatamente interditados pelo ente público que fizer a constatação, assegurando-se, mediante provocação do interessado, a ampla defesa e o contraditório em processo administrativo posterior.
 
-**§ 5º** (VETADO).
+§ 5º (VETADO).
 
 **Art. 6º** (VETADO).
 
 **Art. 7º** As diretrizes estabelecidas por esta Lei serão suplementadas por normas estaduais, municipais e do Distrito Federal, na esfera de competência de cada ente político.
 
-**Parágrafo único.** Os Estados, os Municípios e o Distrito Federal deverão considerar as peculiaridades regionais e locais e poderão, por ato motivado da autoridade competente, determinar medidas diferenciadas para cada tipo de estabelecimento, edificação ou área de reunião de público, voltadas a assegurar a prevenção e combate a incêndio e a desastres e a segurança da população em geral.
+Parágrafo único. Os Estados, os Municípios e o Distrito Federal deverão considerar as peculiaridades regionais e locais e poderão, por ato motivado da autoridade competente, determinar medidas diferenciadas para cada tipo de estabelecimento, edificação ou área de reunião de público, voltadas a assegurar a prevenção e combate a incêndio e a desastres e a segurança da população em geral.
 
 **Art. 8º** Os cursos de graduação em Engenharia e Arquitetura em funcionamento no País, em universidades e organizações de ensino públicas e privadas, bem como os cursos de tecnologia e de ensino médio correlatos, incluirão nas disciplinas ministradas conteúdo relativo à prevenção e ao combate a incêndio e a desastres.
 
-**Parágrafo único.** Os responsáveis pelos cursos referidos no **caput** deste artigo terão o prazo de seis meses, contados da entrada em vigor desta Lei, para promover as complementações necessárias no conteúdo das disciplinas ministradas, visando a atender o disposto no **caput** deste artigo.
+Parágrafo único. Os responsáveis pelos cursos referidos no caput deste artigo terão o prazo de seis meses, contados da entrada em vigor desta Lei, para promover as complementações necessárias no conteúdo das disciplinas ministradas, visando a atender o disposto no caput deste artigo.
 
 **Art. 9º** Será obrigatório curso específico voltado para a prevenção e combate a incêndio para os oficiais e praças integrantes dos setores técnicos e de fiscalização dos Corpos de Bombeiros Militares, em conformidade com seus postos e graduações e os cargos a serem desempenhados.
 
 **Art. 10.** O poder público municipal e o Corpo de Bombeiros Militar manterão disponíveis, na rede mundial de computadores, informações completas sobre todos os alvarás de licença ou autorização, ou documento equivalente, laudos ou documento similar concedidos a estabelecimentos, edificações e áreas de reunião de público, com atividades permanentes ou temporárias.
 
-**§ 1º** A obrigação estabelecida no **caput** deste artigo aplica-se também:
+§ 1º A obrigação estabelecida no caput deste artigo aplica-se também:
 
-I – às informações referentes ao trâmite administrativo dos atos referidos no **caput** deste artigo; e
+I – às informações referentes ao trâmite administrativo dos atos referidos no caput deste artigo; e
 
 II – ao resultado das vistorias, perícias e outros atos administrativos relacionados à prevenção e ao combate a incêndio e a desastres.
 
-**§ 2º** Os estabelecimentos de comércio e de serviços que contarem com sítio eletrônico na rede mundial de computadores deverão disponibilizar na respectiva página, de forma destacada, os alvarás e outros documentos referidos no **caput** deste artigo.
+§ 2º Os estabelecimentos de comércio e de serviços que contarem com sítio eletrônico na rede mundial de computadores deverão disponibilizar na respectiva página, de forma destacada, os alvarás e outros documentos referidos no caput deste artigo.
 
 **Art. 11.** O disposto no art. 10 desta Lei não exime os responsáveis pelos estabelecimentos de comércio ou de serviço de manter visíveis ao público o alvará de funcionamento ou ato administrativo equivalente expedido pelo poder público municipal e demais documentações que são requisitos para o seu funcionamento.
 
-**Parágrafo único.** Sem prejuízo de exigências complementares nesse sentido determinadas pelos órgãos competentes, deverão estar divulgados na entrada dos estabelecimentos de comércio ou de serviço:
+Parágrafo único. Sem prejuízo de exigências complementares nesse sentido determinadas pelos órgãos competentes, deverão estar divulgados na entrada dos estabelecimentos de comércio ou de serviço:
 
 I – o alvará de funcionamento ou ato administrativo equivalente; e
 
@@ -155,59 +153,59 @@ II – a capacidade máxima de pessoas.
 
 **Art. 12.** (VETADO).
 
-**Art. 13.** Incorre em improbidade administrativa, nos termos do art. 11 da Lei nº 8.429, de 2 de junho de 1992, o prefeito municipal que deixar de tomar as providências necessárias para garantir a observância:
+**Art. 13.** Incorre em improbidade administrativa, nos termos do art. 11 da Lei nº 8.429, de 2 de junho de 1992 , o prefeito municipal que deixar de tomar as providências necessárias para garantir a observância:
 
-I – do disposto no **caput** e nos §§ 1º e 2º do art. 2º, no prazo máximo de dois anos, contados da data de entrada em vigor desta Lei;
+I – do disposto no caput e nos §§ 1º e 2º do art. 2º, no prazo máximo de dois anos, contados da data de entrada em vigor desta Lei;
 
 II – (VETADO); ou
 
-III – (VETADO).
+### III – (VETADO).
 
-**§ 1º** (VETADO).
+§ 1º (VETADO).
 
-**§ 2º** Os Estados, os Municípios e o Distrito Federal estabelecerão, por lei própria, prazos máximos para o trâmite administrativo voltado à emissão de alvará de licença, autorização, laudo ou outros documentos relacionados à aplicação desta Lei.
+§ 2º Os Estados, os Municípios e o Distrito Federal estabelecerão, por lei própria, prazos máximos para o trâmite administrativo voltado à emissão de alvará de licença, autorização, laudo ou outros documentos relacionados à aplicação desta Lei.
 
 **Art. 14.** (VETADO).
 
-**Art. 15.** As informações sobre incêndios ocorridos no País em áreas urbanas serão reunidas em sistema unificado de informações, com a participação da União, dos Estados, do Distrito Federal e dos Municípios, integrado ao sistema de informações e monitoramento de desastres previsto pela Lei nº 12.608, de 10 de abril de 2012, nos termos do regulamento.
+**Art. 15.** As informações sobre incêndios ocorridos no País em áreas urbanas serão reunidas em sistema unificado de informações, com a participação da União, dos Estados, do Distrito Federal e dos Municípios, integrado ao sistema de informações e monitoramento de desastres previsto pela Lei nº 12.608, de 10 de abril de 2012 , nos termos do regulamento.
 
 **Art. 16.** (VETADO).
 
-**Art. 17.** O art. 39 da Lei nº 8.078, de 11 de setembro de 1990, passa a vigorar acrescido do seguinte inciso XIV:
+**Art. 17.** O art. 39 da Lei nº 8.078, de 11 de setembro de 1990 , passa a vigorar acrescido do seguinte inciso XIV:
 
-“**Art.** 39.....................................................
+“ Art. 39. ....................................................
 
-..........................................................
+### ..........................................................
 
 XIV – permitir o ingresso em estabelecimentos comerciais ou de serviços de um número maior de consumidores que o fixado pela autoridade administrativa como máximo
 
-......................................................” (NR)
+### ...................................................... ” (NR)
 
-**Art. 18.** O art. 65 da Lei nº 8.078, de 11 de setembro de 1990, passa a vigorar acrescido do seguinte § 2º, renumerando-se o atual parágrafo único para § 1º:
+**Art. 18.** O art. 65 da Lei nº 8.078, de 11 de setembro de 1990 , passa a vigorar acrescido do seguinte § 2º, renumerando-se o atual parágrafo único para § 1º:
 
-“**Art.** 65.....................................................
+“ Art. 65. ....................................................
 
-§ 1º........................................................
+§ 1º ........................................................
 
-**§ 2º** A prática do disposto no inciso XIV do art. 39 desta Lei também caracteriza o crime previsto no **caput** deste artigo.” (NR)
+§ 2º A prática do disposto no inciso XIV do art. 39 desta Lei também caracteriza o crime previsto no caput deste artigo.” (NR)
 
 **Art. 19.** (VETADO).
 
-**Art. 20.** As disposições desta Lei serão aplicadas sem prejuízo das ações previstas no âmbito da Política Nacional de Proteção e Defesa Civil - PNPDEC e das prerrogativas dos entes públicos integrantes do Sistema Nacional de Proteção e Defesa Civil - SINPDEC, na forma da Lei nº 12.608, de 10 de abril de 2012.
+**Art. 20.** As disposições desta Lei serão aplicadas sem prejuízo das ações previstas no âmbito da Política Nacional de Proteção e Defesa Civil - PNPDEC e das prerrogativas dos entes públicos integrantes do Sistema Nacional de Proteção e Defesa Civil - SINPDEC, na forma da Lei nº 12.608, de 10 de abril de 2012 .
 
-**Art. 21.** Os órgãos de fiscalização do exercício das profissões de engenheiro e arquiteto, disciplinadas respectivamente pela Lei nº 5.194, de 24 de dezembro de 1966, e pela Lei nº 12.378, de 31 de dezembro de 2010, em seus atos de fiscalização, exigirão a apresentação dos projetos técnicos elaborados pelos profissionais, devidamente aprovados pelo poder público municipal.
+**Art. 21.** Os órgãos de fiscalização do exercício das profissões de engenheiro e arquiteto, disciplinadas respectivamente pela Lei nº 5.194, de 24 de dezembro de 1966 , e pela Lei nº 12.378, de 31 de dezembro de 2010 , em seus atos de fiscalização, exigirão a apresentação dos projetos técnicos elaborados pelos profissionais, devidamente aprovados pelo poder público municipal.
 
-**§ 1º** Nos projetos técnicos referidos no **caput** deste artigo incluem-se, conforme o caso, projetos de arquitetura, cálculo estrutural, instalações prediais, urbanização e outros a cargo de profissionais das áreas de engenharia e de arquitetura.
+§ 1º Nos projetos técnicos referidos no caput deste artigo incluem-se, conforme o caso, projetos de arquitetura, cálculo estrutural, instalações prediais, urbanização e outros a cargo de profissionais das áreas de engenharia e de arquitetura.
 
-**§ 2º** Se a edificação estiver sujeita a projeto de prevenção de incêndios, também será exigida a sua apresentação aos órgãos de fiscalização profissional.
+§ 2º Se a edificação estiver sujeita a projeto de prevenção de incêndios, também será exigida a sua apresentação aos órgãos de fiscalização profissional.
 
-**Art. 22.** As medidas previstas nesta Lei devem observar as diretrizes de simplificação, racionalização e uniformização a que se refere o art. 6º da Lei Complementar nº 123, de 14 de dezembro de 2006, bem como o disposto no art. 5º da Lei nº 11.598, de 3 de dezembro de 2007.
+**Art. 22.** As medidas previstas nesta Lei devem observar as diretrizes de simplificação, racionalização e uniformização a que se refere o art. 6º da Lei Complementar nº 123, de 14 de dezembro de 2006 , bem como o disposto no art. 5º da Lei nº 11.598, de 3 de dezembro de 2007 .
 
 **Art. 23.** Esta Lei entra em vigor após decorridos cento e oitenta dias de sua publicação oficial.
 
 Brasília, 30 de março de 2017; 196º da Independência e 129º da República.
 
-**MICHEL TEMER**
+### MICHEL TEMER
 
 Osmar Serraglio
 

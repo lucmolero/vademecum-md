@@ -1,0 +1,180 @@
+{
+  "schema": "candidate-normative-diff/v1",
+  "matrix_id": "VM-069",
+  "document_id": "br-federal-lei_ordinaria-15378-2026",
+  "status": "source_conflict",
+  "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-04-06;15378",
+  "source_status_before_resolution": "source_conflict",
+  "resolution": {
+    "status": "approved",
+    "selected_source_id": "normas-leg-br",
+    "expected_source_sha256": "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026",
+    "reason": "Both official sources expose the same 25-article instrument and the observed differences are presentation-level. The current Normas compilation is selected as the cleaner machine-readable body.",
+    "review_scope": "article_level_comparison"
+  },
+  "selected_source_id": "normas-leg-br",
+  "diff_status": "generated",
+  "current_path": "bases/curated/legislacao/federal/leis-ordinarias/2026/lei-ordinaria-15378-2026.md",
+  "structure": {
+    "artigos": {
+      "total_anterior": 25,
+      "total_atual": 25,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 4,
+      "inalterados": 21
+    },
+    "detalhes": [
+      {
+        "artigo": "5",
+        "status": "alterado",
+        "hash_anterior": "160b8d3bd679d1df3a4fdf53f66fbc6ac666d74498750a5ff48379ce04affe22",
+        "hash_atual": "fda620b8c993f62b446925df22d80a5f302f936518102a2e4ffec60000bab1e1",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "21",
+        "status": "alterado",
+        "hash_anterior": "f3f779d2b0a6a6d1f65cff2cb4e53295d6373873d3d43d54313a174126e2edfd",
+        "hash_atual": "2b519d7efbe6eecaa51ea91e9982bc29082d5637b6dd1460d4a862206ab52924",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "22",
+        "status": "alterado",
+        "hash_anterior": "655fb1280a1aba99f6bfced925b5663b429a1088245f1ae6089943f29f3888de",
+        "hash_atual": "8da5a6e97d9fdc44d06342958934db43e1530076d9fafb84ae8b6b5aa2c3800a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 6
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "24",
+        "status": "alterado",
+        "hash_anterior": "3f366b74bfc0699c27d04e86e64f47514fdfe17376f15161ce5fb6c814250a7b",
+        "hash_atual": "5324601c92837c1c1790c29740fefaf48809e74feb0323cf2b8201fe1650d94b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      }
+    ]
+  },
+  "classificacao": [
+    "decisao_de_fonte_aprovada",
+    "alteracao_normativa",
+    "possivel_retificacao"
+  ],
+  "hashes": {
+    "current_body_sha256": "0fc6b5dcd0dfa1d98d04732d9f8c7e4332b5e7f609c923d10d0d02561ef6b9cc",
+    "candidate_body_sha256": "b5e932904ec90e09eff0fd408cf29e5518aef454a1f4253d9d16cb7d95331763",
+    "source_raw_sha256": "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026",
+    "source_normalized_sha256": "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026",
+    "source_legal_body_sha256": "837e0857963ce8b3fb5b9caf629c8be927c367ea7f9d7856322639d595907648"
+  },
+  "risk": "alto",
+  "relations_before": [],
+  "relation_impact_count": 0,
+  "source_evidence": {
+    "data_corte": "2026-10-21",
+    "primary_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-04-06;15378",
+    "selected_source_id": "normas-leg-br",
+    "attempts": [
+      {
+        "source_id": "planalto-br",
+        "adapter": "planalto_html",
+        "adapter_version": "0.1.0",
+        "authority": "primary",
+        "status": "fetched",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15378.htm",
+        "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15378.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 38331,
+        "sha256_raw": "ea43996c7906cd806f430f3ffd627f1a578504f1d990068465c0954f8102cebf",
+        "sha256_normalized": "7d3650932b84ec56cde330a842ad865d9607493bfd42c260e0af0df3211beb80",
+        "sha256_body": "c0af93945a9346568fcd1c97e551052693d62da2a46e67f0b2fbd5a6080f36d7"
+      },
+      {
+        "source_id": "normas-leg-br",
+        "adapter": "normas_leg_current_compilation",
+        "adapter_version": "0.2.0",
+        "authority": "official_machine_readable_compilation",
+        "status": "fetched",
+        "url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-04-06;15378",
+        "fetch_url": "https://normas.leg.br/api/public/binario/3e40c18d-ce79-4f49-8980-a2036a739c87/texto",
+        "metadata_url": "https://normas.leg.br/api/public/normas?urn=urn%3Alex%3Abr%3Afederal%3Alei%3A2026-04-06%3B15378&tipo_documento=maior-detalhe",
+        "final_url": "https://normas.leg.br/api/public/binario/3e40c18d-ce79-4f49-8980-a2036a739c87/texto",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 24512,
+        "sha256_raw": "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026",
+        "sha256_normalized": "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026",
+        "sha256_body": "837e0857963ce8b3fb5b9caf629c8be927c367ea7f9d7856322639d595907648"
+      }
+    ]
+  }
+}

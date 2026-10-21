@@ -16,7 +16,10 @@ from bs4 import BeautifulSoup
 
 
 BLOCKED_TAGS = ("script", "style", "noscript", "strike", "s", "del")
-START_RE = re.compile(r"^O\s+PRESIDENTE\b", re.IGNORECASE)
+START_RE = re.compile(
+    r"^(?:LEI(?:\s+COMPLEMENTAR|\s+DELEGADA)?|DECRETO(?:-LEI)?|MEDIDA\s+PROVIS[ÓO]RIA|EMENDA\s+CONSTITUCIONAL|CONSTITUIÇÃO|O\s+PRESIDENTE|A\s+PRESIDENTA|O\s+CHEFE\s+DO\s+GOVERNO|DECRETA|RESOLVE|FA[ÇC]O\s+SABER|CONSIDERANDO|ART\.)\b",
+    re.IGNORECASE,
+)
 FOOTER_RE = re.compile(r"Este texto n(?:ão|Ã£o) substitui", re.IGNORECASE)
 
 
@@ -30,6 +33,10 @@ def clean_text(value: str) -> str:
 
 def heading_level(value: str) -> int | None:
     normalized = value.upper()
+    if normalized.startswith(("O CHEFE DO GOVERNO", "DECRETA", "RESOLVE")):
+        return None
+    if normalized.startswith(("O PRESIDENTE", "FAÇO SABER")):
+        return None
     if normalized.startswith("PARTE ") or normalized.startswith("LIVRO "):
         return 2
     if normalized.startswith("TÍTULO ") or normalized.startswith("TITULO "):
@@ -55,8 +62,15 @@ def format_block(value: str) -> str:
 
 
 def convert(source: Path, encoding: str) -> str:
-    html = source.read_bytes().decode(encoding)
-    soup = BeautifulSoup(html, "html.parser")
+    raw = source.read_bytes()
+    if encoding == "auto":
+        try:
+            decoded = raw.decode("utf-8")
+        except UnicodeDecodeError:
+            decoded = raw.decode("windows-1252")
+        soup = BeautifulSoup(decoded, "html.parser")
+    else:
+        soup = BeautifulSoup(raw.decode(encoding), "html.parser")
     for tag_name in BLOCKED_TAGS:
         for tag in soup.find_all(tag_name):
             tag.decompose()

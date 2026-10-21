@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2017-04-11"
 ementa: "Dispõe sobre o exercício da profissão de detetive particular."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-04-11;13432"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "d600cf96afc59446cc0982afd9d28e628eed1b209b6edc022b0eec588c1279c2"
+sha256_origem: "59b9918d3e3729ab7f716022251a9c089a74f750b708dd707abc13c7de80aadd"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,14 +28,12 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "59b9918d3e3729ab7f716022251a9c089a74f750b708dd707abc13c7de80aadd"
+sha256_corpo: "fe174d69fbc2ed713fc9b5c660f05411f1c816e9fa5870d22d2c028b5908a0f9"
 ---
 # Lei nº 13.432 de 11/04/2017
 
-LEI Nº 13.432, DE 11 DE ABRIL DE 2017
-
-Dispõe sobre o exercício da profissão de detetive particular.
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -43,9 +41,9 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 2º** Para os fins desta Lei, considera-se detetive particular o profissional que, habitualmente, por conta própria ou na forma de sociedade civil ou empresarial, planeje e execute coleta de dados e informações de natureza não criminal, com conhecimento técnico e utilizando recursos e meios tecnológicos permitidos, visando ao esclarecimento de assuntos de interesse privado do contratante.
 
-**§ 1º** Consideram-se sinônimas, para efeito desta Lei, as expressões "detetive particular", "detetive profissional" e outras que tenham ou venham a ter o mesmo objeto.
+§ 1º Consideram-se sinônimas, para efeito desta Lei, as expressões "detetive particular", "detetive profissional" e outras que tenham ou venham a ter o mesmo objeto.
 
-**§ 2º** (VETADO).
+§ 2º (VETADO).
 
 **Art. 3º** (VETADO).
 
@@ -53,7 +51,7 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 5º** O detetive particular pode colaborar com investigação policial em curso, desde que expressamente autorizado pelo contratante.
 
-**Parágrafo único.** O aceite da colaboração ficará a critério do delegado de polícia, que poderá admiti-la ou rejeitá-la a qualquer tempo.
+Parágrafo único. O aceite da colaboração ficará a critério do delegado de polícia, que poderá admiti-la ou rejeitá-la a qualquer tempo.
 
 **Art. 6º** Em razão da natureza reservada de suas atividades, o detetive particular, no desempenho da profissão, deve agir com técnica, legalidade, honestidade, discrição, zelo e apreço pela verdade.
 
@@ -73,7 +71,7 @@ V – local em que será prestado o serviço;
 
 VI – estipulação dos honorários e sua forma de pagamento.
 
-**Parágrafo único.** É facultada às partes a estipulação de seguro de vida em favor do detetive particular, que indicará os beneficiários, quando a atividade envolver risco de morte.
+Parágrafo único. É facultada às partes a estipulação de seguro de vida em favor do detetive particular, que indicará os beneficiários, quando a atividade envolver risco de morte.
 
 **Art. 9º** Ao final do prazo pactuado para a execução dos serviços profissionais, o detetive particular entregará ao contratante ou a seu representante legal, mediante recibo, relatório circunstanciado sobre os dados e informações coletados, que conterá:
 
@@ -125,7 +123,7 @@ III – renunciar ao serviço contratado, caso gere risco à sua integridade fí
 
 IV – compensar o montante dos honorários recebidos ou recebê-lo proporcionalmente, de acordo com o período trabalhado, conforme pactuado;
 
-V – (VETADO);
+### V – (VETADO);
 
 VI – reclamar, verbalmente ou por escrito, perante qualquer autoridade, contra a inobservância de preceito de lei, regulamento ou regimento;
 
@@ -135,7 +133,7 @@ VII – ser publicamente desagravado, quando injustamente ofendido no exercício
 
 Brasília, 11 de abril de 2017; 196º da Independência e 129º da República.
 
-**MICHEL TEMER**
+### MICHEL TEMER
 
 Osmar Serraglio
 

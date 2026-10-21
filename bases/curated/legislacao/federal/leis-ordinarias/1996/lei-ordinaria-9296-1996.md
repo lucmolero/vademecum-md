@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "997cd9dd29b23e0674da9c7e735f18fa9734fc7214a948831d848f9979457a60"
-alterada_por: ["br-federal-lei_ordinaria-13869-2019"]
+alterada_por: ["br-federal-lei_ordinaria-13869-2019", "br-federal-lei_ordinaria-13964-2019"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

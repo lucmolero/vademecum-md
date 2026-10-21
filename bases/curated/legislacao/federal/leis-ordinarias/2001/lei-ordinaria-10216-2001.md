@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2001-04-06"
 ementa: "Dispõe sobre a proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o modelo assistencial em saúde mental."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2001-04-06;10216"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "665a549b35c99b3f808c5506cd4d45ff3eac23547a28c02e5645512a62567564"
+sha256_origem: "dc75d672954d24102a1ef5eb8632cf3e81b00411fc92c5a5d7ef65c77007fdb6"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,22 +28,20 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "dc75d672954d24102a1ef5eb8632cf3e81b00411fc92c5a5d7ef65c77007fdb6"
+sha256_corpo: "1ca50a8c8d92a01936ecfa3e63dcb2c7c4141e6bf7c1090ad5dc172159e79f7b"
 ---
 # Lei nº 10.216 de 06/04/2001
 
-LEI Nº 10.216, DE 6 DE ABRIL DE 2001
-
-Dispõe sobre a proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o modelo assistencial em saúde mental.
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-**Art. 1º** Os direitos e a proteção das pessoas acometidas de transtorno mental, de que trata esta Lei, são assegurados sem qualquer forma de discriminação quanto à raça, cor, sexo, orientação sexual, religião, opção política, nacionalidade, idade, família, recursos econômicos e ao grau de gravidade ou tempo de evolução de seu transtorno, ou qualquer outra.
+**Art. 1** º Os direitos e a proteção das pessoas acometidas de transtorno mental, de que trata esta Lei, são assegurados sem qualquer forma de discriminação quanto à raça, cor, sexo, orientação sexual, religião, opção política, nacionalidade, idade, família, recursos econômicos e ao grau de gravidade ou tempo de evolução de seu transtorno, ou qualquer outra.
 
-**Art. 2º** Nos atendimentos em saúde mental, de qualquer natureza, a pessoa e seus familiares ou responsáveis serão formalmente cientificados dos direitos enumerados no parágrafo único deste artigo.
+**Art. 2** º Nos atendimentos em saúde mental, de qualquer natureza, a pessoa e seus familiares ou responsáveis serão formalmente cientificados dos direitos enumerados no parágrafo único deste artigo.
 
-**Parágrafo único.** São direitos da pessoa portadora de transtorno mental:
+Parágrafo único. São direitos da pessoa portadora de transtorno mental:
 
 I - ter acesso ao melhor tratamento do sistema de saúde, consentâneo às suas necessidades;
 
@@ -63,21 +61,21 @@ VIII - ser tratada em ambiente terapêutico pelos meios menos invasivos possíve
 
 IX - ser tratada, preferencialmente, em serviços comunitários de saúde mental.
 
-**Art. 3º** É responsabilidade do Estado o desenvolvimento da política de saúde mental, a assistência e a promoção de ações de saúde aos portadores de transtornos mentais, com a devida participação da sociedade e da família, a qual será prestada em estabelecimento de saúde mental, assim entendidas as instituições ou unidades que ofereçam assistência em saúde aos portadores de transtornos mentais.
+**Art. 3** º É responsabilidade do Estado o desenvolvimento da política de saúde mental, a assistência e a promoção de ações de saúde aos portadores de transtornos mentais, com a devida participação da sociedade e da família, a qual será prestada em estabelecimento de saúde mental, assim entendidas as instituições ou unidades que ofereçam assistência em saúde aos portadores de transtornos mentais.
 
 **Art. 4º** A internação, em qualquer de suas modalidades, só será indicada quando os recursos extra-hospitalares se mostrarem insuficientes.
 
-**§ 1º** O tratamento visará, como finalidade permanente, a reinserção social do paciente em seu meio.
+§ 1 º O tratamento visará, como finalidade permanente, a reinserção social do paciente em seu meio.
 
-**§ 2º** O tratamento em regime de internação será estruturado de forma a oferecer assistência integral à pessoa portadora de transtornos mentais, incluindo serviços médicos, de assistência social, psicológicos, ocupacionais, de lazer, e outros.
+§ 2 º O tratamento em regime de internação será estruturado de forma a oferecer assistência integral à pessoa portadora de transtornos mentais, incluindo serviços médicos, de assistência social, psicológicos, ocupacionais, de lazer, e outros.
 
-**§ 3º** É vedada a internação de pacientes portadores de transtornos mentais em instituições com características asilares, ou seja, aquelas desprovidas dos recursos mencionados no § 2º e que não assegurem aos pacientes os direitos enumerados no parágrafo único do art. 2º.
+§ 3 º É vedada a internação de pacientes portadores de transtornos mentais em instituições com características asilares, ou seja, aquelas desprovidas dos recursos mencionados no § 2 º e que não assegurem aos pacientes os direitos enumerados no parágrafo único do art. 2 º.
 
-**Art. 5º** O paciente há longo tempo hospitalizado ou para o qual se caracterize situação de grave dependência institucional, decorrente de seu quadro clínico ou de ausência de suporte social, será objeto de política específica de alta planejada e reabilitação psicossocial assistida, sob responsabilidade da autoridade sanitária competente e supervisão de instância a ser definida pelo Poder Executivo, assegurada a continuidade do tratamento, quando necessário.
+**Art. 5** º O paciente há longo tempo hospitalizado ou para o qual se caracterize situação de grave dependência institucional, decorrente de seu quadro clínico ou de ausência de suporte social, será objeto de política específica de alta planejada e reabilitação psicossocial assistida, sob responsabilidade da autoridade sanitária competente e supervisão de instância a ser definida pelo Poder Executivo, assegurada a continuidade do tratamento, quando necessário.
 
-**Art. 6º** A internação psiquiátrica somente será realizada mediante laudo médico circunstanciado que caracterize os seus motivos.
+**Art. 6** º A internação psiquiátrica somente será realizada mediante laudo médico circunstanciado que caracterize os seus motivos.
 
-**Parágrafo único.** São considerados os seguintes tipos de internação psiquiátrica:
+Parágrafo único. São considerados os seguintes tipos de internação psiquiátrica:
 
 I - internação voluntária: aquela que se dá com o consentimento do usuário;
 
@@ -85,17 +83,17 @@ II - internação involuntária: aquela que se dá sem o consentimento do usuár
 
 III - internação compulsória: aquela determinada pela Justiça.
 
-**Art. 7º** A pessoa que solicita voluntariamente sua internação, ou que a consente, deve assinar, no momento da admissão, uma declaração de que optou por esse regime de tratamento.
+**Art. 7** º A pessoa que solicita voluntariamente sua internação, ou que a consente, deve assinar, no momento da admissão, uma declaração de que optou por esse regime de tratamento.
 
-**Parágrafo único.** O término da internação voluntária dar-se-á por solicitação escrita do paciente ou por determinação do médico assistente.
+Parágrafo único. O término da internação voluntária dar-se-á por solicitação escrita do paciente ou por determinação do médico assistente.
 
-**Art. 8º** A internação voluntária ou involuntária somente será autorizada por médico devidamente registrado no Conselho Regional de Medicina - CRM do Estado onde se localize o estabelecimento.
+**Art. 8** º A internação voluntária ou involuntária somente será autorizada por médico devidamente registrado no Conselho Regional de Medicina - CRM do Estado onde se localize o estabelecimento.
 
-**§ 1º** A internação psiquiátrica involuntária deverá, no prazo de setenta e duas horas, ser comunicada ao Ministério Público Estadual pelo responsável técnico do estabelecimento no qual tenha ocorrido, devendo esse mesmo procedimento ser adotado quando da respectiva alta.
+§ 1 º A internação psiquiátrica involuntária deverá, no prazo de setenta e duas horas, ser comunicada ao Ministério Público Estadual pelo responsável técnico do estabelecimento no qual tenha ocorrido, devendo esse mesmo procedimento ser adotado quando da respectiva alta.
 
-**§ 2º** O término da internação involuntária dar-se-á por solicitação escrita do familiar, ou responsável legal, ou quando estabelecido pelo especialista responsável pelo tratamento.
+§ 2 º O término da internação involuntária dar-se-á por solicitação escrita do familiar, ou responsável legal, ou quando estabelecido pelo especialista responsável pelo tratamento.
 
-**Art. 9º** A internação compulsória é determinada, de acordo com a legislação vigente, pelo juiz competente, que levará em conta as condições de segurança do estabelecimento, quanto à salvaguarda do paciente, dos demais internados e funcionários.
+**Art. 9** º A internação compulsória é determinada, de acordo com a legislação vigente, pelo juiz competente, que levará em conta as condições de segurança do estabelecimento, quanto à salvaguarda do paciente, dos demais internados e funcionários.
 
 **Art. 10.** Evasão, transferência, acidente, intercorrência clínica grave e falecimento serão comunicados pela direção do estabelecimento de saúde mental aos familiares, ou ao representante legal do paciente, bem como à autoridade sanitária responsável, no prazo máximo de vinte e quatro horas da data da ocorrência.
 
@@ -105,9 +103,9 @@ III - internação compulsória: aquela determinada pela Justiça.
 
 **Art. 13.** Esta Lei entra em vigor na data de sua publicação.
 
-Brasília, 6 de abril de 2001; 180º da Independência e 113º da República.
+Brasília, 6 de abril de 2001; 180 º da Independência e 113 º da República.
 
-**FERNANDO HENRIQUE CARDOSO**
+### FERNANDO HENRIQUE CARDOSO
 
 José Gregori
 

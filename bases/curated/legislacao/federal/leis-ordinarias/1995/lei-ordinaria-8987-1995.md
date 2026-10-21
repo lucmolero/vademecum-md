@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "84aed37bcb9604824a0917f67910fbdc7ff81287aa3d49f115fda134c094264e"
-alterada_por: ["br-federal-lei_ordinaria-13097-2015", "br-federal-lei_ordinaria-14133-2021"]
+alterada_por: ["br-federal-lei_ordinaria-11445-2007", "br-federal-lei_ordinaria-13097-2015", "br-federal-lei_ordinaria-14133-2021"]
 revogada_por: ["br-federal-lei_ordinaria-9074-1995"]
 regulamentada_por: []
 retificada_por: []

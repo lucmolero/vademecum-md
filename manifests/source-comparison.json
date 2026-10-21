@@ -1,0 +1,14 @@
+{
+  "schema": "source-comparison-policy/v1",
+  "default_mode": "same_document",
+  "modes": {
+    "same_document": "All successful official sources must describe the same legal artifact and therefore agree after normalization.",
+    "complementary_sources": "Sources are official components of one editorial item and are retained as evidence without comparing their hashes."
+  },
+  "documents": {
+    "VM-001": {
+      "mode": "complementary_sources",
+      "reason": "The main constitutional compilation and a specific amendment page are complementary official sources."
+    }
+  }
+}

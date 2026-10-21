@@ -20,7 +20,7 @@ fonte_oficial: ["https://planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133
 fonte_publicacao: []
 origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "9b4e704411f3e488766fe1885b381326844afbba7b7921f7dbc70ece49de3728"
+sha256_origem: "4392f6ac7938817e3b36e5cee22e500f857dbaa16d8e5484abf747d190eca480"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,7 +28,11 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto consolidado conforme página oficial do Planalto, consultada em 2026-10-21.", "O texto oficial registra alterações posteriores; a materialização individual das leis alteradoras será concluída na etapa de histórico e grafo normativo."]
 camada: "core_profissional"
+sha256_normalizado: "ff68fc5ad41f334c2f0f4a6f682320e3a336534aa85acad358e777d00b80000e"
+sha256_corpo: "6687c8f3254bfa26ce8848073388c82d6077b7be6b5038b1393acdabd31c6fa0"
 ---
+# Lei nº 14.133, de 1º de abril de 2021
+
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 ### TÍTULO I

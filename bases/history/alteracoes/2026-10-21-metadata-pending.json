@@ -1,9 +1,12 @@
 {
-  "schema": "metadata-reconciliation/v1",
+  "schema": "metadata-reconciliation/v2",
   "generated_at": "2026-10-21",
-  "scope": "pending_documents",
+  "scope": "resolved_metadata_reconciliation",
+  "status": "completed",
   "updated": 110,
+  "pending_after": 0,
   "unmatched": [],
+  "analysis_method": "official_snapshot_metadata_plus_deterministic_identity_match",
   "changes": [
     {
       "id": "br-federal-decreto-9830-2019",

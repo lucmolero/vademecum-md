@@ -1,0 +1,84 @@
+{
+  "schema": "candidate-normative-diff/v1",
+  "matrix_id": "VM-006",
+  "document_id": "br-federal-decreto_lei-3914-1941",
+  "status": "source_conflict",
+  "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-09;3914",
+  "source_status_before_resolution": "source_conflict",
+  "resolution": {
+    "status": "approved",
+    "selected_source_id": "normas-leg-br",
+    "expected_source_sha256": "5824f34fd0b4b3de3f5859c8f05ec444ba9b80bbe41b65868b98f6640d8d6ca8",
+    "reason": "The current compilation is the complete normative body for the historical decree. The Planalto page is retained as corroborating publication evidence and uses a legacy HTML structure whose first article is outside the normal paragraph nodes.",
+    "review_scope": "article_presence_and_source_structure"
+  },
+  "selected_source_id": "normas-leg-br",
+  "diff_status": "generated",
+  "current_path": "bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3914-1941.md",
+  "structure": {
+    "artigos": {
+      "total_anterior": 27,
+      "total_atual": 27,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 0,
+      "inalterados": 27
+    },
+    "detalhes": []
+  },
+  "classificacao": [
+    "decisao_de_fonte_aprovada",
+    "formatacao_ou_metadado",
+    "possivel_revogacao",
+    "possivel_efeito_de_vigencia"
+  ],
+  "hashes": {
+    "current_body_sha256": "edd63d66876ceed66edb9af9748d25f83c3cb33e3d3611208f25c1f0e356ef51",
+    "candidate_body_sha256": "8803b4a519dca1982b1b39fd0247bbb5a1ce306bc6f1590b3cc8a6281e003e32",
+    "source_raw_sha256": "5824f34fd0b4b3de3f5859c8f05ec444ba9b80bbe41b65868b98f6640d8d6ca8",
+    "source_normalized_sha256": "5824f34fd0b4b3de3f5859c8f05ec444ba9b80bbe41b65868b98f6640d8d6ca8",
+    "source_legal_body_sha256": "c4cdc72d3f26c246491987101ead19c65274726f5d1ae9b17686a5b5457038a5"
+  },
+  "risk": "alto",
+  "relations_before": [],
+  "relation_impact_count": 0,
+  "source_evidence": {
+    "data_corte": "2026-10-21",
+    "primary_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-09;3914",
+    "selected_source_id": "normas-leg-br",
+    "attempts": [
+      {
+        "source_id": "planalto-br",
+        "adapter": "planalto_html",
+        "adapter_version": "0.1.0",
+        "authority": "primary",
+        "status": "fetched",
+        "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del3914.htm",
+        "final_url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del3914.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 18245,
+        "sha256_raw": "28c923eaca1d16c38eefd99e24e9a2a7e5335adc3f90419447920e03bdb1b52b",
+        "sha256_normalized": "8b8230bcbe96d38218d20c3cfe9db06abb669f96d15303dc76d0ec893a6efe75",
+        "sha256_body": "39e13e3b8298b9c6f7f02a31bfa58d8f083cc162a004f70a0b4a7213f65ccb16"
+      },
+      {
+        "source_id": "normas-leg-br",
+        "adapter": "normas_leg_current_compilation",
+        "adapter_version": "0.2.0",
+        "authority": "official_machine_readable_compilation",
+        "status": "fetched",
+        "url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-09;3914",
+        "fetch_url": "https://normas.leg.br/api/public/binario/6656089c-a42e-4316-99fc-287e7373480b/texto",
+        "metadata_url": "https://normas.leg.br/api/public/normas?urn=urn%3Alex%3Abr%3Afederal%3Adecreto.lei%3A1941-12-09%3B3914&tipo_documento=maior-detalhe",
+        "final_url": "https://normas.leg.br/api/public/binario/6656089c-a42e-4316-99fc-287e7373480b/texto",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 21942,
+        "sha256_raw": "5824f34fd0b4b3de3f5859c8f05ec444ba9b80bbe41b65868b98f6640d8d6ca8",
+        "sha256_normalized": "5824f34fd0b4b3de3f5859c8f05ec444ba9b80bbe41b65868b98f6640d8d6ca8",
+        "sha256_body": "c4cdc72d3f26c246491987101ead19c65274726f5d1ae9b17686a5b5457038a5"
+      }
+    ]
+  }
+}

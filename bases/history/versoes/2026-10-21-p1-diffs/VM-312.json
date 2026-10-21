@@ -1,0 +1,157 @@
+{
+  "schema": "candidate-normative-diff/v1",
+  "matrix_id": "VM-312",
+  "document_id": "br-federal-lei_ordinaria-15142-2025",
+  "status": "source_conflict",
+  "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-06-03;15142",
+  "source_status_before_resolution": "source_conflict",
+  "resolution": {
+    "status": "approved",
+    "selected_source_id": "normas-leg-br",
+    "expected_source_sha256": "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61",
+    "reason": "Both official sources expose the same 14-article instrument, including its transitional and revocation provisions. The current Normas compilation is selected for machine-readable normalization; Planalto remains publication evidence.",
+    "review_scope": "article_level_comparison"
+  },
+  "selected_source_id": "normas-leg-br",
+  "diff_status": "generated",
+  "current_path": "bases/curated/legislacao/federal/leis-ordinarias/2025/lei-ordinaria-15142-2025.md",
+  "structure": {
+    "artigos": {
+      "total_anterior": 14,
+      "total_atual": 14,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 3,
+      "inalterados": 11
+    },
+    "detalhes": [
+      {
+        "artigo": "2",
+        "status": "alterado",
+        "hash_anterior": "eb799b873d5f4700eee7265b3cfe09e01ae5e189d2c0174152210e515a1fcf3f",
+        "hash_atual": "c7beaa2e986d79f724afe8dd11942339de56c7a33a2b8c4d3a1ef40bbba10d2c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "11",
+        "status": "alterado",
+        "hash_anterior": "25d169302348a3a715becb8d1284e8a813568f04e916fe28c3fc5c96eb3576cb",
+        "hash_atual": "273f7b4d37cb19665d0c89e313a8d945eec1773996dad4aa217e4abe65052d0c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "13",
+        "status": "alterado",
+        "hash_anterior": "bb46a044258e706c95a444951888d71daf39d8cdfd9d1f08926a582ce5e01248",
+        "hash_atual": "665f1a02d5cb080b96acb27370a13bdf261cb26dd607c038122713c0c9b27401",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      }
+    ]
+  },
+  "classificacao": [
+    "decisao_de_fonte_aprovada",
+    "alteracao_normativa",
+    "possivel_revogacao",
+    "possivel_veto"
+  ],
+  "hashes": {
+    "current_body_sha256": "fef1a697033ac179a02755c2c931fae897de10da8e52add0d8461909202ddf45",
+    "candidate_body_sha256": "2e2ede9370c53ae2daf887013aba1216fd87921a17381784d445de6d5b3de32c",
+    "source_raw_sha256": "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61",
+    "source_normalized_sha256": "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61",
+    "source_legal_body_sha256": "d2bdc92ce5dcb5ee3ef6ac1692bc5d25b97720c4d45327d7a9f8d851870fdaf9"
+  },
+  "risk": "alto",
+  "relations_before": [],
+  "relation_impact_count": 0,
+  "source_evidence": {
+    "data_corte": "2026-10-21",
+    "primary_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-06-03;15142",
+    "selected_source_id": "normas-leg-br",
+    "attempts": [
+      {
+        "source_id": "planalto-br",
+        "adapter": "planalto_html",
+        "adapter_version": "0.1.0",
+        "authority": "primary",
+        "status": "fetched",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15142.htm",
+        "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15142.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 31352,
+        "sha256_raw": "00b4e621f46d54495f8965ca4f58b47fbbb7130814c068aaaeb2a6044ea4edbd",
+        "sha256_normalized": "9ab7b8751a0ac3843abdc561f9c7a420c848e098a6a3ac604446732e62d05c65",
+        "sha256_body": "763c2b3a7e878996f19a60846176f0f5b1103bf8816ccc3d955eebfaa161a89f"
+      },
+      {
+        "source_id": "normas-leg-br",
+        "adapter": "normas_leg_current_compilation",
+        "adapter_version": "0.2.0",
+        "authority": "official_machine_readable_compilation",
+        "status": "fetched",
+        "url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-06-03;15142",
+        "fetch_url": "https://normas.leg.br/api/public/binario/50124602-e658-447f-9629-38158a312096/texto",
+        "metadata_url": "https://normas.leg.br/api/public/normas?urn=urn%3Alex%3Abr%3Afederal%3Alei%3A2025-06-03%3B15142&tipo_documento=maior-detalhe",
+        "final_url": "https://normas.leg.br/api/public/binario/50124602-e658-447f-9629-38158a312096/texto",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 22003,
+        "sha256_raw": "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61",
+        "sha256_normalized": "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61",
+        "sha256_body": "d2bdc92ce5dcb5ee3ef6ac1692bc5d25b97720c4d45327d7a9f8d851870fdaf9"
+      }
+    ]
+  }
+}

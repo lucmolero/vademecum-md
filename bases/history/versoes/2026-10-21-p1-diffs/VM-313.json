@@ -1,0 +1,830 @@
+{
+  "schema": "candidate-normative-diff/v1",
+  "matrix_id": "VM-313",
+  "document_id": "br-federal-lei_ordinaria-15358-2026",
+  "status": "source_conflict",
+  "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-03-24;15358",
+  "source_status_before_resolution": "source_conflict",
+  "resolution": {
+    "status": "approved",
+    "selected_source_id": "normas-leg-br",
+    "expected_source_sha256": "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4",
+    "reason": "Both official sources expose the same 44-article instrument and the same revocation provisions; differences are formatting, punctuation and legacy HTML presentation. The current Normas compilation is selected as the cleaner machine-readable body.",
+    "review_scope": "article_level_comparison"
+  },
+  "selected_source_id": "normas-leg-br",
+  "diff_status": "generated",
+  "current_path": "bases/curated/legislacao/federal/leis-ordinarias/2026/lei-ordinaria-15358-2026.md",
+  "structure": {
+    "artigos": {
+      "total_anterior": 44,
+      "total_atual": 44,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 22,
+      "inalterados": 22
+    },
+    "detalhes": [
+      {
+        "artigo": "1",
+        "status": "alterado",
+        "hash_anterior": "5dc1315838bb35e00efc286d96fc753849b6b0507c491d4c8eddeb4da585da1b",
+        "hash_atual": "a6d5ab0a00c9dfcf4fc6307cf86a987c7628a7b458bd41694abb8297f747ac4c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "2",
+        "status": "alterado",
+        "hash_anterior": "f4526166f31cd8b9901e897fc591869e8b6ba0468935600d45453c10fea88f40",
+        "hash_atual": "87159afd3606e409fab46ae36577c733d932545bb86831e1c2bea9e802e526b2",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 6
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 10
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "4",
+        "status": "alterado",
+        "hash_anterior": "08cee2aa3518643c4552c8e1ea607345613b80a7a627ae6674bdc7c04be9e0ba",
+        "hash_atual": "777f2c6d94452f7ae768b372cead2b5edd2a52ff17940d38f1e8c457a333422b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "8",
+        "status": "alterado",
+        "hash_anterior": "1469c872d389f4b19c422db81f2f966bd8aec509a57b33ca67bb0f51a552eadd",
+        "hash_atual": "c771e0d66b52f299d6e02e5dc19eab6249dc613f2c70f21e6da93902d7a55e28",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "9",
+        "status": "alterado",
+        "hash_anterior": "4c645f18d6adf0fca2364bbaf0e39b71104710de1018f1463d93cb96589f1299",
+        "hash_atual": "b711e295973f1f950ab35913ecf3735d1e48ac54ba8c529f577901f539418841",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 14
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 9
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "10",
+        "status": "alterado",
+        "hash_anterior": "897d484d91a6f3377062833f8be64b0ce03edb8ea1858a4810b010deb097236c",
+        "hash_atual": "26ecafbc75d8bf64db83434d5493d025d6b18131e5f490935b1ef170a8eb1ab8",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 9
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 6
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "11",
+        "status": "alterado",
+        "hash_anterior": "0cba5c76a1713535d3e4fbb0e1b95a5e451a502366b8c3934e534325af3c3afa",
+        "hash_atual": "01b0ed54ea04e7382a756a7a8434daf06ade347e51f12aec9fecf73d679ba4ee",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 10
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "13",
+        "status": "alterado",
+        "hash_anterior": "5a43d3b301a1094e2e77503eee70f72b866fa45b7c491788179e43b257ae8158",
+        "hash_atual": "9e3e330faca52eba8674a810ee9cfa633c0adf3fc659125b672c51c206ece06a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 4
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "28",
+        "status": "alterado",
+        "hash_anterior": "14d690199934ba3975db1530e4b04793bd9e8767f9930c75ad1974ecd8e40a73",
+        "hash_atual": "7e78d02015ff86c09de9a56d8df3194177472e4cef8bfa0d50cdb8d7329205b4",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "29",
+        "status": "alterado",
+        "hash_anterior": "5aabd9a350ac0346871ae6c7789638e98148e1bc85c75010ad0ee019aa27f00c",
+        "hash_atual": "6c89b68b398d5cd350f7c83a387610eef8914cbb1b04dea7bd103e72b9b0e038",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 5
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "30",
+        "status": "alterado",
+        "hash_anterior": "fef80b299c07dff02d12f0125ffa310093e73297de3bcca7bf0dc0e330fb9b64",
+        "hash_atual": "9bb5cc01e942068038f932242ed1a5e211677ba236e449f4deeb352e8faf965a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "32",
+        "status": "alterado",
+        "hash_anterior": "53f0448c64568c8874192182c4424a69482a6a1fbb38d7d08dcf39af89907ccb",
+        "hash_atual": "3dcd4ce50515b86f0e33d5cfa9bcc7b16b79d49d4fd90892921dc0147c3c1169",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "33",
+        "status": "alterado",
+        "hash_anterior": "75d42f377ac424c841a0e22ff8444f1f49b7ec4b044e07365105ec3550857df6",
+        "hash_atual": "91ff9edffb7ebf98260d319552ffc4ec23080cdd5c676025199f9b179fe03bbb",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 4,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "34",
+        "status": "alterado",
+        "hash_anterior": "87a3c1d4eef9ca7353f25994ff0348af7532f178449ca8754855a9237e21c23a",
+        "hash_atual": "0f62dbe75ba42484b14033f1847dc02f9b45494b491e34979f9e6c9375841904",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "35",
+        "status": "alterado",
+        "hash_anterior": "b19a1b864648c471e39a52d455854cd9710264195109ccd07d26946d14b08d9b",
+        "hash_atual": "6e30390dbd0491cf0cf9b8a12ec1744b6f12d5f6f84608e7508599dda986eaf6",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 3
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 3
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "36",
+        "status": "alterado",
+        "hash_anterior": "bb87d9e2a7a0661a14755a9388f3904f158d617cc3af040825ed3654c6ebdb87",
+        "hash_atual": "6d42039fd2e53df8f32b28e00842ad7dfec5dbde239d1edf01bdd04b9211b84e",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "37",
+        "status": "alterado",
+        "hash_anterior": "74b4d18dd076794fcd59d22b491106512d02b8d0c52237a1aa2e703604d5e36e",
+        "hash_atual": "e620d3a0b5c87731dfebec8f812201102daf59340528c4d41fd684c956f2532c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "38",
+        "status": "alterado",
+        "hash_anterior": "3a2958bc07acf945bd58a19220c79a9e7c723ee533caeca92aa76ee0b29b324f",
+        "hash_atual": "907ea02bbded55f4599e7829fa7ab1b654e8d4de6a8a03b832a5d01593785742",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 7
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "39",
+        "status": "alterado",
+        "hash_anterior": "072e1fe42c991ad0bf8a7d9e6029991de18c28c97edaff609cf27e989dbdce81",
+        "hash_atual": "70cee49b420d13ca45e0c1f611f02b26e4f0d38771d142559a48f1ea6d7dcb61",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "40",
+        "status": "alterado",
+        "hash_anterior": "effe96a389e116391248a51ed9cedd9b43308e8fa510d1c8ab365783561c3987",
+        "hash_atual": "a264eb89bbda001edd63a45df356088502de18868a546c286aa808506e5df4f4",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "41",
+        "status": "alterado",
+        "hash_anterior": "e893e89a6881470eddbff80d54d8b39260a68902b38f325fc93b497e48c8206a",
+        "hash_atual": "d2a34072af710ec70318e942c153f005ab72ff1a0be2fb530e2ef719a60f047a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 6
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 10
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "42",
+        "status": "alterado",
+        "hash_anterior": "920124826e30b65dabd6f553ced440cffb85bf983fb00d81822f4ccc2227a696",
+        "hash_atual": "21a7d9ef79524ca91d51bf15034e6b0f6bc662cd3bb7e7795ed0cb95bbf7f7c7",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 1
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 6
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      }
+    ]
+  },
+  "classificacao": [
+    "decisao_de_fonte_aprovada",
+    "alteracao_normativa",
+    "possivel_revogacao",
+    "possivel_veto"
+  ],
+  "hashes": {
+    "current_body_sha256": "ba803e0e13aff2d916f6a5ec2bc7ac41f4770e5f3bac71d0d82b6289e99bcb21",
+    "candidate_body_sha256": "5862732600462d6cbd4d4f5aa4f4eb0bf64b754adefe1ada3c4632d5437f02b6",
+    "source_raw_sha256": "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4",
+    "source_normalized_sha256": "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4",
+    "source_legal_body_sha256": "6472dd8229d64f945c445dfc7def7261b0547d957f2bc01d1c098d6a7a411b0f"
+  },
+  "risk": "alto",
+  "relations_before": [
+    {
+      "source_id": "br-federal-decreto_lei-2848-1940",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1940-12-07;2848",
+      "evidencia_textual": "grafo acrescido pela Lei nº 13.964, de 24/12/2019, publicada na Edição Extra do DOU de 24/12/2019, em vigor 30 dias após a publicação , e com redação dada pela Lei nº 15.358, de 24/3/2026) **Art. 92.** São também efeitos da condenação: (“Caput” do artigo com redação dada pela Lei nº 7.209, de 11/7/1984) I - a perda de cargo, função pública ou mandat",
+      "evidencia_sha256": "a67d308d7e2d7a3cf137b6b83e7e58b46f2481b55f71b3da3bf9b2dfbf6c1847",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-decreto_lei-2848-1940",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": "art. 180",
+      "data_efeito": "2026-03-24",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1940-12-07;2848",
+      "evidencia_textual": "ída ou utilizada com o fim de permitir, facilitar ou ocultar a prática dos crimes definidos no caput e no § 1º do art. 180 deste Código. (Inciso acrescido pela Lei nº 15.358, de 24/3/2026) § 1º Os efeitos de que trata este artigo não são automáticos, devendo ser motivadamente declarados na sentença pelo juiz, mas independem de pedido expresso da acus",
+      "evidencia_sha256": "903e8b7832b8c7538d12fde2e490c85f643a7e5502efb170987e7f983bee80b9",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-decreto_lei-3689-1941",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-10-03;3689",
+      "evidencia_textual": "vetado pelo Presidente da República na Lei nº 13.964, de 24/12/2019, mantido pelo Congresso Nacional e publicado no DOU de 30/4/2021 , e com redação dada pela Lei nº 15.358, de 24/3/2026) (Vide ADIs nºs 6.298 , 6.299 , 6.300 e 6.305 , cuja Decisão foi publicada no DOU de 4/9/2023) § 2º Se o investigado estiver preso, o juiz das garantias poderá, med",
+      "evidencia_sha256": "71a5f3be1cdcc0011ee36e740b7df63976920b8c3d528444e95f1209ef79835a",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-10826-2003",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2003-12-22;10826",
+      "evidencia_textual": "tiver diretamente ligado ao comércio ilícito de entorpecentes ou o artefato tiver sido utilizado para assegurar o sucesso da mercancia. *(Artigo acrescido pela Lei nº 15.358, de 24/3/2026)* #### CAPÍTULO V — DISPOSIÇÕES GERAIS **Art. 22.** O Ministério da Justiça poderá celebrar convênios com os Estados e o Distrito Federal para o cumprimento do dis",
+      "evidencia_sha256": "e9798671fd1eaa219cddb07e3c18789690dee24bb234369907f9f88225bc304a",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-11343-2006",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-08-23;11343",
+      "evidencia_textual": "estar diretamente ligado ao comércio ilícito de entorpecentes ou de o artefato ter sido utilizado para assegurar o sucesso da mercancia. (Artigo acrescido pela Lei nº 15.358, de 24/3/2026) **Art. 41.** O indiciado ou acusado que colaborar voluntariamente com a investigação policial e o processo criminal na identificação dos demais co-autores ou partí",
+      "evidencia_sha256": "1a268677431fbe81312e83b9849ff203465f0276ad35436843e4debbd6b4c2b9",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-decreto_lei-2848-1940",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "grafo acrescido pela Lei nº 13.964, de 24/12/2019, publicada na Edição Extra do DOU de 24/12/2019, em vigor 30 dias após a publicação , e com redação dada pela Lei nº 15.358, de 24/3/2026) **Art. 92.** São também efeitos da condenação: (“Caput” do artigo com redação dada pela Lei nº 7.209, de 11/7/1984) I - a perda de cargo, função pública ou mandat",
+      "evidencia_sha256": "a67d308d7e2d7a3cf137b6b83e7e58b46f2481b55f71b3da3bf9b2dfbf6c1847",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-decreto_lei-2848-1940",
+      "dispositivo": "art. 180",
+      "data_efeito": "2026-03-24",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "ída ou utilizada com o fim de permitir, facilitar ou ocultar a prática dos crimes definidos no caput e no § 1º do art. 180 deste Código. (Inciso acrescido pela Lei nº 15.358, de 24/3/2026) § 1º Os efeitos de que trata este artigo não são automáticos, devendo ser motivadamente declarados na sentença pelo juiz, mas independem de pedido expresso da acus",
+      "evidencia_sha256": "903e8b7832b8c7538d12fde2e490c85f643a7e5502efb170987e7f983bee80b9",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-decreto_lei-3689-1941",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "vetado pelo Presidente da República na Lei nº 13.964, de 24/12/2019, mantido pelo Congresso Nacional e publicado no DOU de 30/4/2021 , e com redação dada pela Lei nº 15.358, de 24/3/2026) (Vide ADIs nºs 6.298 , 6.299 , 6.300 e 6.305 , cuja Decisão foi publicada no DOU de 4/9/2023) § 2º Se o investigado estiver preso, o juiz das garantias poderá, med",
+      "evidencia_sha256": "71a5f3be1cdcc0011ee36e740b7df63976920b8c3d528444e95f1209ef79835a",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-10826-2003",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "tiver diretamente ligado ao comércio ilícito de entorpecentes ou o artefato tiver sido utilizado para assegurar o sucesso da mercancia. *(Artigo acrescido pela Lei nº 15.358, de 24/3/2026)* #### CAPÍTULO V — DISPOSIÇÕES GERAIS **Art. 22.** O Ministério da Justiça poderá celebrar convênios com os Estados e o Distrito Federal para o cumprimento do dis",
+      "evidencia_sha256": "e9798671fd1eaa219cddb07e3c18789690dee24bb234369907f9f88225bc304a",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-11343-2006",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "estar diretamente ligado ao comércio ilícito de entorpecentes ou de o artefato ter sido utilizado para assegurar o sucesso da mercancia. (Artigo acrescido pela Lei nº 15.358, de 24/3/2026) **Art. 41.** O indiciado ou acusado que colaborar voluntariamente com a investigação policial e o processo criminal na identificação dos demais co-autores ou partí",
+      "evidencia_sha256": "1a268677431fbe81312e83b9849ff203465f0276ad35436843e4debbd6b4c2b9",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-4737-1965",
+      "dispositivo": null,
+      "data_efeito": "1988-05-27",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "IV - as pessoas recolhidas a estabelecimento prisional, enquanto perdurar a privação de liberdade, ainda que sem condenação definitiva. (Inciso acrescido pela Lei nº 15.358, de 24/3/2026) Parágrafo único. Os militares são alistáveis, desde que oficiais, aspirantes a oficiais, guardas-marinha, subtenentes ou suboficiais, sargentos ou alunos das escol",
+      "evidencia_sha256": "fd5b47d1576d83a4a501307aa2e72d31ae9bc26afeb378b5436569def1b72c90",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-7210-1984",
+      "dispositivo": null,
+      "data_efeito": "2019-12-24",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "stabelecimentos penais federais de segurança máxima ficam sujeitos às regras especiais previstas na Lei nº 11.671, de 8 de maio de 2008. (Artigo acrescido pela Lei nº 15.358, de 24/3/2026) **Art. 41-B.** Observado o disposto no § 2º do art. 41-A desta Lei, o conteúdo das comunicações monitoradas entre advogado e cliente, quando o monitoramento houver",
+      "evidencia_sha256": "6cf280c0912c33e4d1e044acc2afc0269a47f7c6defccebe4db3850328de09a3",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-8072-1990",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "previstos no caput e nos §§ 1º e 3º do art. 2º e no art. 3º da lei que institui o marco legal do combate ao crime organizado no Brasil. (Inciso acrescido pela Lei nº 15.358, de 24/3/2026) **Art. 2º** Os crimes hediondos, a prática da tortura, o tráfico ilícito de entorpecentes e drogas afins e o terrorismo são insuscetíveis de: I - anistia, graça e",
+      "evidencia_sha256": "c494aa97f46eee6f047a2fd8d8637eb5612a98be51cdb4bcb3a8d94d46af7313",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15358-2026",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-9613-1998",
+      "dispositivo": null,
+      "data_efeito": "2012-07-09",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+      "evidencia_textual": "ei nº 12.683, de 9/7/2012)* I - nos processos de competência da Justiça Federal: *(Inciso acrescido pela Lei nº 12.683, de 9/7/2012,* *e com redação dada pela Lei nº 15.358, de 24/3/2026)* a) os depósitos serão efetuados na Caixa Econômica Federal ou em instituição financeira pública, mediante documento adequado para essa finalidade; *(Alínea acresc",
+      "evidencia_sha256": "c07a5a74097eb284ceeeaf8f6d68d5a0c238aea1b48b1707fe3e5a44ca736a3f",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-4737-1965",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": null,
+      "data_efeito": "1988-05-27",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-07-15;4737",
+      "evidencia_textual": "IV - as pessoas recolhidas a estabelecimento prisional, enquanto perdurar a privação de liberdade, ainda que sem condenação definitiva. (Inciso acrescido pela Lei nº 15.358, de 24/3/2026) Parágrafo único. Os militares são alistáveis, desde que oficiais, aspirantes a oficiais, guardas-marinha, subtenentes ou suboficiais, sargentos ou alunos das escol",
+      "evidencia_sha256": "fd5b47d1576d83a4a501307aa2e72d31ae9bc26afeb378b5436569def1b72c90",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-7210-1984",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": null,
+      "data_efeito": "2019-12-24",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1984-07-11;7210",
+      "evidencia_textual": "stabelecimentos penais federais de segurança máxima ficam sujeitos às regras especiais previstas na Lei nº 11.671, de 8 de maio de 2008. (Artigo acrescido pela Lei nº 15.358, de 24/3/2026) **Art. 41-B.** Observado o disposto no § 2º do art. 41-A desta Lei, o conteúdo das comunicações monitoradas entre advogado e cliente, quando o monitoramento houver",
+      "evidencia_sha256": "6cf280c0912c33e4d1e044acc2afc0269a47f7c6defccebe4db3850328de09a3",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-8072-1990",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": null,
+      "data_efeito": "2026-03-24",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-07-25;8072",
+      "evidencia_textual": "previstos no caput e nos §§ 1º e 3º do art. 2º e no art. 3º da lei que institui o marco legal do combate ao crime organizado no Brasil. (Inciso acrescido pela Lei nº 15.358, de 24/3/2026) **Art. 2º** Os crimes hediondos, a prática da tortura, o tráfico ilícito de entorpecentes e drogas afins e o terrorismo são insuscetíveis de: I - anistia, graça e",
+      "evidencia_sha256": "c494aa97f46eee6f047a2fd8d8637eb5612a98be51cdb4bcb3a8d94d46af7313",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-9613-1998",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15358-2026",
+      "dispositivo": null,
+      "data_efeito": "2012-07-09",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1998-03-03;9613",
+      "evidencia_textual": "ei nº 12.683, de 9/7/2012)* I - nos processos de competência da Justiça Federal: *(Inciso acrescido pela Lei nº 12.683, de 9/7/2012,* *e com redação dada pela Lei nº 15.358, de 24/3/2026)* a) os depósitos serão efetuados na Caixa Econômica Federal ou em instituição financeira pública, mediante documento adequado para essa finalidade; *(Alínea acresc",
+      "evidencia_sha256": "c07a5a74097eb284ceeeaf8f6d68d5a0c238aea1b48b1707fe3e5a44ca736a3f",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    }
+  ],
+  "relation_impact_count": 18,
+  "source_evidence": {
+    "data_corte": "2026-10-21",
+    "primary_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-03-24;15358",
+    "selected_source_id": "normas-leg-br",
+    "attempts": [
+      {
+        "source_id": "planalto-br",
+        "adapter": "planalto_html",
+        "adapter_version": "0.1.0",
+        "authority": "primary",
+        "status": "fetched",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+        "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 217801,
+        "sha256_raw": "7d206fd69a49763fe3775fec26df68494f5404dd8dc5a8ffbd405f2ad8efc3a2",
+        "sha256_normalized": "684823d93155ff307b7815fec61cfbc08932bf6826f80cbfd4c3ef8f1b88be7e",
+        "sha256_body": "0c5fe7d5a247fddfae27bf88cd7bf3cc2de8beb84f52b730733df7bebab0b5b8"
+      },
+      {
+        "source_id": "normas-leg-br",
+        "adapter": "normas_leg_current_compilation",
+        "adapter_version": "0.2.0",
+        "authority": "official_machine_readable_compilation",
+        "status": "fetched",
+        "url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-03-24;15358",
+        "fetch_url": "https://normas.leg.br/api/public/binario/3beacdbe-4c47-45d7-9010-dd413b9bbb05/texto",
+        "metadata_url": "https://normas.leg.br/api/public/normas?urn=urn%3Alex%3Abr%3Afederal%3Alei%3A2026-03-24%3B15358&tipo_documento=maior-detalhe",
+        "final_url": "https://normas.leg.br/api/public/binario/3beacdbe-4c47-45d7-9010-dd413b9bbb05/texto",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 149779,
+        "sha256_raw": "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4",
+        "sha256_normalized": "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4",
+        "sha256_body": "6472dd8229d64f945c445dfc7def7261b0547d957f2bc01d1c098d6a7a411b0f"
+      }
+    ]
+  }
+}

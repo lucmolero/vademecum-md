@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "4d69525d18adbf1c76482fb176e5bd1494d55b5531ec77f617387afc8f5abd92"
-alterada_por: ["br-federal-lei_ordinaria-12694-2012", "br-federal-lei_ordinaria-15358-2026"]
+alterada_por: ["br-federal-lei_ordinaria-12694-2012", "br-federal-lei_ordinaria-13964-2019", "br-federal-lei_ordinaria-15358-2026"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

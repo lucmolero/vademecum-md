@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).parents[2]
 EXPANSION = ROOT / "manifests/editorial-expansion.csv"
 MATRIX = ROOT / "manifests/corpus.csv"
+PROMOTIONS = ROOT / "manifests/editorial-promotions.json"
 ALLOWED_HOSTS = {"planalto.gov.br", "normas.leg.br", "senado.leg.br", "camara.leg.br"}
 REQUIRED = {
     "id", "tipo", "numero", "ano", "dominio", "prioridade", "instrumento",
@@ -53,10 +54,14 @@ def main() -> int:
         if identity in identities:
             errors.append(f"identidade duplicada: {identity}")
         identities.add(identity)
-        if row.get("status_cobertura") != "candidato_gap":
+        coverage_status = row.get("status_cobertura")
+        acquisition_status = row.get("status_aquisicao")
+        if coverage_status not in {"candidato_gap", "promovido_corpus"}:
             errors.append(f"status de cobertura inválido: {row.get('id')}")
-        if row.get("status_aquisicao") != "adquirido_pendente_reconciliacao":
+        if acquisition_status not in {"adquirido_pendente_reconciliacao", "promovido_corpus"}:
             errors.append(f"aquisição não materializada: {row.get('id')}")
+        if coverage_status == "promovido_corpus" and acquisition_status != "promovido_corpus":
+            errors.append(f"promoção sem aquisição promovida: {row.get('id')}")
         for field in ("sha256_origem", "sha256_corpo"):
             if not re.fullmatch(r"[0-9a-f]{64}", row.get(field, "")):
                 errors.append(f"hash inválido em {field}: {row.get('id')}")
@@ -67,8 +72,36 @@ def main() -> int:
     matrix_rows, _ = read_rows(MATRIX)
     matrix_identities = {normalized_identity(row) for row in matrix_rows}
     overlaps = sorted(identity for identity in identities if identity in matrix_identities)
-    if overlaps:
-        errors.append(f"candidatos já presentes na matriz: {overlaps}")
+    for identity in overlaps:
+        candidate = next(row for row in rows if normalized_identity(row) == identity)
+        if candidate.get("status_cobertura") != "promovido_corpus":
+            errors.append(f"candidato já presente na matriz sem promoção registrada: {identity}")
+    if not PROMOTIONS.is_file():
+        errors.append("manifesto de decisões editoriais ausente")
+    else:
+        try:
+            import json
+            decisions_payload = json.loads(PROMOTIONS.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as error:
+            decisions_payload = {}
+            errors.append(f"manifesto de decisões editoriais inválido: {error}")
+        if decisions_payload.get("schema") != "editorial-promotion-decision/v2":
+            errors.append("schema do manifesto de decisões editoriais inválido")
+        decisions = decisions_payload.get("decisions", {})
+        for row in rows:
+            decision = decisions.get(row.get("id"))
+            if not isinstance(decision, dict):
+                errors.append(f"candidato sem decisão editorial: {row.get('id')}")
+                continue
+            if decision.get("decision") not in {"promote", "history", "out_of_scope", "reconcile"}:
+                errors.append(f"decisão editorial inválida: {row.get('id')}")
+            if decision.get("decision") == "promote":
+                if decision.get("situacao") not in {"em_vigor", "desconhecida", "revogada", "parcialmente_revogada", "transitoria", "historica"}:
+                    errors.append(f"situação jurídica ausente ou inválida: {row.get('id')}")
+                if not isinstance(decision.get("evidencias"), list) or not decision.get("evidencias"):
+                    errors.append(f"evidências ausentes: {row.get('id')}")
+                if not decision.get("revisor") or not decision.get("revisado_em"):
+                    errors.append(f"revisão não identificada: {row.get('id')}")
     print(f"Expansão editorial: {len(rows)} candidatos; sobreposição: {len(overlaps)}; erros: {len(errors)}")
     for error in errors:
         print(error)

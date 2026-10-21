@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 import sys
 
@@ -54,8 +55,7 @@ def main() -> int:
             row["fonte_oficial"] = source_url; row["status_atualidade"] = "confirmada"
     with matrix_path.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields, delimiter=";", lineterminator="\n"); writer.writeheader(); writer.writerows(rows)
-    for name in ("completeness.json", "release.json"):
-        p = ROOT / "manifests" / name; report = json.loads(p.read_text(encoding="utf-8")); counts = {"consolidada_fonte_oficial": 246, "consolidada_reconciliada": 5, "requer_reconciliacao": 109}; report["consolidation_status" if name == "completeness.json" else "consolidacao"] = counts; p.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    subprocess.run([sys.executable, str(ROOT / "tools/build_public_indexes.py"), "--apply"], check=True)
     print(f"Reconciliada: {metadata['id']}; sha256={metadata['sha256_origem']}")
     return 0
 

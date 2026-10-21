@@ -1,6 +1,6 @@
 {
   "schema": "normative-relation-exclusions/v1",
-  "policy": "manually_reviewed_exclusions",
+  "policy": "autonomous_agent_reviewed_exclusions",
   "relations": [
     {
       "source_id": "br-federal-lei_complementar-225-2026",

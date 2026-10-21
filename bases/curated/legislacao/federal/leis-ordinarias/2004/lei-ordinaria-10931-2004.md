@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "ce8a51f77ade2f030fcc178074f04fadad35d510bf6e1776c2f9892fe289153c"
-alterada_por: ["br-federal-lei_complementar-214-2025", "br-federal-lei_ordinaria-13097-2015"]
+alterada_por: ["br-federal-lei_complementar-214-2025", "br-federal-lei_ordinaria-13097-2015", "br-federal-lei_ordinaria-14620-2023"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

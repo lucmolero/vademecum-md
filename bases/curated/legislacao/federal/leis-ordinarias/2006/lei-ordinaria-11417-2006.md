@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2006-12-19"
 ementa: "Regulamenta o art. 103-A da Constituição Federal e altera a Lei nº 9.784, de 29 de janeiro de 1999, disciplinando a edição, a revisão e o cancelamento de enunciado de súmula vinculante pelo Supremo Tribunal Federal, e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-12-19;11417"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "d6a4b801f62cbbb5765ee38b2fa647324f7911e8146248da9bad017af87efd95"
+sha256_origem: "daf876c6751b05af92001f33676d819de53c794793585d3b53fec72c3dcb4140"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,12 +28,10 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "8636f18227813ac621d4ad6ac5c6bf04206cf043cca0eb251a2f4b56ed84a647"
+sha256_corpo: "80b751a72c224dc1269bdc08618c822d3f5cb8aa985def04a5a6d80ce607aca6"
 ---
 # Lei nº 11.417 de 19/12/2006
-
-**LEI Nº 11.417, DE 19 DE DEZEMBRO DE 2006.**
-
-***Regulamenta o art. 103-A da Constituição Federal e altera a Lei no 9.784, de 29 de janeiro de 1999, disciplinando a edição, a revisão e o cancelamento de enunciado de súmula vinculante pelo Supremo Tribunal Federal, e dá outras providências.***
 
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -93,7 +91,7 @@ XI - os Tribunais Superiores, os Tribunais de Justiça de Estados ou do Distrito
 
 “Art. 56. ............................
 
-........................................
+### ........................................
 
 § 3o Se o recorrente alegar que a decisão administrativa contraria enunciado da súmula vinculante, caberá à autoridade prolatora da decisão impugnada, se não a reconsiderar, explicitar, antes de encaminhar o recurso à autoridade superior, as razões da aplicabilidade ou inaplicabilidade da súmula, conforme o caso.” (NR)
 
@@ -109,8 +107,6 @@ XI - os Tribunais Superiores, os Tribunais de Justiça de Estados ou do Distrito
 
 Brasília, 19 de dezembro de 2006; 185o da Independência e 118o da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
 Márcio Thomaz Bastos
-
-Este texto não substitui o publicado no DOU de 20.12.2006

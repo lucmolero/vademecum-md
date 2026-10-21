@@ -5,6 +5,8 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import subprocess
+import sys
 from pathlib import Path
 import sys
 
@@ -76,15 +78,7 @@ def main() -> int:
         writer = csv.DictWriter(stream, fieldnames=fields, delimiter=";", lineterminator="\n")
         writer.writeheader(); writer.writerows(rows)
 
-    for name in ("completeness.json", "release.json"):
-        path = ROOT / "manifests" / name
-        report = json.loads(path.read_text(encoding="utf-8"))
-        if name == "completeness.json":
-            report["checks"]["p0_consolidated"] = 30
-            report["consolidation_status"] = {"consolidada_fonte_oficial": 245, "consolidada_reconciliada": 2, "requer_reconciliacao": 113}
-        else:
-            report["consolidacao"] = {"consolidada_fonte_oficial": 245, "consolidada_reconciliada": 2, "requer_reconciliacao": 113}
-        path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    subprocess.run([sys.executable, str(ROOT / "tools/build_public_indexes.py"), "--apply"], check=True)
     print(f"Reconciliada: {DOC_ID}; sha256={metadata['sha256_origem']}")
     return 0
 

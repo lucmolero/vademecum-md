@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2016-07-11"
 ementa: "Institui, nos termos do caput do art. 182 da Constituição Federal, normas gerais para a ocupação e utilização de área pública urbana por equipamentos urbanos do tipo quiosque, trailer, feira e banca de venda de jornais e de revistas."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-07-11;13311"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "ab55738aa676643b5861ab6f3d83821e70095e093e8d5bc3ec79e63bceb2fad5"
+sha256_origem: "d9dc546987d43787a5d69a2a9c4e94914190cd110b07cfe5f4161d0804b2ba2a"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,36 +28,38 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "d9dc546987d43787a5d69a2a9c4e94914190cd110b07cfe5f4161d0804b2ba2a"
+sha256_corpo: "aab7b5ceced7171584c61a0af17871915cb0035509398074a1cb52c1b4d76ada"
 ---
 # Lei nº 13.311 de 11/07/2016
 
-LEI Nº 13.311, DE 11 DE JULHO DE 2016
+### LEI Nº 13.311, DE 11 DE JULHO DE 2016
 
-Institui, nos termos do caput do art. 182 da Constituição Federal, normas gerais para a ocupação e utilização de área pública urbana por equipamentos urbanos do tipo quiosque, trailer, feira e banca de venda de jornais e de revistas.
+Institui, nos termos do caput do art. 182 da Constituição Federal , normas gerais para a ocupação e utilização de área pública urbana por equipamentos urbanos do tipo quiosque, trailer, feira e banca de venda de jornais e de revistas.
 
-**O VICE-PRESIDENTE DA REPÚBLICA**, no exercício do cargo de **PRESIDENTE DA REPÚBLICA**
+O VICE-PRESIDENTE DA REPÚBLICA , no exercício do cargo de PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-**Art. 1º** Esta Lei institui normas gerais para a ocupação e utilização de área pública urbana por equipamentos urbanos do tipo quiosque, **trailer**, feira e banca de venda de jornais e de revistas.
+**Art. 1º** Esta Lei institui normas gerais para a ocupação e utilização de área pública urbana por equipamentos urbanos do tipo quiosque, trailer , feira e banca de venda de jornais e de revistas.
 
 **Art. 2º** O direito de utilização privada de área pública por equipamentos urbanos do tipo quiosque, trailer, feira e banca de venda de jornais e de revistas poderá ser outorgado a qualquer interessado que satisfaça os requisitos exigidos pelo poder público local.
 
-**§ 1º** É permitida a transferência da outorga, pelo prazo restante, a terceiros que atendam aos requisitos exigidos em legislação municipal.
+§ 1º É permitida a transferência da outorga, pelo prazo restante, a terceiros que atendam aos requisitos exigidos em legislação municipal.
 
-**§ 2º** No caso de falecimento do titular ou de enfermidade física ou mental que o impeça de gerir seus próprios atos, a outorga será transferida, pelo prazo restante, nesta ordem:
+§ 2º No caso de falecimento do titular ou de enfermidade física ou mental que o impeça de gerir seus próprios atos, a outorga será transferida, pelo prazo restante, nesta ordem:
 
 I – ao cônjuge ou companheiro;
 
 II – aos ascendentes e descendentes.
 
-**§ 3º** Entre os parentes de mesma classe, preferir-se-ão os parentes de grau mais próximo.
+§ 3º Entre os parentes de mesma classe, preferir-se-ão os parentes de grau mais próximo.
 
-**§ 4º** Somente será deferido o direito de que trata o inciso I do § 2º deste artigo ao cônjuge que atender aos requisitos do art. 1.830 da Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil.
+§ 4º Somente será deferido o direito de que trata o inciso I do § 2º deste artigo ao cônjuge que atender aos requisitos do art. 1.830 da Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil.
 
-**§ 5º** O direito de que trata o § 2º deste artigo não será considerado herança, para todos os efeitos de direito.
+§ 5º O direito de que trata o § 2º deste artigo não será considerado herança, para todos os efeitos de direito.
 
-**§ 6º** A transferência de que trata o § 2º deste artigo dependerá de:
+§ 6º A transferência de que trata o § 2º deste artigo dependerá de:
 
 I – requerimento do interessado no prazo de sessenta dias, contado do falecimento do titular, da sentença que declarar sua interdição ou do reconhecimento, pelo titular, por escrito, da impossibilidade de gerir os seus próprios atos em razão de enfermidade física atestada por profissional da saúde;
 
@@ -77,6 +79,6 @@ III – por revogação do ato pelo poder público municipal, desde que demonstr
 
 Brasília, 11 de julho de 2016; 195º da Independência e 128º da República.
 
-**MICHEL TEMER**
+### MICHEL TEMER
 
 Fábio Medina Osório

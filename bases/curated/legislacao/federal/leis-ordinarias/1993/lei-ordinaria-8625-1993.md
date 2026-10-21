@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "media"
 data_assinatura: "1993-02-12"
 ementa: "Institui a Lei Orgânica Nacional do Ministério Público, dispõe sobre normas gerais para a organização do Ministério Público dos Estados e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:1993-02-12;8625"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "13a204b3774ad1564b7208f5198178372323a8513c56b9ee18a34f0ad329bccf"
+sha256_origem: "316f1d4d62c657ad0e5f4dc335e50a09985d2aaa5300767ebe4edbb4abde8f23"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,28 +28,26 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "81cf6f51d00577f75f3c4dc9278faf0cb02c920249fa34c2d586d52d5c413049"
+sha256_corpo: "6fa09fb8a914450ab1f594664af33f413f0428a40e101e6862ce80f4977f376f"
 ---
 # Lei nº 8.625 de 12/02/1993
-
-1
-
-LEI Nº 8.625, DE 12 DE FEVEREIRO DE 1993
-
-Institui a Lei Orgânica Nacional do Ministério Público, dispõe sobre normas gerais para a organização do Ministério Público dos Estados e dá outras providências.
 
 O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-#### CAPÍTULO I — Das Disposições Gerais
+#### CAPÍTULO I
+
+Das Disposições Gerais
 
 **Art. 1º** O Ministério Público é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis.
 
-**Parágrafo único.** São princípios institucionais do Ministério Público a unidade, a indivisibilidade e a independência funcional.
+Parágrafo único. São princípios institucionais do Ministério Público a unidade, a indivisibilidade e a independência funcional.
 
 **Art. 2º** Lei complementar, denominada Lei Orgânica do Ministério Público, cuja iniciativa é facultada aos Procuradores-Gerais de Justiça dos Estados, estabelecerá, no âmbito de cada uma dessas unidades federativas, normas específicas de organização, atribuições e estatuto do respectivo Ministério Público.
 
-**Parágrafo único.** A organização, atribuições e estatuto do Ministério Público do Distrito Federal e Territórios serão objeto da Lei Orgânica do Ministério Público da União.
+Parágrafo único. A organização, atribuições e estatuto do Ministério Público do Distrito Federal e Territórios serão objeto da Lei Orgânica do Ministério Público da União.
 
 **Art. 3º** Ao Ministério Público é assegurada autonomia funcional, administrativa e financeira, cabendo-lhe, especialmente:
 
@@ -77,17 +75,21 @@ XI - elaborar seus regimentos internos;
 
 XII - exercer outras competências dela decorrentes.
 
-**Parágrafo único.** As decisões do Ministério Público fundadas em sua autonomia funcional, administrativa e financeira, obedecidas as formalidades legais, têm eficácia plena e executoriedade imediata, ressalvada a competência constitucional do Poder Judiciário e do Tribunal de Contas.
+Parágrafo único. As decisões do Ministério Público fundadas em sua autonomia funcional, administrativa e financeira, obedecidas as formalidades legais, têm eficácia plena e executoriedade imediata, ressalvada a competência constitucional do Poder Judiciário e do Tribunal de Contas.
 
 **Art. 4º** O Ministério Público elaborará sua proposta orçamentária dentro dos limites estabelecidos na Lei de Diretrizes Orçamentárias, encaminhando-a diretamente ao Governador do Estado, que a submeterá ao Poder Legislativo.
 
-**§ 1º** Os recursos correspondentes às suas dotações orçamentárias próprias e globais, compreendidos os créditos suplementares e especiais, ser-lhe-ão entregues até o dia vinte de cada mês, sem vinculação a qualquer tipo de despesa.
+§ 1º Os recursos correspondentes às suas dotações orçamentárias próprias e globais, compreendidos os créditos suplementares e especiais, ser-lhe-ão entregues até o dia vinte de cada mês, sem vinculação a qualquer tipo de despesa.
 
-**§ 2º** A fiscalização contábil, financeira, orçamentária, operacional e patrimonial do Ministério Público, quanto à legalidade, legitimidade, economicidade, aplicação de dotações e recursos próprios e renúncia de receitas, será exercida pelo Poder Legislativo, mediante controle externo e pelo sistema de controle interno estabelecido na Lei Orgânica.
+§ 2º A fiscalização contábil, financeira, orçamentária, operacional e patrimonial do Ministério Público, quanto à legalidade, legitimidade, economicidade, aplicação de dotações e recursos próprios e renúncia de receitas, será exercida pelo Poder Legislativo, mediante controle externo e pelo sistema de controle interno estabelecido na Lei Orgânica.
 
-#### CAPÍTULO II — Da Organização do Ministério Público
+#### CAPÍTULO II
 
-##### SEÇÃO I — Dos Órgãos de Administração
+Da Organização do Ministério Público
+
+##### SEÇÃO I
+
+Dos Órgãos de Administração
 
 **Art. 5º** São órgãos da Administração Superior do Ministério Público:
 
@@ -105,7 +107,9 @@ I - as Procuradorias de Justiça;
 
 II - as Promotorias de Justiça.
 
-##### SEÇÃO II — Dos Órgãos de Execução
+##### SEÇÃO II
+
+Dos Órgãos de Execução
 
 **Art. 7º** São órgãos de execução do Ministério Público:
 
@@ -117,7 +121,9 @@ III - os Procuradores de Justiça;
 
 IV - os Promotores de Justiça.
 
-##### SEÇÃO III — Dos Órgãos Auxiliares
+##### SEÇÃO III
+
+Dos Órgãos Auxiliares
 
 **Art. 8º** São órgãos auxiliares do Ministério Público, além de outros criados pela Lei Orgânica:
 
@@ -131,19 +137,23 @@ IV - os órgãos de apoio administrativo;
 
 V - os estagiários.
 
-#### CAPÍTULO III — Dos Órgãos de Administração
+#### CAPÍTULO III
 
-##### SEÇÃO I — Da Procuradoria-Geral de Justiça
+Dos Órgãos de Administração
+
+##### SEÇÃO I
+
+Da Procuradoria-Geral de Justiça
 
 **Art. 9º** Os Ministérios Públicos dos Estados formarão lista tríplice, dentre integrantes da carreira, na forma da lei respectiva, para escolha de seu Procurador-Geral, que será nomeado pelo Chefe do Poder Executivo, para mandato de dois anos, permitida uma recondução, observado o mesmo procedimento.
 
-**§ 1º** A eleição da lista tríplice far-se-á mediante voto plurinominal de todos os integrantes da carreira.
+§ 1º A eleição da lista tríplice far-se-á mediante voto plurinominal de todos os integrantes da carreira.
 
-**§ 2º** A destituição do Procurador-Geral de Justiça, por iniciativa do Colégio de Procuradores, deverá ser precedida de autorização de um terço dos membros da Assembléia Legislativa.
+§ 2º A destituição do Procurador-Geral de Justiça, por iniciativa do Colégio de Procuradores, deverá ser precedida de autorização de um terço dos membros da Assembléia Legislativa.
 
-**§ 3º** Nos seus afastamentos e impedimentos o Procurador-Geral de Justiça será substituído na forma da Lei Orgânica.
+§ 3º Nos seus afastamentos e impedimentos o Procurador-Geral de Justiça será substituído na forma da Lei Orgânica.
 
-**§ 4º** Caso o Chefe do Poder Executivo não efetive a nomeação do Procurador-Geral de Justiça, nos quinze dias que se seguirem ao recebimento da lista tríplice, será investido automaticamente no cargo o membro do Ministério Público mais votado, para exercício do mandato.
+§ 4º Caso o Chefe do Poder Executivo não efetive a nomeação do Procurador-Geral de Justiça, nos quinze dias que se seguirem ao recebimento da lista tríplice, será investido automaticamente no cargo o membro do Ministério Público mais votado, para exercício do mandato.
 
 **Art. 10.** Compete ao Procurador-Geral de Justiça:
 
@@ -187,13 +197,15 @@ XI - decidir processo disciplinar contra membro do Ministério Público, aplican
 
 XII - expedir recomendações, sem caráter normativo aos órgãos do Ministério Público, para o desempenho de suas funções;
 
-XIII - encaminhar aos Presidentes dos Tribunais as listas sêxtuplas a que se referem os arts. 94, *caput,* e 104, parágrafo único, inciso II, da Constituição Federal;
+XIII - encaminhar aos Presidentes dos Tribunais as listas sêxtuplas a que se referem os arts. 94, caput, e 104, parágrafo único, inciso II, da Constituição Federal;
 
 XIV - exercer outras atribuições previstas em lei.
 
 **Art. 11.** O Procurador-Geral de Justiça poderá ter em seu Gabinete, no exercício de cargo de confiança, Procuradores ou Promotores de Justiça da mais elevada entrância ou categoria, por ele designados.
 
-##### SEÇÃO II — Do Colégio de Procuradores de Justiça
+##### SEÇÃO II
+
+Do Colégio de Procuradores de Justiça
 
 **Art. 12.** O Colégio de Procuradores de Justiça é composto por todos os Procuradores de Justiça, competindo-lhe:
 
@@ -233,13 +245,15 @@ XII - elaborar seu regimento interno;
 
 XIII - desempenhar outras atribuições que lhe forem conferidas por lei.
 
-**Parágrafo único.** As decisões do Colégio de Procuradores de Justiça serão motivadas e publicadas, por extrato, salvo nas hipóteses legais de sigilo ou por deliberação da maioria de seus integrantes.
+Parágrafo único. As decisões do Colégio de Procuradores de Justiça serão motivadas e publicadas, por extrato, salvo nas hipóteses legais de sigilo ou por deliberação da maioria de seus integrantes.
 
-**Art**. 13 Para exercer as atribuições do Colégio de Procuradores de Justiça com número superior a quarenta Procuradores de Justiça, poderá ser constituído Órgão Especial, cuja composição e número de integrantes a Lei Orgânica fixará.
+**Art. 13** Para exercer as atribuições do Colégio de Procuradores de Justiça com número superior a quarenta Procuradores de Justiça, poderá ser constituído Órgão Especial, cuja composição e número de integrantes a Lei Orgânica fixará.
 
-**Parágrafo único.** O disposto neste artigo não se aplica às hipóteses previstas nos incisos I, IV, V e VI do artigo anterior, bem como a outras atribuições a serem deferidas à totalidade do Colégio de Procuradores de Justiça pela Lei Orgânica.
+Parágrafo único. O disposto neste artigo não se aplica às hipóteses previstas nos incisos I, IV, V e VI do artigo anterior, bem como a outras atribuições a serem deferidas à totalidade do Colégio de Procuradores de Justiça pela Lei Orgânica.
 
-##### SEÇÃO III — Do Conselho Superior do Ministério Público
+##### SEÇÃO III
+
+Do Conselho Superior do Ministério Público
 
 **Art. 14.** Lei Orgânica de cada Ministério Público disporá sobre a composição, inelegibilidade e prazos de sua cessação, posse e duração do mandato dos integrantes do Conselho Superior do Ministério Público, respeitadas as seguintes disposições:
 
@@ -251,7 +265,7 @@ III - o eleitor poderá votar em cada um dos elegíveis até o número de cargos
 
 **Art. 15.** Ao Conselho Superior do Ministério Público compete:
 
-I - elaborar as listas sêxtuplas a que se referem os arts. 94, *caput* e 104, parágrafo único, II, da Constituição Federal;
+I - elaborar as listas sêxtuplas a que se referem os arts. 94, caput e 104, parágrafo único, II, da Constituição Federal;
 
 II - indicar ao Procurador-Geral de Justiça, em lista tríplice, os candidatos a remoção ou promoção por merecimento;
 
@@ -277,19 +291,21 @@ XII - elaborar seu regimento interno;
 
 XIII - exercer outras atribuições previstas em lei.
 
-**§ 1º** As decisões do Conselho Superior do Ministério Público serão motivadas e publicadas, por extrato, salvo nas hipóteses legais de sigilo ou por deliberação da maioria de seus integrantes.
+§ 1º As decisões do Conselho Superior do Ministério Público serão motivadas e publicadas, por extrato, salvo nas hipóteses legais de sigilo ou por deliberação da maioria de seus integrantes.
 
-**§ 2º** A remoção e a promoção voluntária por antigüidade e por merecimento, bem como a convocação, dependerão de prévia manifestação escrita do interessado.
+§ 2º A remoção e a promoção voluntária por antigüidade e por merecimento, bem como a convocação, dependerão de prévia manifestação escrita do interessado.
 
-**§ 3º** Na indicação por antigüidade, o Conselho Superior do Ministério Público somente poderá recusar o membro do Ministério Público mais antigo pelo voto de dois terços de seus integrantes, conforme procedimento próprio, repetindo-se a votação até fixar-se a indicação, após o julgamento de eventual recurso interposto com apoio na alínea *e* do inciso VIII do art. 12 desta Lei.
+§ 3º Na indicação por antigüidade, o Conselho Superior do Ministério Público somente poderá recusar o membro do Ministério Público mais antigo pelo voto de dois terços de seus integrantes, conforme procedimento próprio, repetindo-se a votação até fixar-se a indicação, após o julgamento de eventual recurso interposto com apoio na alínea e do inciso VIII do art. 12 desta Lei.
 
-##### SEÇÃO IV — Da Corregedoria-Geral do Ministério Público
+##### SEÇÃO IV
+
+Da Corregedoria-Geral do Ministério Público
 
 **Art. 16.** O Corregedor-Geral do Ministério Público será eleito pelo Colégio de Procuradores, dentre os Procuradores de Justiça, para mandato de dois anos, permitida uma recondução, observado o mesmo procedimento.
 
-**Parágrafo único.** O Corregedor-Geral do Ministério Público é membro nato do Colégio de Procuradores de Justiça e do Conselho Superior do Ministério Público.
+Parágrafo único. O Corregedor-Geral do Ministério Público é membro nato do Colégio de Procuradores de Justiça e do Conselho Superior do Ministério Público.
 
-**Art**. 17. A Corregedoria-Geral do Ministério Público é o órgão orientador e fiscalizador das atividades funcionais e da conduta dos membros do Ministério Público, incumbindo-lhe, dentre outras atribuições:
+**Art. 17.** A Corregedoria-Geral do Ministério Público é o órgão orientador e fiscalizador das atividades funcionais e da conduta dos membros do Ministério Público, incumbindo-lhe, dentre outras atribuições:
 
 I - realizar correições e inspeções;
 
@@ -309,21 +325,23 @@ VIII - apresentar ao Procurador-Geral de Justiça, na primeira quinzena de fever
 
 **Art. 18.** O Corregedor-Geral do Ministério Público será assessorado por Promotores de Justiça da mais elevada entrância ou categoria, por ele indicados e designados pelo Procurador-Geral de Justiça.
 
-**Parágrafo único.** Recusando-se o Procurador-Geral de Justiça a designar os Promotores de Justiça que lhe foram indicados, o Corregedor-Geral do Ministério Público poderá submeter a indicação à deliberação do Colégio de Procuradores.
+Parágrafo único. Recusando-se o Procurador-Geral de Justiça a designar os Promotores de Justiça que lhe foram indicados, o Corregedor-Geral do Ministério Público poderá submeter a indicação à deliberação do Colégio de Procuradores.
 
-##### SEÇÃO V — Das Procuradorias de Justiça
+##### SEÇÃO V
+
+Das Procuradorias de Justiça
 
 **Art. 19.** As Procuradorias de Justiça são órgãos de Administração do Ministério Público, com cargos de Procurador de Justiça e serviços auxiliares necessários ao desempenho das funções que lhe forem cometidas pela Lei Orgânica.
 
-**§ 1º** É obrigatória a presença de Procurador de Justiça nas sessões de julgamento dos processos da respectiva Procuradoria de Justiça.
+§ 1º É obrigatória a presença de Procurador de Justiça nas sessões de julgamento dos processos da respectiva Procuradoria de Justiça.
 
-**§ 2º** Os Procuradores de Justiça exercerão inspeção permanente dos serviços dos Promotores de Justiça nos autos em que oficiem, remetendo seus relatórios à Corregedoria-Geral do Ministério Público.
+§ 2º Os Procuradores de Justiça exercerão inspeção permanente dos serviços dos Promotores de Justiça nos autos em que oficiem, remetendo seus relatórios à Corregedoria-Geral do Ministério Público.
 
 **Art. 20.** Os Procuradores de Justiça das Procuradorias de Justiça civis e criminais, que oficiem junto ao mesmo Tribunal, reunir-se-ão para fixar orientações jurídicas, sem caráter vinculativo, encaminhando-as ao Procurador-Geral de Justiça.
 
 **Art. 21.** A divisão interna dos serviços das Procuradorias de Justiça sujeitar-se-á a critérios objetivos definidos pelo Colégio de Procuradores, que visem à distribuição eqüitativa dos processos por sorteio, observadas, para esse efeito, as regras de proporcionalidade, especialmente a alternância fixada em função da natureza, volume e espécie dos feitos.
 
-**Parágrafo único.** A norma deste artigo só não incidirá nas hipóteses em que os Procuradores de Justiça definam, consensualmente, conforme critérios próprios, a divisão interna dos serviços.
+Parágrafo único. A norma deste artigo só não incidirá nas hipóteses em que os Procuradores de Justiça definam, consensualmente, conforme critérios próprios, a divisão interna dos serviços.
 
 **Art. 22.** À Procuradoria de Justiça compete, na forma da Lei Orgânica, dentre outras atribuições:
 
@@ -333,21 +351,27 @@ II - propor ao Procurador-Geral de Justiça a escala de férias de seus integran
 
 III - solicitar ao Procurador-Geral de Justiça, em caso de licença de Procurador de Justiça ou afastamento de suas funções junto à Procuradoria de Justiça, que convoque Promotor de Justiça da mais elevada entrância ou categoria para substituí-lo.
 
-##### SEÇÃO VI — Das Promotorias de Justiça
+##### SEÇÃO VI
+
+Das Promotorias de Justiça
 
 **Art. 23.** As Promotorias de Justiça são órgãos de administração do Ministério Público com pelo menos um cargo de Promotor de Justiça e serviços auxiliares necessários ao desempenho das funções que lhe forem cometidas pela Lei Orgânica.
 
-**§ 1º** As Promotorias de Justiça poderão ser judiciais ou extrajudiciais, especializadas, gerais ou cumulativas.
+§ 1º As Promotorias de Justiça poderão ser judiciais ou extrajudiciais, especializadas, gerais ou cumulativas.
 
-**§ 2º** As atribuições das Promotorias de Justiça e dos cargos dos Promotores de Justiça que a integram serão fixadas mediante proposta do Procurador-Geral de Justiça, aprovada pelo Colégio de Procuradores de Justiça.
+§ 2º As atribuições das Promotorias de Justiça e dos cargos dos Promotores de Justiça que a integram serão fixadas mediante proposta do Procurador-Geral de Justiça, aprovada pelo Colégio de Procuradores de Justiça.
 
-**§ 3º** A exclusão, inclusão ou outra modificação nas atribuições das Promotorias de Justiça ou dos cargos dos Promotores de Justiça que a integram serão efetuadas mediante proposta do Procurador-Geral de Justiça, aprovada por maioria absoluta do Colégio de Procuradores.
+§ 3º A exclusão, inclusão ou outra modificação nas atribuições das Promotorias de Justiça ou dos cargos dos Promotores de Justiça que a integram serão efetuadas mediante proposta do Procurador-Geral de Justiça, aprovada por maioria absoluta do Colégio de Procuradores.
 
 **Art. 24.** O Procurador-Geral de Justiça poderá, com a concordância do Promotor de Justiça titular, designar outro Promotor para funcionar em feito determinado, de atribuição daquele.
 
-#### CAPÍTULO IV — Das Funções dos Órgãos de Execução
+#### CAPÍTULO IV
 
-##### SEÇÃO I — Das Funções Gerais
+Das Funções dos Órgãos de Execução
+
+##### SEÇÃO I
+
+Das Funções Gerais
 
 **Art. 25.** Além das funções previstas nas Constituições Federal e Estadual, na Lei Orgânica e em outras leis, incumbe, ainda, ao Ministério Público:
 
@@ -373,11 +397,11 @@ VIII - ingressar em juízo, de ofício, para responsabilizar os gestores do dinh
 
 IX - interpor recursos ao Supremo Tribunal Federal e ao Superior Tribunal de Justiça;
 
-X - (Vetado);
+X - ( Vetado );
 
-XI - (Vetado).
+XI - ( Vetado ).
 
-**Parágrafo único.** É vedado o exercício das funções do Ministério Público a pessoas a ele estranhas, sob pena de nulidade do ato praticado.
+Parágrafo único. É vedado o exercício das funções do Ministério Público a pessoas a ele estranhas, sob pena de nulidade do ato praticado.
 
 **Art. 26.** No exercício de suas funções, o Ministério Público poderá:
 
@@ -403,15 +427,15 @@ VII - sugerir ao Poder competente a edição de normas e a alteração da legisl
 
 VIII - manifestar-se em qualquer fase dos processos, acolhendo solicitação do juiz, da parte ou por sua iniciativa, quando entender existente interesse em causa que justifique a intervenção.
 
-**§ 1º** As notificações e requisições previstas neste artigo, quando tiverem como destinatários o Governador do Estado, os membros do Poder Legislativo e os desembargadores, serão encaminhadas pelo Procurador-Geral de Justiça.
+§ 1º As notificações e requisições previstas neste artigo, quando tiverem como destinatários o Governador do Estado, os membros do Poder Legislativo e os desembargadores, serão encaminhadas pelo Procurador-Geral de Justiça.
 
-**§ 2º** O membro do Ministério Público será responsável pelo uso indevido das informações e documentos que requisitar, inclusive nas hipóteses legais de sigilo.
+§ 2º O membro do Ministério Público será responsável pelo uso indevido das informações e documentos que requisitar, inclusive nas hipóteses legais de sigilo.
 
-**§ 3º** Serão cumpridas gratuitamente as requisições feitas pelo Ministério Público às autoridades, órgãos e entidades da Administração Pública direta, indireta ou fundacional, de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios.
+§ 3º Serão cumpridas gratuitamente as requisições feitas pelo Ministério Público às autoridades, órgãos e entidades da Administração Pública direta, indireta ou fundacional, de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios.
 
-**§ 4º** A falta ao trabalho, em virtude de atendimento à notificação ou requisição, na forma do inciso I deste artigo, não autoriza desconto de vencimentos ou salário, considerando-se de efetivo exercício, para todos os efeitos, mediante comprovação escrita do membro do Ministério Público.
+§ 4º A falta ao trabalho, em virtude de atendimento à notificação ou requisição, na forma do inciso I deste artigo, não autoriza desconto de vencimentos ou salário, considerando-se de efetivo exercício, para todos os efeitos, mediante comprovação escrita do membro do Ministério Público.
 
-**§ 5º** Toda representação ou petição formulada ao Ministério Público será distribuída entre os membros da instituição que tenham atribuições para apreciá-la, observados os critérios fixados pelo Colégio de Procuradores.
+§ 5º Toda representação ou petição formulada ao Ministério Público será distribuída entre os membros da instituição que tenham atribuições para apreciá-la, observados os critérios fixados pelo Colégio de Procuradores.
 
 **Art. 27.** Cabe ao Ministério Público exercer a defesa dos direitos assegurados nas Constituições Federal e Estadual, sempre que se cuidar de garantir-lhe o respeito:
 
@@ -423,7 +447,7 @@ III - pelos concessionários e permissionários de serviço público estadual ou
 
 IV - por entidades que exerçam outra função delegada do Estado ou do Município ou executem serviço de relevância pública.
 
-**Parágrafo único.** No exercício das atribuições a que se refere este artigo, cabe ao Ministério Público, entre outras providências:
+Parágrafo único. No exercício das atribuições a que se refere este artigo, cabe ao Ministério Público, entre outras providências:
 
 I - receber notícias de irregularidades, petições ou reclamações de qualquer natureza, promover as apurações cabíveis que lhes sejam próprias e dar-lhes as soluções adequadas;
 
@@ -431,7 +455,7 @@ II - zelar pela celeridade e racionalização dos procedimentos administrativos;
 
 III - dar andamento, no prazo de trinta dias, às notícias de irregularidades, petições ou reclamações referidas no inciso I;
 
-IV - promover audiências públicas e emitir relatórios, anual ou especiais, e recomendações dirigidas aos órgãos e entidades mencionadas no *caput* deste artigo, requisitando ao destinatário sua divulgação adequada e imediata, assim como resposta por escrito.
+IV - promover audiências públicas e emitir relatórios, anual ou especiais, e recomendações dirigidas aos órgãos e entidades mencionadas no caput deste artigo, requisitando ao destinatário sua divulgação adequada e imediata, assim como resposta por escrito.
 
 **Art. 28.** (Vetado).
 
@@ -447,7 +471,7 @@ II - representar para fins de intervenção do Estado no Município, com o objet
 
 III - representar o Ministério Público nas sessões plenárias dos Tribunais;
 
-IV - (Vetado);
+IV - ( Vetado );
 
 V - ajuizar ação penal de competência originária dos Tribunais, nela oficiando;
 
@@ -477,7 +501,7 @@ IX - delegar a membro do Ministério Público suas funções de órgão de execu
 
 **Art. 32.** Além de outras funções cometidas nas Constituições Federal e Estadual, na Lei Orgânica e demais leis, compete aos Promotores de Justiça, dentro de suas esferas de atribuições:
 
-I - impetrar *habeas-corpus* e mandado de segurança e requerer correição parcial, inclusive perante os Tribunais locais competentes;
+I - impetrar habeas-corpus e mandado de segurança e requerer correição parcial, inclusive perante os Tribunais locais competentes;
 
 II - atender a qualquer do povo,tomando as providências cabíveis;
 
@@ -509,7 +533,7 @@ V - exercer outras funções compatíveis com suas finalidades, vedado o exercí
 
 **Art. 34.** À Comissão de Concurso, órgão auxiliar de natureza transitória, incumbe realizar a seleção de candidatos ao ingresso na carreira do Ministério Público, na forma da Lei Orgânica e observado o art. 129, § 3º, da Constituição Federal.
 
-**Parágrafo único** - A Lei Orgânica definirá o critério de escolha do Presidente da Comissão de Concurso de ingresso na carreira, cujos demais integrantes serão eleitos na forma do art. 15, inciso III, desta Lei.
+Parágrafo único - A Lei Orgânica definirá o critério de escolha do Presidente da Comissão de Concurso de ingresso na carreira, cujos demais integrantes serão eleitos na forma do art. 15, inciso III, desta Lei.
 
 ##### SEÇÃO III
 
@@ -517,7 +541,7 @@ V - exercer outras funções compatíveis com suas finalidades, vedado o exercí
 
 **Art. 35.** O Centro de Estudos e Aperfeiçoamento Funcional é órgão auxiliar do Ministério Público destinado a realizar cursos, seminários, congressos, simpósios, pesquisas, atividades, estudos e publicações visando ao aprimoramento profissional e cultural dos membros da instituição, de seus auxiliares e funcionários, bem como a melhor execução de seus serviços e racionalização de seus recursos materiais.
 
-**Parágrafo único.** A Lei Orgânica estabelecerá a organização, funcionamento e demais atribuições do Centro de Estudos e Aperfeiçoamento Funcional.
+Parágrafo único. A Lei Orgânica estabelecerá a organização, funcionamento e demais atribuições do Centro de Estudos e Aperfeiçoamento Funcional.
 
 ##### SEÇÃO IV
 
@@ -531,7 +555,7 @@ V - exercer outras funções compatíveis com suas finalidades, vedado o exercí
 
 **Art. 37.** Os estagiários do Ministério Público, auxiliares das Promotorias de Justiça, serão nomeados pelo Procurador-Geral de Justiça, para período não superior a três anos.
 
-**Parágrafo único.** A Lei Orgânica disciplinará a seleção, investidura, vedações e dispensa dos estagiários, que serão alunos dos três últimos anos do curso de bacharelado de Direito, de escolas oficiais ou reconhecidas.
+Parágrafo único. A Lei Orgânica disciplinará a seleção, investidura, vedações e dispensa dos estagiários, que serão alunos dos três últimos anos do curso de bacharelado de Direito, de escolas oficiais ou reconhecidas.
 
 #### CAPÍTULO VI
 
@@ -547,7 +571,7 @@ II - inamovibilidade, salvo por motivo de interesse público;
 
 III - irredutibilidade de vencimentos, observado, quanto à remuneração, o disposto na Constituição Federal.
 
-**§ 1º** O membro vitalício do Ministério Público somente perderá o cargo por sentença judicial transitada em julgado, proferida em ação civil própria, nos seguintes casos:
+§ 1º O membro vitalício do Ministério Público somente perderá o cargo por sentença judicial transitada em julgado, proferida em ação civil própria, nos seguintes casos:
 
 I - prática de crime incompatível com o exercício do cargo, após decisão judicial transitada em julgado;
 
@@ -555,13 +579,13 @@ II - exercício da advocacia;
 
 III - abandono do cargo por prazo superior a trinta dias corridos.
 
-**§ 2º** A ação civil para a decretação da perda do cargo será proposta pelo Procurador-Geral de Justiça perante o Tribunal de Justiça local, após autorização do Colégio de Procuradores, na forma da Lei Orgânica.
+§ 2º A ação civil para a decretação da perda do cargo será proposta pelo Procurador-Geral de Justiça perante o Tribunal de Justiça local, após autorização do Colégio de Procuradores, na forma da Lei Orgânica.
 
 **Art. 39.** Em caso de extinção do órgão de execução, da Comarca ou mudança da sede da Promotoria de Justiça, será facultado ao Promotor de Justiça remover-se para outra Promotoria de igual entrância ou categoria, ou obter a disponibilidade com vencimentos integrais e a contagem do tempo de serviço como se em exercício estivesse.
 
-**§ 1º** O membro do Ministério Público em disponibilidade remunerada continuará sujeito às vedações constitucionais e será classificado em quadro especial, provendo-se a vaga que ocorrer.
+§ 1º O membro do Ministério Público em disponibilidade remunerada continuará sujeito às vedações constitucionais e será classificado em quadro especial, provendo-se a vaga que ocorrer.
 
-**§ 2º** A disponibilidade, nos casos previstos no *caput* deste artigo outorga ao membro do Ministério Público o direito à percepção de vencimentos e vantagens integrais e à contagem do tempo de serviço como se em exercício estivesse.
+§ 2º A disponibilidade, nos casos previstos no caput deste artigo outorga ao membro do Ministério Público o direito à percepção de vencimentos e vantagens integrais e à contagem do tempo de serviço como se em exercício estivesse.
 
 **Art. 40.** Constituem prerrogativas dos membros do Ministério Público, além de outras previstas na Lei Orgânica:
 
@@ -607,7 +631,7 @@ X - usar as vestes talares e as insígnias privativas do Ministério Público;
 
 XI - tomar assento à direita dos Juízes de primeira instância ou do Presidente do Tribunal, Câmara ou Turma.
 
-**Parágrafo único.** Quando no curso de investigação, houver indício da prática de infração penal por parte de membro do Ministério Público, a autoridade policial, civil ou militar remeterá, imediatamente, sob pena de responsabilidade, os respectivos autos ao Procurador-Geral de Justiça, a quem competirá dar prosseguimento à apuração.
+Parágrafo único. Quando no curso de investigação, houver indício da prática de infração penal por parte de membro do Ministério Público, a autoridade policial, civil ou militar remeterá, imediatamente, sob pena de responsabilidade, os respectivos autos ao Procurador-Geral de Justiça, a quem competirá dar prosseguimento à apuração.
 
 **Art. 42.** Os membros do Ministério Público terão carteira funcional, expedida na forma da Lei Orgânica, valendo em todo o território nacional como cédula de identidade, e porte de arma, independentemente, neste caso, de qualquer ato formal de licença ou autorização.
 
@@ -657,7 +681,7 @@ IV - exercer, ainda que em disponibilidade, qualquer outra função pública, sa
 
 V - exercer atividade político-partidária, ressalvada a filiação e as exceções previstas em lei.
 
-**Parágrafo único.** Não constituem acumulação, para os efeitos do inciso IV deste artigo, as atividades exercidas em organismos estatais afetos à área de atuação do Ministério Público, em Centro de Estudo e Aperfeiçoamento de Ministério Público, em entidades de representação de classe e o exercício de cargos de confiança na sua administração e nos órgãos auxiliares.
+Parágrafo único. Não constituem acumulação, para os efeitos do inciso IV deste artigo, as atividades exercidas em organismos estatais afetos à área de atuação do Ministério Público, em Centro de Estudo e Aperfeiçoamento de Ministério Público, em entidades de representação de classe e o exercício de cargos de confiança na sua administração e nos órgãos auxiliares.
 
 #### CAPíTULO VIII
 
@@ -699,11 +723,11 @@ XI - verba de representação pelo exercício de cargos de direção ou de confi
 
 XII - outras vantagens previstas em lei, inclusive as concedidas aos servidores públicos em geral.
 
-**§ 1º** Aplicam-se aos membros do Ministério Público os direitos sociais previstos no art. 7º, incisos VIII, XII, XVII, XVIII e XIX, da Constituição Federal.
+§ 1º Aplicam-se aos membros do Ministério Público os direitos sociais previstos no art. 7º, incisos VIII, XII, XVII, XVIII e XIX, da Constituição Federal.
 
-**§ 2º** Computar-se-á, para efeito de aposentadoria, disponibilidade e adicionais por tempo de serviço, o tempo de exercício da advocacia, até o máximo de quinze anos.
+§ 2º Computar-se-á, para efeito de aposentadoria, disponibilidade e adicionais por tempo de serviço, o tempo de exercício da advocacia, até o máximo de quinze anos.
 
-**§ 3º.** Constitui parcela dos vencimentos, para todos os efeitos, a gratificação de representação de Ministério Público.
+§ 3º. Constitui parcela dos vencimentos, para todos os efeitos, a gratificação de representação de Ministério Público.
 
 **Art. 51.** O direito a férias anuais, coletivas e individuais, do membro do Ministério Público, será igual ao dos Magistrados, regulando a Lei Orgânica a sua concessão e aplicando-se o disposto no art. 7º, inciso XVII, da Constituição Federal.
 
@@ -725,7 +749,7 @@ VII - por luto, em virtude de falecimento do cônjuge, ascendente, descendente, 
 
 VIII - em outros casos previstos em lei.
 
-**Parágrafo único.** A Lei Orgânica disciplinará as licenças referidas neste artigo, não podendo o membro do Ministério Público, nessas situações, exercer qualquer de suas funções.
+Parágrafo único. A Lei Orgânica disciplinará as licenças referidas neste artigo, não podendo o membro do Ministério Público, nessas situações, exercer qualquer de suas funções.
 
 **Art. 53.** São considerados como de efetivo exercício, para todos os efeitos legais, exceto para vitaliciamento, os dias em que o membro do Ministério Público estiver afastado de suas funções em razão:
 
@@ -755,11 +779,11 @@ IX - de outras hipóteses definidas em lei.
 
 **Art. 55.** Os proventos da aposentadoria, que corresponderão à totalidade dos vencimentos percebidos no serviço ativo, a qualquer título, serão revistos na mesma proporção e na mesma data, sempre que se modificar a remuneração dos membros do Ministério Público em atividade, sendo também estendidos aos inativos quaisquer benefícios ou vantagens posteriormente concedidos àqueles, inclusive quando decorrentes de transformação ou reclassificação do cargo ou função em que se deu a aposentadoria.
 
-**Parágrafo único.** Os proventos dos membros do Ministério Público aposentados serão pagos na mesma ocasião em que o forem os vencimentos dos membros do Ministério Público em atividade, figurando em folha de pagamento expedida pelo Ministério Público.
+Parágrafo único. Os proventos dos membros do Ministério Público aposentados serão pagos na mesma ocasião em que o forem os vencimentos dos membros do Ministério Público em atividade, figurando em folha de pagamento expedida pelo Ministério Público.
 
 **Art. 56.** A pensão por morte, igual à totalidade dos vencimentos ou proventos percebidos pelos membros em atividade ou inatividade do Ministério Público, será reajustada na mesma data e proporção daqueles.
 
-**Parágrafo único.** A pensão obrigatória não impedirá a percepção de benefícios decorrentes de contribuição voluntária para qualquer entidade de previdência.
+Parágrafo único. A pensão obrigatória não impedirá a percepção de benefícios decorrentes de contribuição voluntária para qualquer entidade de previdência.
 
 **Art. 57.** Ao cônjuge sobrevivente e, em sua falta, aos herdeiros ou dependentes de membro do Ministério Público, ainda que aposentado ou em disponibilidade, será pago o auxílio-funeral, em importância igual a um mês de vencimentos ou proventos percebidos pelo falecido.
 
@@ -771,11 +795,11 @@ IX - de outras hipóteses definidas em lei.
 
 **Art. 59.** O ingresso nos cargos iniciais da carreira dependerá da aprovação prévia em concurso público de provas e títulos, organizado e realizado pela Procuradoria-Geral de Justiça, com participação da Ordem dos Advogados do Brasil.
 
-**§ 1º** É obrigatória a abertura do concurso de ingresso quando o número de vagas atingir a um quinto dos cargos iniciais da carreira.
+§ 1º É obrigatória a abertura do concurso de ingresso quando o número de vagas atingir a um quinto dos cargos iniciais da carreira.
 
-**§ 2º** Assegurar-se-ão ao candidato aprovado a nomeação e a escolha do cargo, de acordo com a ordem de classificação no concurso.
+§ 2º Assegurar-se-ão ao candidato aprovado a nomeação e a escolha do cargo, de acordo com a ordem de classificação no concurso.
 
-**§ 3º** São requisitos para o ingresso na carreira, dentre outros estabelecidos pela Lei Orgânica:
+§ 3º São requisitos para o ingresso na carreira, dentre outros estabelecidos pela Lei Orgânica:
 
 I - ser brasileiro;
 
@@ -785,13 +809,13 @@ III - estar quite com o serviço militar;
 
 IV - estar em gozo dos direitos políticos.
 
-**§ 4º** O candidato nomeado deverá apresentar, no ato de sua posse, declaração de seus bens e prestar compromisso de desempenhar, com retidão, as funções do cargo e de cumprir a Constituição e as leis.
+§ 4º O candidato nomeado deverá apresentar, no ato de sua posse, declaração de seus bens e prestar compromisso de desempenhar, com retidão, as funções do cargo e de cumprir a Constituição e as leis.
 
 **Art. 60.** Suspende-se, até definitivo julgamento, o exercício funcional de membro do Ministério Público quando, antes do decurso do prazo de dois anos, houver impugnação de seu vitaliciamento.
 
-**§ 1º** A Lei Orgânica disciplinará o procedimento de impugnação, cabendo ao Conselho Superior do Ministério Público decidir, no prazo máximo de sessenta dias, sobre o não vitaliciamento e ao Colégio de Procuradores, em trinta dias, eventual recurso.
+§ 1º A Lei Orgânica disciplinará o procedimento de impugnação, cabendo ao Conselho Superior do Ministério Público decidir, no prazo máximo de sessenta dias, sobre o não vitaliciamento e ao Colégio de Procuradores, em trinta dias, eventual recurso.
 
-**§ 2º** Durante a tramitação do procedimento de impugnação, o membro do Ministério Público perceberá vencimentos integrais, contando-se para todos os efeitos o tempo de suspensão do exercício funcional, no caso de vitaliciamento.
+§ 2º Durante a tramitação do procedimento de impugnação, o membro do Ministério Público perceberá vencimentos integrais, contando-se para todos os efeitos o tempo de suspensão do exercício funcional, no caso de vitaliciamento.
 
 **Art. 61.** A Lei Orgânica regulamentará o regime de remoção e promoção dos membros do Ministério Público, observados os seguintes princípios:
 
@@ -823,17 +847,17 @@ III - que a remoção por permuta não confere direito a ajuda de custo.
 
 **Art. 66.** A reintegração, que decorrerá de sentença transitada em julgado, é o retorno do membro do Ministério Público ao cargo, com ressarcimento dos vencimentos e vantagens deixados de perceber em razão do afastamento, inclusive a contagem do tempo de serviço.
 
-**§ 1º** Achando-se provido o cargo no qual será reintegrado o membro do Ministério Público, o seu ocupante passará à disponibilidade, até posterior aproveitamento.
+§ 1º Achando-se provido o cargo no qual será reintegrado o membro do Ministério Público, o seu ocupante passará à disponibilidade, até posterior aproveitamento.
 
-**§ 2º** O membro do Ministério Público reintegrado será submetido a inspeção médica e, se considerado incapaz, será aposentado compulsoriamente, com as vantagens a que teria direito se efetivada a reintegração.
+§ 2º O membro do Ministério Público reintegrado será submetido a inspeção médica e, se considerado incapaz, será aposentado compulsoriamente, com as vantagens a que teria direito se efetivada a reintegração.
 
 **Art. 67.** A reversão dar-se-á na entrância em que se aposentou o membro do Ministério Público, em vaga a ser provida pelo critério de merecimento, observados os requisitos legais.
 
 **Art. 68.** O aproveitamento é o retorno do membro do Ministério Público em disponibilidade ao exercício funcional.
 
-**§ 1º** O membro do Ministério Público será aproveitado no órgão de execução que ocupava quando posto em disponibilidade, salvo se aceitar outro de igual entrância ou categoria, ou se for promovido.
+§ 1º O membro do Ministério Público será aproveitado no órgão de execução que ocupava quando posto em disponibilidade, salvo se aceitar outro de igual entrância ou categoria, ou se for promovido.
 
-**§ 2º** Ao retornar à atividade, será o membro do Ministério Público submetido a inspeção médica e, se julgado incapaz, será aposentado compulsoriamente, com as vantagens a que teria direito se efetivado o seu retorno.
+§ 2º Ao retornar à atividade, será o membro do Ministério Público submetido a inspeção médica e, se julgado incapaz, será aposentado compulsoriamente, com as vantagens a que teria direito se efetivado o seu retorno.
 
 #### CAPÍTULO X
 
@@ -843,25 +867,25 @@ III - que a remoção por permuta não confere direito a ajuda de custo.
 
 **Art. 70.** Fica instituída a gratificação pela prestação de serviço à Justiça Eleitoral, de que trata o art. 50, VI, desta Lei.
 
-**Art. 71.** (Vetado).
+**Art. 71.** ( Vetado ).
 
 **Art. 72.** Ao membro ou servidor do Ministério Público é vedado manter, sob sua chefia imediata, em cargo ou função de confiança, cônjuge, companheiro, ou parente até o segundo grau civil.
 
 **Art. 73.** Para exercer as funções junto à Justiça Eleitoral, por solicitação do Procurador-Geral da República, os membros do Ministério Público do Estado serão designados, se for o caso, pelo respectivo Procurador-Geral de Justiça.
 
-**§ 1º** Não ocorrendo designação, exclusivamente para os serviços eleitorais, na forma do *caput* deste artigo, o Promotor Eleitoral será o membro do Ministério Público local que oficie perante o Juízo incumbido daqueles serviços.
+§ 1º Não ocorrendo designação, exclusivamente para os serviços eleitorais, na forma do caput deste artigo, o Promotor Eleitoral será o membro do Ministério Público local que oficie perante o Juízo incumbido daqueles serviços.
 
-**§ 2º** Havendo impedimento ou recusa justificável, o Procurador-Geral de Justiça designará o substituto.
+§ 2º Havendo impedimento ou recusa justificável, o Procurador-Geral de Justiça designará o substituto.
 
 **Art. 74.** Para fins do disposto no art. 104, parágrafo único, inciso II, da Constituição Federal e observado o que dispõe o art. 15, inciso I, desta Lei, a lista sêxtupla de membros do Ministério Público será organizada pelo Conselho Superior de cada Ministério Público dos Estados.
 
 **Art. 75.** Compete ao Procurador-Geral de Justiça, ouvido o Conselho Superior do Ministério Público, autorizar o afastamento da carreira de membro do Ministério Público que tenha exercido a opção de que trata o art. 29, § 3º, do Ato das Disposições Constitucionais Transitórias, para exercer o cargo, emprego ou função de nível equivalente ou maior na Administração Direta ou Indireta.
 
-**Parágrafo único.** O período de afastamento da carreira estabelecido neste artigo será considerado de efetivo exercício, para todos os efeitos legais, exceto para remoção ou promoção por merecimento.
+Parágrafo único. O período de afastamento da carreira estabelecido neste artigo será considerado de efetivo exercício, para todos os efeitos legais, exceto para remoção ou promoção por merecimento.
 
 **Art. 76.** A Procuradoria-Geral de Justiça deverá propor, no prazo de um ano da promulgação desta Lei, a criação ou transformação de cargos correspondentes às funções não atribuídas aos cargos já existentes.
 
-**Parágrafo único.** Aos Promotores de Justiça que executem as funções previstas neste artigo assegurar-se-á preferência no concurso de remoção.
+Parágrafo único. Aos Promotores de Justiça que executem as funções previstas neste artigo assegurar-se-á preferência no concurso de remoção.
 
 **Art. 77.** No âmbito do Ministério Público, para os fins do disposto no art. 37, inciso XI, da Constituição Federal, ficam estabelecidos como limite de remuneração os valores percebidos em espécie, a qualquer título, pelo Procurador-Geral de Justiça.
 
@@ -881,6 +905,6 @@ III - que a remoção por permuta não confere direito a ajuda de custo.
 
 Brasília, 12 de fevereiro de 1993, 172º da Independência e 105º da República.
 
-ITAMAR FRANCO
+### ITAMAR FRANCO
 
 Maurício Corrêa

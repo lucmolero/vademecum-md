@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2007-12-28"
 ementa: "Dispõe sobre as custas judiciais devidas no âmbito do Superior Tribunal de Justiça."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2007-12-28;11636"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "4c7f0ab0fb30265c0d1116447aed204d94607b5a8cfc8892003896a842841ebf"
+sha256_origem: "cf321f7dc474a715d9f87061fb1b6db645d37a081d8905efd0a9e8a7923d4b3f"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,12 +28,10 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "c3bb1e37000b5e3d8a208cdcbc460b72a9fbad649072a9cfba6b75abcb70ef94"
+sha256_corpo: "162c455d40145d6d0288a328a8477121d339227f8279eca911a51821f70d93c1"
 ---
 # Lei nº 11.636 de 28/12/2007
-
-**LEI Nº 11.636, DE 28 DEZEMBRO DE 2007.**
-
-***Dispõe sobre as custas judiciais devidas no âmbito do Superior Tribunal de Justiça.***
 
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -41,7 +39,7 @@ O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu san
 
 **Art. 2o** Os valores e as hipóteses de incidência das custas são os constantes do Anexo desta Lei.
 
-**Parágrafo único.** Os valores das custas judiciais do Superior Tribunal de Justiça constantes das Tabelas do Anexo desta Lei serão corrigidos anualmente pela variação do Índice Nacional de Preços ao Consumidor Amplo - IPCA, do IBGE, observado o disposto no art. 15 desta Lei.
+Parágrafo único. Os valores das custas judiciais do Superior Tribunal de Justiça constantes das Tabelas do Anexo desta Lei serão corrigidos anualmente pela variação do Índice Nacional de Preços ao Consumidor Amplo - IPCA, do IBGE, observado o disposto no art. 15 desta Lei.
 
 **Art. 3o** As custas previstas nesta Lei não excluem as despesas estabelecidas em legislação processual específica, inclusive o porte de remessa e retorno dos autos.
 
@@ -49,7 +47,7 @@ O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu san
 
 **Art. 5o** Exceto em caso de isenção legal, nenhum feito será distribuído sem o respectivo preparo, nem se praticarão nele atos processuais, salvo os que forem ordenados de ofício pelo relator.
 
-**Parágrafo único.** O preparo compreende todos os atos do processo, inclusive a baixa dos autos.
+Parágrafo único. O preparo compreende todos os atos do processo, inclusive a baixa dos autos.
 
 **Art. 6o** Quando autor e réu recorrerem, cada recurso estará sujeito a preparo integral e distinto, composto de custas e porte de remessa e retorno.
 
@@ -67,7 +65,7 @@ O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu san
 
 **Art. 10.** Quando se tratar de recurso, o recolhimento do preparo, composto de custas e porte de remessa e retorno, será feito no tribunal de origem, perante as suas secretarias e no prazo da sua interposição.
 
-**Parágrafo único.** Nenhum recurso subirá ao Superior Tribunal de Justiça, salvo caso de isenção, sem a juntada aos autos do comprovante de recolhimento do preparo.
+Parágrafo único. Nenhum recurso subirá ao Superior Tribunal de Justiça, salvo caso de isenção, sem a juntada aos autos do comprovante de recolhimento do preparo.
 
 **Art. 11.** O abandono ou desistência do feito, ou a existência de transação que lhe ponha termo, em qualquer fase do processo, não dispensa a parte do pagamento das custas nem lhe dá o direito à restituição.
 
@@ -75,7 +73,7 @@ O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu san
 
 **Art. 13.** A assistência judiciária, perante o Superior Tribunal de Justiça, será requerida ao presidente antes da distribuição, e, nos demais casos, ao relator.
 
-**Parágrafo único.** Prevalecerá no Superior Tribunal de Justiça a assistência judiciária já concedida em outra instância.
+Parágrafo único. Prevalecerá no Superior Tribunal de Justiça a assistência judiciária já concedida em outra instância.
 
 **Art. 14.** O regimento interno do Superior Tribunal de Justiça disporá sobre os atos complementares necessários ao cumprimento desta Lei.
 
@@ -83,10 +81,6 @@ O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu san
 
 Brasília, 28 de dezembro de 2007; 186o da Independência e 119o da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
 Tarso Genro
-
-Este texto não substitui o publicado no DOU de 31.12.2007
-
-&lt;&lt;ANEXO>>

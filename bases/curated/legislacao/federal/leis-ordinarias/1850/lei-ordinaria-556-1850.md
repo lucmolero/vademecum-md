@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "media"
 data_assinatura: "1850-06-25"
 ementa: "CODIGO COMERCIAL DO IMPERIO DO BRASIL."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:1850-06-25;556"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "854bf0075228cef070295960cf812b5a2b7d478f43cf629e825a9bdd3d018c03"
+sha256_origem: "c9cf1e29b278881c5d3c248ae4e7166ed243348c327b79467566e998fbccf6b1"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,18 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "core_codigos"
+sha256_normalizado: "c9cf1e29b278881c5d3c248ae4e7166ed243348c327b79467566e998fbccf6b1"
+sha256_corpo: "77283823f8026c659c1d9e4a87f551d94578f7a2eb7273b2a47a3fe05fddbe72"
 ---
 # Lei nº 556 de 25/06/1850
 
-**lei nº 556, de 25 de junho de 1850.**
+lei nº 556, de 25 de junho de 1850.
 
-Código Comercial
+## PARTE PRIMEIRA - DO COMÉRCIO EM GERAL
 
-***PARTE PRIMEIRA - DO COMÉRCIO EM GERAL***
+### TÍTULO I
 
-### TÍTULO I — Dos Comerciantes
+Dos Comerciantes
 
-#### Capítulo I — Das Qualidades Necessárias para ser Comerciante
+#### Capítulo I
+
+Das Qualidades Necessárias para ser Comerciante
 
 **Art. 1** - Podem comerciar no Brasil:
 
@@ -81,7 +85,9 @@ Os menores, os filhos-famílias e as mulheres casadas devem inscrever os título
 
 **Art. 9** - O exercício efetivo de comércio para todos os efeitos legais presume-se começar desde a data da publicação da matrícula.
 
-#### Capítulo II — Das Obrigações Comuns a Todos os Comerciantes
+#### Capítulo II
+
+Das Obrigações Comuns a Todos os Comerciantes
 
 **Art. 10** - Todos os comerciantes são obrigados:
 
@@ -119,7 +125,9 @@ Se os livros se acharem em diverso distrito, o exame será feito pelo juiz de di
 
 **Art. 20** - Se algum comerciante recusar apresentar os seus livros quando judicialmente lhe for ordenado, nos casos do artigo nº. 18, será compelido à sua apresentação debaixo de prisão, e nos casos do artigo nº. 19 será deferido juramento supletório à outra parte. Se a questão for entre comerciantes, dar-se-á plena fé aos livros do comerciante a favor de quem se ordenar a exibição, se forem apresentados em forma regular (artigo nºs 13 e 14).
 
-#### Capítulo III — DAS PRERROGATIVAS DOS COMERCIANTES
+#### Capítulo III
+
+### DAS PRERROGATIVAS DOS COMERCIANTES
 
 **Art. 21** - As procurações bastantes dos comerciantes, ou sejam feitas pela sua própria mão ou por eles somente assinadas, têm a mesma validade que se fossem feitas por tabeliães públicos.
 
@@ -137,7 +145,9 @@ Se os livros se acharem em diverso distrito, o exame será feito pelo juiz de di
 
 **Art. 25** - Ilide-se a fé dos mesmos livros, nos casos compreendidos nº 2 do artigo nº. 23, por documentos sem vício, por onde se mostre que os assentos contestados são falsos ou menos exatos; e quanto aos casos compreendidos na disposição no nº 3 do mesmo artigo, por qualquer gênero de prova admitida em comércio.
 
-#### Capítulo IV — DAS DISPOSIÇÕES GERAIS
+#### Capítulo IV
+
+### DAS DISPOSIÇÕES GERAIS
 
 **Art. 26** - Os menores e os filhos-famílias comerciantes podem obrigar, hipotecar e alhear validamente os seus bens de raiz, sem que possam alegar o beneficio de restituição contra estes atos, ou outras quaisquer obrigações comerciais que contraírem.
 
@@ -155,7 +165,9 @@ Poderá, porém, obrigar, hipotecar e alhear validamente os bens dotais, os para
 
 **Art. 31** - Os prazos marcados nos artigo nºs 10, nº 2, e 27, começarão a contar-se, para as pessoas que residirem fora do lugar onde se achar estabelecido o Registro do Comércio, do dia seguinte ao da chegada do segundo correio, paquete ou navio, que houver saído do distrito do domicílio das mesmas pessoas depois da data dos documentos que deverem ser registrados.
 
-### TÍTULO II — DAS PRAÇAS DO COMÉRCIO
+### TÍTULO II
+
+### DAS PRAÇAS DO COMÉRCIO
 
 **Art. 32** - Praça do comércio é não só o local, mas também a reunião dos comerciantes, capitães e mestres de navios, corretores e mais pessoas empregadas no comércio.
 
@@ -167,9 +179,13 @@ O regulamento das praças do comércio marcará tudo quanto respeita à polícia
 
 **Art. 34** - Os comerciantes de qualquer praça poderão eleger dentre si uma comissão que represente o corpo do comércio da mesma praça.
 
-### TÍTULO III — DOS AGENTES AUXILIARES DO COMÉRCIO
+### TÍTULO III
 
-#### Capítulo I — DISPOSIÇÕES GERAIS
+### DOS AGENTES AUXILIARES DO COMÉRCIO
+
+#### Capítulo I
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 35** - São considerados agentes auxiliares do comércio, sujeitos às leis comerciais com relação às operações que nessa qualidade lhes respeitam:
 
@@ -183,7 +199,9 @@ O regulamento das praças do comércio marcará tudo quanto respeita à polícia
 
 5 - os comissários de transportes.
 
-#### Capítulo II — DOS CORRETORES
+#### Capítulo II
+
+### DOS CORRETORES
 
 **Art. 36** - Para ser corretor, requer-se ter mais de 25 (vinte e cinco) anos de idade, e ser domiciliado no lugar por mais de 1 (um) ano.
 
@@ -285,7 +303,9 @@ Toda a corretagem, não havendo estipulação em contrário, será paga repartid
 
 **Art. 67** - O Governo, procedendo consulta dos respectivos Tribunais do Comércio, marcará o nº de corretores que deverá haver em cada uma das praças do comércio do Brasil, e lhes dará regimento próprio, e bem assim aos agentes de leilão, contanto que por estes regimentos se não altere disposição alguma das compreendidas no presente Código.
 
-#### Capítulo III — DOS AGENTES DE LEILÕES
+#### Capítulo III
+
+### DOS AGENTES DE LEILÕES
 
 **Art. 68** - Revogado pelo Decreto nº 21.981, de 19.10.1932:
 
@@ -309,7 +329,9 @@ Havendo mora por parte do agente de leilão, poderá o cometente requerer, no Ju
 
 **Art. 73** - Texto original: Os agentes de leilão em nenhum caso poderão vender fiado ou a prazos, sem autorização por escrito do cometente.
 
-#### Capítulo IV — DOS FEITORES, GUARDA-LIVROS E CAIXEIROS
+#### Capítulo IV
+
+### DOS FEITORES, GUARDA-LIVROS E CAIXEIROS
 
 **Art. 74** - Todos os feitores, guarda-livros, caixeiros e outros quaisquer prepostos das casas de comércio, antes de entrarem no seu exercício, devem receber de seus patrões ou preponentes uma nomeação por escrito, que farão inscrever no Tribunal do Comércio (artigo nº. 10, nº 2); pena de ficarem privados dos favores por este Código concedidos aos da sua classe.
 
@@ -349,7 +371,9 @@ Os agentes despedidos terão direito ao salário correspondente a esse mês, mas
 
 **Art. 86** - São aplicáveis aos feitores as disposições do Título VI - Do mandato mercantil - artigo nºs 145, 148, 150, 151, 160, 161 e 162.
 
-#### Capítulo V — DOS TRAPICHEIROS E ADMINISTRADORES DE ARMAZÉNS DE DEPÓSITO
+#### Capítulo V
+
+### DOS TRAPICHEIROS E ADMINISTRADORES DE ARMAZÉNS DE DEPÓSITO
 
 **Art. 87** - Os trapicheiros e os administradores de armazéns de depósito são obrigados a assinar no Tribunal do Comércio ou perante o juiz de direito do comércio, nos lugares distantes da residência do mesmo tribunal, termo de fiéis depositários dos gêneros que receberem, e à vista dele se lhes passará título competente, que será lançado no Registro do Comércio.
 
@@ -391,7 +415,9 @@ Todas as despesas que se fizerem a título de safamento serão por conta dos mes
 
 **Art. 98** - As disposições do Título XIV - Do depósito mercantil - são aplicáveis aos trapicheiros e aos administradores de armazéns de depósito.
 
-#### Capítulo VI — DOS CONDUTORES DE GÊNEROS E COMISSÁRIOS DE TRANSPORTES
+#### Capítulo VI
+
+### DOS CONDUTORES DE GÊNEROS E COMISSÁRIOS DE TRANSPORTES
 
 **Art. 99** - Os barqueiros, tropeiros e quaisquer outros condutores de gêneros, ou comissários, que do seu transporte se encarregarem mediante uma comissão, frete ou aluguel, devem efetuar a sua entrega fielmente no tempo e no lugar do ajuste; e empregar toda a diligência e meios praticados pelas pessoas exatas no cumprimento dos seus deveres em casos semelhantes para que os mesmos gêneros se não deteriorem, fazendo para esse fim, por conta de quem pertencer, as despesas necessárias; e são responsáveis as partes pelas perdas e danos que, por malversação ou omissão sua, ou dos seus feitores, caixeiros ou outros quaisquer agentes resultarem.
 
@@ -445,13 +471,17 @@ A prova de qualquer dos referidos sinistros incumbe ao condutor ou comissário d
 
 **Art. 118** - As disposições deste Capítulo são aplicáveis aos donos, administradores e arrais de barcas, lanchas, saveiros, faluas, canoas, e outros quaisquer barcos de semelhante natureza empregados no transporte dos gêneros comerciais.
 
-### TÍTULO IV — DOS BANQUEIROS
+### TÍTULO IV
+
+### DOS BANQUEIROS
 
 **Art. 119** - São considerados banqueiros os comerciantes que têm por profissão habitual do seu comércio as operações chamadas de Banco.
 
 **Art. 120** - As operações de Banco serão decididas e julgadas pelas regras gerais dos contratos estabelecidos neste Código, que forem aplicáveis segundo a natureza de cada uma das transações que se operarem.
 
-### TÍTULO V — DOS CONTRATOS E OBRIGAÇÕES MERCANTIS
+### TÍTULO V
+
+### DOS CONTRATOS E OBRIGAÇÕES MERCANTIS
 
 **Art. 121** - As regras e disposições do direito civil para os contratos em geral são aplicáveis aos contratos comerciais, com as modificações e restrições estabelecidas neste Código.
 
@@ -527,7 +557,9 @@ Se a aceitação for condicional, tornar-se-á obrigatória desde que o primeiro
 
 **Art. 139** - As questões de fato sobre a existência de fraude, dolo, simulação, ou omissão culpável na formação dos contratos comerciais, ou na sua execução, serão determinadas por arbitradores.
 
-### TÍTULO VI — DO MANDATO MERCANTIL
+### TÍTULO VI
+
+### DO MANDATO MERCANTIL
 
 **Art. 140** - Dá-se mandato mercantil, quando um comerciante confia a outrem a gestão de um ou mais negócios mercantis, obrando o mandatário e obrigando-se em nome do comitente.
 
@@ -591,7 +623,9 @@ A falta de registro estabelece a presunção da validade dos atos praticados pel
 
 **Art. 164** - As disposições do Título VII - Da comissão mercantil - artigo nºs 167, 168, 169, 170, 175, 180, 181, 182, 183, 184, 185, 187, e 188, são aplicáveis ao mandato mercantil.
 
-### TÍTULO VII — DA COMISSÃO MERCANTIL
+### TÍTULO VII
+
+### DA COMISSÃO MERCANTIL
 
 **Art. 165** - A comissão mercantil é o contrato do mandato relativo a negócios mercantis, quando, pelo menos, o comissário é comerciante, sem que nesta gestão seja necessário declarar ou mencionar o nome do comitente.
 
@@ -659,7 +693,9 @@ As contas dadas pelo comissário ao comitente devem concordar com os seus livros
 
 **Art. 190** - As disposições do Título VI - Do mandato mercantil - são aplicáveis à comissão mercantil.
 
-### TÍTULO VIII — DA COMPRA E VENDA MERCANTIL
+### TÍTULO VIII
+
+### DA COMPRA E VENDA MERCANTIL
 
 **Art. 191** - O contrato de compra e venda mercantil é perfeito e acabado logo que o comprador e o vendedor se acordam na coisa, no preço e nas condições; e desde esse momento nenhuma das partes pode arrepender-se sem consentimento da outra, ainda que a coisa se não ache entregue nem o preço pago. Fica entendido que nas vendas condicionais não se reputa o contrato perfeito senão depois de verificada a condição (artigo nº. 127).
 
@@ -743,7 +779,9 @@ Essa reclamação não tem lugar quando o vendedor exige do comprador que examin
 
 **Art. 220** - A rescisão por lesão não tem lugar nas compras e vendas celebradas entre pessoas todas comerciantes; salvo provando-se erro, fraude ou simulação.
 
-### TÍTULO IX — DO ESCAMBO OU TROCA MERCANTIL
+### TÍTULO IX
+
+### DO ESCAMBO OU TROCA MERCANTIL
 
 **Art. 221** - O contrato de troca ou escambo mercantil opera ao mesmo tempo duas verdadeiras vendas, servindo as coisas trocadas de preço e compensação recíproca (artigo nº. 191). Tudo o que pode ser vendido pode ser trocado.
 
@@ -755,7 +793,9 @@ Essa reclamação não tem lugar quando o vendedor exige do comprador que examin
 
 **Art. 225** - Em tudo o mais as trocas mercantis regulam-se pelas disposições do Título VIII - Da compra e venda mercantil.
 
-### TÍTULO X — DA LOCAÇÃO MERCANTIL
+### TÍTULO X
+
+### DA LOCAÇÃO MERCANTIL
 
 **Art. 226** - A locação mercantil é o contrato pelo qual uma das partes se obriga a dar à outra, por determinado tempo e preço certo, o uso de alguma coisa, ou do seu trabalho. O que dá a coisa ou presta serviço chama-se locador, e o que a toma ou aceita o serviço, locatário.
 
@@ -801,7 +841,9 @@ A presente disposição é aplicável ao empreiteiro que deixar de entregar a em
 
 **Art. 246** - As disposições do Título VI - Do mandato mercantil - têm lugar a respeito dos mestres, administradores ou diretores de fábricas, na parte em que forem aplicáveis.
 
-### TÍTULO XI — DO MÚTUO E DOS JUROS MERCANTIS
+### TÍTULO XI
+
+### DO MÚTUO E DOS JUROS MERCANTIS
 
 **Art. 247** - O mútuo é empréstimo mercantil, quando a coisa emprestada pode ser considerada gênero comercial, ou destinada a uso comercial, pelo menos o mutuário é comerciante.
 
@@ -825,9 +867,13 @@ Depois que em juízo se intenta ação contra o devedor, não pode ter lugar a a
 
 **Art. 255** - Os descontos de letras de câmbio ou da terra, e de quaisquer títulos de crédito negociáveis, regulam-se pelas convenções das partes.
 
-### TÍTULO XII — DAS FIANÇAS E CARTAS DE CRÉDITO E ABONO
+### TÍTULO XII
 
-#### Capítulo I — DAS FIANÇAS
+### DAS FIANÇAS E CARTAS DE CRÉDITO E ABONO
+
+#### Capítulo I
+
+### DAS FIANÇAS
 
 **Art. 256** - Para que a fiança possa ser reputada mercantil, é indispensável que o afiançado seja comerciante, e a obrigação afiançada derive de causa comercial, embora o fiador não seja comerciante.
 
@@ -847,13 +893,19 @@ A obrigação do fiador passa a seus herdeiros; mas a responsabilidade da fianç
 
 **Art. 263** - Desonerando-se, morrendo ou falindo o fiador, o devedor originário é obrigado a dar nova fiança, ou pagar imediatamente a dívida.
 
-#### Capítulo II — DAS CARTAS DE CRÉDITO
+#### Capítulo II
+
+### DAS CARTAS DE CRÉDITO
 
 **Art. 264** - As cartas de crédito devem necessariamente contrair-se a pessoa ou pessoas determinadas, com limitação da quantia creditada; o comerciante que as escreve e abre o crédito fica responsável pela quantia que em virtude delas for entregue ao creditado até a concorrência da soma abonada. As cartas que não abrirem crédito pecuniário com determinação do máximo presumem-se meras cartas de recomendação, sem responsabilidade de quem as escreveu.
 
-### TÍTULO XIII — DA HIPOTECA E PENHOR MERCANTIL
+### TÍTULO XIII
 
-#### Capítulo I — DA HIPOTECA
+### DA HIPOTECA E PENHOR MERCANTIL
+
+#### Capítulo I
+
+### DA HIPOTECA
 
 **Art. 265** - Texto original: A hipoteca de bens de raiz feita para segurar qualquer obrigação ou dívida comercial, só pode provar-se por escritura pública, inscrita no Registro do Comércio (art. 10 n.2): fica porém entendido que a presente disposição não compreende os casos em que por este Código se estabelece a hipoteca tácita.
 
@@ -873,7 +925,9 @@ A obrigação do fiador passa a seus herdeiros; mas a responsabilidade da fianç
 
 **Art. 270** - Texto original: Se alguma coisa for hipotecada a dois ou mais credores, estes preferirão entre si pela ordem estabelecida nos (arts. 884 e 885): mas se o valor da coisa hipotecada cobrir todas as hipotecas, ou se paga a primeira ainda houver sobras, nestas, ou no excedente do valor ficarão radicadas a segunda ou mais hipotecas.
 
-#### Capítulo II — DO PENHOR MERCANTIL
+#### Capítulo II
+
+### DO PENHOR MERCANTIL
 
 **Art. 271** - O contrato de penhor, pelo qual o devedor ou um terceiro por ele entrega ao credor uma coisa móvel em segurança e garantia de obrigação comercial, só pode provar-se por escrito assinado por quem recebe o penhor.
 
@@ -895,7 +949,9 @@ Não podem, porém, dar-se em penhor comercial escravos, nem semoventes.
 
 **Art. 279** - O credor pignoratício, que por qualquer modo alhear ou negociar a coisa dada em penhor ou garantia, sem para isso ser autorizado por condição ou consentimento por escrito do devedor, incorrerá nas penas do crime de estelionato.
 
-### TÍTULO XIV — DO DEPÓSITO MERCANTIL
+### TÍTULO XIV
+
+### DO DEPÓSITO MERCANTIL
 
 **Art. 280** - Só terá a natureza de depósito mercantil o que for feito por causa proveniente de comércio, em poder de comerciante, ou por conta de comerciante.
 
@@ -911,9 +967,13 @@ Não podem, porém, dar-se em penhor comercial escravos, nem semoventes.
 
 **Art. 286** - As disposições do Capítulo II - Do penhor mercantil - são aplicáveis ao depósito mercantil.
 
-### TÍTULO XV — DAS COMPANHIAS E SOCIEDADES COMERCIAIS
+### TÍTULO XV
 
-#### Capítulo I — DISPOSIÇÕES GERAIS
+### DAS COMPANHIAS E SOCIEDADES COMERCIAIS
+
+#### Capítulo I
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 287** - É da essência das companhias e sociedades comerciais que o objeto e fim a que se propõem seja lícito, e que cada um dos sócios contribua para o seu capital com alguma quota, ou esta consista em dinheiro ou em efeitos e qualquer sorte de bens, ou em trabalho ou indústria.
 
@@ -935,17 +995,19 @@ Esta disposição tem lugar se as mesmas pessoas formarem diversas companhias ou
 
 **Art. 294** - Todas as questões sociais que se suscitarem entre sócios durante a existência da sociedade ou companhia, sua liquidação ou partilha, serão decididas em juízo arbitral.
 
-#### Capítulo II — DAS COMPANHIAS DE COMÉRCIO OU SOCIEDADES ANÔNIMAS
+#### Capítulo II
+
+### DAS COMPANHIAS DE COMÉRCIO OU SOCIEDADES ANÔNIMAS
 
 **Art. 295** - Texto original: As companhias ou sociedades anônimas, designadas pelo objeto ou empresa a que se destinam, sem firma social, e administradas por mandatários revogáveis, sócios ou não sócios, só podem estabelecer-se por tempo determinado, e com autorização do Governo, dependente da aprovação do Corpo Legislativo quando hajam de gozar de algum privilégio: e devem provar-se por escritura pública, ou pelos seus estatutos, e pelo ato do Poder que as houver autorizado.
 
 As companhias só podem ser dissolvidas:
 
-1\. Expirando o prazo da sua duração;
+1. Expirando o prazo da sua duração;
 
-2\. Por quebra; e
+2. Por quebra; e
 
-3\. Mostrando-se que a companhia não pode preencher o intuito e fim social.
+3. Mostrando-se que a companhia não pode preencher o intuito e fim social.
 
 **Art. 296** - Texto original: A escritura, estatutos e ato da autorização das companhias devem ser inscritos no Registro do Comércio, e publicados pelo Tribunal respectivo, antes que as companhias comecem a exercer suas operações.
 
@@ -959,9 +1021,13 @@ As ações podem ser exaradas em forma de título ao portador, ou por inscriçõ
 
 **Art. 299** - Texto original: Os administradores ou diretores de uma companhia respondem pessoal e solidariamente a terceiros, que tratarem com a mesma companhia, até o momento em que tiver lugar a inscrição do instrumento ou título da sua instituição no Registro do Comércio (art. 296), efetuado o registro respondem só à companhia pela execução do mandato.
 
-#### Capítulo III — DAS SOCIEDADES COMERCIAIS
+#### Capítulo III
 
-##### Seção I — Disposições Gerais
+### DAS SOCIEDADES COMERCIAIS
+
+##### Seção I
+
+Disposições Gerais
 
 **Art. 300** - O contrato de qualquer sociedade comercial só pode provar-se por escritura pública ou particular; salvo nos casos dos artigo nºs 304 e 325.
 
@@ -1035,7 +1101,9 @@ A nomeação do novo caixa ou gerente será feita pela maioria dos votos dos só
 
 Não existindo credores presentes, mas constando pelos livros do falecido ou por outros títulos autênticos que os há ausentes, serão os dois administradores e fiscal nomeados pelo Tribunal do Comércio.
 
-##### Seção II — Da Sociedade em Comandita
+##### Seção II
+
+Da Sociedade em Comandita
 
 **Art. 311** - Quando duas ou mais pessoas, sendo ao menos uma comerciante, se associam para fim comercial, obrigando-se uns como sócios solidariamente responsáveis, e sendo outros simples prestadores de capitais, com a condição de não serem obrigados além dos fundos que forem declarados no contrato, esta associação tem a natureza de sociedade em comandita.
 
@@ -1047,7 +1115,9 @@ Se houver mais de um sócio solidariamente responsável, ou sejam muitos os enca
 
 **Art. 314** - Os sócios comanditários não podem praticar ato algum de gestão, nem ser empregados nos negócios da sociedade, ainda mesmo que seja como procuradores, nem fazer parte da firma social; pena de ficarem solidariamente responsáveis como os outros sócios; não se compreende, porém, nesta proibição a faculdade de tomar parte nas deliberações da sociedade, nem o direito de fiscalizar as suas operações e estado (artigo nº. 290).
 
-##### Seção III — Das Sociedades em Nome Coletivo ou com Firma
+##### Seção III
+
+Das Sociedades em Nome Coletivo ou com Firma
 
 **Art. 315** - Existe sociedade em nome coletivo ou com firma, quando duas ou mais pessoas, ainda que algumas não sejam comerciantes, se unem para comerciar em comum, debaixo de uma firma social.
 
@@ -1059,7 +1129,9 @@ Não havendo no contrato designação do sócio ou sócios que tenham a faculdad
 
 Contra o sócio que abusar da firma social, dá-se ação de perdas e danos, tanto da parte dos sócios como de terceiro; e se com o abuso concorrer também fraude ou dolo, este poderá intentar contra ele a ação criminal que no caso couber.
 
-##### Seção IV — Das Sociedades de Capital e Indústria
+##### Seção IV
+
+Das Sociedades de Capital e Indústria
 
 **Art. 317** - Diz-se sociedade de capital e indústria aquela que se contrai entre pessoas, que entram por uma parte com os fundos necessários para uma negociação comercial em geral, ou para alguma operação mercantil em particular, e por outra parte com a sua indústria somente.
 
@@ -1081,7 +1153,9 @@ Na falta de declaração no contrato, o sócio de indústria tem direito a uma q
 
 **Art. 324** - Competem tanto aos sócios capitalistas como aos credores sociais contra o sócio de indústria todas as ações que a lei faculta contra o gerente ou mandatário infiel, ou negligente culpável.
 
-##### Seção V — Da Sociedade em Conta de Participação
+##### Seção V
+
+Da Sociedade em Conta de Participação
 
 **Art. 325** - Quando duas ou mais pessoas, sendo ao menos uma comerciante, se reúnem, sem firma social, para lucro comum, em uma ou mais operações de comércio determinadas, trabalhando um, alguns ou todos, em seu nome individual para o fim social, a associação toma o nome de sociedade em conta de participação, acidental, momentânea ou anônima; esta sociedade não está sujeita às formalidades prescritas para a formação das outras sociedades, e pode provar-se por todo o gênero de provas admitidas nos contratos comerciais (artigo nº. 122).
 
@@ -1091,7 +1165,9 @@ Na falta de declaração no contrato, o sócio de indústria tem direito a uma q
 
 **Art. 328** - No caso de quebrar ou falir o sócio-gerente, é lícito ao terceiro com quem houver tratado saldar todas as contas que com ele tiver, posto que abertas sejam debaixo de distintas designações, com os fundos pertencentes a quaisquer das mesmas contas; ainda que os outros sócios mostrem que esses fundos lhes pertencem, uma vez que não provem que o dito terceiro tinha conhecimento, antes da quebra, da existência da sociedade em conta de participação.
 
-##### Seção VI — Dos Direitos e Obrigações dos Sócios
+##### Seção VI
+
+Dos Direitos e Obrigações dos Sócios
 
 **Art. 329** - As obrigações dos sócios começam da data do contrato, ou da época nele designada; e acabam depois que, dissolvida a sociedade, se acham satisfeitas e extintas todas as responsabilidades sociais.
 
@@ -1105,7 +1181,9 @@ Na falta de declaração no contrato, o sócio de indústria tem direito a uma q
 
 **Art. 334** - A nenhum sócio é lícito ceder a um terceiro, que não seja sócio, a parte que tiver na sociedade, nem fazer-se substituir no exercício das funções que nela exercer sem expresso consentimento de todos os outros sócios; pena de nulidade do contrato; mas poderá associá-lo à sua parte, sem que por esse fato o associado fique considerado membro da sociedade.
 
-##### Seção VII — Da Dissolução da Sociedade
+##### Seção VII
+
+Da Dissolução da Sociedade
 
 **Art. 335** - As sociedades reputam-se dissolvidas:
 
@@ -1143,7 +1221,9 @@ Em todos os casos deve continuar a sociedade, somente para se ultimarem as negoc
 
 **Art. 343** - Se ao tempo de dissolver-se a sociedade, um sócio tomar sobre si receber os créditos e pagar as dívidas passivas, dando aos outros sócios ressalva contra toda a responsabilidade futura, esta ressalva não prejudica a terceiros, se estes nisso não convierem expressamente; salvo se fizerem com aquele alguma novação de contrato (artigo nº. 438). Todavia, se o sócio que passou a ressalva continuar no giro da negociação que fazia objeto da sociedade extinta, debaixo da mesma ou de nova firma, os sócios que saírem da sociedade ficarão desonerados inteiramente, se o credor celebrar, com o sócio que continua a negociar debaixo da mesma ou de nova firma, transações subseqüentes, indicativas de que confia no seu crédito.
 
-##### Seção VIII — Da Liquidação da Sociedade
+##### Seção VIII
+
+Da Liquidação da Sociedade
 
 **Art. 344** - Dissolvida uma sociedade mercantil, os sócios autorizados para gerir durante a sua existência devem operar a sua liquidação debaixo da mesma firma, aditada com a cláusula - em liquidação; salvo havendo estipulação diversa no contrato, ou querendo os sócios, a aprazimento comum ou por pluralidade de votos em caso de discórdia, encarregar a liquidação a algum dos outros sócios não gerentes, ou a pessoa de fora da sociedade.
 
@@ -1177,11 +1257,17 @@ Esta disposição não compreende aqueles sócios que tiverem feito empréstimo 
 
 **Art. 353** - Nas liquidações de sociedades comerciais em que houver menores interessados, procederá à liquidação e partilha com seus tutores, e com um curador especial que para este fim lhe será nomeado pelo juiz dos órfãos; e todos os atos que com os ditos tutor e curador se praticarem serão válidos e irrevogáveis, sem que contra eles em tempo algum se possa alegar benefício de restituição; ficando unicamente direito salvo aos menores para haverem de seus tutores e curadores os danos que de sua negligência culpável, dolo ou fraude lhes resultarem.
 
-### TÍTULO XVI — DAS LETRAS, NOTAS PROMISSÓRIAS E CRÉDITOS MERCANTIS
+### TÍTULO XVI
 
-#### Capítulo I — Das Letras de cambio
+### DAS LETRAS, NOTAS PROMISSÓRIAS E CRÉDITOS MERCANTIS
 
-##### Seção I — Da forma das Letras de cambio, e seus vencimentos
+#### Capítulo I
+
+Das Letras de cambio
+
+##### Seção I
+
+Da forma das Letras de cambio, e seus vencimentos
 
 **Art. 354** - Texto original: A letra de cambio deve ser datada, e declarar:
 
@@ -1221,7 +1307,9 @@ Os prazos são contínuos, e contados de data a data. Se o dia do vencimento for
 
 **Art. 359** - Texto original: Havendo diferença entre o valor lançado por algarismo no alto da letra e o que se achar por extenso no corpo dela, este último será sempre considerado o verdadeiro, e a diferença não prejudicará a letra.
 
-##### Seção II — Dos Endossos
+##### Seção II
+
+Dos Endossos
 
 **Art. 360** - Texto original: As letras de cambio pagáveis à ordem são transferíveis e exeqüíveis por via de endosso (art. 364).
 
@@ -1245,7 +1333,9 @@ O endosso - à ordem, sem declarar se é valor recebido ou em conta, confere som
 
 **Art. 364** - Texto original: Os endossos de letras já vencidas ou prejudicadas, e daquelas que não são pagáveis à ordem, tem o simples efeito de cessão civil.
 
-##### Seção III — Do Sacador
+##### Seção III
+
+Do Sacador
 
 **Art. 365** - Texto original: O sacador é obrigado a dar ao tomador todas as vias da letra de cambio que este pedir antes do vencimento; e perdidas as primeiras, não pode negar-se a dar-lhe outras, que deverão ser passadas com ressalva das que se houverem perdido: faltando esta ressalva, entende-se que são vias de letra distinta.
 
@@ -1261,7 +1351,9 @@ Cessa porém a responsabilidade do sacador quando o portador deixa de apresentar
 
 **Art. 370** - Texto original: O sacador, que é obrigado a solver uma letra de cambio porque o sacado a não paga, tem ação de perdas e danos contra este; salvo se o sacado deixar de pagar por falta de suficiente provisão de fundos do sacador em seu poder.
 
-##### Seção IV — Do Portador
+##### Seção IV
+
+Do Portador
 
 **Art. 371** - Texto original: O possuidor de letra de cambio à vista, ou a dias ou meses de vista, é obrigado a fazer expedir uma via para o aceite na primeira ocasião oportuna que se oferecer, não podendo nunca exceder o tempo que decorrer da saída do segundo correio, paquete ou navio que levar correspondência para o lugar da residência do sacado ou aceitante (art. 420); pena de ficar prejudicada a responsabilidade de todos os endossantes anteriores.
 
@@ -1339,7 +1431,9 @@ Texto original: Quebrando o aceitante de letra de câmbio antes do vencimento, o
 
 Texto original: O portador de letra de câmbio devidamente protestada por falta de pagamento pode, em caso de quebra do aceitante, apresentar-se pela totalidade do seu crédito a todas as massas falidas dos que na mesma letra forem co-obrigados: e os dividendos recebidos de uma das massas descarregarão as outras, e os co-obrigados solventes até seu inteiro pagamento (art. 892).
 
-##### Seção V — Do Sacado e Aceitante
+##### Seção V
+
+Do Sacado e Aceitante
 
 **Art. 392** - Texto original: O comerciante que por escrito autoriza a outrem para sacar sobre ele, é obrigado a aceitar e pagar, e fica sujeito a todas as responsabilidades e indenizações, como se fosse o próprio sacador (art. 422).
 
@@ -1377,7 +1471,9 @@ Se o pagamento se faz por conta ou honra de um dos endossadores, todos os signat
 
 **Art. 404** - Texto original: Oferecendo-se o aceitante, ou alguém por ele, a fazer o pagamento da letra antes do vencimento, em todo ou em parte, o portador não é obrigado a receber, ainda que a oferta se faça sem desconto nem rebate (art. 431).
 
-##### Seção VI — Dos Protestos
+##### Seção VI
+
+Dos Protestos
 
 **Art. 405** - Texto original: Os protestos das letras de câmbio devem ser feitos perante o escrivão privativo dos protestos, onde o houver; e não o havendo perante qualquer tabelião do lugar, ou escrivão com fé pública na falta ou impedimento de tabelião.
 
@@ -1423,7 +1519,9 @@ Faltando este protesto, o interventor fica desonerado da obrigação de pagar: e
 
 **Art. 414** - Texto original: O oficial público que, por omissão ou prevaricação, for causa da nulidade de algum protesto (arts. 408 e 409), será obrigado a indenizar as partes de todas as perdas, danos e despesas legais que dessa nulidade resultarem, e perderá o seu ofício.
 
-##### Seção VII — Do Recambio
+##### Seção VII
+
+Do Recambio
 
 **Art. 415** - Texto original: O recambio efetua-se pelo resaque, que é uma nova letra de câmbio passada sobre o sacador ou sobre um dos endossadores, por meio da qual o portador se reembolsa do principal da letra, juros e despesas legais, pelo curso do câmbio ao tempo do resaque (arts. 383, 384 e 385).
 
@@ -1449,7 +1547,9 @@ A respeito dos endossadores, será regulado o recambio pelo curso do lugar onde 
 
 **Art. 421** - Texto original: Os resaques ou letras de recambio são negociáveis somente para a Praça onde as letras originais foram sacadas ou negociadas (art. 385).
 
-##### Seção VIII — Disposições Gerais
+##### Seção VIII
+
+Disposições Gerais
 
 **Art. 422** - Texto original: Todos os que sacam ou dão ordem para o saque, endossam ou aceitam letras de câmbio, ou assinam como abonadores, ainda que não sejam comerciantes, são solidariamente garantes das mesmas letras e obrigados ao seu pagamento, com juros, e recambios havendo-os, e todas as despesas legais, como são, comissões, portes de cartas, selos e protestos; com direito regressivo do ultimo endossador até o sacador, sempre que a letra tiver sido apresentada ao sacado, e regularmente protestada (art. 381).
 
@@ -1457,7 +1557,9 @@ A respeito dos endossadores, será regulado o recambio pelo curso do lugar onde 
 
 **Art. 424** - Texto original: As contestações judiciais que respeitarem a atos de apresentação de letras de câmbio, seu aceite, pagamento, protesto e notificação, serão decididas segundo as Leis ou usos comerciais das Praças dos países, onde estes atos forem praticados.
 
-#### CAPÍTULO II — Das letras da terra, notas promissorias e créditos mercantis
+#### CAPÍTULO II
+
+Das letras da terra, notas promissorias e créditos mercantis
 
 **Art. 425** - Texto original: As letras da terra são em tudo iguais às letras de câmbio, com a única diferença de serem passadas e aceitas na mesma Província.
 
@@ -1467,13 +1569,17 @@ A respeito dos endossadores, será regulado o recambio pelo curso do lugar onde 
 
 ### TÍTULO XVII
 
-*DOS MODOS PORQUE SE DISSOLVEM E EXTINGUEM AS OBRIGAÇÕES COMERCIAIS.*
+### DOS MODOS PORQUE SE DISSOLVEM E EXTINGUEM AS OBRIGAÇÕES COMERCIAIS.
 
-#### Capítulo I — DISPOSIÇÕES GERAIS
+#### Capítulo I
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 428** - As obrigações comerciais dissolvem-se por todos os meios que o direito civil admite para a extinção e dissolução das obrigações em geral, com as modificações deste Código.
 
-#### Capítulo II — DOS PAGAMENTOS MERCANTIS
+#### Capítulo II
+
+### DOS PAGAMENTOS MERCANTIS
 
 **Art. 429** - O pagamento só é válido sendo feito ao próprio credor, ou a pessoa por ele competentemente autorizada para receber.
 
@@ -1519,7 +1625,9 @@ Sendo o pagamento feito antes do vencimento, o cessionário sub rogado não pode
 
 A citação edital não prejudica o direito dos credores desconhecidos que tiverem hipoteca na coisa vendida por tempo certo designado na lei ou no contrato, enquanto esse prazo não expirar.
 
-#### Capítulo III — DA NOVAÇÃO E COMPENSAÇÃO MERCANTIL
+#### Capítulo III
+
+### DA NOVAÇÃO E COMPENSAÇÃO MERCANTIL
 
 **Art. 438** - Dá-se novação:
 
@@ -1535,7 +1643,9 @@ A novação desonera todos os coobrigados que nela não intervêm (artigo nº. 2
 
 **Art. 440** - Todavia, se um comerciante, sendo demandado pela entrega de certa quantia, ou outro qualquer valor dado em guarda ou depósito alegar que o credor lhe é devedor de outra igual quantia ou valor, não terá lugar a compensação, e será obrigado a entregar o depósito; salvo se a sua dívida proceder de título igual.
 
-### TÍTULO XVIII — DA PRESCRIÇÃO
+### TÍTULO XVIII
+
+### DA PRESCRIÇÃO
 
 **Art. 441** - Todos os prazos marcados neste Código para dentro deles se intentar alguma ação ou protesto, ou praticar algum outro ato, são fatais e improrrogáveis, sem que contra a sua prescrição se possa alegar reclamação ou benefício de restituição, ainda que seja a favor de menores.
 
@@ -1599,9 +1709,9 @@ Quem provar que possuía por si, ou por seus antepossuidores, ao tempo do começ
 
 **Art. 456** - O tempo para a prescrição de obrigações mercantis contraídas, e direitos adquiridos anteriormente à promulgação do presente Código, será computado e regulado na conformidade das disposições nele contidas, começando a contar-se o prazo da data da mesma promulgação.
 
-**PARTE SEGUNDA - DO COMÉRCIO MARÍTIMO**
+### TÍTULO I
 
-### TÍTULO I — DAS EMBARCAÇÕES
+### DAS EMBARCAÇÕES
 
 **Art. 457** - Somente podem gozar das prerrogativas e favores concedidos a embarcações brasileiras, as que verdadeiramente pertencerem a súditos do Império, sem que algum estrangeiro nelas possua parte ou interesse.
 
@@ -1731,7 +1841,9 @@ Nas mesmas vendas, as custas judiciais do processo da execução e arrematação
 
 **Art. 483** - Nenhum navio pode ser detido ou embargado, nem executado na sua totalidade por dívidas particulares de um comparte; poderá, porém, ter lugar a execução no valor do quinhão do devedor, sem prejuízo da livre navegação do mesmo navio, prestando os mais compartes fiança idônea.
 
-### TÍTULO II — DOS PROPRIETÁRIOS, COMPARTES E CAIXAS DE NAVIOS
+### TÍTULO II
+
+### DOS PROPRIETÁRIOS, COMPARTES E CAIXAS DE NAVIOS
 
 **Art. 484** - Todos os cidadãos brasileiros podem adquirir e possuir embarcações brasileiras; mas a sua armação e expedição só pode girar debaixo do nome e responsabilidade de um proprietário ou comparte, armador ou caixa, que tenha as qualidades requeridas para ser comerciante (artigo nºs 1 e 4).
 
@@ -1757,7 +1869,9 @@ Nas mesmas vendas, as custas judiciais do processo da execução e arrematação
 
 **Art. 495** - O caixa é obrigado a dar aos proprietários ou compartes, no fim de cada viagem, uma conta da sua gestão, tanto relativa ao estado do navio e parceria, como da viagem finda, acompanhada dos documentos competentes, e a pagar sem demora o saldo líquido que a cada um couber; os proprietários ou compartes são obrigados a examinar a conta do caixa logo que lhes for apresentada, e a pagar sem demora a quota respectiva aos seus quinhões. A aprovação das contas do caixa dada pela maioria dos compartes do navio não obsta a que a minoria dos sócios intente contra eles as ações que julgar competentes.
 
-### TÍTULO III — DOS CAPITÃES OU MESTRES DE NAVIO
+### TÍTULO III
+
+### DOS CAPITÃES OU MESTRES DE NAVIO
 
 **Art. 496** - Para ser capitão ou mestre de embarcação brasileira, palavras sinônimas neste Código para todos os efeitos de direito, requer-se ser cidadão brasileiro, domiciliado no Império, com capacidade civil para poder contratar validamente.
 
@@ -1867,7 +1981,9 @@ Pode, porém, ser despedido antes da viagem começada, sem direito a indenizaç�
 
 **Art. 537** - Toda a obrigação pela qual o capitão, sendo comparte do navio, for responsável à parceria, tem privilégio sobre o quinhão e lucros que o mesmo tiver no navio e fretes.
 
-### TÍTULO IV — DO PILOTO E CONTRAMESTRE
+### TÍTULO IV
+
+### DO PILOTO E CONTRAMESTRE
 
 **Art. 538** - A habilitação e deveres dos pilotos e contramestres são prescritos nos regulamentos de Marinha.
 
@@ -1879,7 +1995,9 @@ Pode, porém, ser despedido antes da viagem começada, sem direito a indenizaç�
 
 **Art. 542** - O contramestre que, recebendo ou entregando fazendas, não exige e entrega ao capitão as ordens, recibos, ou outros quaisquer documentos justificativos do seu ato, responde por perdas e danos daí resultantes.
 
-### TÍTULO V — DO AJUSTE E SOLDADAS DOS OFICIAIS E GENTE DA TRIPULAÇÃO, SEUS DIREITOS E OBRIGAÇÕES
+### TÍTULO V
+
+### DO AJUSTE E SOLDADAS DOS OFICIAIS E GENTE DA TRIPULAÇÃO, SEUS DIREITOS E OBRIGAÇÕES
 
 **Art. 543** - O capitão é obrigado a dar às pessoas da tripulação, que o exigirem, uma nota por ele assinada, em que se declare a natureza do ajuste e preço da soldada, e a lançar na mesma nota as quantias que se forem pagando por conta. As condições do ajuste entre o capitão e a gente da tripulação, na falta de outro título do contrato, provam-se pelo rol da equipagem ou matrícula; subentendendo-se sempre compreendido no ajuste o sustento da tripulação.
 
@@ -1995,9 +2113,13 @@ Entender-se-á por equipagem ou tripulação para o dito efeito, e para todos os
 
 O salário do capitão e as soldadas da equipagem são hipoteca especial nestas ações.
 
-### TÍTULO VI — DOS FRETAMENTOS
+### TÍTULO VI
 
-#### Capítulo I — DA NATUREZA E FORMA DO CONTRATO DE FRETAMENTO E DAS CARTAS-PARTIDAS
+### DOS FRETAMENTOS
+
+#### Capítulo I
+
+### DA NATUREZA E FORMA DO CONTRATO DE FRETAMENTO E DAS CARTAS-PARTIDAS
 
 **Art. 566** - O contrato de fretamento de qualquer embarcação, quer seja na sua totalidade ou em parte, para uma ou mais viagens, quer seja à carga, colheita ou prancha. O que tem lugar quando o capitão recebe carga de quanto se apresentam, deve provar-se por escrito. No primeiro caso o instrumento, que se chama carta-partida ou carta de fretamento, deve ser assinado pelo fretador e afretador, e por quaisquer outras pessoas que intervenham no contrato, do qual se dará a cada uma das partes um exemplar; e no segundo, o instrumento chama-se conhecimento, e basta ser assinado pelo capitão e o carregador. Entende-se por fretador o que dá, e por afretador o que toma a embarcação a frete.
 
@@ -2045,7 +2167,9 @@ Em todos os referidos casos as despesas da descarga serão por conta do afretado
 
 **Art. 574** - Poderá igualmente rescindir-se o contrato de fretamento a requerimento do afretador, se o capitão lhe tiver ocultado a verdadeira bandeira da embarcação; ficando este pessoalmente responsável ao mesmo afretador por todas as despesas da carga e descarga, e por perdas e danos, se o valor do navio não chegar para satisfazer o prejuízo.
 
-#### Capítulo II — DOS CONHECIMENTOS
+#### Capítulo II
+
+### DOS CONHECIMENTOS
 
 **Art. 575** - O conhecimento deve ser datado, e declarar:
 
@@ -2097,7 +2221,9 @@ Sendo passado à ordem é transferível e negociável por via de endosso.
 
 **Art. 589** - Nenhuma ação entre o capitão e os carregadores ou seguradores será admissível em juízo se não for logo acompanhada do conhecimento original. A falta deste não pode ser suprida pelos recibos provisórios da carga; salvo provando-se que o carregador fez diligência para obtê-lo e que, fazendo-se o navio à vela sem o capitão o haver passado, interpôs competente protesto dentro dos primeiros 3 (três) dias úteis, contados da saída do navio, com intimação do armador, consignatário ou outro qualquer interessado, e na falta destes por editais; ou sendo a questão de seguros sobre sinistro acontecido no porto da carga, se provar que o mesmo sinistro aconteceu antes do conhecimento poder ser assinado.
 
-#### Capítulo III — DOS DIREITOS E OBRIGAÇÕES DO FRETADOR E AFRETADOR
+#### Capítulo III
+
+### DOS DIREITOS E OBRIGAÇÕES DO FRETADOR E AFRETADOR
 
 **Art. 590** - O fretador é obrigado a ter o navio prestes para receber a carga, e o afretador a efetuá-la no tempo marcado no contrato.
 
@@ -2193,7 +2319,9 @@ Todavia, resgatando-se o navio e fazendas, ou salvando-se do naufrágio, deve-se
 
 **Art. 628** - O contrato de fretamento de um navio estrangeiro exeqüível no Brasil, há de ser determinado e julgado pelas regras estabelecidas neste Código, quer tenha sido ajustado dentro do Império, quer em país estrangeiro.
 
-#### Capítulo IV — DOS PASSAGEIROS
+#### Capítulo IV
+
+### DOS PASSAGEIROS
 
 **Art. 629** - O passageiro de um navio deve achar-se a bordo no dia e hora que o capitão designar, quer no porto da partida, quer em qualquer outro de escala ou arribada; pena de ser obrigado ao pagamento do preço da sua passagem por inteiro, se o navio se fizer de vela sem ele.
 
@@ -2209,7 +2337,9 @@ Interrompendo-se a viagem depois de começada por demora de conserto do navio, o
 
 **Art. 632** - O capitão tem hipoteca privilegiada para pagamento do preço da passagem em todos os efeitos que o passageiro tiver a bordo, e direito de os reter enquanto não for pago. O capitão só responde pelo dano sobrevindo aos efeitos que o passageiro tiver a bordo debaixo da sua imediata guarda, quando o dano provier de fato seu ou da tripulação.
 
-### TÍTULO VII — DO CONTRATO DE DINHEIRO A RISCO OU CÂMBIO MARÍTIMO
+### TÍTULO VII
+
+### DO CONTRATO DE DINHEIRO A RISCO OU CÂMBIO MARÍTIMO
 
 **Art. 633** - O contrato de empréstimo a risco ou câmbio marítimo, pelo qual o dador estipula do tomador um prêmio certo e determinado por preço dos riscos de mar que toma sobre si, ficando com hipoteca especial no objeto sobre que recai o empréstimo, e sujeitando-se a perder o capital e prêmio se o dito objeto vier a perecer por efeito dos riscos tomados no tempo e lugar convencionados, só pode provar-se por instrumento público ou particular, o qual será registrado no Tribunal do Comércio dentro de 8 (oito) dias da data da escritura ou letra. Se o contrato tiver lugar em país estrangeiro por súditos brasileiros, o instrumento deverá ser autenticado com o - visto - do cônsul do Império, se aí o houver, e em todo o caso anotado no verso do registro da embarcação, se versar sobre o navio ou fretes. Faltando no instrumento do contrato alguma das sobreditas formalidades, ficará este subsistindo entre as próprias partes, mas não estabelecerá direitos contra terceiro.
 
@@ -2323,9 +2453,13 @@ Em todos os referidos casos, ainda que o contrato não surta os seus efeitos leg
 
 **Art. 665** - Quando sobre contrato de dinheiro a risco ocorra caso que se não ache prevenido neste Título, procurar-se-á a sua decisão por analogia, quanto seja compatível, no Título - Dos seguros marítimos - e vice-versa.
 
-### TÍTULO VIII — DOS SEGUROS MARÍTIMOS
+### TÍTULO VIII
 
-#### Capítulo I — DA NATUREZA E FORMA DO CONTRATO DE SEGURO MARÍTIMO
+### DOS SEGUROS MARÍTIMOS
+
+#### Capítulo I
+
+### DA NATUREZA E FORMA DO CONTRATO DE SEGURO MARÍTIMO
 
 **Art. 666** - O contrato de seguro marítimo, pelo qual o segurador, tomando sobre si a fortuna e riscos do mar, se obriga a indenizar ao segurado da perda ou dano que possa sobrevir ao objeto do seguro, mediante um prêmio ou soma determinada, equivalente ao risco tomado, só pode provar-se por escrito, a cujo instrumento se chama apólice; contudo julga-se subsistente para obrigar reciprocamente ao segurador e ao segurado desde o momento em que as partes se convierem, assinando ambas a minuta, a qual deve conter todas as declarações, cláusulas e condições da apólice.
 
@@ -2431,7 +2565,9 @@ Em um e outro caso pode-se intentar ação criminal contra o fraudulento.
 
 Anulando-se, porém, algum seguro por viagem redonda com prêmio ligado, o segurador adquire metade (tão-somente) do prêmio ajustado.
 
-#### Capítulo II — DAS COISAS QUE PODEM SER OBJETO DE SEGURO MARÍTIMO
+#### Capítulo II
+
+### DAS COISAS QUE PODEM SER OBJETO DE SEGURO MARÍTIMO
 
 **Art. 685** - Toda e qualquer coisa, todo e qualquer interesse apreciável a dinheiro, que tenha sido posto ou deva pôr-se a risco de mar, pode ser objeto de seguro marítimo, não havendo proibição em contrário.
 
@@ -2455,7 +2591,9 @@ O segurado pode tornar a segurar, quando o segurador ficar insolvente, antes da 
 
 **Art. 691** - As apólices de seguro por ida e volta cobrem os riscos seguros que sobrevierem durante as estadias intermedias, ainda que esta cláusula seja omissa na apólice.
 
-#### Capítulo III — DA AVALIAÇÃO DOS OBJETOS SEGUROS
+#### Capítulo III
+
+### DA AVALIAÇÃO DOS OBJETOS SEGUROS
 
 **Art. 692** - O valor do objeto do seguro deve ser declarado na apólice em quantia certa, sempre que o segurado tiver dele conhecimento exato.
 
@@ -2479,7 +2617,9 @@ No seguro de navio, esta declaração é essencialmente necessária, e faltando 
 
 **Art. 701** - A cláusula inserta na apólice - valha mais ou valha menos - não releva o segurado da condenação por fraude; nem pode ser valiosa sempre que se provar que o objeto seguro valia menos de um quarto que o preço fixado na apólice (artigo nºs 692 e 693).
 
-#### Capítulo IV — DO COMEÇO E FIM DOS RISCOS
+#### Capítulo IV
+
+### DO COMEÇO E FIM DOS RISCOS
 
 **Art. 702** - Não constando da apólice do seguro o tempo em que os riscos devem começar e acabar, os riscos de seguro sobre navio principiam a correr por conta do segurador desde o momento em que a embarcação suspende a sua primeira âncora para velejar, e terminam depois que tem dado fundo e amarrado dentro do porto do seu destino, no lugar que aí for designado para descarregar, se levar carga, ou no lugar em que der fundo e amarrar, indo em lastro.
 
@@ -2499,7 +2639,9 @@ O risco do frete, neste caso, acompanha o risco das mercadorias.
 
 **Art. 709** - No seguro de lucro esperado, os riscos acompanham a sorte das fazendas respectivas.
 
-#### Capítulo V — DAS OBRIGAÇÕES RECÍPROCAS DO SEGURADOR E DO SEGURADO
+#### Capítulo V
+
+### DAS OBRIGAÇÕES RECÍPROCAS DO SEGURADOR E DO SEGURADO
 
 **Art. 710** - São a cargo do segurador todas as perdas e danos que sobrevierem ao objeto seguro por alguns dos riscos especificados na apólice.
 
@@ -2567,7 +2709,9 @@ O risco do frete, neste caso, acompanha o risco das mercadorias.
 
 **Art. 730** - O segurador é obrigado a pagar ao segurado as indenizações a que tiver direito, dentro de 15 (quinze) dias da apresentação da conta, instruída com os documentos respectivos; salvo se o prazo do pagamento tiver sido estipulado na apólice.
 
-### TÍTULO IX — DO NAUFRÁGIO E SALVADOS
+### TÍTULO IX
+
+### DO NAUFRÁGIO E SALVADOS
 
 **Art. 731** - Texto original: Ninguém pode arrecadar as fazendas naufragadas no mar ou nas praias, estando presente o capitão ou quem suas vezes fizer, sem consentimento seu.
 
@@ -2591,7 +2735,7 @@ Se o naufrágio acontecer em porto onde houver Alfândega ou Mesa de Rendas, ou 
 
 ### TÍTULO X
 
-*DAS ARRIBADAS FORÇADAS.*
+### DAS ARRIBADAS FORÇADAS.
 
 **Art. 740** - Quando um navio entra por necessidade em algum porto ou lugar distinto dos determinados na viagem a que se propusera, diz-se que fez arribada forçada (artigo nº. 510).
 
@@ -2625,7 +2769,9 @@ A descarga será reputada legal em juízo quando tiver sido autorizada pelo juiz
 
 **Art. 748** - O capitão não pode, debaixo de pretexto algum, diferir a partida do porto da arribada desde que cessa o motivo dela; pena de responder por perdas e danos resultantes da dilação voluntária (artigo nº. 510).
 
-### TÍTULO XI — DO DANO CAUSADO POR ABALROAÇÃO
+### TÍTULO XI
+
+### DO DANO CAUSADO POR ABALROAÇÃO
 
 **Art. 749** - Sendo um navio abalroado por outro, o dano inteiro causado ao navio abalroado e à sua carga será pago por aquele que tiver causado a abalroação, se esta tiver acontecido por falta de observância do regulamento do porto, imperícia, ou negligência do capitão ou da tripulação; fazendo-se a estimação por árbitros.
 
@@ -2635,7 +2781,9 @@ A descarga será reputada legal em juízo quando tiver sido autorizada pelo juiz
 
 **Art. 752** - Todas as perdas resultantes de abalroação pertencem à classe de avarias particulares ou simples; excetua-e o único caso em que o navio, para evitar dano maior de uma abalroação iminente, pica as suas amarras, e abalroa a outro para sua própria salvação (artigo nº. 764). Os danos que o navio ou a carga, neste caso, sofre, são repartidos pelo navio, frete e carga por avaria grossa.
 
-### TÍTULO XII — DO ABANDONO
+### TÍTULO XII
+
+### DO ABANDONO
 
 **Art. 753** - É lícito ao segurado fazer abandono dos objetos seguros, e pedir ao segurador a indenização de perda total nos seguintes casos:
 
@@ -2663,9 +2811,13 @@ Não pode ser parcial, deve compreender todos os objetos contidos na apólice. T
 
 **Art. 760** - Se os fretes se acharem seguros, os que forem devidos pelas mercadorias salvas, pertencerão aos seguradores dos mesmos fretes, deduzidas as despesas dos salvados, e as soldadas devidas à tripulação pela viagem (artigo nº. 559).
 
-### TÍTULO XIII — DAS AVARIAS
+### TÍTULO XIII
 
-#### Capítulo I — DA NATUREZA E CLASSIFICAÇÃO DAS AVARIAS
+### DAS AVARIAS
+
+#### Capítulo I
+
+### DA NATUREZA E CLASSIFICAÇÃO DAS AVARIAS
 
 **Art. 761** - Todas as despesas extraordinárias feitas a bem do navio ou da carga, conjunta ou separadamente, e todos os danos acontecidos àquele ou a esta, desde o embarque e partida até a sua volta e desembarque, são reputadas avarias.
 
@@ -2745,7 +2897,9 @@ Em geral, as despesas feita; e o dano sofrido só pelo navio, ou só pela carga,
 
 **Art. 771** - As danificações que sofrerem as fazendas postas a bordo de barcos para à sua condução ordinária, ou para aligeirar o navio em caso de perigo, serão reguladas pelas disposições estabelecidas neste capítulo que lhes forem aplicáveis, segundo à diversas causas de que o dano resultar.
 
-#### Capítulo II — DA LIQUIDAÇÃO, REPARTIÇÃO E CONTRIBUIÇÃO DA AVARIA GROSSA
+#### Capítulo II
+
+### DA LIQUIDAÇÃO, REPARTIÇÃO E CONTRIBUIÇÃO DA AVARIA GROSSA
 
 **Art. 772** - Para que o dano sofrido pelo navio ou carga possa considerar-se avaria a cargo do segurador, é necessário que ele seja examinado por dois arbitradores peritos que declarem:
 
@@ -2819,9 +2973,11 @@ Se o navio se perder no primeiro perigo e algumas fazendas se puderem salvar, es
 
 **Art. 796** - Se, independente de qualquer liquidação ou exame, o segurador se ajustar em preço certo de indenização, obrigando-se por escrito na apólice, ou de outra qualquer forma, a pagar dentro de certo prazo, e depois se recusar ao pagamento, exigindo que o segurado prove satisfatoriamente o valor real do dano, não será este obrigado à prova, senão no único caso em que o segurador tenha em tempo reclamado o ajuste por fraude manifesta da parte do mesmo segurado.
 
-**PARTE TERCEIRA - DAS QUEBRAS**
+## PARTE TERCEIRA - DAS QUEBRAS
 
-### TÍTULO I — DA NATUREZA E DECLARAÇÃO DAS QUEBRAS, E SEUS EFEITOS
+### TÍTULO I
+
+### DA NATUREZA E DECLARAÇÃO DAS QUEBRAS, E SEUS EFEITOS
 
 **Art. 797** - Texto original: Todo o comerciante que cessa os seus pagamentos, entende-se quebrado ou falido.
 
@@ -2983,7 +3139,9 @@ Havendo despesas que fazer, serão pagas pelo depositário, precedendo autoriza�
 
 **Art. 841** - Texto original: Fica entendido que todas as despesas e custas, que se fizerem nas diligências a que se proceder relativas à quebra com a devida autorização, devem ser pagas pela massa dos bens do falido (art. 876 n. 2).
 
-### TÍTULO II — Da reunião dos credores e da concordata
+### TÍTULO II
+
+Da reunião dos credores e da concordata
 
 **Art. 842** - Texto original: Ultimada a instrução do processo da quebra, o Juiz comissário, dentro de oito dias, fará chamar os credores do falido para em dia e hora certa, e na sua presença se reunirem, a fim de se verificarem os créditos, se deliberar sobre a concordata, quando o falido a proponha, ou se formar o contrato de união, e se proceder à nomeação de administradores.
 
@@ -3029,9 +3187,13 @@ Os prazos assinados neste artigo e nos antecedentes são improrrogáveis.
 
 **Art. 854** - Texto original: Intimada a concordata ao Curador fiscal, e ao depositário ou depositários, estes são obrigados a entregar ao devedor todos os bens que se acharem em seu poder, e aquele a prestar contas da sua administração perante o Juiz comissário; ao qual incumbe resolver quaisquer duvidas que hajam de suscitar-se sobre a entrega dos bens, ou a prestação de contas; podendo referi-las à decisão de árbitros, quando as partes assim o requeiram.
 
-### TÍTULO III — Do contrato de união, dos administradores, da liquidação e dividendos
+### TÍTULO III
 
-#### Capítulo I — Do contrato de união
+Do contrato de união, dos administradores, da liquidação e dividendos
+
+#### Capítulo I
+
+Do contrato de união
 
 **Art. 855** - Texto original: Não havendo concordata, se passará a formar o contrato de união entre os credores na mesma reunião, se o falido não tiver apresentado o seu projeto (art. 846), ou em outra, quando o tenha apresentado, que o Juiz comissário convocará até oito dias depois que a sentença do Tribunal que a houver negado lhe for remetida.
 
@@ -3045,7 +3207,9 @@ Nomeando-se mais de um administrador, obrarão coletivamente, e à sua responsab
 
 **Art. 858** - Texto original: É permitido aos credores requerer diretamente ao Tribunal do Comércio a destituição dos administradores, sem necessidade de alegarem causa justificada, com tanto que a petição seja assinada pela maioria dos credores em quantidade de dividas. Dando-se causa justificada, a destituição pode ter lugar a requerimento assinado por qualquer credor, e até mesmo ex-ofício.
 
-#### Capítulo II — Dos administradores, da liquidação e dividendos
+#### Capítulo II
+
+Dos administradores, da liquidação e dividendos
 
 **Art. 859** - Texto original: Os administradores, logo que entrarem no exercício das suas funções, examinarão o balanço que houver sido apresentado pelo falido ou pelo Curador fiscal (art. 817), e farão outro parecendo-lhes que não está exato. Reverão outrosim a relação dos credores, cujos títulos lhe serão entregues no prazo de oito dias; e à proporção que os forem conferindo com os livros e mais papéis do falido, porão em cada um a seguinte nota - Admitido ao passivo da falência de F. por tal quantia: - ou - Não admitido por tais e tais razões, segundo entenderem e acharem justo: esta nota será datada, e assinada pelos ditos administradores.
 
@@ -3079,7 +3243,9 @@ As custas do processo, quando a oposição for feita por parte dos administrador
 
 **Art. 872** - Texto original: Os bens que o falido possa vir a adquirir de futuro quando os credores lhe não passem quitação, ficam sujeitos às dividas contraídas anteriormente ao seu falimento.
 
-### TÍTULO IV — Das diversas especiais de créditos e suas graduções
+### TÍTULO IV
+
+Das diversas especiais de créditos e suas graduções
 
 **Art. 873** - Texto original: Os credores do falido serão descritos em quatro relações distintas, segundo a natureza dos seus títulos: na primeira serão lançados os credores de domínio: na segunda os credores privilegiados: na terceira os credores com hipoteca: e na quarta os credores simples ou chirografários.
 
@@ -3149,7 +3315,9 @@ As custas do processo, quando a oposição for feita por parte dos administrador
 
 Todos os mais são credores simples ou chirografários.
 
-### TÍTULO V — Das preferenciais e distribuições
+### TÍTULO V
+
+Das preferenciais e distribuições
 
 **Art. 880** - Texto original: Os credores preferem uns aos outros pela ordem em que ficam classificados, e na mesma classe preferem pela ordem da sua enumeração.
 
@@ -3183,7 +3351,9 @@ A coisa será entregue na mesma espécie em que houver sido recebida, ou naquela
 
 **Art. 892** - Texto original: O credor portador de título garantido solidariamente pelo falido e outros coobrigados também falidos, será admitido a representar em todas as massas pelo valor nominal do seu crédito; e participará das repartições que nelas se fizerem até seu inteiro pagamento (art. 391).
 
-### TÍTULO VI — Da reabilitação dos falidos
+### TÍTULO VI
+
+Da reabilitação dos falidos
 
 **Art. 893** - Texto original: O falido que tiver obtido quitação plena de seus credores pode pedir a sua reabilitação perante o Tribunal do Comércio que declarou a quebra.
 
@@ -3195,7 +3365,9 @@ A coisa será entregue na mesma espécie em que houver sido recebida, ou naquela
 
 **Art. 897** - Texto original: Reabilitado o falido por sentença do Tribunal competente, cessam todas as interdições legais produzidas por efeito da declaração da quebra.
 
-### TÍTULO VII — Das moratórias
+### TÍTULO VII
+
+Das moratórias
 
 **Art. 898** - Texto original: Só pode obter moratória o comerciante que provar, que a sua impossibilidade de satisfazer de pronto as obrigações contraídas procede de acidentes extraordinários imprevistos, ou de força maior (art. 799), e que ao mesmo tempo verificar por um balanço exato e documentado, que tem fundos bastantes para pagar integralmente a todos os seus credores, mediante alguma espera.
 
@@ -3223,7 +3395,9 @@ A maioria não compreende as ações ou execuções intentadas antes ou depois d
 
 **Art. 906** - Texto original: Da sentença do Tribunal do Comércio que negar moratória, só há recurso de embargos, pela forma determinada no artigo 851: haverá porém o de apelação para a Relação do distrito nos casos de concessão, no efeito devolutivo somente.
 
-### TÍTULO VIII — DISPOSIÇÕES GERAIS
+### TÍTULO VIII
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 907** - Texto original: Das decisões do Juiz comissário, haverá recurso de agravo para o Tribunal do Comércio, devendo ser interposto no peremptório termo de cinco dias, e decidido no primeiro dia de Sessão do mesmo Tribunal depois da sua interposição.
 
@@ -3239,13 +3413,17 @@ A maioria não compreende as ações ou execuções intentadas antes ou depois d
 
 **Art. 913** - Texto original: A contar da referida época em diante, ficam derrogadas todas as Leis e disposições de direito relativas a matérias de comércio, e todas as mais que se opuserem às disposições do presente Código.
 
-**TÍTULO ÚNICO**
+### TÍTULO ÚNICO
 
-*DA ADMINISTRAÇÃO DA JUSTIÇA NOS NEGÓCIOS E CAUSAS COMERCIAIS*
+### DA ADMINISTRAÇÃO DA JUSTIÇA NOS NEGÓCIOS E CAUSAS COMERCIAIS
 
-#### CAPÍTULO I — DOS TRIBUNAIS E JUÍZO COMERCIAIS
+#### CAPÍTULO I
 
-##### SEÇÃO I — DOS TRIBUNAIS DO COMÉRCIO
+### DOS TRIBUNAIS E JUÍZO COMERCIAIS
+
+##### SEÇÃO I
+
+### DOS TRIBUNAIS DO COMÉRCIO
 
 **Art. 1º** - Texto original: Haverá Tribunais do Comércio na Capital do Império, nas Capitais das Províncias da Bahia e de Pernambuco, e nas Províncias onde para o futuro se criarem, tendo cada um por distrito o da respectiva Província.
 
@@ -3289,7 +3467,7 @@ A primeira nomeação do oficial maior, escriturários e mais empregados será f
 
 ##### SEÇÃO II
 
-*Da eleição dos Deputados comerciantes.*
+Da eleição dos Deputados comerciantes.
 
 **Art. 14** - Texto original: Podem votar e ser votados nos Colégios Comerciais, todos os comerciantes (art. 4) estabelecidos no distrito onde tiver lugar a eleição, que forem cidadãos brasileiros, e se acharem no livre exercício dos seus direitos civis e políticos, ainda que tenham deixado de fazer profissão habitual do comércio.
 
@@ -3305,7 +3483,7 @@ A designação do dia da primeira eleição será feita pelo Ministro do Impéri
 
 ##### SEÇÃO III
 
-*Do Juízo Comercial.*
+Do Juízo Comercial.
 
 **Art. 17** - Texto original: As atribuições conferidas no Código Comercial aos Juizes de Direito do Comércio serão exercidas pelas Justiças ordinárias; às quais fica também competindo o conhecimento das causas comerciais em primeira instancia, com recurso para as Relações respectivas; com as exceções estabelecidas no Código Comercial para os casos de quebra.
 
@@ -3325,7 +3503,7 @@ III - As questões que derivarem de contratos de locação compreendidos nas dis
 
 #### CAPÍTULO II
 
-*Da ordem do Juízo nas causas comerciais.*
+Da ordem do Juízo nas causas comerciais.
 
 **Art. 22** - Texto original: Todas as causas comerciais devem ser processadas, em todos os Juízos e instancias, breve e sumariamente, de plano e pela verdade sabida, sem que seja necessário guardar estritamente todas as formas ordinárias, prescritas para os processos civis: sendo unicamente indispensável que se guardem as formulas e termos essenciais para que as partes possam alegar o seu direito, e produzir as suas provas.
 
@@ -3351,4 +3529,4 @@ Os demais empregados do mesmo Tribunal, que não puderem ser admitidos nas Secre
 
 Mandamos, portanto a todas as Autoridades, a quem o conhecimento, e execução da referida Lei pertencer, que a cumpram, e façam cumprir, e guardar tão inteiramente, como nela se contém. O Secretário de Estado dos Negócios da Justiça e faça imprimir, publicar e correr. Dada no Palácio do Rio de Janeiro aos vinte e cinco de junho de mil oitocentos e cinqüenta, vigésimo nono da Independência e do Império.
 
-***(O Decreto-lei n° 1.608, foi substituído pela Lei n° 5.869, de 11.1.1973)***
+(O Decreto-lei n° 1.608, foi substituído pela Lei n° 5.869, de 11.1.1973)

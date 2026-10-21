@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2013-08-02"
 ementa: "Institui o Sistema Nacional de Prevenção e Combate à Tortura; cria o Comitê Nacional de Prevenção e Combate à Tortura e o Mecanismo Nacional de Prevenção e Combate à Tortura; e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-08-02;12847"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "6357dea6f2a5363695c80bac441ae94269e6c8bc1b8c43782519f43de5c3cfeb"
+sha256_origem: "520ca37fda47d37b3cde0f4d0610b97e7f750bc759895593bd5085b66efd762b"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,26 +28,26 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "core_codigos"
+sha256_normalizado: "520ca37fda47d37b3cde0f4d0610b97e7f750bc759895593bd5085b66efd762b"
+sha256_corpo: "ff726c4ec357ee077c939dc8da9e96bf726d7a0c485e2e0d0bfd0a70c0cb5e01"
 ---
 # Lei nº 12.847 de 02/08/2013
 
-LEI Nº 12.847, DE 2 DE AGOSTO DE 2013
-
-Institui o Sistema Nacional de Prevenção e Combate à Tortura; cria o Comitê Nacional de Prevenção e Combate à Tortura e o Mecanismo Nacional de Prevenção e Combate à Tortura; e dá outras providências.
-
 A PRESIDENTA DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-#### CAPÍTULO I — DO SISTEMA NACIONAL DE PREVENÇÃO E COMBATE À
+#### CAPÍTULO I
 
-TORTURA - SNPCT
+### DO SISTEMA NACIONAL DE PREVENÇÃO E COMBATE À
 
-**Art. 1º** Fica instituído o Sistema Nacional de Prevenção e Combate à Tortura- SNPCT, com o objetivo de fortalecer a prevenção e o combate à tortura, por meio de articulação e atuação cooperativa de seus integrantes, dentre outras formas, permitindo as trocas de informações e o intercâmbio de boas práticas.
+### TORTURA - SNPCT
 
-**Art. 2º** O SNPCT será integrado por órgãos e entidades públicas e privadas com atribuições legais ou estatutárias de realizar o monitoramento, a supervisão e o controle de estabelecimentos e unidades onde se encontrem pessoas privadas de liberdade, ou de promover a defesa dos direitos e interesses dessas pessoas.
+**Art. 1** º Fica instituído o Sistema Nacional de Prevenção e Combate à Tortura- SNPCT, com o objetivo de fortalecer a prevenção e o combate à tortura, por meio de articulação e atuação cooperativa de seus integrantes, dentre outras formas, permitindo as trocas de informações e o intercâmbio de boas práticas.
 
-**§ 1º** O SNPCT será composto pelo Comitê Nacional de Prevenção e Combate à Tortura - CNPCT, pelo Mecanismo Nacional de Prevenção e Combate à Tortura - MNPCT, pelo Conselho Nacional de Política Criminal e Penitenciária - CNPCP e pelo órgão do Ministério da Justiça responsável pelo sistema penitenciário nacional.
+**Art. 2** º O SNPCT será integrado por órgãos e entidades públicas e privadas com atribuições legais ou estatutárias de realizar o monitoramento, a supervisão e o controle de estabelecimentos e unidades onde se encontrem pessoas privadas de liberdade, ou de promover a defesa dos direitos e interesses dessas pessoas.
 
-**§ 2º** O SNPCT poderá ser integrado, ainda, pelos seguintes órgãos e entidades, dentre outros:
+§ 1 º O SNPCT será composto pelo Comitê Nacional de Prevenção e Combate à Tortura - CNPCT, pelo Mecanismo Nacional de Prevenção e Combate à Tortura - MNPCT, pelo Conselho Nacional de Política Criminal e Penitenciária - CNPCP e pelo órgão do Ministério da Justiça responsável pelo sistema penitenciário nacional.
+
+§ 2 º O SNPCT poderá ser integrado, ainda, pelos seguintes órgãos e entidades, dentre outros:
 
 I - comitês e mecanismos estaduais e distrital de prevenção e combate à tortura;
 
@@ -69,15 +69,15 @@ IX - conselhos tutelares e conselhos de direitos de crianças e adolescentes; e
 
 X - organizações não governamentais que reconhecidamente atuem no combate à tortura.
 
-**§ 3º** Ato do Poder Executivo disporá sobre o funcionamento do SNPCT.
+§ 3 º Ato do Poder Executivo disporá sobre o funcionamento do SNPCT.
 
-**Art. 3º** Para os fins desta Lei, considera-se:
+**Art. 3** º Para os fins desta Lei, considera-se:
 
-I - tortura: os tipos penais previstos na Lei nº 9.455, de 7 de abril de 1997, respeitada a definição constante do Artigo 1 da Convenção Contra a Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos ou Degradantes, promulgada pelo Decreto nº 40, de 15 de fevereiro de 1991; e
+I - tortura: os tipos penais previstos na Lei n º 9.455, de 7 de abril de 1997, respeitada a definição constante do Artigo 1 da Convenção Contra a Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos ou Degradantes, promulgada pelo Decreto n º 40, de 15 de fevereiro de 1991; e
 
-II - pessoas privadas de liberdade: aquelas obrigadas, por mandado ou ordem de autoridade judicial, ou administrativa ou policial, a permanecerem em determinados locais públicos ou privados, dos quais não possam sair de modo independente de sua vontade, abrangendo locais de internação de longa permanência, centros de detenção, estabelecimentos penais, hospitais psiquiátricos, casas de custódia, instituições socioeducativas para adolescentes em conflito com a lei e centros de detenção disciplinar em âmbito militar, bem como nas instalações mantidas pelos órgãos elencados no art. 61 da Lei nº 7.210, de 11 de julho de 1984.
+II - pessoas privadas de liberdade: aquelas obrigadas, por mandado ou ordem de autoridade judicial, ou administrativa ou policial, a permanecerem em determinados locais públicos ou privados, dos quais não possam sair de modo independente de sua vontade, abrangendo locais de internação de longa permanência, centros de detenção, estabelecimentos penais, hospitais psiquiátricos, casas de custódia, instituições socioeducativas para adolescentes em conflito com a lei e centros de detenção disciplinar em âmbito militar, bem como nas instalações mantidas pelos órgãos elencados no art. 61 da Lei n º 7.210, de 11 de julho de 1984.
 
-**Art. 4º** São princípios do SNPCT:
+**Art. 4** º São princípios do SNPCT:
 
 I - proteção da dignidade da pessoa humana;
 
@@ -93,7 +93,7 @@ VI - não seletividade; e
 
 VII - não discriminação.
 
-**Art. 5º** São diretrizes do SNPCT:
+**Art. 5** º São diretrizes do SNPCT:
 
 I - respeito integral aos direitos humanos, em especial aos direitos das pessoas privadas de liberdade;
 
@@ -101,11 +101,13 @@ II - articulação com as demais esferas de governo e de poder e com os órgãos
 
 III - adoção das medidas necessárias, no âmbito de suas competências, para a prevenção e o combate à tortura e a outros tratamentos ou penas cruéis, desumanos ou degradantes.
 
-#### CAPÍTULO II — DO COMITÊ NACIONAL DE PREVENÇÃO E COMBATE À
+#### CAPÍTULO II
 
-TORTURA - CNPCT
+### DO COMITÊ NACIONAL DE PREVENÇÃO E COMBATE À
 
-**Art. 6º** Fica instituído no âmbito da Secretaria de Direitos Humanos da Presidência da República o Comitê Nacional de Prevenção e Combate à Tortura - CNPCT, com a função de prevenir e combater a tortura e outros tratamentos ou penas cruéis, desumanos ou degradantes, mediante o exercício das seguintes atribuições, entre outras:
+### TORTURA - CNPCT
+
+**Art. 6** º Fica instituído no âmbito da Secretaria de Direitos Humanos da Presidência da República o Comitê Nacional de Prevenção e Combate à Tortura - CNPCT, com a função de prevenir e combater a tortura e outros tratamentos ou penas cruéis, desumanos ou degradantes, mediante o exercício das seguintes atribuições, entre outras:
 
 I - acompanhar, avaliar e propor aperfeiçoamentos às ações, aos programas, aos projetos e aos planos de prevenção e combate à tortura e a outros tratamentos ou penas cruéis, desumanos ou degradantes desenvolvidos em âmbito nacional;
 
@@ -139,53 +141,55 @@ XV - fornecer informações relativas ao número, tratamento e condições de de
 
 XVI - elaborar e aprovar o seu regimento interno.
 
-**Art. 7º** O CNPCT será composto por 23 (vinte e três) membros, escolhidos e designados pelo Presidente da República, sendo 11 (onze) representantes de órgãos do Poder Executivo federal e 12 (doze) de conselhos de classes profissionais e de organizações da sociedade civil, tais como entidades representativas de trabalhadores, estudantes, empresários, instituições de ensino e pesquisa, movimentos de direitos humanos e outras cuja atuação esteja relacionada com a temática de que trata esta Lei.
+**Art. 7** º O CNPCT será composto por 23 (vinte e três) membros, escolhidos e designados pelo Presidente da República, sendo 11 (onze) representantes de órgãos do Poder Executivo federal e 12 (doze) de conselhos de classes profissionais e de organizações da sociedade civil, tais como entidades representativas de trabalhadores, estudantes, empresários, instituições de ensino e pesquisa, movimentos de direitos humanos e outras cuja atuação esteja relacionada com a temática de que trata esta Lei.
 
-**§ 1º** O CNPCT será presidido pelo Ministro de Estado Chefe da Secretaria de Direitos Humanos da Presidência da República.
+§ 1 º O CNPCT será presidido pelo Ministro de Estado Chefe da Secretaria de Direitos Humanos da Presidência da República.
 
-**§ 2º** O Vice-Presidente será eleito pelos demais membros do CNPCT e exercerá mandato fixo de 1 (um) ano, assegurando-se a alternância entre os representantes do Poder Executivo federal e os representantes de conselhos de classes profissionais e de organizações da sociedade civil, na forma do regulamento.
+§ 2 º O Vice-Presidente será eleito pelos demais membros do CNPCT e exercerá mandato fixo de 1 (um) ano, assegurando-se a alternância entre os representantes do Poder Executivo federal e os representantes de conselhos de classes profissionais e de organizações da sociedade civil, na forma do regulamento.
 
-**§ 3º** Haverá 1 (um) suplente para cada membro titular do CNPCT.
+§ 3 º Haverá 1 (um) suplente para cada membro titular do CNPCT.
 
-**§ 4º** Representantes do Ministério Público, do Poder Judiciário, da Defensoria Pública e de outras instituições públicas participarão do CNPCT na condição de convidados em caráter permanente, com direito a voz.
+§ 4 º Representantes do Ministério Público, do Poder Judiciário, da Defensoria Pública e de outras instituições públicas participarão do CNPCT na condição de convidados em caráter permanente, com direito a voz.
 
-**§ 5º** Poderão participar das reuniões do CNPCT, a convite de seu Presidente, e na qualidade de observadores, especialistas e representantes de instituições públicas ou privadas que exerçam relevantes atividades no enfrentamento à tortura.
+§ 5 º Poderão participar das reuniões do CNPCT, a convite de seu Presidente, e na qualidade de observadores, especialistas e representantes de instituições públicas ou privadas que exerçam relevantes atividades no enfrentamento à tortura.
 
-**§ 6º** A participação no CNPCT será considerada prestação de serviço público relevante, não remunerada.
+§ 6 º A participação no CNPCT será considerada prestação de serviço público relevante, não remunerada.
 
-**§ 7º** Ato do Poder Executivo disporá sobre a composição e o funcionamento do CNPCT.
+§ 7 º Ato do Poder Executivo disporá sobre a composição e o funcionamento do CNPCT.
 
-**§ 8º** Para a composição do CNPCT - Comitê Nacional de Prevenção e Combate à Tortura, será assegurada a realização de prévia consulta pública para a escolha dos membros de classe e da sociedade civil, observadas a representatividade e a diversidade da representação.
+§ 8 º Para a composição do CNPCT - Comitê Nacional de Prevenção e Combate à Tortura, será assegurada a realização de prévia consulta pública para a escolha dos membros de classe e da sociedade civil, observadas a representatividade e a diversidade da representação.
 
-#### CAPÍTULO III — DO MECANISMO NACIONAL DE PREVENÇÃO E COMBATE
+#### CAPÍTULO III
 
-À TORTURA - MNPCT
+### DO MECANISMO NACIONAL DE PREVENÇÃO E COMBATE
 
-**Art. 8º** Fica criado o Mecanismo Nacional de Prevenção e Combate à Tortura - MNPCT, órgão integrante da estrutura da Secretaria de Direitos Humanos da Presidência da República, responsável pela prevenção e combate à tortura e a outros tratamentos ou penas cruéis, desumanos ou degradantes, nos termos do Artigo 3 do Protocolo Facultativo à Convenção das Nações Unidas contra a Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos ou Degradantes, promulgado pelo Decreto nº 6.085, de 19 de abril de 2007.
+### À TORTURA - MNPCT
 
-**§ 1º** O MNPCT será composto por 11 (onze) peritos, escolhidos pelo CNPCT entre pessoas com notório conhecimento e formação de nível superior, atuação e experiência na área de prevenção e combate à tortura e a outros tratamentos ou penas cruéis, desumanos ou degradantes, e nomeados pelo Presidente da República, para mandato fixo de 3 (três) anos, permitida uma recondução.
+**Art. 8** º Fica criado o Mecanismo Nacional de Prevenção e Combate à Tortura - MNPCT, órgão integrante da estrutura da Secretaria de Direitos Humanos da Presidência da República, responsável pela prevenção e combate à tortura e a outros tratamentos ou penas cruéis, desumanos ou degradantes, nos termos do Artigo 3 do Protocolo Facultativo à Convenção das Nações Unidas contra a Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos ou Degradantes, promulgado pelo Decreto n º 6.085, de 19 de abril de 2007.
 
-**§ 2º** Os membros do MNPCT terão independência na sua atuação e garantia do seu mandato, do qual não serão destituídos senão pelo Presidente da República nos casos de condenação penal transitada em julgado, ou de processo disciplinar, em conformidade com as Leis nºs 8.112, de 11 de dezembro de 1990, e 8.429, de 2 de junho de 1992.
+§ 1 º O MNPCT será composto por 11 (onze) peritos, escolhidos pelo CNPCT entre pessoas com notório conhecimento e formação de nível superior, atuação e experiência na área de prevenção e combate à tortura e a outros tratamentos ou penas cruéis, desumanos ou degradantes, e nomeados pelo Presidente da República, para mandato fixo de 3 (três) anos, permitida uma recondução.
 
-**§ 3º** O afastamento cautelar de membro do MNPCT poderá ser determinado por decisão fundamentada do CNPCT, no caso de constatação de indício de materialidade e autoria de crime ou de grave violação ao dever funcional, o que perdurará até a conclusão do procedimento disciplinar de que trata o § 2º.
+§ 2 º Os membros do MNPCT terão independência na sua atuação e garantia do seu mandato, do qual não serão destituídos senão pelo Presidente da República nos casos de condenação penal transitada em julgado, ou de processo disciplinar, em conformidade com as Leis n º s 8.112, de 11 de dezembro de 1990, e 8.429, de 2 de junho de 1992.
 
-**§ 4º** Não poderão compor o MNPCT, na condição de peritos, aqueles que:
+§ 3 º O afastamento cautelar de membro do MNPCT poderá ser determinado por decisão fundamentada do CNPCT, no caso de constatação de indício de materialidade e autoria de crime ou de grave violação ao dever funcional, o que perdurará até a conclusão do procedimento disciplinar de que trata o § 2 º .
+
+§ 4 º Não poderão compor o MNPCT, na condição de peritos, aqueles que:
 
 I - exerçam cargos executivos em agremiação partidária;
 
 II - não tenham condições de atuar com imparcialidade no exercício das competências do MNPCT.
 
-**§ 5º** Os Estados poderão criar o Mecanismo Estadual de Prevenção e Combate à Tortura - MEPCT, órgão responsável pela prevenção e combate à tortura e a outros tratamentos ou penas cruéis, desumanos ou degradantes, no âmbito estadual.
+§ 5 º Os Estados poderão criar o Mecanismo Estadual de Prevenção e Combate à Tortura - MEPCT, órgão responsável pela prevenção e combate à tortura e a outros tratamentos ou penas cruéis, desumanos ou degradantes, no âmbito estadual.
 
-**§ 6º** A visita periódica a que se refere o inciso I do caput e o § 2º, ambos do art. 9º , deverá ser realizada em conjunto com o Mecanismo Estadual, que será avisado com antecedência de 24 (vinte e quatro) horas.
+§ 6 º A visita periódica a que se refere o inciso I do caput e o § 2 º , ambos do art. 9 º , deverá ser realizada em conjunto com o Mecanismo Estadual, que será avisado com antecedência de 24 (vinte e quatro) horas.
 
-**§ 7º** A inexistência, a recusa ou a impossibilidade de o Mecanismo Estadual acompanhar a visita periódica no dia e hora marcados não impede a atuação do MNPCT.
+§ 7 º A inexistência, a recusa ou a impossibilidade de o Mecanismo Estadual acompanhar a visita periódica no dia e hora marcados não impede a atuação do MNPCT.
 
-**Art. 9º** Compete ao MNPCT:
+**Art. 9** º Compete ao MNPCT:
 
 I - planejar, realizar e monitorar visitas periódicas e regulares a pessoas privadas de liberdade em todas as unidades da Federação, para verificar as condições de fato e de direito a que se encontram submetidas;
 
-II - articular-se com o Subcomitê de Prevenção da Organização das Nações Unidas, previsto no Artigo 2 do Protocolo Facultativo à Convenção das Nações Unidas contra a Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos ou Degradantes, promulgado pelo Decreto nº 6.085, de 19 de abril de 2007, de forma a dar apoio a suas missões no território nacional, com o objetivo de unificar as estratégias e políticas de prevenção da tortura e de outros tratamentos e práticas cruéis, desumanos ou degradantes;
+II - articular-se com o Subcomitê de Prevenção da Organização das Nações Unidas, previsto no Artigo 2 do Protocolo Facultativo à Convenção das Nações Unidas contra a Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos ou Degradantes, promulgado pelo Decreto n º 6.085, de 19 de abril de 2007, de forma a dar apoio a suas missões no território nacional, com o objetivo de unificar as estratégias e políticas de prevenção da tortura e de outros tratamentos e práticas cruéis, desumanos ou degradantes;
 
 III - requerer à autoridade competente que instaure procedimento criminal e administrativo mediante a constatação de indícios da prática de tortura e de outros tratamentos e práticas cruéis, desumanos ou degradantes;
 
@@ -193,7 +197,7 @@ IV - elaborar relatório circunstanciado de cada visita realizada nos termos do 
 
 V - elaborar, anualmente, relatório circunstanciado e sistematizado sobre o conjunto de visitas realizadas e recomendações formuladas, comunicando ao dirigente imediato do estabelecimento ou da unidade visitada e ao dirigente máximo do órgão ou da instituição a que esteja vinculado o estabelecimento ou unidade visitada de qualquer dos entes federativos, ou ao particular responsável, do inteiro teor do relatório produzido, a fim de que sejam solucionados os problemas identificados e o sistema aprimorado;
 
-VI - fazer recomendações e observações às autoridades públicas ou privadas, responsáveis pelas pessoas em locais de privação de liberdade, com vistas a garantir a observância dos direitos dessas pessoas;
+VI - fazer recomendações e observações às autoridades pú blicas ou privadas, responsáveis pelas pessoas em locais de privação de liberdade, com vistas a garantir a observância dos direitos dessas pessoas;
 
 VII - publicar os relatórios de visitas periódicas e regulares realizadas e o relatório anual e promover a difusão deles;
 
@@ -201,13 +205,13 @@ VIII - sugerir propostas e observações a respeito da legislação existente; e
 
 IX - elaborar e aprovar o seu regimento interno.
 
-**§ 1º** A atuação do MNPCT dar-se-á sem prejuízo das competências atribuídas aos demais órgãos e entidades que exerçam funções semelhantes.
+§ 1 º A atuação do MNPCT dar-se-á sem prejuízo das competências atribuídas aos demais órg ãos e entidades que exerçam fun ções semelhantes.
 
-**§ 2º** Nas visitas previstas no inciso I do caput, o MNPCT poderá ser representado por todos os seus membros ou por grupos menores e poderá convidar representantes de entidades da sociedade civil, peritos e especialistas com atuação em áreas afins.
+§ 2 º Nas visitas previstas no inciso I do caput, o MNPCT poderá ser representado por todos os seus membros ou por grupos menores e poderá convidar representantes de entidades da sociedade civil, peritos e especialistas com atuação em áreas afins.
 
-**§ 3º** A seleção de projetos que utilizem recursos oriundos do Fundo Penitenciário Nacional, do Fundo Nacional de Segurança Pública, do Fundo Nacional do Idoso e do Fundo Nacional para a Criança e o Adolescente deverá levar em conta as recomendações formuladas pelo MNPCT.
+§ 3 º A seleção de projetos que utilizem recursos oriundos do Fundo Penitenciário Nacional, do Fundo Nacional de Segurança Pú blica, do Fundo Nacional do Idoso e do Fundo Nacional para a Criança e o Adolescente deverá levar em conta as recomendações formuladas pelo MNPCT.
 
-**§ 4º** O Departamento de Polícia Federal e o Departamento de Polícia Rodoviária Federal prestarão o apoio necessário à atuação do MNPCT.
+§ 4 º O Departamento de Polícia Federal e o Departamento de Polícia Rodoviária Federal prestarão o apoio necessário à atuação do MNPCT.
 
 **Art. 10.** São assegurados ao MNPCT e aos seus membros:
 
@@ -217,29 +221,31 @@ II - o acesso, independentemente de autorização, a todas as informações e re
 
 III - o acesso ao número de unidades de detenção ou execução de pena privativa de liberdade e a respectiva lotação e localização de cada uma;
 
-IV - o acesso a todos os locais arrolados no inciso II do caput do art. 3º, públicos e privados, de privação de liberdade e a todas as instalações e equipamentos do local;
+IV - o acesso a todos os locais arrolados no inciso II do caput do art. 3 º , públicos e privados, de privação de liberdade e a todas as instalações e equipamentos do local;
 
 V - a possibilidade de entrevistar pessoas privadas de liberdade ou qualquer outra pessoa que possa fornecer informações relevantes, reservadamente e sem testemunhas, em local que garanta a segurança e o sigilo necessários;
 
 VI - a escolha dos locais a visitar e das pessoas a serem entrevistadas, com a possibilidade, inclusive, de fazer registros por meio da utilização de recursos audiovisuais, respeitada a intimidade das pessoas envolvidas; e
 
-VII - a possibilidade de solicitar a realização de perícias oficiais, em consonância com as normas e diretrizes internacionais e com o art. 159 do Decreto-Lei nº 3.689, de 3 de outubro de 1941 - Código de Processo Penal.
+VII - a possibilidade de solicitar a realização de perícias oficiais, em consonância com as normas e diretrizes internacionais e com o art. 159 do Decreto-Lei n º 3.689, de 3 de outubro de 1941 - Código de Processo Penal.
 
-**§ 1º** As informações obtidas pelo MNPCT serão públicas, observado o disposto na Lei nº 12.527, de 18 de novembro de 2011.
+§ 1 º As informações obtidas pelo MNPCT serão públicas, observado o disposto na Lei n º 12.527, de 18 de novembro de 2011.
 
-**§ 2º** O MNPCT deverá proteger as informações pessoais das pessoas privadas de liberdade, de modo a preservar sua segurança, intimidade, vida privada, honra ou imagem, sendo vedada a publicação de qualquer dado pessoal sem o seu consentimento expresso.
+§ 2 º O MNPCT deverá proteger as informações pessoais das pessoas privadas de liberdade, de modo a preservar sua segurança, intimidade, vida privada, honra ou imagem, sendo vedada a publicação de qualquer dado pessoal sem o seu consentimento expresso.
 
-**§ 3º** Os documentos e relatórios elaborados no âmbito das visitas realizadas pelo MNPCT nos termos do inciso I do caput do art. 9º poderão produzir prova em juízo, de acordo com a legislação vigente.
+§ 3 º Os documentos e relatórios elaborados no âmbito das visitas realizadas pelo MNPCT nos termos do inciso I do caput do art. 9 º poderão produzir prova em juízo, de acordo com a legislação vigente.
 
-**§ 4º** Não se prejudicará pessoa, órgão ou entidade por ter fornecido informação ao MNPCT, assim como não se permitirá que nenhum servidor público ou autoridade tolere ou lhes ordene, aplique ou permita sanção relacionada com esse fato.
+§ 4 º Não se prejudicará pessoa, órgão ou entidade por ter fornecido informação ao MNPCT, assim como não se permitirá que nenhum servidor público ou autoridade tolere ou lhes ordene, aplique ou permita sanção relacionada com esse fato.
 
 **Art. 11.** O MNPCT trabalhará de forma articulada com os demais órgãos que compõem o SNPCT e, anualmente, prestará contas das atividades realizadas ao CNPCT.
 
-#### CAPÍTULO IV — DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+#### CAPÍTULO IV
 
-**Art. 12.** A Secretaria de Direitos Humanos da Presidência da República garantirá o apoio técnico, financeiro e administrativo necessários ao funcionamento do SNPCT, do CNPCT e do MNPCT, em especial à realização das visitas periódicas e regulares previstas no inciso I do caput do art. 9º por parte do MNPCT, em todas as unidades da Federação.
+### DISPOSIÇÕES FINAIS E TRANSITÓRIAS
 
-**Art. 13.** A Secretaria de Direitos Humanos da Presidência da República fomentará a criação de mecanismos preventivos de combate à tortura no âmbito dos Estados ou do Distrito Federal, em consonância com o Protocolo Facultativo à Convenção das Nações Unidas contra a Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos ou Degradantes, promulgado pelo Decreto nº 6.085, de 19 de abril de 2007.
+**Art. 12.** A Secretaria de Direitos Humanos da Presidência da República garantirá o apoio técnico, financeiro e administrativo necessários ao funcionamento do SNPCT, do CNPCT e do MNPCT, em especial à realização das visitas periódicas e regulares previstas no inciso I do caput do art. 9 º por parte do MNPCT, em todas as unidades da Federação.
+
+**Art. 13.** A Secretaria de Direitos Humanos da Presidência da República fomentará a criação de mecanismos preventivos de combate à tortura no âmbito dos Estados ou do Distrito Federal, em consonância com o Protocolo Facultativo à Convenção das Nações Unidas contra a Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos ou Degradantes, promulgado pelo Decreto n º 6.085, de 19 de abril de 2007.
 
 **Art. 14.** Os primeiros membros do MNPCT cumprirão mandatos diferenciados, nos seguintes termos:
 
@@ -249,13 +255,13 @@ II - 4 (quatro) peritos serão nomeados para cumprir mandato de 3 (três) anos; 
 
 III - 4 (quatro) peritos serão nomeados para cumprir mandato de 4 (quatro) anos.
 
-**Parágrafo único.** Nos mandatos subsequentes deverá ser aplicado o disposto no § 1º do art. 8º.
+Parágrafo único. Nos mandatos subsequentes deverá ser aplicado o disposto no § 1 º do art. 8 º .
 
 **Art. 15.** Esta Lei entra em vigor na data de sua publicação.
 
-Brasília, 2 de agosto de 2013; 192º da Independência e 125º da República.
+Brasília, 2 de agosto de 2013; 192 º da Independência e 125 º da República.
 
-DILMA ROUSSEFF
+### DILMA ROUSSEFF
 
 José Eduardo Cardozo
 

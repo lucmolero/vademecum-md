@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "cc98fce78ff931f4a5f67dd1c297433816b71d881bab51704844c1e951376c8f"
-alterada_por: ["br-federal-lei_ordinaria-12288-2010"]
+alterada_por: ["br-federal-lei_ordinaria-12288-2010", "br-federal-lei_ordinaria-14532-2023"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

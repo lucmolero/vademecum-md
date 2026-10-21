@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2012-09-14"
 ementa: "Dispõe sobre o sistema de acompanhamento da execução das penas, da prisão cautelar e da medida de segurança."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2012-09-14;12714"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "fd29ac885a88da6e396cc35415c081d92484caf2bd238586682d0d9e4141f105"
+sha256_origem: "04b3cf8000dc0cf8b0269cb905c70921a2da56da96c02f49ec9a50a69f819cb7"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,28 +28,24 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "04b3cf8000dc0cf8b0269cb905c70921a2da56da96c02f49ec9a50a69f819cb7"
+sha256_corpo: "7e2b430c7e92f4c8dc3bd89c98fe63d6a56c48170d47790b514b9aec3f8c4626"
 ---
 # Lei nº 12.714 de 14/09/2012
 
-LEI Nº 12.714, DE 14 DE SETEMBRO DE 2012
-
-Dispõe sobre o sistema de acompanhamento da execução das penas, da prisão cautelar e da medida de segurança.
-
-**A P R E S I D E N T A D A R E P Ú B L I C A,**
-
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-**Art. 1º** Os dados e as informações da execução da pena, da prisão cautelar e da medida de segurança deverão ser mantidos e atualizados em sistema informatizado de acompanhamento da execução da pena.
+**Art. 1** º Os dados e as informações da execução da pena, da prisão cautelar e da medida de segurança deverão ser mantidos e atualizados em sistema informatizado de acompanhamento da execução da pena.
 
-**§ 1º** Os sistemas informatizados de que trata o **caput** serão, preferencialmente, de tipo aberto.
+§ 1 º Os sistemas informatizados de que trata o caput serão, preferencialmente, de tipo aberto.
 
-**§ 2º** Considera-se sistema ou programa aberto aquele cuja licença de uso não restrinja sob nenhum aspecto a sua cessão, distribuição, utilização ou modificação, assegurando ao usuário o acesso irrestrito e sem custos adicionais ao seu código fonte e documentação associada, permitindo a sua modificação parcial ou total, garantindose os direitos autorais do programador.
+§ 2 º Considera-se sistema ou programa aberto aquele cuja licença de uso não restrinja sob nenhum aspecto a sua cessão, distribuição, utilização ou modificação, assegurando ao usuário o acesso irrestrito e sem custos adicionais ao seu código fonte e documentação associada, permitindo a sua modificação parcial ou total, garantindose os direitos autorais do programador.
 
-**§ 3º** Os dados e as informações previstos no **caput** serão acompanhados pelo magistrado, pelo representante do Ministério Público e pelo defensor e estarão disponíveis à pessoa presa ou custodiada.
+§ 3 º Os dados e as informações previstos no caput serão acompanhados pelo magistrado, pelo representante do Ministério Público e pelo defensor e estarão disponíveis à pessoa presa ou custodiada.
 
-**§ 4º** O sistema de que trata o **caput** deverá permitir o cadastramento do defensor, dos representantes dos conselhos penitenciários estaduais e do Distrito Federal e dos conselhos da comunidade para acesso aos dados e informações.
+§ 4 º O sistema de que trata o caput deverá permitir o cadastramento do defensor, dos representantes dos conselhos penitenciários estaduais e do Distrito Federal e dos conselhos da comunidade para acesso aos dados e informações.
 
-**Art. 2º** O sistema previsto no art. 1º deverá conter o registro dos seguintes dados e informações:
+**Art. 2** º O sistema previsto no art. 1 º deverá conter o registro dos seguintes dados e informações:
 
 I - nome, filiação, data de nascimento e sexo;
 
@@ -79,19 +75,19 @@ XI - utilização de equipamento de monitoração eletrônica
 
 pelo condenado.
 
-**Art. 3º** O lançamento dos dados ou das informações de que trata o art. 2º ficará sob a responsabilidade:
+**Art. 3** º O lançamento dos dados ou das informações de que trata o art. 2 º ficará sob a responsabilidade:
 
-I - da autoridade policial, por ocasião da prisão, quanto ao disposto nos incisos I a IV do **caput** do art. 2º;
+I - da autoridade policial, por ocasião da prisão, quanto ao disposto nos incisos I a IV do caput do art. 2 º ;
 
-II - do magistrado que proferir a decisão ou acórdão, quanto ao disposto nos incisos V, VII e XI do **caput** do art. 2º;
+II - do magistrado que proferir a decisão ou acórdão, quanto ao disposto nos incisos V, VII e XI do caput do art. 2 º ;
 
-III - do diretor do estabelecimento prisional, quanto ao disposto nos incisos VI, VIII e IX do **caput** do art. 2º; e
+III - do diretor do estabelecimento prisional, quanto ao disposto nos incisos VI, VIII e IX do caput do art. 2 º ; e
 
-IV - do diretor da unidade de internação, quanto ao disposto no inciso X do **caput** do art. 2º.
+IV - do diretor da unidade de internação, quanto ao disposto no inciso X do caput do art. 2 º .
 
-**Parágrafo único.** Os dados e informações previstos no inciso II do **caput** do art. 2º poderão, a qualquer momento, ser revistos pelo magistrado.
+Parágrafo único. Os dados e informações previstos no inciso II do caput do art. 2 º poderão, a qualquer momento, ser revistos pelo magistrado.
 
-**Art. 4º** O sistema referido no art. 1o deverá conter ferramentas que:
+**Art. 4** º O sistema referido no art. 1 o deverá conter ferramentas que:
 
 I - informem as datas estipuladas para:
 
@@ -111,7 +107,7 @@ II - calculem a remição da pena; e
 
 III - identifiquem a existência de outros processos em que tenha sido determinada a prisão do réu ou acusado.
 
-**§ 1º** O sistema deverá ser programado para informar tempestiva e automaticamente, por aviso eletrônico, as datas mencionadas no inciso I do **caput**:
+§ 1 º O sistema deverá ser programado para informar tempestiva e automaticamente, por aviso eletrônico, as datas mencionadas no inciso I do caput :
 
 I - ao magistrado responsável pela investigação criminal, processo penal ou execução da pena ou cumprimento da medida de segurança;
 
@@ -119,17 +115,17 @@ II - ao Ministério Público; e
 
 III - ao defensor.
 
-**§ 2º** Recebido o aviso previsto no § 1o, o magistrado verificará o cumprimento das condições legalmente previstas para soltura ou concessão de outros benefícios à pessoa presa ou custodiada e dará vista ao Ministério Público.
+§ 2 º Recebido o aviso previsto no § 1 o , o magistrado verificará o cumprimento das condições legalmente previstas para soltura ou concessão de outros benefícios à pessoa presa ou custodiada e dará vista ao Ministério Público.
 
-**Art. 5º** O Poder Executivo federal instituirá sistema nacional, visando à interoperabilidade das bases de dados e informações dos sistemas informatizados instituídos pelos Estados e pelo Distrito Federal.
+**Art. 5** º O Poder Executivo federal instituirá sistema nacional, visando à interoperabilidade das bases de dados e informações dos sistemas informatizados instituídos pelos Estados e pelo Distrito Federal.
 
-**Parágrafo único.** A União poderá apoiar os Estados e o Distrito Federal no desenvolvimento, implementação e adequação de sistemas próprios que permitam interoperabilidade com o sistema nacional de que trata o **caput**.
+Parágrafo único. A União poderá apoiar os Estados e o Distrito Federal no desenvolvimento, implementação e adequação de sistemas próprios que permitam interoperabilidade com o sistema nacional de que trata o caput .
 
-**Art. 6º** Esta Lei entra em vigor após decorridos 365 (trezentos e sessenta e cinco) dias de sua publicação oficial.
+**Art. 6** º Esta Lei entra em vigor após decorridos 365 (trezentos e sessenta e cinco) dias de sua publicação oficial.
 
-Brasília, 14 de setembro de 2012; 191º da Independência e 124º da República.
+Brasília, 14 de setembro de 2012; 191 º da Independência e 124 º da República.
 
-DILMA ROUSSEFF
+### DILMA ROUSSEFF
 
 José Eduardo Cardozo
 

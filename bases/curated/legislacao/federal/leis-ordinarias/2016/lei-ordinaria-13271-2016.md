@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2016-04-15"
 ementa: "Dispõe sobre a proibição de revista íntima de funcionárias nos locais de trabalho e trata da revista íntima em ambientes prisionais."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-04-15;13271"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "ae17e008b15d4422582dbe6acb0746ca5eccf398107631e99951785d32b99266"
+sha256_origem: "f1fe2c08e10778508ea89efa0dfd6101fa74cbb67379cadd7248407d85b25732"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,14 +28,16 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "f1fe2c08e10778508ea89efa0dfd6101fa74cbb67379cadd7248407d85b25732"
+sha256_corpo: "a84634fa5ffc6a59b566bdcef6d13c4b4e694ad7685012844f1b1d2df79ea31e"
 ---
 # Lei nº 13.271 de 15/04/2016
 
-LEI Nº 13.271, DE 15 DE ABRIL DE 2016
+### LEI Nº 13.271, DE 15 DE ABRIL DE 2016
 
 Dispõe sobre a proibição de revista íntima de funcionárias nos locais de trabalho e trata da revista íntima em ambientes prisionais.
 
-A PRESIDENTA DA REPÚBLICA
+### A PRESIDENTA DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -53,6 +55,6 @@ II – multa em dobro do valor estipulado no inciso I, em caso de reincidência,
 
 Brasília, 15 de abril de 2016; 195º da Independência e 128º da República.
 
-**DILMA ROUSSEFF**
+### DILMA ROUSSEFF
 
 Eugênio José Guilherme de Aragão

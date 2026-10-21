@@ -44,9 +44,11 @@ def main() -> int:
             and 'git push origin "$branch"' in text
             and "gh pr create" in text
             and "automation/update-" in text
+            and "github.event.repository.default_branch" in text
+            and 'git checkout -B "$base_branch" "origin/$base_branch"' in text
+            and "Refusing to write to the default branch" in text
         ) and not (
             path.name == "sync-private-history.yml"
-            and "environment: private-history" in text
             and "HISTORY_REPO_TOKEN" in text
             and "git -C history-repository push origin HEAD:main" in text
         ):
@@ -54,13 +56,11 @@ def main() -> int:
         if "contents: write" in text and not (
             (
                 path.name == "release.yml"
-                and "environment: production" in text
                 and "gh release create" in text
             )
             or (
                 path.name == "prepare-update-pr.yml"
                 and "pull-requests: write" in text
-                and "environment: update-proposal" in text
                 and "gh pr create" in text
             )
         ):

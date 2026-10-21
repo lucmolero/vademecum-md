@@ -1,0 +1,79 @@
+{
+  "schema": "source-resolution/v1",
+  "purpose": "Autonomous agent source selection for official-source conflicts, backed by deterministic hash and structure gates.",
+  "policy": "A resolution selects one official snapshot for the curated text; all fetched official sources remain evidence and are not discarded.",
+  "reviewer": "autonomous_legal_agent",
+  "reviewed_at": "2026-10-21",
+  "documents": {
+    "VM-006": {
+      "status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "expected_source_sha256": "5824f34fd0b4b3de3f5859c8f05ec444ba9b80bbe41b65868b98f6640d8d6ca8",
+      "reason": "The current compilation is the complete normative body for the historical decree. The Planalto page is retained as corroborating publication evidence and uses a legacy HTML structure whose first article is outside the normal paragraph nodes.",
+      "review_scope": "article_presence_and_source_structure"
+    },
+    "VM-009": {
+      "status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "expected_source_sha256": "97b43d326fde0ced46b1cec1cd0fd67377946c6fe36ea3c6168af5275ed1fd30",
+      "reason": "The current compilation and the Planalto publication contain the same 16-article instrument; the observed differences are legacy HTML punctuation, spacing, signature and publication-note presentation.",
+      "review_scope": "article_level_comparison"
+    },
+    "VM-012": {
+      "status": "approved",
+      "selected_source_id": "planalto-br",
+      "expected_source_sha256": "ff8db7d3f182df1ac35f8d3e79392c259eb67ec044f910c275809163754dae48",
+      "reason": "The current Planalto compilation includes later official effects and amendments, including the 2026 changes associated with Complementary Law 227 and the promulgation-of-vetoed-parts notices. The Normas snapshot does not contain the same current redaction.",
+      "review_scope": "current_redaction_and_effects"
+    },
+    "VM-026": {
+      "status": "approved",
+      "selected_source_id": "planalto-br",
+      "expected_source_sha256": "ba0d1baceb797d7c7a70fa3d89077febe822ee8737ebabc92c18989af61ab91e",
+      "reason": "The current Planalto page contains the official consolidated text, promulgated vetoed parts, subsequent amendments and vigency annotations. The Normas snapshot differs materially in article coverage and current redaction.",
+      "review_scope": "current_redaction_and_vetoes"
+    },
+    "VM-036": {
+      "status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "expected_source_sha256": "b598899fa80445297c6b05704c88589ea8e320aded64cba359601a47240f35a7",
+      "reason": "Both official sources expose the same 58-article instrument. The Normas current compilation is selected as the cleaner machine-readable body; Planalto remains corroborating publication evidence, including its official publication note.",
+      "review_scope": "article_level_comparison"
+    },
+    "VM-047": {
+      "status": "approved",
+      "selected_source_id": "planalto-br",
+      "expected_source_sha256": "81a42e7952ef703179e67e4560a10db2d7bde8fd44a3739482525777f6266a77",
+      "reason": "The Planalto text includes the promulgated vetoed provisions and the later amendment identified in the official text, while the Normas snapshot does not expose the same current redaction. The Planalto version is selected for the consolidated corpus and the Normas version remains evidence.",
+      "review_scope": "current_redaction_and_promulgated_vetoes"
+    },
+    "VM-069": {
+      "status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "expected_source_sha256": "06f292f68aafed69e9097240f642544cdbfba22755648f2169af474d99b78026",
+      "reason": "Both official sources expose the same 25-article instrument and the observed differences are presentation-level. The current Normas compilation is selected as the cleaner machine-readable body.",
+      "review_scope": "article_level_comparison"
+    },
+    "VM-092": {
+      "status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "expected_source_sha256": "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0",
+      "reason": "Both official sources expose the same 14-article instrument; the differences are punctuation, spacing and HTML presentation. The current Normas compilation is selected as the cleaner machine-readable body.",
+      "review_scope": "article_level_comparison"
+    },
+    "VM-312": {
+      "status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "expected_source_sha256": "4ff7422c935beafc4ea41e6e55adcf1712ba264afc97e6ab3ab0e17ed7d89e61",
+      "reason": "Both official sources expose the same 14-article instrument, including its transitional and revocation provisions. The current Normas compilation is selected for machine-readable normalization; Planalto remains publication evidence.",
+      "review_scope": "article_level_comparison"
+    },
+    "VM-313": {
+      "status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "expected_source_sha256": "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4",
+      "reason": "Both official sources expose the same 44-article instrument and the same revocation provisions; differences are formatting, punctuation and legacy HTML presentation. The current Normas compilation is selected as the cleaner machine-readable body.",
+      "review_scope": "article_level_comparison"
+    }
+  }
+}

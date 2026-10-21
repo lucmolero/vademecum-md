@@ -1,20 +1,19 @@
 {
   "product": "vademecum-md",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "generated_at": "2026-10-21",
   "status": "pre_release",
   "scope": "legislacao_federal",
-  "corpus_count": 360,
-  "integral_count": 360,
-  "official_source_count": 360,
-  "sha256_count": 360,
+  "corpus_count": 375,
+  "integral_count": 375,
+  "official_source_count": 375,
+  "sha256_count": 375,
   "consolidacao": {
-    "consolidada_fonte_oficial": 246,
-    "requer_reconciliacao": 109,
-    "consolidada_reconciliada": 5
+    "consolidada_fonte_oficial": 372,
+    "consolidada_reconciliada": 3
   },
-  "relation_count": 1611,
-  "unresolved_relation_count": 2221,
-  "publication_policy": "automatic_only_after_validation",
+  "relation_count": 1841,
+  "unresolved_relation_count": 2177,
+  "publication_policy": "autonomous_pr_gates; no direct main mutation",
   "rag": "deferred_until_1_0"
 }

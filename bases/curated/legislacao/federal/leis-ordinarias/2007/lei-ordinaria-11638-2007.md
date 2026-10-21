@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2007-12-28"
 ementa: "Altera e revoga dispositivos da Lei nº 6.404, de 15 de dezembro de 1976, e da Lei nº 6.385, de 7 de dezembro de 1976, e estende às sociedades de grande porte disposições relativas à elaboração e divulgação de demonstrações financeiras."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2007-12-28;11638"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "6880141beb5bfec4c58cc8f3b39902424b5b4ea78883873a3e0c625994153510"
+sha256_origem: "36867b1dae72cbd772851be89b20111cf9e42151d3cab952f71081fb5cd5a6c5"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,12 +28,10 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "c85cac7cb10d1ac30ba054666d000259471e5988f6ac03ee06ad5cf8072b44cd"
+sha256_corpo: "0fdc479a4ce0b53be7065dc22175c2b69b664feaf454021d05b8508e41073192"
 ---
 # Lei nº 11.638 de 28/12/2007
-
-**LEI Nº 11.638, DE 28 DEZEMBRO DE 2007.**
-
-***Altera e revoga dispositivos da Lei no 6.404, de 15 de dezembro de 1976, e da Lei no 6.385, de 7 de dezembro de 1976, e estende às sociedades de grande porte disposições relativas à elaboração e divulgação de demonstrações financeiras.***
 
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -41,19 +39,19 @@ O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu san
 
 “Art. 176.........................................................
 
-.......................................................................
+### .......................................................................
 
 IV - demonstração dos fluxos de caixa; e
 
 V - se companhia aberta, demonstração do valor adicionado.
 
-.......................................................................
+### .......................................................................
 
 § 6o A companhia fechada com patrimônio líquido, na data do balanço, inferior a R$ 2.000.000,00 (dois milhões de reais) não será obrigada à elaboração e publicação da demonstração dos fluxos de caixa.” (NR)
 
 “Art. 177...........................................................
 
-.......................................................................
+### .......................................................................
 
 § 2o As disposições da lei tributária ou de legislação especial sobre atividade que constitui o objeto da companhia que conduzam à utilização de métodos ou critérios contábeis diferentes ou à elaboração de outras demonstrações não elidem a obrigação de elaborar, para todos os fins desta Lei, demonstrações financeiras em consonância com o disposto no caput deste artigo e deverão ser alternativamente observadas mediante registro:
 
@@ -61,7 +59,7 @@ I - em livros auxiliares, sem modificação da escrituração mercantil; ou
 
 II - no caso da elaboração das demonstrações para fins tributários, na escrituração mercantil, desde que sejam efetuados em seguida lançamentos contábeis adicionais que assegurem a preparação e a divulgação de demonstrações financeiras com observância do disposto no caput deste artigo, devendo ser essas demonstrações auditadas por auditor independente registrado na Comissão de Valores Mobiliários.
 
-.......................................................................
+### .......................................................................
 
 § 5o As normas expedidas pela Comissão de Valores Mobiliários a que se refere o § 3o deste artigo deverão ser elaboradas em consonância com os padrões internacionais de contabilidade adotados nos principais mercados de valores mobiliários.
 
@@ -73,21 +71,21 @@ II - no caso da elaboração das demonstrações para fins tributários, na escr
 
 § 1o ................................................................
 
-.......................................................................
+### .......................................................................
 
 c) ativo permanente, dividido em investimentos, imobilizado, intangível e diferido.
 
 § 2o ................................................................
 
-.......................................................................
+### .......................................................................
 
 d) patrimônio líquido, dividido em capital social, reservas de capital, ajustes de avaliação patrimonial, reservas de lucros, ações em tesouraria e prejuízos acumulados.
 
-.......................................................................” (NR)
+### .......................................................................” (NR)
 
 “Art. 179..........................................................
 
-.......................................................................
+### .......................................................................
 
 IV - no ativo imobilizado: os direitos que tenham por objeto bens corpóreos destinados à manutenção das atividades da companhia ou da empresa ou exercidos com essa finalidade, inclusive os decorrentes de operações que transfiram à companhia os benefícios, riscos e controle desses bens;
 
@@ -95,33 +93,33 @@ V - no diferido: as despesas pré-operacionais e os gastos de reestruturação q
 
 VI - no intangível: os direitos que tenham por objeto bens incorpóreos destinados à manutenção da companhia ou exercidos com essa finalidade, inclusive o fundo de comércio adquirido.
 
-.......................................................................” (NR)
+### .......................................................................” (NR)
 
-“(VETADO)
+### “(VETADO)
 
 **Art. 181.** (VETADO)”
 
 “Patrimônio Líquido
 
-Art. 182...........................................................
+**Art. 182...........................................................**
 
 § 1o ................................................................
 
-.......................................................................
+### .......................................................................
 
 c) (revogada);
 
 d) (revogada).
 
-.......................................................................
+### .......................................................................
 
 § 3o Serão classificadas como ajustes de avaliação patrimonial, enquanto não computadas no resultado do exercício em obediência ao regime de competência, as contrapartidas de aumentos ou diminuições de valor atribuído a elementos do ativo (§ 5o do art. 177, inciso I do caput do art. 183 e § 3o do art. 226 desta Lei) e do passivo, em decorrência da sua avaliação a preço de mercado.
 
-.......................................................................” (NR)
+### .......................................................................” (NR)
 
 “Critérios de Avaliação do Ativo
 
-Art. 183............................................................
+**Art. 183............................................................**
 
 I - as aplicações em instrumentos financeiros, inclusive derivativos, e em direitos e títulos de créditos, classificados no ativo circulante ou no realizável a longo prazo:
 
@@ -129,7 +127,7 @@ a) pelo seu valor de mercado ou valor equivalente, quando se tratar de aplicaç�
 
 b) pelo valor de custo de aquisição ou valor de emissão, atualizado conforme disposições legais ou contratuais, ajustado ao valor provável de realização, quando este for inferior, no caso das demais aplicações e os direitos e títulos de crédito;
 
-.......................................................................
+### .......................................................................
 
 VII - os direitos classificados no intangível, pelo custo incorrido na aquisição deduzido do saldo da respectiva conta de amortização;
 
@@ -137,7 +135,7 @@ VIII - os elementos do ativo decorrentes de operações de longo prazo serão aj
 
 § 1o.................................................................
 
-.......................................................................
+### .......................................................................
 
 d) dos instrumentos financeiros, o valor que pode se obter em um mercado ativo, decorrente de transação não compulsória realizada entre partes independentes; e, na ausência de um mercado ativo para um determinado instrumento financeiro:
 
@@ -149,7 +147,7 @@ d) dos instrumentos financeiros, o valor que pode se obter em um mercado ativo, 
 
 § 2o A diminuição do valor dos elementos dos ativos imobilizado, intangível e diferido será registrada periodicamente nas contas de:
 
-.......................................................................
+### .......................................................................
 
 § 3o A companhia deverá efetuar, periodicamente, análise sobre a recuperação dos valores registrados no imobilizado, no intangível e no diferido, a fim de que sejam:
 
@@ -157,25 +155,25 @@ I - registradas as perdas de valor do capital aplicado quando houver decisão de
 
 II - revisados e ajustados os critérios utilizados para determinação da vida útil econômica estimada e para cálculo da depreciação, exaustão e amortização.
 
-.......................................................................” (NR)
+### .......................................................................” (NR)
 
 “Critérios de Avaliação do Passivo
 
-Art. 184............................................................
+**Art. 184............................................................**
 
-.......................................................................
+### .......................................................................
 
 III - as obrigações, encargos e riscos classificados no passivo exigível a longo prazo serão ajustados ao seu valor presente, sendo os demais ajustados quando houver efeito relevante.” (NR)
 
 “Demonstração do Resultado do Exercício
 
-Art. 187............................................................
+**Art. 187............................................................**
 
-.......................................................................
+### .......................................................................
 
 VI - as participações de debêntures, de empregados e administradores, mesmo na forma de instrumentos financeiros, e de instituições ou fundos de assistência ou previdência de empregados, que não se caracterizem como despesa;
 
-.......................................................................
+### .......................................................................
 
 § 2o (Revogado).” (NR)
 
@@ -193,19 +191,19 @@ c) dos investimentos;
 
 II - demonstração do valor adicionado - o valor da riqueza gerada pela companhia, a sua distribuição entre os elementos que contribuíram para a geração dessa riqueza, tais como empregados, financiadores, acionistas, governo e outros, bem como a parcela da riqueza não distribuída.
 
-....................................................................... ”(NR)
+### ....................................................................... ”(NR)
 
 “Reserva de Lucros a Realizar
 
-Art. 197............................................................
+**Art. 197............................................................**
 
 § 1o ................................................................
 
-.......................................................................
+### .......................................................................
 
 II - o lucro, rendimento ou ganho líquidos em operações ou contabilização de ativo e passivo pelo valor de mercado, cujo prazo de realização financeira ocorra após o término do exercício social seguinte.
 
-.......................................................................” (NR)
+### .......................................................................” (NR)
 
 “Limite do Saldo das Reservas de Lucro
 
@@ -213,9 +211,9 @@ II - o lucro, rendimento ou ganho líquidos em operações ou contabilização d
 
 “Transformação, Incorporação, Fusão e Cisão
 
-Art. 226............................................................
+**Art. 226............................................................**
 
-.......................................................................
+### .......................................................................
 
 § 3o Nas operações referidas no caput deste artigo, realizadas entre partes independentes e vinculadas à efetiva transferência de controle, os ativos e passivos da sociedade a ser incorporada ou decorrente de fusão ou cisão serão contabilizados pelo seu valor de mercado.” (NR)
 
@@ -223,7 +221,7 @@ Art. 226............................................................
 
 **Art. 248.** No balanço patrimonial da companhia, os investimentos em coligadas sobre cuja administração tenha influência significativa, ou de que participe com 20% (vinte por cento) ou mais do capital votante, em controladas e em outras sociedades que façam parte de um mesmo grupo ou estejam sob controle comum serão avaliados pelo método da equivalência patrimonial, de acordo com as seguintes normas:
 
-.......................................................................” (NR)
+### .......................................................................” (NR)
 
 **Art. 2o** A Lei no 6.404, de 15 de dezembro de 1976, passa a vigorar acrescida do seguinte art. 195-A:
 
@@ -231,11 +229,11 @@ Art. 226............................................................
 
 **Art. 195-A.** A assembléia geral poderá, por proposta dos órgãos de administração, destinar para a reserva de incentivos fiscais a parcela do lucro líquido decorrente de doações ou subvenções governamentais para investimentos, que poderá ser excluída da base de cálculo do dividendo obrigatório (inciso I do caput do art. 202 desta Lei).”
 
-*Demonstrações Financeiras de Sociedades de Grande Porte*
+Demonstrações Financeiras de Sociedades de Grande Porte
 
 **Art. 3o** Aplicam-se às sociedades de grande porte, ainda que não constituídas sob a forma de sociedades por ações, as disposições da Lei no 6.404, de 15 de dezembro de 1976, sobre escrituração e elaboração de demonstrações financeiras e a obrigatoriedade de auditoria independente por auditor registrado na Comissão de Valores Mobiliários.
 
-**Parágrafo único.** Considera-se de grande porte, para os fins exclusivos desta Lei, a sociedade ou conjunto de sociedades sob controle comum que tiver, no exercício social anterior, ativo total superior a R$ 240.000.000,00 (duzentos e quarenta milhões de reais) ou receita bruta anual superior a R$ 300.000.000,00 (trezentos milhões de reais).
+Parágrafo único. Considera-se de grande porte, para os fins exclusivos desta Lei, a sociedade ou conjunto de sociedades sob controle comum que tiver, no exercício social anterior, ativo total superior a R$ 240.000.000,00 (duzentos e quarenta milhões de reais) ou receita bruta anual superior a R$ 300.000.000,00 (trezentos milhões de reais).
 
 **Art. 4o** As normas de que tratam os incisos I, II e IV do § 1o do art. 22 da Lei no 6.385, de 7 de dezembro de 1976, poderão ser especificadas por categorias de companhias abertas e demais emissores de valores mobiliários em função do seu porte e das espécies e classes dos valores mobiliários por eles emitidos e negociados no mercado.
 
@@ -243,7 +241,7 @@ Art. 226............................................................
 
 “Art. 10-A. A Comissão de Valores Mobiliários, o Banco Central do Brasil e demais órgãos e agências reguladoras poderão celebrar convênio com entidade que tenha por objeto o estudo e a divulgação de princípios, normas e padrões de contabilidade e de auditoria, podendo, no exercício de suas atribuições regulamentares, adotar, no todo ou em parte, os pronunciamentos e demais orientações técnicas emitidas.
 
-**Parágrafo único.** A entidade referida no caput deste artigo deverá ser majoritariamente composta por contadores, dela fazendo parte, paritariamente, representantes de entidades representativas de sociedades submetidas ao regime de elaboração de demonstrações financeiras previstas nesta Lei, de sociedades que auditam e analisam as demonstrações financeiras, do órgão federal de fiscalização do exercício da profissão contábil e de universidade ou instituto de pesquisa com reconhecida atuação na área contábil e de mercado de capitais.”
+Parágrafo único. A entidade referida no caput deste artigo deverá ser majoritariamente composta por contadores, dela fazendo parte, paritariamente, representantes de entidades representativas de sociedades submetidas ao regime de elaboração de demonstrações financeiras previstas nesta Lei, de sociedades que auditam e analisam as demonstrações financeiras, do órgão federal de fiscalização do exercício da profissão contábil e de universidade ou instituto de pesquisa com reconhecida atuação na área contábil e de mercado de capitais.”
 
 **Art. 6o** Os saldos existentes nas reservas de reavaliação deverão ser mantidos até a sua efetiva realização ou estornados até o final do exercício social em que esta Lei entrar em vigor.
 
@@ -257,8 +255,6 @@ Art. 226............................................................
 
 Brasília, 28 de dezembro de 2007; 186o da Independência e 119o da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
 Arno Hugo Augustin Filho
-
-Este texto não substitui o publicado no DOU de 28.12.2007 - Edição extra.

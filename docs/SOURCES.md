@@ -2,10 +2,17 @@
 
 A autoridade textual segue esta ordem operacional:
 
-1. portal oficial da Presidência para legislação federal e códigos;
-2. portais oficiais do Legislativo para textos e tramitação;
-3. Diário Oficial da União para publicação, vetos, retificações e vigência;
-4. órgão público competente para atos regulamentares;
-5. fonte secundária apenas para descoberta, nunca para redação ou vigência.
+1. Planalto / Casa Civil para leis, decretos e códigos federais;
+2. Senado Federal para textos constitucionais e legislativos;
+3. Câmara dos Deputados para legislação e tramitação legislativa;
+4. Diário Oficial da União para publicação, vetos, retificações e vigência;
+5. órgão público competente para atos regulamentares;
+6. `normas.leg.br` como compilação oficial legível por máquina e fonte de
+   confirmação quando a redação oficial primária for estruturalmente inadequada.
 
-Cada documento publicado deve declarar a URL oficial, a data de consulta, a data de corte, o formato original e o hash dos bytes obtidos. Conflitos entre fontes bloqueiam a promoção automática.
+Fontes secundárias servem apenas para descoberta. Nunca são autoridade textual
+para redação, vigência ou consolidação.
+
+Cada documento publicado declara URL oficial, data de consulta, data de corte,
+formato original e hashes do conteúdo obtido. Conflitos são resolvidos pelo
+agente em `manifests/source-resolution.json`, preservando todas as evidências.

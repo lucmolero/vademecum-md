@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2016-10-06"
 ementa: "Dispõe sobre prevenção e repressão ao tráfico interno e internacional de pessoas e sobre medidas de atenção às vítimas; altera a Lei nº 6.815, de 19 de agosto de 1980, o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal); e revoga dispositivos do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal)."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-10-06;13344"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "7ffb815c833be19df8a71ce9f2d96578dbbb16d333185453148db28066ec332f"
+sha256_origem: "68ba75c5015d9880fe219582f62f6a7e041280b84813d3532e4c4ee46cb955e5"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,22 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "68ba75c5015d9880fe219582f62f6a7e041280b84813d3532e4c4ee46cb955e5"
+sha256_corpo: "3c758143405780ea2bd80ab2637a5040d7d99f9b72faf40752d194c5fc10c341"
 ---
 # Lei nº 13.344 de 06/10/2016
 
-LEI Nº 13.344, DE 6 DE OUTUBRO DE 2016
-
-Dispõe sobre prevenção e repressão ao tráfico interno e internacional de pessoas e sobre medidas de atenção às vítimas; altera a Lei nº 6.815, de 19 de agosto de 1980, o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal); e revoga dispositivos do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal).
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 1º** Esta Lei dispõe sobre o tráfico de pessoas cometido no território nacional contra vítima brasileira ou estrangeira e no exterior contra vítima brasileira.
 
-**Parágrafo único.** O enfrentamento ao tráfico de pessoas compreende a prevenção e a repressão desse delito, bem como a atenção às suas vítimas.
+Parágrafo único. O enfrentamento ao tráfico de pessoas compreende a prevenção e a repressão desse delito, bem como a atenção às suas vítimas.
 
-#### CAPÍTULO I — DOS PRINCÍPIOS E DAS DIRETRIZES
+#### CAPÍTULO I
+
+### DOS PRINCÍPIOS E DAS DIRETRIZES
 
 **Art. 2º** O enfrentamento ao tráfico de pessoas atenderá aos seguintes princípios:
 
@@ -53,7 +53,7 @@ II – promoção e garantia da cidadania e dos direitos humanos;
 
 III – universalidade, indivisibilidade e interdependência;
 
-IV – não discriminação por motivo de gênero, orientação sexual, origem étnica ou social, procedência, nacionalidade, atuação profissional, raça, religião, faixa etária, situação migratória ou outro **status**;
+IV – não discriminação por motivo de gênero, orientação sexual, origem étnica ou social, procedência, nacionalidade, atuação profissional, raça, religião, faixa etária, situação migratória ou outro status ;
 
 V – transversalidade das dimensões de gênero, orientação sexual, origem étnica ou social, procedência, raça e faixa etária nas políticas públicas;
 
@@ -81,7 +81,9 @@ VIII – preservação do sigilo dos procedimentos administrativos e judiciais, 
 
 IX – gestão integrada para coordenação da política e dos planos nacionais de enfrentamento ao tráfico de pessoas.
 
-#### CAPÍTULO II — DA PREVENÇÃO AO TRÁFICO DE PESSOAS
+#### CAPÍTULO II
+
+### DA PREVENÇÃO AO TRÁFICO DE PESSOAS
 
 **Art. 4º** A prevenção ao tráfico de pessoas dar-se-á por meio:
 
@@ -93,7 +95,9 @@ III – de incentivo à mobilização e à participação da sociedade civil; e
 
 IV – de incentivo a projetos de prevenção ao tráfico de pessoas.
 
-#### CAPÍTULO III — DA REPRESSÃO AO TRÁFICO DE PESSOAS
+#### CAPÍTULO III
+
+### DA REPRESSÃO AO TRÁFICO DE PESSOAS
 
 **Art. 5º** A repressão ao tráfico de pessoas dar-se-á por meio:
 
@@ -103,7 +107,9 @@ II – da integração de políticas e ações de repressão aos crimes correlat
 
 III – da formação de equipes conjuntas de investigação.
 
-#### CAPÍTULO IV — DA PROTEÇÃO E DA ASSISTÊNCIA ÀS VÍTIMAS
+#### CAPÍTULO IV
+
+### DA PROTEÇÃO E DA ASSISTÊNCIA ÀS VÍTIMAS
 
 **Art. 6º** A proteção e o atendimento à vítima direta ou indireta do tráfico de pessoas compreendem:
 
@@ -121,51 +127,53 @@ VI – atendimento humanizado;
 
 VII – informação sobre procedimentos administrativos e judiciais.
 
-**§ 1º** A atenção às vítimas dar-se-á com a interrupção da situação de exploração ou violência, a sua reinserção social, a garantia de facilitação do acesso à educação, à cultura, à formação profissional e ao trabalho e, no caso de crianças e adolescentes, a busca de sua reinserção familiar e comunitária.
+§ 1º A atenção às vítimas dar-se-á com a interrupção da situação de exploração ou violência, a sua reinserção social, a garantia de facilitação do acesso à educação, à cultura, à formação profissional e ao trabalho e, no caso de crianças e adolescentes, a busca de sua reinserção familiar e comunitária.
 
-**§ 2º** No exterior, a assistência imediata a vítimas brasileiras estará a cargo da rede consular brasileira e será prestada independentemente de sua situação migratória, ocupação ou outro status.
+§ 2º No exterior, a assistência imediata a vítimas brasileiras estará a cargo da rede consular brasileira e será prestada independentemente de sua situação migratória, ocupação ou outro status.
 
-**§ 3º** A assistência à saúde prevista no inciso I deste artigo deve compreender os aspectos de recuperação física e psicológica da vítima.
+§ 3º A assistência à saúde prevista no inciso I deste artigo deve compreender os aspectos de recuperação física e psicológica da vítima.
 
-**Art. 7º** A Lei nº 6.815, de 19 de agosto de 1980, passa a vigorar acrescida dos seguintes artigos:
+**Art. 7º** A Lei nº 6.815, de 19 de agosto de 1980 , passa a vigorar acrescida dos seguintes artigos:
 
-“**Art. 18-A.** Conceder-se-á residência permanente às vítimas de tráfico de pessoas no território nacional, independentemente de sua situação migratória e de colaboração em procedimento administrativo, policial ou judicial.
+“ Art. 18-A. Conceder-se-á residência permanente às vítimas de tráfico de pessoas no território nacional, independentemente de sua situação migratória e de colaboração em procedimento administrativo, policial ou judicial.
 
-**§ 1º** O visto ou a residência permanentes poderão ser concedidos, a título de reunião familiar:
+§ 1º O visto ou a residência permanentes poderão ser concedidos, a título de reunião familiar:
 
 I – a cônjuges, companheiros, ascendentes e descendentes; e
 
 II – a outros membros do grupo familiar que comprovem dependência econômica ou convivência habitual com a vítima.
 
-**§ 2º** Os beneficiários do visto ou da residência permanentes são isentos do pagamento da multa prevista no inciso II do art. 125.
+§ 2º Os beneficiários do visto ou da residência permanentes são isentos do pagamento da multa prevista no inciso II do art. 125.
 
-**§ 3º** Os beneficiários do visto ou da residência permanentes de que trata este artigo são isentos do pagamento das taxas e emolumentos previstos nos arts. 20, 33 e 131.”
+§ 3º Os beneficiários do visto ou da residência permanentes de que trata este artigo são isentos do pagamento das taxas e emolumentos previstos nos arts. 20, 33 e 131.”
 
-“**Art. 18-B.** Ato do Ministro de Estado da Justiça e Cidadania estabelecerá os procedimentos para concessão da residência permanente de que trata o art. 18-A.”
+“ Art. 18-B. Ato do Ministro de Estado da Justiça e Cidadania estabelecerá os procedimentos para concessão da residência permanente de que trata o art. 18-A.”
 
-“**Art. 42-A.** O estrangeiro estará em situação regular no País enquanto tramitar pedido de regularização migratória.”
+“ Art. 42-A. O estrangeiro estará em situação regular no País enquanto tramitar pedido de regularização migratória.”
 
-#### CAPÍTULO V — DISPOSIÇÕES PROCESSUAIS
+#### CAPÍTULO V
+
+### DISPOSIÇÕES PROCESSUAIS
 
 **Art. 8º** O juiz, de ofício, a requerimento do Ministério Público ou mediante representação do delegado de polícia, ouvido o Ministério Público, havendo indícios suficientes de infração penal, poderá decretar medidas assecuratórias relacionadas a bens, direitos ou valores pertencentes ao investigado ou acusado, ou existentes em nome de interpostas pessoas, que sejam instrumento, produto ou proveito do crime de tráfico de pessoas, procedendo-se na forma dos arts. 125 a 144-A do Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal).
 
-**§ 1º** Proceder-se-á à alienação antecipada para preservação do valor dos bens sempre que estiverem sujeitos a qualquer grau de deterioração ou depreciação, ou quando houver dificuldade para sua manutenção.
+§ 1º Proceder-se-á à alienação antecipada para preservação do valor dos bens sempre que estiverem sujeitos a qualquer grau de deterioração ou depreciação, ou quando houver dificuldade para sua manutenção.
 
-**§ 2º** O juiz determinará a liberação total ou parcial dos bens, direitos e valores quando comprovada a licitude de sua origem, mantendo-se a constrição dos bens, direitos e valores necessários e suficientes à reparação dos danos e ao pagamento de prestações pecuniárias, multas e custas decorrentes da infração penal.
+§ 2º O juiz determinará a liberação total ou parcial dos bens, direitos e valores quando comprovada a licitude de sua origem, mantendo-se a constrição dos bens, direitos e valores necessários e suficientes à reparação dos danos e ao pagamento de prestações pecuniárias, multas e custas decorrentes da infração penal.
 
-**§ 3º** Nenhum pedido de liberação será conhecido sem o comparecimento pessoal do acusado ou investigado, ou de interposta pessoa a que se refere o **caput**, podendo o juiz determinar a prática de atos necessários à conservação de bens, direitos ou valores, sem prejuízo do disposto no § 1º.
+§ 3º Nenhum pedido de liberação será conhecido sem o comparecimento pessoal do acusado ou investigado, ou de interposta pessoa a que se refere o caput , podendo o juiz determinar a prática de atos necessários à conservação de bens, direitos ou valores, sem prejuízo do disposto no § 1º.
 
-**§ 4º** Ao proferir a sentença de mérito, o juiz decidirá sobre o perdimento do produto, bem ou valor apreendido, sequestrado ou declarado indisponível.
+§ 4º Ao proferir a sentença de mérito, o juiz decidirá sobre o perdimento do produto, bem ou valor apreendido, sequestrado ou declarado indisponível.
 
-**Art. 9º** Aplica-se subsidiariamente, no que couber, o disposto na Lei nº 12.850, de 2 de agosto de 2013.
+**Art. 9º** Aplica-se subsidiariamente, no que couber, o disposto na Lei nº 12.850, de 2 de agosto de 2013 .
 
 **Art. 10.** O Poder Público é autorizado a criar sistema de informações visando à coleta e à gestão de dados que orientem o enfrentamento ao tráfico de pessoas.
 
 **Art. 11.** O Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), passa a vigorar acrescido dos seguintes arts. 13-A e 13-B:
 
-“**Art. 13-A.** Nos crimes previstos nos arts. 148, 149 e 149-A, no § 3º do art. 158 e no art. 159 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e no art. 239 da Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), o membro do Ministério Público ou o delegado de polícia poderá requisitar, de quaisquer órgãos do poder público ou de empresas da iniciativa privada, dados e informações cadastrais da vítima ou de suspeitos.
+“ Art. 13-A. Nos crimes previstos nos arts. 148, 149 e 149-A, no § 3º do art. 158 e no art. 159 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e no art. 239 da Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), o membro do Ministério Público ou o delegado de polícia poderá requisitar, de quaisquer órgãos do poder público ou de empresas da iniciativa privada, dados e informações cadastrais da vítima ou de suspeitos.
 
-**Parágrafo único.** A requisição, que será atendida no prazo de 24 (vinte e quatro) horas, conterá:
+Parágrafo único. A requisição, que será atendida no prazo de 24 (vinte e quatro) horas, conterá:
 
 I – o nome da autoridade requisitante;
 
@@ -173,11 +181,11 @@ II – o número do inquérito policial; e
 
 III – a identificação da unidade de polícia judiciária responsável pela investigação.”
 
-“**Art. 13-B.** Se necessário à prevenção e à repressão dos crimes relacionados ao tráfico de pessoas, o membro do Ministério Público ou o delegado de polícia poderão requisitar, mediante autorização judicial, às empresas prestadoras de serviço de telecomunicações e/ou telemática que disponibilizem imediatamente os meios técnicos adequados - como sinais, informações e outros - que permitam a localização da vítima ou dos suspeitos do delito em curso.
+“ Art. 13-B. Se necessário à prevenção e à repressão dos crimes relacionados ao tráfico de pessoas, o membro do Ministério Público ou o delegado de polícia poderão requisitar, mediante autorização judicial, às empresas prestadoras de serviço de telecomunicações e/ou telemática que disponibilizem imediatamente os meios técnicos adequados - como sinais, informações e outros - que permitam a localização da vítima ou dos suspeitos do delito em curso.
 
-**§ 1º** Para os efeitos deste artigo, sinal significa posicionamento da estação de cobertura, setorização e intensidade de radiofrequência.
+§ 1º Para os efeitos deste artigo, sinal significa posicionamento da estação de cobertura, setorização e intensidade de radiofrequência.
 
-**§ 2º** Na hipótese de que trata o **caput**, o sinal:
+§ 2º Na hipótese de que trata o caput , o sinal:
 
 I – não permitirá acesso ao conteúdo da comunicação de qualquer natureza, que dependerá de autorização judicial, conforme disposto em lei;
 
@@ -185,23 +193,23 @@ II – deverá ser fornecido pela prestadora de telefonia móvel celular por per
 
 III – para períodos superiores àquele de que trata o inciso II, será necessária a apresentação de ordem judicial.
 
-**§ 3º** Na hipótese prevista neste artigo, o inquérito policial deverá ser instaurado no prazo máximo de 72 (setenta e duas) horas, contado do registro da respectiva ocorrência policial.
+§ 3º Na hipótese prevista neste artigo, o inquérito policial deverá ser instaurado no prazo máximo de 72 (setenta e duas) horas, contado do registro da respectiva ocorrência policial.
 
-**§ 4º** Não havendo manifestação judicial no prazo de 12 (doze) horas, a autoridade competente requisitará às empresas prestadoras de serviço de telecomunicações e/ou telemática que disponibilizem imediatamente os meios técnicos adequados – como sinais, informações e outros - que permitam a localização da vítima ou dos suspeitos do delito em curso, com imediata comunicação ao juiz.”
+§ 4º Não havendo manifestação judicial no prazo de 12 (doze) horas, a autoridade competente requisitará às empresas prestadoras de serviço de telecomunicações e/ou telemática que disponibilizem imediatamente os meios técnicos adequados – como sinais, informações e outros - que permitam a localização da vítima ou dos suspeitos do delito em curso, com imediata comunicação ao juiz.”
 
 **Art. 12.** O inciso V do art. 83 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), passa a vigorar com a seguinte redação:
 
-“**Art.** 83.....................................................
+“ Art. 83. ....................................................
 
-..........................................................
+### ..........................................................
 
 V – cumpridos mais de dois terços da pena, nos casos de condenação por crime hediondo, prática de tortura, tráfico ilícito de entorpecentes e drogas afins, tráfico de pessoas e terrorismo, se o apenado não for reincidente específico em crimes dessa natureza.
 
-......................................................” (NR)
+### ...................................................... ” (NR)
 
 **Art. 13.** O Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), passa a vigorar acrescido do seguinte art. 149-A:
 
-“Tráfico de Pessoas
+“ Tráfico de Pessoas
 
 **Art. 149-A.** Agenciar, aliciar, recrutar, transportar, transferir, comprar, alojar ou acolher pessoa, mediante grave ameaça, violência, coação, fraude ou abuso, com a finalidade de:
 
@@ -217,7 +225,7 @@ V – exploração sexual.
 
 Pena – reclusão, de 4 (quatro) a 8 (oito) anos, e multa.
 
-**§ 1º** A pena é aumentada de um terço até a metade se:
+§ 1º A pena é aumentada de um terço até a metade se:
 
 I – o crime for cometido por funcionário público no exercício de suas funções ou a pretexto de exercê-las;
 
@@ -227,15 +235,19 @@ III – o agente se prevalecer de relações de parentesco, domésticas, de coab
 
 IV – a vítima do tráfico de pessoas for retirada do território nacional.
 
-**§ 2º** A pena é reduzida de um a dois terços se o agente for primário e não integrar organização criminosa.”
+§ 2º A pena é reduzida de um a dois terços se o agente for primário e não integrar organização criminosa.”
 
-#### CAPÍTULO VI — DAS CAMPANHAS RELACIONADAS AO ENFRENTAMENTO AO TRÁFICO DE PESSOAS
+#### CAPÍTULO VI
+
+### DAS CAMPANHAS RELACIONADAS AO ENFRENTAMENTO AO TRÁFICO DE PESSOAS
 
 **Art. 14.** É instituído o Dia Nacional de Enfrentamento ao Tráfico de Pessoas, a ser comemorado, anualmente, em 30 de julho.
 
 **Art. 15.** Serão adotadas campanhas nacionais de enfrentamento ao tráfico de pessoas, a serem divulgadas em veículos de comunicação, visando à conscientização da sociedade sobre todas as modalidades de tráfico de pessoas.
 
-#### CAPÍTULO VII — DISPOSIÇÕES FINAIS
+#### CAPÍTULO VII
+
+### DISPOSIÇÕES FINAIS
 
 **Art. 16.** Revogam-se os arts. 231 e 231-A do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal).
 
@@ -243,7 +255,7 @@ IV – a vítima do tráfico de pessoas for retirada do território nacional.
 
 Brasília, 6 de outubro de 2016; 195º da Independência e 128º da República.
 
-**MICHEL TEMER**
+### MICHEL TEMER
 
 Alexandre de Moraes
 

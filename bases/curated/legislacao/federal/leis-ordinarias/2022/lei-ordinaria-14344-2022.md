@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2022-05-24"
 ementa: "Cria mecanismos para a prevenção e o enfrentamento da violência doméstica e familiar contra a criança e o adolescente, nos termos do § 8º do art. 226 e do § 4º do art. 227 da Constituição Federal e das disposições específicas previstas em tratados, convenções ou acordos internacionais de que o Brasil seja parte; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), e 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência; e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-05-24;14344"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "b5797a6283f3f4e37a09ad7d08d480400805abd222a728197b022874f8b25f93"
+sha256_origem: "2ac4712ce2e8eac993b926bcf158426e53bf0203fe8a61a9828134f073d79703"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,54 +28,54 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "2ac4712ce2e8eac993b926bcf158426e53bf0203fe8a61a9828134f073d79703"
+sha256_corpo: "e7f677506bb9b34b926085c2b0e698acf50bcc264d5e12ac1a5f89a261a8e7da"
 ---
 # Lei nº 14.344 de 24/05/2022
 
-LEI Nº 14.344, DE 25 DE MAIO DE 2022
-
-Cria mecanismos para a prevenção e o enfrentamento da violência doméstica e familiar contra a criança e o adolescente, nos termos do § 8º do art. 226 e do § 4º do art. 227 da Constituição Federal e das disposições específicas previstas em tratados, convenções ou acordos internacionais de que o Brasil seja parte; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), e 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência; e dá outras providências.
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-**Art. 1º** Esta Lei cria mecanismos para a prevenção e o enfrentamento da violência doméstica e familiar contra a criança e o adolescente, nos termos do § 8º do art. 226 e do § 4º do art. 227 da Constituição Federal e das disposições específicas previstas em tratados, convenções e acordos internacionais ratificados pela República Federativa do Brasil, e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 8.069, de 13 de julho de 1990, (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), e 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência.
+**Art. 1º** Esta Lei cria mecanismos para a prevenção e o enfrentamento da violência doméstica e familiar contra a criança e o adolescente, nos termos do § 8º do art. 226 e do § 4º do art. 227 da Constituição Federal e das disposições específicas previstas em tratados, convenções e acordos internacionais ratificados pela República Federativa do Brasil, e altera o Decr eto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 8.069, de 13 de julho de 1990, (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), e 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência.
 
-#### CAPÍTULO I — DA VIOLÊNCIA DOMÉSTICA E FAMILIAR CONTRA A CRIANÇA E O ADOLESCENTE
+#### CAPÍTULO I
 
-**Art. 2º** Configura violência doméstica e familiar contra a criança e o adolescente qualquer ação ou omissão que lhe cause morte, lesão, sofrimento físico, sexual, psicológico ou dano patrimonial:
+### DA VIOLÊNCIA DOMÉSTICA E FAMILIAR CONTRA A CRIANÇA E O ADOLESCENTE
 
-I – no âmbito do domicílio ou da residência da criança e do adolescente, compreendida como o espaço de convívio permanente de pessoas, com ou sem vínculo familiar, inclusive as esporadicamente agregadas;
+**Art. 2º** Configura violência domés tica e familiar contra a criança e o adolescente qualquer ação ou omissão que lhe cause morte, lesão, sofrimento físico, sexual, psicológico ou dano patrimonial:
+
+I – no âmbito do domicílio ou da residência da criança e do adolescente, compreendida como o e spaço de convívio permanente de pessoas, com ou sem vínculo familiar, inclusive as esporadicamente agregadas;
 
 II – no âmbito da família, compreendida como a comunidade formada por indivíduos que compõem a família natural, ampliada ou substituta, por laços naturais, por afinidade ou por vontade expressa;
 
 III – em qualquer relação doméstica e familiar na qual o agressor conviva ou tenha convivido com a vítima, independentemente de coabitação.
 
-**Parágrafo único.** Para a caracterização da violência prevista no **caput** deste artigo, deverão ser observadas as definições estabelecidas na Lei nº 13.431, de 4 de abril de 2017.
+Parágrafo único. Para a caracterização da violência prevista no cap ut deste artigo, deverão ser observadas as definições estabelecidas na Lei nº 13.431, de 4 de abril de 2017.
 
 **Art. 3º** A violência doméstica e familiar contra a criança e o adolescente constitui uma das formas de violação dos direitos humanos.
 
-**Art. 4º** As estatísticas sobre a violência doméstica e familiar contra a criança e o adolescente serão incluídas nas bases de dados dos órgãos oficiais do Sistema de Garantia dos Direitos da Criança e do Adolescente, do Sistema Único de Saúde, do Sistema Único de Assistência Social e do Sistema de Justiça e Segurança, de forma integrada, a fim de subsidiar o sistema nacional de dados e informações relativo às crianças e aos adolescentes.
+**Art. 4º** As est atísticas sobre a violência doméstica e familiar contra a criança e o adolescente serão incluídas nas bases de dados dos órgãos oficiais do Sistema de Garantia dos Direitos da Criança e do Adolescente, do Sistema Único de Saúde, do Sistema Único de Assistê ncia Social e do Sistema de Justiça e Segurança, de forma integrada, a fim de subsidiar o sistema nacional de dados e informações relativo às crianças e aos adolescentes.
 
-**§ 1º** Por meio da descentralização político-administrativa que prevê o Sistema de Garantia dos Direitos da Criança e do Adolescente, os entes federados poderão remeter suas informações para a base de dados do Ministério da Justiça e Segurança Pública e do Ministério da Mulher, da Família e dos Direitos Humanos.
+§ 1º Por meio da descentralização político-administrativa que prevê o Sistema de Gara ntia dos Direitos da Criança e do Adolescente, os entes federados poderão remeter suas informações para a base de dados do Ministério da Justiça e Segurança Pública e do Ministério da Mulher, da Família e dos Direitos Humanos.
 
-**§ 2º** Os serviços deverão compartilhar entre si, de forma integrada, as informações coletadas das vítimas, dos membros da família e de outros sujeitos de sua rede afetiva, por meio de relatórios, em conformidade com o fluxo estabelecido, preservado o sigilo das informações.
+§ 2º Os serviços deverão comp artilhar entre si, de forma integrada, as informações coletadas das vítimas, dos membros da família e de outros sujeitos de sua rede afetiva, por meio de relatórios, em conformidade com o fluxo estabelecido, preservado o sigilo das informações.
 
-**§ 3º** O compartilhamento completo do registro de informações será realizado por meio de encaminhamento ao serviço, ao programa ou ao equipamento do sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, que acolherá, em seguida, a criança ou o adolescente vítima ou testemunha de violência.
+§ 3º O comp artilhamento completo do registro de informações será realizado por meio de encaminhamento ao serviço, ao programa ou ao equipamento do sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, que acolherá, em seguida, a criança ou o adolescente vítima ou testemunha de violência.
 
-**§ 4º** O compartilhamento de informações de que trata o § 3º deste artigo deverá zelar pelo sigilo dos dados pessoais da criança e do adolescente vítima ou testemunha de violência.
+§ 4º O compartilhamento de informações de que trata o § 3º deste artigo deverá zelar pelo sigilo dos dados pessoais da criança e do adolescente vítima ou testemunha de violência.
 
-**§ 5º** Será adotado modelo de registro de informações para compartilhamento do sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, que conterá, no mínimo:
+§ 5º Será adot ado modelo de registro de informações para compartilhamento do sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, que conterá, no mínimo:
 
 I – os dados pessoais da criança ou do adolescente;
 
-II – a descrição do atendimento;
+II – a descrição do at endimento;
 
 III – o relato espontâneo da criança ou do adolescente, quando houver;
 
 IV – os encaminhamentos efetuados.
 
-**Art. 5º** O Sistema de Garantia dos Direitos da Criança e do Adolescente intervirá nas situações de violência contra a criança e o adolescente com a finalidade de:
+**Art. 5º** O Sistema de Garantia dos Direitos da Criança e do Adolescente intervirá nas situações de violência contra a criança e o adolescent e com a finalidade de:
 
 I – mapear as ocorrências das formas de violência e suas particularidades no território nacional;
 
@@ -89,9 +89,11 @@ V – promover o atendimento da criança e do adolescente para minimizar as sequ
 
 VI – promover a reparação integral dos direitos da criança e do adolescente.
 
-#### CAPÍTULO II — DA ASSISTÊNCIA À CRIANÇA E AO ADOLESCENTE EM SITUAÇÃO DE VIOLÊNCIA DOMÉSTICA E FAMILIAR
+#### CAPÍTULO II
 
-**Art. 6º** A assistência à criança e ao adolescente em situação de violência doméstica e familiar será prestada de forma articulada e conforme os princípios e as diretrizes previstos nas Leis nºs 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), e 8.742, de 7 de dezembro de 1993, no Sistema Único de Saúde, no Sistema Único de Segurança Pública, entre outras normas e políticas públicas de proteção, e emergencialmente, quando for o caso.
+### DA ASSISTÊNCIA À CRIANÇA E AO ADOLESCENTE EM SITUAÇÃO DE VIOLÊNCIA DOMÉSTICA E FAMILIAR
+
+**Art. 6º** A assistência à criança e ao adolescente em situação de violência doméstica e familiar será prestada de forma articulada e conforme os princípios e as diretrize s previstos nas Leis nºs 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), e 8.742, de 7 de dezembro de 1993, no Sistema Único de Saúde, no Sistema Único de Segurança Pública, entre outras normas e políticas públicas de proteção, e emer gencialmente, quando for o caso.
 
 **Art. 7º** A União, o Distrito Federal, os Estados e os Municípios poderão criar e promover, para a criança e o adolescente em situação de violência doméstica e familiar, no limite das respectivas competências e de acordo com o art. 88 da Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente):
 
@@ -99,23 +101,25 @@ I – centros de atendimento integral e multidisciplinar;
 
 II – espaços para acolhimento familiar e institucional e programas de apadrinhamento;
 
-III – delegacias, núcleos de defensoria pública, serviços de saúde e centros de perícia médico-legal especializados;
+III – delegacias, núcleo s de defensoria pública, serviços de saúde e centros de perícia médico-legal especializados;
 
 IV – programas e campanhas de enfrentamento da violência doméstica e familiar;
 
 V – centros de educação e de reabilitação para os agressores.
 
-**Art. 8º** O Sistema de Garantia dos Direitos da Criança e do Adolescente, juntamente com os sistemas de justiça, de saúde, de segurança pública e de assistência social, os Conselhos Tutelares e a comunidade escolar, poderão, na esfera de sua competência, adotar ações articuladas e efetivas direcionadas à identificação da agressão, à agilidade no atendimento da criança e do adolescente vítima de violência doméstica e familiar e à responsabilização do agressor.
+**Art. 8º** O Sistema de G arantia dos Direitos da Criança e do Adolescente, juntamente com os sistemas de justiça, de saúde, de segurança pública e de assistência social, os Conselhos Tutelares e a comunidade escolar, poderão, na esfera de sua competência, adotar ações articuladas e efetivas direcionadas à identificação da agressão, à agilidade no atendimento da criança e do adolescente vítima de violência doméstica e familiar e à responsabilização do agressor.
 
-**Art. 9º** Os Estados e o Distrito Federal, na formulação de suas políticas e planos de atendimento à criança e ao adolescente em situação de violência doméstica e familiar, darão prioridade, no âmbito da Polícia Civil, à criação de Delegacias Especializadas de Proteção à Criança e ao Adolescente.
+**Art. 9º** Os Estados e o Distrito Federal, na formulação de suas políticas e planos de atendimento à criança e ao adolescente em situação de violência doméstica e familiar, darão prioridade, no âmbito da Polícia Civil, à criação de Delegacias Especializadas de Prote ção à Criança e ao Adolescente.
 
 **Art. 10.** A União, os Estados, o Distrito Federal e os Municípios poderão estabelecer dotações orçamentárias específicas, em cada exercício financeiro, para a implementação das medidas estabelecidas nesta Lei.
 
-#### CAPÍTULO III — DO ATENDIMENTO PELA AUTORIDADE POLICIAL
+#### CAPÍTULO III
 
-**Art. 11.** Na hipótese de ocorrência de ação ou omissão que implique a ameaça ou a prática de violência doméstica e familiar contra a criança e o adolescente, a autoridade policial que tomar conhecimento da ocorrência adotará, de imediato, as providências legais cabíveis.
+### DO ATENDIMENTO PELA AUTORIDADE POLICIAL
 
-**Parágrafo único.** Aplica-se o disposto no **caput** deste artigo ao descumprimento de medida protetiva de urgência deferida.
+**Art. 11.** Na hipótese de ocorrência de ação ou omissão que implique a ameaça ou a prática de violência doméstica e familiar contra a criança e o adolescente, a autoridade policial que tomar conhecimento da ocorrência ad otará, de imediato, as providências legais cabíveis.
+
+Parágrafo único. Aplica-se o disposto no caput deste artigo ao descumprimento de medida protetiva de urgência deferida.
 
 **Art. 12.** O depoimento da criança e do adolescente vítima ou testemunha de violência doméstica e familiar será colhido nos termos da Lei nº 13.431, de 4 de abril de 2017, observadas as disposições da Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente).
 
@@ -123,13 +127,13 @@ V – centros de educação e de reabilitação para os agressores.
 
 I – encaminhar a vítima ao Sistema Único de Saúde e ao Instituto Médico-Legal imediatamente;
 
-II – encaminhar a vítima, os familiares e as testemunhas, caso sejam crianças ou adolescentes, ao Conselho Tutelar para os encaminhamentos necessários, inclusive para a adoção das medidas protetivas adequadas;
+II – encaminhar a vítima, os familiares e as testemunhas, caso sejam cr ianças ou adolescentes, ao Conselho Tutelar para os encaminhamentos necessários, inclusive para a adoção das medidas protetivas adequadas;
 
-III – garantir proteção policial, quando necessário, comunicados de imediato o Ministério Público e o Poder Judiciário;
+III – garantir proteção policial, quando necessário, comunicados de imediato o Ministério Público e o Poder Judiciári o;
 
 IV – fornecer transporte para a vítima e, quando necessário, para seu responsável ou acompanhante, para serviço de acolhimento existente ou local seguro, quando houver risco à vida.
 
-**Art. 14.** Verificada a ocorrência de ação ou omissão que implique a ameaça ou a prática de violência doméstica e familiar, com a existência de risco atual ou iminente aÌ vida ou aÌ integridade física da criança e do adolescente, ou de seus familiares, o agressor será imediatamente afastado do lar, do domicílio ou do local de convivência com a vítima:
+**Art. 14.** Verificada a ocorrência de ação ou omissão que implique a amea ça ou a prática de violência doméstica e familiar, com a existência de risco atual ou iminente aÌ vida ou aÌ integridade física da criança e do adolescente, ou de seus familiares, o agressor será imediatamente afastado do lar, do domicílio ou do local de c onvivência com a vítima:
 
 I – pela autoridade judicial;
 
@@ -137,15 +141,19 @@ II – pelo delegado de polícia, quando o Município não for sede de comarca;
 
 III – pelo policial, quando o Município não for sede de comarca e não houver delegado disponível no momento da denúncia.
 
-**§ 1º** O Conselho Tutelar poderá representar às autoridades referidas nos incisos I, II e III do **caput** deste artigo para requerer o afastamento do agressor do lar, do domicílio ou do local de convivência com a vítima.
+§ 1º O Conselho Tutelar poderá representar às autoridades referidas nos incisos I, II e III do caput deste artigo para requerer o afastamento do agressor do lar, do domicílio ou do local de convivência com a vítima.
 
-**§ 2º** Nas hipóteses previstas nos incisos II e III do **caput** deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, bem como dará ciência ao Ministério Público concomitantemente.
+§ 2º Nas hipóteses previstas nos incisos II e III do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, bem como dará ciência ao Ministério Pú blico concomitantemente.
 
-**§ 3º** Nos casos de risco à integridade física da vítima ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso.
+§ 3º Nos casos de risco à integridade física da vítima ou à efetividade da medida protetiva de urgência, não será concedida liberdade provisória ao preso.
 
-#### CAPÍTULO IV — DOS PROCEDIMENTOS
+#### CAPÍTULO IV
 
-##### Seção I — Das Medidas Protetivas de Urgência
+### DOS PROCEDIMENTOS
+
+##### Seção I
+
+Das Medidas Protetivas de Urgência
 
 **Art. 15.** Recebido o expediente com o pedido em favor de criança e de adolescente em situação de violência doméstica e familiar, caberá ao juiz, no prazo de 24 (vinte e quatro) horas:
 
@@ -157,35 +165,37 @@ III – comunicar ao Ministério Público para que adote as providências cabív
 
 IV – determinar a apreensão imediata de arma de fogo sob a posse do agressor.
 
-**Art. 16.** As medidas protetivas de urgência poderão ser concedidas pelo juiz, a requerimento do Ministério Público, da autoridade policial, do Conselho Tutelar ou a pedido da pessoa que atue em favor da criança e do adolescente.
+**Art. 16.** As medidas protetivas de urgência poderão ser concedidas pelo juiz, a requerimento do Ministério Público, da autoridade policial, do Conselho Tutelar ou a pedido da pessoa que atue em favor da cri ança e do adolescente.
 
-**§ 1º** As medidas protetivas de urgência poderão ser concedidas de imediato, independentemente de audiência das partes e de manifestação do Ministério Público, o qual deverá ser prontamente comunicado.
+§ 1º As medidas protetivas de urgência poderão ser concedidas de imediato, independentemente de audiência das partes e de manifestação do Ministério Público, o qual deverá ser prontamente comunicado.
 
-**§ 2º** As medidas protetivas de urgência serão aplicadas isolada ou cumulativamente e poderão ser substituídas a qualquer tempo por outras de maior eficácia, sempre que os direitos reconhecidos nesta Lei forem ameaçados ou violados.
+§ 2º As medidas protetivas de urg ência serão aplicadas isolada ou cumulativamente e poderão ser substituídas a qualquer tempo por outras de maior eficácia, sempre que os direitos reconhecidos nesta Lei forem ameaçados ou violados.
 
-**§ 3º** Poderá o juiz, a requerimento do Ministério Público ou do Conselho Tutelar, ou a pedido da vítima ou de quem esteja atuando em seu favor, conceder novas medidas protetivas de urgência ou rever aquelas já concedidas, se entender necessário à proteção da vítima, de seus familiares e de seu patrimônio, ouvido o Ministério Público.
+§ 3º Poderá o juiz, a requerimento do Ministério Público o u do Conselho Tutelar, ou a pedido da vítima ou de quem esteja atuando em seu favor, conceder novas medidas protetivas de urgência ou rever aquelas já concedidas, se entender necessário à proteção da vítima, de seus familiares e de seu patrimônio, ouvido o Ministério Público.
 
 **Art. 17.** Em qualquer fase do inquérito policial ou da instrução criminal, caberá a prisão preventiva do agressor, decretada pelo juiz, a requerimento do Ministério Público ou mediante representação da autoridade policial.
 
-**Parágrafo único.** O juiz poderá revogar a prisão preventiva se, no curso do processo, verificar a falta de motivo para que subsista, bem como decretá-la novamente, se sobrevierem razões que a justifiquem.
+Parágrafo úni co. O juiz poderá revogar a prisão preventiva se, no curso do processo, verificar a falta de motivo para que subsista, bem como decretá-la novamente, se sobrevierem razões que a justifiquem.
 
-**Art. 18.** O responsável legal pela criança ou pelo adolescente vítima ou testemunha de violência doméstica e familiar, desde que não seja o autor das agressões, deverá ser notificado dos atos processuais relativos ao agressor, especialmente dos pertinentes ao ingresso e à saída da prisão, sem prejuízo da intimação do advogado constituído ou do defensor público.
+**Art. 18.** O responsável legal pela criança ou pelo adolescente vít ima ou testemunha de violência doméstica e familiar, desde que não seja o autor das agressões, deverá ser notificado dos atos processuais relativos ao agressor, especialmente dos pertinentes ao ingresso e à saída da prisão, sem prejuízo da intimação do adv ogado constituído ou do defensor público.
 
 **Art. 19.** O juiz competente providenciará o registro da medida protetiva de urgência.
 
-**Parágrafo único.** As medidas protetivas de urgência serão, após sua concessão, imediatamente registradas em banco de dados mantido e regulamentado pelo Conselho Nacional de Justiça, garantido o acesso instantâneo do Ministério Público, da Defensoria Pública, dos órgãos de segurança pública e de assistência social e dos integrantes do Sistema de Garantia dos Direitos da Criança e do Adolescente, com vistas à fiscalização e à efetividade das medidas protetivas.
+Parágrafo único. As medidas protetivas de urgência serão, após sua concessão, imediatamente registradas em banco de dados mantido e regulamentado pelo Conselho Nacional de Justiça, garantido o acesso instantâneo do Ministério Público, da Defensoria Pública, dos órgãos de segurança pública e de assistência social e dos integrantes do Sistema de Garantia dos Direitos da Criança e do A dolescente, com vistas à fiscalização e à efetividade das medidas protetivas.
 
-##### Seção II — Das Medidas Protetivas de Urgência que Obrigam o Agressor
+##### Seção II
 
-**Art. 20.** Constatada a prática de violência doméstica e familiar contra a criança e o adolescente nos termos desta Lei, o juiz poderá determinar ao agressor, de imediato, em conjunto ou separadamente, a aplicação das seguintes medidas protetivas de urgência, entre outras:
+Das Medidas Protetivas de Urgência que Obrigam o Agressor
+
+**Art. 20.** Constatada a prática de violência doméstica e familiar contra a criança e o adolescente nos termos desta Lei, o juiz poderá determinar ao agressor, de imediato, em conjunto ou separadamente, a aplicação das seguintes medidas protetivas de urgência, entre o utras:
 
 I – a suspensão da posse ou a restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei nº 10.826, de 22 de dezembro de 2003;
 
 II – o afastamento do lar, do domicílio ou do local de convivência com a vítima;
 
-III – a proibição de aproximação da vítima, de seus familiares, das testemunhas e de noticiantes ou denunciantes, com a fixação do limite mínimo de distância entre estes e o agressor;
+III – a proibiçã o de aproximação da vítima, de seus familiares, das testemunhas e de noticiantes ou denunciantes, com a fixação do limite mínimo de distância entre estes e o agressor;
 
-IV – a vedação de contato com a vítima, com seus familiares, com testemunhas e com noticiantes ou denunciantes, por qualquer meio de comunicação;
+IV – a vedação de contato com a vítima, com seus familiares, com testemunhas e com notic iantes ou denunciantes, por qualquer meio de comunicação;
 
 V – a proibição de frequentação de determinados lugares a fim de preservar a integridade física e psicológica da criança ou do adolescente, respeitadas as disposições da Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente);
 
@@ -197,19 +207,21 @@ VIII – o comparecimento a programas de recuperação e reeducação;
 
 IX – o acompanhamento psicossocial, por meio de atendimento individual e/ou em grupo de apoio.
 
-**§ 1º** As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da vítima ou as circunstâncias o exigirem, e todas as medidas devem ser comunicadas ao Ministério Público.
+§ 1º As medidas referidas neste artigo não impedem a aplicação de outras previstas na legislação em vigor, sempre que a segurança da vítima ou as circunstâncias o exi girem, e todas as medidas devem ser comunicadas ao Ministério Público.
 
-**§ 2º** Na hipótese de aplicação da medida prevista no inciso I do **caput** deste artigo, encontrando-se o agressor nas condições referidas no art. 6º da Lei nº 10.826, de 22 de dezembro de 2003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, e o superior imediato do agressor ficará responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.
+§ 2º Na hipótese de aplicação da medida prevista no inciso I do caput deste artigo, encontrando-se o agressor nas condições referidas no art. 6º da Lei nº 10.826, de 22 de dezembro de 2 003, o juiz comunicará ao respectivo órgão, corporação ou instituição as medidas protetivas de urgência concedidas e determinará a restrição do porte de armas, e o superior imediato do agressor ficará responsável pelo cumprimento da determinação judicial, sob pena de incorrer nos crimes de prevaricação ou de desobediência, conforme o caso.
 
-**§ 3º** Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.
+§ 3º Para garantir a efetividade das medidas protetivas de urgência, poderá o juiz requisitar, a qualquer momento, auxílio da força policial.
 
-##### Seção III — Das Medidas Protetivas de Urgência à Vítima
+##### Seção III
+
+Das Medidas Protet ivas de Urgência à Vítima
 
 **Art. 21.** Poderá o juiz, quando necessário, sem prejuízo de outras medidas, determinar:
 
 I – a proibição do contato, por qualquer meio, entre a criança ou o adolescente vítima ou testemunha de violência e o agressor;
 
-II – o afastamento do agressor da residência ou do local de convivência ou de coabitação;
+II – o afastame nto do agressor da residência ou do local de convivência ou de coabitação;
 
 III – a prisão preventiva do agressor, quando houver suficientes indícios de ameaça à criança ou ao adolescente vítima ou testemunha de violência;
 
@@ -221,11 +233,13 @@ VI – no caso da impossibilidade de afastamento do lar do agressor ou de prisã
 
 VII – a realização da matrícula da criança ou do adolescente em instituição de educação mais próxima de seu domicílio ou do local de trabalho de seu responsável legal, ou sua transferência para instituição congênere, independentemente da existência de vaga.
 
-**§ 1º** A autoridade policial poderá requisitar e o Conselho Tutelar requerer ao Ministério Público a propositura de ação cautelar de antecipação de produção de prova nas causas que envolvam violência contra a criança e o adolescente, observadas as disposições da Lei nº 13.431, de 4 de abril de 2017.
+§ 1º A autoridade policial poder á requisitar e o Conselho Tutelar requerer ao Ministério Público a propositura de ação cautelar de antecipação de produção de prova nas causas que envolvam violência contra a criança e o adolescente, observadas as disposições da Lei nº 13.431, de 4 de abri l de 2017.
 
-**§ 2º** O juiz poderá determinar a adoção de outras medidas cautelares previstas na legislação em vigor, sempre que as circunstâncias o exigirem, com vistas à manutenção da integridade ou da segurança da criança ou do adolescente, de seus familiares e de noticiante ou denunciante.
+§ 2º O juiz poderá determinar a adoção de outras medidas cautelares previstas na legislação em vigor, sempre que as circunstâncias o exigirem, com vistas à manutenção da integridade ou da segurança da criança ou do adolescente, de seus familiare s e de noticiante ou denunciante.
 
-#### CAPÍTULO V — DO MINISTÉRIO PÚBLICO
+#### CAPÍTULO V
+
+### DO MINISTÉRIO PÚBLICO
 
 **Art. 22.** Caberá ao Ministério Público, sem prejuízo de outras atribuições, nos casos de violência doméstica e familiar contra a criança e o adolescente, quando necessário:
 
@@ -233,107 +247,113 @@ I – registrar em seu sistema de dados os casos de violência doméstica e fami
 
 II – requisitar força policial e serviços públicos de saúde, de educação, de assistência social e de segurança, entre outros;
 
-III – fiscalizar os estabelecimentos públicos e particulares de atendimento à criança e ao adolescente em situação de violência doméstica e familiar e adotar, de imediato, as medidas administrativas ou judiciais cabíveis no tocante a quaisquer irregularidades constatadas.
+III – fiscalizar os estabelecime ntos públicos e particulares de atendimento à criança e ao adolescente em situação de violência doméstica e familiar e adotar, de imediato, as medidas administrativas ou judiciais cabíveis no tocante a quaisquer irregularidades constatadas.
 
-#### CAPÍTULO VI — DA PROTEÇÃO AO NOTICIANTE OU DENUNCIANTE DE VIOLÊNCIA DOMÉSTICA E FAMILIAR
+#### CAPÍTULO VI
 
-**Art. 23.** Qualquer pessoa que tenha conhecimento ou presencie ação ou omissão, praticada em local público ou privado, que constitua violência doméstica e familiar contra a criança e o adolescente tem o dever de comunicar o fato imediatamente ao serviço de recebimento e monitoramento de denúncias, ao Disque 100 da Ouvidoria Nacional de Direitos Humanos do Ministério da Mulher, da Família e dos Direitos Humanos, ao Conselho Tutelar ou à autoridade policial, os quais, por sua vez, tomarão as providências cabíveis.
+### DA PROTEÇÃO AO NOTICIANTE OU DENUNCIANTE DE VIOLÊNCIA DOMÉSTICA E FAMILIAR
 
-**Art. 24.** O poder público garantirá meios e estabelecerá medidas e ações para a proteção e a compensação da pessoa que noticiar informações ou denunciar a prática de violência, de tratamento cruel ou degradante ou de formas violentas de educação, correção ou disciplina contra a criança e o adolescente.
+**Art. 23.** Qualquer pessoa que tenha conhecimento ou presencie ação ou omissão, praticada em local público ou privado, que constitua violência doméstica e familiar contra a criança e o a dolescente tem o dever de comunicar o fato imediatamente ao serviço de recebimento e monitoramento de denúncias, ao Disque 100 da Ouvidoria Nacional de Direitos Humanos do Ministério da Mulher, da Família e dos Direitos Humanos, ao Conselho Tutelar ou à au toridade policial, os quais, por sua vez, tomarão as providências cabíveis.
 
-**§ 1º** A União, os Estados, o Distrito Federal e os Municípios poderão estabelecer programas de proteção e compensação das vítimas, das testemunhas e dos noticiantes ou denunciantes das condutas previstas no caput deste artigo.
+**Art. 24.** O poder público garantirá meios e estabelecerá medidas e ações para a proteção e a compensação da pessoa que noticiar informações ou denunciar a prática de violência, de t ratamento cruel ou degradante ou de formas violentas de educação, correção ou disciplina contra a criança e o adolescente.
 
-**§ 2º** O noticiante ou denunciante poderá requerer que a revelação das informações de que tenha conhecimento seja feita perante a autoridade policial, o Conselho Tutelar, o Ministério Público ou o juiz, caso em que a autoridade competente solicitará sua presença, designando data e hora para audiência especial com esse fim.
+§ 1º A União, os Estados, o Distrito Federal e os Municípios poderão estabelecer programas de proteção e compensação das vítimas, das testemunhas e dos noticiantes ou denunciantes das condutas previstas no caput deste artigo.
 
-**§ 3º** O noticiante ou denunciante poderá condicionar a revelação de informações de que tenha conhecimento à execução das medidas de proteção necessárias para assegurar sua integridade física e psicológica, e caberá à autoridade competente requerer e deferir a adoção das medidas necessárias.
+§ 2º O noticiante ou denunciante poderá requerer que a revelação das informações de que tenha conhecimento seja feita perante a autoridade policial, o Conselho Tutelar, o Ministério Público ou o juiz, caso em que a autoridade competente solicitará sua presença, designando data e hora para audiência especial com esse fim.
 
-**§ 4º** Ninguém será submetido a retaliação, a represália, a discriminação ou a punição pelo fato ou sob o fundamento de ter reportado ou denunciado as condutas descritas no **caput** deste artigo.
+§ 3º O noticiante ou denunciante poderá condicionar a revelação de informações de que tenha conhecimento à execução das medidas de proteção necessárias para assegurar sua integridade física e ps icológica, e caberá à autoridade competente requerer e deferir a adoção das medidas necessárias.
 
-**§ 5º** O noticiante ou denunciante que, na iminência de revelar as informações de que tenha conhecimento, ou após tê-lo feito, ou que, no curso de investigação, de procedimento ou de processo instaurado a partir de revelação realizada, seja coagido ou exposto a grave ameaça, poderá requerer a execução das medidas de proteção previstas na Lei nº 9.807, de 13 de julho de 1999, que lhe sejam aplicáveis.
+§ 4º Ninguém será submetido a retaliação, a represália, a discriminação ou a punição pelo fato ou sob o fundamento de ter reportado ou denunciado as condutas d escritas no caput deste artigo.
 
-**§ 6º** O Ministério Público manifestar-se-á sobre a necessidade e a utilidade das medidas de proteção formuladas pelo noticiante ou denunciante e requererá ao juiz competente o deferimento das que entender apropriadas.
+§ 5º O noticiante ou denunciante que, na iminência de revelar as informações de que tenha conhecimento, ou após tê-lo feito, ou que, no curso de investigação, de procedimento ou de processo instaurado a partir de revelação r ealizada, seja coagido ou exposto a grave ameaça, poderá requerer a execução das medidas de proteção previstas na Lei nº 9.807, de 13 de julho de 1999, que lhe sejam aplicáveis.
 
-**§ 7º** Para a adoção das medidas de proteção, considerar-se-á, entre outros aspectos, a gravidade da coação ou da ameaça à integridade física ou psicológica, a dificuldade de preveni-las ou de reprimi-las pelos meios convencionais e a sua importância para a produção de provas.
+§ 6º O Ministério Público manifestar-se-á sobre a necessidade e a utilidade da s medidas de proteção formuladas pelo noticiante ou denunciante e requererá ao juiz competente o deferimento das que entender apropriadas.
 
-**§ 8º** Em caso de urgência e levando em consideração a procedência, a gravidade e a iminência da coação ou ameaça, o juiz competente, de ofício ou a requerimento do Ministério Público, determinará que o noticiante ou denunciante seja colocado provisoriamente sob a proteção de órgão de segurança pública, até que o conselho deliberativo decida sobre sua inclusão no programa de proteção.
+§ 7º Para a adoção das medidas de proteção, considerar-se-á, entre outros aspectos, a gravidade da coação ou da ameaç a à integridade física ou psicológica, a dificuldade de preveni-las ou de reprimi-las pelos meios convencionais e a sua importância para a produção de provas.
 
-**§ 9º** Quando entender necessário, o juiz competente, de ofício, a requerimento do Ministério Público, da autoridade policial, do Conselho Tutelar ou por solicitação do órgão deliberativo concederá as medidas cautelares direta ou indiretamente relacionadas à eficácia da proteção.
+§ 8º Em caso de urgência e levando em consideração a procedência, a gravidade e a iminência da co ação ou ameaça, o juiz competente, de ofício ou a requerimento do Ministério Público, determinará que o noticiante ou denunciante seja colocado provisoriamente sob a proteção de órgão de segurança pública, até que o conselho deliberativo decida sobre sua i nclusão no programa de proteção.
 
-#### CAPÍTULO VII — DOS CRIMES
+§ 9º Quando entender necessário, o juiz competente, de ofício, a requerimento do Ministério Público, da autoridade policial, do Conselho Tutelar ou por solicitação do órgão deliberativo concederá as medidas cautelares direta ou indiretamente relacionadas à efic ácia da proteção.
+
+#### CAPÍTULO VII
+
+### DOS CRIMES
 
 **Art. 25.** Descumprir decisão judicial que defere medida protetiva de urgência prevista nesta Lei:
 
 Pena – detenção, de 3 (três) meses a 2 (dois) anos.
 
-**§ 1º** A configuração do crime independe da competência civil ou criminal do juiz que deferiu a medida.
+§ 1º A configuração do crime independe da competência civil ou cr iminal do juiz que deferiu a medida.
 
-**§ 2º** Na hipótese de prisão em flagrante, apenas a autoridade judicial poderá conceder fiança.
+§ 2º Na hipótese de prisão em flagrante, apenas a autoridade judicial poderá conceder fiança.
 
-**§ 3º** O disposto neste artigo não exclui a aplicação de outras sanções cabíveis.
+§ 3º O disposto neste artigo não exclui a aplicação de outras sanções cabíveis.
 
-**Art. 26.** Deixar de comunicar à autoridade pública a prática de violência, de tratamento cruel ou degradante ou de formas violentas de educação, correção ou disciplina contra criança ou adolescente ou o abandono de incapaz:
+**Art. 26.** Deixar de comunicar à autoridade púb lica a prática de violência, de tratamento cruel ou degradante ou de formas violentas de educação, correção ou disciplina contra criança ou adolescente ou o abandono de incapaz:
 
 Pena – detenção, de 6 (seis) meses a 3 (três) anos.
 
-**§ 1º** A pena é aumentada de metade, se da omissão resulta lesão corporal de natureza grave, e triplicada, se resulta morte.
+§ 1º A pena é aumentada de metade, se da omissão resulta lesão corporal de natureza grave, e triplicada, se resulta morte.
 
-**§ 2º** Aplica-se a pena em dobro se o crime é praticado por ascendente, parente consanguíneo até terceiro grau, responsável legal, tutor, guardião, padrasto ou madrasta da vítima.
+§ 2º Aplica-se a pena em dobro se o crime é praticado por ascendente, parente consanguíneo até terceiro grau, responsável legal, tutor, guardião, padrasto ou m adrasta da vítima.
 
-#### CAPÍTULO VIII — DISPOSIÇÕES FINAIS
+#### CAPÍTULO VIII
+
+### DISPOSIÇÕES FINAIS
 
 **Art. 27.** Fica instituído, em todo o território nacional, o dia 3 de maio de cada ano como Dia Nacional de Combate à Violência Doméstica e Familiar contra a Criança e o Adolescente, em homenagem ao menino Henry Borel.
 
-**Art. 28.** O **caput** do art. 4º da Lei nº 13.431, de 4 de abril de 2017, passa a vigorar acrescido do seguinte inciso V:
+**Art. 28.** O caput do art. 4º da Lei nº 13.431, de 4 de abril de 2017, passa a vigorar acrescido do seguinte inciso V:
 
-“**Art.** 4º................................................................................................................................
+“ Art. 4º ................................................................................................................................
 
 .............................................................................................................................................
 
-V – violência patrimonial, entendida como qualquer conduta que configure retenção, subtração, destruição parcial ou total de seus documentos pessoais, bens, valores e direitos ou recursos econômicos, incluídos os destinados a satisfazer suas necessidades, desde que a medida não se enquadre como educacional.
+V – violência patrimonial, entendida como qualquer conduta que configure retenção, subtração, destruição parcial o u total de seus documentos pessoais, bens, valores e direitos ou recursos econômicos, incluídos os destinados a satisfazer suas necessidades, desde que a medida não se enquadre como educacional.
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
 **Art. 29.** Os arts. 18-B, 70-A, 70-B, 136, 201 e 226 da Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), passam a vigorar com as seguintes alterações:
 
-“**Art.** 18-B...........................................................................................................................
+“ Art. 18-B. ..........................................................................................................................
 
 .............................................................................................................................................
 
 VI – garantia de tratamento de saúde especializado à vítima.
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
-“**Art.** 70-A...........................................................................................................................
+“ Art. 70-A. ..........................................................................................................................
 
 .............................................................................................................................................
 
-VII – a promoção de estudos e pesquisas, de estatísticas e de outras informações relevantes às consequências e à frequência das formas de violência contra a criança e o adolescente para a sistematização de dados nacionalmente unificados e a avaliação periódica dos resultados das medidas adotadas;
+VII – a promoção de estudos e pesquisas, de estatísticas e de outras informações relevantes às consequências e à frequência das formas de violência contra a criança e o adolescente para a sistematização de dados nacionalmente unificados e a avaliação periódica dos resultados das med idas adotadas;
 
 VIII – o respeito aos valores da dignidade da pessoa humana, de forma a coibir a violência, o tratamento cruel ou degradante e as formas violentas de educação, correção ou disciplina;
 
-IX – a promoção e a realização de campanhas educativas direcionadas ao público escolar e à sociedade em geral e a difusão desta Lei e dos instrumentos de proteção aos direitos humanos das crianças e dos adolescentes, incluídos os canais de denúncia existentes;
+IX – a promoção e a realização de campanhas educativas di recionadas ao público escolar e à sociedade em geral e a difusão desta Lei e dos instrumentos de proteção aos direitos humanos das crianças e dos adolescentes, incluídos os canais de denúncia existentes;
 
-X – a celebração de convênios, de protocolos, de ajustes, de termos e de outros instrumentos de promoção de parceria entre órgãos governamentais ou entre estes e entidades não governamentais, com o objetivo de implementar programas de erradicação da violência, de tratamento cruel ou degradante e de formas violentas de educação, correção ou disciplina;
+X – a celebração de convênios, de protocolos, de aju stes, de termos e de outros instrumentos de promoção de parceria entre órgãos governamentais ou entre estes e entidades não governamentais, com o objetivo de implementar programas de erradicação da violência, de tratamento cruel ou degradante e de formas v iolentas de educação, correção ou disciplina;
 
-XI – a capacitação permanente das Polícias Civil e Militar, da Guarda Municipal, do Corpo de Bombeiros, dos profissionais nas escolas, dos Conselhos Tutelares e dos profissionais pertencentes aos órgãos e às áreas referidos no inciso II deste **caput**, para que identifiquem situações em que crianças e adolescentes vivenciam violência e agressões no âmbito familiar ou institucional;
+XI – a capacitação permanente das Polícias Civil e Militar, da Guarda Municipal, do Corpo de Bombeiros, dos profissionais nas escolas, dos Conselhos Tutelares e dos profissionais pertencentes aos órgãos e às ár eas referidos no inciso II deste caput , para que identifiquem situações em que crianças e adolescentes vivenciam violência e agressões no âmbito familiar ou institucional;
 
-XII – a promoção de programas educacionais que disseminem valores éticos de irrestrito respeito à dignidade da pessoa humana, bem como de programas de fortalecimento da parentalidade positiva, da educação sem castigos físicos e de ações de prevenção e enfrentamento da violência doméstica e familiar contra a criança e o adolescente;
+XII – a promoção de programas educacionais que disseminem valores éticos de irrestri to respeito à dignidade da pessoa humana, bem como de programas de fortalecimento da parentalidade positiva, da educação sem castigos físicos e de ações de prevenção e enfrentamento da violência doméstica e familiar contra a criança e o adolescente;
 
 XIII – o destaque, nos currículos escolares de todos os níveis de ensino, dos conteúdos relativos à prevenção, à identificação e à resposta à violência doméstica e familiar.
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
-“**Art. 70-B.** As entidades, públicas e privadas, que atuem nas áreas da saúde e da educação, além daquelas às quais se refere o art. 71 desta Lei, entre outras, devem contar, em seus quadros, com pessoas capacitadas a reconhecer e a comunicar ao Conselho Tutelar suspeitas ou casos de crimes praticados contra a criança e o adolescente.
+“ Art. 70-B. As entidades, públicas e privadas, que atuem nas áreas da saúde e da educação, além daquelas às quais se refere o art. 71 desta Lei, entre outras, devem contar, em seus quadros, com pessoas capacitadas a reconhecer e a comunicar ao Conselho Tutelar suspeitas ou casos de crimes praticados contra a criança e o adolescente.
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
-“**Art.** 136.............................................................................................................................
+“ Art. 136. ............................................................................................................................
 
 .............................................................................................................................................
 
 XIII – adotar, na esfera de sua competência, ações articuladas e efetivas direcionadas à identificação da agressão, à agilidade no atendimento da criança e do adolescente vítima de violência doméstica e familiar e à responsabilização do agressor;
 
-XIV – atender à criança e ao adolescente vítima ou testemunha de violência doméstica e familiar, ou submetido a tratamento cruel ou degradante ou a formas violentas de educação, correção ou disciplina, a seus familiares e a testemunhas, de forma a prover orientação e aconselhamento acerca de seus direitos e dos encaminhamentos necessários;
+XIV – atender à criança e ao adolescente vítima ou testemunha de violência doméstica e familiar, ou submetido a tratamento cruel ou degradante ou a formas violentas de educação, correção ou disciplina, a seus familiares e a testemunhas, de forma a prover orientação e acon selhamento acerca de seus direitos e dos encaminhamentos necessários;
 
 XV – representar à autoridade judicial ou policial para requerer o afastamento do agressor do lar, do domicílio ou do local de convivência com a vítima nos casos de violência doméstica e familiar contra a criança e o adolescente;
 
@@ -343,55 +363,55 @@ XVII – representar ao Ministério Público para requerer a propositura de aç�
 
 XVIII – tomar as providências cabíveis, na esfera de sua competência, ao receber comunicação da ocorrência de ação ou omissão, praticada em local público ou privado, que constitua violência doméstica e familiar contra a criança e o adolescente;
 
-XIX – receber e encaminhar, quando for o caso, as informações reveladas por noticiantes ou denunciantes relativas à prática de violência, ao uso de tratamento cruel ou degradante ou de formas violentas de educação, correção ou disciplina contra a criança e o adolescente;
+XIX – receber e encaminhar, quando for o caso, as informações re veladas por noticiantes ou denunciantes relativas à prática de violência, ao uso de tratamento cruel ou degradante ou de formas violentas de educação, correção ou disciplina contra a criança e o adolescente;
 
-XX – representar à autoridade judicial ou ao Ministério Público para requerer a concessão de medidas cautelares direta ou indiretamente relacionada à eficácia da proteção de noticiante ou denunciante de informações de crimes que envolvam violência doméstica e familiar contra a criança e o adolescente.
+XX – representar à autoridade judicial ou ao Min istério Público para requerer a concessão de medidas cautelares direta ou indiretamente relacionada à eficácia da proteção de noticiante ou denunciante de informações de crimes que envolvam violência doméstica e familiar contra a criança e o adolescente.
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
-“**Art.** 201.............................................................................................................................
+“ Art. 201. ............................................................................................................................
 
 .............................................................................................................................................
 
 XIII – intervir, quando não for parte, nas causas cíveis e criminais decorrentes de violência doméstica e familiar contra a criança e o adolescente.
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
-“**Art.** 226.............................................................................................................................
+“ Art. 226. ............................................................................................................................
 
-**§ 1º** Aos crimes cometidos contra a criança e o adolescente, independentemente da pena prevista, não se aplica a Lei nº 9.099, de 26 de setembro de 1995.
+§ 1º Aos crimes cometidos contra a criança e o adolescente, independentemente da pena prevista, não se aplica a Lei nº 9.099, de 26 de setembro de 1995.
 
-**§ 2º** Nos casos de violência doméstica e familiar contra a criança e o adolescente, é vedada a aplicação de penas de cesta básica ou de outras de prestação pecuniária, bem como a substituição de pena que implique o pagamento isolado de multa.” (NR)
+§ 2º Nos casos de violência doméstica e familiar contra a criança e o adolescente, é vedada a aplicação de p enas de cesta básica ou de outras de prestação pecuniária, bem como a substituição de pena que implique o pagamento isolado de multa.” (NR)
 
-**Art. 30.** O parágrafo único do art. 152 da Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), passa a vigorar com a seguinte redação:
+**Art. 30.** O parágrafo único do art. 152 da Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), passa a vigo rar com a seguinte redação:
 
-“**Art.** 152.............................................................................................................................
+“ Art. 152. ............................................................................................................................
 
-**Parágrafo único.** Nos casos de violência doméstica e familiar contra a criança, o adolescente e a mulher e de tratamento cruel ou degradante, ou de uso de formas violentas de educação, correção ou disciplina contra a criança e o adolescente, o juiz poderá determinar o comparecimento obrigatório do agressor a programas de recuperação e reeducação.” (NR)
+Parágrafo único. Nos casos de violência doméstica e familiar contra a criança, o adolescente e a mulher e de tratamento cruel ou degradante, ou de uso de formas violentas de educação, correção ou disciplina contra a criança e o adolescente, o juiz poderá determinar o comparecimento obrigatório do agressor a programas de recuperação e reeducação.” (NR)
 
-**Art. 31.** Os arts. 111, 121 e 141 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), passam a vigorar com as seguintes alterações:
+**Art. 31.** Os arts. 111, 121 e 141 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), passam a vigorar co m as seguintes alterações:
 
-“**Art.** 111.............................................................................................................................
+“ Art. 111. ............................................................................................................................
 
 .............................................................................................................................................
 
 V – nos crimes contra a dignidade sexual ou que envolvam violência contra a criança e o adolescente, previstos neste Código ou em legislação especial, da data em que a vítima completar 18 (dezoito) anos, salvo se a esse tempo já houver sido proposta a ação penal.” (NR)
 
-“**Art.** 121.............................................................................................................................
+“ Art. 121. ............................................................................................................................
 
 .............................................................................................................................................
 
-§ 2º......................................................................................................................................
+§ 2º ......................................................................................................................................
 
 .............................................................................................................................................
 
-**Homicídio contra menor de 14 (quatorze) anos**
+Homicídio contra menor de 14 (quatorze) anos
 
 IX – contra menor de 14 (quatorze) anos:
 
 .............................................................................................................................................
 
-**§ 2º-B.** A pena do homicídio contra menor de 14 (quatorze) anos é aumentada de:
+§ 2º-B. A pena do homicídio contra menor de 14 (quatorze) anos é aumentada de:
 
 I – 1/3 (um terço) até a metade se a vítima é pessoa com deficiência ou com doença que implique o aumento de sua vulnerabilidade;
 
@@ -399,37 +419,37 @@ II – 2/3 (dois terços) se o autor é ascendente, padrasto ou madrasta, tio, i
 
 .............................................................................................................................................
 
-§ 7º......................................................................................................................................
+§ 7º ......................................................................................................................................
 
 .............................................................................................................................................
 
 II – contra pessoa maior de 60 (sessenta) anos, com deficiência ou com doenças degenerativas que acarretem condição limitante ou de vulnerabilidade física ou mental;
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
-“**Art.** 141.............................................................................................................................
+“ Art. 141. ............................................................................................................................
 
 .............................................................................................................................................
 
 IV – contra criança, adolescente, pessoa maior de 60 (sessenta) anos ou pessoa com deficiência, exceto na hipótese prevista no § 3º do art. 140 deste Código.
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
-**Art. 32.** O inciso I do **caput** do art. 1º da Lei nº 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), passa a vigorar com a seguinte redação:
+**Art. 32.** O inciso I do caput do art. 1º da Lei nº 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), passa a vigorar com a seguinte redação:
 
-“**Art.** 1º................................................................................................................................
+“ Art. 1º ................................................................................................................................
 
-I – homicídio (art. 121), quando praticado em atividade típica de grupo de extermínio, ainda que cometido por um só agente, e homicídio qualificado (art. 121, § 2º, incisos I, II, III, IV, V, VI, VII, VIII e IX);
+I – homicídio (art. 121), quando praticado em atividade típica de grupo de extermínio, ainda que cometido por um só agente, e homicídio qualificado (art. 121, § 2º, incisos I, II , III, IV, V, VI, VII, VIII e IX);
 
-..................................................................................................................................” (NR)
+.................................................................................................................................. ” (NR)
 
-**Art. 33.** Aos procedimentos regulados nesta Lei aplicam-se subsidiariamente, no que couber, as disposições das Leis nºs 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), e 13.431, de 4 de abril de 2017.
+**Art. 33.** Aos procedimentos regulados nesta Lei aplicam-se subsidiariamente, no que couber, as disposições das Leis nºs 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 11.340, de 7 de agosto d e 2006 (Lei Maria da Penha), e 13.431, de 4 de abril de 2017.
 
 **Art. 34.** Esta Lei entra em vigor após decorridos 45 (quarenta e cinco) dias de sua publicação oficial.
 
 Brasília, 24 de maio de 2022; 201º da Independência e 134º da República.
 
-**JAIR MESSIAS BOLSONARO**
+### JAIR MESSIAS BOLSO NARO
 
 Anderson Gustavo Torres
 
