@@ -12,22 +12,20 @@ O `origin` esta configurado para o repositorio autoral. A `main` esta protegida 
 
 ## Repositório privado de histórico
 
-O workflow está preparado, mas o repositório privado de histórico ainda não está
-configurado no GitHub: `HISTORY_REPOSITORY` e `HISTORY_REPO_TOKEN` não estão
-presentes. A sincronização permanece desativada até que o proprietário crie o
-destino privado e configure credenciais de menor privilégio conforme
-[PRIVATE_HISTORY_SETUP.md](PRIVATE_HISTORY_SETUP.md).
+O repositório privado de histórico é `lucmolero/vademecum-md-history`. A
+sincronização usa uma deploy key Ed25519 exclusiva desse repositório, sem token
+pessoal amplo. O workflow só é executado quando `HISTORY_REPOSITORY` e
+`HISTORY_REPO_SSH_KEY` estão disponíveis.
 
 O conteúdo esperado é o ledger produzido por
 `tools/history/build_private_ledger.py`, incluindo snapshots, logs, hashes e
-evidências de execução. O nome definitivo e o token não devem ser gravados no
-repositório público.
+evidências de execução. A chave privada nunca é gravada no repositório público.
 
 ## Ambientes
 
 - `update-proposal`: workflow autônomo, sem bloqueio de aprovação de ambiente;
 - `production`: não é exigido para publicação; os gates determinísticos são a barreira de release;
-- `private-history`: sincronização condicionada apenas à existência das credenciais de menor privilégio;
+- `private-history`: sincronização condicionada apenas à existência da deploy key de menor privilégio;
 - nenhum ambiente deve permitir credenciais em Pull Requests nao confiaveis.
 
 O workflow de proposta continua gerando apenas evidencia nao sensivel; snapshots brutos nao sao publicados no repositorio autoral. A publicacao de release ocorre automaticamente apos todos os gates passarem e nao escreve diretamente na branch padrao.
