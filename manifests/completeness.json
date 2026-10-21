@@ -1,21 +1,24 @@
 {
   "schema": "completeness/v1",
   "generated_at": "2026-10-21",
-  "corpus_count": 360,
+  "corpus_count": 375,
   "checks": {
-    "text_integral": 360,
-    "official_source": 360,
-    "hash": 360,
-    "frontmatter": 360,
-    "p0_consolidated": 30,
-    "p0_total": 30
+    "text_integral": 375,
+    "official_source": 375,
+    "hash": 375,
+    "frontmatter": 375,
+    "p0_consolidated": 33,
+    "p0_total": 33
   },
-  "relations": 1655,
-  "unresolved_relations": 2258,
+  "relations": 1841,
+  "unresolved_relations": 2177,
   "consolidation_status": {
-    "consolidada_fonte_oficial": 246,
-    "requer_reconciliacao": 109,
-    "consolidada_reconciliada": 5
+    "consolidada_fonte_oficial": 372,
+    "consolidada_reconciliada": 3
+  },
+  "editorial_expansion": {
+    "candidate_count": 15,
+    "promoted_count": 15
   },
   "errors": [],
   "status": "pass"

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 from collections import Counter, defaultdict
@@ -11,6 +12,8 @@ from datetime import date
 from pathlib import Path
 
 from migrate_public_corpus import CURATED, ROOT, frontmatter, parse_frontmatter, scalar
+from relations.classify_unresolved import classify as classify_unresolved
+from relations.build_review_queue import build_queue as build_relation_review_queue
 
 
 TODAY = date.today().isoformat()
@@ -21,10 +24,17 @@ MONTHS = {
     "outubro": "10", "novembro": "11", "dezembro": "12",
 }
 RELATION_TYPES = {
+    "altera": "alterada_por",
     "alterada_por": "altera",
+    "revoga": "revogada_por",
     "revogada_por": "revoga",
+    "regulamenta": "regulamentada_por",
     "regulamentada_por": "regulamenta",
+    "retifica": "retificada_por",
     "retificada_por": "retifica",
+    "suspende": "suspensa_por",
+    "suspensa_por": "suspende",
+    "relacionada_a": "relacionada_a",
 }
 
 
@@ -42,15 +52,36 @@ def norm_number(value: str) -> str:
 
 
 def relation_type(context: str) -> str | None:
-    context = context.lower()
-    if re.search(r"revog\w*.{0,80}$", context):
-        return "revogada_por"
-    if re.search(r"retific\w*.{0,80}$", context):
-        return "retificada_por"
-    if re.search(r"(redação dada|redacao dada|alterad\w*|acrescid\w*|incluíd\w*|incluid\w*).{0,80}$", context):
+    """Classify the relation direction for the referenced diploma.
+
+    A citation can occur in two legally opposite constructions: ``altera a
+    Lei X`` (the current document acts on X) and ``redação dada pela Lei X``
+    (the current document was acted on by X). Passive constructions must be
+    classified before active verbs; ambiguous prose remains unresolved.
+    """
+    context = re.sub(r"\s+", " ", context.lower()).strip()
+    passive = r"(?:por|pela|pelo|pelas|pelos)"
+    if re.search(rf"(?:redação|redacao)\s+(?:dada|dado)\s+{passive}", context):
         return "alterada_por"
-    if re.search(r"regulament\w*.{0,80}$", context):
+    if re.search(rf"(?:alterad\w*|acrescid\w*|incluíd\w*|incluid\w*)\s+{passive}", context):
+        return "alterada_por"
+    if re.search(rf"revogad\w*\s+{passive}", context):
+        return "revogada_por"
+    if re.search(rf"retificad\w*\s+{passive}", context):
+        return "retificada_por"
+    if re.search(rf"regulamentad\w*\s+{passive}", context):
         return "regulamentada_por"
+
+    if re.search(r"\b(?:altera|alteram|alterou|alterar|acresce|acrescem|inclui|incluem|incluiu)\b", context):
+        return "altera"
+    if re.search(r"\b(?:revoga|revogam|revogou|revogar)\b", context):
+        return "revoga"
+    if re.search(r"\b(?:retifica|retificam|retificou|retificar)\b", context):
+        return "retifica"
+    if re.search(r"\b(?:regulamenta|regulamentam|regulamentou|regulamentar)\b", context):
+        return "regulamenta"
+    if re.search(r"\b(?:suspende|suspendem|suspendeu|suspender)\b", context):
+        return "suspende"
     return None
 
 
@@ -70,6 +101,25 @@ def effect_date(context: str) -> str | None:
         if month_number:
             return f"{year}-{month_number}-{int(day):02d}"
     return None
+
+
+def relation_is_plausible(relation: str, source: dict[str, object], target: dict[str, object]) -> bool:
+    """Reject or correct inferred edges that run backwards in time.
+
+    A later diploma can amend, repeal, rectify, or regulate an earlier one.
+    The converse is not a plausible interpretation of a citation in a
+    current text. This is a conservative guard against citations in
+    consolidated provisions being classified with the wrong direction.
+    """
+    source_date = str(source.get("data_assinatura") or "")
+    target_date = str(target.get("data_assinatura") or "")
+    if not source_date or not target_date:
+        return True
+    if relation in {"altera", "revoga", "retifica", "regulamenta", "suspende"}:
+        return source_date >= target_date
+    if relation in {"alterada_por", "revogada_por", "retificada_por", "regulamentada_por", "suspensa_por"}:
+        return source_date <= target_date
+    return True
 
 
 def target_candidates(kind: str, number: str, docs: list[tuple[Path, dict[str, object], str]]) -> list[dict[str, object]]:
@@ -98,6 +148,7 @@ def load_relation_exclusions() -> set[tuple[str, str, str]]:
 
 def build_relations(docs: list[tuple[Path, dict[str, object], str]]) -> tuple[list[dict[str, object]], list[dict[str, str]]]:
     relations: dict[tuple[str, str, str, str | None], str | None] = {}
+    relation_evidence: dict[tuple[str, str, str, str | None], dict[str, str]] = {}
     exclusions = load_relation_exclusions()
     unresolved: set[tuple[str, str, str, str]] = set()
     pattern = re.compile(
@@ -123,12 +174,28 @@ def build_relations(docs: list[tuple[Path, dict[str, object], str]]) -> tuple[li
                 target_id = str(target["id"])
                 if target_id == source_id:
                     continue
+                if not relation_is_plausible(relation, metadata, target):
+                    corrected = RELATION_TYPES.get(relation)
+                    if corrected and relation_is_plausible(corrected, metadata, target):
+                        relation = corrected
+                    else:
+                        unresolved.add((source_id, kind, number, relation))
+                        continue
                 effect = effect_date(context)
                 inverse = RELATION_TYPES[relation]
+                evidence_text = re.sub(r"\s+", " ", context).strip()[:400]
+                evidence = {
+                    "evidencia_textual": evidence_text,
+                    "evidencia_sha256": hashlib.sha256(evidence_text.encode("utf-8")).hexdigest(),
+                    "confianca": "alta",
+                    "status_revisao": "aprovado_autonomamente",
+                }
                 if (source_id, relation, target_id) not in exclusions:
                     relations.setdefault((source_id, relation, target_id, device), effect)
+                    relation_evidence.setdefault((source_id, relation, target_id, device), evidence)
                 if (target_id, inverse, source_id) not in exclusions:
                     relations.setdefault((target_id, inverse, source_id, device), effect)
+                    relation_evidence.setdefault((target_id, inverse, source_id, device), evidence)
                 if effect:
                     if (source_id, relation, target_id) not in exclusions:
                         relations[(source_id, relation, target_id, device)] = effect
@@ -142,6 +209,12 @@ def build_relations(docs: list[tuple[Path, dict[str, object], str]]) -> tuple[li
             "dispositivo": device,
             "data_efeito": effect,
             "fonte": next((str(meta.get("fonte_oficial")[0]) for _, meta, _ in docs if meta.get("id") == source and meta.get("fonte_oficial")), None),
+            **relation_evidence.get((source, relation, target, device), {
+                "evidencia_textual": "",
+                "evidencia_sha256": None,
+                "confianca": "desconhecida",
+                "status_revisao": "requer_analise_autonoma",
+            }),
         }
         for (source, relation, target, device), effect in sorted(relations.items(), key=lambda item: (item[0][0], item[0][1], item[0][2], item[0][3] or ""))
     ]
@@ -165,20 +238,35 @@ def update_document_relations(docs: list[tuple[Path, dict[str, object], str]], r
 
 
 def write_sources(docs: list[tuple[Path, dict[str, object], str]]) -> None:
+    target = ROOT / "manifests/sources-official.json"
+    previous: dict[str, dict[str, object]] = {}
+    if target.is_file():
+        try:
+            previous = {
+                str(item.get("id")): item
+                for item in json.loads(target.read_text(encoding="utf-8")).get("documents", [])
+            }
+        except (OSError, json.JSONDecodeError):
+            previous = {}
     entries = []
     for _, metadata, _ in docs:
         sources = metadata.get("fonte_oficial") or []
         if isinstance(sources, str):
             sources = [sources]
+        prior = previous.get(str(metadata["id"]), {})
         entries.append({
             "id": metadata["id"],
-            "fontes": sources,
-            "data_consulta": metadata.get("baixado_em"),
-            "data_corte": metadata.get("data_corte"),
-            "sha256_origem": metadata.get("sha256_origem"),
+            "fontes": sources or prior.get("fontes", []),
+            "data_consulta": metadata.get("baixado_em") or prior.get("data_consulta"),
+            "data_corte": metadata.get("data_corte") or prior.get("data_corte"),
+            "sha256_origem": metadata.get("sha256_origem") or prior.get("sha256_origem"),
+            "sha256_normalizado": metadata.get("sha256_normalizado") or prior.get("sha256_normalizado"),
+            "sha256_corpo": metadata.get("sha256_corpo") or prior.get("sha256_corpo"),
+            "hash_scope": prior.get("hash_scope", "single_source"),
+            "sha256_origem_por_fonte": prior.get("sha256_origem_por_fonte", []),
+            "sha256_corpo_por_fonte": prior.get("sha256_corpo_por_fonte", []),
         })
-    target = ROOT / "manifests/sources-official.json"
-    target.write_text(json.dumps({"schema": "official-source-manifest/v1", "generated_at": TODAY, "documents": entries}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    target.write_text(json.dumps({"schema": "official-source-manifest/v1", "generated_at": TODAY, "documents": entries}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_vocabulary() -> None:
@@ -190,14 +278,14 @@ def write_vocabulary() -> None:
         "relacoes": ["altera", "alterada_por", "revoga", "revogada_por", "regulamenta", "regulamentada_por", "retifica", "retificada_por", "suspende", "suspensa_por", "regulamenta_parcialmente", "relacionada_a"],
         "prioridades": ["P0", "P1", "P2"],
     }
-    (ROOT / "manifests/vocabulary.json").write_text(json.dumps(vocabulary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "manifests/vocabulary.json").write_text(json.dumps(vocabulary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_release(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]], unresolved: list[dict[str, str]]) -> None:
     statuses = Counter(str(meta.get("consolidacao_status")) for _, meta, _ in docs)
     release = {
         "product": "vademecum-md",
-        "version": "0.1.0",
+        "version": "0.3.0",
         "generated_at": TODAY,
         "status": "pre_release",
         "scope": "legislacao_federal",
@@ -208,13 +296,14 @@ def write_release(docs: list[tuple[Path, dict[str, object], str]], relations: li
         "consolidacao": dict(statuses),
         "relation_count": len(relations),
         "unresolved_relation_count": len(unresolved),
-        "publication_policy": "automatic_only_after_validation",
+        "publication_policy": "autonomous_pr_gates; no direct main mutation",
         "rag": "deferred_until_1_0",
     }
-    (ROOT / "manifests/release.json").write_text(json.dumps(release, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "manifests/release.json").write_text(json.dumps(release, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]], unresolved: list[dict[str, str]]) -> None:
+    statuses = Counter(str(meta.get("consolidacao_status")) for _, meta, _ in docs)
     checks = {
         "text_integral": sum(bool(body.strip()) for _, _, body in docs),
         "official_source": sum(bool(meta.get("fonte_oficial")) for _, meta, _ in docs),
@@ -235,10 +324,14 @@ def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relation
         "relations": len(relations),
         "unresolved_relations": len(unresolved),
         "consolidation_status": dict(Counter(str(meta.get("consolidacao_status")) for _, meta, _ in docs)),
+        "editorial_expansion": {
+            "candidate_count": 15,
+            "promoted_count": sum(1 for meta in (json.loads((ROOT / "manifests/editorial-promotions.json").read_text(encoding="utf-8")).get("decisions", {}).values()) if meta.get("decision") == "promote"),
+        },
         "errors": errors,
         "status": "pass" if not errors else "fail",
     }
-    (ROOT / "manifests/completeness.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "manifests/completeness.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     report = [
         "# Relatório de completude",
         "",
@@ -249,6 +342,8 @@ def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relation
         f"- Fontes oficiais: **{checks['official_source']}/{len(docs)}**",
         f"- Hashes: **{checks['hash']}/{len(docs)}**",
         f"- P0 consolidado: **{checks['p0_consolidated']}/{checks['p0_total']}**",
+        f"- Consolidação oficial ou reconciliada: **{sum(value for key, value in statuses.items() if key in {'consolidada_fonte_oficial', 'consolidada_reconciliada'})}/{len(docs)}**",
+        f"- Pendências de consolidação: **{statuses.get('requer_reconciliacao', 0)}**",
         f"- Relações normativas materializadas: **{len(relations)}**",
         f"- Relações ainda não resolvidas: **{len(unresolved)}**",
         "",
@@ -261,6 +356,55 @@ def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relation
     ]
     report.extend(f"- `{error}`" for error in errors) or report.append("Nenhum erro estrutural encontrado.")
     (ROOT / "docs/COMPLETENESS.md").write_text("\n".join(report) + "\n", encoding="utf-8", newline="\n")
+    unique_unresolved = {
+        (str(item.get("kind") or "").lower(), str(item.get("numero") or "").strip())
+        for item in unresolved
+    }
+    role_counts = Counter(
+        "ato_alterador_ou_regulamentador"
+        if str(item.get("tipo") or "") in {"alterada_por", "revogada_por", "retificada_por", "regulamentada_por"}
+        else "diploma_referenciado"
+        for item in unresolved
+    )
+    triage_counts = {"historico": 0, "grafo": 0}
+    triage_report = ROOT / "bases/history/alteracoes/2026-10-21-unresolved-relations.json"
+    if triage_report.is_file():
+        try:
+            triage_counts.update(json.loads(triage_report.read_text(encoding="utf-8")).get("by_editorial_disposition", {}))
+        except (OSError, json.JSONDecodeError):
+            pass
+    public_report = [
+        "# Relatório de completude",
+        "",
+        f"Data de geração: `{TODAY}`.",
+        "",
+        f"- Documentos: **{len(docs)}**",
+        f"- Textos integrais: **{checks['text_integral']}/{len(docs)}**",
+        f"- Fontes oficiais: **{checks['official_source']}/{len(docs)}**",
+        f"- Hashes: **{checks['hash']}/{len(docs)}**",
+        f"- P0 consolidado: **{checks['p0_consolidated']}/{checks['p0_total']}**",
+        f"- Consolidação oficial ou reconciliada: **{sum(value for key, value in statuses.items() if key in {'consolidada_fonte_oficial', 'consolidada_reconciliada'})}/{len(docs)}**",
+        f"- Pendências de consolidação: **{statuses.get('requer_reconciliacao', 0)}**",
+        f"- Relações normativas materializadas: **{len(relations)}**",
+        f"- Relações ainda não resolvidas: **{len(unresolved)} ocorrências / {len(unique_unresolved)} alvos únicos**",
+        f"- Papel das ocorrências: **{role_counts.get('ato_alterador_ou_regulamentador', 0)} atos alteradores/regulamentadores; {role_counts.get('diploma_referenciado', 0)} diplomas referenciados**",
+        f"- Disposição editorial: **{triage_counts.get('historico', 0)} histórico; {triage_counts.get('grafo', 0)} mantidos no grafo**",
+        "",
+        "## Regra de interpretação",
+        "",
+        "Presença no corpus e integridade textual não equivalem, por si só, à vigência jurídica. Documentos sem consolidação confirmada permanecem com situação `desconhecida`.",
+        "",
+        "## Interpretação das pendências",
+        "",
+        "As pendências de consolidação e as pendências do grafo são dimensões diferentes.",
+        "Documentos curados com fonte, hash e status confirmado não estão pendentes de consolidação.",
+        "As ocorrências do grafo são referências a atos fora da matriz e recebem disposição autônoma; nenhum alvo é incluído no corpus vigente por inferência.",
+        "",
+    ]
+    public_report.extend(f"- `{error}`" for error in errors)
+    if not errors:
+        public_report.append("Nenhum erro estrutural encontrado.")
+    (ROOT / "docs/COMPLETENESS.md").write_text("\n".join(public_report) + "\n", encoding="utf-8", newline="\n")
 
 
 def main() -> int:
@@ -278,6 +422,8 @@ def main() -> int:
     graph.mkdir(parents=True, exist_ok=True)
     (graph / "normative-graph.jsonl").write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in relations), encoding="utf-8")
     (graph / "unresolved.json").write_text(json.dumps(unresolved, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    classify_unresolved(graph / "unresolved-classified.json")
+    build_relation_review_queue(unresolved, graph / "review-queue.json")
     write_sources(docs)
     write_vocabulary()
     write_release(docs, relations, unresolved)

@@ -18,9 +18,9 @@ consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-10-03;3688"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "3ebf52cef9101b9a6c8e2575521e691ef10b6acffffc4ba417970aba7d656d37"
+sha256_origem: "918b32a603fd37150ec17e51e9b3331ad087b27e5a90966fedf12dc6b894bfd3"
 alterada_por: ["br-federal-lei_ordinaria-10741-2003"]
 revogada_por: []
 regulamentada_por: []
@@ -28,20 +28,16 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+sha256_normalizado: "918b32a603fd37150ec17e51e9b3331ad087b27e5a90966fedf12dc6b894bfd3"
+sha256_corpo: "73308858077814f292f8adccedf1f90bc25638848c2309e32ca3b67f5c24ad92"
 ---
-# Decreto-Lei nº 3.688 de 03/10/1941
-
-**DECRETO-LEI Nº 3.688, DE 3 DE OUTUBRO DE 1941**
-
-Lei das Contravenções Penais.
+# Lei das Contravencoes Penais
 
 O Presidente da República, usando das atribuições que lhe confere o artigo 180 da Constituição,
 
 DECRETA:
 
-LEI DAS CONTRAVENçõES PENAIS
-
-## PARTE GERAL — Aplicação das regras gerais do Código Penal
+Aplicação das regras gerais do Código Penal
 
 **Art. 1º** Aplicam-se às contravenções as regras gerais do Código Penal, sempre que a presente lei não disponha de modo diverso.
 
@@ -67,11 +63,11 @@ II - multa.
 
 Prisão simples
 
-**Art. 6º** A pena de prisão simples deve ser cumprida, sem rigor penitenciário, em estabelecimento especial ou seção especial de prisão comum, em regime semi-aberto ou aberto. *(“Caput” do artigo com redação dada pela Lei nº 6.416, de 24/5/1977)*
+**Art. 6º** A pena de prisão simples deve ser cumprida, sem rigor penitenciário, em estabelecimento especial ou seção especial de prisão comum, em regime semi-aberto ou aberto. (“Caput” do artigo com redação dada pela Lei nº 6.416, de 24/5/1977)
 
-**§ 1º** O condenado a pena de prisão simples fica sempre separado dos condenados a pena de reclusão ou de detenção.
+§ 1º O condenado a pena de prisão simples fica sempre separado dos condenados a pena de reclusão ou de detenção.
 
-**§ 2º** O trabalho é facultativo, se a pena aplicada não excede a quinze dias.
+§ 2º O trabalho é facultativo, se a pena aplicada não excede a quinze dias.
 
 Reincidência
 
@@ -85,7 +81,7 @@ Conversão da multa em prisão simples
 
 **Art. 9º** A multa converte-se em prisão simples, de acordo com o que dispõe o Código Penal sobre a conversão de multa em detenção.
 
-**Parágrafo único.** Se a multa é a única pena cominada, a conversão em prisão simples se faz entre os limites de quinze dias e três meses.
+Parágrafo único. Se a multa é a única pena cominada, a conversão em prisão simples se faz entre os limites de quinze dias e três meses.
 
 Limites das penas
 
@@ -93,7 +89,7 @@ Limites das penas
 
 Suspensão condicional da pena de prisão simples
 
-**Art. 11.** Desde que reunidas as condições legais, o juiz pode suspender por tempo não inferior a um ano nem superior a três, a execução da pena de prisão simples, bem como conceder livramento condicional. *(Artigo com redação dada pela Lei nº 6.416, de 24/5/1977)*
+**Art. 11.** Desde que reunidas as condições legais, o juiz pode suspender por tempo não inferior a um ano nem superior a três, a execução da pena de prisão simples, bem como conceder livramento condicional. (Artigo com redação dada pela Lei nº 6.416, de 24/5/1977)
 
 Penas acessórias
 
@@ -103,7 +99,7 @@ I - a incapacidade temporária para profissão ou atividade, cujo exercício dep
 
 II - a suspensão dos direitos políticos.
 
-**Parágrafo único.** Incorrem:
+Parágrafo único. Incorrem:
 
 a) na interdição sob nº I, por um mês a dois anos, o condenado por motivo de contravenção cometida com abuso de profissão ou atividade ou com infração de dever a ela inerente;
 
@@ -121,9 +117,9 @@ I - o condenado por motivo de contravenção cometida em estado de embriaguez pe
 
 II - o condenado por vadiagem ou mendicância;
 
-III - *(Revogado pela Lei nº 6.416, de 24/5/1977)*
+III - (Revogado pela Lei nº 6.416, de 24/5/1977)
 
-IV - *(Revogado pela Lei nº 6.416, de 24/5/1977)*
+IV - (Revogado pela Lei nº 6.416, de 24/5/1977)
 
 Internação em colônia agrícola ou em instituto de trabalho, de reeducação ou de ensino profissional
 
@@ -133,23 +129,23 @@ I - o condenado por vadiagem (art. 59);
 
 II - o condenado por mendicância (art. 60 e seu parágrafo);
 
-III - *(Revogado pela Lei nº 6.416, de 24/5/1977)*
+III - (Revogado pela Lei nº 6.416, de 24/5/1977)
 
 Internação em manicômio judiciário ou em casa de custódia e tratamento
 
 **Art. 16.** O prazo mínimo de duração da internação em manicômio judiciário ou em casa de custódia e tratamento é de seis meses.
 
-**Parágrafo único.** O juiz, entretanto, pode, ao invés de decretar a internação, submeter o indivíduo a liberdade vigiada.
+Parágrafo único. O juiz, entretanto, pode, ao invés de decretar a internação, submeter o indivíduo a liberdade vigiada.
 
 Ação penal
 
 **Art. 17.** A ação penal é pública, devendo a autoridade proceder de ofício.
 
-## PARTE ESPECIAL
+#### CAPÍTULO I
 
-#### CAPÍTULO I — DAS CONTRAVENÇÕES REFERENTES À PESSOA
+### DAS CONTRAVENÇÕES REFERENTES À PESSOA
 
-**Fabrico, comércio, ou detenção de armas ou munição**
+Fabrico, comércio, ou detenção de armas ou munição
 
 **Art. 18.** Fabricar, importar, exportar, ter em depósito ou vender, sem permissão da autoridade, arma ou munição:
 
@@ -161,9 +157,9 @@ Porte de arma
 
 Pena - prisão simples, de quinze dias a seis meses, ou multa, de duzentos mil réis a três contos de réis, ou ambas cumulativamente.
 
-**§ 1º** A pena é aumentada de um terço até metade, se o agente já foi condenado, em sentença irrecorrível, por violência contra pessoa.
+§ 1º A pena é aumentada de um terço até metade, se o agente já foi condenado, em sentença irrecorrível, por violência contra pessoa.
 
-**§ 2º** Incorre na pena de prisão simples, de quinze dias a três meses, ou multa, de duzentos mil réis a um conto de réis, quem, possuindo arma ou munição:
+§ 2º Incorre na pena de prisão simples, de quinze dias a três meses, ou multa, de duzentos mil réis a um conto de réis, quem, possuindo arma ou munição:
 
 a) deixa de fazer comunicação ou entrega à autoridade, quando a lei o determina;
 
@@ -175,7 +171,7 @@ Anúncio de meio abortivo ou anticoncepcional
 
 **Art. 20.** Anunciar processo, substância ou objeto destinado a provocar aborto:
 
-Pena - multa de hum mil cruzeiros a dez mil cruzeiros. *(Artigo com redação dada pela Lei nº 6.734, de 4/12/1979)*
+Pena - multa de hum mil cruzeiros a dez mil cruzeiros. (Artigo com redação dada pela Lei nº 6.734, de 4/12/1979)
 
 Vias de fato
 
@@ -183,9 +179,9 @@ Vias de fato
 
 Pena - prisão simples, de quinze dias a três meses, ou multa, de cem mil réis a um conto de réis, se o fato não constitue crime.
 
-**§ 1º** Aumenta-se a pena de 1/3 (um terço) até a metade se a vítima é maior de 60 (sessenta) anos. *(Parágrafo único acrescido pela Lei nº 10.741, de 1º/10/2003, publicada no DOU de 3/10/2003, em vigor 90 dias após a publicação,* *e transformado em §1º pela Lei nº 14.994, de 9/10/2024)*
+§ 1º Aumenta-se a pena de 1/3 (um terço) até a metade se a vítima é maior de 60 (sessenta) anos. (Parágrafo único acrescido pela Lei nº 10.741, de 1º/10/2003, publicada no DOU de 3/10/2003, em vigor 90 dias após a publicação, e transformado em §1º pela Lei nº 14.994, de 9/10/2024)
 
-**§ 2º** Se a contravenção é praticada contra a mulher por razões da condição do sexo feminino, nos termos do § 1º do art. 121-A do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), aplica-se a pena em triplo. *(Parágrafo acrescido pela Lei nº 14.994, de 9/10/2024)*
+§ 2º Se a contravenção é praticada contra a mulher por razões da condição do sexo feminino, nos termos do § 1º do art. 121-A do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), aplica-se a pena em triplo. (Parágrafo acrescido pela Lei nº 14.994, de 9/10/2024)
 
 Internação irregular em estabelecimento psiquiátrico
 
@@ -193,9 +189,9 @@ Internação irregular em estabelecimento psiquiátrico
 
 Pena - multa, de trezentos mil réis a três contos de réis.
 
-**§ 1º** Aplica-se a mesma pena a quem deixa de comunicar à autoridade competente, no prazo legal, internação que tenha admitido, por motivo de urgência, sem as formalidades legais.
+§ 1º Aplica-se a mesma pena a quem deixa de comunicar à autoridade competente, no prazo legal, internação que tenha admitido, por motivo de urgência, sem as formalidades legais.
 
-**§ 2º** Incorre na pena de prisão simples, de quinze dias a três meses, ou multa de quinhentos mil réis a cinco contos de réis, aquele que, sem observar as prescrições legais, deixa retirar-se ou despede de estabelecimento psiquiátrico pessoa nele internada.
+§ 2º Incorre na pena de prisão simples, de quinze dias a três meses, ou multa de quinhentos mil réis a cinco contos de réis, aquele que, sem observar as prescrições legais, deixa retirar-se ou despede de estabelecimento psiquiátrico pessoa nele internada.
 
 Indevida custódia de doente mental
 
@@ -203,7 +199,9 @@ Indevida custódia de doente mental
 
 Pena - prisão simples, de quinze dias a três meses, ou multa, de quinhentos mil réis a cinco contos de réis.
 
-#### CAPÍTULO II — DAS CONTRAVENÇÕES REFERENTES AO PATRIMÔNIO
+#### CAPÍTULO II
+
+### DAS CONTRAVENÇÕES REFERENTES AO PATRIMÔNIO
 
 Instrumento de emprego usual na prática de furto
 
@@ -227,15 +225,15 @@ Exploração da credulidade pública
 
 **Art. 27.** (Revogado pela Lei nº 9.521, de 27/11/1997)
 
-#### CAPÍTULO III — DAS CONTRAVENÇÕES REFERENTES À INCOLUMIDADE PÚBLICA
+#### CAPÍTULO III
 
-**Disparo de arma de fogo**
+### DAS CONTRAVENÇÕES REFERENTES À INCOLUMIDADE PÚBLICA
 
 **Art. 28.** Disparar arma de fogo em lugar habitado ou em suas adjacências, em via pública ou em direção a ela:
 
 Pena - prisão simples, de um a seis meses, ou multa, de trezentos mil réis a três contos de réis.
 
-**Parágrafo único.** Incorre na pena de prisão simples, de quinze dias a dois meses, ou multa, de duzentos mil réis a dois contos de réis, quem, em lugar habitado ou em suas adjacências, em via pública ou em direção a ela, sem licença da autoridade, causa deflagração perigosa, queima fogo de artifício ou solta balão aceso.
+Parágrafo único. Incorre na pena de prisão simples, de quinze dias a dois meses, ou multa, de duzentos mil réis a dois contos de réis, quem, em lugar habitado ou em suas adjacências, em via pública ou em direção a ela, sem licença da autoridade, causa deflagração perigosa, queima fogo de artifício ou solta balão aceso.
 
 Desabamento de construção
 
@@ -255,7 +253,7 @@ Omissão de cautela na guarda ou condução de animais
 
 Pena - prisão simples, de dez dias a dois meses, ou multa, de cem mil réis a um conto de réis.
 
-**Parágrafo único.** Incorre na mesma pena quem:
+Parágrafo único. Incorre na mesma pena quem:
 
 a) na via pública, abandona animal de tiro, carga ou corrida, ou o confia à pessoa inexperiente;
 
@@ -293,7 +291,7 @@ Sinais de perigo
 
 Pena - prisão simples, de dez dias a dois meses, ou multa, de duzentos mil réis a dois contos de réis.
 
-**Parágrafo único.** Incorre na mesma pena quem:
+Parágrafo único. Incorre na mesma pena quem:
 
 a) apaga sinal luminoso, destrói ou remove sinal de outra natureza ou obstáculo destinado a evitar perigo a transeuntes;
 
@@ -305,7 +303,7 @@ Arremesso ou colocação perigosa
 
 Pena - multa, de duzentos mil réis a dois contos de réis.
 
-**Parágrafo único.** Na mesma pena incorre aquele que, sem as devidas cautelas, coloca ou deixa suspensa coisa que, caindo em via pública ou em lugar de uso comum ou de uso alheio, possa ofender, sujar ou molestar alguém.
+Parágrafo único. Na mesma pena incorre aquele que, sem as devidas cautelas, coloca ou deixa suspensa coisa que, caindo em via pública ou em lugar de uso comum ou de uso alheio, possa ofender, sujar ou molestar alguém.
 
 Emissão de fumaça, vapor ou gás
 
@@ -313,11 +311,11 @@ Emissão de fumaça, vapor ou gás
 
 Pena - multa, de duzentos mil réis a dois contos de réis.
 
-#### CAPíTULO IV — DAS CONTRAVENÇÕES REFERENTES À PAZ PÚBLICA
+### DAS CONTRAVENÇÕES REFERENTES À PAZ PÚBLICA
 
-**Associação secreta**
+Associação secreta
 
-**Art. 39.** *(Revogado pela Lei nº 14.197, de 1º/9/2021, publicada no DOU de 2/9/2021, em vigor 90 dias após a publicação)*
+**Art. 39.** (Revogado pela Lei nº 14.197, de 1º/9/2021, publicada no DOU de 2/9/2021, em vigor 90 dias após a publicação)
 
 Provocação de tumulto. Conduta inconveniente
 
@@ -345,9 +343,11 @@ IV - provocando ou não procurando impedir barulho produzido por animal de que t
 
 Pena - prisão simples, de quinze dias a três meses, ou multa, de duzentos mil réis a dois contos de réis.
 
-#### CAPÍTULO V — DAS CONTRAVENÇÕES REFERENTES À FÉ PÚBLICA
+#### CAPÍTULO V
 
-**Recusa de moeda de curso legal**
+### DAS CONTRAVENÇÕES REFERENTES À FÉ PÚBLICA
+
+Recusa de moeda de curso legal
 
 **Art. 43.** Recusar-se a receber, pelo seu valor, moeda de curso legal no país:
 
@@ -369,11 +369,11 @@ Uso ilegítimo de uniforme ou distintivo
 
 **Art. 46.** Usar, publicamente, de uniforme, ou distintivo de função pública que não exerce; usar, indevidamente, de sinal, distintivo ou denominação cujo emprego seja regulado por lei.
 
-Pena - multa, de duzentos a dois mil cruzeiros, se o fato não constitui infração penal mais grave. *(Artigo com redação dada pelo Decreto-Lei nº 6.916, de 2/10/1944)*
+Pena - multa, de duzentos a dois mil cruzeiros, se o fato não constitui infração penal mais grave. (Artigo com redação dada pelo Decreto-Lei nº 6.916, de 2/10/1944)
 
-#### CAPÍTULO VI — DAS CONTRAVENÇÕES RELATIVAS À ORGANIZAÇÃO DO TRABALHO
+#### CAPÍTULO VI
 
-**Exercício ilegal de profissão ou atividade**
+Exercício ilegal de profissão ou atividade
 
 **Art. 47.** Exercer profissão ou atividade econômica ou anunciar que a exerce, sem preencher as condições a que por lei está subordinado o seu exercício:
 
@@ -391,19 +391,21 @@ Matrícula ou escrituração de indústria e profissão
 
 Pena - multa, de duzentos mil réis a cinco contos de réis.
 
-#### CAPÍTULO VII — DAS CONTRAVENÇÕES RELATIVAS À POLÍCIA DE COSTUMES
+#### CAPÍTULO VII
 
-**Jogo de azar**
+### DAS CONTRAVENÇÕES RELATIVAS À POLÍCIA DE COSTUMES
+
+Jogo de azar
 
 **Art. 50.** Estabelecer ou explorar jogo de azar em lugar público ou acessível ao público, mediante o pagamento de entrada ou sem ele:
 
 Pena - prisão simples, de três meses a um ano, e multa, de dois a quinze contos de réis, estendendo-se os efeitos da condenação à perda dos móveis e objetos de decoração do local.
 
-**§ 1º** A pena é aumentada de um terço, se existe entre os empregados ou participa do jogo pessoa menor de dezoito anos.
+§ 1º A pena é aumentada de um terço, se existe entre os empregados ou participa do jogo pessoa menor de dezoito anos.
 
-**§ 2º** Incorre na pena de multa, de R$ 2.000,00 (dois mil reais) a R$ 200.000,00 (duzentos mil reais), quem é encontrado a participar do jogo, ainda que pela internet ou por qualquer outro meio de comunicação, como ponteiro ou apostador. *(Parágrafo com redação dada pela Lei nº 13.155, de 4/8/2015)*
+§ 2º Incorre na pena de multa, de R$ 2.000,00 (dois mil reais) a R$ 200.000,00 (duzentos mil reais), quem é encontrado a participar do jogo, ainda que pela internet ou por qualquer outro meio de comunicação, como ponteiro ou apostador. (Parágrafo com redação dada pela Lei nº 13.155, de 4/8/2015)
 
-**§ 3º** Consideram-se jogos de azar:
+§ 3º Consideram-se jogos de azar:
 
 a) o jogo em que o ganho e a perda dependem exclusiva ou principalmente da sorte;
 
@@ -411,7 +413,7 @@ b) as apostas sobre corrida de cavalos fora de hipódromo ou de local onde sejam
 
 c) as apostas sobre qualquer outra competição esportiva.
 
-**§ 4º** Equiparam-se, para os efeitos penais, a lugar acessível ao público:
+§ 4º Equiparam-se, para os efeitos penais, a lugar acessível ao público:
 
 a) a casa particular em que se realizam jogos de azar, quando deles habitualmente participam pessoas que não sejam da família de quem a ocupa;
 
@@ -419,7 +421,7 @@ b) o hotel ou casa de habitação coletiva, a cujos hóspedes e moradores se pro
 
 c) a sede ou dependência de sociedade ou associação, em que se realiza jogo de azar;
 
-d) o estabelecimento destinado à exploração de jogo de azar, ainda que se dissimule esse destino. *(Artigo com vigência restaurada pelo Decreto-Lei nº 9.215, de 30/4/1946)*
+d) o estabelecimento destinado à exploração de jogo de azar, ainda que se dissimule esse destino. (Artigo com vigência restaurada pelo Decreto-Lei nº 9.215, de 30/4/1946)
 
 Loteria não autorizada
 
@@ -427,11 +429,11 @@ Loteria não autorizada
 
 Pena - prisão simples, de seis meses a dois anos, e multa, de cinco a dez contos de réis, estendendo-se os efeitos da condenação à perda dos móveis existentes no local.
 
-**§ 1º** Incorre na mesma pena quem guarda, vende ou expõe à venda, tem sob sua guarda para o fim de venda, introduz ou tenta introduzir na circulação bilhete de loteria não autorizada.
+§ 1º Incorre na mesma pena quem guarda, vende ou expõe à venda, tem sob sua guarda para o fim de venda, introduz ou tenta introduzir na circulação bilhete de loteria não autorizada.
 
-**§ 2º** Considera-se loteria toda operação que, mediante a distribuição de bilhete, listas, cupões, vales, sinais, símbolos ou meios análogos, faz depender de sorteio a obtenção de prêmio em dinheiro ou bens de outra natureza.
+§ 2º Considera-se loteria toda operação que, mediante a distribuição de bilhete, listas, cupões, vales, sinais, símbolos ou meios análogos, faz depender de sorteio a obtenção de prêmio em dinheiro ou bens de outra natureza.
 
-**§ 3º** Não se compreendem na definição do parágrafo anterior os sorteios autorizados na legislação especial.
+§ 3º Não se compreendem na definição do parágrafo anterior os sorteios autorizados na legislação especial.
 
 Loteria estrangeira
 
@@ -439,7 +441,7 @@ Loteria estrangeira
 
 Pena - prisão simples, de quatro meses a um ano, e multa, de um a cinco contos de réis.
 
-**Parágrafo único.** Incorre na mesma pena quem vende, expõe à venda, tem sob sua guarda, para o fim de venda, introduz ou tenta introduzir na circulação, bilhete de loteria estrangeira.
+Parágrafo único. Incorre na mesma pena quem vende, expõe à venda, tem sob sua guarda, para o fim de venda, introduz ou tenta introduzir na circulação, bilhete de loteria estrangeira.
 
 Loteria estadual
 
@@ -447,7 +449,7 @@ Loteria estadual
 
 Pena - prisão simples, de dois a seis meses, e multa, de um a três contos de réis.
 
-**Parágrafo único.** Incorre na mesma pena quem vende, expõe à venda, tem sob sua guarda, para o fim de venda, introduz ou tenta introduzir na circulação, bilhete de loteria estadual, em território onde não possa legalmente circular.
+Parágrafo único. Incorre na mesma pena quem vende, expõe à venda, tem sob sua guarda, para o fim de venda, introduz ou tenta introduzir na circulação, bilhete de loteria estadual, em território onde não possa legalmente circular.
 
 Exibição ou guarda de lista de sorteio
 
@@ -455,7 +457,7 @@ Exibição ou guarda de lista de sorteio
 
 Pena - prisão simples, de um a três meses, e multa, de duzentos mil réis a um conto de réis.
 
-**Parágrafo único.** Incorre na mesma pena quem exibe ou tem sob sua guarda lista de sorteio de loteria estadual, em território onde esta não possa legalmente circular.
+Parágrafo único. Incorre na mesma pena quem exibe ou tem sob sua guarda lista de sorteio de loteria estadual, em território onde esta não possa legalmente circular.
 
 Impressão de bilhetes, lista ou anúncios
 
@@ -481,7 +483,7 @@ Jogo do bicho
 
 Pena - prisão simples, de quatro meses a um ano, e multa, de dois a vinte contos de réis.
 
-**Parágrafo único.** Incorre na pena de multa, de duzentos mil réis a dois contos de réis, aquele que participa da loteria, visando a obtenção de prêmio, para si ou para terceiro.
+Parágrafo único. Incorre na pena de multa, de duzentos mil réis a dois contos de réis, aquele que participa da loteria, visando a obtenção de prêmio, para si ou para terceiro.
 
 Vadiagem
 
@@ -489,15 +491,15 @@ Vadiagem
 
 Pena - prisão simples, de quinze dias a três meses.
 
-**Parágrafo único.** A aquisição superveniente de renda, que assegure ao condenado meios bastantes de subsistência, extingue a pena.
+Parágrafo único. A aquisição superveniente de renda, que assegure ao condenado meios bastantes de subsistência, extingue a pena.
 
 Mendicância
 
-**Art. 60.** *(Revogado pela Lei nº 11.983, de 16/7/2009)*
+**Art. 60.** (Revogado pela Lei nº 11.983, de 16/7/2009)
 
 Importunação ofensiva ao pudor
 
-**Art. 61.** *(Revogado pela Lei nº 13.718, de 24/9/2018)*
+**Art. 61.** (Revogado pela Lei nº 13.718, de 24/9/2018)
 
 Embriaguez
 
@@ -505,13 +507,13 @@ Embriaguez
 
 Pena - prisão simples, de quinze dias a três meses, ou multa, de duzentos mil réis a dois contos de réis.
 
-**Parágrafo único.** Se habitual a embriaguez, o contraventor é internado em casa de custódia e tratamento.
+Parágrafo único. Se habitual a embriaguez, o contraventor é internado em casa de custódia e tratamento.
 
 Bebidas alcoólicas
 
 **Art. 63.** Servir bebidas alcoólicas:
 
-I - *(Revogado pela Lei nº 13.106, de 17/3/2015)*
+I - (Revogado pela Lei nº 13.106, de 17/3/2015)
 
 II - a quem se acha em estado de embriaguez;
 
@@ -527,17 +529,19 @@ Crueldade contra animais
 
 Pena - prisão simples, de dez dias a um mês, ou multa, de cem a quinhentos mil réis.
 
-**§ 1º** Na mesma pena incorre aquele que, embora para fins didáticos ou científicos, realiza em lugar público ou exposto ao público, experiência dolorosa ou cruel em animal vivo.
+§ 1º Na mesma pena incorre aquele que, embora para fins didáticos ou científicos, realiza em lugar público ou exposto ao público, experiência dolorosa ou cruel em animal vivo.
 
-**§ 2º** Aplica-se a pena com aumento de metade, se o animal é submetido a trabalho excessivo ou tratado com crueldade, em exibição ou espetáculo público.
+§ 2º Aplica-se a pena com aumento de metade, se o animal é submetido a trabalho excessivo ou tratado com crueldade, em exibição ou espetáculo público.
 
 Perturbação da tranquilidade
 
-**Art. 65.** *(Revogado pela Lei nº 14.132, de 31/3/2021)*
+**Art. 65.** (Revogado pela Lei nº 14.132, de 31/3/2021)
 
-#### CAPÍTULO VIII — DAS CONTRAVENÇÕES REFERENTES À ADMINISTRAÇÃO PÚBLICA
+#### CAPÍTULO VIII
 
-**Omissão de comunicação de crime**
+### DAS CONTRAVENÇÕES REFERENTES À ADMINISTRAÇÃO PÚBLICA
+
+Omissão de comunicação de crime
 
 **Art. 66.** Deixar de comunicar à autoridade competente:
 
@@ -559,11 +563,11 @@ Recusa de dados sobre a própria identidade ou qualificação
 
 Pena - multa, de duzentos mil réis a dois contos de réis.
 
-**Parágrafo único.** Incorre na pena de prisão simples, de um a seis meses, e multa, de duzentos mil réis a dois contos de réis, se o fato não constitui infração penal mais grave, quem, nas mesmas circunstâncias, faz declarações inverídicas a respeito de sua identidade pessoal, estado, profissão, domicílio e residência.
+Parágrafo único. Incorre na pena de prisão simples, de um a seis meses, e multa, de duzentos mil réis a dois contos de réis, se o fato não constitui infração penal mais grave, quem, nas mesmas circunstâncias, faz declarações inverídicas a respeito de sua identidade pessoal, estado, profissão, domicílio e residência.
 
 Proibição de atividade remunerada a estrangeiro
 
-**Art. 69.** *(Revogado pela Lei nº 6.815, de 19/8/1980)*
+**Art. 69.** (Revogado pela Lei nº 6.815, de 19/8/1980)
 
 Violação do privilégio postal da União
 
@@ -571,14 +575,12 @@ Violação do privilégio postal da União
 
 Pena - prisão simples, de três meses a um ano, ou multa, de três a dez contos de réis, ou ambas cumulativamente.
 
-DISPOSIÇÕES FINAIS
-
 **Art. 71.** Ressalvada a legislação especial sobre florestas, caça e pesca, revogam-se as disposições em contrário.
 
 **Art. 72.** Esta lei entrará em vigor no dia 1º de janeiro de 1942.
 
 Rio de Janeiro, 3 de outubro de 1941; 120º da Independência e 53º da República.
 
-GETULIO VARGAS.
+### GETULIO VARGAS.
 
 Francisco Campos.

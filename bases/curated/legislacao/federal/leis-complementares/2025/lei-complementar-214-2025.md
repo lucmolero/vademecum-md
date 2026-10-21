@@ -20,15 +20,19 @@ fonte_oficial: ["https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.
 fonte_publicacao: []
 origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "eeb810c7ca20490a43ca468174fcd48a28653e328ceef731e87c7204a0d13589"
+sha256_origem: "8cb546df63286749d9b53ce3eb6511af79d908132187071c9d87df7030d6a595"
 alterada_por: ["br-federal-lei_complementar-227-2026"]
-revogada_por: ["br-federal-lei_complementar-123-2006", "br-federal-lei_complementar-227-2026"]
-regulamentada_por: ["br-federal-lei_ordinaria-9784-1999"]
-retificada_por: ["br-federal-lei_complementar-227-2026"]
+revogada_por: ["br-federal-lei_complementar-227-2026"]
+regulamentada_por: []
+retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto consolidado conforme página oficial compilada do Planalto, consultada em 2026-10-21.", "A Lei Complementar nº 227, de 2026, foi identificada como alteração relacionada e será detalhada no grafo normativo."]
 camada: "core_codigos"
+sha256_normalizado: "ac74d5b0ef0bdc9248791d92b5275ed6862d6c7f4c23e6e5322535ad4c53f9e6"
+sha256_corpo: "1c4ea9b92e95faf9b179f1fba1025a01093825d2d9cafcc963759adc25100545"
 ---
+# Lei Complementar nº 214, de 16 de janeiro de 2025
+
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei Complementar:
 
 ## LIVRO I

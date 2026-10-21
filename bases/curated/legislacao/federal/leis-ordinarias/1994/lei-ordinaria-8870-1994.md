@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "15e36788320089287bdadb5f0b97aa877efba0803e1621e4ea531579a2127888"
-alterada_por: ["br-federal-lei_ordinaria-13606-2018", "br-federal-lei_ordinaria-8212-1991"]
+alterada_por: ["br-federal-lei_ordinaria-13606-2018"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

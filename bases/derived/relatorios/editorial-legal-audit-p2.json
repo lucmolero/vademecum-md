@@ -1,0 +1,328 @@
+{
+  "schema": "editorial-legal-audit/v1",
+  "generated_at": "2026-10-21",
+  "scope": "6 curated documents from the supplied official-source report",
+  "method": "official current-source retrieval plus deterministic identity, integrity and legal-body hash checks",
+  "authority_policy": "only official public sources are used as textual authority",
+  "document_count": 6,
+  "approved_count": 6,
+  "reconciliation_count": 0,
+  "source_status": {
+    "unchanged": 6
+  },
+  "situation_results": {
+    "diploma_em_vigor_com_alteracoes_preservadas": 6
+  },
+  "errors": [],
+  "status": "pass",
+  "documents": [
+    {
+      "document_id": "br-federal-lei_ordinaria-13022-2014",
+      "matrix_id": "VM-040",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2014/lei-ordinaria-13022-2014.md",
+      "titulo": "Lei nº 13.022 de 08/08/2014",
+      "tipo": "lei_ordinaria",
+      "numero": "13022",
+      "ano": 2014,
+      "prioridade": "P2",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2014-08-08;13022",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2014-08-08;13022",
+      "hash_sha256_corpo_local": "dadc3cc5c72d63f7dc7c3e7a11d216eed1de957d181d60fbd96a76af9f1dbdc9",
+      "hash_sha256_corpo_observado": "dadc3cc5c72d63f7dc7c3e7a11d216eed1de957d181d60fbd96a76af9f1dbdc9",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-13089-2015",
+      "matrix_id": "VM-041",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2015/lei-ordinaria-13089-2015.md",
+      "titulo": "Estatuto da Metropole",
+      "tipo": "lei_ordinaria",
+      "numero": "13089",
+      "ano": 2015,
+      "prioridade": "P2",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-01-12;13089",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-01-12;13089",
+      "hash_sha256_corpo_local": "6b2dd08d581ffa7c5e4dbcc62ac78164d0efee5e7e604f1a8c297dfbf9446b20",
+      "hash_sha256_corpo_observado": "6b2dd08d581ffa7c5e4dbcc62ac78164d0efee5e7e604f1a8c297dfbf9446b20",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "14.026"
+      ],
+      "relacoes_no_grafo": 2,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-6880-1980",
+      "matrix_id": "VM-043",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1980/lei-ordinaria-6880-1980.md",
+      "titulo": "Estatuto dos Militares",
+      "tipo": "lei_ordinaria",
+      "numero": "6880",
+      "ano": 1980,
+      "prioridade": "P2",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1980-12-09;6880",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1980-12-09;6880",
+      "hash_sha256_corpo_local": "6a199086f04742425d5cc4545fde57ea3f4216658561bfd465521c9e769ea451",
+      "hash_sha256_corpo_observado": "6a199086f04742425d5cc4545fde57ea3f4216658561bfd465521c9e769ea451",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-4717-1965",
+      "matrix_id": "VM-057",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1965/lei-ordinaria-4717-1965.md",
+      "titulo": "Lei da Acao Popular",
+      "tipo": "lei_ordinaria",
+      "numero": "4717",
+      "ano": 1965,
+      "prioridade": "P2",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-06-29;4717",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-06-29;4717",
+      "hash_sha256_corpo_local": "30ee7a451c53030e89806473fe09cb0b1509c289b3f70bacd230eccb6cfc6b13",
+      "hash_sha256_corpo_observado": "30ee7a451c53030e89806473fe09cb0b1509c289b3f70bacd230eccb6cfc6b13",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-4595-1964",
+      "matrix_id": "VM-063",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1964/lei-ordinaria-4595-1964.md",
+      "titulo": "Lei do Sistema Financeiro Nacional",
+      "tipo": "lei_ordinaria",
+      "numero": "4595",
+      "ano": 1964,
+      "prioridade": "P2",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1964-12-31;4595",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1964-12-31;4595",
+      "hash_sha256_corpo_local": "02445080d4fcf8e3e99e54be5483789749c7af6f468c4de2d64823a8f397aaa8",
+      "hash_sha256_corpo_observado": "02445080d4fcf8e3e99e54be5483789749c7af6f468c4de2d64823a8f397aaa8",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 18,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-13445-2017",
+      "matrix_id": "VM-064",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2017/lei-ordinaria-13445-2017.md",
+      "titulo": "Lei nº 13.445 de 24/05/2017",
+      "tipo": "lei_ordinaria",
+      "numero": "13445",
+      "ano": 2017,
+      "prioridade": "P2",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-05-24;13445",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-05-24;13445",
+      "hash_sha256_corpo_local": "c06f91a4db5240931c37913d4d599e6eb735e09cdab5dba43d97b6c7ee7915b8",
+      "hash_sha256_corpo_observado": "c06f91a4db5240931c37913d4d599e6eb735e09cdab5dba43d97b6c7ee7915b8",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 2,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    }
+  ]
+}

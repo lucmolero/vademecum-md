@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "df276b67e87ecc251fdd7477b1a6672ebbea68d6d4aa5945dea2ff73527e14c3"
-alterada_por: ["br-federal-lei_complementar-151-2015"]
+alterada_por: ["br-federal-lei_complementar-151-2015", "br-federal-lei_complementar-178-2021"]
 revogada_por: ["br-federal-lei_complementar-178-2021"]
 regulamentada_por: []
 retificada_por: []

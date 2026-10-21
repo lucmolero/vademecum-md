@@ -21,8 +21,8 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "988eb8ebbea0a4d516c9385d25983114ae07f3f90ab75022572926cda3aa0642"
-alterada_por: ["br-federal-lei_complementar-147-2014", "br-federal-lei_ordinaria-13874-2019"]
-revogada_por: []
+alterada_por: ["br-federal-lei_complementar-147-2014", "br-federal-lei_ordinaria-13874-2019", "br-federal-lei_ordinaria-14195-2021"]
+revogada_por: ["br-federal-lei_ordinaria-14195-2021"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

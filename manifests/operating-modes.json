@@ -1,0 +1,13 @@
+{
+  "schema": "pipeline-operating-modes/v1",
+  "default_mode": "dry_run",
+  "decision_authority": "autonomous_legal_agent",
+  "deterministic_gate_authority": "release_validators",
+  "modes": {
+    "dry_run": {"network": false, "writes_private_evidence": false, "mutates_curated_corpus": false, "creates_pull_request": false, "publishes_release": false},
+    "proposal": {"network": true, "writes_private_evidence": true, "mutates_curated_corpus": false, "creates_pull_request": true, "publishes_release": false},
+    "apply_reviewed": {"network": false, "writes_private_evidence": false, "mutates_curated_corpus": true, "creates_pull_request": false, "publishes_release": false, "approval_source": "autonomous_legal_agent_with_official_evidence"},
+    "release": {"network": false, "writes_private_evidence": false, "mutates_curated_corpus": false, "creates_pull_request": false, "publishes_release": true, "requires": ["baseline_pass", "release_gates_pass", "matrix_synchronized", "normative_graph_audited"]}
+  },
+  "policy": {"no_direct_main_mutation": true, "no_human_content_decision_required": true, "official_sources_only": true, "ambiguous_text_never_invented": true}
+}

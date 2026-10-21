@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "34dfb1dd378857db0aadb0205ce2a0b881760d1cba234b2798e81c3a5484decf"
-alterada_por: []
+alterada_por: ["br-federal-lei_ordinaria-9514-1997"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

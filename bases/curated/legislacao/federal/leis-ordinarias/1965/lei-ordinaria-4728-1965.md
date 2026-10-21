@@ -21,8 +21,8 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "4af54475db48e105d5723236f94024edd29926eb19cf168988c9c721f2ff9ed6"
-alterada_por: ["br-federal-lei_ordinaria-10931-2004"]
-revogada_por: ["br-federal-lei_ordinaria-10931-2004", "br-federal-lei_ordinaria-13506-2017"]
+alterada_por: ["br-federal-lei_ordinaria-10931-2004", "br-federal-lei_ordinaria-14286-2021"]
+revogada_por: ["br-federal-lei_ordinaria-13506-2017", "br-federal-lei_ordinaria-14286-2021"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

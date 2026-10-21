@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "media"
 data_assinatura: "1995-02-07"
 ementa: "Estende a competência da Justiça do Trabalho (art. 114 da Constituição Federal)."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-02-07;8984"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "91e529636da10bf0d9eb525d3b7e7d68a7fee9188c62c310b92ccb597d0f8042"
+sha256_origem: "ed75263796bc09699d680d30400c51c92cca74804305ff8b7d3e2b35fdc3eaf6"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,16 +28,12 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "ed75263796bc09699d680d30400c51c92cca74804305ff8b7d3e2b35fdc3eaf6"
+sha256_corpo: "3d35da69dad8f700f2a13b0ef4874927d563d69d4842540fa496e17129a96a5c"
 ---
 # Lei nº 8.984 de 07/02/1995
 
-1
-
-LEI Nº 8.984, DE 7 DE FEVEREIRO DE 1995
-
-Estende a competência da Justiça do Trabalho (art. 114 da Constituição Federal).
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -49,6 +45,6 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 Brasília, 7 de fevereiro de 1995; 174º da Independência e 107º da República.
 
-FERNANDO HENRIQUE CARDOSO
+### FERNANDO HENRIQUE CARDOSO
 
 Nelson Jobim

@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2013-11-05"
 ementa: "Dispõe sobre a gratuidade dos atos de registro, pelas associações de moradores, necessários à adaptação estatutária à Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil, e para fins de enquadramento dessas entidades como Organizações da Sociedade Civil de Interesse Público."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-11-05;12879"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "1fd5d781fe6517b988b95d0407992f958e500fb89938e58c122f451186a507f6"
+sha256_origem: "eebb95c51da6488008b74e133d6760c24700c905af055f1daf4b949088d0e155"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,21 +28,23 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "eebb95c51da6488008b74e133d6760c24700c905af055f1daf4b949088d0e155"
+sha256_corpo: "5a90d30d6456a7a95dc7085d602d9fc927f77908fb3cb437f2199d512882deee"
 ---
 # Lei nº 12.879 de 05/11/2013
 
-LEI Nº 12.879, DE 5 DE NOVEMBRO DE 2013
+### LEI N º 12.879, DE 5 DE NOVEMBRO DE 2013
 
-Dispõe sobre a gratuidade dos atos de registro, pelas associações de moradores, necessários à adaptação estatutária à Lei nº 10.406, de 10 de janeiro de 2002 – Código Civil, e para fins de enquadramento dessas entidades como Organizações da Sociedade Civil de Interesse Público.
+Dispõe sobre a gratuidade dos atos de registro, pelas associações de moradores, necessários à adaptação estatutária à Lei n º 10.406, de 10 de janeiro de 2002 – Código Civil, e para fins de enquadramento dessas entidades como Organizações da Sociedade Civil de Interesse Público.
 
-**A P R E S I D E N T A D A R E P Ú B L I C A**, Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
+A P R E S I D E N T A D A R E P Ú B L I C A , Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-**Art. 1º** As associações de moradores são isentas do pagamento de preços, taxas e emolumentos remuneratórios do registro necessário à sua adaptação estatutária à Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil, consoante o disposto no art. 2.031 desse diploma legal, assim como para fins de sua qualificação como Organizações da Sociedade Civil de Interesse Público, de que trata a Lei nº 9.790, de 23 de março de 1999.
+**Art. 1** º As associações de moradores são isentas do pagamento de preços, taxas e emolumentos remuneratórios do registro necessário à sua adaptação estatutária à Lei n º 10.406, de 10 de janeiro de 2002 - Código Civil, consoante o disposto no art. 2.031 desse diploma legal, assim como para fins de sua qualificação como Organizações da Sociedade Civil de Interesse Público, de que trata a Lei n º 9.790, de 23 de março de 1999.
 
-**Art. 2º** Esta Lei entra em vigor na data de sua publicação.
+**Art. 2** º Esta Lei entra em vigor na data de sua publicação.
 
-Brasília, 5 de novembro de 2013; 192º da Independência e 125º da República.
+Brasília, 5 de novembro de 2013; 192 º da Independência e 125 º da República.
 
-DILMA ROUSSEFF
+### DILMA ROUSSEFF
 
 José Eduardo Cardozo

@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import csv
 import json
+import subprocess
+import sys
 from pathlib import Path
 
 
@@ -71,15 +73,7 @@ def update_matrix() -> None:
 
 
 def update_reports() -> None:
-    for name in ("completeness.json", "release.json"):
-        path = ROOT / "manifests" / name
-        data = json.loads(path.read_text(encoding="utf-8"))
-        if name == "completeness.json":
-            data["checks"]["p0_consolidated"] = 30
-            data["consolidation_status"] = {"consolidada_fonte_oficial": 244, "consolidada_reconciliada": 2, "requer_reconciliacao": 114}
-        else:
-            data["consolidacao"] = {"consolidada_fonte_oficial": 244, "consolidada_reconciliada": 2, "requer_reconciliacao": 114}
-        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    subprocess.run([sys.executable, str(ROOT / "tools/build_public_indexes.py"), "--apply"], check=True)
 
 
 if __name__ == "__main__":

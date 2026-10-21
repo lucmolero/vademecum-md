@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2008-04-04"
 ementa: "Dispõe sobre procedimento na operação de arrendamento mercantil de veículo automotivo (leasing), e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2008-04-04;11649"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "06ba7bd87fb124b7a30bea9d41be40a9482880e0c8e8fb2811105d3e2f4bd123"
+sha256_origem: "18abd217440bf2407932c301a9674c6d7f45fe5ed88def8492fddcd4611d686f"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,12 +28,14 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "9f8837146e98983e94946af0aacd8dbdc0515e11d3c8ea14129b9447a0641ff1"
+sha256_corpo: "5e657ff795936e2cb74c67abbdf709f696eae56f1f1a37c8e134f438e0ff0eca"
 ---
 # Lei nº 11.649 de 04/04/2008
 
-**LEI Nº 11.649, DE 4 ABRIL DE 2008.**
+### LEI Nº 11.649, DE 4 ABRIL DE 2008.
 
-***Dispõe sobre procedimento na operação de arrendamento mercantil de veículo automotivo (leasing), e dá outras providências.***
+Dispõe sobre procedimento na operação de arrendamento mercantil de veículo automotivo (leasing), e dá outras providências.
 
 O PRESIDENTE DA REPÚBLICA, Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -43,7 +45,7 @@ I - o documento único de transferência (DUT) do veículo devidamente assinado 
 
 II - a nota promissória vinculada ao contrato e emitida pelo arrendatário, se houver, com o devido carimbo de "liquidada" ou "sem efeito", bem como o termo de quitação do respectivo contrato de arrendamento mercantil (leasing).
 
-**Parágrafo único.** Considerar-se-á como nula de pleno direito qualquer cláusula contratual relativa à operação de arrendamento mercantil de veículo automotivo que disponha de modo contrário ao disposto neste artigo.
+Parágrafo único. Considerar-se-á como nula de pleno direito qualquer cláusula contratual relativa à operação de arrendamento mercantil de veículo automotivo que disponha de modo contrário ao disposto neste artigo.
 
 **Art. 2o** O descumprimento do disposto no art. 1o sujeitará a parte infratora, sociedade de arrendamento mercantil ou arrendatário, ao pagamento de multa equivalente a dois por cento do valor da venda do bem, podendo a parte credora cobrá-la por meio de processo de execução.
 
@@ -51,10 +53,8 @@ II - a nota promissória vinculada ao contrato e emitida pelo arrendatário, se 
 
 Brasília, 4 de abril de 2008; 187o da Independência e 120o da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
 Tarso Genro
 
 Guido Mantega
-
-Este texto não substitui o publicado no DOU de 7.4.2008.

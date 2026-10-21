@@ -1,8 +1,8 @@
-"""Create a review queue for new official acts without adding them to the corpus.
+"""Create an autonomous queue for new official acts without adding them by inference.
 
 Discovery adapters can feed a JSON array of objects containing at least ``url``.
-Every accepted item remains a candidate until a curator maps it to the editorial
-matrix and a human-reviewed reconciliation is merged.
+Every accepted item is classified by the agent and enters the editorial pipeline;
+only a source-backed autonomous decision can promote it to the matrix.
 """
 
 from __future__ import annotations
@@ -87,7 +87,8 @@ def build_queue(candidates: list[dict[str, object]]) -> dict[str, object]:
             "ano": item.get("ano"),
             "status": "candidate",
             "auto_include": False,
-            "review_required": True,
+            "requires_human_review": False,
+            "decision_scope": "autonomous_agent_legal_curation",
         }
     return {
         "schema": "legislation-discovery-queue/v1",

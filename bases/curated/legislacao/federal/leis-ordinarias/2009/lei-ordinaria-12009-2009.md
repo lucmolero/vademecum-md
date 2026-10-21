@@ -23,7 +23,7 @@ baixado_em: "2026-10-21"
 sha256_origem: "38512b03f29f14da312f1b1ca4a45265799b8e87b0d52297a4e5b10c0bf5e1b6"
 alterada_por: []
 revogada_por: []
-regulamentada_por: ["br-federal-lei_ordinaria-9503-1997"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]

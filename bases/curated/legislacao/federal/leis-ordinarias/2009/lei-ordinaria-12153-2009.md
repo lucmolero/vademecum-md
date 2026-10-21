@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2009-12-22"
 ementa: "Dispõe sobre os Juizados Especiais da Fazenda Pública no âmbito dos Estados, do Distrito Federal, dos Territórios e dos Municípios."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2009-12-22;12153"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "63e6d229cc8def826bc17110bd9d8db4a98a0fb98c4718156fff12b15391bad4"
+sha256_origem: "d1b4d73c4fe9584fbf7597cf12ce7cbaec184c7c98c668eeb87ba3610e0144e7"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,18 +28,16 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "d1b4d73c4fe9584fbf7597cf12ce7cbaec184c7c98c668eeb87ba3610e0144e7"
+sha256_corpo: "0f0cc27e2c41befecfaa11386d922123f8ad9e39d902c07d9c077b8d8961c802"
 ---
 # Lei nº 12.153 de 22/12/2009
 
-**LEI Nº 12.153, DE 22 DE DEZEMBRO DE 2009.**
-
-***Dispõe sobre os Juizados Especiais da Fazenda Pública no âmbito dos Estados, do Distrito Federal, dos Territórios e dos Municípios.***
-
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-**Art**. 1o Os Juizados Especiais da Fazenda Pública, órgãos da justiça comum e integrantes do Sistema dos Juizados Especiais, serão criados pela União, no Distrito Federal e nos Territórios, e pelos Estados, para conciliação, processo, julgamento e execução, nas causas de sua competência.
+**Art. 1o** Os Juizados Especiais da Fazenda Pública, órgãos da justiça comum e integrantes do Sistema dos Juizados Especiais, serão criados pela União, no Distrito Federal e nos Territórios, e pelos Estados, para conciliação, processo, julgamento e execução, nas causas de sua competência.
 
-**Parágrafo único.** O sistema dos Juizados Especiais dos Estados e do Distrito Federal é formado pelos Juizados Especiais Cíveis, Juizados Especiais Criminais e Juizados Especiais da Fazenda Pública.
+Parágrafo único. O sistema dos Juizados Especiais dos Estados e do Distrito Federal é formado pelos Juizados Especiais Cíveis, Juizados Especiais Criminais e Juizados Especiais da Fazenda Pública.
 
 **Art. 2o** É de competência dos Juizados Especiais da Fazenda Pública processar, conciliar e julgar causas cíveis de interesse dos Estados, do Distrito Federal, dos Territórios e dos Municípios, até o valor de 60 (sessenta) salários mínimos.
 
@@ -57,11 +55,11 @@ III - as causas que tenham como objeto a impugnação da pena de demissão impos
 
 § 4o No foro onde estiver instalado Juizado Especial da Fazenda Pública, a sua competência é absoluta.
 
-**Art**. 3o O juiz poderá, de ofício ou a requerimento das partes, deferir quaisquer providências cautelares e antecipatórias no curso do processo, para evitar dano de difícil ou de incerta reparação.
+**Art. 3o** O juiz poderá, de ofício ou a requerimento das partes, deferir quaisquer providências cautelares e antecipatórias no curso do processo, para evitar dano de difícil ou de incerta reparação.
 
-**Art**. 4o Exceto nos casos do art. 3o, somente será admitido recurso contra a sentença.
+**Art. 4o** Exceto nos casos do art. 3o, somente será admitido recurso contra a sentença.
 
-**Art**. 5o Podem ser partes no Juizado Especial da Fazenda Pública:
+**Art. 5o** Podem ser partes no Juizado Especial da Fazenda Pública:
 
 I - como autores, as pessoas físicas e as microempresas e empresas de pequeno porte, assim definidas na Lei Complementar no 123, de 14 de dezembro de 2006;
 
@@ -71,13 +69,13 @@ II - como réus, os Estados, o Distrito Federal, os Territórios e os Município
 
 **Art. 7o** Não haverá prazo diferenciado para a prática de qualquer ato processual pelas pessoas jurídicas de direito público, inclusive a interposição de recursos, devendo a citação para a audiência de conciliação ser efetuada com antecedência mínima de 30 (trinta) dias.
 
-**Art**. 8o Os representantes judiciais dos réus presentes à audiência poderão conciliar, transigir ou desistir nos processos da competência dos Juizados Especiais, nos termos e nas hipóteses previstas na lei do respectivo ente da Federação.
+**Art. 8o** Os representantes judiciais dos réus presentes à audiência poderão conciliar, transigir ou desistir nos processos da competência dos Juizados Especiais, nos termos e nas hipóteses previstas na lei do respectivo ente da Federação.
 
 **Art. 9o** A entidade ré deverá fornecer ao Juizado a documentação de que disponha para o esclarecimento da causa, apresentando-a até a instalação da audiência de conciliação.
 
 **Art. 10.** Para efetuar o exame técnico necessário à conciliação ou ao julgamento da causa, o juiz nomeará pessoa habilitada, que apresentará o laudo até 5 (cinco) dias antes da audiência.
 
-**Art**. 11. Nas causas de que trata esta Lei, não haverá reexame necessário.
+**Art. 11.** Nas causas de que trata esta Lei, não haverá reexame necessário.
 
 **Art. 12.** O cumprimento do acordo ou da sentença, com trânsito em julgado, que imponham obrigação de fazer, não fazer ou entrega de coisa certa, será efetuado mediante ofício do juiz à autoridade citada para a causa, com cópia da sentença ou do acordo.
 
@@ -105,11 +103,11 @@ II - 30 (trinta) salários mínimos, quanto aos Municípios.
 
 § 7o O saque por meio de procurador somente poderá ser feito na agência destinatária do depósito, mediante procuração específica, com firma reconhecida, da qual constem o valor originalmente depositado e sua procedência.
 
-**Art**. 14. Os Juizados Especiais da Fazenda Pública serão instalados pelos Tribunais de Justiça dos Estados e do Distrito Federal.
+**Art. 14.** Os Juizados Especiais da Fazenda Pública serão instalados pelos Tribunais de Justiça dos Estados e do Distrito Federal.
 
-**Parágrafo único.** Poderão ser instalados Juizados Especiais Adjuntos, cabendo ao Tribunal designar a Vara onde funcionará.
+Parágrafo único. Poderão ser instalados Juizados Especiais Adjuntos, cabendo ao Tribunal designar a Vara onde funcionará.
 
-**Art**. 15. Serão designados, na forma da legislação dos Estados e do Distrito Federal, conciliadores e juízes leigos dos Juizados Especiais da Fazenda Pública, observadas as atribuições previstas nos arts. 22, 37 e 40 da Lei no 9.099, de 26 de setembro de 1995.
+**Art. 15.** Serão designados, na forma da legislação dos Estados e do Distrito Federal, conciliadores e juízes leigos dos Juizados Especiais da Fazenda Pública, observadas as atribuições previstas nos arts. 22, 37 e 40 da Lei no 9.099, de 26 de setembro de 1995.
 
 § 1o Os conciliadores e juízes leigos são auxiliares da Justiça, recrutados, os primeiros, preferentemente, entre os bacharéis em Direito, e os segundos, entre advogados com mais de 2 (dois) anos de experiência.
 
@@ -157,7 +155,7 @@ II - 30 (trinta) salários mínimos, quanto aos Municípios.
 
 **Art. 23.** Os Tribunais de Justiça poderão limitar, por até 5 (cinco) anos, a partir da entrada em vigor desta Lei, a competência dos Juizados Especiais da Fazenda Pública, atendendo à necessidade da organização dos serviços judiciários e administrativos.
 
-**Art**. 24. Não serão remetidas aos Juizados Especiais da Fazenda Pública as demandas ajuizadas até a data de sua instalação, assim como as ajuizadas fora do Juizado Especial por força do disposto no art. 23.
+**Art. 24.** Não serão remetidas aos Juizados Especiais da Fazenda Pública as demandas ajuizadas até a data de sua instalação, assim como as ajuizadas fora do Juizado Especial por força do disposto no art. 23.
 
 **Art. 25.** Competirá aos Tribunais de Justiça prestar o suporte administrativo necessário ao funcionamento dos Juizados Especiais.
 
@@ -169,6 +167,6 @@ II - 30 (trinta) salários mínimos, quanto aos Municípios.
 
 Brasília, 22 de dezembro de 2009; 188o da Independência e 121o da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
 Tarso Genro

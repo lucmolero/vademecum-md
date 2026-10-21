@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2008-03-31"
 ementa: "Dispõe sobre o reconhecimento formal das centrais sindicais para os fins que especifica, altera a Consolidação das Leis do Trabalho - CLT, aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943, e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2008-03-31;11648"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "3396f88ef6fc4b718f7e751fc31c9c261e967d28135c609c88ea3c669685c364"
+sha256_origem: "f7f33a575467941e7cb852c57d07e41ea8ab5464c15c37dde0c57e2a594567a0"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,12 +28,14 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "7ccf7ae21a0eb327b440aea8fb594a44f5b1c63003bf401c45c75a516ed69f4d"
+sha256_corpo: "0017dd51127a440615933fd88d7927753d17e32a191d624b32433903a63b07d3"
 ---
 # Lei nº 11.648 de 31/03/2008
 
-**LEI Nº 11.648, DE 31 MARÇO DE 2008.**
+### LEI Nº 11.648, DE 31 MARÇO DE 2008.
 
-***Dispõe sobre o reconhecimento formal das centrais sindicais para os fins que especifica, altera a Consolidação das Leis do Trabalho - CLT, aprovada pelo Decreto-Lei no 5.452, de 1o de maio de 1943, e dá outras providências.***
+Dispõe sobre o reconhecimento formal das centrais sindicais para os fins que especifica, altera a Consolidação das Leis do Trabalho - CLT, aprovada pelo Decreto-Lei no 5.452, de 1o de maio de 1943, e dá outras providências.
 
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -43,7 +45,7 @@ I - coordenar a representação dos trabalhadores por meio das organizações si
 
 II - participar de negociações em fóruns, colegiados de órgãos públicos e demais espaços de diálogo social que possuam composição tripartite, nos quais estejam em discussão assuntos de interesse geral dos trabalhadores.
 
-**Parágrafo único.** Considera-se central sindical, para os efeitos do disposto nesta Lei, a entidade associativa de direito privado composta por organizações sindicais de trabalhadores.
+Parágrafo único. Considera-se central sindical, para os efeitos do disposto nesta Lei, a entidade associativa de direito privado composta por organizações sindicais de trabalhadores.
 
 **Art. 2o** Para o exercício das atribuições e prerrogativas a que se refere o inciso II do caput do art. 1o desta Lei, a central sindical deverá cumprir os seguintes requisitos:
 
@@ -55,7 +57,7 @@ III - filiação de sindicatos em, no mínimo, 5 (cinco) setores de atividade ec
 
 IV - filiação de sindicatos que representem, no mínimo, 7% (sete por cento) do total de empregados sindicalizados em âmbito nacional.
 
-**Parágrafo único.** O índice previsto no inciso IV do caput deste artigo será de 5% (cinco por cento) do total de empregados sindicalizados em âmbito nacional no período de 24 (vinte e quatro) meses a contar da publicação desta Lei.
+Parágrafo único. O índice previsto no inciso IV do caput deste artigo será de 5% (cinco por cento) do total de empregados sindicalizados em âmbito nacional no período de 24 (vinte e quatro) meses a contar da publicação desta Lei.
 
 **Art. 3o** A indicação pela central sindical de representantes nos fóruns tripartites, conselhos e colegiados de órgãos públicos a que se refere o inciso II do caput do art. 1o desta Lei será em número proporcional ao índice de representatividade previsto no inciso IV do caput do art. 2o desta Lei, salvo acordo entre centrais sindicais.
 
@@ -115,11 +117,11 @@ IV - (revogado).
 
 “Art. 591. Inexistindo sindicato, os percentuais previstos na alínea c do inciso I e na alínea d do inciso II do caput do art. 589 desta Consolidação serão creditados à federação correspondente à mesma categoria econômica ou profissional.
 
-**Parágrafo único.** Na hipótese do caput deste artigo, os percentuais previstos nas alíneas a e b do inciso I e nas alíneas a e c do inciso II do caput do art. 589 desta Consolidação caberão à confederação.” (NR)
+Parágrafo único. Na hipótese do caput deste artigo, os percentuais previstos nas alíneas a e b do inciso I e nas alíneas a e c do inciso II do caput do art. 589 desta Consolidação caberão à confederação.” (NR)
 
 “Art. 593. As percentagens atribuídas às entidades sindicais de grau superior e às centrais sindicais serão aplicadas de conformidade com o que dispuserem os respectivos conselhos de representantes ou estatutos.
 
-**Parágrafo único.** Os recursos destinados às centrais sindicais deverão ser utilizados no custeio das atividades de representação geral dos trabalhadores decorrentes de suas atribuições legais.” (NR)
+Parágrafo único. Os recursos destinados às centrais sindicais deverão ser utilizados no custeio das atividades de representação geral dos trabalhadores decorrentes de suas atribuições legais.” (NR)
 
 **Art. 6o** (VETADO)
 
@@ -129,10 +131,8 @@ IV - (revogado).
 
 Brasília, 31 de março de 2008; 187o da Independência e 120o da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
 Tarso Genro
 
 Carlos Lupi
-
-Este texto não substitui o publicado no DOU de 31.3.2008 - Edição extra

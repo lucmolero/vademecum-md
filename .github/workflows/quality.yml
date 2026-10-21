@@ -26,10 +26,18 @@ jobs:
         run: python tools/check_markdown.py
       - name: Workflow security policy
         run: python tools/validate/validate_workflows.py
+      - name: Validate editorial expansion inventory
+        run: python tools/validate/audit_editorial_expansion.py
       - name: Generate derived indexes
         run: python tools/build_public_indexes.py --apply
+      - name: Build public baseline
+        run: python tools/validate/build_baseline.py
+      - name: Validate editorial matrix synchronization
+        run: python tools/validate/sync_editorial_matrix.py
       - name: Audit normative graph
-        run: python tools/relations/audit_normative_graph.py
+        run: python tools/relations/audit_normative_graph.py --strict
+      - name: Classify unresolved relations
+        run: python tools/relations/classify_unresolved.py
       - name: Public release gates
         run: python tools/validate_release.py
       - name: Test suite

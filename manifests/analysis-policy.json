@@ -1,0 +1,39 @@
+{
+  "schema": "analysis-authority-policy/v1",
+  "decision_authority": "autonomous_legal_agent",
+  "deterministic_gate_authority": "release_validators",
+  "legal_analysis": {
+    "executor": "autonomous_legal_agent",
+    "method": "llm_legal_analysis_plus_official_evidence",
+    "may_decide": [
+      "editorial_inclusion",
+      "historical_or_graph_disposition",
+      "legal_situation_classification",
+      "consolidation_interpretation",
+      "relation_semantics",
+      "conflict_resolution_using_official_evidence"
+    ],
+    "must_not_invent_text": true,
+    "must_record_evidence": true,
+    "must_record_reason": true
+  },
+  "deterministic_analysis": {
+    "executor": "release_validators",
+    "method": "deterministic_validation",
+    "may_verify": [
+      "frontmatter_schema",
+      "identity_and_matrix_alignment",
+      "body_nonempty_and_structural_markers",
+      "official_allowlisted_source",
+      "sha256_format_and_matches",
+      "relation_ids_and_evidence_hashes",
+      "duplicate_records",
+      "workflow_safety",
+      "forbidden_public_markers"
+    ],
+    "must_not_decide_legal_meaning": true,
+    "must_not_promote_by_inference": true
+  },
+  "ambiguity_policy": "preserve_current_public_version_and_emit_evidence; never invent or silently promote",
+  "user_action_required": false
+}

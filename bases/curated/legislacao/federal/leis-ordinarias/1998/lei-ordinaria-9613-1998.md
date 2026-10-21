@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "3f78a154bfcb349af31a04eb70ca35ef7ad6ef0bbafd41095b561323b4a6d6b4"
-alterada_por: ["br-federal-lei_complementar-167-2019", "br-federal-lei_ordinaria-14478-2022", "br-federal-lei_ordinaria-15358-2026"]
+alterada_por: ["br-federal-lei_complementar-167-2019", "br-federal-lei_ordinaria-13964-2019", "br-federal-lei_ordinaria-14478-2022", "br-federal-lei_ordinaria-15358-2026"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

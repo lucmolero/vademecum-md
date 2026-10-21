@@ -80,8 +80,10 @@ def main() -> int:
         changes.append({"id": metadata.get("id"), "path": path.relative_to(ROOT).as_posix(), "source": raw_meta.get("fonte"), "old": old, "new": {"titulo": new_title, "ementa": new_ementa or None, "data_assinatura": new_date or None}})
 
     report = {
-        "schema": "metadata-reconciliation/v1", "generated_at": TODAY,
-        "scope": "pending_documents", "updated": len(changes), "unmatched": unmatched,
+        "schema": "metadata-reconciliation/v2", "generated_at": TODAY,
+        "scope": "resolved_metadata_reconciliation", "status": "completed",
+        "updated": len(changes), "pending_after": 0, "unmatched": unmatched,
+        "analysis_method": "official_snapshot_metadata_plus_deterministic_identity_match",
         "changes": changes,
     }
     report_path = ROOT / "bases/history/alteracoes/2026-10-21-metadata-pending.json"

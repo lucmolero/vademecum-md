@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2000-10-19"
 ementa: "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal, a Lei nº 1.079, de 10 de abril de 1950, e o Decreto-Lei nº 201, de 27 de fevereiro de 1967."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2000-10-19;10028"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "e0390dd4d77c9e82c6561019c2b80426acf868de78d17a5cebee32e24cb57e18"
+sha256_origem: "d5491be6e015de76e46377d6e1b66e02eccab4adc7525a33ec9dbc99ccd3af43"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,18 +28,20 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "core_codigos"
+sha256_normalizado: "d5491be6e015de76e46377d6e1b66e02eccab4adc7525a33ec9dbc99ccd3af43"
+sha256_corpo: "40ba89d6648e5e13b8938d1a1b65b16253e32ac1eb385044949b8e191cfe0d3b"
 ---
 # Lei nº 10.028 de 19/10/2000
 
-**LEI Nº 10.028, DE 19 DE OUTUBRO DE 2000**
+### LEI Nº 10.028, DE 19 DE OUTUBRO DE 2000
 
-***Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal, a Lei nº 1.079, de 10 de abril de 1950, e o Decreto-Lei nº 201, de 27 de fevereiro de 1967.***
+Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal, a Lei nº 1.079, de 10 de abril de 1950, e o Decreto-Lei nº 201, de 27 de fevereiro de 1967.
 
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o CONGRESSO NACIONAL decreta e eu sanciono a seguinte Lei:
 
-**Art**. 1º O art. 339 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940, passa a vigorar com a seguinte redação:
+**Art. 1º** O art. 339 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940, passa a vigorar com a seguinte redação:
 
 “Art. 339. Dar causa à instauração de investigação policial, de processo judicial, instauração de investigação administrativa, inquérito civil ou ação de improbidade administrativa contra alguém, imputando-lhe crime de que o sabe inocente:” (NR)
 
@@ -49,11 +51,11 @@ Faço saber que o CONGRESSO NACIONAL decreta e eu sanciono a seguinte Lei:
 
 “§ 2º .......................................................................................................................................”
 
-**Art**. 2º O Título XI do Decreto-Lei nº 2.848, de 1940, passa a vigorar acrescido do seguinte capítulo e artigos:
+**Art. 2º** O Título XI do Decreto-Lei nº 2.848, de 1940, passa a vigorar acrescido do seguinte capítulo e artigos:
 
-**“CAPÍTULO IV**
+### “CAPÍTULO IV
 
-*DOS CRIMES CONTRA AS FINANÇAS PÚBLICAS”*
+### DOS CRIMES CONTRA AS FINANÇAS PÚBLICAS”
 
 “Contratação de operação de crédito (AC)
 
@@ -109,7 +111,7 @@ Faço saber que o CONGRESSO NACIONAL decreta e eu sanciono a seguinte Lei:
 
 “Pena - reclusão, de 1 (um) a 4 (quatro) anos.” (AC)
 
-**Art**. 3º A Lei nº 1.079, de 10 de abril de 1950, passa a vigorar com as seguintes alterações:
+**Art. 3º** A Lei nº 1.079, de 10 de abril de 1950, passa a vigorar com as seguintes alterações:
 
 “Art. 10...................................................................................................................................
 
@@ -145,7 +147,7 @@ Faço saber que o CONGRESSO NACIONAL decreta e eu sanciono a seguinte Lei:
 
 “Art. 41-A. Respeitada a prerrogativa de foro que assiste às autoridades a que se referem o parágrafo único do art. 39-A e o inciso II do parágrafo único do art. 40-A, as ações penais contra elas ajuizadas pela prática dos crimes de responsabilidade previstos no art. 10 desta Lei serão processados e julgadas de acordo com o rito instituído pela Lei nº 8.038, de 28 de maio de 1990, permitido, a todo cidadão, o oferecimento da denúncia.” (AC)
 
-**Art**. 4º. O art. 1º do Decreto-Lei nº 201, de 27 de fevereiro de 1967, passa a vigorar com a seguinte redação:
+**Art. 4º.** O art. 1º do Decreto-Lei nº 201, de 27 de fevereiro de 1967, passa a vigorar com a seguinte redação:
 
 “Art. 1º .....................................................................................................................................
 
@@ -169,7 +171,7 @@ XIX - deixar de promover ou de ordenar a liquidação integral de operação de 
 
 “........................................................................................................................................................”
 
-**Art**. 5º Constitui infração administrativa contra as leis de finanças públicas:
+**Art. 5º** Constitui infração administrativa contra as leis de finanças públicas:
 
 I - deixar de divulgar ou de enviar ao Poder Legislativo e ao Tribunal de Contas o relatório de gestão fiscal, nos prazos e condições estabelecidos em lei;
 
@@ -179,14 +181,14 @@ III- deixar de expedir ato determinando limitação de empenho e movimentação 
 
 IV - deixar de ordenar ou de promover, na forma e nos prazos da lei, a execução de medida para redução do montante da despesa total com pessoal que houver excedido a repartição por Poder do limite máximo.
 
-**§ 1º** A infração prevista neste artigo e punida com multa de trinta por cento dos vencimentos anuais do agente que lhe der causa, sendo o pagamento da multa de sua responsabilidade pessoal.
+§ 1º A infração prevista neste artigo e punida com multa de trinta por cento dos vencimentos anuais do agente que lhe der causa, sendo o pagamento da multa de sua responsabilidade pessoal.
 
-**§ 2º** A infração a que se refere este artigo será processada e julgada pelo Tribunal de Contas a que competir a fiscalização contábil, financeira e orçamentária da pessoa jurídica de direito público envolvida.
+§ 2º A infração a que se refere este artigo será processada e julgada pelo Tribunal de Contas a que competir a fiscalização contábil, financeira e orçamentária da pessoa jurídica de direito público envolvida.
 
-**Art**. 6º Esta Lei entra em vigor na data de sua publicação.
+**Art. 6º** Esta Lei entra em vigor na data de sua publicação.
 
 Brasília, 19 de outubro de 2000; 179º da Independência e 112º da República.
 
-**FERNANDO HENRIQUE CARDOSO**
+### FERNANDO HENRIQUE CARDOSO
 
 José Gregori

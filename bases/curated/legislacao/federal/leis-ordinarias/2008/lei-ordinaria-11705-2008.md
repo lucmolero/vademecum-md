@@ -12,28 +12,30 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2008-06-19"
 ementa: "Altera a Lei nº 9.503, de 23 de setembro de 1997, que 'institui o Código de Trânsito Brasileiro', e a Lei nº 9.294, de 15 de julho de 1996, que dispõe sobre as restrições ao uso e à propaganda de produtos fumígeros, bebidas alcoólicas, medicamentos, terapias e defensivos agrícolas, nos termos do § 4º do art. 220 da Constituição Federal, para inibir o consumo de bebida alcoólica por condutor de veículo automotor, e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2008-06-19;11705"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "6c7372ddd002118ec3bd175813f415dcfbc80c61213b01f311a5396218007a3d"
+sha256_origem: "d9d985545ed6682d0b2b7b166e949e566dc5bc5b21a6be26cb2962596f363f93"
 alterada_por: []
-revogada_por: ["br-federal-lei_ordinaria-9503-1997"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "d9d985545ed6682d0b2b7b166e949e566dc5bc5b21a6be26cb2962596f363f93"
+sha256_corpo: "181b16bdabbf144c4ddd93374992366c9bf2205937a5009f0ac71ec6d87daf9d"
 ---
 # Lei nº 11.705 de 19/06/2008
 
-**LEI Nº 11.705, DE 19 JUNHO DE 2008.**
+### LEI Nº 11.705, DE 19 JUNHO DE 2008.
 
-***Altera a Lei nº 9.503, de 23 de setembro de 1997, que 'institui o Código de Trânsito Brasileiro', e a Lei nº 9.294, de 15 de julho de 1996, que dispõe sobre as restrições ao uso e à propaganda de produtos fumígeros, bebidas alcoólicas, medicamentos, terapias e defensivos agrícolas, nos termos do § 4º do art. 220 da Constituição Federal, para inibir o consumo de bebida alcoólica por condutor de veículo automotor, e dá outras providências.***
+Altera a Lei nº 9.503, de 23 de setembro de 1997, que 'institui o Código de Trânsito Brasileiro', e a Lei nº 9.294, de 15 de julho de 1996, que dispõe sobre as restrições ao uso e à propaganda de produtos fumígeros, bebidas alcoólicas, medicamentos, terapias e defensivos agrícolas, nos termos do § 4º do art. 220 da Constituição Federal, para inibir o consumo de bebida alcoólica por condutor de veículo automotor, e dá outras providências.
 
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -41,21 +43,21 @@ O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu san
 
 **Art. 2º** São vedados, na faixa de domínio de rodovia federal ou em terrenos contíguos à faixa de domínio com acesso direto à rodovia, a venda varejista ou o oferecimento de bebidas alcoólicas para consumo no local.
 
-**§ 1º** A violação do disposto no caput deste artigo implica multa de R$ 1.500,00 (um mil e quinhentos reais).
+§ 1º A violação do disposto no caput deste artigo implica multa de R$ 1.500,00 (um mil e quinhentos reais).
 
-**§ 2º** Em caso de reincidência, dentro do prazo de 12 (doze) meses, a multa será aplicada em dobro, e suspensa a autorização de acesso à rodovia, pelo prazo de até 1 (um) ano.
+§ 2º Em caso de reincidência, dentro do prazo de 12 (doze) meses, a multa será aplicada em dobro, e suspensa a autorização de acesso à rodovia, pelo prazo de até 1 (um) ano.
 
-**§ 3º** Não se aplica o disposto neste artigo em área urbana, de acordo com a delimitação dada pela legislação de cada município ou do Distrito Federal.
+§ 3º Não se aplica o disposto neste artigo em área urbana, de acordo com a delimitação dada pela legislação de cada município ou do Distrito Federal.
 
 **Art. 3º** Ressalvado o disposto no § 3º do art. 2º desta Lei, o estabelecimento comercial situado na faixa de domínio de rodovia federal ou em terreno contíguo à faixa de domínio com acesso direto à rodovia, que inclua entre suas atividades a venda varejista ou o fornecimento de bebidas ou alimentos, deverá afixar, em local de ampla visibilidade, aviso da vedação de que trata o art. 2º desta Lei.
 
-**Parágrafo único.** O descumprimento do disposto no caput deste artigo implica multa de R$ 300,00 (trezentos reais).
+Parágrafo único. O descumprimento do disposto no caput deste artigo implica multa de R$ 300,00 (trezentos reais).
 
 **Art. 4º** Competem à Polícia Rodoviária Federal a fiscalização e a aplicação das multas previstas nos arts. 2º e 3º desta Lei.
 
-**§ 1º** A União poderá firmar convênios com Estados, Municípios e com o Distrito Federal, a fim de que estes também possam exercer a fiscalização e aplicar as multas de que tratam os arts. 2º e 3º desta Lei.
+§ 1º A União poderá firmar convênios com Estados, Municípios e com o Distrito Federal, a fim de que estes também possam exercer a fiscalização e aplicar as multas de que tratam os arts. 2º e 3º desta Lei.
 
-**§ 2º** Configurada a reincidência, a Polícia Rodoviária Federal ou ente conveniado comunicará o fato ao Departamento Nacional de Infra-Estrutura de Transportes - DNIT ou, quando se tratar de rodovia concedida, à Agência Nacional de Transportes Terrestres - ANTT, para a aplicação da penalidade de suspensão da autorização de acesso à rodovia.
+§ 2º Configurada a reincidência, a Polícia Rodoviária Federal ou ente conveniado comunicará o fato ao Departamento Nacional de Infra-Estrutura de Transportes - DNIT ou, quando se tratar de rodovia concedida, à Agência Nacional de Transportes Terrestres - ANTT, para a aplicação da penalidade de suspensão da autorização de acesso à rodovia.
 
 **Art. 5º** A Lei nº 9.503, de 23 de setembro de 1997, passa a vigorar com as seguintes modificações:
 
@@ -63,11 +65,11 @@ I - o art. 10 passa a vigorar acrescido do seguinte inciso XXIII:
 
 "Art. 10. .......................................................................
 
-.............................................................................................
+### .............................................................................................
 
 XXIII - 1 (um) representante do Ministério da Justiça.
 
-..................................................................................." (NR)
+### ..................................................................................." (NR)
 
 II - o caput do art. 165 passa a vigorar com a seguinte redação:
 
@@ -79,29 +81,29 @@ Penalidade - multa (cinco vezes) e suspensão do direito de dirigir por 12 (doze
 
 Medida Administrativa - retenção do veículo até a apresentação de condutor habilitado e recolhimento do documento de habilitação.
 
-..................................................................................." (NR)
+### ..................................................................................." (NR)
 
 III - o art. 276 passa a vigorar com a seguinte redação:
 
 "Art. 276. Qualquer concentração de álcool por litro de sangue sujeita o condutor às penalidades previstas no art. 165 deste Código.
 
-**Parágrafo único.** Órgão do Poder Executivo federal disciplinará as margens de tolerância para casos específicos." (NR)
+Parágrafo único. Órgão do Poder Executivo federal disciplinará as margens de tolerância para casos específicos." (NR)
 
 IV - o art. 277 passa a vigorar com as seguintes alterações:
 
 "Art. 277. .....................................................................
 
-.............................................................................................
+### .............................................................................................
 
-**§ 2º** A infração prevista no art. 165 deste Código poderá ser caracterizada pelo agente de trânsito mediante a obtenção de outras provas em direito admitidas, acerca dos notórios sinais de embriaguez, excitação ou torpor apresentados pelo condutor.
+§ 2º A infração prevista no art. 165 deste Código poderá ser caracterizada pelo agente de trânsito mediante a obtenção de outras provas em direito admitidas, acerca dos notórios sinais de embriaguez, excitação ou torpor apresentados pelo condutor.
 
-**§ 3º** Serão aplicadas as penalidades e medidas administrativas estabelecidas no art. 165 deste Código ao condutor que se recusar a se submeter a qualquer dos procedimentos previstos no caput deste artigo." (NR)
+§ 3º Serão aplicadas as penalidades e medidas administrativas estabelecidas no art. 165 deste Código ao condutor que se recusar a se submeter a qualquer dos procedimentos previstos no caput deste artigo." (NR)
 
 V - o art. 291 passa a vigorar com as seguintes alterações:
 
 "Art. 291. .....................................................................
 
-**§ 1º** Aplica-se aos crimes de trânsito de lesão corporal culposa o disposto nos arts. 74, 76 e 88 da Lei nº 9.099, de 26 de setembro de 1995, exceto se o agente estiver:
+§ 1º Aplica-se aos crimes de trânsito de lesão corporal culposa o disposto nos arts. 74, 76 e 88 da Lei nº 9.099, de 26 de setembro de 1995, exceto se o agente estiver:
 
 I - sob a influência de álcool ou qualquer outra substância psicoativa que determine dependência;
 
@@ -109,21 +111,21 @@ II - participando, em via pública, de corrida, disputa ou competição automobi
 
 III - transitando em velocidade superior à máxima permitida para a via em 50 km/h (cinqüenta quilômetros por hora).
 
-**§ 2º** Nas hipóteses previstas no § 1º deste artigo, deverá ser instaurado inquérito policial para a investigação da infração penal." (NR)
+§ 2º Nas hipóteses previstas no § 1º deste artigo, deverá ser instaurado inquérito policial para a investigação da infração penal." (NR)
 
 VI - o art. 296 passa a vigorar com a seguinte redação:
 
 "Art. 296. Se o réu for reincidente na prática de crime previsto neste Código, o juiz aplicará a penalidade de suspensão da permissão ou habilitação para dirigir veículo automotor, sem prejuízo das demais sanções penais cabíveis." (NR)
 
-VII - (VETADO)
+### VII - (VETADO)
 
 VIII - o art. 306 passa a vigorar com a seguinte alteração:
 
 "Art. 306. Conduzir veículo automotor, na via pública, estando com concentração de álcool por litro de sangue igual ou superior a 6 (seis) decigramas, ou sob a influência de qualquer outra substância psicoativa que determine dependência:
 
-.............................................................................................
+### .............................................................................................
 
-**Parágrafo único.** O Poder Executivo federal estipulará a equivalência entre distintos testes de alcoolemia, para efeito de caracterização do crime tipificado neste artigo." (NR)
+Parágrafo único. O Poder Executivo federal estipulará a equivalência entre distintos testes de alcoolemia, para efeito de caracterização do crime tipificado neste artigo." (NR)
 
 **Art. 6º** Consideram-se bebidas alcoólicas, para efeitos desta Lei, as bebidas potáveis que contenham álcool em sua composição, com grau de concentração igual ou superior a meio grau Gay-Lussac.
 
@@ -137,7 +139,7 @@ VIII - o art. 306 passa a vigorar com a seguinte alteração:
 
 Brasília, 16 de junho de 2008; 187º da Independência e 120º da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
 Tarso Genro
 

@@ -12,52 +12,50 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2022-12-21"
 ementa: "Dispõe sobre diretrizes a serem observadas na prestação de serviços de ativos virtuais e na regulamentação das prestadoras de serviços de ativos virtuais; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para prever o crime de fraude com a utilização de ativos virtuais, valores mobiliários ou ativos financeiros; e altera a Lei nº 7.492, de 16 de junho de 1986, que define crimes contra o sistema financeiro nacional, e a Lei nº 9.613, de 3 de março de 1998, que dispõe sobre lavagem de dinheiro, para incluir as prestadoras de serviços de ativos virtuais no rol de suas disposições."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-12-21;14478"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "0d8625f2140b275d81aa2029a130d38134a2ac02803d629bf720b9bddf8cce58"
+sha256_origem: "d90220af084395c2dbbb14ef9bd058851ed87595a7e1451df71a2a66a304753f"
 alterada_por: []
 revogada_por: []
-regulamentada_por: ["br-federal-decreto_lei-2848-1940"]
+regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "d90220af084395c2dbbb14ef9bd058851ed87595a7e1451df71a2a66a304753f"
+sha256_corpo: "b5afa429b2d5dfeaa9156be7328596c33df994c31e2fd03325a5d4eb61eda88d"
 ---
 # Lei nº 14.478 de 21/12/2022
 
-LEI Nº 14.478, DE 21 DE DEZEMBRO DE 2022
-
-Dispõe sobre diretrizes a serem observadas na prestação de serviços de ativos virtuais e na regulamentação das prestadoras de serviços de ativos virtuais; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para prever o crime de fraude com a utilização de ativos virtuais, valores mobiliários ou ativos financeiros; e altera a Lei nº 7.492, de 16 de junho de 1986, que define crimes contra o sistema financeiro nacional, e a Lei nº 9.613, de 3 de março de 1998, que dispõe sobre lavagem de dinheiro, para incluir as prestadoras de serviços de ativos virtuais no rol de suas disposições.
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 1º** Esta Lei dispõe sobre diretrizes a serem observadas na prestação de serviços de ativos virtuais e na regulamentação das prestadoras de serviços de ativos virtuais.
 
-**Parágrafo único.** O disposto nesta Lei não se aplica aos ativos representativos de valores mobiliários sujeitos ao regime da Lei nº 6.385, de 7 de dezembro de 1976, e não altera nenhuma competência da Comissão de Valores Mobiliários.
+Parágrafo único. O disposto nesta Lei não se aplica aos ativos representativos de valores mobiliários sujeitos ao regime da Lei nº 6.385, de 7 de dezembro de 1976 , e não altera nenhuma competência da Comissão de Valores Mobiliários.
 
 **Art. 2º** As prestadoras de serviços de ativos virtuais somente poderão funcionar no País mediante prévia autorização de órgão ou entidade da Administração Pública federal.
 
-**Parágrafo único.** Ato do órgão ou da entidade da Administração Pública federal a que se refere o **caput** estabelecerá as hipóteses e os parâmetros em que a autorização de que trata o **caput** deste artigo poderá ser concedida mediante procedimento simplificado.
+Parágrafo único. Ato do órgão ou da entidade da Administração Pública federal a que se refere o caput estabelecerá as hipóteses e os parâmetros em que a autorização de que trata o caput deste artigo poderá ser concedida mediante procedimento simplificado.
 
 **Art. 3º** Para os efeitos desta Lei, considera-se ativo virtual a representação digital de valor que pode ser negociada ou transferida por meios eletrônicos e utilizada para realização de pagamentos ou com propósito de investimento, não incluídos:
 
 I – moeda nacional e moedas estrangeiras;
 
-II – moeda eletrônica, nos termos da Lei nº 12.865, de 9 de outubro de 2013;
+II – moeda eletrônica, nos termos da Lei nº 12.865, de 9 de outubro de 2013 ;
 
 III – instrumentos que provejam ao seu titular acesso a produtos ou serviços especificados ou a benefício proveniente desses produtos ou serviços, a exemplo de pontos e recompensas de programas de fidelidade; e
 
 IV – representações de ativos cuja emissão, escrituração, negociação ou liquidação esteja prevista em lei ou regulamento, a exemplo de valores mobiliários e de ativos financeiros.
 
-**Parágrafo único.** Competirá a órgão ou entidade da Administração Pública federal definido em ato do Poder Executivo estabelecer quais serão os ativos financeiros regulados, para fins desta Lei.
+Parágrafo único. Competirá a órgão ou entidade da Administração Pública federal definido em ato do Poder Executivo estabelecer quais serão os ativos financeiros regulados, para fins desta Lei.
 
 **Art. 4º** A prestação de serviço de ativos virtuais deve observar as seguintes diretrizes, segundo parâmetros a serem estabelecidos pelo órgão ou pela entidade da Administração Pública federal definido em ato do Poder Executivo:
 
@@ -87,7 +85,7 @@ IV – custódia ou administração de ativos virtuais ou de instrumentos que po
 
 V – participação em serviços financeiros e prestação de serviços relacionados à oferta por um emissor ou venda de ativos virtuais.
 
-**Parágrafo único.** O órgão ou a entidade da Administração Pública federal indicado em ato do Poder Executivo poderá autorizar a realização de outros serviços que estejam, direta ou indiretamente, relacionados à atividade da prestadora de serviços de ativos virtuais de que trata o **caput** deste artigo.
+Parágrafo único. O órgão ou a entidade da Administração Pública federal indicado em ato do Poder Executivo poderá autorizar a realização de outros serviços que estejam, direta ou indiretamente, relacionados à atividade da prestadora de serviços de ativos virtuais de que trata o caput deste artigo.
 
 **Art. 6º** Ato do Poder Executivo atribuirá a um ou mais órgãos ou entidades da Administração Pública federal a disciplina do funcionamento e a supervisão da prestadora de serviços de ativos virtuais.
 
@@ -97,73 +95,73 @@ I – autorizar funcionamento, transferência de controle, fusão, cisão e inco
 
 II – estabelecer condições para o exercício de cargos em órgãos estatutários e contratuais em prestadora de serviços de ativos virtuais e autorizar a posse e o exercício de pessoas para cargos de administração;
 
-III – supervisionar a prestadora de serviços de ativos virtuais e aplicar as disposições da Lei nº 13.506, de 13 de novembro de 2017, em caso de descumprimento desta Lei ou de sua regulamentação;
+III – supervisionar a prestadora de serviços de ativos virtuais e aplicar as disposições da Lei nº 13.506, de 13 de novembro de 2017 , em caso de descumprimento desta Lei ou de sua regulamentação;
 
-IV – cancelar, de ofício ou a pedido, as autorizações de que tratam os incisos I e II deste **caput**; e
+IV – cancelar, de ofício ou a pedido, as autorizações de que tratam os incisos I e II deste caput ; e
 
 V – dispor sobre as hipóteses em que as atividades ou operações de que trata o art. 5º desta Lei serão incluídas no mercado de câmbio ou em que deverão submeter-se à regulamentação de capitais brasileiros no exterior e capitais estrangeiros no País.
 
-**Parágrafo único.** O órgão ou a entidade da Administração Pública federal de que trata o **caput** definirá as hipóteses que poderão provocar o cancelamento previsto no inciso IV do **caput** deste artigo e o respectivo procedimento.
+Parágrafo único. O órgão ou a entidade da Administração Pública federal de que trata o caput definirá as hipóteses que poderão provocar o cancelamento previsto no inciso IV do caput deste artigo e o respectivo procedimento.
 
 **Art. 8º** As instituições autorizadas a funcionar pelo Banco Central do Brasil poderão prestar exclusivamente o serviço de ativos virtuais ou cumulá-lo com outras atividades, na forma da regulamentação a ser editada por órgão ou entidade da Administração Pública federal indicada em ato do Poder Executivo federal.
 
-**Art. 9º** O órgão ou a entidade da Administração Pública federal de que trata o **caput** do art. 2º desta Lei estabelecerá condições e prazos, não inferiores a 6 (seis) meses, para adequação das prestadoras de serviços de ativos virtuais que estiverem em atividade às disposições desta Lei e às normas por ele estabelecidas.
+**Art. 9º** O órgão ou a entidade da Administração Pública federal de que trata o caput do art. 2º desta Lei estabelecerá condições e prazos, não inferiores a 6 (seis) meses, para adequação das prestadoras de serviços de ativos virtuais que estiverem em atividade às disposições desta Lei e às normas por ele estabelecidas.
 
 **Art. 10.** O Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), passa a vigorar acrescido do seguinte art. 171-A:
 
-“Fraude com a utilização de ativos virtuais, valores mobiliários ou ativos financeiros
+“ Fraude com a utilização de ativos virtuais, valores mobiliários ou ativos financeiros
 
 **Art. 171-A.** Organizar, gerir, ofertar ou distribuir carteiras ou intermediar operações que envolvam ativos virtuais, valores mobiliários ou quaisquer ativos financeiros com o fim de obter vantagem ilícita, em prejuízo alheio, induzindo ou mantendo alguém em erro, mediante artifício, ardil ou qualquer outro meio fraudulento.
 
-Pena – reclusão, de 4 (quatro) a 8 (oito) anos, e multa.”
+Pena – reclusão, de 4 (quatro) a 8 (oito) anos, e multa. ”
 
-**Art. 11.** O parágrafo único do art. 1º da Lei nº 7.492, de 16 de junho de 1986, passa a vigorar com as seguintes alterações:
+**Art. 11.** O parágrafo único do art. 1º da Lei nº 7.492, de 16 de junho de 1986 , passa a vigorar com as seguintes alterações:
 
-“**Art.** 1º................................................................................................................................
+“ Art. 1º ................................................................................................................................
 
-Parágrafo único.................................................................................................................
+Parágrafo único. ................................................................................................................
 
 .............................................................................................................................................
 
 I-A – a pessoa jurídica que ofereça serviços referentes a operações com ativos virtuais, inclusive intermediação, negociação ou custódia;
 
-............................................................................................................................................” (NR)
+............................................................................................................................................ ” (NR)
 
-**Art. 12.** A Lei nº 9.613, de 3 de março de 1998, passa a vigorar com as seguintes alterações:
+**Art. 12.** A Lei nº 9.613, de 3 de março de 1998 , passa a vigorar com as seguintes alterações:
 
-“**Art.** 1º................................................................................................................................
-
-.............................................................................................................................................
-
-**§ 4º** A pena será aumentada de 1/3 (um terço) a 2/3 (dois terços) se os crimes definidos nesta Lei forem cometidos de forma reiterada, por intermédio de organização criminosa ou por meio da utilização de ativo virtual.
-
-............................................................................................................................................” (NR)
-
-“**Art.** 9º................................................................................................................................
+“ Art. 1º ................................................................................................................................
 
 .............................................................................................................................................
 
-Parágrafo único.................................................................................................................
+§ 4º A pena será aumentada de 1/3 (um terço) a 2/3 (dois terços) se os crimes definidos nesta Lei forem cometidos de forma reiterada, por intermédio de organização criminosa ou por meio da utilização de ativo virtual.
+
+............................................................................................................................................ ” (NR)
+
+“ Art. 9º ................................................................................................................................
 
 .............................................................................................................................................
 
-XIX – as prestadoras de serviços de ativos virtuais.” (NR)
+Parágrafo único. ................................................................................................................
 
-“**Art.** 10...............................................................................................................................
+.............................................................................................................................................
+
+XIX – as prestadoras de serviços de ativos virtuais. ” (NR)
+
+“ Art. 10. ..............................................................................................................................
 
 .............................................................................................................................................
 
 II – manterão registro de toda transação em moeda nacional ou estrangeira, títulos e valores mobiliários, títulos de crédito, metais, ativos virtuais, ou qualquer ativo passível de ser convertido em dinheiro, que ultrapassar limite fixado pela autoridade competente e nos termos de instruções por esta expedidas;
 
-............................................................................................................................................” (NR)
+............................................................................................................................................ ” (NR)
 
-“**Art. 12-A.** Ato do Poder Executivo federal regulamentará a disciplina e o funcionamento do Cadastro Nacional de Pessoas Expostas Politicamente (CNPEP), disponibilizado pelo Portal da Transparência.
+“ Art. 12-A. Ato do Poder Executivo federal regulamentará a disciplina e o funcionamento do Cadastro Nacional de Pessoas Expostas Politicamente (CNPEP), disponibilizado pelo Portal da Transparência.
 
-**§ 1º** Os órgãos e as entidades de quaisquer Poderes da União, dos Estados, do Distrito Federal e dos Municípios deverão encaminhar ao gestor CNPEP, na forma e na periodicidade definidas no regulamento de que trata o **caput** deste artigo, informações atualizadas sobre seus integrantes ou ex-integrantes classificados como pessoas expostas politicamente (PEPs) na legislação e regulação vigentes.
+§ 1º Os órgãos e as entidades de quaisquer Poderes da União, dos Estados, do Distrito Federal e dos Municípios deverão encaminhar ao gestor CNPEP, na forma e na periodicidade definidas no regulamento de que trata o caput deste artigo, informações atualizadas sobre seus integrantes ou ex-integrantes classificados como pessoas expostas politicamente (PEPs) na legislação e regulação vigentes.
 
-**§ 2º** As pessoas referidas no art. 9º desta Lei incluirão consulta ao CNPEP entre seus procedimentos para cumprimento das obrigações previstas nos arts. 10 e 11 desta Lei, sem prejuízo de outras diligências exigidas na forma da legislação.
+§ 2º As pessoas referidas no art. 9º desta Lei incluirão consulta ao CNPEP entre seus procedimentos para cumprimento das obrigações previstas nos arts. 10 e 11 desta Lei, sem prejuízo de outras diligências exigidas na forma da legislação.
 
-**§ 3º** O órgão gestor do CNPEP indicará em transparência ativa, pela internet, órgãos e entidades que deixem de cumprir a obrigação prevista no § 1º deste artigo.”
+§ 3º O órgão gestor do CNPEP indicará em transparência ativa, pela internet, órgãos e entidades que deixem de cumprir a obrigação prevista no § 1º deste artigo. ”
 
 **Art. 13.** Aplicam-se às operações conduzidas no mercado de ativos virtuais, no que couber, as disposições da Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor).
 
@@ -171,7 +169,7 @@ II – manterão registro de toda transação em moeda nacional ou estrangeira, 
 
 Brasília, 21 de dezembro de 2022; 201º da Independência e 134º da República.
 
-**JAIR MESSIAS BOLSONARO**
+### JAIR MESSIAS BOLSONARO
 
 Marcelo Pacheco dos Guaranys
 

@@ -1,0 +1,41 @@
+{
+  "schema": "critical-source-review/v1",
+  "review_date": "2026-10-21",
+  "policy": "autonomous-official-source-confirmation-with-deterministic-gates",
+  "decisions": [
+    {
+      "id": "br-federal-lei_ordinaria-15190-2025",
+      "status_before": "requer_reconciliacao",
+      "status_after": "consolidada_fonte_oficial",
+      "primary_sources": [
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-08-08;15190",
+        "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm"
+      ],
+      "findings": [
+        "The official Planalto page contains the promulgated portions of the partial veto.",
+        "The official page records later amendments to the diploma, including changes associated with Laws 15.269/2025 and 15.300/2025.",
+        "Those alterer diplomas are not currently materialized in the curated matrix."
+      ],
+      "next_action": "retain_off_matrix_alterers_in_the_normative_graph_and_history",
+      "automatic_promotion": false,
+      "autonomous_decision": "approved"
+    },
+    {
+      "id": "br-federal-lei_complementar-224-2025",
+      "status_before": "requer_reconciliacao",
+      "status_after": "consolidada_fonte_oficial",
+      "primary_sources": [
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+        "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm"
+      ],
+      "findings": [
+        "The official Planalto page identifies production-of-effects and entry-into-force provisions.",
+        "The official page records a later amendment by Complementary Law 235/2026.",
+        "The alterer diploma is not currently materialized in the curated matrix."
+      ],
+      "next_action": "retain_off_matrix_alterer_in_the_normative_graph_and_history",
+      "automatic_promotion": false,
+      "autonomous_decision": "approved"
+    }
+  ]
+}

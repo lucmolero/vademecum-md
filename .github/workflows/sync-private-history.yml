@@ -1,0 +1,69 @@
+name: sync-private-history
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [sync-private-history]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: private-history-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: vars.HISTORY_REPOSITORY != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Require private-history credential
+        env:
+          HISTORY_REPO_TOKEN: ${{ secrets.HISTORY_REPO_TOKEN }}
+        run: |
+          if [ -z "$HISTORY_REPO_TOKEN" ]; then
+            echo "HISTORY_REPO_TOKEN is not configured; private history sync is disabled."
+            exit 1
+          fi
+      - name: Install project dependencies
+        run: python -m pip install -e .
+      - name: Collect official snapshots
+        run: python tools/acquire/collect_legislation.py --mode proposal --fetch --report reports/private-history-collection.json
+      - name: Build private ledger
+        run: python tools/history/build_private_ledger.py --output private-ledger
+      - name: Checkout private history repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ vars.HISTORY_REPOSITORY }}
+          token: ${{ secrets.HISTORY_REPO_TOKEN }}
+          path: history-repository
+          persist-credentials: true
+      - name: Append ledger to private history
+        env:
+          RUN_STAMP: ${{ github.run_id }}-${{ github.run_attempt }}
+        shell: bash
+        run: |
+          target="history-repository/runs/${RUN_STAMP}"
+          mkdir -p "$target"
+          cp -R private-ledger/. "$target/"
+          mkdir -p "$target/metadata"
+          cp reports/private-history-collection.json "$target/metadata/collection-report.json"
+          git -C history-repository config user.name "vademecum-md private history"
+          git -C history-repository config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C history-repository add "runs/${RUN_STAMP}"
+          git -C history-repository commit -m "chore: store acquisition run ${RUN_STAMP}"
+          git -C history-repository push origin HEAD:main
+      - name: Upload non-sensitive collection report
+        uses: actions/upload-artifact@v4
+        with:
+          name: private-history-collection-${{ github.run_id }}
+          path: reports/private-history-collection.json
+          if-no-files-found: error

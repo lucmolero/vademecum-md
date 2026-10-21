@@ -21,8 +21,8 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "f00bd48310cfd3ecb69f725601b01642dcf803a754a20c5061b5ef355cb22e79"
-alterada_por: []
-revogada_por: ["br-federal-lei_complementar-214-2025"]
+alterada_por: ["br-federal-lei_complementar-214-2025"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

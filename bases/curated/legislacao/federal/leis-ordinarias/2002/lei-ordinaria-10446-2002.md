@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "6ed32d2a1996c8981da09bd3b71d057a0321fd03090ebff5757966d1320c9187"
-alterada_por: ["br-federal-decreto_lei-2848-1940"]
+alterada_por: []
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

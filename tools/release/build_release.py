@@ -11,8 +11,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parents[2]
+import sys
+sys.path.insert(0, str(ROOT / "tools"))
+from pipeline_modes import load_modes, resolve_mode  # noqa: E402
 PUBLIC_ROOTS = (
     Path("bases/curated"),
+    Path("bases/derived"),
     Path("bases/history/alteracoes"),
     Path("bases/history/versoes"),
     Path("docs"),
@@ -21,6 +25,7 @@ PUBLIC_ROOTS = (
     Path("SECURITY.md"),
     Path("LICENSE.md"),
 )
+PRIVATE_MARKERS = (".private/", "bases/raw/", "raw" + ".githubusercontent.com", "c:\\users\\", "/home/")
 
 
 def public_files() -> list[Path]:
@@ -42,15 +47,34 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def public_contract_violations(files: list[Path]) -> list[str]:
+    violations: list[str] = []
+    for path in files:
+        text = path.read_text(encoding="utf-8", errors="ignore").lower()
+        for marker in PRIVATE_MARKERS:
+            if marker in text:
+                violations.append(f"{path.relative_to(ROOT)}: {marker}")
+    return violations
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--version", default=None)
+    parser.add_argument("--mode", choices=("dry_run", "release"), default="release")
     args = parser.parse_args()
+    load_modes()
+    mode = resolve_mode(args.mode)
     release = json.loads((ROOT / "manifests/release.json").read_text(encoding="utf-8"))
     version = args.version or str(release["version"])
     generated_at = str(release.get("generated_at") or date.today().isoformat())
     files = public_files()
+    violations = public_contract_violations(files)
+    if violations:
+        raise SystemExit("public package contains private markers: " + "; ".join(violations))
+    if mode == "dry_run":
+        print(json.dumps({"mode": mode, "version": version, "files_count": len(files)}, ensure_ascii=False))
+        return 0
     args.output.mkdir(parents=True, exist_ok=True)
     archive_name = f"vademecum-md-{version}.zip"
     archive_path = args.output / archive_name
@@ -73,6 +97,7 @@ def main() -> int:
         "archive": archive_name,
         "sha256": checksums,
         "private_data_included": False,
+        "mode": mode,
     }
     (args.output / "release-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (args.output / "CHANGELOG.md").write_text(

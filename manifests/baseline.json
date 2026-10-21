@@ -1,0 +1,39 @@
+{
+  "schema": "vademecum-baseline/v1",
+  "generated_at": "2026-10-21",
+  "scope": "legislacao_federal_curada",
+  "corpus_count": 375,
+  "matrix_count": 375,
+  "integral_count": 375,
+  "official_source_count": 375,
+  "hash_count": 375,
+  "consolidation_status": {
+    "consolidada_fonte_oficial": 372,
+    "consolidada_reconciliada": 3
+  },
+  "situations": {
+    "em_vigor": 374,
+    "parcialmente_revogada": 1
+  },
+  "p0": {
+    "ready": 33,
+    "total": 33
+  },
+  "relation_count": 1841,
+  "unresolved_relation_occurrences": 2177,
+  "relation_target_count": 1491,
+  "relation_disposition": {
+    "historico": 1408,
+    "grafo": 83
+  },
+  "editorial_expansion": {
+    "candidate_count": 15,
+    "promoted_count": 15,
+    "undecided_count": 0
+  },
+  "workflow_count": 8,
+  "test_count": 35,
+  "divergence_report": "bases/derived/relatorios/baseline-divergence.json",
+  "divergence_count": 0,
+  "status": "pass"
+}

@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "eab9270074d175de23a57a9a080499e6299a9c093a0bd10b75644f4fab25911c"
-alterada_por: ["br-federal-lei_ordinaria-13465-2017"]
+alterada_por: ["br-federal-lei_ordinaria-13465-2017", "br-federal-lei_ordinaria-14620-2023"]
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

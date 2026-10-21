@@ -21,7 +21,7 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "14c77590ae9ad760ccc137e9e7d5016b20819f55e3b717c8598e2929d7c2bde8"
-alterada_por: ["br-federal-lei_ordinaria-10522-2002", "br-federal-lei_ordinaria-8870-1994"]
+alterada_por: []
 revogada_por: []
 regulamentada_por: []
 retificada_por: []

@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "media"
 data_assinatura: "1999-12-03"
 ementa: "Dispõe sobre o processo e julgamento da argüição de descumprimento de preceito fundamental, nos termos do § 1º do art. 102 da Constituição Federal."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:1999-12-03;9882"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "a4786b65de4cbd915aec5fedfc6dcc83d71a430b3933b394d9d4750cd0349482"
+sha256_origem: "5182c118e7a037990c3b724b1730221c4c1cf651cde94e476cbcfa6ffb72dec6"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,34 +28,32 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "5182c118e7a037990c3b724b1730221c4c1cf651cde94e476cbcfa6ffb72dec6"
+sha256_corpo: "846537ddddb005d49c20de1b77830372fb3bd9cbd8422b6dbe3a21418feb7492"
 ---
 # Lei nº 9.882 de 03/12/1999
 
-LEI Nº 9.882, DE 3 DE DEZEMBRO DE 1999
-
-**Dispõe sobre o processo e julgamento da argüição de descumprimento de preceito fundamental, nos termos do § 1º do art. 102 da Constituição Federal.**
-
-**O PRESIDENTE DA REPÚBLICA,**
+O PRESIDENTE DA REPÚBLICA,
 
 Faço saber que o CONGRESSO NACIONAL decreta e eu sanciono a seguinte Lei:
 
 **Art. 1º** A argüição prevista no § 1º do art. 102 da Constituição Federal será proposta perante o Supremo Tribunal Federal, e terá por objeto evitar ou reparar lesão a preceito fundamental, resultante de ato do Poder Público.
 
-**Parágrafo único.** Caberá também argüição de descumprimento de preceito fundamental:
+Parágrafo único. Caberá também argüição de descumprimento de preceito fundamental:
 
 I – quando for relevante o fundamento da controvérsia constitucional sobre lei ou ato normativo federal, estadual ou municipal, incluídos os anteriores à Constituição;
 
-II – (VETADO)
+### II – (VETADO)
 
-**Art.** 2ª Podem propor argüição de descumprimento de preceito fundamental:
+**Art. 2ª** Podem propor argüição de descumprimento de preceito fundamental:
 
 I – os legitimados para a ação direta de inconstitucionalidade;
 
-II – (VETADO)
+### II – (VETADO)
 
-**§ 1º** Na hipótese do inciso II, faculta-se ao interessado, mediante representação, solicitar a propositura de argüição de descumprimento de preceito fundamental ao Procurador-Geral da República, que, examinando os fundamentos jurídicos do pedido, decidirá do cabimento do seu ingresso em juízo.
+§ 1º Na hipótese do inciso II, faculta-se ao interessado, mediante representação, solicitar a propositura de argüição de descumprimento de preceito fundamental ao Procurador-Geral da República, que, examinando os fundamentos jurídicos do pedido, decidirá do cabimento do seu ingresso em juízo.
 
-**§ 2º** (VETADO)
+§ 2º (VETADO)
 
 **Art. 3º** A petição inicial deverá conter:
 
@@ -69,49 +67,49 @@ IV – o pedido, com suas especificações;
 
 V – se for o caso, a comprovação da existência de controvérsia judicial relevante sobre a aplicação do preceito fundamental que se considera violado.
 
-**Parágrafo único.** A petição inicial, acompanhada de instrumento de mandato, se for o caso, será apresentada em duas vias, devendo conter cópias do ato questionado e dos documentos necessários para comprovar a impugnação.
+Parágrafo único. A petição inicial, acompanhada de instrumento de mandato, se for o caso, será apresentada em duas vias, devendo conter cópias do ato questionado e dos documentos necessários para comprovar a impugnação.
 
 **Art. 4º** A petição inicial será indeferida liminarmente, pelo relator, quando não for o caso de argüição de descumprimento de preceito fundamental, faltar algum dos requisitos prescritos nesta Lei ou for inepta.
 
-**§ 1º** Não será admitida argüição de descumprimento de preceito fundamental quando houver qualquer outro meio eficaz de sanar a lesividade.
+§ 1º Não será admitida argüição de descumprimento de preceito fundamental quando houver qualquer outro meio eficaz de sanar a lesividade.
 
-**§ 2º** Da decisão de indeferimento da petição inicial caberá agravo, no prazo de cinco dias.
+§ 2º Da decisão de indeferimento da petição inicial caberá agravo, no prazo de cinco dias.
 
 **Art. 5º** O Supremo Tribunal Federal, por decisão da maioria absoluta de seus membros, poderá deferir pedido de medida liminar na argüição de descumprimento de preceito fundamental.
 
-**§ 1º** Em caso de extrema urgência ou perigo de lesão grave, ou ainda, em período de recesso, poderá o relator conceder a liminar, *ad* *referendum* do Tribunal Pleno.
+§ 1º Em caso de extrema urgência ou perigo de lesão grave, ou ainda, em período de recesso, poderá o relator conceder a liminar, ad referendum do Tribunal Pleno.
 
-**§ 2º** O relator poderá ouvir os órgãos ou autoridades responsáveis pelo ato questionado, bem como o Advogado-Geral da União ou o Procurador-Geral da República, no prazo comum de cinco dias.
+§ 2º O relator poderá ouvir os órgãos ou autoridades responsáveis pelo ato questionado, bem como o Advogado-Geral da União ou o Procurador-Geral da República, no prazo comum de cinco dias.
 
-**§ 3º** A liminar poderá consistir na determinação de que juízes e tribunais suspendam o andamento de processo ou os efeitos de decisões judiciais, ou de qualquer outra medida que apresente relação com a matéria objeto da argüição de descumprimento de preceito fundamental, salvo se decorrentes da coisa julgada.
+§ 3º A liminar poderá consistir na determinação de que juízes e tribunais suspendam o andamento de processo ou os efeitos de decisões judiciais, ou de qualquer outra medida que apresente relação com a matéria objeto da argüição de descumprimento de preceito fundamental, salvo se decorrentes da coisa julgada.
 
-**§ 4º** (VETADO)
+§ 4º (VETADO)
 
 **Art. 6º** Apreciado o pedido de liminar, o relator solicitará as informações às autoridades responsáveis pela prática do ato questionado, no prazo de dez dias.
 
-**§ 1º** Se entender necessário, poderá o relator ouvir as partes nos processos que ensejaram a argüição, requisitar informações adicionais, designar perito ou comissão de peritos para que emita parecer sobre a questão, ou ainda, fixar data para declarações, em audiência pública, de pessoas com experiência e autoridade na matéria.
+§ 1º Se entender necessário, poderá o relator ouvir as partes nos processos que ensejaram a argüição, requisitar informações adicionais, designar perito ou comissão de peritos para que emita parecer sobre a questão, ou ainda, fixar data para declarações, em audiência pública, de pessoas com experiência e autoridade na matéria.
 
-**§ 2º** Poderão ser autorizadas, a critério do relator, sustentação oral e juntada de memoriais, por requerimento dos interessados no processo.
+§ 2º Poderão ser autorizadas, a critério do relator, sustentação oral e juntada de memoriais, por requerimento dos interessados no processo.
 
 **Art. 7º** Decorrido o prazo das informações, o relator lançará o relatório, com cópia a todos os ministros, e pedirá dia para julgamento.
 
-**Parágrafo único.** O Ministério Público, nas argüições que não houver formulado, terá vista do processo, por cinco dias, após o decurso do prazo para informações.
+Parágrafo único. O Ministério Público, nas argüições que não houver formulado, terá vista do processo, por cinco dias, após o decurso do prazo para informações.
 
 **Art. 8º** A decisão sobre a argüição de descumprimento de preceito fundamental somente será tomada se presentes na sessão pelo menos dois terços dos Ministros.
 
-**§ 1º** (VETADO)
+§ 1º (VETADO)
 
-**§ 2º** (VETADO)
+§ 2º (VETADO)
 
 **Art. 9º** (VETADO)
 
 **Art. 10.** Julgada a ação, far-se-á comunicação às autoridades ou órgãos responsáveis pela prática dos atos questionados, fixando-se as condições e o modo de interpretação e aplicação do preceito fundamental.
 
-**§ 1º** O presidente do Tribunal determinará o imediato cumprimento da decisão, lavrando-se o acórdão posteriormente.
+§ 1º O presidente do Tribunal determinará o imediato cumprimento da decisão, lavrando-se o acórdão posteriormente.
 
-**§ 2º** Dentro do prazo de dez dias contado a partir do trânsito em julgado da decisão, sua parte dispositiva será publicada em seção especial do Diário da Justiça e do Diário Oficial da União.
+§ 2º Dentro do prazo de dez dias contado a partir do trânsito em julgado da decisão, sua parte dispositiva será publicada em seção especial do Diário da Justiça e do Diário Oficial da União.
 
-**§ 3º** A decisão terá eficácia contra todos e efeito vinculante relativamente aos demais órgãos do Poder Público.
+§ 3º A decisão terá eficácia contra todos e efeito vinculante relativamente aos demais órgãos do Poder Público.
 
 **Art. 11.** Ao declarar a inconstitucionalidade de lei ou ato normativo, no processo de argüição de descumprimento de preceito fundamental, e tendo em vista razões de segurança jurídica ou de excepcional interesse social, poderá o Supremo Tribunal Federal, por maioria de dois terços de seus membros, restringir os efeitos daquela declaração ou decidir que ela só tenha eficácia a partir de seu trânsito em julgado ou de outro momento que venha a ser fixado.
 
@@ -123,6 +121,6 @@ V – se for o caso, a comprovação da existência de controvérsia judicial re
 
 Brasília, 3 de dezembro de 1999: 178º da Independência e 111º da República.
 
-FERNANDO HENRIQUE CARDOSO
+### FERNANDO HENRIQUE CARDOSO
 
 José Carlos Dias

@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "4327eee95ff6b976aca74fa57057acea64c102986893cadd1432160fcd90ec82"
 alterada_por: ["br-federal-lei_ordinaria-13240-2015", "br-federal-lei_ordinaria-13465-2017"]
-revogada_por: ["br-federal-decreto_lei-9760-1946", "br-federal-lei_ordinaria-13240-2015", "br-federal-lei_ordinaria-13465-2017"]
+revogada_por: ["br-federal-lei_ordinaria-13240-2015", "br-federal-lei_ordinaria-13465-2017"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

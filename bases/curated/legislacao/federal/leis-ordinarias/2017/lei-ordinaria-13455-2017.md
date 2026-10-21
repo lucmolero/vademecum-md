@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2017-06-26"
 ementa: "Dispõe sobre a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado, e altera a Lei nº 10.962, de 11 de outubro de 2004."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-06-26;13455"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "7d8b5d7819d4151bfa3507aeebfe4534a4babe8b0e1856bc214de681c8e5d699"
+sha256_origem: "880c334d7f34eb2280e8066d2bbfdb1b5780e4ef95b628eb890dc86f215fbe43"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,32 +28,34 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "880c334d7f34eb2280e8066d2bbfdb1b5780e4ef95b628eb890dc86f215fbe43"
+sha256_corpo: "bb1f9d86e9ccd6ee33ef8ef7b13e6a1e2b29fa0e3b1ebf522a84f9866ea86d06"
 ---
 # Lei nº 13.455 de 26/06/2017
 
-LEI Nº 13.455, DE 26 DE JUNHO DE 2017
+### LEI Nº 13.455, DE 26 DE JUNHO DE 2017
 
-Dispõe sobre a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado, e altera a Lei nº 10.962, de 11 de outubro de 2004.
+Dispõe sobre a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado, e altera a Lei nº 10.962, de 11 de outubro de 2004 .
 
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 1º** Fica autorizada a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado.
 
-**Parágrafo único.** É nula a cláusula contratual, estabelecida no âmbito de arranjos de pagamento ou de outros acordos para prestação de serviço de pagamento, que proíba ou restrinja a diferenciação de preços facultada no **caput** deste artigo.
+Parágrafo único. É nula a cláusula contratual, estabelecida no âmbito de arranjos de pagamento ou de outros acordos para prestação de serviço de pagamento, que proíba ou restrinja a diferenciação de preços facultada no caput deste artigo.
 
-**Art. 2º** A Lei nº 10.962, de 11 de outubro de 2004, passa a vigorar acrescida do seguinte art. 5º-A:
+**Art. 2º** A Lei nº 10.962, de 11 de outubro de 2004 , passa a vigorar acrescida do seguinte art. 5º-A:
 
-“**Art. 5º-A.** O fornecedor deve informar, em local e formato visíveis ao consumidor, eventuais descontos oferecidos em função do prazo ou do instrumento de pagamento utilizado.
+“ Art. 5º-A. O fornecedor deve informar, em local e formato visíveis ao consumidor, eventuais descontos oferecidos em função do prazo ou do instrumento de pagamento utilizado.
 
-**Parágrafo único.** Aplicam-se às infrações a este artigo as sanções previstas na Lei nº 8.078, de 11 de setembro de 1990.”
+Parágrafo único. Aplicam-se às infrações a este artigo as sanções previstas na Lei nº 8.078, de 11 de setembro de 1990 .”
 
 **Art. 3º** Esta Lei entra em vigor na data de sua publicação.
 
 Brasília, 26 de junho de 2017; 196º da Independência e 129º da República.
 
-**MICHEL TEMER**
+### MICHEL TEMER
 
 Henrique Meirelles
 

@@ -1,0 +1,109 @@
+{
+  "schema": "candidate-normative-diff/v1",
+  "matrix_id": "VM-009",
+  "document_id": "br-federal-decreto_lei-3931-1941",
+  "status": "source_conflict",
+  "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-11;3931",
+  "source_status_before_resolution": "source_conflict",
+  "resolution": {
+    "status": "approved",
+    "selected_source_id": "normas-leg-br",
+    "expected_source_sha256": "97b43d326fde0ced46b1cec1cd0fd67377946c6fe36ea3c6168af5275ed1fd30",
+    "reason": "The current compilation and the Planalto publication contain the same 16-article instrument; the observed differences are legacy HTML punctuation, spacing, signature and publication-note presentation.",
+    "review_scope": "article_level_comparison"
+  },
+  "selected_source_id": "normas-leg-br",
+  "diff_status": "generated",
+  "current_path": "bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3931-1941.md",
+  "structure": {
+    "artigos": {
+      "total_anterior": 16,
+      "total_atual": 16,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 1,
+      "inalterados": 15
+    },
+    "detalhes": [
+      {
+        "artigo": "16",
+        "status": "alterado",
+        "hash_anterior": "6f5bd2fd670322052d05bc658b3ff78c64f60ce42734c7545907ea237a8bfc20",
+        "hash_atual": "7c600e600b88fca9079369139e5b6f463fcfa8e23828db7b14748c5c4d8dd40f",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      }
+    ]
+  },
+  "classificacao": [
+    "decisao_de_fonte_aprovada",
+    "alteracao_normativa",
+    "possivel_revogacao",
+    "possivel_efeito_de_vigencia"
+  ],
+  "hashes": {
+    "current_body_sha256": "89dff17c3dc2905b38813a2fe50286fc08ee4666d62603185a1808c626de5efe",
+    "candidate_body_sha256": "1053715cf3f7664cec853fd8aff790bcc3eae320cd356d31083b7bf4070fba89",
+    "source_raw_sha256": "97b43d326fde0ced46b1cec1cd0fd67377946c6fe36ea3c6168af5275ed1fd30",
+    "source_normalized_sha256": "97b43d326fde0ced46b1cec1cd0fd67377946c6fe36ea3c6168af5275ed1fd30",
+    "source_legal_body_sha256": "0bb3a707d808d621b9fc9b6d996e1ffdc11d27ba3144bd0d7b691cba469113a5"
+  },
+  "risk": "alto",
+  "relations_before": [],
+  "relation_impact_count": 0,
+  "source_evidence": {
+    "data_corte": "2026-10-21",
+    "primary_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-11;3931",
+    "selected_source_id": "normas-leg-br",
+    "attempts": [
+      {
+        "source_id": "planalto-br",
+        "adapter": "planalto_html",
+        "adapter_version": "0.1.0",
+        "authority": "primary",
+        "status": "fetched",
+        "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/1937-1946/del3931.htm",
+        "final_url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/1937-1946/del3931.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 14359,
+        "sha256_raw": "4a29f5c6902c2f8646fa9bbf567a1072211295f25aff52d39be4e969c1674ba2",
+        "sha256_normalized": "788822484ca8fdf64e67cc0ec546ce7d980a6db2e2f01600a1fe8db77db4fbe6",
+        "sha256_body": "ba55353d0324e5c18a77cda729e228b03eba1d2f6779c9b5bc2514233afc8bde"
+      },
+      {
+        "source_id": "normas-leg-br",
+        "adapter": "normas_leg_current_compilation",
+        "adapter_version": "0.2.0",
+        "authority": "official_machine_readable_compilation",
+        "status": "fetched",
+        "url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-11;3931",
+        "fetch_url": "https://normas.leg.br/api/public/binario/176be26b-f627-4098-a5ba-cf0948ff5c24/texto",
+        "metadata_url": "https://normas.leg.br/api/public/normas?urn=urn%3Alex%3Abr%3Afederal%3Adecreto.lei%3A1941-12-11%3B3931&tipo_documento=maior-detalhe",
+        "final_url": "https://normas.leg.br/api/public/binario/176be26b-f627-4098-a5ba-cf0948ff5c24/texto",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 15393,
+        "sha256_raw": "97b43d326fde0ced46b1cec1cd0fd67377946c6fe36ea3c6168af5275ed1fd30",
+        "sha256_normalized": "97b43d326fde0ced46b1cec1cd0fd67377946c6fe36ea3c6168af5275ed1fd30",
+        "sha256_body": "0bb3a707d808d621b9fc9b6d996e1ffdc11d27ba3144bd0d7b691cba469113a5"
+      }
+    ]
+  }
+}

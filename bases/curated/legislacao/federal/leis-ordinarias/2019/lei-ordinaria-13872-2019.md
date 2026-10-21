@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2019-09-17"
 ementa: "Estabelece o direito de as mães amamentarem seus filhos durante a realização de concursos públicos na administração pública direta e indireta dos Poderes da União."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2019-09-17;13872"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "a0e0c305d06d63440ee90a3496abd5b9359eefa22ca4b697e08f7ff0f3a3a299"
+sha256_origem: "dda3760ceb6600b6fb36b5cf18e56b8845828cf0dc8732eb9c94a89150077fdd"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,14 +28,16 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "dda3760ceb6600b6fb36b5cf18e56b8845828cf0dc8732eb9c94a89150077fdd"
+sha256_corpo: "f817231dc97f53688426b65d99e351a48144ba0e0050ad6d0e85116617cbad27"
 ---
 # Lei nº 13.872 de 17/09/2019
 
-LEI Nº 13.872, DE 17 DE SETEMBRO DE 2019
+### LEI Nº 13.872, DE 17 DE SETEMBRO DE 2019
 
 Estabelece o direito de as mães amamentarem seus filhos durante a realização de concursos públicos na administração pública direta e indireta dos Poderes da União.
 
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -43,19 +45,19 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 2º** Fica assegurado à mãe o direito de amamentar seus filhos de até 6 (seis) meses de idade durante a realização de provas ou de etapas avaliatórias em concursos públicos na administração pública direta e indireta dos Poderes da União, mediante prévia solicitação à instituição organizadora.
 
-**§ 1º** Terá o direito previsto no **caput** deste artigo a mãe cujo filho tiver até 6 (seis) meses de idade no dia da realização de prova ou de etapa avaliatória de concurso público.
+§ 1º Terá o direito previsto no caput deste artigo a mãe cujo filho tiver até 6 (seis) meses de idade no dia da realização de prova ou de etapa avaliatória de concurso público.
 
-**§ 2º** A prova da idade será feita mediante declaração no ato de inscrição para o concurso e apresentação da respectiva certidão de nascimento durante sua realização.
+§ 2º A prova da idade será feita mediante declaração no ato de inscrição para o concurso e apresentação da respectiva certidão de nascimento durante sua realização.
 
 **Art. 3º** Deferida a solicitação de que trata o art. 2º desta Lei, a mãe deverá, no dia da prova ou da etapa avaliatória, indicar uma pessoa acompanhante que será a responsável pela guarda da criança durante o período necessário.
 
-**Parágrafo único.** A pessoa acompanhante somente terá acesso ao local das provas até o horário estabelecido para fechamento dos portões e ficará com a criança em sala reservada para essa finalidade, próxima ao local de aplicação das provas.
+Parágrafo único. A pessoa acompanhante somente terá acesso ao local das provas até o horário estabelecido para fechamento dos portões e ficará com a criança em sala reservada para essa finalidade, próxima ao local de aplicação das provas.
 
 **Art. 4º** A mãe terá o direito de proceder à amamentação a cada intervalo de 2 (duas) horas, por até 30 (trinta) minutos, por filho.
 
-**§ 1º** Durante o período de amamentação, a mãe será acompanhada por fiscal.
+§ 1º Durante o período de amamentação, a mãe será acompanhada por fiscal.
 
-**§ 2º** O tempo despendido na amamentação será compensado durante a realização da prova, em igual período.
+§ 2º O tempo despendido na amamentação será compensado durante a realização da prova, em igual período.
 
 **Art. 5º** O direito previsto nesta Lei deverá ser expresso no edital do concurso, que estabelecerá prazo para que a mãe manifeste seu interesse em exercê-lo.
 
@@ -63,6 +65,6 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 Brasília, 17 de setembro de 2019; 198º da Independência e 131º da República.
 
-**JAIR MESSIAS BOLSONARO**
+### JAIR MESSIAS BOLSONARO
 
 Damares Regina Alves

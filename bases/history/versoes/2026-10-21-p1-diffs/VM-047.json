@@ -1,0 +1,568 @@
+{
+  "schema": "candidate-normative-diff/v1",
+  "matrix_id": "VM-047",
+  "document_id": "br-federal-lei_ordinaria-15190-2025",
+  "status": "source_conflict",
+  "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm",
+  "source_status_before_resolution": "source_conflict",
+  "resolution": {
+    "status": "approved",
+    "selected_source_id": "planalto-br",
+    "expected_source_sha256": "81a42e7952ef703179e67e4560a10db2d7bde8fd44a3739482525777f6266a77",
+    "reason": "The Planalto text includes the promulgated vetoed provisions and the later amendment identified in the official text, while the Normas snapshot does not expose the same current redaction. The Planalto version is selected for the consolidated corpus and the Normas version remains evidence.",
+    "review_scope": "current_redaction_and_promulgated_vetoes"
+  },
+  "selected_source_id": "planalto-br",
+  "diff_status": "generated",
+  "current_path": "bases/curated/legislacao/federal/leis-ordinarias/2025/lei-ordinaria-15190-2025.md",
+  "structure": {
+    "artigos": {
+      "total_anterior": 67,
+      "total_atual": 67,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 17,
+      "inalterados": 50
+    },
+    "detalhes": [
+      {
+        "artigo": "3",
+        "status": "alterado",
+        "hash_anterior": "49e770ab44ab08a5edb8209e603acca17210310742054835acd96a91b9554bb1",
+        "hash_atual": "50cb87a6b61b569190ad0e95f9ed66f6903c5e076fde64a52f6cc5dda99a2048",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 37
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "8",
+        "status": "alterado",
+        "hash_anterior": "3aa310d4f869bdf2a370dd24cd8fed04d5abb37b38a79b931015571f28bdd090",
+        "hash_atual": "454ca3096f6205d5c22df051190a32f9b88a8eefdb9800392fff869d87c8717e",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 4
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 7
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "9",
+        "status": "alterado",
+        "hash_anterior": "46018c0c6e463d8989cd3070df9761224a0e5225081275e3cb5f504dfabb970a",
+        "hash_atual": "e14a5612db9071178a76a5438408a3c553f512aadc29db36e2cb2e92fb1b7326",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 7
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 3
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "17",
+        "status": "alterado",
+        "hash_anterior": "4fbd9d922b2bc811a3bcd918871da2ef73652ec6efa8989d05d4b2d804e1cc0f",
+        "hash_atual": "bf3fe51eacee02ecaaf704f92928e07e9f1fa54d5bf718a3b1c8cf5c32335d5e",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "23",
+        "status": "alterado",
+        "hash_anterior": "1aa9cda12a3a095f1003b63b0e343c335530de5014e589a24963cb1f9bb2a26a",
+        "hash_atual": "b1b5007024d6250c5bdda7b1f2f61c4d9ac9cea807fa1fe7e53fe1d89168d511",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "25",
+        "status": "alterado",
+        "hash_anterior": "9b248d14060606d8a52b0453faaff5a16297dafdd003d20b6caa1644ac01dbdf",
+        "hash_atual": "fb8eac86a5b4728aa9c8eab4af04795c253ccc57f9f6a4c31bd0935addf90e06",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "27",
+        "status": "alterado",
+        "hash_anterior": "d71b809ace872444103d07503031f87215c42f6fd87657ab31f6c04e4841aac0",
+        "hash_atual": "4b039505d4ff0260ddbe800612d48de6ce295037bff1b92b0b4bf846ccd04003",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "34",
+        "status": "alterado",
+        "hash_anterior": "c5e8a522f27387fe927ead4a7ad5497f84c43495bbe6c7ea87a6c255255aedba",
+        "hash_atual": "a4aec9d19a297fc64fe767c3fec008c2e89686acb87cc43d9f457d8dec491e76",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "38",
+        "status": "alterado",
+        "hash_anterior": "3148a7e5a0049f31de1ab7cce2853c9eea84ba6b3a92317a682a90b9966192d1",
+        "hash_atual": "b089bc16b3c4b536f33a1e56097f6d29797df12e3e7030ddabf385a974994a79",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "41",
+        "status": "alterado",
+        "hash_anterior": "78aff35b783e4224f37c21466eab2d85a4a207c7d038f8620ec66b1403d65cb2",
+        "hash_atual": "58a7ed147961296a9f8d35060948817f80d5df9ac9bf391cf136087627ebc811",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "42",
+        "status": "alterado",
+        "hash_anterior": "9884c8688a536301e96352e28085644f6f753e8deebeadd47af432e261edecf2",
+        "hash_atual": "932e4333007d73c8bdfeaf474e7099a033f723b25b958b7e7c9074b9850c608c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 4
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "44",
+        "status": "alterado",
+        "hash_anterior": "9d537c6272e5f8666b88e73fee2066c7b40fadbfdcb3dc8693aff47ff5e95dbe",
+        "hash_atual": "9efac262edf8133976113a66d2f309ae5f954a30d4e680ee9a35075a2bf0767a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 10
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "46",
+        "status": "alterado",
+        "hash_anterior": "3d3a62727f50b6d1ad79f35bf894949068d40751a3a06ea8c2ebaecdaa939c84",
+        "hash_atual": "b391f32342f64fa17fbc6c0b38731bfab6ea29532efab0112fe65ff7c2127d70",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "52",
+        "status": "alterado",
+        "hash_anterior": "f50bb888a2c6709775aaa963247d83875d57b41f447fd85193cc06e084170258",
+        "hash_atual": "d53f0c06fa2fa12f82cbba61e9e3d4d10b387bed4fabbd49267c57a97eb020a8",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "53",
+        "status": "alterado",
+        "hash_anterior": "1318b79044f8a570c411f2642e624625e57a968949ed8ed0ac25a411cb5fcf8c",
+        "hash_atual": "3eeab0ab761b5de4f5808c498abcc3db7fcf9111300d5174814db0948ea92102",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 5
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "66",
+        "status": "alterado",
+        "hash_anterior": "6b80985e6c26bc6654993b94b948e840b65e5afb0a92cebe32bfd6e3a709a6fc",
+        "hash_atual": "193b85b2974020441715b50b0b5fb93464eb7f1756cd8b2f6338e74423c56cd7",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 3
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "67",
+        "status": "alterado",
+        "hash_anterior": "8c81df62bbf0180a06286e2a543dc485bd0a79c05bfd65559f13bbc7c7f3c041",
+        "hash_atual": "0330448d610988a61bda40ca8b175ca1dfc3e016d4ad9a1be9837908f2f71082",
+        "paragrafos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      }
+    ]
+  },
+  "classificacao": [
+    "decisao_de_fonte_aprovada",
+    "alteracao_normativa",
+    "possivel_revogacao",
+    "possivel_veto",
+    "possivel_retificacao",
+    "possivel_efeito_de_vigencia"
+  ],
+  "hashes": {
+    "current_body_sha256": "de53ad8fc5abe006b49989709a0b28a0f4b7823e370ef3e8d4bf348a05963b07",
+    "candidate_body_sha256": "eeeed161546e113c956b48f08593c9a70b1144b352dd05ffa43297981849ec1a",
+    "source_raw_sha256": "81a42e7952ef703179e67e4560a10db2d7bde8fd44a3739482525777f6266a77",
+    "source_normalized_sha256": "4a38a840aedf29b7e33a82eac2c35a86ab9881064cf6b5464cb37fa87bf03509",
+    "source_legal_body_sha256": "f48ae1d016d9df18a63b94b288d7ca58fceda070370229bda3257d93d045f5d1"
+  },
+  "risk": "alto",
+  "relations_before": [
+    {
+      "source_id": "br-federal-lei_ordinaria-15190-2025",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-6938-1981",
+      "dispositivo": null,
+      "data_efeito": "2025-08-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-08-08;15190",
+      "evidencia_textual": "ropor obras, serviços, projetos e atividades para a lista de empreendimentos estratégicos, para fins de licenciamento ambiental; *(Inciso com redação dada pela Lei nº 15.190, de 8/8/2025, publicada no DOU de 8/8/2025, Edição Extra A,* *retificada na Edição Extra B do DOU de 8/8/2025, em vigor 180 dias após a publicação)* II - órgão consultivo e delib",
+      "evidencia_sha256": "0ae7d7b326a66ef88ef672b9c74c6fa69225fc1c3d4ec00d5e1653f0d1166d40",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15190-2025",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-9605-1998",
+      "dispositivo": null,
+      "data_efeito": "2025-08-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-08-08;15190",
+      "evidencia_textual": "s e regulamentares pertinentes: Pena - detenção, de 6 (seis) meses a 2 (dois) anos, ou multa, ou ambas as penas, cumulativamente. *(Pena com redação dada pela Lei nº 15.190, de 8/8/2025, publicada no DOU de 8/8/2025, Edição Extra A,* *retificada na Edição Extra B do DOU de 8/8/2025, em vigor 180 dias após a publicação)* **Parágrafo único.** A pena é",
+      "evidencia_sha256": "bdf05bde5a847b5450f1e9760571a0511cf51e1a97e916054e1b735c6aa9f783",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-15190-2025",
+      "type": "revoga",
+      "target_id": "br-federal-lei_ordinaria-9605-1998",
+      "dispositivo": null,
+      "data_efeito": "2025-08-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-08-08;15190",
+      "evidencia_textual": "DOU de 8/8/2025, Edição Extra A,* *retificada na Edição Extra B do DOU de 8/8/2025, em vigor 180 dias após a publicação)* **Parágrafo único.** *(Revogado pela Lei nº 15.190, de 8/8/2025, publicada no DOU de 8/8/2025, Edição Extra A,* *retificada na Edição Extra B do DOU de 8/8/2025, em vigor 180 dias após a publicação)* **Art. 68.** Deixar, aquele q",
+      "evidencia_sha256": "d16fbd92b31d9bddccb3a7b614d7318b8f4e846eeca1546e17f3f67ef0f2e25c",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-6938-1981",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15190-2025",
+      "dispositivo": null,
+      "data_efeito": "2025-08-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1981-08-31;6938",
+      "evidencia_textual": "ropor obras, serviços, projetos e atividades para a lista de empreendimentos estratégicos, para fins de licenciamento ambiental; *(Inciso com redação dada pela Lei nº 15.190, de 8/8/2025, publicada no DOU de 8/8/2025, Edição Extra A,* *retificada na Edição Extra B do DOU de 8/8/2025, em vigor 180 dias após a publicação)* II - órgão consultivo e delib",
+      "evidencia_sha256": "0ae7d7b326a66ef88ef672b9c74c6fa69225fc1c3d4ec00d5e1653f0d1166d40",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-9605-1998",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_ordinaria-15190-2025",
+      "dispositivo": null,
+      "data_efeito": "2025-08-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1998-02-12;9605",
+      "evidencia_textual": "s e regulamentares pertinentes: Pena - detenção, de 6 (seis) meses a 2 (dois) anos, ou multa, ou ambas as penas, cumulativamente. *(Pena com redação dada pela Lei nº 15.190, de 8/8/2025, publicada no DOU de 8/8/2025, Edição Extra A,* *retificada na Edição Extra B do DOU de 8/8/2025, em vigor 180 dias após a publicação)* **Parágrafo único.** A pena é",
+      "evidencia_sha256": "bdf05bde5a847b5450f1e9760571a0511cf51e1a97e916054e1b735c6aa9f783",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-9605-1998",
+      "type": "revogada_por",
+      "target_id": "br-federal-lei_ordinaria-15190-2025",
+      "dispositivo": null,
+      "data_efeito": "2025-08-08",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1998-02-12;9605",
+      "evidencia_textual": "DOU de 8/8/2025, Edição Extra A,* *retificada na Edição Extra B do DOU de 8/8/2025, em vigor 180 dias após a publicação)* **Parágrafo único.** *(Revogado pela Lei nº 15.190, de 8/8/2025, publicada no DOU de 8/8/2025, Edição Extra A,* *retificada na Edição Extra B do DOU de 8/8/2025, em vigor 180 dias após a publicação)* **Art. 68.** Deixar, aquele q",
+      "evidencia_sha256": "d16fbd92b31d9bddccb3a7b614d7318b8f4e846eeca1546e17f3f67ef0f2e25c",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    }
+  ],
+  "relation_impact_count": 6,
+  "source_evidence": {
+    "data_corte": "2026-10-21",
+    "primary_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm",
+    "selected_source_id": "planalto-br",
+    "attempts": [
+      {
+        "source_id": "planalto-br",
+        "adapter": "planalto_html",
+        "adapter_version": "0.1.0",
+        "authority": "primary",
+        "status": "fetched",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm",
+        "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 350027,
+        "sha256_raw": "81a42e7952ef703179e67e4560a10db2d7bde8fd44a3739482525777f6266a77",
+        "sha256_normalized": "4a38a840aedf29b7e33a82eac2c35a86ab9881064cf6b5464cb37fa87bf03509",
+        "sha256_body": "f48ae1d016d9df18a63b94b288d7ca58fceda070370229bda3257d93d045f5d1"
+      },
+      {
+        "source_id": "normas-leg-br",
+        "adapter": "normas_leg_current_compilation",
+        "adapter_version": "0.2.0",
+        "authority": "official_machine_readable_compilation",
+        "status": "fetched",
+        "url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-08-08;15190",
+        "fetch_url": "https://normas.leg.br/api/public/binario/14857faf-2af9-4f6e-8e87-328926cb85b2/texto",
+        "metadata_url": "https://normas.leg.br/api/public/normas?urn=urn%3Alex%3Abr%3Afederal%3Alei%3A2025-08-08%3B15190&tipo_documento=maior-detalhe",
+        "final_url": "https://normas.leg.br/api/public/binario/14857faf-2af9-4f6e-8e87-328926cb85b2/texto",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 121993,
+        "sha256_raw": "2d32d1812044c70eeef01a5b7748884c355431102f3d1dfabefad8dd07ff3e2e",
+        "sha256_normalized": "2d32d1812044c70eeef01a5b7748884c355431102f3d1dfabefad8dd07ff3e2e",
+        "sha256_body": "fa82f08dffa0d33b21b30b5b95c99f079ef8d25ce466670196150170684cf884"
+      }
+    ]
+  }
+}

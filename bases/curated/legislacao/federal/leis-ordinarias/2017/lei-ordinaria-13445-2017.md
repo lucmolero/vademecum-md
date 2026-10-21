@@ -12,15 +12,15 @@ publicos: ["academia", "concursos", "pratica"]
 sensibilidade_atualizacao: "media"
 data_assinatura: "2017-05-24"
 ementa: "Institui a Lei de Migração."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-05-24;13445"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "90d0b2f1bd9d2e2a8067f5611b3e6e1d58cc0f4307ce313658e88509bad93581"
+sha256_origem: "8ccec08814e72e68764057d450e1753bb1246b84c46dc2c336285fe80e5f47d0"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,26 +28,28 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "8ccec08814e72e68764057d450e1753bb1246b84c46dc2c336285fe80e5f47d0"
+sha256_corpo: "c06f91a4db5240931c37913d4d599e6eb735e09cdab5dba43d97b6c7ee7915b8"
 ---
 # Lei nº 13.445 de 24/05/2017
 
-LEI Nº 13.445, DE 24 DE MAIO DE 2017
-
-Institui a Lei de Migração.
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-#### CAPÍTULO I — DISPOSIÇÕES PRELIMINARES
+#### CAPÍTULO I
 
-##### Seção I — Disposições Gerais
+### DISPOSIÇÕES PRELIMINARES
+
+##### Seção I
+
+Disposições Gerais
 
 **Art. 1º** Esta Lei dispõe sobre os direitos e os deveres do migrante e do visitante, regula a sua entrada e estada no País e estabelece princípios e diretrizes para as políticas públicas para o emigrante.
 
-**§ 1º** Para os fins desta Lei, considera-se:
+§ 1º Para os fins desta Lei, considera-se:
 
-I – (VETADO);
+### I – (VETADO);
 
 II – imigrante: pessoa nacional de outro país ou apátrida que trabalha ou reside e se estabelece temporária ou definitivamente no Brasil;
 
@@ -57,13 +59,15 @@ IV – residente fronteiriço: pessoa nacional de país limítrofe ou apátrida 
 
 V – visitante: pessoa nacional de outro país ou apátrida que vem ao Brasil para estadas de curta duração, sem pretensão de se estabelecer temporária ou definitivamente no território nacional;
 
-VI – apátrida: pessoa que não seja considerada como nacional por nenhum Estado, segundo a sua legislação, nos termos da Convenção sobre o Estatuto dos Apátridas, de 1954, promulgada pelo Decreto nº 4.246, de 22 de maio de 2002, ou assim reconhecida pelo Estado brasileiro.
+VI – apátrida: pessoa que não seja considerada como nacional por nenhum Estado, segundo a sua legislação, nos termos da Convenção sobre o Estatuto dos Apátridas, de 1954, promulgada pelo Decreto nº 4.246, de 22 de maio de 2002 , ou assim reconhecida pelo Estado brasileiro.
 
-**§ 2º** (VETADO).
+§ 2º (VETADO).
 
 **Art. 2º** Esta Lei não prejudica a aplicação de normas internas e internacionais específicas sobre refugiados, asilados, agentes e pessoal diplomático ou consular, funcionários de organização internacional e seus familiares.
 
-##### Seção II — Dos Princípios e das Garantias
+##### Seção II
+
+Dos Princípios e das Garantias
 
 **Art. 3º** A política migratória brasileira rege-se pelos seguintes princípios e diretrizes:
 
@@ -137,7 +141,7 @@ XI – garantia de cumprimento de obrigações legais e contratuais trabalhistas
 
 XII – isenção das taxas de que trata esta Lei, mediante declaração de hipossuficiência econômica, na forma de regulamento;
 
-XIII – direito de acesso à informação e garantia de confidencialidade quanto aos dados pessoais do migrante, nos termos da Lei nº 12.527, de 18 de novembro de 2011;
+XIII – direito de acesso à informação e garantia de confidencialidade quanto aos dados pessoais do migrante, nos termos da Lei nº 12.527, de 18 de novembro de 2011 ;
 
 XIV – direito a abertura de conta bancária;
 
@@ -145,17 +149,21 @@ XV – direito de sair, de permanecer e de reingressar em território nacional, 
 
 XVI – direito do imigrante de ser informado sobre as garantias que lhe são asseguradas para fins de regularização migratória.
 
-**§ 1º** Os direitos e as garantias previstos nesta Lei serão exercidos em observância ao disposto na Constituição Federal, independentemente da situação migratória, observado o disposto no § 4º deste artigo, e não excluem outros decorrentes de tratado de que o Brasil seja parte.
+§ 1º Os direitos e as garantias previstos nesta Lei serão exercidos em observância ao disposto na Constituição Federal , independentemente da situação migratória, observado o disposto no § 4º deste artigo, e não excluem outros decorrentes de tratado de que o Brasil seja parte.
 
-**§ 2º** (VETADO).
+§ 2º (VETADO).
 
-**§ 3º** (VETADO).
+§ 3º (VETADO).
 
-**§ 4º** (VETADO).
+§ 4º (VETADO).
 
-#### CAPÍTULO II — DA SITUAÇÃO DOCUMENTAL DO MIGRANTE E DO VISITANTE
+#### CAPÍTULO II
 
-##### Seção I — Dos Documentos de Viagem
+### DA SITUAÇÃO DOCUMENTAL DO MIGRANTE E DO VISITANTE
+
+##### Seção I
+
+Dos Documentos de Viagem
 
 **Art. 5º** São documentos de viagem:
 
@@ -177,21 +185,25 @@ VIII – certificado de membro de tripulação de transporte aéreo; e
 
 IX – outros que vierem a ser reconhecidos pelo Estado brasileiro em regulamento.
 
-**§ 1º** Os documentos previstos nos incisos I, II, III, IV, V, VI e IX, quando emitidos pelo Estado brasileiro, são de propriedade da União, cabendo a seu titular a posse direta e o uso regular.
+§ 1º Os documentos previstos nos incisos I, II, III, IV, V, VI e IX, quando emitidos pelo Estado brasileiro, são de propriedade da União, cabendo a seu titular a posse direta e o uso regular.
 
-**§ 2º** As condições para a concessão dos documentos de que trata o § 1º serão previstas em regulamento.
+§ 2º As condições para a concessão dos documentos de que trata o § 1º serão previstas em regulamento.
 
-##### Seção II — Dos Vistos
+##### Seção II
 
-###### Subseção I — Disposições Gerais
+Dos Vistos
+
+###### Subseção I
+
+Disposições Gerais
 
 **Art. 6º** O visto é o documento que dá a seu titular expectativa de ingresso em território nacional.
 
-**Parágrafo único.** (VETADO).
+Parágrafo único. (VETADO).
 
 **Art. 7º** O visto será concedido por embaixadas, consulados-gerais, consulados, vice-consulados e, quando habilitados pelo órgão competente do Poder Executivo, por escritórios comerciais e de representação do Brasil no exterior.
 
-**Parágrafo único.** Excepcionalmente, os vistos diplomático, oficial e de cortesia poderão ser concedidos no Brasil.
+Parágrafo único. Excepcionalmente, os vistos diplomático, oficial e de cortesia poderão ser concedidos no Brasil.
 
 **Art. 8º** Poderão ser cobrados taxas e emolumentos consulares pelo processamento do visto.
 
@@ -207,7 +219,7 @@ IV – hipóteses e condições de dispensa recíproca ou unilateral de visto e 
 
 V – solicitação e emissão de visto por meio eletrônico.
 
-**Parágrafo único.** A simplificação e a dispensa recíproca de visto ou de cobrança de taxas e emolumentos consulares por seu processamento poderão ser definidas por comunicação diplomática.
+Parágrafo único. A simplificação e a dispensa recíproca de visto ou de cobrança de taxas e emolumentos consulares por seu processamento poderão ser definidas por comunicação diplomática.
 
 **Art. 10.** Não se concederá visto:
 
@@ -219,9 +231,11 @@ III – a menor de 18 (dezoito) anos desacompanhado ou sem autorização de viag
 
 **Art. 11.** Poderá ser denegado visto a quem se enquadrar em pelo menos um dos casos de impedimento definidos nos incisos I, II, III, IV e IX do art. 45.
 
-**Parágrafo único.** A pessoa que tiver visto brasileiro denegado será impedida de ingressar no País enquanto permanecerem as condições que ensejaram a denegação.
+Parágrafo único. A pessoa que tiver visto brasileiro denegado será impedida de ingressar no País enquanto permanecerem as condições que ensejaram a denegação.
 
-###### Subseção II — Dos Tipos de Visto
+###### Subseção II
+
+Dos Tipos de Visto
 
 **Art. 12.** Ao solicitante que pretenda ingressar ou permanecer em território nacional poderá ser concedido visto:
 
@@ -235,7 +249,9 @@ IV – oficial;
 
 V – de cortesia.
 
-###### Subseção III — Do Visto de Visita
+###### Subseção III
+
+Do Visto de Visita
 
 **Art. 13.** O visto de visita poderá ser concedido ao visitante que venha ao Brasil para estada de curta duração, sem intenção de estabelecer residência, nos seguintes casos:
 
@@ -249,13 +265,15 @@ IV – atividades artísticas ou desportivas; e
 
 V – outras hipóteses definidas em regulamento.
 
-**§ 1º** É vedado ao beneficiário de visto de visita exercer atividade remunerada no Brasil.
+§ 1º É vedado ao beneficiário de visto de visita exercer atividade remunerada no Brasil.
 
-**§ 2º** O beneficiário de visto de visita poderá receber pagamento do governo, de empregador brasileiro ou de entidade privada a título de diária, ajuda de custo, cachê, pró-labore ou outras despesas com a viagem, bem como concorrer a prêmios, inclusive em dinheiro, em competições desportivas ou em concursos artísticos ou culturais.
+§ 2º O beneficiário de visto de visita poderá receber pagamento do governo, de empregador brasileiro ou de entidade privada a título de diária, ajuda de custo, cachê, pró-labore ou outras despesas com a viagem, bem como concorrer a prêmios, inclusive em dinheiro, em competições desportivas ou em concursos artísticos ou culturais.
 
-**§ 3º** O visto de visita não será exigido em caso de escala ou conexão em território nacional, desde que o visitante não deixe a área de trânsito internacional.
+§ 3º O visto de visita não será exigido em caso de escala ou conexão em território nacional, desde que o visitante não deixe a área de trânsito internacional.
 
-###### Subseção IV — Do Visto Temporário
+###### Subseção IV
+
+Do Visto Temporário
 
 **Art. 14.** O visto temporário poderá ser concedido ao imigrante que venha ao Brasil com o intuito de estabelecer residência por tempo determinado e que se enquadre em pelo menos uma das seguintes hipóteses:
 
@@ -285,55 +303,59 @@ II – o imigrante seja beneficiário de tratado em matéria de vistos;
 
 III – outras hipóteses definidas em regulamento.
 
-**§ 1º** O visto temporário para pesquisa, ensino ou extensão acadêmica poderá ser concedido ao imigrante com ou sem vínculo empregatício com a instituição de pesquisa ou de ensino brasileira, exigida, na hipótese de vínculo, a comprovação de formação superior compatível ou equivalente reconhecimento científico.
+§ 1º O visto temporário para pesquisa, ensino ou extensão acadêmica poderá ser concedido ao imigrante com ou sem vínculo empregatício com a instituição de pesquisa ou de ensino brasileira, exigida, na hipótese de vínculo, a comprovação de formação superior compatível ou equivalente reconhecimento científico.
 
-**§ 2º** O visto temporário para tratamento de saúde poderá ser concedido ao imigrante e a seu acompanhante, desde que o imigrante comprove possuir meios de subsistência suficientes.
+§ 2º O visto temporário para tratamento de saúde poderá ser concedido ao imigrante e a seu acompanhante, desde que o imigrante comprove possuir meios de subsistência suficientes.
 
-**§ 3º** O visto temporário para acolhida humanitária poderá ser concedido ao apátrida ou ao nacional de qualquer país em situação de grave ou iminente instabilidade institucional, de conflito armado, de calamidade de grande proporção, de desastre ambiental ou de grave violação de direitos humanos ou de direito internacional humanitário, ou em outras hipóteses, na forma de regulamento.
+§ 3º O visto temporário para acolhida humanitária poderá ser concedido ao apátrida ou ao nacional de qualquer país em situação de grave ou iminente instabilidade institucional, de conflito armado, de calamidade de grande proporção, de desastre ambiental ou de grave violação de direitos humanos ou de direito internacional humanitário, ou em outras hipóteses, na forma de regulamento.
 
-**§ 4º** O visto temporário para estudo poderá ser concedido ao imigrante que pretenda vir ao Brasil para frequentar curso regular ou realizar estágio ou intercâmbio de estudo ou de pesquisa.
+§ 4º O visto temporário para estudo poderá ser concedido ao imigrante que pretenda vir ao Brasil para frequentar curso regular ou realizar estágio ou intercâmbio de estudo ou de pesquisa.
 
-**§ 5º** Observadas as hipóteses previstas em regulamento, o visto temporário para trabalho poderá ser concedido ao imigrante que venha exercer atividade laboral, com ou sem vínculo empregatício no Brasil, desde que comprove oferta de trabalho formalizada por pessoa jurídica em atividade no País, dispensada esta exigência se o imigrante comprovar titulação em curso de ensino superior ou equivalente.
+§ 5º Observadas as hipóteses previstas em regulamento, o visto temporário para trabalho poderá ser concedido ao imigrante que venha exercer atividade laboral, com ou sem vínculo empregatício no Brasil, desde que comprove oferta de trabalho formalizada por pessoa jurídica em atividade no País, dispensada esta exigência se o imigrante comprovar titulação em curso de ensino superior ou equivalente.
 
-**§ 6º** O visto temporário para férias-trabalho poderá ser concedido ao imigrante maior de 16 (dezesseis) anos que seja nacional de país que conceda idêntico benefício ao nacional brasileiro, em termos definidos por comunicação diplomática.
+§ 6º O visto temporário para férias-trabalho poderá ser concedido ao imigrante maior de 16 (dezesseis) anos que seja nacional de país que conceda idêntico benefício ao nacional brasileiro, em termos definidos por comunicação diplomática.
 
-**§ 7º** Não se exigirá do marítimo que ingressar no Brasil em viagem de longo curso ou em cruzeiros marítimos pela costa brasileira o visto temporário de que trata a alínea "e" do inciso I do **caput**, bastando a apresentação da carteira internacional de marítimo, nos termos de regulamento.
+§ 7º Não se exigirá do marítimo que ingressar no Brasil em viagem de longo curso ou em cruzeiros marítimos pela costa brasileira o visto temporário de que trata a alínea "e" do inciso I do caput , bastando a apresentação da carteira internacional de marítimo, nos termos de regulamento.
 
-**§ 8º** É reconhecida ao imigrante a quem se tenha concedido visto temporário para trabalho a possibilidade de modificação do local de exercício de sua atividade laboral.
+§ 8º É reconhecida ao imigrante a quem se tenha concedido visto temporário para trabalho a possibilidade de modificação do local de exercício de sua atividade laboral.
 
-**§ 9º** O visto para realização de investimento poderá ser concedido ao imigrante que aporte recursos em projeto com potencial para geração de empregos ou de renda no País.
+§ 9º O visto para realização de investimento poderá ser concedido ao imigrante que aporte recursos em projeto com potencial para geração de empregos ou de renda no País.
 
-**§ 10.** (VETADO).
+§ 10. (VETADO).
 
-###### Subseção V — Dos Vistos Diplomático, Oficial e de Cortesia
+###### Subseção V
+
+Dos Vistos Diplomático, Oficial e de Cortesia
 
 **Art. 15.** Os vistos diplomático, oficial e de cortesia serão concedidos, prorrogados ou dispensados na forma desta Lei e de regulamento.
 
-**Parágrafo único.** Os vistos diplomático e oficial poderão ser transformados em autorização de residência, o que importará cessação de todas as prerrogativas, privilégios e imunidades decorrentes do respectivo visto.
+Parágrafo único. Os vistos diplomático e oficial poderão ser transformados em autorização de residência, o que importará cessação de todas as prerrogativas, privilégios e imunidades decorrentes do respectivo visto.
 
 **Art. 16.** Os vistos diplomático e oficial poderão ser concedidos a autoridades e funcionários estrangeiros que viajem ao Brasil em missão oficial de caráter transitório ou permanente, representando Estado estrangeiro ou organismo internacional reconhecido.
 
-**§ 1º** Não se aplica ao titular dos vistos referidos no **caput** o disposto na legislação trabalhista brasileira.
+§ 1º Não se aplica ao titular dos vistos referidos no caput o disposto na legislação trabalhista brasileira.
 
-**§ 2º** Os vistos diplomático e oficial poderão ser estendidos aos dependentes das autoridades referidas no **caput**.
+§ 2º Os vistos diplomático e oficial poderão ser estendidos aos dependentes das autoridades referidas no caput .
 
 **Art. 17.** O titular de visto diplomático ou oficial somente poderá ser remunerado por Estado estrangeiro ou organismo internacional, ressalvado o disposto em tratado que contenha cláusula específica sobre o assunto.
 
-**Parágrafo único.** O dependente de titular de visto diplomático ou oficial poderá exercer atividade remunerada no Brasil, sob o amparo da legislação trabalhista brasileira, desde que seja nacional de país que assegure reciprocidade de tratamento ao nacional brasileiro, por comunicação diplomática.
+Parágrafo único. O dependente de titular de visto diplomático ou oficial poderá exercer atividade remunerada no Brasil, sob o amparo da legislação trabalhista brasileira, desde que seja nacional de país que assegure reciprocidade de tratamento ao nacional brasileiro, por comunicação diplomática.
 
 **Art. 18.** O empregado particular titular de visto de cortesia somente poderá exercer atividade remunerada para o titular de visto diplomático, oficial ou de cortesia ao qual esteja vinculado, sob o amparo da legislação trabalhista brasileira.
 
-**Parágrafo único.** O titular de visto diplomático, oficial ou de cortesia será responsável pela saída de seu empregado do território nacional.
+Parágrafo único. O titular de visto diplomático, oficial ou de cortesia será responsável pela saída de seu empregado do território nacional.
 
-##### Seção III — Do Registro e da Identificação Civil do Imigrante e dos Detentores de Vistos Diplomático, Oficial e de Cortesia
+##### Seção III
+
+Do Registro e da Identificação Civil do Imigrante e dos Detentores de Vistos Diplomático, Oficial e de Cortesia
 
 **Art. 19.** O registro consiste na identificação civil por dados biográficos e biométricos, e é obrigatório a todo imigrante detentor de visto temporário ou de autorização de residência.
 
-**§ 1º** O registro gerará número único de identificação que garantirá o pleno exercício dos atos da vida civil.
+§ 1º O registro gerará número único de identificação que garantirá o pleno exercício dos atos da vida civil.
 
-**§ 2º** O documento de identidade do imigrante será expedido com base no número único de identificação.
+§ 2º O documento de identidade do imigrante será expedido com base no número único de identificação.
 
-**§ 3º** Enquanto não for expedida identificação civil, o documento comprobatório de que o imigrante a solicitou à autoridade competente garantirá ao titular o acesso aos direitos disciplinados nesta Lei.
+§ 3º Enquanto não for expedida identificação civil, o documento comprobatório de que o imigrante a solicitou à autoridade competente garantirá ao titular o acesso aos direitos disciplinados nesta Lei.
 
 **Art. 20.** A identificação civil de solicitante de refúgio, de asilo, de reconhecimento de apatridia e de acolhimento humanitário poderá ser realizada com a apresentação dos documentos de que o imigrante dispuser.
 
@@ -341,19 +363,23 @@ III – outras hipóteses definidas em regulamento.
 
 **Art. 22.** A identificação civil, o documento de identidade e as formas de gestão da base cadastral dos detentores de vistos diplomático, oficial e de cortesia atenderão a disposições específicas previstas em regulamento.
 
-#### CAPÍTULO III — DA CONDIÇÃO JURÍDICA DO MIGRANTE E DO VISITANTE
+#### CAPÍTULO III
 
-##### Seção I — Do Residente Fronteiriço
+### DA CONDIÇÃO JURÍDICA DO MIGRANTE E DO VISITANTE
+
+##### Seção I
+
+Do Residente Fronteiriço
 
 **Art. 23.** A fim de facilitar a sua livre circulação, poderá ser concedida ao residente fronteiriço, mediante requerimento, autorização para a realização de atos da vida civil.
 
-**Parágrafo único.** Condições específicas poderão ser estabelecidas em regulamento ou tratado.
+Parágrafo único. Condições específicas poderão ser estabelecidas em regulamento ou tratado.
 
-**Art. 24.** A autorização referida no **caput** do art. 23 indicará o Município fronteiriço no qual o residente estará autorizado a exercer os direitos a ele atribuídos por esta Lei.
+**Art. 24.** A autorização referida no caput do art. 23 indicará o Município fronteiriço no qual o residente estará autorizado a exercer os direitos a ele atribuídos por esta Lei.
 
-**§ 1º** O residente fronteiriço detentor da autorização gozará das garantias e dos direitos assegurados pelo regime geral de migração desta Lei, conforme especificado em regulamento.
+§ 1º O residente fronteiriço detentor da autorização gozará das garantias e dos direitos assegurados pelo regime geral de migração desta Lei, conforme especificado em regulamento.
 
-**§ 2º** O espaço geográfico de abrangência e de validade da autorização será especificado no documento de residente fronteiriço.
+§ 2º O espaço geográfico de abrangência e de validade da autorização será especificado no documento de residente fronteiriço.
 
 **Art. 25.** O documento de residente fronteiriço será cancelado, a qualquer tempo, se o titular:
 
@@ -365,33 +391,35 @@ III – sofrer condenação penal; ou
 
 IV – exercer direito fora dos limites previstos na autorização.
 
-##### Seção II — Da Proteção do Apátrida e da Redução da Apatridia
+##### Seção II
+
+Da Proteção do Apátrida e da Redução da Apatridia
 
 **Art. 26.** Regulamento disporá sobre instituto protetivo especial do apátrida, consolidado em processo simplificado de naturalização.
 
-**§ 1º** O processo de que trata o **caput** será iniciado tão logo seja reconhecida a situação de apatridia.
+§ 1º O processo de que trata o caput será iniciado tão logo seja reconhecida a situação de apatridia.
 
-**§ 2º** Durante a tramitação do processo de reconhecimento da condição de apátrida, incidem todas as garantias e mecanismos protetivos e de facilitação da inclusão social relativos à Convenção sobre o Estatuto dos Apátridas de 1954, promulgada pelo Decreto nº 4.246, de 22 de maio de 2002, à Convenção relativa ao Estatuto dos Refugiados, promulgada pelo Decreto nº 50.215, de 28 de janeiro de 1961, e à Lei nº 9.474, de 22 de julho de 1997.
+§ 2º Durante a tramitação do processo de reconhecimento da condição de apátrida, incidem todas as garantias e mecanismos protetivos e de facilitação da inclusão social relativos à Convenção sobre o Estatuto dos Apátridas de 1954, promulgada pelo Decreto nº 4.246, de 22 de maio de 2002 , à Convenção relativa ao Estatuto dos Refugiados, promulgada pelo Decreto nº 50.215, de 28 de janeiro de 1961 , e à Lei nº 9.474, de 22 de julho de 1997 .
 
-**§ 3º** Aplicam-se ao apátrida residente todos os direitos atribuídos ao migrante relacionados no art. 4º.
+§ 3º Aplicam-se ao apátrida residente todos os direitos atribuídos ao migrante relacionados no art. 4º.
 
-**§ 4º** O reconhecimento da condição de apátrida assegura os direitos e garantias previstos na Convenção sobre o Estatuto dos Apátridas, de 1954, promulgada pelo Decreto nº 4.246, de 22 de maio de 2002, bem como outros direitos e garantias reconhecidos pelo Brasil.
+§ 4º O reconhecimento da condição de apátrida assegura os direitos e garantias previstos na Convenção sobre o Estatuto dos Apátridas, de 1954, promulgada pelo Decreto nº 4.246, de 22 de maio de 2002 , bem como outros direitos e garantias reconhecidos pelo Brasil.
 
-**§ 5º** O processo de reconhecimento da condição de apátrida tem como objetivo verificar se o solicitante é considerado nacional pela legislação de algum Estado e poderá considerar informações, documentos e declarações prestadas pelo próprio solicitante e por órgãos e organismos nacionais e internacionais.
+§ 5º O processo de reconhecimento da condição de apátrida tem como objetivo verificar se o solicitante é considerado nacional pela legislação de algum Estado e poderá considerar informações, documentos e declarações prestadas pelo próprio solicitante e por órgãos e organismos nacionais e internacionais.
 
-**§ 6º** Reconhecida a condição de apátrida, nos termos do inciso VI do § 1º do art. 1º, o solicitante será consultado sobre o desejo de adquirir a nacionalidade brasileira.
+§ 6º Reconhecida a condição de apátrida, nos termos do inciso VI do § 1º do art. 1º, o solicitante será consultado sobre o desejo de adquirir a nacionalidade brasileira.
 
-**§ 7º** Caso o apátrida opte pela naturalização, a decisão sobre o reconhecimento será encaminhada ao órgão competente do Poder Executivo para publicação dos atos necessários à efetivação da naturalização no prazo de 30 (trinta) dias, observado o art. 65.
+§ 7º Caso o apátrida opte pela naturalização, a decisão sobre o reconhecimento será encaminhada ao órgão competente do Poder Executivo para publicação dos atos necessários à efetivação da naturalização no prazo de 30 (trinta) dias, observado o art. 65.
 
-**§ 8º** O apátrida reconhecido que não opte pela naturalização imediata terá a autorização de residência outorgada em caráter definitivo.
+§ 8º O apátrida reconhecido que não opte pela naturalização imediata terá a autorização de residência outorgada em caráter definitivo.
 
-**§ 9º** Caberá recurso contra decisão negativa de reconhecimento da condição de apátrida.
+§ 9º Caberá recurso contra decisão negativa de reconhecimento da condição de apátrida.
 
-**§ 10.** Subsistindo a denegação do reconhecimento da condição de apátrida, é vedada a devolução do indivíduo para país onde sua vida, integridade pessoal ou liberdade estejam em risco.
+§ 10. Subsistindo a denegação do reconhecimento da condição de apátrida, é vedada a devolução do indivíduo para país onde sua vida, integridade pessoal ou liberdade estejam em risco.
 
-**§ 11.** Será reconhecido o direito de reunião familiar a partir do reconhecimento da condição de apátrida.
+§ 11. Será reconhecido o direito de reunião familiar a partir do reconhecimento da condição de apátrida.
 
-**§ 12.** Implica perda da proteção conferida por esta Lei:
+§ 12. Implica perda da proteção conferida por esta Lei:
 
 I – a renúncia;
 
@@ -399,17 +427,21 @@ II – a prova da falsidade dos fundamentos invocados para o reconhecimento da c
 
 III – a existência de fatos que, se fossem conhecidos por ocasião do reconhecimento, teriam ensejado decisão negativa.
 
-##### Seção III — Do Asilado
+##### Seção III
+
+Do Asilado
 
 **Art. 27.** O asilo político, que constitui ato discricionário do Estado, poderá ser diplomático ou territorial e será outorgado como instrumento de proteção à pessoa.
 
-**Parágrafo único.** Regulamento disporá sobre as condições para a concessão e a manutenção de asilo.
+Parágrafo único. Regulamento disporá sobre as condições para a concessão e a manutenção de asilo.
 
-**Art. 28.** Não se concederá asilo a quem tenha cometido crime de genocídio, crime contra a humanidade, crime de guerra ou crime de agressão, nos termos do Estatuto de Roma do Tribunal Penal Internacional, de 1998, promulgado pelo Decreto nº 4.388, de 25 de setembro de 2002.
+**Art. 28.** Não se concederá asilo a quem tenha cometido crime de genocídio, crime contra a humanidade, crime de guerra ou crime de agressão, nos termos do Estatuto de Roma do Tribunal Penal Internacional, de 1998, promulgado pelo Decreto nº 4.388, de 25 de setembro de 2002 .
 
 **Art. 29.** A saída do asilado do País sem prévia comunicação implica renúncia ao asilo.
 
-##### Seção IV — Da Autorização de Residência
+##### Seção IV
+
+Da Autorização de Residência
 
 **Art. 30.** A residência poderá ser autorizada, mediante registro, ao imigrante, ao residente fronteiriço ou ao visitante que se enquadre em uma das seguintes hipóteses:
 
@@ -453,29 +485,29 @@ h) esteja em liberdade provisória ou em cumprimento de pena no Brasil;
 
 III – outras hipóteses definidas em regulamento.
 
-**§ 1º** Não se concederá a autorização de residência a pessoa condenada criminalmente no Brasil ou no exterior por sentença transitada em julgado, desde que a conduta esteja tipificada na legislação penal brasileira, ressalvados os casos em que:
+§ 1º Não se concederá a autorização de residência a pessoa condenada criminalmente no Brasil ou no exterior por sentença transitada em julgado, desde que a conduta esteja tipificada na legislação penal brasileira, ressalvados os casos em que:
 
 I – a conduta caracterize infração de menor potencial ofensivo;
 
 II – (VETADO); ou
 
-III – a pessoa se enquadre nas hipóteses previstas nas alíneas "b", "c" e "i" do inciso I e na alínea "a" do inciso II do **caput** deste artigo.
+III – a pessoa se enquadre nas hipóteses previstas nas alíneas "b", "c" e "i" do inciso I e na alínea "a" do inciso II do caput deste artigo.
 
-**§ 2º** O disposto no § 1º não obsta progressão de regime de cumprimento de pena, nos termos da Lei nº 7.210, de 11 de julho de 1984, ficando a pessoa autorizada a trabalhar quando assim exigido pelo novo regime de cumprimento de pena.
+§ 2º O disposto no § 1º não obsta progressão de regime de cumprimento de pena, nos termos da Lei nº 7.210, de 11 de julho de 1984 , ficando a pessoa autorizada a trabalhar quando assim exigido pelo novo regime de cumprimento de pena.
 
-**§ 3º** Nos procedimentos conducentes ao cancelamento de autorização de residência e no recurso contra a negativa de concessão de autorização de residência devem ser respeitados o contraditório e a ampla defesa.
+§ 3º Nos procedimentos conducentes ao cancelamento de autorização de residência e no recurso contra a negativa de concessão de autorização de residência devem ser respeitados o contraditório e a ampla defesa.
 
 **Art. 31.** Os prazos e o procedimento da autorização de residência de que trata o art. 30 serão dispostos em regulamento, observado o disposto nesta Lei.
 
-**§ 1º** Será facilitada a autorização de residência nas hipóteses das alíneas "a" e "e" do inciso I do art. 30 desta Lei, devendo a deliberação sobre a autorização ocorrer em prazo não superior a 60 (sessenta) dias, a contar de sua solicitação.
+§ 1º Será facilitada a autorização de residência nas hipóteses das alíneas "a" e "e" do inciso I do art. 30 desta Lei, devendo a deliberação sobre a autorização ocorrer em prazo não superior a 60 (sessenta) dias, a contar de sua solicitação.
 
-**§ 2º** Nova autorização de residência poderá ser concedida, nos termos do art. 30, mediante requerimento.
+§ 2º Nova autorização de residência poderá ser concedida, nos termos do art. 30, mediante requerimento.
 
-**§ 3º** O requerimento de nova autorização de residência após o vencimento do prazo da autorização anterior implicará aplicação da sanção prevista no inciso II do art. 109.
+§ 3º O requerimento de nova autorização de residência após o vencimento do prazo da autorização anterior implicará aplicação da sanção prevista no inciso II do art. 109.
 
-**§ 4º** O solicitante de refúgio, de asilo ou de proteção ao apátrida fará jus a autorização provisória de residência até a obtenção de resposta ao seu pedido.
+§ 4º O solicitante de refúgio, de asilo ou de proteção ao apátrida fará jus a autorização provisória de residência até a obtenção de resposta ao seu pedido.
 
-**§ 5º** Poderá ser concedida autorização de residência independentemente da situação migratória.
+§ 5º Poderá ser concedida autorização de residência independentemente da situação migratória.
 
 **Art. 32.** Poderão ser cobradas taxas pela autorização de residência.
 
@@ -487,7 +519,9 @@ III – a pessoa se enquadre nas hipóteses previstas nas alíneas "b", "c" e "i
 
 **Art. 36.** O visto de visita ou de cortesia poderá ser transformado em autorização de residência, mediante requerimento e registro, desde que satisfeitos os requisitos previstos em regulamento.
 
-##### Seção V — Da Reunião Familiar
+##### Seção V
+
+Da Reunião Familiar
 
 **Art. 37.** O visto ou a autorização de residência para fins de reunião familiar será concedido ao imigrante:
 
@@ -499,15 +533,19 @@ III – ascendente, descendente até o segundo grau ou irmão de brasileiro ou d
 
 IV – que tenha brasileiro sob sua tutela ou guarda.
 
-**Parágrafo único.** (VETADO).
+Parágrafo único. (VETADO).
 
-#### CAPÍTULO IV — DA ENTRADA E DA SAÍDA DO TERRITÓRIO NACIONAL
+#### CAPÍTULO IV
 
-##### Seção I — Da Fiscalização Marítima, Aeroportuária e de Fronteira
+### DA ENTRADA E DA SAÍDA DO TERRITÓRIO NACIONAL
+
+##### Seção I
+
+Da Fiscalização Marítima, Aeroportuária e de Fronteira
 
 **Art. 38.** As funções de polícia marítima, aeroportuária e de fronteira serão realizadas pela Polícia Federal nos pontos de entrada e de saída do território nacional.
 
-**Parágrafo único.** É dispensável a fiscalização de passageiro, tripulante e estafe de navio em passagem inocente, exceto quando houver necessidade de descida de pessoa a terra ou de subida a bordo do navio.
+Parágrafo único. É dispensável a fiscalização de passageiro, tripulante e estafe de navio em passagem inocente, exceto quando houver necessidade de descida de pessoa a terra ou de subida a bordo do navio.
 
 **Art. 39.** O viajante deverá permanecer em área de fiscalização até que seu documento de viagem tenha sido verificado, salvo os casos previstos em lei.
 
@@ -523,7 +561,7 @@ IV – (VETADO); ou
 
 V – seja criança ou adolescente desacompanhado de responsável legal e sem autorização expressa para viajar desacompanhado, independentemente do documento de viagem que portar, hipótese em que haverá imediato encaminhamento ao Conselho Tutelar ou, em caso de necessidade, a instituição indicada pela autoridade competente.
 
-**Parágrafo único.** Regulamento poderá dispor sobre outras hipóteses excepcionais de admissão, observados os princípios e as diretrizes desta Lei.
+Parágrafo único. Regulamento poderá dispor sobre outras hipóteses excepcionais de admissão, observados os princípios e as diretrizes desta Lei.
 
 **Art. 41.** A entrada condicional, em território nacional, de pessoa que não preencha os requisitos de admissão poderá ser autorizada mediante a assinatura, pelo transportador ou por seu agente, de termo de compromisso de custear as despesas com a permanência e com as providências para a repatriação do viajante.
 
@@ -531,7 +569,9 @@ V – seja criança ou adolescente desacompanhado de responsável legal e sem au
 
 **Art. 43.** A autoridade responsável pela fiscalização contribuirá para a aplicação de medidas sanitárias em consonância com o Regulamento Sanitário Internacional e com outras disposições pertinentes.
 
-##### Seção II — Do Impedimento de Ingresso
+##### Seção II
+
+Do Impedimento de Ingresso
 
 **Art. 44.** (VETADO).
 
@@ -539,7 +579,7 @@ V – seja criança ou adolescente desacompanhado de responsável legal e sem au
 
 I – anteriormente expulsa do País, enquanto os efeitos da expulsão vigorarem;
 
-II – condenada ou respondendo a processo por ato de terrorismo ou por crime de genocídio, crime contra a humanidade, crime de guerra ou crime de agressão, nos termos definidos pelo Estatuto de Roma do Tribunal Penal Internacional, de 1998, promulgado pelo Decreto nº 4.388, de 25 de setembro de 2002;
+II – condenada ou respondendo a processo por ato de terrorismo ou por crime de genocídio, crime contra a humanidade, crime de guerra ou crime de agressão, nos termos definidos pelo Estatuto de Roma do Tribunal Penal Internacional, de 1998, promulgado pelo Decreto nº 4.388, de 25 de setembro de 2002 ;
 
 III – condenada ou respondendo a processo em outro país por crime doloso passível de extradição segundo a lei brasileira;
 
@@ -559,75 +599,85 @@ VII – cuja razão da viagem não seja condizente com o visto ou com o motivo a
 
 VIII – que tenha, comprovadamente, fraudado documentação ou prestado informação falsa por ocasião da solicitação de visto; ou
 
-IX – que tenha praticado ato contrário aos princípios e objetivos dispostos na Constituição Federal.
+IX – que tenha praticado ato contrário aos princípios e objetivos dispostos na Constituição Federal .
 
-**Parágrafo único.** Ninguém será impedido de ingressar no País por motivo de raça, religião, nacionalidade, pertinência a grupo social ou opinião política.
+Parágrafo único. Ninguém será impedido de ingressar no País por motivo de raça, religião, nacionalidade, pertinência a grupo social ou opinião política.
 
-#### CAPÍTULO V — DAS MEDIDAS DE RETIRADA COMPULSÓRIA
+#### CAPÍTULO V
 
-##### Seção I — Disposições Gerais
+### DAS MEDIDAS DE RETIRADA COMPULSÓRIA
 
-**Art. 46.** A aplicação deste Capítulo observará o disposto na Lei nº 9.474, de 22 de julho de 1997, e nas disposições legais, tratados, instrumentos e mecanismos que tratem da proteção aos apátridas ou de outras situações humanitárias.
+##### Seção I
+
+Disposições Gerais
+
+**Art. 46.** A aplicação deste Capítulo observará o disposto na Lei nº 9.474, de 22 de julho de 1997 , e nas disposições legais, tratados, instrumentos e mecanismos que tratem da proteção aos apátridas ou de outras situações humanitárias.
 
 **Art. 47.** A repatriação, a deportação e a expulsão serão feitas para o país de nacionalidade ou de procedência do migrante ou do visitante, ou para outro que o aceite, em observância aos tratados dos quais o Brasil seja parte.
 
 **Art. 48.** Nos casos de deportação ou expulsão, o chefe da unidade da Polícia Federal poderá representar perante o juízo federal, respeitados, nos procedimentos judiciais, os direitos à ampla defesa e ao devido processo legal.
 
-##### Seção II — Da Repatriação
+##### Seção II
+
+Da Repatriação
 
 **Art. 49.** A repatriação consiste em medida administrativa de devolução de pessoa em situação de impedimento ao país de procedência ou de nacionalidade.
 
-**§ 1º** Será feita imediata comunicação do ato fundamentado de repatriação à empresa transportadora e à autoridade consular do país de procedência ou de nacionalidade do migrante ou do visitante, ou a quem o representa.
+§ 1º Será feita imediata comunicação do ato fundamentado de repatriação à empresa transportadora e à autoridade consular do país de procedência ou de nacionalidade do migrante ou do visitante, ou a quem o representa.
 
-**§ 2º** A Defensoria Pública da União será notificada, preferencialmente por via eletrônica, no caso do § 4º deste artigo ou quando a repatriação imediata não seja possível.
+§ 2º A Defensoria Pública da União será notificada, preferencialmente por via eletrônica, no caso do § 4º deste artigo ou quando a repatriação imediata não seja possível.
 
-**§ 3º** Condições específicas de repatriação podem ser definidas por regulamento ou tratado, observados os princípios e as garantias previstos nesta Lei.
+§ 3º Condições específicas de repatriação podem ser definidas por regulamento ou tratado, observados os princípios e as garantias previstos nesta Lei.
 
-**§ 4º** Não será aplicada medida de repatriação à pessoa em situação de refúgio ou de apatridia, de fato ou de direito, ao menor de 18 (dezoito) anos desacompanhado ou separado de sua família, exceto nos casos em que se demonstrar favorável para a garantia de seus direitos ou para a reintegração a sua família de origem, ou a quem necessite de acolhimento humanitário, nem, em qualquer caso, medida de devolução para país ou região que possa apresentar risco à vida, à integridade pessoal ou à liberdade da pessoa.
+§ 4º Não será aplicada medida de repatriação à pessoa em situação de refúgio ou de apatridia, de fato ou de direito, ao menor de 18 (dezoito) anos desacompanhado ou separado de sua família, exceto nos casos em que se demonstrar favorável para a garantia de seus direitos ou para a reintegração a sua família de origem, ou a quem necessite de acolhimento humanitário, nem, em qualquer caso, medida de devolução para país ou região que possa apresentar risco à vida, à integridade pessoal ou à liberdade da pessoa.
 
-**§ 5º** (VETADO).
+§ 5º (VETADO).
 
-##### Seção III — Da Deportação
+##### Seção III
+
+Da Deportação
 
 **Art. 50.** A deportação é medida decorrente de procedimento administrativo que consiste na retirada compulsória de pessoa que se encontre em situação migratória irregular em território nacional.
 
-**§ 1º** A deportação será precedida de notificação pessoal ao deportando, da qual constem, expressamente, as irregularidades verificadas e prazo para a regularização não inferior a 60 (sessenta) dias, podendo ser prorrogado, por igual período, por despacho fundamentado e mediante compromisso de a pessoa manter atualizadas suas informações domiciliares.
+§ 1º A deportação será precedida de notificação pessoal ao deportando, da qual constem, expressamente, as irregularidades verificadas e prazo para a regularização não inferior a 60 (sessenta) dias, podendo ser prorrogado, por igual período, por despacho fundamentado e mediante compromisso de a pessoa manter atualizadas suas informações domiciliares.
 
-**§ 2º** A notificação prevista no § 1º não impede a livre circulação em território nacional, devendo o deportando informar seu domicílio e suas atividades.
+§ 2º A notificação prevista no § 1º não impede a livre circulação em território nacional, devendo o deportando informar seu domicílio e suas atividades.
 
-**§ 3º** Vencido o prazo do § 1º sem que se regularize a situação migratória, a deportação poderá ser executada.
+§ 3º Vencido o prazo do § 1º sem que se regularize a situação migratória, a deportação poderá ser executada.
 
-**§ 4º** A deportação não exclui eventuais direitos adquiridos em relações contratuais ou decorrentes da lei brasileira.
+§ 4º A deportação não exclui eventuais direitos adquiridos em relações contratuais ou decorrentes da lei brasileira.
 
-**§ 5º** A saída voluntária de pessoa notificada para deixar o País equivale ao cumprimento da notificação de deportação para todos os fins.
+§ 5º A saída voluntária de pessoa notificada para deixar o País equivale ao cumprimento da notificação de deportação para todos os fins.
 
-**§ 6º** O prazo previsto no § 1º poderá ser reduzido nos casos que se enquadrem no inciso IX do art. 45.
+§ 6º O prazo previsto no § 1º poderá ser reduzido nos casos que se enquadrem no inciso IX do art. 45.
 
 **Art. 51.** Os procedimentos conducentes à deportação devem respeitar o contraditório e a ampla defesa e a garantia de recurso com efeito suspensivo.
 
-**§ 1º** A Defensoria Pública da União deverá ser notificada, preferencialmente por meio eletrônico, para prestação de assistência ao deportando em todos os procedimentos administrativos de deportação.
+§ 1º A Defensoria Pública da União deverá ser notificada, preferencialmente por meio eletrônico, para prestação de assistência ao deportando em todos os procedimentos administrativos de deportação.
 
-**§ 2º** A ausência de manifestação da Defensoria Pública da União, desde que prévia e devidamente notificada, não impedirá a efetivação da medida de deportação.
+§ 2º A ausência de manifestação da Defensoria Pública da União, desde que prévia e devidamente notificada, não impedirá a efetivação da medida de deportação.
 
 **Art. 52.** Em se tratando de apátrida, o procedimento de deportação dependerá de prévia autorização da autoridade competente.
 
 **Art. 53.** Não se procederá à deportação se a medida configurar extradição não admitida pela legislação brasileira.
 
-##### Seção IV — Da Expulsão
+##### Seção IV
+
+Da Expulsão
 
 **Art. 54.** A expulsão consiste em medida administrativa de retirada compulsória de migrante ou visitante do território nacional, conjugada com o impedimento de reingresso por prazo determinado.
 
-**§ 1º** Poderá dar causa à expulsão a condenação com sentença transitada em julgado relativa à prática de:
+§ 1º Poderá dar causa à expulsão a condenação com sentença transitada em julgado relativa à prática de:
 
-I – crime de genocídio, crime contra a humanidade, crime de guerra ou crime de agressão, nos termos definidos pelo Estatuto de Roma do Tribunal Penal Internacional, de 1998, promulgado pelo Decreto nº 4.388, de 25 de setembro de 2002; ou
+I – crime de genocídio, crime contra a humanidade, crime de guerra ou crime de agressão, nos termos definidos pelo Estatuto de Roma do Tribunal Penal Internacional, de 1998, promulgado pelo Decreto nº 4.388, de 25 de setembro de 2002 ; ou
 
 II – crime comum doloso passível de pena privativa de liberdade, consideradas a gravidade e as possibilidades de ressocialização em território nacional.
 
-**§ 2º** Caberá à autoridade competente resolver sobre a expulsão, a duração do impedimento de reingresso e a suspensão ou a revogação dos efeitos da expulsão, observado o disposto nesta Lei.
+§ 2º Caberá à autoridade competente resolver sobre a expulsão, a duração do impedimento de reingresso e a suspensão ou a revogação dos efeitos da expulsão, observado o disposto nesta Lei.
 
-**§ 3º** O processamento da expulsão em caso de crime comum não prejudicará a progressão de regime, o cumprimento da pena, a suspensão condicional do processo, a comutação da pena ou a concessão de pena alternativa, de indulto coletivo ou individual, de anistia ou de quaisquer benefícios concedidos em igualdade de condições ao nacional brasileiro.
+§ 3º O processamento da expulsão em caso de crime comum não prejudicará a progressão de regime, o cumprimento da pena, a suspensão condicional do processo, a comutação da pena ou a concessão de pena alternativa, de indulto coletivo ou individual, de anistia ou de quaisquer benefícios concedidos em igualdade de condições ao nacional brasileiro.
 
-**§ 4º** O prazo de vigência da medida de impedimento vinculada aos efeitos da expulsão será proporcional ao prazo total da pena aplicada e nunca será superior ao dobro de seu tempo.
+§ 4º O prazo de vigência da medida de impedimento vinculada aos efeitos da expulsão será proporcional ao prazo total da pena aplicada e nunca será superior ao dobro de seu tempo.
 
 **Art. 55.** Não se procederá à expulsão quando:
 
@@ -651,31 +701,39 @@ e) (VETADO).
 
 **Art. 58.** No processo de expulsão serão garantidos o contraditório e a ampla defesa.
 
-**§ 1º** A Defensoria Pública da União será notificada da instauração de processo de expulsão, se não houver defensor constituído.
+§ 1º A Defensoria Pública da União será notificada da instauração de processo de expulsão, se não houver defensor constituído.
 
-**§ 2º** Caberá pedido de reconsideração da decisão sobre a expulsão no prazo de 10 (dez) dias, a contar da notificação pessoal do expulsando.
+§ 2º Caberá pedido de reconsideração da decisão sobre a expulsão no prazo de 10 (dez) dias, a contar da notificação pessoal do expulsando.
 
 **Art. 59.** Será considerada regular a situação migratória do expulsando cujo processo esteja pendente de decisão, nas condições previstas no art. 55.
 
 **Art. 60.** A existência de processo de expulsão não impede a saída voluntária do expulsando do País.
 
-##### Seção V — Das Vedações
+##### Seção V
+
+Das Vedações
 
 **Art. 61.** Não se procederá à repatriação, à deportação ou à expulsão coletivas.
 
-**Parágrafo único.** Entende-se por repatriação, deportação ou expulsão coletiva aquela que não individualiza a situação migratória irregular de cada pessoa.
+Parágrafo único. Entende-se por repatriação, deportação ou expulsão coletiva aquela que não individualiza a situação migratória irregular de cada pessoa.
 
 **Art. 62.** Não se procederá à repatriação, à deportação ou à expulsão de nenhum indivíduo quando subsistirem razões para acreditar que a medida poderá colocar em risco a vida ou a integridade pessoal.
 
-#### CAPÍTULO VI — DA OPÇÃO DE NACIONALIDADE E DA NATURALIZAÇÃO
+#### CAPÍTULO VI
 
-##### Seção I — Da Opção de Nacionalidade
+### DA OPÇÃO DE NACIONALIDADE E DA NATURALIZAÇÃO
+
+##### Seção I
+
+Da Opção de Nacionalidade
 
 **Art. 63.** O filho de pai ou de mãe brasileiro nascido no exterior e que não tenha sido registrado em repartição consular poderá, a qualquer tempo, promover ação de opção de nacionalidade.
 
-**Parágrafo único.** O órgão de registro deve informar periodicamente à autoridade competente os dados relativos à opção de nacionalidade, conforme regulamento.
+Parágrafo único. O órgão de registro deve informar periodicamente à autoridade competente os dados relativos à opção de nacionalidade, conforme regulamento.
 
-##### Seção II — Das Condições da Naturalização
+##### Seção II
+
+Das Condições da Naturalização
 
 **Art. 64.** A naturalização pode ser:
 
@@ -697,21 +755,21 @@ III – comunicar-se em língua portuguesa, consideradas as condições do natur
 
 IV – não possuir condenação penal ou estiver reabilitado, nos termos da lei.
 
-**Art. 66.** O prazo de residência fixado no inciso II do **caput** do art. 65 será reduzido para, no mínimo, 1 (um) ano se o naturalizando preencher quaisquer das seguintes condições:
+**Art. 66.** O prazo de residência fixado no inciso II do caput do art. 65 será reduzido para, no mínimo, 1 (um) ano se o naturalizando preencher quaisquer das seguintes condições:
 
-I – (VETADO);
+### I – (VETADO);
 
 II – ter filho brasileiro;
 
 III – ter cônjuge ou companheiro brasileiro e não estar dele separado legalmente ou de fato no momento de concessão da naturalização;
 
-IV – (VETADO);
+### IV – (VETADO);
 
 V – haver prestado ou poder prestar serviço relevante ao Brasil; ou
 
 VI – recomendar-se por sua capacidade profissional, científica ou artística.
 
-**Parágrafo único.** O preenchimento das condições previstas nos incisos V e VI do **caput** será avaliado na forma disposta em regulamento.
+Parágrafo único. O preenchimento das condições previstas nos incisos V e VI do caput será avaliado na forma disposta em regulamento.
 
 **Art. 67.** A naturalização extraordinária será concedida a pessoa de qualquer nacionalidade fixada no Brasil há mais de 15 (quinze) anos ininterruptos e sem condenação penal, desde que requeira a nacionalidade brasileira.
 
@@ -731,35 +789,45 @@ III – não possuir condenação penal ou estiver reabilitado, nos termos da le
 
 **Art. 70.** A naturalização provisória poderá ser concedida ao migrante criança ou adolescente que tenha fixado residência em território nacional antes de completar 10 (dez) anos de idade e deverá ser requerida por intermédio de seu representante legal.
 
-**Parágrafo único.** A naturalização prevista no **caput** será convertida em definitiva se o naturalizando expressamente assim o requerer no prazo de 2 (dois) anos após atingir a maioridade.
+Parágrafo único. A naturalização prevista no caput será convertida em definitiva se o naturalizando expressamente assim o requerer no prazo de 2 (dois) anos após atingir a maioridade.
 
 **Art. 71.** O pedido de naturalização será apresentado e processado na forma prevista pelo órgão competente do Poder Executivo, sendo cabível recurso em caso de denegação.
 
-**§ 1º** No curso do processo de naturalização, o naturalizando poderá requerer a tradução ou a adaptação de seu nome à língua portuguesa.
+§ 1º No curso do processo de naturalização, o naturalizando poderá requerer a tradução ou a adaptação de seu nome à língua portuguesa.
 
-**§ 2º** Será mantido cadastro com o nome traduzido ou adaptado associado ao nome anterior.
+§ 2º Será mantido cadastro com o nome traduzido ou adaptado associado ao nome anterior.
 
 **Art. 72.** No prazo de até 1 (um) ano após a concessão da naturalização, deverá o naturalizado comparecer perante a Justiça Eleitoral para o devido cadastramento.
 
-##### Seção III — Dos Efeitos da Naturalização
+##### Seção III
+
+Dos Efeitos da Naturalização
 
 **Art. 73.** A naturalização produz efeitos após a publicação no Diário Oficial do ato de naturalização.
 
 **Art. 74.** (VETADO).
 
-##### Seção IV — Da Perda da Nacionalidade
+##### Seção IV
 
-**Art. 75.** O naturalizado perderá a nacionalidade em razão de condenação transitada em julgado por atividade nociva ao interesse nacional, nos termos do inciso I do § 4º do art. 12 da Constituição Federal.
+Da Perda da Nacionalidade
 
-**Parágrafo único.** O risco de geração de situação de apatridia será levado em consideração antes da efetivação da perda da nacionalidade.
+**Art. 75.** O naturalizado perderá a nacionalidade em razão de condenação transitada em julgado por atividade nociva ao interesse nacional, nos termos do inciso I do § 4º do art. 12 da Constituição Federal .
 
-##### Seção V — Da Reaquisição da Nacionalidade
+Parágrafo único. O risco de geração de situação de apatridia será levado em consideração antes da efetivação da perda da nacionalidade.
 
-**Art. 76.** O brasileiro que, em razão do previsto no inciso II do § 4º do art. 12 da Constituição Federal, houver perdido a nacionalidade, uma vez cessada a causa, poderá readquiri-la ou ter o ato que declarou a perda revogado, na forma definida pelo órgão competente do Poder Executivo.
+##### Seção V
 
-#### CAPÍTULO VII — DO EMIGRANTE
+Da Reaquisição da Nacionalidade
 
-##### Seção I — Das Políticas Públicas para os Emigrantes
+**Art. 76.** O brasileiro que, em razão do previsto no inciso II do § 4º do art. 12 da Constituição Federal , houver perdido a nacionalidade, uma vez cessada a causa, poderá readquiri-la ou ter o ato que declarou a perda revogado, na forma definida pelo órgão competente do Poder Executivo.
+
+#### CAPÍTULO VII
+
+### DO EMIGRANTE
+
+##### Seção I
+
+Das Políticas Públicas para os Emigrantes
 
 **Art. 77.** As políticas públicas para os emigrantes observarão os seguintes princípios e diretrizes:
 
@@ -775,7 +843,9 @@ V – ação governamental integrada, com a participação de órgãos do govern
 
 VI – esforço permanente de desburocratização, atualização e modernização do sistema de atendimento, com o objetivo de aprimorar a assistência ao emigrante.
 
-##### Seção II — Dos Direitos do Emigrante
+##### Seção II
+
+Dos Direitos do Emigrante
 
 **Art. 78.** Todo emigrante que decida retornar ao Brasil com ânimo de residência poderá introduzir no País, com isenção de direitos de importação e de taxas aduaneiras, os bens novos ou usados que um viajante, em compatibilidade com as circunstâncias de sua viagem, puder destinar para seu uso ou consumo pessoal e profissional, sempre que, por sua quantidade, natureza ou variedade, não permitam presumir importação ou exportação com fins comerciais ou industriais.
 
@@ -783,15 +853,19 @@ VI – esforço permanente de desburocratização, atualização e modernizaçã
 
 **Art. 80.** O tripulante brasileiro contratado por embarcação ou armadora estrangeira, de cabotagem ou a longo curso e com sede ou filial no Brasil, que explore economicamente o mar territorial e a costa brasileira terá direito a seguro a cargo do contratante, válido para todo o período da contratação, conforme o disposto no Registro de Embarcações Brasileiras (REB), contra acidente de trabalho, invalidez total ou parcial e morte, sem prejuízo de benefícios de apólice mais favorável vigente no exterior.
 
-#### CAPÍTULO VIII — DAS MEDIDAS DE COOPERAÇÃO
+#### CAPÍTULO VIII
 
-##### Seção I — Da Extradição
+### DAS MEDIDAS DE COOPERAÇÃO
+
+##### Seção I
+
+Da Extradição
 
 **Art. 81.** A extradição é a medida de cooperação internacional entre o Estado brasileiro e outro Estado pela qual se concede ou solicita a entrega de pessoa sobre quem recaia condenação criminal definitiva ou para fins de instrução de processo penal em curso.
 
-**§ 1º** A extradição será requerida por via diplomática ou pelas autoridades centrais designadas para esse fim.
+§ 1º A extradição será requerida por via diplomática ou pelas autoridades centrais designadas para esse fim.
 
-**§ 2º** A extradição e sua rotina de comunicação serão realizadas pelo órgão competente do Poder Executivo em coordenação com as autoridades judiciárias e policiais competentes.
+§ 2º A extradição e sua rotina de comunicação serão realizadas pelo órgão competente do Poder Executivo em coordenação com as autoridades judiciárias e policiais competentes.
 
 **Art. 82.** Não se concederá a extradição quando:
 
@@ -811,17 +885,17 @@ VII – o fato constituir crime político ou de opinião;
 
 VIII – o extraditando tiver de responder, no Estado requerente, perante tribunal ou juízo de exceção; ou
 
-IX – o extraditando for beneficiário de refúgio, nos termos da Lei nº 9.474, de 22 de julho de 1997, ou de asilo territorial.
+IX – o extraditando for beneficiário de refúgio, nos termos da Lei nº 9.474, de 22 de julho de 1997 , ou de asilo territorial.
 
-**§ 1º** A previsão constante do inciso VII do **caput** não impedirá a extradição quando o fato constituir, principalmente, infração à lei penal comum ou quando o crime comum, conexo ao delito político, constituir o fato principal.
+§ 1º A previsão constante do inciso VII do caput não impedirá a extradição quando o fato constituir, principalmente, infração à lei penal comum ou quando o crime comum, conexo ao delito político, constituir o fato principal.
 
-**§ 2º** Caberá à autoridade judiciária competente a apreciação do caráter da infração.
+§ 2º Caberá à autoridade judiciária competente a apreciação do caráter da infração.
 
-**§ 3º** Para determinação da incidência do disposto no inciso I, será observada, nos casos de aquisição de outra nacionalidade por naturalização, a anterioridade do fato gerador da extradição.
+§ 3º Para determinação da incidência do disposto no inciso I, será observada, nos casos de aquisição de outra nacionalidade por naturalização, a anterioridade do fato gerador da extradição.
 
-**§ 4º** O Supremo Tribunal Federal poderá deixar de considerar crime político o atentado contra chefe de Estado ou quaisquer autoridades, bem como crime contra a humanidade, crime de guerra, crime de genocídio e terrorismo.
+§ 4º O Supremo Tribunal Federal poderá deixar de considerar crime político o atentado contra chefe de Estado ou quaisquer autoridades, bem como crime contra a humanidade, crime de guerra, crime de genocídio e terrorismo.
 
-**§ 5º** Admite-se a extradição de brasileiro naturalizado, nas hipóteses previstas na Constituição Federal.
+§ 5º Admite-se a extradição de brasileiro naturalizado, nas hipóteses previstas na Constituição Federal .
 
 **Art. 83.** São condições para concessão da extradição:
 
@@ -831,21 +905,21 @@ II – estar o extraditando respondendo a processo investigatório ou a processo
 
 **Art. 84.** Em caso de urgência, o Estado interessado na extradição poderá, previamente ou conjuntamente com a formalização do pedido extradicional, requerer, por via diplomática ou por meio de autoridade central do Poder Executivo, prisão cautelar com o objetivo de assegurar a executoriedade da medida de extradição que, após exame da presença dos pressupostos formais de admissibilidade exigidos nesta Lei ou em tratado, deverá representar à autoridade judicial competente, ouvido previamente o Ministério Público Federal.
 
-**§ 1º** O pedido de prisão cautelar deverá conter informação sobre o crime cometido e deverá ser fundamentado, podendo ser apresentado por correio, fax, mensagem eletrônica ou qualquer outro meio que assegure a comunicação por escrito.
+§ 1º O pedido de prisão cautelar deverá conter informação sobre o crime cometido e deverá ser fundamentado, podendo ser apresentado por correio, fax, mensagem eletrônica ou qualquer outro meio que assegure a comunicação por escrito.
 
-**§ 2º** O pedido de prisão cautelar poderá ser transmitido à autoridade competente para extradição no Brasil por meio de canal estabelecido com o ponto focal da Organização Internacional de Polícia Criminal (Interpol) no País, devidamente instruído com a documentação comprobatória da existência de ordem de prisão proferida por Estado estrangeiro, e, em caso de ausência de tratado, com a promessa de reciprocidade recebida por via diplomática.
+§ 2º O pedido de prisão cautelar poderá ser transmitido à autoridade competente para extradição no Brasil por meio de canal estabelecido com o ponto focal da Organização Internacional de Polícia Criminal (Interpol) no País, devidamente instruído com a documentação comprobatória da existência de ordem de prisão proferida por Estado estrangeiro, e, em caso de ausência de tratado, com a promessa de reciprocidade recebida por via diplomática.
 
-**§ 3º** Efetivada a prisão do extraditando, o pedido de extradição será encaminhado à autoridade judiciária competente.
+§ 3º Efetivada a prisão do extraditando, o pedido de extradição será encaminhado à autoridade judiciária competente.
 
-**§ 4º** Na ausência de disposição específica em tratado, o Estado estrangeiro deverá formalizar o pedido de extradição no prazo de 60 (sessenta) dias, contado da data em que tiver sido cientificado da prisão do extraditando.
+§ 4º Na ausência de disposição específica em tratado, o Estado estrangeiro deverá formalizar o pedido de extradição no prazo de 60 (sessenta) dias, contado da data em que tiver sido cientificado da prisão do extraditando.
 
-**§ 5º** Caso o pedido de extradição não seja apresentado no prazo previsto no § 4º, o extraditando deverá ser posto em liberdade, não se admitindo novo pedido de prisão cautelar pelo mesmo fato sem que a extradição tenha sido devidamente requerida.
+§ 5º Caso o pedido de extradição não seja apresentado no prazo previsto no § 4º, o extraditando deverá ser posto em liberdade, não se admitindo novo pedido de prisão cautelar pelo mesmo fato sem que a extradição tenha sido devidamente requerida.
 
-**§ 6º** A prisão cautelar poderá ser prorrogada até o julgamento final da autoridade judiciária competente quanto à legalidade do pedido de extradição.
+§ 6º A prisão cautelar poderá ser prorrogada até o julgamento final da autoridade judiciária competente quanto à legalidade do pedido de extradição.
 
 **Art. 85.** Quando mais de um Estado requerer a extradição da mesma pessoa, pelo mesmo fato, terá preferência o pedido daquele em cujo território a infração foi cometida.
 
-**§ 1º** Em caso de crimes diversos, terá preferência, sucessivamente:
+§ 1º Em caso de crimes diversos, terá preferência, sucessivamente:
 
 I – o Estado requerente em cujo território tenha sido cometido o crime mais grave, segundo a lei brasileira;
 
@@ -853,9 +927,9 @@ II – o Estado que em primeiro lugar tenha pedido a entrega do extraditando, se
 
 III – o Estado de origem, ou, em sua falta, o domiciliar do extraditando, se os pedidos forem simultâneos.
 
-**§ 2º** Nos casos não previstos nesta Lei, o órgão competente do Poder Executivo decidirá sobre a preferência do pedido, priorizando o Estado requerente que mantiver tratado de extradição com o Brasil.
+§ 2º Nos casos não previstos nesta Lei, o órgão competente do Poder Executivo decidirá sobre a preferência do pedido, priorizando o Estado requerente que mantiver tratado de extradição com o Brasil.
 
-**§ 3º** Havendo tratado com algum dos Estados requerentes, prevalecerão suas normas no que diz respeito à preferência de que trata este artigo.
+§ 3º Havendo tratado com algum dos Estados requerentes, prevalecerão suas normas no que diz respeito à preferência de que trata este artigo.
 
 **Art. 86.** O Supremo Tribunal Federal, ouvido o Ministério Público, poderá autorizar prisão albergue ou domiciliar ou determinar que o extraditando responda ao processo de extradição em liberdade, com retenção do documento de viagem ou outras medidas cautelares necessárias, até o julgamento da extradição ou a entrega do extraditando, se pertinente, considerando a situação administrativa migratória, os antecedentes do extraditando e as circunstâncias do caso.
 
@@ -863,29 +937,29 @@ III – o Estado de origem, ou, em sua falta, o domiciliar do extraditando, se o
 
 **Art. 88.** Todo pedido que possa originar processo de extradição em face de Estado estrangeiro deverá ser encaminhado ao órgão competente do Poder Executivo diretamente pelo órgão do Poder Judiciário responsável pela decisão ou pelo processo penal que a fundamenta.
 
-**§ 1º** Compete a órgão do Poder Executivo o papel de orientação, de informação e de avaliação dos elementos formais de admissibilidade dos processos preparatórios para encaminhamento ao Estado requerido.
+§ 1º Compete a órgão do Poder Executivo o papel de orientação, de informação e de avaliação dos elementos formais de admissibilidade dos processos preparatórios para encaminhamento ao Estado requerido.
 
-**§ 2º** Compete aos órgãos do sistema de Justiça vinculados ao processo penal gerador de pedido de extradição a apresentação de todos os documentos, manifestações e demais elementos necessários para o processamento do pedido, inclusive suas traduções oficiais.
+§ 2º Compete aos órgãos do sistema de Justiça vinculados ao processo penal gerador de pedido de extradição a apresentação de todos os documentos, manifestações e demais elementos necessários para o processamento do pedido, inclusive suas traduções oficiais.
 
-**§ 3º** O pedido deverá ser instruído com cópia autêntica ou com o original da sentença condenatória ou da decisão penal proferida, conterá indicações precisas sobre o local, a data, a natureza e as circunstâncias do fato criminoso e a identidade do extraditando e será acompanhado de cópia dos textos legais sobre o crime, a competência, a pena e a prescrição.
+§ 3º O pedido deverá ser instruído com cópia autêntica ou com o original da sentença condenatória ou da decisão penal proferida, conterá indicações precisas sobre o local, a data, a natureza e as circunstâncias do fato criminoso e a identidade do extraditando e será acompanhado de cópia dos textos legais sobre o crime, a competência, a pena e a prescrição.
 
-**§ 4º** O encaminhamento do pedido de extradição ao órgão competente do Poder Executivo confere autenticidade aos documentos.
+§ 4º O encaminhamento do pedido de extradição ao órgão competente do Poder Executivo confere autenticidade aos documentos.
 
 **Art. 89.** O pedido de extradição originado de Estado estrangeiro será recebido pelo órgão competente do Poder Executivo e, após exame da presença dos pressupostos formais de admissibilidade exigidos nesta Lei ou em tratado, encaminhado à autoridade judiciária competente.
 
-**Parágrafo único.** Não preenchidos os pressupostos referidos no **caput**, o pedido será arquivado mediante decisão fundamentada, sem prejuízo da possibilidade de renovação do pedido, devidamente instruído, uma vez superado o óbice apontado.
+Parágrafo único. Não preenchidos os pressupostos referidos no caput , o pedido será arquivado mediante decisão fundamentada, sem prejuízo da possibilidade de renovação do pedido, devidamente instruído, uma vez superado o óbice apontado.
 
 **Art. 90.** Nenhuma extradição será concedida sem prévio pronunciamento do Supremo Tribunal Federal sobre sua legalidade e procedência, não cabendo recurso da decisão.
 
 **Art. 91.** Ao receber o pedido, o relator designará dia e hora para o interrogatório do extraditando e, conforme o caso, nomear-lhe-á curador ou advogado, se não o tiver.
 
-**§ 1º** A defesa, a ser apresentada no prazo de 10 (dez) dias contado da data do interrogatório, versará sobre a identidade da pessoa reclamada, defeito de forma de documento apresentado ou ilegalidade da extradição.
+§ 1º A defesa, a ser apresentada no prazo de 10 (dez) dias contado da data do interrogatório, versará sobre a identidade da pessoa reclamada, defeito de forma de documento apresentado ou ilegalidade da extradição.
 
-**§ 2º** Não estando o processo devidamente instruído, o Tribunal, a requerimento do órgão do Ministério Público Federal correspondente, poderá converter o julgamento em diligência para suprir a falta.
+§ 2º Não estando o processo devidamente instruído, o Tribunal, a requerimento do órgão do Ministério Público Federal correspondente, poderá converter o julgamento em diligência para suprir a falta.
 
-**§ 3º** Para suprir a falta referida no § 2º, o Ministério Público Federal terá prazo improrrogável de 60 (sessenta) dias, após o qual o pedido será julgado independentemente da diligência.
+§ 3º Para suprir a falta referida no § 2º, o Ministério Público Federal terá prazo improrrogável de 60 (sessenta) dias, após o qual o pedido será julgado independentemente da diligência.
 
-**§ 4º** O prazo referido no § 3º será contado da data de notificação à missão diplomática do Estado requerente.
+§ 4º O prazo referido no § 3º será contado da data de notificação à missão diplomática do Estado requerente.
 
 **Art. 92.** Julgada procedente a extradição e autorizada a entrega pelo órgão competente do Poder Executivo, será o ato comunicado por via diplomática ao Estado requerente, que, no prazo de 60 (sessenta) dias da comunicação, deverá retirar o extraditando do território nacional.
 
@@ -895,9 +969,9 @@ III – o Estado de origem, ou, em sua falta, o domiciliar do extraditando, se o
 
 **Art. 95.** Quando o extraditando estiver sendo processado ou tiver sido condenado, no Brasil, por crime punível com pena privativa de liberdade, a extradição será executada somente depois da conclusão do processo ou do cumprimento da pena, ressalvadas as hipóteses de liberação antecipada pelo Poder Judiciário e de determinação da transferência da pessoa condenada.
 
-**§ 1º** A entrega do extraditando será igualmente adiada se a efetivação da medida puser em risco sua vida em virtude de enfermidade grave comprovada por laudo médico oficial.
+§ 1º A entrega do extraditando será igualmente adiada se a efetivação da medida puser em risco sua vida em virtude de enfermidade grave comprovada por laudo médico oficial.
 
-**§ 2º** Quando o extraditando estiver sendo processado ou tiver sido condenado, no Brasil, por infração de menor potencial ofensivo, a entrega poderá ser imediatamente efetivada.
+§ 2º Quando o extraditando estiver sendo processado ou tiver sido condenado, no Brasil, por infração de menor potencial ofensivo, a entrega poderá ser imediatamente efetivada.
 
 **Art. 96.** Não será efetivada a entrega do extraditando sem que o Estado requerente assuma o compromisso de:
 
@@ -915,17 +989,19 @@ VI – não submeter o extraditando a tortura ou a outros tratamentos ou penas c
 
 **Art. 97.** A entrega do extraditando, de acordo com as leis brasileiras e respeitado o direito de terceiro, será feita com os objetos e instrumentos do crime encontrados em seu poder.
 
-**Parágrafo único.** Os objetos e instrumentos referidos neste artigo poderão ser entregues independentemente da entrega do extraditando.
+Parágrafo único. Os objetos e instrumentos referidos neste artigo poderão ser entregues independentemente da entrega do extraditando.
 
 **Art. 98.** O extraditando que, depois de entregue ao Estado requerente, escapar à ação da Justiça e homiziar-se no Brasil, ou por ele transitar, será detido mediante pedido feito diretamente por via diplomática ou pela Interpol e novamente entregue, sem outras formalidades.
 
 **Art. 99.** Salvo motivo de ordem pública, poderá ser permitido, pelo órgão competente do Poder Executivo, o trânsito no território nacional de pessoa extraditada por Estado estrangeiro, bem como o da respectiva guarda, mediante apresentação de documento comprobatório de concessão da medida.
 
-##### Seção II — Da Transferência de Execução da Pena
+##### Seção II
 
-**Art. 100.** Nas hipóteses em que couber solicitação de extradição executória, a autoridade competente poderá solicitar ou autorizar a transferência de execução da pena, desde que observado o princípio do **non bis in idem**.
+Da Transferência de Execução da Pena
 
-**Parágrafo único.** Sem prejuízo do disposto no Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), a transferência de execução da pena será possível quando preenchidos os seguintes requisitos:
+**Art. 100.** Nas hipóteses em que couber solicitação de extradição executória, a autoridade competente poderá solicitar ou autorizar a transferência de execução da pena, desde que observado o princípio do non bis in idem .
+
+Parágrafo único. Sem prejuízo do disposto no Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), a transferência de execução da pena será possível quando preenchidos os seguintes requisitos:
 
 I – o condenado em território estrangeiro for nacional ou tiver residência habitual ou vínculo pessoal no Brasil;
 
@@ -939,21 +1015,23 @@ V – houver tratado ou promessa de reciprocidade.
 
 **Art. 101.** O pedido de transferência de execução da pena de Estado estrangeiro será requerido por via diplomática ou por via de autoridades centrais.
 
-**§ 1º** O pedido será recebido pelo órgão competente do Poder Executivo e, após exame da presença dos pressupostos formais de admissibilidade exigidos nesta Lei ou em tratado, encaminhado ao Superior Tribunal de Justiça para decisão quanto à homologação.
+§ 1º O pedido será recebido pelo órgão competente do Poder Executivo e, após exame da presença dos pressupostos formais de admissibilidade exigidos nesta Lei ou em tratado, encaminhado ao Superior Tribunal de Justiça para decisão quanto à homologação.
 
-**§ 2º** Não preenchidos os pressupostos referidos no § 1º, o pedido será arquivado mediante decisão fundamentada, sem prejuízo da possibilidade de renovação do pedido, devidamente instruído, uma vez superado o óbice apontado.
+§ 2º Não preenchidos os pressupostos referidos no § 1º, o pedido será arquivado mediante decisão fundamentada, sem prejuízo da possibilidade de renovação do pedido, devidamente instruído, uma vez superado o óbice apontado.
 
 **Art. 102.** A forma do pedido de transferência de execução da pena e seu processamento serão definidos em regulamento.
 
-**Parágrafo único.** Nos casos previstos nesta Seção, a execução penal será de competência da Justiça Federal.
+Parágrafo único. Nos casos previstos nesta Seção, a execução penal será de competência da Justiça Federal.
 
-##### Seção III — Da Transferência de Pessoa Condenada
+##### Seção III
+
+Da Transferência de Pessoa Condenada
 
 **Art. 103.** A transferência de pessoa condenada poderá ser concedida quando o pedido se fundamentar em tratado ou houver promessa de reciprocidade.
 
-**§ 1º** O condenado no território nacional poderá ser transferido para seu país de nacionalidade ou país em que tiver residência habitual ou vínculo pessoal, desde que expresse interesse nesse sentido, a fim de cumprir pena a ele imposta pelo Estado brasileiro por sentença transitada em julgado.
+§ 1º O condenado no território nacional poderá ser transferido para seu país de nacionalidade ou país em que tiver residência habitual ou vínculo pessoal, desde que expresse interesse nesse sentido, a fim de cumprir pena a ele imposta pelo Estado brasileiro por sentença transitada em julgado.
 
-**§ 2º** A transferência de pessoa condenada no Brasil pode ser concedida juntamente com a aplicação de medida de impedimento de reingresso em território nacional, na forma de regulamento.
+§ 2º A transferência de pessoa condenada no Brasil pode ser concedida juntamente com a aplicação de medida de impedimento de reingresso em território nacional, na forma de regulamento.
 
 **Art. 104.** A transferência de pessoa condenada será possível quando preenchidos os seguintes requisitos:
 
@@ -971,21 +1049,23 @@ VI – houver concordância de ambos os Estados.
 
 **Art. 105.** A forma do pedido de transferência de pessoa condenada e seu processamento serão definidos em regulamento.
 
-**§ 1º** Nos casos previstos nesta Seção, a execução penal será de competência da Justiça Federal.
+§ 1º Nos casos previstos nesta Seção, a execução penal será de competência da Justiça Federal.
 
-**§ 2º** Não se procederá à transferência quando inadmitida a extradição.
+§ 2º Não se procederá à transferência quando inadmitida a extradição.
 
-**§ 3º** (VETADO).
+§ 3º (VETADO).
 
-#### CAPÍTULO IX — DAS INFRAÇÕES E DAS PENALIDADES ADMINISTRATIVA S
+#### CAPÍTULO IX
+
+### DAS INFRAÇÕES E DAS PENALIDADES ADMINISTRATIVA S
 
 **Art. 106.** Regulamento disporá sobre o procedimento de apuração das infrações administrativas e seu processamento e sobre a fixação e a atualização das multas, em observância ao disposto nesta Lei.
 
 **Art. 107.** As infrações administrativas previstas neste Capítulo serão apuradas em processo administrativo próprio, assegurados o contraditório e a ampla defesa e observadas as disposições desta Lei.
 
-**§ 1º** O cometimento simultâneo de duas ou mais infrações importará cumulação das sanções cabíveis, respeitados os limites estabelecidos nos incisos V e VI do art. 108.
+§ 1º O cometimento simultâneo de duas ou mais infrações importará cumulação das sanções cabíveis, respeitados os limites estabelecidos nos incisos V e VI do art. 108.
 
-**§ 2º** A multa atribuída por dia de atraso ou por excesso de permanência poderá ser convertida em redução equivalente do período de autorização de estada para o visto de visita, em caso de nova entrada no País.
+§ 2º A multa atribuída por dia de atraso ou por excesso de permanência poderá ser convertida em redução equivalente do período de autorização de estada para o visto de visita, em caso de nova entrada no País.
 
 **Art. 108.** O valor das multas tratadas neste Capítulo considerará:
 
@@ -1019,9 +1099,11 @@ VII – furtar-se ao controle migratório, na entrada ou saída do território n
 
 **Art. 110.** As penalidades aplicadas serão objeto de pedido de reconsideração e de recurso, nos termos de regulamento.
 
-**Parágrafo único.** Serão respeitados o contraditório, a ampla defesa e a garantia de recurso, assim como a situação de hipossuficiência do migrante ou do visitante.
+Parágrafo único. Serão respeitados o contraditório, a ampla defesa e a garantia de recurso, assim como a situação de hipossuficiência do migrante ou do visitante.
 
-#### CAPÍTULO X — DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+#### CAPÍTULO X
+
+### DISPOSIÇÕES FINAIS E TRANSITÓRIAS
 
 **Art. 111.** Esta Lei não prejudica direitos e obrigações estabelecidos por tratados vigentes no Brasil e que sejam mais benéficos ao migrante e ao visitante, em particular os tratados firmados no âmbito do Mercosul.
 
@@ -1029,37 +1111,37 @@ VII – furtar-se ao controle migratório, na entrada ou saída do território n
 
 **Art. 113.** As taxas e emolumentos consulares são fixados em conformidade com a tabela anexa a esta Lei.
 
-**§ 1º** Os valores das taxas e emolumentos consulares poderão ser ajustados pelo órgão competente da administração pública federal, de forma a preservar o interesse nacional ou a assegurar a reciprocidade de tratamento.
+§ 1º Os valores das taxas e emolumentos consulares poderão ser ajustados pelo órgão competente da administração pública federal, de forma a preservar o interesse nacional ou a assegurar a reciprocidade de tratamento.
 
-**§ 2º** Não serão cobrados emolumentos consulares pela concessão de:
+§ 2º Não serão cobrados emolumentos consulares pela concessão de:
 
 I – vistos diplomáticos, oficiais e de cortesia; e
 
 II – vistos em passaportes diplomáticos, oficiais ou de serviço, ou equivalentes, mediante reciprocidade de tratamento a titulares de documento de viagem similar brasileiro.
 
-**§ 3º** Não serão cobrados taxas e emolumentos consulares pela concessão de vistos ou para a obtenção de documentos para regularização migratória aos integrantes de grupos vulneráveis e indivíduos em condição de hipossuficiência econômica.
+§ 3º Não serão cobrados taxas e emolumentos consulares pela concessão de vistos ou para a obtenção de documentos para regularização migratória aos integrantes de grupos vulneráveis e indivíduos em condição de hipossuficiência econômica.
 
-**§ 4º** (VETADO).
+§ 4º (VETADO).
 
 **Art. 114.** Regulamento poderá estabelecer competência para órgãos do Poder Executivo disciplinarem aspectos específicos desta Lei.
 
 **Art. 115.** O Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), passa a vigorar acrescido do seguinte art. 232-A:
 
-“Promoção de migração ilegal
+“ Promoção de migração ilegal
 
 **Art. 232-A.** Promover, por qualquer meio, com o fim de obter vantagem econômica, a entrada ilegal de estrangeiro em território nacional ou de brasileiro em país estrangeiro:
 
 Pena – reclusão, de 2 (dois) a 5 (cinco) anos, e multa.
 
-**§ 1º** Na mesma pena incorre quem promover, por qualquer meio, com o fim de obter vantagem econômica, a saída de estrangeiro do território nacional para ingressar ilegalmente em país estrangeiro.
+§ 1º Na mesma pena incorre quem promover, por qualquer meio, com o fim de obter vantagem econômica, a saída de estrangeiro do território nacional para ingressar ilegalmente em país estrangeiro.
 
-**§ 2º** A pena é aumentada de 1/6 (um sexto) a 1/3 (um terço) se:
+§ 2º A pena é aumentada de 1/6 (um sexto) a 1/3 (um terço) se:
 
 I – o crime é cometido com violência; ou
 
 II – a vítima é submetida a condição desumana ou degradante.
 
-**§ 3º** A pena prevista para o crime será aplicada sem prejuízo das correspondentes às infrações conexas.”
+§ 3º A pena prevista para o crime será aplicada sem prejuízo das correspondentes às infrações conexas.”
 
 **Art. 116.** (VETADO).
 
@@ -1071,13 +1153,13 @@ II – a vítima é submetida a condição desumana ou degradante.
 
 **Art. 120.** A Política Nacional de Migrações, Refúgio e Apatridia terá a finalidade de coordenar e articular ações setoriais implementadas pelo Poder Executivo federal em regime de cooperação com os Estados, o Distrito Federal e os Municípios, com participação de organizações da sociedade civil, organismos internacionais e entidades privadas, conforme regulamento.
 
-**§ 1º** Ato normativo do Poder Executivo federal poderá definir os objetivos, a organização e a estratégia de coordenação da Política Nacional de Migrações, Refúgio e Apatridia.
+§ 1º Ato normativo do Poder Executivo federal poderá definir os objetivos, a organização e a estratégia de coordenação da Política Nacional de Migrações, Refúgio e Apatridia.
 
-**§ 2º** Ato normativo do Poder Executivo federal poderá estabelecer planos nacionais e outros instrumentos para a efetivação dos objetivos desta Lei e a coordenação entre órgãos e colegiados setoriais.
+§ 2º Ato normativo do Poder Executivo federal poderá estabelecer planos nacionais e outros instrumentos para a efetivação dos objetivos desta Lei e a coordenação entre órgãos e colegiados setoriais.
 
-**§ 3º** Com vistas à formulação de políticas públicas, deverá ser produzida informação quantitativa e qualitativa, de forma sistemática, sobre os migrantes, com a criação de banco de dados.
+§ 3º Com vistas à formulação de políticas públicas, deverá ser produzida informação quantitativa e qualitativa, de forma sistemática, sobre os migrantes, com a criação de banco de dados.
 
-**Art. 121.** Na aplicação desta Lei, devem ser observadas as disposições da Lei nº 9.474, de 22 de julho de 1997, nas situações que envolvam refugiados e solicitantes de refúgio.
+**Art. 121.** Na aplicação desta Lei, devem ser observadas as disposições da Lei nº 9.474, de 22 de julho de 1997 , nas situações que envolvam refugiados e solicitantes de refúgio.
 
 **Art. 122.** A aplicação desta Lei não impede o tratamento mais favorável assegurado por tratado em que a República Federativa do Brasil seja parte.
 
@@ -1085,7 +1167,7 @@ II – a vítima é submetida a condição desumana ou degradante.
 
 **Art. 124.** Revogam-se:
 
-I – a Lei nº 818, de 18 de setembro de 1949; e
+I – a Lei nº 818, de 18 de setembro de 1949 ; e
 
 II – a Lei nº 6.815, de 19 de agosto de 1980 (Estatuto do Estrangeiro).
 
@@ -1093,7 +1175,7 @@ II – a Lei nº 6.815, de 19 de agosto de 1980 (Estatuto do Estrangeiro).
 
 Brasília, 24 de maio de 2017; 196º da Independência e 129º da República.
 
-**MICHEL TEMER**
+### MICHEL TEMER
 
 Osmar Serraglio
 

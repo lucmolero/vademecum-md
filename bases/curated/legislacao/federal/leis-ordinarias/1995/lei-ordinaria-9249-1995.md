@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "163fe6ec91b1e40b3aa6e0410482989c82d2b7ba72bba00cf889b7806323a56e"
 alterada_por: ["br-federal-lei_complementar-167-2019", "br-federal-lei_complementar-224-2025", "br-federal-lei_complementar-225-2026", "br-federal-lei_ordinaria-10684-2003", "br-federal-lei_ordinaria-9430-1996"]
-revogada_por: ["br-federal-lei_ordinaria-9430-1996"]
+revogada_por: ["br-federal-lei_ordinaria-10684-2003", "br-federal-lei_ordinaria-9430-1996"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

@@ -18,36 +18,34 @@ consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:1966-10-25;5172"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "32df784b81d46fcbd99d9b5ef2e2eb00441ed2fc5909227eb2bd50a529cd3d2e"
-alterada_por: ["br-federal-lei_complementar-214-2025", "br-federal-lei_complementar-227-2026", "br-federal-lei_complementar-24-1975", "br-federal-lei_complementar-35-1979"]
+sha256_origem: "1aec7c006f6bbadb0ca05ef114171f0d2f7b574389a77ccf0e511b99d7e84f1d"
+alterada_por: ["br-federal-lei_complementar-214-2025", "br-federal-lei_complementar-227-2026", "br-federal-lei_complementar-24-1975", "br-federal-lei_complementar-35-1979", "br-federal-lei_ordinaria-8212-1991"]
 revogada_por: ["br-federal-decreto_lei-406-1968", "br-federal-lei_complementar-227-2026"]
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+sha256_normalizado: "1aec7c006f6bbadb0ca05ef114171f0d2f7b574389a77ccf0e511b99d7e84f1d"
+sha256_corpo: "3842855484f49c369b8d5e480f2015eb73d6732f3ad71f6b00cddb34eeefb28d"
 ---
-# Lei nº 5.172 de 25/10/1966
+# Codigo Tributario Nacional
 
-LEI Nº 5.172, DE 25 DE OUTUBRO DE 1966
-
-Dispõe sobre o Sistema Tributário Nacional e Institui Normas Gerais de Direito Tributário Aplicáveis à União, Estados e Municípios.
-
-**O PRESIDENTE DA REPÚBLICA:**
+O PRESIDENTE DA REPÚBLICA:
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
-DISPOSIÇÃO PRELIMINAR
-
 **Art. 1º** Esta Lei regula, com fundamento na Emenda Constitucional nº 18, de 1º de dezembro de 1965, o sistema tributário nacional e estabelece, com fundamento no art. 5º, XV, alínea b, da Constituição Federal, as normas gerais de direito tributário aplicáveis à União, aos Estados, ao Distrito Federal e aos Municípios, sem prejuízo da respectiva legislação complementar, supletiva ou regulamentar.
 
-LIVRO PRIMEIRO
+## LIVRO PRIMEIRO
 
-SISTEMA TRIBUTÁRIO NACIONAL
+### SISTEMA TRIBUTÁRIO NACIONAL
 
-### TÍTULO I — DISPOSIÇÕES GERAIS
+### TÍTULO I
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 2º** O sistema tributário nacional é regido pelo disposto na Emenda Constitucional nº 18, de 1º de dezembro de 1965, em leis complementares, em resoluções do Senado Federal e, nos limites das respectivas competências, em leis federais, nas Constituições e em leis estaduais, e em leis municipais.
 
@@ -61,27 +59,35 @@ II - a destinação legal do produto da sua arrecadação.
 
 **Art. 5º** Os tributos são impostos, taxas e contribuições de melhoria.
 
-### TÍTULO II — COMPETÊNCIA TRIBUTÁRIA
+### TÍTULO II
 
-#### CAPÍTULO I — DISPOSIÇÕES GERAIS
+### COMPETÊNCIA TRIBUTÁRIA
+
+#### CAPÍTULO I
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 6º** A atribuição constitucional de competência tributária compreende a competência legislativa plena, ressalvadas as limitações contidas na Constituição Federal, nas Constituições dos Estados e nas Leis Orgânicas do Distrito Federal e dos Municípios, e observado o disposto nesta Lei.
 
-**Parágrafo único.** Os tributos cuja receita seja distribuída, no todo ou em parte, a outras pessoas jurídicas de direito público pertencem à competência legislativa daquela a que tenham sido atribuídos.
+Parágrafo único. Os tributos cuja receita seja distribuída, no todo ou em parte, a outras pessoas jurídicas de direito público pertencem à competência legislativa daquela a que tenham sido atribuídos.
 
 **Art. 7º** A competência tributária é indelegável, salvo atribuição das funções de arrecadar ou fiscalizar tributos, ou de executar leis, serviços, atos ou decisões administrativas em matéria tributária, conferida por uma pessoa jurídica de direito público a outra, nos termos do § 3º do art. 18 da Constituição.
 
-**§ 1º** A atribuição compreende as garantias e os privilégios processuais que competem à pessoa jurídica de direito público que a conferir.
+§ 1º A atribuição compreende as garantias e os privilégios processuais que competem à pessoa jurídica de direito público que a conferir.
 
-**§ 2º** A atribuição pode ser revogada, a qualquer tempo, por ato unilateral da pessoa jurídica de direito público que a tenha conferido.
+§ 2º A atribuição pode ser revogada, a qualquer tempo, por ato unilateral da pessoa jurídica de direito público que a tenha conferido.
 
-**§ 3º** Não constitui delegação de competência o cometimento, a pessoas de direito privado, do encargo ou da função de arrecadar tributos.
+§ 3º Não constitui delegação de competência o cometimento, a pessoas de direito privado, do encargo ou da função de arrecadar tributos.
 
 **Art. 8º** O não-exercício da competência tributária não a defere a pessoa jurídica de direito público diversa daquela a que a Constituição a tenha atribuído.
 
-#### CAPÍTULO II — LIMITAÇÕES DA COMPETÊNCIA TRIBUTÁRIA
+#### CAPÍTULO II
 
-##### Seção I — Disposições Gerais
+### LIMITAÇÕES DA COMPETÊNCIA TRIBUTÁRIA
+
+##### Seção I
+
+Disposições Gerais
 
 **Art. 9º** É vedado à União, aos Estados, ao Distrito Federal e aos Municípios:
 
@@ -91,43 +97,45 @@ II - cobrar imposto sobre o patrimônio e a renda com base em lei posterior à d
 
 III - estabelecer limitações ao tráfego, no território nacional, de pessoas ou mercadorias, por meio de tributos interestaduais ou intermunicipais;
 
-IV - cobrar impostos e a contribuição de que trata o inciso V do art. 195 da Constituição Federal sobre: *(Inciso com redação dada pela Lei Complementar nº 214, de 16/1/2025, em vigor em 1º/1/2026)*
+IV - cobrar impostos e a contribuição de que trata o inciso V do art. 195 da Constituição Federal sobre: (Inciso com redação dada pela Lei Complementar nº 214, de 16/1/2025, em vigor em 1º/1/2026)
 
 a) o patrimônio, a renda ou os serviços uns dos outros;
 
-b) entidades religiosas e templos de qualquer culto, inclusive suas organizações assistenciais e beneficentes; *(Alínea com redação dada pela Lei Complementar nº 214, de 16/1/2025, em vigor em 1º/1/2026)*
+b) entidades religiosas e templos de qualquer culto, inclusive suas organizações assistenciais e beneficentes; (Alínea com redação dada pela Lei Complementar nº 214, de 16/1/2025, em vigor em 1º/1/2026)
 
-c) o patrimônio, a renda ou serviços de partidos políticos, inclusive suas fundações, das entidades sindicais dos trabalhadores, das instituições de educação e de assistência social sem fins lucrativos, observados os requisitos fixados na Seção II deste Capítulo; *(Alínea com redação dada pela Lei Complementar nº 104, de 10/1/2001)*
+c) o patrimônio, a renda ou serviços de partidos políticos, inclusive suas fundações, das entidades sindicais dos trabalhadores, das instituições de educação e de assistência social sem fins lucrativos, observados os requisitos fixados na Seção II deste Capítulo; (Alínea com redação dada pela Lei Complementar nº 104, de 10/1/2001)
 
 d) papel destinado exclusivamente à impressão de jornais, periódicos e livros.
 
-**§ 1º** O disposto no inciso IV não exclui a atribuição, por lei, às entidades nele referidas, da condição de responsáveis pelos tributos que lhes caiba reter na fonte, e não as dispensa da prática de atos, previstos em lei, assecuratórios do cumprimento de obrigações tributárias por terceiros.
+§ 1º O disposto no inciso IV não exclui a atribuição, por lei, às entidades nele referidas, da condição de responsáveis pelos tributos que lhes caiba reter na fonte, e não as dispensa da prática de atos, previstos em lei, assecuratórios do cumprimento de obrigações tributárias por terceiros.
 
-**§ 2º** O disposto na alínea *a* do inciso IV aplica-se, exclusivamente, aos serviços próprios das pessoas jurídicas de direito público a que se refere este artigo, e inerentes aos seus objetivos.
+§ 2º O disposto na alínea a do inciso IV aplica-se, exclusivamente, aos serviços próprios das pessoas jurídicas de direito público a que se refere este artigo, e inerentes aos seus objetivos.
 
 **Art. 10.** É vedado à União instituir tributo que não seja uniforme em todo o território nacional, ou que importe distinção ou preferência em favor de determinado Estado ou Município.
 
 **Art. 11.** É vedado aos Estados, ao Distrito Federal e aos Municípios estabelecer diferença tributária entre bens de qualquer natureza, em razão da sua procedência ou do seu destino.
 
-##### Seção II — Disposições Especiais
+##### Seção II
 
-**Art. 12.** O disposto na alínea *a* do inciso IV do art. 9º, observado o disposto nos seus §§ 1º e 2º, é extensivo às autarquias criadas pela União, pelos Estados, pelo Distrito Federal, ou pelos Municípios, tão-somente no que se refere ao patrimônio, à renda ou aos serviços vinculados às suas finalidades essenciais, ou delas decorrentes.
+Disposições Especiais
 
-**Art. 13.** O disposto na alínea *a* do inciso IV do art. 9º não se aplica aos serviços públicos concedidos, cujo tratamento tributário é estabelecido pelo poder concedente, no que se refere aos tributos de sua competência, ressalvado o que dispõe o parágrafo único.
+**Art. 12.** O disposto na alínea a do inciso IV do art. 9º, observado o disposto nos seus §§ 1º e 2º, é extensivo às autarquias criadas pela União, pelos Estados, pelo Distrito Federal, ou pelos Municípios, tão-somente no que se refere ao patrimônio, à renda ou aos serviços vinculados às suas finalidades essenciais, ou delas decorrentes.
 
-**Parágrafo único.** Mediante lei especial e tendo em vista o interesse comum, a União pode instituir isenção de tributos federais, estaduais e municipais para os serviços públicos que conceder, observado o disposto no § 1º do art. 9º.
+**Art. 13.** O disposto na alínea a do inciso IV do art. 9º não se aplica aos serviços públicos concedidos, cujo tratamento tributário é estabelecido pelo poder concedente, no que se refere aos tributos de sua competência, ressalvado o que dispõe o parágrafo único.
 
-**Art. 14.** O disposto na alínea *c* do inciso IV do art. 9º é subordinado à observância dos seguintes requisitos pelas entidades nele referidas:
+Parágrafo único. Mediante lei especial e tendo em vista o interesse comum, a União pode instituir isenção de tributos federais, estaduais e municipais para os serviços públicos que conceder, observado o disposto no § 1º do art. 9º.
 
-I - não distribuírem qualquer parcela de seu patrimônio ou de suas rendas, a qualquer título; *(Inciso com redação dada pela Lei Complementar nº 104, de 10/1/2001)*
+**Art. 14.** O disposto na alínea c do inciso IV do art. 9º é subordinado à observância dos seguintes requisitos pelas entidades nele referidas:
+
+I - não distribuírem qualquer parcela de seu patrimônio ou de suas rendas, a qualquer título; (Inciso com redação dada pela Lei Complementar nº 104, de 10/1/2001)
 
 II - aplicarem integralmente, no País, os seus recursos na manutenção dos seus objetivos institucionais;
 
 III - manterem escrituração de suas receitas e despesas em livros revestidos de formalidades capazes de assegurar sua exatidão.
 
-**§ 1º** Na falta de cumprimento do disposto neste artigo, ou no § 1º do art. 9º, a autoridade competente pode suspender a aplicação do benefício.
+§ 1º Na falta de cumprimento do disposto neste artigo, ou no § 1º do art. 9º, a autoridade competente pode suspender a aplicação do benefício.
 
-**§ 2º** Os serviços a que se refere a alínea *c* do inciso IV do art. 9º são exclusivamente os diretamente relacionados com os objetivos institucionais das entidades de que trata este artigo, previsto nos respectivos estatutos ou atos constitutivos.
+§ 2º Os serviços a que se refere a alínea c do inciso IV do art. 9º são exclusivamente os diretamente relacionados com os objetivos institucionais das entidades de que trata este artigo, previsto nos respectivos estatutos ou atos constitutivos.
 
 **Art. 15.** Somente a União, nos seguintes casos excepcionais, pode instituir empréstimos compulsórios:
 
@@ -137,11 +145,15 @@ II - calamidade pública que exija auxílio federal impossível de atender com o
 
 III - conjuntura que exija a absorção temporária de poder aquisitivo.
 
-**Parágrafo único.** A lei fixará obrigatoriamente o prazo do empréstimo e as condições de seu resgate, observando, no que for aplicável, o disposto nesta Lei.
+Parágrafo único. A lei fixará obrigatoriamente o prazo do empréstimo e as condições de seu resgate, observando, no que for aplicável, o disposto nesta Lei.
 
-### TÍTULO III — IMPOSTOS
+### TÍTULO III
 
-#### CAPÍTULO I — DISPOSIÇÕES GERAIS
+### IMPOSTOS
+
+#### CAPÍTULO I
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 16.** Imposto é o tributo cuja obrigação tem por fato gerador uma situação independente de qualquer atividade estatal específica, relativa ao contribuinte.
 
@@ -153,19 +165,23 @@ I - à União instituir, nos Territórios Federais, os impostos atribuídos aos 
 
 II - ao Distrito Federal e aos Estados não divididos em Municípios instituir, cumulativamente, os impostos atribuídos aos Estados e aos Municípios.
 
-**Art. 18-A.** Para fins da incidência do imposto de que trata o inciso II do *caput* do art. 155 da Constituição Federal, os combustíveis, o gás natural, a energia elétrica, as comunicações e o transporte coletivo são considerados bens e serviços essenciais e indispensáveis, que não podem ser tratados como supérfluos. *(“Caput” do artigo acrescido pela Lei Complementar nº 194, de 23/6/2022)*
+**Art. 18-A.** Para fins da incidência do imposto de que trata o inciso II do caput do art. 155 da Constituição Federal, os combustíveis, o gás natural, a energia elétrica, as comunicações e o transporte coletivo são considerados bens e serviços essenciais e indispensáveis, que não podem ser tratados como supérfluos. (“Caput” do artigo acrescido pela Lei Complementar nº 194, de 23/6/2022)
 
-**Parágrafo único.** Para efeito do disposto neste artigo: *(Parágrafo único acrescido pela Lei Complementar nº 194, de 23/6/2022)*
+Parágrafo único. Para efeito do disposto neste artigo: (Parágrafo único acrescido pela Lei Complementar nº 194, de 23/6/2022)
 
-I - é vedada a fixação de alíquotas sobre as operações referidas no *caput* deste artigo em patamar superior ao das operações em geral, considerada a essencialidade dos bens e serviços; *(Inciso acrescido pela Lei Complementar nº 194, de 23/6/2022)*
+I - é vedada a fixação de alíquotas sobre as operações referidas no caput deste artigo em patamar superior ao das operações em geral, considerada a essencialidade dos bens e serviços; (Inciso acrescido pela Lei Complementar nº 194, de 23/6/2022)
 
-II - é facultada ao ente federativo competente a aplicação de alíquotas reduzidas em relação aos bens referidos no *caput* deste artigo, como forma de beneficiar os consumidores em geral; e *(Inciso acrescido pela Lei Complementar nº 194, de 23/6/2022)*
+II - é facultada ao ente federativo competente a aplicação de alíquotas reduzidas em relação aos bens referidos no caput deste artigo, como forma de beneficiar os consumidores em geral; e (Inciso acrescido pela Lei Complementar nº 194, de 23/6/2022)
 
-III - *(Inciso acrescido pela Lei Complementar nº 194, de 23/6/2022, e revogado pela Lei Complementar nº 201, de 24/10/2023)*
+III - (Inciso acrescido pela Lei Complementar nº 194, de 23/6/2022 , e revogado pela Lei Complementar nº 201, de 24/10/2023)
 
-#### CAPÍTULO II — IMPOSTOS SOBRE O COMÉRCIO EXTERIOR
+#### CAPÍTULO II
 
-##### Seção I — Imposto sobre a Importação
+### IMPOSTOS SOBRE O COMÉRCIO EXTERIOR
+
+##### Seção I
+
+Imposto sobre a Importação
 
 **Art. 19.** O imposto, de competência da União, sobre a importação de produtos estrangeiros tem como fato gerador a entrada destes no território nacional.
 
@@ -173,7 +189,7 @@ III - *(Inciso acrescido pela Lei Complementar nº 194, de 23/6/2022, e revogado
 
 I - quando a alíquota seja específica, a unidade de medida adotada pela lei tributária;
 
-II - quando a alíquota seja *ad valorem*, o preço normal que o produto, ou seu similar, alcançaria, ao tempo da importação, em uma venda em condições de livre concorrência, para entrega no porto ou lugar de entrada do produto no País;
+II - quando a alíquota seja ad valorem , o preço normal que o produto, ou seu similar, alcançaria, ao tempo da importação, em uma venda em condições de livre concorrência, para entrega no porto ou lugar de entrada do produto no País;
 
 III - quando se trate de produto apreendido ou abandonado, levado a leilão, o preço da arrematação.
 
@@ -185,7 +201,7 @@ I - o importador ou quem a lei a ele equiparar;
 
 II - o arrematante de produtos apreendidos ou abandonados.
 
-##### Seção II — Imposto sobre a Exportação
+##### Seção II
 
 **Art. 23.** O imposto, de competência da União, sobre a exportação, para o estrangeiro, de produtos nacionais ou nacionalizados tem como fato gerador a saída destes do território nacional.
 
@@ -193,9 +209,9 @@ II - o arrematante de produtos apreendidos ou abandonados.
 
 I - quando a alíquota seja específica, a unidade de medida adotada pela lei tributária;
 
-II - quando a alíquota seja *ad valorem*, o preço normal que o produto, ou seu similar, alcançaria, ao tempo da exportação, em uma venda em condições de livre concorrência.
+II - quando a alíquota seja ad valorem , o preço normal que o produto, ou seu similar, alcançaria, ao tempo da exportação, em uma venda em condições de livre concorrência.
 
-**Parágrafo único.** Para os efeitos do inciso II, considera-se a entrega como efetuada no porto ou lugar da saída do produto, deduzidos os tributos diretamente incidentes sobre a operação de exportação e, nas vendas efetuadas a prazo superior aos correntes no mercado internacional, o custo do financiamento.
+Parágrafo único. Para os efeitos do inciso II, considera-se a entrega como efetuada no porto ou lugar da saída do produto, deduzidos os tributos diretamente incidentes sobre a operação de exportação e, nas vendas efetuadas a prazo superior aos correntes no mercado internacional, o custo do financiamento.
 
 **Art. 25.** A lei pode adotar como base de cálculo a parcela do valor ou do preço, referidos no artigo anterior, excedente de valor básico, fixado de acordo com os critérios e dentro dos limites por ela estabelecidos.
 
@@ -205,9 +221,13 @@ II - quando a alíquota seja *ad valorem*, o preço normal que o produto, ou seu
 
 **Art. 28.** A receita líquida do imposto destina-se à formação de reservas monetárias, na forma da lei.
 
-#### CAPÍTULO III — IMPOSTOS SOBRE O PATRIMÔNIO E A RENDA
+#### CAPÍTULO III
 
-##### Seção I — Imposto sobre a Propriedade Territorial Rural
+### IMPOSTOS SOBRE O PATRIMÔNIO E A RENDA
+
+##### Seção I
+
+Imposto sobre a Propriedade Territorial Rural
 
 **Art. 29.** O imposto, de competência da União, sobre a propriedade territorial rural tem como fato gerador a propriedade, o domínio útil ou a posse de imóvel por natureza, como definido na lei civil, localizado fora da zona urbana do Município.
 
@@ -215,11 +235,11 @@ II - quando a alíquota seja *ad valorem*, o preço normal que o produto, ou seu
 
 **Art. 31.** Contribuinte do imposto é o proprietário do imóvel, o titular de seu domínio útil, ou o seu possuidor a qualquer título.
 
-##### Seção II — Imposto sobre a Propriedade Predial e Territorial Urbana
+Imposto sobre a Propriedade Predial e Territorial Urbana
 
 **Art. 32.** O imposto, de competência dos Municípios, sobre a propriedade predial e territorial urbana tem como fato gerador a propriedade, o domínio útil ou a posse de bem imóvel por natureza ou por acessão física, como definido na lei civil, localizado na zona urbana do Município.
 
-**§ 1º** Para os efeitos deste imposto, entende-se como zona urbana a definida em lei municipal, observado o requisito mínimo da existência de melhoramentos indicados em pelo menos dois dos incisos seguintes, construídos ou mantidos pelo Poder Público:
+§ 1º Para os efeitos deste imposto, entende-se como zona urbana a definida em lei municipal, observado o requisito mínimo da existência de melhoramentos indicados em pelo menos dois dos incisos seguintes, construídos ou mantidos pelo Poder Público:
 
 I - meio-fio ou calçamento, com canalização de águas pluviais;
 
@@ -231,29 +251,31 @@ IV - rede de iluminação pública, com ou sem posteamento para distribuição d
 
 V - escola primária ou posto de saúde a uma distância máxima de 3 (três) quilômetros do imóvel considerado.
 
-**§ 2º** A lei municipal pode considerar urbanas as áreas urbanizáveis, ou de expansão urbana, constantes de loteamentos aprovados pelos órgãos competentes, destinados à habitação, à indústria ou ao comércio, mesmo que localizados fora das zonas definidas nos termos do parágrafo anterior.
+§ 2º A lei municipal pode considerar urbanas as áreas urbanizáveis, ou de expansão urbana, constantes de loteamentos aprovados pelos órgãos competentes, destinados à habitação, à indústria ou ao comércio, mesmo que localizados fora das zonas definidas nos termos do parágrafo anterior.
 
 **Art. 33.** A base do cálculo do imposto é o valor venal do imóvel.
 
-**Parágrafo único.** Na determinação da base de cálculo, não se considera o valor dos bens móveis mantidos, em caráter permanente ou temporário, no imóvel, para efeito de sua utilização, exploração, aformoseamento ou comodidade.
+Parágrafo único. Na determinação da base de cálculo, não se considera o valor dos bens móveis mantidos, em caráter permanente ou temporário, no imóvel, para efeito de sua utilização, exploração, aformoseamento ou comodidade.
 
 **Art. 34.** Contribuinte do imposto é o proprietário do imóvel, o titular do seu domínio útil, ou o seu possuidor a qualquer título.
 
-##### Seção III — Do Imposto sobre a Transmissão Inter vivos , por Ato Oneroso, de Bens Imóveis e de Direitos a Eles Relativos
+##### Seção III
 
-*(Denominação da seção com redação dada pela Lei Complementar nº 227, de 13/1/2026)*
+Do Imposto sobre a Transmissão Inter vivos , por Ato Oneroso, de Bens Imóveis e de Direitos a Eles Relativos
 
-**Art. 35.** O Imposto sobre a Transmissão *Inter vivos*, por Ato Oneroso, de Bens Imóveis e de Direitos a Eles Relativos, de competência dos Municípios e do Distrito Federal, tem como fato gerador: *(“Caput” do artigo com redação dada pela Lei Complementar nº 227, de 13/1/2026)*
+(Denominação da seção com redação dada pela Lei Complementar nº 227, de 13/1/2026)
 
-I - a transmissão *inter vivos*, a qualquer título, por ato oneroso, da propriedade ou do domínio útil de bens imóveis por natureza ou por acessão física, como definidos na lei civil; *(Inciso com redação dada pela Lei Complementar nº 227, de 13/1/2026)*
+**Art. 35.** O Imposto sobre a Transmissão Inter vivos , por Ato Oneroso, de Bens Imóveis e de Direitos a Eles Relativos, de competência dos Municípios e do Distrito Federal, tem como fato gerador: (“Caput” do artigo com redação dada pela Lei Complementar nº 227, de 13/1/2026)
 
-II - a transmissão *inter vivos*, a qualquer título, por ato oneroso, de direitos reais sobre imóveis, exceto os direitos reais de garantia; *(Inciso com redação dada pela Lei Complementar nº 227, de 13/1/2026)*
+I - a transmissão inter vivos , a qualquer título, por ato oneroso, da propriedade ou do domínio útil de bens imóveis por natureza ou por acessão física, como definidos na lei civil; (Inciso com redação dada pela Lei Complementar nº 227, de 13/1/2026)
 
-III - a cessão *inter vivos*, por ato oneroso, de direitos relativos às transmissões referidas nos incisos I e II deste *caput*. *(Inciso com redação dada pela Lei Complementar nº 227, de 13/1/2026)*
+II - a transmissão inter vivos , a qualquer título, por ato oneroso, de direitos reais sobre imóveis, exceto os direitos reais de garantia; (Inciso com redação dada pela Lei Complementar nº 227, de 13/1/2026)
 
-**Parágrafo único.** *(Revogado pela Lei Complementar nº 227, de 13/1/2026)*
+III - a cessão inter vivos , por ato oneroso, de direitos relativos às transmissões referidas nos incisos I e II deste caput . (Inciso com redação dada pela Lei Complementar nº 227, de 13/1/2026)
 
-**Art. 35-A.** *(VETADO na Lei Complementar nº 227, de 13/1/2026)*
+Parágrafo único. (Revogado pela Lei Complementar nº 227, de 13/1/2026)
+
+**Art. 35-A.** (VETADO na Lei Complementar nº 227, de 13/1/2026)
 
 **Art. 36.** Ressalvado o disposto no artigo seguinte, o imposto não incide sobre a transmissão dos bens ou direitos referidos no artigo anterior:
 
@@ -261,23 +283,23 @@ I - quando efetuada para sua incorporação ao patrimônio de pessoa jurídica e
 
 II - quando decorrente da incorporação ou da fusão de uma pessoa jurídica por outra ou com outra.
 
-**Parágrafo único.** O imposto não incide sobre a transmissão aos mesmos alienantes, dos bens e direitos adquiridos na forma do inciso I deste artigo, em decorrência da sua desincorporação do patrimônio da pessoa jurídica a que foram conferidos.
+Parágrafo único. O imposto não incide sobre a transmissão aos mesmos alienantes, dos bens e direitos adquiridos na forma do inciso I deste artigo, em decorrência da sua desincorporação do patrimônio da pessoa jurídica a que foram conferidos.
 
 **Art. 37.** O disposto no artigo anterior não se aplica quando a pessoa jurídica adquirente tenha como atividade preponderante a venda ou locação de propriedade imobiliária ou a cessão de direitos relativos à sua aquisição.
 
-**§ 1º** Considera-se caracterizada a atividade preponderante referida neste artigo quando mais de 50% (cinqüenta por cento) da receita operacional da pessoa jurídica adquirente, nos 2 (dois) anos anteriores e nos 2 (dois) anos subseqüentes à aquisição, decorrer de transações mencionadas neste artigo.
+§ 1º Considera-se caracterizada a atividade preponderante referida neste artigo quando mais de 50% (cinqüenta por cento) da receita operacional da pessoa jurídica adquirente, nos 2 (dois) anos anteriores e nos 2 (dois) anos subseqüentes à aquisição, decorrer de transações mencionadas neste artigo.
 
-**§ 2º** Se a pessoa jurídica adquirente iniciar suas atividades após a aquisição, ou menos de 2 (dois) anos antes dela, apurar-se-á a preponderância referida no parágrafo anterior, levando em conta os 3 (três) primeiros anos seguintes à data da aquisição.
+§ 2º Se a pessoa jurídica adquirente iniciar suas atividades após a aquisição, ou menos de 2 (dois) anos antes dela, apurar-se-á a preponderância referida no parágrafo anterior, levando em conta os 3 (três) primeiros anos seguintes à data da aquisição.
 
-**§ 3º** Verificada a preponderância referida neste artigo, tornar-se-á devido o imposto, nos termos da lei vigente à data da aquisição, sobre o valor do bem ou direito nessa data.
+§ 3º Verificada a preponderância referida neste artigo, tornar-se-á devido o imposto, nos termos da lei vigente à data da aquisição, sobre o valor do bem ou direito nessa data.
 
-**§ 4º** O disposto neste artigo não se aplica à transmissão de bens ou direitos, quando realizada em conjunto com a da totalidade do patrimônio da pessoa jurídica alienante.
+§ 4º O disposto neste artigo não se aplica à transmissão de bens ou direitos, quando realizada em conjunto com a da totalidade do patrimônio da pessoa jurídica alienante.
 
 **Art. 38.** A base de cálculo do imposto é o valor venal dos bens ou direitos transmitidos.
 
-**§ 1º** Considera-se valor venal, para fins do *caput* deste artigo, o valor pelo qual o bem ou direito seria negociado à vista, em condições normais de mercado. *(Parágrafo acrescido pela Lei Complementar nº 227, de 13/1/2026)*
+§ 1º Considera-se valor venal, para fins do caput deste artigo, o valor pelo qual o bem ou direito seria negociado à vista, em condições normais de mercado. (Parágrafo acrescido pela Lei Complementar nº 227, de 13/1/2026)
 
-**§ 2º** O valor pelo qual o bem ou direito seria negociado à vista, em condições normais de mercado, a que se refere o § 1º deste artigo, será estimado por meio de critérios técnicos, considerando pelo menos um dos seguintes:
+§ 2º O valor pelo qual o bem ou direito seria negociado à vista, em condições normais de mercado, a que se refere o § 1º deste artigo, será estimado por meio de critérios técnicos, considerando pelo menos um dos seguintes:
 
 I - análise de preços praticados no mercado imobiliário;
 
@@ -285,21 +307,23 @@ II - informações prestadas pelos serviços notariais e registrais e por agente
 
 III - localização, tipologia, destinação, padrão e área de terreno e construção, entre outras características do bem imóvel; e
 
-IV - outros parâmetros técnicos usualmente observados na avaliação de imóveis. *(Parágrafo acrescido pela Lei Complementar nº 227, de 13/1/2026)*
+IV - outros parâmetros técnicos usualmente observados na avaliação de imóveis. (Parágrafo acrescido pela Lei Complementar nº 227, de 13/1/2026)
 
-**§ 3º** As administrações tributárias dos Municípios e do Distrito Federal deverão divulgar os critérios utilizados para estimar o valor venal a que se refere o *caput* deste artigo, o qual poderá ser contestado pelo contribuinte mediante a apresentação de avaliação contraditória em procedimento específico, nos termos da legislação específica municipal ou distrital. *(Parágrafo acrescido pela Lei Complementar nº 227, de 13/1/2026)*
+§ 3º As administrações tributárias dos Municípios e do Distrito Federal deverão divulgar os critérios utilizados para estimar o valor venal a que se refere o caput deste artigo, o qual poderá ser contestado pelo contribuinte mediante a apresentação de avaliação contraditória em procedimento específico, nos termos da legislação específica municipal ou distrital. (Parágrafo acrescido pela Lei Complementar nº 227, de 13/1/2026)
 
-**§ 4º** Os serviços registrais e notariais deverão compartilhar as informações das operações realizadas com bens imóveis com as administrações tributárias dos Municípios e do Distrito Federal, sob pena de multa prevista em lei específica municipal ou distrital. *(Parágrafo acrescido pela Lei Complementar nº 227, de 13/1/2026)*
+§ 4º Os serviços registrais e notariais deverão compartilhar as informações das operações realizadas com bens imóveis com as administrações tributárias dos Municípios e do Distrito Federal, sob pena de multa prevista em lei específica municipal ou distrital. (Parágrafo acrescido pela Lei Complementar nº 227, de 13/1/2026)
 
-**Art. 39.** *(Revogado pela Lei Complementar nº 227, de 13/1/2026)*
+**Art. 39.** (Revogado pela Lei Complementar nº 227, de 13/1/2026)
 
 **Art. 40.** O montante do imposto é dedutível do devido à União, a título do imposto de que trata o art. 43, sobre o provento decorrente da mesma transmissão.
 
-**Art. 41.** O imposto compete ao Município da situação do bem, ou ao Distrito Federal. *(Artigo com redação dada pela Lei Complementar nº 227, de 13/1/2026)*
+**Art. 41.** O imposto compete ao Município da situação do bem, ou ao Distrito Federal. (Artigo com redação dada pela Lei Complementar nº 227, de 13/1/2026)
 
 **Art. 42.** Contribuinte do imposto é qualquer das partes na operação tributada, como dispuser a lei.
 
-##### Seção IV — Imposto sobre a Renda e Proventos de Qualquer Natureza
+##### Seção IV
+
+Imposto sobre a Renda e Proventos de Qualquer Natureza
 
 **Art. 43.** O imposto, de competência da União, sobre a renda e proventos de qualquer natureza tem como fato gerador a aquisição da disponibilidade econômica ou jurídica:
 
@@ -307,19 +331,23 @@ I - de renda, assim entendido o produto do capital, do trabalho ou da combinaç�
 
 II - de proventos de qualquer natureza, assim entendidos os acréscimos patrimoniais não compreendidos no inciso anterior.
 
-**§ 1º** A incidência do imposto independe da denominação da receita ou do rendimento, da localização, condição jurídica ou nacionalidade da fonte, da origem e da forma de percepção. *(Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001).*
+§ 1º A incidência do imposto independe da denominação da receita ou do rendimento, da localização, condição jurídica ou nacionalidade da fonte, da origem e da forma de percepção. (Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001).
 
-**§ 2º** Na hipótese de receita ou de rendimento oriundos do exterior, a lei estabelecerá as condições e o momento em que se dará sua disponibilidade, para fins de incidência do imposto referido neste artigo. *(Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+§ 2º Na hipótese de receita ou de rendimento oriundos do exterior, a lei estabelecerá as condições e o momento em que se dará sua disponibilidade, para fins de incidência do imposto referido neste artigo. (Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
 **Art. 44.** A base de cálculo do imposto é o montante, real, arbitrado ou presumido, da renda ou dos proventos tributáveis.
 
 **Art. 45.** Contribuinte do imposto é o titular da disponibilidade a que se refere o art. 43, sem prejuízo de atribuir a lei essa condição ao possuidor, a qualquer título, dos bens produtores de renda ou dos proventos tributáveis.
 
-**Parágrafo único.** A lei pode atribuir à fonte pagadora da renda ou dos proventos tributáveis a condição de responsável pelo imposto cuja retenção e recolhimento lhe caibam.
+Parágrafo único. A lei pode atribuir à fonte pagadora da renda ou dos proventos tributáveis a condição de responsável pelo imposto cuja retenção e recolhimento lhe caibam.
 
-#### CAPÍTULO IV — IMPOSTOS SOBRE A PRODUÇÃO E A CIRCULAÇÃO
+#### CAPÍTULO IV
 
-##### Seção I — Imposto Sobre Produtos Industrializados
+### IMPOSTOS SOBRE A PRODUÇÃO E A CIRCULAÇÃO
+
+##### Seção I
+
+Imposto Sobre Produtos Industrializados
 
 **Art. 46.** O imposto, de competência da União, sobre produtos industrializados tem como fato gerador:
 
@@ -329,7 +357,7 @@ II - a sua saída dos estabelecimentos a que se refere o parágrafo único do ar
 
 III - a sua arrematação, quando apreendido ou abandonado e levado a leilão.
 
-**Parágrafo único.** Para os efeitos deste imposto, considera-se industrializado o produto que tenha sido submetido a qualquer operação que lhe modifique a natureza ou a finalidade, ou o aperfeiçoe para o consumo.
+Parágrafo único. Para os efeitos deste imposto, considera-se industrializado o produto que tenha sido submetido a qualquer operação que lhe modifique a natureza ou a finalidade, ou o aperfeiçoe para o consumo.
 
 **Art. 47.** A base de cálculo do imposto é:
 
@@ -353,7 +381,7 @@ III - no caso do inciso III do artigo anterior, o preço da arrematação.
 
 **Art. 49.** O imposto é não-cumulativo, dispondo a lei de forma que o montante devido resulte da diferença a maior, em determinado período, entre o imposto referente aos produtos saídos do estabelecimento e o pago relativamente aos produtos nele entrados.
 
-**Parágrafo único.** O saldo verificado, em determinado período, em favor do contribuinte, transfere-se para o período ou períodos seguintes.
+Parágrafo único. O saldo verificado, em determinado período, em favor do contribuinte, transfere-se para o período ou períodos seguintes.
 
 **Art. 50.** Os produtos sujeitos ao imposto, quando remetidos de um para outro Estado, ou do ou para o Distrito Federal, serão acompanhados de nota fiscal de modelo especial, emitida em séries próprias e contendo, além dos elementos necessários ao controle fiscal, os dados indispensáveis à elaboração da estatística do comércio por cabotagem e demais vias internas.
 
@@ -367,17 +395,19 @@ III - o comerciante de produtos sujeitos ao imposto, que os forneça aos contrib
 
 IV - o arrematante de produtos apreendidos ou abandonados, levados a leilão.
 
-**Parágrafo único.** Para os efeitos deste imposto, considera-se contribuinte autônomo qualquer estabelecimento de importador, industrial, comerciante ou arrematante.
+Parágrafo único. Para os efeitos deste imposto, considera-se contribuinte autônomo qualquer estabelecimento de importador, industrial, comerciante ou arrematante.
 
-##### Seção II — Imposto Estadual sobre Operações Relativas à
+##### Seção II
 
-Circulação de Mercadorias
+Imposto Estadual sobre Operações Relativas à
 
-Arts. 52 a 58 *(Revogados pelo Decreto-lei nº 406, de 31/12/1968)*
+Arts. 52 a 58 (Revogados pelo Decreto-lei nº 406, de 31/12/1968)
 
-##### Seção III — Imposto Municipal sobre Operações Relativas à Circulação de Mercadorias
+##### Seção III
 
-Arts. 59 a 62 *(Revogados pelo Ato Complementar nº 31, de 28/12/1966)*
+Imposto Municipal sobre Operações Relativas à Circulação de Mercadorias
+
+Arts. 59 a 62 (Revogados pelo Ato Complementar nº 31, de 28/12/1966)
 
 **Art. 63.** O imposto, de competência da União, sobre operações de crédito, câmbio e seguro, e sobre operações relativas a títulos e valores mobiliários tem como fato gerador:
 
@@ -389,7 +419,7 @@ III - quanto às operações de seguro, a sua efetivação pela emissão da apó
 
 IV - quanto às operações relativas a títulos e valores mobiliários, a emissão, transmissão, pagamento ou resgate destes, na forma da lei aplicável.
 
-**Parágrafo único.** A incidência definida no inciso I exclui a definida no inciso IV, e reciprocamente, quanto à emissão, ao pagamento ou resgate do título representativo de uma mesma operação de crédito.
+Parágrafo único. A incidência definida no inciso I exclui a definida no inciso IV, e reciprocamente, quanto à emissão, ao pagamento ou resgate do título representativo de uma mesma operação de crédito.
 
 **Art. 64.** A base de cálculo do imposto é:
 
@@ -413,7 +443,9 @@ c) no pagamento ou resgate, o preço.
 
 **Art. 67.** A receita líquida do imposto destina-se à formação de reservas monetárias, na forma da lei.
 
-##### Seção V — Imposto sobre Serviços de Transportes e Comunicações
+##### Seção V
+
+Imposto sobre Serviços de Transportes e Comunicações
 
 **Art. 68.** O imposto, de competência da União, sobre serviços de transportes e comunicações tem como fato gerador:
 
@@ -425,17 +457,17 @@ II - a prestação do serviço de comunicações, assim se entendendo a transmis
 
 **Art. 70.** Contribuinte do imposto é o prestador do serviço.
 
-##### Seção VI — Imposto sobre Serviços de Qualquer Natureza
+Imposto sobre Serviços de Qualquer Natureza
 
-Arts. 71 a 73. *(Revogados pelo Decreto-lei nº 406, de 31/12/1968)*
+Arts. 71 a 73. (Revogados pelo Decreto-lei nº 406, de 31/12/1968)
 
-#### CAPÍTULO V — IMPOSTOS ESPECIAIS
+### IMPOSTOS ESPECIAIS
 
 ##### Seção I
 
-**Imposto sobre Operações Relativas a Combustíveis,**
+Imposto sobre Operações Relativas a Combustíveis,
 
-**Lubrificantes, Energia Elétrica e Minerais do País**
+Lubrificantes, Energia Elétrica e Minerais do País
 
 **Art. 74.** O imposto, de competência da União, sobre operações relativas a combustíveis, lubrificantes, energia elétrica e minerais do País tem como fato gerador:
 
@@ -449,9 +481,9 @@ IV - a distribuição, assim entendida a colocação do produto no estabelecimen
 
 V - o consumo, assim entendida a venda do produto ao público.
 
-**§ 1º** Para os efeitos deste imposto, a energia elétrica considera-se produto industrializado.
+§ 1º Para os efeitos deste imposto, a energia elétrica considera-se produto industrializado.
 
-**§ 2º** O imposto incide, uma só vez, sobre uma das operações previstas em cada inciso deste artigo, como dispuser a lei, e exclui quaisquer outros tributos, sejam quais forem sua natureza ou competência, incidentes sobre aquelas operações.
+§ 2º O imposto incide, uma só vez, sobre uma das operações previstas em cada inciso deste artigo, como dispuser a lei, e exclui quaisquer outros tributos, sejam quais forem sua natureza ou competência, incidentes sobre aquelas operações.
 
 **Art. 75.** A lei observará o disposto neste Título relativamente:
 
@@ -461,19 +493,21 @@ II - ao Imposto sobre a Importação, quando a incidência seja sobre essa opera
 
 III - ao Imposto sobre Operações Relativas à Circulação de Mercadorias, quando a incidência seja sobre a distribuição.
 
-##### Seção II — Impostos Extraordinários
+##### Seção II
 
 **Art. 76.** Na iminência ou no caso de guerra externa, a União pode instituir, temporariamente, impostos extraordinários compreendidos ou não entre os referidos nesta Lei, suprimidos, gradativamente, no prazo máximo de 5 (cinco) anos, contados da celebração da paz.
 
-### TÍTULO IV — TAXAS
+### TÍTULO IV
+
+### TAXAS
 
 **Art. 77.** As taxas cobradas pela União, pelos Estados, pelo Distrito Federal ou pelos Municípios, no âmbito de suas respectivas atribuições, têm como fato gerador o exercício regular do poder de polícia, ou a utilização, efetiva ou potencial, de serviço público específico e divisível, prestado ao contribuinte ou posto à sua disposição.
 
-**Parágrafo único.** A taxa não pode ter base de cálculo ou fato gerador idênticos aos que correspondam a imposto, nem ser calculada em função do capital das empresas. *(Expressão “nem ser calculada em função do capital das empresas" acrescida pelo Ato Complementar nº 34, de 30/1/1967)*
+Parágrafo único. A taxa não pode ter base de cálculo ou fato gerador idênticos aos que correspondam a imposto, nem ser calculada em função do capital das empresas. (Expressão “nem ser calculada em função do capital das empresas" acrescida pelo Ato Complementar nº 34, de 30/1/1967)
 
 **Art. 78.** Considera-se poder de polícia atividade da administração pública que, limitando ou disciplinando direito, interesse ou liberdade, regula a prática de ato ou abstenção de fato, em razão de interesse público concernente à segurança, à higiene, à ordem, aos costumes, à disciplina da produção e do mercado, ao exercício de atividades econômicas dependentes de concessão ou autorização do Poder Público, à tranqüilidade pública ou ao respeito à propriedade e aos direitos individuais ou coletivos.
 
-**Parágrafo único.** Considera-se regular o exercício do poder de polícia quando desempenhado pelo órgão competente nos limites da lei aplicável, com observância do processo legal e, tratando-se de atividade que a lei tenha como discricionária, sem abuso ou desvio de poder*. (Artigo com redação dada pelo Ato Complementar nº 31, de 28/12/1966)*
+Parágrafo único. Considera-se regular o exercício do poder de polícia quando desempenhado pelo órgão competente nos limites da lei aplicável, com observância do processo legal e, tratando-se de atividade que a lei tenha como discricionária, sem abuso ou desvio de poder . (Artigo com redação dada pelo Ato Complementar nº 31, de 28/12/1966)
 
 **Art. 79.** Os serviços públicos a que se refere o art. 77 consideram-se:
 
@@ -489,7 +523,9 @@ III - divisíveis, quando suscetíveis de utilização, separadamente, por parte
 
 **Art. 80.** Para efeito de instituição e cobrança de taxas, consideram-se compreendidas no âmbito das atribuições da União, dos Estados, do Distrito Federal ou dos Municípios aquelas que, segundo a Constituição Federal, as Constituições dos Estados, as Leis Orgânicas do Distrito Federal e dos Municípios e a legislação com elas compatível, competem a cada uma dessas pessoas de direito público.
 
-### TÍTULO V — CONTRIBUIÇÃO DE MELHORIA
+### TÍTULO V
+
+### CONTRIBUIÇÃO DE MELHORIA
 
 **Art. 81.** A contribuição de melhoria cobrada pela União, pelos Estados, pelo Distrito Federal ou pelos Municípios, no âmbito de suas respectivas atribuições, é instituída para fazer face ao custo de obras públicas de que decorra valorização imobiliária, tendo como limite total a despesa realizada e como limite individual o acréscimo de valor que da obra resultar para cada imóvel beneficiado.
 
@@ -511,37 +547,43 @@ II - fixação de prazo não inferior a 30 (trinta) dias, para impugnação, pel
 
 III - regulamentação do processo administrativo de instrução e julgamento da impugnação a que se refere o inciso anterior, sem prejuízo da sua apreciação judicial.
 
-**§ 1º** A contribuição relativa a cada imóvel será determinada pelo rateio da parcela do custo da obra a que se refere a alínea c, do inciso I, pelos imóveis situados na zona beneficiada em função dos respectivos fatores individuais de valorização.
+§ 1º A contribuição relativa a cada imóvel será determinada pelo rateio da parcela do custo da obra a que se refere a alínea c, do inciso I, pelos imóveis situados na zona beneficiada em função dos respectivos fatores individuais de valorização.
 
-**§ 2º** Por ocasião do respectivo lançamento, cada contribuinte deverá ser notificado do montante da contribuição, da forma e dos prazos de seu pagamento e dos elementos que integraram o respectivo cálculo.
+§ 2º Por ocasião do respectivo lançamento, cada contribuinte deverá ser notificado do montante da contribuição, da forma e dos prazos de seu pagamento e dos elementos que integraram o respectivo cálculo.
 
-### TÍTULO V-A — DA CONTRIBUIÇÃO PARA O CUSTEIO, A EXPANSÃO E A MELHORIA DO SERVIÇO DE ILUMINAÇÃO PÚBLICA E DE SISTEMAS DE MONITORAMENTO PARA SEGURANÇA E PRESERVAÇÃO DE LOGRADOUROS PÚBLICOS
+### TÍTULO V-A
 
-*(Título acrescido pela Lei Complementar nº 227, de 13/1/2026)*
+DA CONTRIBUIÇÃO PARA O CUSTEIO, A EXPANSÃO E A MELHORIA DO SERVIÇO DE ILUMINAÇÃO PÚBLICA E DE SISTEMAS DE MONITORAMENTO PARA SEGURANÇA E PRESERVAÇÃO DE LOGRADOUROS PÚBLICOS
 
-**Art. 82-A.** Os Municípios e o Distrito Federal poderão instituir contribuição, na forma das respectivas leis, para o custeio, a expansão e a melhoria do serviço de iluminação pública e de sistemas de monitoramento para segurança e preservação de logradouros públicos, observado o disposto nos incisos I e III do *caput* do art. 150 da Constituição Federal.
+(Título acrescido pela Lei Complementar nº 227, de 13/1/2026)
 
-**§ 1º** Para os fins do disposto no *caput* deste artigo, considera-se:
+**Art. 82-A.** Os Municípios e o Distrito Federal poderão instituir contribuição, na forma das respectivas leis, para o custeio, a expansão e a melhoria do serviço de iluminação pública e de sistemas de monitoramento para segurança e preservação de logradouros públicos, observado o disposto nos incisos I e III do caput do art. 150 da Constituição Federal.
+
+§ 1º Para os fins do disposto no caput deste artigo, considera-se:
 
 I - custeio, expansão e melhoria do serviço de iluminação pública: a aquisição, a implementação, a instalação, a expansão, a manutenção, a operação, a gestão e o desenvolvimento dos projetos, dos equipamentos, das tecnologias, dos serviços e dos ativos destinados à prestação de serviços relativos à rede de iluminação pública, temporária ou permanente, com o objetivo de prover iluminância em vias, logradouros públicos e equipamentos públicos comunitários e urbanos, em qualquer área do território municipal ou distrital; e
 
 II - custeio, expansão e melhoria de sistemas de monitoramento para segurança e preservação de logradouros públicos: a aquisição, a implementação, a instalação, a expansão, a manutenção, a operação, a gestão e o desenvolvimento dos projetos, dos sistemas, das tecnologias, dos meios de transmissão da informação, da infraestrutura e dos equipamentos destinados ao monitoramento para administração, controle, segurança, preservação e prevenção a desastres em vias, logradouros públicos e equipamentos públicos comunitários e urbanos, em qualquer área do território municipal ou distrital, incluídos os ativos necessários ao funcionamento de centros integrados de operação e controle e à integração de sistemas de gestão de monitoramento pela administração pública.
 
-**§ 2º** É facultada a cobrança da contribuição a que se refere o *caput* deste artigo na fatura de consumo de energia elétrica. *(Artigo acrescido pela Lei Complementar nº 227, de 13/1/2026)*
+§ 2º É facultada a cobrança da contribuição a que se refere o caput deste artigo na fatura de consumo de energia elétrica. (Artigo acrescido pela Lei Complementar nº 227, de 13/1/2026)
 
-### TÍTULO VI — DISTRIBUIÇÕES DE RECEITAS TRIBUTÁRIAS
+### TÍTULO VI
 
-#### CAPÍTULO I — DISPOSIÇÕES GERAIS
+### DISTRIBUIÇÕES DE RECEITAS TRIBUTÁRIAS
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 83.** Sem prejuízo das demais disposições deste Título, os Estados e Municípios que celebrem com a União convênios destinados a assegurar ampla e eficiente coordenação dos respectivos programas de investimentos e serviços públicos, especialmente no campo da política tributária, poderão participar de até 10% (dez por cento) da arrecadação efetuada, nos respectivos territórios, proveniente do imposto referido no art. 43, incidente sobre o rendimento das pessoas físicas, e no art. 46, excluído o incidente sobre o fumo e bebidas alcoólicas.
 
-**Parágrafo único.** O processo das distribuições previstas neste artigo será regulado nos convênios nele referidos.
+Parágrafo único. O processo das distribuições previstas neste artigo será regulado nos convênios nele referidos.
 
 **Art. 84.** A lei federal pode cometer aos Estados, ao Distrito Federal ou aos Municípios o encargo de arrecadar os impostos de competência da União, cujo produto lhes seja distribuído no todo ou em parte.
 
-**Parágrafo único.** O disposto neste artigo aplica-se à arrecadação dos impostos de competência dos Estados, cujo produto estes venham a distribuir, no todo ou em parte, aos respectivos Municípios.
+Parágrafo único. O disposto neste artigo aplica-se à arrecadação dos impostos de competência dos Estados, cujo produto estes venham a distribuir, no todo ou em parte, aos respectivos Municípios.
 
-#### CAPÍTULO II — IMPOSTO SOBRE A PROPRIEDADE TERRITORIAL RURAL E SOBRE A RENDA E PROVENTOS DE QUALQUER NATUREZA
+#### CAPÍTULO II
+
+### IMPOSTO SOBRE A PROPRIEDADE TERRITORIAL RURAL E SOBRE A RENDA E PROVENTOS DE QUALQUER NATUREZA
 
 **Art. 85.** Serão distribuídos pela União:
 
@@ -549,17 +591,19 @@ I - aos Municípios da localização dos imóveis, o produto da arrecadação do
 
 II - aos Estados, ao Distrito Federal e aos Municípios, o produto da arrecadação, na fonte, do imposto a que se refere o art. 43, incidente sobre a renda das obrigações de sua dívida pública e sobre os proventos dos seus servidores e dos de suas autarquias.
 
-**§ 1º** Independentemente de ordem das autoridades superiores e sob pena de demissão, as autoridades arrecadadoras dos impostos a que se refere este artigo farão entrega, aos Estados, ao Distrito Federal e aos Municípios, das importâncias recebidas, à medida que forem sendo arrecadadas, em prazo não superior a 30 (trinta) dias, a contar da data de cada recolhimento.
+§ 1º Independentemente de ordem das autoridades superiores e sob pena de demissão, as autoridades arrecadadoras dos impostos a que se refere este artigo farão entrega, aos Estados, ao Distrito Federal e aos Municípios, das importâncias recebidas, à medida que forem sendo arrecadadas, em prazo não superior a 30 (trinta) dias, a contar da data de cada recolhimento.
 
-**§ 2º** A lei poderá autorizar os Estados, o Distrito Federal e os Municípios a incorporar definitivamente à sua receita o produto da arrecadação do imposto a que se refere o inciso II, estipulando as obrigações acessórias a serem cumpridas por aqueles no interesse da arrecadação, pela União, do imposto a ela devido pelos titulares da renda ou dos proventos tributados.
+§ 2º A lei poderá autorizar os Estados, o Distrito Federal e os Municípios a incorporar definitivamente à sua receita o produto da arrecadação do imposto a que se refere o inciso II, estipulando as obrigações acessórias a serem cumpridas por aqueles no interesse da arrecadação, pela União, do imposto a ela devido pelos titulares da renda ou dos proventos tributados.
 
-**§ 3º** A lei poderá dispor que uma parcela, não superior a 20% (vinte por cento), do imposto de que trata o inciso I seja destinada ao custeio do respectivo serviço de lançamento e arrecadação. *(Parágrafo com execução suspensa pelo Senado Federal, na forma do art. 42, VII da Constituição Federal, pela Resolução nº 337, de 27/9/ 1983)*
+§ 3º A lei poderá dispor que uma parcela, não superior a 20% (vinte por cento), do imposto de que trata o inciso I seja destinada ao custeio do respectivo serviço de lançamento e arrecadação. (Parágrafo com execução suspensa pelo Senado Federal, na forma do art. 42, VII da Constituição Federal, pela Resolução nº 337, de 27/9/ 1983)
 
-#### CAPÍTULO III — FUNDOS DE PARTICIPAÇÃO DOS ESTADOS E DOS MUNICÍPIOS
+#### CAPÍTULO III
 
-##### Seção I — Constituição dos Fundos
+### FUNDOS DE PARTICIPAÇÃO DOS ESTADOS E DOS MUNICÍPIOS
 
-Arts. 86 a 89. *(Revogados pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)*
+Constituição dos Fundos
+
+Arts. 86 a 89. (Revogados pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)
 
 **Art. 90.** O fator representativo do inverso da renda per capita, a que se refere o inciso II do artigo 88, será estabelecido da seguinte forma:
 
@@ -593,19 +637,21 @@ Acima de 0,0190 até 0,0220 ....................................................
 
 Acima de 0,220 ........................................................................... 2,5
 
-**Parágrafo único.** Para os efeitos deste artigo, determina-se o índice relativo à renda per capita de cada entidade participante, tomando-se como 100 (cem) a renda per capita média do País.
+Parágrafo único. Para os efeitos deste artigo, determina-se o índice relativo à renda per capita de cada entidade participante, tomando-se como 100 (cem) a renda per capita média do País.
 
-##### Seção III — Critério de Distribuição do Fundo de Participação
+##### Seção III
 
-**dos Municípios**
+Critério de Distribuição do Fundo de Participação
 
-**Art. 91.** Do Fundo de Participação dos Municípios a que se refere o art. 86, serão atribuídos: *(“Caput” com redação dada pelo Ato Complementar nº 35, de 28/2/1967)*
+dos Municípios
 
-I - 10% (dez por cento) aos Municípios das Capitais dos Estados; *(Inciso com redação dada pelo Ato Complementar nº 35, de 28/2/1967)*
+**Art. 91.** Do Fundo de Participação dos Municípios a que se refere o art. 86, serão atribuídos: (“Caput” com redação dada pelo Ato Complementar nº 35, de 28/2/1967)
 
-II - 90% (noventa por cento) aos demais Municípios do País. *(Inciso com redação dada pelo Ato Complementar nº 35, de 28/2/1967)*
+I - 10% (dez por cento) aos Municípios das Capitais dos Estados; (Inciso com redação dada pelo Ato Complementar nº 35, de 28/2/1967)
 
-**§ 1º** A parcela de que trata o inciso I será distribuída proporcionalmente a um coeficiente individual de participação, resultante do produto dos seguintes fatores:
+II - 90% (noventa por cento) aos demais Municípios do País. (Inciso com redação dada pelo Ato Complementar nº 35, de 28/2/1967)
+
+§ 1º A parcela de que trata o inciso I será distribuída proporcionalmente a um coeficiente individual de participação, resultante do produto dos seguintes fatores:
 
 a) fator representativo da população, assim estabelecido:
 
@@ -623,15 +669,13 @@ Cada 0,5% ou fração excedente, mais...........................................
 
 Mais de 5% .................................................................................................... 5
 
-b) Fator representativo do inverso da renda per capita do respectivo Estado, de conformidade com o disposto no art. 90. *(Parágrafo com redação dada pelo Ato Complementar nº 35, de 28/2/1967)*
+b) Fator representativo do inverso da renda per capita do respectivo Estado, de conformidade com o disposto no art. 90. (Parágrafo com redação dada pelo Ato Complementar nº 35, de 28/2/1967)
 
-**§ 2º** A distribuição da parcela a que se refere o item II deste artigo, deduzido o percentual referido no artigo 3º do Decreto-lei que estabelece a redação deste parágrafo, far-se-á atribuindo-se a cada Município um coeficiente individual de participação determinado na forma seguinte:
+§ 2º A distribuição da parcela a que se refere o item II deste artigo, deduzido o percentual referido no artigo 3º do Decreto-lei que estabelece a redação deste parágrafo, far-se-á atribuindo-se a cada Município um coeficiente individual de participação determinado na forma seguinte:
 
 Categoria do Município, segundo seu número de habitantes Coeficiente
 
 a) Até 16.980
-
-Pelos primeiros 10.188 0,6
 
 Para cada 3.396, ou fração excedente, mais 0,2
 
@@ -645,47 +689,49 @@ c) Acima de 50.940 até 101,880
 
 Pelos primeiros 50.940 2,0
 
-Para cada 10.188 ou fração excedente, mais 0,2
-
 d) Acima de 101.880 até 156.216
 
 Pelos primeiros 101.880 3,0
 
 Para cada 13.584 ou fração excedente, mais 0,2
 
-e) Acima de 156.216 4,0 *(Parágrafo com redação dada pelo Decreto-Lei nº 1.881, de 27/8/1981)*
+e) Acima de 156.216 4,0 (Parágrafo com redação dada pelo Decreto-Lei nº 1.881, de 27/8/1981)
 
-**§ 3º** Para os efeitos deste artigo, consideram-se os municípios regularmente instalados, fazendo-se a revisão das quotas anualmente, a partir de 1989, com base em dados oficiais de população produzidos pela Fundação Instituto Brasileiro de Geografia e Estatística - IBGE. *(Parágrafo com redação dada pela Lei Complementar nº 59, de 22/12/1988)*
+§ 3º Para os efeitos deste artigo, consideram-se os municípios regularmente instalados, fazendo-se a revisão das quotas anualmente, a partir de 1989, com base em dados oficiais de população produzidos pela Fundação Instituto Brasileiro de Geografia e Estatística - IBGE. (Parágrafo com redação dada pela Lei Complementar nº 59, de 22/12/1988)
 
-**§ 4º** *(Parágrafo acrescido pela Lei Complementar nº 35, de 28/2/1967 e revogado pela Lei Complementar nº 91, de 22/12/1997)*
+§ 4º (Parágrafo acrescido pela Lei Complementar nº 35, de 28/2/1967 e revogado pela Lei Complementar nº 91, de 22/12/1997)
 
-**§ 5º** *(Parágrafo acrescido pela Lei Complementar nº 35, de 28/2/1967 e revogado pela Lei Complementar nº 91, de 22/12/1997)*
+§ 5º (Parágrafo acrescido pela Lei Complementar nº 35, de 28/2/1967 e revogado pela Lei Complementar nº 91, de 22/12/1997)
 
-##### Seção IV — Cálculo e Pagamento das Quotas Estaduais e Municipais
+Cálculo e Pagamento das Quotas Estaduais e Municipais
 
-**Art. 92.** O Tribunal de Contas da União comunicará ao Banco do Brasil S.A., conforme os prazos a seguir especificados, os coeficientes individuais de participação nos fundos previstos no art. 159, inciso I, alíneas "a", "b" e "d", da Constituição Federal que prevalecerão no exercício subsequente: *(“Caput” do artigo com redação dada pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)*
+**Art. 92.** O Tribunal de Contas da União comunicará ao Banco do Brasil S.A., conforme os prazos a seguir especificados, os coeficientes individuais de participação nos fundos previstos no art. 159, inciso I, alíneas "a", "b" e "d", da Constituição Federal que prevalecerão no exercício subsequente: (“Caput” do artigo com redação dada pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)
 
-I - até o último dia útil do mês de março de cada exercício financeiro, para cada Estado e para o Distrito Federal; *(Inciso acrescido pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)*
+I - até o último dia útil do mês de março de cada exercício financeiro, para cada Estado e para o Distrito Federal; (Inciso acrescido pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)
 
-II - até o último dia útil de cada exercício financeiro, para cada Município. *(Inciso acrescido pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)*
+II - até o último dia útil de cada exercício financeiro, para cada Município. (Inciso acrescido pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)
 
-**Parágrafo único.** Far-se-á nova comunicação sempre que houver, transcorrido o prazo fixado no inciso I do *caput*, a criação de novo Estado a ser implantado no exercício subsequente. *(Parágrafo único acrescido pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)*
+Parágrafo único. Far-se-á nova comunicação sempre que houver, transcorrido o prazo fixado no inciso I do caput , a criação de novo Estado a ser implantado no exercício subsequente. (Parágrafo único acrescido pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)
 
-Arts. 93 a 95. *(Revogados pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)*
+Arts. 93 a 95. (Revogados pela Lei Complementar nº 143, de 17/7/2013, publicada no DOU de 18/7/2013, produzindo efeitos financeiros no primeiro mês que se iniciar após 60 dias da publicação)
 
-LIVRO SEGUNDO
+## LIVRO SEGUNDO
 
-NORMAS GERAIS DE DIREITO TRIBUTÁRIO
+### NORMAS GERAIS DE DIREITO TRIBUTÁRIO
 
-### TÍTULO I — LEGISLAÇÃO TRIBUTÁRIA
+#### CAPÍTULO I
 
-#### CAPÍTULO I — DISPOSIÇÕES GERAIS
+### DISPOSIÇÕES GERAIS
 
-##### Seção I — Disposição Preliminar
+##### Seção I
+
+Disposição Preliminar
 
 **Art. 96.** A expressão "legislação tributária" compreende as leis, os tratados e as convenções internacionais, os decretos e as normas complementares que versem, no todo ou em parte, sobre tributos e relações jurídicas a eles pertinentes.
 
-##### Seção II — Leis, Tratados e Convenções Internacionais e Decretos
+##### Seção II
+
+Leis, Tratados e Convenções Internacionais e Decretos
 
 **Art. 97.** Somente a lei pode estabelecer:
 
@@ -701,15 +747,17 @@ V - a cominação de penalidades para as ações ou omissões contrárias a seus
 
 VI - as hipóteses de exclusão, suspensão e extinção de créditos tributários, ou de dispensa ou redução de penalidades.
 
-**§ 1º** Equipara-se à majoração do tributo a modificação de sua base de cálculo, que importe em torná-lo mais oneroso.
+§ 1º Equipara-se à majoração do tributo a modificação de sua base de cálculo, que importe em torná-lo mais oneroso.
 
-**§ 2º** Não constitui majoração de tributo, para os fins do disposto no inciso II deste artigo, a atualização do valor monetário da respectiva base de cálculo.
+§ 2º Não constitui majoração de tributo, para os fins do disposto no inciso II deste artigo, a atualização do valor monetário da respectiva base de cálculo.
 
 **Art. 98.** Os tratados e as convenções internacionais revogam ou modificam a legislação tributária interna, e serão observados pela que lhes sobrevenha.
 
 **Art. 99.** O conteúdo e o alcance dos decretos restringem-se aos das leis em função das quais sejam expedidos, determinados com observância das regras de interpretação estabelecidas nesta Lei.
 
-##### Seção III — Normas Complementares
+##### Seção III
+
+Normas Complementares
 
 **Art. 100.** São normas complementares das leis, dos tratados e das convenções internacionais e dos decretos:
 
@@ -721,9 +769,11 @@ III - as práticas reiteradamente observadas pelas autoridades administrativas;
 
 IV - os convênios que entre si celebrem a União, os Estados, o Distrito Federal e os Municípios.
 
-**Parágrafo único.** A observância das normas referidas neste artigo exclui a imposição de penalidades, a cobrança de juros de mora e a atualização do valor monetário da base de cálculo do tributo.
+Parágrafo único. A observância das normas referidas neste artigo exclui a imposição de penalidades, a cobrança de juros de mora e a atualização do valor monetário da base de cálculo do tributo.
 
-#### CAPÍTULO II — VIGÊNCIA DA LEGISLAÇÃO TRIBUTÁRIA
+#### CAPÍTULO II
+
+### VIGÊNCIA DA LEGISLAÇÃO TRIBUTÁRIA
 
 **Art. 101.** A vigência, no espaço e no tempo, da legislação tributária rege-se pelas disposições legais aplicáveis às normas jurídicas em geral, ressalvado o previsto neste Capítulo.
 
@@ -745,7 +795,9 @@ II - que definem novas hipóteses de incidência;
 
 III - que extinguem ou reduzem isenções, salvo se a lei dispuser de maneira mais favorável ao contribuinte, e observado o disposto no art. 178.
 
-#### CAPÍTULO III — APLICAÇÃO DA LEGISLAÇÃO TRIBUTÁRIA
+#### CAPÍTULO III
+
+### APLICAÇÃO DA LEGISLAÇÃO TRIBUTÁRIA
 
 **Art. 105.** A legislação tributária aplica-se imediatamente aos fatos geradores futuros e aos pendentes, assim entendidos aqueles cuja ocorrência tenha tido início mas não esteja completa nos termos do art. 116.
 
@@ -763,11 +815,11 @@ c) quando lhe comine penalidade menos severa que a prevista na lei vigente ao te
 
 **Art. 107.** A legislação tributária será interpretada conforme o disposto neste Capítulo.
 
-**§ 1º** A resolução de dúvidas acerca da legislação tributária e aduaneira e a fixação de sua interpretação e aplicação serão efetuadas por meio do processo administrativo de solução de consulta ou por pareceres jurídicos, conforme o caso, nos termos da legislação específica. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º A resolução de dúvidas acerca da legislação tributária e aduaneira e a fixação de sua interpretação e aplicação serão efetuadas por meio do processo administrativo de solução de consulta ou por pareceres jurídicos, conforme o caso, nos termos da legislação específica. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** A solução de consulta e os pareceres jurídicos terão efeitos vinculantes restritos, em cada caso, ao âmbito do órgão que os houver emitido. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º A solução de consulta e os pareceres jurídicos terão efeitos vinculantes restritos, em cada caso, ao âmbito do órgão que os houver emitido. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** A solução da consulta produzirá efeitos exclusivamente em relação ao consulente, sem prejuízo da vinculação da interpretação nela fixada no âmbito do órgão emissor, nos termos do § 2º deste artigo. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º A solução da consulta produzirá efeitos exclusivamente em relação ao consulente, sem prejuízo da vinculação da interpretação nela fixada no âmbito do órgão emissor, nos termos do § 2º deste artigo. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 108.** Na ausência de disposição expressa, a autoridade competente para aplicar a legislação tributária utilizará sucessivamente, na ordem indicada:
 
@@ -779,9 +831,9 @@ III - os princípios gerais de direito público;
 
 IV - a eqüidade.
 
-**§ 1º** O emprego da analogia não poderá resultar na exigência de tributo não previsto em lei.
+§ 1º O emprego da analogia não poderá resultar na exigência de tributo não previsto em lei.
 
-**§ 2º** O emprego da eqüidade não poderá resultar na dispensa do pagamento de tributo devido.
+§ 2º O emprego da eqüidade não poderá resultar na dispensa do pagamento de tributo devido.
 
 **Art. 109.** Os princípios gerais de direito privado utilizam-se para pesquisa da definição, do conteúdo e do alcance de seus institutos, conceitos e formas, mas não para definição dos respectivos efeitos tributários.
 
@@ -805,31 +857,37 @@ III - à autoria, imputabilidade, ou punibilidade;
 
 IV - à natureza da penalidade aplicável, ou à sua graduação.
 
-### TÍTULO II — OBRIGAÇÃO TRIBUTÁRIA
+### TÍTULO II
 
-#### CAPÍTULO I — DISPOSIÇÕES GERAIS
+### OBRIGAÇÃO TRIBUTÁRIA
+
+#### CAPÍTULO I
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 113.** A obrigação tributária é principal ou acessória.
 
-**§ 1º** A obrigação principal surge com a ocorrência do fato gerador, tem por objeto o pagamento de tributo ou penalidade pecuniária e extingue-se juntamente com o crédito dela decorrente.
+§ 1º A obrigação principal surge com a ocorrência do fato gerador, tem por objeto o pagamento de tributo ou penalidade pecuniária e extingue-se juntamente com o crédito dela decorrente.
 
-**§ 2º** A obrigação acessória decorre da legislação tributária e tem por objeto as prestações, positivas ou negativas, nela previstas no interesse da arrecadação ou da fiscalização dos tributos.
+§ 2º A obrigação acessória decorre da legislação tributária e tem por objeto as prestações, positivas ou negativas, nela previstas no interesse da arrecadação ou da fiscalização dos tributos.
 
-**§ 3º** A obrigação acessória, pelo simples fato da sua inobservância, converte-se em obrigação principal relativamente a penalidade pecuniária.
+§ 3º A obrigação acessória, pelo simples fato da sua inobservância, converte-se em obrigação principal relativamente a penalidade pecuniária.
 
-**Art. 113-A.** As penalidades cominadas pela legislação em razão do descumprimento de obrigações tributárias principais e acessórias deverão observar o princípio da razoabilidade e guardar relação de proporcionalidade com a infração praticada pelo sujeito passivo. *(“Caput” do artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 113-A.** As penalidades cominadas pela legislação em razão do descumprimento de obrigações tributárias principais e acessórias deverão observar o princípio da razoabilidade e guardar relação de proporcionalidade com a infração praticada pelo sujeito passivo. (“Caput” do artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 1º** A multa cominada pela legislação em razão do disposto no *caput* deste artigo, exceto as multas isoladas desvinculadas de valor de crédito ou tributo, não poderá exceder os seguintes percentuais calculados sobre o valor do próprio tributo lançado ou do crédito cuja fiscalização tiver sido afetada pela desconformidade ou pelo atraso na prestação das informações pelo sujeito passivo:
+§ 1º A multa cominada pela legislação em razão do disposto no caput deste artigo, exceto as multas isoladas desvinculadas de valor de crédito ou tributo, não poderá exceder os seguintes percentuais calculados sobre o valor do próprio tributo lançado ou do crédito cuja fiscalização tiver sido afetada pela desconformidade ou pelo atraso na prestação das informações pelo sujeito passivo:
 
 I - 75% (setenta e cinco por cento);
 
 II - 100% (cem por cento) nos casos em que se verifique a prática dolosa de fraude, sonegação ou conluio pelo sujeito passivo; e
 
-III - 150% (cento e cinquenta por cento) nos casos em que se verifique a reincidência do sujeito passivo. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+III - 150% (cento e cinquenta por cento) nos casos em que se verifique a reincidência do sujeito passivo. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+§ 2º (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
-#### CAPÍTULO II — FATO GERADOR
+#### CAPÍTULO II
+
+### FATO GERADOR
 
 **Art. 114.** Fato gerador da obrigação principal é a situação definida em lei como necessária e suficiente à sua ocorrência.
 
@@ -841,7 +899,7 @@ I - tratando-se de situação de fato, desde o momento em que se verifiquem as c
 
 II - tratando-se da situação jurídica, desde o momento em que esteja definitivamente constituída, nos termos de direito aplicável.
 
-**Parágrafo único.** A autoridade administrativa poderá desconsiderar atos ou negócios jurídicos praticados com a finalidade de dissimular a ocorrência do fato gerador do tributo ou a natureza dos elementos constitutivos da obrigação tributária, observados os procedimentos a serem estabelecidos em lei ordinária. *(Parágrafo único acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+Parágrafo único. A autoridade administrativa poderá desconsiderar atos ou negócios jurídicos praticados com a finalidade de dissimular a ocorrência do fato gerador do tributo ou a natureza dos elementos constitutivos da obrigação tributária, observados os procedimentos a serem estabelecidos em lei ordinária. (Parágrafo único acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
 **Art. 117.** Para os efeitos do inciso II do artigo anterior e salvo disposição de lei em contrário, os atos ou negócios jurídicos condicionais reputam-se perfeitos e acabados:
 
@@ -855,19 +913,25 @@ I - da validade jurídica dos atos efetivamente praticados pelos contribuintes, 
 
 II - dos efeitos dos fatos efetivamente ocorridos.
 
-#### CAPÍTULO III — SUJEITO ATIVO
+#### CAPÍTULO III
+
+### SUJEITO ATIVO
 
 **Art. 119.** Sujeito ativo da obrigação é a pessoa jurídica de direito público titular da competência para exigir o seu cumprimento.
 
 **Art. 120.** Salvo disposição de lei em contrário, a pessoa jurídica de direito público, que se constituir pelo desmembramento territorial de outra, sub-roga-se nos direitos desta, cuja legislação tributária aplicará até que entre em vigor a sua própria.
 
-#### CAPÍTULO IV — SUJEITO PASSIVO
+#### CAPÍTULO IV
 
-##### Seção I — Disposições Gerais
+### SUJEITO PASSIVO
+
+##### Seção I
+
+Disposições Gerais
 
 **Art. 121.** Sujeito passivo da obrigação principal é a pessoa obrigada ao pagamento de tributo ou penalidade pecuniária.
 
-**Parágrafo único.** O sujeito passivo da obrigação principal diz-se:
+Parágrafo único. O sujeito passivo da obrigação principal diz-se:
 
 I - contribuinte, quando tenha relação pessoal e direta com a situação que constitua o respectivo fato gerador;
 
@@ -877,7 +941,9 @@ II - responsável, quando, sem revestir a condição de contribuinte, sua obriga
 
 **Art. 123.** Salvo disposições de lei em contrário, as convenções particulares, relativas à responsabilidade pelo pagamento de tributos, não podem ser opostas à Fazenda Pública, para modificar a definição legal do sujeito passivo das obrigações tributárias correspondentes.
 
-##### Seção II — Solidariedade
+##### Seção II
+
+Solidariedade
 
 **Art. 124.** São solidariamente obrigadas:
 
@@ -885,7 +951,7 @@ I - as pessoas que tenham interesse comum na situação que constitua o fato ger
 
 II - as pessoas expressamente designadas por lei.
 
-**Parágrafo único.** A solidariedade referida neste artigo não comporta benefício de ordem.
+Parágrafo único. A solidariedade referida neste artigo não comporta benefício de ordem.
 
 **Art. 125.** Salvo disposição de lei em contrário, são os seguintes os efeitos da solidariedade:
 
@@ -895,7 +961,9 @@ II - a isenção ou remissão de crédito exonera todos os obrigados, salvo se o
 
 III - a interrupção da prescrição, em favor ou contra um dos obrigados, favorece ou prejudica aos demais.
 
-##### Seção III — Capacidade Tributária
+##### Seção III
+
+Capacidade Tributária
 
 **Art. 126.** A capacidade tributária passiva independe:
 
@@ -905,7 +973,9 @@ II - de achar-se a pessoa natural sujeita a medidas que importem privação ou l
 
 III - de estar a pessoa jurídica regularmente constituída, bastando que configure uma unidade econômica ou profissional.
 
-##### Seção IV — Domicílio Tributário
+##### Seção IV
+
+Domicílio Tributário
 
 **Art. 127.** Na falta de eleição, pelo contribuinte ou responsável, de domicílio tributário, na forma da legislação aplicável, considera-se como tal:
 
@@ -915,37 +985,43 @@ II - quanto às pessoas jurídicas de direito privado ou às firmas individuais,
 
 III - quanto às pessoas jurídicas de direito público, qualquer de suas repartições no território da entidade tributante.
 
-**§ 1º** Quando não couber a aplicação das regras fixadas em qualquer dos incisos deste artigo, considerar-se-á como domicílio tributário do contribuinte ou responsável o lugar da situação dos bens ou da ocorrência dos atos ou fatos que deram origem à obrigação.
+§ 1º Quando não couber a aplicação das regras fixadas em qualquer dos incisos deste artigo, considerar-se-á como domicílio tributário do contribuinte ou responsável o lugar da situação dos bens ou da ocorrência dos atos ou fatos que deram origem à obrigação.
 
-**§ 2º** A autoridade administrativa pode recusar o domicílio eleito, quando impossibilite ou dificulte a arrecadação ou a fiscalização do tributo, aplicando-se então a regra do parágrafo anterior.
+§ 2º A autoridade administrativa pode recusar o domicílio eleito, quando impossibilite ou dificulte a arrecadação ou a fiscalização do tributo, aplicando-se então a regra do parágrafo anterior.
 
-**Art. 127-A.** As intimações dos atos do processo poderão ser realizadas por meio de Domicílio Tributário Eletrônico (DTE), inclusive quando se tratar de intimação de procurador, nos termos das leis reguladoras do processo tributário administrativo. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 127-A.** As intimações dos atos do processo poderão ser realizadas por meio de Domicílio Tributário Eletrônico (DTE), inclusive quando se tratar de intimação de procurador, nos termos das leis reguladoras do processo tributário administrativo. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-#### CAPÍTULO V — RESPONSABILIDADE TRIBUTÁRIA
+#### CAPÍTULO V
 
-##### Seção I — Disposição Geral
+### RESPONSABILIDADE TRIBUTÁRIA
+
+##### Seção I
+
+Disposição Geral
 
 **Art. 128.** Sem prejuízo do disposto neste Capítulo, a lei pode atribuir de modo expresso a responsabilidade pelo crédito tributário a terceira pessoa, vinculada ao fato gerador da respectiva obrigação, excluindo a responsabilidade do contribuinte ou atribuindo-a a este em caráter supletivo do cumprimento total ou parcial da referida obrigação.
 
-##### Seção II — Responsabilidade dos Sucessores
+##### Seção II
+
+Responsabilidade dos Sucessores
 
 **Art. 129.** O disposto nesta Seção aplica-se por igual aos créditos tributários definitivamente constituídos ou em curso de constituição à data dos atos nela referidos, e aos constituídos posteriormente aos mesmos atos, desde que relativos a obrigações tributárias surgidas até a referida data.
 
 **Art. 130.** Os créditos tributários relativos a impostos cujo fato gerador seja a propriedade, o domínio útil ou a posse de bens imóveis, e bem assim os relativos a taxas pela prestação de serviços referentes a tais bens, ou a contribuições de melhoria, sub-rogam-se na pessoa dos respectivos adquirentes, salvo quando conste do título a prova de sua quitação.
 
-**Parágrafo único.** No caso de arrematação em hasta pública, a sub-rogação ocorre sobre o respectivo preço.
+Parágrafo único. No caso de arrematação em hasta pública, a sub-rogação ocorre sobre o respectivo preço.
 
 **Art. 131.** São pessoalmente responsáveis:
 
 I - o adquirente ou remitente, pelos tributos relativos aos bens adquiridos ou remidos;
 
-II - o sucessor a qualquer título e o cônjuge meeiro, pelos tributos devidos pelo *de cujus* até a data da partilha ou adjudicação, limitada esta responsabilidade ao montante do quinhão, do legado ou da meação;
+II - o sucessor a qualquer título e o cônjuge meeiro, pelos tributos devidos pelo de cujus até a data da partilha ou adjudicação, limitada esta responsabilidade ao montante do quinhão, do legado ou da meação;
 
-III - o espólio, pelos tributos devidos pelo *de cujus* até a data da abertura da sucessão.
+III - o espólio, pelos tributos devidos pelo de cujus até a data da abertura da sucessão.
 
 **Art. 132.** A pessoa jurídica de direito privado que resultar de fusão, transformação ou incorporação de outra ou em outra é responsável pelos tributos devidos até a data do ato pelas pessoas jurídicas de direito privado fusionadas, transformadas ou incorporadas.
 
-**Parágrafo único.** O disposto neste artigo aplica-se aos casos de extinção de pessoas jurídicas de direito privado, quando a exploração da respectiva atividade seja continuada por qualquer sócio remanescente, ou seu espólio, sob a mesma ou outra razão social, ou sob firma individual.
+Parágrafo único. O disposto neste artigo aplica-se aos casos de extinção de pessoas jurídicas de direito privado, quando a exploração da respectiva atividade seja continuada por qualquer sócio remanescente, ou seu espólio, sob a mesma ou outra razão social, ou sob firma individual.
 
 **Art. 133.** A pessoa natural ou jurídica de direito privado que adquirir de outra, por qualquer título, fundo de comércio ou estabelecimento comercial, industrial ou profissional, e continuar a respectiva exploração, sob a mesma ou outra razão social ou sob firma ou nome individual, responde pelos tributos, relativos ao fundo ou estabelecimento adquirido, devidos até a data do ato:
 
@@ -953,23 +1029,25 @@ I - integralmente, se o alienante cessar a exploração do comércio, indústria
 
 II - subsidiariamente com o alienante, se este prosseguir na exploração ou iniciar dentro de 6 (seis) meses, a contar da data da alienação, nova atividade no mesmo ou em outro ramo de comércio, indústria ou profissão.
 
-**§ 1º** O disposto no *caput* deste artigo não se aplica na hipótese de alienação judicial:
+§ 1º O disposto no caput deste artigo não se aplica na hipótese de alienação judicial:
 
 I - em processo de falência;
 
-II - de filial ou unidade produtiva isolada, em processo de recuperação judicial. *(Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)*
+II - de filial ou unidade produtiva isolada, em processo de recuperação judicial. (Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)
 
-**§ 2º** Não se aplica o disposto no § 1º deste artigo quando o adquirente for:
+§ 2º Não se aplica o disposto no § 1º deste artigo quando o adquirente for:
 
 I - sócio da sociedade falida ou em recuperação judicial, ou sociedade controlada pelo devedor falido ou em recuperação judicial;
 
 II - parente, em linha reta ou colateral até o 4º(quarto) grau, consangüíneo ou afim, do devedor falido ou em recuperação judicial ou de qualquer de seus sócios; ou
 
-III - identificado como agente do falido ou do devedor em recuperação judicial com o objetivo de fraudar a sucessão tributária. *(Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)*
+III - identificado como agente do falido ou do devedor em recuperação judicial com o objetivo de fraudar a sucessão tributária. (Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)
 
-**§ 3º** Em processo da falência, o produto da alienação judicial de empresa, filial ou unidade produtiva isolada permanecerá em conta de depósito à disposição do juízo de falência pelo prazo de 1 (um) ano, contado da data de alienação, somente podendo ser utilizado para o pagamento de créditos extraconcursais ou de créditos que preferem ao tributário. *(Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)*
+§ 3º Em processo da falência, o produto da alienação judicial de empresa, filial ou unidade produtiva isolada permanecerá em conta de depósito à disposição do juízo de falência pelo prazo de 1 (um) ano, contado da data de alienação, somente podendo ser utilizado para o pagamento de créditos extraconcursais ou de créditos que preferem ao tributário. (Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)
 
-##### Seção III — Responsabilidade de Terceiros
+##### Seção III
+
+Responsabilidade de Terceiros
 
 **Art. 134.** Nos casos de impossibilidade de exigência do cumprimento da obrigação principal pelo contribuinte, respondem solidariamente com este nos atos em que intervierem ou pelas omissões de que forem responsáveis:
 
@@ -987,7 +1065,7 @@ VI - os tabeliães, escrivães e demais serventuários de ofício, pelos tributo
 
 VII - os sócios, no caso de liquidação de sociedade de pessoas.
 
-**Parágrafo único.** O disposto neste artigo só se aplica, em matéria de penalidades, às de caráter moratório.
+Parágrafo único. O disposto neste artigo só se aplica, em matéria de penalidades, às de caráter moratório.
 
 **Art. 135.** São pessoalmente responsáveis pelos créditos correspondentes a obrigações tributárias resultantes de atos praticados com excesso de poderes ou infração de lei, contrato social ou estatutos:
 
@@ -997,7 +1075,9 @@ II - os mandatários, prepostos e empregados;
 
 III - os diretores, gerentes ou representantes de pessoas jurídicas de direito privado.
 
-##### Seção IV — Responsabilidade por Infrações
+##### Seção IV
+
+Responsabilidade por Infrações
 
 **Art. 136.** Salvo disposição de lei em contrário, a responsabilidade por infrações da legislação tributária independe da intenção do agente ou do responsável e da efetividade, natureza e extensão dos efeitos do ato.
 
@@ -1015,13 +1095,17 @@ b) dos mandatários, prepostos ou empregados, contra seus mandantes, preponentes
 
 c) dos diretores, gerentes ou representantes de pessoas jurídicas de direito privado, contra estas.
 
-**Art. 138.** A responsabilidade é excluída, inclusive em relação à multa de mora, pela denúncia espontânea da infração, acompanhada, se for o caso, do pagamento do tributo devido e dos juros de mora, ou do depósito da importância arbitrada pela autoridade administrativa, quando o montante do tributo dependa de apuração. *(“Caput” do artigo com redação dada pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 138.** A responsabilidade é excluída, inclusive em relação à multa de mora, pela denúncia espontânea da infração, acompanhada, se for o caso, do pagamento do tributo devido e dos juros de mora, ou do depósito da importância arbitrada pela autoridade administrativa, quando o montante do tributo dependa de apuração. (“Caput” do artigo com redação dada pela Lei Complementar nº 236, de 4/9/2026)
 
-**Parágrafo único.** Não se considera espontânea a denúncia apresentada após o início de qualquer procedimento administrativo ou medida de fiscalização, relacionados com a infração.
+Parágrafo único. Não se considera espontânea a denúncia apresentada após o início de qualquer procedimento administrativo ou medida de fiscalização, relacionados com a infração.
 
-### TÍTULO III — CRÉDITO TRIBUTÁRIO
+### TÍTULO III
 
-#### CAPÍTULO I — DISPOSIÇÕES GERAIS
+### CRÉDITO TRIBUTÁRIO
+
+#### CAPÍTULO I
+
+### DISPOSIÇÕES GERAIS
 
 **Art. 139.** O crédito tributário decorre da obrigação principal e tem a mesma natureza desta.
 
@@ -1029,21 +1113,25 @@ c) dos diretores, gerentes ou representantes de pessoas jurídicas de direito pr
 
 **Art. 141.** O crédito tributário regularmente constituído somente se modifica ou extingue, ou tem sua exigibilidade suspensa ou excluída, nos casos previstos nesta Lei, fora dos quais não podem ser dispensadas, sob pena de responsabilidade funcional na forma da lei, a sua efetivação ou as respectivas garantias.
 
-#### CAPÍTULO II — CONSTITUIÇÃO DO CRÉDITO TRIBUTÁRIO
+#### CAPÍTULO II
 
-##### Seção I — Lançamento
+### CONSTITUIÇÃO DO CRÉDITO TRIBUTÁRIO
+
+##### Seção I
+
+Lançamento
 
 **Art. 142.** Compete privativamente à autoridade administrativa constituir o crédito tributário pelo lançamento, assim entendido o procedimento administrativo tendente a verificar a ocorrência do fato gerador da obrigação correspondente, determinar a matéria tributável, calcular o montante do tributo devido, identificar o sujeito passivo e, sendo caso, propor a aplicação da penalidade cabível.
 
-**§ 1º** A atividade administrativa de lançamento é vinculada e obrigatória, sob pena de responsabilidade funcional. *(Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º A atividade administrativa de lançamento é vinculada e obrigatória, sob pena de responsabilidade funcional. (Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** No lançamento destinado a prevenir a decadência de crédito tributário cuja exigibilidade houver sido suspensa na forma dos incisos II, IV e V do *caput* do art. 151 desta Lei, não será cominada multa de ofício ou multa de mora a ele relativo. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º No lançamento destinado a prevenir a decadência de crédito tributário cuja exigibilidade houver sido suspensa na forma dos incisos II, IV e V do caput do art. 151 desta Lei, não será cominada multa de ofício ou multa de mora a ele relativo. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** O disposto no § 2º deste artigo aplica-se, exclusivamente, aos casos em que a suspensão da exigibilidade do crédito tenha ocorrido antes do início de qualquer procedimento de ofício a ele relativo. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º O disposto no § 2º deste artigo aplica-se, exclusivamente, aos casos em que a suspensão da exigibilidade do crédito tenha ocorrido antes do início de qualquer procedimento de ofício a ele relativo. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 4º** *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+§ 4º (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
-**§ 5º** As penalidades cominadas em razão do descumprimento de obrigações tributárias, mediante lançamento de ofício, poderão ser pagas com as seguintes reduções, na forma das legislações locais:
+§ 5º As penalidades cominadas em razão do descumprimento de obrigações tributárias, mediante lançamento de ofício, poderão ser pagas com as seguintes reduções, na forma das legislações locais:
 
 I - 50% (cinquenta por cento) da penalidade aplicada, se efetuado o pagamento integral do crédito tributário no prazo previsto para apresentação de impugnação administrativa;
 
@@ -1051,17 +1139,17 @@ II - 40% (quarenta por cento) da penalidade aplicada, se efetuado o parcelamento
 
 III - 30% (trinta por cento) da penalidade aplicada, se efetuado o pagamento integral do crédito tributário após o prazo referido no inciso I deste parágrafo e antes da sua inscrição em dívida ativa;
 
-IV - 20% (vinte por cento) da penalidade aplicada, se efetuado o parcelamento do crédito tributário após o prazo referido no inciso II deste parágrafo e antes da sua inscrição em dívida ativa. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+IV - 20% (vinte por cento) da penalidade aplicada, se efetuado o parcelamento do crédito tributário após o prazo referido no inciso II deste parágrafo e antes da sua inscrição em dívida ativa. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 6º** Não haverá graduação, redução ou afastamento da penalidade em relação ao devedor contumaz, assim definido em lei específica. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 6º Não haverá graduação, redução ou afastamento da penalidade em relação ao devedor contumaz, assim definido em lei específica. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 7º** A graduação das penalidades, na forma do § 5º deste artigo, não excluirá o dever de pagamento da obrigação tributária principal, com os devidos acréscimos legais, quando for o caso. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 7º A graduação das penalidades, na forma do § 5º deste artigo, não excluirá o dever de pagamento da obrigação tributária principal, com os devidos acréscimos legais, quando for o caso. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 8º** A aplicação de penalidade será acompanhada de demonstração da conduta infratora de forma individualizada por sujeito passivo. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 8º A aplicação de penalidade será acompanhada de demonstração da conduta infratora de forma individualizada por sujeito passivo. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 9º** São consideradas circunstâncias agravantes a prática dolosa de fraude, sonegação ou conluio ou a ocorrência de reincidência, podendo ser majorada a penalidade, observados os limites previstos no § 1º do art. 113-A desta Lei. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 9º São consideradas circunstâncias agravantes a prática dolosa de fraude, sonegação ou conluio ou a ocorrência de reincidência, podendo ser majorada a penalidade, observados os limites previstos no § 1º do art. 113-A desta Lei. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 10.** Os percentuais de redução previstos no § 5º deste artigo, na forma das legislações específicas:
+§ 10. Os percentuais de redução previstos no § 5º deste artigo, na forma das legislações específicas:
 
 I - poderão ser majorados, quando verificada a ocorrência das seguintes circunstâncias atenuantes:
 
@@ -1085,17 +1173,17 @@ b) 50% (cinquenta por cento) da penalidade aplicada, se efetuado o parcelamento 
 
 c) 40% (quarenta por cento) da penalidade aplicada, se efetuado o pagamento integral do crédito tributário após o prazo referido no inciso I do § 5º deste artigo e antes da sua inscrição em dívida ativa; e
 
-d) 30% (trinta por cento) da penalidade aplicada, se efetuado o parcelamento do crédito tributário após o prazo referido no inciso II do § 5º deste artigo e antes da sua inscrição em dívida ativa. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+d) 30% (trinta por cento) da penalidade aplicada, se efetuado o parcelamento do crédito tributário após o prazo referido no inciso II do § 5º deste artigo e antes da sua inscrição em dívida ativa. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 11.** *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+§ 11. (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 143.** Salvo disposição de lei em contrário, quando o valor tributário esteja expresso em moeda estrangeira, no lançamento far-se-á sua conversão em moeda nacional ao câmbio do dia da ocorrência do fato gerador da obrigação.
 
 **Art. 144.** O lançamento reporta-se à data da ocorrência do fato gerador da obrigação e rege-se pela lei então vigente, ainda que posteriormente modificada ou revogada.
 
-**§ 1º** Aplica-se ao lançamento a legislação que, posteriormente à ocorrência do fato gerador da obrigação, tenha instituído novos critérios de apuração ou processos de fiscalização, ampliado os poderes de investigação das autoridades administrativas, ou outorgado ao crédito maiores garantias ou privilégios, exceto, neste último caso, para o efeito de atribuir responsabilidade tributária a terceiros.
+§ 1º Aplica-se ao lançamento a legislação que, posteriormente à ocorrência do fato gerador da obrigação, tenha instituído novos critérios de apuração ou processos de fiscalização, ampliado os poderes de investigação das autoridades administrativas, ou outorgado ao crédito maiores garantias ou privilégios, exceto, neste último caso, para o efeito de atribuir responsabilidade tributária a terceiros.
 
-**§ 2º** O disposto neste artigo não se aplica aos impostos lançados por períodos certos de tempo, desde que a respectiva lei fixe expressamente a data em que o fato gerador se considera ocorrido.
+§ 2º O disposto neste artigo não se aplica aos impostos lançados por períodos certos de tempo, desde que a respectiva lei fixe expressamente a data em que o fato gerador se considera ocorrido.
 
 **Art. 145.** O lançamento regularmente notificado ao sujeito passivo só pode ser alterado em virtude de:
 
@@ -1105,15 +1193,17 @@ II - recurso de ofício;
 
 III - iniciativa de ofício da autoridade administrativa, nos casos previstos no art. 149.
 
-**Art. 146.** A modificação introduzida, de ofício ou em consequência de decisão administrativa ou judicial ou sentença arbitral proferida no âmbito da arbitragem especial tributária e aduaneira, nos critérios jurídicos adotados pela autoridade administrativa no exercício do lançamento, somente pode ser efetivada, em relação a um mesmo sujeito passivo, quanto a fato gerador ocorrido posteriormente à sua introdução. *(Artigo com redação dada pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 146.** A modificação introduzida, de ofício ou em consequência de decisão administrativa ou judicial ou sentença arbitral proferida no âmbito da arbitragem especial tributária e aduaneira, nos critérios jurídicos adotados pela autoridade administrativa no exercício do lançamento, somente pode ser efetivada, em relação a um mesmo sujeito passivo, quanto a fato gerador ocorrido posteriormente à sua introdução. (Artigo com redação dada pela Lei Complementar nº 236, de 4/9/2026)
 
-##### Seção II — Modalidades de Lançamento
+##### Seção II
+
+Modalidades de Lançamento
 
 **Art. 147.** O lançamento é efetuado com base na declaração do sujeito passivo ou de terceiro, quando um ou outro, na forma da legislação tributária, presta à autoridade administrativa informações sobre matéria de fato, indispensáveis à sua efetivação.
 
-**§ 1º** A retificação da declaração por iniciativa do próprio declarante, quando vise a reduzir ou a excluir tributo, só é admissível mediante comprovação do erro em que se funde, e antes de notificado o lançamento.
+§ 1º A retificação da declaração por iniciativa do próprio declarante, quando vise a reduzir ou a excluir tributo, só é admissível mediante comprovação do erro em que se funde, e antes de notificado o lançamento.
 
-**§ 2º** Os erros contidos na declaração e apuráveis pelo seu exame serão retificados de ofício pela autoridade administrativa a que competir a revisão daquela.
+§ 2º Os erros contidos na declaração e apuráveis pelo seu exame serão retificados de ofício pela autoridade administrativa a que competir a revisão daquela.
 
 **Art. 148.** Quando o cálculo do tributo tenha por base, ou tome em consideração, o valor ou o preço de bens, direitos, serviços ou atos jurídicos, a autoridade lançadora, mediante processo regular, arbitrará aquele valor ou preço, sempre que sejam omissos ou não mereçam fé as declarações ou os esclarecimentos prestados, ou os documentos expedidos pelo sujeito passivo ou pelo terceiro legalmente obrigado, ressalvada, em caso de contestação, avaliação contraditória, administrativa ou judicial.
 
@@ -1137,25 +1227,29 @@ VIII - quando deva ser apreciado fato não conhecido ou não provado por ocasiã
 
 IX - quando se comprove que, no lançamento anterior, ocorreu fraude ou falta funcional da autoridade que o efetuou, ou omissão, pela mesma autoridade, de ato ou formalidade essencial.
 
-**Parágrafo único.** A revisão do lançamento só pode ser iniciada enquanto não extinto o direito da Fazenda Pública.
+Parágrafo único. A revisão do lançamento só pode ser iniciada enquanto não extinto o direito da Fazenda Pública.
 
 **Art. 150.** O lançamento por homologação, que ocorre quanto aos tributos cuja legislação atribua ao sujeito passivo o dever de antecipar o pagamento sem prévio exame da autoridade administrativa, opera-se pelo ato em que a referida autoridade, tomando conhecimento da atividade assim exercida pelo obrigado, expressamente a homologa.
 
-**§ 1º** O pagamento antecipado pelo obrigado nos termos deste artigo extingue o crédito, sob condição resolutória da ulterior homologação do lançamento.
+§ 1º O pagamento antecipado pelo obrigado nos termos deste artigo extingue o crédito, sob condição resolutória da ulterior homologação do lançamento.
 
-**§ 2º** Não influem sobre a obrigação tributária quaisquer atos anteriores à homologação, praticados pelo sujeito passivo ou por terceiro, visando à extinção total ou parcial do crédito.
+§ 2º Não influem sobre a obrigação tributária quaisquer atos anteriores à homologação, praticados pelo sujeito passivo ou por terceiro, visando à extinção total ou parcial do crédito.
 
-**§ 3º** Os atos a que se refere o parágrafo anterior serão, porém, considerados na apuração do saldo porventura devido e, sendo o caso, na imposição de penalidade, ou sua graduação.
+§ 3º Os atos a que se refere o parágrafo anterior serão, porém, considerados na apuração do saldo porventura devido e, sendo o caso, na imposição de penalidade, ou sua graduação.
 
-**§ 4º** Se a lei não fixar prazo à homologação, será ele de 5 (cinco) anos, a contar da ocorrência do fato gerador; expirado esse prazo sem que a Fazenda Pública se tenha pronunciado, considera-se homologado o lançamento e definitivamente extinto o crédito, salvo se comprovada a ocorrência de dolo, fraude ou simulação.
+§ 4º Se a lei não fixar prazo à homologação, será ele de 5 (cinco) anos, a contar da ocorrência do fato gerador; expirado esse prazo sem que a Fazenda Pública se tenha pronunciado, considera-se homologado o lançamento e definitivamente extinto o crédito, salvo se comprovada a ocorrência de dolo, fraude ou simulação.
 
-**§ 5º** No caso de dolo, fraude ou simulação, o prazo previsto no § 4º deste artigo é contado na forma do inciso I do *caput* do art. 173 desta Lei. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 5º No caso de dolo, fraude ou simulação, o prazo previsto no § 4º deste artigo é contado na forma do inciso I do caput do art. 173 desta Lei. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 6º** No caso de pagamento parcial do tributo sujeito a lançamento por homologação, o prazo decadencial é contado da ocorrência do fato gerador. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 6º No caso de pagamento parcial do tributo sujeito a lançamento por homologação, o prazo decadencial é contado da ocorrência do fato gerador. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-#### CAPÍTULO III — SUSPENSÃO DO CRÉDITO TRIBUTÁRIO
+#### CAPÍTULO III
 
-##### Seção I — Disposições Gerais
+### SUSPENSÃO DO CRÉDITO TRIBUTÁRIO
+
+##### Seção I
+
+Disposições Gerais
 
 **Art. 151.** Suspendem a exigibilidade do crédito tributário:
 
@@ -1163,33 +1257,33 @@ I - moratória;
 
 II - o depósito do seu montante integral;
 
-III - as impugnações, os recursos e a manifestação de inconformidade, nos termos das leis reguladoras do processo tributário administrativo; *(Inciso com redação dada pela Lei Complementar nº 236, de 4/9/2026)*
+III - as impugnações, os recursos e a manifestação de inconformidade, nos termos das leis reguladoras do processo tributário administrativo; (Inciso com redação dada pela Lei Complementar nº 236, de 4/9/2026)
 
 IV - a concessão de medida liminar em mandado de segurança.
 
-V - a concessão de medida liminar ou de tutela provisória, em outras espécies de ação judicial; *(Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001, e com redação dada pela Lei Complementar nº 236, de 4/9/2026)*
+V - a concessão de medida liminar ou de tutela provisória, em outras espécies de ação judicial; (Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001, e com redação dada pela Lei Complementar nº 236, de 4/9/2026)
 
-VI - o parcelamento. *(Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+VI - o parcelamento. (Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
-VII - a instituição da arbitragem especial tributária e aduaneira, nos termos da legislação específica; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+VII - a instituição da arbitragem especial tributária e aduaneira, nos termos da legislação específica; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-VIII - a proposta de transação aceita pela administração, nos termos da legislação específica; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+VIII - a proposta de transação aceita pela administração, nos termos da legislação específica; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-IX - o acordo decorrente de mediação, até a sua eventual dissolução, nos termos da legislação específica; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+IX - o acordo decorrente de mediação, até a sua eventual dissolução, nos termos da legislação específica; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-X - a aceitação, pelo credor, nos termos da regulamentação estabelecida pelos órgãos de cobrança judicial dos créditos tributários, de apólice de seguro garantia ou de carta de fiança bancária oferecidas em execução fiscal, inclusive quando convencionadas por meio de negócio jurídico processual, enquanto estiverem em conformidade com as normas que regem sua aceitação e enquanto não caracterizada hipótese de sinistro. *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+X - a aceitação, pelo credor, nos termos da regulamentação estabelecida pelos órgãos de cobrança judicial dos créditos tributários, de apólice de seguro garantia ou de carta de fiança bancária oferecidas em execução fiscal, inclusive quando convencionadas por meio de negócio jurídico processual, enquanto estiverem em conformidade com as normas que regem sua aceitação e enquanto não caracterizada hipótese de sinistro. (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 1º** O disposto neste artigo não dispensa o cumprimento das obrigações acessórias dependentes da obrigação principal cujo crédito seja suspenso, ou dela conseqüentes. *(Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º O disposto neste artigo não dispensa o cumprimento das obrigações acessórias dependentes da obrigação principal cujo crédito seja suspenso, ou dela conseqüentes. (Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** É vedada a exigência de caução ou garantia de depósito para apresentação de impugnações, recursos ou pedidos, nos termos do inciso III do *caput* deste artigo. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º É vedada a exigência de caução ou garantia de depósito para apresentação de impugnações, recursos ou pedidos, nos termos do inciso III do caput deste artigo. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** Estando em curso a execução fiscal do crédito tributário, a suspensão de sua exigibilidade, nos termos do inciso VII do *caput* deste artigo, estará condicionada:
+§ 3º Estando em curso a execução fiscal do crédito tributário, a suspensão de sua exigibilidade, nos termos do inciso VII do caput deste artigo, estará condicionada:
 
-I - à prévia suspensão da exigibilidade do crédito tributário na execução fiscal por outra das hipóteses previstas no *caput* deste artigo; ou
+I - à prévia suspensão da exigibilidade do crédito tributário na execução fiscal por outra das hipóteses previstas no caput deste artigo; ou
 
-II - ao oferecimento, pelo sujeito passivo, na arbitragem especial tributária e aduaneira, de garantia integral. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+II - ao oferecimento, pelo sujeito passivo, na arbitragem especial tributária e aduaneira, de garantia integral. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-##### Seção II — Moratória
+##### Seção II
 
 **Art. 152.** A moratória somente pode ser concedida:
 
@@ -1201,7 +1295,7 @@ b) pela União, quanto a tributos de competência dos Estados, do Distrito Feder
 
 II - em caráter individual, por despacho da autoridade administrativa, desde que autorizada por lei nas condições do inciso anterior.
 
-**Parágrafo único.** A lei concessiva de moratória pode circunscrever expressamente a sua aplicabilidade à determinada região do território da pessoa jurídica de direito público que a expedir, ou a determinada classe ou categoria de sujeitos passivos.
+Parágrafo único. A lei concessiva de moratória pode circunscrever expressamente a sua aplicabilidade à determinada região do território da pessoa jurídica de direito público que a expedir, ou a determinada classe ou categoria de sujeitos passivos.
 
 **Art. 153.** A lei que conceda moratória em caráter geral ou autorize sua concessão em caráter individual especificará, sem prejuízo de outros requisitos:
 
@@ -1219,7 +1313,7 @@ c) as garantias que devem ser fornecidas pelo beneficiado no caso de concessão 
 
 **Art. 154.** Salvo disposição de lei em contrário, a moratória somente abrange os créditos definitivamente constituídos à data da lei ou do despacho que a conceder, ou cujo lançamento já tenha sido iniciado àquela data por ato regularmente notificado ao sujeito passivo.
 
-**Parágrafo único.** A moratória não aproveita aos casos de dolo, fraude ou simulação do sujeito passivo ou do terceiro em benefício daquele.
+Parágrafo único. A moratória não aproveita aos casos de dolo, fraude ou simulação do sujeito passivo ou do terceiro em benefício daquele.
 
 **Art. 155.** A concessão da moratória em caráter individual não gera direito adquirido e será revogada de ofício, sempre que se apure que o beneficiado não satisfazia ou deixou de satisfazer as condições ou não cumpria ou deixou de cumprir os requisitos para a concessão do favor, cobrando-se o crédito acrescido de juros de mora:
 
@@ -1227,21 +1321,23 @@ I - com imposição da penalidade cabível, nos casos de dolo ou simulação do 
 
 II - sem imposição de penalidade, nos demais casos.
 
-**Parágrafo único.** No caso do inciso I deste artigo, o tempo decorrido entre a concessão da moratória e sua revogação não se computa para efeito da prescrição do direito à cobrança do crédito; no caso do inciso II deste artigo, a revogação só pode ocorrer antes de prescrito o referido direito.
+Parágrafo único. No caso do inciso I deste artigo, o tempo decorrido entre a concessão da moratória e sua revogação não se computa para efeito da prescrição do direito à cobrança do crédito; no caso do inciso II deste artigo, a revogação só pode ocorrer antes de prescrito o referido direito.
 
-**Art. 155-A.** O parcelamento será concedido na forma e condição estabelecidas em lei específica. *(“Caput” do artigo acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+**Art. 155-A.** O parcelamento será concedido na forma e condição estabelecidas em lei específica. (“Caput” do artigo acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
-**§ 1º** Salvo disposição de lei em contrário, o parcelamento do crédito tributário não exclui a incidência de juros e multas. *(Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+§ 1º Salvo disposição de lei em contrário, o parcelamento do crédito tributário não exclui a incidência de juros e multas. (Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
-**§ 2º** Aplicam-se, subsidiariamente, ao parcelamento as disposições desta Lei, relativas à moratória. *(Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+§ 2º Aplicam-se, subsidiariamente, ao parcelamento as disposições desta Lei, relativas à moratória. (Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001 )
 
-**§ 3º** Lei específica disporá sobre as condições de parcelamento dos créditos tributários do devedor em recuperação judicial. *(Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)*
+§ 3º Lei específica disporá sobre as condições de parcelamento dos créditos tributários do devedor em recuperação judicial. (Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)
 
-**§ 4º** A inexistência da lei específica a que se refere o § 3º deste artigo importa na aplicação das leis gerais de parcelamento do ente da Federação ao devedor em recuperação judicial, não podendo, neste caso, ser o prazo de parcelamento inferior ao concedido pela lei federal específica. *(Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)*
+§ 4º A inexistência da lei específica a que se refere o § 3º deste artigo importa na aplicação das leis gerais de parcelamento do ente da Federação ao devedor em recuperação judicial, não podendo, neste caso, ser o prazo de parcelamento inferior ao concedido pela lei federal específica. (Parágrafo acrescido pela Lei Complementar nº 118, de 9/2/2005)
 
-#### CAPÍTULO IV — EXTINÇÃO DO CRÉDITO TRIBUTÁRIO
+#### CAPÍTULO IV
 
-##### Seção I — Modalidades de Extinção
+##### Seção I
+
+Modalidades de Extinção
 
 **Art. 156.** Extinguem o crédito tributário:
 
@@ -1265,15 +1361,17 @@ IX - a decisão administrativa irreformável, assim entendida a definitiva na ó
 
 X - a decisão judicial passada em julgado.
 
-XI - a dação em pagamento de bens imóveis, na forma e condições estabelecidas em lei. *(Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+XI - a dação em pagamento de bens imóveis, na forma e condições estabelecidas em lei. (Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
-XII - a sentença arbitral, proferida no âmbito da arbitragem especial tributária e aduaneira, favorável ao sujeito passivo transitada em julgado; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+XII - a sentença arbitral, proferida no âmbito da arbitragem especial tributária e aduaneira, favorável ao sujeito passivo transitada em julgado; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-XIII - o cumprimento do acordo de mediação. *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+XIII - o cumprimento do acordo de mediação. (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**Parágrafo único.** A lei disporá quanto aos efeitos da extinção total ou parcial do crédito sobre a ulterior verificação da irregularidade da sua constituição, observado o disposto nos artigos 144 e 149.
+Parágrafo único. A lei disporá quanto aos efeitos da extinção total ou parcial do crédito sobre a ulterior verificação da irregularidade da sua constituição, observado o disposto nos artigos 144 e 149.
 
-##### Seção II — Pagamento
+##### Seção II
+
+Pagamento
 
 **Art. 157.** A imposição de penalidade não ilide o pagamento integral do crédito tributário.
 
@@ -1287,15 +1385,15 @@ II - quando total, de outros créditos referentes ao mesmo ou a outros tributos.
 
 **Art. 160.** Quando a legislação tributária não fixar o tempo do pagamento, o vencimento do crédito ocorre 30 (trinta) dias depois da data em que se considera o sujeito passivo notificado do lançamento.
 
-**Parágrafo único.** A legislação tributária pode conceder desconto pela antecipação do pagamento, nas condições que estabeleça.
+Parágrafo único. A legislação tributária pode conceder desconto pela antecipação do pagamento, nas condições que estabeleça.
 
 **Art. 161.** O crédito não integralmente pago no vencimento é acrescido de juros de mora, seja qual for o motivo determinante da falta, sem prejuízo da imposição das penalidades cabíveis e da aplicação de quaisquer medidas de garantia previstas nesta Lei ou em lei tributária.
 
-**§ 1º** Se a lei não dispuser de modo diverso, os juros de mora são calculados à taxa de 1% (um por cento) ao mês.
+§ 1º Se a lei não dispuser de modo diverso, os juros de mora são calculados à taxa de 1% (um por cento) ao mês.
 
-**§ 2º** O disposto neste artigo não se aplica na pendência de consulta formulada pelo devedor dentro do prazo legal para pagamento do crédito.
+§ 2º O disposto neste artigo não se aplica na pendência de consulta formulada pelo devedor dentro do prazo legal para pagamento do crédito.
 
-**§ 3º** A propositura de ação judicial na qual foi concedida medida liminar ou tutela provisória interrompe a incidência da multa de mora, desde a concessão da medida judicial, até 30 (trinta) dias após a data de publicação da decisão judicial que considerar devido o tributo. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º A propositura de ação judicial na qual foi concedida medida liminar ou tutela provisória interrompe a incidência da multa de mora, desde a concessão da medida judicial, até 30 (trinta) dias após a data de publicação da decisão judicial que considerar devido o tributo. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 162.** O pagamento é efetuado:
 
@@ -1303,15 +1401,15 @@ I - em moeda corrente, cheque ou vale postal;
 
 II - nos casos previstos em lei, em estampilha, em papel selado, ou por processo mecânico.
 
-**§ 1º** A legislação tributária pode determinar as garantias exigidas para o pagamento por cheque ou vale postal, desde que não o torne impossível ou mais oneroso que o pagamento em moeda corrente.
+§ 1º A legislação tributária pode determinar as garantias exigidas para o pagamento por cheque ou vale postal, desde que não o torne impossível ou mais oneroso que o pagamento em moeda corrente.
 
-**§ 2º** O crédito pago por cheque somente se considera extinto com o resgate deste pelo sacado.
+§ 2º O crédito pago por cheque somente se considera extinto com o resgate deste pelo sacado.
 
-**§ 3º** O crédito pagável em estampilha considera-se extinto com a inutilização regular daquela, ressalvado o disposto no art. 150.
+§ 3º O crédito pagável em estampilha considera-se extinto com a inutilização regular daquela, ressalvado o disposto no art. 150.
 
-**§ 4º** A perda ou destruição da estampilha, ou o erro no pagamento por esta modalidade não dão direito à restituição, salvo nos casos expressamente previstos na legislação tributária, ou naqueles em que o erro seja imputável à autoridade administrativa.
+§ 4º A perda ou destruição da estampilha, ou o erro no pagamento por esta modalidade não dão direito à restituição, salvo nos casos expressamente previstos na legislação tributária, ou naqueles em que o erro seja imputável à autoridade administrativa.
 
-**§ 5º** O pagamento em papel selado ou por processo mecânico equipara se ao pagamento em estampilha.
+§ 5º O pagamento em papel selado ou por processo mecânico equipara se ao pagamento em estampilha.
 
 **Art. 163.** Existindo simultaneamente dois ou mais débitos vencidos do mesmo sujeito passivo para com a mesma pessoa jurídica de direito público, relativos ao mesmo ou a diferentes tributos ou provenientes de penalidade pecuniária ou juros de mora, a autoridade administrativa competente para receber o pagamento determinará a respectiva imputação, obedecidas as seguintes regras, na ordem em que enumeradas:
 
@@ -1331,11 +1429,13 @@ II - de subordinação do recebimento ao cumprimento de exigências administrati
 
 III - de exigência, por mais de uma pessoa jurídica de direito público, de tributo idêntico sobre um mesmo fato gerador.
 
-**§ 1º** A consignação só pode versar sobre o crédito que o consignante se propõe pagar.
+§ 1º A consignação só pode versar sobre o crédito que o consignante se propõe pagar.
 
-**§ 2º** Julgada procedente a consignação, o pagamento se reputa efetuado e a importância consignada é convertida em renda; julgada improcedente a consignação no todo ou em parte, cobra-se o crédito acrescido de juros de mora, sem prejuízo das penalidades cabíveis.
+§ 2º Julgada procedente a consignação, o pagamento se reputa efetuado e a importância consignada é convertida em renda; julgada improcedente a consignação no todo ou em parte, cobra-se o crédito acrescido de juros de mora, sem prejuízo das penalidades cabíveis.
 
-##### Seção III — Pagamento Indevido
+##### Seção III
+
+Pagamento Indevido
 
 **Art. 165.** O sujeito passivo tem direito, independentemente de prévio protesto, à restituição total ou parcial do tributo, seja qual for a modalidade do seu pagamento, ressalvado o disposto no § 4º do art. 162, nos seguintes casos:
 
@@ -1345,13 +1445,13 @@ II - erro na edificação do sujeito passivo, na determinação da alíquota apl
 
 III - reforma, anulação, revogação ou rescisão de decisão condenatória.
 
-**Art. 165-A.** Os indébitos tributários serão atualizados pelos mesmos índices de atualização dos créditos tributários da União, dos Estados, do Distrito Federal e dos Municípios, conforme o caso. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 165-A.** Os indébitos tributários serão atualizados pelos mesmos índices de atualização dos créditos tributários da União, dos Estados, do Distrito Federal e dos Municípios, conforme o caso. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 166.** A restituição de tributos que comportem, por sua natureza, transferência do respectivo encargo financeiro somente será feita a quem prove haver assumido referido encargo, ou, no caso de tê-lo transferido a terceiro, estar por este expressamente autorizado a recebê-la.
 
 **Art. 167.** A restituição total ou parcial do tributo dá lugar à restituição, na mesma proporção, dos juros de mora e das penalidades pecuniárias, salvo as referentes a infrações de caráter formal não prejudicadas pela causa da restituição.
 
-**Parágrafo único.** A restituição vence juros não capitalizáveis, a partir do trânsito em julgado da decisão definitiva que a determinar.
+Parágrafo único. A restituição vence juros não capitalizáveis, a partir do trânsito em julgado da decisão definitiva que a determinar.
 
 **Art. 168.** O direito de pleitear a restituição extingue-se com o decurso do prazo de 5 (cinco) anos, contados:
 
@@ -1359,35 +1459,37 @@ I - nas hipóteses dos incisos I e II do art. 165, da data da extinção do cré
 
 II - na hipótese do inciso III do art. 165, da data em que se tornar definitiva a decisão administrativa ou passar em julgado a decisão judicial que tenha reformado, anulado, revogado ou rescindido a decisão condenatória.
 
-**§ 1º** *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+§ 1º (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** O disposto no *caput* deste artigo aplica-se à habilitação do indébito perante a administração tributária. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º O disposto no caput deste artigo aplica-se à habilitação do indébito perante a administração tributária. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** O prazo para habilitação prevista no § 2º deste artigo contar-se-á da certificação do trânsito em julgado. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º O prazo para habilitação prevista no § 2º deste artigo contar-se-á da certificação do trânsito em julgado. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 169.** Prescreve em 2 (dois) anos a ação anulatória da decisão administrativa que denegar a restituição.
 
-**Parágrafo único.** O prazo de prescrição é interrompido pelo início da ação judicial, recomeçando o seu curso, por metade, a partir da data da intimação validamente feita ao representante judicial da Fazenda Pública interessada.
+Parágrafo único. O prazo de prescrição é interrompido pelo início da ação judicial, recomeçando o seu curso, por metade, a partir da data da intimação validamente feita ao representante judicial da Fazenda Pública interessada.
 
-##### Seção IV — Demais Modalidades de Extinção
+##### Seção IV
+
+Demais Modalidades de Extinção
 
 **Art. 170.** A lei pode, nas condições e sob as garantias que estipular, ou cuja estipulação em cada caso atribuir à autoridade administrativa, autorizar a compensação de créditos tributários com créditos líquidos e certos, vencidos ou vincendos, do sujeito passivo contra a Fazenda Pública.
 
-**Parágrafo único.** Sendo vincendo o crédito do sujeito passivo, a lei determinará, para os efeitos deste artigo, a apuração do seu montante, não podendo, porém, cominar redução maior que a correspondente ao juro de 1% (um por cento) ao mês pelo tempo a decorrer entre a data da compensação e a do vencimento.
+Parágrafo único. Sendo vincendo o crédito do sujeito passivo, a lei determinará, para os efeitos deste artigo, a apuração do seu montante, não podendo, porém, cominar redução maior que a correspondente ao juro de 1% (um por cento) ao mês pelo tempo a decorrer entre a data da compensação e a do vencimento.
 
-**Art. 170-A.** É vedada a compensação mediante o aproveitamento de tributo, objeto de contestação judicial pelo sujeito passivo, antes do trânsito em julgado da respectiva decisão judicial. *(Artigo acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+**Art. 170-A.** É vedada a compensação mediante o aproveitamento de tributo, objeto de contestação judicial pelo sujeito passivo, antes do trânsito em julgado da respectiva decisão judicial. (Artigo acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
 **Art. 171.** A lei pode facultar, nas condições que estabeleça, aos sujeitos ativo e passivo da obrigação tributária celebrar transação que, mediante concessões mútuas, importe em determinação de litígio e conseqüente extinção de crédito tributário.
 
-**Parágrafo único.** A lei indicará a autoridade competente para autorizar a transação em cada caso.
+Parágrafo único. A lei indicará a autoridade competente para autorizar a transação em cada caso.
 
 **Art. 171-A.** Lei especial autorizará a arbitragem especial tributária e aduaneira, com vistas a promover a solução de controvérsias e a resolução do contencioso tributário e aduaneiro administrativo e judicial.
 
-**Parágrafo único.** A sentença arbitral será vinculante e produzirá os mesmos efeitos que a decisão judicial. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+Parágrafo único. A sentença arbitral será vinculante e produzirá os mesmos efeitos que a decisão judicial. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**Art. 171-B.** Lei estabelecerá os critérios e as condições para a mediação de controvérsias tributárias e aduaneiras, a ser exercida por terceiro sem poder decisório, que, escolhido ou aceito pelas partes, as auxiliará e as estimulará na identificação ou na construção de soluções consensuais. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 171-B.** Lei estabelecerá os critérios e as condições para a mediação de controvérsias tributárias e aduaneiras, a ser exercida por terceiro sem poder decisório, que, escolhido ou aceito pelas partes, as auxiliará e as estimulará na identificação ou na construção de soluções consensuais. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**Art. 171-C.** A transação, a mediação e a arbitragem especial tributária e aduaneira não caracterizam renúncia de receita para fins do disposto no art. 14 da Lei Complementar nº 101, de 4 de maio de 2000 (Lei de Responsabilidade Fiscal). *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 171-C.** A transação, a mediação e a arbitragem especial tributária e aduaneira não caracterizam renúncia de receita para fins do disposto no art. 14 da Lei Complementar nº 101, de 4 de maio de 2000 (Lei de Responsabilidade Fiscal). (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 172.** A lei pode autorizar a autoridade administrativa a conceder, por despacho fundamentado, remissão total ou parcial do crédito tributário, atendendo:
 
@@ -1401,7 +1503,7 @@ IV - a considerações de eqüidade, em relação com as características pessoa
 
 V - a condições peculiares a determinada região do território da entidade tributante.
 
-**Parágrafo único.** O despacho referido neste artigo não gera direito adquirido, aplicando-se, quando cabível, o disposto no art. 155.
+Parágrafo único. O despacho referido neste artigo não gera direito adquirido, aplicando-se, quando cabível, o disposto no art. 155.
 
 **Art. 173.** O direito de a Fazenda Pública constituir o crédito tributário extingue-se após 5 (cinco) anos, contados:
 
@@ -1409,39 +1511,41 @@ I - do primeiro dia do exercício seguinte àquele em que o lançamento poderia 
 
 II - da data em que se tornar definitiva a decisão que houver anulado, por vício formal, o lançamento anteriormente efetuado.
 
-**Parágrafo único.** O direito a que se refere este artigo extingue-se definitivamente com o decurso do prazo nele previsto, contado da data em que tenha sido iniciada a constituição do crédito tributário pela notificação, ao sujeito passivo, de qualquer medida preparatória indispensável ao lançamento.
+Parágrafo único. O direito a que se refere este artigo extingue-se definitivamente com o decurso do prazo nele previsto, contado da data em que tenha sido iniciada a constituição do crédito tributário pela notificação, ao sujeito passivo, de qualquer medida preparatória indispensável ao lançamento.
 
 **Art. 174.** A ação para a cobrança do crédito tributário prescreve em 5 (cinco) anos, contados da data da sua constituição definitiva.
 
-**§ 1º** A prescrição se interrompe: *(Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º A prescrição se interrompe: (Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)
 
-I - pelo despacho do juiz que ordenar a citação em execução fiscal; *(Inciso com redação dada pela Lei Complementar nº 118, de 9/2/2005)*
+I - pelo despacho do juiz que ordenar a citação em execução fiscal; (Inciso com redação dada pela Lei Complementar nº 118, de 9/2/2005)
 
-II - pelo protesto extrajudicial da certidão de dívida ativa ou pelo protesto judicial; *(Inciso com redação dada pela Lei Complementar nº 236, de 4/9/2026)*
+II - pelo protesto extrajudicial da certidão de dívida ativa ou pelo protesto judicial; (Inciso com redação dada pela Lei Complementar nº 236, de 4/9/2026)
 
 III - por qualquer ato judicial que constitua em mora o devedor;
 
 IV - por qualquer ato inequívoco ainda que extrajudicial, que importe em reconhecimento do débito pelo devedor.
 
-V - pela instauração do procedimento de mediação, nos termos da legislação específica; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+V - pela instauração do procedimento de mediação, nos termos da legislação específica; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-VI - pela instituição da arbitragem especial tributária e aduaneira, retroagindo à data do requerimento de submissão da controvérsia à arbitragem; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+VI - pela instituição da arbitragem especial tributária e aduaneira, retroagindo à data do requerimento de submissão da controvérsia à arbitragem; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-VII - pela sentença de extinção da execução fiscal nos casos de não localização do executado ou de bens passíveis de constrição, desde que a prescrição intercorrente ainda não se tenha iniciado; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+VII - pela sentença de extinção da execução fiscal nos casos de não localização do executado ou de bens passíveis de constrição, desde que a prescrição intercorrente ainda não se tenha iniciado; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-VIII - pela informação do crédito na falência ou liquidação extrajudicial do sujeito passivo, e ficará o prazo suspenso até o encerramento do processo, nos termos da legislação específica; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+VIII - pela informação do crédito na falência ou liquidação extrajudicial do sujeito passivo, e ficará o prazo suspenso até o encerramento do processo, nos termos da legislação específica; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-IX - pelo ato inicial da execução fiscal extrajudicial, nos termos da legislação específica. *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+IX - pelo ato inicial da execução fiscal extrajudicial, nos termos da legislação específica. (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+§ 2º (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** A prescrição interrompida recomeça a correr da data do ato que a interrompeu, ou do último ato do processo judicial ou extrajudicial para a interromper. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º A prescrição interrompida recomeça a correr da data do ato que a interrompeu, ou do último ato do processo judicial ou extrajudicial para a interromper. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 4º** *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+§ 4º (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
-#### CAPÍTULO V — EXCLUSÃO DO CRÉDITO TRIBUTÁRIO
+#### CAPÍTULO V
 
-##### Seção I — Disposições Gerais
+### EXCLUSÃO DO CRÉDITO TRIBUTÁRIO
+
+Disposições Gerais
 
 **Art. 175.** Excluem o crédito tributário:
 
@@ -1449,13 +1553,15 @@ I - a isenção;
 
 II - a anistia.
 
-**Parágrafo único.** A exclusão do crédito tributário não dispensa o cumprimento das obrigações acessórias, dependentes da obrigação principal cujo crédito seja excluído, ou dela conseqüente.
+Parágrafo único. A exclusão do crédito tributário não dispensa o cumprimento das obrigações acessórias, dependentes da obrigação principal cujo crédito seja excluído, ou dela conseqüente.
 
-##### Seção II — Isenção
+##### Seção II
+
+Isenção
 
 **Art. 176.** A isenção, ainda quando prevista em contrato, é sempre decorrente de lei que especifique as condições e requisitos exigidos para a sua concessão, os tributos a que se aplica e, sendo caso, o prazo de sua duração.
 
-**Parágrafo único.** A isenção pode ser restrita a determinada região do território da entidade tributante, em função de condições a ela peculiares.
+Parágrafo único. A isenção pode ser restrita a determinada região do território da entidade tributante, em função de condições a ela peculiares.
 
 **Art. 177.** Salvo disposição de lei em contrário, a isenção não é extensiva:
 
@@ -1463,15 +1569,17 @@ I - às taxas e às contribuições de melhoria;
 
 II - aos tributos instituídos posteriormente à sua concessão.
 
-**Art. 178.** A isenção, salvo se concedida por prazo certo e em função de determinadas condições, pode ser revogada ou modificada por lei, a qualquer tempo, observado o disposto no inciso III do art. 104. *(Artigo com redação dada pela Lei Complementar nº 24, de 7/1/1975)*
+**Art. 178.** A isenção, salvo se concedida por prazo certo e em função de determinadas condições, pode ser revogada ou modificada por lei, a qualquer tempo, observado o disposto no inciso III do art. 104. (Artigo com redação dada pela Lei Complementar nº 24, de 7/1/1975)
 
 **Art. 179.** A isenção, quando não concedida em caráter geral, é efetivada, em cada caso, por despacho da autoridade administrativa, em requerimento com o qual o interessado faça prova do preenchimento das condições e do cumprimento dos requisitos previstos em lei ou contrato para sua concessão.
 
-**§ 1º** Tratando-se de tributo lançado por período certo de tempo, o despacho referido neste artigo será renovado antes da expiração de cada período, cessando automaticamente os seus efeitos a partir do primeiro dia do período para o qual o interessado deixar de promover a continuidade do reconhecimento da isenção.
+§ 1º Tratando-se de tributo lançado por período certo de tempo, o despacho referido neste artigo será renovado antes da expiração de cada período, cessando automaticamente os seus efeitos a partir do primeiro dia do período para o qual o interessado deixar de promover a continuidade do reconhecimento da isenção.
 
-**§ 2º** O despacho referido neste artigo não gera direito adquirido, aplicando-se, quando cabível, o disposto no art. 155.
+§ 2º O despacho referido neste artigo não gera direito adquirido, aplicando-se, quando cabível, o disposto no art. 155.
 
-##### Seção III — Anistia
+##### Seção III
+
+Anistia
 
 **Art. 180.** A anistia abrange exclusivamente as infrações cometidas anteriormente à vigência da lei que a concede, não se aplicando:
 
@@ -1495,81 +1603,87 @@ d) sob condição do pagamento de tributo no prazo fixado pela lei que a concede
 
 **Art. 182.** A anistia, quando não concedida em caráter geral, é efetivada, em cada caso, por despacho da autoridade administrativa, em requerimento com o qual o interessado faça prova do preenchimento das condições e do cumprimento dos requisitos previstos em lei para sua concessão.
 
-**Parágrafo único.** O despacho referido neste artigo não gera direito adquirido, aplicando-se, quando cabível, o disposto no art. 155.
+Parágrafo único. O despacho referido neste artigo não gera direito adquirido, aplicando-se, quando cabível, o disposto no art. 155.
 
-#### CAPÍTULO VI — GARANTIAS E PRIVILÉGIOS DO CRÉDITO TRIBUTÁRIO
+#### CAPÍTULO VI
 
-##### Seção I — Disposições Gerais
+### GARANTIAS E PRIVILÉGIOS DO CRÉDITO TRIBUTÁRIO
+
+##### Seção I
 
 **Art. 183.** A enumeração das garantias atribuídas neste Capítulo ao crédito tributário não exclui outras que sejam expressamente previstas em lei, em função da natureza ou das características do tributo a que se refiram.
 
-**Parágrafo único.** A natureza das garantias atribuídas ao crédito tributário não altera a natureza deste nem a da obrigação tributária a que corresponda.
+Parágrafo único. A natureza das garantias atribuídas ao crédito tributário não altera a natureza deste nem a da obrigação tributária a que corresponda.
 
 **Art. 184.** Sem prejuízo dos privilégios especiais sobre determinados bens, que sejam previstos em lei, responde pelo pagamento do crédito tributário a totalidade dos bens e das rendas, de qualquer origem ou natureza, do sujeito passivo, seu espólio ou sua massa falida, inclusive os gravados por ônus real ou cláusula de inalienabilidade ou impenhorabilidade, seja qual for a data da constituição do ônus ou da cláusula, excetuados unicamente os bens e rendas que a lei declare absolutamente impenhoráveis.
 
 **Art. 185.** Presume-se fraudulenta a alienação ou oneração de bens ou rendas, ou seu começo, por sujeito passivo em débito para com a Fazenda Pública, por crédito tributário regularmente inscrito como dívida ativa.
 
-**Parágrafo único.** O disposto neste artigo não se aplica na hipótese de terem sido reservados, pelo devedor, bens ou rendas suficientes ao total pagamento da dívida inscrita*. (Artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)*
+Parágrafo único. O disposto neste artigo não se aplica na hipótese de terem sido reservados, pelo devedor, bens ou rendas suficientes ao total pagamento da dívida inscrita . (Artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)
 
 **Art. 185-A.** Na hipótese de o devedor tributário, devidamente citado, não pagar nem apresentar bens à penhora no prazo legal e não forem encontrados bens penhoráveis, o juiz determinará a indisponibilidade de seus bens e direitos, comunicando a decisão, preferencialmente por meio eletrônico, aos órgãos e entidades que promovem registros de transferência de bens, especialmente ao registro público de imóveis e às autoridades supervisoras do mercado bancário e do mercado de capitais, a fim de que, no âmbito de suas atribuições, façam cumprir a ordem judicial.
 
-**§ 1º** A indisponibilidade de que trata o *caput* deste artigo limitar-se-á ao valor total exigível, devendo o juiz determinar o imediato levantamento da indisponibilidade dos bens ou valores que excederem esse limite.
+§ 1º A indisponibilidade de que trata o caput deste artigo limitar-se-á ao valor total exigível, devendo o juiz determinar o imediato levantamento da indisponibilidade dos bens ou valores que excederem esse limite.
 
-**§ 2º** Os órgãos e entidades aos quais se fizer a comunicação de que trata o *caput* deste artigo enviarão imediatamente ao juízo a relação discriminada dos bens e direitos cuja indisponibilidade houverem promovido. *(Artigo acrescido pela Lei Complementar nº 118, de 9/2/2005)*
+§ 2º Os órgãos e entidades aos quais se fizer a comunicação de que trata o caput deste artigo enviarão imediatamente ao juízo a relação discriminada dos bens e direitos cuja indisponibilidade houverem promovido. (Artigo acrescido pela Lei Complementar nº 118, de 9/2/2005)
 
-##### Seção II — Preferências
+Preferências
 
-**Art. 186.** O crédito tributário prefere a qualquer outro, seja qual for sua natureza ou o tempo de sua constituição, ressalvados os créditos decorrentes da legislação do trabalho ou do acidente de trabalho. *(“Caput” do artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)*
+**Art. 186.** O crédito tributário prefere a qualquer outro, seja qual for sua natureza ou o tempo de sua constituição, ressalvados os créditos decorrentes da legislação do trabalho ou do acidente de trabalho. (“Caput” do artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)
 
-**Parágrafo único.** Na falência:
+Parágrafo único. Na falência:
 
 I - o crédito tributário não prefere aos créditos extraconcursais ou às importâncias passíveis de restituição, nos termos da lei falimentar, nem aos créditos com garantia real, no limite do valor do bem gravado;
 
 II - a lei poderá estabelecer limites e condições para a preferência dos créditos decorrentes da legislação do trabalho; e
 
-III - a multa tributária prefere apenas aos créditos subordinados. *(Parágrafo único acrescido pela Lei Complementar nº 118, de 9/2/2005)*
+III - a multa tributária prefere apenas aos créditos subordinados. (Parágrafo único acrescido pela Lei Complementar nº 118, de 9/2/2005)
 
-**Art. 187.** A cobrança judicial do crédito tributário não é sujeita a concurso de credores ou habilitação em falência, recuperação judicial, concordata, inventário ou arrolamento. *(“Caput” do artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)*
+**Art. 187.** A cobrança judicial do crédito tributário não é sujeita a concurso de credores ou habilitação em falência, recuperação judicial, concordata, inventário ou arrolamento. (“Caput” do artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)
 
-**Parágrafo único.** O concurso de preferência somente se verifica entre pessoas jurídicas de direito público, na seguinte ordem:
+Parágrafo único. O concurso de preferência somente se verifica entre pessoas jurídicas de direito público, na seguinte ordem:
 
 I - União;
 
-II - Estados, Distrito Federal e Territórios, conjuntamente e *pro rata*;
+II - Estados, Distrito Federal e Territórios, conjuntamente e pro rata ;
 
-III - Municípios, conjuntamente e *pro rata*. *(Parágrafo único declarado não recepcionado pela Constituição Federal de 1988, em controle concentrado, pelo Supremo Tribunal Federal, pela ADPF nº 357, publicada no DOU de 6/7/2021)*
+III - Municípios, conjuntamente e pro rata . (Parágrafo único declarado não recepcionado pela Constituição Federal de 1988, em controle concentrado, pelo Supremo Tribunal Federal, pela ADPF nº 357, publicada no DOU de 6/7/2021)
 
-**Art. 188.** São extraconcursais os créditos tributários decorrentes de fatos geradores ocorridos no curso do processo de falência. *(“Caput” do artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)*
+**Art. 188.** São extraconcursais os créditos tributários decorrentes de fatos geradores ocorridos no curso do processo de falência. (“Caput” do artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)
 
-**§ 1º** Contestado o crédito tributário, o juiz remeterá as partes ao processo competente, mandando reservar bens suficientes à extinção total do crédito e seus acrescidos, se a massa não puder efetuar a garantia da instância por outra forma, ouvido, quanto à natureza e valor dos bens reservados, o representante da Fazenda Pública interessada.
+§ 1º Contestado o crédito tributário, o juiz remeterá as partes ao processo competente, mandando reservar bens suficientes à extinção total do crédito e seus acrescidos, se a massa não puder efetuar a garantia da instância por outra forma, ouvido, quanto à natureza e valor dos bens reservados, o representante da Fazenda Pública interessada.
 
-**§ 2º** O disposto neste artigo aplica-se aos processos de concordata.
+§ 2º O disposto neste artigo aplica-se aos processos de concordata.
 
-**Art. 189.** São pagos preferencialmente a quaisquer créditos habilitados em inventário ou arrolamento, ou a outros encargos do monte, os créditos tributários vencidos ou vincendos, a cargo do “*de cujus*” ou de seu espólio, exigíveis no decurso do processo de inventário ou arrolamento.
+**Art. 189.** São pagos preferencialmente a quaisquer créditos habilitados em inventário ou arrolamento, ou a outros encargos do monte, os créditos tributários vencidos ou vincendos, a cargo do “ de cujus ” ou de seu espólio, exigíveis no decurso do processo de inventário ou arrolamento.
 
-**Parágrafo único.** Contestado o crédito tributário, proceder-se-á na forma do disposto no § 1º do artigo anterior.
+Parágrafo único. Contestado o crédito tributário, proceder-se-á na forma do disposto no § 1º do artigo anterior.
 
 **Art. 190.** São pagos preferencialmente a quaisquer outros os créditos tributários vencidos ou vincendos, a cargo de pessoas jurídicas de direito privado em liquidação judicial ou voluntária, exigíveis no decurso da liquidação.
 
-**Art. 191.** A extinção das obrigações do falido requer prova de quitação de todos os tributos. *(Artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)*
+**Art. 191.** A extinção das obrigações do falido requer prova de quitação de todos os tributos. (Artigo com redação dada pela Lei Complementar nº 118, de 9/2/2005)
 
-**Art. 191-A.** A concessão de recuperação judicial depende da apresentação da prova de quitação de todos os tributos, observado o disposto nos arts. 151, 205 e 206 desta Lei. *(Artigo acrescido pela Lei Complementar nº 118, de 9/2/2005)*
+**Art. 191-A.** A concessão de recuperação judicial depende da apresentação da prova de quitação de todos os tributos, observado o disposto nos arts. 151, 205 e 206 desta Lei. (Artigo acrescido pela Lei Complementar nº 118, de 9/2/2005)
 
 **Art. 192.** Nenhuma sentença de julgamento de partilha ou adjudicação será proferida sem prova da quitação de todos os tributos relativos aos bens do espólio, ou às suas rendas.
 
 **Art. 193.** Salvo quando expressamente autorizado por lei, nenhum departamento da administração pública da União, dos Estados, do Distrito Federal ou dos Municípios, ou sua autarquia, celebrará contrato ou aceitará proposta em concorrência pública sem que contratante ou proponente faça prova da quitação de todos os tributos devidos à Fazenda Pública interessada, relativos à atividade em cujo exercício contrata ou concorre.
 
-### TÍTULO IV — ADMINISTRAÇÃO TRIBUTÁRIA
+### TÍTULO IV
 
-#### CAPÍTULO I — FISCALIZAÇÃO
+### ADMINISTRAÇÃO TRIBUTÁRIA
+
+#### CAPÍTULO I
+
+### FISCALIZAÇÃO
 
 **Art. 194.** A legislação tributária, observado o disposto nesta Lei, regulará, em caráter geral, ou especificamente em função da natureza do tributo de que se tratar, a competência e os poderes das autoridades administrativas em matéria de fiscalização da sua aplicação.
 
-**§ 1º** A legislação a que se refere este artigo aplica-se às pessoas naturais ou jurídicas, contribuintes ou não, inclusive às que gozem de imunidade tributária ou de isenção de caráter pessoal. *(Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º A legislação a que se refere este artigo aplica-se às pessoas naturais ou jurídicas, contribuintes ou não, inclusive às que gozem de imunidade tributária ou de isenção de caráter pessoal. (Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** A administração tributária deverá priorizar e disponibilizar métodos preventivos para possibilitar ao sujeito passivo autorregularizar o pagamento dos tributos e das obrigações acessórias antes da lavratura do auto de infração, nos termos da legislação específica. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º A administração tributária deverá priorizar e disponibilizar métodos preventivos para possibilitar ao sujeito passivo autorregularizar o pagamento dos tributos e das obrigações acessórias antes da lavratura do auto de infração, nos termos da legislação específica. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** A administração tributária estabelecerá programas de conformidade e outras medidas com vistas à prevenção de conflitos, que deverão assegurar o diálogo e a plena compreensão objetiva e subjetiva de divergências ou de disputas acerca da interpretação ou da aplicação da legislação tributária e aduaneira, nos termos da legislação específica, com base nos seguintes princípios:
+§ 3º A administração tributária estabelecerá programas de conformidade e outras medidas com vistas à prevenção de conflitos, que deverão assegurar o diálogo e a plena compreensão objetiva e subjetiva de divergências ou de disputas acerca da interpretação ou da aplicação da legislação tributária e aduaneira, nos termos da legislação específica, com base nos seguintes princípios:
 
 I - voluntariedade de ingresso e de saída;
 
@@ -1583,11 +1697,11 @@ V - busca da conformidade tributária;
 
 VI - prevenção de litígios e de imposição de penalidades;
 
-VII - proporcionalidade e imparcialidade. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+VII - proporcionalidade e imparcialidade. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 194-A.** O trânsito em julgado da decisão definitiva do Supremo Tribunal Federal e do Superior Tribunal de Justiça com efeito vinculante no âmbito judicial vinculará também a administração tributária.
 
-**§ 1º** No prazo máximo de 90 (noventa) dias úteis, contado do trânsito em julgado da decisão, a Fazenda Pública, por parecer jurídico devidamente fundamentado, dará publicidade ao fato, inclusive quanto:
+§ 1º No prazo máximo de 90 (noventa) dias úteis, contado do trânsito em julgado da decisão, a Fazenda Pública, por parecer jurídico devidamente fundamentado, dará publicidade ao fato, inclusive quanto:
 
 I - à aplicação da orientação adotada pelo Supremo Tribunal Federal ou Superior Tribunal de Justiça em relação aos seus créditos tributários e aduaneiros;
 
@@ -1595,19 +1709,19 @@ II - aos temas em que a Fazenda Pública, tanto na esfera administrativa quanto 
 
 III - aos temas em que Fazenda Pública, nas esferas administrativa e judicial, desistirá de impugnações ou recursos já formulados.
 
-**§ 2º** A fim de observar precedentes formados em tribunais superiores em sentido favorável ao sujeito passivo, os órgãos de representação judicial das Fazendas Públicas poderão estabelecer outras hipóteses de impedimento à inscrição do crédito por eles realizada na respectiva dívida ativa.
+§ 2º A fim de observar precedentes formados em tribunais superiores em sentido favorável ao sujeito passivo, os órgãos de representação judicial das Fazendas Públicas poderão estabelecer outras hipóteses de impedimento à inscrição do crédito por eles realizada na respectiva dívida ativa.
 
-**§ 3º** Sem prejuízo do disposto no § 2º deste artigo, os órgãos de administração tributária e os órgãos de representação judicial das Fazendas Públicas desenvolverão instrumentos de gestão para orientação periódica de seus membros e servidores acerca de precedentes, judiciais e administrativos, e da legislação tributária e aduaneira, tais como o aprimoramento e a ampliação dos sistemas internos de controle de informações, em especial com relação aos dados que refletem o contencioso tributário e aduaneiro e a efetividade das medidas adotadas para a arrecadação. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º Sem prejuízo do disposto no § 2º deste artigo, os órgãos de administração tributária e os órgãos de representação judicial das Fazendas Públicas desenvolverão instrumentos de gestão para orientação periódica de seus membros e servidores acerca de precedentes, judiciais e administrativos, e da legislação tributária e aduaneira, tais como o aprimoramento e a ampliação dos sistemas internos de controle de informações, em especial com relação aos dados que refletem o contencioso tributário e aduaneiro e a efetividade das medidas adotadas para a arrecadação. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 195.** Para os efeitos da legislação tributária, não têm aplicação quaisquer disposições legais excludentes ou limitativas do direito de examinar mercadorias, livros, arquivos, documentos, papéis e efeitos comerciais ou fiscais dos comerciantes, industriais ou produtores, ou da obrigação destes de exibi-los.
 
-**Parágrafo único.** Os livros obrigatórios de escrituração comercial e fiscal e os comprovantes dos lançamentos neles efetuados serão conservados até que ocorra a prescrição dos créditos tributários decorrentes das operações a que se refiram.
+Parágrafo único. Os livros obrigatórios de escrituração comercial e fiscal e os comprovantes dos lançamentos neles efetuados serão conservados até que ocorra a prescrição dos créditos tributários decorrentes das operações a que se refiram.
 
-**Art. 196.** A autoridade administrativa que proceder ou presidir quaisquer diligências de fiscalização lavrará os termos necessários para que se documente o procedimento, na forma da legislação aplicável. *(“Caput” do artigo com redação dada pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 196.** A autoridade administrativa que proceder ou presidir quaisquer diligências de fiscalização lavrará os termos necessários para que se documente o procedimento, na forma da legislação aplicável. (“Caput” do artigo com redação dada pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 1º** Os termos a que se refere este artigo serão lavrados, sempre que possível, em um dos livros fiscais exibidos; quando lavrados em separado deles se entregará, à pessoa sujeita à fiscalização, cópia autenticada pela autoridade a que se refere este artigo. *(Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º Os termos a que se refere este artigo serão lavrados, sempre que possível, em um dos livros fiscais exibidos; quando lavrados em separado deles se entregará, à pessoa sujeita à fiscalização, cópia autenticada pela autoridade a que se refere este artigo. (Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** O procedimento de fiscalização será precedido de emissão de documento que preveja o início da fiscalização, o qual deverá conter as seguintes informações:
+§ 2º O procedimento de fiscalização será precedido de emissão de documento que preveja o início da fiscalização, o qual deverá conter as seguintes informações:
 
 I - a identificação da autoridade responsável por sua emissão, das autoridades encarregadas pela fiscalização, do contribuinte e de seus estabelecimentos objeto da fiscalização;
 
@@ -1615,11 +1729,11 @@ II - os trabalhos a serem desenvolvidos pela autoridade fazendária, com a ident
 
 III - a forma de confirmação de sua autenticidade pelo contribuinte; e
 
-IV - o prazo de duração do procedimento. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+IV - o prazo de duração do procedimento. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** A realização de procedimento de fiscalização em estabelecimento ou domicílio do contribuinte deverá ser feita mediante a entrega de uma das vias do documento a que se refere o § 2º deste artigo ao contribuinte, seu representante legal ou preposto. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º A realização de procedimento de fiscalização em estabelecimento ou domicílio do contribuinte deverá ser feita mediante a entrega de uma das vias do documento a que se refere o § 2º deste artigo ao contribuinte, seu representante legal ou preposto. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 4º** Na hipótese de que trata o § 3º deste artigo, o acompanhamento de força policial será condicionado ao justo receio de resistência ao ato fiscalizatório, que deverá ser reduzido a termo e constará do documento a ser entregue ao contribuinte fiscalizado. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 4º Na hipótese de que trata o § 3º deste artigo, o acompanhamento de força policial será condicionado ao justo receio de resistência ao ato fiscalizatório, que deverá ser reduzido a termo e constará do documento a ser entregue ao contribuinte fiscalizado. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 197.** Mediante intimação escrita, são obrigados a prestar à autoridade administrativa todas as informações de que disponham com relação aos bens, negócios ou atividades de terceiros:
 
@@ -1637,53 +1751,55 @@ VI - os síndicos, comissários e liquidatários;
 
 VII - quaisquer outras entidades ou pessoas que a lei designe, em razão de seu cargo, ofício, função, ministério, atividade ou profissão.
 
-**Parágrafo único.** A obrigação prevista neste artigo não abrange a prestação de informações quanto a fatos sobre os quais o informante esteja legalmente obrigado a observar segredo em razão de cargo, ofício, função, ministério, atividade ou profissão.
+Parágrafo único. A obrigação prevista neste artigo não abrange a prestação de informações quanto a fatos sobre os quais o informante esteja legalmente obrigado a observar segredo em razão de cargo, ofício, função, ministério, atividade ou profissão.
 
-**Art. 198.** Sem prejuízo do disposto na legislação criminal, é vedada a divulgação, por parte da Fazenda Pública ou de seus servidores, de informação obtida em razão do ofício sobre a situação econômica ou financeira do sujeito passivo ou de terceiros e sobre a natureza e o estado dos seus negócios ou atividades. *(“Caput” do artigo com redação dada pela Lei Complementar nº 104, de 10/1/2001)*
+**Art. 198.** Sem prejuízo do disposto na legislação criminal, é vedada a divulgação, por parte da Fazenda Pública ou de seus servidores, de informação obtida em razão do ofício sobre a situação econômica ou financeira do sujeito passivo ou de terceiros e sobre a natureza e o estado dos seus negócios ou atividades. (“Caput” do artigo com redação dada pela Lei Complementar nº 104, de 10/1/2001)
 
-**§ 1º** Excetuam-se do disposto neste artigo, além dos casos previstos no art. 199, os seguintes: *(Parágrafo com redação dada pela Lei Complementar nº 104, de 10/1/2001)*
+§ 1º Excetuam-se do disposto neste artigo, além dos casos previstos no art. 199, os seguintes: (Parágrafo com redação dada pela Lei Complementar nº 104, de 10/1/2001)
 
-I - requisição de autoridade judiciária no interesse da justiça; *(Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+I - requisição de autoridade judiciária no interesse da justiça; (Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
-II - solicitações de autoridade administrativa no interesse da Administração Pública, desde que seja comprovada a instauração regular de processo administrativo, no órgão ou na entidade respectiva, com o objetivo de investigar o sujeito passivo a que se refere a informação, por prática de infração administrativa. *(Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+II - solicitações de autoridade administrativa no interesse da Administração Pública, desde que seja comprovada a instauração regular de processo administrativo, no órgão ou na entidade respectiva, com o objetivo de investigar o sujeito passivo a que se refere a informação, por prática de infração administrativa. (Inciso acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
-**§ 2º** O intercâmbio de informação sigilosa, no âmbito da Administração Pública, será realizado mediante processo regularmente instaurado, e a entrega será feita pessoalmente à autoridade solicitante, mediante recibo, que formalize a transferência e assegure a preservação do sigilo. *(Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+§ 2º O intercâmbio de informação sigilosa, no âmbito da Administração Pública, será realizado mediante processo regularmente instaurado, e a entrega será feita pessoalmente à autoridade solicitante, mediante recibo, que formalize a transferência e assegure a preservação do sigilo. (Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
-**§ 3º** Não é vedada a divulgação de informações relativas a:
+§ 3º Não é vedada a divulgação de informações relativas a:
 
 I - representações fiscais para fins penais;
 
 II - inscrições na Dívida Ativa da Fazenda Pública;
 
-III - parcelamento ou moratória; e *(Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001, com redação dada pela Lei Complementar nº 187, de 16/12/2021)*
+III - parcelamento ou moratória; e (Parágrafo acrescido pela Lei Complementar nº 104, de 10/1/2001, com redação dada pela Lei Complementar nº 187, de 16/12/2021)
 
-IV - incentivo, renúncia, benefício ou imunidade de natureza tributária cujo beneficiário seja pessoa jurídica. *(Inciso acrescido pela Lei Complementar nº 187, de 16/12/2021)*
+IV - incentivo, renúncia, benefício ou imunidade de natureza tributária cujo beneficiário seja pessoa jurídica. (Inciso acrescido pela Lei Complementar nº 187, de 16/12/2021)
 
-**§ 4º** Sem prejuízo do disposto no art. 197, a administração tributária poderá requisitar informações cadastrais e patrimoniais de sujeito passivo de crédito tributário a órgãos ou entidades, públicos ou privados, que, inclusive por obrigação legal, operem cadastros e registros ou controlem operações de bens e direitos. *(Parágrafo acrescido pela Lei Complementar nº 208, de 2/7/2024)*
+§ 4º Sem prejuízo do disposto no art. 197, a administração tributária poderá requisitar informações cadastrais e patrimoniais de sujeito passivo de crédito tributário a órgãos ou entidades, públicos ou privados, que, inclusive por obrigação legal, operem cadastros e registros ou controlem operações de bens e direitos. (Parágrafo acrescido pela Lei Complementar nº 208, de 2/7/2024)
 
-**§ 5º** Independentemente da requisição prevista no § 4º deste artigo, os órgãos e as entidades da administração pública direta e indireta de qualquer dos Poderes colaborarão com a administração tributária visando ao compartilhamento de bases de dados de natureza cadastral e patrimonial de seus administrados e supervisionados. *(Parágrafo acrescido pela Lei Complementar nº 208, de 2/7/2024)*
+§ 5º Independentemente da requisição prevista no § 4º deste artigo, os órgãos e as entidades da administração pública direta e indireta de qualquer dos Poderes colaborarão com a administração tributária visando ao compartilhamento de bases de dados de natureza cadastral e patrimonial de seus administrados e supervisionados. (Parágrafo acrescido pela Lei Complementar nº 208, de 2/7/2024)
 
 **Art. 199.** A Fazenda Pública da União e as dos Estados, do Distrito Federal e dos Municípios prestar-se-ão mutuamente assistência para a fiscalização dos tributos respectivos e permuta de informações, na forma estabelecida, em caráter geral ou específico, por lei ou convênio.
 
-**Parágrafo único.** A Fazenda Pública da União, na forma estabelecida em tratados, acordos ou convênios, poderá permutar informações com Estados estrangeiros no interesse da arrecadação e da fiscalização de tributos. *(Parágrafo único acrescido pela Lei Complementar nº 104, de 10/1/2001)*
+Parágrafo único. A Fazenda Pública da União, na forma estabelecida em tratados, acordos ou convênios, poderá permutar informações com Estados estrangeiros no interesse da arrecadação e da fiscalização de tributos. (Parágrafo único acrescido pela Lei Complementar nº 104, de 10/1/2001)
 
-**Art. 199-A.** As Fazendas Públicas da União, dos Estados, do Distrito Federal e dos Municípios poderão estabelecer entre si, mediante convênio, o compartilhamento das atividades de fiscalização, lançamento e cobrança de tributos e de sua estrutura destinada ao processo administrativo fiscal, com vistas à otimização do exercício de sua capacidade tributária. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 199-A.** As Fazendas Públicas da União, dos Estados, do Distrito Federal e dos Municípios poderão estabelecer entre si, mediante convênio, o compartilhamento das atividades de fiscalização, lançamento e cobrança de tributos e de sua estrutura destinada ao processo administrativo fiscal, com vistas à otimização do exercício de sua capacidade tributária. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 200.** As autoridades administrativas federais poderão requisitar o auxílio da força pública federal, estadual ou municipal, e reciprocamente, quando vítimas de embaraço ou desacato no exercício de suas funções, ou quando necessário à efetivação de medida prevista na legislação tributária, ainda que não se configure fato definido em lei como crime ou contravenção.
 
-#### CAPÍTULO II — DÍVIDA ATIVA
+#### CAPÍTULO II
+
+### DÍVIDA ATIVA
 
 **Art. 201.** Constitui dívida ativa tributária a proveniente de crédito dessa natureza, regularmente inscrita na repartição administrativa competente, depois de esgotado o prazo fixado, para pagamento, pela lei ou por decisão final proferida em processo regular.
 
-**§ 1º** A fluência de juros de mora não exclui, para os efeitos deste artigo, a liquidez do crédito. *(Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º A fluência de juros de mora não exclui, para os efeitos deste artigo, a liquidez do crédito. (Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** O controle de legalidade da inscrição em dívida ativa consiste na análise, pela Fazenda Pública, dos requisitos de certeza, liquidez e exigibilidade, essenciais à formação do título executivo, e constitui direito do contribuinte e dever da Fazenda Pública credora, que poderá realizá-lo a qualquer tempo, de ofício ou a requerimento do interessado. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º O controle de legalidade da inscrição em dívida ativa consiste na análise, pela Fazenda Pública, dos requisitos de certeza, liquidez e exigibilidade, essenciais à formação do título executivo, e constitui direito do contribuinte e dever da Fazenda Pública credora, que poderá realizá-lo a qualquer tempo, de ofício ou a requerimento do interessado. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** O órgão responsável pela constituição do crédito deve encaminhar todas as informações necessárias para a inscrição em dívida ativa e a cobrança, administrativa ou judicial, dos créditos de natureza tributária ou não tributária, definitivamente constituídos ou reconhecidos pelo sujeito passivo, no prazo máximo de 90 (noventa) dias úteis a partir de sua exigibilidade, podendo ser ampliado a até 120 (cento e vinte) dias úteis para contribuintes de maior índice de conformidade, e devendo ser reduzido para 60 (sessenta) dias úteis para aqueles com histórico de baixo recolhimento espontâneo, salvo disposição de lei em sentido contrário. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º O órgão responsável pela constituição do crédito deve encaminhar todas as informações necessárias para a inscrição em dívida ativa e a cobrança, administrativa ou judicial, dos créditos de natureza tributária ou não tributária, definitivamente constituídos ou reconhecidos pelo sujeito passivo, no prazo máximo de 90 (noventa) dias úteis a partir de sua exigibilidade, podendo ser ampliado a até 120 (cento e vinte) dias úteis para contribuintes de maior índice de conformidade, e devendo ser reduzido para 60 (sessenta) dias úteis para aqueles com histórico de baixo recolhimento espontâneo, salvo disposição de lei em sentido contrário. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 202.** O termo de inscrição da dívida ativa, autenticado pela autoridade competente, indicará obrigatoriamente:
 
-I - o nome do devedor e dos corresponsáveis, bem como, sempre que possível, o domicílio ou a residência daquele e destes; *(Inciso com redação dada pela Lei Complementar nº 236, de 4/9/2026)*
+I - o nome do devedor e dos corresponsáveis, bem como, sempre que possível, o domicílio ou a residência daquele e destes; (Inciso com redação dada pela Lei Complementar nº 236, de 4/9/2026)
 
 II - a quantia devida e a maneira de calcular os juros de mora acrescidos;
 
@@ -1693,21 +1809,21 @@ IV - a data em que foi inscrita;
 
 V - sendo caso, o número do processo administrativo de que se originar o crédito.
 
-**§ 1º** A certidão conterá, além dos requisitos deste artigo, a indicação do livro e da folha da inscrição. *(Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º A certidão conterá, além dos requisitos deste artigo, a indicação do livro e da folha da inscrição. (Parágrafo único transformado em § 1º pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+§ 2º (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 203.** A omissão de quaisquer dos requisitos previstos no artigo anterior ou o erro a eles relativo são causas de nulidade da inscrição e do processo de cobrança dela decorrente, mas a nulidade poderá ser sanada até a decisão de primeira instância, mediante substituição da certidão nula, devolvido ao sujeito passivo, acusado ou interessado, o prazo para defesa, que somente poderá versar sobre a parte modificada.
 
 **Art. 204.** A dívida regularmente inscrita goza da presunção de certeza e liquidez e tem o efeito de prova pré-constituída.
 
-**Parágrafo único.** A presunção a que se refere este artigo é relativa e pode ser ilidida por prova inequívoca, a cargo do sujeito passivo ou do terceiro a que aproveite.
+Parágrafo único. A presunção a que se refere este artigo é relativa e pode ser ilidida por prova inequívoca, a cargo do sujeito passivo ou do terceiro a que aproveite.
 
-#### CAPÍTULO III — CERTIDÕES NEGATIVAS
+### CERTIDÕES NEGATIVAS
 
 **Art. 205.** A lei poderá exigir que a prova da quitação de determinado tributo, quando exigível, seja feita por certidão negativa, expedida à vista de requerimento do interessado, que contenha todas as informações necessárias à identificação de sua pessoa, domicílio fiscal e ramo de negócio ou atividade e indique o período a que se refere o pedido.
 
-**Parágrafo único.** A certidão negativa será sempre expedida nos termos em que tenha sido requerida e será fornecida dentro de 10 (dez) dias da data da entrada do requerimento na repartição.
+Parágrafo único. A certidão negativa será sempre expedida nos termos em que tenha sido requerida e será fornecida dentro de 10 (dez) dias da data da entrada do requerimento na repartição.
 
 **Art. 206.** Tem os mesmos efeitos previstos no artigo anterior a certidão de que conste a existência de créditos não vencidos, em curso de cobrança executiva em que tenha sido efetivada a penhora, ou cuja exigibilidade esteja suspensa.
 
@@ -1715,17 +1831,17 @@ V - sendo caso, o número do processo administrativo de que se originar o crédi
 
 **Art. 208.** A certidão negativa expedida com dolo ou fraude, que contenha erro contra a Fazenda Pública, responsabiliza pessoalmente o funcionário que a expedir, pelo crédito tributário e juros de mora acrescidos.
 
-**Parágrafo único.** O disposto neste artigo não exclui a responsabilidade criminal e funcional que no caso couber.
+Parágrafo único. O disposto neste artigo não exclui a responsabilidade criminal e funcional que no caso couber.
 
-#### CAPÍTULO IV — PROCESSO ADMINISTRATIVO FISCAL
+### PROCESSO ADMINISTRATIVO FISCAL
 
-*(Capítulo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+(Capítulo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 208-A.** Este Capítulo estabelece normas gerais para regular o processo administrativo fiscal no âmbito das administrações tributárias da União, dos Estados, do Distrito Federal e dos Municípios, com vistas, em especial, a assegurar aos litigantes o devido processo legal, o contraditório, a ampla defesa e o duplo grau de jurisdição.
 
-**§ 1º** No contencioso administrativo fiscal, os entes federativos com mais de 100.000 (cem mil) habitantes residentes deverão assegurar aos contribuintes o duplo grau de jurisdição, nos termos da legislação específica.
+§ 1º No contencioso administrativo fiscal, os entes federativos com mais de 100.000 (cem mil) habitantes residentes deverão assegurar aos contribuintes o duplo grau de jurisdição, nos termos da legislação específica.
 
-**§ 2º** Para os fins da definição da população residente referida no § 1º deste artigo, será utilizado o último censo demográfico divulgado pelo IBGE. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º Para os fins da definição da população residente referida no § 1º deste artigo, será utilizado o último censo demográfico divulgado pelo IBGE. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 208-B.** O auto de infração será lavrado com base nos elementos de prova disponíveis e conterá obrigatoriamente:
 
@@ -1741,11 +1857,11 @@ V - a determinação da exigência fiscal e a intimação para cumpri-la ou impu
 
 VI - o local, a data e a hora da lavratura;
 
-VII - a assinatura do autuante, a indicação de seu cargo ou função e o número de matrícula. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+VII - a assinatura do autuante, a indicação de seu cargo ou função e o número de matrícula. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 208-C.** O julgamento dos processos de exigência de tributos e penalidades previstos na legislação tributária e de outros que lhes são correlatos observará o seguinte:
 
-I - a apresentação tempestiva de impugnação terá o efeito de instaurar o contencioso administrativo fiscal, suspendendo a exigibilidade do crédito tributário impugnado imediatamente, na forma do inciso III do *caput* do art. 151 desta Lei;
+I - a apresentação tempestiva de impugnação terá o efeito de instaurar o contencioso administrativo fiscal, suspendendo a exigibilidade do crédito tributário impugnado imediatamente, na forma do inciso III do caput do art. 151 desta Lei;
 
 II - os julgamentos de primeira e segunda instâncias serão realizados conforme legislação específica;
 
@@ -1753,9 +1869,9 @@ III - da decisão de primeira instância caberão recurso voluntário e remessa 
 
 IV - quando houver instância superior, caberá recurso especial contra decisão de segunda instância que conferir à legislação tributária e aduaneira interpretação diversa daquela que lhe tenha atribuído outro colegiado do mesmo tribunal administrativo, conforme legislação específica.
 
-**§ 1º** Caberão embargos de declaração, que terão o efeito de interromper o prazo para a interposição de outros recursos, por qualquer das partes, contra despacho com conteúdo decisório, decisão ou acórdão para esclarecer obscuridade, suprir omissão ou eliminar contradição ou erro material, nos termos da legislação específica.
+§ 1º Caberão embargos de declaração, que terão o efeito de interromper o prazo para a interposição de outros recursos, por qualquer das partes, contra despacho com conteúdo decisório, decisão ou acórdão para esclarecer obscuridade, suprir omissão ou eliminar contradição ou erro material, nos termos da legislação específica.
 
-**§ 2º** Não caberá a interposição de recurso hierárquico a Secretário de Estado, a Ministro de Estado ou a qualquer outro integrante do Poder Executivo em face de decisão definitiva favorável ao sujeito passivo proferida em processo administrativo fiscal. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º Não caberá a interposição de recurso hierárquico a Secretário de Estado, a Ministro de Estado ou a qualquer outro integrante do Poder Executivo em face de decisão definitiva favorável ao sujeito passivo proferida em processo administrativo fiscal. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 208-D.** Será garantido às partes o direito aos seguintes recursos, defesas e incidentes, além de outros previstos na legislação específica:
 
@@ -1767,37 +1883,37 @@ III - interposição de recurso especial, em 20 (vinte) dias contados da ciênci
 
 IV - oposição de embargos de declaração, em 5 (cinco) dias contados da ciência do despacho com conteúdo decisório, da decisão ou do acórdão, em caso de obscuridade, omissão, contradição ou erro material.
 
-**§ 1º** As pautas de julgamento de primeira e segunda instâncias e da instância superior, quando houver, deverão ser divulgadas com antecedência mínima de 10 (dez) dias.
+§ 1º As pautas de julgamento de primeira e segunda instâncias e da instância superior, quando houver, deverão ser divulgadas com antecedência mínima de 10 (dez) dias.
 
-**§ 2º** Os prazos para a apresentação de contrarrazões deverão ser os mesmos previstos nos incisos II, III e IV do *caput* deste artigo para a interposição dos respectivos recursos.
+§ 2º Os prazos para a apresentação de contrarrazões deverão ser os mesmos previstos nos incisos II, III e IV do caput deste artigo para a interposição dos respectivos recursos.
 
-**§ 3º** Os prazos serão contados em dias úteis, excluindo-se o dia do início e incluindo-se o do vencimento.
+§ 3º Os prazos serão contados em dias úteis, excluindo-se o dia do início e incluindo-se o do vencimento.
 
-**§ 4º** Os prazos somente se iniciam ou vencem em dia de expediente normal no órgão em que tramite o processo ou deva ser praticado o ato.
+§ 4º Os prazos somente se iniciam ou vencem em dia de expediente normal no órgão em que tramite o processo ou deva ser praticado o ato.
 
-**§ 5º** Suspende-se o curso do prazo processual nos dias compreendidos entre 20 de dezembro e 20 de janeiro, inclusive.
+§ 5º Suspende-se o curso do prazo processual nos dias compreendidos entre 20 de dezembro e 20 de janeiro, inclusive.
 
-**§ 6º** As partes poderão solicitar a retirada de pauta de processos administrativos fiscais quando o julgamento do recurso estiver previsto para ocorrer no período referido no § 5º deste artigo.
+§ 6º As partes poderão solicitar a retirada de pauta de processos administrativos fiscais quando o julgamento do recurso estiver previsto para ocorrer no período referido no § 5º deste artigo.
 
-**§ 7º** O contribuinte deverá mencionar os motivos de fato e de direito que amparam seu pedido na primeira oportunidade de manifestação processual perante a Fazenda Pública.
+§ 7º O contribuinte deverá mencionar os motivos de fato e de direito que amparam seu pedido na primeira oportunidade de manifestação processual perante a Fazenda Pública.
 
-**§ 8º** As provas documentais deverão ser apresentadas no momento indicado no § 7º deste artigo.
+§ 8º As provas documentais deverão ser apresentadas no momento indicado no § 7º deste artigo.
 
-**§ 9º** A apresentação de novas provas ou de razões de direito poderá ocorrer posteriormente ao momento processual indicado no § 7º deste artigo, desde que:
+§ 9º A apresentação de novas provas ou de razões de direito poderá ocorrer posteriormente ao momento processual indicado no § 7º deste artigo, desde que:
 
 I - fique demonstrada a impossibilidade de sua apresentação oportuna, por motivo de força maior;
 
 II - refiram-se a fato ou a direito superveniente; ou
 
-III - destinem-se a contrapor fatos ou razões posteriormente trazidos aos autos. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+III - destinem-se a contrapor fatos ou razões posteriormente trazidos aos autos. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 208-E.** É dever do sujeito passivo informar se a matéria impugnada no âmbito do processo administrativo fiscal foi submetida à apreciação judicial, devendo ser juntada cópia da petição, acompanhada dos documentos necessários, para que a autoridade administrativa avalie a identidade dos objetos.
 
-**Parágrafo único.** A propositura de ação judicial pelo sujeito passivo com o mesmo objeto de processo administrativo fiscal importará em renúncia ao poder de recorrer na esfera administrativa e desistência do recurso acaso interposto. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+Parágrafo único. A propositura de ação judicial pelo sujeito passivo com o mesmo objeto de processo administrativo fiscal importará em renúncia ao poder de recorrer na esfera administrativa e desistência do recurso acaso interposto. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 208-F.** As decisões e os acórdãos deverão indicar com clareza os pressupostos de fato e de direito que os determinaram.
 
-**Parágrafo único.** As administrações tributárias deverão publicizar as decisões e os acórdãos proferidos no curso do contencioso administrativo, disponibilizando-os para consulta. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+Parágrafo único. As administrações tributárias deverão publicizar as decisões e os acórdãos proferidos no curso do contencioso administrativo, disponibilizando-os para consulta. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 208-G.** No âmbito do processo administrativo fiscal, têm efeito vinculante:
 
@@ -1809,63 +1925,61 @@ b) decisões transitadas em julgado proferidas pelo Supremo Tribunal Federal ou 
 
 c) decisões transitadas em julgado proferidas pelo Supremo Tribunal Federal em sede de controle concentrado de constitucionalidade, na forma do disposto no § 2º do art. 102 da Constituição Federal;
 
-II - resolução do Senado Federal que suspender a execução de lei ou de dispositivo legal, na forma do disposto no inciso X do *caput* do art. 52 da Constituição Federal;
+II - resolução do Senado Federal que suspender a execução de lei ou de dispositivo legal, na forma do disposto no inciso X do caput do art. 52 da Constituição Federal;
 
 III - decisões reiteradas e uniformes dos tribunais administrativos no âmbito dos entes federativos, consubstanciadas em súmulas.
 
-**§ 1º** Não será lavrado auto de infração ou notificação de lançamento, negada impugnação, pedido de restituição ou recurso, nem serão inscritos em dívida ativa os créditos cuja constituição esteja fundada em matéria decidida de modo favorável ao sujeito passivo nos termos deste artigo.
+§ 1º Não será lavrado auto de infração ou notificação de lançamento, negada impugnação, pedido de restituição ou recurso, nem serão inscritos em dívida ativa os créditos cuja constituição esteja fundada em matéria decidida de modo favorável ao sujeito passivo nos termos deste artigo.
 
-**§ 2º** O tribunal administrativo deverá manter banco eletrônico de dados atualizados com informações sobre os fundamentos determinantes da decisão consolidada em súmula, de que trata o inciso III do *caput* deste artigo, e os dispositivos normativos a ela relacionados, de forma a facilitar a análise de sua aplicação a outros casos concretos. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º O tribunal administrativo deverá manter banco eletrônico de dados atualizados com informações sobre os fundamentos determinantes da decisão consolidada em súmula, de que trata o inciso III do caput deste artigo, e os dispositivos normativos a ela relacionados, de forma a facilitar a análise de sua aplicação a outros casos concretos. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**Art. 208-H.** A administração deverá anular seus próprios atos quando eivados de vício de legalidade. *(“Caput” do artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 208-H.** A administração deverá anular seus próprios atos quando eivados de vício de legalidade. (“Caput” do artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 1º** São nulos: *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 1º São nulos: (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-I - os atos e os termos lavrados por autoridade, órgão ou servidor incompetente; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+I - os atos e os termos lavrados por autoridade, órgão ou servidor incompetente; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-II - *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+II - (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
-III - os lançamentos sem fundamentação legal; *(Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+III - os lançamentos sem fundamentação legal; (Inciso acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-IV - *(VETADO na Lei Complementar nº 236, de 4/9/2026)*
+IV - (VETADO na Lei Complementar nº 236, de 4/9/2026)
 
-**§ 2º** As intimações serão nulas quando feitas sem observância das prescrições legais, mas o comparecimento do administrado ou da Fazenda Pública supre a falta ou a irregularidade presente no ato de comunicação. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 2º As intimações serão nulas quando feitas sem observância das prescrições legais, mas o comparecimento do administrado ou da Fazenda Pública supre a falta ou a irregularidade presente no ato de comunicação. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 3º** A nulidade de qualquer ato somente prejudicará os atos posteriores que dele diretamente dependam ou sejam consequência. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 3º A nulidade de qualquer ato somente prejudicará os atos posteriores que dele diretamente dependam ou sejam consequência. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 4º** Ao declarar a nulidade, a autoridade indicará os atos por ela atingidos, ordenando as providências necessárias ao prosseguimento ou à solução do processo. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 4º Ao declarar a nulidade, a autoridade indicará os atos por ela atingidos, ordenando as providências necessárias ao prosseguimento ou à solução do processo. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**§ 5º** Quando puder decidir o mérito a favor do sujeito passivo a quem aproveitaria a declaração de nulidade, a autoridade julgadora não a pronunciará nem mandará repetir o ato ou suprir-lhe a falta. *(Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+§ 5º Quando puder decidir o mérito a favor do sujeito passivo a quem aproveitaria a declaração de nulidade, a autoridade julgadora não a pronunciará nem mandará repetir o ato ou suprir-lhe a falta. (Parágrafo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
-**Art. 208-I.** O trâmite e o julgamento do processo administrativo fiscal poderão ser diferenciados em função do valor do crédito tributário discutido, do indébito pleiteado pelo sujeito passivo ou do porte da pessoa jurídica, nos termos da legislação específica. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 208-I.** O trâmite e o julgamento do processo administrativo fiscal poderão ser diferenciados em função do valor do crédito tributário discutido, do indébito pleiteado pelo sujeito passivo ou do porte da pessoa jurídica, nos termos da legislação específica. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 208-J.** A tramitação dos processos administrativos fiscais que versem sobre uma mesma questão jurídica será sobrestada automaticamente quando o Supremo Tribunal Federal ou o Superior Tribunal de Justiça houver determinado a suspensão coletiva de processos judiciais para a resolução da mesma questão jurídica mediante precedente qualificado.
 
-**§ 1º** Caso o processo administrativo fiscal contenha outras questões jurídicas independentes daquela de que trata o *caput*, o crédito tributário a elas correspondente poderá ser transferido para autos apartados, que não serão afetados pelo sobrestamento a que se refere este artigo.
+§ 1º Caso o processo administrativo fiscal contenha outras questões jurídicas independentes daquela de que trata o caput , o crédito tributário a elas correspondente poderá ser transferido para autos apartados, que não serão afetados pelo sobrestamento a que se refere este artigo.
 
-**§ 2º** O disposto neste artigo não obsta a concessão de medida liminar ou tutela provisória, quando presentes os requisitos previstos na legislação processual civil. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
-
-DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+§ 2º O disposto neste artigo não obsta a concessão de medida liminar ou tutela provisória, quando presentes os requisitos previstos na legislação processual civil. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 209.** A expressão "Fazenda Pública", quando empregada nesta Lei sem qualificação, abrange a Fazenda Pública da União, dos Estados, do Distrito Federal e dos Municípios.
 
 **Art. 210.** Os prazos fixados nesta Lei ou na legislação tributária serão contínuos, excluindo-se na sua contagem o dia de início e incluindo-se o de vencimento.
 
-**Parágrafo único.** Os prazos só se iniciam ou vencem em dia de expediente normal na repartição em que corra o processo ou deva ser praticado o ato.
+Parágrafo único. Os prazos só se iniciam ou vencem em dia de expediente normal na repartição em que corra o processo ou deva ser praticado o ato.
 
 **Art. 211.** Incumbe ao Conselho Técnico de Economia e Finanças, do Ministério da Fazenda, prestar assistência técnica aos governos estaduais e municipais, com o objetivo de assegurar a uniforme aplicação da presente Lei.
 
-**Art. 211-A.** O Distrito Federal, os Estados e os Municípios deverão, no prazo de 2 (dois) anos, atualizar a sua legislação tributária e aduaneira para adotar, no mínimo, os critérios previstos no § 5º do art. 142 desta Lei, como forma de implementar moderação sancionatória e dosimetria da penalidade. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+**Art. 211-A.** O Distrito Federal, os Estados e os Municípios deverão, no prazo de 2 (dois) anos, atualizar a sua legislação tributária e aduaneira para adotar, no mínimo, os critérios previstos no § 5º do art. 142 desta Lei, como forma de implementar moderação sancionatória e dosimetria da penalidade. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 211-B.** A União, o Distrito Federal, os Estados e os Municípios deverão, no prazo de 2 (dois) anos, atualizar a sua legislação tributária e aduaneira para adotar, no mínimo, os critérios previstos nos arts. 208-A a 208-J desta Lei, como forma de implementar o devido processo legal, a ampla defesa, o duplo grau de jurisdição e o contraditório no âmbito do processo administrativo fiscal.
 
-**Parágrafo único.** A não implementação das disposições constantes do *caput* deste artigo acarretará a aplicação do disposto nos arts. 208-A a 208-J desta Lei, até que sobrevenha legislação específica, a qual deverá adotar, no mínimo, os parâmetros explicitados nos referidos artigos. *(Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)*
+Parágrafo único. A não implementação das disposições constantes do caput deste artigo acarretará a aplicação do disposto nos arts. 208-A a 208-J desta Lei, até que sobrevenha legislação específica, a qual deverá adotar, no mínimo, os parâmetros explicitados nos referidos artigos. (Artigo acrescido pela Lei Complementar nº 236, de 4/9/2026)
 
 **Art. 212.** Os Poderes Executivos federal, estaduais e municipais expedirão, por decreto, dentro de 90 (noventa) dias da entrada em vigor desta Lei, a consolidação, em texto único, da legislação vigente, relativa a cada um dos tributos, repetindo-se esta providência até o dia 31 de janeiro de cada ano.
 
 **Art. 213.** Os Estados pertencentes a uma mesma região geoeconômica celebrarão entre si convênios para o estabelecimento de alíquota uniforme para o imposto a que se refere o art. 52.
 
-**Parágrafo único.** Os Municípios de um mesmo Estado procederão igualmente, no que se refere à fixação da alíquota de que trata o art. 60.
+Parágrafo único. Os Municípios de um mesmo Estado procederão igualmente, no que se refere à fixação da alíquota de que trata o art. 60.
 
 **Art. 214.** O Poder Executivo promoverá a realização de convênios com os Estados, para excluir ou limitar a incidência do Imposto sobre Operações Relativas à Circulação de Mercadorias, no caso de exportação para o Exterior.
 
@@ -1883,12 +1997,12 @@ III - da contribuição destinada a constituir "Fundo de Assistência" e "Previd
 
 IV - da contribuição destinada ao Fundo de Garantia do Tempo de Serviço, criada pelo art. 2º da Lei nº 5.107, de 13 de setembro de 1966;
 
-V - das contribuições, enumeradas no § 2º do art. 34 da Lei nº 4.863, de 29 de novembro de 1965, com as alterações decorrentes do disposto nos artigos 22 e 23 da Lei nº 5.107, de 13 de setembro de 1966, e outras de fins sociais criadas por lei. *(Artigo acrescido pelo Decreto-Lei nº 27, de 14/11/1966)*
+V - das contribuições, enumeradas no § 2º do art. 34 da Lei nº 4.863, de 29 de novembro de 1965, com as alterações decorrentes do disposto nos artigos 22 e 23 da Lei nº 5.107, de 13 de setembro de 1966, e outras de fins sociais criadas por lei. (Artigo acrescido pelo Decreto-Lei nº 27, de 14/11/1966)
 
-**Art. 218.** Esta Lei entrará em vigor, em todo o território nacional, no dia 1º de janeiro de 1967, revogadas as disposições em contrário, especialmente a Lei nº 854, de 10 de outubro de 1949. *(Primitivo art. 217 renumerado pelo Decreto-Lei nº 27, de 14/11/1966)*
+**Art. 218.** Esta Lei entrará em vigor, em todo o território nacional, no dia 1º de janeiro de 1967, revogadas as disposições em contrário, especialmente a Lei nº 854, de 10 de outubro de 1949. (Primitivo art. 217 renumerado pelo Decreto-Lei nº 27, de 14/11/1966)
 
 Brasília, 25 de outubro de 1966; 145º da Independência e 78º da República.
 
-H. CASTELLO BRANCO
+### H. CASTELLO BRANCO
 
 Octávio Bulhões

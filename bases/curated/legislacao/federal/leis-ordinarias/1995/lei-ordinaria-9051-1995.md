@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "media"
 data_assinatura: "1995-05-18"
 ementa: "Dispõe sobre a expedição de certidões para a defesa de direitos e esclarecimentos de situações."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-05-18;9051"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "0f06ae39fd0ac762d0fc0b5f4b9ebab0841aa22b611beef9c840ad1ab60f7ebe"
+sha256_origem: "9ff7111af91324f7f253b5b5e28a2bc7bc9b8b482db394bcccaaf138f9565592"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,16 +28,12 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "9ff7111af91324f7f253b5b5e28a2bc7bc9b8b482db394bcccaaf138f9565592"
+sha256_corpo: "13caac2c20744c7d9fd02eb1c0790eb429aee3caa4ca729f47b3a74fb03eb78f"
 ---
 # Lei nº 9.051 de 18/05/1995
 
-1
-
-LEI Nº 9.051, DE 18 DE MAIO DE 1995
-
-Dispõe sobre a expedição de certidões para a defesa de direitos e esclarecimentos de situações.
-
-**O PRESIDENTE DA REPÚBLICA**
+O PRESIDENTE DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte lei:
 
@@ -53,6 +49,6 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte lei:
 
 Brasília, 18 de maio de 1995; 174º da Independência e 107º da República.
 
-FERNANDO HENRIQUE CARDOSO
+### FERNANDO HENRIQUE CARDOSO
 
 Nelson A. Jobim

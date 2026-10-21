@@ -1,0 +1,1721 @@
+{
+  "schema": "editorial-legal-audit/v1",
+  "generated_at": "2026-10-21",
+  "scope": "33 curated documents from the supplied official-source report",
+  "method": "official current-source retrieval plus deterministic identity, integrity and legal-body hash checks",
+  "authority_policy": "only official public sources are used as textual authority",
+  "document_count": 33,
+  "approved_count": 33,
+  "reconciliation_count": 0,
+  "source_status": {
+    "unchanged": 28,
+    "source_conflict": 5
+  },
+  "situation_results": {
+    "diploma_em_vigor_com_alteracoes_preservadas": 33
+  },
+  "errors": [],
+  "status": "pass",
+  "documents": [
+    {
+      "document_id": "br-federal-constituicao-1988",
+      "matrix_id": "VM-001",
+      "path": "bases/curated/legislacao/federal/constituicao/1988/constituicao-da-republica-federativa-do-brasil-1988.md",
+      "titulo": "Constituicao da Republica Federativa do Brasil",
+      "tipo": "constituicao",
+      "numero": "",
+      "ano": 1988,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+      "hash_sha256_corpo_local": "64d66e20eed7fdc36ca8144ce8fd99199ebfc63be3995392a985f65ff0db54b9",
+      "hash_sha256_corpo_observado": "64d66e20eed7fdc36ca8144ce8fd99199ebfc63be3995392a985f65ff0db54b9",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 10,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-ato_constitucional-1988",
+      "matrix_id": "VM-002",
+      "path": "bases/curated/legislacao/federal/atos-constitucionais/1988/ato-das-disposicoes-constitucionais-transitorias-1988.md",
+      "titulo": "Ato das Disposicoes Constitucionais Transitorias",
+      "tipo": "ato_constitucional",
+      "numero": "",
+      "ano": 1988,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicaocompilado.htm",
+      "hash_sha256_corpo_local": "64d66e20eed7fdc36ca8144ce8fd99199ebfc63be3995392a985f65ff0db54b9",
+      "hash_sha256_corpo_observado": "64d66e20eed7fdc36ca8144ce8fd99199ebfc63be3995392a985f65ff0db54b9",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 2,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-decreto_lei-4657-1942",
+      "matrix_id": "VM-003",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1942/decreto-lei-4657-1942.md",
+      "titulo": "Lei de Introducao as Normas do Direito Brasileiro",
+      "tipo": "decreto_lei",
+      "numero": "4657",
+      "ano": 1942,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1942-09-04;4657",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1942-09-04;4657",
+      "hash_sha256_corpo_local": "7201c052d1fd3d883e80d2a5f01dd50e54b76a3808579cbaf134bf4b89378be5",
+      "hash_sha256_corpo_observado": "7201c052d1fd3d883e80d2a5f01dd50e54b76a3808579cbaf134bf4b89378be5",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 6,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-10406-2002",
+      "matrix_id": "VM-004",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002.md",
+      "titulo": "Codigo Civil",
+      "tipo": "lei_ordinaria",
+      "numero": "10406",
+      "ano": 2002,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406",
+      "hash_sha256_corpo_local": "488d531851115cd59bc059bbb1ea58b32448706e60956946aa72095bd3c1d997",
+      "hash_sha256_corpo_observado": "488d531851115cd59bc059bbb1ea58b32448706e60956946aa72095bd3c1d997",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 60,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-13105-2015",
+      "matrix_id": "VM-005",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2015/lei-ordinaria-13105-2015.md",
+      "titulo": "Codigo de Processo Civil",
+      "tipo": "lei_ordinaria",
+      "numero": "13105",
+      "ano": 2015,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-03-16;13105",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-03-16;13105",
+      "hash_sha256_corpo_local": "d837ae5aefd11589f2ebc408825e96ea39427c13edb791bd0aca2f4fb38967df",
+      "hash_sha256_corpo_observado": "d837ae5aefd11589f2ebc408825e96ea39427c13edb791bd0aca2f4fb38967df",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 72,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-decreto_lei-3914-1941",
+      "matrix_id": "VM-006",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3914-1941.md",
+      "titulo": "Lei de Introdução ao Código Penal e à Lei das Contravenções Penais",
+      "tipo": "decreto_lei",
+      "numero": "3914",
+      "ano": 1941,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-09;3914",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "source_conflict",
+      "source_resolution_status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-09;3914",
+      "hash_sha256_corpo_local": "c4cdc72d3f26c246491987101ead19c65274726f5d1ae9b17686a5b5457038a5",
+      "hash_sha256_corpo_observado": "c4cdc72d3f26c246491987101ead19c65274726f5d1ae9b17686a5b5457038a5",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-decreto_lei-2848-1940",
+      "matrix_id": "VM-007",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1940/decreto-lei-2848-1940.md",
+      "titulo": "Codigo Penal",
+      "tipo": "decreto_lei",
+      "numero": "2848",
+      "ano": 1940,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1940-12-07;2848",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1940-12-07;2848",
+      "hash_sha256_corpo_local": "689c47e137e3c8a598903ff5813f85efcd36971f3cca2074fb7fcc6ac842cece",
+      "hash_sha256_corpo_observado": "689c47e137e3c8a598903ff5813f85efcd36971f3cca2074fb7fcc6ac842cece",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "13.964"
+      ],
+      "relacoes_no_grafo": 88,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-decreto_lei-3688-1941",
+      "matrix_id": "VM-008",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3688-1941.md",
+      "titulo": "Lei das Contravencoes Penais",
+      "tipo": "decreto_lei",
+      "numero": "3688",
+      "ano": 1941,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-10-03;3688",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-10-03;3688",
+      "hash_sha256_corpo_local": "73308858077814f292f8adccedf1f90bc25638848c2309e32ca3b67f5c24ad92",
+      "hash_sha256_corpo_observado": "73308858077814f292f8adccedf1f90bc25638848c2309e32ca3b67f5c24ad92",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 2,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-decreto_lei-3931-1941",
+      "matrix_id": "VM-009",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3931-1941.md",
+      "titulo": "Lei de Introdução ao Código de Processo Penal",
+      "tipo": "decreto_lei",
+      "numero": "3931",
+      "ano": 1941,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-11;3931",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "source_conflict",
+      "source_resolution_status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-11;3931",
+      "hash_sha256_corpo_local": "0bb3a707d808d621b9fc9b6d996e1ffdc11d27ba3144bd0d7b691cba469113a5",
+      "hash_sha256_corpo_observado": "0bb3a707d808d621b9fc9b6d996e1ffdc11d27ba3144bd0d7b691cba469113a5",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-decreto_lei-3689-1941",
+      "matrix_id": "VM-010",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3689-1941.md",
+      "titulo": "Codigo de Processo Penal",
+      "tipo": "decreto_lei",
+      "numero": "3689",
+      "ano": 1941,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-10-03;3689",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-10-03;3689",
+      "hash_sha256_corpo_local": "f16628b06d055475b4abeea3b7181c6853bbb4804d4382585e967e9c45cc3437",
+      "hash_sha256_corpo_observado": "f16628b06d055475b4abeea3b7181c6853bbb4804d4382585e967e9c45cc3437",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "13.964"
+      ],
+      "relacoes_no_grafo": 36,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-5172-1966",
+      "matrix_id": "VM-011",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1966/lei-ordinaria-5172-1966.md",
+      "titulo": "Codigo Tributario Nacional",
+      "tipo": "lei_ordinaria",
+      "numero": "5172",
+      "ano": 1966,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1966-10-25;5172",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1966-10-25;5172",
+      "hash_sha256_corpo_local": "3842855484f49c369b8d5e480f2015eb73d6732f3ad71f6b00cddb34eeefb28d",
+      "hash_sha256_corpo_observado": "3842855484f49c369b8d5e480f2015eb73d6732f3ad71f6b00cddb34eeefb28d",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 22,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_complementar-214-2025",
+      "matrix_id": "VM-012",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2025/lei-complementar-214-2025.md",
+      "titulo": "Lei Complementar nº 214, de 16 de janeiro de 2025",
+      "tipo": "lei_complementar",
+      "numero": "214",
+      "ano": 2025,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "source_conflict",
+      "source_resolution_status": "approved",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214compilado.htm",
+      "hash_sha256_corpo_local": "1c4ea9b92e95faf9b179f1fba1025a01093825d2d9cafcc963759adc25100545",
+      "hash_sha256_corpo_observado": "1c4ea9b92e95faf9b179f1fba1025a01093825d2d9cafcc963759adc25100545",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 140,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-8078-1990",
+      "matrix_id": "VM-013",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1990/lei-ordinaria-8078-1990.md",
+      "titulo": "Codigo de Defesa do Consumidor",
+      "tipo": "lei_ordinaria",
+      "numero": "8078",
+      "ano": 1990,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-09-11;8078",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-09-11;8078",
+      "hash_sha256_corpo_local": "396b7886ac23dbc71e2702be4bd4c117343e3722daea3bfc9c1ee4dd0ee5c8e4",
+      "hash_sha256_corpo_observado": "396b7886ac23dbc71e2702be4bd4c117343e3722daea3bfc9c1ee4dd0ee5c8e4",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 14,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-4737-1965",
+      "matrix_id": "VM-014",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1965/lei-ordinaria-4737-1965.md",
+      "titulo": "Codigo Eleitoral",
+      "tipo": "lei_ordinaria",
+      "numero": "4737",
+      "ano": 1965,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-07-15;4737",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-07-15;4737",
+      "hash_sha256_corpo_local": "a5a8656324de8d9aa209c48f3a61bfba92837261bc87fcfb9ddff47038afedfa",
+      "hash_sha256_corpo_observado": "a5a8656324de8d9aa209c48f3a61bfba92837261bc87fcfb9ddff47038afedfa",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 30,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-decreto_lei-5452-1943",
+      "matrix_id": "VM-016",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1943/decreto-lei-5452-1943.md",
+      "titulo": "Consolidacao das Leis do Trabalho",
+      "tipo": "decreto_lei",
+      "numero": "5452",
+      "ano": 1943,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1943-05-01;5452",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1943-05-01;5452",
+      "hash_sha256_corpo_local": "6f9151c9920d5255ac52c6d09b7aec59075d89023c958bbaa4d3939de67a6ba4",
+      "hash_sha256_corpo_observado": "6f9151c9920d5255ac52c6d09b7aec59075d89023c958bbaa4d3939de67a6ba4",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 112,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-8069-1990",
+      "matrix_id": "VM-018",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1990/lei-ordinaria-8069-1990.md",
+      "titulo": "Estatuto da Crianca e do Adolescente",
+      "tipo": "lei_ordinaria",
+      "numero": "8069",
+      "ano": 1990,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-07-13;8069",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-07-13;8069",
+      "hash_sha256_corpo_local": "be60143d9c6f1b7abbeab4bdafe48faf6f7360e7a9af17b2234b2279f9aa43f5",
+      "hash_sha256_corpo_observado": "be60143d9c6f1b7abbeab4bdafe48faf6f7360e7a9af17b2234b2279f9aa43f5",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "15.512"
+      ],
+      "relacoes_no_grafo": 52,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-13146-2015",
+      "matrix_id": "VM-022",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2015/lei-ordinaria-13146-2015.md",
+      "titulo": "Estatuto da Pessoa com Deficiencia",
+      "tipo": "lei_ordinaria",
+      "numero": "13146",
+      "ano": 2015,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-07-06;13146",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-07-06;13146",
+      "hash_sha256_corpo_local": "fab2746a3de5c0d456f41bc58f020267e1dce500479d70e8f162a19d3c54b399",
+      "hash_sha256_corpo_observado": "fab2746a3de5c0d456f41bc58f020267e1dce500479d70e8f162a19d3c54b399",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 34,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-11343-2006",
+      "matrix_id": "VM-024",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2006/lei-ordinaria-11343-2006.md",
+      "titulo": "Lei Antidrogas",
+      "tipo": "lei_ordinaria",
+      "numero": "11343",
+      "ano": 2006,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-08-23;11343",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-08-23;11343",
+      "hash_sha256_corpo_local": "0d739fb8f3c9bcfa0d6bdbcc327663fc6d618fcd69bcf94af2ce1d674124f9bb",
+      "hash_sha256_corpo_observado": "0d739fb8f3c9bcfa0d6bdbcc327663fc6d618fcd69bcf94af2ce1d674124f9bb",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "13.964"
+      ],
+      "relacoes_no_grafo": 6,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14133-2021",
+      "matrix_id": "VM-026",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14133-2021.md",
+      "titulo": "Lei nº 14.133, de 1º de abril de 2021",
+      "tipo": "lei_ordinaria",
+      "numero": "14133",
+      "ano": 2021,
+      "prioridade": "P0",
+      "fonte_oficial": "https://planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "source_conflict",
+      "source_resolution_status": "approved",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+      "hash_sha256_corpo_local": "6687c8f3254bfa26ce8848073388c82d6077b7be6b5038b1393acdabd31c6fa0",
+      "hash_sha256_corpo_observado": "6687c8f3254bfa26ce8848073388c82d6077b7be6b5038b1393acdabd31c6fa0",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 8,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_complementar-101-2000",
+      "matrix_id": "VM-027",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2000/lei-complementar-101-2000.md",
+      "titulo": "Lei de Responsabilidade Fiscal",
+      "tipo": "lei_complementar",
+      "numero": "101",
+      "ano": 2000,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2000-05-04;101",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2000-05-04;101",
+      "hash_sha256_corpo_local": "cc299afd33e641565333fcdde353aa2352a3fbdd5a61b9a5294c0256e712263f",
+      "hash_sha256_corpo_observado": "cc299afd33e641565333fcdde353aa2352a3fbdd5a61b9a5294c0256e712263f",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 24,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-8112-1990",
+      "matrix_id": "VM-029",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1990/lei-ordinaria-8112-1990.md",
+      "titulo": "Regime Juridico dos Servidores Publicos Civis da Uniao",
+      "tipo": "lei_ordinaria",
+      "numero": "8112",
+      "ano": 1990,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-12-11;8112",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-12-11;8112",
+      "hash_sha256_corpo_local": "ddc2ef10c0af1ab7b6998bb1c1b2ce04a0da9f0a26bd5317fd2654d2996dcd36",
+      "hash_sha256_corpo_observado": "ddc2ef10c0af1ab7b6998bb1c1b2ce04a0da9f0a26bd5317fd2654d2996dcd36",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 4,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-11340-2006",
+      "matrix_id": "VM-030",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2006/lei-ordinaria-11340-2006.md",
+      "titulo": "Lei Maria da Penha",
+      "tipo": "lei_ordinaria",
+      "numero": "11340",
+      "ano": 2006,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-08-07;11340",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-08-07;11340",
+      "hash_sha256_corpo_local": "a76066cfc4b648376389629dd24cc9c2049d99f053a51b261860335cb870fcfd",
+      "hash_sha256_corpo_observado": "a76066cfc4b648376389629dd24cc9c2049d99f053a51b261860335cb870fcfd",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 6,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_complementar-225-2026",
+      "matrix_id": "VM-036",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2026/lei-complementar-225-2026.md",
+      "titulo": "Lei Complementar nº 225, de 8 de janeiro de 2026",
+      "tipo": "lei_complementar",
+      "numero": "225",
+      "ano": 2026,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2026-01-08;225",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "source_conflict",
+      "source_resolution_status": "approved",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2026-01-08;225",
+      "hash_sha256_corpo_local": "9f86d45542c9339be23ee71d1871c9c22433c646ca9fa51b8c1e52d41872eb9e",
+      "hash_sha256_corpo_observado": "9f86d45542c9339be23ee71d1871c9c22433c646ca9fa51b8c1e52d41872eb9e",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 11,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-8906-1994",
+      "matrix_id": "VM-037",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1994/lei-ordinaria-8906-1994.md",
+      "titulo": "Estatuto da Advocacia e da OAB",
+      "tipo": "lei_ordinaria",
+      "numero": "8906",
+      "ano": 1994,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1994-07-04;8906",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1994-07-04;8906",
+      "hash_sha256_corpo_local": "6ff5305351570913412dcdea534f6de81ad6ff0903bcfcb7977fca47fca0cff4",
+      "hash_sha256_corpo_observado": "6ff5305351570913412dcdea534f6de81ad6ff0903bcfcb7977fca47fca0cff4",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 4,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-7210-1984",
+      "matrix_id": "VM-044",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1984/lei-ordinaria-7210-1984.md",
+      "titulo": "Lei de Execucao Penal",
+      "tipo": "lei_ordinaria",
+      "numero": "7210",
+      "ano": 1984,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1984-07-11;7210",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1984-07-11;7210",
+      "hash_sha256_corpo_local": "f3b45b1e7629c83a2b7962b39769011d3e6df0b2832677b86e6a6ef18133ec8c",
+      "hash_sha256_corpo_observado": "f3b45b1e7629c83a2b7962b39769011d3e6df0b2832677b86e6a6ef18133ec8c",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "15.295",
+        "13.964"
+      ],
+      "relacoes_no_grafo": 10,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-9784-1999",
+      "matrix_id": "VM-045",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1999/lei-ordinaria-9784-1999.md",
+      "titulo": "Lei do Processo Administrativo Federal",
+      "tipo": "lei_ordinaria",
+      "numero": "9784",
+      "ano": 1999,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1999-01-29;9784",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1999-01-29;9784",
+      "hash_sha256_corpo_local": "39af0679ab65a989ec17f809e04834baeabd47e3c440fb557ff5bcf8a700053d",
+      "hash_sha256_corpo_observado": "39af0679ab65a989ec17f809e04834baeabd47e3c440fb557ff5bcf8a700053d",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 2,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-13709-2018",
+      "matrix_id": "VM-050",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2018/lei-ordinaria-13709-2018.md",
+      "titulo": "Lei Geral de Protecao de Dados Pessoais",
+      "tipo": "lei_ordinaria",
+      "numero": "13709",
+      "ano": 2018,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2018-08-14;13709",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2018-08-14;13709",
+      "hash_sha256_corpo_local": "9ffb3c39186660ed1196f20a466dabcebf066aba55784e505a65ee9a7e6c367e",
+      "hash_sha256_corpo_observado": "9ffb3c39186660ed1196f20a466dabcebf066aba55784e505a65ee9a7e6c367e",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 4,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-12850-2013",
+      "matrix_id": "VM-052",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12850-2013.md",
+      "titulo": "Lei de Organizacoes Criminosas",
+      "tipo": "lei_ordinaria",
+      "numero": "12850",
+      "ano": 2013,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-08-02;12850",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-08-02;12850",
+      "hash_sha256_corpo_local": "a54d4c6f92e22ad2b784dd723d563132186a11107009688364eea21fc4ff1abd",
+      "hash_sha256_corpo_observado": "a54d4c6f92e22ad2b784dd723d563132186a11107009688364eea21fc4ff1abd",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "13.964"
+      ],
+      "relacoes_no_grafo": 10,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-8072-1990",
+      "matrix_id": "VM-053",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1990/lei-ordinaria-8072-1990.md",
+      "titulo": "Lei dos Crimes Hediondos",
+      "tipo": "lei_ordinaria",
+      "numero": "8072",
+      "ano": 1990,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-07-25;8072",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-07-25;8072",
+      "hash_sha256_corpo_local": "e028f142544916c4e9db7882725354171e9c96afb62564f634e7db4ab74fdfb9",
+      "hash_sha256_corpo_observado": "e028f142544916c4e9db7882725354171e9c96afb62564f634e7db4ab74fdfb9",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "13.964"
+      ],
+      "relacoes_no_grafo": 26,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-9099-1995",
+      "matrix_id": "VM-054",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1995/lei-ordinaria-9099-1995.md",
+      "titulo": "Lei dos Juizados Especiais",
+      "tipo": "lei_ordinaria",
+      "numero": "9099",
+      "ano": 1995,
+      "prioridade": "P0",
+      "fonte_oficial": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-09-26;9099",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "normas-leg-br",
+      "selected_source_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-09-26;9099",
+      "hash_sha256_corpo_local": "8ce848a2caeafb1b6a5caca904df183ded156252827fcf4510468d0b5132dab5",
+      "hash_sha256_corpo_observado": "8ce848a2caeafb1b6a5caca904df183ded156252827fcf4510468d0b5132dab5",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 4,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-12846-2013",
+      "matrix_id": "VM-361",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12846-2013.md",
+      "titulo": "Lei nº 12.846, de 1º de agosto de 2013",
+      "tipo": "lei_ordinaria",
+      "numero": "12846",
+      "ano": 2013,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm",
+      "hash_sha256_corpo_local": "3b1c9091f0f74d0ebb6a8176112546f42667ab2a243878954d0e5d910a516754",
+      "hash_sha256_corpo_observado": "3b1c9091f0f74d0ebb6a8176112546f42667ab2a243878954d0e5d910a516754",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14195-2021",
+      "matrix_id": "VM-362",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14195-2021.md",
+      "titulo": "Lei nº 14.195, de 26 de agosto de 2021",
+      "tipo": "lei_ordinaria",
+      "numero": "14195",
+      "ano": 2021,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14195.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14195.htm",
+      "hash_sha256_corpo_local": "31cc06059d61231cc6611a10157a8dc1575b900c215864805a28978148cd0939",
+      "hash_sha256_corpo_observado": "31cc06059d61231cc6611a10157a8dc1575b900c215864805a28978148cd0939",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 58,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-13964-2019",
+      "matrix_id": "VM-363",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2019/lei-ordinaria-13964-2019.md",
+      "titulo": "Lei nº 13.964, de 24 de dezembro de 2019",
+      "tipo": "lei_ordinaria",
+      "numero": "13964",
+      "ano": 2019,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm",
+      "hash_sha256_corpo_local": "5927c5f8f3288d26571061cfb1c939d503e644178ec750857c0b83d7cc34b37d",
+      "hash_sha256_corpo_observado": "5927c5f8f3288d26571061cfb1c939d503e644178ec750857c0b83d7cc34b37d",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "13.964"
+      ],
+      "relacoes_no_grafo": 56,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    }
+  ]
+}

@@ -22,7 +22,7 @@ origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "e97cd5f216afbc37da253bb8481e3bbf6fc98cb136e00d650ab4747fa428259d"
 alterada_por: ["br-federal-lei_complementar-147-2014"]
-revogada_por: ["br-federal-decreto_lei-3689-1941"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

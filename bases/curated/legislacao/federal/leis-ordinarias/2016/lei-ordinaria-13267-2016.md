@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2016-04-06"
 ementa: "Disciplina a criação e a organização das associações denominadas empresas juniores, com funcionamento perante instituições de ensino superior."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-04-06;13267"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "cabe17342d6ade40884a1cd7859c81823591aca95ab3437ae9556b39a03bd94c"
+sha256_origem: "e62047b1982970d2ba08925116febb059d1d90d950a41f19119c5edf031cb5fa"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,14 +28,12 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "e62047b1982970d2ba08925116febb059d1d90d950a41f19119c5edf031cb5fa"
+sha256_corpo: "505342d30b683f2b45fcbd60c8dd569597c2c583e0fc6c263084dea3b5cb1725"
 ---
 # Lei nº 13.267 de 06/04/2016
 
-LEI Nº 13.267, DE 6 DE ABRIL DE 2016
-
-Disciplina a criação e a organização das associações denominadas empresas juniores, com funcionamento perante instituições de ensino superior.
-
-**A PRESIDENTA DA REPÚBLICA**
+### A PRESIDENTA DA REPÚBLICA
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -43,15 +41,15 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 2º** Considera-se empresa júnior a entidade organizada nos termos desta Lei, sob a forma de associação civil gerida por estudantes matriculados em cursos de graduação de instituições de ensino superior, com o propósito de realizar projetos e serviços que contribuam para o desenvolvimento acadêmico e profissional dos associados, capacitando-os para o mercado de trabalho.
 
-**§ 1º** A empresa júnior será inscrita como associação civil no Registro Civil das Pessoas Jurídicas e no Cadastro Nacional da Pessoa Jurídica.
+§ 1º A empresa júnior será inscrita como associação civil no Registro Civil das Pessoas Jurídicas e no Cadastro Nacional da Pessoa Jurídica.
 
-**§ 2º** A empresa júnior vincular-se-á a instituição de ensino superior e desenvolverá atividades relacionadas ao campo de abrangência de pelo menos um curso de graduação indicado no estatuto da empresa júnior, nos termos do estatuto ou do regimento interno da instituição de ensino superior, vedada qualquer forma de ligação partidária.
+§ 2º A empresa júnior vincular-se-á a instituição de ensino superior e desenvolverá atividades relacionadas ao campo de abrangência de pelo menos um curso de graduação indicado no estatuto da empresa júnior, nos termos do estatuto ou do regimento interno da instituição de ensino superior, vedada qualquer forma de ligação partidária.
 
 **Art. 3º** Poderão integrar a empresa júnior estudantes regularmente matriculados na instituição de ensino superior e no curso de graduação a que a entidade seja vinculada, desde que manifestem interesse, observados os procedimentos estabelecidos no estatuto.
 
-**§ 1º** (VETADO).
+§ 1º (VETADO).
 
-**§ 2º** Os estudantes matriculados em curso de graduação e associados à respectiva empresa júnior exercem trabalho voluntário, nos termos da Lei nº 9.608, de 18 de fevereiro de 1998.
+§ 2º Os estudantes matriculados em curso de graduação e associados à respectiva empresa júnior exercem trabalho voluntário, nos termos da Lei nº 9.608, de 18 de fevereiro de 1998 .
 
 **Art. 4º** A empresa júnior somente poderá desenvolver atividades que atendam a pelo menos uma das seguintes condições:
 
@@ -59,9 +57,9 @@ I – relacionem-se aos conteúdos programáticos do curso de graduação ou dos
 
 II – constituam atribuição da categoria profissional correspondente à formação superior dos estudantes associados à entidade.
 
-**§ 1º** As atividades desenvolvidas pela empresa júnior deverão ser orientadas e supervisionadas por professores e profissionais especializados, e a empresa, desde que devidamente reconhecida nos termos do art. 9º, terá gestão autônoma em relação à direção da faculdade, ao centro acadêmico e a qualquer outra entidade acadêmica.
+§ 1º As atividades desenvolvidas pela empresa júnior deverão ser orientadas e supervisionadas por professores e profissionais especializados, e a empresa, desde que devidamente reconhecida nos termos do art. 9º, terá gestão autônoma em relação à direção da faculdade, ao centro acadêmico e a qualquer outra entidade acadêmica.
 
-**§ 2º** A empresa júnior poderá cobrar pela elaboração de produtos e pela prestação de serviços independentemente de autorização do conselho profissional regulamentador de sua área de atuação profissional, ainda que esse seja regido por legislação específica, desde que essas atividades sejam acompanhadas por professores orientadores da instituição de ensino superior ou supervisionadas por profissionais habilitados.
+§ 2º A empresa júnior poderá cobrar pela elaboração de produtos e pela prestação de serviços independentemente de autorização do conselho profissional regulamentador de sua área de atuação profissional, ainda que esse seja regido por legislação específica, desde que essas atividades sejam acompanhadas por professores orientadores da instituição de ensino superior ou supervisionadas por profissionais habilitados.
 
 **Art. 5º** A empresa júnior, cujos fins são educacionais e não lucrativos, terá, além de outros específicos, os seguintes objetivos:
 
@@ -103,9 +101,9 @@ I – captar recursos financeiros para seus integrantes por intermédio da reali
 
 II – propagar qualquer forma de ideologia ou pensamento político-partidário.
 
-**§ 1º** A renda obtida com os projetos e serviços prestados pela empresa júnior deverá ser revertida exclusivamente para o incremento das atividades-fim da empresa.
+§ 1º A renda obtida com os projetos e serviços prestados pela empresa júnior deverá ser revertida exclusivamente para o incremento das atividades-fim da empresa.
 
-**§ 2º** É permitida a contratação de empresa júnior por partidos políticos para a prestação de serviços de consultoria e de publicidade.
+§ 2º É permitida a contratação de empresa júnior por partidos políticos para a prestação de serviços de consultoria e de publicidade.
 
 **Art. 8º** A empresa júnior deverá comprometer-se a:
 
@@ -123,24 +121,24 @@ VI – captar clientela com base na qualidade dos serviços e na competitividade
 
 **Art. 9º** O reconhecimento de empresa júnior por instituição de ensino superior dar-se-á conforme as normas internas dessa instituição e nos termos deste artigo.
 
-**§ 1º** Competirá ao órgão colegiado da unidade de ensino da instituição de ensino superior a aprovação do plano acadêmico da empresa júnior, cuja elaboração deverá contar com a participação do professor orientador e dos estudantes envolvidos na iniciativa júnior.
+§ 1º Competirá ao órgão colegiado da unidade de ensino da instituição de ensino superior a aprovação do plano acadêmico da empresa júnior, cuja elaboração deverá contar com a participação do professor orientador e dos estudantes envolvidos na iniciativa júnior.
 
-**§ 2º** O plano acadêmico indicará, entre outros, os seguintes aspectos educacionais e estruturais da empresa júnior e da instituição de ensino superior:
+§ 2º O plano acadêmico indicará, entre outros, os seguintes aspectos educacionais e estruturais da empresa júnior e da instituição de ensino superior:
 
 I – reconhecimento da carga horária dedicada pelo professor orientador;
 
 II – suporte institucional, técnico e material necessário ao início das atividades da empresa júnior.
 
-**§ 3º** A instituição de ensino superior é autorizada a ceder espaço físico a título gratuito, dentro da própria instituição, que servirá de sede para as atividades de assessoria e consultoria geridas pelos estudantes empresários juniores.
+§ 3º A instituição de ensino superior é autorizada a ceder espaço físico a título gratuito, dentro da própria instituição, que servirá de sede para as atividades de assessoria e consultoria geridas pelos estudantes empresários juniores.
 
-**§ 4º** As atividades da empresa júnior serão inseridas no conteúdo acadêmico da instituição de ensino superior preferencialmente como atividade de extensão.
+§ 4º As atividades da empresa júnior serão inseridas no conteúdo acadêmico da instituição de ensino superior preferencialmente como atividade de extensão.
 
-**§ 5º** Competirá ao órgão colegiado da instituição de ensino superior criar normas para disciplinar sua relação com a empresa júnior, assegurada a participação de representantes das empresas juniores na elaboração desse regramento.
+§ 5º Competirá ao órgão colegiado da instituição de ensino superior criar normas para disciplinar sua relação com a empresa júnior, assegurada a participação de representantes das empresas juniores na elaboração desse regramento.
 
 **Art. 10.** Esta Lei entra em vigor na data de sua publicação.
 
 Brasília, 6 de abril de 2016; 195º da Independência e 128º da República.
 
-**DILMA ROUSSEFF**
+### DILMA ROUSSEFF
 
 Nelson Barbosa

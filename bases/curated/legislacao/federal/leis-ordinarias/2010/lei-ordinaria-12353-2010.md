@@ -12,15 +12,15 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2010-12-28"
 ementa: "Dispõe sobre a participação de empregados nos conselhos de administração das empresas públicas e sociedades de economia mista, suas subsidiárias e controladas e demais empresas em que a União, direta ou indiretamente, detenha a maioria do capital social com direito a voto e dá outras providências."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2010-12-28;12353"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "d226154fd563ad93bcc7852474c6c55b1aa3f307f1578a25a7b4183af2f0f70c"
+sha256_origem: "5602dfd46cb16e4938e664b286f47dd1485faf02e1bea036832b72bd630599ab"
 alterada_por: []
 revogada_por: []
 regulamentada_por: []
@@ -28,14 +28,16 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "5602dfd46cb16e4938e664b286f47dd1485faf02e1bea036832b72bd630599ab"
+sha256_corpo: "4a6972a5158943d665ef62bc185cf11949eaf3b97ff0dae7b4dadef0bc997aa7"
 ---
 # Lei nº 12.353 de 28/12/2010
 
-**LEI Nº- 12.353, DE 28 DE DEZEMBRO DE 2010**
+### LEI Nº - 12.353, DE 28 DE DEZEMBRO DE 2010
 
-***Dispõe sobre a participação de empregados nos conselhos de administração das empresas públicas e sociedades de economia mista, suas subsidiárias e controladas e demais empresas em que a União, direta ou indiretamente, detenha a maioria do capital social com direito a voto e dá outras providências.***
+Dispõe sobre a participação de empregados nos conselhos de administração das empresas públicas e sociedades de economia mista, suas subsidiárias e controladas e demais empresas em que a União, direta ou indiretamente, detenha a maioria do capital social com direito a voto e dá outras providências.
 
-O P R E S I D E N T E D A R E P Ú B L I C A
+### O P R E S I D E N T E D A R E P Ú B L I C A
 
 Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
@@ -43,11 +45,11 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 2º** Os estatutos das empresas públicas e sociedades de economia mista de que trata esta Lei deverão prever a participação nos seus conselhos de administração de representante dos trabalhadores, assegurado o direito da União de eleger a maioria dos seus membros.
 
-**§ 1º** O representante dos trabalhadores será escolhido dentre os empregados ativos da empresa pública ou sociedade de economia mista, pelo voto direto de seus pares, em eleição organizada pela empresa em conjunto com as entidades sindicais que os representem.
+§ 1º O representante dos trabalhadores será escolhido dentre os empregados ativos da empresa pública ou sociedade de economia mista, pelo voto direto de seus pares, em eleição organizada pela empresa em conjunto com as entidades sindicais que os representem.
 
-**§ 2º** O representante dos empregados está sujeito a todos os critérios e exigências para o cargo de conselheiro de administração previstos em lei e no estatuto da respectiva empresa.
+§ 2º O representante dos empregados está sujeito a todos os critérios e exigências para o cargo de conselheiro de administração previstos em lei e no estatuto da respectiva empresa.
 
-**§ 3º** Sem prejuízo da vedação aos administradores de intervirem em qualquer operação social em que tiverem interesse conflitante com o da empresa, o conselheiro de administração representante dos empregados não participará das discussões e deliberações sobre assuntos que envolvam relações sindicais, remuneração, benefícios e vantagens, inclusive matérias de previdência complementar e assistenciais, hipóteses em que fica configurado o conflito de interesse.
+§ 3º Sem prejuízo da vedação aos administradores de intervirem em qualquer operação social em que tiverem interesse conflitante com o da empresa, o conselheiro de administração representante dos empregados não participará das discussões e deliberações sobre assuntos que envolvam relações sindicais, remuneração, benefícios e vantagens, inclusive matérias de previdência complementar e assistenciais, hipóteses em que fica configurado o conflito de interesse.
 
 **Art. 3º** No caso de os representantes do acionista majoritário deixarem de totalizar a maioria dos membros do conselho de administração, em razão da modificação da composição do colegiado para fins de cumprimento ao disposto nesta Lei, fica autorizado o aumento suficiente do número de conselheiros para assegurar o direito do acionista controlador de eleger a maioria dos conselheiros.
 
@@ -55,7 +57,7 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 **Art. 5º** O disposto nesta Lei não se aplica às empresas que tenham um número inferior a 200 (duzentos) empregados próprios.
 
-**Art. 6º** Observar-se-á, quanto aos direitos e deveres dos membros dos conselhos de que trata esta Lei e ao respectivo funcionamento, o disposto na Lei no 6.404, de 15 de dezembro de 1976, no que couber.
+**Art. 6º** Observar-se-á, quanto aos direitos e deveres dos membros dos conselhos de que trata esta Lei e ao respectivo funcionamento, o disposto na Lei n o 6.404, de 15 de dezembro de 1976, no que couber.
 
 **Art. 7º** O Poder Executivo, por intermédio do Ministério do Planejamento, Orçamento e Gestão, editará as instruções necessárias ao cumprimento do disposto nesta Lei.
 
@@ -65,6 +67,6 @@ Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
 
 Brasília, 28 de dezembro de 2010; 189º da Independência e 122º da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
-*Paulo Bernardo Silva*
+Paulo Bernardo Silva

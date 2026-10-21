@@ -21,8 +21,8 @@ fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
 sha256_origem: "e591a9896dd0c9606c8e4425115d76b0600244b96d3501cb3a5414baa4c6a471"
-alterada_por: ["br-federal-lei_ordinaria-4090-1962"]
-revogada_por: ["br-federal-lei_ordinaria-8009-1990", "br-federal-lei_ordinaria-8213-1991"]
+alterada_por: []
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []

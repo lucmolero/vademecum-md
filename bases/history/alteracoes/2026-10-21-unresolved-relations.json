@@ -1,0 +1,33 @@
+{
+  "schema": "unresolved-relation-classification/v1",
+  "generated_at": "2026-10-21",
+  "total": 2177,
+  "by_classification": {
+    "out_of_matrix": 2177
+  },
+  "by_relation": {
+    "alterada_por": 1765,
+    "revogada_por": 317,
+    "retificada_por": 4,
+    "suspende": 1,
+    "regulamentada_por": 2,
+    "revoga": 59,
+    "altera": 28,
+    "regulamenta": 1
+  },
+  "by_referenced_role": {
+    "ato_alterador_ou_regulamentador": 2088,
+    "diploma_referenciado": 89
+  },
+  "by_source_priority": {
+    "P0": 681,
+    "P1": 1460,
+    "P2": 36
+  },
+  "by_editorial_disposition": {
+    "historico": 2088,
+    "grafo": 89
+  },
+  "classification_method": "target type and number were checked against the curated corpus; no matching target was found",
+  "policy": "autonomous_disposition; no candidate is added to the curated matrix by inference"
+}

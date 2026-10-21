@@ -1,0 +1,494 @@
+{
+  "schema": "candidate-normative-diff/v1",
+  "matrix_id": "VM-092",
+  "document_id": "br-federal-lei_complementar-224-2025",
+  "status": "source_conflict",
+  "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+  "source_status_before_resolution": "source_conflict",
+  "resolution": {
+    "status": "approved",
+    "selected_source_id": "normas-leg-br",
+    "expected_source_sha256": "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0",
+    "reason": "Both official sources expose the same 14-article instrument; the differences are punctuation, spacing and HTML presentation. The current Normas compilation is selected as the cleaner machine-readable body.",
+    "review_scope": "article_level_comparison"
+  },
+  "selected_source_id": "normas-leg-br",
+  "diff_status": "generated",
+  "current_path": "bases/curated/legislacao/federal/leis-complementares/2025/lei-complementar-224-2025.md",
+  "structure": {
+    "artigos": {
+      "total_anterior": 14,
+      "total_atual": 14,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 11,
+      "inalterados": 3
+    },
+    "detalhes": [
+      {
+        "artigo": "1",
+        "status": "alterado",
+        "hash_anterior": "25a612e81d9488dcf301b29d58b2f370630b043849d90c5bd8ae2a12e9da787f",
+        "hash_atual": "3e194f555f61024c046e2d1774b43b112c2a84c4c014f4560611adebfbc60156",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "2",
+        "status": "alterado",
+        "hash_anterior": "9e7ddba233c1ee83d892730a6feff40a808b1161a8954e800459ac488e91d2cb",
+        "hash_atual": "8be3ed648bb71359c35b0e490252275167e8b9bcf5a0e5f05629d6d0a1d3697b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 4
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 3
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "3",
+        "status": "alterado",
+        "hash_anterior": "942411d56acc3da7e9a2f66e10f03f5be3cebdd79f7d2de65d464255adb81b2d",
+        "hash_atual": "62d0b2288ac8db9740956703b22cd13fe3dfe9ea970a5e14336b7e3c9283d99e",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "4",
+        "status": "alterado",
+        "hash_anterior": "c66277728921a57a8e17ef75c4c414440726f6cb25b793a2c351eed59259d639",
+        "hash_atual": "5c0bd0b1852e84f1c7e8bdeb139fd6fe94e9d82f7e85f3faea3d397d524f482a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 8
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 12
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "5",
+        "status": "alterado",
+        "hash_anterior": "04081c3baf863a883f8b690debabe5a24a2ebd9b3042ec08aa736ae76212faec",
+        "hash_atual": "2069f7169d91bb90c67fdfe225f0f2a6fd74ef57cf3c46f1a276f18069819a7c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "6",
+        "status": "alterado",
+        "hash_anterior": "98ecc5865f42a9d5409e79c984e47cc383f807649f9ff6121542cc5b23b8477b",
+        "hash_atual": "88786b36901f91389ec207e0416f81a76d02d3f194aedbf57f4a34f60fa3e0a6",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "7",
+        "status": "alterado",
+        "hash_anterior": "fafa841d03c0d47cd3a0f51f71dc3f7f259c21a3e591831b0d5a3aa44e5565f8",
+        "hash_atual": "7b0b6af17c4d97869296f9abd88dd9fdc3962932912018134f21913e75f3b883",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "8",
+        "status": "alterado",
+        "hash_anterior": "ebc0f9896f47bf1dcf812bb82c2655a482f0c06f39c7682a501a652d5151a919",
+        "hash_atual": "7fb46aacfb8c60f4298d46f18f2203aa1bc21e74147a4a9b19e84005de718fc6",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "9",
+        "status": "alterado",
+        "hash_anterior": "067479ab7a083fc7fad263fa2b4622575611dde424a1931e92666ef8d735ada2",
+        "hash_atual": "01a558f7cd24dbf5316791faec0b458dc19561da3d2d374b9b81d9de2f0d7fdf",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "11",
+        "status": "alterado",
+        "hash_anterior": "5d848b7240eeb7c9fb33bfc8735050067fac1d9583550bdd14a1a9873f62c49f",
+        "hash_atual": "53429455fbf5a933137263be8e03e2a5e76e68b11a93af12af8bfb87753ddaf8",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 1
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "14",
+        "status": "alterado",
+        "hash_anterior": "fa60f47c3888e9ddfb40614f017b3e6763546846c70383d6dd6e4f764cd8ca17",
+        "hash_atual": "acae31b5ce701fa91f48b8b16d2735da7b90ced06af793dcd5a3a164a48bc059",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 2
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      }
+    ]
+  },
+  "classificacao": [
+    "decisao_de_fonte_aprovada",
+    "alteracao_normativa",
+    "possivel_veto",
+    "possivel_efeito_de_vigencia"
+  ],
+  "hashes": {
+    "current_body_sha256": "1071308ee91d39b61558f07a7e55c9b76ff4d7ce47b0e190a05dc05b248fcdb9",
+    "candidate_body_sha256": "4263b50d4d021e3ef2288fb86edaa6125ba91dd84b28b48bb968678c986ce4f1",
+    "source_raw_sha256": "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0",
+    "source_normalized_sha256": "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0",
+    "source_legal_body_sha256": "8326e101b0f8a81578d7f254c3d34a2d00c79647d7e9c8345ee6e54c94f21dca"
+  },
+  "risk": "alto",
+  "relations_before": [
+    {
+      "source_id": "br-federal-lei_complementar-101-2000",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-224-2025",
+      "dispositivo": null,
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2000-05-04;101",
+      "evidencia_textual": "erá a estimativa global de incentivos e benefícios de natureza tributária, financeira e creditícia e para pessoas físicas e jurídicas; e (Inciso acrescido pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026) V - conterá, em anexo, a estimativa das despesas financeiras e das des",
+      "evidencia_sha256": "d37f6cd2258a6189b1bafdef7a9ff893d266ab23bbd1d175d3758a917ad55c7d",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-101-2000",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-224-2025",
+      "dispositivo": "art. 153",
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2000-05-04;101",
+      "evidencia_textual": "otas dos impostos previstos nos incisos I, II, IV e V do caput do art. 153 da Constituição Federal, na forma do § 1º do referido artigo. (Artigo acrescido pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026) #### CAPÍTULO IV ### DA DESPESA PÚBLICA ##### Seção I Da Geração da",
+      "evidencia_sha256": "906a8cee3643f2f796d399873e3212149ab6aed03f54948ddb34de8e2e68280a",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-105-2001",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-224-2025",
+      "dispositivo": null,
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2001-01-10;105",
+      "evidencia_textual": "ão de incentivo ou benefício de natureza tributária, financeira ou creditícia que implique diminuição de receita ou aumento de despesa. *(Inciso acrescido pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026)* **§ 4º** A quebra de sigilo poderá ser decretada, quando necessária p",
+      "evidencia_sha256": "befd250698828c16a2626e5091df7e6e8b1ec845da45fe06f41070a9f3f40f8f",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-224-2025",
+      "type": "altera",
+      "target_id": "br-federal-lei_complementar-101-2000",
+      "dispositivo": null,
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+      "evidencia_textual": "erá a estimativa global de incentivos e benefícios de natureza tributária, financeira e creditícia e para pessoas físicas e jurídicas; e (Inciso acrescido pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026) V - conterá, em anexo, a estimativa das despesas financeiras e das des",
+      "evidencia_sha256": "d37f6cd2258a6189b1bafdef7a9ff893d266ab23bbd1d175d3758a917ad55c7d",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-224-2025",
+      "type": "altera",
+      "target_id": "br-federal-lei_complementar-101-2000",
+      "dispositivo": "art. 153",
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+      "evidencia_textual": "otas dos impostos previstos nos incisos I, II, IV e V do caput do art. 153 da Constituição Federal, na forma do § 1º do referido artigo. (Artigo acrescido pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026) #### CAPÍTULO IV ### DA DESPESA PÚBLICA ##### Seção I Da Geração da",
+      "evidencia_sha256": "906a8cee3643f2f796d399873e3212149ab6aed03f54948ddb34de8e2e68280a",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-224-2025",
+      "type": "altera",
+      "target_id": "br-federal-lei_complementar-105-2001",
+      "dispositivo": null,
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+      "evidencia_textual": "ão de incentivo ou benefício de natureza tributária, financeira ou creditícia que implique diminuição de receita ou aumento de despesa. *(Inciso acrescido pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026)* **§ 4º** A quebra de sigilo poderá ser decretada, quando necessária p",
+      "evidencia_sha256": "befd250698828c16a2626e5091df7e6e8b1ec845da45fe06f41070a9f3f40f8f",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-224-2025",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-7689-1988",
+      "dispositivo": null,
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+      "evidencia_textual": "ciso I do § 1º do art. 1º da Lei Complementar nº 105, de 10 de janeiro de 2001; *(Inciso acrescido pela Lei nº 14.183, de 14/7/2021, com nova redação dada pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir do primeiro dia do quarto mês subsequente ao de sua publicação)* II-B - no caso das",
+      "evidencia_sha256": "a6a59f2c9ef59a5d228309337045cc3464807a54de397cae6c01ce6403a3e4a6",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-224-2025",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-8137-1990",
+      "dispositivo": "art. 150",
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+      "evidencia_textual": "crime relacionado a bens alcançados pelas imunidades tributárias dispostas no inciso VI do *caput* do art. 150 da Constituição Federal. *(Inciso acrescido pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026)* **Art. 13.** (VETADO). **Art. 14.** *(Revogado pela Lei nº 8.383 de",
+      "evidencia_sha256": "1b0e09c325c5b044fce1de2bd07b068d909abe9d986a8457903f5474d2d7f947",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_complementar-224-2025",
+      "type": "altera",
+      "target_id": "br-federal-lei_ordinaria-9249-1995",
+      "dispositivo": null,
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+      "evidencia_textual": "fonte à alíquota de 17,5% (dezessete inteiros e cinco décimos por cento) na data do pagamento ou do crédito ao beneficiário. *(Parágrafo com redação dada pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026)* **§ 3º** O imposto retido na fonte será considerado: I - antecipação",
+      "evidencia_sha256": "3a27bbf8a151fe15424f510f9500a0ebc6ca1903766b399bb8a5811e925af5f9",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-7689-1988",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-224-2025",
+      "dispositivo": null,
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1988-12-15;7689",
+      "evidencia_textual": "ciso I do § 1º do art. 1º da Lei Complementar nº 105, de 10 de janeiro de 2001; *(Inciso acrescido pela Lei nº 14.183, de 14/7/2021, com nova redação dada pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir do primeiro dia do quarto mês subsequente ao de sua publicação)* II-B - no caso das",
+      "evidencia_sha256": "a6a59f2c9ef59a5d228309337045cc3464807a54de397cae6c01ce6403a3e4a6",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-8137-1990",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-224-2025",
+      "dispositivo": "art. 150",
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-12-27;8137",
+      "evidencia_textual": "crime relacionado a bens alcançados pelas imunidades tributárias dispostas no inciso VI do *caput* do art. 150 da Constituição Federal. *(Inciso acrescido pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026)* **Art. 13.** (VETADO). **Art. 14.** *(Revogado pela Lei nº 8.383 de",
+      "evidencia_sha256": "1b0e09c325c5b044fce1de2bd07b068d909abe9d986a8457903f5474d2d7f947",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-9249-1995",
+      "type": "alterada_por",
+      "target_id": "br-federal-lei_complementar-224-2025",
+      "dispositivo": null,
+      "data_efeito": "2025-12-26",
+      "fonte": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-12-26;9249",
+      "evidencia_textual": "fonte à alíquota de 17,5% (dezessete inteiros e cinco décimos por cento) na data do pagamento ou do crédito ao beneficiário. *(Parágrafo com redação dada pela Lei Complementar nº 224, de 26/12/2025, publicada na Edição Extra B do DOU de 26/12/2025, produzindo efeitos a partir de 1º/1/2026)* **§ 3º** O imposto retido na fonte será considerado: I - antecipação",
+      "evidencia_sha256": "3a27bbf8a151fe15424f510f9500a0ebc6ca1903766b399bb8a5811e925af5f9",
+      "confianca": "alta",
+      "status_revisao": "aprovado_autonomamente"
+    }
+  ],
+  "relation_impact_count": 12,
+  "source_evidence": {
+    "data_corte": "2026-10-21",
+    "primary_url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+    "selected_source_id": "normas-leg-br",
+    "attempts": [
+      {
+        "source_id": "planalto-br",
+        "adapter": "planalto_html",
+        "adapter_version": "0.1.0",
+        "authority": "primary",
+        "status": "fetched",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm",
+        "final_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 87083,
+        "sha256_raw": "26f706abc3e594c591ddb69271523c229ebc8e6c4437bd4e9af173378c1e62b1",
+        "sha256_normalized": "d93a98648c2845c5eb2c70d72dbe7cea19c079f553a5e8c3d7c88f5e4c8ae8c6",
+        "sha256_body": "a96cfee1a2aa103ee55b7f988595eb06d169a8e3689484728df705b3031e8d9e"
+      },
+      {
+        "source_id": "normas-leg-br",
+        "adapter": "normas_leg_current_compilation",
+        "adapter_version": "0.2.0",
+        "authority": "official_machine_readable_compilation",
+        "status": "fetched",
+        "url": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+        "fetch_url": "https://normas.leg.br/api/public/binario/09d5affc-99ea-4e43-a4e1-58b9079fc1a9/texto",
+        "metadata_url": "https://normas.leg.br/api/public/normas?urn=urn%3Alex%3Abr%3Afederal%3Alei.complementar%3A2025-12-26%3B224&tipo_documento=maior-detalhe",
+        "final_url": "https://normas.leg.br/api/public/binario/09d5affc-99ea-4e43-a4e1-58b9079fc1a9/texto",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes": 74057,
+        "sha256_raw": "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0",
+        "sha256_normalized": "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0",
+        "sha256_body": "8326e101b0f8a81578d7f254c3d34a2d00c79647d7e9c8345ee6e54c94f21dca"
+      }
+    ]
+  }
+}

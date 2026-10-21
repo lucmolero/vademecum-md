@@ -1,0 +1,796 @@
+{
+  "schema": "editorial-legal-audit/v1",
+  "generated_at": "2026-10-21",
+  "scope": "15 curated documents from the supplied official-source report",
+  "method": "official current-source retrieval plus deterministic identity, integrity and legal-body hash checks",
+  "authority_policy": "only official public sources are used as textual authority",
+  "document_count": 15,
+  "approved_count": 15,
+  "reconciliation_count": 0,
+  "source_status": {
+    "unchanged": 15
+  },
+  "situation_results": {
+    "diploma_em_vigor_com_alteracoes_preservadas": 14,
+    "parcialmente_revogada_com_dispositivos_remanescentes": 1
+  },
+  "errors": [],
+  "status": "pass",
+  "documents": [
+    {
+      "document_id": "br-federal-lei_ordinaria-12846-2013",
+      "matrix_id": "VM-361",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12846-2013.md",
+      "titulo": "Lei nº 12.846, de 1º de agosto de 2013",
+      "tipo": "lei_ordinaria",
+      "numero": "12846",
+      "ano": 2013,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm",
+      "hash_sha256_corpo_local": "3b1c9091f0f74d0ebb6a8176112546f42667ab2a243878954d0e5d910a516754",
+      "hash_sha256_corpo_observado": "3b1c9091f0f74d0ebb6a8176112546f42667ab2a243878954d0e5d910a516754",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14195-2021",
+      "matrix_id": "VM-362",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14195-2021.md",
+      "titulo": "Lei nº 14.195, de 26 de agosto de 2021",
+      "tipo": "lei_ordinaria",
+      "numero": "14195",
+      "ano": 2021,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14195.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14195.htm",
+      "hash_sha256_corpo_local": "31cc06059d61231cc6611a10157a8dc1575b900c215864805a28978148cd0939",
+      "hash_sha256_corpo_observado": "31cc06059d61231cc6611a10157a8dc1575b900c215864805a28978148cd0939",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 58,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-13964-2019",
+      "matrix_id": "VM-363",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2019/lei-ordinaria-13964-2019.md",
+      "titulo": "Lei nº 13.964, de 24 de dezembro de 2019",
+      "tipo": "lei_ordinaria",
+      "numero": "13964",
+      "ano": 2019,
+      "prioridade": "P0",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm",
+      "hash_sha256_corpo_local": "5927c5f8f3288d26571061cfb1c939d503e644178ec750857c0b83d7cc34b37d",
+      "hash_sha256_corpo_observado": "5927c5f8f3288d26571061cfb1c939d503e644178ec750857c0b83d7cc34b37d",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "13.964"
+      ],
+      "relacoes_no_grafo": 56,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-10097-2000",
+      "matrix_id": "VM-364",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2000/lei-ordinaria-10097-2000.md",
+      "titulo": "Lei nº 10.097, de 19 de dezembro de 2000",
+      "tipo": "lei_ordinaria",
+      "numero": "10097",
+      "ano": 2000,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/l10097.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/leis/l10097.htm",
+      "hash_sha256_corpo_local": "0789a5b9e0108d90d6b7179d28b41a637bb743b343637092fe8a051150c5bf19",
+      "hash_sha256_corpo_observado": "0789a5b9e0108d90d6b7179d28b41a637bb743b343637092fe8a051150c5bf19",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 14,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-12037-2009",
+      "matrix_id": "VM-365",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2009/lei-ordinaria-12037-2009.md",
+      "titulo": "Lei nº 12.037, de 1º de outubro de 2009",
+      "tipo": "lei_ordinaria",
+      "numero": "12037",
+      "ano": 2009,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12037.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12037.htm",
+      "hash_sha256_corpo_local": "9c5338e50cb2d4b31c469757f8a61b86ceedc59a4b88eb8d1fe2678133de5e3b",
+      "hash_sha256_corpo_observado": "9c5338e50cb2d4b31c469757f8a61b86ceedc59a4b88eb8d1fe2678133de5e3b",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "15.295",
+        "13.964"
+      ],
+      "relacoes_no_grafo": 6,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-12737-2012",
+      "matrix_id": "VM-366",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2012/lei-ordinaria-12737-2012.md",
+      "titulo": "Lei nº 12.737, de 30 de novembro de 2012",
+      "tipo": "lei_ordinaria",
+      "numero": "12737",
+      "ano": 2012,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12737.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12737.htm",
+      "hash_sha256_corpo_local": "357c2a11b89efd0ccb3178fe214f1e0a979252f1c450750166f2b2639136546c",
+      "hash_sha256_corpo_observado": "357c2a11b89efd0ccb3178fe214f1e0a979252f1c450750166f2b2639136546c",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 2,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-11445-2007",
+      "matrix_id": "VM-367",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2007/lei-ordinaria-11445-2007.md",
+      "titulo": "Lei nº 11.445, de 5 de janeiro de 2007",
+      "tipo": "lei_ordinaria",
+      "numero": "11445",
+      "ano": 2007,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11445.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11445.htm",
+      "hash_sha256_corpo_local": "56a8387510e75884e14f79e4edaafe904917d159f4599c7d4bdad8da081bcfd8",
+      "hash_sha256_corpo_observado": "56a8387510e75884e14f79e4edaafe904917d159f4599c7d4bdad8da081bcfd8",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "14.026"
+      ],
+      "relacoes_no_grafo": 8,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-12187-2009",
+      "matrix_id": "VM-368",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2009/lei-ordinaria-12187-2009.md",
+      "titulo": "Lei nº 12.187, de 29 de dezembro de 2009",
+      "tipo": "lei_ordinaria",
+      "numero": "12187",
+      "ano": 2009,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm",
+      "hash_sha256_corpo_local": "0dbbc05f1b85f5f91fb6ea9065320655c7457177d81676bc251d8e494bcdb58c",
+      "hash_sha256_corpo_observado": "0dbbc05f1b85f5f91fb6ea9065320655c7457177d81676bc251d8e494bcdb58c",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [
+        "15.512",
+        "15.042"
+      ],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14181-2021",
+      "matrix_id": "VM-369",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14181-2021.md",
+      "titulo": "Lei nº 14.181, de 1º de julho de 2021",
+      "tipo": "lei_ordinaria",
+      "numero": "14181",
+      "ano": 2021,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm",
+      "hash_sha256_corpo_local": "dc44bbac1982bebd58e06f5fef1ae4102ae919d5a444355a3461588b95cdc92d",
+      "hash_sha256_corpo_observado": "dc44bbac1982bebd58e06f5fef1ae4102ae919d5a444355a3461588b95cdc92d",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 6,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14286-2021",
+      "matrix_id": "VM-370",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14286-2021.md",
+      "titulo": "Lei nº 14.286, de 29 de dezembro de 2021",
+      "tipo": "lei_ordinaria",
+      "numero": "14286",
+      "ano": 2021,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14286.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14286.htm",
+      "hash_sha256_corpo_local": "a8ed86ef919cd0f1dea3583c11b4f2ee6c4b26ca18468e1c1ef45729051a1d38",
+      "hash_sha256_corpo_observado": "a8ed86ef919cd0f1dea3583c11b4f2ee6c4b26ca18468e1c1ef45729051a1d38",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 18,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14532-2023",
+      "matrix_id": "VM-371",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2023/lei-ordinaria-14532-2023.md",
+      "titulo": "Lei nº 14.532, de 11 de janeiro de 2023",
+      "tipo": "lei_ordinaria",
+      "numero": "14532",
+      "ano": 2023,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14532.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14532.htm",
+      "hash_sha256_corpo_local": "64573e75bfc0bc852521699657592f006eefd66042c472490c6825224e6a57ef",
+      "hash_sha256_corpo_observado": "64573e75bfc0bc852521699657592f006eefd66042c472490c6825224e6a57ef",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 4,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14540-2023",
+      "matrix_id": "VM-372",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2023/lei-ordinaria-14540-2023.md",
+      "titulo": "Lei nº 14.540, de 3 de abril de 2023",
+      "tipo": "lei_ordinaria",
+      "numero": "14540",
+      "ano": 2023,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14540.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14540.htm",
+      "hash_sha256_corpo_local": "c8a7847c07a87f9b2ffa8d0f07783461f47392e8e82caf8ebe67caa4f7f2b67b",
+      "hash_sha256_corpo_observado": "c8a7847c07a87f9b2ffa8d0f07783461f47392e8e82caf8ebe67caa4f7f2b67b",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 0,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14611-2023",
+      "matrix_id": "VM-373",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2023/lei-ordinaria-14611-2023.md",
+      "titulo": "Lei nº 14.611, de 3 de julho de 2023",
+      "tipo": "lei_ordinaria",
+      "numero": "14611",
+      "ano": 2023,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14611.htm",
+      "hash_sha256_corpo_local": "ef974f72b60d9cec2826b77e2d3f44a6ed68d792ca98724d718098c6a175b775",
+      "hash_sha256_corpo_observado": "ef974f72b60d9cec2826b77e2d3f44a6ed68d792ca98724d718098c6a175b775",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 2,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-14620-2023",
+      "matrix_id": "VM-374",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2023/lei-ordinaria-14620-2023.md",
+      "titulo": "Lei nº 14.620, de 13 de julho de 2023",
+      "tipo": "lei_ordinaria",
+      "numero": "14620",
+      "ano": 2023,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm",
+      "hash_sha256_corpo_local": "4d1c334e4862b2e248acc59279f1fe5bed1e5f6daccf0afe11a3c41630e09dab",
+      "hash_sha256_corpo_observado": "4d1c334e4862b2e248acc59279f1fe5bed1e5f6daccf0afe11a3c41630e09dab",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "em_vigor",
+      "situacao_resultado": "diploma_em_vigor_com_alteracoes_preservadas",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 30,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    },
+    {
+      "document_id": "br-federal-lei_ordinaria-13043-2014",
+      "matrix_id": "VM-375",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2014/lei-ordinaria-13043-2014.md",
+      "titulo": "Lei nº 13.043, de 13 de novembro de 2014",
+      "tipo": "lei_ordinaria",
+      "numero": "13043",
+      "ano": 2014,
+      "prioridade": "P1",
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13043.htm",
+      "autoridade_fonte": "Planalto / Casa Civil / Subchefia para Assuntos Jurídicos",
+      "consulta_em": "2026-10-21",
+      "source_status": "unchanged",
+      "source_resolution_status": "not_required",
+      "selected_source_id": "planalto-br",
+      "selected_source_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13043.htm",
+      "hash_sha256_corpo_local": "fe69b513070dcc9a7d0f642d99b4664173ac58009ed40c91efc1f68afdfbbce4",
+      "hash_sha256_corpo_observado": "fe69b513070dcc9a7d0f642d99b4664173ac58009ed40c91efc1f68afdfbbce4",
+      "hash_match": true,
+      "identity": {
+        "document_id": true,
+        "numero": true,
+        "ano": true,
+        "tipo": true,
+        "source_url": true
+      },
+      "local_integrity": {
+        "body_nonempty": true,
+        "legal_marker_present": true,
+        "sha256_corpo_format": true,
+        "official_source_declared": true
+      },
+      "situacao_declarada": "parcialmente_revogada",
+      "situacao_resultado": "parcialmente_revogada_com_dispositivos_remanescentes",
+      "consolidacao_status": "consolidada_fonte_oficial",
+      "atualizacoes_normativas_identificadas": [],
+      "relacoes_no_grafo": 38,
+      "decision": "approved_for_curated_corpus",
+      "review_scope": "curated_corpus_inclusion_and_current_official_source",
+      "review_basis": [
+        "official_source_retrieved",
+        "official_legal_body_hash_match",
+        "identity_match_against_matrix",
+        "local_body_structural_check"
+      ],
+      "limitations": [
+        "This audit does not replace a case-specific legal opinion.",
+        "Regulatory acts and jurisprudence remain separate layers.",
+        "Individual provisions may be altered, repealed or subject to future effect dates."
+      ]
+    }
+  ]
+}

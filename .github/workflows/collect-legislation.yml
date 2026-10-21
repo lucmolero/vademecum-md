@@ -2,10 +2,10 @@ name: collect-legislation
 
 on:
   schedule:
-    - cron: "23 4 * * *"
-    - cron: "37 4 * * 1"
-    - cron: "53 4 1 * *"
+    - cron: "23 4 1 1,4,7,10 *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [collect-legislation]
 
 permissions:
   contents: read
@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   collect-p0:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 4 * * *'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,7 +26,7 @@ jobs:
       - name: Install project dependencies
         run: python -m pip install -e .
       - name: Collect P0 official snapshots
-        run: python tools/acquire/collect_legislation.py --fetch --priority P0 --report reports/legislation-collection-p0.json
+        run: python tools/acquire/collect_legislation.py --mode proposal --fetch --priority P0 --report reports/legislation-collection-p0.json
       - name: Upload P0 evidence
         uses: actions/upload-artifact@v4
         with:
@@ -35,7 +35,7 @@ jobs:
           if-no-files-found: error
 
   collect-p1:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '37 4 * * 1'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,7 +45,7 @@ jobs:
       - name: Install project dependencies
         run: python -m pip install -e .
       - name: Collect P1 official snapshots
-        run: python tools/acquire/collect_legislation.py --fetch --priority P1 --report reports/legislation-collection-p1.json
+        run: python tools/acquire/collect_legislation.py --mode proposal --fetch --priority P1 --report reports/legislation-collection-p1.json
       - name: Upload P1 evidence
         uses: actions/upload-artifact@v4
         with:
@@ -54,7 +54,7 @@ jobs:
           if-no-files-found: error
 
   collect-p2:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '53 4 1 * *'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -64,7 +64,7 @@ jobs:
       - name: Install project dependencies
         run: python -m pip install -e .
       - name: Collect P2 official snapshots
-        run: python tools/acquire/collect_legislation.py --fetch --priority P2 --report reports/legislation-collection-p2.json
+        run: python tools/acquire/collect_legislation.py --mode proposal --fetch --priority P2 --report reports/legislation-collection-p2.json
       - name: Upload P2 evidence
         uses: actions/upload-artifact@v4
         with:

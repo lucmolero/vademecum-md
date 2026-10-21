@@ -12,34 +12,36 @@ publicos: ["academia", "OAB", "concursos", "pratica"]
 sensibilidade_atualizacao: "alta"
 data_assinatura: "2010-06-04"
 ementa: "Altera a Lei Complementar n° 64, de 18 de maio de 1990, que estabelece, de acordo com o § 9° do art. 14 da Constituição Federal, casos de inelegibilidade, prazos de cessação e determina outras providências, para incluir hipóteses de inelegibilidade que visam a proteger a probidade administrativa e a moralidade no exercício do mandato."
-situacao: "desconhecida"
+situacao: "em_vigor"
 versao_texto: "original"
-consolidacao_status: "requer_reconciliacao"
+consolidacao_status: "consolidada_fonte_oficial"
 data_corte: "2026-10-21"
 fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2010-06-04;135"]
 fonte_publicacao: []
-origem_formato: "markdown"
+origem_formato: "html"
 baixado_em: "2026-10-21"
-sha256_origem: "90a1288be0cdfa2dc03dcd3f243f7740d90b4e96ab10694e92d30674625649ea"
+sha256_origem: "2b6b22b2dc209c2d8382e961fb623356ce9b469c8ed785b67de9b993d485573c"
 alterada_por: []
-revogada_por: ["br-federal-lei_complementar-64-1990"]
+revogada_por: []
 regulamentada_por: []
 retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
 camada: "cobertura_especializada"
+sha256_normalizado: "2b6b22b2dc209c2d8382e961fb623356ce9b469c8ed785b67de9b993d485573c"
+sha256_corpo: "1662f8c3210d9ce7d9af5aff710180354f6856e418971e2eb39083c4f6b79998"
 ---
 # Lei Complementar nº 135 de 04/06/2010
 
-**LEI COMPLEMENTAR Nº 135, DE 4 DE JUNHO DE 2010**
+### LEI COMPLEMENTAR Nº 135, DE 4 DE JUNHO DE 2010
 
-***Altera a Lei Complementar no 64, de 18 de maio de 1990, que estabelece, de acordo com o § 9o do art. 14 da Constituição Federal, casos de inelegibilidade, prazos de cessação e determina outras providências, para incluir hipóteses de inelegibilidade que visam a proteger a probidade administrativa e a moralidade no exercício do mandato.***
+Altera a Lei Complementar no 64, de 18 de maio de 1990, que estabelece, de acordo com o § 9o do art. 14 da Constituição Federal, casos de inelegibilidade, prazos de cessação e determina outras providências, para incluir hipóteses de inelegibilidade que visam a proteger a probidade administrativa e a moralidade no exercício do mandato.
 
 O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei Complementar:
 
-**Art**. 1º Esta Lei Complementar altera a Lei Complementar no 64, de 18 de maio de 1990, que estabelece, de acordo com o § 9o do art. 14 da Constituição Federal, casos de inelegibilidade, prazos de cessação e determina outras providências.
+**Art. 1º** Esta Lei Complementar altera a Lei Complementar no 64, de 18 de maio de 1990, que estabelece, de acordo com o § 9o do art. 14 da Constituição Federal, casos de inelegibilidade, prazos de cessação e determina outras providências.
 
-**Art**. 2º A Lei Complementar no 64, de 1990, passa a vigorar com as seguintes alterações:
+**Art. 2º** A Lei Complementar no 64, de 1990, passa a vigorar com as seguintes alterações:
 
 “Art. 1o ...................................................................................................................................
 
@@ -53,25 +55,25 @@ d) os que tenham contra sua pessoa representação julgada procedente pela Justi
 
 e) os que forem condenados, em decisão transitada em julgado ou proferida por órgão judicial colegiado, desde a condenação até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena, pelos crimes:
 
-1\. contra a economia popular, a fé pública, a administração pública e o patrimônio público;
+1. contra a economia popular, a fé pública, a administração pública e o patrimônio público;
 
-2\. contra o patrimônio privado, o sistema financeiro, o mercado de capitais e os previstos na lei que regula a falência;
+2. contra o patrimônio privado, o sistema financeiro, o mercado de capitais e os previstos na lei que regula a falência;
 
-3\. contra o meio ambiente e a saúde pública;
+3. contra o meio ambiente e a saúde pública;
 
-4\. eleitorais, para os quais a lei comine pena privativa de liberdade;
+4. eleitorais, para os quais a lei comine pena privativa de liberdade;
 
-5\. de abuso de autoridade, nos casos em que houver condenação à perda do cargo ou à inabilitação para o exercício de função pública;
+5. de abuso de autoridade, nos casos em que houver condenação à perda do cargo ou à inabilitação para o exercício de função pública;
 
-6\. de lavagem ou ocultação de bens, direitos e valores;
+6. de lavagem ou ocultação de bens, direitos e valores;
 
-7\. de tráfico de entorpecentes e drogas afins, racismo, tortura, terrorismo e hediondos;
+7. de tráfico de entorpecentes e drogas afins, racismo, tortura, terrorismo e hediondos;
 
-8\. de redução à condição análoga à de escravo;
+8. de redução à condição análoga à de escravo;
 
-9\. contra a vida e a dignidade sexual; e
+9. contra a vida e a dignidade sexual; e
 
-10\. praticados por organização criminosa, quadrilha ou bando;
+10. praticados por organização criminosa, quadrilha ou bando;
 
 f) os que forem declarados indignos do oficialato, ou com ele incompatíveis, pelo prazo de 8 (oito) anos;
 
@@ -105,7 +107,7 @@ q) os magistrados e os membros do Ministério Público que forem aposentados com
 
 “Art. 15. Transitada em julgado ou publicada a decisão proferida por órgão colegiado que declarar a inelegibilidade do candidato, ser-lhe-á negado registro, ou cancelado, se já tiver sido feito, ou declarado nulo o diploma, se já expedido.
 
-**Parágrafo único.** A decisão a que se refere o caput, independentemente da apresentação de recurso, deverá ser comunicada, de imediato, ao Ministério Público Eleitoral e ao órgão da Justiça Eleitoral competente para o registro de candidatura e expedição de diploma do réu.” (NR)
+Parágrafo único. A decisão a que se refere o caput, independentemente da apresentação de recurso, deverá ser comunicada, de imediato, ao Ministério Público Eleitoral e ao órgão da Justiça Eleitoral competente para o registro de candidatura e expedição de diploma do réu.” (NR)
 
 “Art. 22. ................................................................................................................................
 
@@ -137,15 +139,15 @@ XVI - para a configuração do ato abusivo, não será considerada a potencialid
 
 § 3o A prática de atos manifestamente protelatórios por parte da defesa, ao longo da tramitação do recurso, acarretará a revogação do efeito suspensivo.”
 
-**Art**. 3º Os recursos interpostos antes da vigência desta Lei Complementar poderão ser aditados para o fim a que se refere o caput do art. 26-C da Lei Complementar nº 64, de 18 de maio de 1990, introduzido por esta Lei Complementar.
+**Art. 3º** Os recursos interpostos antes da vigência desta Lei Complementar poderão ser aditados para o fim a que se refere o caput do art. 26-C da Lei Complementar nº 64, de 18 de maio de 1990, introduzido por esta Lei Complementar.
 
-**Art**. 4º Revoga-se o inciso XV do art. 22 da Lei Complementar nº 64, de 18 de maio de 1990.
+**Art. 4º** Revoga-se o inciso XV do art. 22 da Lei Complementar nº 64, de 18 de maio de 1990.
 
 **Art. 5º** Esta Lei Complementar entra em vigor na data da sua publicação.
 
 Brasília, 4 de junho de 2010; 189º da Independência e 122º da República.
 
-**LUIZ INÁCIO LULA DA SILVA**
+### LUIZ INÁCIO LULA DA SILVA
 
 Luiz Paulo Teles Ferreira Barreto
 
