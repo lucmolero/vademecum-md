@@ -49,8 +49,11 @@
 
 ## 1.0 — Lançamento público
 
+Estado: pronto para publicação automatizada.
+
 - corpus editorialmente coerente;
 - release reproduzível;
 - gates sem erro;
 - histórico e grafo auditáveis;
-- somente então avaliação de RAG, chunks e embeddings.
+- atualização por PR autônoma, sem aprovação humana de conteúdo;
+- RAG, chunks e embeddings permanecem deliberadamente pós-release.
