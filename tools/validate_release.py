@@ -80,7 +80,16 @@ def validate_operating_modes(errors: list[str]) -> None:
 
 def public_files() -> list[Path]:
     paths: list[Path] = []
-    for directory in (ROOT / "bases/curated", ROOT / "docs", ROOT / "manifests", ROOT / "tools", ROOT / ".github"):
+    for directory in (
+        ROOT / "bases/curated",
+        ROOT / "bases/derived",
+        ROOT / "bases/history/alteracoes",
+        ROOT / "bases/history/versoes",
+        ROOT / "docs",
+        ROOT / "manifests",
+        ROOT / "tools",
+        ROOT / ".github",
+    ):
         if directory.exists():
             paths.extend(
                 p for p in directory.rglob("*")
