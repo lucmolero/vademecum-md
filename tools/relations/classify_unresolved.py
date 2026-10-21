@@ -33,7 +33,7 @@ def referenced_role(relation_type: str) -> str:
         return "ato_alterador_ou_regulamentador"
     if relation_type in DIRECT_RELATIONS:
         return "diploma_referenciado"
-        return "ambiguo"
+    return "ambiguo"
 
 
 def next_action_for(role: str) -> str:

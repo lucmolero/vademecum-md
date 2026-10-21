@@ -7,7 +7,7 @@
 - 3 consolidados por reconciliação;
 - 33/33 P0 consolidados;
 - 15 candidatos editoriais adicionais promovidos com decisão explícita;
-- 2.088 ocorrências classificadas como histórico e 89 mantidas no grafo sem expansão do corpus;
+- 2.177 ocorrências agrupadas em 1.491 alvos únicos; 1.408 alvos no histórico e 83 mantidos somente no grafo;
 - atualização preparada em modo de Pull Request, sem mutação direta da `main`, com publicação automatizada somente após os gates.
 
 ## 0.1 — Fundação pública

@@ -13,6 +13,7 @@ from unittest.mock import MagicMock, patch
 sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "acquire"))
 sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "normalize"))
 sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "history"))
+sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "relations"))
 sys.path.insert(0, str(Path(__file__).parents[1] / "tools"))
 
 from collect_legislation import (  # noqa: E402
@@ -33,6 +34,7 @@ from repair_encoding import candidate  # noqa: E402
 from build_public_indexes import relation_is_plausible, relation_type  # noqa: E402
 from build_structural_diffs import article_diff  # noqa: E402
 from build_candidate_diffs import classify_change  # noqa: E402
+from classify_unresolved import referenced_role  # noqa: E402
 from pipeline_modes import load_modes, resolve_mode  # noqa: E402
 
 
@@ -470,6 +472,12 @@ class WorkspaceTest(unittest.TestCase):
         self.assertEqual(queue["by_disposition"], {"historico": 1408, "grafo": 83})
         self.assertIn("ato_alterador_ou_regulamentador", queue["by_referenced_role"])
         self.assertIn("by_referenced_role", report)
+        completeness = (ROOT / "docs/COMPLETENESS.md").read_text(encoding="utf-8")
+        self.assertIn(
+            f"Disposição dos alvos únicos: **{queue['by_disposition']['historico']} históricos; "
+            f"{queue['by_disposition']['grafo']} mantidos no grafo**",
+            completeness,
+        )
         expansion_targets = {item["expansion_candidate_id"] for item in queue["targets"] if item.get("expansion_candidate_id")}
         self.assertNotIn("EXP-014", expansion_targets)
         self.assertNotIn("EXP-015", expansion_targets)
@@ -479,6 +487,9 @@ class WorkspaceTest(unittest.TestCase):
         self.assertIn("VM-363", matrix_ids)
         self.assertIn("VM-374", matrix_ids)
         self.assertEqual(len(matrix_rows), 375)
+
+    def test_unknown_relation_type_is_explicitly_ambiguous(self) -> None:
+        self.assertEqual(referenced_role("unknown_relation"), "ambiguo")
 
     def test_normative_graph_relations_have_machine_auditable_evidence(self) -> None:
         graph = (ROOT / "bases/derived/relacoes/normative-graph.jsonl").read_text(encoding="utf-8").splitlines()

@@ -12,7 +12,8 @@ O produto principal é um diploma por arquivo em `bases/curated/legislacao/feder
 - 372 documentos consolidados por fonte oficial e 3 por reconciliação;
 - 33/33 documentos P0 consolidados;
 - 1.841 relações normativas materializadas;
-- 2.177 ocorrências de relações ainda não materializadas, sendo 2.088 destinadas ao histórico e 89 mantidas no grafo sem expansão automática do corpus;
+- 2.177 ocorrências de relações ainda não materializadas, agrupadas em 1.491 alvos únicos;
+- entre as ocorrências, 2.088 são atos alteradores/regulamentadores e 89 são diplomas referenciados; entre os alvos únicos, 1.408 permanecem no histórico e 83 somente no grafo;
 - relações normativas geradas em `bases/derived/relacoes/`;
 - RAG deliberadamente adiado até a estabilização da release 1.0.
 
