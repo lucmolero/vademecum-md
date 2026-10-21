@@ -48,7 +48,7 @@ jobs:
           else
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
-      - name: Create review branch and draft PR
+      - name: Create update branch and autonomous PR
         if: steps.proposal.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -73,9 +73,10 @@ jobs:
           git commit -m "chore: prepare legislation update proposal"
           git push origin "$branch"
           proposal_file=$(find docs/proposals -maxdepth 1 -type f -name 'update-*.md' | sort | tail -n 1)
-          gh pr create --draft --base "$base_branch" --head "$branch" \
+          pr_url=$(gh pr create --base "$base_branch" --head "$branch" \
             --title "chore: legislation update proposal" \
-            --body-file "$proposal_file"
+            --body-file "$proposal_file")
+          gh pr merge "$pr_url" --auto --squash --delete-branch=false
       - name: Upload non-sensitive proposal report
         uses: actions/upload-artifact@v4
         with:

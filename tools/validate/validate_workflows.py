@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 
@@ -28,6 +29,10 @@ def main() -> int:
     errors: list[str] = []
     for path in sorted(WORKFLOWS.glob("*.yml")):
         text = path.read_text(encoding="utf-8")
+        if "gh pr create --draft" in text:
+            errors.append(f"{path.name}: PRs de atualização não podem depender de ação humana para sair de rascunho")
+        if path.name == "prepare-update-pr.yml" and "gh pr merge" not in text:
+            errors.append(f"{path.name}: merge autônomo da proposta ausente")
         if path.name in {"quality.yml", "release.yml", "weekly-completeness.yml"}:
             if "sync_editorial_matrix.py" not in text:
                 errors.append(f"{path.name}: gate da matriz editorial ausente")
@@ -39,7 +44,7 @@ def main() -> int:
             errors.append(f"{path.name}: permissao de conteudo nao e somente leitura")
         if "pull_request_target" in text:
             errors.append(f"{path.name}: marcador proibido pull_request_target")
-        if "git push" in text and not (
+        if re.search(r"\bgit(?:\s+-C\s+[^\n]+)?\s+push\b", text) and not (
             path.name == "prepare-update-pr.yml"
             and 'git push origin "$branch"' in text
             and "gh pr create" in text
@@ -49,7 +54,8 @@ def main() -> int:
             and "Refusing to write to the default branch" in text
         ) and not (
             path.name == "sync-private-history.yml"
-            and "HISTORY_REPO_TOKEN" in text
+            and "HISTORY_REPO_SSH_KEY" in text
+            and "ssh-key:" in text
             and "git -C history-repository push origin HEAD:main" in text
         ):
             errors.append(f"{path.name}: push permitido somente para branch de proposta")
