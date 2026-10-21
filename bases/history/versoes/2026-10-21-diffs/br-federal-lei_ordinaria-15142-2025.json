@@ -1,0 +1,82 @@
+{
+  "schema": "normative-diff/v1",
+  "id": "br-federal-lei_ordinaria-15142-2025",
+  "generated_at": "2026-10-21",
+  "anterior": "bases/history/versoes/2026-10-21-pre-reconciliacao/lei-ordinaria-15142-2025.md",
+  "atual": "bases/curated/legislacao/federal/leis-ordinarias/2025/lei-ordinaria-15142-2025.md",
+  "metadados": {
+    "consolidacao_status": {
+      "anterior": "requer_reconciliacao",
+      "atual": "consolidada_reconciliada"
+    },
+    "dominio": {
+      "anterior": "direitos_sociais",
+      "atual": "direitos sociais"
+    },
+    "ementa": {
+      "anterior": "Reserva às pessoas pretas e pardas, indígenas e quilombolas o percentual de 30% (trinta por cento) das vagas oferecidas nos concursos públicos para provimento de cargos efetivos e empregos públicos no âmbito da administração pública federal direta, das autarquias, das fundações públicas, das empresas públicas e das sociedades de economia mista controladas pela União e nos processos seletivos simplificados para o recrutamento de pessoal nas hipóteses de contratação por tempo determinado para atender a necessidade temporária de excepcional interesse público para os órgãos da administração pública federal direta, as autarquias e as fundações públicas; e revoga a Lei nº 12.990, de 9 de junho de 2014.",
+      "atual": "Reserva às pessoas pretas e pardas, indígenas e quilombolas o percentual de 30% das vagas oferecidas em concursos públicos e processos seletivos simplificados no âmbito federal; e revoga a Lei nº 12.990, de 9 de junho de 2014."
+    },
+    "fonte_oficial": {
+      "anterior": [
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-06-03;15142"
+      ],
+      "atual": [
+        "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15142.htm",
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-06-03;15142"
+      ]
+    },
+    "observacoes_proveniencia": {
+      "anterior": [
+        "Texto normalizado para o contrato público; trilha técnica mantida localmente."
+      ],
+      "atual": [
+        "A página vigente do Planalto foi consultada em 2026-10-21 e não apresenta marcação de alteração posterior; a revogação da Lei nº 12.990/2014 será modelada como relação de saída."
+      ]
+    },
+    "publicos": {
+      "anterior": [
+        "academia",
+        "OAB",
+        "concursos",
+        "pratica"
+      ],
+      "atual": [
+        "academia",
+        "concursos",
+        "pratica"
+      ]
+    },
+    "sensibilidade_atualizacao": {
+      "anterior": "critica",
+      "atual": "alta"
+    },
+    "sha256_origem": {
+      "anterior": "a7314a99186f47e0718bcf54f37ef9d3e91a46d2561019c27f06871987458d90",
+      "atual": "34c6b2b1d0c454de79024880bd791c58171443f5967393d97747e455cd5e0f07"
+    },
+    "situacao": {
+      "anterior": "desconhecida",
+      "atual": "em_vigor"
+    },
+    "titulo": {
+      "anterior": "Cotas Raciais em concursos públicos",
+      "atual": "Lei nº 15.142, de 3 de junho de 2025"
+    },
+    "versao_texto": {
+      "anterior": "original",
+      "atual": "consolidada"
+    }
+  },
+  "estrutura": {
+    "artigos": {
+      "total_anterior": 5,
+      "total_atual": 5,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 0,
+      "inalterados": 5
+    },
+    "detalhes": []
+  }
+}

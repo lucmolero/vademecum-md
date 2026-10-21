@@ -1,0 +1,65 @@
+{
+  "schema": "normative-diff/v1",
+  "id": "br-federal-decreto_lei-3931-1941",
+  "generated_at": "2026-10-21",
+  "anterior": "bases/history/versoes/2026-10-21-pre-reconciliacao/decreto-lei-3931-1941.md",
+  "atual": "bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3931-1941.md",
+  "metadados": {
+    "consolidacao_status": {
+      "anterior": "requer_reconciliacao",
+      "atual": "consolidada_reconciliada"
+    },
+    "ementa": {
+      "anterior": null,
+      "atual": "Lei de introdução ao Código de Processo Penal (Decreto-Lei nº 3.689, de 3 de outubro de 1941)."
+    },
+    "fonte_oficial": {
+      "anterior": [
+        "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-11;3931"
+      ],
+      "atual": [
+        "https://www.planalto.gov.br/ccivil_03/decreto-lei/1937-1946/del3931.htm",
+        "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-11;3931"
+      ]
+    },
+    "observacoes_proveniencia": {
+      "anterior": [
+        "Texto normalizado para o contrato público; trilha técnica mantida localmente."
+      ],
+      "atual": [
+        "Texto oficial histórico conferido no portal do Planalto; alterações e revogações históricas serão detalhadas na etapa de histórico normativo."
+      ]
+    },
+    "origem_formato": {
+      "anterior": "markdown",
+      "atual": "html"
+    },
+    "sha256_origem": {
+      "anterior": "745e72242cc49d1ab6f454416a26df10dc35114015ad420c730d9741f8879023",
+      "atual": "0df92db8d66a38b3f08125c0d6eb9ac98b2a840325e5814b29279f88cc4a0fa5"
+    },
+    "situacao": {
+      "anterior": "desconhecida",
+      "atual": "em_vigor"
+    },
+    "titulo": {
+      "anterior": "Lei de Introducao ao Codigo de Processo Penal",
+      "atual": "Lei de Introdução ao Código de Processo Penal"
+    },
+    "versao_texto": {
+      "anterior": "original",
+      "atual": "consolidada"
+    }
+  },
+  "estrutura": {
+    "artigos": {
+      "total_anterior": 7,
+      "total_atual": 7,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 0,
+      "inalterados": 7
+    },
+    "detalhes": []
+  }
+}

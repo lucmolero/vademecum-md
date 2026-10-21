@@ -1,0 +1,65 @@
+{
+  "schema": "normative-diff/v1",
+  "id": "br-federal-lei_ordinaria-15358-2026",
+  "generated_at": "2026-10-21",
+  "anterior": "bases/history/versoes/2026-10-21-pre-reconciliacao/lei-ordinaria-15358-2026.md",
+  "atual": "bases/curated/legislacao/federal/leis-ordinarias/2026/lei-ordinaria-15358-2026.md",
+  "metadados": {
+    "camada": {
+      "anterior": "core_codigos",
+      "atual": "core_profissional"
+    },
+    "consolidacao_status": {
+      "anterior": "requer_reconciliacao",
+      "atual": "consolidada_reconciliada"
+    },
+    "ementa": {
+      "anterior": "Institui o Marco Legal do Combate ao Crime Organizado no Brasil (Lei Raul Jungmann); tipifica os crimes de domínio social estruturado e de favorecimento ao domínio social estruturado; e altera os Decretos-Leis nºs 2.848, de 7 de dezembro de 1940 (Código Penal), e 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e as Leis nºs 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 11.343, de 23 de agosto de 2006, 10.826, de 22 de dezembro de 2003, 9.613, de 3 de março de 1998, 4.737, de 15 de julho de 1965 (Código Eleitoral); 13.756, de 12 de dezembro de 2018; e 14.790, de 29 de dezembro de 2023.",
+      "atual": "Institui o Marco Legal do Combate ao Crime Organizado no Brasil; tipifica os crimes de domínio social estruturado e de favorecimento ao domínio social estruturado; e altera os Decretos-Leis nºs 2.848, de 7 de dezembro de 1940, e 3.689, de 3 de outubro de 1941, e as Leis nºs 8.072, de 25 de julho de 1990, 7.210, de 11 de julho de 1984, 11.343, de 23 de agosto de 2006, 10.826, de 22 de dezembro de 2003, 9.613, de 3 de março de 1998, 4.737, de 15 de julho de 1965, 13.756, de 12 de dezembro de 2018, e 14.790, de 29 de dezembro de 2023."
+    },
+    "fonte_oficial": {
+      "anterior": [
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-03-24;15358"
+      ],
+      "atual": [
+        "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-03-24;15358"
+      ]
+    },
+    "observacoes_proveniencia": {
+      "anterior": [
+        "Texto normalizado para o contrato público; trilha técnica mantida localmente."
+      ],
+      "atual": [
+        "A página vigente do Planalto foi consultada em 2026-10-21 e não apresenta marcação de alteração posterior; relações de alteração serão detalhadas no grafo."
+      ]
+    },
+    "sha256_origem": {
+      "anterior": "fc2ff50dfa59845929a5fd9192fe35b9621c76f62dbd2c5a9ec3de5ce35fba5f",
+      "atual": "0e5299d865884caaf30c5b340e7058c1527009300183d0919fc4cc7b85baf770"
+    },
+    "situacao": {
+      "anterior": "desconhecida",
+      "atual": "em_vigor"
+    },
+    "titulo": {
+      "anterior": "Marco Legal do Combate ao Crime Organizado no Brasil",
+      "atual": "Lei nº 15.358, de 24 de março de 2026"
+    },
+    "versao_texto": {
+      "anterior": "original",
+      "atual": "consolidada"
+    }
+  },
+  "estrutura": {
+    "artigos": {
+      "total_anterior": 35,
+      "total_atual": 35,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 0,
+      "inalterados": 35
+    },
+    "detalhes": []
+  }
+}

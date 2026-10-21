@@ -1,0 +1,20 @@
+{
+  "schema": "official-discovery-registry/v1",
+  "policy": "catalogs_are_discovery_only",
+  "catalogs": [
+    {
+      "id": "planalto-legislacao",
+      "url": "https://www4.planalto.gov.br/legislacao",
+      "adapter": "official_catalog_html",
+      "max_bytes": 5242880,
+      "rate_limit_seconds": 1.0
+    },
+    {
+      "id": "normas-leg-index",
+      "url": "https://normas.leg.br/",
+      "adapter": "official_catalog_html",
+      "max_bytes": 5242880,
+      "rate_limit_seconds": 1.0
+    }
+  ]
+}

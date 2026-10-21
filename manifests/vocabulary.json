@@ -1,0 +1,48 @@
+{
+  "schema": "vademecum-md/v1",
+  "status_consolidacao": [
+    "consolidada_fonte_oficial",
+    "consolidada_reconciliada",
+    "requer_reconciliacao",
+    "texto_original",
+    "historica",
+    "parcialmente_revogada",
+    "revogada",
+    "transitoria",
+    "desconhecida"
+  ],
+  "situacao": [
+    "em_vigor",
+    "desconhecida",
+    "revogada",
+    "parcialmente_revogada",
+    "transitoria",
+    "historica"
+  ],
+  "camadas": [
+    "core_constitucional",
+    "core_codigos",
+    "core_profissional",
+    "cobertura_especializada",
+    "auditoria_especialista"
+  ],
+  "relacoes": [
+    "altera",
+    "alterada_por",
+    "revoga",
+    "revogada_por",
+    "regulamenta",
+    "regulamentada_por",
+    "retifica",
+    "retificada_por",
+    "suspende",
+    "suspensa_por",
+    "regulamenta_parcialmente",
+    "relacionada_a"
+  ],
+  "prioridades": [
+    "P0",
+    "P1",
+    "P2"
+  ]
+}

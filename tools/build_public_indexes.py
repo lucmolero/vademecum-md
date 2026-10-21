@@ -1,0 +1,290 @@
+"""Build public manifests, the normative relation graph, and release reports."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import re
+from collections import Counter, defaultdict
+from datetime import date
+from pathlib import Path
+
+from migrate_public_corpus import CURATED, ROOT, frontmatter, parse_frontmatter, scalar
+
+
+TODAY = date.today().isoformat()
+RELATION_EXCLUSIONS = ROOT / "manifests/relation-exclusions.json"
+MONTHS = {
+    "janeiro": "01", "fevereiro": "02", "março": "03", "marco": "03", "abril": "04",
+    "maio": "05", "junho": "06", "julho": "07", "agosto": "08", "setembro": "09",
+    "outubro": "10", "novembro": "11", "dezembro": "12",
+}
+RELATION_TYPES = {
+    "alterada_por": "altera",
+    "revogada_por": "revoga",
+    "regulamentada_por": "regulamenta",
+    "retificada_por": "retifica",
+}
+
+
+def load_docs() -> list[tuple[Path, dict[str, object], str]]:
+    docs: list[tuple[Path, dict[str, object], str]] = []
+    for path in sorted(CURATED.rglob("*.md")):
+        metadata, body = parse_frontmatter(path.read_text(encoding="utf-8"))
+        if metadata:
+            docs.append((path, metadata, body))
+    return docs
+
+
+def norm_number(value: str) -> str:
+    return value.replace(".", "").replace(",", ".").strip()
+
+
+def relation_type(context: str) -> str | None:
+    context = context.lower()
+    if re.search(r"revog\w*.{0,80}$", context):
+        return "revogada_por"
+    if re.search(r"retific\w*.{0,80}$", context):
+        return "retificada_por"
+    if re.search(r"(redação dada|redacao dada|alterad\w*|acrescid\w*|incluíd\w*|incluid\w*).{0,80}$", context):
+        return "alterada_por"
+    if re.search(r"regulament\w*.{0,80}$", context):
+        return "regulamentada_por"
+    return None
+
+
+def effect_date(context: str) -> str | None:
+    numeric = re.search(r"\b(\d{1,2})[/-](\d{1,2})[/-](\d{4})\b", context)
+    if numeric:
+        day, month, year = numeric.groups()
+        return f"{year}-{int(month):02d}-{int(day):02d}"
+    spelled = re.search(
+        r"\b(\d{1,2})(?:º|°|o)?\s+de\s+([A-Za-zçãõáéíóú]+)\s+de\s+(\d{4})\b",
+        context,
+        re.IGNORECASE,
+    )
+    if spelled:
+        day, month, year = spelled.groups()
+        month_number = MONTHS.get(month.lower())
+        if month_number:
+            return f"{year}-{month_number}-{int(day):02d}"
+    return None
+
+
+def target_candidates(kind: str, number: str, docs: list[tuple[Path, dict[str, object], str]]) -> list[dict[str, object]]:
+    kind = kind.lower()
+    number = norm_number(number)
+    if kind == "lei complementar":
+        accepted = {"lei_complementar"}
+    elif kind == "decreto-lei":
+        accepted = {"decreto_lei"}
+    elif kind == "decreto":
+        accepted = {"decreto"}
+    else:
+        accepted = {"lei_ordinaria", "lei_delegada"}
+    return [meta for _, meta, _ in docs if str(meta.get("numero") or "") == number and meta.get("tipo") in accepted]
+
+
+def load_relation_exclusions() -> set[tuple[str, str, str]]:
+    if not RELATION_EXCLUSIONS.is_file():
+        return set()
+    payload = json.loads(RELATION_EXCLUSIONS.read_text(encoding="utf-8"))
+    return {
+        (str(item["source_id"]), str(item["type"]), str(item["target_id"]))
+        for item in payload.get("relations", [])
+    }
+
+
+def build_relations(docs: list[tuple[Path, dict[str, object], str]]) -> tuple[list[dict[str, object]], list[dict[str, str]]]:
+    relations: dict[tuple[str, str, str, str | None], str | None] = {}
+    exclusions = load_relation_exclusions()
+    unresolved: set[tuple[str, str, str, str]] = set()
+    pattern = re.compile(
+        r"\b(Lei\s+Complementar|Decreto-Lei|Lei|Decreto)\s*(?:n[ºo°]?\.?\s*)?([0-9]{1,3}(?:\.[0-9]{3})*)(?:\s*[/,]\s*([12][0-9]{3}))?",
+        re.IGNORECASE,
+    )
+    for path, metadata, body in docs:
+        source_id = str(metadata["id"])
+        for match in pattern.finditer(body):
+            relation_context = body[max(0, match.start() - 100) : match.start()]
+            context = body[max(0, match.start() - 160) : min(len(body), match.end() + 180)]
+            kind, number, _year = match.groups()
+            relation = relation_type(relation_context)
+            if relation is None:
+                continue
+            targets = target_candidates(kind, number, docs)
+            if not targets:
+                unresolved.add((source_id, kind, number, relation))
+                continue
+            device_match = re.findall(r"(?:Art\.?|art\.?)\s*([0-9]+(?:-[A-Z])?(?:º|°)?)", relation_context)
+            device = f"art. {device_match[-1]}" if device_match else None
+            for target in targets[:1]:
+                target_id = str(target["id"])
+                if target_id == source_id:
+                    continue
+                effect = effect_date(context)
+                inverse = RELATION_TYPES[relation]
+                if (source_id, relation, target_id) not in exclusions:
+                    relations.setdefault((source_id, relation, target_id, device), effect)
+                if (target_id, inverse, source_id) not in exclusions:
+                    relations.setdefault((target_id, inverse, source_id, device), effect)
+                if effect:
+                    if (source_id, relation, target_id) not in exclusions:
+                        relations[(source_id, relation, target_id, device)] = effect
+                    if (target_id, inverse, source_id) not in exclusions:
+                        relations[(target_id, inverse, source_id, device)] = effect
+    result = [
+        {
+            "source_id": source,
+            "type": relation,
+            "target_id": target,
+            "dispositivo": device,
+            "data_efeito": effect,
+            "fonte": next((str(meta.get("fonte_oficial")[0]) for _, meta, _ in docs if meta.get("id") == source and meta.get("fonte_oficial")), None),
+        }
+        for (source, relation, target, device), effect in sorted(relations.items(), key=lambda item: (item[0][0], item[0][1], item[0][2], item[0][3] or ""))
+    ]
+    unresolved_result = [
+        {"source_id": source, "kind": kind, "numero": number, "tipo": relation}
+        for source, kind, number, relation in sorted(unresolved)
+    ]
+    return result, unresolved_result
+
+
+def update_document_relations(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]]) -> None:
+    grouped: dict[str, dict[str, list[str]]] = defaultdict(lambda: defaultdict(list))
+    fields = {"alterada_por", "revogada_por", "regulamentada_por", "retificada_por"}
+    for relation in relations:
+        if relation["type"] in fields:
+            grouped[str(relation["source_id"])][str(relation["type"])].append(str(relation["target_id"]))
+    for path, metadata, body in docs:
+        for field in fields:
+            metadata[field] = sorted(set(grouped[str(metadata["id"])].get(field, [])))
+        path.write_text(frontmatter(metadata) + "\n" + body.rstrip() + "\n", encoding="utf-8", newline="\n")
+
+
+def write_sources(docs: list[tuple[Path, dict[str, object], str]]) -> None:
+    entries = []
+    for _, metadata, _ in docs:
+        sources = metadata.get("fonte_oficial") or []
+        if isinstance(sources, str):
+            sources = [sources]
+        entries.append({
+            "id": metadata["id"],
+            "fontes": sources,
+            "data_consulta": metadata.get("baixado_em"),
+            "data_corte": metadata.get("data_corte"),
+            "sha256_origem": metadata.get("sha256_origem"),
+        })
+    target = ROOT / "manifests/sources-official.json"
+    target.write_text(json.dumps({"schema": "official-source-manifest/v1", "generated_at": TODAY, "documents": entries}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_vocabulary() -> None:
+    vocabulary = {
+        "schema": "vademecum-md/v1",
+        "status_consolidacao": ["consolidada_fonte_oficial", "consolidada_reconciliada", "requer_reconciliacao", "texto_original", "historica", "parcialmente_revogada", "revogada", "transitoria", "desconhecida"],
+        "situacao": ["em_vigor", "desconhecida", "revogada", "parcialmente_revogada", "transitoria", "historica"],
+        "camadas": ["core_constitucional", "core_codigos", "core_profissional", "cobertura_especializada", "auditoria_especialista"],
+        "relacoes": ["altera", "alterada_por", "revoga", "revogada_por", "regulamenta", "regulamentada_por", "retifica", "retificada_por", "suspende", "suspensa_por", "regulamenta_parcialmente", "relacionada_a"],
+        "prioridades": ["P0", "P1", "P2"],
+    }
+    (ROOT / "manifests/vocabulary.json").write_text(json.dumps(vocabulary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_release(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]], unresolved: list[dict[str, str]]) -> None:
+    statuses = Counter(str(meta.get("consolidacao_status")) for _, meta, _ in docs)
+    release = {
+        "product": "vademecum-md",
+        "version": "0.1.0",
+        "generated_at": TODAY,
+        "status": "pre_release",
+        "scope": "legislacao_federal",
+        "corpus_count": len(docs),
+        "integral_count": sum(bool(body.strip()) for _, _, body in docs),
+        "official_source_count": sum(bool(meta.get("fonte_oficial")) for _, meta, _ in docs),
+        "sha256_count": sum(bool(meta.get("sha256_origem")) for _, meta, _ in docs),
+        "consolidacao": dict(statuses),
+        "relation_count": len(relations),
+        "unresolved_relation_count": len(unresolved),
+        "publication_policy": "automatic_only_after_validation",
+        "rag": "deferred_until_1_0",
+    }
+    (ROOT / "manifests/release.json").write_text(json.dumps(release, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relations: list[dict[str, object]], unresolved: list[dict[str, str]]) -> None:
+    checks = {
+        "text_integral": sum(bool(body.strip()) for _, _, body in docs),
+        "official_source": sum(bool(meta.get("fonte_oficial")) for _, meta, _ in docs),
+        "hash": sum(bool(meta.get("sha256_origem")) for _, meta, _ in docs),
+        "frontmatter": len(docs),
+        "p0_consolidated": sum(meta.get("consolidacao_status") in {"consolidada_fonte_oficial", "consolidada_reconciliada"} for _, meta, _ in docs if meta.get("prioridade") == "P0"),
+        "p0_total": sum(meta.get("prioridade") == "P0" for _, meta, _ in docs),
+    }
+    errors: list[str] = []
+    if checks["text_integral"] != len(docs): errors.append("texto_vazio")
+    if checks["official_source"] != len(docs): errors.append("fonte_oficial_ausente")
+    if checks["hash"] != len(docs): errors.append("hash_ausente")
+    result = {
+        "schema": "completeness/v1",
+        "generated_at": TODAY,
+        "corpus_count": len(docs),
+        "checks": checks,
+        "relations": len(relations),
+        "unresolved_relations": len(unresolved),
+        "consolidation_status": dict(Counter(str(meta.get("consolidacao_status")) for _, meta, _ in docs)),
+        "errors": errors,
+        "status": "pass" if not errors else "fail",
+    }
+    (ROOT / "manifests/completeness.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report = [
+        "# Relatório de completude",
+        "",
+        f"Data de geração: `{TODAY}`.",
+        "",
+        f"- Documentos: **{len(docs)}**",
+        f"- Textos integrais: **{checks['text_integral']}/{len(docs)}**",
+        f"- Fontes oficiais: **{checks['official_source']}/{len(docs)}**",
+        f"- Hashes: **{checks['hash']}/{len(docs)}**",
+        f"- P0 consolidado: **{checks['p0_consolidated']}/{checks['p0_total']}**",
+        f"- Relações normativas materializadas: **{len(relations)}**",
+        f"- Relações ainda não resolvidas: **{len(unresolved)}**",
+        "",
+        "## Regra de interpretação",
+        "",
+        "Presença no corpus e integridade textual não equivalem, por si só, à vigência jurídica. Documentos sem consolidação confirmada permanecem com situação `desconhecida`.",
+        "",
+        "## Pendências",
+        "",
+    ]
+    report.extend(f"- `{error}`" for error in errors) or report.append("Nenhum erro estrutural encontrado.")
+    (ROOT / "docs/COMPLETENESS.md").write_text("\n".join(report) + "\n", encoding="utf-8", newline="\n")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--apply", action="store_true")
+    args = parser.parse_args()
+    if not args.apply:
+        print("Dry-run: construiria manifests públicos, grafo normativo e relatório de completude.")
+        return 0
+    docs = load_docs()
+    relations, unresolved = build_relations(docs)
+    update_document_relations(docs, relations)
+    docs = load_docs()
+    graph = ROOT / "bases/derived/relacoes"
+    graph.mkdir(parents=True, exist_ok=True)
+    (graph / "normative-graph.jsonl").write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in relations), encoding="utf-8")
+    (graph / "unresolved.json").write_text(json.dumps(unresolved, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    write_sources(docs)
+    write_vocabulary()
+    write_release(docs, relations, unresolved)
+    write_completeness(docs, relations, unresolved)
+    print(f"Índices gerados: documentos={len(docs)}, relações={len(relations)}, não resolvidas={len(unresolved)}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

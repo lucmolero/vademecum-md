@@ -1,0 +1,22 @@
+{
+  "schema": "completeness/v1",
+  "generated_at": "2026-10-21",
+  "corpus_count": 360,
+  "checks": {
+    "text_integral": 360,
+    "official_source": 360,
+    "hash": 360,
+    "frontmatter": 360,
+    "p0_consolidated": 30,
+    "p0_total": 30
+  },
+  "relations": 1655,
+  "unresolved_relations": 2258,
+  "consolidation_status": {
+    "consolidada_fonte_oficial": 246,
+    "requer_reconciliacao": 109,
+    "consolidada_reconciliada": 5
+  },
+  "errors": [],
+  "status": "pass"
+}

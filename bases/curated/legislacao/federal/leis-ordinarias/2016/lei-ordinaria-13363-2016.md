@@ -1,0 +1,88 @@
+---
+id: "br-federal-lei_ordinaria-13363-2016"
+titulo: "Lei nº 13.363 de 25/11/2016"
+esfera: "federal"
+jurisdicao: "BR"
+tipo: "lei_ordinaria"
+numero: "13363"
+ano: 2016
+dominio: "legislacao_complementar"
+prioridade: "P1"
+publicos: ["academia", "OAB", "concursos", "pratica"]
+sensibilidade_atualizacao: "alta"
+data_assinatura: "2016-11-25"
+ementa: "Altera a Lei nº 8.906, de 4 de julho de 1994, e a Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), para estipular direitos e garantias para a advogada gestante, lactante, adotante ou que der à luz e para o advogado que se tornar pai."
+situacao: "desconhecida"
+versao_texto: "original"
+consolidacao_status: "requer_reconciliacao"
+data_corte: "2026-10-21"
+fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-11-25;13363"]
+fonte_publicacao: []
+origem_formato: "markdown"
+baixado_em: "2026-10-21"
+sha256_origem: "83fa70a9daf29d4071ce2ca41d60d966d6162f48720cbe551fd471dd7c51ec1e"
+alterada_por: []
+revogada_por: []
+regulamentada_por: []
+retificada_por: []
+relacionada_a: []
+observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente.", "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."]
+camada: "cobertura_especializada"
+---
+# Lei nº 13.363 de 25/11/2016
+
+LEI Nº 13.363, DE 25 DE NOVEMBRO DE 2016
+
+Altera a Lei nº 8.906, de 4 de julho de 1994, e a Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), para estipular direitos e garantias para a advogada gestante, lactante, adotante ou que der à luz e para o advogado que se tornar pai.
+
+**O PRESIDENTE DA REPÚBLICA**
+
+Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
+
+**Art. 1º** Esta Lei altera a Lei nº 8.906, de 4 de julho de 1994, e a Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), para estipular direitos e garantias para a advogada gestante, lactante, adotante ou que der à luz e para o advogado que se tornar pai.
+
+**Art. 2º** A Lei nº 8.906, de 4 de julho de 1994, passa a vigorar acrescida do seguinte art. 7º -A:
+
+“**Art. 7º-A.** São direitos da advogada:
+
+I – gestante:
+
+a) entrada em tribunais sem ser submetida a detectores de metais e aparelhos de raios X;
+
+b) reserva de vaga em garagens dos fóruns dos tribunais;
+
+II – lactante, adotante ou que der à luz, acesso a creche, onde houver, ou a local adequado ao atendimento das necessidades do bebê;
+
+III – gestante, lactante, adotante ou que der à luz, preferência na ordem das sustentações orais e das audiências a serem realizadas a cada dia, mediante comprovação de sua condição;
+
+IV – adotante ou que der à luz, suspensão de prazos processuais quando for a única patrona da causa, desde que haja notificação por escrito ao cliente.
+
+**§ 1º** Os direitos previstos à advogada gestante ou lactante aplicam-se enquanto perdurar, respectivamente, o estado gravídico ou o período de amamentação.
+
+**§ 2º** Os direitos assegurados nos incisos II e III deste artigo à advogada adotante ou que der à luz serão concedidos pelo prazo previsto no art. 392 do Decreto-Lei nº 5.452, de 1º de maio de 1943 (Consolidação das Leis do Trabalho).
+
+**§ 3º** O direito assegurado no inciso IV deste artigo à advogada adotante ou que der à luz será concedido pelo prazo previsto no § 6º do art. 313 da Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil).”
+
+**Art. 3º** O art. 313 da Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), passa a vigorar com as seguintes alterações:
+
+“**Art.** 313....................................................
+
+..........................................................
+
+IX – pelo parto ou pela concessão de adoção, quando a advogada responsável pelo processo constituir a única patrona da causa;
+
+X – quando o advogado responsável pelo processo constituir o único patrono da causa e tornar-se pai.
+
+..........................................................
+
+**§ 6º** No caso do inciso IX, o período de suspensão será de 30 (trinta) dias, contado a partir da data do parto ou da concessão da adoção, mediante apresentação de certidão de nascimento ou documento similar que comprove a realização do parto, ou de termo judicial que tenha concedido a adoção, desde que haja notificação ao cliente.
+
+**§ 7º** No caso do inciso X, o período de suspensão será de 8 (oito) dias, contado a partir da data do parto ou da concessão da adoção, mediante apresentação de certidão de nascimento ou documento similar que comprove a realização do parto, ou de termo judicial que tenha concedido a adoção, desde que haja notificação ao cliente.” (NR)
+
+**Art. 4º** Esta Lei entra em vigor na data de sua publicação.
+
+Brasília, 25 de novembro de 2016; 195º da Independência e 128º da República.
+
+**MICHEL TEMER**
+
+Alexandre de Moraes

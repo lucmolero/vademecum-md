@@ -1,0 +1,65 @@
+{
+  "schema": "normative-diff/v1",
+  "id": "br-federal-decreto_lei-3914-1941",
+  "generated_at": "2026-10-21",
+  "anterior": "bases/history/versoes/2026-10-21-pre-reconciliacao/decreto-lei-3914-1941.md",
+  "atual": "bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3914-1941.md",
+  "metadados": {
+    "consolidacao_status": {
+      "anterior": "requer_reconciliacao",
+      "atual": "consolidada_reconciliada"
+    },
+    "ementa": {
+      "anterior": "I – se fraudulenta a falência, com a pena de reclusão, por 2 a 6 anos;",
+      "atual": "Lei de introdução ao Código Penal (Decreto-Lei nº 2.848, de 7 de dezembro de 1940) e à Lei das Contravenções Penais (Decreto-Lei nº 3.688, de 3 de outubro de 1941)."
+    },
+    "fonte_oficial": {
+      "anterior": [
+        "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-09;3914"
+      ],
+      "atual": [
+        "https://www.planalto.gov.br/ccivil_03/decreto-lei/del3914.htm",
+        "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-12-09;3914"
+      ]
+    },
+    "observacoes_proveniencia": {
+      "anterior": [
+        "Texto normalizado para o contrato público; trilha técnica mantida localmente."
+      ],
+      "atual": [
+        "Texto oficial histórico conferido no portal do Planalto; alterações e revogações históricas serão detalhadas na etapa de histórico normativo."
+      ]
+    },
+    "origem_formato": {
+      "anterior": "markdown",
+      "atual": "html"
+    },
+    "sha256_origem": {
+      "anterior": "9e8a8a97564d79743e80eab1afe267bfd3bf58e538366c3a5fdab6b2ec62ca0e",
+      "atual": "1ad23964fc5308b467b38640f5d1ea749c579bff921c7082ad4d0561d97d081b"
+    },
+    "situacao": {
+      "anterior": "desconhecida",
+      "atual": "em_vigor"
+    },
+    "titulo": {
+      "anterior": "Lei de Introducao ao Codigo Penal e a Lei das Contravencoes Penais",
+      "atual": "Lei de Introdução ao Código Penal e à Lei das Contravenções Penais"
+    },
+    "versao_texto": {
+      "anterior": "original",
+      "atual": "consolidada"
+    }
+  },
+  "estrutura": {
+    "artigos": {
+      "total_anterior": 5,
+      "total_atual": 5,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 0,
+      "inalterados": 5
+    },
+    "detalhes": []
+  }
+}

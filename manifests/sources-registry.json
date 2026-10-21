@@ -1,0 +1,81 @@
+{
+  "schema": "official-source-registry/v1",
+  "purpose": "Registry of authorized public authorities for acquisition and monitoring.",
+  "policy": {
+    "official_only": true,
+    "never_overwrite_curated": true,
+    "conflict_action": "block_and_report",
+    "unavailable_action": "preserve_current_and_alert",
+    "max_response_bytes": 20971520,
+    "request_timeout_seconds": 30,
+    "max_retries": 2,
+    "user_agent": "vademecum-md-source-monitor/0.1"
+  },
+  "sources": [
+    {
+      "id": "normas-leg-br",
+      "authority": "primary",
+      "rank": 1,
+      "adapter": "normas_leg_html",
+      "adapter_version": "0.1.0",
+      "hosts": ["normas.leg.br"],
+      "formats": ["html", "json"],
+      "rate_limit_seconds": 0.5,
+      "max_bytes": 20971520,
+      "capabilities": ["text", "consolidation", "metadata", "relations"],
+      "fallback": false
+    },
+    {
+      "id": "planalto-br",
+      "authority": "primary_or_confirmation",
+      "rank": 2,
+      "adapter": "planalto_html",
+      "adapter_version": "0.1.0",
+      "hosts": ["planalto.gov.br"],
+      "formats": ["html"],
+      "rate_limit_seconds": 0.5,
+      "max_bytes": 20971520,
+      "capabilities": ["text", "consolidation", "metadata", "publication"],
+      "fallback": true
+    },
+    {
+      "id": "camara-leg-br",
+      "authority": "legislative_reference",
+      "rank": 3,
+      "adapter": "camara_html",
+      "adapter_version": "0.1.0",
+      "hosts": ["camara.leg.br"],
+      "formats": ["html", "xml", "json"],
+      "rate_limit_seconds": 0.5,
+      "max_bytes": 20971520,
+      "capabilities": ["text", "metadata", "relations"],
+      "fallback": true
+    },
+    {
+      "id": "senado-leg-br",
+      "authority": "legislative_reference",
+      "rank": 4,
+      "adapter": "senado_html",
+      "adapter_version": "0.1.0",
+      "hosts": ["senado.leg.br"],
+      "formats": ["html", "xml", "json"],
+      "rate_limit_seconds": 0.5,
+      "max_bytes": 20971520,
+      "capabilities": ["text", "metadata", "relations"],
+      "fallback": true
+    },
+    {
+      "id": "dou-gov-br",
+      "authority": "publication",
+      "rank": 5,
+      "adapter": "dou_publication",
+      "adapter_version": "0.1.0",
+      "hosts": ["in.gov.br", "imprensaoficial.gov.br"],
+      "formats": ["html", "pdf", "json"],
+      "rate_limit_seconds": 1.0,
+      "max_bytes": 20971520,
+      "capabilities": ["publication", "veto", "retification", "effect"],
+      "fallback": true
+    }
+  ]
+}

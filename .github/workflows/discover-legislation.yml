@@ -1,0 +1,28 @@
+name: discover-legislation
+
+on:
+  schedule:
+    - cron: "19 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install project dependencies
+        run: python -m pip install -e .
+      - name: Discover official candidates
+        run: python tools/acquire/discover_legislation.py --fetch --output reports/discovery-queue.json
+      - name: Upload discovery queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: legislation-discovery-queue
+          path: reports/discovery-queue.json
+          if-no-files-found: error

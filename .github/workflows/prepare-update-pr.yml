@@ -1,0 +1,72 @@
+name: prepare-update-pr
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: legislation-update-proposal
+  cancel-in-progress: false
+
+jobs:
+  proposal:
+    runs-on: ubuntu-latest
+    environment: update-proposal
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install project dependencies
+        run: python -m pip install -e .
+      - name: Collect candidate snapshots
+        run: python tools/acquire/collect_legislation.py --fetch --report reports/legislation-collection.json
+      - name: Build candidate structural diffs
+        run: python tools/history/build_candidate_diffs.py --collection-report reports/legislation-collection.json --output reports/legislation-diffs
+      - name: Prepare human-review proposal
+        id: proposal
+        shell: bash
+        run: |
+          stamp=$(date -u +%Y%m%dT%H%M%SZ)
+          python tools/release/prepare_update_pr.py \
+            --collection-report reports/legislation-collection.json \
+            --output reports/legislation-update-proposal.json \
+            --diff-index reports/legislation-diffs/index.json \
+            --diff-dir reports/legislation-diffs \
+            --proposal-markdown "docs/proposals/update-${stamp}.md"
+          if [ -z "$(git status --porcelain -- docs/proposals)" ]; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Create review branch and draft PR
+        if: steps.proposal.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          branch="automation/update-${GITHUB_RUN_ID}"
+          git config user.name "vademecum-md automation"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add docs/proposals
+          git commit -m "chore: prepare legislation update proposal"
+          git push origin "$branch"
+          proposal_file=$(find docs/proposals -maxdepth 1 -type f -name 'update-*.md' | sort | tail -n 1)
+          gh pr create --draft --base "${GITHUB_REF_NAME}" --head "$branch" \
+            --title "chore: legislation update proposal" \
+            --body-file "$proposal_file"
+      - name: Upload non-sensitive proposal report
+        uses: actions/upload-artifact@v4
+        with:
+          name: legislation-update-proposal
+          path: |
+            reports/legislation-collection.json
+            reports/legislation-update-proposal.json
+          if-no-files-found: error

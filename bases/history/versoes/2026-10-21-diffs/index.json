@@ -1,0 +1,16 @@
+{
+  "schema": "normative-diff-index/v1",
+  "generated_at": "2026-10-21",
+  "documents": [
+    "br-federal-decreto_lei-3914-1941.json",
+    "br-federal-decreto_lei-3931-1941.json",
+    "br-federal-lei_complementar-214-2025.json",
+    "br-federal-lei_complementar-225-2026.json",
+    "br-federal-lei_complementar-227-2026.json",
+    "br-federal-lei_ordinaria-13726-2018.json",
+    "br-federal-lei_ordinaria-14133-2021.json",
+    "br-federal-lei_ordinaria-15142-2025.json",
+    "br-federal-lei_ordinaria-15358-2026.json",
+    "br-federal-lei_ordinaria-15378-2026.json"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "historical-snapshot/v1",
+  "captured_at": "2026-10-21",
+  "reason": "preservacao antes da reconciliacao do lote P0",
+  "documents": [
+    "decreto-lei-3914-1941.md",
+    "decreto-lei-3931-1941.md",
+    "lei-complementar-214-2025.md",
+    "lei-complementar-225-2026.md",
+    "lei-ordinaria-14133-2021.md",
+    "lei-complementar-227-2026.md",
+    "lei-ordinaria-15358-2026.md",
+    "lei-ordinaria-15378-2026.md",
+    "lei-ordinaria-15142-2025.md",
+    "lei-ordinaria-13726-2018.md"
+  ]
+}

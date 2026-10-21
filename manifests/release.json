@@ -1,0 +1,20 @@
+{
+  "product": "vademecum-md",
+  "version": "0.1.0",
+  "generated_at": "2026-10-21",
+  "status": "pre_release",
+  "scope": "legislacao_federal",
+  "corpus_count": 360,
+  "integral_count": 360,
+  "official_source_count": 360,
+  "sha256_count": 360,
+  "consolidacao": {
+    "consolidada_fonte_oficial": 246,
+    "requer_reconciliacao": 109,
+    "consolidada_reconciliada": 5
+  },
+  "relation_count": 1655,
+  "unresolved_relation_count": 2258,
+  "publication_policy": "automatic_only_after_validation",
+  "rag": "deferred_until_1_0"
+}

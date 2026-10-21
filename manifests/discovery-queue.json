@@ -1,0 +1,7 @@
+{
+  "schema": "legislation-discovery-queue/v1",
+  "generated_at": "2026-10-21",
+  "policy": "discovery_never_adds_to_curated",
+  "candidates": [],
+  "rejected": []
+}

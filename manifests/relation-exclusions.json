@@ -1,0 +1,36 @@
+{
+  "schema": "normative-relation-exclusions/v1",
+  "policy": "manually_reviewed_exclusions",
+  "relations": [
+    {
+      "source_id": "br-federal-lei_complementar-225-2026",
+      "type": "revogada_por",
+      "target_id": "br-federal-lei_ordinaria-10637-2002",
+      "reason": "P0 reconciliation disproved the inferred relation."
+    },
+    {
+      "source_id": "br-federal-lei_complementar-225-2026",
+      "type": "revogada_por",
+      "target_id": "br-federal-lei_ordinaria-13105-2015",
+      "reason": "P0 reconciliation disproved the inferred relation."
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-10637-2002",
+      "type": "revoga",
+      "target_id": "br-federal-lei_complementar-225-2026",
+      "reason": "P0 reconciliation disproved the inferred relation."
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-10637-2002",
+      "type": "revogada_por",
+      "target_id": "br-federal-lei_complementar-225-2026",
+      "reason": "P0 reconciliation disproved the inferred relation."
+    },
+    {
+      "source_id": "br-federal-lei_ordinaria-13105-2015",
+      "type": "revoga",
+      "target_id": "br-federal-lei_complementar-225-2026",
+      "reason": "P0 reconciliation disproved the inferred relation."
+    }
+  ]
+}

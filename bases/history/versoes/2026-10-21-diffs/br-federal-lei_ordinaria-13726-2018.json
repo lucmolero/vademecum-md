@@ -1,0 +1,53 @@
+{
+  "schema": "normative-diff/v1",
+  "id": "br-federal-lei_ordinaria-13726-2018",
+  "generated_at": "2026-10-21",
+  "anterior": "bases/history/versoes/2026-10-21-pre-reconciliacao/lei-ordinaria-13726-2018.md",
+  "atual": "bases/curated/legislacao/federal/leis-ordinarias/2018/lei-ordinaria-13726-2018.md",
+  "metadados": {
+    "consolidacao_status": {
+      "anterior": "requer_reconciliacao",
+      "atual": "consolidada_fonte_oficial"
+    },
+    "dominio": {
+      "anterior": "legislacao_complementar",
+      "atual": "administrativo"
+    },
+    "observacoes_proveniencia": {
+      "anterior": [
+        "Texto normalizado para o contrato público; trilha técnica mantida localmente.",
+        "Metadados conferidos em snapshot oficial de 2026-10-13; consolidação jurídica permanece pendente."
+      ],
+      "atual": [
+        "Texto oficial do Planalto conferido em 2026-10-21; não foi identificada marcação de alteração posterior na página vigente."
+      ]
+    },
+    "sha256_origem": {
+      "anterior": "5b328f19829f78633dbe40d137e1a1b613b96bb17ff41ddcf1877c03421a7378",
+      "atual": "8efb25ca0ae457ee4821d6bb7712631a183c1d33e0e393e186dba772c6ec3ba8"
+    },
+    "situacao": {
+      "anterior": "desconhecida",
+      "atual": "em_vigor"
+    },
+    "titulo": {
+      "anterior": "Lei nº 13.726 de 08/10/2018",
+      "atual": "Lei nº 13.726, de 8 de outubro de 2018"
+    },
+    "versao_texto": {
+      "anterior": "original",
+      "atual": "consolidada"
+    }
+  },
+  "estrutura": {
+    "artigos": {
+      "total_anterior": 1,
+      "total_atual": 1,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 0,
+      "inalterados": 1
+    },
+    "detalhes": []
+  }
+}

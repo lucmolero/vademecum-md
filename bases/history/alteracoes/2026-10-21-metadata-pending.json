@@ -1,0 +1,1659 @@
+{
+  "schema": "metadata-reconciliation/v1",
+  "generated_at": "2026-10-21",
+  "scope": "pending_documents",
+  "updated": 110,
+  "unmatched": [],
+  "changes": [
+    {
+      "id": "br-federal-decreto-9830-2019",
+      "path": "bases/curated/legislacao/federal/decretos/2019/decreto-9830-2019.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto:2019-06-10;9830",
+      "old": {
+        "titulo": "Regulamento da LINDB",
+        "ementa": "Regulamenta o disposto nos art. 20 ao art. 30 do Decreto-Lei nº 4.657, de 4 de setembro de 1942, que institui a Lei de Introdução às normas do Direito brasileiro.",
+        "data_assinatura": "2019-06-10"
+      },
+      "new": {
+        "titulo": "Decreto nº 9.830 de 10/06/2019",
+        "ementa": "Regulamenta o disposto nos art. 20 ao art. 30 do Decreto-Lei nº 4.657, de 4 de setembro de 1942, que institui a Lei de Introdução às normas do Direito brasileiro.",
+        "data_assinatura": "2019-06-10"
+      }
+    },
+    {
+      "id": "br-federal-decreto_lei-58-1937",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1937/decreto-lei-58-1937.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1937-12-10;58",
+      "old": {
+        "titulo": "Loteamento de terrenos",
+        "ementa": "Dispôe sôbre o loteamento e a venda de terrenos para pagamento em prestações",
+        "data_assinatura": "1937-12-10"
+      },
+      "new": {
+        "titulo": "Decreto-Lei nº 58 de 10/12/1937",
+        "ementa": "Dispõe sôbre o loteamento e a venda de terrenos para pagamento em prestações.",
+        "data_assinatura": "1937-12-10"
+      }
+    },
+    {
+      "id": "br-federal-decreto_lei-1608-1939",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1939/decreto-lei-1608-1939.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1939-09-18;1608",
+      "old": {
+        "titulo": "Código de Processo Civil.",
+        "ementa": "Código de Processo Civil",
+        "data_assinatura": "1939-09-18"
+      },
+      "new": {
+        "titulo": "Decreto-Lei nº 1.608 de 18/09/1939",
+        "ementa": "Código de Processo Civil.",
+        "data_assinatura": "1939-09-18"
+      }
+    },
+    {
+      "id": "br-federal-decreto_lei-2627-1940",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1940/decreto-lei-2627-1940.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1940-09-26;2627",
+      "old": {
+        "titulo": "Sociedade anônima",
+        "ementa": "Dispõe sobre as sociedades por ações",
+        "data_assinatura": "1940-09-26"
+      },
+      "new": {
+        "titulo": "Decreto-Lei nº 2.627 de 26/09/1940",
+        "ementa": "Dispõe sobre as sociedades por ações.",
+        "data_assinatura": "1940-09-26"
+      }
+    },
+    {
+      "id": "br-federal-decreto_lei-4597-1942",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1942/decreto-lei-4597-1942.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1942-08-19;4597",
+      "old": {
+        "titulo": "Prescrição – Fazenda Pública",
+        "ementa": "Dispõe sobre a prescrição das ações contra a Fazenda Pública e dá outras providências",
+        "data_assinatura": "1942-08-19"
+      },
+      "new": {
+        "titulo": "Decreto-Lei nº 4.597 de 19/08/1942",
+        "ementa": "Dispõe sobre a prescrição das ações contra a Fazenda Pública e dá outras providências.",
+        "data_assinatura": "1942-08-19"
+      }
+    },
+    {
+      "id": "br-federal-decreto_lei-195-1967",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1967/decreto-lei-195-1967.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1967-02-24;195",
+      "old": {
+        "titulo": "Contribuição de melhoria",
+        "ementa": "Dispõe sôbre a cobrança da Contribuição de Melhoria.",
+        "data_assinatura": "1967-02-24"
+      },
+      "new": {
+        "titulo": "Decreto-Lei nº 195 de 24/02/1967",
+        "ementa": "Dispõe sôbre a cobrança da Contribuição de Melhoria.",
+        "data_assinatura": "1967-02-24"
+      }
+    },
+    {
+      "id": "br-federal-decreto_lei-779-1969",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1969/decreto-lei-779-1969.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1969-08-21;779",
+      "old": {
+        "titulo": "Normas processuais trabalhistas",
+        "ementa": "Dispõe sôbre a aplicação de normas processuais trabalhistas à União Federal, aos Estados, Municípios, Distrito Federal e Autarquias ou Fundações de direito público que não explorem atividade econômica.",
+        "data_assinatura": "1969-08-21"
+      },
+      "new": {
+        "titulo": "Decreto-Lei nº 779 de 21/08/1969",
+        "ementa": "Dispõe sobre a aplicação de normas processuais trabalhistas à União Federal, aos Estados, Municípios, Distrito Federal e Autarquias ou Fundações de direito público que não explorem atividade econômica.",
+        "data_assinatura": "1969-08-21"
+      }
+    },
+    {
+      "id": "br-federal-decreto_lei-1075-1970",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1970/decreto-lei-1075-1970.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1970-01-22;1075",
+      "old": {
+        "titulo": "Imissão de posse",
+        "ementa": "Regula a imissão de posse, initio litis, em imóveis residenciais urbanos.",
+        "data_assinatura": "1970-01-22"
+      },
+      "new": {
+        "titulo": "Decreto-Lei nº 1.075 de 22/01/1970",
+        "ementa": "Regula a imissão de posse, initio litis , em imóveis residenciais urbanos.",
+        "data_assinatura": "1970-01-22"
+      }
+    },
+    {
+      "id": "br-federal-decreto_lei-1413-1975",
+      "path": "bases/curated/legislacao/federal/decretos-lei/1975/decreto-lei-1413-1975.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1975-08-14;1413",
+      "old": {
+        "titulo": "Controle de Poluição do meio ambiente",
+        "ementa": "Dispõe sobre o controle da poluição do meio ambiente provocada por atividades industriais.",
+        "data_assinatura": "1975-08-14"
+      },
+      "new": {
+        "titulo": "Decreto-Lei nº 1.413 de 14/08/1975",
+        "ementa": "Dispõe sobre o controle da poluição do meio ambiente provocada por atividades industriais.",
+        "data_assinatura": "1975-08-14"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-108-2001",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2001/lei-complementar-108-2001.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2001-05-29;108",
+      "old": {
+        "titulo": "Previdência complementar",
+        "ementa": "Dispõe sobre a relação entre a União, os Estados, o Distrito Federal e os Municípios, suas autarquias, fundações, sociedades de economia mista e outras entidades públicas e suas respectivas entidades fechadas de previdência complementar, e dá outras providências.",
+        "data_assinatura": "2001-05-29"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 108 de 29/05/2001",
+        "ementa": "Dispõe sobre a relação entre a União, os Estados, o Distrito Federal e os Municípios, suas autarquias, fundações, sociedades de economia mista e outras entidades públicas e suas respectivas entidades fechadas de previdência complementar, e dá outras providências.",
+        "data_assinatura": "2001-05-29"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-135-2010",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2010/lei-complementar-135-2010.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2010-06-04;135",
+      "old": {
+        "titulo": "Lei da Ficha Limpa",
+        "ementa": "Altera a Lei Complementar no 64, de 18 de maio de 1990, que estabelece, de acordo com o § 9o do art. 14 da Constituição Federal, casos de inelegibilidade, prazos de cessação e determina outras providências, para incluir hipóteses de inelegibilidade que visam a proteger a probidade administrativa e a moralidade no exercício do mandato.",
+        "data_assinatura": "2010-06-04"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 135 de 04/06/2010",
+        "ementa": "Altera a Lei Complementar n° 64, de 18 de maio de 1990, que estabelece, de acordo com o § 9° do art. 14 da Constituição Federal, casos de inelegibilidade, prazos de cessação e determina outras providências, para incluir hipóteses de inelegibilidade que visam a proteger a probidade administrativa e a moralidade no exercício do mandato.",
+        "data_assinatura": "2010-06-04"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-142-2013",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2013/lei-complementar-142-2013.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2013-05-08;142",
+      "old": {
+        "titulo": "Aposentadoria da pessoa com deficiência",
+        "ementa": "Regulamenta o § 1º do art. 201 da Constituição Federal, no tocante à aposentadoria da pessoa com deficiência segurada do Regime Geral de Previdência Social - RGPS.",
+        "data_assinatura": "2013-05-08"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 142 de 08/05/2013",
+        "ementa": "Regulamenta o § 1º do art. 201 da Constituição Federal, no tocante à aposentadoria da pessoa com deficiência segurada do Regime Geral de Previdência Social - RGPS.",
+        "data_assinatura": "2013-05-08"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-146-2014",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2014/lei-complementar-146-2014.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2014-06-25;146",
+      "old": {
+        "titulo": "Estabilidade provisória",
+        "ementa": "Estende a estabilidade provisória prevista na alínea b do inciso II do art. 10 do Ato das Disposições Constitucionais Transitórias à trabalhadora gestante, nos casos de morte desta, a quem detiver a guarda de seu filho.",
+        "data_assinatura": "2014-06-25"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 146 de 25/06/2014",
+        "ementa": "Estende a estabilidade provisória prevista na alínea b do inciso II do art. 10 do Ato das Disposições Constitucionais Transitórias à trabalhadora gestante, nos casos de morte desta, a quem detiver a guarda de seu filho.",
+        "data_assinatura": "2014-06-25"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-147-2014",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2014/lei-complementar-147-2014.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2014-08-07;147",
+      "old": {
+        "titulo": "Altera o Estatuto da Microempresa e dá outras providências.",
+        "ementa": "Altera a Lei Complementar nº 123, de 14 de dezembro de 2006, e as Leis nº 5.889, de 8 de junho de 1973, 11.101, de 9 de fevereiro de 2005, 9.099, de 26 de setembro de 1995, 11.598, de 3 de dezembro de 2007, 8.934, de 18 de novembro de 1994, 10.406, de 10 de janeiro de 2002, e 8.666, de 21 de junho de 1993; e dá outras providências.",
+        "data_assinatura": "2014-08-07"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 147 de 07/08/2014",
+        "ementa": "Altera a Lei Complementar nº 123, de 14 de dezembro de 2006, e as Leis nºs 5.889, de 8 de junho de 1973, 11.101, de 9 de fevereiro de 2005, 9.099, de 26 de setembro de 1995, 11.598, de 3 de dezembro de 2007, 8.934, de 18 de novembro de 1994, 10.406, de 10 de janeiro de 2002, e 8.666, de 21 de junho de 1993; e dá outras providências.",
+        "data_assinatura": "2014-08-07"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-162-2018",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2018/lei-complementar-162-2018.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2018-04-06;162",
+      "old": {
+        "titulo": "Pert-SN",
+        "ementa": "Institui o Programa Especial de Regularização Tributária das Microempresas e Empresas de Pequeno Porte optantes pelo Simples Nacional (Pert-SN).",
+        "data_assinatura": "2018-04-06"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 162 de 06/04/2018",
+        "ementa": "Institui o Programa Especial de Regularização Tributária das Microempresas e Empresas de Pequeno Porte optantes pelo Simples Nacional (Pert-SN).",
+        "data_assinatura": "2018-04-06"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-167-2019",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2019/lei-complementar-167-2019.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2019-04-24;167",
+      "old": {
+        "titulo": "Empresa Simples de Crédito",
+        "ementa": "Dispõe sobre a Empresa Simples de Crédito (ESC) e altera a Lei nº 9.613, de 3 de março de 1998 (Lei de Lavagem de Dinheiro), a Lei nº 9.249, de 26 de dezembro de 1995, e a Lei Complementar nº 123, de 14 de dezembro de 2006 (Lei do Simples Nacional), para regulamentar a ESC e instituir o Inova Simples.",
+        "data_assinatura": "2019-04-24"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 167 de 24/04/2019",
+        "ementa": "Dispõe sobre a Empresa Simples de Crédito (ESC) e altera a Lei nº 9.613, de 3 de março de 1998 (Lei de Lavagem de Dinheiro), a Lei nº 9.249, de 26 de dezembro de 1995, e a Lei Complementar nº 123, de 14 de dezembro de 2006 (Lei do Simples Nacional), para regulamentar a ESC e instituir o Inova Simples.",
+        "data_assinatura": "2019-04-24"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-178-2021",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2021/lei-complementar-178-2021.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2021-01-13;178",
+      "old": {
+        "titulo": "Transparência e Equilíbrio Fiscal",
+        "ementa": "Estabelece o Programa de Acompanhamento e Transparência Fiscal e o Plano de Promoção do Equilíbrio Fiscal; altera a Lei Complementar nº 101, de 4 de maio de 2000, a Lei Complementar nº 156, de 28 de dezembro de 2016, a Lei Complementar nº 159, de 19 de maio de 2017, a Lei Complementar nº 173, de 27 de maio de 2020, a Lei nº 9.496, de 11 de setembro de 1997, a Lei nº 12.348, de 15 de dezembro de 2010, a Lei nº 12.649, de 17 de maio de 2012, e a Medida Provisória nº 2.185-35, de 24 de agosto de 2001; e dá outras providências.",
+        "data_assinatura": "2021-01-13"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 178 de 13/01/2021",
+        "ementa": "Estabelece o Programa de Acompanhamento e Transparência Fiscal e o Plano de Promoção do Equilíbrio Fiscal; altera a Lei Complementar nº 101, de 4 de maio de 2000, a Lei Complementar nº 156, de 28 de dezembro de 2016, a Lei Complementar nº 159, de 19 de maio de 2017, a Lei Complementar nº 173, de 27 de maio de 2020, a Lei nº 9.496, de 11 de setembro de 1997, a Lei nº 12.348, de 15 de dezembro de 2010, a Lei nº 12.649, de 17 de maio de 2012, e a Medida Provisória nº 2.185-35, de 24 de agosto de 2001; e dá outras providências.",
+        "data_assinatura": "2021-01-13"
+      }
+    },
+    {
+      "id": "br-federal-lei_complementar-224-2025",
+      "path": "bases/curated/legislacao/federal/leis-complementares/2025/lei-complementar-224-2025.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224",
+      "old": {
+        "titulo": "Incentivo fiscal e tributo sobre bets",
+        "ementa": "Dispõe sobre a redução e os critérios de concessão de incentivos e benefícios de natureza tributária, financeira ou creditícia concedidos exclusivamente no âmbito da União; estabelece a responsabilidade solidária de terceiros pelo recolhimento de tributos incidentes sobre a exploração de apostas de quota fixa; e altera as Leis Complementares nºs 101, de 4 de maio de 2000 (Lei de Responsabilidade Fiscal), 105, de 10 de janeiro de 2001, e 215, de 21 de março de 2025, e as Leis nºs 7.689, de 15 de dezembro de 1988, 9.249, de 26 de dezembro de 1995, 13.756, de 12 de dezembro de 2018, e 8.137, de 27 de dezembro de 1990.",
+        "data_assinatura": "2025-12-26"
+      },
+      "new": {
+        "titulo": "Lei Complementar nº 224 de 26/12/2025",
+        "ementa": "Dispõe sobre a redução e os critérios de concessão de incentivos e benefícios de natureza tributária, financeira ou creditícia concedidos exclusivamente no âmbito da União; estabelece a responsabilidade solidária de terceiros pelo recolhimento de tributos incidentes sobre a exploração de apostas de quota fixa; e altera as Leis Complementares nºs 101, de 4 de maio de 2000 (Lei de Responsabilidade Fiscal), 105, de 10 de janeiro de 2001, e 215, de 21 de março de 2025, e as Leis nºs 7.689, de 15 de dezembro de 1988, 9.249, de 26 de dezembro de 1995, 13.756, de 12 de dezembro de 2018, e 8.137, de 27 de dezembro de 1990.",
+        "data_assinatura": "2025-12-26"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-556-1850",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1850/lei-ordinaria-556-1850.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1850-06-25;556",
+      "old": {
+        "titulo": "Codigo Comercial",
+        "ementa": null,
+        "data_assinatura": "1850-06-25"
+      },
+      "new": {
+        "titulo": "Lei nº 556 de 25/06/1850",
+        "ementa": "CODIGO COMERCIAL DO IMPERIO DO BRASIL.",
+        "data_assinatura": "1850-06-25"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-4749-1965",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1965/lei-ordinaria-4749-1965.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-08-12;4749",
+      "old": {
+        "titulo": "Pagamento da gratificação de Natal",
+        "ementa": "Dispõe sôbre o pagamento da gratificação prevista na Lei nº 4.090, de 13 de julho de 1962.",
+        "data_assinatura": "1965-08-12"
+      },
+      "new": {
+        "titulo": "Lei nº 4.749 de 12/08/1965",
+        "ementa": "Dispõe sôbre o pagamento da gratificação prevista na Lei nº 4.090, de 13 de julho de 1962.",
+        "data_assinatura": "1965-08-12"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-5256-1967",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1967/lei-ordinaria-5256-1967.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1967-04-06;5256",
+      "old": {
+        "titulo": "Prisão especial",
+        "ementa": "Dispõe sôbre a prisão especial.",
+        "data_assinatura": "1967-04-06"
+      },
+      "new": {
+        "titulo": "Lei nº 5.256 de 06/04/1967",
+        "ementa": "Dispõe sôbre a prisão especial.",
+        "data_assinatura": "1967-04-06"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-6899-1981",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1981/lei-ordinaria-6899-1981.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1981-04-08;6899",
+      "old": {
+        "titulo": "Correção Monetária em Juízo",
+        "ementa": "Determina a aplicação da correção monetária nos débitos oriundos de decisão judicial e dá outras providências.",
+        "data_assinatura": "1981-04-08"
+      },
+      "new": {
+        "titulo": "Lei nº 6.899 de 08/04/1981",
+        "ementa": "Determina a aplicação da correção monetária nos débitos oriundos de decisão judicial e dá outras providências.",
+        "data_assinatura": "1981-04-08"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-6969-1981",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1981/lei-ordinaria-6969-1981.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1981-12-10;6969",
+      "old": {
+        "titulo": "Usucapião especial",
+        "ementa": "Dispõe sobre a aquisição, por usucapião especial, de imóveis rurais, altera a redação do § 2º do art. 589 do Código Civil, e dá outras providências.",
+        "data_assinatura": "1981-12-10"
+      },
+      "new": {
+        "titulo": "Lei nº 6.969 de 10/12/1981",
+        "ementa": "Dispõe sobre a aquisição, por usucapião especial, de imóveis rurais, altera a redação do § 2º do art. 589 do Código Civil e dá outras providências.",
+        "data_assinatura": "1981-12-10"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-7106-1983",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1983/lei-ordinaria-7106-1983.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1983-06-28;7106",
+      "old": {
+        "titulo": "Crimes de responsabilidade do governador",
+        "ementa": "Define os crimes de responsabilidade do Governador do Distrito Federal, dos Governadores dos Territórios Federais e de seus respectivos Secretários, e dá outras providências.",
+        "data_assinatura": "1983-06-28"
+      },
+      "new": {
+        "titulo": "Lei nº 7.106 de 28/06/1983",
+        "ementa": "Define os crimes de responsabilidade do Governador do Distrito Federal, dos Governadores dos Territórios Federais e de seus respectivos Secretários, e dá outras providências.",
+        "data_assinatura": "1983-06-28"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-7357-1985",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1985/lei-ordinaria-7357-1985.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1985-09-02;7357",
+      "old": {
+        "titulo": "Lei do cheque",
+        "ementa": "Dispõe sobre o cheque e dá outras providências.",
+        "data_assinatura": "1985-09-02"
+      },
+      "new": {
+        "titulo": "Lei nº 7.357 de 02/09/1985",
+        "ementa": "Dispõe sobre o cheque e dá outras providências.",
+        "data_assinatura": "1985-09-02"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-8625-1993",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1993/lei-ordinaria-8625-1993.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1993-02-12;8625",
+      "old": {
+        "titulo": "Lei Orgânica Nacional do Ministério Público",
+        "ementa": "Institui a Lei Orgânica Nacional do Ministério Público, dispõe sobre normas gerais para a organização do Ministério Público dos Estados e dá outras providências.",
+        "data_assinatura": "1993-02-12"
+      },
+      "new": {
+        "titulo": "Lei nº 8.625 de 12/02/1993",
+        "ementa": "Institui a Lei Orgânica Nacional do Ministério Público, dispõe sobre normas gerais para a organização do Ministério Público dos Estados e dá outras providências.",
+        "data_assinatura": "1993-02-12"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-8658-1993",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1993/lei-ordinaria-8658-1993.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1993-05-26;8658",
+      "old": {
+        "titulo": "Ações penais originárias",
+        "ementa": "Dispõe sobre a aplicação, nos Tribunais de Justiça e nos Tribunais Regionais Federais, das normas da Lei n° 8.038, de 28 de maio de 1990, sobre ações penais originárias.",
+        "data_assinatura": "1993-05-26"
+      },
+      "new": {
+        "titulo": "Lei nº 8.658 de 26/05/1993",
+        "ementa": "Dispõe sobre aplicação, nos Tribunais de Justiça e nos Tribunais Regionais Federais, das normas da Lei nº 8.038, de 28 de maio de 1990, sobre ações penais originárias.",
+        "data_assinatura": "1993-05-26"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-8866-1994",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1994/lei-ordinaria-8866-1994.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1994-04-11;8866",
+      "old": {
+        "titulo": "Depositário infiel de valor pertencente à Fazenda Pública.",
+        "ementa": "Dispõe sobre o depositário infiel de valor pertencente à Fazenda Pública e dá outras providências.",
+        "data_assinatura": "1994-04-11"
+      },
+      "new": {
+        "titulo": "Lei nº 8.866 de 11/04/1994",
+        "ementa": "Dispõe sobre o depositário infiel de valor pertencente à Fazenda Pública e dá outras providências.",
+        "data_assinatura": "1994-04-11"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-8971-1994",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1994/lei-ordinaria-8971-1994.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1994-12-29;8971",
+      "old": {
+        "titulo": "Lei dos companheiros",
+        "ementa": "Regula o direito dos companheiros a alimentos e à sucessão.",
+        "data_assinatura": "1994-12-29"
+      },
+      "new": {
+        "titulo": "Lei nº 8.971 de 29/12/1994",
+        "ementa": "Regula o direito dos companheiros a alimentos e à sucessão.",
+        "data_assinatura": "1994-12-29"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-8984-1995",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1995/lei-ordinaria-8984-1995.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-02-07;8984",
+      "old": {
+        "titulo": "Competência da Justiça do Trabalho",
+        "ementa": "Estende a competência da Justiça do Trabalho (art. 114 da Constituição Federal).",
+        "data_assinatura": "1995-02-07"
+      },
+      "new": {
+        "titulo": "Lei nº 8.984 de 07/02/1995",
+        "ementa": "Estende a competência da Justiça do Trabalho (art. 114 da Constituição Federal).",
+        "data_assinatura": "1995-02-07"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9051-1995",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1995/lei-ordinaria-9051-1995.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-05-18;9051",
+      "old": {
+        "titulo": "Expedição de certidões",
+        "ementa": "Dispõe sobre a expedição de certidões para a defesa de direitos e esclarecimentos de situações.",
+        "data_assinatura": "1995-05-18"
+      },
+      "new": {
+        "titulo": "Lei nº 9.051 de 18/05/1995",
+        "ementa": "Dispõe sobre a expedição de certidões para a defesa de direitos e esclarecimentos de situações.",
+        "data_assinatura": "1995-05-18"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9278-1996",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1996/lei-ordinaria-9278-1996.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1996-05-10;9278",
+      "old": {
+        "titulo": "União Estável",
+        "ementa": "Regula o § 3º do art. 226 da Constituição Federal.",
+        "data_assinatura": "1996-05-10"
+      },
+      "new": {
+        "titulo": "Lei nº 9.278 de 10/05/1996",
+        "ementa": "Regula o § 3° do art. 226 da Constituição Federal.",
+        "data_assinatura": "1996-05-10"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9474-1997",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1997/lei-ordinaria-9474-1997.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1997-07-22;9474",
+      "old": {
+        "titulo": "Estatuto dos Refugiados",
+        "ementa": "Define mecanismos para a implementação do Estatuto dos Refugiados de 1951, e determina outras providências.",
+        "data_assinatura": "1997-07-22"
+      },
+      "new": {
+        "titulo": "Lei nº 9.474 de 22/07/1997",
+        "ementa": "Define mecanismos para a implementação do Estatuto dos Refugiados de 1951, e determina outras providências.",
+        "data_assinatura": "1997-07-22"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9507-1997",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1997/lei-ordinaria-9507-1997.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1997-11-12;9507",
+      "old": {
+        "titulo": "Habeas data",
+        "ementa": "Regula o direito de acesso a informações e disciplina o rito processual do habeas data.",
+        "data_assinatura": "1997-11-12"
+      },
+      "new": {
+        "titulo": "Lei nº 9.507 de 12/11/1997",
+        "ementa": "Regula o direito de acesso a informações e disciplina o rito processual do habeas data.",
+        "data_assinatura": "1997-11-12"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9609-1998",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1998/lei-ordinaria-9609-1998.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1998-02-19;9609",
+      "old": {
+        "titulo": "Propriedade intelectual de programas de computador",
+        "ementa": "No fecho da Lei nº 9.609, de 19 de fevereiro de 1998, publicada no D.O. nº 36, de 20-2-98, Seção I, página 3, ONDE SE LÊ: Brasília, de 16 de fevereiro de 1998;...LEIA-SE: Brasília, 19 de fevereiro de 1998;...",
+        "data_assinatura": "1998-02-19"
+      },
+      "new": {
+        "titulo": "Lei nº 9.609 de 19/02/1998",
+        "ementa": "Dispõe sobre a proteção da propriedade intelectual de programa de computador, sua comercialização no País, e dá outras providências.",
+        "data_assinatura": "1998-02-19"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9709-1998",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1998/lei-ordinaria-9709-1998.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1998-11-18;9709",
+      "old": {
+        "titulo": "Plebiscito, referendo e iniciativa popular",
+        "ementa": "Regulamenta a execução do disposto nos incisos I, II e III do art. 14 da Constituição Federal.",
+        "data_assinatura": "1998-11-18"
+      },
+      "new": {
+        "titulo": "Lei nº 9.709 de 18/11/1998",
+        "ementa": "Regulamenta a execução do disposto nos incisos I, II e III do art. 14 da Constituição Federal.",
+        "data_assinatura": "1998-11-18"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9801-1999",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1999/lei-ordinaria-9801-1999.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1999-06-14;9801",
+      "old": {
+        "titulo": "Cargo Público",
+        "ementa": "Dispõe sobre as normas gerais para perda de cargo público por excesso de despesa e dá outras providências.",
+        "data_assinatura": "1999-06-14"
+      },
+      "new": {
+        "titulo": "Lei nº 9.801 de 14/06/1999",
+        "ementa": "Dispõe sobre as normas gerais para perda de cargo público por excesso de despesa e dá outras providências.",
+        "data_assinatura": "1999-06-14"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9882-1999",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/1999/lei-ordinaria-9882-1999.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1999-12-03;9882",
+      "old": {
+        "titulo": "ADPF",
+        "ementa": "Dispõe sobre o processo e julgamento da argüição de descumprimento de preceito fundamental, nos termos do § 1º do art. 102 da Constituição Federal.",
+        "data_assinatura": "1999-12-03"
+      },
+      "new": {
+        "titulo": "Lei nº 9.882 de 03/12/1999",
+        "ementa": "Dispõe sobre o processo e julgamento da argüição de descumprimento de preceito fundamental, nos termos do § 1º do art. 102 da Constituição Federal.",
+        "data_assinatura": "1999-12-03"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-10028-2000",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2000/lei-ordinaria-10028-2000.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2000-10-19;10028",
+      "old": {
+        "titulo": "Crimes contra finanças públicas",
+        "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal, a Lei nº 1.079, de 10 de abril de 1950, e o Decreto-Lei nº 201, de 27 de fevereiro de 1967.",
+        "data_assinatura": "2000-10-19"
+      },
+      "new": {
+        "titulo": "Lei nº 10.028 de 19/10/2000",
+        "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal, a Lei nº 1.079, de 10 de abril de 1950, e o Decreto-Lei nº 201, de 27 de fevereiro de 1967.",
+        "data_assinatura": "2000-10-19"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-9962-2000",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2000/lei-ordinaria-9962-2000.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2000-02-22;9962",
+      "old": {
+        "titulo": "Regime de Emprego Público",
+        "ementa": "Disciplina o regime de emprego público do pessoal da Administração federal direta, autárquica e fundacional, e dá outras providências.",
+        "data_assinatura": "2000-02-22"
+      },
+      "new": {
+        "titulo": "Lei nº 9.962 de 22/02/2000",
+        "ementa": "Disciplina o regime de emprego público do pessoal da Administração federal direta, autárquica e fundacional, e dá outras providências.",
+        "data_assinatura": "2000-02-22"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-10216-2001",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2001/lei-ordinaria-10216-2001.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2001-04-06;10216",
+      "old": {
+        "titulo": "Portadores de Transtornos Mentais",
+        "ementa": "Dispõe sobre a proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o modelo assistencial em saúde mental.",
+        "data_assinatura": "2001-04-06"
+      },
+      "new": {
+        "titulo": "Lei nº 10.216 de 06/04/2001",
+        "ementa": "Dispõe sobre a proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o modelo assistencial em saúde mental.",
+        "data_assinatura": "2001-04-06"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-10303-2001",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2001/lei-ordinaria-10303-2001.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2001-10-31;10303",
+      "old": {
+        "titulo": "Sociedades Anônimas e mercado de valores mobiliários",
+        "ementa": "Altera e acrescenta dispositivos na Lei nº 6.404, de 15 de dezembro de 1976, que dispõe sobre as Sociedades por Ações, e na Lei nº 6.385, de 7 de dezembro de 1976, que dispõe sobre o mercado de valores mobiliários e cria a Comissão de Valores Mobiliários.",
+        "data_assinatura": "2001-10-31"
+      },
+      "new": {
+        "titulo": "Lei nº 10.303 de 31/10/2001",
+        "ementa": "Altera e acrescenta dispositivos na Lei nº 6.404, de 15 de dezembro de 1976, que dispõe sobre as Sociedades por Ações, e na Lei nº 6.385, de 7 de dezembro de 1976, que dispõe sobre o mercado de valores mobiliários e cria a Comissão de Valores Mobiliários.",
+        "data_assinatura": "2001-10-31"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-11417-2006",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2006/lei-ordinaria-11417-2006.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-12-19;11417",
+      "old": {
+        "titulo": "Súmula vinculante",
+        "ementa": "Regulamenta o art. 103-A da Constituição Federal e altera a Lei no 9.784, de 29 de janeiro de 1999, disciplinando a edição, a revisão e o cancelamento de enunciado de súmula vinculante pelo Supremo Tribunal Federal, e dá outras providências.",
+        "data_assinatura": "2006-12-19"
+      },
+      "new": {
+        "titulo": "Lei nº 11.417 de 19/12/2006",
+        "ementa": "Regulamenta o art. 103-A da Constituição Federal e altera a Lei nº 9.784, de 29 de janeiro de 1999, disciplinando a edição, a revisão e o cancelamento de enunciado de súmula vinculante pelo Supremo Tribunal Federal, e dá outras providências.",
+        "data_assinatura": "2006-12-19"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-11636-2007",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2007/lei-ordinaria-11636-2007.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2007-12-28;11636",
+      "old": {
+        "titulo": "Custas judiciais",
+        "ementa": "Dispõe sobre as custas judiciais devidas no âmbito do Superior Tribunal de Justiça.",
+        "data_assinatura": "2007-12-28"
+      },
+      "new": {
+        "titulo": "Lei nº 11.636 de 28/12/2007",
+        "ementa": "Dispõe sobre as custas judiciais devidas no âmbito do Superior Tribunal de Justiça.",
+        "data_assinatura": "2007-12-28"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-11638-2007",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2007/lei-ordinaria-11638-2007.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2007-12-28;11638",
+      "old": {
+        "titulo": "Demonstrações financeiras",
+        "ementa": "Altera e revoga dispositivos da Lei no 6.404, de 15 de dezembro de 1976, e da Lei no 6.385, de 7 de dezembro de 1976, e estende às sociedades de grande porte disposições relativas à elaboração e divulgação de demonstrações financeiras.",
+        "data_assinatura": "2007-12-28"
+      },
+      "new": {
+        "titulo": "Lei nº 11.638 de 28/12/2007",
+        "ementa": "Altera e revoga dispositivos da Lei nº 6.404, de 15 de dezembro de 1976, e da Lei nº 6.385, de 7 de dezembro de 1976, e estende às sociedades de grande porte disposições relativas à elaboração e divulgação de demonstrações financeiras.",
+        "data_assinatura": "2007-12-28"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-11648-2008",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2008/lei-ordinaria-11648-2008.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2008-03-31;11648",
+      "old": {
+        "titulo": "Centrais sindicais",
+        "ementa": "Dispõe sobre o reconhecimento formal das centrais sindicais para os fins que especifica, altera a Consolidação das Leis do Trabalho - CLT, aprovada pelo Decreto-Lei no 5.452, de 1o de maio de 1943, e dá outras providências.",
+        "data_assinatura": "2008-03-31"
+      },
+      "new": {
+        "titulo": "Lei nº 11.648 de 31/03/2008",
+        "ementa": "Dispõe sobre o reconhecimento formal das centrais sindicais para os fins que especifica, altera a Consolidação das Leis do Trabalho - CLT, aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943, e dá outras providências.",
+        "data_assinatura": "2008-03-31"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-11649-2008",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2008/lei-ordinaria-11649-2008.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2008-04-04;11649",
+      "old": {
+        "titulo": "Leasing",
+        "ementa": "Dispõe sobre procedimento na operação de arrendamento mercantil de veículo automotivo (leasing), e dá outras providências.",
+        "data_assinatura": "2008-04-04"
+      },
+      "new": {
+        "titulo": "Lei nº 11.649 de 04/04/2008",
+        "ementa": "Dispõe sobre procedimento na operação de arrendamento mercantil de veículo automotivo (leasing), e dá outras providências.",
+        "data_assinatura": "2008-04-04"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-11705-2008",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2008/lei-ordinaria-11705-2008.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2008-06-19;11705",
+      "old": {
+        "titulo": "Lei Seca",
+        "ementa": "Altera a Lei nº 9.503, de 23 de setembro de 1997, que 'institui o Código de Trânsito Brasileiro', e a Lei nº 9.294, de 15 de julho de 1996, que dispõe sobre as restrições ao uso e à propaganda de produtos fumígeros, bebidas alcoólicas, medicamentos, terapias e defensivos agrícolas, nos termos do § 4º do art. 220 da Constituição Federal, para inibir o consumo de bebida alcoólica por condutor de veículo automotor, e dá outras providências.",
+        "data_assinatura": "2008-06-19"
+      },
+      "new": {
+        "titulo": "Lei nº 11.705 de 19/06/2008",
+        "ementa": "Altera a Lei nº 9.503, de 23 de setembro de 1997, que 'institui o Código de Trânsito Brasileiro', e a Lei nº 9.294, de 15 de julho de 1996, que dispõe sobre as restrições ao uso e à propaganda de produtos fumígeros, bebidas alcoólicas, medicamentos, terapias e defensivos agrícolas, nos termos do § 4º do art. 220 da Constituição Federal, para inibir o consumo de bebida alcoólica por condutor de veículo automotor, e dá outras providências.",
+        "data_assinatura": "2008-06-19"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-11804-2008",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2008/lei-ordinaria-11804-2008.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2008-11-05;11804",
+      "old": {
+        "titulo": "Alimentos gravídicos",
+        "ementa": "Disciplina o direito a alimentos gravídicos e a forma como ele será exercido e dá outras providências.",
+        "data_assinatura": "2008-11-05"
+      },
+      "new": {
+        "titulo": "Lei nº 11.804 de 05/11/2008",
+        "ementa": "Disciplina o direito a alimentos gravídicos e a forma como ele será exercido e dá outras providências.",
+        "data_assinatura": "2008-11-05"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12007-2009",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2009/lei-ordinaria-12007-2009.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2009-07-29;12007",
+      "old": {
+        "titulo": "Quitação anual de débitos",
+        "ementa": "Dispõe sobre a emissão de declaração de quitação anual de débitos pelas pessoas jurídicas prestadoras de serviços públicos ou privados.",
+        "data_assinatura": "2009-07-29"
+      },
+      "new": {
+        "titulo": "Lei nº 12.007 de 29/07/2009",
+        "ementa": "Dispõe sobre a emissão de declaração de quitação anual de débitos pelas pessoas jurídicas prestadoras de serviços públicos ou privados.",
+        "data_assinatura": "2009-07-29"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12010-2009",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2009/lei-ordinaria-12010-2009.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2009-08-03;12010",
+      "old": {
+        "titulo": "Adoção",
+        "ementa": "Dispõe sobre adoção; altera as Leis nºs 8.069, de 13 de julho de 1990 - Estatuto da Criança e do Adolescente, 8.560, de 29 de dezembro de 1992; revoga dispositivos da Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil, e da Consolidação das Leis do Trabalho - CLT, aprovada pelo Decreto- Lei nº 5.452, de 1º de maio de 1943; e dá outras providências.",
+        "data_assinatura": "2009-08-03"
+      },
+      "new": {
+        "titulo": "Lei nº 12.010 de 03/08/2009",
+        "ementa": "Dispõe sobre adoção; altera as Leis nºs 8.069, de 13 de julho de 1990 - Estatuto da Criança e do Adolescente, 8.560, de 29 de dezembro de 1992; revoga dispositivos da Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil, e da Consolidação das Leis do Trabalho - CLT, aprovada pelo Decreto- Lei nº 5.452, de ;1º de maio de 1943; e dá outras providências.",
+        "data_assinatura": "2009-08-03"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12030-2009",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2009/lei-ordinaria-12030-2009.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2009-09-17;12030",
+      "old": {
+        "titulo": "Perícias oficiais",
+        "ementa": "Dispõe sobre as perícias oficiais e dá outras providências.",
+        "data_assinatura": "2009-09-17"
+      },
+      "new": {
+        "titulo": "Lei nº 12.030 de 17/09/2009",
+        "ementa": "Dispõe sobre as perícias oficiais e dá outras providências.",
+        "data_assinatura": "2009-09-17"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12153-2009",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2009/lei-ordinaria-12153-2009.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2009-12-22;12153",
+      "old": {
+        "titulo": "Juizados Especiais da Fazenda Pública",
+        "ementa": "Dispõe sobre os Juizados Especiais da Fazenda Pública no âmbito dos Estados, do Distrito Federal, dos Territórios e dos Municípios.",
+        "data_assinatura": "2009-12-22"
+      },
+      "new": {
+        "titulo": "Lei nº 12.153 de 22/12/2009",
+        "ementa": "Dispõe sobre os Juizados Especiais da Fazenda Pública no âmbito dos Estados, do Distrito Federal, dos Territórios e dos Municípios.",
+        "data_assinatura": "2009-12-22"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12353-2010",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2010/lei-ordinaria-12353-2010.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2010-12-28;12353",
+      "old": {
+        "titulo": "Conselhos de Adm. de Empr. Públ.",
+        "ementa": "Dispõe sobre a participação de empregados nos conselhos de administração das empresas públicas e sociedades de economia mista, suas subsidiárias e controladas e demais empresas em que a União, direta ou indiretamente, detenha a maioria do capital social com direito a voto e dá outras providências.",
+        "data_assinatura": "2010-12-28"
+      },
+      "new": {
+        "titulo": "Lei nº 12.353 de 28/12/2010",
+        "ementa": "Dispõe sobre a participação de empregados nos conselhos de administração das empresas públicas e sociedades de economia mista, suas subsidiárias e controladas e demais empresas em que a União, direta ou indiretamente, detenha a maioria do capital social com direito a voto e dá outras providências.",
+        "data_assinatura": "2010-12-28"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12506-2011",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2011/lei-ordinaria-12506-2011.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2011-10-11;12506",
+      "old": {
+        "titulo": "Aviso Prévio",
+        "ementa": "Dispõe sobre o aviso prévio e dá outras providências.",
+        "data_assinatura": "2011-10-11"
+      },
+      "new": {
+        "titulo": "Lei nº 12.506 de 11/10/2011",
+        "ementa": "Dispõe sobre o aviso prévio e dá outras providências.",
+        "data_assinatura": "2011-10-11"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12562-2011",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2011/lei-ordinaria-12562-2011.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2011-12-23;12562",
+      "old": {
+        "titulo": "Representação interventiva",
+        "ementa": "(Publicada no DOU de 26 de dezembro de 2011, Seção 1 página 1)",
+        "data_assinatura": "2011-12-23"
+      },
+      "new": {
+        "titulo": "Lei nº 12.562 de 23/12/2011",
+        "ementa": "Regulamenta o inciso III do art. 36 da Constituição Federal, para dispor sobre o processo e julgamento da representação interventiva perante o Supremo Tribunal Federal.",
+        "data_assinatura": "2011-12-23"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12594-2012",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2012/lei-ordinaria-12594-2012.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2012-01-18;12594",
+      "old": {
+        "titulo": "Sinase",
+        "ementa": "(Publicada no Diário Oficial de 19 de janeiro de 2012, Seção 1)",
+        "data_assinatura": "2012-01-18"
+      },
+      "new": {
+        "titulo": "Lei nº 12.594 de 18/01/2012",
+        "ementa": "Institui o Sistema Nacional de Atendimento Socioeducativo (Sinase), regulamenta a execução das medidas socioeducativas destinadas a adolescente que pratique ato infracional; e altera as Leis nºs 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente); 7.560, de 19 de dezembro de 1986, 7.998, de 11 de janeiro de 1990, 5.537, de 21 de novembro de 1968, 8.315, de 23 de dezembro de 1991, 8.706, de 14 de setembro de 1993, os Decretos-Leis nos 4.048, de 22 de janeiro de 1942, 8.621, de 10 de janeiro de 1946, e a Consolidação das Leis do Trabalho (CLT), aprovada pelo Decreto- Lei nº 5.452, de 1º de maio de 1943.",
+        "data_assinatura": "2012-01-18"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12714-2012",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2012/lei-ordinaria-12714-2012.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2012-09-14;12714",
+      "old": {
+        "titulo": "Acompanhamento de execução da pena",
+        "ementa": "Dispõe sobre o sistema de acompanhamento da execução das penas, da prisão cautelar e da medida de segurança.",
+        "data_assinatura": "2012-09-14"
+      },
+      "new": {
+        "titulo": "Lei nº 12.714 de 14/09/2012",
+        "ementa": "Dispõe sobre o sistema de acompanhamento da execução das penas, da prisão cautelar e da medida de segurança.",
+        "data_assinatura": "2012-09-14"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12790-2013",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12790-2013.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-03-14;12790",
+      "old": {
+        "titulo": "Comerciário.",
+        "ementa": "Dispõe sobre a regulamentação do exercício da profissão de comerciário.",
+        "data_assinatura": "2013-03-14"
+      },
+      "new": {
+        "titulo": "Lei nº 12.790 de 14/03/2013",
+        "ementa": "Dispõe sobre a regulamentação do exercício da profissão de comerciário.",
+        "data_assinatura": "2013-03-14"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12830-2013",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12830-2013.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-06-20;12830",
+      "old": {
+        "titulo": "Investigação criminal conduzida pelo delegado de polícia",
+        "ementa": "Dispõe sobre a investigação criminal conduzida pelo delegado de polícia.",
+        "data_assinatura": "2013-06-20"
+      },
+      "new": {
+        "titulo": "Lei nº 12.830 de 20/06/2013",
+        "ementa": "Dispõe sobre a investigação criminal conduzida pelo delegado de polícia.",
+        "data_assinatura": "2013-06-20"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12847-2013",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12847-2013.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-08-02;12847",
+      "old": {
+        "titulo": "Sistema Nacional de Prevenção e Combate à Tortura",
+        "ementa": "Institui o Sistema Nacional de Prevenção e Combate à Tortura; cria o Comitê Nacional de Prevenção e Combate à Tortura e o Mecanismo Nacional de Prevenção e Combate à Tortura; e dá outras providências.",
+        "data_assinatura": "2013-08-02"
+      },
+      "new": {
+        "titulo": "Lei nº 12.847 de 02/08/2013",
+        "ementa": "Institui o Sistema Nacional de Prevenção e Combate à Tortura; cria o Comitê Nacional de Prevenção e Combate à Tortura e o Mecanismo Nacional de Prevenção e Combate à Tortura; e dá outras providências.",
+        "data_assinatura": "2013-08-02"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12853-2013",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12853-2013.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-08-14;12853",
+      "old": {
+        "titulo": "Gestão coletiva de direitos autorais",
+        "ementa": "Altera os arts. 5º , 68, 97, 98, 99 e 100, acrescenta arts. 98-A, 98-B, 98-C, 99-A, 99-B, 100-A, 100-B e 109-A e revoga o art. 94 da Lei nº 9.610, de 19 de fevereiro de 1998, para dispor sobre a gestão coletiva de direitos autorais, e dá outras providências.",
+        "data_assinatura": "2013-08-14"
+      },
+      "new": {
+        "titulo": "Lei nº 12.853 de 14/08/2013",
+        "ementa": "Altera os arts. 5º, 68, 97, 98, 99 e 100, acrescenta arts. 98-A, 98-B, 98-C, 99-A, 99-B, 100-A, 100-B e 109-A e revoga o art. 94 da Lei nº 9.610, de 19 de fevereiro de 1998, para dispor sobre a gestão coletiva de direitos autorais, e dá outras providências.",
+        "data_assinatura": "2013-08-14"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12874-2013",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12874-2013.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-10-29;12874",
+      "old": {
+        "titulo": "Separação e o divórcio consensuais de brasileiros no exterior.",
+        "ementa": "Altera o art. 18 do Decreto-Lei nº 4.657, de 4 de setembro de 1942, para possibilitar às autoridades consulares brasileiras celebrarem a separação e o divórcio consensuais de brasileiros no exterior.",
+        "data_assinatura": "2013-10-29"
+      },
+      "new": {
+        "titulo": "Lei nº 12.874 de 29/10/2013",
+        "ementa": "Altera o art. 18 do Decreto-Lei nº 4.657, de 4 de setembro de 1942, para possibilitar às autoridades consulares brasileiras celebrarem a separação e o divórcio consensuais de brasileiros no exterior.",
+        "data_assinatura": "2013-10-29"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12879-2013",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2013/lei-ordinaria-12879-2013.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-11-05;12879",
+      "old": {
+        "titulo": "Gratuidade dos atos de registro",
+        "ementa": "Dispõe sobre a gratuidade dos atos de registro, pelas associações de moradores, necessários à adaptação estatutária à Lei nº 10.406, de 10 de janeiro de 2002 – Código Civil, e para fins de enquadramento dessas entidades como Organizações da Sociedade Civil de Interesse Público.",
+        "data_assinatura": "2013-11-05"
+      },
+      "new": {
+        "titulo": "Lei nº 12.879 de 05/11/2013",
+        "ementa": "Dispõe sobre a gratuidade dos atos de registro, pelas associações de moradores, necessários à adaptação estatutária à Lei nº 10.406, de 10 de janeiro de 2002 - Código Civil, e para fins de enquadramento dessas entidades como Organizações da Sociedade Civil de Interesse Público.",
+        "data_assinatura": "2013-11-05"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-12984-2014",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2014/lei-ordinaria-12984-2014.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2014-06-02;12984",
+      "old": {
+        "titulo": "Discriminação dos portadores de HIV",
+        "ementa": "Define o crime de discriminação dos portadores do vírus da imunodeficiência humana (HIV) e doentes de aids.",
+        "data_assinatura": "2014-06-02"
+      },
+      "new": {
+        "titulo": "Lei nº 12.984 de 02/06/2014",
+        "ementa": "Define o crime de discriminação dos portadores do vírus da imunodeficiência humana (HIV) e doentes de aids.",
+        "data_assinatura": "2014-06-02"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13010-2014",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2014/lei-ordinaria-13010-2014.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2014-06-26;13010",
+      "old": {
+        "titulo": "Cuidados sem o uso de castigos físicos a criança e adolescente.",
+        "ementa": "(Publicada no DOU de 27 de junho de 2014 - Seção 1)",
+        "data_assinatura": "2014-06-26"
+      },
+      "new": {
+        "titulo": "Lei nº 13.010 de 26/06/2014",
+        "ementa": "Altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), para estabelecer o direito da criança e do adolescente de serem educados e cuidados sem o uso de castigos físicos ou de tratamento cruel ou degradante, e altera a Lei nº 9.394, de 20 de dezembro de 1996.",
+        "data_assinatura": "2014-06-26"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13022-2014",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2014/lei-ordinaria-13022-2014.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2014-08-08;13022",
+      "old": {
+        "titulo": "Estatuto das Guardas Municipais",
+        "ementa": "Dispõe sobre o Estatuto Geral das Guardas Municipais.",
+        "data_assinatura": "2014-08-08"
+      },
+      "new": {
+        "titulo": "Lei nº 13.022 de 08/08/2014",
+        "ementa": "Dispõe sobre o Estatuto Geral das Guardas Municipais.",
+        "data_assinatura": "2014-08-08"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13060-2014",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2014/lei-ordinaria-13060-2014.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2014-12-22;13060",
+      "old": {
+        "titulo": "Instrumento de menor potencial ofensivo",
+        "ementa": "Disciplina o uso dos instrumentos de menor potencial ofensivo pelos agentes de segurança pública, em todo o território nacional.",
+        "data_assinatura": "2014-12-22"
+      },
+      "new": {
+        "titulo": "Lei nº 13.060 de 22/12/2014",
+        "ementa": "Disciplina o uso dos instrumentos de menor potencial ofensivo pelos agentes de segurança pública, em todo o território nacional.",
+        "data_assinatura": "2014-12-22"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13111-2015",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2015/lei-ordinaria-13111-2015.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-03-25;13111",
+      "old": {
+        "titulo": "Comercialização de veículos automotores",
+        "ementa": "Dispõe sobre a obrigatoriedade de os empresários que comercializam veículos automotores informarem ao comprador o valor dos tributos incidentes sobre a venda e a situação de regularidade do veículo quanto a furto, multas, taxas anuais, débitos de impostos, alienação fiduciária ou quaisquer outros registros que limitem ou impeçam a circulação do veículo.",
+        "data_assinatura": "2015-03-25"
+      },
+      "new": {
+        "titulo": "Lei nº 13.111 de 25/03/2015",
+        "ementa": "Dispõe sobre a obrigatoriedade de os empresários que comercializam veículos automotores informarem ao comprador o valor dos tributos incidentes sobre a venda e a situação de regularidade do veículo quanto a furto, multas, taxas anuais, débitos de impostos, alienação fiduciária ou quaisquer outros registros que limitem ou impeçam a circulação do veículo.",
+        "data_assinatura": "2015-03-25"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13185-2015",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2015/lei-ordinaria-13185-2015.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-11-06;13185",
+      "old": {
+        "titulo": "Bullying",
+        "ementa": "Institui o Programa de Combate à Intimidação Sistemática (Bullying).",
+        "data_assinatura": "2015-11-06"
+      },
+      "new": {
+        "titulo": "Lei nº 13.185 de 06/11/2015",
+        "ementa": "Institui o Programa de Combate à Intimidação Sistemática (Bullying).",
+        "data_assinatura": "2015-11-06"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13243-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13243-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-01-11;13243",
+      "old": {
+        "titulo": "Marco Legal de Ciência, Tecnologia e Inovação.",
+        "ementa": "Dispõe sobre estímulos ao desenvolvimento científico, à pesquisa, à capacitação científica e tecnológica e à inovação e altera a Lei nº 10.973, de 2 de dezembro de 2004, a Lei nº 6.815, de 19 de agosto de 1980, a Lei nº 8.666, de 21 de junho de 1993, a Lei nº 12.462, de 4 de agosto de 2011, a Lei nº 8.745, de 9 de dezembro de 1993, a Lei nº 8.958, de 20 de dezembro de 1994, a Lei nº 8.010, de 29 de março de 1990, a Lei nº 8.032, de 12 de abril de 1990, e a Lei nº 12.772, de 28 de dezembro de 2012, nos termos da Emenda Constitucional nº 85, de 26 de fevereiro de 2015.",
+        "data_assinatura": "2016-01-11"
+      },
+      "new": {
+        "titulo": "Lei nº 13.243 de 11/01/2016",
+        "ementa": "Dispõe sobre estímulos ao desenvolvimento científico, à pesquisa, à capacitação científica e tecnológica e à inovação e altera a Lei nº 10.973, de 2 de dezembro de 2004, a Lei nº 6.815, de 19 de agosto de 1980, a Lei nº 8.666, de 21 de junho de 1993, a Lei nº 12.462, de 4 de agosto de 2011, a Lei nº 8.745, de 9 de dezembro de 1993, a Lei nº 8.958, de 20 de dezembro de 1994, a Lei nº 8.010, de 29 de março de 1990, a Lei nº 8.032, de 12 de abril de 1990, e a Lei nº 12.772, de 28 de dezembro de 2012, nos termos da Emenda Constitucional nº 85, de 26 de fevereiro de 2015.",
+        "data_assinatura": "2016-01-11"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13260-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13260-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-03-16;13260",
+      "old": {
+        "titulo": "Lei Antiterrorismo",
+        "ementa": "Regulamenta o disposto no inciso XLIII do art. 5º da Constituição Federal, disciplinando o terrorismo, tratando de disposições investigatórias e processuais e reformulando o conceito de organização terrorista; e altera as Leis nºs 7.960, de 21 de dezembro de 1989, e 12.850, de 2 de agosto de 2013.",
+        "data_assinatura": "2016-03-16"
+      },
+      "new": {
+        "titulo": "Lei nº 13.260 de 16/03/2016",
+        "ementa": "Regulamenta o disposto no inciso XLIII do art. 5º da Constituição Federal, disciplinando o terrorismo, tratando de disposições investigatórias e processuais e reformulando o conceito de organização terrorista; e altera as Leis nºs 7.960, de 21 de dezembro de 1989, e 12.850, de 2 de agosto de 2013.",
+        "data_assinatura": "2016-03-16"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13267-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13267-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-04-06;13267",
+      "old": {
+        "titulo": "Associações denominadas empresas juniores",
+        "ementa": "Disciplina a criação e a organização das associações denominadas empresas juniores, com funcionamento perante instituições de ensino superior.",
+        "data_assinatura": "2016-04-06"
+      },
+      "new": {
+        "titulo": "Lei nº 13.267 de 06/04/2016",
+        "ementa": "Disciplina a criação e a organização das associações denominadas empresas juniores, com funcionamento perante instituições de ensino superior.",
+        "data_assinatura": "2016-04-06"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13271-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13271-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-04-15;13271",
+      "old": {
+        "titulo": "Revista íntima",
+        "ementa": "Dispõe sobre a proibição de revista íntima de funcionárias nos locais de trabalho e trata da revista íntima em ambientes prisionais.",
+        "data_assinatura": "2016-04-15"
+      },
+      "new": {
+        "titulo": "Lei nº 13.271 de 15/04/2016",
+        "ementa": "Dispõe sobre a proibição de revista íntima de funcionárias nos locais de trabalho e trata da revista íntima em ambientes prisionais.",
+        "data_assinatura": "2016-04-15"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13294-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13294-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-06-06;13294",
+      "old": {
+        "titulo": "Emissão de recibo de quitação integral de débitos",
+        "ementa": "Dispõe sobre o prazo para emissão de recibo de quitação integral de débitos de qualquer natureza pelas instituições integrantes do Sistema Financeiro Nacional, nos termos da Lei nº 4.595, de 31 de dezembro de 1964.",
+        "data_assinatura": "2016-06-06"
+      },
+      "new": {
+        "titulo": "Lei nº 13.294 de 06/06/2016",
+        "ementa": "Dispõe sobre o prazo para emissão de recibo de quitação integral de débitos de qualquer natureza pelas instituições integrantes do Sistema Financeiro Nacional, nos termos da Lei nº 4.595, de 31 de dezembro de 1964.",
+        "data_assinatura": "2016-06-06"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13300-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13300-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-06-23;13300",
+      "old": {
+        "titulo": "Mandado de injunção",
+        "ementa": "Disciplina o processo e o julgamento dos mandados de injunção individual e coletivo e dá outras providências.",
+        "data_assinatura": "2016-06-23"
+      },
+      "new": {
+        "titulo": "Lei nº 13.300 de 23/06/2016",
+        "ementa": "Disciplina o processo e o julgamento dos mandados de injunção individual e coletivo e dá outras providências.",
+        "data_assinatura": "2016-06-23"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13311-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13311-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-07-11;13311",
+      "old": {
+        "titulo": "Ocupação de área pública urbana",
+        "ementa": "Institui, nos termos do caput do art. 182 da Constituição Federal, normas gerais para a ocupação e utilização de área pública urbana por equipamentos urbanos do tipo quiosque, trailer, feira e banca de venda de jornais e de revistas.",
+        "data_assinatura": "2016-07-11"
+      },
+      "new": {
+        "titulo": "Lei nº 13.311 de 11/07/2016",
+        "ementa": "Institui, nos termos do caput do art. 182 da Constituição Federal, normas gerais para a ocupação e utilização de área pública urbana por equipamentos urbanos do tipo quiosque, trailer, feira e banca de venda de jornais e de revistas.",
+        "data_assinatura": "2016-07-11"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13344-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13344-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-10-06;13344",
+      "old": {
+        "titulo": "Tráfico de pessoas",
+        "ementa": "Dispõe sobre prevenção e repressão ao tráfico interno e internacional de pessoas e sobre medidas de atenção às vítimas; altera a Lei nº 6.815, de 19 de agosto de 1980, o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal); e revoga dispositivos do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal).",
+        "data_assinatura": "2016-10-06"
+      },
+      "new": {
+        "titulo": "Lei nº 13.344 de 06/10/2016",
+        "ementa": "Dispõe sobre prevenção e repressão ao tráfico interno e internacional de pessoas e sobre medidas de atenção às vítimas; altera a Lei nº 6.815, de 19 de agosto de 1980, o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal); e revoga dispositivos do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal).",
+        "data_assinatura": "2016-10-06"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13363-2016",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2016/lei-ordinaria-13363-2016.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-11-25;13363",
+      "old": {
+        "titulo": "Direitos para advogada gestante, lactante, adotante e advogado",
+        "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, e a Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), para estipular direitos e garantias para a advogada gestante, lactante, adotante ou que der à luz e para o advogado que se tornar pai.",
+        "data_assinatura": "2016-11-25"
+      },
+      "new": {
+        "titulo": "Lei nº 13.363 de 25/11/2016",
+        "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, e a Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), para estipular direitos e garantias para a advogada gestante, lactante, adotante ou que der à luz e para o advogado que se tornar pai.",
+        "data_assinatura": "2016-11-25"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13425-2017",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2017/lei-ordinaria-13425-2017.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-03-30;13425",
+      "old": {
+        "titulo": "Prevenção e combate a incêndio e a desastres",
+        "ementa": "Estabelece diretrizes gerais sobre medidas de prevenção e combate a incêndio e a desastres em estabelecimentos, edificações e áreas de reunião de público; altera as Leis nºs 8.078, de 11 de setembro de 1990, e 10.406, de 10 de janeiro de 2002 - Código Civil; e dá outras providências.",
+        "data_assinatura": "2017-03-30"
+      },
+      "new": {
+        "titulo": "Lei nº 13.425 de 30/03/2017",
+        "ementa": "Estabelece diretrizes gerais sobre medidas de prevenção e combate a incêndio e a desastres em estabelecimentos, edificações e áreas de reunião de público; altera as Leis nºs 8.078, de 11 de setembro de 1990, e 10.406, de 10 de janeiro de 2002 – Código Civil; e dá outras providências.",
+        "data_assinatura": "2017-03-30"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13432-2017",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2017/lei-ordinaria-13432-2017.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-04-11;13432",
+      "old": {
+        "titulo": "Detetive particular.",
+        "ementa": "Dispõe sobre o exercício da profissão de detetive particular.",
+        "data_assinatura": "2017-04-11"
+      },
+      "new": {
+        "titulo": "Lei nº 13.432 de 11/04/2017",
+        "ementa": "Dispõe sobre o exercício da profissão de detetive particular.",
+        "data_assinatura": "2017-04-11"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13445-2017",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2017/lei-ordinaria-13445-2017.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-05-24;13445",
+      "old": {
+        "titulo": "Lei de Migracao",
+        "ementa": "Institui a Lei de Migração.",
+        "data_assinatura": "2017-05-24"
+      },
+      "new": {
+        "titulo": "Lei nº 13.445 de 24/05/2017",
+        "ementa": "Institui a Lei de Migração.",
+        "data_assinatura": "2017-05-24"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13446-2017",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2017/lei-ordinaria-13446-2017.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-05-25;13446",
+      "old": {
+        "titulo": "Movimentação de conta do FGTS.",
+        "ementa": "Altera a Lei nº 8.036, de 11 de maio de 1990, para elevar a rentabilidade das contas vinculadas do trabalhador por meio da distribuição de lucros do Fundo de Garantia do Tempo de Serviço (FGTS) e dispor sobre possibilidade de movimentação de conta do Fundo vinculada a contrato de trabalho extinto até 31 de dezembro de 2015.",
+        "data_assinatura": "2017-05-25"
+      },
+      "new": {
+        "titulo": "Lei nº 13.446 de 25/05/2017",
+        "ementa": "Altera a Lei nº 8.036, de 11 de maio de 1990, para elevar a rentabilidade das contas vinculadas do trabalhador por meio da distribuição de lucros do Fundo de Garantia do Tempo de Serviço (FGTS) e dispor sobre possibilidade de movimentação de conta do Fundo vinculada a contrato de trabalho extinto até 31 de dezembro de 2015.",
+        "data_assinatura": "2017-05-25"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13455-2017",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2017/lei-ordinaria-13455-2017.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-06-26;13455",
+      "old": {
+        "titulo": "Diferenciação de preços",
+        "ementa": "Dispõe sobre a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado, e altera a Lei nº 10.962, de 11 de outubro de 2004.",
+        "data_assinatura": "2017-06-26"
+      },
+      "new": {
+        "titulo": "Lei nº 13.455 de 26/06/2017",
+        "ementa": "Dispõe sobre a diferenciação de preços de bens e serviços oferecidos ao público em função do prazo ou do instrumento de pagamento utilizado, e altera a Lei nº 10.962, de 11 de outubro de 2004.",
+        "data_assinatura": "2017-06-26"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13457-2017",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2017/lei-ordinaria-13457-2017.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-06-26;13457",
+      "old": {
+        "titulo": "Alteracoes do Regime Geral de Previdencia Social",
+        "ementa": "Altera as Leis nos 8.213, de 24 de julho de 1991, que dispõe sobre os Planos de Benefícios da Previdência Social, e 11.907, de 2 de fevereiro de 2009, que dispõe sobre a reestruturação da composição remuneratória da Carreira de Perito Médico Previdenciário e da Carreira de Supervisor Médico- Pericial; e institui o Bônus Especial de Desempenho Institucional por Perícia Médica em Benefícios por Incapacidade.",
+        "data_assinatura": "2017-06-26"
+      },
+      "new": {
+        "titulo": "Lei nº 13.457 de 26/06/2017",
+        "ementa": "Altera as Leis nºs 8.213, de 24 de julho de 1991, que dispõe sobre os Planos de Benefícios da Previdência Social, e 11.907, de 2 de fevereiro de 2009, que dispõe sobre a reestruturação da composição remuneratória da Carreira de Perito Médico Previdenciário e da Carreira de Supervisor Médico- Pericial; e institui o Bônus Especial de Desempenho Institucional por Perícia Médica em Benefícios por Incapacidade.",
+        "data_assinatura": "2017-06-26"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13506-2017",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2017/lei-ordinaria-13506-2017.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2017-11-13;13506",
+      "old": {
+        "titulo": "Processo administrativo sancionador no BC e na CVM.",
+        "ementa": "Dispõe sobre o processo administrativo sancionador na esfera de atuação do Banco Central do Brasil e da Comissão de Valores Mobiliários; altera a Lei nº 6.385, de 7 de dezembro de 1976, a Lei nº 4.131, de 3 de setembro de 1962, a Lei nº 4.829, de 5 de novembro de 1965, a Lei nº 6.024, de 13 de março de 1974, a Lei nº 7.492, de 16 de junho de 1986, a Lei nº 9.069, de 29 de junho de 1995, a Lei nº 9.613, de 3 de março de 1998, a Lei nº 10.214, de 27 de março de 2001, a Lei nº 11.371, de 28 de novembro de 2006, a Lei nº 11.795, de 8 de outubro de 2008, a Lei nº 12.810, de 15 de maio de 2013, a Lei nº 12.865, de 9 de outubro de 2013, a Lei nº 4.595, de 31 de dezembro de 1964, o Decreto nº 23.258, de 19 de outubro de 1933, o Decreto-Lei nº 9.025, de 27 de fevereiro de 1946, e a Medida Provisória nº 2.224, de 4 de setembro de 2001; revoga o Decreto-Lei nº 448, de 3 de fevereiro de 1969, e dispositivos da Lei nº 9.447, de 14 de março de 1997, da Lei nº 4.380, de 21 de agosto de 1964, da Lei nº 4.728, de 14 de julho de 1965, e da Lei nº 9.873, de 23 de novembro de 1999; e dá outras providências.",
+        "data_assinatura": "2017-11-13"
+      },
+      "new": {
+        "titulo": "Lei nº 13.506 de 13/11/2017",
+        "ementa": "Dispõe sobre o processo administrativo sancionador na esfera de atuação do Banco Central do Brasil e da Comissão de Valores Mobiliários; altera a Lei nº 6.385, de 7 de dezembro de 1976, a Lei nº 4.131, de 3 de setembro de 1962, a Lei nº 4.829, de 5 de novembro de 1965, a Lei nº 6.024, de 13 de março de 1974, a Lei nº 7.492, de 16 de junho de 1986, a Lei nº 9.069, de 29 de junho de 1995, a Lei nº 9.613, de 3 de março de 1998, a Lei nº 10.214, de 27 de março de 2001, a Lei nº 11.371, de 28 de novembro de 2006, a Lei nº 11.795, de 8 de outubro de 2008, a Lei nº 12.810, de 15 de maio de 2013, a Lei nº 12.865, de 9 de outubro de 2013, a Lei nº 4.595, de 31 de dezembro de 1964, o Decreto nº 23.258, de 19 de outubro de 1933, o Decreto-Lei nº 9.025, de 27 de fevereiro de 1946, e a Medida Provisória nº 2.224, de 4 de setembro de 2001; revoga o Decreto-Lei nº 448, de 3 de fevereiro de 1969, e dispositivos da Lei nº 9.447, de 14 de março de 1997, da Lei nº 4.380, de 21 de agosto de 1964, da Lei nº 4.728, de 14 de julho de 1965, e da Lei nº 9.873, de 23 de novembro de 1999; e dá outras providências.",
+        "data_assinatura": "2017-11-13"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13656-2018",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2018/lei-ordinaria-13656-2018.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2018-04-30;13656",
+      "old": {
+        "titulo": "T axa de inscrição em concurso",
+        "ementa": "Isenta os candidatos que especifica do pagamento de taxa de inscrição em concursos para provimento de cargo efetivo ou emprego permanente em órgãos ou entidades da administração pública direta e indireta da União.",
+        "data_assinatura": "2018-04-30"
+      },
+      "new": {
+        "titulo": "Lei nº 13.656 de 30/04/2018",
+        "ementa": "Isenta os candidatos que especifica do pagamento de taxa de inscrição em concursos para provimento de cargo efetivo ou emprego permanente em órgãos ou entidades da administração pública direta e indireta da União.",
+        "data_assinatura": "2018-04-30"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13726-2018",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2018/lei-ordinaria-13726-2018.md",
+      "source": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13726.htm",
+      "old": {
+        "titulo": "Desburocratização",
+        "ementa": "Presidência da República Secretaria-Geral Subchefia para Assuntos Jurídicos",
+        "data_assinatura": "2018-10-08"
+      },
+      "new": {
+        "titulo": "Lei nº 13.726 de 08/10/2018",
+        "ementa": "Racionaliza atos e procedimentos administrativos dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios e institui o Selo de Desburocratização e Simplificação.",
+        "data_assinatura": "2018-10-08"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13775-2018",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2018/lei-ordinaria-13775-2018.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2018-12-20;13775",
+      "old": {
+        "titulo": "Emissão de duplicata sob a forma escritural",
+        "ementa": "Dispõe sobre a emissão de duplicata sob a forma escritural; altera a Lei nº 9.492, de 10 de setembro de 1997; e dá outras providências.",
+        "data_assinatura": "2018-12-20"
+      },
+      "new": {
+        "titulo": "Lei nº 13.775 de 20/12/2018",
+        "ementa": "Dispõe sobre a emissão de duplicata sob a forma escritural; altera a Lei nº 9.492, de 10 de setembro de 1997; e dá outras providências.",
+        "data_assinatura": "2018-12-20"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13848-2019",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2019/lei-ordinaria-13848-2019.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2019-06-25;13848",
+      "old": {
+        "titulo": "Gestão, organização e processo decisório das agências reguladoras",
+        "ementa": "Dispõe sobre a gestão, a organização, o processo decisório e o controle social das agências reguladoras, altera a Lei nº 9.427, de 26 de dezembro de 1996, a Lei nº 9.472, de 16 de julho de 1997, a Lei nº 9.478, de 6 de agosto de 1997, a Lei nº 9.782, de 26 de janeiro de 1999, a Lei nº 9.961, de 28 de janeiro de 2000, a Lei nº 9.984, de 17 de julho de 2000, a Lei nº 9.986, de 18 de julho de 2000, a Lei nº 10.233, de 5 de junho de 2001, a Medida Provisória nº 2.228-1, de 6 de setembro de 2001, a Lei nº 11.182, de 27 de setembro de 2005, e a Lei nº 10.180, de 6 de fevereiro de 2001.",
+        "data_assinatura": "2019-06-25"
+      },
+      "new": {
+        "titulo": "Lei nº 13.848 de 25/06/2019",
+        "ementa": "Dispõe sobre a gestão, a organização, o processo decisório e o controle social das agências reguladoras, altera a Lei nº 9.427, de 26 de dezembro de 1996, a Lei nº 9.472, de 16 de julho de 1997, a Lei nº 9.478, de 6 de agosto de 1997, a Lei nº 9.782, de 26 de janeiro de 1999, a Lei nº 9.961, de 28 de janeiro de 2000, a Lei nº 9.984, de 17 de julho de 2000, a Lei nº 9.986, de 18 de julho de 2000, a Lei nº 10.233, de 5 de junho de 2001, a Medida Provisória nº 2.228-1, de 6 de setembro de 2001, a Lei nº 11.182, de 27 de setembro de 2005, e a Lei nº 10.180, de 6 de fevereiro de 2001.",
+        "data_assinatura": "2019-06-25"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13872-2019",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2019/lei-ordinaria-13872-2019.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2019-09-17;13872",
+      "old": {
+        "titulo": "Amamentação durante provas de concurso público.",
+        "ementa": "Estabelece o direito de as mães amamentarem seus filhos durante a realização de concursos públicos na administração pública direta e indireta dos Poderes da União.",
+        "data_assinatura": "2019-09-17"
+      },
+      "new": {
+        "titulo": "Lei nº 13.872 de 17/09/2019",
+        "ementa": "Estabelece o direito de as mães amamentarem seus filhos durante a realização de concursos públicos na administração pública direta e indireta dos Poderes da União.",
+        "data_assinatura": "2019-09-17"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13966-2019",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2019/lei-ordinaria-13966-2019.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2019-12-26;13966",
+      "old": {
+        "titulo": "Lei de Franquia",
+        "ementa": "Dispõe sobre o sistema de franquia empresarial e revoga a Lei nº 8.955, de 15 de dezembro de 1994 (Lei de Franquia).",
+        "data_assinatura": "2019-12-26"
+      },
+      "new": {
+        "titulo": "Lei nº 13.966 de 26/12/2019",
+        "ementa": "Dispõe sobre o sistema de franquia empresarial e revoga a Lei nº 8.955, de 15 de dezembro de 1994 (Lei de Franquia).",
+        "data_assinatura": "2019-12-26"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-13988-2020",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2020/lei-ordinaria-13988-2020.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2020-04-14;13988",
+      "old": {
+        "titulo": "Transação na cobrança de créditos da Fazenda Pública",
+        "ementa": "Dispõe sobre a transação nas hipóteses que especifica; e altera as Leis nºs 13.464, de 10 de julho de 2017, e 10.522, de 19 de julho de 2002.",
+        "data_assinatura": "2020-04-14"
+      },
+      "new": {
+        "titulo": "Lei nº 13.988 de 14/04/2020",
+        "ementa": "Dispõe sobre a transação nas hipóteses que especifica; e altera as Leis nºs 13.464, de 10 de julho de 2017, e 10.522, de 19 de julho de 2002.",
+        "data_assinatura": "2020-04-14"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14119-2021",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14119-2021.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2021-01-13;14119",
+      "old": {
+        "titulo": "Política Nacional de Pagamento por Serviços Ambientais",
+        "ementa": "Na Lei nº 14.119, de 13 de janeiro de 2021, publicada no Diário Oficial da União de 14 de janeiro de 2021, Seção 1, nas assinaturas, leia-se: Jair Messias Bolsonaro, Tercio Issami Tokano, Paulo Guedes, Tereza Cristina Corrêa da Costa Dias, Bento Albuquerque, Ricardo de Aquino Salles, José Levi Mello do Amaral Júnior",
+        "data_assinatura": "2021-01-13"
+      },
+      "new": {
+        "titulo": "Lei nº 14.119 de 13/01/2021",
+        "ementa": "Institui a Política Nacional de Pagamento por Serviços Ambientais; e altera as Leis n°s 8.212, de 24 de julho de 1991, 8.629, de 25 de fevereiro de 1993, e 6.015, de 31 de dezembro de 1973, para adequá-las à nova política.",
+        "data_assinatura": "2021-01-13"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14193-2021",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14193-2021.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2021-08-06;14193",
+      "old": {
+        "titulo": "Sociedade Anônima do Futebol",
+        "ementa": "Institui a Sociedade Anônima do Futebol e dispõe sobre normas de constituição, governança, controle e transparência, meios de financiamento da atividade futebolística, tratamento dos passivos das entidades de práticas desportivas e regime tributário específico; e altera as Lei nº 9.615, de 24 de março de 1998, e Lei nº 10.406, de 10 de janeiro de 2002 (Código Civil).",
+        "data_assinatura": "2021-08-06"
+      },
+      "new": {
+        "titulo": "Lei nº 14.193 de 06/08/2021",
+        "ementa": "Institui a Sociedade Anônima do Futebol e dispõe sobre normas de constituição, governança, controle e transparência, meios de financiamento da atividade futebolística, tratamento dos passivos das entidades de práticas desportivas e regime tributário específico; e altera as Leis nºs 9.615, de 24 de março de 1998, e 10.406, de 10 de janeiro de 2002 (Código Civil).",
+        "data_assinatura": "2021-08-06"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14216-2021",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14216-2021.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2021-10-07;14216",
+      "old": {
+        "titulo": "Proibição de Despejo – COVID-19",
+        "ementa": "Estabelece medidas excepcionais em razão da Emergência em Saúde Pública de Importância Nacional (Espin) decorrente da infecção humana pelo coronavírus SARS-CoV-2, para suspender o cumprimento de medida judicial, extrajudicial ou administrativa que resulte em desocupação ou remoção forçada coletiva em imóvel privado ou público, exclusivamente urbano, e a concessão de liminar em ação de despejo de que trata a Lei nº 8.245, de 18 de outubro de 1991, e para estimular a celebração de acordos nas relações locatícias.",
+        "data_assinatura": "2021-10-07"
+      },
+      "new": {
+        "titulo": "Lei nº 14.216 de 07/10/2021",
+        "ementa": "Estabelece medidas excepcionais em razão da Emergência em Saúde Pública de Importância Nacional (Espin) decorrente da infecção humana pelo coronavírus SARS-CoV-2, para suspender o cumprimento de medida judicial, extrajudicial ou administrativa que resulte em desocupação ou remoção forçada coletiva em imóvel privado ou público, exclusivamente urbano, e a concessão de liminar em ação de despejo de que trata a Lei nº 8.245, de 18 de outubro de 1991, e para estimular a celebração de acordos nas relações locatícias.",
+        "data_assinatura": "2021-10-07"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14238-2021",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14238-2021.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2021-11-19;14238",
+      "old": {
+        "titulo": "ESTATUTO DA PESSOA COM CÂNCER –",
+        "ementa": "Institui o Estatuto da Pessoa com Câncer; e dá outras providências.",
+        "data_assinatura": "2021-11-19"
+      },
+      "new": {
+        "titulo": "Lei nº 14.238 de 19/11/2021",
+        "ementa": "Institui o Estatuto da Pessoa com Câncer; e dá outras providências.",
+        "data_assinatura": "2021-11-19"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14344-2022",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2022/lei-ordinaria-14344-2022.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-05-24;14344",
+      "old": {
+        "titulo": "Lei Henry Borel",
+        "ementa": "Cria mecanismos para a prevenção e o enfrentamento da violência doméstica e familiar contra a criança e o adolescente, nos termos do § 8º do art. 226 e do § 4º do art. 227 da Constituição Federal e das disposições específicas previstas em tratados, convenções ou acordos internacionais de que o Brasil seja parte; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), e 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência; e dá outras providências.",
+        "data_assinatura": "2022-05-24"
+      },
+      "new": {
+        "titulo": "Lei nº 14.344 de 24/05/2022",
+        "ementa": "Cria mecanismos para a prevenção e o enfrentamento da violência doméstica e familiar contra a criança e o adolescente, nos termos do § 8º do art. 226 e do § 4º do art. 227 da Constituição Federal e das disposições específicas previstas em tratados, convenções ou acordos internacionais de que o Brasil seja parte; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), e 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência; e dá outras providências.",
+        "data_assinatura": "2022-05-24"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14382-2022",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2022/lei-ordinaria-14382-2022.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-06-27;14382",
+      "old": {
+        "titulo": "SERP",
+        "ementa": "Dispõe sobre o Sistema Eletrônico dos Registros Públicos (Serp); altera as Leis nºs 4.591, de 16 de dezembro de 1964, 6.015, de 31 de dezembro de 1973 (Lei de Registros Públicos), 6.766, de 19 de dezembro de 1979, 8.935, de 18 de novembro de 1994, 10.406, de 10 de janeiro de 2002 (Código Civil), 11.977, de 7 de julho de 2009, 13.097, de 19 de janeiro de 2015, e 13.465, de 11 de julho de 2017; e revoga a Lei nº 9.042, de 9 de maio de 1995, e dispositivos das Leis nºs 4.864, de 29 de novembro de 1965, 8.212, de 24 de julho de 1991, 12.441, de 11 de julho de 2011, 12.810, de 15 de maio de 2013, e 14.195, de 26 de agosto de 2021.",
+        "data_assinatura": "2022-06-27"
+      },
+      "new": {
+        "titulo": "Lei nº 14.382 de 27/06/2022",
+        "ementa": "Dispõe sobre o Sistema Eletrônico dos Registros Públicos (Serp); altera as Leis nºs 4.591, de 16 de dezembro de 1964, 6.015, de 31 de dezembro de 1973 (Lei de Registros Públicos), 6.766, de 19 de dezembro de 1979, 8.935, de 18 de novembro de 1994, 10.406, de 10 de janeiro de 2002 (Código Civil), 11.977, de 7 de julho de 2009, 13.097, de 19 de janeiro de 2015, e 13.465, de 11 de julho de 2017; e revoga a Lei nº 9.042, de 9 de maio de 1995, e dispositivos das Leis nºs 4.864, de 29 de novembro de 1965, 8.212, de 24 de julho de 1991, 12.441, de 11 de julho de 2011, 12.810, de 15 de maio de 2013, e 14.195, de 26 de agosto de 2021.",
+        "data_assinatura": "2022-06-27"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14438-2022",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2022/lei-ordinaria-14438-2022.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-08-24;14438",
+      "old": {
+        "titulo": "Simplificação do Microcrédito Digital",
+        "ementa": "Institui o Programa de Simplificação do Microcrédito Digital para Empreendedores (SIM Digital); promove alterações na gestão e nos procedimentos de recolhimento do Fundo de Garantia do Tempo de Serviço (FGTS); altera a Consolidação das Leis do Trabalho (CLT), aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943, e as Leis nºs 8.212, de 24 de julho de 1991, 11.196, de 21 de novembro de 2005, 8.036, de 11 de maio de 1990, 13.636, de 20 de março de 2018, e 14.118, de 12 de janeiro de 2021; e revoga dispositivo da Lei nº 8.213, de 24 de julho de 1991.",
+        "data_assinatura": "2022-08-24"
+      },
+      "new": {
+        "titulo": "Lei nº 14.438 de 24/08/2022",
+        "ementa": "Institui o Programa de Simplificação do Microcrédito Digital para Empreendedores (SIM Digital); promove alterações na gestão e nos procedimentos de recolhimento do Fundo de Garantia do Tempo de Serviço (FGTS); altera a Consolidação das Leis do Trabalho (CLT), aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943, e as Leis nºs 8.212, de 24 de julho de 1991, 11.196, de 21 de novembro de 2005, 8.036, de 11 de maio de 1990, 13.636, de 20 de março de 2018, e 14.118, de 12 de janeiro de 2021; e revoga dispositivo da Lei nº 8.213, de 24 de julho de 1991.",
+        "data_assinatura": "2022-08-24"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14442-2022",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2022/lei-ordinaria-14442-2022.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-09-02;14442",
+      "old": {
+        "titulo": "Teletrabalho e auxílio-alimentação",
+        "ementa": "Dispõe sobre o pagamento de auxílio-alimentação ao empregado e altera a Lei nº 6.321, de 14 de abril de 1976, e a Consolidação das Leis do Trabalho, aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943.",
+        "data_assinatura": "2022-09-02"
+      },
+      "new": {
+        "titulo": "Lei nº 14.442 de 02/09/2022",
+        "ementa": "Dispõe sobre o pagamento de auxílio-alimentação ao empregado e altera a Lei nº 6.321, de 14 de abril de 1976, e a Consolidação das Leis do Trabalho, aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943.",
+        "data_assinatura": "2022-09-02"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14457-2022",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2022/lei-ordinaria-14457-2022.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-09-21;14457",
+      "old": {
+        "titulo": "Programa Emprega + Mulheres",
+        "ementa": "Institui o Programa Emprega + Mulheres; e altera a Consolidação das Leis do Trabalho, aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943, e as Leis nºs 11.770, de 9 de setembro de 2008, 13.999, de 18 de maio de 2020, e 12.513, de 26 de outubro de 2011.",
+        "data_assinatura": "2022-09-21"
+      },
+      "new": {
+        "titulo": "Lei nº 14.457 de 21/09/2022",
+        "ementa": "Institui o Programa Emprega + Mulheres; e altera a Consolidação das Leis do Trabalho, aprovada pelo Decreto-Lei nº 5.452, de 1º de maio de 1943, e as Leis nºs 11.770, de 9 de setembro de 2008, 13.999, de 18 de maio de 2020, e 12.513, de 26 de outubro de 2011.",
+        "data_assinatura": "2022-09-21"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14478-2022",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2022/lei-ordinaria-14478-2022.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-12-21;14478",
+      "old": {
+        "titulo": "Marco Regulatório dos Criptoativos",
+        "ementa": "Dispõe sobre diretrizes a serem observadas na prestação de serviços de ativos virtuais e na regulamentação das prestadoras de serviços de ativos virtuais; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para prever o crime de fraude com a utilização de ativos virtuais, valores mobiliários ou ativos financeiros; e altera a Lei nº 7.492, de 16 de junho de 1986, que define crimes contra o sistema financeiro nacional, e a Lei nº 9.613, de 3 de março de 1998, que dispõe sobre lavagem de dinheiro, para incluir as prestadoras de serviços de ativos virtuais no rol de suas disposições.",
+        "data_assinatura": "2022-12-21"
+      },
+      "new": {
+        "titulo": "Lei nº 14.478 de 21/12/2022",
+        "ementa": "Dispõe sobre diretrizes a serem observadas na prestação de serviços de ativos virtuais e na regulamentação das prestadoras de serviços de ativos virtuais; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para prever o crime de fraude com a utilização de ativos virtuais, valores mobiliários ou ativos financeiros; e altera a Lei nº 7.492, de 16 de junho de 1986, que define crimes contra o sistema financeiro nacional, e a Lei nº 9.613, de 3 de março de 1998, que dispõe sobre lavagem de dinheiro, para incluir as prestadoras de serviços de ativos virtuais no rol de suas disposições.",
+        "data_assinatura": "2022-12-21"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14597-2023",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2023/lei-ordinaria-14597-2023.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2023-06-14;14597",
+      "old": {
+        "titulo": "Lei Geral do Esporte",
+        "ementa": "Institui a Lei Geral do Esporte.",
+        "data_assinatura": "2023-06-14"
+      },
+      "new": {
+        "titulo": "Lei nº 14.597 de 14/06/2023",
+        "ementa": "Institui a Lei Geral do Esporte.",
+        "data_assinatura": "2023-06-14"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14711-2023",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2023/lei-ordinaria-14711-2023.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2023-10-30;14711",
+      "old": {
+        "titulo": "Marco legal das garantias",
+        "ementa": "Dispõe sobre o aprimoramento das regras de garantia, a execução extrajudicial de créditos garantidos por hipoteca, a execução extrajudicial de garantia imobiliária em concurso de credores, o procedimento de busca e apreensão extrajudicial de bens móveis em caso de inadimplemento de contrato de alienação fiduciária, o resgate antecipado de Letra Financeira, a alíquota de imposto de renda sobre rendimentos no caso de fundos de investimento em participações qualificados que envolvam titulares de cotas com residência ou domicílio no exterior e o procedimento de emissão de debêntures; altera as Leis nºs 9.514, de 20 de novembro de 1997, 10.406, de 10 de janeiro de 2002 (Código Civil), 13.476, de 28 de agosto de 2017, 6.015, de 31 de dezembro de 1973 (Lei de Registros Públicos), 6.766, de 19 de dezembro de 1979, 13.105, de 16 de março de 2015 (Código de Processo Civil), 9.492, de 10 de setembro de 1997, 8.935, de 18 de novembro de 1994, 12.249, de 11 de junho de 2010, 14.113, de 25 de dezembro de 2020, 11.312, de 27 de junho de 2006, 6.404, de 15 de dezembro de 1976, e 14.382, de 27 de junho de 2022, e o Decreto-Lei nº 911, de 1º de outubro de 1969; e revoga dispositivos dos Decretos-Lei nºs 70, de 21 de novembro de 1966, e 73, de 21 de novembro de 1966.",
+        "data_assinatura": "2023-10-30"
+      },
+      "new": {
+        "titulo": "Lei nº 14.711 de 30/10/2023",
+        "ementa": "Dispõe sobre o aprimoramento das regras de garantia, a execução extrajudicial de créditos garantidos por hipoteca, a execução extrajudicial de garantia imobiliária em concurso de credores, o procedimento de busca e apreensão extrajudicial de bens móveis em caso de inadimplemento de contrato de alienação fiduciária, o resgate antecipado de Letra Financeira, a alíquota de imposto de renda sobre rendimentos no caso de fundos de investimento em participações qualificados que envolvam titulares de cotas com residência ou domicílio no exterior e o procedimento de emissão de debêntures; altera as Leis nºs 9.514, de 20 de novembro de 1997, 10.406, de 10 de janeiro de 2002 (Código Civil), 13.476, de 28 de agosto de 2017, 6.015, de 31 de dezembro de 1973 (Lei de Registros Públicos), 6.766, de 19 de dezembro de 1979, 13.105, de 16 de março de 2015 (Código de Processo Civil), 9.492, de 10 de setembro de 1997, 8.935, de 18 de novembro de 1994, 12.249, de 11 de junho de 2010, 14.113, de 25 de dezembro de 2020, 11.312, de 27 de junho de 2006, 6.404, de 15 de dezembro de 1976, e 14.382, de 27 de junho de 2022, e o Decreto-Lei nº 911, de 1º de outubro de 1969; e revoga dispositivos dos Decretos-Lei nºs 70, de 21 de novembro de 1966, e 73, de 21 de novembro de 1966.",
+        "data_assinatura": "2023-10-30"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14717-2023",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2023/lei-ordinaria-14717-2023.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2023-10-31;14717",
+      "old": {
+        "titulo": "Pensão especial - Feminicídio",
+        "ementa": "Institui pensão especial aos filhos e dependentes crianças ou adolescentes, órfãos em razão do crime de feminicídio tipificado no inciso VI do § 2º do art. 121 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), cuja renda familiar mensal per capita seja igual ou inferior a 1/4 (um quarto) do salário mínimo.",
+        "data_assinatura": "2023-10-31"
+      },
+      "new": {
+        "titulo": "Lei nº 14.717 de 31/10/2023",
+        "ementa": "Institui pensão especial aos filhos e dependentes crianças ou adolescentes, órfãos em razão do crime de feminicídio tipificado no inciso VI do § 2º do art. 121 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), cuja renda familiar mensal per capita seja igual ou inferior a 1/4 (um quarto) do salário mínimo.",
+        "data_assinatura": "2023-10-31"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-14811-2024",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2024/lei-ordinaria-14811-2024.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2024-01-12;14811",
+      "old": {
+        "titulo": "Bullying e cyberbullying",
+        "ementa": "Institui medidas de proteção à criança e ao adolescente contra a violência nos estabelecimentos educacionais ou similares, prevê a Política Nacional de Prevenção e Combate ao Abuso e Exploração Sexual da Criança e do Adolescente e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), e 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente).",
+        "data_assinatura": "2024-01-12"
+      },
+      "new": {
+        "titulo": "Lei nº 14.811 de 12/01/2024",
+        "ementa": "Institui medidas de proteção à criança e ao adolescente contra a violência nos estabelecimentos educacionais ou similares, prevê a Política Nacional de Prevenção e Combate ao Abuso e Exploração Sexual da Criança e do Adolescente e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), e 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente).",
+        "data_assinatura": "2024-01-12"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-15040-2024",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2024/lei-ordinaria-15040-2024.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2024-12-09;15040",
+      "old": {
+        "titulo": "Lei do seguro privado",
+        "ementa": "Dispõe sobre normas de seguro privado; e revoga dispositivos da Lei nº 10.406, de 10 de janeiro de 2002 (Código Civil), e do Decreto-Lei nº 73, de 21 de novembro de 1966.",
+        "data_assinatura": "2024-12-09"
+      },
+      "new": {
+        "titulo": "Lei nº 15.040 de 09/12/2024",
+        "ementa": "Dispõe sobre normas de seguro privado; e revoga dispositivos da Lei nº 10.406, de 10 de janeiro de 2002 (Código Civil), e do Decreto-Lei nº 73, de 21 de novembro de 1966.",
+        "data_assinatura": "2024-12-09"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-15190-2025",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2025/lei-ordinaria-15190-2025.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-08-08;15190",
+      "old": {
+        "titulo": "Lei Geral do Licenciamento Ambiental",
+        "ementa": "Dispõe sobre o licenciamento ambiental; regulamenta o inciso IV do § 1º do art. 225 da Constituição Federal; altera as Leis nºs 9.605, de 12 de fevereiro de 1998 (Lei dos Crimes Ambientais), 9.985, de 18 de julho de 2000, e 6.938, de 31 de agosto de 1981; revoga dispositivos das Leis nºs 7.661, de 16 de maio de 1988, e 11.428, de 22 de dezembro de 2006; e dá outras providências.",
+        "data_assinatura": "2025-08-08"
+      },
+      "new": {
+        "titulo": "Lei nº 15.190 de 08/08/2025",
+        "ementa": "Dispõe sobre o licenciamento ambiental; regulamenta o inciso IV do § 1º do art. 225 da Constituição Federal; altera as Leis nºs 9.605, de 12 de fevereiro de 1998 (Lei dos Crimes Ambientais), 9.985, de 18 de julho de 2000, e 6.938, de 31 de agosto de 1981; revoga dispositivos das Leis nºs 7.661, de 16 de maio de 1988, e 11.428, de 22 de dezembro de 2006; e dá outras providências.",
+        "data_assinatura": "2025-08-08"
+      }
+    },
+    {
+      "id": "br-federal-lei_ordinaria-15211-2025",
+      "path": "bases/curated/legislacao/federal/leis-ordinarias/2025/lei-ordinaria-15211-2025.md",
+      "source": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2025-09-17;15211",
+      "old": {
+        "titulo": "Estatuto Digital da Crianca e do Adolescente",
+        "ementa": "Dispõe sobre a proteção de crianças e adolescentes em ambientes digitais (Estatuto Digital da Criança e do Adolescente).",
+        "data_assinatura": "2025-09-17"
+      },
+      "new": {
+        "titulo": "Lei nº 15.211 de 17/09/2025",
+        "ementa": "Dispõe sobre a proteção de crianças e adolescentes em ambientes digitais (Estatuto Digital da Criança e do Adolescente).",
+        "data_assinatura": "2025-09-17"
+      }
+    }
+  ]
+}

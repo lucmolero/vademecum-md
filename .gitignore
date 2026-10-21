@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Dados e artefatos locais não versionados
+.cache/
+.private/
+build/
+dist/
+reports/
+tmp/
+*.log
+manifests/markdown-inventory.jsonl
+bases/raw/*
+!bases/raw/README.md
+bases/derived/*
+!bases/derived/README.md
+
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+
+# Bancos e índices gerados localmente
+*.sqlite
+*.sqlite3
+*.db
+*.duckdb

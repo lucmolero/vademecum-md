@@ -1,0 +1,1167 @@
+{
+  "schema": "normative-diff/v1",
+  "id": "br-federal-lei_complementar-225-2026",
+  "generated_at": "2026-10-21",
+  "anterior": "bases/history/versoes/2026-10-21-pre-reconciliacao/lei-complementar-225-2026.md",
+  "atual": "bases/curated/legislacao/federal/leis-complementares/2026/lei-complementar-225-2026.md",
+  "metadados": {
+    "consolidacao_status": {
+      "anterior": "requer_reconciliacao",
+      "atual": "consolidada_fonte_oficial"
+    },
+    "fonte_oficial": {
+      "anterior": [
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2026-01-08;225"
+      ],
+      "atual": [
+        "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp225.htm",
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2026-01-08;225"
+      ]
+    },
+    "observacoes_proveniencia": {
+      "anterior": [
+        "Texto normalizado para o contrato público; trilha técnica mantida localmente."
+      ],
+      "atual": [
+        "Texto vigente conferido no portal do Planalto, com registro dos dispositivos vetados conforme a fonte oficial.",
+        "A revogação promovida pelo art. 56 é uma relação de saída desta lei e não indica que a própria lei esteja revogada."
+      ]
+    },
+    "origem_formato": {
+      "anterior": "markdown",
+      "atual": "html"
+    },
+    "sha256_origem": {
+      "anterior": "eec58e05f54646c5e7714ed360c9fcb91e6321613c09fb3e41b07c7e327e8556",
+      "atual": "7139fb1afab9b2a4a34a6ce233cd0e4757ab2d7fffa3317fbf4f45a4036b9898"
+    },
+    "situacao": {
+      "anterior": "desconhecida",
+      "atual": "em_vigor"
+    },
+    "titulo": {
+      "anterior": "Codigo de Defesa do Contribuinte",
+      "atual": "Lei Complementar nº 225, de 8 de janeiro de 2026"
+    },
+    "versao_texto": {
+      "anterior": "original",
+      "atual": "consolidada"
+    }
+  },
+  "estrutura": {
+    "artigos": {
+      "total_anterior": 49,
+      "total_atual": 49,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 46,
+      "inalterados": 3
+    },
+    "detalhes": [
+      {
+        "artigo": "10",
+        "status": "alterado",
+        "hash_anterior": "549735f342603391276984c31ea796dd1bf5cbb2f5816710cc052ce8b3f6adb8",
+        "hash_atual": "809d7950f94651332c8d58f1147f7271b0d02ce3ae681932336a4e18cd55fc5f",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "11",
+        "status": "alterado",
+        "hash_anterior": "c4ae7198a078d1e8803288f53f34dccf0444f53c623bd8166ee6860b7b63ebec",
+        "hash_atual": "80afb9086dd3ad7cca2ee0d4b200ba78434677a71b511462e55d70f04534ad08",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 9,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 6,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "12",
+        "status": "alterado",
+        "hash_anterior": "5ca02514c87f43308169a89dd8aff19eee96d552aba73d6a5381cf52b2120cd5",
+        "hash_atual": "bc54f6b02755dd66fb1cd340b3078aa28baa712b12f3f8adf01d0bb774ab793d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 9,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 6,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "13",
+        "status": "alterado",
+        "hash_anterior": "27a491d9381c1b5f22f427e970a7a6ffc64839fd8d64becdae6ffac971240bbb",
+        "hash_atual": "ed52cf8fbc9ef54343a51fb4e0fe074c6dcb10f0004911ff788d4a4f9fd4f3eb",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "14",
+        "status": "alterado",
+        "hash_anterior": "ae911d6a9a8ac683599b1307c7285f02a7e589d29097e608015ead46f4a04352",
+        "hash_atual": "14b3ab7182c56f1e2eff1d6303572937aa8049a535278a477e0c9dfdde12dd02",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "15",
+        "status": "alterado",
+        "hash_anterior": "524b4a31c04e1cee32c7ee61e1e047ebf5ef6a027ca054ab36b41b09e7ddfcc0",
+        "hash_atual": "72bf468b5251e3f1a591cb8d605e3e77dc7d108a1b73cbd29eeafec1c00752ca",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "16",
+        "status": "alterado",
+        "hash_anterior": "b3a01568159215e7b15c12161ea291d3db137da9106c1dd8e678cf8e571e0710",
+        "hash_atual": "36ccee1b6aa7cc16a39cc2eca7cd16654d55460e43c3afa26a4e36c033fac3bf",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "17",
+        "status": "alterado",
+        "hash_anterior": "4318743bd3cc78006bfafadd34bb8b5600e794c5822609f3eb6167b653a049db",
+        "hash_atual": "d2c8d69bc5db238151343fad06e80838ecb518fe7d3382371285faca0c735e6f",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "18",
+        "status": "alterado",
+        "hash_anterior": "d0bfdf20c7ddb3b81939ccea8470cc1abffa7dfd29b13b6b26ca5a20e82b80ba",
+        "hash_atual": "de385c661dab2b02d89e94a04b0e0cce021c631114afa1b173a29d5b8c244d28",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "19",
+        "status": "alterado",
+        "hash_anterior": "67168c57ea3e1a4e4d49228af22724e6128db751987dc92920d4b91b74d9147a",
+        "hash_atual": "f0e3f7626b12c3ab2a77914630a1391a684eed349f9c16c9da423b0a2999c3eb",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "20",
+        "status": "alterado",
+        "hash_anterior": "be0a4b341a18a0818294487d132b768e00d705e3c6502c967242c67802554427",
+        "hash_atual": "36d030b435751ecba11d08288c04fa1347607928e1612e49b5d2336e2ba23be9",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 7,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "21",
+        "status": "alterado",
+        "hash_anterior": "23d5a4084a228d412e5b61847941e43e37e842447b6a06c47ba9b57efa1a67f9",
+        "hash_atual": "0849f82f836565c018c391925115b62d16ee770535e9683210e8c003ebbc36bc",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 5,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "22",
+        "status": "alterado",
+        "hash_anterior": "4d8d2e4874423d45eef5494a085afc0674fca36144d4397a8538df0ab079f494",
+        "hash_atual": "585198c7a8479479135f7668af18111640b5eb806a28583550c6679a67b1317f",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "23",
+        "status": "alterado",
+        "hash_anterior": "2a713a143e20b201fb93d41dbbb544365bebcc8f7ac35172378a237ab5f9a029",
+        "hash_atual": "132c982174bc685bb106b83e69735004c9be13bdf21ca48fc790ed7060d64a14",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 6,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "24",
+        "status": "alterado",
+        "hash_anterior": "d041c768e6b78e9f65cfd62a15dbd9f10338776117246ab949440cac819b9875",
+        "hash_atual": "e5439b9cbf4b8836a708cfe1e23190c894fbde9b882233b040383b8b483d542c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "25",
+        "status": "alterado",
+        "hash_anterior": "baf150fb8c32e5ef29631897f6ac2a19b2b0ef98f5db047d7fc0bbc74b34c68e",
+        "hash_atual": "0fe6b3c8a5baec4441b92e22fdb2be8a4a83ed8d2f6a1b914e2a41473e3f3289",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 4,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "26",
+        "status": "alterado",
+        "hash_anterior": "0ad15d494f05dd28bb41c9f5950d4d5335a837571256cc43044428879e277a4c",
+        "hash_atual": "85952c9f3a113a23d550334ea24a854328b4b15726eae30cb1bb3b69ab9b5e6c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 5,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "27",
+        "status": "alterado",
+        "hash_anterior": "ecc7c12737f2804d9be9c2b25fe671e40bf7b3790215294deff90c65de4e6390",
+        "hash_atual": "248a9fbf12b7417b9669a9cead5df4ca6efc69468ea6529547866e45144483f2",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "28",
+        "status": "alterado",
+        "hash_anterior": "b4f963c7c7bf801932f1b64abc518710fb852ab43b230cfe17707fd02c3633e1",
+        "hash_atual": "a9fac02a1db15d73bebe20374600a32ac91c6d7cd098b8c69c24cab30b8f1f37",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 7,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "29",
+        "status": "alterado",
+        "hash_anterior": "bb458e325b8dfc04b03f1bc34352e578317d492a942c8b9cc750a9d265c652e0",
+        "hash_atual": "7193dc406bf3936991aec8f6bc822763554e10ad2c856f9c8b2d09762e98d9d3",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "30",
+        "status": "alterado",
+        "hash_anterior": "e4dc0e682c35d75fc4de89ffda376620f236b8a296fd6d9c0bc11b6a3d1cc26a",
+        "hash_atual": "42347702be36f47223893c4ed09e3430daa3f2fc96d438726348d22034e1985f",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 4,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 4,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "31",
+        "status": "alterado",
+        "hash_anterior": "6f5ff1248118ce30a8f7cc9930f1382a21f2aedf71ae72f75fc03dc0443223aa",
+        "hash_atual": "966935044f365f37e2d17998ed533c9eed3cf86f243a863f7f252c21d9f9917e",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "32",
+        "status": "alterado",
+        "hash_anterior": "901d47c255887b8877ffad8fcae51696d48bd9f30ac245fbf2a09b0dee2fc89a",
+        "hash_atual": "186fcbcf03a7a3d39ab98e154fa1e0f57a779159c6357c1b53872245f87a2e61",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 4,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 2,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 1,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "33",
+        "status": "alterado",
+        "hash_anterior": "d0b0a6ad6a6d6eeb820df2015426543a6749095c6326b06aa207e188bb750d5f",
+        "hash_atual": "0d5c1eb499284b50e92b83e4e62a85cfb47d9bd3eee2ecf7eee441bdf91f38c8",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 6,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "35",
+        "status": "alterado",
+        "hash_anterior": "054b835db21e347d70e3ca0b16c1fb7bbedeed51f7bb0faa55f5f4679836a3d7",
+        "hash_atual": "6f2b962a07c752aee14e5074587fd731f1bc6d833b1ea0b05e1105570cf63c19",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "36",
+        "status": "alterado",
+        "hash_anterior": "eee85aa802d76a9e2bc882af4f340e519bd89cad5c7b4b3c006390ae651803d4",
+        "hash_atual": "5fbbc531d52ba9eee4ab844c53a386eb5cfad7d3763752752bc6cbbcc5cd3f10",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 10,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "37",
+        "status": "alterado",
+        "hash_anterior": "5a9be1d0b977c93af7a0017d9c27e89239a8fb9486146fde60e9565948abc400",
+        "hash_atual": "cedea3fa64df4a1807f9fa3fafdd51d8d5b1598e7cec4f840cbf51d44dc13d0c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 5,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "38",
+        "status": "alterado",
+        "hash_anterior": "a7b3d4dd04da1787b9d62615d2c826341b9feae8003064622b00bb5a758b9209",
+        "hash_atual": "521b029d41ac69e693ab1ad400fddfeb2a4174f99df437e1e950e73aabc99ca5",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 6,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "39",
+        "status": "alterado",
+        "hash_anterior": "567263a813f0675a96f60552952245b4a00760f673d3ef95cf93c5baf640b59c",
+        "hash_atual": "6163d84a63c41b2850a968a3ba7fefb2e4274f29006c5ae813fdc67f7162122d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "40",
+        "status": "alterado",
+        "hash_anterior": "d4ea5070d643325d153be0b4579cfa8e99d7fe501834b868e54af288b9567cb8",
+        "hash_atual": "9a84c38babf21ac7f5f93176d0bc018049930a8a4ba4c6f2f245efd1443cd337",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "41",
+        "status": "alterado",
+        "hash_anterior": "d3d07bb662ce441be4dbd5ed5b469ab2da116aba38cd6ac5ba5dda6ac8a840d1",
+        "hash_atual": "5562e557c76e48fd91a37019237d81a0fefc3f0a59941e733279232377057e0b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 6,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 4,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "42",
+        "status": "alterado",
+        "hash_anterior": "cd182d1a6294bb19972bff292b658727d5bd8c9d68a578795057233b95249aff",
+        "hash_atual": "8702da4b939d23f9769e220e0656289751af1770a6977df53d87c90dec5d0467",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "43",
+        "status": "alterado",
+        "hash_anterior": "5dbcfeb0196843839b42fc6bb7bc41755c67d2b66ef7c9f9eee4c48495bfda69",
+        "hash_atual": "93e98a31d1eec70b072f4c78dce5ed243afb5e322077c28d8976dda8f8edc881",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "44",
+        "status": "alterado",
+        "hash_anterior": "9e8e7d0237ac617092adb8e6ecb7fafc20422da00fc4c74ce11f4cd4ee1b8714",
+        "hash_atual": "c5d067e8e1c8fcf8dc889fe827b973dd39a8fd8d4270735b506bffd9639917c9",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 5,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "45",
+        "status": "alterado",
+        "hash_anterior": "40f37e54d651f6445dbf544a743320bf1efecdb3b574ab198322769fb766e5a1",
+        "hash_atual": "7b2ebf3712e1d8116e600cb046ac5464b1636a5cd7db414950d78a375aa728f8",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "46",
+        "status": "alterado",
+        "hash_anterior": "7ca4881310105489752db5273b75b5171cf933f5b3f30c95d2fc1fb78bb0727c",
+        "hash_atual": "6f325112ac660ea57ff2dc23df799f5d8cd733519bb230c934d4c6e618a634f5",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "47",
+        "status": "alterado",
+        "hash_anterior": "8094d4a2c020b2087c185ef0f215d7b8986c06927cd46f039fb4c22a1a3a103f",
+        "hash_atual": "17fddd0aa6b46e5ac74be36b56b69fde0fd0c449d153e715c230886fd2aea75e",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "48",
+        "status": "alterado",
+        "hash_anterior": "c03bfdf0529652e50ebc2cfa70929d3332cac5a7416617ee246b22bbdb1c8c09",
+        "hash_atual": "30204babf4d6186bbf2fa2c640ec61c512d1cd8fab685f22c0ac267e0a7b4293",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "49",
+        "status": "alterado",
+        "hash_anterior": "6ce1ba60a69ff558b2b9b51a26ad7f1ba7321682aa7e67777c662a93fa752724",
+        "hash_atual": "d369a36f372b1991f6acf61be729db07d523df603bcfc662482136664b7a9e80",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "50",
+        "status": "alterado",
+        "hash_anterior": "b9853a5329cba7474eb10e78e10dc8ab03fc76aa32fa4b8396e41d4ad838a990",
+        "hash_atual": "aff2d2ae383d3b28d5eb448823dc5b7ca941314f20aad8cf8acc27e762c7b7c2",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "51",
+        "status": "alterado",
+        "hash_anterior": "30e24abb932e81ed082a59f91a61e3b85ed6803519bcf2c8ef1acd061e3ccace",
+        "hash_atual": "8f1622ebd84c97aea9ece0caae5d176bc23de8504fab31300a9c441560ffddf8",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "52",
+        "status": "alterado",
+        "hash_anterior": "331083083a7d9c063f5ce73d1e547bee797e47657dc38be15044c4fac68a86f9",
+        "hash_atual": "4f2d25312fd9f39ff4cd5bf9958d494fc4aea33f82ec7a64c3c2df3266a6db19",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 5,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "53",
+        "status": "alterado",
+        "hash_anterior": "ee7ba37bbb5417d53b1123b105c8402595c054fc080bbe765ca53b3400c367c1",
+        "hash_atual": "48e62f46e931add82e6759b7c7d3149fc698e24688d4cb226797eb5b818c9559",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "54",
+        "status": "alterado",
+        "hash_anterior": "a16fb334d235256b267c2dfbb86e7fde128740513e5baa52725537f8285735d1",
+        "hash_atual": "2ebabd05e5d538abc2e025030698f03ca55cc4bc701e6eade6984279f2cbacdd",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 3,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "55",
+        "status": "alterado",
+        "hash_anterior": "e67f6769ccd0e0d732e776dde1506ddb040d7675f8be36c221e88f18a78d46f8",
+        "hash_atual": "de3b98530e00e41470c6ad1d8f87105a6e614a0f0fd1307d5c73cefb05d712c1",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "58",
+        "status": "alterado",
+        "hash_anterior": "2eafb4b6cafbcdd73c2b8987a4dae584515bc645caf113cf50c75fb4c0596e65",
+        "hash_atual": "35e9b159499da03e4bf016d82b6c9187bfd1e10db775eaf8fa122a7df15983fb",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 2,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 1,
+          "unchanged": 0
+        }
+      }
+    ]
+  }
+}

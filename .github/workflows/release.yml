@@ -1,0 +1,63 @@
+name: release-gates
+
+on:
+  schedule:
+    - cron: "41 5 1 1,4,7,10 *"
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publicar a release depois da aprovação do ambiente production"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  release-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install project dependencies
+        run: python -m pip install -e .
+      - name: Rebuild deterministic derived data
+        run: python tools/build_public_indexes.py --apply
+      - name: Audit normative graph
+        run: python tools/relations/audit_normative_graph.py
+      - name: Validate release gates
+        run: python tools/validate_release.py
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Build public release package
+        run: python tools/release/build_release.py --output dist
+      - name: Upload release package
+        uses: actions/upload-artifact@v4
+        with:
+          name: vademecum-md-release
+          path: dist/*
+          if-no-files-found: error
+
+  publish:
+    if: github.event_name == 'workflow_dispatch' && inputs.publish == true
+    needs: release-gates
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download release package
+        uses: actions/download-artifact@v4
+        with:
+          name: vademecum-md-release
+          path: dist
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(python -c "import json; print(json.load(open('dist/release-manifest.json', encoding='utf-8'))['version'])")
+          gh release create "v${version}" dist/vademecum-md-"${version}".zip --title "vademecum-md ${version}" --notes-file dist/CHANGELOG.md --target "${GITHUB_SHA}"

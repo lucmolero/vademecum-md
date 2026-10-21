@@ -1,0 +1,59 @@
+{
+  "schema": "normative-diff/v1",
+  "id": "br-federal-lei_complementar-227-2026",
+  "generated_at": "2026-10-21",
+  "anterior": "bases/history/versoes/2026-10-21-pre-reconciliacao/lei-complementar-227-2026.md",
+  "atual": "bases/curated/legislacao/federal/leis-complementares/2026/lei-complementar-227-2026.md",
+  "metadados": {
+    "consolidacao_status": {
+      "anterior": "requer_reconciliacao",
+      "atual": "consolidada_fonte_oficial"
+    },
+    "ementa": {
+      "anterior": "Presidência da República Casa Civil Secretaria Especial para Assuntos Jurídicos",
+      "atual": "Institui o Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS); dispõe sobre o processo administrativo tributário do Imposto sobre Bens e Serviços (IBS) e sobre a distribuição do produto da arrecadação do IBS aos entes federativos; institui normas gerais relativas ao Imposto sobre Transmissão Causa mortis e Doação de Quaisquer Bens ou Direitos (ITCMD); altera a legislação tributária e revoga dispositivos legais."
+    },
+    "observacoes_proveniencia": {
+      "anterior": [
+        "Texto normalizado para o contrato público; trilha técnica mantida localmente."
+      ],
+      "atual": [
+        "Texto oficial do Planalto preservado no snapshot local de 2026-10-15.",
+        "A lei contém dispositivos com efeitos em datas futuras; as datas de efeito serão detalhadas no grafo normativo."
+      ]
+    },
+    "relacionada_a": {
+      "anterior": [],
+      "atual": [
+        "br-federal-lei_complementar-214-2025"
+      ]
+    },
+    "sha256_origem": {
+      "anterior": "382c8e056eed49fc7519de00141c7d7baf083f6e0865d204b370a1ed166a2f37",
+      "atual": "47f4fbcbb78694c49003c2c41c5631c0db1c3a1e7cdd19b5c244db5639312156"
+    },
+    "situacao": {
+      "anterior": "desconhecida",
+      "atual": "em_vigor"
+    },
+    "titulo": {
+      "anterior": "Comitê Gestor do Imposto sobre Bens e Serviços",
+      "atual": "Lei Complementar nº 227, de 13 de janeiro de 2026"
+    },
+    "versao_texto": {
+      "anterior": "original",
+      "atual": "consolidada"
+    }
+  },
+  "estrutura": {
+    "artigos": {
+      "total_anterior": 200,
+      "total_atual": 200,
+      "adicionados": 0,
+      "removidos": 0,
+      "alterados": 0,
+      "inalterados": 200
+    },
+    "detalhes": []
+  }
+}

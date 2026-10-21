@@ -1,0 +1,4843 @@
+{
+  "schema": "normative-diff/v1",
+  "id": "br-federal-lei_ordinaria-14133-2021",
+  "generated_at": "2026-10-21",
+  "anterior": "bases/history/versoes/2026-10-21-pre-reconciliacao/lei-ordinaria-14133-2021.md",
+  "atual": "bases/curated/legislacao/federal/leis-ordinarias/2021/lei-ordinaria-14133-2021.md",
+  "metadados": {
+    "consolidacao_status": {
+      "anterior": "requer_reconciliacao",
+      "atual": "consolidada_fonte_oficial"
+    },
+    "ementa": {
+      "anterior": "\"Art. 37 ..................................................................................................................",
+      "atual": "Estabelece normas gerais de licitação e contratação para as Administrações Públicas diretas, autárquicas e fundacionais da União, dos Estados, do Distrito Federal e dos Municípios; altera as Leis nºs 13.105, de 16 de março de 2015, 8.987, de 13 de fevereiro de 1995, e 11.079, de 30 de dezembro de 2004, e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940; revoga dispositivos da Lei nº 8.666, de 21 de junho de 1993, da Lei nº 10.520, de 17 de julho de 2002, e da Lei nº 12.462, de 4 de agosto de 2011; e dá outras providências."
+    },
+    "fonte_oficial": {
+      "anterior": [
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2021-04-01;14133"
+      ],
+      "atual": [
+        "https://planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+        "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2021-04-01;14133"
+      ]
+    },
+    "observacoes_proveniencia": {
+      "anterior": [
+        "Texto normalizado para o contrato público; trilha técnica mantida localmente."
+      ],
+      "atual": [
+        "Texto consolidado conforme página oficial do Planalto, consultada em 2026-10-21.",
+        "O texto oficial registra alterações posteriores; a materialização individual das leis alteradoras será concluída na etapa de histórico e grafo normativo."
+      ]
+    },
+    "origem_formato": {
+      "anterior": "markdown",
+      "atual": "html"
+    },
+    "sha256_origem": {
+      "anterior": "1e341fa55d99c7fba74a0f5a3e5d122d17a911e5726c72c3d40fc748b6753c94",
+      "atual": "9b4e704411f3e488766fe1885b381326844afbba7b7921f7dbc70ece49de3728"
+    },
+    "situacao": {
+      "anterior": "desconhecida",
+      "atual": "em_vigor"
+    },
+    "titulo": {
+      "anterior": "Lei de Licitacoes e Contratos Administrativos",
+      "atual": "Lei nº 14.133, de 1º de abril de 2021"
+    },
+    "versao_texto": {
+      "anterior": "original",
+      "atual": "consolidada"
+    }
+  },
+  "estrutura": {
+    "artigos": {
+      "total_anterior": 0,
+      "total_atual": 199,
+      "adicionados": 199,
+      "removidos": 0,
+      "alterados": 0,
+      "inalterados": 0
+    },
+    "detalhes": [
+      {
+        "artigo": "10",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "f377caddafca85a83da2347b579cdfcf6948fe56d03e1bd2abb5fc7368cd3613",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "11",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "584b73c72052f7d7e83d9ef93f0637fb8fd28a7bd116f41cd5a18836bfb9852a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "12",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "3b5fd6a2722543bbf47fb2937ceb38e0ec7e228c9722adb453075f15e158d1ef",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "13",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "20afbd1d5c015e55240c207aa4735c533c28ec016e0740789e7ec50d01930a3a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "14",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "70e8685ff1d41d520fab251c7b8e6e6c0af9e3864b5e22db4d0cb745883258d3",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "15",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "741036bc0b827d5259e9e3b6e175eca28578b608e6841e1577cfcbea0161d103",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "16",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "33e0ee31b1194bf39393d0209acb77d6f99a6508879f1130a065eb007ee044d5",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "17",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ad55eadc3dded7fe42ec61c93ec3aac2d8b6485dfd559581092ff4a564e2d64f",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "18",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "272544b2d2ecb3195fc1dea451ac1349613f2699f192918ccb190838ae366c19",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 13,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "19",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "a2b71c5ef9d1f0d0d1b43fa232dc6e5b85bebbb87f29fa6f73fd7365a7ab101b",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "20",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "6fa45fc5e49432e40ac729ba34b80af9f4f8ab3ed7439fbb63d09de6527b9ef1",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "21",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "4d38172b9b07c7c24dfceb48bfbd9d6a47ba8a8b23538c115a2626584be8cce9",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "22",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "8e77c12727892e2890f113b4a726bf5b26ca97ddcbe9a61a51a75466a1e81a03",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "23",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "62b27b2065ff8672e7676b811426040323b0eb274975a26371857d3114f508d5",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "24",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ac2c098235a4000753cdb277932ae3d2c4956d1d64b73713396388484e8bf9a5",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "25",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "f25d541d935f3d93eb2a474a3bd07f901709b667ff6825e05f0179d711fae1e0",
+        "paragrafos": {
+          "added": 9,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "26",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "29bad597e2264e20eb6b9711b787b96ef5a093ee8fb7e2dc681c0187a28eb283",
+        "paragrafos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "27",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "dd8e3896b0c491a05cd13d8a83a048c01527a34cbf489beaa673210a4afa5b04",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "28",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "4bf1f107541c9fe008280401c027ca07acb68c21f0653fc3dac9a60d704bd0be",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "29",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "0f4eeacaf80cded47d6f119e03db6d8998a09bcfaa8c549c9166e10286a0aa89",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "30",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7d0b03f8a2e206faef77702378baf95e1b084cbd01ce0a20414c8cca86872555",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "31",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "fcb61b8a50c9ad27233dbfdf9167c67952850f8566ba6c1e3937e99ea0246c9b",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "32",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "11a03edb9a8a2316d4a4ba0cc92c22a36fcceae3ff5632c85471df630eb2bdfa",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 11,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "33",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "11d9ddd7245a0c4fbb0f5390aeaa5bcec7f88d8d6caed622e44f08bd674e527f",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "34",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "494dd8a1bc2315bb297f50230163e3643575065ccb8cb7630a492bd9338d88ee",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "35",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "9b761ae92f58b54c45e4b329914eed7a421e3d477abf5879b23f1171b4e3ec21",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "36",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "a56966c5a7d5e5293609eda218014fe732d352714f40003a4d3dc36f389d1aca",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "37",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "6d9795ca4366d7ff1e6fe6e9fe5b06e9bbfa8455eda24d25c840fb04e1a80b34",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "38",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "a0a7206a21a9c4e4032a0629ce10bd81201d46c9fe8323ebab0b31099a5682c4",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "39",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "def06610ae267f199033d036d9991cb3feb951164fb8c78fcdced56777336548",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "40",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "1fb6bbbc0c364ca7f5ed50dee7b7d31e288da86872073ec72b62aa777a98b975",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "41",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "04897f58296360f1ffa01012564d8698f5c713501f1e3d7db496ac4df553ea2d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "42",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "1d207e94db767e8ae9336d9994e73457a73baf4d54813daba6678129375aefe5",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "43",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5e7eae4b509c2a5761cf0bd9cb863185f6d80277dba5ae30e9fef5c99694affe",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "44",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "67d512f4b5099ab045606aaf117cf7923cf2a152986642317800c5d602e00478",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "44-A",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "1988fda8ead7d34a46614f91ed4abe867f9bc4c4f6ab4b18100af80ec9f930a9",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "45",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "eecd639d1634c8ae9af3180bf4492afd29a289f36f07ce61f07d751ff563f5cd",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "46",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "160c835aed14e4011916ca9b02022c4750a4f272bc425c1102b6142d147fa896",
+        "paragrafos": {
+          "added": 9,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "47",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e83410964b2a40c3d223d5e0fa89fb12c37b7576256c121b556cad2895bc9151",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "48",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "68177fe08f0899862ed5d5bbfee5704ef4ca848e268a048753e921f5b4f1c681",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "49",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "caacf71eb221ac76d2651ed204f31a6843af2f0cff7f39c97e6e4537974f131f",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "50",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "751f418001b01ada649520e1c204638b9c952e72a41ffb6d7c534a565c94ca39",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "51",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "264c1ae5985028f7f096da904a5b61a6288bce8d512ae91adfafde2451f8adad",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "52",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "a87fa48b1a327e69b53201c622e2b1321c7476ee719e240927f43a3aec2e57dc",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "53",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "f9234d3a17da46590b29a284b5093fecebc35d6a86c90187df47614b19b27e26",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "54",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "76fba4fa14388f72aa1dc3511d7bf29c5e8efa9a4eab43c5599992bc95c1e1e9",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "55",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5981b191cba9fc85f4afc292b9cc4eef34f21a647a9c5d173487c753b9b6a711",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "56",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "15f6e56079eed4b1d3e111ea40523b8f503cff3be94f1c2d193a3a93a7eeb68f",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "57",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e5bf5cb1f8ccd6fac3b09d1261c1cee768688ba9e27c54bd9c84cbddfd19f918",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "58",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "2604185f3c04f8d960d6349f22082f776f3382a5cc0601927f59cc08006df106",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "59",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "43525b1c9555870feeb97d974c8c89dc58e138d95efb54f0cfea4d6ee0fa8a11",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "60",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "71dfc9942cbd2cfcf0da5f844f302dba95ef101d7b11c756706ed2c4a89b69ad",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "61",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "4a081655a1f24820495107e111839b00792d2e35d23e9522f3654fa7617198b0",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "62",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "76adccc38cebaa2148f39cee547e3f19359628c4ab65c289acb1e295e27a6dee",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "63",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "196da75405d0f7725a6a98040c94224f2f31288cf7de81633b58e07853fc3d93",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "64",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "f0265d7ca9fa8188c74ff9ba618421c386ed40dde7060aee34c0f9b1e10c8edf",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "65",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "9edadd1680da9b0061e56edc62387fb76ad09890b5a5319720be67a5d41bf353",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "66",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "170d6a2839ecfdaea79ccd05ba81f288682863d4555d73a9cb51e7eb43a149d1",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "67",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ef4fa944c23c58e58c9b0c70b4787039b6e4ebc1b140384cb016732d7a143119",
+        "paragrafos": {
+          "added": 12,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "68",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e795d2522055ec421e5bd7853c0e6ae5b6c5f91cc5e51ab6f8bbc4455bb88014",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "69",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "d87de3071695d9424469567fe76f920b76ef762641239d802f90326af29574e7",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "70",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "b3cbe419711c720b3a92bf7ec93338ed84725a8b1451abd3b41312b42eccd079",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "71",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "024f70ed84b262f30014304d0bd7a586857add4e986adf279249383e83a66e6d",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "72",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "895536977780309fa3f3cf6cdd7c3d598e6411d394204d6d42a4199064f1b816",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 8,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "73",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "63cb1c144b63782788d5f149ebeb8e2284582ec78ef2acafca0b321335fcacd1",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "74",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "0ac5ad7d3160f72621fc5465fe0e9a6bf644e33e1056da65acedee1f6842de2b",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "75",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "36799661fd05912c4ec19d9e8ec86e4d500a0bb031cfccf44a5cb6481f512ade",
+        "paragrafos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 18,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "76",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "2dea385a6d49505c23a7313f6a5272b066af7bda414db15318707553018cf102",
+        "paragrafos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "77",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ec6144fb64a20d48f25e515f679780e4dc178ca0bf70405be1c23c114d7c720a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "78",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "da0adafdd5292563ac873370db4440874953a9c17bc07de048b398a2bda13494",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "79",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "fd497b86147b9427aee9ec591a59a967f572646042efe3d11ae96101a9e6d7f3",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "80",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7dabcefaf9cfdbf5d7ddee75f5b26918d7a6bdc3787a879d8344e42ca89d57ed",
+        "paragrafos": {
+          "added": 10,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "81",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "8b0179594aa960709366196331fdd76470074335ff267e76eabb76e2270433d9",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "82",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "60125333cd060ec34eaba05e2712bc6285b8e73b24ebda19f7aea09521aacab0",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 9,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "83",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "49eef0140ceeca59adf6fed31f138b789832ac7a937da8d74af7c9604a636a32",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "84",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "4c8e4d3f043f3e55b8b111241e1820e49d0e6c24f28feeeb1190a81905b9e124",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "85",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e9470a049d7426e91bddbd342e36fccbf91f0fab2c611a0e2bede4494bdb0510",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "86",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "6138643f0180d8a20abe4f8b413d988a12b8b0a8a2f27c7049db1184992906c7",
+        "paragrafos": {
+          "added": 8,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "87",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "3b8bb9c97f60ee06e5adc711d6dc39d8dfd28c99f4e4cdab290fa9647dccd867",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "88",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "07adfca0e333926159dd25779ec6ace21e03c70d57785fdfdeb8bb74838bf0e5",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "89",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "57d431eb40f1a7fea611566a480879160883e5b99d4e0f9c1bd7b3ab3470590b",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "90",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "de7aba76de46806899ca24a9dd72c9b648a899d41bb2cf5d28c81893685d90f6",
+        "paragrafos": {
+          "added": 9,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "91",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "84bae2bda751cc8eda6c8c179c70958fc725790d32bc149803c101220b7d0ef8",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "92",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "dadc7a58ed83b23214749cf459ec042889fdc52a159668839cbbfe897d7272d4",
+        "paragrafos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 19,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "93",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "c60a4d5d489575d62fdbaf5dbc87cdb4928d65e1ea3cc50fdd28f5f6e0d622f1",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "94",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7406d7474b5d9dde36144994ddc363f070264f1a9962814418b384903a15745d",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "95",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5d43887e62b7052b3535149621f2782c4d4d2285b1665cc334ddbc1a2b8ae02f",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "96",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "76cd4273e0a87ccec307389cfb3e5ee292203733df229e51f86cce84cebffdaf",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "97",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7c2a208dd1e7323a07098b80ad113724b81b7a3798543741442c5988ef870c66",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "98",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5afb66f112e1ddd86e565a7a1d08bb5af0b5475c185082706f00822d5f035f80",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "99",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "36e4cd596f7e9a660dcba892b09718864811eab82c877b426dd00c3ed91f6f27",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "100",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ab28f300d650fa57e1fd1b36a232f9af63bb760ac8c23fe16874524296429ff1",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "101",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "4c7770599a626370d57a14acb6ff390bd121e60cad5ee5260042987c61f012aa",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "102",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "39397761bec634147a27189dd3eb4789c014539fd2d0ea40eafc04ea98cd2471",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "103",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5fa9721a50531bfdc23bf4133c438dcde1e7a775db062d3b0c204f1f8cad7d32",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "104",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "cb63b5d9a066f95b696ca786db55aaed9be3e8a597d340037162594025b0712e",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "105",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "54eed16f95298d4d5ebd4848e0b180d3f7b6c2b3ca24eef987c661661548e333",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "106",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "cd810b3d1b2cbcdc680fc1864d9f84c69bb72c69c4b339726a092b7e71fe19ab",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "107",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "4782189e1ca0546f80ff2779c70db4cb7f1ebf8ed8819952d25013d47f599f23",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "108",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "d3ba800277d9fd879d1b26a4dcbe33496d2b2e7eb14b1da0dc5363dc4bf5e550",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "109",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "99d5bd24e0439f8be5283260d322a40857749ed9b764b96f260fea31eac8a8fd",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "110",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "d9962acb9a9ca5d8629a0abae7b9210ddc4821a4e9d5c38075dcbf956d719a69",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "111",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5201f84a61953a2581cab153f9c2cd0159784c6d2d27e00c0e5491a35db43564",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "112",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7b15bf2663c57514ad8b6651a2132158d88b2884fdbd23a6a629819db045cca1",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "113",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7b8124a4783957eb3bfc4358206dea1ed9c7419cd86265c39bb571f3d734a6e6",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "114",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "9ed07791b884bfa0e1719b2a18d7b523996ff86a47e734bfa28b8a2ffb09459a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "115",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "f0d5f07aa4f9f08fe3cac3be964498dd26eba9e1de331620b7a621c8c1b8d54e",
+        "paragrafos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "116",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "c97e5a85792fade12d3f0d3447c8065e0c1adfa477686b25d645041f510313ef",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "117",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "acfffb2de60249d538377a1f1b1e5fe72142491921a93834c51b6f7ee03c6d0b",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "118",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "32d3b1ddc3ca229a435aa23c6b8d778b0fc4b9975839e2495c4d48730af41bdb",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "119",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7a67a499ecfe4d5931e3f30f771e87076ee717afcb8ed3b697e9964777fc5cd2",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "120",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e58ccd2fabbdfbca2f397e469cd1b0f2f18845e70a7a6087f92090797acef7e4",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "121",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "29e517402a19447bf1c1ff11c168da328066b9a9e5db09c9718f9228db8a4cb1",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "122",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "cfcf4240bb309cf75633d6cc7a18f8500a3a66508915109f06c6827c2ab4e3ec",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "123",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "8b6c1c4fd9acd008c82ae6fb12f3af5e669bbf8df47a1055224e200d3d6696fd",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "124",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "a3b76bc7f4f09a6f8bc9dab1dd000ebb044bd91b81d48aff51a515cb9fcd1c9f",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "125",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "29726405ed111801490ab7b234c3273273617082642691d817bb3b31d0c177a7",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "126",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "0ae0467af0222e285d6c4ead37c36cfce786f7b4655df566709bf4e1633e1232",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "127",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "c533d89f529590e79ae356688fa309b07e2107da52d60046ab186decc47b53ac",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "128",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "724c0c45b881e1843b2f51d23369a5c1b7e7681f2f3ed381f1e9750664af9359",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "129",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "433e10cab566ebdbb0e321ed2d00a77a2e703a45369fb33fffde3231f34196e6",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "130",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e0f0275f062b91ce7619d25f3c0ba886be557b3dc7cde3a5c2c3ac7b8d2e8e41",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "131",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "61d0db2456e0332a3b17ac576fde84445901511a3d581eacdb581333a1865428",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "132",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "0e948747ae0d4bb0bc056aa4ac833f68b35766b4b36229d1e904e3c4ff036f51",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "133",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7450e54179d2ecff1d9a2c9682bc86328efce0a1be45ceb171c15cef7257e312",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "134",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "c6295747c9055b72c5630e2c1aef6613551fd6a64ad51b829560d29fda0f6479",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "135",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7051ae3877b992f61e9704fa69e1f2463da37c903a0dd6e91c1e9baf5c2092a5",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "136",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "890808aa2c12146d11f058b8a166327939334154265fdec7bd0cff56d3d50c2c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "137",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "56524261e6275106ea2d3ef95039dad848afe6081c44fb4150af818b04031947",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 9,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "138",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "58c7c3a1b4ec179bd06fe4d36c590fd209804917cda40da6a2c8d37cd38c47a2",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "139",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "57377454d4eaf2c3a6d30478ecd8f63699c70ec0846491f855c63a566faec0ce",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "140",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "254f6fafe0cac1c978b4890f624f5550137fccb4554eb88b41b5474aa20f3b23",
+        "paragrafos": {
+          "added": 6,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "141",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "95cdaa450907b12e3de39691ce588eaa2ac37cf3c83af440bd3aaa25cd7b5d36",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "142",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "a14fb3d864c4db0bcc8e4be4cfbf30b40e83ba0609e8b969b24aa1f944109a21",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "143",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "389904080456defcfc37aeab7cb0af8873cb712c2b2fabde244f159e6c876b90",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "144",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "d148e1aff0aa476ffddfb239bfdfd13e79e3031f27104e396376073b3cba8e8e",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "145",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7a4fa68d61eb5821a6266026a5f9e7587ebf52255feb6b195333155f2f533a65",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "146",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "f16c41fd17520e2f525ce300d1249fe65c179dab32a335a24b76e577f4208387",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "147",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "28f30d2cff3c1c34e7e10520061629011640842f8ed2b771fae1b05b458fe3e9",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 11,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "148",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "4b8b6d59e7a1b135a360152ec5cf26b0d05b9b4961de25f7427e9f4392a28aa1",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "149",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "2da92516085b1224de1d39885cfe7b9bd29de8e3f0ed6eee71e38827dd5e6182",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "150",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "f2b7cb5bf23148cd7cda3c96b32169e64a98c38cecb9101f2b27e120e19ce3db",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "151",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "740159730b70a97788004fc8eedd2ab418c2a6ff67b4a218197cccf222ddb136",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "152",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "17480af7cbe5df7e992e280ef1e946c183484dd65293fce68ce7df4c2d73330c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "153",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "0ec424234fa14f46ae84df4f6958b0d205822fd321df58f8bc65869a69b8f72a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "154",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "263ea68e35230fad1cdb09949ecbb3a19a0508cd851bbc53c30d7b08ccf66672",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "155",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "b1f404f0862582759bcf35f819d28383f4c4654c5f53d1599bc48fdd15ba6450",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 12,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "156",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5151fa6d122840e60bf6ffa030f40a300f2456947a0232da4b71e49d20064391",
+        "paragrafos": {
+          "added": 9,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "157",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "f98322c430c22f2e7ec4e04e57d3902299b4832a7a60752bb5f8edcad7529d11",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "158",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "a51421b176d7a23562dc3ff769b355899ebce0e472f315a37a73b50c040c3801",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "159",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "a47b344da80223679011059631a5169f7eb7de63b3f6cdaee131eff2f0013090",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "160",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "76d89a4b4e612a3d1084d7f3a6c2d96c707841fc9c9e0cbfe36d16a00dfe10cc",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "161",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "af21e24d96f8aae5f8dea0b28270a9508e5c9d298068ffae59d85f6f07d7bab0",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "162",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7467daab2859a17f32e0d8fc35521ecfcde7c17842cc7bae4e1a9a53f1db8fab",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "163",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "9c9fb3607c719f7393f06cf64693022c936f6eb83a6859afa05ea31a0db971a1",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "164",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e2aebb20ffd44aa18e8711d0616d1c94d5acda0613b42fcdbe5fc02e8d3e39c4",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "165",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "44419fd050c695fe272f240a9ce7fdf638c3a7dca3d4e44219fce23dd28781b4",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "166",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e8163222cdfad910a3120310f3865cd0b6577b8ae926a5a5145a5ec244b0bf6d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "167",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "db18b983d7c38d19988e583671a2158f997410f00e2011e3f2d42ac1e837b213",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "168",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5a9a293f209655e217b0e950c9ed317ef78740cf9c8232e640b677b269c680ff",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "169",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "40bb08cd965e95638f03ce2e3bd9423086545bee1555fbfa467d1377094a0276",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "170",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ff38aaa6b8b7736cf08cbaf35f75b608d53b016e7c274259fc05de7e8454b8bd",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "171",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "b789dc4640d6de6749a09dce8b8910ab3e5ca066fb2fb4a6ae68533c7b4a3000",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "172",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "266ec7b20df0d7e95cc1c5cb5c3e72aa4c84dfc51d4973a760ab7eae9d7ecde7",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "173",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e96bd5faf88a43eef98f216773ca033f6846cc2ffc607cfc2a3c1adc28bfe4a4",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "174",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "82d356310854c1b17d55083dee5b123f34465fdc8c30eb62fbae25b6799a477a",
+        "paragrafos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 7,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "175",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "fb322900eedc1b90a21a72e3e089299cc1063e89106e68792462db3057d9cb81",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "176",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "cd78046e14677c4241302e5ee136ebd622d30941aae76fdda4ac79fb00a8f029",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "177",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "10d9e363e86fffb8b19129a068b931f4d6fec0985339f743d8ab00b732e08625",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "178",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "70c5ecc41fdc1f3ad2b52f3d6ab4b6f3aa1027b6c34a5da6140fb495e1f1049a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "179",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ff2ebcd18230050a58a27065bcbda08f8db61c91ac6acab4038788da68e9782c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "180",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "535ba99ce5baa0609b8cbbbb38661084ae88f1c5770ee7c79d2692a3ca1768b0",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "181",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "91eacdba6ff8fac97e60383cb9ae4d29ec8653925d97f3dd236c3367811ee48b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "182",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "faec7dbcc85a8fe4965b5ae18750b72a0513f1560f8ab2df475d257f4efd697d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "183",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5a0b13b92229ff93b5b438c20dd87adf0296af2a2fd2c8dcb60268a8142d6535",
+        "paragrafos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "184",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "e7d0953abdad537f59a5dd82b890f486a4be8bafa06dac458dee304358a2bba5",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 3,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "184-A",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "d394f15e5e3f5706503b303da3f0f46cd0ab0d35925c39f83c8dfb2511c607d2",
+        "paragrafos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 4,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "185",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "8557fa127954b76caba47731dcac460d1ab7b616c441216b3a24f5ff7f93238a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "186",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "5aebda74e8da5f2213c41b3d3cd55bdb277d6c21cb7380da951983b94ba4cd4c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "187",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "d08a39574d7d2b04019648b63fd14bfd55bb223474fd2267b8b75769292b8e8f",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "188",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ed37082a757cf174aa2ec875d9d819c6b5aa19f0a301eeb58db3655ee1814b24",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "189",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "b55c530a6eb83643fbf3ea44c2068777434b62fa13181c4075fb986d545c3899",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "190",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7503168ae241558f119055b03e64fb480d896bcf31fbcbc691bbe4342020ce79",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "191",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "ab77da1ba9fac66e30744760a2dbace2613c0d43aea4bd57f8a3189eca39414b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "192",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "28d281107d4c0a30ee859dc8308d9b2d3723fb6636064b826a697cc85e4a4b66",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "193",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "c66d198c643150ef2f4fdcd477d64e0e2c29bf78a7eaeb415c1c1fd909e031b3",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 1,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "194",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "7f5d4b615ea7f7b2f0c2cd99744070318bb21ccbc4e488af9c0f2c8fd7ae4b5a",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-E",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "45b4679ad0c91deeb92d59b72bef81a6a77fc820e3e6013caa2bc6b962e098bf",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-F",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "cd938f6d06df37a91e99f0b9c1582e7def2d7fe0d76b5dde06b23498803c276c",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-G",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "1f29df7734309b1a3bb1eda18eeca9f41ce1269659fd5159ef62e1d742c89efd",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-H",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "b63736229af7ffe6288bda49bd4b55a38e6decd51becbf43de7871683db3f285",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-I",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "3aa4c4805671c878b8726f7dbf6ffe6dade28645e02cfef5aa55bfaf8e907f2d",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-J",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "6b2e4b10f3615b57358d71062340714a1e55f892459fe6fcd31e16db991ebaf2",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-K",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "6c5d7e7c6e69956bd22a7ef98cb7de6932e0f0791cf8de9f84b5d66a5ddafa5b",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-L",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "63ba9d24432668c862393afa03a9dddedb446aaa03778d4694e70db5559efbb0",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 5,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-M",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "cc32247d4d0a0e16aa7d4aaf467393755986970f8a317318d1a36a44b87fff3a",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-N",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "9298871a1cd0550edc4f309deb0a21830bdd4f1525def19a287d8ae442fb78a0",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-O",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "53e32d2189a89bc396328eeb463c053157ed59f56ff08520de1c926a72c8c7c6",
+        "paragrafos": {
+          "added": 2,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      },
+      {
+        "artigo": "337-P",
+        "status": "adicionado",
+        "hash_anterior": null,
+        "hash_atual": "fc470f9a448af88a0018c9de1a77a49dd9c6d4a1fcbac43e72a0079229b7d050",
+        "paragrafos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "incisos": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        },
+        "alineas": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0,
+          "unchanged": 0
+        }
+      }
+    ]
+  }
+}
