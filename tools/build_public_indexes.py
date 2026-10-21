@@ -373,11 +373,13 @@ def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relation
         else "diploma_referenciado"
         for item in unresolved
     )
-    triage_counts = {"historico": 0, "grafo": 0}
-    triage_report = ROOT / "bases/history/alteracoes/2026-10-21-unresolved-relations.json"
-    if triage_report.is_file():
+    target_disposition_counts = {"historico": 0, "grafo": 0}
+    review_queue = ROOT / "bases/derived/relacoes/review-queue.json"
+    if review_queue.is_file():
         try:
-            triage_counts.update(json.loads(triage_report.read_text(encoding="utf-8")).get("by_editorial_disposition", {}))
+            target_disposition_counts.update(
+                json.loads(review_queue.read_text(encoding="utf-8")).get("by_disposition", {})
+            )
         except (OSError, json.JSONDecodeError):
             pass
     public_report = [
@@ -395,7 +397,7 @@ def write_completeness(docs: list[tuple[Path, dict[str, object], str]], relation
         f"- Relações normativas materializadas: **{len(relations)}**",
         f"- Relações ainda não resolvidas: **{len(unresolved)} ocorrências / {len(unique_unresolved)} alvos únicos**",
         f"- Papel das ocorrências: **{role_counts.get('ato_alterador_ou_regulamentador', 0)} atos alteradores/regulamentadores; {role_counts.get('diploma_referenciado', 0)} diplomas referenciados**",
-        f"- Disposição editorial: **{triage_counts.get('historico', 0)} histórico; {triage_counts.get('grafo', 0)} mantidos no grafo**",
+        f"- Disposição dos alvos únicos: **{target_disposition_counts.get('historico', 0)} históricos; {target_disposition_counts.get('grafo', 0)} mantidos no grafo**",
         "",
         "## Regra de interpretação",
         "",
@@ -437,8 +439,8 @@ def main() -> int:
         encoding="utf-8",
         newline="\n",
     )
-    classify_unresolved(graph / "unresolved-classified.json")
     build_relation_review_queue(unresolved, graph / "review-queue.json")
+    classify_unresolved(graph / "unresolved-classified.json")
     write_sources(docs)
     write_vocabulary()
     write_release(docs, relations, unresolved)

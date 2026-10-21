@@ -12,7 +12,7 @@ Data de geração: `2026-10-21`.
 - Relações normativas materializadas: **1841**
 - Relações ainda não resolvidas: **2177 ocorrências / 1491 alvos únicos**
 - Papel das ocorrências: **2088 atos alteradores/regulamentadores; 89 diplomas referenciados**
-- Disposição editorial: **2088 histórico; 89 mantidos no grafo**
+- Disposição dos alvos únicos: **1408 históricos; 83 mantidos no grafo**
 
 ## Regra de interpretação
 
