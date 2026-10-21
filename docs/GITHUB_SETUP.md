@@ -1,6 +1,6 @@
 # Configuração operacional do GitHub
 
-Esta configuração precisa ser feita no repositório autoral depois que o `origin` for criado.
+O `origin` já está configurado para o repositório autoral. Permanecem apenas as proteções administrativas descritas abaixo.
 
 ## Repositório público
 
@@ -12,7 +12,7 @@ Esta configuração precisa ser feita no repositório autoral depois que o `orig
 
 ## Repositório privado de histórico
 
-Criar um repositório separado, por exemplo `vademecum-md-history`, com acesso restrito. O conteúdo esperado é o ledger produzido por `tools/history/build_private_ledger.py`, incluindo snapshots, logs, hashes e evidências de execução.
+O repositório separado `vademecum-md-history` já foi criado com acesso restrito. O conteúdo esperado é o ledger produzido por `tools/history/build_private_ledger.py`, incluindo snapshots, logs, hashes e evidências de execução.
 
 O nome definitivo e o token de acesso não devem ser gravados no repositório público. Devem ser configurados como secret/environment protegido somente quando o destino privado existir.
 
