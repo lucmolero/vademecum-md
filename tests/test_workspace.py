@@ -95,6 +95,9 @@ class WorkspaceTest(unittest.TestCase):
         self.assertIn("--priority P2", collection)
         self.assertIn("repository_dispatch", collection)
         self.assertIn("docs/proposals", (ROOT / ".github/workflows/prepare-update-pr.yml").read_text(encoding="utf-8"))
+        history = (ROOT / ".github/workflows/sync-private-history.yml").read_text(encoding="utf-8")
+        self.assertIn("HISTORY_REPO_TOKEN", history)
+        self.assertIn("environment: private-history", history)
 
     def test_source_registry_is_allowlisted(self) -> None:
         registry = load_registry()

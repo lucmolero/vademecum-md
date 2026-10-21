@@ -15,6 +15,7 @@ REQUIRED = {
     "release.yml",
     "weekly-completeness.yml",
     "discover-legislation.yml",
+    "sync-private-history.yml",
 }
 
 
@@ -36,6 +37,11 @@ def main() -> int:
             and 'git push origin "$branch"' in text
             and "gh pr create" in text
             and "automation/update-" in text
+        ) and not (
+            path.name == "sync-private-history.yml"
+            and "environment: private-history" in text
+            and "HISTORY_REPO_TOKEN" in text
+            and "git -C history-repository push origin HEAD:main" in text
         ):
             errors.append(f"{path.name}: push permitido somente para branch de proposta")
         if "contents: write" in text and not (

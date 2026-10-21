@@ -20,6 +20,7 @@ O nome definitivo e o token de acesso nao devem ser gravados no repositorio publ
 
 - `update-proposal`: ambiente criado, com aprovador obrigatorio, sem autoaprovacao e sem bypass administrativo;
 - `production`: ambiente criado, com aprovador obrigatorio, sem autoaprovacao e sem bypass administrativo;
+- `private-history`: ambiente criado com a mesma protecao para sincronizacao de snapshots;
 - nenhum ambiente deve permitir credenciais em Pull Requests nao confiaveis.
 
 O workflow de proposta continua gerando apenas evidencia nao sensivel; snapshots brutos nao sao publicados no repositorio autoral. A publicacao de release exige aprovacao do ambiente `production`.
