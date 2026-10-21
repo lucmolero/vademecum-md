@@ -210,6 +210,8 @@ class WorkspaceTest(unittest.TestCase):
         history = (ROOT / ".github/workflows/sync-private-history.yml").read_text(encoding="utf-8")
         self.assertIn("HISTORY_REPO_SSH_KEY", history)
         self.assertNotIn("environment: private-history", history)
+        self.assertIn("matrix_id", history)
+        self.assertIn("timeout-minutes: 90", history)
 
     def test_source_registry_is_allowlisted(self) -> None:
         registry = load_registry()
