@@ -27,23 +27,23 @@ jobs:
           python-version: "3.12"
       - name: Require private-history credential
         env:
-          HISTORY_REPO_TOKEN: ${{ secrets.HISTORY_REPO_TOKEN }}
+          HISTORY_REPO_SSH_KEY: ${{ secrets.HISTORY_REPO_SSH_KEY }}
         run: |
-          if [ -z "$HISTORY_REPO_TOKEN" ]; then
-            echo "HISTORY_REPO_TOKEN is not configured; private history sync is disabled."
+          if [ -z "$HISTORY_REPO_SSH_KEY" ]; then
+            echo "HISTORY_REPO_SSH_KEY is not configured; private history sync is disabled."
             exit 1
           fi
       - name: Install project dependencies
         run: python -m pip install -e .
       - name: Collect official snapshots
-        run: python tools/acquire/collect_legislation.py --mode proposal --fetch --report reports/private-history-collection.json
+        run: python tools/acquire/collect_legislation.py --mode proposal --report reports/private-history-collection.json
       - name: Build private ledger
         run: python tools/history/build_private_ledger.py --output private-ledger
       - name: Checkout private history repository
         uses: actions/checkout@v4
         with:
           repository: ${{ vars.HISTORY_REPOSITORY }}
-          token: ${{ secrets.HISTORY_REPO_TOKEN }}
+          ssh-key: ${{ secrets.HISTORY_REPO_SSH_KEY }}
           path: history-repository
           persist-credentials: true
       - name: Append ledger to private history

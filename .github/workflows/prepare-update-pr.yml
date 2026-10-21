@@ -27,7 +27,7 @@ jobs:
       - name: Install project dependencies
         run: python -m pip install -e .
       - name: Collect candidate snapshots
-        run: python tools/acquire/collect_legislation.py --fetch --report reports/legislation-collection.json
+        run: python tools/acquire/collect_legislation.py --mode proposal --report reports/legislation-collection.json
       - name: Build candidate structural diffs
         run: python tools/history/build_candidate_diffs.py --collection-report reports/legislation-collection.json --output reports/legislation-diffs --source-resolution manifests/source-resolution.json
       - name: Prepare autonomous update proposal
