@@ -12,6 +12,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "acquire"))
 sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "normalize"))
+sys.path.insert(0, str(Path(__file__).parents[1] / "tools"))
 
 from collect_legislation import (  # noqa: E402
     build_plan,
@@ -24,6 +25,7 @@ from collect_legislation import (  # noqa: E402
 )
 from discover_legislation import build_queue  # noqa: E402
 from normalize_source import normalize_bytes  # noqa: E402
+from migrate_public_corpus import parse_frontmatter  # noqa: E402
 from repair_encoding import candidate  # noqa: E402
 
 
@@ -199,6 +201,15 @@ class WorkspaceTest(unittest.TestCase):
         expected = "Art. 1\n\nTexto legal\n"
         self.assertEqual(normalize_bytes(html, "html"), expected)
         self.assertEqual(normalize_bytes(html, "html"), normalize_bytes(html, "html"))
+
+    def test_frontmatter_parser_fails_closed_in_strict_mode(self) -> None:
+        with self.assertRaises(ValueError):
+            parse_frontmatter("# sem frontmatter\n", strict=True)
+        with self.assertRaises(ValueError):
+            parse_frontmatter("---\n: invalid: yaml\n---\ntexto\n", strict=True)
+        metadata, body = parse_frontmatter("---\ntitulo: \"Teste\"\n---\n\nArt. 1\n", strict=True)
+        self.assertEqual(metadata["titulo"], "Teste")
+        self.assertEqual(body, "Art. 1\n")
 
     def test_encoding_repair_only_accepts_real_mojibake_improvement(self) -> None:
         self.assertEqual(candidate("ConstituiÃ§Ã£o"), "Constituição")

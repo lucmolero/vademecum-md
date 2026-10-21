@@ -120,8 +120,10 @@ def main() -> int:
     triples: set[tuple[str, str, str]] = set()
     for path in sorted(CURATED.rglob("*.md")):
         text = path.read_text(encoding="utf-8")
-        metadata, body = parse_frontmatter(text)
-        if not metadata:
+        try:
+            metadata, body = parse_frontmatter(text, strict=True)
+        except ValueError as error:
+            errors.append(f"{path}: frontmatter invÃ¡lido: {error}")
             continue
         docs.append((path, metadata, body))
         missing = REQUIRED - set(metadata)

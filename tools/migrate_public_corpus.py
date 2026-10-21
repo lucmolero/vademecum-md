@@ -8,7 +8,6 @@ keeps technical provenance in an ignored local ledger.
 from __future__ import annotations
 
 import argparse
-import ast
 import csv
 import hashlib
 import json
@@ -52,36 +51,31 @@ ALLOWED_STATUS = {
 }
 
 
-def parse_frontmatter(text: str) -> tuple[dict[str, object], str]:
-    if not text.startswith("---\n"):
+def parse_frontmatter(text: str, *, strict: bool = False) -> tuple[dict[str, object], str]:
+    opening = re.match(r"^---[ \t]*\r?\n", text)
+    if not opening:
+        if strict:
+            raise ValueError("frontmatter opening delimiter missing")
         return {}, text
-    end = text.find("\n---", 4)
-    if end < 0:
+    remainder = text[opening.end():]
+    closing = re.search(r"^---[ \t]*(?:\r?\n|$)", remainder, re.MULTILINE)
+    if not closing:
+        if strict:
+            raise ValueError("frontmatter closing delimiter missing")
         return {}, text
-    block = text[4:end]
+    block = remainder[:closing.start()]
     try:
         parsed = yaml.safe_load(block) or {}
-    except yaml.YAMLError:
-        parsed = {}
-        for line in block.splitlines():
-            if ":" not in line:
-                continue
-            key, raw = line.split(":", 1)
-            raw = raw.strip()
-            if raw in {"", "null"}:
-                value: object = None if raw == "null" else ""
-            else:
-                try:
-                    value = json.loads(raw)
-                except json.JSONDecodeError:
-                    try:
-                        value = ast.literal_eval(raw)
-                    except (ValueError, SyntaxError):
-                        value = raw.strip('"')
-            parsed[key.strip()] = value
-    if not isinstance(parsed, dict):
+    except yaml.YAMLError as error:
+        if strict:
+            raise ValueError(f"frontmatter YAML invalid: {error}") from error
         return {}, text
-    return dict(parsed), text[end + 4 :].lstrip("\n")
+    if not isinstance(parsed, dict):
+        if strict:
+            raise ValueError("frontmatter must be a YAML mapping")
+        return {}, text
+    body = remainder[closing.end():].lstrip("\r\n")
+    return dict(parsed), body
 
 
 def yaml_value(value: object) -> str:

@@ -16,7 +16,7 @@ situacao: "desconhecida"
 versao_texto: "original"
 consolidacao_status: "requer_reconciliacao"
 data_corte: "2026-10-21"
-fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224"]
+fonte_oficial: ["https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:2025-12-26;224", "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp224.htm"]
 fonte_publicacao: []
 origem_formato: "markdown"
 baixado_em: "2026-10-21"
