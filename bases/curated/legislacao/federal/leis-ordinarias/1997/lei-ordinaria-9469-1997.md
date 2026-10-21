@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9469-1997"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "137f439cffc18034653688a2277231561eb8b8635dc48d20241d830a352a5d1c"
+sha256_source_normalized: "40448d80000c03a6a48a99705c96331c5206307163ed385385430df4306d791b"
+sha256_source_body: "d3b6bd668d21a2d8cdaea017b6b9d6e51a179235c05e8de26832bd2cd52fd948"
+sha256_published_body: "805dd4099783233e0a2408841fc7a54d05b227c58dcf13b8f3cfe00ec9353f19"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.469 de 10/07/1997
 

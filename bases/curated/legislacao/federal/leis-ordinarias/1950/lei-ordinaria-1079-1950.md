@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-1079-1950"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "72fa4444a7a9874f118175ddc120565da2d59553b826fe0950e3fdffb5167367"
+sha256_source_normalized: "8bef6b7b1bd76eb66a1b706fc9185da8a2005daa522e786aa12ca98c2582c056"
+sha256_source_body: "7da3c17ca6d0dfa0564b989b9b63cf15d2b4dce35b147d141ad84d384848a9e6"
+sha256_published_body: "4fc61c155feb7cca8fa9e7cda65ca2aa481d4d934c2a3b8c7c1e21fda353c69c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 1.079 de 10/04/1950
 

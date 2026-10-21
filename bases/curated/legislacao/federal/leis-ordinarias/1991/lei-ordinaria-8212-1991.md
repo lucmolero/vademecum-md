@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8212-1991"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "06830b5ae423a700b640204eaf7d1fa9f83fa003e0db2a9d608d14126bebcc28"
+sha256_source_normalized: "73efedc03d5d3523134140068b311e31ebef684339995445b0388444813e7ec8"
+sha256_source_body: "eabf4e2d15490965adb28ad05d87267989eef88a2dde49848d24e09377cae687"
+sha256_published_body: "43f77315ec7b115fe7f4da46238d7309267d2853232f74aea6c65c840469eeb2"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.212 de 24/07/1991
 

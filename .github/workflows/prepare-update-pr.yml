@@ -43,6 +43,21 @@ jobs:
             --diff-dir reports/legislation-diffs \
             --source-resolution manifests/source-resolution.json \
             --proposal-markdown "docs/proposals/update-${stamp}.md"
+          if [ -f manifests/legal-consensus.json ]; then
+            python tools/legal/validate_consensus.py manifests/legal-consensus.json
+            python tools/reconcile/apply_reviewed_updates.py \
+              --mode apply_reviewed \
+              --collection-report reports/legislation-collection.json \
+              --output reports/reviewed-update-application.json \
+              --source-resolution manifests/source-resolution.json \
+              --legal-consensus manifests/legal-consensus.json \
+              --priority P0
+          else
+            echo "No autonomous curator/critic consensus ledger; preserving current corpus and publishing evidence only."
+          fi
+          python tools/build_public_indexes.py --apply
+          python tools/audit_fidelity.py --output bases/derived/relatorios/fidelity-audit.json
+          python tools/validate_release.py --stabilization
           if [ -z "$(git status --porcelain -- docs/proposals)" ]; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
@@ -69,7 +84,7 @@ jobs:
           git config user.name "vademecum-md automation"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add docs/proposals
+          git add docs/proposals bases/curated manifests bases/derived/relacoes bases/derived/relatorios
           git commit -m "chore: prepare legislation update proposal"
           git push origin "$branch"
           proposal_file=$(find docs/proposals -maxdepth 1 -type f -name 'update-*.md' | sort | tail -n 1)

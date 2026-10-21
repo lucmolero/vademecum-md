@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13999-2020"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "ead627777d232e8e0c5b7b99bd84d11cb628e9ea9e22dd9821fce96dc38dda55"
+sha256_source_normalized: "2c120a9cd11e139799604003c7057c5edb5afe22c7f67caeb82f4f4cfe629815"
+sha256_source_body: "ec8b8c81c7ccdaf7fff861348869445fc9f16e774601d7a595e14a4db34f97bc"
+sha256_published_body: "c02fdc70471bcc7588a954cde96634cd761f9453ecae853c667d203753be99c7"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.999 de 18/05/2020
 

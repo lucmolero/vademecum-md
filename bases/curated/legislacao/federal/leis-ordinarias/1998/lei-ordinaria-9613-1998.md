@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9613-1998"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "3500f982243b10b737f3da54af1998628899775d8791b8c088caa0f1e1446af2"
+sha256_source_normalized: "86059fc37d84745998b5fb97a0e39b859e10ed670792e5179e783703d7585c09"
+sha256_source_body: "e424119dff788ff452560b8f2f3c9aa23b05267094131bdbcea77d22d32c6679"
+sha256_published_body: "87c5e613c0137d441f7a135367440c984898b41382759694d4828d9905c6b810"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.613 de 03/03/1998
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9394-1996"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "3c592cf78b839d98b039493a6fbc0622a663619d7899590667dd88182c2b0f37"
+sha256_source_normalized: "8fc7b704ffdfbf24bb34c7a65060c0c0fa7207f1b176f1a9292f63e0a9e16984"
+sha256_source_body: "efc44041107dd43103f4a40e26b50ad88216fac217a397ace66b7b006167745b"
+sha256_published_body: "def5dddb46e0cef3ebcecc05c30427161c81fbb57b853bac1f6f162592cb9ff1"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.394 de 20/12/1996
 

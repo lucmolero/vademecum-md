@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-7418-1985"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "23433ae21742b4629e221df42392847e49c47de475f1ec551ee3bc29b1d5b2f8"
+sha256_source_normalized: "9ed24d0d7d8ba71bda7ee0a9ba49f0a5d7b90c762993b640a31703932584b354"
+sha256_source_body: "64b14cace0f6c7abd79577701be74294e9e79c11b07942e51a0bf9c3553379fd"
+sha256_published_body: "83f15d80fb33f0f5d0c27b5b2ff80e834be906ac5474114a077687e4c70aaa7b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.418 de 16/12/1985
 

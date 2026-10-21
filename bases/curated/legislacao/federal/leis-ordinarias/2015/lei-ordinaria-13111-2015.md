@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "892ea09e2f5b00129a19515f9700d4ae81ee0b87c7ef8c1906770406156bb2a4"
 sha256_corpo: "058bec88f31d6c9be7da28449e87298d4447963ad89fe594c3797b38384eeaff"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13111-2015"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "892ea09e2f5b00129a19515f9700d4ae81ee0b87c7ef8c1906770406156bb2a4"
+sha256_source_normalized: "28afaca24dce7eb47827e6a641fede728572c8801102d52d57120564698e0678"
+sha256_source_body: "6b46002fcd8fc96132391f4b64204ae4af8aa7a1d5f20665eb4fb02569de619f"
+sha256_published_body: "6b46002fcd8fc96132391f4b64204ae4af8aa7a1d5f20665eb4fb02569de619f"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.111 de 25/03/2015
 

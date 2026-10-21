@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-11107-2005"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "a6f7e6ec3da61c3b1b10653bb2cae71060aeb96502c554d9b3dc810346744211"
+sha256_source_normalized: "a65902aeee9f46c595d0fcc3f16b669f2502a2a6723e3b2ce0a4b318d62c1eaf"
+sha256_source_body: "9ad82366ee593470f96c1de8c7362a19f305425ed9933c9a099a10d3a0500e25"
+sha256_published_body: "9ad82366ee593470f96c1de8c7362a19f305425ed9933c9a099a10d3a0500e25"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.107 de 06/04/2005
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "c7f70446250e26502a0b088a16e3a1ef6c6169ca8b7b75a9ad27d3f718557f65"
 sha256_corpo: "00e4a149c51e5b7ade59f1cf6c9ba7b56d60e84db37db2476bd1b0234870a4d5"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-1075-1970"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "c7f70446250e26502a0b088a16e3a1ef6c6169ca8b7b75a9ad27d3f718557f65"
+sha256_source_normalized: "235f9cb3645ac26568168212ed1fc233dc25879fa57efc987b1b274419f34771"
+sha256_source_body: "0f28877e733bcdfe579e9ea805997e8dca1727a88bf1cb424b5ddad898d9c219"
+sha256_published_body: "0f28877e733bcdfe579e9ea805997e8dca1727a88bf1cb424b5ddad898d9c219"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 1.075 de 22/01/1970
 

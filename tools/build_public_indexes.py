@@ -38,6 +38,17 @@ RELATION_TYPES = {
 }
 
 
+def relation_confidence(relation: str, device: str | None, effect: str | None, evidence_text: str) -> str:
+    """Calibrate confidence from observable evidence, never from presence alone."""
+    if relation == "relacionada_a":
+        return "baixa"
+    if evidence_text and device and effect:
+        return "alta"
+    if evidence_text:
+        return "media"
+    return "baixa"
+
+
 def load_docs() -> list[tuple[Path, dict[str, object], str]]:
     docs: list[tuple[Path, dict[str, object], str]] = []
     for path in sorted(CURATED.rglob("*.md")):
@@ -187,8 +198,9 @@ def build_relations(docs: list[tuple[Path, dict[str, object], str]]) -> tuple[li
                 evidence = {
                     "evidencia_textual": evidence_text,
                     "evidencia_sha256": hashlib.sha256(evidence_text.encode("utf-8")).hexdigest(),
-                    "confianca": "alta",
+                    "confianca": relation_confidence(relation, device, effect, evidence_text),
                     "status_revisao": "aprovado_autonomamente",
+                    "metodo_analise": "deterministic_context_extraction_v2",
                 }
                 if (source_id, relation, target_id) not in exclusions:
                     relations.setdefault((source_id, relation, target_id, device), effect)
@@ -214,10 +226,28 @@ def build_relations(docs: list[tuple[Path, dict[str, object], str]]) -> tuple[li
                 "evidencia_sha256": None,
                 "confianca": "desconhecida",
                 "status_revisao": "requer_analise_autonoma",
+                "metodo_analise": "deterministic_context_extraction_v2",
             }),
         }
         for (source, relation, target, device), effect in sorted(relations.items(), key=lambda item: (item[0][0], item[0][1], item[0][2], item[0][3] or ""))
     ]
+    edge_keys = {(str(item["source_id"]), str(item["type"]), str(item["target_id"])) for item in result}
+    inverse_status: dict[tuple[str, str, str], str] = {}
+    for item in result:
+        inverse = RELATION_TYPES.get(str(item["type"]))
+        inverse_status[(str(item["source_id"]), str(item["type"]), str(item["target_id"]))] = (
+            "complete"
+            if inverse and (str(item["target_id"]), inverse, str(item["source_id"])) in edge_keys
+            else (
+                "excluded_by_policy"
+                if inverse and (str(item["target_id"]), inverse, str(item["source_id"])) in exclusions
+                else "missing_inverse"
+            )
+        )
+    for item in result:
+        item["status_relacao_inversa"] = inverse_status[
+            (str(item["source_id"]), str(item["type"]), str(item["target_id"]))
+        ]
     unresolved_result = [
         {"source_id": source, "kind": kind, "numero": number, "tipo": relation}
         for source, kind, number, relation in sorted(unresolved)
@@ -262,7 +292,15 @@ def write_sources(docs: list[tuple[Path, dict[str, object], str]]) -> None:
             "sha256_origem": metadata.get("sha256_origem") or prior.get("sha256_origem"),
             "sha256_normalizado": metadata.get("sha256_normalizado") or prior.get("sha256_normalizado"),
             "sha256_corpo": metadata.get("sha256_corpo") or prior.get("sha256_corpo"),
-            "hash_scope": prior.get("hash_scope", "single_source"),
+            "sha256_source_raw": metadata.get("sha256_source_raw") or prior.get("sha256_source_raw"),
+            "sha256_source_normalized": metadata.get("sha256_source_normalized") or prior.get("sha256_source_normalized"),
+            "sha256_source_body": metadata.get("sha256_source_body") or prior.get("sha256_source_body"),
+            "sha256_published_body": metadata.get("sha256_published_body") or prior.get("sha256_published_body"),
+            "canonicalization_version": metadata.get("canonicalization_version") or prior.get("canonicalization_version"),
+            "source_unit_id": metadata.get("source_unit_id") or prior.get("source_unit_id"),
+            "source_unit_selector": metadata.get("source_unit_selector") or prior.get("source_unit_selector"),
+            "fidelity_status": metadata.get("fidelity_status") or prior.get("fidelity_status"),
+            "hash_scope": metadata.get("hash_scope") or prior.get("hash_scope", "single_source"),
             "sha256_origem_por_fonte": prior.get("sha256_origem_por_fonte", []),
             "sha256_corpo_por_fonte": prior.get("sha256_corpo_por_fonte", []),
         })

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "4bd9660b5767d312a57ae75bc690353c76778a62d844419bb1f74cab3742df1d"
 sha256_corpo: "01fb36ffb7469a1cc19634cc11cea54e39d36376ebe0f797c4faffbb85b2f24a"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-1608-1939"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "4bd9660b5767d312a57ae75bc690353c76778a62d844419bb1f74cab3742df1d"
+sha256_source_normalized: "5716b5afcf5a043e94a3889b3b2d5488465bb267f8dae54eee0150ed6a4b6955"
+sha256_source_body: "0140ac6de87353c5c3d912a4a924a33604d38557b6d19e8b589521139d67cc9c"
+sha256_published_body: "0140ac6de87353c5c3d912a4a924a33604d38557b6d19e8b589521139d67cc9c"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 1.608 de 18/09/1939
 

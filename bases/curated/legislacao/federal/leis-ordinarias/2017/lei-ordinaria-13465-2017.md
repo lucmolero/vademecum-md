@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13465-2017"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "8f747c01cacc488a1ef248bdd04f651010106694a8f24b287c0f5d0fda6bda21"
+sha256_source_normalized: "a919641440c4f97fa19f8bd28f17599c1bb6222c713a8d1a934c11c53c2743ff"
+sha256_source_body: "ffb22beb8923cf6bec8a148e3af40536082b0861d3086933e4e5278acd4f2688"
+sha256_published_body: "20665b1d9b601859563ef9e32ebdf10b41601965dbab60670bd87ce3d075f029"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.465 de 11/07/2017
 

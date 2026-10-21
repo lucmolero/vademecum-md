@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "342be0afaea247cc44baefd7d98a46713ac39105443684fbf68dd11d2337082c"
 sha256_corpo: "b6951555e82bed97f7306dcdcbec252e946c41d48fcff8f8fcb30eb056cfbcc5"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13656-2018"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "342be0afaea247cc44baefd7d98a46713ac39105443684fbf68dd11d2337082c"
+sha256_source_normalized: "fa19add5eee3dda4dc11f68564e610308a9b4165672122d68649b961550de0cc"
+sha256_source_body: "4d9d8856c731c6f7ebe19fbeb8fd7d06e2f071b23ed35480884ca02a4aa8e1b4"
+sha256_published_body: "4d9d8856c731c6f7ebe19fbeb8fd7d06e2f071b23ed35480884ca02a4aa8e1b4"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.656 de 30/04/2018
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "e3c8ee022f8e3573a634210877a763a43f5952ea291ffc43b410ef425b6ffc48"
 sha256_corpo: "bf743316cdf50e9bc2dbcb6022c4465843fbb2197d2d136b504feaba6bacaabe"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13294-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "e3c8ee022f8e3573a634210877a763a43f5952ea291ffc43b410ef425b6ffc48"
+sha256_source_normalized: "bfe15d99a847ca5e233da3aa709340ed55bff5693ce9da7acb20307a46518112"
+sha256_source_body: "2379587425ebfcbc1ef43b18b62f7655f6d5641408d05eda7644f5876fd548dc"
+sha256_published_body: "2379587425ebfcbc1ef43b18b62f7655f6d5641408d05eda7644f5876fd548dc"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.294 de 06/06/2016
 

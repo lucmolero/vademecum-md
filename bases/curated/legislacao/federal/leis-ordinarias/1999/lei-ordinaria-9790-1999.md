@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9790-1999"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "5106c811483887a98010185a861c84ef45923f63810293790a7c830d9fe664a7"
+sha256_source_normalized: "feca7d4d20e3fb5a90293c8580990c3b250d3be7597ada81013a48915ba2bb22"
+sha256_source_body: "7b003bb744ef026e88ef37c48e110d07d99296a1b77cab941a846ce9d906033a"
+sha256_published_body: "19d1cfa3d43ca7702f1a02ff19fe89a7497fc9dfb9bc4e05987625f88c61529b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.790 de 23/03/1999
 

@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm", "sha256_origem:2e7719bea92e00f12d8ba349dbba65a49c7d823d92a0843f1116344f9f96bc88", "official_current_compilation_review"]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12187-2009"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "2e7719bea92e00f12d8ba349dbba65a49c7d823d92a0843f1116344f9f96bc88"
+sha256_source_normalized: "0c0fb986209dfdd0f91d1c48359d06b1bd956830a91e6413ebe408255175799b"
+sha256_source_body: "7ff5bbbe20d2e3f7a17b2232dc69bd29cb495dc84b761baa3e4c990982fb9c40"
+sha256_published_body: "7ff5bbbe20d2e3f7a17b2232dc69bd29cb495dc84b761baa3e4c990982fb9c40"
 ---
 # Lei nº 12.187, de 29 de dezembro de 2009
 

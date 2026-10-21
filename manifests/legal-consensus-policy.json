@@ -1,0 +1,18 @@
+{
+  "schema": "legal-curation-consensus-policy/v1",
+  "decision_authority": "autonomous_legal_agent",
+  "passes": ["legal_curator", "legal_critic"],
+  "allowed_decisions": ["promote", "preserve_current", "history", "reconcile"],
+  "required_per_document": [
+    "document_id",
+    "decision",
+    "legal_curator",
+    "legal_critic",
+    "consensus",
+    "official_evidence"
+  ],
+  "promotion_rule": "both_passes_complete_and_same_decision_and_deterministic_gates_pass",
+  "ambiguity_rule": "preserve_current_and_record_evidence",
+  "user_action_required": false,
+  "must_not_invent_text": true
+}

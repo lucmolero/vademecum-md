@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial."]
 camada: "core_profissional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12846-2013"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "a6b200df8c098e4fb3a7fa962ff4c9de439ad794a3124705c9cb74268cc9a3ca"
+sha256_source_normalized: "10da5ec6cca353f7da79a8c1483e879836a379c69d5b6f829654f7a2fe67854b"
+sha256_source_body: "54cb33c576aa9b88cd88ac48916088eed42086215239b89812a9a2fd81d5189b"
+sha256_published_body: "54cb33c576aa9b88cd88ac48916088eed42086215239b89812a9a2fd81d5189b"
 ---
 # Lei nº 12.846, de 1º de agosto de 2013
 

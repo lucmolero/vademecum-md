@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "8d93618455790bbaabe0678aac9ecfb80d9adc5ccfd227f5b378412b7841fc2a"
 sha256_corpo: "5e4543491e76cfabcf9d156f675e62ab8c8b7ee501d7d160c074e60c0a479983"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-14438-2022"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "8d93618455790bbaabe0678aac9ecfb80d9adc5ccfd227f5b378412b7841fc2a"
+sha256_source_normalized: "b0f3612a68e5742f1f87612fafc151422e458f35c51bc5cfd1634d8381c499ff"
+sha256_source_body: "9afa4d8373a4bf0b3d72a2b5d51c4a3a525c0b976db0bd7a8e5dea96f2af1f66"
+sha256_published_body: "9afa4d8373a4bf0b3d72a2b5d51c4a3a525c0b976db0bd7a8e5dea96f2af1f66"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.438 de 24/08/2022
 

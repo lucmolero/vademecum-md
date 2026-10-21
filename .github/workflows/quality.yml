@@ -36,9 +36,15 @@ jobs:
         run: python tools/validate/sync_editorial_matrix.py
       - name: Audit normative graph
         run: python tools/relations/audit_normative_graph.py --strict
+      - name: Audit normative fidelity contract
+        run: python tools/audit_fidelity.py --output bases/derived/relatorios/fidelity-audit-ci.json
+      - name: Build reader site
+        run: python tools/site/build_site.py
+      - name: Validate reader site inputs
+        run: test -f mkdocs.yml && test -f site_docs/generated/catalog.md
       - name: Classify unresolved relations
         run: python tools/relations/classify_unresolved.py
       - name: Public release gates
-        run: python tools/validate_release.py
+        run: python tools/validate_release.py --stabilization
       - name: Test suite
         run: python -m unittest discover -s tests -v

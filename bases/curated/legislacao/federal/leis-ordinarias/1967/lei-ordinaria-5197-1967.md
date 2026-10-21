@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-5197-1967"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "c84be7f317fefaf17565c316bdbc57b0a71159f6d96f0a97ddff19908c228bd7"
+sha256_source_normalized: "c5defbb6cf3a2aa6b1dbf5c3dcd8088d5404737b979b69d7943c9a716ddb069c"
+sha256_source_body: "6ac6bb64f7eefb3b8c331ed7c444e69e9d99b0f30a6bd934cee0b3bd8ce75a69"
+sha256_published_body: "f1b139e4ce1857282aae29741c70d7dc1e170a6ff0d419c3911e8493303a97ad"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.197 de 03/01/1967
 

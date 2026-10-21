@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9455-1997"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "c6924eafb7742c1c5631c8f26ace1fe77354b3b79ac6ca29c27252b82d9d8040"
+sha256_source_normalized: "0f7160ae5e8ab051fe5d3f377907374b6ac5b4fd21f3416072496fdb979ce732"
+sha256_source_body: "43a1c1aa390348dbb376f8b2c21175e4a30085ead34ae6c90fba50665c50b7f6"
+sha256_published_body: "43a1c1aa390348dbb376f8b2c21175e4a30085ead34ae6c90fba50665c50b7f6"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.455 de 07/04/1997
 

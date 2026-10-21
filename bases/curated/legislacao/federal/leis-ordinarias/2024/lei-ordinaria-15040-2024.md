@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "c9e7c42c96e9de965ce45119be20929ea952e07d45cbd2be1fc270eba8c2a762"
 sha256_corpo: "02781fb78fb2105f7b5ab7a19f48e3bb55bf41e5d0430bbbc37dc7357db1a32f"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-15040-2024"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "c9e7c42c96e9de965ce45119be20929ea952e07d45cbd2be1fc270eba8c2a762"
+sha256_source_normalized: "c3d962c1035eff55a0b6c0cff204ab0eb26155b9b6392f21982da5d15b4fb064"
+sha256_source_body: "6713fbc39bd2c6191ee62c82cd37236b1fe351ddd4b87604af4223cdd7de2993"
+sha256_published_body: "6713fbc39bd2c6191ee62c82cd37236b1fe351ddd4b87604af4223cdd7de2993"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 15.040 de 09/12/2024
 

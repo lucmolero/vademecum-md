@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9296-1996"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "e0088fa557f3af10112e0118ab7aa3007d9d8584ff058092fd4be9d22fad819c"
+sha256_source_normalized: "1508b3520aab3a5a90bd62ab2539f688513ad3aae6c7c3f665b93ba1cf604192"
+sha256_source_body: "b0cd635b772deb23df52606114af793bd0f609d57524562703d5f5d8ad6f890e"
+sha256_published_body: "29c608be49e028892d4ac8975bdadc4db4f28d079f7dc56f9dc191a814793d37"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.296 de 24/07/1996
 

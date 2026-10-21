@@ -1,0 +1,67 @@
+site_name: VadeMecum MD
+site_description: Legislação federal brasileira estruturada para leitura humana, validação auditável e uso por máquinas.
+site_url: https://lucmolero.github.io/vademecum-md/
+repo_url: https://github.com/lucmolero/vademecum-md
+repo_name: lucmolero/vademecum-md
+docs_dir: site_docs
+validation:
+  nav:
+    omitted_files: ignore
+theme:
+  name: material
+  language: pt
+  logo: assets/brand-mark.svg
+  favicon: assets/brand-mark.svg
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Usar tema escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Usar tema claro
+  font:
+    text: Source Sans 3
+    code: JetBrains Mono
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lucmolero/vademecum-md
+nav:
+  - Início: index.md
+  - Explorar legislação: generated/catalog.md
+  - Metodologia:
+      - Arquitetura: architecture.md
+      - Visão geral: methodology.md
+      - Contrato dos documentos: contract.md
+      - Auditoria jurídica: legal-audit.md
+      - Grafo normativo: graph.md
+      - Fontes oficiais: sources.md
+      - Exemplos de consumo: examples.md
+      - Qualidade: quality.md
+      - Atualizações: updates.md
+  - Governança:
+      - Proveniência: provenance.md
+      - Segurança: security.md
+      - Acessibilidade: accessibility.md
+      - Contribuição: contributing.md
+      - Limites jurídicos: legal-limits.md
+  - Legislação: generated/laws/index.md
+  - Perguntas frequentes: faq.md

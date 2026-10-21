@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-11428-2006"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "c627bacd6bafb179a70b16d3112ab87e8ecec9b1ba6a35c35c776e03a5a741cd"
+sha256_source_normalized: "5d19b1d08a15b0b24f42623e91a051d82d0ac158d1aefc8a3206a9bbed00851c"
+sha256_source_body: "d2e20fa6cb357b8df8fee8b568573a4f711523a17ce48bb3d0b4ca917f8323cc"
+sha256_published_body: "5b21a256d941613617a7e78424238d82d7ad559704470afc6840df274e74e5ea"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.428 de 22/12/2006
 

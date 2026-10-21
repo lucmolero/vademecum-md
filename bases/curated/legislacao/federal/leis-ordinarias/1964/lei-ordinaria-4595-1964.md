@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-4595-1964"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "a057306219ced7264310ca1912035320922bd11c2807a525fd800c03e935eadf"
+sha256_source_normalized: "87a7b0f1ab6d3aac6cae1d8f338651fb93ac78d37f4bda0a0940b425b1b5640f"
+sha256_source_body: "9c8926d0ed240606c49de7ce2ab9930612d69988d7cd2ffec6ba4618e53b013c"
+sha256_published_body: "238de75210ee8321f02885b3fa229e12892524fd807b99bd093d3444ea15f3d1"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.595 de 31/12/1964
 

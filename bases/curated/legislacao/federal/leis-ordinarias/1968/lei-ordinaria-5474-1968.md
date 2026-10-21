@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-5474-1968"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "3906b8c6807f7733735408f94d020350cf024f723e35cbc463c19213c3bcfc5c"
+sha256_source_normalized: "c0fd2601a50fb07305b89d228ed998b27007a66740bec7ceb20c5a32136495c3"
+sha256_source_body: "9073e3853679454f9315c11376dc24928b08b92109eecb873b69185e158a7d81"
+sha256_published_body: "e7a48bb33db25e319703a50f11526c1c66955b39f81110f43b04207f6fc5e101"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.474 de 18/07/1968
 

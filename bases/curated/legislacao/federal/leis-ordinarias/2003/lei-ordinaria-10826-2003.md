@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-10826-2003"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "2482f6042c75d709ee47d9902b1ab5dc583ccaab4bb29f6ae72f9f96fcda0685"
+sha256_source_normalized: "2dcdbbd057655817827ac58e2c380ce0bb051af142440f1c39930ef7708af096"
+sha256_source_body: "610f548ae2181a393d6a224f66f90fa7fc6226403aa110e28cb4cc40a1e575a2"
+sha256_published_body: "9cd0e667a29ed17ea274f2da276ad6a410f3a7952edb58555e4bb10755d678d2"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.826 de 22/12/2003
 

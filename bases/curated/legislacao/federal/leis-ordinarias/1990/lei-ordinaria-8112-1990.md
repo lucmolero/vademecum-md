@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "8c6b92fa872429953759dfc84c8112bb4d03d1b5a8c4b9f5e099f1b9aa1d383e"
 sha256_corpo: "ddc2ef10c0af1ab7b6998bb1c1b2ce04a0da9f0a26bd5317fd2654d2996dcd36"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8112-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "8c6b92fa872429953759dfc84c8112bb4d03d1b5a8c4b9f5e099f1b9aa1d383e"
+sha256_source_normalized: "e4dd43c3b09db761f7e5364b4265e3ca198adb43449bbfb82591c99af46893e2"
+sha256_source_body: "72ecaf21de3c16de69026a13aa93c16d24d5b08ac39a5d0091701d369df6423f"
+sha256_published_body: "72ecaf21de3c16de69026a13aa93c16d24d5b08ac39a5d0091701d369df6423f"
+source_snapshot_date: "2026-10-21"
 ---
 # Regime Juridico dos Servidores Publicos Civis da Uniao
 

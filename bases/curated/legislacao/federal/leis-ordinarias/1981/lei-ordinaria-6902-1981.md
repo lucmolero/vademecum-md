@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-6902-1981"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "36b7361dc3f5e4c54299b06ed6e61517cf2cbccf77fb068462cffa55500bd973"
+sha256_source_normalized: "172fade755e9402f59218a1faaeb60d7645aaa1ed10a88659eb836ee4f23f2f3"
+sha256_source_body: "9ebfe47a12dc2f5b785f789bc62eeb584e74552bbebff254b428efa868c57f89"
+sha256_published_body: "70c3494e75016dd2df363e6c1a7974e8de5b5ecab715e65b655df1b3e2184a74"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.902 de 27/04/1981
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-1408-1951"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "a7bbebe941d2b9f9f95dba6e8634c63454d565b0397d4daf2d7fd2c4e8683e94"
+sha256_source_normalized: "03e6a9790fcb55e1839a9bc7e398ea2d30b28220c609caf44687036e3ef39dfd"
+sha256_source_body: "8fc5fc06f0511d176edcfec983f99ea47306bde3c07d8d7ebb9b7192d2bfbdd5"
+sha256_published_body: "d934670c994f43f32b1af9fb744eb73669d097a5ec7afec2cafbdfe5f50056f4"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 1.408 de 09/08/1951
 

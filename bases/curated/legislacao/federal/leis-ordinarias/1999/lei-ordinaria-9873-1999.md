@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9873-1999"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "9279d9dce9556b8163500d4c616c052ad449c822b1464673309cedb07567c1ad"
+sha256_source_normalized: "6bdbeb778ec6ce90fab086875d3a1ebfe30c8c7bf4b94b0ad3cfc8bb13560dd3"
+sha256_source_body: "a072f322d986299f5a272f2d53d841dc5c01da1392d46c8863862dba85c8d2d4"
+sha256_published_body: "682c695ce9d39d971eb5244967060945124d961e606823659f02a5a10ed08950"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.873 de 23/11/1999
 

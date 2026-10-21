@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "918b32a603fd37150ec17e51e9b3331ad087b27e5a90966fedf12dc6b894bfd3"
 sha256_corpo: "73308858077814f292f8adccedf1f90bc25638848c2309e32ca3b67f5c24ad92"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-3688-1941"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "918b32a603fd37150ec17e51e9b3331ad087b27e5a90966fedf12dc6b894bfd3"
+sha256_source_normalized: "f8373f6d6ffe5916e3fdb1ab7be46bb3bf382112b2b224a84b407c3fe8b8e6ab"
+sha256_source_body: "1f5d5c70e8c5945faf6f2fbfdbc3be0967b30adaed3d55fbcd3870aa5f59be4f"
+sha256_published_body: "1f5d5c70e8c5945faf6f2fbfdbc3be0967b30adaed3d55fbcd3870aa5f59be4f"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei das Contravencoes Penais
 

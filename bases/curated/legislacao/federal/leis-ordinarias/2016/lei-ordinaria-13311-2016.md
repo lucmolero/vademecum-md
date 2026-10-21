@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "d9dc546987d43787a5d69a2a9c4e94914190cd110b07cfe5f4161d0804b2ba2a"
 sha256_corpo: "aab7b5ceced7171584c61a0af17871915cb0035509398074a1cb52c1b4d76ada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13311-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "d9dc546987d43787a5d69a2a9c4e94914190cd110b07cfe5f4161d0804b2ba2a"
+sha256_source_normalized: "1b5989c45594488cc47d8f5aa423951167f63e07e163dcb2d6de2dfcd21bd3ac"
+sha256_source_body: "bc585177b1d7495bca683e020c414b08d34215efa2c89f4c843eb24e5d64b099"
+sha256_published_body: "bc585177b1d7495bca683e020c414b08d34215efa2c89f4c843eb24e5d64b099"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.311 de 11/07/2016
 

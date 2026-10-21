@@ -1,0 +1,66 @@
+"""Validate the autonomous curator/critic consensus ledger.
+
+This gate verifies that semantic decisions were produced by two declared
+passes and are backed by official evidence. It does not generate or invent a
+legal conclusion.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+
+REQUIRED_DECISIONS = {"promote", "preserve_current", "history", "reconcile"}
+
+
+def validate(path: Path) -> tuple[bool, list[str]]:
+    errors: list[str] = []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        return False, [f"consensus ledger invalid: {error}"]
+    if payload.get("schema") != "legal-curation-consensus/v1":
+        errors.append("invalid consensus schema")
+    if payload.get("decision_authority") != "autonomous_legal_agent":
+        errors.append("consensus lacks autonomous legal authority")
+    documents = payload.get("documents")
+    if not isinstance(documents, list) or not documents:
+        errors.append("consensus has no documents")
+        return False, errors
+    seen: set[str] = set()
+    for item in documents:
+        identifier = str(item.get("document_id") or "")
+        if not identifier:
+            errors.append("consensus item without document_id")
+        if identifier in seen:
+            errors.append(f"{identifier}: duplicate consensus item")
+        seen.add(identifier)
+        if item.get("decision") not in REQUIRED_DECISIONS:
+            errors.append(f"{identifier}: invalid decision")
+        curator = item.get("legal_curator") or {}
+        critic = item.get("legal_critic") or {}
+        for role, pass_data in (("legal_curator", curator), ("legal_critic", critic)):
+            if pass_data.get("status") != "complete":
+                errors.append(f"{identifier}: {role} incomplete")
+            if not pass_data.get("evidence"):
+                errors.append(f"{identifier}: {role} without evidence")
+            if pass_data.get("must_not_invent_text") is not True:
+                errors.append(f"{identifier}: {role} does not prohibit invented text")
+        if item.get("consensus") is not True or curator.get("decision") != critic.get("decision"):
+            errors.append(f"{identifier}: curator/critic disagreement")
+    return not errors, errors
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("ledger", type=Path)
+    args = parser.parse_args()
+    valid, errors = validate(args.ledger)
+    print(json.dumps({"valid": valid, "errors": errors}, ensure_ascii=False))
+    return 0 if valid else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

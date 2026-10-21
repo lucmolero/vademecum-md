@@ -5,6 +5,8 @@
   "legal_analysis": {
     "executor": "autonomous_legal_agent",
     "method": "llm_legal_analysis_plus_official_evidence",
+    "passes": ["legal_curator", "legal_critic"],
+    "promotion_requires": "curator_critic_consensus_plus_deterministic_gates",
     "may_decide": [
       "editorial_inclusion",
       "historical_or_graph_disposition",

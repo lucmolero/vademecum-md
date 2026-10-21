@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "9ff7111af91324f7f253b5b5e28a2bc7bc9b8b482db394bcccaaf138f9565592"
 sha256_corpo: "13caac2c20744c7d9fd02eb1c0790eb429aee3caa4ca729f47b3a74fb03eb78f"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9051-1995"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "9ff7111af91324f7f253b5b5e28a2bc7bc9b8b482db394bcccaaf138f9565592"
+sha256_source_normalized: "5b2116c1aac604e1accb34f3fb86d5b53184b4a62d1a0e2ce3c90d7c5d8fd8c6"
+sha256_source_body: "eae561219653c4bacec6b06b6c64f84c3b50e772b6b3032cbb731fb939b126b5"
+sha256_published_body: "eae561219653c4bacec6b06b6c64f84c3b50e772b6b3032cbb731fb939b126b5"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.051 de 18/05/1995
 

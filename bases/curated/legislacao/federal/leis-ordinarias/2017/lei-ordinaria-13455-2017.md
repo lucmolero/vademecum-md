@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "880c334d7f34eb2280e8066d2bbfdb1b5780e4ef95b628eb890dc86f215fbe43"
 sha256_corpo: "bb1f9d86e9ccd6ee33ef8ef7b13e6a1e2b29fa0e3b1ebf522a84f9866ea86d06"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13455-2017"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "880c334d7f34eb2280e8066d2bbfdb1b5780e4ef95b628eb890dc86f215fbe43"
+sha256_source_normalized: "16ceacc2ad55c64d2af1cfb67865c0cc1d22e27c991f5402044e60f609ab8a44"
+sha256_source_body: "431f8785bb5f083005185fc388bc5b7bca66cc710d11efad464bead2871e388a"
+sha256_published_body: "431f8785bb5f083005185fc388bc5b7bca66cc710d11efad464bead2871e388a"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.455 de 26/06/2017
 

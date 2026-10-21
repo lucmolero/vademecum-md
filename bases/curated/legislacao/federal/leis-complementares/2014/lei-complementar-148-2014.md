@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-148-2014"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "review"
+fidelity_anomalies: ["article_tree_mismatch"]
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "968d89248dfbf7f2a2b054bd79d295df873f8d0c7bff537d8c7b1a138d97eb23"
+sha256_source_normalized: "dd98bbe13c087953fd1b84fc132ac0100e5fa63530f2f87f472f7275bc9acc43"
+sha256_source_body: "16253d07d7eb2766cdaff072933fdd9bc9c8eb255ddae0d754c68ea12695cbf4"
+sha256_published_body: "33e6e8850daf7cfb53dfd537baf0660e3f7b866e0fa12edc3bfe7083c84d4813"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 148 de 25/11/2014
 

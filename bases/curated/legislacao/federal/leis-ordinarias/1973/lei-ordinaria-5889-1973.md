@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-5889-1973"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "c0b01f5e075adc43aedfef9a5f85fa8630672a37021ccfde4819b72d2c4b3bbe"
+sha256_source_normalized: "966dad474783e231665b5a59272dadae0a996dbc9715d8e7d2cf1591e28e2f8c"
+sha256_source_body: "059a36973fec812eeeefb478e3a6f6cf4e3032c4a53c7497c69dbdad6d98f716"
+sha256_published_body: "9df9c1fed193d803887bf459017b9e197a0de05a367d4195e889e48e7f8a2b0e"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.889 de 08/06/1973
 

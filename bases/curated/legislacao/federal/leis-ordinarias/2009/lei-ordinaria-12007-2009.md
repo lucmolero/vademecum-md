@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "3718a4e55e7d4436cf9f7a4c9f15f0c41d98c3d28f329aee1400d00e5be561a4"
 sha256_corpo: "47101298deb96e8c8116709b8add51fb672bff01532b8ee04054948927f5d6c6"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12007-2009"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "3718a4e55e7d4436cf9f7a4c9f15f0c41d98c3d28f329aee1400d00e5be561a4"
+sha256_source_normalized: "19caa97af889abad3d5709134f61754e36cdc98c04cea39bb4b539c9322d5280"
+sha256_source_body: "ce2deb9a5765a9559a2ed61f9e30e0356fab096a13849656751a0c4729e4503d"
+sha256_published_body: "ce2deb9a5765a9559a2ed61f9e30e0356fab096a13849656751a0c4729e4503d"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.007 de 29/07/2009
 

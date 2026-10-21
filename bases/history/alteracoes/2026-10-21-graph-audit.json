@@ -1,5 +1,5 @@
 {
-  "schema": "normative-graph-audit/v1",
+  "schema": "normative-graph-audit/v2",
   "generated_at": "2026-10-21",
   "relations": 1841,
   "relation_types": {
@@ -16,7 +16,8 @@
   "without_effect_date": 114,
   "without_evidence": 0,
   "confidence": {
-    "alta": 1841
+    "media": 986,
+    "alta": 855
   },
   "review_status": {
     "aprovado_autonomamente": 1841
@@ -24,6 +25,12 @@
   "duplicate_records": 0,
   "inverse_type_conflicts": 0,
   "inverse_type_conflict_examples": [],
+  "missing_inverse_relations": 0,
+  "missing_inverse_examples": [],
+  "missing_document_ids": 0,
+  "missing_document_id_examples": [],
+  "confidence_mismatches": 0,
+  "confidence_mismatch_examples": [],
   "unresolved_candidates": 2177,
-  "policy": "audit_only; no relation is promoted without official textual evidence"
+  "policy": "deterministic_shape_audit; legal meaning remains under autonomous legal curation"
 }

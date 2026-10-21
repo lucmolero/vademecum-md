@@ -1,0 +1,15 @@
+:root {
+  --vmd-ink: #13243a;
+  --vmd-ivory: #fbf8f0;
+  --vmd-gold: #b48a3c;
+  --vmd-green: #2d7659;
+  --vmd-amber: #a96d19;
+}
+
+[data-md-color-scheme="default"] { --md-primary-fg-color: var(--vmd-ink); --md-default-bg-color: var(--vmd-ivory); }
+[data-md-color-scheme="slate"] { --md-primary-fg-color: #0d1828; }
+.md-header__title { letter-spacing: .02em; }
+.md-content h1, .md-content h2 { letter-spacing: -.015em; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0 2rem; }
+.md-button--primary { background: var(--vmd-ink); border-color: var(--vmd-ink); }
+.md-typeset code { color: var(--vmd-ink); }

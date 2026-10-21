@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "4b6a848f147291cbf304ff265727b15520b6e80ba173ec9c921628a35b0a10fb"
 sha256_corpo: "396b7886ac23dbc71e2702be4bd4c117343e3722daea3bfc9c1ee4dd0ee5c8e4"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8078-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "4b6a848f147291cbf304ff265727b15520b6e80ba173ec9c921628a35b0a10fb"
+sha256_source_normalized: "46b8cd16d2105be3a230921c772b0e60636e4fd34bb9778539f343cc7ab322a1"
+sha256_source_body: "6209eae447b2fc149888980f0001b7132d807e6d23e8b53e0a573fe900197905"
+sha256_published_body: "6209eae447b2fc149888980f0001b7132d807e6d23e8b53e0a573fe900197905"
+source_snapshot_date: "2026-10-21"
 ---
 # Codigo de Defesa do Consumidor
 

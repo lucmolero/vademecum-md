@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-7998-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "dcb2a36176654bd38d38e24d00b369944eed7db1599d9c2777a7d48b7809704a"
+sha256_source_normalized: "a3eef170fac8a451b71b5652757ae5d511b3add1f7a3410d5d01a5644309964e"
+sha256_source_body: "c2abf7703486b344b203913f3d8ec78b00531b9224235fb0f79bf53a1796201e"
+sha256_published_body: "e0b997b09e1a571a29c2f313c2c47b8a69cd4ffdb44f53118aaf3745fd9cf76b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.998 de 11/01/1990
 

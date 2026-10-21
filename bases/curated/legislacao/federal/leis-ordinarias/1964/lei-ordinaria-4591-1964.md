@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-4591-1964"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "8bf4f71efabc327904fdc974c9d8d82ca29489d89685e7b1cc8e282c358c857e"
+sha256_source_normalized: "0a24a98d2c16157c74b9c7d26d565812a3d33021278b328c2acc7383e33cb792"
+sha256_source_body: "ddf21c14524f58c151d259b2c2c1304af5c43bc1803d44d951d65f4ba06f533c"
+sha256_published_body: "41d1d07ccf75643f226fa32be4a97eff441d431af0140a0f8c11619e06b84e4a"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.591 de 16/12/1964
 

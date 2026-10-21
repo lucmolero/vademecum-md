@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-2321-1987"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "250f49b93e2ab8faecb93c70a421ca1870611055486ef89f4d6f20237a817ffe"
+sha256_source_normalized: "d3b75e0f92e649f2d4e6fe79e03642f1f12630483a09b242c143fa6a716c3305"
+sha256_source_body: "771e672938189a7e560ca85a007c65d869e278ca7ab897ba21709a8817bb6217"
+sha256_published_body: "771e672938189a7e560ca85a007c65d869e278ca7ab897ba21709a8817bb6217"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 2.321 de 25/02/1987
 

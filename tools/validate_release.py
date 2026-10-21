@@ -7,6 +7,7 @@ import csv
 import hashlib
 import json
 import re
+import tomllib
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -19,7 +20,10 @@ REQUIRED = {
     "ementa", "situacao", "versao_texto", "consolidacao_status", "data_corte",
     "fonte_oficial", "fonte_publicacao", "origem_formato", "baixado_em", "sha256_origem",
     "alterada_por", "revogada_por", "regulamentada_por", "retificada_por", "relacionada_a",
-    "observacoes_proveniencia",
+    "observacoes_proveniencia", "fonte_publicacao_status", "numero_status", "ementa_status",
+    "data_assinatura_status", "texto_classificacao", "canonicalization_version", "source_unit_id",
+    "source_unit_selector", "fidelity_status", "fidelity_anomalies", "hash_scope",
+    "sha256_source_raw", "sha256_source_normalized", "sha256_source_body", "sha256_published_body",
 }
 FORBIDDEN_PUBLIC_MARKERS = (
     "ct" + "resb",
@@ -53,6 +57,10 @@ def validate_analysis_policy(errors: list[str]) -> None:
     deterministic = payload.get("deterministic_analysis") or {}
     if legal.get("executor") != AUTONOMOUS_AGENT or legal.get("method") != "llm_legal_analysis_plus_official_evidence":
         errors.append("legal analysis method is not the declared LLM-plus-official-evidence method")
+    if legal.get("passes") != ["legal_curator", "legal_critic"]:
+        errors.append("legal analysis does not declare curator and critic passes")
+    if legal.get("promotion_requires") != "curator_critic_consensus_plus_deterministic_gates":
+        errors.append("legal promotion does not require curator/critic consensus")
     if legal.get("must_not_invent_text") is not True or legal.get("must_record_evidence") is not True:
         errors.append("legal analysis policy does not prohibit invented text or require evidence")
     if deterministic.get("executor") != "release_validators" or deterministic.get("method") != "deterministic_validation":
@@ -173,6 +181,61 @@ def validate_discovery_registry(errors: list[str], allowed_hosts: set[str]) -> N
             errors.append(f"catálogo de descoberta incompleto: {catalog.get('id')}")
 
 
+def validate_fidelity_contract(errors: list[str], corpus_ids: set[str]) -> None:
+    policy_path = ROOT / "manifests/fidelity-policy.json"
+    units_path = ROOT / "manifests/source-units.json"
+    audit_path = ROOT / "bases/derived/relatorios/fidelity-audit.json"
+    if not policy_path.is_file() or not units_path.is_file():
+        errors.append("contrato de fidelidade ou unidades de fonte ausente")
+    if not audit_path.is_file():
+        errors.append("auditoria de fidelidade normativa ausente")
+        return
+    try:
+        payload = json.loads(audit_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        errors.append(f"auditoria de fidelidade invalida: {error}")
+        return
+    if payload.get("schema") != "normative-fidelity-audit/v1":
+        errors.append("schema da auditoria de fidelidade invalido")
+    documents = payload.get("documents") or []
+    if len(documents) != len(corpus_ids):
+        errors.append("auditoria de fidelidade nao cobre todo o corpus")
+    for item in documents:
+        identifier = str(item.get("document_id") or "")
+        if identifier not in corpus_ids:
+            errors.append(f"auditoria de fidelidade aponta para ID inexistente: {identifier}")
+        for field in ("source_unit_id", "canonicalization_version", "equivalence_status", "anomalies"):
+            if field not in item or item[field] in (None, ""):
+                errors.append(f"auditoria de fidelidade sem {field}: {identifier}")
+        if item.get("equivalence_status") != "pass":
+            errors.append(f"fidelidade normativa ainda requer revisão: {identifier}")
+
+
+def validate_version_consistency(errors: list[str]) -> None:
+    """Ensure package, release and citation metadata use one product version."""
+    pyproject_path = ROOT / "pyproject.toml"
+    release_path = ROOT / "manifests/release.json"
+    citation_path = ROOT / "CITATION.cff"
+    try:
+        with pyproject_path.open("rb") as stream:
+            package_version = str(tomllib.load(stream)["project"]["version"])
+    except (OSError, KeyError, tomllib.TOMLDecodeError) as error:
+        errors.append(f"versão do pacote inválida: {error}")
+        return
+    try:
+        release_version = str(json.loads(release_path.read_text(encoding="utf-8"))["version"])
+    except (OSError, KeyError, json.JSONDecodeError) as error:
+        errors.append(f"versão do manifesto de release inválida: {error}")
+        return
+    if package_version != release_version:
+        errors.append(f"versões divergentes: pacote={package_version}; release={release_version}")
+    if citation_path.is_file():
+        citation_text = citation_path.read_text(encoding="utf-8")
+        match = re.search(r"^version:\s*['\"]?([^'\"\s]+)", citation_text, re.MULTILINE)
+        if match and match.group(1) != package_version:
+            errors.append(f"versão divergente no CITATION.cff: {match.group(1)}")
+
+
 def validate_editorial_legal_audit(errors: list[str], corpus_ids: set[str]) -> None:
     path = ROOT / "bases/derived/relatorios/editorial-legal-audit.json"
     if not path.is_file():
@@ -253,6 +316,11 @@ def validate_editorial_legal_audit(errors: list[str], corpus_ids: set[str]) -> N
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--strict", action="store_true", help="falha também se houver P0 não consolidado")
+    parser.add_argument(
+        "--stabilization",
+        action="store_true",
+        help="mantém o gate estrutural, mas relata fidelidade pendente sem bloquear a CI de estabilização",
+    )
     args = parser.parse_args()
     errors: list[str] = []
     validate_analysis_policy(errors)
@@ -294,6 +362,19 @@ def main() -> int:
         digest = str(metadata.get("sha256_origem") or "")
         if not re.fullmatch(r"[0-9a-f]{64}", digest):
             errors.append(f"{path}: hash inválido")
+        for hash_field in ("sha256_source_raw", "sha256_source_normalized", "sha256_source_body", "sha256_published_body"):
+            hash_value = str(metadata.get(hash_field) or "")
+            if not re.fullmatch(r"[0-9a-f]{64}", hash_value):
+                errors.append(f"{path}: {hash_field} invalid")
+        if metadata.get("canonicalization_version") != "norm-v2":
+            errors.append(f"{path}: invalid normalization version")
+        if not metadata.get("source_unit_id") or not isinstance(metadata.get("source_unit_selector"), dict):
+            errors.append(f"{path}: source unit missing or invalid")
+        if metadata.get("fonte_publicacao") in (None, [], "") and not metadata.get("fonte_publicacao_status"):
+            errors.append(f"{path}: publication source lacks explicit status")
+        for field, status_field in (("numero", "numero_status"), ("ementa", "ementa_status"), ("data_assinatura", "data_assinatura_status")):
+            if metadata.get(field) in (None, "", []) and not metadata.get(status_field):
+                errors.append(f"{path}: {field} empty without explicit status")
         if metadata.get("situacao") == "em_vigor" and status not in {"consolidada_fonte_oficial", "consolidada_reconciliada"}:
             errors.append(f"{path}: vigente sem consolidação confirmada")
 
@@ -397,6 +478,14 @@ def main() -> int:
 
     corpus_ids = ids
     validate_editorial_legal_audit(errors, corpus_ids)
+    fidelity_error_start = len(errors)
+    validate_fidelity_contract(errors, corpus_ids)
+    if args.stabilization:
+        errors[fidelity_error_start:] = [
+            error for error in errors[fidelity_error_start:]
+            if not error.startswith("fidelidade normativa ainda requer revisão:")
+        ]
+    validate_version_consistency(errors)
     graph = ROOT / "bases/derived/relacoes/normative-graph.jsonl"
     if graph.is_file():
         for line_no, line in enumerate(graph.read_text(encoding="utf-8").splitlines(), 1):
@@ -417,6 +506,10 @@ def main() -> int:
                 errors.append(f"relation {line_no}: invalid confidence")
             if relation.get("status_revisao") != "aprovado_autonomamente":
                 errors.append(f"relation {line_no}: missing autonomous review status")
+            if relation.get("status_relacao_inversa") not in {"complete", "excluded_by_policy"}:
+                errors.append(f"relation {line_no}: inverse relation is not complete")
+            if relation.get("confianca") == "alta" and (not relation.get("dispositivo") or not relation.get("data_efeito")):
+                errors.append(f"relation {line_no}: high confidence without complete evidence")
 
     queue_path = ROOT / "bases/derived/relacoes/review-queue.json"
     if not queue_path.is_file():

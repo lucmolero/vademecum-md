@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13240-2015"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "a25b4f54c9ba7e917506da0585c9dc335fbd83e74582faba96458616e9db3d47"
+sha256_source_normalized: "f072c1fc6fa71899630af4139f8316c525f4e8497cafbb2e26552b7400c92d94"
+sha256_source_body: "18b05f96c316bc2a49e2f99f295fdd51dea401a77a7be4341bccda572af439cb"
+sha256_published_body: "276ecab957d53ae68adb957588da606821bcc941256cee6f7148eabaa4eef0b9"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.240 de 30/12/2015
 

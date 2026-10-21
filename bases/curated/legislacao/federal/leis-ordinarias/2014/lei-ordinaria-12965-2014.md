@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12965-2014"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "ba4cc283789742293f4b8c690f0b6f21bd35cebfd5e647cfa0e548b76483929f"
+sha256_source_normalized: "ace7e18ce3d5e4d6202c979694b22a282a9a105088ac39ede8af478d7a2f5f1f"
+sha256_source_body: "b8776abd079667a2cbc885ea001c627675d56ee4a8b2bd2f26599fe955c71c62"
+sha256_published_body: "7d44460ad94bab3a3cf4508d8af2cff2ba20ca42b4fe5530cdd747abc3a3f2c6"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.965 de 23/04/2014
 

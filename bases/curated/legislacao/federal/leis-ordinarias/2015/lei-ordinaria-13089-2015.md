@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13089-2015"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "1aa45afcbb74b18102dba0766fc04b18ae96c24b0ed55284975d229162a888cc"
+sha256_source_normalized: "f6881f16c3aabc17ad7fefae67ba0682d376658b76535063c63efff63551775f"
+sha256_source_body: "268a478c0ff01b3b997cb676b1d6294663aec1643422884c2984682393866bd6"
+sha256_published_body: "7b2fdcb5efffca3040ba0058ed8be55d107113dcef047338cd71be88c2ad0445"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.089 de 12/01/2015
 

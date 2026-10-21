@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9279-1996"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "017efc61bbf52a25d018657a73ac66d3aaa0f55016f124c7430501b786041fd1"
+sha256_source_normalized: "817832e8156d051139e3549ef05ea73268dff1ed41f96d6806173417c76d446b"
+sha256_source_body: "6b81c9f1800065104e328d8778770de81e9cc4394a139426af0325372a09942b"
+sha256_published_body: "6a9cc8bad593837129aef885260339b617f6e0e7f4a526ece5c84ec89b7aaac6"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.279 de 14/05/1996
 

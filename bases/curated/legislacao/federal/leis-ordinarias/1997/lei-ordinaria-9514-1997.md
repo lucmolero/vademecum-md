@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9514-1997"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "74630184265140ed32b517ce563574efc6c1c163f3273e6bc42c3038ef8e94fd"
+sha256_source_normalized: "bbd37cb8c4caa36964fda7554bdc22cf1fbaef2bc44bfd1ee1c70418169238bd"
+sha256_source_body: "1debdb1fa465c6d6dceac2ff17773f324ad84807ca45770d7ae51216b1060eea"
+sha256_published_body: "ee3ab1100899b8579d8a9ca650ba33503a0532f3c565f612d160e97d5b7cb6f8"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.514 de 20/11/1997
 

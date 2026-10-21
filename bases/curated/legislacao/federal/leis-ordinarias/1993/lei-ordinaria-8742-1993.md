@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8742-1993"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "107311b2df420555b3d1ab07533ce339d02ab910dfc1e13a1f71139b87f326e4"
+sha256_source_normalized: "c2f6d0a2b42d5ff7bf68247eb2b39edf25bba87c4e1ebbcd13a4f47b0d60399e"
+sha256_source_body: "59e3d08ec281e659f49429e7db29b6c5bc74c1c9b39a52b27691221a84b67c16"
+sha256_published_body: "ef1c782beb14704060add7e8a44af5e9593c5509e0d6a9dcd7164a9808060e1c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.742 de 07/12/1993
 

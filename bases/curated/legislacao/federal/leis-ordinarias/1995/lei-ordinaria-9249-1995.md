@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9249-1995"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "92384512f746ddf20c0b6924f2d49f998af46538790b67d4299ea9bcfb79341b"
+sha256_source_normalized: "13c8d7b4e51a0c7d69a8ab4861dd02dc87364a6332a03d02c9768792c247a5b9"
+sha256_source_body: "5054256131abdbd754221278ea8ed76561db2595de78d84b367ad51b6a04ba95"
+sha256_published_body: "a4a5dfd805a4b0895c9361fc1706976a66becaeb2d054c5ab67a025399cfefd7"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.249 de 26/12/1995
 

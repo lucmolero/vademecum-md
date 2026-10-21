@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "6fbd2d80829ff959f50ae95a67e4553dfba9062800959691613dd2cbe7c111d3"
 sha256_corpo: "d837ae5aefd11589f2ebc408825e96ea39427c13edb791bd0aca2f4fb38967df"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13105-2015"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "6fbd2d80829ff959f50ae95a67e4553dfba9062800959691613dd2cbe7c111d3"
+sha256_source_normalized: "e9eaa4ac6658e82ff8df25bf46609f79459294457b8e978153eb1c96518f8d9b"
+sha256_source_body: "e01ec8077acfbbccb54e37e0ce0eb4dee4d0761f7210683b03d6eab662d0996c"
+sha256_published_body: "e01ec8077acfbbccb54e37e0ce0eb4dee4d0761f7210683b03d6eab662d0996c"
+source_snapshot_date: "2026-10-21"
 ---
 # Codigo de Processo Civil
 

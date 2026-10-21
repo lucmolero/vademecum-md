@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "8bab5108aa9c101697442b89389d4cfb141d2fca934cb4336f0ce7476ef50485"
 sha256_corpo: "bc26875f63fc07a9eede9a563aac0202db2ae428ec8f1ca07d9fc87f04b9cb87"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12562-2011"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "8bab5108aa9c101697442b89389d4cfb141d2fca934cb4336f0ce7476ef50485"
+sha256_source_normalized: "118be432ad7d5d7ddf03f7ec36da861459073d164cf69ee4a3982646fc8de607"
+sha256_source_body: "ac58113cc57d4124aac3131195a1f5cc79d5cb8e14d4f227166b72a75ba175ff"
+sha256_published_body: "ac58113cc57d4124aac3131195a1f5cc79d5cb8e14d4f227166b72a75ba175ff"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.562 de 23/12/2011
 

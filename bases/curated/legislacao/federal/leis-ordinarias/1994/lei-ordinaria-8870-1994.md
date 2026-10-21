@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8870-1994"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "52609041cbf69774a457c0fbc26f33ea96e21025e18959022e532f7efff778d8"
+sha256_source_normalized: "286e24d4377c31f946fede97b9cd2edc93d31e9308d9c64f4492a3e036682628"
+sha256_source_body: "e866ebdf1e354d0e3a84babba5e187efb676ad4d2ed9a7b232c6e5d0f5366384"
+sha256_published_body: "e638c61366425b713c987231b32bbc01345185c0620a0fc00849e091faa2526b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.870 de 15/04/1994
 

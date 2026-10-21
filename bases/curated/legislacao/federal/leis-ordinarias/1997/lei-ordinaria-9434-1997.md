@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9434-1997"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "a1779cf4e5873e6e20b6f8fec20ed8b28eb9ff515b14edcda9652da91d28bd05"
+sha256_source_normalized: "fa2948bb3f8361ab938eb21b192148b17bd50916e82e476ce84787ec41a2e225"
+sha256_source_body: "7e80a2cb062e306824e53ddea1c0d93b9be7e99f1becedbd623723b1a2b44b6a"
+sha256_published_body: "2d6f8a35d650ca33cbff8de2a11e21fe2ad2650bac1367f7070d876ad5057a6e"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.434 de 04/02/1997
 

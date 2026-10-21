@@ -1,0 +1,32 @@
+{
+  "schema": "normative-source-units/v1",
+  "description": "Unidades normativas usadas para delimitar a evidencia oficial de cada documento.",
+  "default": {
+    "selector_type": "full_official_document",
+    "selector": null,
+    "unit_scope": "single_diploma"
+  },
+  "units": {
+    "br-federal-constituicao-1988": {
+      "source_unit_id": "br-federal-constituicao-1988.constituicao",
+      "selector_type": "html_before_anchor",
+      "selector": {
+        "anchor": "adct",
+      "start": "Constituição da República Federativa do Brasil de 1988",
+      "end": "Ato das Disposições Constitucionais Transitórias"
+      },
+      "unit_scope": "constituicao",
+      "shared_source_policy": "separate_from_adct"
+    },
+    "br-federal-ato_constitucional-1988": {
+      "source_unit_id": "br-federal-ato_constitucional-1988.adct",
+      "selector_type": "html_anchor_to_end",
+      "selector": {
+        "anchor": "adct",
+      "start": "Ato das Disposições Constitucionais Transitórias"
+      },
+      "unit_scope": "adct",
+      "shared_source_policy": "separate_from_constituicao"
+    }
+  }
+}

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "dda3760ceb6600b6fb36b5cf18e56b8845828cf0dc8732eb9c94a89150077fdd"
 sha256_corpo: "f817231dc97f53688426b65d99e351a48144ba0e0050ad6d0e85116617cbad27"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13872-2019"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "dda3760ceb6600b6fb36b5cf18e56b8845828cf0dc8732eb9c94a89150077fdd"
+sha256_source_normalized: "8d57c1b680f95721a98639f6b5cc00f49196c50de6db2b74969412e0a8587407"
+sha256_source_body: "034904fba37138a2bbb5f0263275bf21d33307f790310eab0333e5530c0744f0"
+sha256_published_body: "034904fba37138a2bbb5f0263275bf21d33307f790310eab0333e5530c0744f0"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.872 de 17/09/2019
 

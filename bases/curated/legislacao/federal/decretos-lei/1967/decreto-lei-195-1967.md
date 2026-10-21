@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "bae09a933daf4cafa0037fdd8858a7b3f322b4525f9b929871e78b88f05d98f2"
 sha256_corpo: "05ff85d008e88f4fd547331c8d27e030e6e1255cdb02f1c8fe3d9755a74141d8"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-195-1967"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "bae09a933daf4cafa0037fdd8858a7b3f322b4525f9b929871e78b88f05d98f2"
+sha256_source_normalized: "a99e824d07260e5f756c16abcc2e37aaa0ea16090c2e038fd8f5ecb9ce2a57fd"
+sha256_source_body: "6d9e623fe802859cf1568b2601175d05243092b3efe51dec1e23a819bc9c6d8b"
+sha256_published_body: "6d9e623fe802859cf1568b2601175d05243092b3efe51dec1e23a819bc9c6d8b"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 195 de 24/02/1967
 

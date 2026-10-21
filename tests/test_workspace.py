@@ -119,7 +119,8 @@ class WorkspaceTest(unittest.TestCase):
         self.assertTrue(all(item.get("sha256_origem") for item in sources["documents"]))
         self.assertTrue(all(item.get("sha256_corpo") or item.get("sha256_corpo_por_fonte") for item in sources["documents"]))
         constitution = next(item for item in sources["documents"] if item["id"] == "br-federal-constituicao-1988")
-        self.assertEqual(constitution["hash_scope"], "per_source")
+        self.assertIsInstance(constitution["hash_scope"], dict)
+        self.assertEqual(constitution["hash_scope"]["sha256_source_body"], "selected_normative_body_norm_v2")
         self.assertEqual(len(constitution["sha256_corpo_por_fonte"]), 2)
         registry = json.loads((ROOT / "manifests/sources-registry.json").read_text(encoding="utf-8"))
         self.assertTrue(registry["policy"]["official_only"])
@@ -165,9 +166,10 @@ class WorkspaceTest(unittest.TestCase):
         text = "\n".join(path.read_text(encoding="utf-8", errors="ignore").lower() for path in paths if path.is_file())
         self.assertFalse(any(marker in text for marker in forbidden))
 
-    def test_release_validator_passes(self) -> None:
+    def test_release_validator_blocks_unreconciled_fidelity(self) -> None:
         result = subprocess.run([sys.executable, "tools/validate_release.py"], cwd=ROOT, capture_output=True, text=True)
-        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("fidelidade normativa", result.stdout)
 
     def test_workflows_cannot_mutate_main_directly(self) -> None:
         result = subprocess.run([sys.executable, "tools/validate/validate_workflows.py"], cwd=ROOT, capture_output=True, text=True)

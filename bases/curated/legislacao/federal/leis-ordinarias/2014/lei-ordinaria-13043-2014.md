@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "Mantida no corpus com situação parcialmente revogada para não confundir dispositivos temporários ou encerrados com o texto vigente.", "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13043.htm", "sha256_origem:9481a5635117bf0dca0cebaa1490d1f37d37af95badec9f7df60e92bf2308cc6", "official_current_compilation_review", "temporary_and_expired_provisions_detected"]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13043-2014"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "9481a5635117bf0dca0cebaa1490d1f37d37af95badec9f7df60e92bf2308cc6"
+sha256_source_normalized: "cb3f6977ceded896687f03c6f4e6f083ea4c0c0e73ef5d661bba9842b6009a73"
+sha256_source_body: "4ab0cb7551217a160e5ca8f38e5a12d21fcab3188dfd61ecd0e2c40c0d402371"
+sha256_published_body: "4ab0cb7551217a160e5ca8f38e5a12d21fcab3188dfd61ecd0e2c40c0d402371"
 ---
 # Lei nº 13.043, de 13 de novembro de 2014
 

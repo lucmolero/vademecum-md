@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-1001-1969"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "review"
+fidelity_anomalies: ["article_tree_mismatch", "normative_text_similarity_below_threshold"]
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "6553df4420f7356ba123b4352c4e3d6b718447026bb7b20329607530195e6ddc"
+sha256_source_normalized: "041b554625a36b8a4bf4d7734f6cb227cb1f9fba0d8bda1c76db165dd5049dfe"
+sha256_source_body: "f646d94716a65b35b59adc1787db5173e7d5f881f581cad8c1c014850b3956ab"
+sha256_published_body: "4440eb58af4922ced6817cf0fe68716198415cb9d858e86c4fe48d2e6acc4f6f"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 1.001 de 21/10/1969
 

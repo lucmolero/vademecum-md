@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "b1090ea106c28bd8abd306729e3ef128d24046d8b3ce6e57b33221736d5d902e"
 sha256_corpo: "5b6b60b5420d04fe232ee05e1d4cc9bbe09ae1c7aaf24025b49fcff39937c90d"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13966-2019"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "b1090ea106c28bd8abd306729e3ef128d24046d8b3ce6e57b33221736d5d902e"
+sha256_source_normalized: "d0a4f7549d5161a105f29323ea0840cb828374603e92d22c94b61aef1a40062c"
+sha256_source_body: "7175684da4ef3cd9c5f929906cab15b5efd2b792a12e26b484f07fa23c67c70f"
+sha256_published_body: "7175684da4ef3cd9c5f929906cab15b5efd2b792a12e26b484f07fa23c67c70f"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.966 de 26/12/2019
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "a7b5bd25f5e7df004a3b936dc756b731594a525751789a532eb698f8116b63d9"
 sha256_corpo: "be60143d9c6f1b7abbeab4bdafe48faf6f7360e7a9af17b2234b2279f9aa43f5"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8069-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "a7b5bd25f5e7df004a3b936dc756b731594a525751789a532eb698f8116b63d9"
+sha256_source_normalized: "abc4686e5ea58a8e1529f68256cbf8d7cddfdea4a145973aafff5062fd524870"
+sha256_source_body: "4a8cca457227496e1a837dabd870adb8e22b2bc28433fca2749f803afacd7c2c"
+sha256_published_body: "4a8cca457227496e1a837dabd870adb8e22b2bc28433fca2749f803afacd7c2c"
+source_snapshot_date: "2026-10-21"
 ---
 # Estatuto da Crianca e do Adolescente
 

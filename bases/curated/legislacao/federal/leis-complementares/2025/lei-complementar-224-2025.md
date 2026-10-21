@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0"
 sha256_corpo: "8326e101b0f8a81578d7f254c3d34a2d00c79647d7e9c8345ee6e54c94f21dca"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-224-2025"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "c1705c76c5086394249aae48c6df2f4bbf81646ad808bf9f595f4e20066987f0"
+sha256_source_normalized: "bf15d9e6af9b3b21e47fa4b25826c6a7104c0f9afba9b62a675d85f101dd9a2a"
+sha256_source_body: "9639dedf841845b9f8689c347bb50ef94a3a46deb33ffe386f1fdf0f8993fb4c"
+sha256_published_body: "9639dedf841845b9f8689c347bb50ef94a3a46deb33ffe386f1fdf0f8993fb4c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 224 de 26/12/2025
 

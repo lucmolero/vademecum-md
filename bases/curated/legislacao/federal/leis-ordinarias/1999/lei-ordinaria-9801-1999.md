@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "68d49ea320077b3c02a52706e41ba8bc66a3984c3cb8676f22a0916de7ea0f96"
 sha256_corpo: "cc07989ad9cc23a3e7ad0ae88010c68e2fddfb11636d07363ea720adb6db1320"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9801-1999"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "eef4fc88ba59be63bfd4911de2ba1d4bf6985273537d78e40a31dabe15625c82"
+sha256_source_normalized: "f67d4055fe70ab2fcdc2e42f92077ecce96fdb39d4e73efbbeacefb8625f68b2"
+sha256_source_body: "875a51be76c62aae55a04a971cff109589b74d5d77556116ab1bb60344e366ba"
+sha256_published_body: "875a51be76c62aae55a04a971cff109589b74d5d77556116ab1bb60344e366ba"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.801 de 14/06/1999
 

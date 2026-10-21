@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">VadeMecum MD — corpus federal curado</title>
+  <desc id="desc">Capa de release do VadeMecum MD.</desc>
+  <rect width="1600" height="900" fill="#13243A"/>
+  <path d="M0 700h1600v200H0z" fill="#0D1A2A"/>
+  <path d="M1070 0h530v900h-530z" fill="#B48A3C" opacity=".18"/>
+  <text x="120" y="220" fill="#FBF8F0" font-family="Georgia,serif" font-size="88" font-weight="700">VadeMecum MD</text>
+  <text x="125" y="300" fill="#E5D4A8" font-family="Arial,sans-serif" font-size="34">Corpus federal curado em Markdown</text>
+  <text x="125" y="430" fill="#FBF8F0" font-family="Arial,sans-serif" font-size="28">Leitura humana. Validação auditável.</text>
+  <text x="125" y="480" fill="#FBF8F0" font-family="Arial,sans-serif" font-size="28">Uso responsável por máquinas.</text>
+  <text x="125" y="760" fill="#A9CBB9" font-family="monospace" font-size="24">SOURCES · FIDELITY · GRAPH · RELEASE</text>
+</svg>

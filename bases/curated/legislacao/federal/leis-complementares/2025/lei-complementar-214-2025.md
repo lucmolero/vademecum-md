@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto consolidado conforme página oficial compilada
 camada: "core_codigos"
 sha256_normalizado: "ac74d5b0ef0bdc9248791d92b5275ed6862d6c7f4c23e6e5322535ad4c53f9e6"
 sha256_corpo: "1c4ea9b92e95faf9b179f1fba1025a01093825d2d9cafcc963759adc25100545"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-214-2025"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "review"
+fidelity_anomalies: ["article_tree_mismatch", "normative_text_similarity_below_threshold"]
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "a51131e04212f79a59a5693740662b1e08a716d68f70bf1be730843f4b451826"
+sha256_source_normalized: "f34c97a0f1b9c2e55153a09db1508a38fed60296973146a576358a0befa174ab"
+sha256_source_body: "992d6c7d736137947671f2419911d8bc0c2c41433fc2a6411506d10741358547"
+sha256_published_body: "254e268bd5cc3be77db971e83f0c7b76c186ac06d5ec4a1bf401f5630b4c156e"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 214, de 16 de janeiro de 2025
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8080-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "787b1e769ddb91b018fa94272e8e6fc2be5a81c186f594ce71e731a910113784"
+sha256_source_normalized: "f52f7320318496d08b7796731eeece5ab05b6fb05780fa210b7493eb6910996b"
+sha256_source_body: "caddbed048398d2fc472333503c935469bf94c4f730dd7ac283217f5bce7a732"
+sha256_published_body: "7213cc2835e597d0b862766a2e5a9e7b038bd0f0f948f17f601423e2e20871a7"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.080 de 19/09/1990
 

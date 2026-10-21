@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "59b9918d3e3729ab7f716022251a9c089a74f750b708dd707abc13c7de80aadd"
 sha256_corpo: "fe174d69fbc2ed713fc9b5c660f05411f1c816e9fa5870d22d2c028b5908a0f9"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13432-2017"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "59b9918d3e3729ab7f716022251a9c089a74f750b708dd707abc13c7de80aadd"
+sha256_source_normalized: "e1cdbc3f7f2524dd1a07659aeb57d93aa7abe05d3edfca7270c7333d938c126e"
+sha256_source_body: "e567ad27a43a71f21e15e75ec0c35208625f2a58a1b56cbc1397f93ff263c323"
+sha256_published_body: "e567ad27a43a71f21e15e75ec0c35208625f2a58a1b56cbc1397f93ff263c323"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.432 de 11/04/2017
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9503-1997"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "56c01cacd7a6ea46d242b31ba7c672d70efa09339220727f6fe063ff458b1df5"
+sha256_source_normalized: "e0b9eb8b9daebc2d966a745136304474d70b52b449d09453af8704b35d8e7ddb"
+sha256_source_body: "4fb073e0a429d65d4191c7ea82b87c868a4812ef13ac6a8f14102f5c79b0af15"
+sha256_published_body: "24ad47236eb4bfaacf9bb14660c61126ccfa503bee69446d801cf2438147faf1"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.503 de 23/09/1997
 

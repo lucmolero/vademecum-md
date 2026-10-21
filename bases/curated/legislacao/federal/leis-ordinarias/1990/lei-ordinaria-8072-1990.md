@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "dfbf59be64ca0a10a56af120d524d0c005de7427eecf6c3ec424ec85bc8bcdc4"
 sha256_corpo: "e028f142544916c4e9db7882725354171e9c96afb62564f634e7db4ab74fdfb9"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8072-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "dfbf59be64ca0a10a56af120d524d0c005de7427eecf6c3ec424ec85bc8bcdc4"
+sha256_source_normalized: "c828073a2c3df4f37648597c5ed3d5221cb613f72065dc2467ba6a2407299c21"
+sha256_source_body: "eda63ac2018416c015f5b7f9ead7924940b5e04b1a81b9e3c6ff13e18982dcae"
+sha256_published_body: "eda63ac2018416c015f5b7f9ead7924940b5e04b1a81b9e3c6ff13e18982dcae"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei dos Crimes Hediondos
 

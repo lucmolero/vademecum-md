@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8176-1991"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "5c4bb2f588d772514ae5ac81bd648c3d90e7fb86e575c4fa5d895578529892b1"
+sha256_source_normalized: "8e31beb1b097e836229a2c2ea2744102902cba4fff43e9f7edc07c51cb60c777"
+sha256_source_body: "ee025fc8f0603dd13d7cef24738375ca6529dc359e5c69fb1e9a4bd556e31af3"
+sha256_published_body: "ee025fc8f0603dd13d7cef24738375ca6529dc359e5c69fb1e9a4bd556e31af3"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.176 de 08/02/1991
 

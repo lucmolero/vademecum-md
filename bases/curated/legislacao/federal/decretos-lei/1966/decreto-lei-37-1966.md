@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-37-1966"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "37aa63d72b1dceacad09a22237ae99373d47f2ed924e07155f1082954d5aabd9"
+sha256_source_normalized: "2c7c854b082462328f0132feeb7f042b00da762f98d1d5ba599375bc92ddd70e"
+sha256_source_body: "2a3f6d615391d5eab30b1dd50f4263d1e570a5d319d895176b1527f5d23fcf3c"
+sha256_published_body: "df7d716f6c057fda7a7e07fe35571859877487ba8890065f36578a09a1e1a27b"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 37 de 18/11/1966
 

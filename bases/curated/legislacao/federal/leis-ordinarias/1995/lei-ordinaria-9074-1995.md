@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9074-1995"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "031489e40bfa6b336c20479139fb7c33341161eb5c408435adbe42cff37e1b10"
+sha256_source_normalized: "d22dbf1a9f085432f414d4d17c08d0859295d6b6943915d8fe454b2a138e1868"
+sha256_source_body: "ee8f3d4567021f0b4b80a6f4b0a8ee08a4df0d943675b273dcd10ba37faa2a56"
+sha256_published_body: "086b473a33ca97684e13100ec60795832c164881091f6bfffe22e38420daf0e4"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.074 de 07/07/1995
 

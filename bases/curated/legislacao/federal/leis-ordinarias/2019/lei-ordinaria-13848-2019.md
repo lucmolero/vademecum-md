@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "79e0b86129c20c5eeaa34b32828b9024f9bdcbd19e75ba3e954307142a10ba56"
 sha256_corpo: "e6ba3f0e5cdc9b5eb4dbf0ba900c9ccb83a2f7ecdcffcc634892e295109fc718"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13848-2019"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "79e0b86129c20c5eeaa34b32828b9024f9bdcbd19e75ba3e954307142a10ba56"
+sha256_source_normalized: "fe6a6aa04ab80ff27e66571562eb64683bfe399ba5d4deb102e89c0dd2cf6af2"
+sha256_source_body: "77bf3761101cbcacac81959539dee06d48f43a77554f426eed365fef80b9b447"
+sha256_published_body: "77bf3761101cbcacac81959539dee06d48f43a77554f426eed365fef80b9b447"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.848 de 25/06/2019
 

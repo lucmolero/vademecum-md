@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12662-2012"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "8f336bba61f27fe81d2d9fa7c86b909c3e3c97d93540d8cc175c9cdc7f7851bf"
+sha256_source_normalized: "d9ab9164f9823a6fae57f29c391e30e37525822ae360c5dd9aadcb851e9e1e95"
+sha256_source_body: "d1a2187aa36b791fa58944668b2adaffaf578b4b502f1cd607457613f0c9ec41"
+sha256_published_body: "5ea274dc557ffe9cf3ddbc8492639bcd0789d7b858c89915afb0502192a4ae6a"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.662 de 05/06/2012
 

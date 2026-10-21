@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9430-1996"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "99022e12b175a4339cfc37920ed0dcaaeccf23f2c134fb21de29b41cf76a7a00"
+sha256_source_normalized: "f40800f5aec80aa5fc0e766fa6f3b33c601150ac4be94f91437416582d084bd3"
+sha256_source_body: "0c11b35bc5e75d2cbacf73c198f8a7f3c1aea539196d52cd6ea299ecbcef093b"
+sha256_published_body: "523acf7144416888b456a5a5adfba7d8a2e17f31e13c57bc204d97e14652bd41"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.430 de 27/12/1996
 

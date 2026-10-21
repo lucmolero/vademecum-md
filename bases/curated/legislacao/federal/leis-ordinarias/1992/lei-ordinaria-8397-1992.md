@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8397-1992"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "d0aed603fe50344ec7fa416256c81dc05b636cd9861572ab9930a619931f5236"
+sha256_source_normalized: "43fcc9b447a01e90b564ee2fed2b0772f986856282f38f7baeebeb9709682594"
+sha256_source_body: "0109144f0c4f35f4e9ca466b761d5ea03e796a7bddf045de6515eed65eead563"
+sha256_published_body: "87bf7f44b5c5a381b2b2e2efbc97a92c8730eb787fde6e7d8bb4784c3f93f91a"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.397 de 06/01/1992
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13869-2019"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "bc3390c2a5ba658a4d48fbfc182dca124fe68ce0848955bd1e62eca21e9305d2"
+sha256_source_normalized: "07772b5a8b904ad0d7af1ebc9b6ffee30868f7aed168d3a3723a453f8ea01bb8"
+sha256_source_body: "3ff5d3d24fe76f06e5fb934cd5908741391fb0d9d9859be239fd966341e6ce86"
+sha256_published_body: "c152d7304fa6e4aa70973630184a295f1abcdececaffaceb17c516cf0a6eaff0"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.869 de 05/09/2019
 

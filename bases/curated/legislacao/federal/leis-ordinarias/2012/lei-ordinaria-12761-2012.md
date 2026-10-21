@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12761-2012"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "d75632f865a32d67e3ee39cbcf13418e12d9b7e60a796be11e089a4d27446936"
+sha256_source_normalized: "9658335fe5c53e9bd0d7ccd85708d2d49f12a13815e46af7390c6afd63ea53d0"
+sha256_source_body: "f81a85b2cad5bc6e4cd60e04dba82b70c4b6402294a426011f2c6ef711da9323"
+sha256_published_body: "b8205103432d3cd1835e106d7e4b483e570c4433b98adc5c4b35c00c3e32d8a5"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.761 de 27/12/2012
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-10931-2004"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "210465b28df2ad2178f6acd1f4097f246f98e34b9794de6e621c2df3903b37c6"
+sha256_source_normalized: "06172aa7011e5fecc678f7d1e6cfbfcee51d2074f7c29e64ba2fbff6d2246c2f"
+sha256_source_body: "c1baf8cd12e2cf7541257507b2182eaf3f724d97150c664df2c3a4aa321491f8"
+sha256_published_body: "852aaaa40fa05dc297d900082fa476c144e72bd3db383d522127317a7f40919b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.931 de 02/08/2004
 

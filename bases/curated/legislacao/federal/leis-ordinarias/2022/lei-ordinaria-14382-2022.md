@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "37070362bb28e327e3f19ccd7aedb9fc686fec64517f49f05931a516e4bf7294"
 sha256_corpo: "b93525bda5d24738ada7e730c99f506ee4e8184ebd5b633d7ff3c8197150c36f"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-14382-2022"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "37070362bb28e327e3f19ccd7aedb9fc686fec64517f49f05931a516e4bf7294"
+sha256_source_normalized: "220286b4b4b95707736d631a956d4a7c18e8487b6e7d9c73de73987d86d45012"
+sha256_source_body: "28a7bb711dbdcd6439f5e93ea4728cb4fdc128fd0dac12fdba9645e0eea4f6e6"
+sha256_published_body: "28a7bb711dbdcd6439f5e93ea4728cb4fdc128fd0dac12fdba9645e0eea4f6e6"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.382 de 27/06/2022
 

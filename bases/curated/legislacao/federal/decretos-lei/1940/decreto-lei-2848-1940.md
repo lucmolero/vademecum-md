@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "773de14a84af65bf32b05586a90cd0060ccfd0667404af4ddd405df40f5b8398"
 sha256_corpo: "689c47e137e3c8a598903ff5813f85efcd36971f3cca2074fb7fcc6ac842cece"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-2848-1940"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "773de14a84af65bf32b05586a90cd0060ccfd0667404af4ddd405df40f5b8398"
+sha256_source_normalized: "e3c76dfacae5c0d3adb7b91068f672c599813918e246948b012b7c6ae66bb2b9"
+sha256_source_body: "7b99b4465ba5795069c0adfcf092ebc9994ff47c8a6bb9772a205ea46c462538"
+sha256_published_body: "7b99b4465ba5795069c0adfcf092ebc9994ff47c8a6bb9772a205ea46c462538"
+source_snapshot_date: "2026-10-21"
 ---
 # Codigo Penal
 

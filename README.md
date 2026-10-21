@@ -1,56 +1,65 @@
-# vademecum-md
+# VadeMecum MD
 
-Corpus autoral de legislação federal brasileira em Markdown, estruturado para leitura humana, validação automatizada e consumo futuro por agentes de IA.
+Legislação federal brasileira estruturada para leitura humana, validação
+auditável e uso por máquinas.
 
-O produto principal é um diploma por arquivo em `bases/curated/legislacao/federal/`. O texto normativo permanece separado dos índices, relações e relatórios derivados.
+> Este é um corpus autoral e curado. Não é publicação oficial, não substitui a
+> consulta às fontes governamentais e não oferece aconselhamento jurídico.
 
-## Estado do corpus
+## O produto
 
-- 375 documentos federais materializados;
-- texto integral preservado em Markdown;
-- fonte oficial, data de corte e hash em cada documento;
-- 372 documentos consolidados por fonte oficial e 3 por reconciliação;
-- 33/33 documentos P0 consolidados;
-- 1.841 relações normativas materializadas;
-- 2.177 ocorrências de relações ainda não materializadas, agrupadas em 1.491 alvos únicos;
-- entre as ocorrências, 2.088 são atos alteradores/regulamentadores e 89 são diplomas referenciados; entre os alvos únicos, 1.408 permanecem no histórico e 83 somente no grafo;
-- relações normativas geradas em `bases/derived/relacoes/`;
-- RAG deliberadamente adiado até a estabilização da release 1.0.
+Cada diploma principal vive em um Markdown canônico com identidade, situação,
+data de corte, fonte oficial, unidade de extração e hashes. Histórico normativo,
+relações e relatórios derivados ficam em camadas separadas.
 
-O estado reproduzível está em [docs/COMPLETENESS.md](docs/COMPLETENESS.md) e nos manifests de [manifests/](manifests/).
-
-## Arquitetura
+O site de leitura é regenerado a partir do corpus:
 
 ```text
-bases/curated/legislacao/federal/  # fonte normativa canônica
-bases/curated/regulamentos/        # camada regulatória futura
-bases/curated/tratados/            # tratados futuros
-bases/curated/jurisprudencia/      # jurisprudência futura
-bases/history/                     # versões, alterações e revogações
-bases/derived/                     # catálogos e grafos regeneráveis
-manifests/                         # contratos de dados e release
-tools/                             # aquisição, normalização, validação e release
-tests/                             # testes unitários e de integração
-docs/                              # arquitetura, governança e operação
+fonte oficial → snapshot privado → normalização → auditoria
+→ curadoria jurídica autônoma → gates → release
 ```
 
-## Contrato dos documentos
+## Estado atual
 
-Cada Markdown possui frontmatter com identidade estável, classificação, ementa, situação, consolidação, data de corte, fontes oficiais e hash. `consolidacao_status` controla o que pode ser interpretado como vigente; texto presente não significa vigência confirmada.
+- escopo: legislação federal;
+- corpus: 375 documentos;
+- data de corte do snapshot: 2026-10-21;
+- RAG: deliberadamente fora desta etapa;
+- release `1.0.3`: snapshot histórico, sujeito à revalidação textual prevista.
 
-Os estados permitidos estão em [manifests/vocabulary.json](manifests/vocabulary.json). A matriz de cobertura é [manifests/corpus.csv](manifests/corpus.csv), com cobertura, integridade e atualidade como dimensões independentes.
+O relatório atual de fidelidade está em
+[`bases/derived/relatorios/fidelity-audit.json`](bases/derived/relatorios/fidelity-audit.json).
+Ele registra divergências sem promover silenciosamente uma redação incerta.
 
-## Desenvolvimento local
+## Comece
 
 ```powershell
+python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m unittest discover -s tests -v
-python tools/check_markdown.py
-python tools/build_public_indexes.py --apply
+python -m pip install -e ".[docs]"
+python tools/site/build_site.py
+mkdocs serve
 ```
 
-Os artefatos técnicos de aquisição e transformação ficam em uma área privada ignorada pelo Git. O repositório público contém somente a proveniência oficial necessária para auditar o corpus. A proveniência bruta e os logs completos devem ser sincronizados para um repositório privado separado.
+CLI operacional:
 
-## Publicação
+```text
+vademecum acquire
+vademecum normalize
+vademecum audit
+vademecum graph
+vademecum site
+vademecum release
+```
 
-A publicação deve ocorrer apenas após os gates locais e do workflow passarem. O fluxo de atualização gera propostas por Pull Request e não escreve diretamente na `main`. O workflow não promove documentos sem fonte oficial, hash, texto integral, análise jurídica autônoma e consolidação verificável. Alterações ambíguas recebem disposição segura no histórico ou no grafo; nunca são convertidas em uma redação presumida.
+## Documentação
+
+- [Metodologia](docs/LEGAL_AUDIT.md)
+- [Contrato de fidelidade](manifests/fidelity-policy.json)
+- [Qualidade](docs/QUALITY.md)
+- [Governança de dados](docs/DATA_GOVERNANCE.md)
+- [Contribuição](CONTRIBUTING.md)
+- [Segurança](SECURITY.md)
+
+As fontes textuais usadas pelo corpus são públicas e oficiais, com precedência e
+allowlist definidas em [`manifests/sources-registry.json`](manifests/sources-registry.json).

@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial."]
 camada: "core_profissional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13964-2019"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "adbc14513f4d27205355eff022492389a76669b03aee4e0eaba949a681ebad21"
+sha256_source_normalized: "3c1194bba1f257c7e85fe97f0f103a91612669175e780ebc6249bf7c5d5c7213"
+sha256_source_body: "9c46379433634a6eeb314386b11960a517e81d2efe91fdd43e78624acbc496e3"
+sha256_published_body: "9c46379433634a6eeb314386b11960a517e81d2efe91fdd43e78624acbc496e3"
 ---
 # Lei nº 13.964, de 24 de dezembro de 2019
 

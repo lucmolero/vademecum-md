@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-155-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "review"
+fidelity_anomalies: ["normative_text_similarity_below_threshold"]
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "ec448c0bd59df1acb3404e9f4b46f28f9e923633d23f09c9bd6b83e25c200d4c"
+sha256_source_normalized: "7b02d945b0d36df119e0f1008b5f86f4d62a9d77f8df4766ee50a46f35c77ed7"
+sha256_source_body: "18a2ab3ee48c918424a465200914b97186714306bcb97912ea6977d0af6bed7d"
+sha256_published_body: "cd31a615025fa868b2281ca6d29e5eb10a7a805449316b1304fc7cffddb32641"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 155 de 27/10/2016
 

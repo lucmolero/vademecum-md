@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Marca VadeMecum MD</title>
+  <rect width="64" height="64" rx="14" fill="#13243a"/>
+  <path d="M10 18h18c6 0 11 5 11 11v25c-3-3-7-4-11-4H10z" fill="#fbf8f0"/>
+  <path d="M54 18H36c-6 0-11 5-11 11v25c3-3 7-4 11-4h18z" fill="#e7d7ac"/>
+  <path d="M32 24v31" stroke="#b48a3c" stroke-width="3"/>
+</svg>

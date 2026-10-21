@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "04b3cf8000dc0cf8b0269cb905c70921a2da56da96c02f49ec9a50a69f819cb7"
 sha256_corpo: "7e2b430c7e92f4c8dc3bd89c98fe63d6a56c48170d47790b514b9aec3f8c4626"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12714-2012"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "04b3cf8000dc0cf8b0269cb905c70921a2da56da96c02f49ec9a50a69f819cb7"
+sha256_source_normalized: "ad4c9ab29cdc217c949b06963bf3c827d58fecaee318f6bb344c5b55515c170a"
+sha256_source_body: "5ff46c594ccc3b847f8d6501a03fc3578516138e370a7c0030954d8b88ba6f37"
+sha256_published_body: "5ff46c594ccc3b847f8d6501a03fc3578516138e370a7c0030954d8b88ba6f37"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.714 de 14/09/2012
 

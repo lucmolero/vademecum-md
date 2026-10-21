@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9601-1998"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "39baf6fb0c21cee6d434d0c45945adc15d19c82c9ec66352ec2f99d9f5edcb3e"
+sha256_source_normalized: "01a472812005cd74f2d7150240fc866a99253f5f2b0a15e34c32a822c3b12ee6"
+sha256_source_body: "6986d15dfbb7b0f911929c1e2db98181c8d9837cf1563ed473570ed5ad72694e"
+sha256_published_body: "6986d15dfbb7b0f911929c1e2db98181c8d9837cf1563ed473570ed5ad72694e"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.601 de 21/01/1998
 

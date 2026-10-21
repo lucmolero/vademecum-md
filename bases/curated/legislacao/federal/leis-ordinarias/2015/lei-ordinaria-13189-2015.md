@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13189-2015"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "review"
+fidelity_anomalies: ["article_tree_mismatch"]
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "4e94f6b86903dc8ed49b910249d3a911239c70d4418d833a510790cca6bd2f26"
+sha256_source_normalized: "e5cb5e8b723d1c9f16233eb7f046fc36ea59e83da807ea97fd269e4ab8c073d8"
+sha256_source_body: "012e6f08a08f3752045d7cebaef5c6aaa62e475444376f23a06a0e4f52624f0a"
+sha256_published_body: "34b8da703587a19cb2c27e794e8d5bb54b5803bb4436f0b8f06ae625df22bdfc"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.189 de 19/11/2015
 

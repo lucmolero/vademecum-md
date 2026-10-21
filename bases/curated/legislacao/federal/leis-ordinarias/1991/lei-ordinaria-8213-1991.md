@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8213-1991"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "3293e26933c5130394f89f8204a0b67f734cda98271aea687743b65cd5b83ff2"
+sha256_source_normalized: "8861e0aa43cc3e841123aa1f0fc9dcf5a6ba4d9be9fa09fa97a8628a3d257bca"
+sha256_source_body: "7ef85ed659195cbc8f3815ec4b849c3712ae823caf22815e30cefd29eea76e2c"
+sha256_published_body: "03d9e313d41ecb330d02e07b878dd2beaa6c287d5db3f8b9b63a4644738eb0e4"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.213 de 24/07/1991
 

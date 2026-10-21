@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12815-2013"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "6bccf00f1dfd29616e081e121d0f3c8e97c77aa29f715d091981ec9c4c042236"
+sha256_source_normalized: "5d0bee541a9081e4250bf9795702e807a15c88264c0521461bd9b495152aeb6e"
+sha256_source_body: "21b0999c6ab39fbe042d9920bec10aed9eef0b434cc2d18e5dd157978015323a"
+sha256_published_body: "bc3135c084fcaf538075ab1c5ad5ec859c06bc35beee8e73688b0526b432deb7"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.815 de 05/06/2013
 

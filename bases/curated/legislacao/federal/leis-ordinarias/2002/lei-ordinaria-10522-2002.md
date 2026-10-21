@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-10522-2002"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "60ecf16565e51e696515dfcc0a368d0e3ee401ba6b5ee35a47cd0a83895e7d43"
+sha256_source_normalized: "65a2ed8899be1395f3a216ea846529d21f1ed824f6f3bfdfa8c70c42b5a5a9ca"
+sha256_source_body: "576e3f1667658210cdbffb4d98b913b4454ea35b2b81cc87247ff41a26d59158"
+sha256_published_body: "b49086bffad6806addd06584f4995234b64eeeb577158ef503557b636aa60f2f"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.522 de 19/07/2002
 

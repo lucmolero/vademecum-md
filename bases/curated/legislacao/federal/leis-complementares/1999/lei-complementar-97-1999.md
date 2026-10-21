@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-97-1999"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "b824a488c2c2ea17216fe17bd00e1910e63319338228876c5c18224907d24728"
+sha256_source_normalized: "d02e42d1d02d7435e71eec29cbe0d279fa4bca2a9cfff52287836d5bb80ee407"
+sha256_source_body: "4b7884cad0cf7b005a5d2c20e8fbfe2b9d8773f3c77ae40bf099f217b8d13684"
+sha256_published_body: "88bfef95a579e435a214d8bd1ecde65ab7137417f48ad216a8f10530c86638d4"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 97 de 09/06/1999
 

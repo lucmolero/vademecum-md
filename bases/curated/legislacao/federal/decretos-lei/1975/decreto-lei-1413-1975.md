@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "daf2b8a2f464fe0e20c749535116fab3c96bf644373fb943b2d1250e8033d754"
 sha256_corpo: "4da42ed30876118611bfdc84349982088f24d32f07b92c2802bb0bf28352d7c8"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-decreto_lei-1413-1975"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "daf2b8a2f464fe0e20c749535116fab3c96bf644373fb943b2d1250e8033d754"
+sha256_source_normalized: "ea5c29f33b893570ad76f4086f2d5dbf8c23c99fd632765a9234d6f69c4fe80b"
+sha256_source_body: "1871447f30b7210498ce12106fd16b185a22371592a6f8a5e028cb2b346f75e8"
+sha256_published_body: "1871447f30b7210498ce12106fd16b185a22371592a6f8a5e028cb2b346f75e8"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 1.413 de 14/08/1975
 

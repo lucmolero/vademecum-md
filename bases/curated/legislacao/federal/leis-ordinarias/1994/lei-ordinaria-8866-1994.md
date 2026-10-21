@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "dbe419302b229ffbe210fa5656cb81f590d02bdec465781f2b1c53af727021fc"
 sha256_corpo: "4d552901193bd2d61e2308fad2ffcc30cd0a330ec5088881c94b121f01fa70c4"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8866-1994"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "dbe419302b229ffbe210fa5656cb81f590d02bdec465781f2b1c53af727021fc"
+sha256_source_normalized: "9ffcb465e011fc47ac33cb0d6daffbae8bd1076e852569de4058cf1b8e1e8d0b"
+sha256_source_body: "f3ab452462d026c3158a7ddb401844b7cecce54237b8241a03c9b13e814e47e7"
+sha256_published_body: "f3ab452462d026c3158a7ddb401844b7cecce54237b8241a03c9b13e814e47e7"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.866 de 11/04/1994
 

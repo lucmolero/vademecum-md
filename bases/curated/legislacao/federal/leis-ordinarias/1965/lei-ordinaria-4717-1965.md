@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-4717-1965"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "85ba5f4f2359e1a81d24364adba9a664cd1a326dbd02e68df66d48f2a9d3a3d0"
+sha256_source_normalized: "c4996d0a7dbd3dd8ab115357fa0a848f832d29d57729f8e36710d6357af3598a"
+sha256_source_body: "9c3d70edc41f202d3c448ef67be4699391124fb65be1c2a53315edbef504f91c"
+sha256_published_body: "c76d1dcfc21fa74be6639dd2b77ae404247028b74f692f970e92d2580af91864"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.717 de 29/06/1965
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9263-1996"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "b8e5aab5a3b316b6f84cb24c8edc6f583df41409c37c34973188849b16dd724e"
+sha256_source_normalized: "899044e76b4baf286b63589f87a86f8650c6d18e63a4d899fe4897fc12f24859"
+sha256_source_body: "21d32ea1b9addb6178657fc28cc1930008893e7776f67072cbc22450be80ef73"
+sha256_published_body: "c05f621bb8e26e561bcb5a0d8fe5c9a5a3cbeb3be06336c4655a10caa2889708"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.263 de 12/01/1996
 

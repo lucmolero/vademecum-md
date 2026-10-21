@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "be123802334d90464f7e8ccc78b464baac88e7ceb51eea4df184b513e6585d13"
 sha256_corpo: "f0d3e58607247421ff78728b957ac72ad501aac4b6d06d8d88f4f0f0b8df1ff2"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13300-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "be123802334d90464f7e8ccc78b464baac88e7ceb51eea4df184b513e6585d13"
+sha256_source_normalized: "ad1b50f74c20ff8a2ba5552a041177fd8d5bdfc70c3ba89001a5fc98fdb01af1"
+sha256_source_body: "b4c8c9eca6e82c7e79776a93e2812ac16cf7ba178b622ac2be591b61dd8c2e08"
+sha256_published_body: "b4c8c9eca6e82c7e79776a93e2812ac16cf7ba178b622ac2be591b61dd8c2e08"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.300 de 23/06/2016
 

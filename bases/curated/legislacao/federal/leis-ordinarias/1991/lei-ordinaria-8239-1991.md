@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-8239-1991"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "e4883a4516024142ee49c6019544aeffd9363f117620e6f8b83a91d5e3611bc5"
+sha256_source_normalized: "954b5bc788571299c9adcc62a59e48ccb1511f4f5c06e4c7b305f86df2dd3175"
+sha256_source_body: "3aaa622533aaf2e36dbae9a0c09eb8a0fad1223acadac7bc60791fb5361d1e30"
+sha256_published_body: "d32bdec4b66f91aa502c1b3e3966df32d75637ff74df8ead58f6074d0f8a26a6"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.239 de 04/10/1991
 

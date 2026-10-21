@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12037.htm", "sha256_origem:dbf216808efa8c796d824a8b8db3ed53bb141f97b73e3be89a735f470e01b701", "official_current_compilation_review"]
 camada: "core_profissional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-12037-2009"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "dbf216808efa8c796d824a8b8db3ed53bb141f97b73e3be89a735f470e01b701"
+sha256_source_normalized: "13c6a8102b06215da90fa543a479efa7b88cc567cca3a46f044687a72c6ab80f"
+sha256_source_body: "02ed17a402046deb42789791e92ef1d5ee2538da3856b174937158fc7e992890"
+sha256_published_body: "02ed17a402046deb42789791e92ef1d5ee2538da3856b174937158fc7e992890"
 ---
 # Lei nº 12.037, de 1º de outubro de 2009
 

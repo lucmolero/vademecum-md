@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "62de0d2d40ae6747fd9b8ff6890d1c71f24869da2f60b9aa8278dc77fefb2332"
 sha256_corpo: "39af0679ab65a989ec17f809e04834baeabd47e3c440fb557ff5bcf8a700053d"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-9784-1999"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "62de0d2d40ae6747fd9b8ff6890d1c71f24869da2f60b9aa8278dc77fefb2332"
+sha256_source_normalized: "1f73bce2a16dcefd83391394a995483c2098d63ee252ca0392e858de4918fcdc"
+sha256_source_body: "c3ce1b036383e8e9ff5dea9e2aca4ba433b8ea96b150a1c2e06927806f190068"
+sha256_published_body: "c3ce1b036383e8e9ff5dea9e2aca4ba433b8ea96b150a1c2e06927806f190068"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei do Processo Administrativo Federal
 

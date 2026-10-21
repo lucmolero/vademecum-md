@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-1060-1950"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "cc020c2ae2ab9f587d5eb6582de5782a2f4dc9208fadb40fea37c4435decbe49"
+sha256_source_normalized: "710f8759c6c9234774bbf84bb684f850e23802b42c3e253f0ecdc32f6ca5a1f6"
+sha256_source_body: "2551f0bf4641377873a572879dccc11820d278cd57bee59fa6c4c5ddea8e59f9"
+sha256_published_body: "ef53dcb2bcebad7e3039746a2dc304647013ad42105b09171e64541a0d144a94"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 1.060 de 05/02/1950
 

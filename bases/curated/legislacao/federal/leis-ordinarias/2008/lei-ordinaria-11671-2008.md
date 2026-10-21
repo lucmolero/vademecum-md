@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-11671-2008"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "cfad8f3dd299f834113943db0c428fb76b35554096bd7e989fa55023d8163c6a"
+sha256_source_normalized: "8e9dbf24ed700522a443b2b85f2d8d2efdcdba15e8acf9cf3240f9c9ae128cd6"
+sha256_source_body: "0ed5f2c27a812d24b1153524298e362433f1b91e0bae6360f2e763509cd74d35"
+sha256_published_body: "0ed5f2c27a812d24b1153524298e362433f1b91e0bae6360f2e763509cd74d35"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.671 de 08/05/2008
 

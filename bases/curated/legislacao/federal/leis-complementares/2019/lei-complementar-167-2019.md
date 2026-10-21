@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "7f81f8b2136920bc68ea78967446556ff2fa3faecbfc017d7022bda5bd7016ef"
 sha256_corpo: "14fc4c1c2f99da6efb52953215d5438d3385dca208ec7e047bb618cbb027117c"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-167-2019"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "7f81f8b2136920bc68ea78967446556ff2fa3faecbfc017d7022bda5bd7016ef"
+sha256_source_normalized: "c97bc329f8e7f81c7aa45026b3f930cde489beb2ee40a7075672228f3f94b35a"
+sha256_source_body: "1e706a36f27f3907bc29063a67ccee81d14ed2f6862855d50eafa12fff9d3c86"
+sha256_published_body: "1e706a36f27f3907bc29063a67ccee81d14ed2f6862855d50eafa12fff9d3c86"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 167 de 24/04/2019
 

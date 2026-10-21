@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-13606-2018"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "review"
+fidelity_anomalies: ["article_tree_mismatch"]
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "788f07f57bf473c4663310588ac6d1abb638b596e17a13cc1825ec6bc99ca27a"
+sha256_source_normalized: "674b88acf1f8effe51842b4383fb14e584c1e6224cad5bde95265e1cb89cb86e"
+sha256_source_body: "9b42ce739fb1fc3bb2c3dbfe75e751e8479b83097f44949e2b0f0fbd54fdeaf1"
+sha256_published_body: "12ef3b5b1f803a367949dc786e768e53bb09cc6d78f3a7319a3449e4141dbd19"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.606 de 09/01/2018
 

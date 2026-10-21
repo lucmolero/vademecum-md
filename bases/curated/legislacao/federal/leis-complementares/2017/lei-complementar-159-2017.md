@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-159-2017"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "6727be7829ce173d546d1bde61e8acafbe0eca9a9efe156c6f80697f0a14a8a9"
+sha256_source_normalized: "62a03633bf055cc033417731b6d98c05520b1b6109f555143d85085e6a3e242c"
+sha256_source_body: "e721f816bffe9bdd7eb9f4c7b4d6bc03564f75ea06f0e9f4a1bfa20e6689b507"
+sha256_published_body: "cf151c9998fb23086ebc2cda55cbbcf0a8e44a385ff2454fa43d1fe675312561"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 159 de 19/05/2017
 

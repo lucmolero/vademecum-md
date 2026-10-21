@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-87-1996"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "683a9e38a332f07668499463cfc9e8fa4cedf94c4d899bc9797eee0b31812879"
+sha256_source_normalized: "3f2d771f231e7fbdef7b8e09fb334324eb0bede8646e990534459a85aa66974e"
+sha256_source_body: "ad02e7d61c4f80cf6935bdaddd1b15542997f86a35b0b82ea6e677ddc03cf7b3"
+sha256_published_body: "4078ebc3a2acdb4197d821b0a9eefd99f0fa1dad50ef1a663d85ce6aaa04879d"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 87 de 13/09/1996
 

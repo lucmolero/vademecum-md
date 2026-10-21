@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-10257-2001"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "0fa3df7a7242fbd1d87027382b80983d07a5ef5aefd098aea09c0c27f116a433"
+sha256_source_normalized: "4c65dff98e57d5d281a753a8d383b603ee440ca37ed2f892231b3850a85932c3"
+sha256_source_body: "bb3cacd9cced7a2aa5b094e0679d78210993f3f0a10418a576dcce7a409a246c"
+sha256_published_body: "79086238a53394ffef83824ae369efa188cc51ca1151eee3f32a95c2ab9a9c13"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.257 de 10/07/2001
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "b10bd3b36d10c6f349fc3200e4a68ec735e33246e562e45731f26cc52e642c88"
 sha256_corpo: "53cab0b0948a9140103a8de837e5da7781eecd7ab434178b42bdca812f758089"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_complementar-162-2018"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "b10bd3b36d10c6f349fc3200e4a68ec735e33246e562e45731f26cc52e642c88"
+sha256_source_normalized: "097a027a60e6ec691f390b9f43bf7381b4f7604a91703a9c3bd43dfe4ed43fe8"
+sha256_source_body: "ad3bd8820382ab8716f5189dace9a740db7da7972f1a39f9e34efdede427da3b"
+sha256_published_body: "ad3bd8820382ab8716f5189dace9a740db7da7972f1a39f9e34efdede427da3b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 162 de 06/04/2018
 

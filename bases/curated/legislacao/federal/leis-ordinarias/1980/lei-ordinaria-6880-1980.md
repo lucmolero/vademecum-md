@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-6880-1980"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "284fa13964c41280d5c2a74d362f0077acfabfa5259f2d7b554afdf2aabffa5d"
+sha256_source_normalized: "e4f441687853e7ceca3dbeadcc1f20076c6dbdf8c86a8489017b1745479202c2"
+sha256_source_body: "7d9abb2114ea62f51c0b53aa7484dd84f7d069313ef07ea9324c1c07821fe1d6"
+sha256_published_body: "e81e37387e84e56b34fc04da44265dce88bd89a24abc35f4f2f7f770bd36897c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.880 de 09/12/1980
 

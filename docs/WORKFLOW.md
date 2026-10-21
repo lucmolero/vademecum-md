@@ -80,3 +80,13 @@ Os relatórios públicos são:
 Cada auditoria registra fonte oficial, hash do corpo, identidade, integridade,
 situação declarada e relações no grafo. O status `pass` exige texto local
 compatível com a redação oficial capturada na data de corte.
+## Contrato de consenso e fidelidade
+
+Os passes autônomos `legal_curator` e `legal_critic` precisam concordar antes de
+qualquer promoção. O ledger `legal-curation-consensus/v1` registra as duas
+análises, suas evidências e a decisão. Sem consenso, a versão pública anterior é
+preservada e o caso é registrado para a próxima execução.
+
+`fidelity-audit.json` verifica unidades de fonte, árvore de artigos e hashes
+`norm-v2`. Constituição e ADCT possuem seletores independentes mesmo quando
+compartilham a mesma página oficial.

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-10996-2004"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "b342bf5237f43d8a45d7d49065e1ba59d1e0ff80f379649d58a9e7c7423d9b9f"
+sha256_source_normalized: "0122b33ac448207441d225909dc1f3fe5ea6fb0605e014fe60d1524f0ee8aff4"
+sha256_source_body: "1b0a0e369702d31fca9802d8d34863fca2ceada70b2ce5bf4703f209d2ef9cde"
+sha256_published_body: "83cdd4aae64b746c78e3adfcc771024085b823622a2933a688388266f6cf38fc"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.996 de 15/12/2004
 

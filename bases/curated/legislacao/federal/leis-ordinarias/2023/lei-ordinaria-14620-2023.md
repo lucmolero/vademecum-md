@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14620.htm", "sha256_origem:d7c471cc868baff9e9b9d204f588c042922ae9cf9ce1fe0e3a54c2f1361c509d", "official_current_compilation_review"]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v2"
+source_unit_id: "br-federal-lei_ordinaria-14620-2023"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v2", "sha256_source_body": "selected_normative_body_norm_v2", "sha256_published_body": "published_normative_body_norm_v2"}
+sha256_source_raw: "d7c471cc868baff9e9b9d204f588c042922ae9cf9ce1fe0e3a54c2f1361c509d"
+sha256_source_normalized: "654c14499c3178081ebbb4f4090012a977711e04f7689624b86a0e745edff9d5"
+sha256_source_body: "de2a8250cdcf5d765557f5aaf9b828c1c9f3d64548e1635dac21c53e8c90f73b"
+sha256_published_body: "de2a8250cdcf5d765557f5aaf9b828c1c9f3d64548e1635dac21c53e8c90f73b"
 ---
 # Lei nº 14.620, de 13 de julho de 2023
 
