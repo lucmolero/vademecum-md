@@ -6,6 +6,8 @@ on:
     - cron: "37 4 * * 1"
     - cron: "53 4 1 * *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [collect-legislation]
 
 permissions:
   contents: read
@@ -16,7 +18,7 @@ concurrency:
 
 jobs:
   collect-p0:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '23 4 * * *'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 * * *'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +37,7 @@ jobs:
           if-no-files-found: error
 
   collect-p1:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '37 4 * * 1'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '37 4 * * 1'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -54,7 +56,7 @@ jobs:
           if-no-files-found: error
 
   collect-p2:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '53 4 1 * *'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '53 4 1 * *'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

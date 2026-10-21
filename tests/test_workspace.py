@@ -93,6 +93,7 @@ class WorkspaceTest(unittest.TestCase):
         self.assertIn("--priority P0", collection)
         self.assertIn("--priority P1", collection)
         self.assertIn("--priority P2", collection)
+        self.assertIn("repository_dispatch", collection)
         self.assertIn("docs/proposals", (ROOT / ".github/workflows/prepare-update-pr.yml").read_text(encoding="utf-8"))
 
     def test_source_registry_is_allowlisted(self) -> None:

@@ -2,6 +2,8 @@ name: prepare-update-pr
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [prepare-update-pr]
 
 permissions:
   contents: read
