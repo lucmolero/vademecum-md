@@ -26,6 +26,8 @@ jobs:
         run: python tools/check_markdown.py
       - name: Workflow security policy
         run: python tools/validate/validate_workflows.py
+      - name: Validate editorial expansion inventory
+        run: python tools/validate/audit_editorial_expansion.py
       - name: Generate derived indexes
         run: python tools/build_public_indexes.py --apply
       - name: Validate editorial matrix synchronization

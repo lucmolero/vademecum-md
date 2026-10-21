@@ -98,6 +98,10 @@ class WorkspaceTest(unittest.TestCase):
         self.assertEqual(report["missing_or_ambiguous"], [])
         self.assertEqual(report["drift"], [])
 
+    def test_editorial_expansion_inventory_is_controlled(self) -> None:
+        result = subprocess.run([sys.executable, "tools/validate/audit_editorial_expansion.py"], cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
     def test_update_frequencies_are_declared(self) -> None:
         collection = (ROOT / ".github/workflows/collect-legislation.yml").read_text(encoding="utf-8")
         self.assertIn('cron: "23 4 * * *"', collection)
