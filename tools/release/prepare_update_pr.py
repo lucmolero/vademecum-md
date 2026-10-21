@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import json
 import shutil
 from datetime import datetime, timezone
@@ -24,13 +25,31 @@ def main() -> int:
     changed = [item for item in results if item.get("status") == "changed_candidate" and item.get("sha256_raw")]
     conflicts = [item for item in results if item.get("status") == "source_conflict"]
     unavailable = [item for item in results if item.get("status") == "source_unavailable"]
+    evidence = []
+    for item in changed + conflicts + unavailable:
+        diff = diff_by_matrix.get(str(item.get("matrix_id")), {})
+        evidence.append({
+            **item,
+            "diff": diff,
+            "risk": diff.get("risco", "critico"),
+            "relations_impacted": diff.get("relacoes_impactadas", 0),
+        })
+    blockers = []
+    if conflicts:
+        blockers.append("source_conflict")
+    if unavailable:
+        blockers.append("source_unavailable")
+    if any(not diff_by_matrix.get(str(item.get("matrix_id"))) for item in changed):
+        blockers.append("missing_structural_diff")
     proposal = {
         "schema": "legislation-update-proposal/v1",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "policy": "human_review_required",
         "curated_mutation": False,
         "eligible_for_review": len(changed) > 0 and not conflicts,
-        "changed_candidates": changed,
+        "release_blockers": blockers,
+        "risk_summary": dict(Counter(str(item["risk"]) for item in evidence)),
+        "changed_candidates": [item for item in evidence if item.get("status") == "changed_candidate"],
         "conflicts": conflicts,
         "unavailable": unavailable,
         "next_step": "resolve source conflicts, review official snapshots, reconcile, then create a human-reviewed PR",
@@ -55,8 +74,8 @@ def main() -> int:
             "",
             "## Candidatos",
             "",
-            "| Matriz | Status | Hash atual | Novo hash | Diff | Fonte principal |",
-            "| --- | --- | --- | --- | --- | --- |",
+            "| Matriz | Status | Risco | Hash atual | Novo hash | Diff | Artigos | Relações | Fonte principal |",
+            "| --- | --- | --- | --- | --- | --- | ---: | ---: | --- |",
         ]
         for item in changed + conflicts + unavailable:
             diff = diff_by_matrix.get(str(item.get("matrix_id")), {})
@@ -65,9 +84,11 @@ def main() -> int:
                 diff_label = f"generated; artigos alterados={diff.get('artigos_alterados', 0)}; {', '.join(diff.get('classificacao', []))}"
             diff_cell = f"[{diff_label}](diffs/{item.get('matrix_id')}.json)" if diff else diff_label
             lines.append(
-                f"| `{item.get('matrix_id')}` | `{item.get('status')}` | "
+                f"| `{item.get('matrix_id')}` | `{item.get('status')}` | `{diff.get('risco', 'critico')}` | "
                 f"`{item.get('current_sha256') or 'n/a'}` | `{item.get('sha256_raw') or 'n/a'}` | "
                 f"{diff_cell} | "
+                f"{diff.get('artigos_alterados', 0) + diff.get('artigos_adicionados', 0) + diff.get('artigos_removidos', 0)} | "
+                f"{diff.get('relacoes_impactadas', 0)} | "
                 f"{item.get('primary_url') or 'n/a'} |"
             )
         lines.extend([

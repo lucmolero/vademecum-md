@@ -161,6 +161,9 @@ class WorkspaceTest(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             self.assertTrue(markdown.is_file())
             self.assertIn("VM-001", markdown.read_text(encoding="utf-8"))
+            proposal_data = json.loads(output.read_text(encoding="utf-8"))
+            self.assertIn("risk_summary", proposal_data)
+            self.assertIn("release_blockers", proposal_data)
 
     def test_private_ledger_export_is_hash_auditable(self) -> None:
         with TemporaryDirectory() as temporary:
