@@ -551,6 +551,14 @@ class WorkspaceTest(unittest.TestCase):
         after = [hashlib.sha256(path.read_bytes()).hexdigest() for path in paths]
         self.assertEqual(before, after)
 
+    def test_derived_relation_files_use_portable_lf_line_endings(self) -> None:
+        for relative in (
+            "bases/derived/relacoes/normative-graph.jsonl",
+            "bases/derived/relacoes/unresolved.json",
+        ):
+            data = (ROOT / relative).read_bytes()
+            self.assertNotIn(b"\r\n", data, relative)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -427,8 +427,16 @@ def main() -> int:
     docs = load_docs()
     graph = ROOT / "bases/derived/relacoes"
     graph.mkdir(parents=True, exist_ok=True)
-    (graph / "normative-graph.jsonl").write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in relations), encoding="utf-8")
-    (graph / "unresolved.json").write_text(json.dumps(unresolved, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (graph / "normative-graph.jsonl").write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in relations),
+        encoding="utf-8",
+        newline="\n",
+    )
+    (graph / "unresolved.json").write_text(
+        json.dumps(unresolved, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     classify_unresolved(graph / "unresolved-classified.json")
     build_relation_review_queue(unresolved, graph / "review-queue.json")
     write_sources(docs)
