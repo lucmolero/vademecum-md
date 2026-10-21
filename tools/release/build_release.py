@@ -84,6 +84,7 @@ def main() -> int:
             relative = path.relative_to(ROOT).as_posix()
             info = zipfile.ZipInfo(prefix + relative, date_time=(2000, 1, 1, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
+            info.create_system = 3
             info.external_attr = 0o100644 << 16
             archive.writestr(info, path.read_bytes())
     checksums = {path.relative_to(args.output).as_posix(): sha256(path) for path in [archive_path]}
