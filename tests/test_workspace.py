@@ -178,6 +178,15 @@ class WorkspaceTest(unittest.TestCase):
             ledger = json.loads((output / "ledger-manifest.json").read_text(encoding="utf-8"))
             self.assertEqual(ledger["files"][0]["sha256"], hashlib.sha256(b"official snapshot").hexdigest())
 
+    def test_unresolved_relations_are_classified_without_matrix_expansion(self) -> None:
+        report = json.loads((ROOT / "bases/history/alteracoes/2026-10-21-unresolved-relations.json").read_text(encoding="utf-8"))
+        self.assertEqual(report["schema"], "unresolved-relation-classification/v1")
+        self.assertGreater(report["total"], 0)
+        self.assertEqual(sum(report["by_classification"].values()), report["total"])
+        self.assertEqual(set(report["by_classification"]), {"out_of_matrix"})
+        self.assertIn("classification_method", report)
+        self.assertIn("no candidate is added", report["policy"])
+
     def test_source_normalizer_is_deterministic(self) -> None:
         html = b"<html><script>x</script><p>Art. 1</p><p>Texto   legal</p></html>"
         expected = "Art. 1\n\nTexto legal\n"

@@ -1,0 +1,21 @@
+{
+  "schema": "unresolved-relation-classification/v1",
+  "generated_at": "2026-10-21",
+  "total": 2258,
+  "by_classification": {
+    "out_of_matrix": 2258
+  },
+  "by_relation": {
+    "alterada_por": 1761,
+    "regulamentada_por": 14,
+    "revogada_por": 474,
+    "retificada_por": 9
+  },
+  "by_source_priority": {
+    "P0": 722,
+    "P1": 1499,
+    "P2": 37
+  },
+  "classification_method": "target type and number were checked against the curated corpus; no matching target was found",
+  "policy": "classification_only; no candidate is added to the curated matrix"
+}

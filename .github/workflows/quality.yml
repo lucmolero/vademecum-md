@@ -30,6 +30,8 @@ jobs:
         run: python tools/build_public_indexes.py --apply
       - name: Audit normative graph
         run: python tools/relations/audit_normative_graph.py
+      - name: Classify unresolved relations
+        run: python tools/relations/classify_unresolved.py
       - name: Public release gates
         run: python tools/validate_release.py
       - name: Test suite
