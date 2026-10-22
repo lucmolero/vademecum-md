@@ -1195,6 +1195,6 @@ No leitor, o corpo passa a iniciar em 13 px, com quatro n?veis entre 13 e 16 px.
 - `python tools/site/build_site.py`: gerou 375 diplomas, 35 dom?nios e 1.841 rela??es.
 - `git diff --check`: passou.
 - A URL p?blica responde 200, mas ainda cont?m o hero anterior. A branch candidata n?o publica no Pages.
-- N?o h? navegador dispon?vel para captura ou revis?o visual nesta sess?o; a inspe??o em desktop, mobile, temas, teclado e leitor de tela continua pendente. A su?te local n?o foi executada. A execu??o autom?tica de CI encontrou uma expectativa de headline antiga; atualizei o contrato para a nova chamada do hero e aguardo a reexecu??o remota.
+- N?o h? navegador dispon?vel para captura ou revis?o visual nesta sess?o; a inspe??o em desktop, mobile, temas, teclado e leitor de tela continua pendente. A su?te local n?o foi executada. A primeira execu??o remota encontrou uma expectativa de headline antiga, que atualizei para a nova chamada do hero. No commit `d51c107b5656701880da67578e40923ce7530e7b`, `quality` passou em push e pull request (72 testes), e o build de Pages passou com deploy ignorado. Esses checks validam o artefato candidato, mas n?o substituem a revis?o visual manual.
 
 **Estado:** altera??o local pronta para atualizar a PR candidata; manter NO-GO at? revis?o visual/acess?vel e demais gates de lan?amento.
