@@ -1,6 +1,6 @@
 # Plano mestre de rebranding e refinamento — VadeMecum MD
 
-> **Versão:** 16 | **Atualizado:** 2026-10-22
+> **Versão:** 17 | **Atualizado:** 2026-10-22
 >
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
@@ -17,7 +17,7 @@
 | Identidade e ativos | Marca e código sob MIT; Source Serif 4 (4.005R) vendorizada sob OFL 1.1 com hashes e cache offline para cartões | Confirmação de titularidade/autoria dos vetores e avaliação com públicos ainda pendentes |
 | Desempenho e dispositivos | Budgets de transferência passam no CI: 84.992 / 67.015 / 262.057 bytes gzip contra 122.880 / 81.920 / 307.200 | Core Web Vitals de campo em mobile/desktop e avaliação em dispositivos/rede reais continuam pendentes |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 draft, cabeça `7834fb8`; quality push/PR e build Pages passaram; deploy ignorado. Produção ainda serve a versão antiga | PR #28; Actions 39762027254, 39762032900 e 39762032936; ainda faltam gates humanos, direitos, campo, rollback e smoke pós-deploy |
+| Produção e integração | PR #28 draft, cabeça auditada `f4a81e8`; quality push/PR e build Pages passaram; deploy ignorado. Produção ainda serve a versão antiga | PR #28; Actions 39762246988, 39762254718 e 39762254509; ainda faltam gates humanos, direitos, campo, rollback e smoke pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -1243,9 +1243,9 @@ O inventário foi refeito: agora lista os seis SVGs publicados, separa os dados 
 
 ## 52. Auditoria de estado e gates para lançamento - 2026-10-22
 
-A revisão do estado remoto confirma a candidata `7834fb886f085fbf309262f3f304c854b485c79a` na PR #28. `quality` passou no push (39762027254) e na PR (39762032900); o workflow `site` passou (39762032936), com 396 páginas HTML, 375 diplomas e budgets gzip de 84.992 bytes para home/recursos iniciais, 67.015 para busca sob demanda e 262.057 para a maior página legal. Os limites seguem 122.880, 81.920 e 307.200 bytes. A implantação foi corretamente ignorada nos eventos de PR.
+A revisão do estado remoto confirma a candidata `f4a81e8fc1feb6fbbd2436fb7019c3f6e8006fab` na PR #28. `quality` passou no push (39762246988) e na PR (39762254718); o workflow `site` passou (39762254509), com 396 páginas HTML, 375 diplomas e budgets gzip de 84.992 bytes para home/recursos iniciais, 67.015 para busca sob demanda e 262.057 para a maior página legal. Os limites seguem 122.880, 81.920 e 307.200 bytes. A implantação foi corretamente ignorada nos eventos de PR.
 
-A leitura HTTP atual da produção respondeu 200 para homepage (37.495 bytes), grafo (29.369 bytes) e catálogo (116.774 bytes). A homepage ainda contém a âncora antiga `para-desenvolvedores-de-agentes-de-ia` e não contém `hero-graph-node`; isso confirma que o usuário ainda não vê a candidata. A ferramenta Computer Use retornou `apps=[]` e `browsers=[]`, e o navegador de prévia não está disponível nesta sessão. Não houve inspeção visual, navegação por teclado ou teste com leitor de tela; não declarar esses gates aprovados com base no HTML/CI.
+O artefato Pages do workflow 39762254509 foi baixado e inspecionado sem extração insegura. Seu sitemap contém 395 rotas; todas resolvem a `index.html` correspondente dentro do artefato. O sitemap de produção também contém 395 URLs: conjuntos idênticos, zero rotas adicionadas/removidas. Home, grafo, catálogo, Código Civil e Lei 13.964/2019 responderam 200 por HTTP. A homepage ainda contém a âncora antiga `para-desenvolvedores-de-agentes-de-ia` e não contém `hero-graph-node`; isso confirma que o usuário ainda não vê a candidata. A ferramenta Computer Use retornou `apps=[]` e `browsers=[]`, e o navegador de prévia não está disponível nesta sessão. Não houve inspeção visual, navegação por teclado ou teste com leitor de tela; não declarar esses gates aprovados com base no HTML/CI.
 
 **Matriz final de gates externos:**
 
@@ -1257,7 +1257,7 @@ A leitura HTTP atual da produção respondeu 200 para homepage (37.495 bytes), g
 | Autoria e autorização dos ativos | Aberto | Confirmação do responsável para os seis SVGs e três estudos conceituais, ou substituição/atribuição adequada | Confirmar titularidade/autorização e registrar a decisão no inventário |
 | Amostras legais e proveniência | Aberto | Conferência humana de textos, fonte, identificador e corte da release | Conferir amostra contra fonte oficial e registrar release/corte |
 | Desempenho de campo | Parcial | Medição real de LCP/INP/CLS no p75 em mobile e desktop dentro das metas | Coletar dados do preview com dispositivo/rede definidos; não inferir de gzip |
-| Compatibilidade e rollback | Parcial | Deep links smoke-tested e ensaio documentado de retorno à release anterior | Revalidar as 395 rotas e ensaiar rollback sem remover artefatos antigos |
+| Compatibilidade e rollback | Parcial | Sitemap do artefato e da produção têm 395/395 URLs; zero destinos ausentes no artefato; cinco rotas-chave responderam 200 | Abrir links profundos em navegador e ensaiar rollback sem remover artefatos antigos |
 | Merge, deploy e produção | Bloqueado por gates anteriores | Aprovação da PR, artefato testado publicado e smoke test público pós-deploy | Manter draft/NO-GO até aprovação humana; após publicação, comparar produção à candidata |
 
 **Decisão:** manter PR #28 em draft e estado NO-GO. Não há falha técnica conhecida nos checks atuais; o bloqueio é evidência humana/operacional ainda ausente e a produção desatualizada. Este diagnóstico não autoriza merge ou deploy. O plano continua aberto até haver evidência verificável para cada gate, as correções forem incorporadas, o fluxo protegido publicar a revisão aprovada e o smoke test público confirmar o resultado.
