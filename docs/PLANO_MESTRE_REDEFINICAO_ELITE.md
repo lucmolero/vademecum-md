@@ -17,11 +17,11 @@
 | Identidade e ativos | Direção “Índice normativo” aplicada; escolha do usuário documentada como MIT para código e marca | Revisão de titularidade/proveniência, aplicação final em favicon e avaliação com públicos ainda pendentes |
 | Desempenho e dispositivos | Site estático e índices sob demanda; não há medição atual de bytes transferidos/Core Web Vitals na produção após o redesign | Definir orçamento após baseline em desktop e celular com cache/rede registrados |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 está aberto como draft; `quality` passou; a homepage e `/graph/` públicas ainda não contêm as mudanças; seis PRs do Dependabot seguem abertos (dois updates aplicados nesta candidata) | Concluir revisão humana, decidir PRs restantes, promover o draft após os gates e executar smoke test pós-deploy |
+| Produção e integração | PR #28 está aberto como draft; `quality` e build de Pages passaram; deploy foi pulado; a homepage e `/graph/` públicas ainda não contêm as mudanças | Concluir revisão humana, decidir os dois updates de artefato restantes, promover o draft após os gates e executar smoke test pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
-1. Abrir revisão do candidato e aguardar os checks obrigatórios no GitHub.
+1. Manter o PR #28 em draft enquanto a revisão e os checks obrigatórios forem concluídos; não integrar antes dos gates humanos e operacionais.
 2. Revisar o README renderizado e o Pages em desktop/celular, temas claro/escuro, zoom e estados de interação; executar teste moderado com pelo menos um advogado, um pesquisador e uma pessoa de tecnologia, registrando tarefas, falhas e decisões sem inventar feedback.
 3. Resolver titularidade/licenças de cada asset e validar a amostra jurídica e seus metadados contra a fonte e o corte que serão publicados.
 4. Medir desempenho e acessibilidade no preview; definir e cumprir os budgets antes da aprovação.
@@ -1149,7 +1149,7 @@ Reauditei a candidata e o estado remoto para distinguir evidência de implementa
 
 ## 43. Runner e compatibilidade de rotas — 2026-10-22
 
-Para eliminar as anotações de Node 20 e reduzir variação futura do ambiente, atualizei `actions/checkout` para v7 e `actions/setup-python` para v7 nos nove workflows, e fixei todos em `ubuntu-24.04`. O checkout v7 endurece a proteção para eventos `pull_request_target` e `workflow_run`; nenhum dos workflows deste repositório usa esses eventos. O setup-python continua compatível com a instalação de dependências executada por `pip` no próprio workflow. As ações de artefato e deploy ficaram para revisão separada porque o check de qualidade não executa todos esses fluxos.
+Para eliminar as anotações de Node 20 e reduzir variação futura do ambiente, atualizei `actions/checkout` para v7 e `actions/setup-python` para v7 nos nove workflows, e fixei todos em `ubuntu-24.04`. O checkout v7 endurece a proteção para eventos `pull_request_target` e `workflow_run`; nenhum dos workflows deste repositório usa esses eventos. O setup-python continua compatível com a instalação de dependências executada por `pip` no próprio workflow. Ações de upload/download genéricas seguem em revisão separada; a cadeia específica de Pages está agora coberta pelo workflow de preview registrado na seção 45.
 
 Comparei o sitemap público obtido por HTTP com o sitemap de um build estrito da candidata: 395 URLs em cada lado, sem caminhos adicionados ou removidos. Todos os links e fragmentos internos do candidato também são percorridos pelo validador de site. Essa comparação reduz o risco de quebra de deep links, mas não simula rollback nem teste funcional de cada rota no ambiente publicado.
 
@@ -1162,8 +1162,18 @@ Comparei o sitemap público obtido por HTTP com o sitemap de um build estrito da
 
 ## 44. PR candidato em revisão — 2026-10-22
 
-A branch `codex/rebranding-candidate` foi enviada ao remoto e aberta como [PR #28](https://github.com/lucmolero/vademecum-md/pull/28), em estado draft. O draft centraliza escopo, evidências, limites e gates pendentes; não foram atribuídos revisores nem feita integração em `main`. O commit de cabeça é `d793b4e7b415b1aaa8369da66cb3c02dabbd2a64`.
+A branch `codex/rebranding-candidate` foi enviada ao remoto e aberta como [PR #28](https://github.com/lucmolero/vademecum-md/pull/28), em estado draft. O draft centraliza escopo, evidências, limites e gates pendentes; não foram atribuídos revisores nem feita integração em `main`. O commit `d793b4e7b415b1aaa8369da66cb3c02dabbd2a64` era a cabeça no registro inicial; as atualizações subsequentes constam na seção 45.
 
 O workflow `quality` acionado pelo próprio evento `pull_request` concluiu com sucesso no run 39753760713. A branch protegida segue exigindo `quality`; o workflow Pages só publica em push à `main`, portanto esta PR não alterou o site público.
 
 **Estado:** candidato remoto revisável, com checks obrigatórios verdes. O rascunho deve permanecer não mesclável até fechar as caixas de revisão visual/acessível, teste com pessoas, direitos, desempenho e rollback descritas no PR e neste plano.
+
+## 45. Build de preview do Pages em PR sem publicação — 2026-10-22
+
+O workflow `site.yml` agora constrói e valida o Pages também em `pull_request`, envia o artefato `github-pages` para inspeção e só executa `deploy` quando `github.ref` é `refs/heads/main`. As permissões `pages: write` e `id-token: write` ficam restritas ao job de deploy; o build recebe apenas `contents: read`. O grupo de concorrência inclui workflow e ref, e apenas novas execuções do mesmo PR podem cancelar uma execução anterior, sem cancelar um deploy de produção. Um teste de contrato valida a condição, as permissões, o isolamento da concorrência e as versões de ações.
+
+No PR #28, `site` passou no commit `a5c1f16d7c7bb76f2ea1de0a8a77192f0ad962cc`: build estrito, validador de 396 HTML e `actions/upload-pages-artifact@v5` passaram. O artefato `github-pages` foi carregado (10.348.072 bytes no armazenamento de Actions; expira após 24 horas). O job `deploy` foi observado como `skipped`, confirmando que o PR não publicou o site. O `quality` passou no mesmo commit com 72 testes.
+
+Os updates Dependabot para `checkout` (#14), `setup-python` (#17), `upload-pages-artifact` (#16) e `deploy-pages` (#13) estão refletidos na candidata. Permanecem fora dela `upload-artifact` (#15) e `download-artifact` (#18), usados por fluxos de coleta/release que exigem validação própria. Os PRs continuam abertos contra `main` enquanto esta candidata não for integrada.
+
+**Estado:** preview reproduzível e protegido contra publicação em PR está verificado remotamente. O artefato está disponível para revisão visual local enquanto não expira; ainda faltam navegador acessível, avaliações humanas, revisão de direitos, orçamento de desempenho e ensaio de rollback. A versão pública permanece inalterada.
