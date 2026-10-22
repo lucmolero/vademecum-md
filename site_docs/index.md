@@ -9,12 +9,25 @@ social:
 
 <section class="vmd-hero" aria-labelledby="home-title">
   <div class="hero-copy">
-    <p class="eyebrow"><span>Índice de legislação federal</span><span class="eyebrow-release">Release 1.1.2</span></p>
-    <h1 id="home-title">Encontre a lei.<br><em>Leia com clareza.</em></h1>
-    <p class="hero-lede">Leis federais em Markdown, com acesso direto ao texto e informações de fonte e corte.</p>
-    <div class="hero-actions">
-      <a class="md-button md-button--primary" href="#home-search">Buscar uma lei</a>
-      <a class="md-button" href="generated/catalog/">Abrir catálogo</a>
+    <p class="eyebrow"><span>VadeMecum MD</span><span class="eyebrow-release">Release 1.1.2</span></p>
+    <h1 id="home-title">Legislação federal.<br><em>Leitura clara.</em></h1>
+    <p class="hero-lede">Consulte o texto, navegue entre normas relacionadas e confira a origem de cada documento.</p>
+    <div class="hero-search" id="home-search">
+      <p class="hero-search-label" id="home-search-title">Encontre um diploma</p>
+      <form id="vmd-global-search" class="home-search-form" action="generated/catalog/" method="get" role="search">
+        <label class="vmd-sr-only" for="vmd-global-search-input">Buscar por nome, número, identificador ou artigo</label>
+        <input id="vmd-global-search-input" name="q" type="search" autocomplete="off" spellcheck="false"
+          placeholder="Ex.: Constituição, Lei 10.406, Art. 186"
+          aria-controls="vmd-global-search-results" aria-expanded="false"
+          data-index-url="generated/search-index.json" />
+        <button type="submit" class="md-button md-button--primary">Buscar</button>
+      </form>
+      <div id="vmd-global-search-results" class="home-search-results" hidden>
+        <p id="vmd-global-search-status" class="home-search-status" role="status" aria-live="polite"></p>
+        <div id="vmd-global-search-list" class="home-search-list"></div>
+        <a id="vmd-global-search-all" class="home-search-all" href="generated/catalog/" hidden>Ver catálogo completo</a>
+      </div>
+      <p class="home-search-scope">Busque pelo nome, número ou artigo. <a href="generated/catalog/">Explorar o catálogo completo</a></p>
     </div>
     <p class="hero-disclaimer">Projeto independente. A publicação oficial é a referência jurídica primária.</p>
   </div>
@@ -30,27 +43,6 @@ social:
     <figcaption class="hero-visual-caption"><span>Selecione um diploma para abrir o texto.</span><a href="graph/">Abrir explorador completo</a></figcaption>
     <details class="hero-graph-relation-list"><summary>Ver 4 relações e seus sentidos</summary><ul><li data-source-id="br-federal-lei_complementar-225-2026" data-target-id="br-federal-decreto_lei-2848-1940" data-relation="altera"><a href="generated/laws/federal/leis-complementares/2026/lei-complementar-225-2026/">Lei Complementar nº 225, de 8 de janeiro de 2026</a> <span>altera →</span> <a href="generated/laws/federal/decretos-lei/1940/decreto-lei-2848-1940/">Código Penal</a></li><li data-source-id="br-federal-lei_ordinaria-13964-2019" data-target-id="br-federal-decreto_lei-2848-1940" data-relation="altera"><a href="generated/laws/federal/leis-ordinarias/2019/lei-ordinaria-13964-2019/">Lei nº 13.964, de 24 de dezembro de 2019</a> <span>altera →</span> <a href="generated/laws/federal/decretos-lei/1940/decreto-lei-2848-1940/">Código Penal</a></li><li data-source-id="br-federal-lei_ordinaria-15358-2026" data-target-id="br-federal-decreto_lei-2848-1940" data-relation="altera"><a href="generated/laws/federal/leis-ordinarias/2026/lei-ordinaria-15358-2026/">Lei nº 15.358, de 24 de março de 2026</a> <span>altera →</span> <a href="generated/laws/federal/decretos-lei/1940/decreto-lei-2848-1940/">Código Penal</a></li><li data-source-id="br-federal-lei_ordinaria-8069-1990" data-target-id="br-federal-decreto_lei-2848-1940" data-relation="altera"><a href="generated/laws/federal/leis-ordinarias/1990/lei-ordinaria-8069-1990/">Estatuto da Crianca e do Adolescente</a> <span>altera →</span> <a href="generated/laws/federal/decretos-lei/1940/decreto-lei-2848-1940/">Código Penal</a></li></ul></details>
   </figure></div>
-</section>
-
-<section id="home-search" class="home-search-section" aria-labelledby="home-search-title">
-  <div class="home-search-heading">
-    <p class="eyebrow">Busca no corpus</p>
-    <h2 id="home-search-title">Qual diploma você procura?</h2>
-  </div>
-  <form id="vmd-global-search" class="home-search-form" action="generated/catalog/" method="get" role="search">
-    <label class="vmd-sr-only" for="vmd-global-search-input">Buscar por nome, número, identificador ou artigo</label>
-    <input id="vmd-global-search-input" name="q" type="search" autocomplete="off" spellcheck="false"
-      placeholder="Ex.: Constituição, Lei 10.406, Art. 186"
-      aria-controls="vmd-global-search-results" aria-expanded="false"
-      data-index-url="generated/search-index.json" />
-    <button type="submit" class="md-button md-button--primary">Buscar</button>
-  </form>
-  <div id="vmd-global-search-results" class="home-search-results" hidden>
-    <p id="vmd-global-search-status" class="home-search-status" role="status" aria-live="polite"></p>
-    <div id="vmd-global-search-list" class="home-search-list"></div>
-    <a id="vmd-global-search-all" class="home-search-all" href="generated/catalog/" hidden>Ver catálogo completo</a>
-  </div>
-  <p class="home-search-scope">Busca títulos, números e rótulos de artigos. No leitor, use a busca para localizar dispositivos no texto aberto.</p>
 </section>
 
 <section class="home-quick-access" aria-labelledby="quick-access-title">

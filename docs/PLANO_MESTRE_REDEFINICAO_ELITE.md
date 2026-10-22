@@ -1185,3 +1185,16 @@ A cabeça atual da PR #28 é `81b81c3401c6ccd1966c924ced5662a6c41b1156`. No mesm
 A PR #28 segue draft; não há revisão humana registrada e a branch ainda não foi integrada. A comparação anterior de sitemaps mostrou os mesmos 395 caminhos em produção e na candidata. O workspace está limpo no commit da PR, e a cópia deste plano no diretório Antigravity foi sincronizada por SHA-256.
 
 **Estado:** a candidata agora tem CI remoto para qualidade e construção do artefato do Pages, além da prevenção testada de deploy fora de `main`. O produto continua em NO-GO: inspeção visual/acessível com navegador real, cinco sessões formativas, revisão de titularidade, métricas de desempenho, decisão sobre os dois updates genéricos de artefatos restantes e ensaio de rollback ainda requerem evidência.
+
+## 47. Refa??o da primeira tela e escala do leitor ? 2026-10-22
+
+Refiz o hero no gerador do site para apresentar primeiro o prop?sito, a busca do corpus e o grafo naveg?vel numa composi??o compacta. A busca agora integra o hero, os resultados aparecem em fluxo logo abaixo do campo e o acesso ?s leis frequentes vem imediatamente depois. O painel do grafo usa a superf?cie clara do site e ocupa menos altura; o explorador completo e a lista textual das rela??es continuam dispon?veis. A p?gina gerada foi atualizada a partir do gerador can?nico.
+
+No leitor, o corpo passa a iniciar em 13 px, com quatro n?veis entre 13 e 16 px. A barra informa o tamanho atual e anuncia as altera??es; o texto passa a usar a fonte de interface, com espa?amento mais compacto. A chave de prefer?ncia foi versionada para que escolhas antigas n?o mantenham o tamanho anterior como padr?o.
+
+- `python tools/site/build_site.py`: gerou 375 diplomas, 35 dom?nios e 1.841 rela??es.
+- `git diff --check`: passou.
+- A URL p?blica responde 200, mas ainda cont?m o hero anterior. A branch candidata n?o publica no Pages.
+- N?o h? navegador dispon?vel para captura ou revis?o visual nesta sess?o; a inspe??o em desktop, mobile, temas, teclado e leitor de tela continua pendente. Nenhuma su?te de testes foi executada nesta altera??o.
+
+**Estado:** altera??o local pronta para atualizar a PR candidata; manter NO-GO at? revis?o visual/acess?vel e demais gates de lan?amento.

@@ -324,16 +324,18 @@
     }
 
     const sizes = ["font-sm", "font-md", "font-lg", "font-xl"];
-    const storedSize = Number.parseInt(readPreference("vmd_font_size_idx_v2", "1"), 10);
+    const storedSize = Number.parseInt(readPreference("vmd_font_size_idx_v3", "0"), 10);
     let sizeIndex = Number.isInteger(storedSize) && storedSize >= 0 && storedSize < sizes.length
       ? storedSize
-      : 1;
+      : 0;
     const content = document.querySelector(".md-content");
+    const sizeLabel = document.getElementById("reader-font-label");
     const applySize = () => {
       if (!content) return;
       sizes.forEach((className) => content.classList.remove(className));
       content.classList.add(sizes[sizeIndex]);
-      writePreference("vmd_font_size_idx_v2", String(sizeIndex));
+      writePreference("vmd_font_size_idx_v3", String(sizeIndex));
+      if (sizeLabel) sizeLabel.textContent = "Texto " + (13 + sizeIndex) + " px";
       if (decrease) decrease.disabled = sizeIndex === 0;
       if (increase) increase.disabled = sizeIndex === sizes.length - 1;
     };

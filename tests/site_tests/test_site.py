@@ -163,7 +163,7 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("font-size: .8125rem", css)
         self.assertIn(".md-content.font-md .md-typeset p", css)
         self.assertIn("font-size: .875rem", css)
-        self.assertIn('readPreference("vmd_font_size_idx_v2", "1")', reader)
+        self.assertIn('readPreference("vmd_font_size_idx_v3", "0")', reader)
         self.assertIn("decrease.disabled = sizeIndex === 0", reader)
         self.assertIn("increase.disabled = sizeIndex === sizes.length - 1", reader)
         toolbar = re.search(r"\.reader-toolbar\s*\{([^}]+)\}", css)

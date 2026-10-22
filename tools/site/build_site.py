@@ -594,6 +594,7 @@ def law_page(
     </button>
   </div>
   <div class="reader-toolbar-group">
+    <span class="reader-font-label" id="reader-font-label" aria-live="polite">Texto 13 px</span>
     <button type="button" class="btn-font-size" id="btn-font-decrease" aria-label="Diminuir o tamanho do texto">A−</button>
     <button type="button" class="btn-font-size" id="btn-font-increase" aria-label="Aumentar o tamanho do texto">A+</button>
     {source_btn}
@@ -814,37 +815,29 @@ def home_page(rows: list[dict[str, str]], metrics: dict[str, object]) -> str:
 
     return f'''<section class="vmd-hero" aria-labelledby="home-title">
   <div class="hero-copy">
-    <p class="eyebrow"><span>Índice de legislação federal</span><span class="eyebrow-release">Release {esc(metrics["version"])}</span></p>
-    <h1 id="home-title">Encontre a lei.<br><em>Leia com clareza.</em></h1>
-    <p class="hero-lede">Leis federais em Markdown, com acesso direto ao texto e informações de fonte e corte.</p>
-    <div class="hero-actions">
-      <a class="md-button md-button--primary" href="#home-search">Buscar uma lei</a>
-      <a class="md-button" href="generated/catalog/">Abrir catálogo</a>
+    <p class="eyebrow"><span>VadeMecum MD</span><span class="eyebrow-release">Release {esc(metrics["version"])}</span></p>
+    <h1 id="home-title">Legislação federal.<br><em>Leitura clara.</em></h1>
+    <p class="hero-lede">Consulte o texto, navegue entre normas relacionadas e confira a origem de cada documento.</p>
+    <div class="hero-search" id="home-search">
+      <p class="hero-search-label" id="home-search-title">Encontre um diploma</p>
+      <form id="vmd-global-search" class="home-search-form" action="generated/catalog/" method="get" role="search">
+        <label class="vmd-sr-only" for="vmd-global-search-input">Buscar por nome, número, identificador ou artigo</label>
+        <input id="vmd-global-search-input" name="q" type="search" autocomplete="off" spellcheck="false"
+          placeholder="Ex.: Constituição, Lei 10.406, Art. 186"
+          aria-controls="vmd-global-search-results" aria-expanded="false"
+          data-index-url="generated/search-index.json" />
+        <button type="submit" class="md-button md-button--primary">Buscar</button>
+      </form>
+      <div id="vmd-global-search-results" class="home-search-results" hidden>
+        <p id="vmd-global-search-status" class="home-search-status" role="status" aria-live="polite"></p>
+        <div id="vmd-global-search-list" class="home-search-list"></div>
+        <a id="vmd-global-search-all" class="home-search-all" href="generated/catalog/" hidden>Ver catálogo completo</a>
+      </div>
+      <p class="home-search-scope">Busque pelo nome, número ou artigo. <a href="generated/catalog/">Explorar o catálogo completo</a></p>
     </div>
     <p class="hero-disclaimer">Projeto independente. A publicação oficial é a referência jurídica primária.</p>
   </div>
   <div class="hero-visual">{hero_graph_markup(rows)}</div>
-</section>
-
-<section id="home-search" class="home-search-section" aria-labelledby="home-search-title">
-  <div class="home-search-heading">
-    <p class="eyebrow">Busca no corpus</p>
-    <h2 id="home-search-title">Qual diploma você procura?</h2>
-  </div>
-  <form id="vmd-global-search" class="home-search-form" action="generated/catalog/" method="get" role="search">
-    <label class="vmd-sr-only" for="vmd-global-search-input">Buscar por nome, número, identificador ou artigo</label>
-    <input id="vmd-global-search-input" name="q" type="search" autocomplete="off" spellcheck="false"
-      placeholder="Ex.: Constituição, Lei 10.406, Art. 186"
-      aria-controls="vmd-global-search-results" aria-expanded="false"
-      data-index-url="generated/search-index.json" />
-    <button type="submit" class="md-button md-button--primary">Buscar</button>
-  </form>
-  <div id="vmd-global-search-results" class="home-search-results" hidden>
-    <p id="vmd-global-search-status" class="home-search-status" role="status" aria-live="polite"></p>
-    <div id="vmd-global-search-list" class="home-search-list"></div>
-    <a id="vmd-global-search-all" class="home-search-all" href="generated/catalog/" hidden>Ver catálogo completo</a>
-  </div>
-  <p class="home-search-scope">Busca títulos, números e rótulos de artigos. No leitor, use a busca para localizar dispositivos no texto aberto.</p>
 </section>
 
 <section class="home-quick-access" aria-labelledby="quick-access-title">
