@@ -19,7 +19,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -38,7 +38,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -57,7 +57,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
