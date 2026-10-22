@@ -31,8 +31,8 @@ def main() -> int:
         text = path.read_text(encoding="utf-8")
         if "gh pr create --draft" in text:
             errors.append(f"{path.name}: PRs de atualização não podem depender de ação humana para sair de rascunho")
-        if path.name == "prepare-update-pr.yml" and "gh pr merge" not in text:
-            errors.append(f"{path.name}: merge autônomo da proposta ausente")
+        if path.name == "prepare-update-pr.yml" and "gh pr merge" in text:
+            errors.append(f"{path.name}: PR de atualização não pode ser mesclado automaticamente")
         if path.name in {"quality.yml", "release.yml", "weekly-completeness.yml"}:
             if "sync_editorial_matrix.py" not in text:
                 errors.append(f"{path.name}: gate da matriz editorial ausente")

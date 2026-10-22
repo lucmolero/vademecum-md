@@ -1,0 +1,5 @@
+# Governança mínima do corpus e da camada de publicação.
+* @lucmolero
+bases/ @lucmolero
+manifests/ @lucmolero
+.github/workflows/ @lucmolero

@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title>Marca VadeMecum MD</title>
-  <rect width="64" height="64" rx="14" fill="#13243a"/>
-  <path d="M10 18h18c6 0 11 5 11 11v25c-3-3-7-4-11-4H10z" fill="#fbf8f0"/>
-  <path d="M54 18H36c-6 0-11 5-11 11v25c3-3 7-4 11-4h18z" fill="#e7d7ac"/>
-  <path d="M32 24v31" stroke="#b48a3c" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">VadeMecum MD</title>
+  <desc id="desc">Livro aberto dividido por um eixo de dados.</desc>
+  <rect width="64" height="64" rx="16" fill="#13243A"/>
+  <path d="M10 17h17c6.6 0 11 3.8 11 10v26c-3.1-2.8-6.7-4.2-11-4.2H10V17Z" fill="#FBF8F0"/>
+  <path d="M54 17H37c-6.6 0-11 3.8-11 10v26c3.1-2.8 6.7-4.2 11-4.2h17V17Z" fill="#E7D7AC"/>
+  <path d="M32 23v30" stroke="#B48A3C" stroke-width="3"/>
+  <circle cx="32" cy="23" r="3" fill="#2D7659"/>
+  <circle cx="32" cy="35" r="2" fill="#2D7659"/>
 </svg>

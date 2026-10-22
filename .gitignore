@@ -13,6 +13,9 @@ htmlcov/
 .private/
 site_docs/generated/
 site/
+!tools/site/
+!tools/site/**
+tools/site/__pycache__/
 build/
 dist/
 reports/

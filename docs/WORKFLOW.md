@@ -2,7 +2,9 @@
 
 O corpus federal é atualizado por um fluxo autônomo, reproduzível e auditável.
 A aquisição, a análise jurídica, a aplicação e a publicação permanecem separadas
-por gates técnicos, mas nenhuma etapa depende de decisão ou ação do usuário.
+por gates técnicos. A proposta é aberta automaticamente como Pull Request; o
+merge permanece uma decisão de governança do repositório, não uma decisão sobre
+cada diploma.
 
 ## Ciclo autônomo
 

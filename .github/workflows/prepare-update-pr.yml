@@ -105,7 +105,7 @@ jobs:
           pr_url=$(gh pr create --base "$base_branch" --head "$branch" \
             --title "chore: legislation update proposal" \
             --body-file "$proposal_file")
-          gh pr merge "$pr_url" --auto --squash --delete-branch=false
+          echo "Update proposal opened for governance review: $pr_url"
       - name: Upload non-sensitive proposal report
         uses: actions/upload-artifact@v4
         with:

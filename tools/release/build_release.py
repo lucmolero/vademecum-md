@@ -5,25 +5,23 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import sys
 import zipfile
 from datetime import date
 from pathlib import Path
 
 
 ROOT = Path(__file__).parents[2]
-import sys
 sys.path.insert(0, str(ROOT / "tools"))
 from pipeline_modes import load_modes, resolve_mode  # noqa: E402
+
+
 PUBLIC_ROOTS = (
-    Path("bases/curated"),
-    Path("bases/derived"),
-    Path("bases/history/alteracoes"),
-    Path("bases/history/versoes"),
-    Path("docs"),
-    Path("manifests"),
-    Path("README.md"),
-    Path("SECURITY.md"),
-    Path("LICENSE.md"),
+    Path("bases/curated"), Path("bases/derived"),
+    Path("bases/history/alteracoes"), Path("bases/history/versoes"),
+    Path("docs"), Path("manifests"), Path("README.md"),
+    Path("CHANGELOG.md"), Path("CITATION.cff"), Path("CONTRIBUTING.md"),
+    Path("CODE_OF_CONDUCT.md"), Path("SECURITY.md"), Path("LICENSE.md"),
 )
 PRIVATE_MARKERS = (".private/", "bases/raw/", "raw" + ".githubusercontent.com", "c:\\users\\", "/home/")
 
@@ -89,23 +87,20 @@ def main() -> int:
             archive.writestr(info, path.read_bytes())
     checksums = {path.relative_to(args.output).as_posix(): sha256(path) for path in [archive_path]}
     manifest = {
-        "schema": "public-release-package/v1",
-        "product": "vademecum-md",
-        "version": version,
-        "generated_at": generated_at,
-        "corpus_count": release.get("corpus_count"),
-        "files_count": len(files),
-        "archive": archive_name,
-        "sha256": checksums,
-        "private_data_included": False,
-        "mode": mode,
+        "schema": "public-release-package/v1", "product": "vademecum-md",
+        "version": version, "generated_at": generated_at,
+        "corpus_count": release.get("corpus_count"), "files_count": len(files),
+        "archive": archive_name, "sha256": checksums,
+        "private_data_included": False, "mode": mode,
     }
-    (args.output / "release-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (args.output / "release-manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     (args.output / "CHANGELOG.md").write_text(
-        f"# vademecum-md {version}\n\nRelease reproduzível gerada em {generated_at}.\n\n"
+        f"# vademecum-md {version}\n\nRelease reproducivel gerada em {generated_at}.\n\n"
         f"- Documentos no corpus: {release.get('corpus_count')}\n"
-        f"- Arquivos públicos empacotados: {len(files)}\n"
-        "- Dados privados de aquisição: não incluídos\n",
+        f"- Arquivos publicos empacotados: {len(files)}\n"
+        "- Dados privados de aquisicao: nao incluidos\n",
         encoding="utf-8",
     )
     print(json.dumps(manifest, ensure_ascii=False))
