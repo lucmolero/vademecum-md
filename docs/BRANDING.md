@@ -33,13 +33,15 @@ nunca é necessário para compreender uma norma. A política
 `prefers-reduced-motion` remove animações decorativas e mantém a navegação
 completa por teclado.
 
-Os vetores em `site_docs/assets` são locais e não carregam fontes, imagens ou
-rastreadores externos. A origem versionada, as dependências e as lacunas de
-licenciamento estão registradas em [`docs/ASSET_INVENTORY.md`](ASSET_INVENTORY.md).
+Os vetores em `site_docs/assets` são locais e não carregam arquivos de fonte,
+imagens ou rastreadores externos. A origem versionada, a Source Serif 4 usada
+somente na geração local de cartões e as licenças MIT/OFL estão registradas em
+[`docs/ASSET_INVENTORY.md`](ASSET_INVENTORY.md). A confirmação de titularidade
+dos ativos autorais continua pendente do responsável do projeto.
 O `logo-lockup.svg` atende fundos claros e o
 `logo-lockup-dark.svg` atende fundos escuros; o `brand-mark.svg` é reservado
-para favicon e navegação compacta. Registrar autoria e licença de cada asset
-antes de redistribuir materiais promocionais.
+para favicon e navegação compacta. Registrar autoria e licença de cada ativo
+novo antes de redistribuir materiais promocionais.
 
 ## Direção de marca para o rebranding
 

@@ -1,6 +1,6 @@
 # Plano mestre de rebranding e refinamento — VadeMecum MD
 
-> **Versão:** 13 | **Atualizado:** 2026-10-22
+> **Versão:** 14 | **Atualizado:** 2026-10-22
 >
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
@@ -14,10 +14,10 @@
 | README e descoberta | README local foi simplificado como índice sem emojis; homepage local prioriza busca, catálogo e seis leis | Testes de contrato na suíte; revisar render real do GitHub após integração |
 | Site e grafo | Hero compacto, busca em fluxo e recorte navegável do grafo real; build estrito, 396 páginas e budgets aprovados no CI | `mkdocs build --strict`; `tools/validate/validate_site.py`; `tools/validate/validate_site_budget.py`; inspeção visual real ainda pendente |
 | Leitor e acessibilidade | Miolo legal em 13 px reais (CSS em px para neutralizar a escala raiz de 125%), quatro níveis de 13-16 px e barra reorganizada em grupos; sidebars mantidas | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
-| Identidade e ativos | Direção “Índice normativo” aplicada; escolha do usuário documentada como MIT para código e marca | Revisão de titularidade/proveniência, aplicação final em favicon e avaliação com públicos ainda pendentes |
+| Identidade e ativos | Marca e código sob MIT; Source Serif 4 (4.005R) vendorizada sob OFL 1.1 com hashes e cache offline para cartões | Confirmação de titularidade/autoria dos vetores e avaliação com públicos ainda pendentes |
 | Desempenho e dispositivos | CI aplica limites gzip-9: home inicial 120 KiB, busca 80 KiB, maior diploma 300 KiB; preview medido em 84.992 / 67.015 / 262.057 bytes | Core Web Vitals p75 em mobile/desktop e testes com dispositivos/rede definidos continuam pendentes |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 permanece draft; `quality` e `site` passaram no commit `f590db8`, com deploy ignorado | Revisão humana, gates de direitos/desempenho/rollback e smoke test pós-deploy ainda pendentes |
+| Produção e integração | PR #28 continua draft; checks verdes no commit `a0af205`; a mudança de fonte/cache offline está nesta revisão | CI da nova revisão, gates humanos, direitos, desempenho de campo, rollback e smoke test pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -1230,3 +1230,13 @@ A composição da homepage mantém busca, grafo real e leis frequentes na primei
 **Verificação local:** `tools/site/build_site.py` regenerou 375 documentos e 1.841 relações; `mkdocs build --strict` passou com o plugin social desativado. `validate_site.py` validou 396 páginas e `validate_site_budget.py` passou (84.817 bytes gzip estimados para home inicial; 67.015 para busca sob demanda; 262.057 para o maior diploma). Com `CI=true`, o build estrito local aborta por 11 avisos de Cairo ausente na máquina Windows; isso é limitação do ambiente de renderização das imagens sociais, não validação visual do layout. CI Linux confirmou o commit `f35cdd7`: `quality` passou em push e pull request (72 testes), e `site` passou com o validador de páginas e budgets, enviou o artefato de preview de 10.364.563 bytes e manteve `deploy` ignorado. Os valores CI gzip-9 foram 84.992 / 67.015 / 262.057 bytes. A inspeção visual do artefato continua pendente. Os commits documentais `8213fc4` e `f590db8` também tiveram `quality` e build Pages aprovados; deploy foi ignorado.
 
 A página pública consultada responde 200, mas continua na release anterior: o HTML não contém os novos nós do hero nem a barra do leitor. Não houve navegador disponível para inspeção visual local nesta sessão. Revisão real de desktop/mobile, tema escuro, teclado, leitor de tela e teste formativo continuam gates de lançamento.
+
+## 51. Cartões sociais reproduzíveis e auditoria de ativos - 2026-10-22
+
+A configuração social usava Source Serif 4 sem fixar os arquivos: Material for MkDocs baixa automaticamente a família de Google Fonts quando não encontra cache. Agora o repositório inclui os arquivos estáticos Regular e Bold da release 4.005R do upstream Adobe no commit `2823e993c53fca27c5c8749f529b56a5a7c77b6b`, e a licença SIL OFL 1.1 correspondente está junto aos arquivos. TTFs não estão sob o MIT do projeto e não são copiados para o Pages.
+
+`tools/site/prepare_social_fonts.py` confirma SHA-256 e popula o cache explicitamente definido em `mkdocs.yml`. Os workflows `quality` e `site` executam a preparação antes do MkDocs. A resolução local de Regular/Bold passou com `requests.get` substituído por erro, provando que a resolução dos arquivos não depende da rede. As validações locais de Markdown (22 documentos), workflows (nove arquivos) e os seis SVGs passaram; o site gerado localmente não contém TTF/OTF/WOFF. Build de Pages e testes completos na nova cabeça ainda precisam confirmar a integração em Linux.
+
+O inventário foi refeito: agora lista os seis SVGs publicados, separa os dados do grafo da licença do desenho, identifica a fonte OFL, remove a decisão de licença já resolvida e corrige numeração e resíduo literal no fim do arquivo. A escolha MIT do usuário está aplicada ao código e à marca autoral, mas titularidade/autoria dos vetores continua dependendo da confirmação do responsável. Esse gate não pode ser inferido de autoria Git ou de licença declarada.
+
+**Estado:** decisão e provenance técnica estão registradas; CI desta revisão, inspeção visual, autoria/autorização, acessibilidade manual, avaliação formativa, CWV, rollback e smoke test de produção permanecem gates abertos.

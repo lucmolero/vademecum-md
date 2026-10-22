@@ -10,6 +10,7 @@ plugins:
   - search
   - social:
       enabled: !ENV [CI, false]
+      cache_dir: .cache/plugin/social
       cards_dir: assets/images/social
       cards_include:
         - index.md

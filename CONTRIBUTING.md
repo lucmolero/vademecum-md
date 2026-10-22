@@ -47,6 +47,7 @@ python tools/check_markdown.py
 python tools/validate/validate_workflows.py
 python tools/build_public_indexes.py --apply
 python tools/site/build_site.py
+python tools/site/prepare_social_fonts.py
 mkdocs build --strict
 python tools/validate/validate_site.py
 python tools/validate_release.py --stabilization
