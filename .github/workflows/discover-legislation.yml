@@ -23,7 +23,7 @@ jobs:
       - name: Discover official candidates
         run: python tools/acquire/discover_legislation.py --fetch --output reports/discovery-queue.json
       - name: Upload discovery queue
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: legislation-discovery-queue
           path: reports/discovery-queue.json
