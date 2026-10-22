@@ -101,7 +101,7 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Grandes Códigos da República", catalog.read_text(encoding="utf-8"))
         homepage = ROOT / "site_docs/index.md"
         homepage_text = homepage.read_text(encoding="utf-8")
-        self.assertIn("Encontre a lei.", homepage_text)
+        self.assertIn("Legislação federal.", homepage_text)
         self.assertIn('id="home-search"', homepage_text)
         self.assertIn("Leis de consulta frequente", homepage_text)
         self.assertIn('class="home-data-strip"', homepage_text)
