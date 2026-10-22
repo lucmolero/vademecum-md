@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.1 — contratos de consumo
+
+- Produto posicionado explicitamente para Direito, dados e agentes de IA.
+- Contratos de consumo humano e machine-readable para citação e evidência.
+- Especificação de produto com critérios de qualidade, governança e evolução.
+- Homepage e documentação com três jornadas de uso.
+
+Esta release é um corpus federal curado e não uma publicação oficial. Consulte a
+fonte normativa indicada em cada documento e respeite a data de corte.
+
 ## 1.1.0 — release editorial premium
 
 - Homepage editorial regenerada a partir dos manifestos do corpus.
@@ -7,11 +17,6 @@
 - Motion design acessível com suporte a movimento reduzido.
 - Fluxo de atualização limitado à abertura de Pull Requests, sem merge automático.
 - Métricas de qualidade e baseline sincronizados com o estado real do projeto.
-- Contratos de consumo para Direito, dados e agentes de IA.
-- Manifesto machine-readable de citação, autoridade e regras de recusa.
-
-Esta release é um corpus federal curado e não uma publicação oficial. Consulte a
-fonte normativa indicada em cada documento e respeite a data de corte.
 
 ## 1.0.3 — snapshot histórico
 

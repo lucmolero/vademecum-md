@@ -31,7 +31,7 @@ Exemplo de citação operacional:
 
 ```text
 br-federal-lei_ordinaria-10406-2002, art. 1º
-VadeMecum MD v1.1.0, data de corte 2026-10-21.
+VadeMecum MD v1.1.1, data de corte 2026-10-21.
 Fonte oficial: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm
 ```
 
@@ -108,7 +108,7 @@ Uma skill ou ferramenta consumidora deve produzir uma estrutura equivalente a:
     {
       "document_id": "br-federal-lei_ordinaria-10406-2002",
       "dispositivo": "art. 1º",
-      "release": "v1.1.0",
+      "release": "v1.1.1",
       "data_corte": "2026-10-21",
       "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
     }

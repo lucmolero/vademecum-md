@@ -7,6 +7,6 @@ authors:
     given-names: Lucas
 repository-code: "https://github.com/lucmolero/vademecum-md"
 license: MIT
-version: 1.1.0
-date-released: 2026-10-21
+version: 1.1.1
+date-released: 2026-10-22
 abstract: "Legislação federal brasileira estruturada para leitura humana, validação auditável e uso por máquinas."

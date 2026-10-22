@@ -1,6 +1,6 @@
 # Relatório de completude
 
-Data de geração: `2026-10-21`.
+Data de geração: `2026-10-22`.
 
 - Documentos: **375**
 - Textos integrais: **375/375**
