@@ -160,15 +160,17 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn('id="home-search"', homepage)
         self.assertIn('class="home-law-list"', homepage)
         self.assertIn(".md-content.font-sm .md-typeset p", css)
-        self.assertIn("font-size: .8125rem", css)
+        self.assertIn("font-size: 13px", css)
         self.assertIn(".md-content.font-md .md-typeset p", css)
-        self.assertIn("font-size: .875rem", css)
+        self.assertIn("font-size: 14px", css)
+        self.assertIn("font-size: 16px", css)
         self.assertIn('readPreference("vmd_font_size_idx_v3", "0")', reader)
         self.assertIn("decrease.disabled = sizeIndex === 0", reader)
         self.assertIn("increase.disabled = sizeIndex === sizes.length - 1", reader)
-        toolbar = re.search(r"\.reader-toolbar\s*\{([^}]+)\}", css)
+        toolbar = re.search(r"\.md-content:has\(\.law-hero\) \.reader-toolbar\s*\{([^}]+)\}", css)
         self.assertIsNotNone(toolbar)
-        self.assertNotIn("position: sticky", toolbar.group(1))
+        self.assertIn("position: sticky", toolbar.group(1))
+        self.assertIn(".md-content:has(.law-hero) .reader-toolbar { position: static", css)
 
     def test_markdown_law_index_links_every_canonical_document(self):
         index_path = ROOT / "docs/INDICE_LEGISLACAO.md"
