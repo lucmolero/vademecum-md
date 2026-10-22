@@ -1,6 +1,6 @@
 # Plano mestre de rebranding e refinamento — VadeMecum MD
 
-> **Versão:** 14 | **Atualizado:** 2026-10-22
+> **Versão:** 15 | **Atualizado:** 2026-10-22
 >
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
@@ -10,14 +10,14 @@
 
 | Frente | Situação verificada | Evidência de saída |
 | --- | --- | --- |
-| Corpus e proveniência | Candidato passa: 375 documentos; auditoria estrita de fidelidade `pass: 375`; release com 33/33 gates P0 em revalidações anteriores | `tools/audit_fidelity.py --strict`; `tools/validate_release.py --stabilization`; revalidar no commit candidato |
-| README e descoberta | README local foi simplificado como índice sem emojis; homepage local prioriza busca, catálogo e seis leis | Testes de contrato na suíte; revisar render real do GitHub após integração |
-| Site e grafo | Hero compacto, busca em fluxo e recorte navegável do grafo real; build estrito, 396 páginas e budgets aprovados no CI | `mkdocs build --strict`; `tools/validate/validate_site.py`; `tools/validate/validate_site_budget.py`; inspeção visual real ainda pendente |
+| Corpus e proveniência | CI da cabeça `a60b5ef` passou: 375 documentos e gates de release sem erros | `quality` push 39761417981 e PR 39761423458; validação de fidelidade e release no workflow |
+| README e descoberta | README candidato é índice sem emojis, com links para Markdown e grafo; contrato passou no CI | Testes `quality` 39761423458; revisar render real do GitHub após integração |
+| Site e grafo | Build de PR 39761423418 passou: 396 HTML, 375 páginas legais e budgets; produção segue no hero antigo | Workflow `site`; gzip: home inicial 84.992 B, busca 67.015 B, maior lei 262.057 B; inspeção visual real pendente |
 | Leitor e acessibilidade | Miolo legal em 13 px reais (CSS em px para neutralizar a escala raiz de 125%), quatro níveis de 13-16 px e barra reorganizada em grupos; sidebars mantidas | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
 | Identidade e ativos | Marca e código sob MIT; Source Serif 4 (4.005R) vendorizada sob OFL 1.1 com hashes e cache offline para cartões | Confirmação de titularidade/autoria dos vetores e avaliação com públicos ainda pendentes |
-| Desempenho e dispositivos | CI aplica limites gzip-9: home inicial 120 KiB, busca 80 KiB, maior diploma 300 KiB; preview medido em 84.992 / 67.015 / 262.057 bytes | Core Web Vitals p75 em mobile/desktop e testes com dispositivos/rede definidos continuam pendentes |
+| Desempenho e dispositivos | Budgets de transferência passam no CI: 84.992 / 67.015 / 262.057 bytes gzip contra 122.880 / 81.920 / 307.200 | Core Web Vitals de campo em mobile/desktop e avaliação em dispositivos/rede reais continuam pendentes |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 continua draft; quality passou em `049e6b1` e os builds do Pages passaram em `8a40323`, com deploy ignorado | Gates humanos, direitos, desempenho de campo, rollback e smoke test pós-deploy |
+| Produção e integração | PR #28 draft, cabeça `a60b5ef`; quality push/PR e build Pages passaram; deploy ignorado. Produção ainda serve a versão antiga | PR #28; Actions 39761417981, 39761423458 e 39761423418; ainda faltam gates humanos, direitos, campo, rollback e smoke pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -1217,7 +1217,7 @@ Executei o validador contra os 468 arquivos do artefato Pages do candidato, extr
 
 O orçamento de transferência cobre regressão de payload, não tempo percebido. Para avaliação em campo, manter como alvos no percentil 75, separados por mobile e desktop: LCP ≤ 2,5 s, INP ≤ 200 ms e CLS ≤ 0,1, conforme [Google Search Central](https://developers.google.com/search/docs/appearance/core-web-vitals) e [web.dev](https://web.dev/articles/vitals). Esses valores ainda não foram medidos no navegador real; ausência de dados de campo não deve ser relatada como aprovação.
 
-Os workflows de transferência também foram atualizados para upload-artifact v7 e download-artifact v8. A revalidação combinada no CI permanece pendente nesta versão do plano.
+Os workflows de transferência também foram atualizados para upload-artifact v7 e download-artifact v8. O CI da cabeça `a60b5ef` revalidou a configuração combinada; quality passou em push e PR e o build do Pages passou com deploy ignorado.
 
 **Estado:** os limites de payload agora são reproduzíveis e bloqueiam regressões no build. Permanecem NO-GO a inspeção visual/acessível real, as sessões com usuários, verificação de direitos, medição de campo, rollback e smoke test pós-publicação.
 
@@ -1235,8 +1235,29 @@ A página pública consultada responde 200, mas continua na release anterior: o 
 
 A configuração social usava Source Serif 4 sem fixar os arquivos: Material for MkDocs baixa automaticamente a família de Google Fonts quando não encontra cache. Agora o repositório inclui os arquivos estáticos Regular e Bold da release 4.005R do repositório Adobe no commit `2823e993c53fca27c5c8749f529b56a5a7c77b6b`, e a licença SIL OFL 1.1 correspondente está junto aos arquivos. TTFs não estão sob o MIT do projeto e não são copiados para o Pages.
 
-`tools/site/prepare_social_fonts.py` confirma SHA-256 e popula o cache explicitamente definido em `mkdocs.yml`. Os workflows `quality` e `site` executam a preparação antes do MkDocs. A resolução local de Regular/Bold passou com `requests.get` substituído por erro, provando que a resolução dos arquivos não depende da rede. As validações locais de Markdown (22 documentos), workflows (nove arquivos) e os seis SVGs passaram; o site gerado localmente não contém TTF/OTF/WOFF. O build de Pages em `8a40323` e o CI completo em `70189f7` confirmaram a integração em Linux; o build de PR mais recente também passou com deploy ignorado.
+`tools/site/prepare_social_fonts.py` confirma SHA-256 e popula o cache explicitamente definido em `mkdocs.yml`. Os workflows `quality` e `site` executam a preparação antes do MkDocs. A resolução local de Regular/Bold passou com `requests.get` substituído por erro, provando que a resolução dos arquivos não depende da rede. As validações locais de Markdown (22 documentos), workflows (nove arquivos) e os seis SVGs passaram; o site gerado localmente não contém TTF/OTF/WOFF. Os builds de Pages em `8a40323` e `a60b5ef` e os CI completos em `70189f7` e `a60b5ef` confirmaram a integração em Linux; o deploy foi ignorado nos eventos de PR.
 
 O inventário foi refeito: agora lista os seis SVGs publicados, separa os dados do grafo da licença do desenho, identifica a fonte OFL, remove a decisão de licença já resolvida e corrige numeração e resíduo literal no fim do arquivo. A escolha MIT do usuário está aplicada ao código e à marca autoral, mas titularidade/autoria dos vetores continua dependendo da confirmação do responsável. Esse gate não pode ser inferido de autoria Git ou de licença declarada.
 
 **Estado:** decisão e provenance técnica estão registradas; CI em `70189f7` e build Pages em `8a40323` passaram; inspeção visual, autoria/autorização, acessibilidade manual, avaliação formativa, CWV, rollback e smoke test de produção permanecem gates abertos.
+
+## 52. Auditoria de estado e gates para lançamento - 2026-10-22
+
+A revisão do estado remoto confirma a candidata `a60b5efbd4539808180fcd9207b2a173fceb4356` na PR #28. `quality` passou no push (39761417981) e na PR (39761423458); o workflow `site` passou (39761423418), com 396 páginas HTML, 375 diplomas e budgets gzip de 84.992 bytes para home/recursos iniciais, 67.015 para busca sob demanda e 262.057 para a maior página legal. Os limites seguem 122.880, 81.920 e 307.200 bytes. A implantação foi corretamente ignorada nos eventos de PR.
+
+A leitura HTTP atual da produção respondeu 200 para homepage (37.495 bytes), grafo (29.369 bytes) e catálogo (116.774 bytes). A homepage ainda contém a âncora antiga `para-desenvolvedores-de-agentes-de-ia` e não contém `hero-graph-node`; isso confirma que o usuário ainda não vê a candidata. A ferramenta Computer Use retornou `apps=[]` e `browsers=[]`, e o navegador de prévia não está disponível nesta sessão. Não houve inspeção visual, navegação por teclado ou teste com leitor de tela; não declarar esses gates aprovados com base no HTML/CI.
+
+**Matriz final de gates externos:**
+
+| Gate | Estado | Evidência necessária para fechar | Próxima ação |
+| --- | --- | --- | --- |
+| Revisão visual do README e Pages | Aberto | Capturas e checklist desktop/mobile, claro/escuro, zoom e documentos longos | Revisar o artifact Pages da PR em navegador e registrar defeitos/correções |
+| Teclado, foco, reflow e leitor de tela | Aberto | Percurso real sem mouse, foco visível, zoom/reflow e leitura coerente | Executar revisão manual no navegador e corrigir bloqueios antes do merge |
+| Avaliação formativa | Aberto | Cinco sessões documentadas no roteiro da seção 42, com resultados reais | Recrutar participantes; não inventar comentários nem taxas de sucesso |
+| Autoria e autorização dos ativos | Aberto | Confirmação do responsável para os seis SVGs e três estudos conceituais, ou substituição/atribuição adequada | Confirmar titularidade/autorização e registrar a decisão no inventário |
+| Amostras legais e proveniência | Aberto | Conferência humana de textos, fonte, identificador e corte da release | Conferir amostra contra fonte oficial e registrar release/corte |
+| Desempenho de campo | Parcial | Medição real de LCP/INP/CLS no p75 em mobile e desktop dentro das metas | Coletar dados do preview com dispositivo/rede definidos; não inferir de gzip |
+| Compatibilidade e rollback | Parcial | Deep links smoke-tested e ensaio documentado de retorno à release anterior | Revalidar as 395 rotas e ensaiar rollback sem remover artefatos antigos |
+| Merge, deploy e produção | Bloqueado por gates anteriores | Aprovação da PR, artefato testado publicado e smoke test público pós-deploy | Manter draft/NO-GO até aprovação humana; após publicação, comparar produção à candidata |
+
+**Decisão:** manter PR #28 em draft e estado NO-GO. Não há falha técnica conhecida nos checks atuais; o bloqueio é evidência humana/operacional ainda ausente e a produção desatualizada. Este diagnóstico não autoriza merge ou deploy. O plano continua aberto até haver evidência verificável para cada gate, as correções forem incorporadas, o fluxo protegido publicar a revisão aprovada e o smoke test público confirmar o resultado.
