@@ -20,7 +20,7 @@ Os três estudos em `docs/brand-directions/` (`01-indice-normativo.svg`, `02-reg
 
 ## Fonte de terceiros para cartões sociais
 
-- Família: **Source Serif 4**, versão **4.005R**, Adobe; upstream `adobe-fonts/source-serif` no commit `2823e993c53fca27c5c8749f529b56a5a7c77b6b`.
+- Família: **Source Serif 4**, versão **4.005R**, Adobe; reposit?rio `adobe-fonts/source-serif`, commit `2823e993c53fca27c5c8749f529b56a5a7c77b6b`.
 - Licença: SIL Open Font License 1.1, copiada em `tools/site/fonts/source-serif-4/LICENSE.md`. O MIT do projeto não substitui nem relicencia essa fonte.
 - O repositório inclui apenas os arquivos TTF Regular e Bold necessários aos cartões, com os nomes internos originais preservados. SHA-256: Regular `e5a4ee6a3d87bb9024796be390c6771e2a0eb1883dae25effaf57ca01668e24b`; Bold `7cf4f4e1ad74f45058d5bc61716b82560442fbdcd9d3654d2dea96bf6c683d86`.
 - `tools/site/prepare_social_fonts.py` valida os hashes e semeia o cache do plugin antes de cada build social. O build não baixa a fonte da rede. A fonte serve somente para rasterizar os cartões; não é uma fonte de runtime nem vai para o artefato Pages.

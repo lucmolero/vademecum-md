@@ -1233,7 +1233,7 @@ A página pública consultada responde 200, mas continua na release anterior: o 
 
 ## 51. Cartões sociais reproduzíveis e auditoria de ativos - 2026-10-22
 
-A configuração social usava Source Serif 4 sem fixar os arquivos: Material for MkDocs baixa automaticamente a família de Google Fonts quando não encontra cache. Agora o repositório inclui os arquivos estáticos Regular e Bold da release 4.005R do upstream Adobe no commit `2823e993c53fca27c5c8749f529b56a5a7c77b6b`, e a licença SIL OFL 1.1 correspondente está junto aos arquivos. TTFs não estão sob o MIT do projeto e não são copiados para o Pages.
+A configuração social usava Source Serif 4 sem fixar os arquivos: Material for MkDocs baixa automaticamente a família de Google Fonts quando não encontra cache. Agora o repositório inclui os arquivos estáticos Regular e Bold da release 4.005R do reposit?rio Adobe no commit `2823e993c53fca27c5c8749f529b56a5a7c77b6b`, e a licença SIL OFL 1.1 correspondente está junto aos arquivos. TTFs não estão sob o MIT do projeto e não são copiados para o Pages.
 
 `tools/site/prepare_social_fonts.py` confirma SHA-256 e popula o cache explicitamente definido em `mkdocs.yml`. Os workflows `quality` e `site` executam a preparação antes do MkDocs. A resolução local de Regular/Bold passou com `requests.get` substituído por erro, provando que a resolução dos arquivos não depende da rede. As validações locais de Markdown (22 documentos), workflows (nove arquivos) e os seis SVGs passaram; o site gerado localmente não contém TTF/OTF/WOFF. Build de Pages e testes completos na nova cabeça ainda precisam confirmar a integração em Linux.
 
