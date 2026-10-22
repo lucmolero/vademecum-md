@@ -40,6 +40,8 @@ jobs:
         run: python tools/audit_fidelity.py --output bases/derived/relatorios/fidelity-audit-ci.json
       - name: Build reader site
         run: python tools/site/build_site.py
+      - name: Render MkDocs site
+        run: mkdocs build --strict
       - name: Accessibility baseline
         run: python tools/validate/validate_site.py
       - name: Validate reader site inputs
