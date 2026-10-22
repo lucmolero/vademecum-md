@@ -17,7 +17,7 @@
 | Identidade e ativos | Marca e código sob MIT; Source Serif 4 (4.005R) vendorizada sob OFL 1.1 com hashes e cache offline para cartões | Confirmação de titularidade/autoria dos vetores e avaliação com públicos ainda pendentes |
 | Desempenho e dispositivos | CI aplica limites gzip-9: home inicial 120 KiB, busca 80 KiB, maior diploma 300 KiB; preview medido em 84.992 / 67.015 / 262.057 bytes | Core Web Vitals p75 em mobile/desktop e testes com dispositivos/rede definidos continuam pendentes |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 continua draft; checks verdes no commit `a0af205`; a mudança de fonte/cache offline está nesta revisão | CI da nova revisão, gates humanos, direitos, desempenho de campo, rollback e smoke test pós-deploy |
+| Produção e integração | PR #28 continua draft; quality passou em `049e6b1` e os builds do Pages passaram em `8a40323`, com deploy ignorado | Gates humanos, direitos, desempenho de campo, rollback e smoke test pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
