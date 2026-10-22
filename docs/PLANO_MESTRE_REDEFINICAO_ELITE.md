@@ -15,7 +15,7 @@
 | Site e grafo | Build estrito, validador de 396 páginas, grafo canônico e transfer budgets automatizados | mkdocs build --strict; tools/validate/validate_site.py; tools/validate/validate_site_budget.py; inspeção visual ainda pendente |
 | Leitor e acessibilidade | Fonte de interface com padrão compacto de 13 px, quatro níveis de 13–16 px e sidebars mantidas; testes de contrato passam | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
 | Identidade e ativos | Direção “Índice normativo” aplicada; escolha do usuário documentada como MIT para código e marca | Revisão de titularidade/proveniência, aplicação final em favicon e avaliação com públicos ainda pendentes |
-| Desempenho e dispositivos | CI aplica limites gzip-9: home inicial 120 KiB, busca 80 KiB, maior diploma 300 KiB; preview medido em 85.068 / 67.015 / 262.044 bytes | Core Web Vitals p75 em mobile/desktop, zoom e budget real ainda exigem browser e rede definidos |
+| Desempenho e dispositivos | CI aplica limites gzip-9: home inicial 120 KiB, busca 80 KiB, maior diploma 300 KiB; preview medido em 84.817 / 67.015 / 262.057 bytes | Core Web Vitals p75 em mobile/desktop, zoom e budget real ainda exigem browser e rede definidos |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
 | Produção e integração | PR #28 permanece draft; updates de upload/download e preview Pages estão na candidata; verificação combinada em CI pendente | Concluir checks, revisão humana, gates de direitos/desempenho/rollback e smoke test pós-deploy |
 
@@ -1220,3 +1220,13 @@ O orçamento de transferência cobre regressão de payload, não tempo percebido
 Os workflows de transferência também foram atualizados para upload-artifact v7 e download-artifact v8. A revalidação combinada no CI permanece pendente nesta versão do plano.
 
 **Estado:** os limites de payload agora são reproduzíveis e bloqueiam regressões no build. Permanecem NO-GO a inspeção visual/acessível real, as sessões com usuários, verificação de direitos, medição de campo, rollback e smoke test pós-publicação.
+
+## 50. Refino visual do hero e da tipografia do leitor ? 2026-10-22
+
+A regra anterior definia o texto em `.8125rem`, mas Material for MkDocs escala a raiz para 125%; portanto, o corpo aparecia com cerca de 16 px enquanto o controle informava 13 px. A folha agora fixa o conte?do legal em 13 px e oferece 14, 15 e 16 px, com entrelinha compacta. T?tulos de artigo, metadados e a barra de controles tamb?m foram reduzidos. Os controles s?o agrupados por navega??o e tamanho do texto, sem o papel ARIA `toolbar`, que exigiria navega??o interna por setas n?o implementada. Em telas estreitas, a barra deixa de ser sticky e quebra em linhas.
+
+A composi??o da homepage mant?m busca, grafo real e leis frequentes na primeira sequ?ncia de leitura. O painel do grafo perdeu gradientes e ornamentos, ganhou superf?cie clara, borda fina e menor altura. Resultados de busca entram no fluxo, evitando sobreposi??o ao conte?do. Nenhuma sidebar ou rota de conte?do foi removida.
+
+**Verifica??o local:** `tools/site/build_site.py` regenerou 375 documentos e 1.841 rela??es; `mkdocs build --strict` passou com o plugin social desativado. `validate_site.py` validou 396 p?ginas e `validate_site_budget.py` passou (84.817 bytes gzip estimados para home inicial; 67.015 para busca sob demanda; 262.057 para o maior diploma). Com `CI=true`, o build estrito local aborta por 11 avisos de Cairo ausente na m?quina Windows; isso ? limita??o do ambiente de renderiza??o das imagens sociais, n?o valida??o visual do layout. CI Linux para o commit atualizado ainda precisa confirmar o artefato.
+
+A p?gina p?blica consultada responde 200, mas continua na release anterior: o HTML n?o cont?m os novos n?s do hero nem a barra do leitor. N?o houve navegador dispon?vel para inspe??o visual local nesta sess?o. Revis?o real de desktop/mobile, tema escuro, teclado, leitor de tela e teste formativo continuam gates de lan?amento.

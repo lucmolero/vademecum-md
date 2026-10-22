@@ -584,8 +584,8 @@ def law_page(
     article_body = re.sub(rf"^#\s+{re.escape(title)}\s*\n+", "", article_body, count=1, flags=re.IGNORECASE)
     source_link = f'<a href="{esc(source)}" rel="noreferrer">Fonte oficial</a>' if source else "Fonte oficial indisponível"
     source_btn = f'<a href="{esc(source)}" class="btn-official-source" target="_blank" rel="noopener noreferrer">Fonte oficial ↗</a>' if source else ""
-    reader_toolbar = f'''<div class="reader-toolbar" role="toolbar" aria-label="Ferramentas de leitura forense">
-  <div class="reader-toolbar-group">
+    reader_toolbar = f'''<div class="reader-toolbar">
+  <div class="reader-toolbar-group" role="group" aria-label="Navegação do documento">
     <button type="button" class="btn-quick-jump" id="btn-quick-jump" aria-label="Buscar texto ou ir para um dispositivo (atalho Ctrl ou Command mais K)">
       Ir para dispositivo <kbd>Ctrl K</kbd>
     </button>
@@ -593,7 +593,7 @@ def law_page(
       Modo de leitura
     </button>
   </div>
-  <div class="reader-toolbar-group">
+  <div class="reader-toolbar-group reader-type-controls" role="group" aria-label="Tamanho do texto e fonte">
     <span class="reader-font-label" id="reader-font-label" aria-live="polite">Texto 13 px</span>
     <button type="button" class="btn-font-size" id="btn-font-decrease" aria-label="Diminuir o tamanho do texto">A−</button>
     <button type="button" class="btn-font-size" id="btn-font-increase" aria-label="Aumentar o tamanho do texto">A+</button>
