@@ -1,6 +1,6 @@
 # Plano mestre de rebranding e refinamento — VadeMecum MD
 
-> **Versão:** 17 | **Atualizado:** 2026-10-22
+> **Versão:** 18 | **Atualizado:** 2026-10-22
 >
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
@@ -10,14 +10,14 @@
 
 | Frente | Situação verificada | Evidência de saída |
 | --- | --- | --- |
-| Corpus e proveniência | CI da cabeça `7834fb8` passou: 375 documentos e gates de release sem erros | `quality` push 39762027254 e PR 39762032900; validação de fidelidade e release no workflow |
-| README e descoberta | README candidato é índice sem emojis, com links para Markdown e grafo; contrato passou no CI | Testes `quality` 39762032900; revisar render real do GitHub após integração |
-| Site e grafo | Build de PR 39762032936 passou: 396 HTML, 375 páginas legais e budgets; produção segue no hero antigo | Workflow `site`; gzip: home inicial 84.992 B, busca 67.015 B, maior lei 262.057 B; inspeção visual real pendente |
+| Corpus e proveniência | CI da cabeça `7be513e` passou: 375 documentos e gates de release sem erros | `quality` push 39762707378 e PR 39762715242; validação de fidelidade e release no workflow |
+| README e descoberta | README candidato é índice sem emojis, com links para Markdown e grafo; contrato passou no CI | Testes `quality` 39762715242; revisar render real do GitHub após integração |
+| Site e grafo | Build de PR 39762715330 passou: 396 HTML, 375 páginas legais e budgets; produção segue no hero antigo | Workflow `site`; gzip: home inicial 84.992 B, busca 67.015 B, maior lei 262.057 B; inspeção visual real pendente |
 | Leitor e acessibilidade | Miolo legal em 13 px reais (CSS em px para neutralizar a escala raiz de 125%), quatro níveis de 13-16 px e barra reorganizada em grupos; sidebars mantidas | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
 | Identidade e ativos | Marca e código sob MIT; Source Serif 4 (4.005R) vendorizada sob OFL 1.1 com hashes e cache offline para cartões | Confirmação de titularidade/autoria dos vetores e avaliação com públicos ainda pendentes |
 | Desempenho e dispositivos | Budgets de transferência passam no CI: 84.992 / 67.015 / 262.057 bytes gzip contra 122.880 / 81.920 / 307.200 | Core Web Vitals de campo em mobile/desktop e avaliação em dispositivos/rede reais continuam pendentes |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 draft, cabeça auditada `f4a81e8`; quality push/PR e build Pages passaram; deploy ignorado. Produção ainda serve a versão antiga | PR #28; Actions 39762246988, 39762254718 e 39762254509; ainda faltam gates humanos, direitos, campo, rollback e smoke pós-deploy |
+| Produção e integração | PR #28 draft, cabeça auditada `7be513e`; quality push/PR e build Pages passaram; deploy ignorado. Produção ainda serve a versão antiga | PR #28; Actions 39762707378, 39762715242 e 39762715330; ainda faltam gates humanos, direitos, campo, rollback e smoke pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -1243,9 +1243,9 @@ O inventário foi refeito: agora lista os seis SVGs publicados, separa os dados 
 
 ## 52. Auditoria de estado e gates para lançamento - 2026-10-22
 
-A revisão do estado remoto confirma a candidata `f4a81e8fc1feb6fbbd2436fb7019c3f6e8006fab` na PR #28. `quality` passou no push (39762246988) e na PR (39762254718); o workflow `site` passou (39762254509), com 396 páginas HTML, 375 diplomas e budgets gzip de 84.992 bytes para home/recursos iniciais, 67.015 para busca sob demanda e 262.057 para a maior página legal. Os limites seguem 122.880, 81.920 e 307.200 bytes. A implantação foi corretamente ignorada nos eventos de PR.
+A revisão do estado remoto confirma a candidata `7be513eaedb4af4f8105d49fff8631313aaab0fa` na PR #28. `quality` passou no push (39762707378) e na PR (39762715242); o workflow `site` passou (39762715330), com 396 páginas HTML, 375 diplomas e budgets gzip de 84.992 bytes para home/recursos iniciais, 67.015 para busca sob demanda e 262.057 para a maior página legal. Os limites seguem 122.880, 81.920 e 307.200 bytes. A implantação foi corretamente ignorada nos eventos de PR.
 
-O artefato Pages do workflow 39762254509 foi baixado e inspecionado sem extração insegura. Seu sitemap contém 395 rotas; todas resolvem a `index.html` correspondente dentro do artefato. O sitemap de produção também contém 395 URLs: conjuntos idênticos, zero rotas adicionadas/removidas. Home, grafo, catálogo, Código Civil e Lei 13.964/2019 responderam 200 por HTTP. A homepage ainda contém a âncora antiga `para-desenvolvedores-de-agentes-de-ia` e não contém `hero-graph-node`; isso confirma que o usuário ainda não vê a candidata. A ferramenta Computer Use retornou `apps=[]` e `browsers=[]`, e o navegador de prévia não está disponível nesta sessão. Não houve inspeção visual, navegação por teclado ou teste com leitor de tela; não declarar esses gates aprovados com base no HTML/CI.
+O artefato Pages do workflow 39762715330 foi baixado e inspecionado sem extração insegura. Seu sitemap contém 395 rotas; todas resolvem a `index.html` correspondente dentro do artefato. O sitemap de produção também contém 395 URLs: conjuntos idênticos, zero rotas adicionadas/removidas. Home, grafo, catálogo, Código Civil e Lei 13.964/2019 responderam 200 por HTTP. A homepage ainda contém a âncora antiga `para-desenvolvedores-de-agentes-de-ia` e não contém `hero-graph-node`; isso confirma que o usuário ainda não vê a candidata. A ferramenta Computer Use retornou `apps=[]` e `browsers=[]`, e o navegador de prévia não está disponível nesta sessão. Não houve inspeção visual, navegação por teclado ou teste com leitor de tela; não declarar esses gates aprovados com base no HTML/CI.
 
 **Matriz final de gates externos:**
 
