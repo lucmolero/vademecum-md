@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Política de contribuição e escopo
+    url: https://github.com/lucmolero/vademecum-md/blob/main/CONTRIBUTING.md
+    about: Consulte o fluxo de triagem e os critérios para propostas públicas.

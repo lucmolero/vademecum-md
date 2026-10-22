@@ -1,63 +1,68 @@
-# Contratos de consumo
+# Contrato de consulta e consumo
 
-O VadeMecum MD é um corpus federal curado em Markdown para três públicos:
-profissionais do Direito, cientistas de dados e desenvolvedores de agentes de
-IA. Este documento define o contrato mínimo comum. O guia completo, com
-exemplos, está em [Públicos e consumo](https://lucmolero.github.io/vademecum-md/audiences/).
+O VadeMecum MD publica um corpus jurídico para leitura e análise humanas e para
+consulta fundamentada por agentes de IA. Dados estruturados são a interface de
+integração que distribui o mesmo conteúdo; não constituem uma camada normativa
+independente.
 
 O contrato machine-readable está em
 [`manifests/consumer-contract.json`](../manifests/consumer-contract.json).
 
 ## Contrato comum
 
-Todo consumidor deve:
+Todo leitor, agente ou pipeline deve:
 
-1. fixar uma release e uma data de corte;
-2. identificar o diploma por `id`, nunca apenas pelo caminho do arquivo;
-3. ler `situacao` e `consolidacao_status` antes de usar o texto;
-4. preservar a distinção entre corpo normativo, metadados, histórico e grafo;
-5. registrar fonte oficial e dispositivo utilizado;
-6. tratar estados `requer_reconciliacao`, `historica` e `desconhecida` como
-   insuficientes para afirmar vigência;
-7. consultar a fonte oficial antes de uma decisão jurídica ou publicação de
+1. Fixar uma release e registrar sua data de corte.
+2. Identificar o diploma por `id`, não apenas pelo caminho do arquivo.
+3. Verificar `situacao` e `consolidacao_status` antes de caracterizar o texto.
+4. Preservar a distinção entre corpo normativo, metadados, histórico e grafo.
+5. Citar o dispositivo, a release, o corte e a fonte oficial.
+6. Não afirmar vigência atual quando o estado for `requer_reconciliacao`,
+   `historica` ou `desconhecida`.
+7. Consultar a publicação oficial antes de decisão jurídica ou publicação de
    resultado.
 
-## Perfis e artefatos
+## Interfaces públicas
 
-| Perfil | Interface primária | Resultado esperado |
+| Uso | Interface primária | Resultado esperado |
 | --- | --- | --- |
-| jurídico | Markdown canônico + site derivado | leitura e citação contextualizadas |
-| dados | `manifests/corpus.csv` + frontmatter + JSONL | pipeline determinístico e reproduzível |
-| agentes | documentos, IDs, hashes e relações | recuperação com evidência e limites |
+| Leitura e análise humana | Markdown canônico e leitor derivado | localizar, ler, contextualizar e citar |
+| Consulta por agentes | Markdown, IDs, manifestos e instruções de skill | recuperar conteúdo acessível e responder com limites e evidência |
+| Integração de dados | CSV, frontmatter, JSONL e pacotes de release | enumerar, filtrar e reproduzir uma versão do corpus |
 
-## Separação de autoridade
+## Contrato mínimo de citação
 
-O agente jurídico pode classificar e propor decisões curatoriais com base em
-evidências oficiais. Validadores determinísticos verificam identidade,
-integridade, hashes, relações, links e políticas de segurança. Nenhuma dessas
-camadas substitui a autoridade da publicação oficial.
-
-## Regras para agentes
-
-Uma resposta gerada sobre o corpus deve carregar, quando aplicável:
+Uma resposta sobre o corpus registra, quando aplicável:
 
 ```json
 {
   "document_id": "...",
   "dispositivo": "art. ...",
-  "release": "v1.1.2",
+  "release": "v...",
   "data_corte": "YYYY-MM-DD",
   "fonte_oficial": "https://...",
-  "limitações": []
+  "limitacoes": []
 }
 ```
 
-O agente não deve completar texto ausente, promover inferência a norma, ocultar
-conflito entre fontes ou chamar o site derivado de publicação oficial.
+A formatação ABNT é uma opção de apresentação para referências acadêmicas
+solicitadas. Ela não substitui o contrato de rastreabilidade acima.
 
-## Evolução
+## Regras para agentes
 
-RAG, embeddings e índices semânticos estão adiados até a estabilização do
-corpus. Quando forem implementados, serão artefatos derivados com versão,
-avaliação de recuperação e citações verificáveis; jamais serão a fonte
-normativa principal.
+- Usar somente arquivos ou ferramentas que estejam realmente acessíveis na
+  sessão; a skill não concede acesso automático ao GitHub.
+- Responder diretamente com citação para pedidos de localização ou extração.
+- Usar estrutura Questão, Regra, Aplicação e Conclusão para análises jurídicas
+  quando solicitada ou útil.
+- Não completar texto ausente, converter relação em norma ou ocultar conflito
+  entre fontes.
+- Declarar insuficiência quando a evidência ou o acesso forem inadequados.
+
+## Autoridade e limites
+
+A publicação oficial indicada no diploma é a autoridade textual. Metadados são
+curados com evidência oficial; site, skills, grafo, índices e relatórios são
+artefatos derivados. O projeto não declara cobertura integral do direito
+brasileiro, não oferece aconselhamento e não transforma a data de corte em
+garantia de atualização em tempo real.
