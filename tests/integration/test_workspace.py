@@ -77,9 +77,13 @@ class WorkspaceTest(unittest.TestCase):
             self.assertGreater(len(text.split("---", 2)[-1].strip()), 100, path)
 
     def test_public_manifests_are_valid(self) -> None:
-        for relative in ("manifests/sources-official.json", "manifests/sources-registry.json", "manifests/source-comparison.json", "manifests/source-resolution.json", "manifests/discovery-registry.json", "manifests/discovery-queue.json", "manifests/relation-exclusions.json", "manifests/vocabulary.json", "manifests/operating-modes.json", "manifests/release.json", "manifests/completeness.json", "manifests/editorial-promotions.json", "manifests/baseline.json", "bases/derived/relatorios/editorial-legal-audit.json", "bases/derived/relatorios/editorial-legal-audit-p0.json", "bases/derived/relatorios/editorial-legal-audit-p1.json", "bases/derived/relatorios/editorial-legal-audit-p2.json"):
+        for relative in ("manifests/sources-official.json", "manifests/sources-registry.json", "manifests/source-comparison.json", "manifests/source-resolution.json", "manifests/discovery-registry.json", "manifests/discovery-queue.json", "manifests/relation-exclusions.json", "manifests/vocabulary.json", "manifests/operating-modes.json", "manifests/consumer-contract.json", "manifests/release.json", "manifests/completeness.json", "manifests/editorial-promotions.json", "manifests/baseline.json", "bases/derived/relatorios/editorial-legal-audit.json", "bases/derived/relatorios/editorial-legal-audit-p0.json", "bases/derived/relatorios/editorial-legal-audit-p1.json", "bases/derived/relatorios/editorial-legal-audit-p2.json"):
             value = json.loads((ROOT / relative).read_text(encoding="utf-8"))
             self.assertIsInstance(value, dict)
+        contract = json.loads((ROOT / "manifests/consumer-contract.json").read_text(encoding="utf-8"))
+        self.assertEqual(contract["schema"], "vademecum-consumer-contract/v1")
+        self.assertEqual(set(contract["profiles"]), {"juridico", "dados", "agentes_ia"})
+        self.assertEqual(contract["authority"]["text"], "official_publication")
         promotions = json.loads((ROOT / "manifests/editorial-promotions.json").read_text(encoding="utf-8"))
         self.assertEqual(promotions["schema"], "editorial-promotion-decision/v2")
         self.assertEqual(promotions["reviewed_by"], "autonomous_legal_agent")

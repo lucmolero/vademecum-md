@@ -12,11 +12,14 @@ class SiteContractTest(unittest.TestCase):
         self.assertTrue((ROOT / "site_docs/assets/logo-lockup.svg").is_file())
         self.assertTrue((ROOT / "site_docs/stylesheets/extra.css").is_file())
         self.assertTrue((ROOT / "site_docs/javascripts/portfolio.js").is_file())
+        self.assertTrue((ROOT / "site_docs/audiences.md").is_file())
         catalog = ROOT / "site_docs/generated/catalog.md"
         self.assertTrue(catalog.is_file())
         self.assertIn("Catálogo da legislação", catalog.read_text(encoding="utf-8"))
         homepage = ROOT / "site_docs/index.md"
         self.assertIn("O direito federal", homepage.read_text(encoding="utf-8"))
+        self.assertIn("Uma base, três leituras", homepage.read_text(encoding="utf-8"))
+        self.assertIn("Para advogados", (ROOT / "site_docs/audiences.md").read_text(encoding="utf-8"))
         self.assertTrue((ROOT / "tools/release/build_sbom.py").is_file())
 
     def test_generated_law_page_has_editorial_metadata_and_article_anchor(self):

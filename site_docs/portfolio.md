@@ -7,6 +7,19 @@ estrutura estável para validação, comparação e consumo por máquinas. O pro
 organiza cada diploma como uma unidade editorial e computável sem substituir a
 fonte oficial.
 
+## Um produto para três disciplinas
+
+O mesmo corpus oferece três interfaces coordenadas:
+
+- **Direito:** leitura integral, contexto de vigência e citação verificável;
+- **dados:** schemas, hashes, manifestos e releases reproduzíveis;
+- **agentes:** recuperação com identidade, evidência, data de corte e regras de recusa.
+
+Essa separação evita dois erros comuns: criar uma experiência bonita sem contrato
+de dados, ou criar um dataset técnico que não seja confortável para leitura jurídica.
+Veja os [contratos de consumo](audiences.md) e a
+[especificação do produto](https://github.com/lucmolero/vademecum-md/blob/main/docs/PRODUCT_SPEC.md).
+
 ## A solução
 
 ```text
