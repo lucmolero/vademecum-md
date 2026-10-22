@@ -7,6 +7,8 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
+import yaml
+
 ROOT = Path(__file__).parents[2]
 sys.path.insert(0, str(ROOT / "tools"))
 SITE_BUILDER_SPEC = importlib.util.spec_from_file_location("vmd_site_builder", ROOT / "tools/site/build_site.py")
@@ -377,6 +379,23 @@ class SiteContractTest(unittest.TestCase):
         self.assertEqual(len(unique), 1)
         self.assertEqual(unique[0]["type"], "altera")
         self.assertEqual(unique[0]["source_id"], "amending-law")
+
+    def test_pages_pull_request_build_has_no_deploy_permissions_or_cancellation_risk(self):
+        workflow = yaml.load((ROOT / ".github/workflows/site.yml").read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
+        self.assertIn("pull_request", workflow["on"])
+        self.assertEqual(workflow["permissions"], {"contents": "read"})
+        self.assertIn("github.ref", workflow["concurrency"]["group"])
+        self.assertEqual(workflow["concurrency"]["cancel-in-progress"], "${{ github.event_name == 'pull_request' }}")
+
+        build = workflow["jobs"]["build"]
+        deploy = workflow["jobs"]["deploy"]
+        self.assertEqual(build["permissions"], {"contents": "read"})
+        self.assertEqual(deploy["if"], "github.ref == 'refs/heads/main'")
+        self.assertEqual(deploy["permissions"], {"pages": "write", "id-token": "write"})
+        build_actions = {step.get("uses") for step in build["steps"] if isinstance(step, dict)}
+        deploy_actions = {step.get("uses") for step in deploy["steps"] if isinstance(step, dict)}
+        self.assertIn("actions/upload-pages-artifact@v5", build_actions)
+        self.assertIn("actions/deploy-pages@v5", deploy_actions)
 
 
 if __name__ == "__main__":
