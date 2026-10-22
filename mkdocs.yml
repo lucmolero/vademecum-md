@@ -6,6 +6,29 @@ repo_name: lucmolero/vademecum-md
 docs_dir: site_docs
 hooks:
   - site_docs/hooks.py
+plugins:
+  - search
+  - social:
+      enabled: !ENV [CI, false]
+      cache_dir: .cache/plugin/social
+      cards_dir: assets/images/social
+      cards_include:
+        - index.md
+        - generated/catalog.md
+        - audiences.md
+        - methodology.md
+        - architecture.md
+        - graph.md
+        - sources.md
+        - quality.md
+        - faq.md
+        - portfolio.md
+        - updates.md
+      cards_layout_options:
+        background_color: "#13243A"
+        color: "#FBF8F0"
+        font_family: "Source Serif 4"
+        logo: site_docs/assets/brand-mark.svg
 validation:
   nav:
     omitted_files: ignore

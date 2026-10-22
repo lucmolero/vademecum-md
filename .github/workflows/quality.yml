@@ -12,10 +12,10 @@ permissions:
 
 jobs:
   quality:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Install project dependencies
@@ -40,10 +40,18 @@ jobs:
         run: python tools/audit_fidelity.py --output bases/derived/relatorios/fidelity-audit-ci.json
       - name: Build reader site
         run: python tools/site/build_site.py
+      - name: Prepare pinned social-card fonts
+        run: python tools/site/prepare_social_fonts.py
       - name: Render MkDocs site
         run: mkdocs build --strict
+        env:
+          CI: "true"
       - name: Accessibility baseline
         run: python tools/validate/validate_site.py
+        env:
+          VMD_REQUIRE_SOCIAL_CARDS: "1"
+      - name: Enforce rendered site transfer budgets
+        run: python tools/validate/validate_site_budget.py
       - name: Validate reader site inputs
         run: test -f mkdocs.yml && test -f site_docs/generated/catalog.md
       - name: Classify unresolved relations

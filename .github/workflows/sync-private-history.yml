@@ -20,15 +20,15 @@ concurrency:
 jobs:
   sync:
     if: vars.HISTORY_REPOSITORY != ''
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 90
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Require private-history credential
@@ -54,7 +54,7 @@ jobs:
       - name: Build private ledger
         run: python tools/history/build_private_ledger.py --output private-ledger
       - name: Checkout private history repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: ${{ vars.HISTORY_REPOSITORY }}
           ssh-key: ${{ secrets.HISTORY_REPO_SSH_KEY }}
@@ -76,7 +76,7 @@ jobs:
           git -C history-repository commit -m "chore: store acquisition run ${RUN_STAMP}"
           git -C history-repository push origin HEAD:main
       - name: Upload non-sensitive collection report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: private-history-collection-${{ github.run_id }}
           path: reports/private-history-collection.json

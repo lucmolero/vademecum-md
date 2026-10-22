@@ -1,292 +1,390 @@
 /**
- * VadeMecum MD — Leitor Forense de Alta Performance
- * Interatividade nativa para advogados e pesquisadores:
- * - Salto rápido de dispositivo (Ctrl + K)
- * - Botão de cópia para petição com citação forense padronizada
- * - Modo leitura / foco sem distrações
- * - Ajuste dinâmico de tamanho de fonte
+ * VadeMecum MD — controles do leitor de diplomas.
+ * A interação é progressiva: o conteúdo legal permanece disponível sem este script.
  */
 (() => {
   "use strict";
 
-  const initLawReader = () => {
-    const lawHero = document.querySelector(".law-hero");
-    if (!lawHero) return;
+  const normalize = (value) =>
+    (value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^0-9a-z]/gi, "")
+      .toLowerCase();
 
-    const lawId = lawHero.getAttribute("data-law-id") || "";
-    const lawTitle = lawHero.querySelector("h1")?.textContent?.trim() || "Diploma Normativo";
-    const cutoffText = Array.from(lawHero.querySelectorAll(".status-chip"))
-      .map(c => c.textContent.trim())
-      .find(t => t.toLowerCase().includes("corte")) || "";
-    const sourceLinkEl = document.querySelector('.law-tools a[href^="http"]');
-    const sourceUrl = sourceLinkEl ? sourceLinkEl.href : "";
+  const readPreference = (key, fallback) => {
+    try {
+      const value = window.localStorage.getItem(key);
+      return value === null ? fallback : value;
+    } catch (_error) {
+      return fallback;
+    }
+  };
 
-    // 1. Injetar ações de cópia de citação em cada dispositivo (Artigo)
-    const articleHeadings = document.querySelectorAll('.md-content h2[id^="art-"]');
-    articleHeadings.forEach((h2) => {
-      if (h2.querySelector(".article-actions")) return;
+  const writePreference = (key, value) => {
+    try {
+      window.localStorage.setItem(key, value);
+    } catch (_error) {
+      // Preferências são opcionais; o controle continua funcionando nesta página.
+    }
+  };
 
-      const articleLabel = h2.textContent.replace(/^#+\s*/, "").trim();
-      const articleId = h2.id;
+  const copyText = async (value) => {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(value);
+      return true;
+    }
 
-      // Localizar o texto do artigo (parágrafos imediatos até a próxima seção)
-      const getArticleBodyText = () => {
-        let textParts = [];
-        let next = h2.nextElementSibling;
-        while (next && !["H1", "H2", "H3", "SECTION"].includes(next.tagName)) {
-          if (next.tagName === "P" || next.tagName === "UL" || next.tagName === "OL" || next.tagName === "BLOCKQUOTE") {
-            const cleanText = next.textContent.trim();
-            if (cleanText) textParts.push(cleanText);
-          }
-          next = next.nextElementSibling;
-        }
-        return textParts.join("\n\n");
-      };
+    const field = document.createElement("textarea");
+    field.value = value;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.opacity = "0";
+    field.style.pointerEvents = "none";
+    document.body.appendChild(field);
+    field.select();
+    let copied = false;
+    try {
+      copied = document.execCommand("copy");
+    } catch (_error) {
+      copied = false;
+    }
+    field.remove();
+    return copied;
+  };
 
-      const actionsWrapper = document.createElement("span");
-      actionsWrapper.className = "article-actions";
+  const headingLabel = (heading) => {
+    const clone = heading.cloneNode(true);
+    clone.querySelector(".article-actions")?.remove();
+    return (clone.innerText || clone.textContent || "").replace(/\s+/g, " ").trim();
+  };
 
-      // Botão Copiar Citação para Petição
-      const copyBtn = document.createElement("button");
-      copyBtn.type = "button";
-      copyBtn.className = "btn-article-action btn-copy-citation";
-      copyBtn.title = "Copiar artigo com citação forense para petição (ABNT/Tribunais)";
-      copyBtn.innerHTML = '<span class="action-icon">📋</span> Copiar p/ Petição';
+  const articleText = (heading) => {
+    const parts = [];
+    let element = heading.nextElementSibling;
+    while (element) {
+      if (element.matches("h2[id^='art-']") || element.matches(".law-relations")) break;
+      if (element.matches("p, ul, ol, blockquote, table")) {
+        const text = (element.innerText || element.textContent || "").trim();
+        if (text) parts.push(text);
+      }
+      element = element.nextElementSibling;
+    }
+    return parts.join("\n\n");
+  };
 
-      copyBtn.addEventListener("click", async (e) => {
-        e.preventDefault();
-        e.stopPropagation();
+  const announceButtonResult = (button, success, successLabel, failureLabel) => {
+    const original = button.dataset.originalLabel || button.textContent.trim();
+    button.dataset.originalLabel = original;
+    button.textContent = success ? successLabel : failureLabel;
+    window.setTimeout(() => {
+      button.textContent = original;
+    }, 2200);
+  };
 
-        const bodyText = getArticleBodyText();
+  const addArticleActions = (headings, context) => {
+    headings.forEach((heading) => {
+      if (heading.querySelector(".article-actions")) return;
+
+      const label = headingLabel(heading);
+      const wrapper = document.createElement("span");
+      wrapper.className = "article-actions";
+
+      const copyButton = document.createElement("button");
+      copyButton.type = "button";
+      copyButton.className = "btn-article-action btn-copy-citation";
+      copyButton.textContent = "Copiar texto e referência";
+      copyButton.setAttribute("aria-label", "Copiar " + label + " com a referência do diploma");
+
+      copyButton.addEventListener("click", async () => {
+        const text = articleText(heading);
         const citation = [
-          bodyText ? `"${bodyText}"` : `[${articleLabel}]`,
-          `(${lawTitle}, ${articleLabel}. VadeMecum MD, ${cutoffText || "corte auditado"}. ID: ${lawId}${sourceUrl ? `. Fonte oficial: ${sourceUrl}` : ""}).`
-        ].join("\n");
+          text,
+          context.title + ", " + label + ". VadeMecum MD, " + context.cutoff +
+            ". ID: " + context.id +
+            (context.source ? ". Fonte oficial: " + context.source : ". Fonte oficial não identificada") +
+            ". Release: " + context.release + ".",
+        ].filter(Boolean).join("\n\n");
 
         try {
-          await navigator.clipboard.writeText(citation);
-          const orig = copyBtn.innerHTML;
-          copyBtn.innerHTML = '<span class="action-icon">✓</span> Citação copiada!';
-          copyBtn.classList.add("is-copied");
-          setTimeout(() => {
-            copyBtn.innerHTML = orig;
-            copyBtn.classList.remove("is-copied");
-          }, 2000);
-        } catch (_err) {
-          copyBtn.textContent = "Erro ao copiar";
+          const success = await copyText(citation);
+          announceButtonResult(
+            copyButton,
+            success,
+            "Texto e referência copiados",
+            "Cópia indisponível; selecione o texto manualmente",
+          );
+        } catch (_error) {
+          announceButtonResult(
+            copyButton,
+            false,
+            "Cópia indisponível",
+            "Cópia indisponível; selecione o texto manualmente",
+          );
         }
       });
 
-      // Botão Link Permanente
-      const linkBtn = document.createElement("a");
-      linkBtn.href = `#${articleId}`;
-      linkBtn.className = "btn-article-action btn-article-anchor";
-      linkBtn.title = "Link permanente para este artigo";
-      linkBtn.innerHTML = "#";
+      const anchor = document.createElement("a");
+      anchor.href = "#" + heading.id;
+      anchor.className = "btn-article-action btn-article-anchor";
+      anchor.textContent = "#";
+      anchor.setAttribute("aria-label", "Link permanente para " + label);
 
-      actionsWrapper.appendChild(copyBtn);
-      actionsWrapper.appendChild(linkBtn);
-      h2.appendChild(actionsWrapper);
+      wrapper.append(copyButton, anchor);
+      heading.appendChild(wrapper);
     });
-
-    // 2. Criar e gerenciar a Modal de Salto Rápido de Artigo (Ctrl + K)
-    createQuickJumpModal(articleHeadings);
-
-    // 3. Gerenciar Modo Leitura / Foco e Tamanho de Fonte
-    initReadingToolbarControls();
   };
 
-  /**
-   * Modal de Busca e Salto Rápido (Ctrl + K)
-   */
-  const createQuickJumpModal = (articleHeadings) => {
+  const createQuickJumpModal = (headings, trigger) => {
     let backdrop = document.getElementById("vmd-jump-modal");
     if (!backdrop) {
       backdrop = document.createElement("div");
       backdrop.id = "vmd-jump-modal";
       backdrop.className = "vmd-modal-backdrop";
-      backdrop.innerHTML = `
-        <div class="vmd-modal-dialog" role="dialog" aria-modal="true" aria-label="Navegação rápida de artigo">
-          <div class="vmd-modal-header">
-            <h3>Salto Rápido de Dispositivo</h3>
-            <span class="vmd-modal-hint"><kbd>ESC</kbd> para fechar</span>
-          </div>
-          <div class="vmd-modal-body">
-            <input type="text" id="vmd-jump-input" placeholder="Digite o artigo (ex: 186, 5º, 300, 1)..." autocomplete="off" />
-            <p class="vmd-modal-subhint">Pressione <kbd>Enter</kbd> para saltar diretamente para o artigo.</p>
-            <div id="vmd-jump-results" class="vmd-jump-results"></div>
-          </div>
-        </div>
-      `;
+      backdrop.hidden = true;
+      backdrop.setAttribute("aria-hidden", "true");
+      backdrop.innerHTML =
+        '<div class="vmd-modal-dialog" role="dialog" aria-modal="true" ' +
+        'aria-labelledby="vmd-jump-title" aria-describedby="vmd-jump-description" tabindex="-1">' +
+        '<div class="vmd-modal-header"><h2 id="vmd-jump-title">Ir para dispositivo</h2>' +
+        '<button type="button" class="vmd-modal-close" aria-label="Fechar navegação rápida">Fechar</button></div>' +
+        '<label class="vmd-sr-only" for="vmd-jump-input">Buscar número ou rótulo do artigo</label>' +
+        '<input type="search" id="vmd-jump-input" placeholder="Ex.: 186, licitação, processo" autocomplete="off" />' +
+        '<p id="vmd-jump-description" class="vmd-modal-subhint">Busque um número de dispositivo ou expressão no texto desta norma.</p>' +
+        '<p id="vmd-jump-status" class="vmd-sr-only" role="status" aria-live="polite"></p>' +
+        '<div id="vmd-jump-results" class="vmd-jump-results"></div></div>';
       document.body.appendChild(backdrop);
     }
 
-    const input = document.getElementById("vmd-jump-input");
-    const resultsContainer = document.getElementById("vmd-jump-results");
+    const dialog = backdrop.querySelector('[role="dialog"]');
+    const input = backdrop.querySelector("#vmd-jump-input");
+    const status = backdrop.querySelector("#vmd-jump-status");
+    const results = backdrop.querySelector("#vmd-jump-results");
+    const closeButton = backdrop.querySelector(".vmd-modal-close");
+    let returnFocus = null;
+    let priorOverflow = "";
+    let articleIndex = null;
 
-    const openModal = () => {
-      backdrop.classList.add("is-active");
-      input.value = "";
-      renderSuggestions("");
-      setTimeout(() => input.focus(), 80);
-    };
-
-    const closeModal = () => {
+    const close = () => {
+      if (backdrop.hidden) return;
       backdrop.classList.remove("is-active");
+      backdrop.hidden = true;
+      backdrop.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = priorOverflow;
+      if (returnFocus && document.contains(returnFocus)) returnFocus.focus();
     };
 
-    const jumpToArticle = (targetId) => {
-      const el = document.getElementById(targetId);
-      if (el) {
-        closeModal();
-        el.scrollIntoView({ behavior: "smooth", block: "center" });
-        el.classList.add("article-highlight");
-        setTimeout(() => el.classList.remove("article-highlight"), 2500);
-      }
-    };
-
-    const sanitizeNum = (str) => {
-      return (str || "").replace(/[^0-9a-zA-Z]/g, "").toLowerCase();
-    };
-
-    const renderSuggestions = (query) => {
-      const q = sanitizeNum(query);
-      resultsContainer.innerHTML = "";
-      if (!articleHeadings || articleHeadings.length === 0) {
-        resultsContainer.innerHTML = `<span class="no-results">Nenhum artigo encontrado nesta norma.</span>`;
-        return;
-      }
-
-      let matches = [];
-      articleHeadings.forEach((h2) => {
-        const text = h2.textContent.replace(/📋.*$/, "").trim();
-        const clean = sanitizeNum(text);
-        if (!q || clean.includes(q)) {
-          matches.push({ id: h2.id, label: text });
-        }
+    const jumpTo = (id) => {
+      const target = document.getElementById(id);
+      if (!target) return;
+      close();
+      target.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start",
       });
-
-      const displayItems = matches.slice(0, 10);
-      if (displayItems.length === 0) {
-        resultsContainer.innerHTML = `<span class="no-results">Nenhum artigo correspondente a "${query}".</span>`;
-        return;
-      }
-
-      displayItems.forEach((item, idx) => {
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = "jump-result-item" + (idx === 0 ? " is-selected" : "");
-        btn.textContent = item.label;
-        btn.addEventListener("click", () => jumpToArticle(item.id));
-        resultsContainer.appendChild(btn);
-      });
+      target.classList.add("article-highlight");
+      window.setTimeout(() => target.classList.remove("article-highlight"), 1800);
+      target.setAttribute("tabindex", "-1");
+      target.focus({ preventScroll: true });
+      target.addEventListener("blur", () => target.removeAttribute("tabindex"), { once: true });
     };
 
-    input.addEventListener("input", (e) => {
-      renderSuggestions(e.target.value);
-    });
-
-    input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        const first = resultsContainer.querySelector(".jump-result-item");
-        if (first) first.click();
-      } else if (e.key === "Escape") {
-        closeModal();
+    const render = (query) => {
+      results.replaceChildren();
+      const needle = normalize(query);
+      if (!articleIndex) {
+        articleIndex = headings.map((heading) => {
+          const label = headingLabel(heading);
+          const text = articleText(heading);
+          return { heading, label, text, search: normalize(label + " " + text) };
+        });
       }
-    });
+      const matches = articleIndex
+        .filter((item) => !needle || item.search.includes(needle))
+        .slice(0, 30);
 
-    backdrop.addEventListener("click", (e) => {
-      if (e.target === backdrop) closeModal();
-    });
-
-    // Atalho global Ctrl + K / Cmd + K
-    window.addEventListener("keydown", (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
-        // Se estiver num diploma, ativa o salto rápido
-        if (document.querySelector(".law-hero")) {
-          e.preventDefault();
-          if (backdrop.classList.contains("is-active")) {
-            closeModal();
-          } else {
-            openModal();
+      if (!matches.length) {
+        const empty = document.createElement("p");
+        empty.className = "no-results";
+        empty.textContent = "Nenhum dispositivo correspondente nesta página.";
+        results.appendChild(empty);
+      } else {
+        matches.forEach(({ heading, label, text }) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "jump-result-item";
+          const title = document.createElement("strong");
+          title.textContent = label;
+          button.appendChild(title);
+          if (needle && !normalize(label).includes(needle)) {
+            const snippet = document.createElement("span");
+            snippet.className = "jump-result-snippet";
+            const paragraph = text.split(/\n+/).find((part) => normalize(part).includes(needle)) || text;
+            snippet.textContent = paragraph.slice(0, 180).trim();
+            button.appendChild(snippet);
           }
-        }
-      } else if (e.key === "Escape" && backdrop.classList.contains("is-active")) {
-        closeModal();
+          button.addEventListener("click", () => jumpTo(heading.id));
+          results.appendChild(button);
+        });
+      }
+
+      status.textContent = matches.length
+        ? matches.length + (matches.length === 1 ? " dispositivo encontrado." : " dispositivos encontrados.")
+        : "Nenhum dispositivo correspondente nesta página.";
+    };
+
+    const open = (source) => {
+      returnFocus = source || document.activeElement;
+      priorOverflow = document.body.style.overflow;
+      backdrop.hidden = false;
+      backdrop.removeAttribute("aria-hidden");
+      backdrop.classList.add("is-active");
+      document.body.style.overflow = "hidden";
+      input.value = "";
+      render("");
+      window.requestAnimationFrame(() => input.focus());
+    };
+
+    input.addEventListener("input", () => render(input.value));
+    input.addEventListener("keydown", (event) => {
+      const options = Array.from(results.querySelectorAll(".jump-result-item"));
+      if (event.key === "ArrowDown" && options.length) {
+        event.preventDefault();
+        options[0].focus();
       }
     });
 
-    // Conectar ao botão na barra de leitura
-    const triggerBtn = document.getElementById("btn-quick-jump");
-    if (triggerBtn) {
-      triggerBtn.addEventListener("click", openModal);
-    }
+    results.addEventListener("keydown", (event) => {
+      const options = Array.from(results.querySelectorAll(".jump-result-item"));
+      const index = options.indexOf(document.activeElement);
+      if (event.key === "ArrowDown" && index < options.length - 1) {
+        event.preventDefault();
+        options[index + 1].focus();
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        if (index > 0) options[index - 1].focus();
+        else input.focus();
+      } else if (event.key === "Escape") {
+        event.preventDefault();
+        close();
+      }
+    });
+
+    dialog.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        close();
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const focusable = Array.from(
+        dialog.querySelectorAll('button:not([disabled]), input:not([disabled]), a[href], [tabindex="0"]'),
+      ).filter((element) => !element.hidden);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    closeButton.addEventListener("click", close);
+    backdrop.addEventListener("click", (event) => {
+      if (event.target === backdrop) close();
+    });
+
+    const globalKeyHandler = (event) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        if (backdrop.hidden) open(document.activeElement);
+        else close();
+      }
+    };
+    window.addEventListener("keydown", globalKeyHandler);
+
+    trigger?.addEventListener("click", () => open(trigger));
+    return { open, close };
   };
 
-  /**
-   * Controles da barra de leitura (Modo Foco e Tamanho de Fonte)
-   */
   const initReadingToolbarControls = () => {
-    // 1. Modo Leitura / Foco
-    const focusBtn = document.getElementById("btn-focus-mode");
-    const isFocusSaved = localStorage.getItem("vmd_focus_mode") === "true";
-    if (isFocusSaved) {
-      document.body.classList.add("vmd-focus-mode");
-      if (focusBtn) focusBtn.classList.add("is-active");
-    }
-
-    if (focusBtn) {
-      focusBtn.addEventListener("click", () => {
+    const focusButton = document.getElementById("btn-focus-mode");
+    const focusActive = readPreference("vmd_focus_mode", "false") === "true";
+    document.body.classList.toggle("vmd-focus-mode", focusActive);
+    if (focusButton) {
+      focusButton.setAttribute("aria-pressed", String(focusActive));
+      focusButton.addEventListener("click", () => {
         const active = document.body.classList.toggle("vmd-focus-mode");
-        focusBtn.classList.toggle("is-active", active);
-        localStorage.setItem("vmd_focus_mode", active ? "true" : "false");
+        focusButton.setAttribute("aria-pressed", String(active));
+        writePreference("vmd_focus_mode", String(active));
       });
     }
 
-    // 2. Controle de Tamanho de Fonte
-    const fontSizes = ["font-sm", "font-md", "font-lg", "font-xl"];
-    let currentSizeIndex = parseInt(localStorage.getItem("vmd_font_size_idx") || "1", 10);
-    if (isNaN(currentSizeIndex) || currentSizeIndex < 0 || currentSizeIndex >= fontSizes.length) {
-      currentSizeIndex = 1;
-    }
+    const sizes = ["font-sm", "font-md", "font-lg", "font-xl"];
+    const storedSize = Number.parseInt(readPreference("vmd_font_size_idx_v3", "0"), 10);
+    let sizeIndex = Number.isInteger(storedSize) && storedSize >= 0 && storedSize < sizes.length
+      ? storedSize
+      : 0;
+    const content = document.querySelector(".md-content");
+    const sizeLabel = document.getElementById("reader-font-label");
+    const applySize = () => {
+      if (!content) return;
+      sizes.forEach((className) => content.classList.remove(className));
+      content.classList.add(sizes[sizeIndex]);
+      writePreference("vmd_font_size_idx_v3", String(sizeIndex));
+      if (sizeLabel) sizeLabel.textContent = "Texto " + (13 + sizeIndex) + " px";
+      if (decrease) decrease.disabled = sizeIndex === 0;
+      if (increase) increase.disabled = sizeIndex === sizes.length - 1;
+    };
+    const decrease = document.getElementById("btn-font-decrease");
+    const increase = document.getElementById("btn-font-increase");
+    applySize();
+    decrease?.addEventListener("click", () => {
+      if (sizeIndex > 0) {
+        sizeIndex -= 1;
+        applySize();
+      }
+    });
+    increase?.addEventListener("click", () => {
+      if (sizeIndex < sizes.length - 1) {
+        sizeIndex += 1;
+        applySize();
+      }
+    });
+  };
 
-    const applyFontSize = () => {
-      const contentEl = document.querySelector(".md-content");
-      if (!contentEl) return;
-      fontSizes.forEach(cls => contentEl.classList.remove(cls));
-      contentEl.classList.add(fontSizes[currentSizeIndex]);
-      localStorage.setItem("vmd_font_size_idx", currentSizeIndex.toString());
+  const init = () => {
+    const hero = document.querySelector(".law-hero");
+    if (!hero) return;
+
+    const headings = Array.from(document.querySelectorAll(".md-content h2[id^='art-']"));
+    const getSource = () => {
+      const link = document.querySelector(".law-tools a[href^='https://']");
+      return link ? link.href : "";
     };
 
-    applyFontSize();
+    addArticleActions(headings, {
+      id: hero.dataset.lawId || "",
+      title: hero.querySelector("h1")?.textContent.trim() || "Diploma normativo",
+      cutoff: Array.from(hero.querySelectorAll(".status-chip"))
+        .map((chip) => chip.textContent.trim())
+        .find((text) => text.toLowerCase().startsWith("corte")) || "corte não informado",
+      release: hero.dataset.release || "não informada",
+      source: getSource(),
+    });
 
-    const decBtn = document.getElementById("btn-font-decrease");
-    const incBtn = document.getElementById("btn-font-increase");
-
-    if (decBtn) {
-      decBtn.addEventListener("click", () => {
-        if (currentSizeIndex > 0) {
-          currentSizeIndex--;
-          applyFontSize();
-        }
-      });
-    }
-
-    if (incBtn) {
-      incBtn.addEventListener("click", () => {
-        if (currentSizeIndex < fontSizes.length - 1) {
-          currentSizeIndex++;
-          applyFontSize();
-        }
-      });
-    }
+    const trigger = document.getElementById("btn-quick-jump");
+    createQuickJumpModal(headings, trigger);
+    initReadingToolbarControls();
   };
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initLawReader, { once: true });
+    document.addEventListener("DOMContentLoaded", init, { once: true });
   } else {
-    initLawReader();
+    init();
   }
 })();
 

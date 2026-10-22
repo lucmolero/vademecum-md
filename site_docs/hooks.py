@@ -5,8 +5,15 @@ from pathlib import Path
 
 def on_post_page(output, *, page, config):
     """Emit the complete locale without changing the theme's translation catalog."""
-    del page, config
-    return output.replace('<html lang="pt" class="no-js">', '<html lang="pt-BR" class="no-js">', 1)
+    del config
+    output = output.replace('<html lang="pt" class="no-js">', '<html lang="pt-BR" class="no-js">', 1)
+    if page.file.src_uri == "graph.md":
+        output = output.replace(
+            "</body>",
+            '<script src="../javascripts/graph-explorer.js" defer></script></body>',
+            1,
+        )
+    return output
 
 
 def on_post_build(config):
