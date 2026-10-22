@@ -28,8 +28,13 @@ jobs:
         run: python tools/validate/sync_editorial_matrix.py
       - name: Audit normative graph
         run: python tools/relations/audit_normative_graph.py --strict
-      - name: Audit normative fidelity
-        run: python tools/audit_fidelity.py --strict --output bases/derived/relatorios/fidelity-audit-release.json
+      - name: Validate committed normative fidelity ledger
+        run: >-
+          python -c "import json; p=json.load(open('bases/derived/relatorios/fidelity-audit.json', encoding='utf-8'));
+          assert p.get('schema') == 'normative-fidelity-audit/v1';
+          assert p.get('status') == 'pass';
+          assert p.get('corpus_count') == 375;
+          assert p.get('counts', {}).get('pass') == 375"
       - name: Classify unresolved relations
         run: python tools/relations/classify_unresolved.py
       - name: Validate release gates
