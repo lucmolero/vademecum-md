@@ -25,6 +25,11 @@ jobs:
       - run: python -m pip install -e ".[docs]"
       - run: python tools/site/build_site.py
       - run: mkdocs build --strict
+        env:
+          CI: "true"
+      - run: python tools/validate/validate_site.py
+        env:
+          VMD_REQUIRE_SOCIAL_CARDS: "1"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

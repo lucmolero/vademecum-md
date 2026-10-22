@@ -1,7 +1,7 @@
 {
   "schema": "normative-fidelity-audit/v1",
   "canonicalization_version": "norm-v3",
-  "generated_at": "2026-10-21",
+  "generated_at": "2026-10-22",
   "corpus_count": 375,
   "counts": {
     "pass": 375
