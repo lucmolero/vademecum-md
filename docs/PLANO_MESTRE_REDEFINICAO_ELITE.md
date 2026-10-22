@@ -2,7 +2,6 @@
 
 > **Versão:** 10 · **Atualizado:** 2026-10-22
 >
->
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
 ## Painel de prontidão para lançamento
@@ -17,8 +16,8 @@
 | Leitor e acessibilidade | Fonte padrão do leitor 14 px, faixa 13–16 px e sidebars mantidas; contratos automatizados passam | Testes de leitor e navegação; inspeção de teclado, leitor de tela, zoom, foco e contraste em browser ainda pendente |
 | Identidade e ativos | Direção “Índice normativo” aplicada; escolha do usuário documentada como MIT para código e marca | Revisão de titularidade/proveniência, aplicação final em favicon e avaliação com públicos ainda pendentes |
 | Desempenho e dispositivos | Site estático e índices sob demanda; não há medição atual de bytes transferidos/Core Web Vitals na produção após o redesign | Definir orçamento após baseline em desktop e celular com cache/rede registrados |
-| Rotas e recuperação | Links internos do candidato validados; não há prova de rollback do deploy candidato | Comparar mapa de URLs publicado/candidato, testar navegação direta e ensaiar rollback antes da publicação |
-| Produção e integração | Em 2026-10-22 a homepage e `/graph/` respondiam HTTP 200, mas não continham o hero novo nem `data-graph-explorer`; seis PRs do Dependabot seguem abertos | PR candidato, checks obrigatórios verdes, decisão explícita sobre PRs de dependência e smoke test pós-deploy |
+| Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
+| Produção e integração | Em 2026-10-22 a homepage e `/graph/` respondiam HTTP 200, mas não continham o hero novo nem `data-graph-explorer`; seis PRs do Dependabot seguem abertos (dois updates aplicados nesta candidata) | Revisão do PR, checks obrigatórios verdes, decisão sobre PRs restantes e smoke test pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -26,7 +25,7 @@
 2. Revisar o README renderizado e o Pages em desktop/celular, temas claro/escuro, zoom e estados de interação; executar teste moderado com pelo menos um advogado, um pesquisador e uma pessoa de tecnologia, registrando tarefas, falhas e decisões sem inventar feedback.
 3. Resolver titularidade/licenças de cada asset e validar a amostra jurídica e seus metadados contra a fonte e o corte que serão publicados.
 4. Medir desempenho e acessibilidade no preview; definir e cumprir os budgets antes da aprovação.
-5. Conferir compatibilidade de URLs e artefatos, ensaiar rollback e publicar somente o artefato aprovado pelo fluxo protegido.
+5. Revalidar as 395 rotas e artefatos no preview, ensaiar rollback e publicar somente o artefato aprovado pelo fluxo protegido.
 6. Após deploy, repetir smoke test público de homepage, grafo, busca, documento, arquivos Markdown e release; guardar evidência datada e registrar decisão GO/NO-GO.
 
 ### Protocolo mínimo de avaliação formativa
@@ -1134,6 +1133,7 @@ Reauditei a candidata e o estado remoto para distinguir evidência de implementa
 - Build Linux `CI=true mkdocs build --strict`: aprovado; `validate_site.py` percorreu 396 páginas HTML, zero erros.
 - Fidelidade estrita: 375/375 documentos `pass`; release: 375 documentos, 33/33 gates P0 e zero erros.
 - Matriz editorial: 375/375, zero drift; grafo: 1.841 relações, zero duplicatas e zero conflitos de tipo inverso.
+- Sitemap público e sitemap candidato comparados após build estrito: 395 rotas em cada conjunto, zero removidas e zero novas. Isso prova compatibilidade dos caminhos listados, mas não substitui abrir manualmente cada rota ou ensaiar rollback.
 - Markdown: 754 arquivos UTF-8; nove workflows validados; expansão editorial com 15 candidatos, zero erros.
 - Três scripts JavaScript passaram em `node --check`; `git diff --check` passou.
 - A integração de navegador segue indisponível (`apps=[]`, `browsers=[]`), então não há capturas atuais nem inspeção manual visual, de teclado ou leitor de tela.
@@ -1143,6 +1143,19 @@ Reauditei a candidata e o estado remoto para distinguir evidência de implementa
 - `main` continua em `dfcb4537609ef67d6e2085fb2b24357893643a3c`; `quality` é o status obrigatório e a branch exige checks estritos.
 - O workflow Pages mais recente observado para `main` concluiu com sucesso em 2026-10-22 05:06 UTC; isso só valida o conteúdo já em `main`, não esta candidata local.
 - A release `v1.1.2` continua como Latest. A página e `/graph/` respondem HTTP 200, mas a homepage não contém o novo título nem `hero-graph-node` e `/graph/` não contém `data-graph-explorer`.
-- Há seis PRs abertos do Dependabot para majors de GitHub Actions; todos mostram check `quality` concluído com sucesso, mas nenhum tem decisão de revisão. Não foram mesclados nesta mudança.
+- Há seis PRs abertos do Dependabot para majors de GitHub Actions; todos mostram check `quality` concluído com sucesso, mas nenhum tem decisão de revisão. Checkout e setup-python foram atualizados separadamente nesta candidata; os quatro PRs de artefatos permanecem fora do escopo publicado.
 
-**Decisão:** manter NO-GO. O candidato local passou os gates automatizados reexecutados; não está integrado nem publicado. Faltam revisão visual/acessível em navegador real, avaliação formativa com pessoas, validação final de titularidade e amostras, orçamento de desempenho medido, mapa de compatibilidade/rollback demonstrado e smoke test pós-deploy. A automação não pode provar esses itens.
+**Decisão:** manter NO-GO. O candidato local passou os gates automatizados reexecutados; não está integrado nem publicado. Faltam revisão visual/acessível em navegador real, avaliação formativa com pessoas, validação final de titularidade e amostras, orçamento de desempenho medido, ensaio de rollback e smoke test pós-deploy. A automação não pode provar esses itens.
+
+## 43. Runner e compatibilidade de rotas — 2026-10-22
+
+Para eliminar as anotações de Node 20 e reduzir variação futura do ambiente, atualizei `actions/checkout` para v7 e `actions/setup-python` para v7 nos nove workflows, e fixei todos em `ubuntu-24.04`. O checkout v7 endurece a proteção para eventos `pull_request_target` e `workflow_run`; nenhum dos workflows deste repositório usa esses eventos. O setup-python continua compatível com a instalação de dependências executada por `pip` no próprio workflow. As ações de artefato e deploy ficaram para revisão separada porque o check de qualidade não executa todos esses fluxos.
+
+Comparei o sitemap público obtido por HTTP com o sitemap de um build estrito da candidata: 395 URLs em cada lado, sem caminhos adicionados ou removidos. Todos os links e fragmentos internos do candidato também são percorridos pelo validador de site. Essa comparação reduz o risco de quebra de deep links, mas não simula rollback nem teste funcional de cada rota no ambiente publicado.
+
+- `tools/validate/validate_workflows.py`: nove workflows aprovados.
+- Suíte local `unittest`: 71 testes aprovados.
+- CI remoto `quality` passou para o commit `a0ad4d39bcc` com checkout/setup-python v7; após fixar o runner, passou novamente para `9f0762ccba7` em 1m17s, sem anotações de depreciação.
+- A fonte oficial de runner images lista `ubuntu-24.04` como rótulo explícito disponível; a execução anterior confirmou que `ubuntu-latest` ainda resolvia para essa mesma imagem na data da auditoria.
+
+**Estado:** check remoto está verde no commit atual e as 395 rotas publicadas foram preservadas no sitemap candidato. O Pages continua sem as mudanças, e os gates humanos e de rollback seguem bloqueando a declaração GO.
