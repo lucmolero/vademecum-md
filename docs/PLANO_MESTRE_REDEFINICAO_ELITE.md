@@ -1177,3 +1177,11 @@ No PR #28, `site` passou no commit `a5c1f16d7c7bb76f2ea1de0a8a77192f0ad962cc`: b
 Os updates Dependabot para `checkout` (#14), `setup-python` (#17), `upload-pages-artifact` (#16) e `deploy-pages` (#13) estão refletidos na candidata. Permanecem fora dela `upload-artifact` (#15) e `download-artifact` (#18), usados por fluxos de coleta/release que exigem validação própria. Os PRs continuam abertos contra `main` enquanto esta candidata não for integrada.
 
 **Estado:** preview reproduzível e protegido contra publicação em PR está verificado remotamente. O artefato está disponível para revisão visual local enquanto não expira; ainda faltam navegador acessível, avaliações humanas, revisão de direitos, orçamento de desempenho e ensaio de rollback. A versão pública permanece inalterada.
+
+## 46. Estado do candidato após validação do preview — 2026-10-22
+
+A cabeça atual da PR #28 é `81b81c3401c6ccd1966c924ced5662a6c41b1156`. No mesmo commit, `quality` passou no push (run 39754862921) e no evento `pull_request` (run 39754869145). O workflow `site` passou no build estrito, validação de 396 páginas e upload do artefato Pages v5 (run 39754869058); seu job `deploy` foi `skipped`. O preview existe como artefato autenticado de Actions, com retenção temporária de 24 horas, e não como URL pública.
+
+A PR #28 segue draft; não há revisão humana registrada e a branch ainda não foi integrada. A comparação anterior de sitemaps mostrou os mesmos 395 caminhos em produção e na candidata. O workspace está limpo no commit da PR, e a cópia deste plano no diretório Antigravity foi sincronizada por SHA-256.
+
+**Estado:** a candidata agora tem CI remoto para qualidade e construção do artefato do Pages, além da prevenção testada de deploy fora de `main`. O produto continua em NO-GO: inspeção visual/acessível com navegador real, cinco sessões formativas, revisão de titularidade, métricas de desempenho, decisão sobre os dois updates genéricos de artefatos restantes e ensaio de rollback ainda requerem evidência.
