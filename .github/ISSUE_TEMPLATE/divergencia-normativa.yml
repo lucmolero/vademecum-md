@@ -1,0 +1,55 @@
+name: Apontar divergência com fonte oficial
+description: Relate uma diferença verificável entre o texto publicado e a fonte oficial.
+title: "Divergência normativa: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este formulário somente para divergência textual verificável. O relato será triado e não altera automaticamente o corpus.
+  - type: input
+    id: diploma
+    attributes:
+      label: Diploma e dispositivo
+      description: Informe o título ou ID do documento e o artigo, parágrafo ou inciso afetado.
+      placeholder: "Lei nº ... — art. ..."
+    validations:
+      required: true
+  - type: input
+    id: fonte_oficial
+    attributes:
+      label: URL da fonte oficial
+      description: Link direto para a publicação oficial que permite conferir a divergência.
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: input
+    id: versao_corte
+    attributes:
+      label: Release e data de corte consultadas
+      placeholder: "v1.1.2 — corte 2026-10-21"
+    validations:
+      required: true
+  - type: textarea
+    id: publicado
+    attributes:
+      label: Trecho publicado no VadeMecum MD
+      description: Copie o trecho e indique o caminho ou link para o documento.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: oficial
+    attributes:
+      label: Trecho correspondente na fonte oficial
+      description: Copie o trecho relevante ou explique precisamente a diferença, preservando contexto suficiente para conferência.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto adicional
+      description: Inclua página, publicação, data ou outra informação necessária para localizar a evidência.
+      render: text
+    validations:
+      required: false

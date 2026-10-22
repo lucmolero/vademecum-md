@@ -43,17 +43,65 @@
 <div class="metric-grid">
   <a class="metric-card reveal" href="generated/catalog/"><span>Diplomas curados</span><strong>375</strong><small>corpus federal</small></a>
   <a class="metric-card reveal" href="quality/"><span>Núcleo P0</span><strong>33<sup>/33</sup></strong><small>consolidado</small></a>
-  <a class="metric-card reveal" href="graph/"><span>Relações</span><strong>1,841</strong><small>grafo normativo</small></a>
+  <a class="metric-card reveal" href="graph/"><span>Relações</span><strong>1,841</strong><small>registros publicados, inclui inversas</small></a>
   <a class="metric-card reveal" href="quality/"><span>Data de corte</span><strong>2026-10-21</strong><small>snapshot público</small></a>
 </div>
 
-<section class="audiences-section reveal">
-  <div class="section-heading"><div><p class="eyebrow">Uma base, três leituras</p><h2>Feito para quem lê, mede e constrói.</h2></div><a href="audiences/">Ver contratos de consumo ↗</a></div>
-  <div class="audience-grid">
-    <a class="audience-card audience-law" href="audiences/#para-advogados-e-pesquisadores-juridicos"><span class="audience-kicker">01 · jurídico</span><h3>Advogados e pesquisadores</h3><p>Texto integral, situação, fonte oficial e citação por dispositivo.</p><span class="audience-link">Ler com contexto ↗</span></a>
-    <a class="audience-card audience-data" href="audiences/#para-cientistas-de-dados"><span class="audience-kicker">02 · dados</span><h3>Cientistas de dados</h3><p>IDs estáveis, hashes, manifestos e relações para pipelines reproduzíveis.</p><span class="audience-link">Explorar o contrato ↗</span></a>
-    <a class="audience-card audience-agent" href="audiences/#para-desenvolvedores-de-agentes-de-ia"><span class="audience-kicker">03 · agentes</span><h3>Desenvolvedores de IA</h3><p>Evidência rastreável, limites explícitos e Markdown pronto para ferramentas.</p><span class="audience-link">Construir com segurança ↗</span></a>
+<section class="featured-codes-section reveal">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Destaques do ordenamento</p>
+      <h2>Grandes Códigos da República</h2>
+    </div>
+    <a href="generated/catalog/">Explorar todos os 375 diplomas ↗</a>
   </div>
+  <div class="featured-codes-grid">
+    <a class="code-card" href="generated/laws/federal/constituicao/1988/constituicao-da-republica-federativa-do-brasil-1988/">
+      <div class="code-card-badge">CF/88</div>
+      <h3>Constituição Federal</h3>
+      <p>Norma fundamental da República promulgada em 5 de outubro de 1988.</p>
+      <span class="code-card-status status-em_vigor">Em vigor</span>
+    </a>
+    <a class="code-card" href="generated/laws/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002/">
+      <div class="code-card-badge">Lei 10.406</div>
+      <h3>Código Civil</h3>
+      <p>Direitos e deveres das pessoas, bens, obrigações e contratos civis.</p>
+      <span class="code-card-status status-em_vigor">Em vigor</span>
+    </a>
+    <a class="code-card" href="generated/laws/federal/leis-ordinarias/2015/lei-ordinaria-13105-2015/">
+      <div class="code-card-badge">Lei 13.105</div>
+      <h3>Código de Processo Civil</h3>
+      <p>Normas fundamentais e ritos de tutela jurisdicional perante os tribunais.</p>
+      <span class="code-card-status status-em_vigor">Em vigor</span>
+    </a>
+    <a class="code-card" href="generated/laws/federal/decretos-lei/1940/decreto-lei-2848-1940/">
+      <div class="code-card-badge">DL 2.848</div>
+      <h3>Código Penal</h3>
+      <p>Parte Geral e tipificação de crimes e contravenções no âmbito repressivo.</p>
+      <span class="code-card-status status-em_vigor">Em vigor</span>
+    </a>
+    <a class="code-card" href="generated/laws/federal/decretos-lei/1941/decreto-lei-3689-1941/">
+      <div class="code-card-badge">DL 3.689</div>
+      <h3>Código de Processo Penal</h3>
+      <p>Inquérito policial, instrução criminal, garantias processuais e provas.</p>
+      <span class="code-card-status status-em_vigor">Em vigor</span>
+    </a>
+    <a class="code-card" href="generated/laws/federal/decretos-lei/1943/decreto-lei-5452-1943/">
+      <div class="code-card-badge">DL 5.452</div>
+      <h3>Consolidação das Leis do Trabalho</h3>
+      <p>Relações individuais e coletivas de trabalho e direito processual trabalhista.</p>
+      <span class="code-card-status status-em_vigor">Em vigor</span>
+    </a>
+  </div>
+</section>
+
+<section class="audiences-section reveal">
+  <div class="section-heading"><div><p class="eyebrow">Leitura humana e consulta por agentes</p><h2>Conhecimento normativo com evidência.</h2></div><a href="audiences/">Contratos de consumo</a></div>
+  <div class="audience-grid audience-primary-grid">
+    <a class="audience-card audience-law" href="audiences/#para-advogados-e-pesquisadores-juridicos"><span class="audience-kicker">01 · leitura humana</span><h3>Advogados e pesquisadores</h3><p>Texto integral, situação, fonte oficial e citação por dispositivo.</p><span class="audience-link">Ler com contexto →</span></a>
+    <a class="audience-card audience-agent" href="audiences/#para-desenvolvedores-de-agentes-de-ia"><span class="audience-kicker">02 · agentes de IA</span><h3>Conhecimento para agentes</h3><p>Corpus rastreável para recuperar normas, contextualizar relações e fundamentar respostas.</p><span class="audience-link">Consultar skills →</span></a>
+  </div>
+  <p class="integration-audience"><strong>Integração:</strong> dados estruturados, IDs estáveis, hashes e manifestos para desenvolvedores conectarem o corpus a ferramentas e pipelines.</p>
 </section>
 
 <section class="editorial-section reveal">
@@ -121,4 +169,4 @@
   <div><p class="eyebrow">Transparência por design</p><h2>Auditável não significa oficial.</h2><p>O projeto documenta fontes, transformações, decisões e limitações. A fonte oficial continua sendo a autoridade textual. O site é uma camada de leitura regenerável.</p><a class="text-link" href="legal-limits/">Conhecer os limites jurídicos ↗</a></div>
 </section>
 
-<div class="home-footer-note"><strong>Snapshot 2026-10-21</strong><span>·</span><span>51 testes automatizados</span><span>·</span><a href="https://github.com/lucmolero/vademecum-md">código aberto no GitHub ↗</a></div>
+<div class="home-footer-note"><strong>Snapshot 2026-10-21</strong><span>·</span><span>53 testes automatizados</span><span>·</span><a href="https://github.com/lucmolero/vademecum-md">código aberto no GitHub ↗</a></div>

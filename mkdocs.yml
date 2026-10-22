@@ -44,6 +44,7 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/portfolio.js
+  - javascripts/reader.js
 extra:
   generator: false
   social:

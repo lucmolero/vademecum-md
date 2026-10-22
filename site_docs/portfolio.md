@@ -1,72 +1,56 @@
-# O projeto como engenharia
+# O projeto como infraestrutura de leitura jurídica
 
 ## O problema
 
-Legislação federal é legível por pessoas, mas raramente é distribuída com uma
-estrutura estável para validação, comparação e consumo por máquinas. O projeto
-organiza cada diploma como uma unidade editorial e computável sem substituir a
-fonte oficial.
+Publicações normativas são acessíveis em sites oficiais, mas podem ser difíceis
+de consultar, comparar e consumir de forma reproduzível. Agentes de IA também
+precisam de identidade documental, fonte, data de corte e dispositivos citáveis
+para não transformar texto incompleto ou contexto em resposta normativa.
 
-## Um produto para três disciplinas
+## A proposta
 
-O mesmo corpus oferece três interfaces coordenadas:
-
-- **Direito:** leitura integral, contexto de vigência e citação verificável;
-- **dados:** schemas, hashes, manifestos e releases reproduzíveis;
-- **agentes:** recuperação com identidade, evidência, data de corte e regras de recusa.
-
-Essa separação evita dois erros comuns: criar uma experiência bonita sem contrato
-de dados, ou criar um dataset técnico que não seja confortável para leitura jurídica.
-Veja os [contratos de consumo](audiences.md) e a
-[especificação do produto](https://github.com/lucmolero/vademecum-md/blob/main/docs/PRODUCT_SPEC.md).
-
-## A solução
+O VadeMecum MD organiza legislação federal curada em documentos Markdown com
+identidade estável, fontes oficiais, metadados, hashes e relações normativas.
+O repositório é o artefato público versionado; o site estático é uma edição para
+leitura humana; as skills descrevem como um agente deve consultar e citar o
+material que realmente estiver disponível na sessão.
 
 ```text
-fonte oficial → aquisição privada → normalização → auditoria
-→ curadoria jurídica → histórico e grafo → site e release
+fonte oficial → normalização e auditoria → Markdown canônico
+                                      ├→ histórico e grafo com evidência
+                                      ├→ leitor estático e catálogo
+                                      └→ release, manifestos e skills
 ```
 
-O Markdown canônico é a fonte do produto. O site, os catálogos, os índices e os
-relatórios são derivados e regeneráveis.
+O texto do corpus é a referência das páginas derivadas. Grafo, histórico,
+skills e índices são contexto ou instruções; não substituem o texto normativo.
 
-## Separação de responsabilidades
+## Decisões de engenharia
 
-| Camada | Responsabilidade |
-| --- | --- |
-| Fonte oficial | autoridade textual pública |
-| Agente jurídico | vigência, contexto, relações e decisão curatorial |
-| Validadores | identidade, estrutura, hashes, links e segurança |
-| Site | leitura, navegação e apresentação |
-| Release | empacotamento e distribuição reproduzíveis |
+- **Identidade antes de inferência:** cada diploma mantém ID estável, fonte,
+  hashes e data de corte.
+- **Camadas separadas:** corpo normativo, metadados curatoriais, histórico e
+  relações não são misturados.
+- **Build estático:** MkDocs e GitHub Pages publicam o leitor sem backend.
+- **Distribuição fixada:** ZIP, manifesto e checksums permitem identificar e
+  verificar uma release.
+- **Consulta de agente delimitada:** a skill exige acesso verificável ao
+  documento, citação e respeito aos estados; ela não fornece busca automática,
+  cobertura integral nem garantia de vigência posterior ao corte.
+- **Proposta sob gates:** mudanças públicas passam pelo fluxo de PR e pelos
+  validadores antes de qualquer incorporação.
 
-O agente não inventa texto. Os validadores não decidem significado jurídico.
-Conflitos preservam a versão pública anterior e são registrados na proposta.
+## O que não é prometido
 
-## O que torna o projeto demonstrável
+O projeto não é publicação oficial, aconselhamento jurídico, sistema de gestão
+de processos ou declaração de cobertura de todo o Direito brasileiro. O corpus
+não contém RAG como fonte normativa; respostas de agentes dependem dos arquivos
+ou ferramentas de leitura disponíveis e da evidência que esses materiais
+oferecem.
 
-- corpus real e extenso;
-- contrato documental explícito;
-- hashes com escopo definido;
-- histórico normativo separado;
-- grafo com evidência textual;
-- atualização proposta por Pull Request;
-- site editorial derivado;
-- acessibilidade e movimento reduzido;
-- pacote reproduzível;
-- limitações jurídicas documentadas.
+## Evidência pública
 
-## Decisões deliberadas
-
-O projeto não implementa RAG nesta fase. Primeiro estabiliza texto, proveniência,
-fidelidade, atualização e experiência de leitura. Índices semânticos, skills e
-harnesses serão construídos somente sobre um corpus editorialmente estabilizado.
-
-Também não há analytics comportamental. O produto privilegia privacidade,
-reprodutibilidade e evidência pública.
-
-## Limites
-
-O VadeMecum MD é um corpus autoral curado. Não é uma publicação oficial, não
-declara cobrir toda a legislação federal e não substitui a consulta à fonte
-oficial ou a orientação profissional.
+O estado de cada release deve ser lido nos manifests e no pacote publicado.
+Métricas da página inicial são geradas a partir dos dados versionados. Relações
+externas classificadas e arestas do grafo são contagens diferentes e não devem
+ser apresentadas como sinônimos.

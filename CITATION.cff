@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "VadeMecum MD"
-message: "Se você utilizar este corpus, cite a release específica consultada."
+message: "Cite esta release do projeto. Para uma norma, cite também o diploma, o dispositivo, a data de corte e a fonte oficial consultada. A licença MIT indicada refere-se ao software e aos materiais autorais do projeto; não licencia textos normativos."
 type: software
 authors:
   - family-names: Molero
@@ -9,4 +9,4 @@ repository-code: "https://github.com/lucmolero/vademecum-md"
 license: MIT
 version: 1.1.2
 date-released: 2026-10-22
-abstract: "Legislação federal brasileira estruturada para leitura humana, validação auditável e uso por máquinas."
+abstract: "Release versionada de um corpus curado de legislação federal brasileira em Markdown, com metadados, fontes oficiais, hashes e relações normativas, para leitura humana e consulta por ferramentas e agentes. A cobertura e o estado dos documentos limitam-se ao conteúdo e à data de corte publicados; o corpus não é publicação oficial nem promete exaustividade. A licença MIT do projeto não se estende automaticamente aos textos normativos."
