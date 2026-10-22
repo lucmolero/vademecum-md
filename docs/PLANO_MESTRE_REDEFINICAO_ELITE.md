@@ -1,6 +1,6 @@
 # Plano mestre de rebranding e refinamento — VadeMecum MD
 
-> **Versão:** 12 · **Atualizado:** 2026-10-22
+> **Versão:** 13 | **Atualizado:** 2026-10-22
 >
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
@@ -12,12 +12,12 @@
 | --- | --- | --- |
 | Corpus e proveniência | Candidato passa: 375 documentos; auditoria estrita de fidelidade `pass: 375`; release com 33/33 gates P0 em revalidações anteriores | `tools/audit_fidelity.py --strict`; `tools/validate_release.py --stabilization`; revalidar no commit candidato |
 | README e descoberta | README local foi simplificado como índice sem emojis; homepage local prioriza busca, catálogo e seis leis | Testes de contrato na suíte; revisar render real do GitHub após integração |
-| Site e grafo | Build estrito, validador de 396 páginas, grafo canônico e transfer budgets automatizados | mkdocs build --strict; tools/validate/validate_site.py; tools/validate/validate_site_budget.py; inspeção visual ainda pendente |
-| Leitor e acessibilidade | Fonte de interface com padrão compacto de 13 px, quatro níveis de 13–16 px e sidebars mantidas; testes de contrato passam | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
+| Site e grafo | Hero compacto, busca em fluxo e recorte navegável do grafo real; build estrito, 396 páginas e budgets aprovados no CI | `mkdocs build --strict`; `tools/validate/validate_site.py`; `tools/validate/validate_site_budget.py`; inspeção visual real ainda pendente |
+| Leitor e acessibilidade | Miolo legal em 13 px reais (CSS em px para neutralizar a escala raiz de 125%), quatro níveis de 13-16 px e barra reorganizada em grupos; sidebars mantidas | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
 | Identidade e ativos | Direção “Índice normativo” aplicada; escolha do usuário documentada como MIT para código e marca | Revisão de titularidade/proveniência, aplicação final em favicon e avaliação com públicos ainda pendentes |
-| Desempenho e dispositivos | CI aplica limites gzip-9: home inicial 120 KiB, busca 80 KiB, maior diploma 300 KiB; preview medido em 84.817 / 67.015 / 262.057 bytes | Core Web Vitals p75 em mobile/desktop, zoom e budget real ainda exigem browser e rede definidos |
+| Desempenho e dispositivos | CI aplica limites gzip-9: home inicial 120 KiB, busca 80 KiB, maior diploma 300 KiB; preview medido em 84.992 / 67.015 / 262.057 bytes | Core Web Vitals p75 em mobile/desktop e testes com dispositivos/rede definidos continuam pendentes |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 permanece draft; updates de upload/download e preview Pages estão na candidata; verificação combinada em CI pendente | Concluir checks, revisão humana, gates de direitos/desempenho/rollback e smoke test pós-deploy |
+| Produção e integração | PR #28 permanece draft; `quality` e `site` passaram no commit `f590db8`, com deploy ignorado | Revisão humana, gates de direitos/desempenho/rollback e smoke test pós-deploy ainda pendentes |
 
 ### Sequência bloqueante de lançamento
 
@@ -1221,12 +1221,12 @@ Os workflows de transferência também foram atualizados para upload-artifact v7
 
 **Estado:** os limites de payload agora são reproduzíveis e bloqueiam regressões no build. Permanecem NO-GO a inspeção visual/acessível real, as sessões com usuários, verificação de direitos, medição de campo, rollback e smoke test pós-publicação.
 
-## 50. Refino visual do hero e da tipografia do leitor ? 2026-10-22
+## 50. Refino visual do hero e da tipografia do leitor - 2026-10-22
 
-A regra anterior definia o texto em `.8125rem`, mas Material for MkDocs escala a raiz para 125%; portanto, o corpo aparecia com cerca de 16 px enquanto o controle informava 13 px. A folha agora fixa o conte?do legal em 13 px e oferece 14, 15 e 16 px, com entrelinha compacta. T?tulos de artigo, metadados e a barra de controles tamb?m foram reduzidos. Os controles s?o agrupados por navega??o e tamanho do texto, sem o papel ARIA `toolbar`, que exigiria navega??o interna por setas n?o implementada. Em telas estreitas, a barra deixa de ser sticky e quebra em linhas.
+A regra anterior definia o texto em `.8125rem`, mas Material for MkDocs escala a raiz para 125%; portanto, o corpo aparecia com cerca de 16 px enquanto o controle informava 13 px. A folha agora fixa o conteúdo legal em 13 px e oferece 14, 15 e 16 px, com entrelinha compacta. Títulos de artigo, metadados e a barra de controles também foram reduzidos. Os controles são agrupados por navegação e tamanho do texto, sem o papel ARIA `toolbar`, que exigiria navegação interna por setas não implementada. Em telas estreitas, a barra deixa de ser sticky e quebra em linhas.
 
-A composi??o da homepage mant?m busca, grafo real e leis frequentes na primeira sequ?ncia de leitura. O painel do grafo perdeu gradientes e ornamentos, ganhou superf?cie clara, borda fina e menor altura. Resultados de busca entram no fluxo, evitando sobreposi??o ao conte?do. Nenhuma sidebar ou rota de conte?do foi removida.
+A composição da homepage mantém busca, grafo real e leis frequentes na primeira sequência de leitura. O painel do grafo perdeu gradientes e ornamentos, ganhou superfície clara, borda fina e menor altura. Resultados de busca entram no fluxo, evitando sobreposição ao conteúdo. Nenhuma sidebar ou rota de conteúdo foi removida.
 
-**Verifica??o local:** `tools/site/build_site.py` regenerou 375 documentos e 1.841 rela??es; `mkdocs build --strict` passou com o plugin social desativado. `validate_site.py` validou 396 p?ginas e `validate_site_budget.py` passou (84.817 bytes gzip estimados para home inicial; 67.015 para busca sob demanda; 262.057 para o maior diploma). Com `CI=true`, o build estrito local aborta por 11 avisos de Cairo ausente na m?quina Windows; isso ? limita??o do ambiente de renderiza??o das imagens sociais, n?o valida??o visual do layout. CI Linux confirmou o commit `f35cdd7`: `quality` passou em push e pull request (72 testes), e `site` passou com o validador de p?ginas e budgets, enviou o artefato de preview de 10.364.563 bytes e manteve `deploy` ignorado. Os valores CI gzip-9 foram 84.992 / 67.015 / 262.057 bytes. A inspe??o visual do artefato continua pendente. O commit documental `8213fc4` tamb?m teve `quality` e build Pages aprovados; deploy foi ignorado.
+**Verificação local:** `tools/site/build_site.py` regenerou 375 documentos e 1.841 relações; `mkdocs build --strict` passou com o plugin social desativado. `validate_site.py` validou 396 páginas e `validate_site_budget.py` passou (84.817 bytes gzip estimados para home inicial; 67.015 para busca sob demanda; 262.057 para o maior diploma). Com `CI=true`, o build estrito local aborta por 11 avisos de Cairo ausente na máquina Windows; isso é limitação do ambiente de renderização das imagens sociais, não validação visual do layout. CI Linux confirmou o commit `f35cdd7`: `quality` passou em push e pull request (72 testes), e `site` passou com o validador de páginas e budgets, enviou o artefato de preview de 10.364.563 bytes e manteve `deploy` ignorado. Os valores CI gzip-9 foram 84.992 / 67.015 / 262.057 bytes. A inspeção visual do artefato continua pendente. Os commits documentais `8213fc4` e `f590db8` também tiveram `quality` e build Pages aprovados; deploy foi ignorado.
 
-A p?gina p?blica consultada responde 200, mas continua na release anterior: o HTML n?o cont?m os novos n?s do hero nem a barra do leitor. N?o houve navegador dispon?vel para inspe??o visual local nesta sess?o. Revis?o real de desktop/mobile, tema escuro, teclado, leitor de tela e teste formativo continuam gates de lan?amento.
+A página pública consultada responde 200, mas continua na release anterior: o HTML não contém os novos nós do hero nem a barra do leitor. Não houve navegador disponível para inspeção visual local nesta sessão. Revisão real de desktop/mobile, tema escuro, teclado, leitor de tela e teste formativo continuam gates de lançamento.
