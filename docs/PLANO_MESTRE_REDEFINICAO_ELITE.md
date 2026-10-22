@@ -1,6 +1,6 @@
 # Plano mestre de rebranding e refinamento — VadeMecum MD
 
-> **Versão:** 18 | **Atualizado:** 2026-10-22
+> **Versão:** 19 | **Atualizado:** 2026-10-22
 >
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
@@ -10,14 +10,14 @@
 
 | Frente | Situação verificada | Evidência de saída |
 | --- | --- | --- |
-| Corpus e proveniência | CI da cabeça `7be513e` passou: 375 documentos e gates de release sem erros | `quality` push 39762707378 e PR 39762715242; validação de fidelidade e release no workflow |
-| README e descoberta | README candidato é índice sem emojis, com links para Markdown e grafo; contrato passou no CI | Testes `quality` 39762715242; revisar render real do GitHub após integração |
-| Site e grafo | Build de PR 39762715330 passou: 396 HTML, 375 páginas legais e budgets; produção segue no hero antigo | Workflow `site`; gzip: home inicial 84.992 B, busca 67.015 B, maior lei 262.057 B; inspeção visual real pendente |
+| Corpus e proveniência | CI da cabeça `0723f43` passou: 375 documentos e gates de release sem erros | `quality` push 39763145852 e PR 39763153214; fidelidade e release passaram no workflow |
+| README e descoberta | README candidato é índice sem emojis, com links para Markdown e grafo; contrato passou no CI | Testes `quality` 39763153214; revisar render real do GitHub após integração |
+| Site e grafo | Build de PR 39763153159 passou: 396 HTML, 375 páginas legais e budgets; produção segue no hero antigo | Workflow `site`; gzip: home inicial 84.992 B, busca 67.015 B, maior lei 262.057 B; inspeção visual real pendente |
 | Leitor e acessibilidade | Miolo legal em 13 px reais (CSS em px para neutralizar a escala raiz de 125%), quatro níveis de 13-16 px e barra reorganizada em grupos; sidebars mantidas | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
 | Identidade e ativos | Marca e código sob MIT; Source Serif 4 (4.005R) vendorizada sob OFL 1.1 com hashes e cache offline para cartões | Confirmação de titularidade/autoria dos vetores e avaliação com públicos ainda pendentes |
 | Desempenho e dispositivos | Budgets de transferência passam no CI: 84.992 / 67.015 / 262.057 bytes gzip contra 122.880 / 81.920 / 307.200 | Core Web Vitals de campo em mobile/desktop e avaliação em dispositivos/rede reais continuam pendentes |
-| Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 draft, cabeça auditada `7be513e`; quality push/PR e build Pages passaram; deploy ignorado. Produção ainda serve a versão antiga | PR #28; Actions 39762707378, 39762715242 e 39762715330; ainda faltam gates humanos, direitos, campo, rollback e smoke pós-deploy |
+| Rotas e recuperação | Artefato atual e produção têm 395/395 URLs; zero destinos ausentes; cinco rotas-chave HTTP 200; rollback não ensaiado | Confirmar links profundos em navegador e ensaiar rollback no artefato exato a promover |
+| Produção e integração | PR #28 draft, HEAD `0723f43`; checks do Pages e quality passaram; deploy ignorado. Produção ainda serve a versão antiga | PR #28; Actions 39763145852, 39763153214 e 39763153159; ainda faltam gates humanos, direitos, campo, rollback e smoke pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -25,7 +25,7 @@
 2. Revisar o README renderizado e o Pages em desktop/celular, temas claro/escuro, zoom e estados de interação; executar teste moderado com pelo menos um advogado, um pesquisador e uma pessoa de tecnologia, registrando tarefas, falhas e decisões sem inventar feedback.
 3. Resolver titularidade/licenças de cada asset e validar a amostra jurídica e seus metadados contra a fonte e o corte que serão publicados.
 4. Medir desempenho e acessibilidade no preview; definir e cumprir os budgets antes da aprovação.
-5. Revalidar as 395 rotas e artefatos no preview, ensaiar rollback e publicar somente o artefato aprovado pelo fluxo protegido.
+5. Antes da promoção, confirmar a paridade do sitemap no artefato exato (a candidata atual tem 395/395), abrir links profundos e ensaiar rollback; publicar somente o artefato aprovado pelo fluxo protegido.
 6. Após deploy, repetir smoke test público de homepage, grafo, busca, documento, arquivos Markdown e release; guardar evidência datada e registrar decisão GO/NO-GO.
 
 ### Protocolo mínimo de avaliação formativa
@@ -1243,21 +1243,23 @@ O inventário foi refeito: agora lista os seis SVGs publicados, separa os dados 
 
 ## 52. Auditoria de estado e gates para lançamento - 2026-10-22
 
-A revisão do estado remoto confirma a candidata `7be513eaedb4af4f8105d49fff8631313aaab0fa` na PR #28. `quality` passou no push (39762707378) e na PR (39762715242); o workflow `site` passou (39762715330), com 396 páginas HTML, 375 diplomas e budgets gzip de 84.992 bytes para home/recursos iniciais, 67.015 para busca sob demanda e 262.057 para a maior página legal. Os limites seguem 122.880, 81.920 e 307.200 bytes. A implantação foi corretamente ignorada nos eventos de PR.
+A revisão do estado remoto confirma a candidata `0723f43f489f16d448c713fea1f9d12865b76f1f` na PR #28. `quality` passou no push (39763145852) e na PR (39763153214); o workflow `site` passou (39763153159), com 396 páginas HTML, 375 diplomas e budgets gzip de 84.992 bytes para home/recursos iniciais, 67.015 para busca sob demanda e 262.057 para a maior página legal. Os limites seguem 122.880, 81.920 e 307.200 bytes. A implantação foi corretamente ignorada nos eventos de PR.
 
-O artefato Pages do workflow 39762715330 foi baixado e inspecionado sem extração insegura. Seu sitemap contém 395 rotas; todas resolvem a `index.html` correspondente dentro do artefato. O sitemap de produção também contém 395 URLs: conjuntos idênticos, zero rotas adicionadas/removidas. Home, grafo, catálogo, Código Civil e Lei 13.964/2019 responderam 200 por HTTP. A homepage ainda contém a âncora antiga `para-desenvolvedores-de-agentes-de-ia` e não contém `hero-graph-node`; isso confirma que o usuário ainda não vê a candidata. A ferramenta Computer Use retornou `apps=[]` e `browsers=[]`, e o navegador de prévia não está disponível nesta sessão. Não houve inspeção visual, navegação por teclado ou teste com leitor de tela; não declarar esses gates aprovados com base no HTML/CI.
+O artefato Pages do workflow 39763153159 foi baixado e inspecionado sem extração insegura. Seu sitemap contém 395 rotas; todas resolvem a `index.html` correspondente dentro do artefato. O sitemap de produção também contém 395 URLs: conjuntos idênticos, zero rotas adicionadas/removidas. Home, grafo, catálogo, Código Civil e Lei 13.964/2019 responderam 200 por HTTP. A homepage ainda contém a âncora antiga `para-desenvolvedores-de-agentes-de-ia` e não contém `hero-graph-node`; isso confirma que o usuário ainda não vê a candidata. A ferramenta Computer Use retornou `apps=[]` e `browsers=[]`, e o navegador de prévia não está disponível nesta sessão. Não houve inspeção visual, navegação por teclado ou teste com leitor de tela; não declarar esses gates aprovados com base no HTML/CI.
 
-**Matriz final de gates externos:**
+**Matriz final de gates externos**
 
-| Gate | Estado | Evidência necessária para fechar | Próxima ação |
-| --- | --- | --- | --- |
-| Revisão visual do README e Pages | Aberto | Capturas e checklist desktop/mobile, claro/escuro, zoom e documentos longos | Revisar o artifact Pages da PR em navegador e registrar defeitos/correções |
-| Teclado, foco, reflow e leitor de tela | Aberto | Percurso real sem mouse, foco visível, zoom/reflow e leitura coerente | Executar revisão manual no navegador e corrigir bloqueios antes do merge |
-| Avaliação formativa | Aberto | Cinco sessões documentadas no roteiro da seção 42, com resultados reais | Recrutar participantes; não inventar comentários nem taxas de sucesso |
-| Autoria e autorização dos ativos | Aberto | Confirmação do responsável para os seis SVGs e três estudos conceituais, ou substituição/atribuição adequada | Confirmar titularidade/autorização e registrar a decisão no inventário |
-| Amostras legais e proveniência | Aberto | Conferência humana de textos, fonte, identificador e corte da release | Conferir amostra contra fonte oficial e registrar release/corte |
-| Desempenho de campo | Parcial | Medição real de LCP/INP/CLS no p75 em mobile e desktop dentro das metas | Coletar dados do preview com dispositivo/rede definidos; não inferir de gzip |
-| Compatibilidade e rollback | Parcial | Sitemap do artefato e da produção têm 395/395 URLs; zero destinos ausentes no artefato; cinco rotas-chave responderam 200 | Abrir links profundos em navegador e ensaiar rollback sem remover artefatos antigos |
-| Merge, deploy e produção | Bloqueado por gates anteriores | Aprovação da PR, artefato testado publicado e smoke test público pós-deploy | Manter draft/NO-GO até aprovação humana; após publicação, comparar produção à candidata |
+| Gate | Estado | Responsável por função (nome a designar) | Evidência para fechar | Próxima ação |
+| --- | --- | --- | --- | --- |
+| Revisão visual do README e Pages | Aberto | Maintainer + revisor(a) de produto/design | Capturas e checklist desktop/mobile, claro/escuro, zoom e documentos longos | Baixar artefato Pages, revisar no navegador e registrar/corrigir defeitos |
+| Teclado, foco, reflow e leitor de tela | Aberto | Revisor(a) de acessibilidade + maintainer | Percurso real sem mouse, foco visível, zoom/reflow e leitura coerente | Executar revisão manual e corrigir barreiras antes do merge |
+| Avaliação formativa | Aberto | Moderador(a) de pesquisa + cinco participantes | Cinco sessões do roteiro da seção 42, resultados e decisões registrados | Recrutar perfis exigidos; registrar evidência sem inventar resultados |
+| Autoria e autorização dos ativos | Aberto | Responsável do projeto | Confirmação para os seis SVGs e três estudos, ou substituição/atribuição adequada | Confirmar titularidade/autorização e anotar decisão no inventário |
+| Amostras legais e proveniência | Aberto | Revisor(a) editorial jurídico(a) | Textos, fonte, identificador, hash e corte conferidos contra fonte oficial | Conferir amostra representativa e registrar release/corte |
+| Desempenho de campo | Parcial | Maintainer web + revisor(a) de performance | LCP/INP/CLS no p75 de mobile/desktop dentro das metas | Medir preview em dispositivos/redes definidos; gzip não substitui campo |
+| Compatibilidade e rollback | Parcial | Maintainer de Pages/release | Sitemap do artefato e produção: 395/395; zero destinos ausentes; cinco rotas-chave HTTP 200 | Abrir links profundos em navegador e ensaiar rollback preservando artefatos |
+| Merge, deploy e produção | Bloqueado por gates anteriores | Responsável do repositório + revisor(a) aprovado(a) | Gates anteriores assinados, artefato aprovado publicado e smoke test público | Manter draft/NO-GO; após aprovação e deploy, comparar produção à candidata |
+
+As funções indicadas organizam a responsabilidade; nomes e disponibilidade ainda não foram confirmados. Não marcar o gate como aprovado sem evidência datada e reprodutível.
 
 **Decisão:** manter PR #28 em draft e estado NO-GO. Não há falha técnica conhecida nos checks atuais; o bloqueio é evidência humana/operacional ainda ausente e a produção desatualizada. Este diagnóstico não autoriza merge ou deploy. O plano continua aberto até haver evidência verificável para cada gate, as correções forem incorporadas, o fluxo protegido publicar a revisão aprovada e o smoke test público confirmar o resultado.
