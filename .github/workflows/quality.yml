@@ -48,6 +48,8 @@ jobs:
         run: python tools/validate/validate_site.py
         env:
           VMD_REQUIRE_SOCIAL_CARDS: "1"
+      - name: Enforce rendered site transfer budgets
+        run: python tools/validate/validate_site_budget.py
       - name: Validate reader site inputs
         run: test -f mkdocs.yml && test -f site_docs/generated/catalog.md
       - name: Classify unresolved relations

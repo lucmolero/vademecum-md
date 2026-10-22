@@ -1,6 +1,6 @@
 # Plano mestre de rebranding e refinamento — VadeMecum MD
 
-> **Versão:** 11 · **Atualizado:** 2026-10-22
+> **Versão:** 12 · **Atualizado:** 2026-10-22
 >
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
@@ -12,12 +12,12 @@
 | --- | --- | --- |
 | Corpus e proveniência | Candidato passa: 375 documentos; auditoria estrita de fidelidade `pass: 375`; release com 33/33 gates P0 em revalidações anteriores | `tools/audit_fidelity.py --strict`; `tools/validate_release.py --stabilization`; revalidar no commit candidato |
 | README e descoberta | README local foi simplificado como índice sem emojis; homepage local prioriza busca, catálogo e seis leis | Testes de contrato na suíte; revisar render real do GitHub após integração |
-| Site e grafo | Build estrito aprovado; 396 páginas e zero erros; grafo gerado de relações canônicas e nós abrem diplomas | `mkdocs build --strict`; `tools/validate/validate_site.py`; teste visual atual ainda pendente |
+| Site e grafo | Build estrito, validador de 396 páginas, grafo canônico e transfer budgets automatizados | mkdocs build --strict; tools/validate/validate_site.py; tools/validate/validate_site_budget.py; inspeção visual ainda pendente |
 | Leitor e acessibilidade | Fonte de interface com padrão compacto de 13 px, quatro níveis de 13–16 px e sidebars mantidas; testes de contrato passam | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
 | Identidade e ativos | Direção “Índice normativo” aplicada; escolha do usuário documentada como MIT para código e marca | Revisão de titularidade/proveniência, aplicação final em favicon e avaliação com públicos ainda pendentes |
-| Desempenho e dispositivos | Artefato candidato: estimativa gzip-9 de 85.068 bytes para home e recursos referenciados; busca sob demanda soma 67.015 bytes. Não são dados de campo | Capturar rede/Core Web Vitals em navegador real e aprovar budgets por dispositivo e rede |
+| Desempenho e dispositivos | CI aplica limites gzip-9: home inicial 120 KiB, busca 80 KiB, maior diploma 300 KiB; preview medido em 85.068 / 67.015 / 262.044 bytes | Core Web Vitals p75 em mobile/desktop, zoom e budget real ainda exigem browser e rede definidos |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 permanece draft; preview anterior passou e não publicou; updates de upload/download de artefato agora integram a candidata, aguardando revalidação | Concluir checks, revisão humana, gates de direitos/desempenho/rollback e smoke test pós-deploy |
+| Produção e integração | PR #28 permanece draft; updates de upload/download e preview Pages estão na candidata; verificação combinada em CI pendente | Concluir checks, revisão humana, gates de direitos/desempenho/rollback e smoke test pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -1208,3 +1208,15 @@ A homepage e os recursos referenciados no primeiro carregamento totalizam 85.068
 Incorporei ao candidato os updates Dependabot restantes: upload-artifact v7 em oito etapas de seis workflows e download-artifact v8 no workflow de release. O uso atual conserva o comportamento de arquivo compactado; o upload direto e o download sem descompactar são opções, não ativadas. O download v8 agora falha por padrão quando o digest não confere, reforçando a validação de integridade. As fontes oficiais são as notas de [upload-artifact v7](https://github.com/actions/upload-artifact/releases/tag/v7.0.2) e [download-artifact v8](https://github.com/actions/download-artifact/releases/tag/v8.0.0). CI precisa validar os workflows combinados com checkout/setup-python/Pages já atualizados.
 
 **Estado:** evidência inicial de peso registrada, sem confundir bytes totais do site com custo de entrada. Os workflows de artefatos estão atualizados no candidato; enquanto os checks e gates visuais/humanos não forem concluídos, manter NO-GO.
+
+## 49. Budgets automáticos de transferência — 2026-10-22
+
+Acrescentei tools/validate/validate_site_budget.py aos workflows quality e site. O validador mede gzip-9 determinístico sobre a homepage e recursos referenciados, o índice de busca sob demanda e cada HTML de diploma federal. Ele aplica limites fixos de 120 KiB para a primeira carga da home, 80 KiB para a busca e 300 KiB para a maior página legal. O build falha quando uma referência inicial está ausente, uma rota sai da raiz do site ou algum limite é ultrapassado.
+
+Executei o validador contra os 468 arquivos do artefato Pages do candidato, extraído em diretório temporário com caminhos verificados. Resultado: 375 diplomas; home e recursos iniciais 85.068/122.880 bytes; índice de busca 67.015/81.920 bytes; maior HTML legal 262.044/307.200 bytes (Código Civil); zero erros. O artefato tem 48.852.714 bytes descompactados, mas essa soma inclui todos os textos de todas as rotas e não representa uma visita inicial.
+
+O orçamento de transferência cobre regressão de payload, não tempo percebido. Para avaliação em campo, manter como alvos no percentil 75, separados por mobile e desktop: LCP ≤ 2,5 s, INP ≤ 200 ms e CLS ≤ 0,1, conforme [Google Search Central](https://developers.google.com/search/docs/appearance/core-web-vitals) e [web.dev](https://web.dev/articles/vitals). Esses valores ainda não foram medidos no navegador real; ausência de dados de campo não deve ser relatada como aprovação.
+
+Os workflows de transferência também foram atualizados para upload-artifact v7 e download-artifact v8. A revalidação combinada no CI permanece pendente nesta versão do plano.
+
+**Estado:** os limites de payload agora são reproduzíveis e bloqueiam regressões no build. Permanecem NO-GO a inspeção visual/acessível real, as sessões com usuários, verificação de direitos, medição de campo, rollback e smoke test pós-publicação.

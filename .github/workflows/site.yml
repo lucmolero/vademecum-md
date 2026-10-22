@@ -31,6 +31,7 @@ jobs:
       - run: python tools/validate/validate_site.py
         env:
           VMD_REQUIRE_SOCIAL_CARDS: "1"
+      - run: python tools/validate/validate_site_budget.py
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
