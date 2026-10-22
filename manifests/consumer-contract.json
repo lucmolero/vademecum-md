@@ -1,0 +1,38 @@
+{
+  "schema": "vademecum-consumer-contract/v1",
+  "product": "VadeMecum MD",
+  "release": "1.1.0",
+  "canonical_layer": "bases/curated/legislacao/federal",
+  "authority": {
+    "text": "official_publication",
+    "metadata": "curated_with_official_evidence",
+    "derived_artifacts": "non_normative"
+  },
+  "required_citation": [
+    "document_id",
+    "dispositivo",
+    "release",
+    "data_corte",
+    "fonte_oficial"
+  ],
+  "invalid_for_asserting_current_validity": [
+    "requer_reconciliacao",
+    "historica",
+    "desconhecida"
+  ],
+  "profiles": {
+    "juridico": {
+      "primary_artifacts": ["canonical_markdown", "derived_reader", "official_source"],
+      "success_criteria": ["locate", "read", "cite", "verify_at_source"]
+    },
+    "dados": {
+      "primary_artifacts": ["manifests/corpus.csv", "canonical_frontmatter", "normative_graph_jsonl"],
+      "success_criteria": ["enumerate", "filter", "compare_releases", "reproduce_metrics"]
+    },
+    "agentes_ia": {
+      "primary_artifacts": ["canonical_markdown", "stable_ids", "evidence_relations"],
+      "success_criteria": ["retrieve", "cite", "respect_cutoff", "refuse_unsupported_claims"]
+    }
+  },
+  "not_in_scope": ["official_government_publication", "legal_advice", "rag_index_as_normative_source"]
+}

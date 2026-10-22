@@ -217,6 +217,15 @@ def home_page(rows: list[dict[str, str]], metrics: dict[str, object]) -> str:
   <a class="metric-card reveal" href="quality/"><span>Data de corte</span><strong>{esc(metrics["cutoff"])}</strong><small>snapshot público</small></a>
 </div>
 
+<section class="audiences-section reveal">
+  <div class="section-heading"><div><p class="eyebrow">Uma base, três leituras</p><h2>Feito para quem lê, mede e constrói.</h2></div><a href="audiences/">Ver contratos de consumo ↗</a></div>
+  <div class="audience-grid">
+    <a class="audience-card audience-law" href="audiences/#para-advogados-e-pesquisadores-juridicos"><span class="audience-kicker">01 · jurídico</span><h3>Advogados e pesquisadores</h3><p>Texto integral, situação, fonte oficial e citação por dispositivo.</p><span class="audience-link">Ler com contexto ↗</span></a>
+    <a class="audience-card audience-data" href="audiences/#para-cientistas-de-dados"><span class="audience-kicker">02 · dados</span><h3>Cientistas de dados</h3><p>IDs estáveis, hashes, manifestos e relações para pipelines reproduzíveis.</p><span class="audience-link">Explorar o contrato ↗</span></a>
+    <a class="audience-card audience-agent" href="audiences/#para-desenvolvedores-de-agentes-de-ia"><span class="audience-kicker">03 · agentes</span><h3>Desenvolvedores de IA</h3><p>Evidência rastreável, limites explícitos e Markdown pronto para ferramentas.</p><span class="audience-link">Construir com segurança ↗</span></a>
+  </div>
+</section>
+
 <section class="editorial-section reveal">
   <p class="eyebrow">A ponte</p>
   <h2>Texto jurídico com estrutura de sistema.</h2>

@@ -52,6 +52,7 @@ extra:
 nav:
   - Início: index.md
   - Explorar legislação: generated/catalog.md
+  - Públicos e consumo: audiences.md
   - Metodologia:
       - Arquitetura: architecture.md
       - Visão geral: methodology.md

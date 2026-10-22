@@ -4,7 +4,7 @@
 
 [![Qualidade](https://github.com/lucmolero/vademecum-md/actions/workflows/quality.yml/badge.svg)](https://github.com/lucmolero/vademecum-md/actions/workflows/quality.yml)
 [![Site](https://img.shields.io/badge/site-GitHub%20Pages-13243A)](https://lucmolero.github.io/vademecum-md/)
-[![Release](https://img.shields.io/badge/release-1.1.0--rc-B48A3C)](https://github.com/lucmolero/vademecum-md/releases)
+[![Release](https://img.shields.io/badge/release-1.1.0-B48A3C)](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.0)
 [![License](https://img.shields.io/badge/code%20and%20docs-MIT-2D7659)](LICENSE.md)
 
 O VadeMecum MD é um corpus autoral de legislação federal brasileira em Markdown,
@@ -23,18 +23,33 @@ experiência editorial derivada do corpus canônico. Cada diploma possui identid
 estável, texto integral, situação, data de corte, fonte oficial, unidade de
 extração e hashes verificáveis.
 
-### Estado do release candidate
+### Estado da release pública `v1.1.0`
 
 - corpus federal curado: **375 diplomas**;
 - núcleo P0 consolidado: **33/33**;
 - relações normativas: **1.841**;
 - ocorrências externas classificadas: **2.177**;
-- testes automatizados: **50**;
+- testes automatizados: **51**;
 - data de corte do snapshot: **2026-10-21**;
 - RAG e índices semânticos: deliberadamente fora desta release.
 
 As métricas da homepage são regeneradas a partir dos manifests; não são números
 digitados manualmente.
+
+## Um corpus, três modos de trabalho
+
+O produto atende três públicos sem duplicar ou reinterpretar o texto normativo:
+
+- **advogados e pesquisadores jurídicos:** leitura integral, situação, fonte,
+  data de corte, navegação por artigo e citação reproduzível;
+- **cientistas de dados:** CSV, frontmatter, JSONL, hashes, IDs estáveis e
+  releases comparáveis para pipelines determinísticos;
+- **desenvolvedores de agentes de IA:** contrato de evidência, relações
+  rastreáveis e regras explícitas para não inventar texto ou vigência.
+
+O [guia de públicos e consumo](https://lucmolero.github.io/vademecum-md/audiences/)
+contém os protocolos de uso e exemplos para cada perfil. O Markdown canônico e
+os manifestos são as interfaces públicas primárias; o site é uma camada derivada.
 
 ## Arquitetura
 
@@ -144,6 +159,9 @@ verificam admissibilidade técnica e não inventam significado jurídico.
 ## Documentação
 
 - [Site editorial](https://lucmolero.github.io/vademecum-md/)
+- [Públicos e consumo](https://lucmolero.github.io/vademecum-md/audiences/)
+- [Contratos de consumo](docs/AUDIENCE_CONTRACTS.md)
+- [Especificação do produto](docs/PRODUCT_SPEC.md)
 - [Metodologia jurídica](docs/LEGAL_AUDIT.md)
 - [Arquitetura](docs/SCHEMA.md)
 - [Qualidade](docs/QUALITY.md)
