@@ -97,7 +97,7 @@ para consumidores está em
 
 ## Não objetivos
 
-Na release `v1.1.1`, o produto não é:
+Na release `v1.1.2`, o produto não é:
 
 - publicação oficial do Estado;
 - aconselhamento ou parecer jurídico;
@@ -109,7 +109,7 @@ Na release `v1.1.1`, o produto não é:
 
 | Estágio | Entrega | Condição de avanço |
 | --- | --- | --- |
-| `v1.1.1` | corpus, site, contratos, release e auditoria | gates públicos verdes |
+| `v1.1.2` | corpus, site, contratos, release e auditoria | gates públicos verdes |
 | `v1.2` | atualização proposta por PR e diffs mais ricos | evidência e rollback testados |
 | `v2` | recuperação híbrida e ferramentas para agentes | avaliação de citações e recusa |
 

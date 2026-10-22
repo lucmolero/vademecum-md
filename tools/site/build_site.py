@@ -153,11 +153,13 @@ def load_metrics(rows: list[dict[str, str]]) -> dict[str, object]:
     return {
         "corpus_count": len(rows),
         "p0_count": sum(row.get("priority") == "P0" for row in rows),
+        "p0_ready": int((baseline.get("p0") or {}).get("ready", 0)),
+        "p0_total": int((baseline.get("p0") or {}).get("total", 0)),
         "official_source_count": sum(bool(row.get("source")) for row in rows),
         "relations": relations,
         "tests": tests,
         "cutoff": cutoff,
-        "version": str(release.get("version", "1.1.1")),
+        "version": str(release.get("version", "1.1.2")),
         "quality": str(baseline.get("status", "unknown")),
     }
 
@@ -212,7 +214,7 @@ def home_page(rows: list[dict[str, str]], metrics: dict[str, object]) -> str:
 
 <div class="metric-grid">
   <a class="metric-card reveal" href="generated/catalog/"><span>Diplomas curados</span><strong>{metrics["corpus_count"]}</strong><small>corpus federal</small></a>
-  <a class="metric-card reveal" href="quality/"><span>Núcleo P0</span><strong>{metrics["p0_count"]}<sup>/33</sup></strong><small>consolidado</small></a>
+  <a class="metric-card reveal" href="quality/"><span>Núcleo P0</span><strong>{metrics["p0_ready"]}<sup>/{metrics["p0_total"]}</sup></strong><small>consolidado</small></a>
   <a class="metric-card reveal" href="graph/"><span>Relações</span><strong>{metrics["relations"]:,}</strong><small>grafo normativo</small></a>
   <a class="metric-card reveal" href="quality/"><span>Data de corte</span><strong>{esc(metrics["cutoff"])}</strong><small>snapshot público</small></a>
 </div>

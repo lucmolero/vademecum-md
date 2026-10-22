@@ -3,7 +3,7 @@
 <div class="vmd-hero">
   <div class="hero-copy reveal">
     <img class="hero-logo" src="assets/logo-lockup.svg" alt="VadeMecum MD" />
-    <p class="eyebrow">Corpus federal curado <span class="eyebrow-dot"></span> release 1.1.1</p>
+    <p class="eyebrow">Corpus federal curado <span class="eyebrow-dot"></span> release 1.1.2</p>
     <h1>O direito federal,<br><em>em estado legível.</em></h1>
     <p class="hero-lede">Legislação brasileira estruturada para leitura humana, validação auditável e uso por máquinas.</p>
     <div class="hero-actions">

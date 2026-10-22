@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.2 — métricas regeneráveis
+
+- Cartão de cobertura P0 derivado integralmente do baseline, sem denominador fixo.
+- Contrato de métricas testado contra os manifestos públicos.
+
 ## 1.1.1 — contratos de consumo
 
 - Produto posicionado explicitamente para Direito, dados e agentes de IA.
