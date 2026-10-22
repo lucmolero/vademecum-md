@@ -90,3 +90,8 @@ preservada e o caso é registrado para a próxima execução.
 `fidelity-audit.json` verifica unidades de fonte, árvore de artigos e hashes
 `norm-v3`. Constituição e ADCT possuem seletores independentes mesmo quando
 compartilham a mesma página oficial.
+
+Em uma atualização, o ledger também registra `candidate_sha256_raw` e
+`candidate_sha256_body`. O aplicador só materializa o novo Markdown quando esses
+hashes correspondem exatamente ao snapshot selecionado; caso contrário, a
+versão pública atual é preservada.

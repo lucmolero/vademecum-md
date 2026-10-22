@@ -10,11 +10,11 @@ from tempfile import TemporaryDirectory
 from urllib.error import HTTPError
 from unittest.mock import MagicMock, patch
 
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "acquire"))
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "normalize"))
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "history"))
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "relations"))
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "acquire"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "normalize"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "history"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "relations"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools"))
 
 from collect_legislation import (  # noqa: E402
     build_plan,
@@ -38,7 +38,7 @@ from classify_unresolved import referenced_role  # noqa: E402
 from pipeline_modes import load_modes, resolve_mode  # noqa: E402
 
 
-ROOT = Path(__file__).parents[1]
+ROOT = Path(__file__).parents[2]
 
 
 class WorkspaceTest(unittest.TestCase):

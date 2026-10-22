@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 
@@ -41,6 +42,9 @@ def validate(path: Path) -> tuple[bool, list[str]]:
             errors.append(f"{identifier}: invalid decision")
         if not item.get("official_evidence"):
             errors.append(f"{identifier}: consensus without official_evidence")
+        for field in ("candidate_sha256_raw", "candidate_sha256_body"):
+            if field in item and not re.fullmatch(r"[0-9a-f]{64}", str(item[field])):
+                errors.append(f"{identifier}: invalid {field}")
         curator = item.get("legal_curator") or {}
         critic = item.get("legal_critic") or {}
         for role, pass_data in (("legal_curator", curator), ("legal_critic", critic)):

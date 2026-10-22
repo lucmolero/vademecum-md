@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 import sys
 
-ROOT = Path(__file__).parents[1]
+ROOT = Path(__file__).parents[2]
 sys.path.insert(0, str(ROOT / "tools" / "legal"))
 from validate_consensus import validate  # noqa: E402
 
@@ -47,6 +47,13 @@ class LegalConsensusTest(unittest.TestCase):
         valid, errors = self.validate_payload(payload)
         self.assertFalse(valid)
         self.assertTrue(any("disagreement" in error for error in errors))
+
+    def test_candidate_snapshot_hash_is_validated(self):
+        payload = ledger()
+        payload["documents"][0]["candidate_sha256_raw"] = "not-a-sha256"
+        valid, errors = self.validate_payload(payload)
+        self.assertFalse(valid)
+        self.assertTrue(any("candidate_sha256_raw" in error for error in errors))
 
 
 if __name__ == "__main__":

@@ -146,6 +146,9 @@ def main() -> int:
         if not attempt or not attempt.get("snapshot_file"):
             skipped.append({"matrix_id": matrix_id, "reason": "selected_source_snapshot_missing"})
             continue
+        if args.apply and legal_decision.get("candidate_sha256_raw") != attempt.get("sha256_raw"):
+            skipped.append({"matrix_id": matrix_id, "reason": "candidate_snapshot_not_bound_to_legal_consensus"})
+            continue
         snapshot = ROOT / str(attempt["snapshot_file"])
         if not path or not snapshot.is_file():
             skipped.append({"matrix_id": matrix_id, "reason": "document_or_snapshot_missing"})

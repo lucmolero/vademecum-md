@@ -45,6 +45,11 @@ jobs:
             --proposal-markdown "docs/proposals/update-${stamp}.md"
           if [ -f manifests/legal-consensus.json ]; then
             python tools/legal/validate_consensus.py manifests/legal-consensus.json
+            python tools/legal/generate_consensus.py \
+              --collection-report reports/legislation-collection.json \
+              --source-resolution manifests/source-resolution.json \
+              --priority P0 \
+              --apply
             python tools/reconcile/apply_reviewed_updates.py \
               --mode apply_reviewed \
               --collection-report reports/legislation-collection.json \
@@ -56,7 +61,16 @@ jobs:
             echo "No autonomous curator/critic consensus ledger; preserving current corpus and publishing evidence only."
           fi
           python tools/build_public_indexes.py --apply
-          python tools/audit_fidelity.py --output bases/derived/relatorios/fidelity-audit.json
+          python tools/audit_fidelity.py \
+            --report reports/legislation-collection.json \
+            --report reports/editorial-expansion-collection-v2.json \
+            --output bases/derived/relatorios/fidelity-audit.json
+          python tools/migrate_fidelity_contract.py --audit bases/derived/relatorios/fidelity-audit.json --apply
+          python tools/build_public_indexes.py --apply
+          python tools/audit_fidelity.py \
+            --report reports/legislation-collection.json \
+            --report reports/editorial-expansion-collection-v2.json \
+            --output bases/derived/relatorios/fidelity-audit.json
           python tools/validate_release.py --stabilization
           if [ -z "$(git status --porcelain -- docs/proposals)" ]; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
