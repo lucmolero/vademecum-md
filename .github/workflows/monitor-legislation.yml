@@ -27,7 +27,7 @@ jobs:
       - name: Build freshness report
         run: python tools/acquire/monitor_legislation.py --report reports/legislation-monitor.json
       - name: Publish monitoring artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: legislation-monitor
           path: reports/legislation-monitor.json

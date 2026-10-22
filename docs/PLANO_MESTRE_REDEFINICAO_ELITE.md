@@ -1,6 +1,6 @@
 # Plano mestre de rebranding e refinamento — VadeMecum MD
 
-> **Versão:** 10 · **Atualizado:** 2026-10-22
+> **Versão:** 11 · **Atualizado:** 2026-10-22
 >
 > **Estado:** plano de execução e auditoria de lançamento. O painel abaixo resume a candidata no workspace; a aprovação final exige fechar os gates externos listados.
 
@@ -13,11 +13,11 @@
 | Corpus e proveniência | Candidato passa: 375 documentos; auditoria estrita de fidelidade `pass: 375`; release com 33/33 gates P0 em revalidações anteriores | `tools/audit_fidelity.py --strict`; `tools/validate_release.py --stabilization`; revalidar no commit candidato |
 | README e descoberta | README local foi simplificado como índice sem emojis; homepage local prioriza busca, catálogo e seis leis | Testes de contrato na suíte; revisar render real do GitHub após integração |
 | Site e grafo | Build estrito aprovado; 396 páginas e zero erros; grafo gerado de relações canônicas e nós abrem diplomas | `mkdocs build --strict`; `tools/validate/validate_site.py`; teste visual atual ainda pendente |
-| Leitor e acessibilidade | Fonte padrão do leitor 14 px, faixa 13–16 px e sidebars mantidas; contratos automatizados passam | Testes de leitor e navegação; inspeção de teclado, leitor de tela, zoom, foco e contraste em browser ainda pendente |
+| Leitor e acessibilidade | Fonte de interface com padrão compacto de 13 px, quatro níveis de 13–16 px e sidebars mantidas; testes de contrato passam | Teclado, leitor de tela, zoom, foco e contraste ainda exigem inspeção manual em navegador |
 | Identidade e ativos | Direção “Índice normativo” aplicada; escolha do usuário documentada como MIT para código e marca | Revisão de titularidade/proveniência, aplicação final em favicon e avaliação com públicos ainda pendentes |
-| Desempenho e dispositivos | Site estático e índices sob demanda; não há medição atual de bytes transferidos/Core Web Vitals na produção após o redesign | Definir orçamento após baseline em desktop e celular com cache/rede registrados |
+| Desempenho e dispositivos | Artefato candidato: estimativa gzip-9 de 85.068 bytes para home e recursos referenciados; busca sob demanda soma 67.015 bytes. Não são dados de campo | Capturar rede/Core Web Vitals em navegador real e aprovar budgets por dispositivo e rede |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | PR #28 está aberto como draft; `quality` e build de Pages passaram; deploy foi pulado; a homepage e `/graph/` públicas ainda não contêm as mudanças | Concluir revisão humana, decidir os dois updates de artefato restantes, promover o draft após os gates e executar smoke test pós-deploy |
+| Produção e integração | PR #28 permanece draft; preview anterior passou e não publicou; updates de upload/download de artefato agora integram a candidata, aguardando revalidação | Concluir checks, revisão humana, gates de direitos/desempenho/rollback e smoke test pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -1198,3 +1198,13 @@ No leitor, o corpo passa a iniciar em 13 px, com quatro níveis entre 13 e 16 px
 - Não há navegador disponível para captura ou revisão visual nesta sessão; a inspeção em desktop, mobile, temas, teclado e leitor de tela continua pendente. A suíte local não foi executada. A primeira execução remota encontrou uma expectativa de headline antiga, que atualizei para a nova chamada do hero. No commit d51c107b5656701880da67578e40923ce7530e7b, quality passou em push e pull request (72 testes), e o build de Pages passou com deploy ignorado. Esses checks validam o artefato candidato, mas não substituem a revisão visual manual.
 
 Estado: a PR #28 segue em draft no commit 1657e5e779a322cb2af00a096568287cc7f1c84a. Os checks atuais de quality (72 testes), build de Pages e validação de 396 páginas passaram; o deploy foi ignorado. A revisão visual/acessível em navegador real e os demais gates humanos continuam pendentes, portanto manter NO-GO.
+
+## 48. Peso do artefato e atualização de Actions — 2026-10-22
+
+Baixei somente para leitura o artefato Pages do run [39756420299](https://github.com/lucmolero/vademecum-md/actions/runs/39756420299), referente ao site candidato. O tar publicado contém 468 arquivos e 48.852.714 bytes de payload. Os 396 HTML somam 44.623.675 bytes, majoritariamente textos legais que só são transferidos ao abrir suas páginas. Essa soma total não representa o peso inicial da homepage.
+
+A homepage e os recursos referenciados no primeiro carregamento totalizam 85.068 bytes numa estimativa local gzip-9. O índice da busca tem 749.339 bytes sem compressão e estimativa gzip-9 de 67.015 bytes; o script o solicita apenas depois de uma consulta. A página do grafo tem 35.621 bytes e estimativa gzip-9 de 8.730 bytes. O Código Civil tem 1.766.003 bytes sem compressão e estimativa gzip-9 de 262.044 bytes. São estimativas offline por arquivo, não transferência observada por navegador nem Core Web Vitals. O primeiro carregamento parece leve pelo tamanho do artefato, mas o budget de desempenho permanece aberto até medição real em rede e dispositivos definidos.
+
+Incorporei ao candidato os updates Dependabot restantes: upload-artifact v7 em oito etapas de seis workflows e download-artifact v8 no workflow de release. O uso atual conserva o comportamento de arquivo compactado; o upload direto e o download sem descompactar são opções, não ativadas. O download v8 agora falha por padrão quando o digest não confere, reforçando a validação de integridade. As fontes oficiais são as notas de [upload-artifact v7](https://github.com/actions/upload-artifact/releases/tag/v7.0.2) e [download-artifact v8](https://github.com/actions/download-artifact/releases/tag/v8.0.0). CI precisa validar os workflows combinados com checkout/setup-python/Pages já atualizados.
+
+**Estado:** evidência inicial de peso registrada, sem confundir bytes totais do site com custo de entrada. Os workflows de artefatos estão atualizados no candidato; enquanto os checks e gates visuais/humanos não forem concluídos, manter NO-GO.
