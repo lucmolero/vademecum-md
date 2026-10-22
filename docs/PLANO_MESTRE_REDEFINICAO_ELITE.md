@@ -17,7 +17,7 @@
 | Identidade e ativos | Direção “Índice normativo” aplicada; escolha do usuário documentada como MIT para código e marca | Revisão de titularidade/proveniência, aplicação final em favicon e avaliação com públicos ainda pendentes |
 | Desempenho e dispositivos | Site estático e índices sob demanda; não há medição atual de bytes transferidos/Core Web Vitals na produção após o redesign | Definir orçamento após baseline em desktop e celular com cache/rede registrados |
 | Rotas e recuperação | Os 395 caminhos do sitemap público e do candidato coincidem; links internos também passam validação; rollback ainda não foi ensaiado | Revalidar o conjunto no preview, abrir rotas diretamente e ensaiar rollback antes da publicação |
-| Produção e integração | Em 2026-10-22 a homepage e `/graph/` respondiam HTTP 200, mas não continham o hero novo nem `data-graph-explorer`; seis PRs do Dependabot seguem abertos (dois updates aplicados nesta candidata) | Revisão do PR, checks obrigatórios verdes, decisão sobre PRs restantes e smoke test pós-deploy |
+| Produção e integração | PR #28 está aberto como draft; `quality` passou; a homepage e `/graph/` públicas ainda não contêm as mudanças; seis PRs do Dependabot seguem abertos (dois updates aplicados nesta candidata) | Concluir revisão humana, decidir PRs restantes, promover o draft após os gates e executar smoke test pós-deploy |
 
 ### Sequência bloqueante de lançamento
 
@@ -1159,3 +1159,11 @@ Comparei o sitemap público obtido por HTTP com o sitemap de um build estrito da
 - A fonte oficial de runner images lista `ubuntu-24.04` como rótulo explícito disponível; a execução anterior confirmou que `ubuntu-latest` ainda resolvia para essa mesma imagem na data da auditoria.
 
 **Estado:** check remoto está verde no commit atual e as 395 rotas publicadas foram preservadas no sitemap candidato. O Pages continua sem as mudanças, e os gates humanos e de rollback seguem bloqueando a declaração GO.
+
+## 44. PR candidato em revisão — 2026-10-22
+
+A branch `codex/rebranding-candidate` foi enviada ao remoto e aberta como [PR #28](https://github.com/lucmolero/vademecum-md/pull/28), em estado draft. O draft centraliza escopo, evidências, limites e gates pendentes; não foram atribuídos revisores nem feita integração em `main`. O commit de cabeça é `d793b4e7b415b1aaa8369da66cb3c02dabbd2a64`.
+
+O workflow `quality` acionado pelo próprio evento `pull_request` concluiu com sucesso no run 39753760713. A branch protegida segue exigindo `quality`; o workflow Pages só publica em push à `main`, portanto esta PR não alterou o site público.
+
+**Estado:** candidato remoto revisável, com checks obrigatórios verdes. O rascunho deve permanecer não mesclável até fechar as caixas de revisão visual/acessível, teste com pessoas, direitos, desempenho e rollback descritas no PR e neste plano.
