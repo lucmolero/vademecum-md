@@ -1,6 +1,6 @@
 {
   "schema": "unresolved-relation-review-queue/v1",
-  "generated_at": "2026-10-21",
+  "generated_at": "2026-10-22",
   "occurrence_count": 2177,
   "unique_target_count": 1491,
   "policy": "autonomous_disposition; no unresolved citation is promoted to the curated matrix by inference",
