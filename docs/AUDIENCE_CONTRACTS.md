@@ -45,7 +45,7 @@ Uma resposta gerada sobre o corpus deve carregar, quando aplicável:
 {
   "document_id": "...",
   "dispositivo": "art. ...",
-  "release": "v1.1.1",
+  "release": "v1.1.2",
   "data_corte": "YYYY-MM-DD",
   "fonte_oficial": "https://...",
   "limitações": []

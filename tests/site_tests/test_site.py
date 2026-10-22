@@ -1,3 +1,4 @@
+import json
 import unittest
 from pathlib import Path
 
@@ -17,8 +18,13 @@ class SiteContractTest(unittest.TestCase):
         self.assertTrue(catalog.is_file())
         self.assertIn("Catálogo da legislação", catalog.read_text(encoding="utf-8"))
         homepage = ROOT / "site_docs/index.md"
-        self.assertIn("O direito federal", homepage.read_text(encoding="utf-8"))
-        self.assertIn("Uma base, três leituras", homepage.read_text(encoding="utf-8"))
+        homepage_text = homepage.read_text(encoding="utf-8")
+        self.assertIn("O direito federal", homepage_text)
+        self.assertIn("Uma base, três leituras", homepage_text)
+        metrics = json.loads((ROOT / "site_docs/generated/metrics.json").read_text(encoding="utf-8"))
+        baseline = json.loads((ROOT / "manifests/baseline.json").read_text(encoding="utf-8"))
+        self.assertIn(f'{metrics["p0_ready"]}<sup>/{metrics["p0_total"]}</sup>', homepage_text)
+        self.assertEqual((metrics["p0_ready"], metrics["p0_total"]), (baseline["p0"]["ready"], baseline["p0"]["total"]))
         self.assertIn("Para advogados", (ROOT / "site_docs/audiences.md").read_text(encoding="utf-8"))
         self.assertTrue((ROOT / "tools/release/build_sbom.py").is_file())
 

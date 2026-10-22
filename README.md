@@ -4,7 +4,7 @@
 
 [![Qualidade](https://github.com/lucmolero/vademecum-md/actions/workflows/quality.yml/badge.svg)](https://github.com/lucmolero/vademecum-md/actions/workflows/quality.yml)
 [![Site](https://img.shields.io/badge/site-GitHub%20Pages-13243A)](https://lucmolero.github.io/vademecum-md/)
-[![Release](https://img.shields.io/badge/release-1.1.1-B48A3C)](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.1)
+[![Release](https://img.shields.io/badge/release-1.1.2-B48A3C)](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.2)
 [![License](https://img.shields.io/badge/code%20and%20docs-MIT-2D7659)](LICENSE.md)
 
 O VadeMecum MD é um corpus autoral de legislação federal brasileira em Markdown,
@@ -23,7 +23,7 @@ experiência editorial derivada do corpus canônico. Cada diploma possui identid
 estável, texto integral, situação, data de corte, fonte oficial, unidade de
 extração e hashes verificáveis.
 
-### Estado da release pública `v1.1.1`
+### Estado da release pública `v1.1.2`
 
 - corpus federal curado: **375 diplomas**;
 - núcleo P0 consolidado: **33/33**;
