@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-10192-2001"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "ebf035ff5a88d09743cdc10ab6edb411dee7b6ff4a63f28c8f83d067f03d517b"
+sha256_source_normalized: "fe6ca27532cb332dde6b9d61793fa48dca3d80a1b792bbaba0bf4619da483757"
+sha256_source_body: "7f706244c7a6a9fc78876b9b99c97591b28a912c8c31e96bcf52ea5d44b8129b"
+sha256_published_body: "ec9dea57800ed909145fc1d0c80273dd4d5db87326bf9579afae4024a3a1f9f3"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.192 de 14/02/2001
 

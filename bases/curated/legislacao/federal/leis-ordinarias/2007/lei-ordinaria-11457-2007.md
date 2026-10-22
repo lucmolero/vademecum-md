@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11457-2007"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "81dd2c3ed429b5a4d579bb4fb3da7b2a2997a30da9dabc50a31a30dc0107417c"
+sha256_source_normalized: "ec7c53eb90f6811de5d26908c78e85376ff03b6bbc9998fc4076ab16b5481cc4"
+sha256_source_body: "256b0059b9d0f8c938ab1ed10403bcfcc0c90d56d5ceb38962f9537a8525e3d4"
+sha256_published_body: "a0cc4806ef847c1b132f64737542edaee7dc4a409ec07a45a5358f5256d536ef"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.457 de 16/03/2007
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7492-1986"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "ee2fd9186a6bb3d700e40bc08e74fbe263ce4f8c99590a07060828976d7e642c"
+sha256_source_normalized: "af35039aabff02ad06a01a5d198f45b03d642410ac213add7c396914b5f7038b"
+sha256_source_body: "73baa76a960cd541e833b3bb6df2f71ac4b38910df781ad0f176c8c1f69e42e7"
+sha256_published_body: "c6bc2e45e22f3051543ad8c540cb5122d5c1a22ea1ea1f383743e94a5d1ec8b6"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.492 de 16/06/1986
 

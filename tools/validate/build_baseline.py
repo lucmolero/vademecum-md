@@ -49,7 +49,10 @@ def main() -> int:
         expansion_rows = list(csv.DictReader(stream, delimiter=";"))
     promotion = json.loads((ROOT / "manifests/editorial-promotions.json").read_text(encoding="utf-8"))
     workflow_count = len(list((ROOT / ".github/workflows").glob("*.yml")))
-    test_count = len(re.findall(r"^\s+def test_", (ROOT / "tests/test_workspace.py").read_text(encoding="utf-8"), re.MULTILINE))
+    test_count = sum(
+        len(re.findall(r"^\s+def test_", path.read_text(encoding="utf-8"), re.MULTILINE))
+        for path in sorted((ROOT / "tests").rglob("test_*.py"))
+    )
 
     corpus_by_id = {str(metadata.get("id")): path.relative_to(ROOT).as_posix() for path, metadata, _ in documents}
     matrix_by_document = {str(row.get("document_id")): str(row.get("document_path")) for row in matrix}

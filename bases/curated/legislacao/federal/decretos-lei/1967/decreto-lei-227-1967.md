@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "auditoria_especialista"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-decreto_lei-227-1967"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "b528b38c1c3d9db8e151f0c33fff8dfb3f54d7c860f396acd6d74089c90682a0"
+sha256_source_normalized: "739a43a8a76b7e32533d5ac0012015702191003c3565f1d29f6ebf36f17f2092"
+sha256_source_body: "94f6940ca67254c5e1903339fd73a72c60e44eb004f0190c4669783b72f18439"
+sha256_published_body: "91da7c23c20dcfb2ea42adab0451316ce1833462ab465fe373669866ab89e2b6"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 227 de 28/02/1967
 

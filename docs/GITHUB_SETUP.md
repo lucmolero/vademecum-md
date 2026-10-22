@@ -12,9 +12,9 @@ O `origin` esta configurado para o repositorio autoral. A `main` esta protegida 
 
 ## Repositório privado de histórico
 
-O repositório privado de histórico é `lucmolero/vademecum-md-history`. A
-sincronização usa uma deploy key Ed25519 exclusiva desse repositório, sem token
-pessoal amplo. O workflow só é executado quando `HISTORY_REPOSITORY` e
+O repositório privado de histórico é configurado pela variável
+`HISTORY_REPOSITORY`. A sincronização usa uma deploy key Ed25519 exclusiva desse
+repositório, sem token pessoal amplo. O workflow só é executado quando `HISTORY_REPOSITORY` e
 `HISTORY_REPO_SSH_KEY` estão disponíveis.
 
 O conteúdo esperado é o ledger produzido por

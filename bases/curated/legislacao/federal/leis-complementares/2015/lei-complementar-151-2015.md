@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-151-2015"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "b3871931d3f99cc00d2d0431408dfd7a699c36a852b0a768ce3033aa1a61f892"
+sha256_source_normalized: "736db3417ff7877e0f4b52d9939561b7e4fc2e9d4444df121851fb82c02a214d"
+sha256_source_body: "066cbd3313479e6c9227569e16f9d56ac92b39dd2e8b596c68b4f450f3890981"
+sha256_published_body: "8e3ca296210d4778c216b7efe0f7b026cbd2aba4962bb62565054855838c76dc"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 151 de 05/08/2015
 

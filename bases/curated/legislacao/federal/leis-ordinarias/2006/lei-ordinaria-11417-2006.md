@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "8636f18227813ac621d4ad6ac5c6bf04206cf043cca0eb251a2f4b56ed84a647"
 sha256_corpo: "80b751a72c224dc1269bdc08618c822d3f5cb8aa985def04a5a6d80ce607aca6"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11417-2006"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "daf876c6751b05af92001f33676d819de53c794793585d3b53fec72c3dcb4140"
+sha256_source_normalized: "b37539c02161fbd86609f67fffab4c377847ea37efa738b0e1ff1ce670d522cb"
+sha256_source_body: "e96bb6256948f4273b77682e31459cd3f1130818e9e593f9d4e712d99974b56e"
+sha256_published_body: "e96bb6256948f4273b77682e31459cd3f1130818e9e593f9d4e712d99974b56e"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.417 de 19/12/2006
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "1aec7c006f6bbadb0ca05ef114171f0d2f7b574389a77ccf0e511b99d7e84f1d"
 sha256_corpo: "3842855484f49c369b8d5e480f2015eb73d6732f3ad71f6b00cddb34eeefb28d"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-5172-1966"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "1aec7c006f6bbadb0ca05ef114171f0d2f7b574389a77ccf0e511b99d7e84f1d"
+sha256_source_normalized: "9cf93ba7846a92707276e4a64d7f9bc1f42dcda5008fca963fef28cae7f47771"
+sha256_source_body: "a75a67029f341374770181c39313ff4d22050403c3538c2c36da1309b1ed6c48"
+sha256_published_body: "8aaa283439b69d52f994bda5758eeeff2b99e00d766946ccd57fa0971a454506"
+source_snapshot_date: "2026-10-21"
 ---
 # Codigo Tributario Nacional
 

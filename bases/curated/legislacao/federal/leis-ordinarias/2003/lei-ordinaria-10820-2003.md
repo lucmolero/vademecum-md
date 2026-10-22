@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-10820-2003"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "1388bd21c7c49b6fbceb4dbf3843209badde4d4b92ac816357ad7619b9d893f7"
+sha256_source_normalized: "8a6eb51351add7bf4290f6e0fe5913a9bb944323dc36ba20a1b18540f714245a"
+sha256_source_body: "974cdc083377a1d9c38b367db97affa3aaa57cb0e40d322a1b465e30299d6fc0"
+sha256_published_body: "9c19977ae180ea18e668d5522080eba3c6a12f80f40fa6628a3b483c301c2c77"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.820 de 17/12/2003
 

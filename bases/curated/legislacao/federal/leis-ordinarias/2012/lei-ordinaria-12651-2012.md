@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12651-2012"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "1fae2719635b20419246efbc8b19b83d281f2bacadb5e30bbc40de19237fd340"
+sha256_source_normalized: "8e0fae55cb78b2cb359ce5df4ab4fdc3da76fc0903749654a66cf6da23fa996d"
+sha256_source_body: "a8ab9c260a5de9c914b07bec956dcde0b651034b2ce413ceb9ac89db286ba5ad"
+sha256_published_body: "72b3bcfac2e0580a1efe021e7604e799e636faf851152750827f1242d66b657a"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.651 de 25/05/2012
 

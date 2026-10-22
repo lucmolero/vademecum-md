@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "01fc878afdf8e24bc99454a5d6386de5f9b5ffae8d9282d4ee03f46b976d098a"
 sha256_corpo: "d0191e3209f5847e72bd1eae59cc9cd3b745971c3fbe4577a57105ae001c26f8"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-147-2014"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "01fc878afdf8e24bc99454a5d6386de5f9b5ffae8d9282d4ee03f46b976d098a"
+sha256_source_normalized: "bac2820fb0e529c4914ce882e17a1ff714755ac200147a91950495fbb11c41de"
+sha256_source_body: "21bed7f5f77efc5dc53850cabe89dd69719c484e15351a0f0a9f6b76fbf6927f"
+sha256_published_body: "21bed7f5f77efc5dc53850cabe89dd69719c484e15351a0f0a9f6b76fbf6927f"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 147 de 07/08/2014
 

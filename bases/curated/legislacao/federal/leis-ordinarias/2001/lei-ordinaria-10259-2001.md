@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-10259-2001"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "1b18245cf985b995073131649efee2b7372ecd8aa21cc8f171027fbd30500333"
+sha256_source_normalized: "e4f7e260e8557430dded913a98a27997748e2ac38e53dbeb56031fd339950d33"
+sha256_source_body: "0fe3d2f51b0fb7a48a04a4d04dc2e5e31b3fed4d898a85dba4b938019aa60c63"
+sha256_published_body: "72ef2f0712d56215a43073bbe5c9da86234ca37ac19efe0754ed9a2070c7bed6"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.259 de 12/07/2001
 

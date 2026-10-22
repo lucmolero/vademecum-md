@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-1579-1952"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "72b1f821afce4cb91b56499108a61cf7b0d79d209209c584afb7c5dffd7b3f94"
+sha256_source_normalized: "0f40a58c051ba2a56e234f1f282d8e96b7de262de70c1d056b3e73742549225c"
+sha256_source_body: "f5a241a14a4767722cecdcfbcf15719a4ade2e6853163dd6cfa18928d226c170"
+sha256_published_body: "9530f42511e0e93e2af59c6c4495dafb87f771c664cf5c4e832d65c21c31d7da"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 1.579 de 18/03/1952
 

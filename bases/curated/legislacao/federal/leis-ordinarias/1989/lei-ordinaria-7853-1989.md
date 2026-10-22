@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7853-1989"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "b997456b4a7269a8d1aaea3dfa6d13c1cd3d4e8eec12fb232e6471a32a865423"
+sha256_source_normalized: "72ba2f0b253bd77c6702665cbcfaf1198755af3d00d722e779a4d5887405142a"
+sha256_source_body: "6d6033a5c6856550883d7272ba253d02d71efced10d751407a5efd618f18c9dd"
+sha256_published_body: "f442c303df4d19448945a972cfeb231782665a7ab3c288ce672d773365ea7ae2"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.853 de 24/10/1989
 

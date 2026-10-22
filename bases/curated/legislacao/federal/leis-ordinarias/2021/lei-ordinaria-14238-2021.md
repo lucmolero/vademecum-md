@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "6c723b10e4452ec31cc52665811851e9c789e761db137f843ee977a31a6a06c7"
 sha256_corpo: "2dfb3b1034598404604f5f332cbb8376f39dcd9b922e479bdcfcd6f05ae55649"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14238-2021"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "6c723b10e4452ec31cc52665811851e9c789e761db137f843ee977a31a6a06c7"
+sha256_source_normalized: "b82633ff6bf8747f9fca4be50fe1049f96cb67de297ac13566a33d494a2de766"
+sha256_source_body: "ad702cd8c0ee162bbf2db2f6eb425faf0010c395e17f0e81040f33b28883f0cd"
+sha256_published_body: "ad702cd8c0ee162bbf2db2f6eb425faf0010c395e17f0e81040f33b28883f0cd"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.238 de 19/11/2021
 

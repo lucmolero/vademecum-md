@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "923a5e7ede96cc50b6ce599de8f75dbe46a70f8d44025c84dc911d79de6e989a"
 sha256_corpo: "c30e041b975c18bbb83ef68f6b52559701de675711fa3f18dca5f9d8c9892e63"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-108-2001"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "923a5e7ede96cc50b6ce599de8f75dbe46a70f8d44025c84dc911d79de6e989a"
+sha256_source_normalized: "5c87002513115b4f99424c5c0f67b67d27ab02b1d075f585444f804a7138807c"
+sha256_source_body: "3c80785b151828aa3b11ae7036bef3aa53da1c0863520ffb7f4c45df355a7c3a"
+sha256_published_body: "3c80785b151828aa3b11ae7036bef3aa53da1c0863520ffb7f4c45df355a7c3a"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 108 de 29/05/2001
 

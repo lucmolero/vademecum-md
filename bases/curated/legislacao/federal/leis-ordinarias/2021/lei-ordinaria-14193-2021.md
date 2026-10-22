@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "40d53715a19ef6f9d7e9d8b018d0e45c9feb429430bf39555011d18a95a99586"
 sha256_corpo: "76b6e6438281899ebd007dcd93d069e4b7ac014519a21e488f97f84572c12956"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14193-2021"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "40d53715a19ef6f9d7e9d8b018d0e45c9feb429430bf39555011d18a95a99586"
+sha256_source_normalized: "6e0faff3102308fd40c480f03da8fcb5ee2ba20694848ab431430df5d4be3651"
+sha256_source_body: "73cc40c05e11d1c7457c381d14e82b263078ebfd82721296a4b73499a00f5921"
+sha256_published_body: "73cc40c05e11d1c7457c381d14e82b263078ebfd82721296a4b73499a00f5921"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.193 de 06/08/2021
 

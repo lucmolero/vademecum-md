@@ -1,8 +1,8 @@
 {
   "product": "vademecum-md",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "generated_at": "2026-10-21",
-  "status": "release",
+  "status": "release_candidate",
   "scope": "legislacao_federal",
   "corpus_count": 375,
   "integral_count": 375,

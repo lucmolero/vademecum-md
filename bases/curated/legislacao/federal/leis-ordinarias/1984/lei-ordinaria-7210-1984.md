@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "722d34b3281f03a56d25bd6a6e7a6f6a17d91d339c9a3ddd87c51b510c417072"
 sha256_corpo: "f3b45b1e7629c83a2b7962b39769011d3e6df0b2832677b86e6a6ef18133ec8c"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7210-1984"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "722d34b3281f03a56d25bd6a6e7a6f6a17d91d339c9a3ddd87c51b510c417072"
+sha256_source_normalized: "dbb56caeb70714d382ad28c8248294e8c2469ff4db6af1df532354041bfce5d8"
+sha256_source_body: "ae2b42098a47f59f0d8392d3130a2e78d4b2c386647156e433018bc77f47ec91"
+sha256_published_body: "ae2b42098a47f59f0d8392d3130a2e78d4b2c386647156e433018bc77f47ec91"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei de Execucao Penal
 

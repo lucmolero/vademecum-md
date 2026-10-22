@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "4d9816a9c542ee42711625a314ceb552000b76582b157633a2cb392bfa54b924"
 sha256_corpo: "bd42e0214cfcd8d25137f76ae34e6d4f6764385002be763cc1afc38208bd5779"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-decreto_lei-4597-1942"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "237fc8f5ab9f935b51759a4ba8105aa6f4d3728f11831bf221240cadc7342d42"
+sha256_source_normalized: "3f7631c835f5960e1ad2f79a5e3a2faf40f7fb05101419af6eb28d10c9e5b818"
+sha256_source_body: "35c00aa24c2b447aa34e6ed0bdb3b60766683c0956e52b6c443be9681a7ef99f"
+sha256_published_body: "35c00aa24c2b447aa34e6ed0bdb3b60766683c0956e52b6c443be9681a7ef99f"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 4.597 de 19/08/1942
 

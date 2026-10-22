@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "f2ef0f33a4b12a219c4df3b880c8427fc0b1b122a7076977e1860a6689558c23"
 sha256_corpo: "c573143128419bca3c0538d16fc67dac8dba5c9699875fa9c26fde4f23eec825"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9278-1996"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "f2ef0f33a4b12a219c4df3b880c8427fc0b1b122a7076977e1860a6689558c23"
+sha256_source_normalized: "4a98f2f55b6b14f7a5c5081bdd5eca133f5efd1641e636462fb85884d6958085"
+sha256_source_body: "c62fa59446e01589713d80ecf152a9e75a62471ca11f7f8b10b161454ad7da45"
+sha256_published_body: "c62fa59446e01589713d80ecf152a9e75a62471ca11f7f8b10b161454ad7da45"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.278 de 10/05/1996
 

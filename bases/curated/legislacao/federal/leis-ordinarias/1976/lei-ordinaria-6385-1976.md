@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-6385-1976"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "7409fada735545f858b4cd0169a55d050b5f9e526279c45922bd59f1d5b6ff2b"
+sha256_source_normalized: "cb8dcc35faaf17a9ea9b89df0b12bcc12515454a7488474f71fa3d9719742ed7"
+sha256_source_body: "d6cc551f619563aae6b49a34338fc315572640ea9e886bbd95e9ad24f4fdfba9"
+sha256_published_body: "0fe0538078aab399be6a2c94f7d25ac68c6cc18cb6f1416b094e0b07a054a75b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.385 de 07/12/1976
 

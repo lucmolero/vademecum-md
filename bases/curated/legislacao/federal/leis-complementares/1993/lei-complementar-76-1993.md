@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-76-1993"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "c416c8a35c4b5f83a3f485412371aa292d80df84a17db8864178a695bcf1d8d5"
+sha256_source_normalized: "1565f64b2a2b4344a96ddc4d41ccae64604265d21c17727965da5112772b6be6"
+sha256_source_body: "354c00fe437fb2456a38119df1ec22d9d2c9ef2b23dec7d774616c49f816caef"
+sha256_published_body: "df8549c53eba2e9c408e6ba1eec63c942ee0d64f673971a495a5f7e5e53adda9"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 76 de 06/07/1993
 

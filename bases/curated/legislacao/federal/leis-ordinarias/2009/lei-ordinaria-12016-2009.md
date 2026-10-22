@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12016-2009"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "9825e86766534c3f33424683040368f961b38b322c079fee02dc3bf11791a527"
+sha256_source_normalized: "bff1e61ceee59aa1d977b2cb3548806ea922810c510ce3f470536a6d49fb4c41"
+sha256_source_body: "2085cda02be9fc1793610b608d140397e100c5a83ce38c0a4136fc2373217fbb"
+sha256_published_body: "3cc4022bc60e2530e4fc650c932bf3bf91ef375b4af52ecd7180a2971cf16df8"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.016 de 07/08/2009
 

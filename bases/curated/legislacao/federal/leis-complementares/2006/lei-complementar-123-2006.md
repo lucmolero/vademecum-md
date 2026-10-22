@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-123-2006"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "ee874feb82832988c78ba45c079f13b413632d5a37a276c2d7afa7992149323f"
+sha256_source_normalized: "5719a883659decfa1a1ee37cfed136a0a379150535b7f316dbb92ce4e2ae9de3"
+sha256_source_body: "e978aadbe8b10122cd194abaa87ae1a4b7aa2b9ee1442107c44fa7c434f09881"
+sha256_published_body: "22634c8005cbada69f4e74ca29bc1d882c9fa7c1eb8bda17cd0e55840e8455ba"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 123 de 14/12/2006
 

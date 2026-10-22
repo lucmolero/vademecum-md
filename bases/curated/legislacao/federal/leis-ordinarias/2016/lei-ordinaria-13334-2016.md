@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13334-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "9ed6613e2832937b1766d53ddaa7596f191a4c7cd10ea643f101c103fab91ab6"
+sha256_source_normalized: "eab5b4f92e5fc655c1d19507a2cda0567045731890e8df0975ef0972385d3c6d"
+sha256_source_body: "f56327615ce2577244d11e063bc64c6725f3980c321429a76b058717d9ca6800"
+sha256_published_body: "dd83b859c37d4e0958b7faded93f0d81b456a0de5570391aa8a0557e6fecd51c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.334 de 13/09/2016
 

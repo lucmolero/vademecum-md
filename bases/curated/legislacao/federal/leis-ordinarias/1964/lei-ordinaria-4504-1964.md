@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-4504-1964"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "cebabda2d507b3c5ff2c99334a861fc0f744d78717ac9522cb0b7727465cc44e"
+sha256_source_normalized: "4d2e408f5a12fb7e4a0bd5d5880bc3348fc60395b742ee5b1b66d8dcdc7eaebd"
+sha256_source_body: "8a5e241f41c73811d9479c300670fb58bf0ddc3c0a3f9be1bebb3234fc9536a7"
+sha256_published_body: "dc5d6c42a11036fed2d56f65696400e7f1c58f95149e9785839a598f22d8d3e2"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.504 de 30/11/1964
 

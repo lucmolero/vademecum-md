@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13188-2015"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "9938dc3c32cc5364e0119c60ec3da6c27c18049ce02bd9460318f0ccfeaa2267"
+sha256_source_normalized: "9589493900168f7196e8849235ba53fab3c8cc0dd5d1f1027dd8ab905ccc4b07"
+sha256_source_body: "59a67c9d0eac3412442e34759070c7e9164bdb0e34e595b6d4e8cd9d9b2e37ea"
+sha256_published_body: "e7e879d855ae42c94c70e4d590397d3549c95ca31bf8837d8b89d5dfcd49b417"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.188 de 11/11/2015
 

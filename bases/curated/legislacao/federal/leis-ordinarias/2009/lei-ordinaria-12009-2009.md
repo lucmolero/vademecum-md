@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12009-2009"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "63719d6873675f0275e1e61a8b75ef34aa2d2221c4d99d22f27b6e3f148cac1a"
+sha256_source_normalized: "20a3d3af909fb4365e13294865d156d8f899f2e27f40122b665866033abdaccb"
+sha256_source_body: "e1644d823b9baefa80c7fffca51ae0ad668eca448fc0a2816caf49de9d627120"
+sha256_published_body: "e1644d823b9baefa80c7fffca51ae0ad668eca448fc0a2816caf49de9d627120"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.009 de 29/07/2009
 

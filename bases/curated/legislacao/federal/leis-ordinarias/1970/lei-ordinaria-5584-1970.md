@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-5584-1970"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "fb0fef4583d30a6d8fef663c1d90a620e3fcba8ff3309e730118171539ca21a8"
+sha256_source_normalized: "5831c30c4a7e1587da8ffd9b2a73f53dc3c28f14fd04fdec2168c8dea40a565d"
+sha256_source_body: "d516aae69ea87d49fc428b978b94aa77e449203a6eea9cf135c4f3b436f05d11"
+sha256_published_body: "d61b3ae060070b403ad365df4b509dbb1527fe43c619b832f09b98e21cdebe52"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.584 de 26/06/1970
 

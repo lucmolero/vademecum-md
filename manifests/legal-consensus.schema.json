@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vademecum-md.example/schemas/legal-curation-consensus-v1.json",
+  "title": "VadeMecum MD legal curation consensus",
+  "type": "object",
+  "required": ["schema", "decision_authority", "documents"],
+  "properties": {
+    "schema": {"const": "legal-curation-consensus/v1"},
+    "decision_authority": {"const": "autonomous_legal_agent"},
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document_id", "decision", "legal_curator", "legal_critic", "consensus", "official_evidence"],
+        "properties": {
+          "document_id": {"type": "string", "minLength": 1},
+          "decision": {"enum": ["promote", "preserve_current", "history", "reconcile"]},
+          "consensus": {"const": true},
+          "official_evidence": {"type": "array", "minItems": 1},
+          "candidate_sha256_raw": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "candidate_sha256_body": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "legal_curator": {"$ref": "#/$defs/pass"},
+          "legal_critic": {"$ref": "#/$defs/pass"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "pass": {
+      "type": "object",
+      "required": ["status", "decision", "evidence", "must_not_invent_text"],
+      "properties": {
+        "status": {"const": "complete"},
+        "decision": {"enum": ["promote", "preserve_current", "history", "reconcile"]},
+        "evidence": {"type": "array", "minItems": 1},
+        "must_not_invent_text": {"const": true},
+        "candidate_sha256_raw": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "candidate_sha256_body": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "7ccf7ae21a0eb327b440aea8fb594a44f5b1c63003bf401c45c75a516ed69f4d"
 sha256_corpo: "0017dd51127a440615933fd88d7927753d17e32a191d624b32433903a63b07d3"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11648-2008"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "f7f33a575467941e7cb852c57d07e41ea8ab5464c15c37dde0c57e2a594567a0"
+sha256_source_normalized: "4f815f582060c944c793161c003925caecc114ee32e7534d47536e4ee16b3eb6"
+sha256_source_body: "37fad960ba4141420db8a469ad948cbf8206efe893fdec8ce4f9ae5b20b1e527"
+sha256_published_body: "37fad960ba4141420db8a469ad948cbf8206efe893fdec8ce4f9ae5b20b1e527"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.648 de 31/03/2008
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "fd5155dbe51b29ad0e4f57f83c061434f901c025e4e75375ab0bcc04ca387063"
 sha256_corpo: "d300eee1d199ba9f1f8b35fe0bfbfed98807d9097bc8f70fe19e805c0065ed72"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-15211-2025"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "fd5155dbe51b29ad0e4f57f83c061434f901c025e4e75375ab0bcc04ca387063"
+sha256_source_normalized: "9c9e86ed8ce25a6a2f8aa9aa747ad88cfe1e065054aa617106aca3aca0c0f1be"
+sha256_source_body: "76bf5f68157eb5e05b6218586e624be8f8b488b19fa5a9ad823a613621f2b6b5"
+sha256_published_body: "76bf5f68157eb5e05b6218586e624be8f8b488b19fa5a9ad823a613621f2b6b5"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 15.211 de 17/09/2025
 

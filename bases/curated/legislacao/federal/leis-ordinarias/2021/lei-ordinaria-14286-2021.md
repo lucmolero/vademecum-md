@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14286.htm", "sha256_origem:9c5d001ba928e09a9619f443f623b8162572bd1c463ea9acdddb6a759d9a5a1a", "official_current_compilation_review"]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14286-2021"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "9c5d001ba928e09a9619f443f623b8162572bd1c463ea9acdddb6a759d9a5a1a"
+sha256_source_normalized: "fcaa2c7597b265b66d609b80190749e9a432b0dd46cc7f91ad09c5207ddacf35"
+sha256_source_body: "75612adcd79fd85341b23607ce206291b0054f760cb2ec2b598c5af46b5d97a1"
+sha256_published_body: "75612adcd79fd85341b23607ce206291b0054f760cb2ec2b598c5af46b5d97a1"
 ---
 # Lei nº 14.286, de 29 de dezembro de 2021
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13303-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "e632e301413ef144278c9a6e761c6c7910ad41cf3f4f87137223747f626bc387"
+sha256_source_normalized: "101867720b2e642deccce96aae607bffaddaad4ef9493270ef29197bae209c41"
+sha256_source_body: "c6fe230748b041869bb73bbeba4f02877e47d20581f816e9384b264cc4c3f492"
+sha256_published_body: "f379388cc100d67d30489abe3230e0950de6cd200a7902440f985434336e4f01"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.303 de 30/06/2016
 

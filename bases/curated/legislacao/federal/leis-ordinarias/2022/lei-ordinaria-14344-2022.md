@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "2ac4712ce2e8eac993b926bcf158426e53bf0203fe8a61a9828134f073d79703"
 sha256_corpo: "e7f677506bb9b34b926085c2b0e698acf50bcc264d5e12ac1a5f89a261a8e7da"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14344-2022"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "2ac4712ce2e8eac993b926bcf158426e53bf0203fe8a61a9828134f073d79703"
+sha256_source_normalized: "bdda8203ea1a562e78ee13fbd9de68469bc484b237c123fe5a6c0496c3bc50df"
+sha256_source_body: "027c6d105f51925e20a755171726a4d6e726c7ec5c5ef7940b2ef118fcfd8c79"
+sha256_published_body: "027c6d105f51925e20a755171726a4d6e726c7ec5c5ef7940b2ef118fcfd8c79"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.344 de 24/05/2022
 

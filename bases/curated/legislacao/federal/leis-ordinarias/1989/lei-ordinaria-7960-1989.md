@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7960-1989"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "88528f6266d95223dd9d8f4b258b3d437edf4dec05a6af041994742675ec62f7"
+sha256_source_normalized: "59955252afa1b09f78571254691bf9f6c125b9c24fd5d38f15953d8b42553d33"
+sha256_source_body: "9159fffdc7f13b0e16443371d85c831a4d13e49104108c94dc1892769e8150b0"
+sha256_published_body: "44b933acf076211bb90e867ba0129dfd969ebd02824595f82ef73e82d2485982"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.960 de 21/12/1989
 

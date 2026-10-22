@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "2fa91bbf63fb24546884fbcbd28ef2284fdf29d64735232a60af843133e5a550"
 sha256_corpo: "6ff5305351570913412dcdea534f6de81ad6ff0903bcfcb7977fca47fca0cff4"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-8906-1994"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "2fa91bbf63fb24546884fbcbd28ef2284fdf29d64735232a60af843133e5a550"
+sha256_source_normalized: "42615a81e7e3e42019e870a40c0455f3140fa9d278050513f0fe2bbb5abdf079"
+sha256_source_body: "0e828d191e55ff299f11d8094a39d7533af5c703f478fff780e422a02b57c60b"
+sha256_published_body: "0e828d191e55ff299f11d8094a39d7533af5c703f478fff780e422a02b57c60b"
+source_snapshot_date: "2026-10-21"
 ---
 # Estatuto da Advocacia e da OAB
 

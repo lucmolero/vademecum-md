@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "f3de68263b521fdc89b5467c2771d35f328f89f4c0b1cec264eca57ffed43dd7"
 sha256_corpo: "b579feaf1bb2a5ff950a63f14037b5803f830f3e2f4062b2b0be64f181c00702"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7357-1985"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "f3de68263b521fdc89b5467c2771d35f328f89f4c0b1cec264eca57ffed43dd7"
+sha256_source_normalized: "a641c9bb858839fc95304b0ec7ec815f36b6703ab60d51da0ae52e7ec7ba6076"
+sha256_source_body: "1f27a6da645890a5bf27cd6629094fd51ec96215877e08517229a12910722143"
+sha256_published_body: "2fc2847fb1e2b208b8fe8e1738f70c7f9ad76551c74b78713a819939afe4337b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.357 de 02/09/1985
 

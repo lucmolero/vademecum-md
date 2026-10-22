@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9656-1998"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "40b2d70fe86506ab4b3f32ef4cd597c1754af2b0f9e0673fc854f1d1d9f3f5c2"
+sha256_source_normalized: "59f82f4714d3c06815408b1e40c61eabaa78996cf771c06661492b8be89f1c2d"
+sha256_source_body: "3d3aa30752f645e0643f7d407fe9fc7302998c6c993be70ff7499d480bf61fdd"
+sha256_published_body: "b760e5f193e4644a1e37794bf4ee1e624f3891050cdb0a7e88b0b7496742aeda"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.656 de 03/06/1998
 

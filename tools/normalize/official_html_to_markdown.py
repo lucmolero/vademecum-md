@@ -77,8 +77,14 @@ def convert(source: Path, encoding: str) -> str:
 
     blocks: list[str] = []
     started = False
-    for paragraph in soup.find_all("p"):
-        value = clean_text(paragraph.get_text(" ", strip=True))
+    # Legacy pages place normative annexes in tables, sometimes with nested
+    # paragraphs. Preserve document order and avoid emitting nested paragraph
+    # content twice when a table is handled as one normative block.
+    elements = soup.find_all(["p", "table", "h1", "h2", "h3", "h4", "h5", "h6"])
+    for element in elements:
+        if element.name == "p" and element.find_parent("table") is not None:
+            continue
+        value = clean_text(element.get_text(" ", strip=True))
         if not value:
             continue
         footer = FOOTER_RE.search(value)

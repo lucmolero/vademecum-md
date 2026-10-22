@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "4bb925005f42107012b3421f5d9b12b847d8c0c31b06a630fdeccf1a07f300c3"
 sha256_corpo: "b3b242879aba6432e30c7128b102fd5eb9f7d56502d24b18b185b8fe4c23bab9"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13988-2020"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "4bb925005f42107012b3421f5d9b12b847d8c0c31b06a630fdeccf1a07f300c3"
+sha256_source_normalized: "9c248cf9db8ef7d59695802e3fa79baf4dc533a7fb3aae3eeb0cb28a19d84e2f"
+sha256_source_body: "2613d66e6593459427de721d4480b8b3112abd78af40244bf3dfb1fa322f169c"
+sha256_published_body: "2613d66e6593459427de721d4480b8b3112abd78af40244bf3dfb1fa322f169c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.988 de 14/04/2020
 

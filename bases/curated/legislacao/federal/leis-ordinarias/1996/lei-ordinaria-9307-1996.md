@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9307-1996"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "804f23f75d5b0ca7fb412900f51d856e8276dbcc760b8a9f96e02bc9d43cbd13"
+sha256_source_normalized: "5a15562b57feb5aefe6fd99ea0512f1968fbc45afa3edd0e1d4f49a1bcd26f12"
+sha256_source_body: "4b047a6aba2c07df90bc5d288a6adf9519ccbd3597140d651aa803a95bb5e01a"
+sha256_published_body: "83fb456ebee49060b6cbe6fda09a7c92a6a887537abb6dbd589b842bee1ebb5b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.307 de 23/09/1996
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "978ac881506e3a55db6882f676c73266045ad8bc60fdde1cba16f57c04651dda"
 sha256_corpo: "dadc3cc5c72d63f7dc7c3e7a11d216eed1de957d181d60fbd96a76af9f1dbdc9"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13022-2014"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "978ac881506e3a55db6882f676c73266045ad8bc60fdde1cba16f57c04651dda"
+sha256_source_normalized: "e811bf82d4898b847724325aaebbe90de9bf1894a969c9fc58213c7aa8f10dda"
+sha256_source_body: "f3f5eb214c7952c569e4b849007f4d1c3a30cd97b82dac012a5402dd4e765043"
+sha256_published_body: "f3f5eb214c7952c569e4b849007f4d1c3a30cd97b82dac012a5402dd4e765043"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.022 de 08/08/2014
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "a7b5bd25f5e7df004a3b936dc756b731594a525751789a532eb698f8116b63d9"
 sha256_corpo: "be60143d9c6f1b7abbeab4bdafe48faf6f7360e7a9af17b2234b2279f9aa43f5"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-8069-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "a7b5bd25f5e7df004a3b936dc756b731594a525751789a532eb698f8116b63d9"
+sha256_source_normalized: "58005e6c179ebafea5b87ad621a79748550d4af79efa55d50c4483ab52554a0b"
+sha256_source_body: "cbac48a0770ef1c70980cecf216dfdd2951fcdceebcf085ca759031be7e96bae"
+sha256_published_body: "052609a5ec5a0697fde40041b944b0ec03cf61be863c3767298b9ded5bf2a2b5"
+source_snapshot_date: "2026-10-21"
 ---
 # Estatuto da Crianca e do Adolescente
 
@@ -2724,6 +2740,12 @@ Parágrafo único. Incorre nas mesmas penas a autoridade que deixa de efetuar o 
 Pena - multa de R$ 1.000,00 (mil reais) a R$ 3.000,00 (três mil reais).
 
 Parágrafo único. Incorre na mesma pena o funcionário de programa oficial ou comunitário destinado à garantia do direito à convivência familiar que deixa de efetuar a comunicação referida no caput deste artigo. (Artigo acrescido pela Lei nº 12.010, de 3/8/2009, publicada no DOU de 4/8/2009, em vigor 90 dias após a publicação)
+
+**Art. 258-C.** Descumprir a proibição estabelecida no inciso II do art. 81:
+
+Pena - multa de R$ 3.000,00 (três mil reais) a R$ 10.000,00 (dez mil reais);
+
+Medida Administrativa - interdição do estabelecimento comercial até o recolhimento da multa aplicada. (Artigo acrescido pela Lei nº 13.106, de 17/3/2015)
 
 **Art. 259.** A União, no prazo de noventa dias contados da publicação deste Estatuto, elaborará projeto de lei dispondo sobre a criação ou adaptação de seus órgãos às diretrizes da política de atendimento fixadas no art. 88 e ao que estabelece o Título V do Livro II.
 

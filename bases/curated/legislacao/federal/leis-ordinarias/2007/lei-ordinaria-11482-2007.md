@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11482-2007"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "936576115c84018348a4e768c3438f4f608ffe52e7ff9c51d4f7a24e2b66a32c"
+sha256_source_normalized: "77c7dd1a982b88893f7ff626d3282c13a0cc1e4a0127c1bc3b95f19c15d4d646"
+sha256_source_body: "48196bcd7e7bff839a817b9c5abc31b4fc6c25b4c45b0af0d67328c458334bb2"
+sha256_published_body: "35ccec9c85f19272f59bfca0197af8880250eaeb373e0ffbd42d5b771d651761"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.482 de 31/05/2007
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "69009797214a7a2fd5df03c1504ae85b2c2978cb20b19d65e0766029580e18f7"
 sha256_corpo: "9fc8f2be3428b47096d332bf2a01208c9cc2204cbfdb39c1d967639b2d3e89e2"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9609-1998"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "69009797214a7a2fd5df03c1504ae85b2c2978cb20b19d65e0766029580e18f7"
+sha256_source_normalized: "ef2f531e27cbc2dd04d72816518f5cab409f739936f67705eafc7dd86316dbae"
+sha256_source_body: "9ec12c65ee5d717b824a9046f0ca70ec5788e02ca789aab6aa255e2b4d7f4132"
+sha256_published_body: "cf0b395e26f174aa2c86eb1c4e2bee7b5d7123472ab266cc1fd9ead7b40ffed9"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.609 de 19/02/1998
 

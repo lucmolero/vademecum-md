@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "VadeMecum MD"
+message: "Se você utilizar este corpus, cite a release específica consultada."
+type: software
+authors:
+  - family-names: Molero
+    given-names: Lucas
+repository-code: "https://github.com/lucmolero/vademecum-md"
+license: MIT
+version: 1.1.0
+date-released: 2026-10-21
+abstract: "Legislação federal brasileira estruturada para leitura humana, validação auditável e uso por máquinas."

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "7cb5c18a6717a30b5b19afad1b7e0d3a21663b51e73f9f759288c8f82bb62092"
 sha256_corpo: "92de843b1671f36423929c1894e0de831a524ede5cac0b452ae693bf6d00ef7d"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13425-2017"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "7cb5c18a6717a30b5b19afad1b7e0d3a21663b51e73f9f759288c8f82bb62092"
+sha256_source_normalized: "2bcb3d67f16dd5d3b5018be79539196ae1b97d1769f0daca0d803aa22ae0cc86"
+sha256_source_body: "ddbaebaee8709526861e1f06a672fd14c4f02c23ae1ba2130b7182c39cbd04b2"
+sha256_published_body: "ddbaebaee8709526861e1f06a672fd14c4f02c23ae1ba2130b7182c39cbd04b2"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.425 de 30/03/2017
 

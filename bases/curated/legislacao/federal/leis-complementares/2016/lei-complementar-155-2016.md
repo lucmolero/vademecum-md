@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-155-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "ec448c0bd59df1acb3404e9f4b46f28f9e923633d23f09c9bd6b83e25c200d4c"
+sha256_source_normalized: "b1048c436c190451bed46a76e89d4bffe0a10fd899b0803fa01c2696aaf61318"
+sha256_source_body: "a38bcfb01c590a2577efa069153d14226d23dcffc30c7dff924fd91b42f1e5da"
+sha256_published_body: "8a7f19d2cc2c238db339900656cca9e05d84b3f8abc89f2477e03bc9c805954a"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 155 de 27/10/2016
 

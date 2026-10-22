@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "a603f29fd775dd9993e88b5e8bbcbb4fcfbdd6c780f8fce41d43fd506243cd23"
 sha256_corpo: "0c25122f428b541cd1d51fb50a14e14e8fca729f9fe2f0b95defb2b97fec7ee1"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12853-2013"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "a603f29fd775dd9993e88b5e8bbcbb4fcfbdd6c780f8fce41d43fd506243cd23"
+sha256_source_normalized: "9651903db3ab45a17880b055501fd77bc4b3c458f51243813c786c853277f382"
+sha256_source_body: "792bb4d04d9e3180e242a33f50216f5b6fb9308b31e80e0a41a2225744a59b67"
+sha256_published_body: "792bb4d04d9e3180e242a33f50216f5b6fb9308b31e80e0a41a2225744a59b67"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.853 de 14/08/2013
 

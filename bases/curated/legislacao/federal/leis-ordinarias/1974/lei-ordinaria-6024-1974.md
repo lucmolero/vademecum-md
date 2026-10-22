@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-6024-1974"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "56613934f421486c47ce22b439d39ec5d29462f874c16085935405a36065fb0b"
+sha256_source_normalized: "c7d263f576395a744299d45c38bce219c547d0828dfefecc302364df21be8393"
+sha256_source_body: "9c90dcb52bbb8c76e3ec22fb3f94f29b118a0c81cf8115ad66ee52f24cd6c817"
+sha256_published_body: "0b88eb4038f1f65bfe41f05d6da266134ac56592347f82e0419786a9c526753e"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.024 de 13/03/1974
 

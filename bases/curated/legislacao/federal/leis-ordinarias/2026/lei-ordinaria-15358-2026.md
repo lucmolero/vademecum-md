@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["A página vigente do Planalto foi consultada em 2026-10-21 e não apresenta marcação de alteração posterior; relações de alteração serão detalhadas no grafo."]
 camada: "core_profissional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-15358-2026"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "4b0f783cf4bd629b7d342d48d36e5f83677f4e869b078fa4ec078fc9f9b8b6d4"
+sha256_source_normalized: "cbc4132917a152c4b04dcd0a43383503b33c58bad683f42fbfbb714879884224"
+sha256_source_body: "fb0739b9ab4c17345ff9e017da2e781c3adc0b640a44754cd1928d728bee571b"
+sha256_published_body: "6d7ca598e7567a42394924dd027e763657ef9fd637ab7ff4709c60790e7b125d"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 15.358 de 24/03/2026
 

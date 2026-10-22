@@ -28,6 +28,8 @@ jobs:
         run: python tools/validate/sync_editorial_matrix.py
       - name: Audit normative graph
         run: python tools/relations/audit_normative_graph.py --strict
+      - name: Audit normative fidelity
+        run: python tools/audit_fidelity.py --strict --output bases/derived/relatorios/fidelity-audit-release.json
       - name: Classify unresolved relations
         run: python tools/relations/classify_unresolved.py
       - name: Validate release gates
@@ -36,6 +38,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Build public release package
         run: python tools/release/build_release.py --mode release --output dist
+      - name: Generate CycloneDX SBOM
+        run: python tools/release/build_sbom.py --output dist/sbom.cdx.json
       - name: Upload release package
         uses: actions/upload-artifact@v4
         with:

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-8934-1994"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "1bcb375260925e54d6213dd737e101733e842955476424bd5836aea1e4e80297"
+sha256_source_normalized: "38c69cc8b1244e76a34a81e4d5b2ef24c5143e62b2b7ecf2e5bcda800950c57a"
+sha256_source_body: "f129ef94aafc5eea43e802b15eebfdc4cab9bd84b15890abf7e19fc59f0853ed"
+sha256_published_body: "855f82ab3c7c21903d93d6a7b3742db715e9b7fca427cc5da5b34b0a1cc8db3c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.934 de 18/11/1994
 

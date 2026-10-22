@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "d1b4d73c4fe9584fbf7597cf12ce7cbaec184c7c98c668eeb87ba3610e0144e7"
 sha256_corpo: "0f0cc27e2c41befecfaa11386d922123f8ad9e39d902c07d9c077b8d8961c802"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12153-2009"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "d1b4d73c4fe9584fbf7597cf12ce7cbaec184c7c98c668eeb87ba3610e0144e7"
+sha256_source_normalized: "03abce8c81b5d966f939a71b40711f2d345b2c999556bf306080522744fe1a02"
+sha256_source_body: "c0ff7dc8ade7dcb4cefca5ef008d8051cd29b8456ccf03dd4bac9e6f7e08ca21"
+sha256_published_body: "c0ff7dc8ade7dcb4cefca5ef008d8051cd29b8456ccf03dd4bac9e6f7e08ca21"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.153 de 22/12/2009
 

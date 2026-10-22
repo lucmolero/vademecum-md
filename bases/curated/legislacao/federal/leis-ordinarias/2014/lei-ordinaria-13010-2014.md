@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "c1f1b601c44f2162a3541878d819b8824704aa50b7c08d59b1da956a5ee99efb"
 sha256_corpo: "ec646157647b51fa5eb653a1ef22de2584b1e367ebf638f399bbf6d9f16e4b8b"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13010-2014"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "c1f1b601c44f2162a3541878d819b8824704aa50b7c08d59b1da956a5ee99efb"
+sha256_source_normalized: "a75a691ded2a9db4983b2f6ff5b7317bfbb338854e6b020cb56f8bfe2bfe8415"
+sha256_source_body: "d849a7b179f3fe886dac7df62b84a8d98b852de4c2a7d476eb31f096f90a44bc"
+sha256_published_body: "d849a7b179f3fe886dac7df62b84a8d98b852de4c2a7d476eb31f096f90a44bc"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.010 de 26/06/2014
 

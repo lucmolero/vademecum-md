@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "01387931ac4e33f97cd24cf44772361695af21651110f2985366bc827b22158f"
 sha256_corpo: "010f56bee0ea98861c78108b1aa90a493332e96a82df680b80dc6f17cb3faebf"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-5256-1967"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "01387931ac4e33f97cd24cf44772361695af21651110f2985366bc827b22158f"
+sha256_source_normalized: "53c1f3216cec6eda41635d93c433b0e5b3bd8449cf3670323882f244c92f4b39"
+sha256_source_body: "db7517207244967a1d891180a59dc4b74ec947169c62f0a520ef612c27de6f5c"
+sha256_published_body: "db7517207244967a1d891180a59dc4b74ec947169c62f0a520ef612c27de6f5c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.256 de 06/04/1967
 

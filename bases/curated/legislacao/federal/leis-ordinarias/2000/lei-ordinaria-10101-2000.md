@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-10101-2000"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "57f564eb9c883b0e78cf9ec8ed376edad0cfade262374d38f2905a8da18bbf37"
+sha256_source_normalized: "aa86c6da8ae6ca3dfad3845eae4dd8a54e6ce347b0c87ac773a94a0a9cb04288"
+sha256_source_body: "65fb82554551dd3169bfe459b7c0ce627962638907ae9c4252405ce4890e0684"
+sha256_published_body: "bedf82851539559f62dc06371a8d037cfd6c9b9fed4af4269934774a9fd689fc"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.101 de 19/12/2000
 

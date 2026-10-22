@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13675-2018"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "2704c0017642b7a7155e8787b49a69af4697375e7253c6e0fa07b4d0b95a883e"
+sha256_source_normalized: "2e089347378f69aa1261123f008be18ac6fe1742e46c650c164b9791dfc9bf93"
+sha256_source_body: "ea242500b1f0d6603953cca379d3746fccd9aa49c8a50dc9eabebbe3d3a9531f"
+sha256_published_body: "1ec127cd3619b9ea6a98bd4e1f1629e61b7c296ac52e73d19184391e18a6e764"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.675 de 11/06/2018
 

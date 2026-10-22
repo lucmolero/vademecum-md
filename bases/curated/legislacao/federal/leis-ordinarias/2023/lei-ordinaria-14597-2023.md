@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "e4569a839adb6ea90155336ca4d25b20645fd1400c5f62821f1cc6ea585711e6"
 sha256_corpo: "e41847a761bdeeb819775567c18652a6ed4c6cec677cb789a9fee7ff1f3c548b"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14597-2023"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "50c6ddf104ba9d1170b214ddbe50f8e98e664be7f5cd6525a7bf463e6442d6b0"
+sha256_source_normalized: "7a8db6ed701be88ceba4654ead23dd39fd2c8abae6ba1260ff849426292e6443"
+sha256_source_body: "97dd72dc6af37961b30e553016da0cb1d92551c25b6cb47ef7d16be6301f1ed1"
+sha256_published_body: "88210d277fedee264a95aedddae6f2cbeea521fb606ce8110945c816c890a2c1"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.597 de 14/06/2023
 

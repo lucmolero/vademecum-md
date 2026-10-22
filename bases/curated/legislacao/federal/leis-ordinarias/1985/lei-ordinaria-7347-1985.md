@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7347-1985"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "5f38bf2d60ed3c2433b290ee1febb4fd922c36408f144aeeeb4b8f65a6035299"
+sha256_source_normalized: "58c2eaac6a0d09e1642ff3804c3953d9af8778e7507f4519da4c6e135221be53"
+sha256_source_body: "6b46ea9d8485d68afb3217ab187fefed8ce83bcfc6e43f88e7aaf71063bc7132"
+sha256_published_body: "6876acc13d188485f997ef5586dd637363bed3b41a44c55c006d65747acfba11"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.347 de 24/07/1985
 

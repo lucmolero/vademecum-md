@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7716-1989"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "59df5d50d276182da0a553bbaf37a6e9cb7ca467364ae759560ae50f9315eafc"
+sha256_source_normalized: "b21c9f8014e495028d7e74f4b4e0c2bcb86d098b497e1f1a6ebf56878ee4b76d"
+sha256_source_body: "e8d814212236d411fc53fedbc1984e1b5864afd29be45c5f599e77d00789d1cc"
+sha256_published_body: "e49c5480cfa71ccf8a6cdc5255fbfd6454d7f0bcdec46b4b0d285f56f8fb63c3"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.716 de 05/01/1989
 

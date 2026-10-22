@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "c85cac7cb10d1ac30ba054666d000259471e5988f6ac03ee06ad5cf8072b44cd"
 sha256_corpo: "0fdc479a4ce0b53be7065dc22175c2b69b664feaf454021d05b8508e41073192"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11638-2007"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "36867b1dae72cbd772851be89b20111cf9e42151d3cab952f71081fb5cd5a6c5"
+sha256_source_normalized: "319109fb15133608fd3c945b08ae4b50bcb1a17fb29d5537b07404b0e0036ff1"
+sha256_source_body: "8933367049d47776ff3313ed0ac67872eb2f2bb77347975f6e48bd5fce3f3fbb"
+sha256_published_body: "8933367049d47776ff3313ed0ac67872eb2f2bb77347975f6e48bd5fce3f3fbb"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.638 de 28/12/2007
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12711-2012"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "6fb4d9d623764b6938412b5ac5ee4fdc27dc507d8d614791f1fad5cb53ca9a1a"
+sha256_source_normalized: "ab4408a0c56fb91f9a76be5392368799be79969c5503b6227150b3119912ddb0"
+sha256_source_body: "b19571420ad0bb6663c0936e9dcc8a02737d94f428056ce9bab01272a391e114"
+sha256_published_body: "5778cf882e0896dc8abf643199326c28b01a9f3396f425e583d0a0cd996483e0"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.711 de 29/08/2012
 

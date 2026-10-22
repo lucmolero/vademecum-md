@@ -22,14 +22,14 @@
     "VM-012": {
       "status": "approved",
       "selected_source_id": "planalto-br",
-      "expected_source_sha256": "ff8db7d3f182df1ac35f8d3e79392c259eb67ec044f910c275809163754dae48",
+      "expected_source_sha256": "6bcdd79dffd5404dae671d9ed222227d60dad60e722e151cf320bbfdb5313bc6",
       "reason": "The current Planalto compilation includes later official effects and amendments, including the 2026 changes associated with Complementary Law 227 and the promulgation-of-vetoed-parts notices. The Normas snapshot does not contain the same current redaction.",
       "review_scope": "current_redaction_and_effects"
     },
     "VM-026": {
       "status": "approved",
       "selected_source_id": "planalto-br",
-      "expected_source_sha256": "ba0d1baceb797d7c7a70fa3d89077febe822ee8737ebabc92c18989af61ab91e",
+      "expected_source_sha256": "148ebc3e3c6e1566cf5749b8808f560f27f270a610164f4f6c96492643c01452",
       "reason": "The current Planalto page contains the official consolidated text, promulgated vetoed parts, subsequent amendments and vigency annotations. The Normas snapshot differs materially in article coverage and current redaction.",
       "review_scope": "current_redaction_and_vetoes"
     },
@@ -43,7 +43,7 @@
     "VM-047": {
       "status": "approved",
       "selected_source_id": "planalto-br",
-      "expected_source_sha256": "81a42e7952ef703179e67e4560a10db2d7bde8fd44a3739482525777f6266a77",
+      "expected_source_sha256": "b07a4cb3e0211af7a6b8f2edff5ed37fbfaf3117bfd52480287a329733f4ed6b",
       "reason": "The Planalto text includes the promulgated vetoed provisions and the later amendment identified in the official text, while the Normas snapshot does not expose the same current redaction. The Planalto version is selected for the consolidated corpus and the Normas version remains evidence.",
       "review_scope": "current_redaction_and_promulgated_vetoes"
     },

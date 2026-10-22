@@ -1,0 +1,30 @@
+{
+  "schema": "normative-fidelity-policy/v1",
+  "canonicalization_version": "norm-v3",
+  "official_authority": "official_source_only",
+  "required_hashes": [
+    "sha256_source_raw",
+    "sha256_source_normalized",
+    "sha256_source_body",
+    "sha256_published_body"
+  ],
+  "required_evidence": [
+    "source_unit_id",
+    "source_unit_selector",
+    "source_snapshot_date",
+    "equivalence_status",
+    "anomalies"
+  ],
+  "equivalence_policy": {
+    "pass": "article_tree_and_normative_text_match_after_norm_v3",
+    "review": "source_and_public_structure_are_not_equivalent_or_evidence_is_incomplete",
+    "never_silent_correction": true,
+    "preserve_official_anomalies": true
+  },
+  "hash_scope": {
+    "sha256_source_raw": "bytes_of_official_snapshot",
+    "sha256_source_normalized": "normalized_selected_source_text",
+    "sha256_source_body": "normalized_selected_normative_body",
+    "sha256_published_body": "normalized_published_normative_body"
+  }
+}

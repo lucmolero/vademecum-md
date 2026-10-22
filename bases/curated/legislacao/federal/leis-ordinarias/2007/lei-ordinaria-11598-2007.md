@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11598-2007"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "b64a813c03a39a3ed56873abe8560d5e426c2d80bafeeb1000b9982dc2e4c4e5"
+sha256_source_normalized: "64fed4d9af7a45a1c194df68e88f92f78c1ee6a9535f004981ff6085874f86e4"
+sha256_source_body: "0361e99c1ae9db6fb843528eb58a02f878de41ba717522ccb87464ec2b36023c"
+sha256_published_body: "8da62af5c74d9aa0f28ec7317f2d9a7cd8f827484d4ba6630c4c8cc9afe3a4eb"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.598 de 03/12/2007
 

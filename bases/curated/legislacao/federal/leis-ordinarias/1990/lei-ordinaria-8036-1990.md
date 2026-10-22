@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-8036-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "113be604ae63587b02769fd9a92e6a85f30a3dacd66b0d9f7d858091a079d60d"
+sha256_source_normalized: "4e7c3f9d3cfd50836f341e3dd9b53c2e32194d32bf815454f3ed42e1bf5fa49d"
+sha256_source_body: "db8f3cc09f56c0425f410408adbcdaf5be120ba5a90f33bb81119ab734b54deb"
+sha256_published_body: "89da63f37be22ea06532b0cb6d53068b3d74c6824eb67f9e31dbe9470eee832d"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.036 de 11/05/1990
 

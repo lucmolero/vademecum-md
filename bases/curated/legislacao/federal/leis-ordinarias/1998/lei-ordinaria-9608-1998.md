@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9608-1998"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "3ecf2b5a7abc251beb519164e31811e5c980ab2bf2212f3ad2400922fa68de38"
+sha256_source_normalized: "bb9a0e613d2d57d331e2c8e8b9f9d6b2788e7d9bee7f44bcbb0edd420d37f47c"
+sha256_source_body: "eb81cc25f6328a0e5e7c82e2fb2e472e1bff45056d337a47876c824f8bb4a2dc"
+sha256_published_body: "eb81cc25f6328a0e5e7c82e2fb2e472e1bff45056d337a47876c824f8bb4a2dc"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.608 de 18/02/1998
 

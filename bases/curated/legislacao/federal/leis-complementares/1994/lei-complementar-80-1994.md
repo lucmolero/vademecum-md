@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-80-1994"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "64c53a317c442551c667a8699a4d2ef086ddb994158d7b58839c74dd2ab08972"
+sha256_source_normalized: "eb5b4e70772d6c3062b9d2ac6d4bf23c61170d2d47e23203fb6b686b8fdfe710"
+sha256_source_body: "130c6740bd1df598fbd40b5516791c798dbc4bf959ec4b41619210559876b377"
+sha256_published_body: "8faf37af24551fdb3376a29a536455b76219768ba0f8d3c00532d2f6b18bf659"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 80 de 12/01/1994
 

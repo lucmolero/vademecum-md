@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9494-1997"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "b4335b1ab1432a7008bbc2f0a40f5b7f3f88286639a76344398d83ff824a09a7"
+sha256_source_normalized: "694dfa62bc4b03df90cb2e4e5986ae8120e3152692aeb6518213a52dcc0c263c"
+sha256_source_body: "1a35254056615a70cf9c461ff70dd675e76c1f48b2bfe9fe8197c52974950444"
+sha256_published_body: "86e51842d84c844de5040c95ca5486b57df4cee71b06e97854b92ccec6aa3d2f"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.494 de 10/09/1997
 

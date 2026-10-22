@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-6001-1973"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "45943b2332d8d8e6dbf728078762160a2169751cc203fcb881fc2e7da217ae7e"
+sha256_source_normalized: "68255ebc6b299370db705752ed13fa3eb2bf947d3a70832569e7a732da52f4fd"
+sha256_source_body: "1ebae37225e18c1dd1333b24c888e9e9ec1ecac46706414c8e401a2b38c57fc8"
+sha256_published_body: "d6f76a7d097ffded60ba6a23bf287d09674f427f873b33a67f603db5931e254e"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.001 de 19/12/1973
 

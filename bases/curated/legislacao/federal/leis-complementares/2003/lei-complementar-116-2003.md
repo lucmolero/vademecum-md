@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-116-2003"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "dfad49f9353b14fe5495cd0dc5d4874abe02022999c26b9f5efab6d760e3f959"
+sha256_source_normalized: "ec819115cef1fd49d6f6629a7476d123f508567f9dfef70e931945e8a71925f2"
+sha256_source_body: "8a92dd7ee7586ce63a85993999e968ce12d5e84a1f4ea491d6b8202c8de3b118"
+sha256_published_body: "7d2fe483fa2af952c08bb8fe2d41d850e6fa53559b71d267d37d6482e5559658"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 116 de 31/07/2003
 

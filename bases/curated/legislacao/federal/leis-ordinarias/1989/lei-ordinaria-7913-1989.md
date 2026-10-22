@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7913-1989"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "cb734a63140702898b39b18a07b3316333bce4e68c95ae9e08ca577b431dbaac"
+sha256_source_normalized: "c90910441084c39d753bbb77011da3c2798a18241916b9f075a6f394e4708b24"
+sha256_source_body: "9fda32b72fe33e6ec7e27e9f2e290b6775fd74e9d4af1c4192309c5e6de64aa1"
+sha256_published_body: "782303f8846d8105539b20c9b70b981edb367beef3b33313b7a385218afd682d"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.913 de 07/12/1989
 

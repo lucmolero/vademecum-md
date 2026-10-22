@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14540.htm", "sha256_origem:550376f420193402b80e9d3a329dd665ea3ef41d0a3bf06ddf2bdd0332716666", "official_current_compilation_review"]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14540-2023"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "550376f420193402b80e9d3a329dd665ea3ef41d0a3bf06ddf2bdd0332716666"
+sha256_source_normalized: "6389526dc15fde77bcb8e30283b7435b514d807349a34f3bd4da04f39acf7cf6"
+sha256_source_body: "c6d4ac667440c77dd4d09bd844ca0b8f36202780cac79dcbe1fcf8985b3b31c2"
+sha256_published_body: "c6d4ac667440c77dd4d09bd844ca0b8f36202780cac79dcbe1fcf8985b3b31c2"
 ---
 # Lei nº 14.540, de 3 de abril de 2023
 

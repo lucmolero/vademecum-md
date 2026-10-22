@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "8a85f327e782149445a957ba130af57c0f0ef47cea6e1f2fec8e94c68d5df548"
 sha256_corpo: "d465e3e7348c815d41aeac8dea26e785eba94c8dc9c42a9f2a377e8aae881f00"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13243-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "8a85f327e782149445a957ba130af57c0f0ef47cea6e1f2fec8e94c68d5df548"
+sha256_source_normalized: "a1752e0afa9a82e5fed4844f670febc9b7fdbf948d7a13bc7460b81ac0b68514"
+sha256_source_body: "907c9a2e4a58a83727cd6abeb4966f2b8034e0acc3c40b6629da8ede41f7d2f5"
+sha256_published_body: "907c9a2e4a58a83727cd6abeb4966f2b8034e0acc3c40b6629da8ede41f7d2f5"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.243 de 11/01/2016
 

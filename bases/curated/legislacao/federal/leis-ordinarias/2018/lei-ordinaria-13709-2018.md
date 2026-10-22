@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "a741897a99e4f6212355fef10069ffafbfba4b999a85138e9835242521985377"
 sha256_corpo: "9ffb3c39186660ed1196f20a466dabcebf066aba55784e505a65ee9a7e6c367e"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13709-2018"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "a741897a99e4f6212355fef10069ffafbfba4b999a85138e9835242521985377"
+sha256_source_normalized: "7be17cd5d53399889b3e7403e001ffbc844355ac8da9af2384439195bb16eb3b"
+sha256_source_body: "29957a6a409efb5aaeab9a8169e93ff6e04838e7f33add75b7f3d3d06ef093a4"
+sha256_published_body: "29957a6a409efb5aaeab9a8169e93ff6e04838e7f33add75b7f3d3d06ef093a4"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Geral de Protecao de Dados Pessoais
 

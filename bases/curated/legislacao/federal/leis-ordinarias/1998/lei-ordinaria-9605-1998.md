@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9605-1998"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "d831a1b4af4733a3fa5a824c23bd3076e10bb666f4b7908ae59950de8650d5c8"
+sha256_source_normalized: "97fa9f228424da1977770711e91c91edfc70cd67e9312f311ee481638e08ee4d"
+sha256_source_body: "1e3d32701fe71e36df002adada688b98cf5ca7ee378c1884e4d6faf2cd3b7abc"
+sha256_published_body: "6ad2dc26b935087a79f694442d17f51000eab009e25e5cdd06db2ef6f24ba21c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.605 de 12/02/1998
 

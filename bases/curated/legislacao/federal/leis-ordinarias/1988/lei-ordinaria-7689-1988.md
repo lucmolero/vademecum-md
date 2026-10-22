@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7689-1988"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "119ad85fa29007bdfc5b81b83241cdb2616615a554e4885ffa1823b7caaa2838"
+sha256_source_normalized: "0a29f011a4ca4536d32ed51c44d026ae2eac1402e15cb249d6855bf7e71f2872"
+sha256_source_body: "290f0ccf11a1e98a07baee1c5debfca64219cba3a72abe19a2dd1a7b8375b687"
+sha256_published_body: "4e96847486b0a5cad2811cc979d749175e2d7d434c050ca110d68d41a77f1d20"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.689 de 15/12/1988
 

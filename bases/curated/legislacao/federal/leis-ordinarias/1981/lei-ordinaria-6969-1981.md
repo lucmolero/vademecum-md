@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "5e1fa0b5e818fc9ec49c8d6ea88620acff75bd28b43adef626f8611316b9bb40"
 sha256_corpo: "12cf53446ddfeb1daa0d8f531d6831b51e276ea0d715c5646336fedbc83665e5"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-6969-1981"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "5e1fa0b5e818fc9ec49c8d6ea88620acff75bd28b43adef626f8611316b9bb40"
+sha256_source_normalized: "4e290184f28f3547774042b1ebe2ee6459846930f306ddd5acae4a880238cdff"
+sha256_source_body: "ed8158b92f50bc17cbd8fc98df5fbf1e953f6779a35255701d9aafb8744bf773"
+sha256_published_body: "ed8158b92f50bc17cbd8fc98df5fbf1e953f6779a35255701d9aafb8744bf773"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.969 de 10/12/1981
 

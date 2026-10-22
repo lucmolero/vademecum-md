@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14181.htm", "sha256_origem:3eee842a86eeac154f7fd99ca445a90e0cbc91a312494cf2bbdd40a3980cc3b8", "official_current_compilation_review"]
 camada: "core_profissional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14181-2021"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "3eee842a86eeac154f7fd99ca445a90e0cbc91a312494cf2bbdd40a3980cc3b8"
+sha256_source_normalized: "0f374c5b1656c402d002cf54db3c6b2e5911a5b16d7d25ad3486141a8c454a12"
+sha256_source_body: "404280cb90dffd11b7282a329a43a4fd97c3488c91760163bada59f500ab52fc"
+sha256_published_body: "404280cb90dffd11b7282a329a43a4fd97c3488c91760163bada59f500ab52fc"
 ---
 # Lei nº 14.181, de 1º de julho de 2021
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-7783-1989"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "844246f2e22613d15eaa135856b75dc48a7e03495da8e73edcce692d0d31e1a4"
+sha256_source_normalized: "8f5fca4282a734d5b89697c1dc955d79414640999c7bfac91ecf2de60446af41"
+sha256_source_body: "0a5d5a8602fe960e738ad2c7267ca613623c0a76650d2c8af551f43c00420f7c"
+sha256_published_body: "22a5780c8d9bbbde27f6cb36e8f8fd639aeef710efc890115d26bd9b391e4586"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 7.783 de 28/06/1989
 

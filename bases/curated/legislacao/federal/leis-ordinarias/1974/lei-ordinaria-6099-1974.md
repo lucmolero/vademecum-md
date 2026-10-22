@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-6099-1974"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "3b1187a0cce94260dd1f97ea96108e00a2448ced4b07df0e2fe968e208f5883a"
+sha256_source_normalized: "a61aa7de97d7f426d4b7c6d2b69683e162a952af545947b8bfc479ce1d1212a6"
+sha256_source_body: "c9cf463e2fa6d9a9a473c35ddb95e6d6faa282ce1c5d02233dacaecf793d4691"
+sha256_published_body: "3a73b0262f5c53d4a7114a56cc87ee0f098f690545cd79738356c6714880c0a5"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.099 de 12/09/1974
 

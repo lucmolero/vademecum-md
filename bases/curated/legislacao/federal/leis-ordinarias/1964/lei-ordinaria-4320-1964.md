@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-4320-1964"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "5799519b4fe7f0e4c8f6e2289aca643001bc99541fe679dbb729cd61c30b7abc"
+sha256_source_normalized: "5f5536239b813ad0cc6933226c8d4d5d9ef644f020bb28e0c47e59ddf5f6284a"
+sha256_source_body: "0f947c7718168ad6123908c88cd7b179ee6d18851ca3ad7bf727898bd54963a0"
+sha256_published_body: "5fc43aa2501e3f188393a6ea0aefad3f41ffafcb6b0da59b54bfbb1affbfe05c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.320 de 17/03/1964
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14010-2020"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "344b367e3e1ce25b60b4774d13c7f38cfea681a595832a05ec3a7ca4b9a6b87b"
+sha256_source_normalized: "ebe036ed5b7e7434633cf1cd049c08f1a4c86d43c161373b15cf1dd830092951"
+sha256_source_body: "4f1966845f0ebeaad6b09eaa0751339eb720ee339281ca8df1bfe0748c95966a"
+sha256_published_body: "829d9117711c0cbdf73a14d8721eb59d0656fce441a9ce5e1d0d29ec96401fab"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 14.010 de 10/06/2020
 

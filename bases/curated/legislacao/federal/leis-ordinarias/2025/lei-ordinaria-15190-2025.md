@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "fe1745a8241bcf852401c0ae8ae9e6a7016b8af297831709c903400660380f5f"
 sha256_corpo: "f48ae1d016d9df18a63b94b288d7ca58fceda070370229bda3257d93d045f5d1"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-15190-2025"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "b07a4cb3e0211af7a6b8f2edff5ed37fbfaf3117bfd52480287a329733f4ed6b"
+sha256_source_normalized: "2a2ea9e79739b286e55f8e3d36aa5e6e7dedf854450274e21f5b9c94cd2d9fd3"
+sha256_source_body: "a6b35a232449ee5a75410d18b86e99517ec848ee4cf975e9a37782d7c73a9c2c"
+sha256_published_body: "a6b35a232449ee5a75410d18b86e99517ec848ee4cf975e9a37782d7c73a9c2c"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 15.190 de 08/08/2025
 

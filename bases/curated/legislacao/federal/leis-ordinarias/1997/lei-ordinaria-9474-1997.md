@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "1b7f156c67cd093d886bea8f22ec44e42bd4f88147591227407a0b7555104f1a"
 sha256_corpo: "b33b6b322cb87b744ae026f0b31ce8479094ac1e63e7a14d6b11f2ac4e6e802a"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9474-1997"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "1b7f156c67cd093d886bea8f22ec44e42bd4f88147591227407a0b7555104f1a"
+sha256_source_normalized: "7d368dd1ddeb1171b2fd0660ff89cc82d5903dc570616560e801a28250d279d4"
+sha256_source_body: "24271758a8c2c36bf2f239c97261cadfd35c259469d361e204b96ed1571ca559"
+sha256_published_body: "24271758a8c2c36bf2f239c97261cadfd35c259469d361e204b96ed1571ca559"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.474 de 22/07/1997
 

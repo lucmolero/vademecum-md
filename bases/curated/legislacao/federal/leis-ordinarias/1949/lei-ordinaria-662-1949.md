@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-662-1949"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "64893ffd77abc60dc045ede84cfdf9619cc33b982a0ff301b09444a86b9ee98b"
+sha256_source_normalized: "449dc58bb4a45216b9e66fd68d083edb4fe4dc79e364d297011eb7dd8417fb4d"
+sha256_source_body: "02bc8b2c82438ffff9def5d63a536d1fc0f51cba137e5438552aa77208826a35"
+sha256_published_body: "02bc8b2c82438ffff9def5d63a536d1fc0f51cba137e5438552aa77208826a35"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 662 de 06/04/1949
 

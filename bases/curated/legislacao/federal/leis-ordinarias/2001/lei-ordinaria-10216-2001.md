@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "dc75d672954d24102a1ef5eb8632cf3e81b00411fc92c5a5d7ef65c77007fdb6"
 sha256_corpo: "1ca50a8c8d92a01936ecfa3e63dcb2c7c4141e6bf7c1090ad5dc172159e79f7b"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-10216-2001"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "dc75d672954d24102a1ef5eb8632cf3e81b00411fc92c5a5d7ef65c77007fdb6"
+sha256_source_normalized: "f0eede9168de67c9fc388a7e73fd78a97c5cd3ee0102310b40224d2a4ea0b257"
+sha256_source_body: "7d8f07583e398f7376d2d6ced402c0da1305c2cc4c395b63879d5256f09d63b0"
+sha256_published_body: "7d8f07583e398f7376d2d6ced402c0da1305c2cc4c395b63879d5256f09d63b0"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.216 de 06/04/2001
 

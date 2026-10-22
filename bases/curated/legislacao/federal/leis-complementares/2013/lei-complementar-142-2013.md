@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "b56b412f02539f75080d7b6e1bae4dfc40c6b41b5fc2e56db17d716f1b178b3a"
 sha256_corpo: "80ebb1c531db586fee5b60a625791e4422cb3dcc324eb190ecac41b21e0a34af"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-142-2013"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "b56b412f02539f75080d7b6e1bae4dfc40c6b41b5fc2e56db17d716f1b178b3a"
+sha256_source_normalized: "0f3ab76bfab902b2fa4d176bf01ffb3b6a4e480d396a3561ae2240ce03d45814"
+sha256_source_body: "515293ff8a4ecc4d3066b0f84df966bdeebdefaa5ef9d6b3a9f650289ddceed7"
+sha256_published_body: "515293ff8a4ecc4d3066b0f84df966bdeebdefaa5ef9d6b3a9f650289ddceed7"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 142 de 08/05/2013
 

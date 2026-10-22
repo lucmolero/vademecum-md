@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" role="img" aria-labelledby="title desc">
+  <title id="title">VadeMecum MD</title>
+  <desc id="desc">Marca VadeMecum MD com símbolo de livro aberto e estrutura de dados.</desc>
+  <rect width="96" height="96" rx="24" fill="#13243A"/>
+  <path d="M15 25h25c9.5 0 16 5.5 16 15v39c-4.5-4.2-9.8-6.2-16-6.2H15V25Z" fill="#FBF8F0"/>
+  <path d="M81 25H56c-9.5 0-16 5.5-16 15v39c4.5-4.2 9.8-6.2 16-6.2h25V25Z" fill="#E7D7AC"/>
+  <path d="M48 34v45" stroke="#B48A3C" stroke-width="4"/>
+  <circle cx="48" cy="34" r="4" fill="#2D7659"/>
+  <circle cx="48" cy="52" r="2.5" fill="#2D7659"/>
+  <text x="122" y="57" fill="#13243A" font-family="Georgia, serif" font-size="43" font-weight="700">VadeMecum</text>
+  <text x="390" y="57" fill="#B48A3C" font-family="monospace" font-size="43" font-weight="700">MD</text>
+  <text x="124" y="78" fill="#38516D" font-family="Arial, sans-serif" font-size="11" letter-spacing="2.2">LEGISLAÇÃO · EVIDÊNCIA · ESTRUTURA</text>
+</svg>

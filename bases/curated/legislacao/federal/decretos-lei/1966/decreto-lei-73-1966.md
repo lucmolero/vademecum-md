@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-decreto_lei-73-1966"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "eee42b4897c5756d79e6911e757d8da8c11bcfe3ccdee5f44d325291831422a9"
+sha256_source_normalized: "799d03983ef5ef392b85105acdd61791eff1d785656f2b3388cdf92bd660b66c"
+sha256_source_body: "f9a75496250ec687416445661a955ce2ca8ce621450f607636c4f7d681281486"
+sha256_published_body: "767652c1c0393304a4193f1e9f5c347cf7a9e5ff19710121b8068f82e46dc804"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 73 de 21/11/1966
 

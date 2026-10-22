@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-5010-1966"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "28d99096f0cb480c79b36efb8d4cf28145b60bd116e1fafd1186a3ec56dd3d35"
+sha256_source_normalized: "630058784e7cbffa97926e103a2ae54d8738773c7f68b8c3ff50e84b0c1806b6"
+sha256_source_body: "881eb730709bc83f3f82e2a342e88b7929db1a18237e125a1313afa5c72140f4"
+sha256_published_body: "8cb1c16ed94ec79268a2617ceca177fff90a7d7d69115cb0122921da7e07bb4b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 5.010 de 30/05/1966
 

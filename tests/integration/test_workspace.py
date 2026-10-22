@@ -10,11 +10,11 @@ from tempfile import TemporaryDirectory
 from urllib.error import HTTPError
 from unittest.mock import MagicMock, patch
 
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "acquire"))
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "normalize"))
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "history"))
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools" / "relations"))
-sys.path.insert(0, str(Path(__file__).parents[1] / "tools"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "acquire"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "normalize"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "history"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "relations"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools"))
 
 from collect_legislation import (  # noqa: E402
     build_plan,
@@ -38,7 +38,7 @@ from classify_unresolved import referenced_role  # noqa: E402
 from pipeline_modes import load_modes, resolve_mode  # noqa: E402
 
 
-ROOT = Path(__file__).parents[1]
+ROOT = Path(__file__).parents[2]
 
 
 class WorkspaceTest(unittest.TestCase):
@@ -119,7 +119,8 @@ class WorkspaceTest(unittest.TestCase):
         self.assertTrue(all(item.get("sha256_origem") for item in sources["documents"]))
         self.assertTrue(all(item.get("sha256_corpo") or item.get("sha256_corpo_por_fonte") for item in sources["documents"]))
         constitution = next(item for item in sources["documents"] if item["id"] == "br-federal-constituicao-1988")
-        self.assertEqual(constitution["hash_scope"], "per_source")
+        self.assertIsInstance(constitution["hash_scope"], dict)
+        self.assertEqual(constitution["hash_scope"]["sha256_source_body"], "selected_normative_body_norm_v3")
         self.assertEqual(len(constitution["sha256_corpo_por_fonte"]), 2)
         registry = json.loads((ROOT / "manifests/sources-registry.json").read_text(encoding="utf-8"))
         self.assertTrue(registry["policy"]["official_only"])
@@ -165,9 +166,10 @@ class WorkspaceTest(unittest.TestCase):
         text = "\n".join(path.read_text(encoding="utf-8", errors="ignore").lower() for path in paths if path.is_file())
         self.assertFalse(any(marker in text for marker in forbidden))
 
-    def test_release_validator_passes(self) -> None:
+    def test_release_validator_accepts_reconciled_fidelity(self) -> None:
         result = subprocess.run([sys.executable, "tools/validate_release.py"], cwd=ROOT, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("erros: 0", result.stdout)
 
     def test_workflows_cannot_mutate_main_directly(self) -> None:
         result = subprocess.run([sys.executable, "tools/validate/validate_workflows.py"], cwd=ROOT, capture_output=True, text=True)
@@ -208,8 +210,10 @@ class WorkspaceTest(unittest.TestCase):
         self.assertIn('git checkout -B "$base_branch" "origin/$base_branch"', proposal_workflow)
         self.assertIn("Refusing to write to the default branch", proposal_workflow)
         self.assertNotIn("gh pr create --draft", proposal_workflow)
-        self.assertIn("gh pr merge", proposal_workflow)
-        self.assertIn("--auto", proposal_workflow)
+        self.assertIn("gh pr create", proposal_workflow)
+        self.assertIn("governance review", proposal_workflow)
+        self.assertNotIn("gh pr merge", proposal_workflow)
+        self.assertNotIn("--auto", proposal_workflow)
         history = (ROOT / ".github/workflows/sync-private-history.yml").read_text(encoding="utf-8")
         self.assertIn("HISTORY_REPO_SSH_KEY", history)
         self.assertNotIn("environment: private-history", history)

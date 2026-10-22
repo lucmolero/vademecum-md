@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "auditoria_especialista"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-4117-1962"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "6fce3b2b347f58a71703bb2b2473a08307b1471222e1ef6f5ac60febdb729b38"
+sha256_source_normalized: "1ad11e755236bea0620191c0a857e57ebba24f0aebed3a27ef21f834d1805fb0"
+sha256_source_body: "fa9c21b529249845bfe490bfdee91a6730095ddc47ebef2d9be2a671b813d12b"
+sha256_published_body: "6031a4b7f60a6485adbd2cdaf8592aff639355e425309fcdc487648d83eeb0be"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.117 de 27/08/1962
 

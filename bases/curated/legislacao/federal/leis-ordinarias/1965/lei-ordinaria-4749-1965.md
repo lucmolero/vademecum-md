@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "8b8394f120bbda0e78dc298010a8a5bcabbebc57ad48676d7a41cd8a079c68cf"
 sha256_corpo: "2a1637de98b065c6a6132fcbcb707eed56afb3dba8cbf12de47f59f91227220a"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-4749-1965"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "8b8394f120bbda0e78dc298010a8a5bcabbebc57ad48676d7a41cd8a079c68cf"
+sha256_source_normalized: "f52e20605f7bf722af3e6c637fa47a8ff363af5912d9a9242b748315b03c20cf"
+sha256_source_body: "d506a0000513b7c4f9271a43164baf1801e7cd780eb6ee76d6e452149d50126e"
+sha256_published_body: "d506a0000513b7c4f9271a43164baf1801e7cd780eb6ee76d6e452149d50126e"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 4.749 de 12/08/1965
 

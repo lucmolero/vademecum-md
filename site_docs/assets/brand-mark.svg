@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">VadeMecum MD</title>
+  <desc id="desc">Livro aberto dividido por um eixo de dados.</desc>
+  <rect width="64" height="64" rx="16" fill="#13243A"/>
+  <path d="M10 17h17c6.6 0 11 3.8 11 10v26c-3.1-2.8-6.7-4.2-11-4.2H10V17Z" fill="#FBF8F0"/>
+  <path d="M54 17H37c-6.6 0-11 3.8-11 10v26c3.1-2.8 6.7-4.2 11-4.2h17V17Z" fill="#E7D7AC"/>
+  <path d="M32 23v30" stroke="#B48A3C" stroke-width="3"/>
+  <circle cx="32" cy="23" r="3" fill="#2D7659"/>
+  <circle cx="32" cy="35" r="2" fill="#2D7659"/>
+</svg>

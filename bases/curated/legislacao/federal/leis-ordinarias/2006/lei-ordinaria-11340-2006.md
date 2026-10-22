@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "b680a0136137de7d821ca3592395d9ac37bfc90f0a63baf2897ad0fc992d7285"
 sha256_corpo: "a76066cfc4b648376389629dd24cc9c2049d99f053a51b261860335cb870fcfd"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11340-2006"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "b680a0136137de7d821ca3592395d9ac37bfc90f0a63baf2897ad0fc992d7285"
+sha256_source_normalized: "ba9f757f3453b774b36827bf938295b137f3cae15c72ef2c35db2a5de36e88b0"
+sha256_source_body: "33a34a7e77f12c2274b8ac3f2f0617ab7c8f5e5f77c517349888eba10d2f2657"
+sha256_published_body: "33a34a7e77f12c2274b8ac3f2f0617ab7c8f5e5f77c517349888eba10d2f2657"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Maria da Penha
 

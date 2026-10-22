@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-decreto_lei-9760-1946"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "2a094fe8ef73ebe4bec1c08e46d5398230a04fe0b5d23498abdaf29c6eea600e"
+sha256_source_normalized: "1fa405de5ace40281ffb6a655b9d3579dd0c694b8d879b3076521381d657d2e6"
+sha256_source_body: "04cf260f76f5031864e2f99a7850e510132f3841a47305b75728d74185c57335"
+sha256_published_body: "a9ecb36621c03cdcf56ad8e45fefd5d3357fb3246ba10eeb3ad5f58bfe934057"
+source_snapshot_date: "2026-10-21"
 ---
 # Decreto-Lei nº 9.760 de 05/09/1946
 

@@ -31,8 +31,8 @@
     "promoted_count": 15,
     "undecided_count": 0
   },
-  "workflow_count": 8,
-  "test_count": 39,
+  "workflow_count": 9,
+  "test_count": 51,
   "divergence_report": "bases/derived/relatorios/baseline-divergence.json",
   "divergence_count": 0,
   "status": "pass"

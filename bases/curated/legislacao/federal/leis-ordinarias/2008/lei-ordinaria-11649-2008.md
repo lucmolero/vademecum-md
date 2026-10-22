@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "9f8837146e98983e94946af0aacd8dbdc0515e11d3c8ea14129b9447a0641ff1"
 sha256_corpo: "5e657ff795936e2cb74c67abbdf709f696eae56f1f1a37c8e134f438e0ff0eca"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11649-2008"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "18abd217440bf2407932c301a9674c6d7f45fe5ed88def8492fddcd4611d686f"
+sha256_source_normalized: "b67eff80934c77ce60c3841921eaadb7161bb8229b46b70d5581c26b3d159569"
+sha256_source_body: "0e1daf7e044198f151c8bdc5dadba5b5370b7792430c4abde7d529a70e7e2b43"
+sha256_published_body: "0e1daf7e044198f151c8bdc5dadba5b5370b7792430c4abde7d529a70e7e2b43"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.649 de 04/04/2008
 

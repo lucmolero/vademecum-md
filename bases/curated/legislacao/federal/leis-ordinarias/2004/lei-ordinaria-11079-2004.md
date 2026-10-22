@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11079-2004"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "548c3ebcbb05aa931d318032d11b34dbdbd298a54b509fb22c854e765d24db33"
+sha256_source_normalized: "ab5d7803a367a380211cda7120157957b3df273fa84c444cb632e6ada1547a89"
+sha256_source_body: "3bd67ab28d446a02bae4d3173ba39dd38a2321bbd6953c55b85e80c4f5f45943"
+sha256_published_body: "835453ffbd8e9934ee77973287a3b92ae40771f92209933ffb87c02e31ce6e6f"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.079 de 30/12/2004
 

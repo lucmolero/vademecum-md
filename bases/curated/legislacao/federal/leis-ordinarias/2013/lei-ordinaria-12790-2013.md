@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "33c78ba47eadfa14d546aae37aee6225a8b15fdf8fcadf228f6363edd38adb5c"
 sha256_corpo: "a1a493d694eff625f9ea0ac71de7e6cc77e7ec0ab96bd54de283ea51a5999be3"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12790-2013"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "33c78ba47eadfa14d546aae37aee6225a8b15fdf8fcadf228f6363edd38adb5c"
+sha256_source_normalized: "2e2d7ac81cc557fcc606adc2e02a45aec136b7e267106b542cc1fb61efd1dcb7"
+sha256_source_body: "c08e3411f4df74e984c40f91279554345ab6e6af9742f1247c99f187020304ad"
+sha256_published_body: "c08e3411f4df74e984c40f91279554345ab6e6af9742f1247c99f187020304ad"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.790 de 14/03/2013
 

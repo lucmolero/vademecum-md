@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12737.htm", "sha256_origem:f7ad7a5a150f2e8e4a200043246d0368259ba6cd9a1cc14d1c19d80797bfb5e6", "official_current_compilation_review"]
 camada: "core_profissional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12737-2012"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "f7ad7a5a150f2e8e4a200043246d0368259ba6cd9a1cc14d1c19d80797bfb5e6"
+sha256_source_normalized: "5ea05ee0cf56396b8ee042f31988ccf26047d8c5b63d2e787ff2654d17d2a2fe"
+sha256_source_body: "160425f3531bbb539daa9b35765395056a71350e7976adb4867e4430949602f9"
+sha256_published_body: "160425f3531bbb539daa9b35765395056a71350e7976adb4867e4430949602f9"
 ---
 # Lei nº 12.737, de 30 de novembro de 2012
 

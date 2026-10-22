@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto oficial do Planalto conferido em 2026-10-21; não foi identificada marcação de alteração posterior na página vigente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13726-2018"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "6d3c9585f4443a091b14a474b00cb844964cf2990e32e724b94f1c6c31d798f7"
+sha256_source_normalized: "521280e2da1409eb483156c75846032a5daa7715aa0bb2928901358c1b6d397d"
+sha256_source_body: "f0e73e58d6912750cc8d0434120e6000921bdbc643efc91cf907a23f9880f2c5"
+sha256_published_body: "f0e73e58d6912750cc8d0434120e6000921bdbc643efc91cf907a23f9880f2c5"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.726 de 08/10/2018
 

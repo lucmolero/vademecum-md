@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14532.htm", "sha256_origem:a205948fc6c51535c98fe04f910b1e5d6e4746f7abba27fb945607f3e6902fa2", "official_current_compilation_review"]
 camada: "core_profissional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-14532-2023"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "a205948fc6c51535c98fe04f910b1e5d6e4746f7abba27fb945607f3e6902fa2"
+sha256_source_normalized: "c38b62a72238200d4beef6a338a96edd14b03cdb8387026da4007d9a4ed94e15"
+sha256_source_body: "fc3d3ff594a74f28444431083e7c81c6cd3a8a409b0553eee2f7ef6a246f8be2"
+sha256_published_body: "fc3d3ff594a74f28444431083e7c81c6cd3a8a409b0553eee2f7ef6a246f8be2"
 ---
 # Lei nº 14.532, de 11 de janeiro de 2023
 

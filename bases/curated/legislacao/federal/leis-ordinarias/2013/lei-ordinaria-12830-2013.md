@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "343b0cc36688a4a8d549cf3f2e9a20b61f03db25df247bd949749e1fd0faa326"
 sha256_corpo: "367dd26e3a8aaff52c5617b2c1552b846e59cded6fbcb22b54c1e028af19b0ef"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12830-2013"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "343b0cc36688a4a8d549cf3f2e9a20b61f03db25df247bd949749e1fd0faa326"
+sha256_source_normalized: "c69b9fa3bab96a0c6f9335c3b1b278c23362d162358382f4b7bffb776f8079e9"
+sha256_source_body: "57340bb764e9e4767b7413eff8ea3e5f3d01dbb36c768b69eb50e1dd790c9427"
+sha256_published_body: "57340bb764e9e4767b7413eff8ea3e5f3d01dbb36c768b69eb50e1dd790c9427"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.830 de 20/06/2013
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12232-2010"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "3138b74b49f6028f42bccfe29e725e3e8a1c118b03372e73b8b2e9bab53d1ba8"
+sha256_source_normalized: "09199b44435ff7856b08513a4177ae7440f5105c3ed196b32332a177a1979c7e"
+sha256_source_body: "d3f6bf1da884cf0628e3f37dd21d662a1f2993eb6507af4a9ae9314688d7d907"
+sha256_published_body: "22bcd41b4ca666c7f555575ad08a3a383c682e1b381427603650df8873286826"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.232 de 29/04/2010
 

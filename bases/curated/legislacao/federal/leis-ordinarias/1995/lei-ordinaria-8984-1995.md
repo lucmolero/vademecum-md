@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "ed75263796bc09699d680d30400c51c92cca74804305ff8b7d3e2b35fdc3eaf6"
 sha256_corpo: "3d35da69dad8f700f2a13b0ef4874927d563d69d4842540fa496e17129a96a5c"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-8984-1995"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "ed75263796bc09699d680d30400c51c92cca74804305ff8b7d3e2b35fdc3eaf6"
+sha256_source_normalized: "71a6ba36c0866e49e0bb97c34406bc425a9795db133c29c92ebe353a7ac5eade"
+sha256_source_body: "6784322f9d8be990a8afe9617f47f422c4289c4c8c91fff22d488e5e59c89bfb"
+sha256_published_body: "6784322f9d8be990a8afe9617f47f422c4289c4c8c91fff22d488e5e59c89bfb"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.984 de 07/02/1995
 

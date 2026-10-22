@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "8495f57b1ca3ce36cf8d45597bd6970f45cd10b8b4b2982a5c3f90f7dcd09288"
 sha256_corpo: "a5a8656324de8d9aa209c48f3a61bfba92837261bc87fcfb9ddff47038afedfa"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-4737-1965"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "8495f57b1ca3ce36cf8d45597bd6970f45cd10b8b4b2982a5c3f90f7dcd09288"
+sha256_source_normalized: "53af2e92688e4459dfc22ac2ec773c1593d600709c74643a0718a4284cea8256"
+sha256_source_body: "87c69cf6108cd3a1ccbe16392898c5398f7cf7b7e3050513ae9a765e2d2662b2"
+sha256_published_body: "ca14a26c5495854b8cbd36292b0372946c4b301f51935c626defc2632b1c1914"
+source_snapshot_date: "2026-10-21"
 ---
 # Codigo Eleitoral
 

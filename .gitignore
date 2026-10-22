@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -10,6 +11,11 @@ htmlcov/
 # Dados e artefatos locais não versionados
 .cache/
 .private/
+site_docs/generated/
+site/
+!tools/site/
+!tools/site/**
+tools/site/__pycache__/
 build/
 dist/
 reports/

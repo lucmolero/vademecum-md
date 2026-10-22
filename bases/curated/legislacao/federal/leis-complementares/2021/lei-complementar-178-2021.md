@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "141d6d1e25f051547a658eb1c8555f9445a1f56e97252cadf3279ac8d370b8d6"
 sha256_corpo: "725a7610ba050886136a4d59e3f07944b846ceac696bb4213f98848497ffc73a"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-178-2021"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "141d6d1e25f051547a658eb1c8555f9445a1f56e97252cadf3279ac8d370b8d6"
+sha256_source_normalized: "35a7e563a0a30181bddc57441f13afb983614b831a46e23478e430324fdb4f5c"
+sha256_source_body: "6e3ff3d8522767b2068fffd6b6704343e703d3705713451164fd8b89033bd961"
+sha256_published_body: "6e3ff3d8522767b2068fffd6b6704343e703d3705713451164fd8b89033bd961"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei Complementar nº 178 de 13/01/2021
 

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">VadeMecum MD</title>
+  <desc id="desc">Legislação federal brasileira estruturada para humanos e máquinas.</desc>
+  <rect width="1200" height="630" fill="#FBF8F0"/>
+  <rect width="1200" height="18" fill="#B48A3C"/>
+  <circle cx="104" cy="116" r="54" fill="#13243A"/>
+  <path d="M77 91h22c17 0 28 8 28 25v43H105c-15 0-28-8-28-24V91Zm54 0h22c-17 0-28 8-28 25v43h22c15 0 28-8 28-24V91Z" fill="#FBF8F0"/>
+  <text x="104" y="318" fill="#13243A" font-family="Georgia,serif" font-size="72" font-weight="700">VadeMecum MD</text>
+  <text x="108" y="383" fill="#38516D" font-family="Arial,sans-serif" font-size="28">Legislação federal brasileira</text>
+  <text x="108" y="430" fill="#38516D" font-family="Arial,sans-serif" font-size="28">estruturada para humanos e máquinas</text>
+  <text x="108" y="536" fill="#2D7659" font-family="monospace" font-size="20">fontes oficiais · hashes · auditoria · Markdown</text>
+</svg>

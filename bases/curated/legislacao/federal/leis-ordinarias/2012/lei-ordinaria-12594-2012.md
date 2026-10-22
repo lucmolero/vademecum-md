@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "43d956984a848daf0bdb3f9ffa3ca29a0845c9130a5791e4b734d3a716f8d236"
 sha256_corpo: "db563e8941016ed8e4a5f1dd431c9f7e221150713e854afb341f66d50e111d1e"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12594-2012"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "43d956984a848daf0bdb3f9ffa3ca29a0845c9130a5791e4b734d3a716f8d236"
+sha256_source_normalized: "2619feb87d7e56f322ef6a1630455ba372c12f773acba2d31ce85bbc74873fdc"
+sha256_source_body: "0acf466160f07282ced7071f5d06a6c5f7277312d665039aedc6d7be0d1651e3"
+sha256_published_body: "0acf466160f07282ced7071f5d06a6c5f7277312d665039aedc6d7be0d1651e3"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.594 de 18/01/2012
 

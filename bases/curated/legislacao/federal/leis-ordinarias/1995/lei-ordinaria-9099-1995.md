@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "bbd7251df6098604cf4bd0f05f8856d70b443026e30398ff28f846dbd633dd5f"
 sha256_corpo: "8ce848a2caeafb1b6a5caca904df183ded156252827fcf4510468d0b5132dab5"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9099-1995"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "bbd7251df6098604cf4bd0f05f8856d70b443026e30398ff28f846dbd633dd5f"
+sha256_source_normalized: "876791075a3bf26ea71428bc03b92bcba8169d436ae31387a4a75ac13990d93e"
+sha256_source_body: "23e40fea335bf4975e508a9ce3ca5d349d130f864197bd9ef8a77599f6367967"
+sha256_published_body: "e8e8a8d1982218acd2c941de87191e650cf1688e92dd66cee19397ea1888c22b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei dos Juizados Especiais
 

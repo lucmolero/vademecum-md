@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_constitucional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "nao_aplicavel"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-constituicao-1988.constituicao"
+source_unit_selector: {"selector_type": "html_before_anchor", "selector": {"anchor": "adct", "fallback_anchors": [{"label": "57", "anchor_pattern": "artigo-57", "replace_full_article": true}, {"label": "62", "anchor_pattern": "artigo-62", "replace_full_article": true}, {"label": "126", "anchor_pattern": "artigo-126", "replace_full_article": true}, {"label": "222", "anchor_pattern": "artigo-222", "replace_full_article": true}], "start": "Constituição da República Federativa do Brasil de 1988", "end": "Ato das Disposições Constitucionais Transitórias"}, "unit_scope": "constituicao"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "df3497357ba80e7dd31345d07a47a3f45da514ad800baddbe93a1f61b9d70a7c"
+sha256_source_normalized: "c25e3400e3af9395b505c2f9bc6e9fdbc5dc4199b1f92bb25cf6c9422349484c"
+sha256_source_body: "b2eb6dfe7583360e117ceb254a7138da01126e45bd88228caf6a4d69c1916c59"
+sha256_published_body: "eb74f460115c2cfb7c043e9a04a012ca096376a1b54ee959108b5e0656eaed33"
+source_snapshot_date: "2026-10-21"
 ---
 # Constituição da República Federativa do Brasil de 1988
 

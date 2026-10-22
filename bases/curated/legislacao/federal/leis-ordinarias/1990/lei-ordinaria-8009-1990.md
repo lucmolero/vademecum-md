@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-8009-1990"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "c1e83763dc97658948fe787c1693440517404692b270a2157d9b5b3acbebded9"
+sha256_source_normalized: "4dda0557e3bed9db7aedf0b44b5f77c485a6e04b67317ded6b5373a403af30bb"
+sha256_source_body: "a3770d735fc0527c7f572fd3884c9a8a493227c1f42cbe9373687d6d99aeaafe"
+sha256_published_body: "467b9a140564c475b3abc70b8be8a133464ed5ed63b37e5e81f7868ba137b779"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 8.009 de 29/03/1990
 

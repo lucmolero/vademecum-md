@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13460-2017"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "afff47cbeb551873a8b079995048bbfb118ef37fcb33fd408707ea359b6dd34a"
+sha256_source_normalized: "2546e1449065fd84e1b6c5c4979c6f7c283abbca24bc1952e6ad1b7b958e3cda"
+sha256_source_body: "03f64dffe595db2973ff305b0a4ad91b5c4c73115357240b16e2305d6f0782de"
+sha256_published_body: "730fbfb2295c8c12b6c24a04724b7f02020dac21b9c4d62824979c9c6cb36191"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.460 de 26/06/2017
 

@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12034-2009"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "84e6dab76302193efa8587cf7db949012523ec74240c91f531133b2ad7942ce4"
+sha256_source_normalized: "f374a90c333405bc4139014e79c9f80c390760f5f47502ef583c104e525af33d"
+sha256_source_body: "d73b4c826f4aba71f6b7d7f624af60ce1922da679b4e2e473e66374c1ede9fd6"
+sha256_published_body: "2e193882d218c67e97dc84a5a83a5e0835c3bc048a46f10e204fe3dcb008a00b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.034 de 29/09/2009
 

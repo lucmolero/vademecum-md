@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11788-2008"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "423080b05dccd38baab7a77f77cdb28625e06cc3081d781380d1600c752fd4be"
+sha256_source_normalized: "7bfa15707571a6e688dd01bd457d72896485513448103f0715e921f68efa8705"
+sha256_source_body: "c68d24fbd64d1e75f08cf55da472e6a4e06f9e72f15cb9fbfc18a20ab533331c"
+sha256_published_body: "c872e3c2435bef6a397e19299da1a52fa2bc3cb50eeac00ea4b5c5b45b0806fe"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 11.788 de 25/09/2008
 

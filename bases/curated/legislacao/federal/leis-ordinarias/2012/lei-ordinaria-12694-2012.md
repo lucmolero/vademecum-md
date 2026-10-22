@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-12694-2012"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "ae750178b9c8dc9ae5cfcf802b68cacdbe09cb37ee34d471f6a55ddbedab87e6"
+sha256_source_normalized: "eb21a9772ecd938f9ad924925fb36e106e2e01cfca0063a165d6288bd5b52d25"
+sha256_source_body: "13a53e06e6375983467e5ea2867c134afbd3d386b20c2d2da3907d8b0e7a425d"
+sha256_published_body: "fe7b174fd2faecab94f9c07eb72e62a620dcad3df78fe04c11d3b80b00322d7b"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 12.694 de 24/07/2012
 

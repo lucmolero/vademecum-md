@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_constitucional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "nao_aplicavel"
+ementa_status: "ausente_na_publicacao:ementa"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-ato_constitucional-1988.adct"
+source_unit_selector: {"selector_type": "html_anchor_to_end", "selector": {"anchor": "adct", "fallback_anchors": [{"label": "52", "anchor_pattern": "sadctart52", "replace_full_article": true}], "start": "Ato das Disposições Constitucionais Transitórias"}, "unit_scope": "adct"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "bd66c0a2d5a5e77e83c67a41cd470262a58471bf2ca2e14ea611c524b45dea72"
+sha256_source_normalized: "663773d5bbbcf67beb6c7029f8419966da6598d89ca6d6f2dea844e0b0573a13"
+sha256_source_body: "66826c7917b4b04c3f4d0b4e0fcc5cda0506beebccde54ca804accfb0cad2583"
+sha256_published_body: "debc7554f55fbd5f842d8dd18868bbea872630c20baee1557f9e03463b899082"
+source_snapshot_date: "2026-10-21"
 ---
 # ATO DAS DISPOSIÇÕES CONSTITUCIONAIS TRANSITÓRIAS
 

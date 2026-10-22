@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "cobertura_especializada"
 sha256_normalizado: "2315bd36bd14b2e3db3d90c03f5402ecd1804e5aa3d43a3d259e1ee1efbe2d92"
 sha256_corpo: "38b86a0056f9860b7e3d646c5fa2d3cfed78281cc656450107d1fe92ddbe5dca"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-9962-2000"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "9d1436edb6bf2ae70aa6aabf57288e21d6ae55f279fbc0dd17d107bf78b85cc0"
+sha256_source_normalized: "3b7031e8603a7d8828b69585be9051aaf888be7cae0f959f2ae08c11b51367f3"
+sha256_source_body: "61de87631f594209283fd64cf6fb8dfc148fe6f93dabdc53970b81459ce552c3"
+sha256_published_body: "61de87631f594209283fd64cf6fb8dfc148fe6f93dabdc53970b81459ce552c3"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 9.962 de 22/02/2000
 

@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "d5491be6e015de76e46377d6e1b66e02eccab4adc7525a33ec9dbc99ccd3af43"
 sha256_corpo: "40ba89d6648e5e13b8938d1a1b65b16253e32ac1eb385044949b8e191cfe0d3b"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-10028-2000"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "d5491be6e015de76e46377d6e1b66e02eccab4adc7525a33ec9dbc99ccd3af43"
+sha256_source_normalized: "32ed7122285c8350e7cdb9731fd643deeebe92e60c079ba961262f641b8f295e"
+sha256_source_body: "83a215cabec284032681b50facd4839985eb2a7f727b2ada260556a9c79face6"
+sha256_published_body: "83a215cabec284032681b50facd4839985eb2a7f727b2ada260556a9c79face6"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 10.028 de 19/10/2000
 

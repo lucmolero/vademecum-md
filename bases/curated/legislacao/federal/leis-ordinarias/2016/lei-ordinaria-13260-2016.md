@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_codigos"
 sha256_normalizado: "04f3fb0cc271057402f0824ba5e37f5cfebec3258ea5e1f60749a93ecb654647"
 sha256_corpo: "b4515b17aa98bdbc3abe748accb2063798f243f5b585e229261ddee89db14036"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-13260-2016"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "04f3fb0cc271057402f0824ba5e37f5cfebec3258ea5e1f60749a93ecb654647"
+sha256_source_normalized: "f2b4d8699d1c4f5762bb9a132c4d6359e6b60369655b75c3cd01c48576f08e0f"
+sha256_source_body: "b8bdf867a1560ef925891ad3e2541a8c39ef66e06b4f9461cc6fd2af7c2a0188"
+sha256_published_body: "b8bdf867a1560ef925891ad3e2541a8c39ef66e06b4f9461cc6fd2af7c2a0188"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 13.260 de 16/03/2016
 

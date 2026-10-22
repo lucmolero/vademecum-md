@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import sys
 from datetime import date
@@ -24,6 +25,10 @@ from build_structural_diffs import article_diff  # noqa: E402
 from migrate_public_corpus import frontmatter, parse_frontmatter  # noqa: E402
 from official_html_to_markdown import convert  # noqa: E402
 from pipeline_modes import load_modes, resolve_mode  # noqa: E402
+
+
+def sha256_text(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
 def load_matrix() -> list[dict[str, str]]:
@@ -84,6 +89,7 @@ def main() -> int:
     parser.add_argument("--source-resolution", type=Path, help="agent-reviewed official-source selections for conflicts")
     parser.add_argument("--only-pending", action="store_true", help="process only matrix rows marked requer_reconciliacao")
     parser.add_argument("--matrix-id", action="append", dest="matrix_ids", help="limit the reviewed application to one or more matrix IDs")
+    parser.add_argument("--legal-consensus", type=Path, help="autonomous curator/critic consensus ledger")
     parser.add_argument("--mode", choices=("dry_run", "apply_reviewed"), help="explicit application mode; --apply is a compatibility alias")
     args = parser.parse_args()
     load_modes()
@@ -93,6 +99,11 @@ def main() -> int:
         parser.error(str(error))
     if mode == "apply_reviewed":
         args.apply = True
+
+    consensus: dict[str, object] = {}
+    if args.legal_consensus and args.legal_consensus.is_file():
+        consensus = json.loads(args.legal_consensus.read_text(encoding="utf-8"))
+    consensus_by_id = {str(item.get("document_id")): item for item in consensus.get("documents", [])}
 
     report = json.loads(args.collection_report.read_text(encoding="utf-8"))
     matrix = load_matrix()
@@ -112,6 +123,10 @@ def main() -> int:
         if args.only_pending and (not row or row.get("status_consolidacao") != "requer_reconciliacao"):
             continue
         resolution = resolutions.get(matrix_id)
+        legal_decision = consensus_by_id.get(str(item.get("document_id") or ""))
+        if args.apply and (not legal_decision or legal_decision.get("consensus") is not True or legal_decision.get("decision") != "promote"):
+            skipped.append({"matrix_id": matrix_id, "reason": "legal_curator_critic_consensus_missing"})
+            continue
         approved_resolution = usable_resolution(item, resolution)
         if args.mark_blocked and not approved_resolution and str(item.get("prioridade")) == args.priority and item.get("status") in {"source_conflict", "source_unavailable", "source_invalid"}:
             skipped.append({"matrix_id": matrix_id, "reason": "source_issue_preserved_current_document"})
@@ -130,6 +145,9 @@ def main() -> int:
         attempt, _ = selected_attempt(item, approved_resolution)
         if not attempt or not attempt.get("snapshot_file"):
             skipped.append({"matrix_id": matrix_id, "reason": "selected_source_snapshot_missing"})
+            continue
+        if args.apply and legal_decision.get("candidate_sha256_raw") != attempt.get("sha256_raw"):
+            skipped.append({"matrix_id": matrix_id, "reason": "candidate_snapshot_not_bound_to_legal_consensus"})
             continue
         snapshot = ROOT / str(attempt["snapshot_file"])
         if not path or not snapshot.is_file():
@@ -151,6 +169,25 @@ def main() -> int:
         metadata["sha256_origem"] = attempt.get("sha256_raw") or item.get("sha256_raw")
         metadata["sha256_normalizado"] = attempt.get("sha256_normalized")
         metadata["sha256_corpo"] = attempt.get("sha256_body")
+        metadata["canonicalization_version"] = "norm-v3"
+        metadata["source_unit_id"] = str(metadata.get("source_unit_id") or document_id)
+        metadata["source_unit_selector"] = metadata.get("source_unit_selector") or {
+            "selector_type": "full_official_document",
+            "selector": {},
+            "unit_scope": "single_diploma",
+        }
+        metadata["fidelity_status"] = "review"
+        metadata["fidelity_anomalies"] = ["post_update_fidelity_audit_required"]
+        metadata["hash_scope"] = {
+            "sha256_source_raw": "official_snapshot_bytes",
+            "sha256_source_normalized": "selected_source_text_norm_v3",
+            "sha256_source_body": "selected_normative_body_norm_v3",
+            "sha256_published_body": "published_normative_body_norm_v3",
+        }
+        metadata["sha256_source_raw"] = str(attempt.get("sha256_raw") or item.get("sha256_raw") or "")
+        metadata["sha256_source_normalized"] = str(attempt.get("sha256_normalized") or sha256_text(candidate_body))
+        metadata["sha256_source_body"] = str(attempt.get("sha256_body") or sha256_text(candidate_body))
+        metadata["sha256_published_body"] = sha256_text(candidate_body)
         metadata["consolidacao_status"] = "consolidada_fonte_oficial"
         title = str(metadata.get("titulo") or path.stem)
         new_text = frontmatter(metadata) + "\n\n# " + title + "\n\n" + candidate_body

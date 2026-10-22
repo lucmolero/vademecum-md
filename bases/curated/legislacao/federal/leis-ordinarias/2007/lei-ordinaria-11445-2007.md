@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "", "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11445.htm", "sha256_origem:85accb2d508f2ff9b330f643d344fce249fa49acddff98a964fda0ed2a1de8b2", "official_current_compilation_review"]
 camada: "cobertura_especializada"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-11445-2007"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "85accb2d508f2ff9b330f643d344fce249fa49acddff98a964fda0ed2a1de8b2"
+sha256_source_normalized: "b671b683460fdee9052bc0eef036234fedd23545655cfcfb1e09b3a4fc4df222"
+sha256_source_body: "f2cd95d2460a711fba35fefc44e78a83828fdf97d2d951057192c4da7dacde04"
+sha256_published_body: "f2cd95d2460a711fba35fefc44e78a83828fdf97d2d951057192c4da7dacde04"
 ---
 # Lei nº 11.445, de 5 de janeiro de 2007
 

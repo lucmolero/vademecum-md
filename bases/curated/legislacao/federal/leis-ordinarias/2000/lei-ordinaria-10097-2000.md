@@ -30,6 +30,21 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto incluído após decisão editorial explícita e verificação de fonte oficial.", "Embora altere a CLT, possui relevância autônoma para o núcleo trabalhista e permanece representada também no grafo normativo.", "https://www.planalto.gov.br/ccivil_03/leis/l10097.htm", "sha256_origem:8b687588249e89d350f313a8767800b45b13fbbe64aa73658c681e6982d8ead5", "official_current_compilation_review"]
 camada: "core_profissional"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-10097-2000"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "8b687588249e89d350f313a8767800b45b13fbbe64aa73658c681e6982d8ead5"
+sha256_source_normalized: "53d867ea99640d388921d36cb63aa97c06e35388c3d9c66ebdfab53280617b1f"
+sha256_source_body: "782d3069f10c060828903d9af67c050a0fec0c322d2a475b1e581caf630a8fb5"
+sha256_published_body: "782d3069f10c060828903d9af67c050a0fec0c322d2a475b1e581caf630a8fb5"
 ---
 # Lei nº 10.097, de 19 de dezembro de 2000
 

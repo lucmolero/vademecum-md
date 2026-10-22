@@ -30,6 +30,22 @@ observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha t
 camada: "core_profissional"
 sha256_normalizado: "81febed0bcc5681958796eff57b233c631dd44afe12f97a51b55673b71400f95"
 sha256_corpo: "cc299afd33e641565333fcdde353aa2352a3fbdd5a61b9a5294c0256e712263f"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_complementar-101-2000"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "81febed0bcc5681958796eff57b233c631dd44afe12f97a51b55673b71400f95"
+sha256_source_normalized: "59c12564e465de546a8d73f459ea758b072ee9d9de479bf58f54a8fef5e5f482"
+sha256_source_body: "e2a8df2ebc42763691ad70b06b09426418fb1abbd907f23b009c65502176e0fe"
+sha256_published_body: "e2a8df2ebc42763691ad70b06b09426418fb1abbd907f23b009c65502176e0fe"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei de Responsabilidade Fiscal
 

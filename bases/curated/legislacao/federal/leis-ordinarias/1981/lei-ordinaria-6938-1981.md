@@ -28,6 +28,22 @@ retificada_por: []
 relacionada_a: []
 observacoes_proveniencia: ["Texto normalizado para o contrato público; trilha técnica mantida localmente."]
 camada: "core_codigos"
+fonte_publicacao_status: "indisponivel_na_fonte_publica"
+numero_status: "presente"
+ementa_status: "presente"
+data_assinatura_status: "presente"
+texto_classificacao: "texto_consolidado"
+canonicalization_version: "norm-v3"
+source_unit_id: "br-federal-lei_ordinaria-6938-1981"
+source_unit_selector: {"selector_type": "full_official_document", "selector": {}, "unit_scope": "single_diploma"}
+fidelity_status: "pass"
+fidelity_anomalies: []
+hash_scope: {"sha256_source_raw": "official_snapshot_bytes", "sha256_source_normalized": "selected_source_text_norm_v3", "sha256_source_body": "selected_normative_body_norm_v3", "sha256_published_body": "published_normative_body_norm_v3"}
+sha256_source_raw: "210de9fe512513f0217bc1275f4d85451c4f12a03966644415c7293b31d62ee6"
+sha256_source_normalized: "e33fe4c7b75a030dc31fd7af6654233bf5feeaaa9fb983e63cb9f73e7238570b"
+sha256_source_body: "beb37b3f1cfc2a376f4cc4287246caea39b473c9c8af48a357cfb91daad2b6ab"
+sha256_published_body: "4bb2486f8acf541d955fcb3fff395411888afc434b8a594fd3ded8b6e449c82d"
+source_snapshot_date: "2026-10-21"
 ---
 # Lei nº 6.938 de 31/08/1981
 
