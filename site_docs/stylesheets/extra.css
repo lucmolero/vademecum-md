@@ -791,7 +791,10 @@ body.vmd-focus-mode .md-main__inner {
 .md-content:has(.law-hero) .law-hero h1 { font-size: clamp(1.3rem, 1.8vw, 1.65rem); }
 .law-ementa { font-size: .86rem; }
 .status-chip { font-size: .62rem; }
-.reader-toolbar { gap: .4rem; }
+.reader-toolbar { gap: .4rem; flex-wrap: wrap; align-items: center; }
+.reader-toolbar-group { flex-wrap: wrap; min-width: min-content; }
+.reader-toolbar-group:first-child { flex: 1 1 17rem; }
+.reader-toolbar-group:last-child { flex: 0 1 11rem; justify-content: flex-end; }
 .btn-quick-jump, .btn-focus-mode, .btn-font-size, .btn-official-source {
   min-height: 2rem;
   font-size: .68rem;
@@ -811,6 +814,7 @@ body.vmd-focus-mode .md-main__inner {
   .eyebrow { font-size: .6rem; letter-spacing: .08em; }
   .hero-lede { font-size: .92rem; }
   .md-content:has(.law-hero) .md-content__inner { padding-inline: .7rem; }
-  .reader-toolbar { gap: .35rem; }
+  .reader-toolbar { gap: .35rem; align-items: stretch; }
+  .reader-toolbar-group:first-child, .reader-toolbar-group:last-child { flex: 1 1 100%; justify-content: flex-start; }
   .btn-quick-jump, .btn-focus-mode, .btn-font-size, .btn-official-source { font-size: .66rem; }
 }
