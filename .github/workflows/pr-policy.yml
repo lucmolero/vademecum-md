@@ -6,7 +6,8 @@ on:
     types: [completed]
 
 permissions:
-  contents: read
+  # The merge endpoint requires contents: write; the workflow never checks out PR code.
+  contents: write
   pull-requests: write
 
 jobs:
@@ -58,4 +59,4 @@ jobs:
             exit 0
           fi
 
-          gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --auto --squash
+          gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash
