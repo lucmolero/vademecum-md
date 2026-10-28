@@ -19,6 +19,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      actions: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
@@ -59,6 +60,8 @@ jobs:
               --priority P0
           else
             echo "No autonomous curator/critic consensus ledger; preserving current corpus and publishing evidence only."
+            mkdir -p reports
+            printf '{"schema":"reviewed-update-application/v1","mode":"apply_reviewed","priority":"P0","applied_count":0,"skipped_count":0,"applied":[],"skipped":[]}\n' > reports/reviewed-update-application.json
           fi
           python tools/build_public_indexes.py --apply
           python tools/audit_fidelity.py \
@@ -71,6 +74,10 @@ jobs:
             --report reports/legislation-collection.json \
             --report reports/editorial-expansion-collection-v2.json \
             --output bases/derived/relatorios/fidelity-audit.json
+          python tools/validate/record_auto_update_ledger.py \
+            --application reports/reviewed-update-application.json \
+            --audit bases/derived/relatorios/fidelity-audit.json \
+            --apply
           python tools/validate_release.py --stabilization
           if [ -z "$(git status --porcelain -- docs/proposals)" ]; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
@@ -105,7 +112,25 @@ jobs:
           pr_url=$(gh pr create --base "$base_branch" --head "$branch" \
             --title "chore: legislation update proposal" \
             --body-file "$proposal_file")
-          echo "Update proposal opened for governance review: $pr_url"
+          # PRs created with GITHUB_TOKEN do not start pull_request workflows.
+          # Dispatch the same quality workflow against this exact proposal commit;
+          # trusted-pull-request-policy merges it only after that run succeeds.
+          proposal_sha=$(git rev-parse HEAD)
+          gh workflow run quality.yml --ref "$branch"
+          run_id=""
+          for attempt in $(seq 1 30); do
+            run_id=$(gh run list --workflow quality.yml --branch "$branch" \
+              --event workflow_dispatch --limit 10 --json databaseId,headSha \
+              --jq ".[] | select(.headSha == \"$proposal_sha\") | .databaseId" | head -n 1)
+            if [ -n "$run_id" ]; then break; fi
+            sleep 2
+          done
+          if [ -z "$run_id" ]; then
+            echo "Unable to locate quality run for proposal $proposal_sha" >&2
+            exit 1
+          fi
+          echo "Update proposal opened: $pr_url; waiting for quality run $run_id on $proposal_sha"
+          gh run watch "$run_id" --exit-status
       - name: Upload non-sensitive proposal report
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
