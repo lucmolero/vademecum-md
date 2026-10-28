@@ -17,6 +17,7 @@ REQUIRED = {
     "weekly-completeness.yml",
     "discover-legislation.yml",
     "sync-private-history.yml",
+    "pr-policy.yml",
 }
 
 
@@ -71,6 +72,16 @@ def main() -> int:
             )
         ):
             errors.append(f"{path.name}: escrita permitida somente para release protegida")
+        if "pull-requests: write" in text and path.name not in {"prepare-update-pr.yml", "pr-policy.yml"}:
+            errors.append(f"{path.name}: escrita de PR permitida somente para proposta validada ou política confiável")
+        if path.name == "pr-policy.yml":
+            if "workflow_run:" not in text or "workflows: [quality]" not in text:
+                errors.append("pr-policy.yml: política deve ser acionada somente após o workflow quality")
+            if "actions/checkout" in text or "actions/download-artifact" in text:
+                errors.append("pr-policy.yml: workflow privilegiado não pode baixar nem executar conteúdo do PR")
+            for trusted_author in ("lucmolero", "dependabot[bot]", "app/dependabot"):
+                if trusted_author not in text:
+                    errors.append(f"pr-policy.yml: allowlist de autores ausente: {trusted_author}")
     if errors:
         print("\n".join(errors))
         return 1

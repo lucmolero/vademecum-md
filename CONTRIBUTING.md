@@ -1,11 +1,14 @@
 # Contribuir e manter
 
 O VadeMecum MD publica um corpus curado para leitura humana e consulta por
-agentes. Pull requests públicos são propostas sujeitas a revisão e aos gates do
-projeto; abrir um PR não autoriza a alteração da versão publicada. Os fluxos
-automatizados propõem alterações e não escrevem diretamente na branch padrão.
-As proteções da branch e as revisões obrigatórias são configurações do GitHub
-que os mantenedores devem manter ativas.
+agentes. As alterações aceitas vêm de `lucmolero` e do Dependabot. Pull requests
+de outras contas são fechados automaticamente; use as issues públicas para
+relatar problemas de texto ou navegação.
+
+Pull requests desses autores para `main` são integrados por squash depois que o
+workflow `quality` passa e a branch está atualizada. O fluxo mantém os checks
+obrigatórios da branch, atualiza branches atrasadas por rebase e deixa rascunhos
+sem merge. Um resultado de CI com falha não é integrado automaticamente.
 
 ## Relatar divergências e problemas de navegação
 
@@ -22,10 +25,9 @@ extração, a data de corte, a evidência e os hashes pertinentes. Não corrija 
 texto normativo silenciosamente. Não inclua snapshots brutos, credenciais,
 caminhos locais ou dados privados.
 
-As mudanças passam pelos validadores e pela curadoria prevista no projeto. Uma
-proposta pública não significa que seu conteúdo será aceito. Mantenha o escopo
-do PR pequeno e descreva claramente se ele altera corpus, grafo, manifestos,
-ferramentas, documentação ou apresentação.
+As mudanças passam pelos validadores do projeto. Mantenha o escopo do PR pequeno
+e descreva claramente se ele altera corpus, grafo, manifestos, ferramentas,
+documentação ou apresentação.
 
 ## Ambiente de manutenção
 
