@@ -868,3 +868,182 @@ body.vmd-focus-mode .md-main__inner {
 @media (max-width: 900px) {
   .vmd-hero { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Glass interface, paper-first legal content. */
+:root {
+  --vmd-glass: rgba(255, 255, 255, .58);
+  --vmd-glass-strong: rgba(255, 255, 255, .76);
+  --vmd-glass-stroke: rgba(255, 255, 255, .78);
+  --vmd-glass-shadow: 0 14px 38px rgba(33, 48, 64, .08), inset 0 1px 0 rgba(255, 255, 255, .82);
+  --vmd-glass-glow: rgba(99, 136, 153, .11);
+}
+[data-md-color-scheme="slate"] {
+  --vmd-glass: rgba(20, 35, 52, .62);
+  --vmd-glass-strong: rgba(20, 35, 52, .82);
+  --vmd-glass-stroke: rgba(217, 229, 240, .13);
+  --vmd-glass-shadow: 0 16px 42px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .08);
+  --vmd-glass-glow: rgba(111, 157, 184, .12);
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse at 16% 7%, var(--vmd-glass-glow), transparent 34rem),
+    radial-gradient(ellipse at 84% 22%, rgba(180, 138, 60, .055), transparent 30rem);
+  background-attachment: fixed;
+}
+.md-header {
+  background: color-mix(in srgb, var(--vmd-paper) 78%, transparent);
+  border-bottom: 1px solid var(--vmd-glass-stroke);
+  box-shadow: 0 8px 24px rgba(19, 36, 58, .045);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+.md-header__button,
+.md-header a,
+.md-header button,
+.md-header__source,
+.md-header__source *,
+.md-header__topic,
+.md-header__title,
+.md-header .md-search__icon,
+.md-header .md-search__input {
+  color: var(--md-default-fg-color) !important;
+}
+.md-header .md-search__input::placeholder { color: var(--md-default-fg-color--light); }
+.md-sidebar--primary,
+.md-sidebar--secondary:has(.md-nav__link) {
+  background: color-mix(in srgb, var(--vmd-sidebar-surface) 74%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(135%);
+  backdrop-filter: blur(18px) saturate(135%);
+}
+.md-main__inner { max-width: 1440px; }
+.md-content__inner { max-width: 100%; }
+
+.md-content:not(:has(.law-hero)) .vmd-hero {
+  position: relative;
+  isolation: isolate;
+  margin: .8rem 0 1.15rem;
+  padding: clamp(1.2rem, 2.8vw, 2.25rem);
+  border: 1px solid var(--vmd-glass-stroke);
+  border-radius: 1.35rem;
+  background: linear-gradient(132deg, var(--vmd-glass-strong), var(--vmd-glass));
+  box-shadow: var(--vmd-glass-shadow);
+  -webkit-backdrop-filter: blur(22px) saturate(145%);
+  backdrop-filter: blur(22px) saturate(145%);
+}
+.md-content:not(:has(.law-hero)) .vmd-hero::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent, var(--vmd-glass-stroke), transparent);
+  content: "";
+  pointer-events: none;
+}
+.md-content:not(:has(.law-hero)) .hero-visual {
+  min-height: 270px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 1.1rem;
+  box-shadow: 0 18px 42px rgba(13, 24, 40, .2), inset 0 1px 0 rgba(255, 255, 255, .18);
+}
+.metric-grid {
+  gap: .55rem;
+  border: 0;
+  background: transparent;
+}
+.metric-card,
+.code-card,
+.domain-card,
+.audience-card,
+.trust-section {
+  border: 1px solid var(--vmd-glass-stroke);
+  border-radius: .9rem;
+  background: linear-gradient(145deg, var(--vmd-glass-strong), var(--vmd-glass));
+  box-shadow: var(--vmd-glass-shadow);
+  -webkit-backdrop-filter: blur(16px) saturate(130%);
+  backdrop-filter: blur(16px) saturate(130%);
+}
+.metric-card { min-height: 5rem; }
+.code-card,
+.domain-card,
+.audience-card { transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.code-card:hover,
+.domain-card:hover,
+.audience-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--vmd-gold) 55%, var(--vmd-glass-stroke));
+  box-shadow: 0 18px 40px rgba(19, 36, 58, .1), inset 0 1px 0 rgba(255, 255, 255, .78);
+}
+.trust-section { border-left: 3px solid var(--vmd-gold); }
+
+/* Keep law text matte, restrained and high contrast: glass is navigation chrome only. */
+.md-content:has(.law-hero) .md-content__inner {
+  max-width: 70ch;
+  border: 1px solid var(--reader-rule);
+  border-radius: .2rem;
+  box-shadow: 0 8px 28px rgba(19, 36, 58, .045);
+}
+.md-content:has(.law-hero) .reader-toolbar {
+  position: sticky;
+  top: 3.1rem;
+  z-index: 10;
+  border: 1px solid var(--vmd-glass-stroke);
+  border-radius: .85rem;
+  background: var(--vmd-glass-strong);
+  box-shadow: var(--vmd-glass-shadow);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+.vmd-modal-backdrop {
+  background: rgba(15, 27, 40, .42);
+  -webkit-backdrop-filter: blur(12px) saturate(125%);
+  backdrop-filter: blur(12px) saturate(125%);
+}
+.vmd-modal-dialog {
+  border-color: var(--vmd-glass-stroke);
+  border-radius: 1rem;
+  background: var(--vmd-glass-strong);
+  box-shadow: var(--vmd-glass-shadow), 0 28px 70px rgba(10, 20, 30, .24);
+  -webkit-backdrop-filter: blur(26px) saturate(150%);
+  backdrop-filter: blur(26px) saturate(150%);
+}
+.vmd-modal-close {
+  padding: .35rem .55rem;
+  border: 1px solid var(--vmd-border);
+  border-radius: .5rem;
+  background: var(--vmd-glass);
+  color: var(--vmd-ink);
+  font: 600 .7rem var(--vmd-sans);
+  cursor: pointer;
+}
+[data-md-color-scheme="slate"] .vmd-modal-close { color: #f5f0e6; }
+.vmd-modal-close kbd {
+  margin-left: .3rem;
+  padding: .08rem .24rem;
+  border-radius: .2rem;
+  background: color-mix(in srgb, var(--vmd-ink) 12%, transparent);
+  font: 500 .62rem var(--vmd-mono);
+}
+[data-md-color-scheme="slate"] .jump-result-item:hover,
+[data-md-color-scheme="slate"] .jump-result-item.is-selected { color: #fffaf0; }
+
+@media (max-width: 900px) {
+  .md-content:not(:has(.law-hero)) .vmd-hero { padding: 1.1rem; }
+  .md-content:has(.law-hero) .reader-toolbar { position: static; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .md-header,
+  .md-sidebar--primary,
+  .md-sidebar--secondary:has(.md-nav__link),
+  .md-content:not(:has(.law-hero)) .vmd-hero,
+  .metric-card,
+  .code-card,
+  .domain-card,
+  .audience-card,
+  .trust-section,
+  .md-content:has(.law-hero) .reader-toolbar {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .vmd-modal-dialog { background: var(--vmd-paper); }
+}

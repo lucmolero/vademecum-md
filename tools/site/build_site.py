@@ -73,7 +73,7 @@ POPULAR_TITLES: dict[str, str] = {
     "br-federal-lei_ordinaria-14478-2022": "Marco dos Criptoativos (Lei nº 14.478/2022)",
     "br-federal-lei_ordinaria-12187-2009": "Política sobre Mudança do Clima (Lei nº 12.187/2009)",
     "br-federal-lei_ordinaria-14119-2021": "Pagamento por Serviços Ambientais (Lei nº 14.119/2021)",
-    "br-federal-lei_ordinaria-15190-2025": "Política de Linguagem Simples (Lei nº 15.190/2025)",
+    "br-federal-lei_ordinaria-15190-2025": "Lei Geral do Licenciamento Ambiental (Lei nº 15.190/2025)",
     "br-federal-lei_ordinaria-9784-1999": "Processo Administrativo Federal (Lei nº 9.784/1999)",
     "br-federal-lei_ordinaria-8429-1992": "Lei de Improbidade Administrativa",
     "br-federal-lei_ordinaria-12527-2011": "Lei de Acesso à Informação (LAI)",
@@ -284,7 +284,7 @@ def law_page(metadata: dict[str, object], body: str, relations: list[dict[str, o
     <button type="button" class="btn-quick-jump" id="btn-quick-jump" title="Buscar e saltar para artigo (Atalho: Ctrl + K)">
       <svg class="reader-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.2"/><path d="m15.4 15.4 4.2 4.2"/></svg> Ir para artigo <kbd>Ctrl K</kbd>
     </button>
-    <button type="button" class="btn-focus-mode" id="btn-focus-mode" title="Alternar modo de leitura sem distrações">
+    <button type="button" class="btn-focus-mode" id="btn-focus-mode" title="Alternar modo de leitura sem distrações" aria-pressed="false">
       <svg class="reader-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5c3.2-.9 6.1-.5 8 1.2v12c-1.9-1.7-4.8-2.1-8-1.2z"/><path d="M20 5.5c-3.2-.9-6.1-.5-8 1.2v12c1.9-1.7 4.8-2.1 8-1.2z"/></svg> Modo leitura
     </button>
   </div>

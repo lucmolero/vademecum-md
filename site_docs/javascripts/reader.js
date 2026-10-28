@@ -102,20 +102,22 @@
    */
   const createQuickJumpModal = (articleHeadings) => {
     let backdrop = document.getElementById("vmd-jump-modal");
+    let returnFocusTo = null;
     if (!backdrop) {
       backdrop = document.createElement("div");
       backdrop.id = "vmd-jump-modal";
       backdrop.className = "vmd-modal-backdrop";
+      backdrop.setAttribute("aria-hidden", "true");
       backdrop.innerHTML = `
-        <div class="vmd-modal-dialog" role="dialog" aria-modal="true" aria-label="Navegação rápida de artigo">
+        <div class="vmd-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="vmd-jump-title" tabindex="-1">
           <div class="vmd-modal-header">
-            <h3>Salto Rápido de Dispositivo</h3>
-            <span class="vmd-modal-hint"><kbd>ESC</kbd> para fechar</span>
+            <h3 id="vmd-jump-title">Salto rápido de artigo</h3>
+            <button type="button" class="vmd-modal-close" aria-label="Fechar navegação rápida">Fechar <kbd>Esc</kbd></button>
           </div>
           <div class="vmd-modal-body">
-            <input type="text" id="vmd-jump-input" placeholder="Digite o artigo (ex: 186, 5º, 300, 1)..." autocomplete="off" />
+            <input type="text" id="vmd-jump-input" aria-label="Número ou identificador do artigo" aria-controls="vmd-jump-results" placeholder="Digite o artigo (ex: 186, 5º, 300, 1)..." autocomplete="off" />
             <p class="vmd-modal-subhint">Pressione <kbd>Enter</kbd> para saltar diretamente para o artigo.</p>
-            <div id="vmd-jump-results" class="vmd-jump-results"></div>
+            <div id="vmd-jump-results" class="vmd-jump-results" aria-live="polite"></div>
           </div>
         </div>
       `;
@@ -126,14 +128,19 @@
     const resultsContainer = document.getElementById("vmd-jump-results");
 
     const openModal = () => {
+      returnFocusTo = document.activeElement instanceof HTMLElement ? document.activeElement : null;
       backdrop.classList.add("is-active");
+      backdrop.setAttribute("aria-hidden", "false");
       input.value = "";
       renderSuggestions("");
-      setTimeout(() => input.focus(), 80);
+      input.focus();
     };
 
     const closeModal = () => {
+      if (!backdrop.classList.contains("is-active")) return;
       backdrop.classList.remove("is-active");
+      backdrop.setAttribute("aria-hidden", "true");
+      if (returnFocusTo?.isConnected) returnFocusTo.focus();
     };
 
     const jumpToArticle = (targetId) => {
@@ -153,8 +160,14 @@
     const renderSuggestions = (query) => {
       const q = sanitizeNum(query);
       resultsContainer.innerHTML = "";
+      const showEmptyState = (message) => {
+        const emptyState = document.createElement("span");
+        emptyState.className = "no-results";
+        emptyState.textContent = message;
+        resultsContainer.appendChild(emptyState);
+      };
       if (!articleHeadings || articleHeadings.length === 0) {
-        resultsContainer.innerHTML = `<span class="no-results">Nenhum artigo encontrado nesta norma.</span>`;
+        showEmptyState("Nenhum artigo encontrado nesta norma.");
         return;
       }
 
@@ -169,7 +182,7 @@
 
       const displayItems = matches.slice(0, 10);
       if (displayItems.length === 0) {
-        resultsContainer.innerHTML = `<span class="no-results">Nenhum artigo correspondente a "${query}".</span>`;
+        showEmptyState(`Nenhum artigo correspondente a "${query}".`);
         return;
       }
 
@@ -196,6 +209,29 @@
         closeModal();
       }
     });
+
+    const dialog = backdrop.querySelector('[role="dialog"]');
+    dialog.addEventListener("keydown", (e) => {
+      if (e.key !== "Tab") return;
+      const focusable = Array.from(dialog.querySelectorAll('input, button, a[href], [tabindex]:not([tabindex="-1"])'))
+        .filter((element) => !element.hasAttribute("disabled") && element.getClientRects().length > 0);
+      if (focusable.length === 0) {
+        e.preventDefault();
+        dialog.focus();
+        return;
+      }
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && (document.activeElement === first || !dialog.contains(document.activeElement))) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && (document.activeElement === last || !dialog.contains(document.activeElement))) {
+        e.preventDefault();
+        first.focus();
+      }
+    });
+
+    backdrop.querySelector(".vmd-modal-close").addEventListener("click", closeModal);
 
     backdrop.addEventListener("click", (e) => {
       if (e.target === backdrop) closeModal();
@@ -234,13 +270,17 @@
     const isFocusSaved = localStorage.getItem("vmd_focus_mode") === "true";
     if (isFocusSaved) {
       document.body.classList.add("vmd-focus-mode");
-      if (focusBtn) focusBtn.classList.add("is-active");
+      if (focusBtn) {
+        focusBtn.classList.add("is-active");
+        focusBtn.setAttribute("aria-pressed", "true");
+      }
     }
 
     if (focusBtn) {
       focusBtn.addEventListener("click", () => {
         const active = document.body.classList.toggle("vmd-focus-mode");
         focusBtn.classList.toggle("is-active", active);
+        focusBtn.setAttribute("aria-pressed", String(active));
         localStorage.setItem("vmd_focus_mode", active ? "true" : "false");
       });
     }

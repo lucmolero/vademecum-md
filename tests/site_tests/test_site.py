@@ -79,6 +79,12 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn('id="btn-quick-jump"', content)
         self.assertIn('id="btn-focus-mode"', content)
 
+    def test_environmental_licensing_law_uses_its_correct_public_title(self):
+        self.assertEqual(
+            SITE_BUILDER.POPULAR_TITLES["br-federal-lei_ordinaria-15190-2025"],
+            "Lei Geral do Licenciamento Ambiental (Lei nº 15.190/2025)",
+        )
+
     def test_graph_context_preserves_direction_and_requires_an_article_device(self):
         relation = {
             "source_id": "law-a",
