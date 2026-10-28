@@ -19,8 +19,8 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with:
           python-version: "3.12"
       - name: Install project dependencies
@@ -28,7 +28,7 @@ jobs:
       - name: Collect P0 official snapshots
         run: python tools/acquire/collect_legislation.py --mode proposal --priority P0 --report reports/legislation-collection-p0.json
       - name: Upload P0 evidence
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: legislation-collection-p0
           path: reports/legislation-collection-p0.json
@@ -38,8 +38,8 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with:
           python-version: "3.12"
       - name: Install project dependencies
@@ -47,7 +47,7 @@ jobs:
       - name: Collect P1 official snapshots
         run: python tools/acquire/collect_legislation.py --mode proposal --priority P1 --report reports/legislation-collection-p1.json
       - name: Upload P1 evidence
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: legislation-collection-p1
           path: reports/legislation-collection-p1.json
@@ -57,8 +57,8 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' || github.event.schedule == '23 4 1 1,4,7,10 *'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with:
           python-version: "3.12"
       - name: Install project dependencies
@@ -66,7 +66,7 @@ jobs:
       - name: Collect P2 official snapshots
         run: python tools/acquire/collect_legislation.py --mode proposal --priority P2 --report reports/legislation-collection-p2.json
       - name: Upload P2 evidence
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: legislation-collection-p2
           path: reports/legislation-collection-p2.json

@@ -6,10 +6,10 @@ curadoria, data de corte, fonte indicada e informações de proveniência.
 
 [Abrir o leitor](https://lucmolero.github.io/vademecum-md/) ·
 [Explorar o catálogo](https://lucmolero.github.io/vademecum-md/generated/catalog/) ·
-[Baixar a release v1.1.2](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.2) ·
+[Baixar a release v1.1.3](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.3) ·
 [Consultar o contrato de consumo](manifests/consumer-contract.json)
 
-> **Snapshot v1.1.2:** 375 diplomas federais · data de corte: 21/10/2026.
+> **Snapshot v1.1.3:** 375 diplomas federais · data de corte: 21/10/2026.
 > O corte identifica esta coleção; o corpus não é atualizado em tempo real.
 
 ## Escolha como consultar
@@ -32,9 +32,9 @@ no corpus. São artefatos derivados e não substituem o texto canônico nem a
 publicação oficial. Para verificar uma norma, abra a fonte oficial indicada no
 documento.
 
-A release [v1.1.2](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.2)
+A release [v1.1.3](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.3)
 inclui o corpus versionado, manifesto, checksums e SBOM. Use o pacote e os
-[`SHA256SUMS.txt`](https://github.com/lucmolero/vademecum-md/releases/download/v1.1.2/SHA256SUMS.txt)
+[`SHA256SUMS.txt`](https://github.com/lucmolero/vademecum-md/releases/download/v1.1.3/SHA256SUMS.txt)
 para fixar e verificar os arquivos consultados.
 
 ## Citar uma consulta
@@ -44,7 +44,7 @@ oficial. Por exemplo:
 
 ```text
 Código Civil, art. 1º
-VadeMecum MD, release v1.1.2, corte 2026-10-21.
+VadeMecum MD, release v1.1.3, corte 2026-10-21.
 ID: br-federal-lei_ordinaria-10406-2002.
 Fonte oficial: https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406
 ```
@@ -76,6 +76,6 @@ incertos não bastam, por si só, para afirmar vigência atual.
 - [Como contribuir e manter](CONTRIBUTING.md)
 - [Política de segurança](SECURITY.md) · [Histórico de versões](CHANGELOG.md)
 
-O código e os materiais autorais do projeto seguem a [Licença MIT](LICENSE.md).
-Os textos normativos e materiais de terceiros permanecem sujeitos ao regime
-aplicável às respectivas fontes.
+O código e os materiais autorais seguem a [licença MIT](LICENSE). O escopo da
+licença e a exclusão dos textos normativos e materiais de terceiros estão
+descritos em [licenças e materiais](LICENSE.md).

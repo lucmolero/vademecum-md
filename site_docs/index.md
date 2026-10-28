@@ -3,7 +3,7 @@
 <div class="vmd-hero">
   <div class="hero-copy reveal">
     <img class="hero-logo" src="assets/logo-lockup.svg" alt="VadeMecum MD" />
-    <p class="eyebrow">Corpus federal curado <span class="eyebrow-dot"></span> release 1.1.2</p>
+    <p class="eyebrow">Corpus federal curado <span class="eyebrow-dot"></span> release 1.1.3</p>
     <h1>O direito federal,<br><em>em estado legível.</em></h1>
     <p class="hero-lede">Legislação brasileira estruturada para leitura humana, validação auditável e uso por máquinas.</p>
     <div class="hero-actions">
@@ -170,4 +170,4 @@
   <div><p class="eyebrow">Transparência por design</p><h2>Auditável não significa oficial.</h2><p>O projeto documenta fontes, transformações, decisões e limitações. A fonte oficial continua sendo a autoridade textual. O site é uma camada de leitura regenerável.</p><a class="text-link" href="legal-limits/">Conhecer os limites jurídicos ↗</a></div>
 </section>
 
-<div class="home-footer-note"><strong>Snapshot 2026-10-21</strong><span>·</span><span>58 testes automatizados</span><span>·</span><a href="https://github.com/lucmolero/vademecum-md">código aberto no GitHub ↗</a></div>
+<div class="home-footer-note"><strong>Snapshot 2026-10-21</strong><span>·</span><span>62 testes automatizados</span><span>·</span><a href="https://github.com/lucmolero/vademecum-md">código aberto no GitHub ↗</a></div>

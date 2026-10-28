@@ -21,6 +21,7 @@ PUBLIC_ROOTS = (
     Path("bases/history/alteracoes"), Path("bases/history/versoes"),
     Path("docs"), Path("manifests"), Path("README.md"),
     Path("CHANGELOG.md"), Path("CITATION.cff"), Path("CONTRIBUTING.md"),
+    Path("LICENSE"),
     Path("CODE_OF_CONDUCT.md"), Path("SECURITY.md"), Path("LICENSE.md"),
 )
 PRIVATE_MARKERS = (".private/", "bases/raw/", "raw" + ".githubusercontent.com", "c:\\users\\", "/home/")

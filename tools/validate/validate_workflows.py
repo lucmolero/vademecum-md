@@ -19,6 +19,7 @@ REQUIRED = {
     "sync-private-history.yml",
     "pr-policy.yml",
 }
+ACTION_REFERENCE = re.compile(r"^\s*uses:\s*([^#\s]+)", re.MULTILINE)
 
 
 def main() -> int:
@@ -28,8 +29,18 @@ def main() -> int:
         print("Workflows ausentes: " + ", ".join(sorted(missing)))
         return 1
     errors: list[str] = []
+    if not (ROOT / ".github/dependabot.yml").is_file():
+        errors.append("dependabot.yml: atualizações automáticas de dependências ausentes")
     for path in sorted(WORKFLOWS.glob("*.yml")):
         text = path.read_text(encoding="utf-8")
+        for reference in ACTION_REFERENCE.findall(text):
+            if reference.startswith("./"):
+                continue
+            repository, separator, revision = reference.rpartition("@")
+            if not separator or not re.fullmatch(r"[0-9a-f]{40}", revision):
+                errors.append(f"{path.name}: action sem SHA completa: {reference}")
+            if not repository.startswith("actions/"):
+                errors.append(f"{path.name}: action fora da allowlist oficial: {reference}")
         trusted_merge_policy = (
             path.name == "pr-policy.yml"
             and "contents: write" in text

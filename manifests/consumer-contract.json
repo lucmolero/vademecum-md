@@ -1,7 +1,7 @@
 {
   "schema": "vademecum-consumer-contract/v1",
   "product": "VadeMecum MD",
-  "release": "1.1.2",
+  "release": "1.1.3",
   "canonical_layer": "bases/curated/legislacao/federal",
   "authority": {
     "text": "official_publication",
