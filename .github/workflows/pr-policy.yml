@@ -6,6 +6,7 @@ on:
     types: [completed]
 
 permissions:
+  # The merge endpoint requires contents: write; the workflow never checks out PR code.
   contents: write
   pull-requests: write
 

@@ -30,6 +30,17 @@ def main() -> int:
     errors: list[str] = []
     for path in sorted(WORKFLOWS.glob("*.yml")):
         text = path.read_text(encoding="utf-8")
+        trusted_merge_policy = (
+            path.name == "pr-policy.yml"
+            and "contents: write" in text
+            and "pull-requests: write" in text
+            and "workflows: [quality]" in text
+            and "QUALITY_RESULT" in text
+            and 'head_sha" != "$CHECKED_SHA"' in text
+            and 'gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash' in text
+            and "actions/checkout" not in text
+            and "actions/download-artifact" not in text
+        )
         if "gh pr create --draft" in text:
             errors.append(f"{path.name}: PRs de atualização não podem depender de ação humana para sair de rascunho")
         if path.name == "prepare-update-pr.yml" and "gh pr merge" in text:
@@ -41,7 +52,7 @@ def main() -> int:
                 errors.append(f"{path.name}: inventário de expansão editorial ausente")
             if "audit_normative_graph.py --strict" not in text:
                 errors.append(f"{path.name}: auditoria estrita do grafo normativo ausente")
-        if "contents: read" not in text:
+        if "contents: read" not in text and not trusted_merge_policy:
             errors.append(f"{path.name}: permissao de conteudo nao e somente leitura")
         if "pull_request_target" in text:
             errors.append(f"{path.name}: marcador proibido pull_request_target")
@@ -70,6 +81,7 @@ def main() -> int:
                 and "pull-requests: write" in text
                 and "gh pr create" in text
             )
+            or trusted_merge_policy
         ):
             errors.append(f"{path.name}: escrita permitida somente para release protegida")
         if "pull-requests: write" in text and path.name not in {"prepare-update-pr.yml", "pr-policy.yml"}:
