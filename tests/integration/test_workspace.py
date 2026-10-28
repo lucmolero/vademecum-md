@@ -3,6 +3,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import tomllib
 import unittest
 from pathlib import Path
 from datetime import date
@@ -45,18 +46,49 @@ class WorkspaceTest(unittest.TestCase):
     def test_open_source_governance_files_match_repository_policy(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         contributing_path = ROOT / "CONTRIBUTING.md"
-        license_text = (ROOT / "LICENSE.md").read_text(encoding="utf-8")
+        license_text = (ROOT / "LICENSE").read_text(encoding="utf-8")
+        license_scope = (ROOT / "LICENSE.md").read_text(encoding="utf-8")
         self.assertTrue(contributing_path.is_file())
         self.assertIn("[Como contribuir e manter](CONTRIBUTING.md)", readme)
-        self.assertIn("# MIT License", license_text)
+        self.assertIn("[licença MIT](LICENSE)", readme)
+        self.assertIn("MIT License", license_text)
         self.assertIn("Permission is hereby granted, free of charge", license_text)
-        self.assertIn("license federal legal texts", license_text)
+        self.assertIn("atos normativos federais", license_scope)
         self.assertIn("lucmolero` e do Dependabot", contributing_path.read_text(encoding="utf-8"))
+
+    def test_release_identity_is_synchronized_and_mit_license_is_packaged(self) -> None:
+        project_version = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
+        release_version = json.loads((ROOT / "manifests/release.json").read_text(encoding="utf-8"))["version"]
+        consumer_version = json.loads((ROOT / "manifests/consumer-contract.json").read_text(encoding="utf-8"))["release"]
+        citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+        package_builder = (ROOT / "tools/release/build_release.py").read_text(encoding="utf-8")
+        package_version = next(line.split(":", 1)[1].strip() for line in citation.splitlines() if line.startswith("version:"))
+        self.assertEqual({project_version, release_version, consumer_version, package_version}, {"1.1.3"})
+        self.assertTrue((ROOT / "LICENSE").is_file())
+        self.assertIn('Path("LICENSE")', package_builder)
 
     def test_weekly_completeness_builds_site_before_tests(self) -> None:
         workflow = (ROOT / ".github/workflows/weekly-completeness.yml").read_text(encoding="utf-8")
+        self.assertIn('python -m pip install -e ".[docs]"', workflow)
         self.assertLess(workflow.index("python tools/site/build_site.py"), workflow.index("python -m unittest discover"))
         self.assertLess(workflow.index("mkdocs build --strict"), workflow.index("python -m unittest discover"))
+
+    def test_actions_are_sha_pinned_and_dependabot_covers_runtime_dependencies(self) -> None:
+        for workflow_path in (ROOT / ".github/workflows").glob("*.yml"):
+            for line in workflow_path.read_text(encoding="utf-8").splitlines():
+                if "uses:" not in line:
+                    continue
+                reference = line.split("uses:", 1)[1].split("#", 1)[0].strip()
+                if reference.startswith("./"):
+                    continue
+                repository, separator, revision = reference.rpartition("@")
+                self.assertTrue(separator, (workflow_path.name, reference))
+                self.assertTrue(repository.startswith("actions/"), (workflow_path.name, reference))
+                self.assertRegex(revision, r"^[a-f0-9]{40}$", (workflow_path.name, reference))
+
+        dependabot = (ROOT / ".github/dependabot.yml").read_text(encoding="utf-8")
+        self.assertIn("package-ecosystem: github-actions", dependabot)
+        self.assertIn("package-ecosystem: pip", dependabot)
 
     def test_public_layers_exist(self) -> None:
         for relative in (

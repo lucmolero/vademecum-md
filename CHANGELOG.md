@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.3 — leitura compacta e prontidão operacional
+
+- Leitor e home refinados para consulta direta, com tipografia compacta e identidade e-ink.
+- Actions fixadas por SHA; alertas, correções de segurança e atualizações do Dependabot habilitados.
+- Gate semanal alinhado à geração e validação do site antes da suíte completa.
+- Licença MIT completa, com escopo separado para textos normativos e materiais de terceiros.
+- Nenhuma alteração nos 375 textos legais canônicos; corte do corpus permanece em 2026-10-21.
+
 ## 1.1.2 — métricas regeneráveis
 
 - Cartão de cobertura P0 derivado integralmente do baseline, sem denominador fixo.

@@ -62,8 +62,7 @@ regenerá-los a partir dos artefatos canônicos.
 
 ## Licenças e citação
 
-Scripts, schemas, manifests e documentação autoral são distribuídos sob MIT.
-Os textos normativos e os materiais de terceiros seguem o regime aplicável às
-respectivas fontes; a licença MIT do software não deve ser interpretada como
-licença dos textos oficiais. Cite a release consultada e preserve a fonte
-oficial do documento.
+O software e os materiais autorais seguem o texto MIT em [`LICENSE`](LICENSE),
+com escopo e exceções descritos em [`LICENSE.md`](LICENSE.md). A licença não se
+estende aos textos normativos nem a materiais de terceiros. Cite a release
+consultada e preserve a fonte oficial do documento.

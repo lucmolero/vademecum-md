@@ -97,7 +97,7 @@ para consumidores está em
 
 ## Não objetivos
 
-Na release `v1.1.2`, o produto não é:
+Na release `v1.1.3`, o produto não é:
 
 - publicação oficial do Estado;
 - aconselhamento ou parecer jurídico;
@@ -114,6 +114,7 @@ definir fonte, schema, contrato de evidência e gates antes de receber conteúdo
 | Estágio | Entrega | Condição de avanço |
 | --- | --- | --- |
 | `v1.1.2` | corpus, site, contratos, release e auditoria | gates públicos verdes |
+| `v1.1.3` | leitor compacto, site, documentação, segurança e release reproduzível | gates públicos verdes |
 | `v1.2` | atualização proposta por PR e diffs mais ricos | evidência e rollback testados |
 | `v2` | recuperação híbrida e ferramentas para agentes | avaliação de citações e recusa |
 

@@ -1,9 +1,10 @@
 # Roadmap de evolução
 
-## Baseline publicado: v1.1.2
+## Estado público — v1.1.3
 
-A release v1.1.2 é o estado público de referência do projeto. O baseline
-reproduzível foi gerado em 2026-10-21 e os manifests da release em 2026-10-22:
+A release v1.1.3 é a referência pública do produto e do pacote de consulta. O
+corpus mantém o corte jurídico de 2026-10-21; o monitor de 2026-10-28 confirmou
+375 documentos dentro das respectivas políticas de frescor, sem fonte ausente.
 
 - 375 documentos canônicos, integrais, com fonte oficial e hash;
 - 372 documentos consolidados diretamente por fonte oficial e 3 reconciliados;
@@ -12,50 +13,41 @@ reproduzível foi gerado em 2026-10-21 e os manifests da release em 2026-10-22:
 - 15/15 decisões da expansão editorial registradas e promovidas;
 - baseline e completude com estado `pass`, sem divergências estruturais.
 
-Esses números descrevem o snapshot da release, não a legislação em tempo real.
-O estado atual deve ser lido nos manifests e relatórios gerados, não inferido
-deste resumo histórico.
+Os números descrevem o snapshot, não a legislação em tempo real. Confira a data
+de corte no documento e a publicação oficial antes de citar ou aplicar uma
+norma.
 
-## Ciclo atual: auditoria de produto e arquitetura
+## Entregas concluídas nesta versão
 
-A prioridade é tornar o produto mais fácil de entender e usar sem comprometer a
-proveniência jurídica ou a simplicidade de publicação:
+- Home, catálogo e leitor redesenhados para consulta compacta em desktop e
+  celular, preservando a linguagem Markdown e a leitura e-ink.
+- README, contratos, escopo jurídico e documentação de manutenção alinhados.
+- Release identificada em código, manifests e metadados de citação, com pacote,
+  checksums e SBOM reproduzíveis.
+- Main protegida, gate de qualidade obrigatório, política de merge automático
+  limitada ao proprietário e ao Dependabot, Actions fixadas por SHA e alertas
+  automatizados de dependência.
+- Builds estritos, validação HTML e suíte automatizada executados nos fluxos de
+  qualidade, completude e release.
 
-1. **Apresentação:** hierarquia editorial compacta na home, tipografia legível
-   em desktop e celular, navegação clara e leitor jurídico sem distrações.
-2. **Produto:** dar acesso rápido ao catálogo, às normas centrais, à fonte
-   oficial e às instruções de consulta para agentes.
-3. **Repositório:** manter diretórios apenas para camadas implementadas; explicar
-   em especificações quais domínios permanecem fora do escopo.
-4. **Documentação:** alinhar README, site, contratos, estado da release e
-   instruções de manutenção, evitando planos duplicados ou desatualizados.
-5. **Ferramentas:** declarar que os comandos operacionais precisam de um
-   checkout local e falhar com diagnóstico claro quando executados fora dele.
+## Próximo ciclo — v1.2
 
-Critérios de conclusão: build estrito aprovado, testes de contrato aprovados,
-renderização conferida em viewport desktop e móvel, texto legal inalterado e
-ausência de diferenças entre os manifests e o corpus.
+Priorizar melhorias que reforcem a consulta e a confiança sem aumentar o escopo
+do corpus:
 
-## Próximo ciclo: v1.2
+1. executar verificação de teclado, reflow e leitor de tela sobre as rotas
+   principais e uma lei extensa;
+2. medir desempenho em condições reais e manter o orçamento de bytes das páginas;
+3. ensaiar recuperação de uma publicação com falha e confirmar o rollback dos
+   artefatos estáticos;
+4. manter monitoramento diário, análise semanal de completude e coleta oficial
+   conforme as políticas P0, P1 e P2;
+5. avaliar recursos adicionais do grafo apenas quando melhorarem descoberta sem
+   tornar o leitor ou o acesso ao Markdown mais complexos.
 
-Priorizar manutenção verificável do snapshot e da experiência de consulta:
-
-- repetir as auditorias de fonte, fidelidade e completude antes de publicar um
-  novo corte;
-- aprimorar busca, filtros e navegação por dispositivo sem introduzir
-  dependência do site para acessar o texto canônico;
-- manter as instruções de consumo para humanos, pipelines e agentes alinhadas ao
-  contrato dos manifests;
-- decidir a distribuição futura do CLI antes de prometer comandos operacionais
-  fora de um checkout.
-
-Cada entrega depende dos gates editoriais, jurídicos e técnicos já definidos.
-Relações pendentes, cobertura ampliada ou automação adicional nunca substituem
-fonte oficial nem evidência de fidelidade.
-
-## Fora do escopo atual
+## Fora do escopo publicado
 
 Regulamentos, tratados, jurisprudência, RAG, chunks e embeddings não integram a
-release v1.1.2. Só devem entrar em um ciclo futuro com fontes allowlisted,
-contratos próprios, evidência, testes e critérios de publicação. Não há
-diretórios vazios dessas camadas no produto atual.
+release v1.1.3. Uma ampliação futura requer fontes allowlisted, contratos
+próprios, evidência, testes e critérios de publicação. A cobertura atual não é
+exaustiva e não substitui fonte oficial nem orientação jurídica.

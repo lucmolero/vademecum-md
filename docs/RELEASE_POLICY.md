@@ -2,7 +2,7 @@
 
 Uma release é elegível quando os gates estruturais passam, todos os documentos têm texto, fonte oficial, hash e decisão editorial compatível, e nenhuma alteração foi incorporada silenciosamente.
 
-O estado `release_candidate` é usado antes da publicação. A release `v1.1.2`
+O estado `release_candidate` é usado antes da publicação. A release `v1.1.3`
 exige 100% do P0 consolidado, candidatos editoriais decididos, relações
 críticas auditadas, relatório sem erro, site acessível e artefato reproduzível.
 Esses critérios são medidos pelo baseline atual de 375 documentos.

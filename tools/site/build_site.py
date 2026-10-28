@@ -363,7 +363,7 @@ def load_metrics(rows: list[dict[str, str]]) -> dict[str, object]:
         "relations": relations,
         "tests": tests,
         "cutoff": cutoff,
-        "version": str(release.get("version", "1.1.2")),
+        "version": str(release.get("version", "1.1.3")),
         "quality": str(baseline.get("status", "unknown")),
     }
 
