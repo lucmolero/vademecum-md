@@ -42,6 +42,22 @@ ROOT = Path(__file__).parents[2]
 
 
 class WorkspaceTest(unittest.TestCase):
+    def test_open_source_governance_files_match_repository_policy(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        contributing_path = ROOT / "CONTRIBUTING.md"
+        license_text = (ROOT / "LICENSE.md").read_text(encoding="utf-8")
+        self.assertTrue(contributing_path.is_file())
+        self.assertIn("[Como contribuir e manter](CONTRIBUTING.md)", readme)
+        self.assertIn("# MIT License", license_text)
+        self.assertIn("Permission is hereby granted, free of charge", license_text)
+        self.assertIn("license federal legal texts", license_text)
+        self.assertIn("lucmolero` e do Dependabot", contributing_path.read_text(encoding="utf-8"))
+
+    def test_weekly_completeness_builds_site_before_tests(self) -> None:
+        workflow = (ROOT / ".github/workflows/weekly-completeness.yml").read_text(encoding="utf-8")
+        self.assertLess(workflow.index("python tools/site/build_site.py"), workflow.index("python -m unittest discover"))
+        self.assertLess(workflow.index("mkdocs build --strict"), workflow.index("python -m unittest discover"))
+
     def test_public_layers_exist(self) -> None:
         for relative in (
             "bases/raw", "bases/curated/legislacao/federal", "bases/history",
