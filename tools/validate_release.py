@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 
 from migrate_public_corpus import ALLOWED_STATUS, CURATED, ROOT, parse_frontmatter
 from pipeline_modes import load_modes
+from audit_fidelity import article_tree, normalize_text, normative_article_text, published_body, sha256_text
 
 
 REQUIRED = {
@@ -35,6 +36,15 @@ FORBIDDEN_PUBLIC_MARKERS = (
     "vade_mecum_" + "profissional_2026",
 )
 AUTONOMOUS_AGENT = "autonomous_legal_agent"
+
+
+def current_published_body_hash(path: Path) -> tuple[str, str, str]:
+    """Return the ID, computed canonical hash and front-matter hash."""
+    metadata, body = published_body(path)
+    normalized_body = normalize_text("\n\n".join(
+        normative_article_text(article["text"]) for article in article_tree(body)
+    ))
+    return str(metadata.get("id") or ""), sha256_text(normalized_body), str(metadata.get("sha256_published_body") or "")
 
 
 def validate_analysis_policy(errors: list[str]) -> None:
@@ -204,11 +214,32 @@ def validate_fidelity_contract(errors: list[str], corpus_ids: set[str]) -> None:
         identifier = str(item.get("document_id") or "")
         if identifier not in corpus_ids:
             errors.append(f"auditoria de fidelidade aponta para ID inexistente: {identifier}")
-        for field in ("source_unit_id", "canonicalization_version", "equivalence_status", "anomalies"):
+        for field in ("source_unit_id", "canonicalization_version", "equivalence_status", "equivalence_basis", "anomalies"):
             if field not in item or item[field] in (None, ""):
                 errors.append(f"auditoria de fidelidade sem {field}: {identifier}")
         if item.get("equivalence_status") != "pass":
             errors.append(f"fidelidade normativa ainda requer revisão: {identifier}")
+        relative_path = str(item.get("path") or "")
+        if not relative_path:
+            errors.append(f"auditoria de fidelidade sem caminho publicado: {identifier}")
+            continue
+        document_path = (ROOT / relative_path).resolve()
+        curated_root = CURATED.resolve()
+        if not document_path.is_relative_to(curated_root) or not document_path.is_file():
+            errors.append(f"caminho de documento inválido na auditoria de fidelidade: {identifier}")
+            continue
+        try:
+            current_id, current_hash, metadata_hash = current_published_body_hash(document_path)
+        except (OSError, ValueError, UnicodeError) as error:
+            errors.append(f"não foi possível ler texto publicado de {identifier}: {error}")
+            continue
+        if current_id != identifier:
+            errors.append(f"ID do documento não corresponde ao caminho auditado: {identifier}")
+            continue
+        if metadata_hash != current_hash:
+            errors.append(f"hash do front matter não corresponde ao texto publicado: {identifier}")
+        if item.get("sha256_published_body") != current_hash:
+            errors.append(f"texto publicado mudou desde a auditoria de fidelidade: {identifier}")
 
 
 def validate_legal_consensus(errors: list[str], corpus_ids: set[str]) -> None:
@@ -225,6 +256,12 @@ def validate_legal_consensus(errors: list[str], corpus_ids: set[str]) -> None:
         errors.append("schema do consenso juridico invalido")
     if payload.get("decision_authority") != AUTONOMOUS_AGENT:
         errors.append("consenso juridico sem autoridade autonoma")
+    if payload.get("analysis_method") != "deterministic_source_fidelity_gate" or payload.get("independent_legal_opinion") is not False:
+        errors.append("ledger de fidelidade não pode alegar análise jurídica independente")
+    if payload.get("assessment_scope") != "source_identity_and_text_fidelity_only":
+        errors.append("escopo do ledger de fidelidade deve limitar-se a identidade da fonte e texto")
+    if payload.get("role_scope") != "legacy_technical_gate_label_not_legal_opinion":
+        errors.append("ledger deve esclarecer que os nomes de papéis legados não são pareceres jurídicos")
     items = payload.get("documents") or []
     by_id = {str(item.get("document_id")): item for item in items if isinstance(item, dict)}
     if set(by_id) != corpus_ids:

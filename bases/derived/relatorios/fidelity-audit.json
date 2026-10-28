@@ -66,7 +66,8 @@
         },
         "unit_scope": "adct"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-constituicao-1988",
@@ -157,7 +158,8 @@
         },
         "unit_scope": "constituicao"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto-24643-1934",
@@ -195,7 +197,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto-9830-2019",
@@ -233,7 +236,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-25-1937",
@@ -271,7 +275,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-58-1937",
@@ -309,7 +314,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-1608-1939",
@@ -347,7 +353,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-2627-1940",
@@ -385,7 +392,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-2848-1940",
@@ -423,7 +431,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-3365-1941",
@@ -461,7 +470,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-3688-1941",
@@ -499,7 +509,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-3689-1941",
@@ -537,7 +548,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-3914-1941",
@@ -575,7 +587,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-3931-1941",
@@ -613,7 +626,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-4597-1942",
@@ -651,7 +665,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-4657-1942",
@@ -689,7 +704,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-5452-1943",
@@ -727,7 +743,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-9760-1946",
@@ -765,7 +782,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-37-1966",
@@ -803,7 +821,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-73-1966",
@@ -841,7 +860,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-195-1967",
@@ -879,7 +899,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-201-1967",
@@ -917,7 +938,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-227-1967",
@@ -955,7 +977,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-406-1968",
@@ -993,7 +1016,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-1001-1969",
@@ -1031,7 +1055,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-1002-1969",
@@ -1069,7 +1094,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-decreto_lei-779-1969",
@@ -1107,7 +1133,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-1075-1970",
@@ -1145,7 +1172,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-1413-1975",
@@ -1183,7 +1211,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-decreto_lei-2321-1987",
@@ -1221,7 +1250,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-24-1975",
@@ -1259,7 +1289,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-35-1979",
@@ -1297,7 +1328,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-63-1990",
@@ -1335,7 +1367,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-64-1990",
@@ -1373,7 +1406,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-73-1993",
@@ -1411,7 +1445,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-75-1993",
@@ -1449,7 +1484,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-76-1993",
@@ -1487,7 +1523,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-80-1994",
@@ -1525,7 +1562,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-87-1996",
@@ -1563,7 +1601,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-95-1998",
@@ -1601,7 +1640,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-97-1999",
@@ -1639,7 +1679,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-101-2000",
@@ -1677,7 +1718,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-105-2001",
@@ -1715,7 +1757,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-108-2001",
@@ -1753,7 +1796,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-109-2001",
@@ -1791,7 +1835,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-116-2003",
@@ -1829,7 +1874,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-123-2006",
@@ -1867,7 +1913,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-135-2010",
@@ -1905,7 +1952,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-142-2013",
@@ -1943,7 +1991,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-146-2014",
@@ -1981,7 +2030,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-147-2014",
@@ -2019,7 +2069,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-148-2014",
@@ -2057,7 +2108,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-150-2015",
@@ -2095,7 +2147,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-151-2015",
@@ -2133,7 +2186,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-155-2016",
@@ -2171,7 +2225,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-157-2016",
@@ -2209,7 +2264,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-159-2017",
@@ -2247,7 +2303,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_complementar-162-2018",
@@ -2285,7 +2342,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-167-2019",
@@ -2323,7 +2381,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-178-2021",
@@ -2361,7 +2420,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-214-2025",
@@ -2399,7 +2459,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-224-2025",
@@ -2437,7 +2498,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-225-2026",
@@ -2475,7 +2537,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_complementar-227-2026",
@@ -2513,7 +2576,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-556-1850",
@@ -2551,7 +2615,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-605-1949",
@@ -2589,7 +2654,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-662-1949",
@@ -2627,7 +2693,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-1060-1950",
@@ -2665,7 +2732,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-1079-1950",
@@ -2703,7 +2771,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-1408-1951",
@@ -2741,7 +2810,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-1521-1951",
@@ -2779,7 +2849,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-1579-1952",
@@ -2817,7 +2888,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4090-1962",
@@ -2855,7 +2927,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4117-1962",
@@ -2893,7 +2966,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4132-1962",
@@ -2931,7 +3005,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4320-1964",
@@ -2969,7 +3044,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4375-1964",
@@ -3007,7 +3083,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4504-1964",
@@ -3045,7 +3122,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4591-1964",
@@ -3083,7 +3161,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4595-1964",
@@ -3121,7 +3200,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4717-1965",
@@ -3159,7 +3239,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4728-1965",
@@ -3197,7 +3278,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4729-1965",
@@ -3235,7 +3317,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4737-1965",
@@ -3273,7 +3356,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4749-1965",
@@ -3311,7 +3395,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-4886-1965",
@@ -3349,7 +3434,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5010-1966",
@@ -3387,7 +3473,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5172-1966",
@@ -3425,7 +3512,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5197-1967",
@@ -3463,7 +3551,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5256-1967",
@@ -3501,7 +3590,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5474-1968",
@@ -3539,7 +3629,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5478-1968",
@@ -3577,7 +3668,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5584-1970",
@@ -3615,7 +3707,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5764-1971",
@@ -3653,7 +3746,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-5889-1973",
@@ -3691,7 +3785,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6001-1973",
@@ -3729,7 +3824,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6015-1973",
@@ -3767,7 +3863,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6019-1974",
@@ -3805,7 +3902,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6024-1974",
@@ -3843,7 +3941,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6099-1974",
@@ -3881,7 +3980,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6385-1976",
@@ -3919,7 +4019,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6404-1976",
@@ -3957,7 +4058,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6515-1977",
@@ -3995,7 +4097,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6766-1979",
@@ -4033,7 +4136,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6830-1980",
@@ -4071,7 +4175,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6880-1980",
@@ -4109,7 +4214,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6899-1981",
@@ -4147,7 +4253,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6902-1981",
@@ -4185,7 +4292,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6938-1981",
@@ -4223,7 +4331,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-6969-1981",
@@ -4261,7 +4370,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7106-1983",
@@ -4299,7 +4409,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7210-1984",
@@ -4337,7 +4448,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7347-1985",
@@ -4375,7 +4487,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7357-1985",
@@ -4413,7 +4526,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7418-1985",
@@ -4451,7 +4565,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7492-1986",
@@ -4489,7 +4604,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7565-1986",
@@ -4527,7 +4643,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7689-1988",
@@ -4565,7 +4682,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7716-1989",
@@ -4603,7 +4721,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7783-1989",
@@ -4641,7 +4760,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7853-1989",
@@ -4679,7 +4799,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7913-1989",
@@ -4717,7 +4838,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7960-1989",
@@ -4755,7 +4877,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-7998-1990",
@@ -4793,7 +4916,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8009-1990",
@@ -4831,7 +4955,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8021-1990",
@@ -4869,7 +4994,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8036-1990",
@@ -4907,7 +5033,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8038-1990",
@@ -4945,7 +5072,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8069-1990",
@@ -4983,7 +5111,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8072-1990",
@@ -5021,7 +5150,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8078-1990",
@@ -5059,7 +5189,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8080-1990",
@@ -5097,7 +5228,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8112-1990",
@@ -5135,7 +5267,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8137-1990",
@@ -5173,7 +5306,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8176-1991",
@@ -5211,7 +5345,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8212-1991",
@@ -5249,7 +5384,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8213-1991",
@@ -5287,7 +5423,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8239-1991",
@@ -5325,7 +5462,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8245-1991",
@@ -5363,7 +5501,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8397-1992",
@@ -5401,7 +5540,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8429-1992",
@@ -5439,7 +5579,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8437-1992",
@@ -5477,7 +5618,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8542-1992",
@@ -5515,7 +5657,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8560-1992",
@@ -5553,7 +5696,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8625-1993",
@@ -5591,7 +5735,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8629-1993",
@@ -5629,7 +5774,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8658-1993",
@@ -5667,7 +5813,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8742-1993",
@@ -5705,7 +5852,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8866-1994",
@@ -5743,7 +5891,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8870-1994",
@@ -5781,7 +5930,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8906-1994",
@@ -5819,7 +5969,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8934-1994",
@@ -5857,7 +6008,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8935-1994",
@@ -5895,7 +6047,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8971-1994",
@@ -5933,7 +6086,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8984-1995",
@@ -5971,7 +6125,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-8987-1995",
@@ -6009,7 +6164,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9029-1995",
@@ -6047,7 +6203,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9051-1995",
@@ -6085,7 +6242,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9074-1995",
@@ -6123,7 +6281,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9096-1995",
@@ -6161,7 +6320,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9099-1995",
@@ -6199,7 +6359,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9249-1995",
@@ -6237,7 +6398,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9263-1996",
@@ -6275,7 +6437,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9265-1996",
@@ -6313,7 +6476,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9278-1996",
@@ -6351,7 +6515,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9279-1996",
@@ -6389,7 +6554,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9289-1996",
@@ -6427,7 +6593,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9296-1996",
@@ -6465,7 +6632,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9307-1996",
@@ -6503,7 +6671,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9394-1996",
@@ -6541,7 +6710,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9430-1996",
@@ -6579,7 +6749,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9433-1997",
@@ -6617,7 +6788,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9434-1997",
@@ -6655,7 +6827,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9447-1997",
@@ -6693,7 +6866,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9455-1997",
@@ -6731,7 +6905,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9469-1997",
@@ -6769,7 +6944,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9472-1997",
@@ -6807,7 +6983,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9474-1997",
@@ -6845,7 +7022,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9492-1997",
@@ -6883,7 +7061,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9494-1997",
@@ -6921,7 +7100,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9503-1997",
@@ -6959,7 +7139,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9504-1997",
@@ -6997,7 +7178,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9507-1997",
@@ -7035,7 +7217,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9514-1997",
@@ -7073,7 +7256,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9601-1998",
@@ -7111,7 +7295,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9605-1998",
@@ -7149,7 +7334,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9608-1998",
@@ -7187,7 +7373,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9609-1998",
@@ -7225,7 +7412,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9610-1998",
@@ -7263,7 +7451,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9613-1998",
@@ -7301,7 +7490,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9636-1998",
@@ -7339,7 +7529,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9637-1998",
@@ -7377,7 +7568,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9656-1998",
@@ -7415,7 +7607,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9709-1998",
@@ -7453,7 +7646,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9784-1999",
@@ -7491,7 +7685,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9790-1999",
@@ -7529,7 +7724,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9801-1999",
@@ -7567,7 +7763,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9807-1999",
@@ -7605,7 +7802,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9868-1999",
@@ -7643,7 +7841,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9873-1999",
@@ -7681,7 +7880,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9882-1999",
@@ -7719,7 +7919,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10028-2000",
@@ -7757,7 +7958,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10048-2000",
@@ -7795,7 +7997,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10097-2000",
@@ -7833,7 +8036,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10098-2000",
@@ -7871,7 +8075,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10101-2000",
@@ -7909,7 +8114,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9962-2000",
@@ -7947,7 +8153,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-9985-2000",
@@ -7985,7 +8192,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10188-2001",
@@ -8023,7 +8231,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10192-2001",
@@ -8061,7 +8270,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10216-2001",
@@ -8099,7 +8309,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10257-2001",
@@ -8137,7 +8348,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10259-2001",
@@ -8175,7 +8387,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10303-2001",
@@ -8213,7 +8426,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10406-2002",
@@ -8251,7 +8465,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10446-2002",
@@ -8289,7 +8504,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10522-2002",
@@ -8327,7 +8543,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10637-2002",
@@ -8365,7 +8582,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10684-2003",
@@ -8403,7 +8621,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10741-2003",
@@ -8441,7 +8660,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10820-2003",
@@ -8479,7 +8699,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10826-2003",
@@ -8517,7 +8738,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10833-2003",
@@ -8555,7 +8777,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10931-2004",
@@ -8593,7 +8816,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10962-2004",
@@ -8631,7 +8855,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-10996-2004",
@@ -8669,7 +8894,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11076-2004",
@@ -8707,7 +8933,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11079-2004",
@@ -8745,7 +8972,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11101-2005",
@@ -8783,7 +9011,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11105-2005",
@@ -8821,7 +9050,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11107-2005",
@@ -8859,7 +9089,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11284-2006",
@@ -8897,7 +9128,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11340-2006",
@@ -8935,7 +9167,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11343-2006",
@@ -8973,7 +9206,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11417-2006",
@@ -9011,7 +9245,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11419-2006",
@@ -9049,7 +9284,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11428-2006",
@@ -9087,7 +9323,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11445-2007",
@@ -9125,7 +9362,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11457-2007",
@@ -9163,7 +9401,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11482-2007",
@@ -9201,7 +9440,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11598-2007",
@@ -9239,7 +9479,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11636-2007",
@@ -9277,7 +9518,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11638-2007",
@@ -9315,7 +9557,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11648-2008",
@@ -9353,7 +9596,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11649-2008",
@@ -9391,7 +9635,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11671-2008",
@@ -9429,7 +9674,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11705-2008",
@@ -9467,7 +9713,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11770-2008",
@@ -9505,7 +9752,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11788-2008",
@@ -9543,7 +9791,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11795-2008",
@@ -9581,7 +9830,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-11804-2008",
@@ -9619,7 +9869,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12007-2009",
@@ -9657,7 +9908,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12009-2009",
@@ -9695,7 +9947,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12010-2009",
@@ -9733,7 +9986,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12016-2009",
@@ -9771,7 +10025,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12030-2009",
@@ -9809,7 +10064,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12034-2009",
@@ -9847,7 +10103,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12037-2009",
@@ -9885,7 +10142,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12153-2009",
@@ -9923,7 +10181,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12187-2009",
@@ -9961,7 +10220,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12232-2010",
@@ -9999,7 +10259,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12288-2010",
@@ -10037,7 +10298,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12305-2010",
@@ -10075,7 +10337,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12318-2010",
@@ -10113,7 +10376,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12353-2010",
@@ -10151,7 +10415,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12414-2011",
@@ -10189,7 +10454,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12506-2011",
@@ -10227,7 +10493,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12527-2011",
@@ -10265,7 +10532,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12529-2011",
@@ -10303,7 +10571,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12562-2011",
@@ -10341,7 +10610,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12587-2012",
@@ -10379,7 +10649,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12594-2012",
@@ -10417,7 +10688,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12619-2012",
@@ -10455,7 +10727,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12651-2012",
@@ -10493,7 +10766,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12662-2012",
@@ -10531,7 +10805,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12682-2012",
@@ -10569,7 +10844,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12690-2012",
@@ -10607,7 +10883,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12694-2012",
@@ -10645,7 +10922,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12711-2012",
@@ -10683,7 +10961,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12714-2012",
@@ -10721,7 +11000,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12737-2012",
@@ -10759,7 +11039,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12761-2012",
@@ -10797,7 +11078,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12790-2013",
@@ -10835,7 +11117,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12815-2013",
@@ -10873,7 +11156,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12830-2013",
@@ -10911,7 +11195,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12846-2013",
@@ -10949,7 +11234,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12847-2013",
@@ -10987,7 +11273,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12850-2013",
@@ -11025,7 +11312,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12852-2013",
@@ -11063,7 +11351,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12853-2013",
@@ -11101,7 +11390,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12874-2013",
@@ -11139,7 +11429,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12879-2013",
@@ -11177,7 +11468,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12965-2014",
@@ -11215,7 +11507,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-12984-2014",
@@ -11253,7 +11546,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13010-2014",
@@ -11291,7 +11585,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13019-2014",
@@ -11329,7 +11624,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13022-2014",
@@ -11367,7 +11663,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13043-2014",
@@ -11405,7 +11702,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13060-2014",
@@ -11443,7 +11741,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13089-2015",
@@ -11481,7 +11780,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13097-2015",
@@ -11519,7 +11819,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13105-2015",
@@ -11557,7 +11858,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13111-2015",
@@ -11595,7 +11897,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13140-2015",
@@ -11633,7 +11936,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13146-2015",
@@ -11671,7 +11975,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13185-2015",
@@ -11709,7 +12014,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13188-2015",
@@ -11747,7 +12053,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13189-2015",
@@ -11785,7 +12092,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13240-2015",
@@ -11823,7 +12131,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13243-2016",
@@ -11861,7 +12170,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13254-2016",
@@ -11899,7 +12209,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13257-2016",
@@ -11937,7 +12248,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13260-2016",
@@ -11975,7 +12287,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13267-2016",
@@ -12013,7 +12326,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13271-2016",
@@ -12051,7 +12365,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13294-2016",
@@ -12089,7 +12404,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13300-2016",
@@ -12127,7 +12443,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13303-2016",
@@ -12165,7 +12482,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13311-2016",
@@ -12203,7 +12521,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13334-2016",
@@ -12241,7 +12560,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13344-2016",
@@ -12279,7 +12599,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13363-2016",
@@ -12317,7 +12638,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13425-2017",
@@ -12355,7 +12677,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13431-2017",
@@ -12393,7 +12716,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13432-2017",
@@ -12431,7 +12755,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13445-2017",
@@ -12469,7 +12794,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13446-2017",
@@ -12507,7 +12833,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13455-2017",
@@ -12545,7 +12872,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13457-2017",
@@ -12583,7 +12911,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13460-2017",
@@ -12621,7 +12950,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13465-2017",
@@ -12659,7 +12989,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13506-2017",
@@ -12697,7 +13028,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13606-2018",
@@ -12735,7 +13067,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13656-2018",
@@ -12773,7 +13106,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13675-2018",
@@ -12811,7 +13145,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13709-2018",
@@ -12849,7 +13184,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13726-2018",
@@ -12887,7 +13223,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13775-2018",
@@ -12925,7 +13262,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13848-2019",
@@ -12963,7 +13301,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13869-2019",
@@ -13001,7 +13340,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13872-2019",
@@ -13039,7 +13379,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13874-2019",
@@ -13077,7 +13418,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13964-2019",
@@ -13115,7 +13457,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13966-2019",
@@ -13153,7 +13496,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13988-2020",
@@ -13191,7 +13535,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-13999-2020",
@@ -13229,7 +13574,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14010-2020",
@@ -13267,7 +13613,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14119-2021",
@@ -13305,7 +13652,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14133-2021",
@@ -13343,7 +13691,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14181-2021",
@@ -13381,7 +13730,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14193-2021",
@@ -13419,7 +13769,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14195-2021",
@@ -13457,7 +13808,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14216-2021",
@@ -13495,7 +13847,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14238-2021",
@@ -13533,7 +13886,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14286-2021",
@@ -13571,7 +13925,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14344-2022",
@@ -13609,7 +13964,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14382-2022",
@@ -13647,7 +14003,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14438-2022",
@@ -13685,7 +14042,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14442-2022",
@@ -13723,7 +14081,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14457-2022",
@@ -13761,7 +14120,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14478-2022",
@@ -13799,7 +14159,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14532-2023",
@@ -13837,7 +14198,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14540-2023",
@@ -13875,7 +14237,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14597-2023",
@@ -13913,7 +14276,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14611-2023",
@@ -13951,7 +14315,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14620-2023",
@@ -13989,7 +14354,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14711-2023",
@@ -14027,7 +14393,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14717-2023",
@@ -14065,7 +14432,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-14811-2024",
@@ -14103,7 +14471,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-15040-2024",
@@ -14141,7 +14510,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-15142-2025",
@@ -14179,7 +14549,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-15190-2025",
@@ -14217,7 +14588,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-15211-2025",
@@ -14255,7 +14627,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "normalized_exact_match"
     },
     {
       "document_id": "br-federal-lei_ordinaria-15358-2026",
@@ -14293,7 +14666,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     },
     {
       "document_id": "br-federal-lei_ordinaria-15378-2026",
@@ -14331,7 +14705,8 @@
         "selector": {},
         "unit_scope": "single_diploma"
       },
-      "equivalence_status": "pass"
+      "equivalence_status": "pass",
+      "equivalence_basis": "article_tree_and_98_5_percent_similarity"
     }
   ]
 }

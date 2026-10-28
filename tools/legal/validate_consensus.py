@@ -1,8 +1,7 @@
-"""Validate the autonomous curator/critic consensus ledger.
+"""Validate the deterministic source/fidelity gate ledger.
 
-This gate verifies that semantic decisions were produced by two declared
-passes and are backed by official evidence. It does not generate or invent a
-legal conclusion.
+This gate verifies official evidence and makes its technical-only scope
+explicit. It does not verify independent legal opinions or legal conclusions.
 """
 
 from __future__ import annotations
@@ -26,6 +25,14 @@ def validate(path: Path) -> tuple[bool, list[str]]:
         errors.append("invalid consensus schema")
     if payload.get("decision_authority") != "autonomous_legal_agent":
         errors.append("consensus lacks autonomous legal authority")
+    if payload.get("analysis_method") != "deterministic_source_fidelity_gate":
+        errors.append("ledger misstates its deterministic analysis method")
+    if payload.get("independent_legal_opinion") is not False:
+        errors.append("ledger must state that it is not an independent legal opinion")
+    if payload.get("assessment_scope") != "source_identity_and_text_fidelity_only":
+        errors.append("ledger must limit its scope to source identity and text fidelity")
+    if payload.get("role_scope") != "legacy_technical_gate_label_not_legal_opinion":
+        errors.append("ledger must disclose that legacy role names are not legal opinions")
     documents = payload.get("documents")
     if not isinstance(documents, list) or not documents:
         errors.append("consensus has no documents")

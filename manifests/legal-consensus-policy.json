@@ -2,6 +2,10 @@
   "schema": "legal-curation-consensus-policy/v1",
   "decision_authority": "autonomous_legal_agent",
   "passes": ["legal_curator", "legal_critic"],
+  "analysis_method": "deterministic_source_fidelity_gate",
+  "independent_legal_opinion": false,
+  "assessment_scope": "source_identity_and_text_fidelity_only",
+  "role_scope": "legacy_technical_gate_label_not_legal_opinion",
   "allowed_decisions": ["promote", "preserve_current", "history", "reconcile"],
   "required_per_document": [
     "document_id",
@@ -11,7 +15,7 @@
     "consensus",
     "official_evidence"
   ],
-  "promotion_rule": "both_passes_complete_and_same_decision_and_deterministic_gates_pass",
+  "promotion_rule": "deterministic_source_fidelity_gate_passes; normative text changes remain subject to pull request governance",
   "ambiguity_rule": "preserve_current_and_record_evidence",
   "user_action_required": false,
   "must_not_invent_text": true

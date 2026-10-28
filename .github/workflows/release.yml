@@ -80,20 +80,14 @@ jobs:
         run: |
           version=$(python -c "import json; print(json.load(open('dist/release-manifest.json', encoding='utf-8'))['version'])")
           if gh release view "v${version}" >/dev/null 2>&1; then
-            echo "Release v${version} already exists; refreshing reproducibility assets."
-            gh release upload "v${version}" \
-              dist/vademecum-md-"${version}".zip \
-              dist/sbom.cdx.json \
-              dist/release-manifest.json \
-              dist/SHA256SUMS.txt \
-              --clobber
-          else
-            gh release create "v${version}" \
-              dist/vademecum-md-"${version}".zip \
-              dist/sbom.cdx.json \
-              dist/release-manifest.json \
-              dist/SHA256SUMS.txt \
-              --title "vademecum-md ${version}" \
-              --notes-file dist/CHANGELOG.md \
-              --target "${GITHUB_SHA}"
+            echo "Release v${version} already exists; published assets are immutable."
+            exit 0
           fi
+          gh release create "v${version}" \
+            dist/vademecum-md-"${version}".zip \
+            dist/sbom.cdx.json \
+            dist/release-manifest.json \
+            dist/SHA256SUMS.txt \
+            --title "vademecum-md ${version}" \
+            --notes-file dist/CHANGELOG.md \
+            --target "${GITHUB_SHA}"
