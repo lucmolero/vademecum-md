@@ -1,8 +1,9 @@
-"""Generate the autonomous curator/critic decision ledger for the corpus.
+"""Generate the deterministic source/fidelity gate ledger for the corpus.
 
 The generator is evidence-first: it can only recommend keeping a document in
 the curated corpus when the official-source fidelity audit passed. It never
-rewrites normative text or infers a missing legal fact.
+rewrites normative text, performs legal interpretation, or infers a missing
+legal fact. Legacy role fields are explicitly not independent legal opinions.
 """
 
 from __future__ import annotations
@@ -88,7 +89,6 @@ def generate() -> dict[str, object]:
             "decision": decision,
             "evidence": item_evidence,
             "must_not_invent_text": True,
-            "analysis_method": "llm_legal_analysis_plus_official_evidence",
         }
         documents.append({
             "document_id": identifier,
@@ -102,7 +102,10 @@ def generate() -> dict[str, object]:
         "schema": "legal-curation-consensus/v1",
         "generated_at": date.today().isoformat(),
         "decision_authority": "autonomous_legal_agent",
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
+        "analysis_method": "deterministic_source_fidelity_gate",
+        "independent_legal_opinion": False,
+        "assessment_scope": "source_identity_and_text_fidelity_only",
+        "role_scope": "legacy_technical_gate_label_not_legal_opinion",
         "user_action_required": False,
         "documents": documents,
     }

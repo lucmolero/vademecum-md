@@ -12,12 +12,17 @@ Alterações posteriores ao corpus ou às interfaces de consumo devem gerar nova
 release versionada; uma release publicada não é sobrescrita para esconder
 divergências de conteúdo.
 
+O workflow de publicação é idempotente: se a versão já existir, ele encerra sem
+alterar a release nem substituir seus artefatos. Uma mudança exige incremento de
+versão e uma nova release.
+
 O agendamento inicia a coleta e a proposta autônoma. A análise jurídica é
 executada pelo agente e a admissibilidade técnica pelos gates; nenhuma rotina
 escreve diretamente na branch padrão. A proposta abre um Pull Request e não o
 mescla automaticamente. A revisão de governança ocorre no merge, sem exigir
 decisão humana diploma a diploma.
 
-O ledger `manifests/legal-consensus.json` registra os passes `legal_curator` e
-`legal_critic` para cada documento do corpus. A release exige cobertura completa,
-consenso e evidência oficial; divergências preservam a versão pública anterior.
+O ledger `manifests/legal-consensus.json` registra gates determinísticos de
+identidade da fonte e fidelidade textual. Os nomes legados `legal_curator` e
+`legal_critic` não significam pareceres jurídicos independentes. Alterações
+normativas são propostas em pull requests e não são mescladas automaticamente.

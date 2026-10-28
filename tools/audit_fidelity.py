@@ -460,6 +460,7 @@ def audit_document(
         "canonicalization_version": NORMALIZATION_VERSION,
         "published_article_count": len(published_articles),
         "sha256_published_body": sha256_text(normalize_text(published_norm)),
+        "equivalence_basis": "not_evaluated",
         "anomalies": anomalies,
     }
     if not evidence:
@@ -526,6 +527,11 @@ def audit_document(
         "sha256_source_normalized": sha256_text(normalize_text(converted)),
         "sha256_source_body": source_hash,
         "source_published_hash_match": source_hash == published_hash,
+        "equivalence_basis": (
+            "normalized_exact_match"
+            if source_hash == published_hash
+            else "article_tree_and_98_5_percent_similarity"
+        ),
         "published_article_count": len(published_articles),
         "source_article_count": len(source_articles),
         "article_tree_match": labels_match,

@@ -2,7 +2,7 @@
   "schema": "legal-curation-consensus/v1",
   "generated_at": "2026-10-21",
   "decision_authority": "autonomous_legal_agent",
-  "analysis_method": "llm_legal_analysis_plus_official_evidence",
+  "analysis_method": "deterministic_source_fidelity_gate",
   "user_action_required": false,
   "documents": [
     {
@@ -54,7 +54,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -82,7 +81,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -146,7 +144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -179,7 +176,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -233,7 +229,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -261,7 +256,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -315,7 +309,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -343,7 +336,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -397,7 +389,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -425,7 +416,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -479,7 +469,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -507,7 +496,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -561,7 +549,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -589,7 +576,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -643,7 +629,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -671,7 +656,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -725,7 +709,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -753,7 +736,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -807,7 +789,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -835,7 +816,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -889,7 +869,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -917,7 +896,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -971,7 +949,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -999,7 +976,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1063,7 +1039,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1096,7 +1071,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1160,7 +1134,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1193,7 +1166,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1247,7 +1219,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1275,7 +1246,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1329,7 +1299,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1357,7 +1326,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1411,7 +1379,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1439,7 +1406,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1493,7 +1459,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1521,7 +1486,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1575,7 +1539,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1603,7 +1566,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1657,7 +1619,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1685,7 +1646,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1739,7 +1699,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1767,7 +1726,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1821,7 +1779,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1849,7 +1806,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1903,7 +1859,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -1931,7 +1886,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -1985,7 +1939,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2013,7 +1966,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2067,7 +2019,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2095,7 +2046,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2149,7 +2099,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2177,7 +2126,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2231,7 +2179,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2259,7 +2206,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2313,7 +2259,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2341,7 +2286,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2395,7 +2339,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2423,7 +2366,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2477,7 +2419,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2505,7 +2446,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2559,7 +2499,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2587,7 +2526,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2641,7 +2579,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2669,7 +2606,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2723,7 +2659,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2751,7 +2686,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2805,7 +2739,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2833,7 +2766,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2887,7 +2819,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2915,7 +2846,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -2969,7 +2899,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -2997,7 +2926,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3051,7 +2979,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3079,7 +3006,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3133,7 +3059,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3161,7 +3086,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3215,7 +3139,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3243,7 +3166,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3297,7 +3219,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3325,7 +3246,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3379,7 +3299,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3407,7 +3326,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3461,7 +3379,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3489,7 +3406,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3543,7 +3459,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3571,7 +3486,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3625,7 +3539,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3653,7 +3566,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3707,7 +3619,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3735,7 +3646,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3789,7 +3699,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3817,7 +3726,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3871,7 +3779,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3899,7 +3806,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -3953,7 +3859,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -3981,7 +3886,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4035,7 +3939,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4063,7 +3966,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4117,7 +4019,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4145,7 +4046,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4199,7 +4099,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4227,7 +4126,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4281,7 +4179,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4309,7 +4206,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4363,7 +4259,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4391,7 +4286,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4445,7 +4339,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4473,7 +4366,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4527,7 +4419,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4555,7 +4446,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4609,7 +4499,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4637,7 +4526,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4691,7 +4579,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4719,7 +4606,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4773,7 +4659,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4801,7 +4686,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4855,7 +4739,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4883,7 +4766,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -4937,7 +4819,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -4965,7 +4846,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5029,7 +4909,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5062,7 +4941,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5126,7 +5004,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5159,7 +5036,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5223,7 +5099,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5256,7 +5131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5310,7 +5184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5338,7 +5211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5392,7 +5264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5420,7 +5291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5474,7 +5344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5502,7 +5371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5556,7 +5424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5584,7 +5451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5638,7 +5504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5666,7 +5531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5720,7 +5584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5748,7 +5611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5802,7 +5664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5830,7 +5691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5884,7 +5744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5912,7 +5771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -5966,7 +5824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -5994,7 +5851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6048,7 +5904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6076,7 +5931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6130,7 +5984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6158,7 +6011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6212,7 +6064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6240,7 +6091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6294,7 +6144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6322,7 +6171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6376,7 +6224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6404,7 +6251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6458,7 +6304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6486,7 +6331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6540,7 +6384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6568,7 +6411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6622,7 +6464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6650,7 +6491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6704,7 +6544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6732,7 +6571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6786,7 +6624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6814,7 +6651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6868,7 +6704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6896,7 +6731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -6950,7 +6784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -6978,7 +6811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7032,7 +6864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7060,7 +6891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7114,7 +6944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7142,7 +6971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7196,7 +7024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7224,7 +7051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7278,7 +7104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7306,7 +7131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7360,7 +7184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7388,7 +7211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7442,7 +7264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7470,7 +7291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7524,7 +7344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7552,7 +7371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7606,7 +7424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7634,7 +7451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7688,7 +7504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7716,7 +7531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7770,7 +7584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7798,7 +7611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7852,7 +7664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7880,7 +7691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -7934,7 +7744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -7962,7 +7771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8016,7 +7824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8044,7 +7851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8098,7 +7904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8126,7 +7931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8180,7 +7984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8208,7 +8011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8262,7 +8064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8290,7 +8091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8344,7 +8144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8372,7 +8171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8426,7 +8224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8454,7 +8251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8508,7 +8304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8536,7 +8331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8590,7 +8384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8618,7 +8411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8672,7 +8464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8700,7 +8491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8754,7 +8544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8782,7 +8571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8836,7 +8624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8864,7 +8651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -8918,7 +8704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -8946,7 +8731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9000,7 +8784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9028,7 +8811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9082,7 +8864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9110,7 +8891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9164,7 +8944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9192,7 +8971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9246,7 +9024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9274,7 +9051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9328,7 +9104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9356,7 +9131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9410,7 +9184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9438,7 +9211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9492,7 +9264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9520,7 +9291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9574,7 +9344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9602,7 +9371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9656,7 +9424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9684,7 +9451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9738,7 +9504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9766,7 +9531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9820,7 +9584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9848,7 +9611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9902,7 +9664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -9930,7 +9691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -9984,7 +9744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10012,7 +9771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10066,7 +9824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10094,7 +9851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10148,7 +9904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10176,7 +9931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10230,7 +9984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10258,7 +10011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10312,7 +10064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10340,7 +10091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10394,7 +10144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10422,7 +10171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10476,7 +10224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10504,7 +10251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10558,7 +10304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10586,7 +10331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10640,7 +10384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10668,7 +10411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10722,7 +10464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10750,7 +10491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10804,7 +10544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10832,7 +10571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10886,7 +10624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10914,7 +10651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -10968,7 +10704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -10996,7 +10731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11050,7 +10784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11078,7 +10811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11132,7 +10864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11160,7 +10891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11214,7 +10944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11242,7 +10971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11296,7 +11024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11324,7 +11051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11378,7 +11104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11406,7 +11131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11460,7 +11184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11488,7 +11211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11542,7 +11264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11570,7 +11291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11624,7 +11344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11652,7 +11371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11706,7 +11424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11734,7 +11451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11788,7 +11504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11816,7 +11531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11870,7 +11584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11898,7 +11611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -11952,7 +11664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -11980,7 +11691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12034,7 +11744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12062,7 +11771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12116,7 +11824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12144,7 +11851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12198,7 +11904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12226,7 +11931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12280,7 +11984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12308,7 +12011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12362,7 +12064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12390,7 +12091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12444,7 +12144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12472,7 +12171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12526,7 +12224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12554,7 +12251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12608,7 +12304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12636,7 +12331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12690,7 +12384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12718,7 +12411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12772,7 +12464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12800,7 +12491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12854,7 +12544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12882,7 +12571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -12936,7 +12624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -12964,7 +12651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13018,7 +12704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13046,7 +12731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13100,7 +12784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13128,7 +12811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13182,7 +12864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13210,7 +12891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13264,7 +12944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13292,7 +12971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13346,7 +13024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13374,7 +13051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13428,7 +13104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13456,7 +13131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13510,7 +13184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13538,7 +13211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13592,7 +13264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13620,7 +13291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13674,7 +13344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13702,7 +13371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13756,7 +13424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13784,7 +13451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13838,7 +13504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13866,7 +13531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -13920,7 +13584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -13948,7 +13611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14002,7 +13664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14030,7 +13691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14084,7 +13744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14112,7 +13771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14166,7 +13824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14194,7 +13851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14248,7 +13904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14276,7 +13931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14330,7 +13984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14358,7 +14011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14412,7 +14064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14440,7 +14091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14494,7 +14144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14522,7 +14171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14576,7 +14224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14604,7 +14251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14658,7 +14304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14686,7 +14331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14740,7 +14384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14768,7 +14411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14822,7 +14464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14850,7 +14491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14904,7 +14544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -14932,7 +14571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -14986,7 +14624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15014,7 +14651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15068,7 +14704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15096,7 +14731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15150,7 +14784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15178,7 +14811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15232,7 +14864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15260,7 +14891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15314,7 +14944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15342,7 +14971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15396,7 +15024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15424,7 +15051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15478,7 +15104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15506,7 +15131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15560,7 +15184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15588,7 +15211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15642,7 +15264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15670,7 +15291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15724,7 +15344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15752,7 +15371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15806,7 +15424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15834,7 +15451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15888,7 +15504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15916,7 +15531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -15970,7 +15584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -15998,7 +15611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16052,7 +15664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16080,7 +15691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16134,7 +15744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16162,7 +15771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16216,7 +15824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16244,7 +15851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16298,7 +15904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16326,7 +15931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16380,7 +15984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16408,7 +16011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16462,7 +16064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16490,7 +16091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16544,7 +16144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16572,7 +16171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16626,7 +16224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16654,7 +16251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16708,7 +16304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16736,7 +16331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16790,7 +16384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16818,7 +16411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16872,7 +16464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16900,7 +16491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -16954,7 +16544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -16982,7 +16571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17036,7 +16624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17064,7 +16651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17118,7 +16704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17146,7 +16731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17200,7 +16784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17228,7 +16811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17282,7 +16864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17310,7 +16891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17364,7 +16944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17392,7 +16971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17446,7 +17024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17474,7 +17051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17528,7 +17104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17556,7 +17131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17610,7 +17184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17638,7 +17211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17692,7 +17264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17720,7 +17291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17774,7 +17344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17802,7 +17371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17856,7 +17424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17884,7 +17451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -17938,7 +17504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -17966,7 +17531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18020,7 +17584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18048,7 +17611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18102,7 +17664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18130,7 +17691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18184,7 +17744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18212,7 +17771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18266,7 +17824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18294,7 +17851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18348,7 +17904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18376,7 +17931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18430,7 +17984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18458,7 +18011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18512,7 +18064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18540,7 +18091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18594,7 +18144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18622,7 +18171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18676,7 +18224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18704,7 +18251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18758,7 +18304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18786,7 +18331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18840,7 +18384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18868,7 +18411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -18922,7 +18464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -18950,7 +18491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19004,7 +18544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19032,7 +18571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19086,7 +18624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19114,7 +18651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19168,7 +18704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19196,7 +18731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19250,7 +18784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19278,7 +18811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19332,7 +18864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19360,7 +18891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19414,7 +18944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19442,7 +18971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19496,7 +19024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19524,7 +19051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19578,7 +19104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19606,7 +19131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19660,7 +19184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19688,7 +19211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19742,7 +19264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19770,7 +19291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19824,7 +19344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19852,7 +19371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19906,7 +19424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -19934,7 +19451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -19988,7 +19504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20016,7 +19531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20070,7 +19584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20098,7 +19611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20152,7 +19664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20180,7 +19691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20234,7 +19744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20262,7 +19771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20316,7 +19824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20344,7 +19851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20398,7 +19904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20426,7 +19931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20480,7 +19984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20508,7 +20011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20562,7 +20064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20590,7 +20091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20644,7 +20144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20672,7 +20171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20726,7 +20224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20754,7 +20251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20808,7 +20304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20836,7 +20331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20890,7 +20384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -20918,7 +20411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -20972,7 +20464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21000,7 +20491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21054,7 +20544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21082,7 +20571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21136,7 +20624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21164,7 +20651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21218,7 +20704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21246,7 +20731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21300,7 +20784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21328,7 +20811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21382,7 +20864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21410,7 +20891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21464,7 +20944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21492,7 +20971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21546,7 +21024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21574,7 +21051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21628,7 +21104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21656,7 +21131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21710,7 +21184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21738,7 +21211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21792,7 +21264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21820,7 +21291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21874,7 +21344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21902,7 +21371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -21956,7 +21424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -21984,7 +21451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22038,7 +21504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22066,7 +21531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22120,7 +21584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22148,7 +21611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22202,7 +21664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22230,7 +21691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22284,7 +21744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22312,7 +21771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22366,7 +21824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22394,7 +21851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22448,7 +21904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22476,7 +21931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22530,7 +21984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22558,7 +22011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22612,7 +22064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22640,7 +22091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22694,7 +22144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22722,7 +22171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22776,7 +22224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22804,7 +22251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22858,7 +22304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22886,7 +22331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -22940,7 +22384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -22968,7 +22411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23022,7 +22464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23050,7 +22491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23104,7 +22544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23132,7 +22571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23186,7 +22624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23214,7 +22651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23268,7 +22704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23296,7 +22731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23350,7 +22784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23378,7 +22811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23432,7 +22864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23460,7 +22891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23514,7 +22944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23542,7 +22971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23596,7 +23024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23624,7 +23051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23678,7 +23104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23706,7 +23131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23760,7 +23184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23788,7 +23211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23842,7 +23264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23870,7 +23291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -23924,7 +23344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -23952,7 +23371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24006,7 +23424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24034,7 +23451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24088,7 +23504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24116,7 +23531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24170,7 +23584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24198,7 +23611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24252,7 +23664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24280,7 +23691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24334,7 +23744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24362,7 +23771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24416,7 +23824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24444,7 +23851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24498,7 +23904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24526,7 +23931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24580,7 +23984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24608,7 +24011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24662,7 +24064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24690,7 +24091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24744,7 +24144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24772,7 +24171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24826,7 +24224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24854,7 +24251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24908,7 +24304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -24936,7 +24331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -24990,7 +24384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25018,7 +24411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25072,7 +24464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25100,7 +24491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25154,7 +24544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25182,7 +24571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25236,7 +24624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25264,7 +24651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25318,7 +24704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25346,7 +24731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25400,7 +24784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25428,7 +24811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25482,7 +24864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25510,7 +24891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25564,7 +24944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25592,7 +24971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25646,7 +25024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25674,7 +25051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25728,7 +25104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25756,7 +25131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25810,7 +25184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25838,7 +25211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25892,7 +25264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -25920,7 +25291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -25974,7 +25344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26002,7 +25371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26056,7 +25424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26084,7 +25451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26138,7 +25504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26166,7 +25531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26220,7 +25584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26248,7 +25611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26302,7 +25664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26330,7 +25691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26384,7 +25744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26412,7 +25771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26466,7 +25824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26494,7 +25851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26548,7 +25904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26576,7 +25931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26630,7 +25984,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26658,7 +26011,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26712,7 +26064,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26740,7 +26091,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26794,7 +26144,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26822,7 +26171,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26876,7 +26224,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26904,7 +26251,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -26958,7 +26304,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -26986,7 +26331,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27040,7 +26384,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27068,7 +26411,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27122,7 +26464,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27150,7 +26491,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27204,7 +26544,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27232,7 +26571,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27286,7 +26624,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27314,7 +26651,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27368,7 +26704,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27396,7 +26731,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27450,7 +26784,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27478,7 +26811,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27532,7 +26864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27560,7 +26891,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27614,7 +26944,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27642,7 +26971,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27696,7 +27024,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27724,7 +27051,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27778,7 +27104,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27806,7 +27131,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27860,7 +27184,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27888,7 +27211,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -27942,7 +27264,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -27970,7 +27291,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28024,7 +27344,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28052,7 +27371,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28106,7 +27424,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28134,7 +27451,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28188,7 +27504,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28216,7 +27531,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28270,7 +27584,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28298,7 +27611,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28352,7 +27664,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28380,7 +27691,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28434,7 +27744,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28462,7 +27771,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28516,7 +27824,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28544,7 +27851,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28598,7 +27904,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28626,7 +27931,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28690,7 +27994,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28723,7 +28026,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28777,7 +28079,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28805,7 +28106,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28859,7 +28159,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28887,7 +28186,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -28941,7 +28239,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -28969,7 +28266,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29023,7 +28319,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29051,7 +28346,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29105,7 +28399,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29133,7 +28426,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29187,7 +28479,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29215,7 +28506,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29269,7 +28559,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29297,7 +28586,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29351,7 +28639,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29379,7 +28666,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29433,7 +28719,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29461,7 +28746,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29515,7 +28799,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29543,7 +28826,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29597,7 +28879,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29625,7 +28906,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29679,7 +28959,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29707,7 +28986,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29761,7 +29039,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29789,7 +29066,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29843,7 +29119,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29871,7 +29146,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -29925,7 +29199,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -29953,7 +29226,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30007,7 +29279,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30035,7 +29306,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30089,7 +29359,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30117,7 +29386,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30171,7 +29439,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30199,7 +29466,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30253,7 +29519,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30281,7 +29546,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30335,7 +29599,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30363,7 +29626,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30417,7 +29679,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30445,7 +29706,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30509,7 +29769,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30542,7 +29801,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30606,7 +29864,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30639,7 +29896,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30693,7 +29949,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30721,7 +29976,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30785,7 +30039,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30818,7 +30071,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
@@ -30882,7 +30134,6 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_curator"
       },
       "legal_critic": {
@@ -30915,10 +30166,12 @@
           }
         ],
         "must_not_invent_text": true,
-        "analysis_method": "llm_legal_analysis_plus_official_evidence",
         "role": "legal_critic"
       },
       "consensus": true
     }
-  ]
+  ],
+  "independent_legal_opinion": false,
+  "assessment_scope": "source_identity_and_text_fidelity_only",
+  "role_scope": "legacy_technical_gate_label_not_legal_opinion"
 }

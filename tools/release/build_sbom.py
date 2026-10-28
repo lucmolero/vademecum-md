@@ -8,8 +8,8 @@ import importlib.metadata
 import json
 import re
 import tomllib
-from datetime import date
 from pathlib import Path
+from uuid import NAMESPACE_URL, uuid5
 
 
 ROOT = Path(__file__).parents[2]
@@ -25,6 +25,12 @@ def build_document() -> dict:
     project = pyproject["project"]
     docs_requirements = pyproject.get("project", {}).get("optional-dependencies", {}).get("docs", [])
     dependencies = list(project.get("dependencies", [])) + list(docs_requirements)
+    release = json.loads((ROOT / "manifests/release.json").read_text(encoding="utf-8"))
+    release_date = str(release.get("generated_at") or "")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", release_date):
+        raise ValueError("manifests/release.json must contain generated_at as YYYY-MM-DD")
+    package_ref = f"pkg:pypi/{project['name']}@{project['version']}"
+    serial = uuid5(NAMESPACE_URL, f"https://github.com/lucmolero/vademecum-md/bom/{package_ref}")
     components = [{
         "type": "application",
         "bom-ref": f"pkg:pypi/{project['name']}@{project['version']}",
@@ -56,10 +62,10 @@ def build_document() -> dict:
     return {
         "bomFormat": "CycloneDX",
         "specVersion": "1.5",
-        "serialNumber": f"urn:uuid:vademecum-md-{project['version']}",
+        "serialNumber": f"urn:uuid:{serial}",
         "version": 1,
         "metadata": {
-            "timestamp": date.today().isoformat() + "T00:00:00Z",
+            "timestamp": release_date + "T00:00:00Z",
             "component": components[0],
             "properties": [{"name": "vademecum:source", "value": "pyproject.toml"}],
         },

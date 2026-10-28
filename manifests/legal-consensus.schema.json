@@ -1,12 +1,16 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://vademecum-md.example/schemas/legal-curation-consensus-v1.json",
-  "title": "VadeMecum MD legal curation consensus",
+  "title": "VadeMecum MD deterministic source and fidelity gate ledger",
   "type": "object",
-  "required": ["schema", "decision_authority", "documents"],
+  "required": ["schema", "decision_authority", "analysis_method", "independent_legal_opinion", "assessment_scope", "role_scope", "documents"],
   "properties": {
     "schema": {"const": "legal-curation-consensus/v1"},
     "decision_authority": {"const": "autonomous_legal_agent"},
+    "analysis_method": {"const": "deterministic_source_fidelity_gate"},
+    "independent_legal_opinion": {"const": false},
+    "assessment_scope": {"const": "source_identity_and_text_fidelity_only"},
+    "role_scope": {"const": "legacy_technical_gate_label_not_legal_opinion"},
     "documents": {
       "type": "array",
       "items": {

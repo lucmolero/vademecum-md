@@ -1,9 +1,13 @@
 import json
 import re
+import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).parents[2]
+sys.path.insert(0, str(ROOT / "tools"))
+from validate_release import current_published_body_hash  # noqa: E402
 
 
 class FidelityContractTest(unittest.TestCase):
@@ -29,6 +33,19 @@ class FidelityContractTest(unittest.TestCase):
         serialized = json.dumps(report, ensure_ascii=False).lower()
         self.assertNotIn(".private\\", serialized)
         self.assertNotIn(".private/", serialized)
+
+    def test_published_body_mutation_changes_the_hash_bound_to_the_report(self):
+        original = "---\nid: test-law\n---\n\n**Art. 1º** Texto original.\n"
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "law.md"
+            path.write_text(original, encoding="utf-8")
+            original_id, original_hash, _ = current_published_body_hash(path)
+            path.write_text(original.replace("Texto original", "Texto alterado"), encoding="utf-8")
+            changed_id, changed_hash, _ = current_published_body_hash(path)
+
+        self.assertEqual(original_id, "test-law")
+        self.assertEqual(changed_id, original_id)
+        self.assertNotEqual(changed_hash, original_hash)
 
 
 if __name__ == "__main__":

@@ -2,18 +2,21 @@
 
 A auditoria foi separada em duas responsabilidades:
 
-1. **Fidelidade tecnica**: prova identidade, fonte, unidade de extracao, hashes,
-   arvore de artigos e anomalias.
-2. **Curadoria juridica assistida**: os passes `legal_curator` e `legal_critic`
-   analisam vigencia, alteracoes, revogacoes, efeitos temporais, relevancia e
-   relacoes normativas com evidencias oficiais.
+1. **Fidelidade técnica**: compara identidade, fonte, unidade de extração,
+   hashes, árvore de artigos e anomalias.
+2. **Gate determinístico de fonte e texto**: o ledger mantém campos legados
+   `legal_curator` e `legal_critic`, mas ambos são gerados pela mesma regra
+   determinística. Eles não são pareceres jurídicos independentes e não avaliam
+   vigência, efeitos temporais nem mérito jurídico.
 
-O arquivo `bases/derived/relatorios/fidelity-audit.json` e um relatorio
-versionado e auditavel. O ledger publico atual registra 375/375 documentos em
-`pass`. A release anterior nao e retroativamente reclassificada como
-juridicamente validada.
+O relatório `bases/derived/relatorios/fidelity-audit.json` é versionado e
+auditável. O gate compara o hash canônico do texto publicado com o hash
+vinculado ao relatório em cada validação. O status `pass` pode representar hash
+exato ou árvore de artigos compatível com similaridade textual mínima de 98,5%;
+o campo `equivalence_basis` distingue esses casos. Similaridade não certifica
+igualdade textual nem correção jurídica. Alterações de texto são propostas em
+pull requests e não são mescladas automaticamente.
 
-Raw acquisition snapshots remain private by design. Public CI validates the
-versioned ledger and must not attempt to reconstruct private snapshots or
-silently downgrade the published audit. New snapshots are evaluated in the
-private acquisition workflow; only the audited ledger is promoted publicly.
+Snapshots brutos de aquisição permanecem privados. A CI pública valida a
+correspondência entre o texto atual e o hash publicado no ledger; ela não
+reconstrói snapshots privados nem substitui a comparação com a fonte oficial.
