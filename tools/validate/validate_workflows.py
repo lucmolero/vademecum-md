@@ -49,6 +49,8 @@ def main() -> int:
             and "QUALITY_RESULT" in text
             and 'head_sha" != "$CHECKED_SHA"' in text
             and 'gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash' in text
+            and "workflow_dispatch" in text
+            and "automation/update-" in text
             and "actions/checkout" not in text
             and "actions/download-artifact" not in text
         )
@@ -56,6 +58,11 @@ def main() -> int:
             errors.append(f"{path.name}: PRs de atualização não podem depender de ação humana para sair de rascunho")
         if path.name == "prepare-update-pr.yml" and "gh pr merge" in text:
             errors.append(f"{path.name}: PR de atualização não pode ser mesclado automaticamente")
+        if path.name == "prepare-update-pr.yml":
+            if "actions: write" not in text or "gh workflow run quality.yml --ref \"$branch\"" not in text:
+                errors.append(f"{path.name}: proposta do bot deve disparar quality no SHA exato")
+            if "record_auto_update_ledger.py" not in text:
+                errors.append(f"{path.name}: gate de fidelidade exata ausente antes da proposta")
         if path.name in {"quality.yml", "release.yml", "weekly-completeness.yml"}:
             if "sync_editorial_matrix.py" not in text:
                 errors.append(f"{path.name}: gate da matriz editorial ausente")

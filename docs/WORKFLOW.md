@@ -1,26 +1,29 @@
 # Fluxo operacional de atualização
 
 O corpus federal é atualizado por um fluxo autônomo, reproduzível e auditável.
-A aquisição, a análise jurídica, a aplicação e a publicação permanecem separadas
-por gates técnicos. A proposta é aberta automaticamente como Pull Request; o
-merge permanece uma decisão de governança do repositório, não uma decisão sobre
-cada diploma.
+A aquisição, a análise jurídica declarada, a aplicação e a publicação permanecem
+separadas por gates técnicos. Propostas são abertas automaticamente como Pull
+Requests; o workflow completo de qualidade é executado no commit exato da
+proposta e, se passar, a política confiável faz o merge sem ação humana.
 
 ## Ciclo autônomo
 
 1. `monitor-legislation` verifica idade, prioridade e validade das fontes.
 2. `collect-legislation` consulta fontes oficiais allowlisted e grava snapshots na área privada de aquisição.
 3. O comparador calcula hash bruto, hash normalizado e hash do corpo jurídico.
-4. A análise LLM do agente interpreta identidade normativa, vigência, alterações,
-   revogações, vetos, retificações e escopo editorial.
+4. O fluxo classifica a identidade da fonte e verifica os vínculos de evidência; o
+   ledger legado de consenso não representa opiniões jurídicas independentes.
 5. Gates determinísticos verificam identidade, integridade, estrutura, hashes,
-   URLs oficiais, encodings, IDs e relações.
-6. O agente aplica somente decisões que tenham evidência oficial e passem pelos gates.
-7. A validação de release bloqueia qualquer inconsistência antes da publicação.
+   URLs oficiais, encodings, IDs e relações. Para promover atualização textual, o
+   hash normalizado do corpo oficial deve ser idêntico ao do texto publicado.
+6. O ledger de atualização registra fonte e hashes aprovados, amarrando a decisão
+   ao documento publicado.
+7. A validação de release e a suíte completa bloqueiam inconsistências antes do
+   merge e da publicação.
 
-A LLM decide o significado jurídico e editorial; os validadores determinísticos
-decidem se o resultado é tecnicamente admissível. Nenhum dos dois pode inventar
-vigência sem fonte oficial.
+Correspondência textual e identidade da fonte são verificadas deterministicamente.
+Esses gates não decidem vigência nem interpretação jurídica; a informação de
+situação deve ser consultada nas fontes oficiais citadas.
 
 ## Modos operacionais
 
@@ -60,6 +63,9 @@ ação do usuário e nenhum alvo foi promovido como lei vigente por inferência.
 - Fontes fora da allowlist são rejeitadas.
 - Fonte indisponível preserva o texto vigente e gera alerta técnico.
 - Revogação, conflito ou alteração estrutural nunca remove texto automaticamente.
+- Atualização automática do texto exige correspondência normativa exata com
+  snapshot oficial verificado; similaridade textual não autoriza promoção.
+- O merge automático só ocorre após a suíte de qualidade no commit exato da PR.
 - Workflows não usam `pull_request_target` e não escrevem diretamente na branch padrão.
 
 ## Frequência

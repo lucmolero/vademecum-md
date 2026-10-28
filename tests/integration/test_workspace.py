@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "acquire"))
 sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "normalize"))
 sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "history"))
 sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "relations"))
+sys.path.insert(0, str(Path(__file__).parents[2] / "tools" / "validate"))
 sys.path.insert(0, str(Path(__file__).parents[2] / "tools"))
 
 from collect_legislation import (  # noqa: E402
@@ -27,6 +28,7 @@ from collect_legislation import (  # noqa: E402
     select_plan,
     stale_after_days,
 )
+from record_auto_update_ledger import build_entries  # noqa: E402
 from discover_legislation import build_queue  # noqa: E402
 from normalize_source import normalize_bytes  # noqa: E402
 from official_html_to_markdown import convert as official_html_to_markdown  # noqa: E402
@@ -43,6 +45,60 @@ ROOT = Path(__file__).parents[2]
 
 
 class WorkspaceTest(unittest.TestCase):
+    def test_autonomous_updates_require_exact_snapshot_fidelity(self) -> None:
+        source_hash = "a" * 64
+        application = {
+            "schema": "reviewed-update-application/v1",
+            "mode": "apply_reviewed",
+            "applied_count": 1,
+            "applied": [{
+                "document_id": "lei-teste",
+                "path": "bases/curated/lei-teste.md",
+                "source": "https://www.planalto.gov.br/ccivil_03/leis/teste.htm",
+                "source_id": "planalto",
+            }],
+        }
+        evidence = {
+            "document_id": "lei-teste",
+            "path": "bases/curated/lei-teste.md",
+            "evidence_status": "snapshot_verified",
+            "equivalence_status": "pass",
+            "equivalence_basis": "normalized_exact_match",
+            "source_published_hash_match": True,
+            "sha256_source_body": source_hash,
+            "sha256_published_body": source_hash,
+        }
+        with TemporaryDirectory() as directory:
+            app_path = Path(directory) / "application.json"
+            audit_path = Path(directory) / "audit.json"
+            app_path.write_text(json.dumps(application), encoding="utf-8")
+            audit_path.write_text(json.dumps({"schema": "normative-fidelity-audit/v1", "documents": [evidence]}), encoding="utf-8")
+            self.assertEqual(len(build_entries(app_path, audit_path)), 1)
+            evidence["equivalence_basis"] = "article_tree_and_98_5_percent_similarity"
+            audit_path.write_text(json.dumps({"schema": "normative-fidelity-audit/v1", "documents": [evidence]}), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "não é correspondência exata"):
+                build_entries(app_path, audit_path)
+
+    def test_trusted_pull_request_policy_includes_only_repository_update_bot(self) -> None:
+        policy = (ROOT / ".github/workflows/pr-policy.yml").read_text(encoding="utf-8")
+        condition = next(line for line in policy.splitlines() if 'if [[ "$author"' in line)
+        self.assertIn('"lucmolero"', condition)
+        self.assertIn('"dependabot[bot]"', condition)
+        self.assertIn('"app/dependabot"', condition)
+        self.assertIn('"github-actions[bot]"', condition)
+        self.assertNotIn('"*"', condition)
+
+    def test_autonomous_update_workflow_records_exact_fidelity_before_pr_creation(self) -> None:
+        workflow = (ROOT / ".github/workflows/prepare-update-pr.yml").read_text(encoding="utf-8")
+        gate = workflow.index("record_auto_update_ledger.py")
+        final_audit = workflow.rindex("--output bases/derived/relatorios/fidelity-audit.json")
+        pr_creation = workflow.index("gh pr create")
+        self.assertGreater(gate, final_audit)
+        self.assertLess(gate, pr_creation)
+        self.assertIn("git add docs/proposals bases/curated manifests", workflow)
+        self.assertIn('gh workflow run quality.yml --ref "$branch"', workflow)
+        self.assertIn("actions: write", workflow)
+
     def test_open_source_governance_files_match_repository_policy(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         contributing_path = ROOT / "CONTRIBUTING.md"
@@ -262,7 +318,7 @@ class WorkspaceTest(unittest.TestCase):
         self.assertIn("Refusing to write to the default branch", proposal_workflow)
         self.assertNotIn("gh pr create --draft", proposal_workflow)
         self.assertIn("gh pr create", proposal_workflow)
-        self.assertIn("governance review", proposal_workflow)
+        self.assertIn('gh workflow run quality.yml --ref "$branch"', proposal_workflow)
         self.assertNotIn("gh pr merge", proposal_workflow)
         self.assertNotIn("--auto", proposal_workflow)
         history = (ROOT / ".github/workflows/sync-private-history.yml").read_text(encoding="utf-8")

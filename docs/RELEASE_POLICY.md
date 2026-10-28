@@ -16,13 +16,16 @@ O workflow de publicação é idempotente: se a versão já existir, ele encerra
 alterar a release nem substituir seus artefatos. Uma mudança exige incremento de
 versão e uma nova release.
 
-O agendamento inicia a coleta e a proposta autônoma. A análise jurídica é
-executada pelo agente e a admissibilidade técnica pelos gates; nenhuma rotina
-escreve diretamente na branch padrão. A proposta abre um Pull Request e não o
-mescla automaticamente. A revisão de governança ocorre no merge, sem exigir
-decisão humana diploma a diploma.
+O agendamento inicia a coleta e a proposta autônoma. Nenhuma rotina escreve
+diretamente na branch padrão: a proposta passa por um Pull Request e pelo workflow
+completo de qualidade antes do merge automático. Atualizações do texto normativo
+só são admissíveis quando o snapshot oficial e o texto publicado têm hashes
+normativos idênticos após normalização; aprovações e hashes ficam registrados em
+`manifests/automatic-update-ledger.json`. Conflito de fontes, ausência de
+snapshot, diferença textual ou falha de qualidade interrompe a atualização.
 
 O ledger `manifests/legal-consensus.json` registra gates determinísticos de
 identidade da fonte e fidelidade textual. Os nomes legados `legal_curator` e
-`legal_critic` não significam pareceres jurídicos independentes. Alterações
-normativas são propostas em pull requests e não são mescladas automaticamente.
+`legal_critic` não significam pareceres jurídicos independentes. A aprovação
+automática comprova a correspondência do texto com uma fonte oficial registrada;
+ela não certifica, por si só, a vigência ou a interpretação jurídica.

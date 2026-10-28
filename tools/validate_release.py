@@ -282,6 +282,59 @@ def validate_legal_consensus(errors: list[str], corpus_ids: set[str]) -> None:
                 errors.append(f"consenso juridico permite invencao textual: {identifier}/{role}")
 
 
+def validate_automatic_update_ledger(errors: list[str], corpus_ids: set[str]) -> None:
+    """Bind autonomous update approvals to the exact public text they approved."""
+    path = ROOT / "manifests/automatic-update-ledger.json"
+    if not path.exists():
+        return
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        errors.append(f"ledger de atualizações autônomas inválido: {error}")
+        return
+    if payload.get("schema") != "automatic-update-ledger/v1":
+        errors.append("schema do ledger de atualizações autônomas inválido")
+    items = payload.get("documents")
+    if not isinstance(items, list):
+        errors.append("ledger de atualizações sem lista de documentos")
+        return
+    seen: set[str] = set()
+    hosts = registry_hosts()
+    for item in items:
+        if not isinstance(item, dict):
+            errors.append("ledger de atualizações contém entrada inválida")
+            continue
+        identifier = str(item.get("document_id") or "")
+        if not identifier or identifier in seen:
+            errors.append(f"ledger de atualizações contém ID ausente ou duplicado: {identifier}")
+            continue
+        seen.add(identifier)
+        if identifier not in corpus_ids:
+            errors.append(f"ledger de atualizações aponta para ID inexistente: {identifier}")
+            continue
+        if item.get("evidence_status") != "snapshot_verified" or item.get("equivalence_basis") != "normalized_exact_match":
+            errors.append(f"aprovação autônoma sem snapshot exato: {identifier}")
+        source_hash = str(item.get("approved_source_body_sha256") or "")
+        published_hash = str(item.get("approved_published_body_sha256") or "")
+        if not re.fullmatch(r"[a-f0-9]{64}", source_hash) or source_hash != published_hash:
+            errors.append(f"hashes da aprovação autônoma inválidos ou diferentes: {identifier}")
+        source_url = str(item.get("source_url") or "")
+        if urlparse(source_url).scheme != "https" or not official_url(source_url, hosts):
+            errors.append(f"ledger registra fonte não oficial: {identifier}")
+        relative_path = str(item.get("path") or "")
+        target = (ROOT / relative_path).resolve()
+        if not target.is_relative_to(CURATED.resolve()) or not target.is_file():
+            errors.append(f"ledger registra caminho inválido: {identifier}")
+            continue
+        try:
+            current_id, current_hash, _ = current_published_body_hash(target)
+        except (OSError, ValueError, UnicodeError) as error:
+            errors.append(f"não foi possível validar atualização autônoma {identifier}: {error}")
+            continue
+        if current_id != identifier or current_hash != published_hash:
+            errors.append(f"texto atual diverge da aprovação autônoma registrada: {identifier}")
+
+
 def validate_version_consistency(errors: list[str]) -> None:
     """Ensure package, release and citation metadata use one product version."""
     pyproject_path = ROOT / "pyproject.toml"
@@ -552,6 +605,7 @@ def main() -> int:
     fidelity_error_start = len(errors)
     validate_fidelity_contract(errors, corpus_ids)
     validate_legal_consensus(errors, corpus_ids)
+    validate_automatic_update_ledger(errors, corpus_ids)
     if args.stabilization:
         errors[fidelity_error_start:] = [
             error for error in errors[fidelity_error_start:]

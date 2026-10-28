@@ -12,19 +12,36 @@ permissions:
 
 jobs:
   enforce-policy:
-    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.pull_requests[0]
+    if: >-
+      github.event.workflow_run.event == 'pull_request' ||
+      (github.event.workflow_run.event == 'workflow_dispatch' && startsWith(github.event.workflow_run.head_branch, 'automation/update-'))
     runs-on: ubuntu-latest
     steps:
-      - name: Accept only owner and Dependabot pull requests
+      - name: Accept owner, Dependabot, and repository update publisher
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPOSITORY: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
+          RUN_EVENT: ${{ github.event.workflow_run.event }}
+          RUN_BRANCH: ${{ github.event.workflow_run.head_branch }}
           CHECKED_SHA: ${{ github.event.workflow_run.head_sha }}
           QUALITY_RESULT: ${{ github.event.workflow_run.conclusion }}
         shell: bash
         run: |
           set -euo pipefail
+
+          if [[ "$RUN_EVENT" == "workflow_dispatch" ]]; then
+            if [[ "$RUN_BRANCH" != automation/update-* ]]; then
+              echo "Ignoring manual quality run outside the repository's update namespace"
+              exit 0
+            fi
+            PR_NUMBER=$(gh pr list --repo "$GH_REPOSITORY" --head "$RUN_BRANCH" \
+              --state open --json number --jq '.[0].number // empty')
+            if [[ -z "$PR_NUMBER" ]]; then
+              echo "No open proposal PR for dispatched branch $RUN_BRANCH"
+              exit 0
+            fi
+          fi
 
           pr_json=$(gh pr view "$PR_NUMBER" --repo "$GH_REPOSITORY" \
             --json state,isDraft,baseRefName,headRefOid,author,mergeStateStatus)
@@ -35,7 +52,9 @@ jobs:
             exit 0
           fi
 
-          if [[ "$author" != "lucmolero" && "$author" != "dependabot[bot]" && "$author" != "app/dependabot" ]]; then
+          # github-actions[bot] is allowed only for PRs created by this repository's
+          # autonomous legislation publisher; its exact-text provenance is CI-gated.
+          if [[ "$author" != "lucmolero" && "$author" != "dependabot[bot]" && "$author" != "app/dependabot" && "$author" != "github-actions[bot]" ]]; then
             gh pr close "$PR_NUMBER" --repo "$GH_REPOSITORY" \
               --comment "Este repositório aceita alterações de lucmolero e do Dependabot. Para relatar problemas, use as issues públicas."
             exit 0
