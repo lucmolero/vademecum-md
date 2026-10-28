@@ -55,6 +55,7 @@
     </div>
     <a href="generated/catalog/">Explorar todos os 375 diplomas ↗</a>
   </div>
+  <p class="snapshot-note">As situações exibidas correspondem ao corte do corpus (2026-10-21). Confirme a fonte oficial para verificar a situação aplicável na data da consulta.</p>
   <div class="featured-codes-grid">
     <a class="code-card" href="generated/laws/federal/constituicao/1988/constituicao-da-republica-federativa-do-brasil-1988/">
       <div class="code-card-badge">CF/88</div>
@@ -96,10 +97,10 @@
 </section>
 
 <section class="audiences-section reveal">
-  <div class="section-heading"><div><p class="eyebrow">Leitura humana e consulta por agentes</p><h2>Conhecimento normativo com evidência.</h2></div><a href="audiences/">Contratos de consumo</a></div>
+  <div class="section-heading"><div><p class="eyebrow">Leitura humana e consulta por agentes</p><h2>Conhecimento normativo com evidência.</h2></div><a href="audiences/">Como usar</a></div>
   <div class="audience-grid audience-primary-grid">
     <a class="audience-card audience-law" href="audiences/#para-advogados-e-pesquisadores-juridicos"><span class="audience-kicker">01 · leitura humana</span><h3>Advogados e pesquisadores</h3><p>Texto integral, situação, fonte oficial e citação por dispositivo.</p><span class="audience-link">Ler com contexto →</span></a>
-    <a class="audience-card audience-agent" href="audiences/#para-desenvolvedores-de-agentes-de-ia"><span class="audience-kicker">02 · agentes de IA</span><h3>Conhecimento para agentes</h3><p>Corpus rastreável para recuperar normas, contextualizar relações e fundamentar respostas.</p><span class="audience-link">Consultar skills →</span></a>
+    <a class="audience-card audience-agent" href="audiences/#para-agentes-de-ia"><span class="audience-kicker">02 · agentes de IA</span><h3>Conhecimento para agentes</h3><p>Corpus rastreável para localizar normas, conferir o corte e produzir referências com proveniência.</p><span class="audience-link">Ler instruções da skill →</span></a>
   </div>
   <p class="integration-audience"><strong>Integração:</strong> dados estruturados, IDs estáveis, hashes e manifestos para desenvolvedores conectarem o corpus a ferramentas e pipelines.</p>
 </section>

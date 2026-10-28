@@ -27,7 +27,7 @@ Exemplo de referência rastreável:
 ```text
 br-federal-lei_ordinaria-10406-2002, art. 1º
 VadeMecum MD, release v1.1.2, corte 2026-10-21.
-Fonte oficial: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm
+Fonte oficial indicada no documento: https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406
 ```
 
 O site é uma camada de leitura derivada. Para citação acadêmica, a referência
@@ -68,7 +68,7 @@ jurídica, organize a resposta em Questão, Regra, Aplicação e Conclusão quan
 isso for apropriado. Referências ABNT podem ser produzidas quando solicitadas;
 elas complementam, mas não substituem, os identificadores e a fonte oficial.
 
-Consulte as [skills de consulta jurídica](https://github.com/lucmolero/vademecum-md/tree/main/skills) e o
+Consulte a [skill de consulta jurídica](https://github.com/lucmolero/vademecum-md/blob/main/skills/vademecum-consulta-juridica/SKILL.md) e o
 [contrato de consumo](contract.md) para instruções e exemplos.
 
 ## Para integrações e pipelines
