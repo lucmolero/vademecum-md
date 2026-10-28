@@ -247,9 +247,9 @@
 
     // 2. Controle de Tamanho de Fonte
     const fontSizes = ["font-sm", "font-md", "font-lg", "font-xl"];
-    let currentSizeIndex = parseInt(localStorage.getItem("vmd_font_size_idx") || "1", 10);
+    let currentSizeIndex = parseInt(localStorage.getItem("vmd_font_size_idx") || "0", 10);
     if (isNaN(currentSizeIndex) || currentSizeIndex < 0 || currentSizeIndex >= fontSizes.length) {
-      currentSizeIndex = 1;
+      currentSizeIndex = 0;
     }
 
     const applyFontSize = () => {
