@@ -761,3 +761,56 @@ body.vmd-focus-mode .md-main__inner {
   .reader-toolbar-group { flex-wrap: wrap; justify-content: flex-start; }
   .md-content:has(.law-hero) .md-content__inner { padding-inline: .75rem; }
 }
+
+/* A quieter, compact type scale for long-form legal reading. */
+.md-typeset { font-size: .74rem; }
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--secondary .md-nav__link { font-size: .7rem; line-height: 1.3; }
+.md-header .md-search__input { font-size: .74rem; }
+.eyebrow { font-size: .64rem; letter-spacing: .1em; }
+.md-content h1 { font-size: clamp(1.6rem, 2.35vw, 2.2rem); line-height: 1.12; }
+.md-content h2 { font-size: clamp(1.2rem, 1.7vw, 1.65rem); line-height: 1.2; }
+.md-content h3 { font-size: 1rem; line-height: 1.3; }
+.md-content .vmd-hero h1 { font-size: clamp(1.8rem, 2.55vw, 2.25rem); line-height: 1.08; }
+.vmd-hero h1 { letter-spacing: -.035em; }
+.hero-lede { font-size: clamp(.9rem, 1.05vw, .98rem); line-height: 1.6; }
+.hero-disclaimer { font-size: .72rem; }
+.md-button { min-height: 2.25rem; padding: .48rem .85rem; font-size: .76rem; }
+.metric-card { min-height: 5.5rem; }
+.metric-card span, .metric-card small { font-size: .7rem; }
+.metric-card strong { font-size: clamp(1.15rem, 1.7vw, 1.5rem); }
+.section-lede { font-size: .9rem; line-height: 1.6; }
+.split-principles h3, .audience-card h3 { font-size: 1.05rem; }
+.domain-card span { font-size: .78rem; }
+.domain-card strong { font-size: 1.3rem; }
+.section-heading > a, .text-link { font-size: .78rem; }
+.md-content:has(.law-hero) .md-typeset p,
+.md-content:has(.law-hero) .md-typeset li,
+.md-content:has(.law-hero) .md-typeset blockquote,
+.md-content:has(.law-hero) .md-typeset td { font-size: .82rem; line-height: 1.68; }
+.md-content:has(.law-hero) .law-hero h1 { font-size: clamp(1.3rem, 1.8vw, 1.65rem); }
+.law-ementa { font-size: .86rem; }
+.status-chip { font-size: .62rem; }
+.reader-toolbar { gap: .4rem; }
+.btn-quick-jump, .btn-focus-mode, .btn-font-size, .btn-official-source {
+  min-height: 2rem;
+  font-size: .68rem;
+}
+.md-content:has(.law-hero) .md-typeset h2[id^="art-"] { font-size: .92rem; }
+.md-content.font-sm:has(.law-hero) .md-typeset p,
+.md-content.font-sm:has(.law-hero) .md-typeset li { font-size: .76rem; line-height: 1.58; }
+.md-content.font-md:has(.law-hero) .md-typeset p,
+.md-content.font-md:has(.law-hero) .md-typeset li { font-size: .82rem; line-height: 1.68; }
+.md-content.font-lg:has(.law-hero) .md-typeset p,
+.md-content.font-lg:has(.law-hero) .md-typeset li { font-size: .9rem; line-height: 1.72; }
+.md-content.font-xl:has(.law-hero) .md-typeset p,
+.md-content.font-xl:has(.law-hero) .md-typeset li { font-size: .98rem; line-height: 1.78; }
+
+@media (max-width: 620px) {
+  .md-content .vmd-hero h1 { font-size: clamp(1.75rem, 7.5vw, 2.1rem); }
+  .eyebrow { font-size: .6rem; letter-spacing: .08em; }
+  .hero-lede { font-size: .92rem; }
+  .md-content:has(.law-hero) .md-content__inner { padding-inline: .7rem; }
+  .reader-toolbar { gap: .35rem; }
+  .btn-quick-jump, .btn-focus-mode, .btn-font-size, .btn-official-source { font-size: .66rem; }
+}
