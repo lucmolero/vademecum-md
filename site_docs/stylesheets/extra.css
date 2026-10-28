@@ -11,6 +11,7 @@
   --vmd-slate: #38516d;
   --vmd-border: rgba(19, 36, 58, .13);
   --vmd-shadow: 0 18px 50px rgba(19, 36, 58, .08);
+  --vmd-sidebar-surface: #f3f0e7;
   --vmd-display: Georgia, "Times New Roman", serif;
   --vmd-sans: "Source Sans 3", "Segoe UI", Arial, sans-serif;
   --vmd-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
@@ -37,6 +38,7 @@
   --vmd-gold: #e0bb70;
   --vmd-border: rgba(255, 255, 255, .14);
   --vmd-shadow: 0 18px 50px rgba(0, 0, 0, .22);
+  --vmd-sidebar-surface: #111e2f;
 }
 
 body { font-family: var(--vmd-sans); }
@@ -52,7 +54,7 @@ body { font-family: var(--vmd-sans); }
   outline-offset: 3px;
 }
 
-.md-main__inner { max-width: 1480px; }
+.md-main__inner { max-width: 1280px; margin-inline: auto; }
 .md-content__inner { padding-bottom: 4rem; }
 .md-typeset a { text-underline-offset: .16em; }
 
@@ -603,7 +605,8 @@ body.vmd-focus-mode .md-main__inner {
 .md-sidebar--primary .md-nav__link,
 .md-sidebar--secondary .md-nav__link { font-size: .76rem; line-height: 1.35; }
 .vmd-hero {
-  gap: clamp(1.5rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr);
+  gap: clamp(1.25rem, 2.4vw, 2rem);
   min-height: 0;
   padding: clamp(1.5rem, 4vw, 3.25rem) 0 clamp(2rem, 5vw, 4rem);
 }
@@ -824,4 +827,44 @@ body.vmd-focus-mode .md-main__inner {
   .reader-toolbar-group { flex: 1 1 100%; min-width: 0; }
   .reader-toolbar-group:first-child, .reader-toolbar-group:last-child { justify-content: flex-start; }
   .btn-quick-jump, .btn-focus-mode, .btn-font-size, .btn-official-source { font-size: .66rem; }
+}
+
+/* A smaller reading canvas and navigation rails with clearer visual weight. */
+.md-sidebar--primary,
+.md-sidebar--secondary:has(.md-nav__link) {
+  background-color: var(--vmd-sidebar-surface);
+}
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--secondary .md-nav__link {
+  color: var(--vmd-ink-soft);
+  font-size: .76rem;
+  line-height: 1.42;
+}
+.md-sidebar--primary .md-nav__item--section > .md-nav__link,
+.md-sidebar--secondary .md-nav__item--section > .md-nav__link {
+  color: var(--vmd-slate);
+  font-weight: 700;
+}
+.md-sidebar--primary .md-nav__link:hover,
+.md-sidebar--secondary .md-nav__link:hover {
+  background-color: color-mix(in srgb, var(--vmd-green) 8%, transparent);
+}
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--secondary .md-nav__link--active {
+  border-inline-start: 2px solid var(--vmd-green);
+  border-radius: .15rem;
+  background-color: color-mix(in srgb, var(--vmd-green) 10%, transparent);
+  color: var(--vmd-green);
+  font-weight: 700;
+}
+@media (min-width: 901px) {
+  .hero-actions .md-button { padding-inline: .7rem; font-size: .72rem; }
+  .hero-visual-caption { font-size: .54rem; letter-spacing: .035em; white-space: nowrap; }
+}
+@media (min-width: 76.25em) {
+  .md-sidebar--primary { border-inline-end: 1px solid var(--vmd-border); }
+  .md-sidebar--secondary:has(.md-nav__link) { border-inline-start: 1px solid var(--vmd-border); }
+}
+@media (max-width: 900px) {
+  .vmd-hero { grid-template-columns: minmax(0, 1fr); }
 }
