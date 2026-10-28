@@ -9,6 +9,8 @@ Pull requests desses autores para `main` são integrados por squash depois que o
 workflow `quality` passa e a branch está atualizada. O fluxo mantém os checks
 obrigatórios da branch, atualiza branches atrasadas por rebase e deixa rascunhos
 sem merge. Um resultado de CI com falha não é integrado automaticamente.
+Antes do merge, a política confirma que o check aprovado corresponde ao SHA atual
+da proposta e que a autoria está na lista permitida.
 
 ## Relatar divergências e problemas de navegação
 
