@@ -5,7 +5,7 @@ import sys
 
 ROOT = Path(__file__).parents[2]
 sys.path.insert(0, str(ROOT / "tools" / "validate"))
-from validate_site import validate  # noqa: E402
+from validate_site import validate, validate_dark_theme_contrast  # noqa: E402
 
 
 class RenderedSiteValidatorTest(unittest.TestCase):
@@ -20,7 +20,11 @@ class RenderedSiteValidatorTest(unittest.TestCase):
                 encoding="utf-8",
             )
             (root / "stylesheets" / "extra.css").write_text(
-                ":focus { outline: 2px solid; } @media (prefers-reduced-motion: reduce) {} "
+                ':focus { outline: 2px solid; } [data-md-color-scheme="slate"] {'
+                '--md-default-bg-color: #0d1828; --vmd-paper: #14253a; '
+                '--vmd-slate: #b9c9de; --vmd-green: #83d6ae; --vmd-amber: #f0c078; '
+                '--vmd-red: #f2a3a3; --vmd-gold: #e0bb70; --vmd-ink-soft: #b9c9de; } '
+                "@media (prefers-reduced-motion: reduce) {} "
                 ".vmd-hero {} .law-hero {}",
                 encoding="utf-8",
             )
@@ -38,6 +42,13 @@ class RenderedSiteValidatorTest(unittest.TestCase):
             self.assertTrue(any("skip" in error for error in errors))
             self.assertTrue(any("heading" in error for error in errors))
             self.assertTrue(any("image" in error for error in errors))
+
+    def test_dark_theme_rejects_low_contrast_palette(self):
+        css = '[data-md-color-scheme="slate"] { --md-default-bg-color: #0d1828; '
+        css += '--vmd-paper: #14253a; --vmd-slate: #38516d; --vmd-green: #2d7659; '
+        css += '--vmd-amber: #a96d19; --vmd-red: #a23b3b; --vmd-gold: #b48a3c; '
+        css += '--vmd-ink-soft: #1c3552; }'
+        self.assertGreaterEqual(len(validate_dark_theme_contrast(css)), 1)
 
 
 if __name__ == "__main__":

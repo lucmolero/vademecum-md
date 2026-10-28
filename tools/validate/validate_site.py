@@ -11,6 +11,42 @@ ROOT = Path(__file__).resolve().parents[2]
 HTML_TAG = re.compile(r"<html\b[^>]*\blang\s*=", re.IGNORECASE)
 PT_BR_HTML = re.compile(r'<html\b[^>]*\blang\s*=\s*["\']pt-BR["\']', re.IGNORECASE)
 IMAGE_WITHOUT_ALT = re.compile(r"<img\b(?![^>]*\balt\s*=)[^>]*>", re.IGNORECASE)
+def _relative_luminance(color: str) -> float:
+    channels = [int(color[index : index + 2], 16) / 255 for index in (1, 3, 5)]
+    linear = [channel / 12.92 if channel <= 0.04045 else ((channel + 0.055) / 1.055) ** 2.4 for channel in channels]
+    return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+
+
+def _contrast_ratio(foreground: str, background: str) -> float:
+    first, second = sorted((_relative_luminance(foreground), _relative_luminance(background)), reverse=True)
+    return (first + 0.05) / (second + 0.05)
+
+
+def _dark_scheme_block(css_text: str) -> str | None:
+    match = re.search(r'\[data-md-color-scheme="slate"\]\s*\{([^}]*)\}', css_text)
+    return match.group(1) if match else None
+
+
+def validate_dark_theme_contrast(css_text: str) -> list[str]:
+    block = _dark_scheme_block(css_text)
+    if block is None:
+        return ['site stylesheet lacks the dark theme palette']
+
+    properties = dict(re.findall(r"(--[\w-]+)\s*:\s*(#[0-9a-fA-F]{6})\s*;", block))
+    backgrounds = (properties.get("--md-default-bg-color"), properties.get("--vmd-paper"))
+    if any(background is None for background in backgrounds):
+        return ['dark theme palette lacks explicit page and paper backgrounds']
+
+    errors: list[str] = []
+    for token in ("--vmd-slate", "--vmd-green", "--vmd-amber", "--vmd-red", "--vmd-gold", "--vmd-ink-soft"):
+        foreground = properties.get(token)
+        if foreground is None:
+            errors.append(f"dark theme palette lacks {token}")
+            continue
+        for background in backgrounds:
+            if _contrast_ratio(foreground, background) < 4.5:
+                errors.append(f"dark theme {token} fails 4.5:1 text contrast on {background}")
+    return errors
 
 
 def validate(site: Path) -> list[str]:
@@ -40,6 +76,7 @@ def validate(site: Path) -> list[str]:
         errors.append("site stylesheet lacks visible focus styling")
     else:
         css_text = css.read_text(encoding="utf-8", errors="replace")
+        errors.extend(validate_dark_theme_contrast(css_text))
         if "prefers-reduced-motion" not in css_text:
             errors.append("site stylesheet lacks reduced-motion policy")
         if ".vmd-hero" not in css_text or ".law-hero" not in css_text:

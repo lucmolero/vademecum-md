@@ -28,7 +28,13 @@
   --md-primary-fg-color: #0d1828;
   --md-default-bg-color: #0d1828;
   --md-default-fg-color: #f5f0e6;
+  --vmd-ink-soft: #b9c9de;
+  --vmd-green: #83d6ae;
+  --vmd-amber: #f0c078;
+  --vmd-red: #f2a3a3;
+  --vmd-slate: #b9c9de;
   --vmd-paper: #14253a;
+  --vmd-gold: #e0bb70;
   --vmd-border: rgba(255, 255, 255, .14);
   --vmd-shadow: 0 18px 50px rgba(0, 0, 0, .22);
 }

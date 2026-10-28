@@ -170,4 +170,4 @@
   <div><p class="eyebrow">Transparência por design</p><h2>Auditável não significa oficial.</h2><p>O projeto documenta fontes, transformações, decisões e limitações. A fonte oficial continua sendo a autoridade textual. O site é uma camada de leitura regenerável.</p><a class="text-link" href="legal-limits/">Conhecer os limites jurídicos ↗</a></div>
 </section>
 
-<div class="home-footer-note"><strong>Snapshot 2026-10-21</strong><span>·</span><span>62 testes automatizados</span><span>·</span><a href="https://github.com/lucmolero/vademecum-md">código aberto no GitHub ↗</a></div>
+<div class="home-footer-note"><strong>Snapshot 2026-10-21</strong><span>·</span><span>63 testes automatizados</span><span>·</span><a href="https://github.com/lucmolero/vademecum-md">código aberto no GitHub ↗</a></div>
