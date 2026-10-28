@@ -1,0 +1,61 @@
+name: trusted-pull-request-policy
+
+on:
+  workflow_run:
+    workflows: [quality]
+    types: [completed]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  enforce-policy:
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.pull_requests[0]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Accept only owner and Dependabot pull requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.workflow_run.pull_requests[0].number }}
+          CHECKED_SHA: ${{ github.event.workflow_run.head_sha }}
+          QUALITY_RESULT: ${{ github.event.workflow_run.conclusion }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pr_json=$(gh pr view "$PR_NUMBER" --repo "$GH_REPOSITORY" \
+            --json state,isDraft,baseRefName,headRefOid,author,mergeStateStatus)
+          state=$(jq -r '.state' <<< "$pr_json")
+          author=$(jq -r '.author.login' <<< "$pr_json")
+
+          if [[ "$state" != "OPEN" ]]; then
+            exit 0
+          fi
+
+          if [[ "$author" != "lucmolero" && "$author" != "dependabot[bot]" && "$author" != "app/dependabot" ]]; then
+            gh pr close "$PR_NUMBER" --repo "$GH_REPOSITORY" \
+              --comment "Este repositório aceita alterações de lucmolero e do Dependabot. Para relatar problemas, use as issues públicas."
+            exit 0
+          fi
+
+          is_draft=$(jq -r '.isDraft' <<< "$pr_json")
+          base=$(jq -r '.baseRefName' <<< "$pr_json")
+          head_sha=$(jq -r '.headRefOid' <<< "$pr_json")
+          merge_state=$(jq -r '.mergeStateStatus' <<< "$pr_json")
+
+          if [[ "$is_draft" == "true" || "$base" != "main" || "$head_sha" != "$CHECKED_SHA" ]]; then
+            exit 0
+          fi
+
+          if [[ "$QUALITY_RESULT" != "success" ]]; then
+            exit 0
+          fi
+
+          if [[ "$merge_state" == "BEHIND" ]]; then
+            gh pr update-branch "$PR_NUMBER" --repo "$GH_REPOSITORY" --rebase
+            exit 0
+          fi
+
+          gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --auto --squash
