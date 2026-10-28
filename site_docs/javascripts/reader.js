@@ -14,6 +14,7 @@
     if (!lawHero) return;
 
     const lawId = lawHero.getAttribute("data-law-id") || "";
+    const releaseVersion = lawHero.getAttribute("data-release-version") || "";
     const lawTitle = lawHero.querySelector("h1")?.textContent?.trim() || "Diploma Normativo";
     const cutoffText = Array.from(lawHero.querySelectorAll(".status-chip"))
       .map(c => c.textContent.trim())
@@ -46,12 +47,12 @@
       const actionsWrapper = document.createElement("span");
       actionsWrapper.className = "article-actions";
 
-      // Botão Copiar Citação para Petição
+      // Copiar o texto do artigo com os metadados de proveniência disponíveis.
       const copyBtn = document.createElement("button");
       copyBtn.type = "button";
       copyBtn.className = "btn-article-action btn-copy-citation";
-      copyBtn.title = "Copiar artigo com citação forense para petição (ABNT/Tribunais)";
-      copyBtn.innerHTML = '<span class="action-icon">📋</span> Copiar p/ Petição';
+      copyBtn.title = "Copiar o artigo com sua referência de proveniência";
+      copyBtn.innerHTML = '<span class="action-icon">📋</span> Copiar artigo e referência';
 
       copyBtn.addEventListener("click", async (e) => {
         e.preventDefault();
@@ -60,7 +61,7 @@
         const bodyText = getArticleBodyText();
         const citation = [
           bodyText ? `"${bodyText}"` : `[${articleLabel}]`,
-          `(${lawTitle}, ${articleLabel}. VadeMecum MD, ${cutoffText || "corte auditado"}. ID: ${lawId}${sourceUrl ? `. Fonte oficial: ${sourceUrl}` : ""}).`
+          `(${lawTitle}, ${articleLabel}. VadeMecum MD, release ${releaseVersion ? `v${releaseVersion}` : "não informada"}, ${cutoffText || "corte não informado"}. ID: ${lawId}${sourceUrl ? `. Fonte oficial: ${sourceUrl}` : ""}).`
         ].join("\n");
 
         try {

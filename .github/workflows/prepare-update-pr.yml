@@ -20,8 +20,8 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Install project dependencies
@@ -107,7 +107,7 @@ jobs:
             --body-file "$proposal_file")
           echo "Update proposal opened for governance review: $pr_url"
       - name: Upload non-sensitive proposal report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: legislation-update-proposal
           path: |

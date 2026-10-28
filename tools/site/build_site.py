@@ -263,7 +263,7 @@ def status_label(status: str) -> str:
     }.get(status, status.replace("_", " ").title())
 
 
-def law_page(metadata: dict[str, object], body: str, relations: list[dict[str, object]] | None = None) -> str:
+def law_page(metadata: dict[str, object], body: str, relations: list[dict[str, object]] | None = None, release_version: str = "") -> str:
     title = str(metadata.get("titulo") or "Diploma normativo")
     ementa = str(metadata.get("ementa") or "Ementa não disponível na publicação pública.")
     source = next(iter(metadata.get("fonte_oficial") or []), "")
@@ -278,7 +278,7 @@ def law_page(metadata: dict[str, object], body: str, relations: list[dict[str, o
     # richer header and removes only the first identical H1 for presentation.
     article_body = re.sub(rf"^#\s+{re.escape(title)}\s*\n+", "", article_body, count=1, flags=re.IGNORECASE)
     source_link = f'<a href="{esc(source)}" rel="noreferrer">Fonte oficial</a>' if source else "Fonte oficial indisponível"
-    source_btn = f'<a href="{esc(source)}" class="btn-official-source" target="_blank" rel="noreferrer" title="Conferir na publicação oficial">🏛️ Planalto ↗</a>' if source else ""
+    source_btn = f'<a href="{esc(source)}" class="btn-official-source" target="_blank" rel="noreferrer" title="Abrir a fonte oficial indicada no documento">Fonte oficial ↗</a>' if source else ""
     reader_toolbar = f'''<div class="reader-toolbar" role="toolbar" aria-label="Ferramentas de leitura forense">
   <div class="reader-toolbar-group">
     <button type="button" class="btn-quick-jump" id="btn-quick-jump" title="Buscar e saltar para artigo (Atalho: Ctrl + K)">
@@ -299,7 +299,7 @@ def law_page(metadata: dict[str, object], body: str, relations: list[dict[str, o
         f'<details class="relation-list"><summary>Exibir {len(relations)} relações registradas</summary>{relation_cards}</details>'
         if len(relations) > 12 else relation_cards
     )
-    return f'''<div class="law-hero" data-law-id="{esc(document_id)}">
+    return f'''<div class="law-hero" data-law-id="{esc(document_id)}" data-release-version="{esc(release_version)}">
 <p class="eyebrow">{esc(metadata.get("tipo"))} · {esc(metadata.get("numero"))}/{esc(metadata.get("ano"))}</p>
 <h1>{esc(title)}</h1>
 <p class="law-ementa">{esc(ementa)}</p>
@@ -431,6 +431,7 @@ def home_page(rows: list[dict[str, str]], metrics: dict[str, object]) -> str:
     </div>
     <a href="generated/catalog/">Explorar todos os 375 diplomas ↗</a>
   </div>
+  <p class="snapshot-note">As situações exibidas correspondem ao corte do corpus ({esc(metrics["cutoff"])}). Confirme a fonte oficial para verificar a situação aplicável na data da consulta.</p>
   <div class="featured-codes-grid">
     <a class="code-card" href="generated/laws/federal/constituicao/1988/constituicao-da-republica-federativa-do-brasil-1988/">
       <div class="code-card-badge">CF/88</div>
@@ -472,10 +473,10 @@ def home_page(rows: list[dict[str, str]], metrics: dict[str, object]) -> str:
 </section>
 
 <section class="audiences-section reveal">
-  <div class="section-heading"><div><p class="eyebrow">Leitura humana e consulta por agentes</p><h2>Conhecimento normativo com evidência.</h2></div><a href="audiences/">Contratos de consumo</a></div>
+  <div class="section-heading"><div><p class="eyebrow">Leitura humana e consulta por agentes</p><h2>Conhecimento normativo com evidência.</h2></div><a href="audiences/">Como usar</a></div>
   <div class="audience-grid audience-primary-grid">
     <a class="audience-card audience-law" href="audiences/#para-advogados-e-pesquisadores-juridicos"><span class="audience-kicker">01 · leitura humana</span><h3>Advogados e pesquisadores</h3><p>Texto integral, situação, fonte oficial e citação por dispositivo.</p><span class="audience-link">Ler com contexto →</span></a>
-    <a class="audience-card audience-agent" href="audiences/#para-desenvolvedores-de-agentes-de-ia"><span class="audience-kicker">02 · agentes de IA</span><h3>Conhecimento para agentes</h3><p>Corpus rastreável para recuperar normas, contextualizar relações e fundamentar respostas.</p><span class="audience-link">Consultar skills →</span></a>
+    <a class="audience-card audience-agent" href="audiences/#para-agentes-de-ia"><span class="audience-kicker">02 · agentes de IA</span><h3>Conhecimento para agentes</h3><p>Corpus rastreável para localizar normas, conferir o corte e produzir referências com proveniência.</p><span class="audience-link">Ler instruções da skill →</span></a>
   </div>
   <p class="integration-audience"><strong>Integração:</strong> dados estruturados, IDs estáveis, hashes e manifestos para desenvolvedores conectarem o corpus a ferramentas e pipelines.</p>
 </section>
@@ -516,6 +517,9 @@ def home_page(rows: list[dict[str, str]], metrics: dict[str, object]) -> str:
 
 
 def build() -> dict[str, int]:
+    release_path = ROOT / "manifests/release.json"
+    release_data = json.loads(release_path.read_text(encoding="utf-8")) if release_path.is_file() else {}
+    release_version = str(release_data.get("version") or "")
     laws = GENERATED / "laws"
     if GENERATED.exists():
         for child in GENERATED.iterdir():
@@ -549,7 +553,7 @@ def build() -> dict[str, int]:
         target = laws / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(
-            law_page(metadata, body, graph_relations.get(str(metadata.get("id") or ""), [])),
+            law_page(metadata, body, graph_relations.get(str(metadata.get("id") or ""), []), release_version),
             encoding="utf-8", newline="\n",
         )
     by_domain: dict[str, list[dict[str, str]]] = {}
@@ -564,7 +568,7 @@ def build() -> dict[str, int]:
         "",
         "## Grandes Códigos da República",
         "",
-        "| Diploma | Situação | Prioridade |",
+        "| Diploma | Situação registrada no corte do documento | Prioridade |",
         "| --- | --- | --- |",
         "| [Constituição da República Federativa do Brasil](laws/federal/constituicao/1988/constituicao-da-republica-federativa-do-brasil-1988.md) | `Em vigor` | `P0` |",
         "| [Código Civil (Lei nº 10.406/2002)](laws/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002.md) | `Em vigor` | `P0` |",
@@ -582,7 +586,7 @@ def build() -> dict[str, int]:
     ]
     for domain in sorted(by_domain):
         slug = slugify(domain)
-        catalog.extend([f'<div id="{esc(slug)}"></div>', f"## {esc(domain_label(domain))}", "", "| Diploma | Situação | Prioridade |", "| --- | --- | --- |"])
+        catalog.extend([f'<div id="{esc(slug)}"></div>', f"## {esc(domain_label(domain))}", "", "| Diploma | Situação registrada no corte do documento | Prioridade |", "| --- | --- | --- |"])
         for row in by_domain[domain]:
             display_title = POPULAR_TITLES.get(row["id"], row["title"])
             catalog.append(f"| [{display_title}]({row['path']}) | `{status_label(row['status'])}` | `{row['priority']}` |")
