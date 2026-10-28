@@ -264,7 +264,12 @@ def update_document_relations(docs: list[tuple[Path, dict[str, object], str]], r
     for path, metadata, body in docs:
         for field in fields:
             metadata[field] = sorted(set(grouped[str(metadata["id"])].get(field, [])))
-        path.write_text(frontmatter(metadata) + "\n" + body.rstrip() + "\n", encoding="utf-8", newline="\n")
+        updated = frontmatter(metadata) + "\n" + body.rstrip() + "\n"
+        # Preserve the checked-out bytes when the semantic document is already
+        # current. This keeps --apply idempotent on Windows checkouts where
+        # universal-newline reads otherwise make LF output look like a change.
+        if path.read_text(encoding="utf-8") != updated:
+            path.write_text(updated, encoding="utf-8", newline="\n")
 
 
 def write_sources(docs: list[tuple[Path, dict[str, object], str]]) -> None:

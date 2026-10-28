@@ -3,12 +3,16 @@ import importlib.util
 import sys
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 
 ROOT = Path(__file__).parents[2]
 sys.path.insert(0, str(ROOT / "tools"))
 SITE_BUILDER_SPEC = importlib.util.spec_from_file_location("vmd_site_builder", ROOT / "tools/site/build_site.py")
 SITE_BUILDER = importlib.util.module_from_spec(SITE_BUILDER_SPEC)
 SITE_BUILDER_SPEC.loader.exec_module(SITE_BUILDER)
+SITE_HOOKS_SPEC = importlib.util.spec_from_file_location("vmd_site_hooks", ROOT / "site_docs/hooks.py")
+SITE_HOOKS = importlib.util.module_from_spec(SITE_HOOKS_SPEC)
+SITE_HOOKS_SPEC.loader.exec_module(SITE_HOOKS)
 
 
 class SiteContractTest(unittest.TestCase):
@@ -17,6 +21,8 @@ class SiteContractTest(unittest.TestCase):
         self.assertTrue((ROOT / "site_docs/index.md").is_file())
         self.assertTrue((ROOT / "site_docs/assets/brand-mark.svg").is_file())
         self.assertTrue((ROOT / "site_docs/assets/logo-lockup.svg").is_file())
+        self.assertTrue((ROOT / "site_docs/assets/og-card.svg").is_file())
+        self.assertTrue((ROOT / "site_docs/assets/og-card.png").is_file())
         self.assertTrue((ROOT / "site_docs/stylesheets/extra.css").is_file())
         self.assertTrue((ROOT / "site_docs/javascripts/portfolio.js").is_file())
         self.assertTrue((ROOT / "site_docs/javascripts/reader.js").is_file())
@@ -35,8 +41,33 @@ class SiteContractTest(unittest.TestCase):
         baseline = json.loads((ROOT / "manifests/baseline.json").read_text(encoding="utf-8"))
         self.assertIn(f'{metrics["p0_ready"]}<sup>/{metrics["p0_total"]}</sup>', homepage_text)
         self.assertEqual((metrics["p0_ready"], metrics["p0_total"]), (baseline["p0"]["ready"], baseline["p0"]["total"]))
-        self.assertIn("Para advogados", (ROOT / "site_docs/audiences.md").read_text(encoding="utf-8"))
+        self.assertIn("Leitura jurídica", (ROOT / "site_docs/audiences.md").read_text(encoding="utf-8"))
         self.assertTrue((ROOT / "tools/release/build_sbom.py").is_file())
+
+    def test_social_metadata_uses_absolute_raster_card_and_page_context(self):
+        page = SimpleNamespace(
+            title='Código "Civil"',
+            meta={"description": "Consulta com fonte oficial e corte."},
+            canonical_url="https://lucmolero.github.io/vademecum-md/codigo-civil/",
+        )
+        config = SimpleNamespace(
+            site_url="https://lucmolero.github.io/vademecum-md/",
+            site_name="VadeMecum MD",
+            site_description="Descrição geral.",
+        )
+        output = SITE_HOOKS.on_post_page(
+            '<html lang="pt" class="no-js"><head></head><body></body></html>',
+            page=page,
+            config=config,
+        )
+        self.assertIn(
+            'property="og:image" content="https://lucmolero.github.io/vademecum-md/assets/og-card.png"',
+            output,
+        )
+        self.assertIn('property="og:title" content="Código &quot;Civil&quot;"', output)
+        self.assertIn('property="og:description" content="Consulta com fonte oficial e corte."', output)
+        self.assertIn('name="twitter:card" content="summary_large_image"', output)
+        self.assertEqual(output.count('property="og:image"'), 1)
 
     def test_generated_law_page_has_editorial_metadata_and_article_anchor(self):
         law = ROOT / "site_docs/generated/laws/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002.md"

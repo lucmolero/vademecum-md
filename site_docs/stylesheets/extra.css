@@ -591,8 +591,11 @@ body.vmd-focus-mode .md-main__inner {
 .snapshot-note { margin: -0.45rem 0 1.25rem; color: var(--md-default-fg-color--light); font-size: 0.82rem; }
 
 /* Compact desktop hierarchy while retaining the VadeMecum MD identity. */
-.md-content h1 { font-size: clamp(2rem, 3.8vw, 3.45rem); }
-.md-content h2 { font-size: clamp(1.45rem, 2.5vw, 2.15rem); }
+.md-content h1 { font-size: clamp(1.85rem, 2.9vw, 2.65rem); }
+.md-content h2 { font-size: clamp(1.4rem, 2vw, 1.8rem); }
+.md-content h3 { font-size: 1.12rem; }
+.md-sidebar--primary .md-nav__link,
+.md-sidebar--secondary .md-nav__link { font-size: .76rem; line-height: 1.35; }
 .vmd-hero {
   gap: clamp(1.5rem, 4vw, 4rem);
   min-height: 0;
@@ -601,15 +604,16 @@ body.vmd-focus-mode .md-main__inner {
 .hero-copy { max-width: 650px; }
 .hero-logo { width: min(100%, 285px); margin-bottom: 1.4rem; }
 .eyebrow { margin-bottom: .75rem; }
-.md-content .vmd-hero h1 { font-size: clamp(2.2rem, 3.2vw, 2.9rem); line-height: 1.02; }
+.md-content .vmd-hero h1 { font-size: clamp(2.1rem, 3vw, 2.7rem); line-height: 1.04; }
 .hero-lede { max-width: 540px; margin-top: 1.15rem; font-size: clamp(1rem, 1.3vw, 1.12rem); line-height: 1.55; }
 .hero-actions { gap: .6rem; margin: 1.35rem 0 .8rem; }
 .md-button { padding: .55rem 1rem; }
 .hero-visual { min-height: 320px; border-radius: 1.25rem; }
 .normative-constellation { min-height: 300px; padding: .6rem; }
 .metric-grid { margin-bottom: clamp(3rem, 6vw, 5rem); }
-.metric-card { min-height: 112px; padding: 1rem; }
-.metric-card strong { font-size: clamp(1.5rem, 2.4vw, 2rem); }
+.metric-card { min-height: 100px; padding: .85rem; }
+.metric-card strong { font-size: clamp(1.35rem, 2vw, 1.75rem); }
+.metric-card:nth-child(4) strong { font-size: clamp(1rem, 1.5vw, 1.3rem); white-space: nowrap; }
 .editorial-section, .pipeline-section, .domains-section, .audiences-section, .trust-section,
 .featured-codes-section { margin-bottom: clamp(3rem, 6vw, 5rem); }
 .section-lede { font-size: 1rem; }
@@ -624,6 +628,8 @@ body.vmd-focus-mode .md-main__inner {
 .trust-section { gap: 2rem; padding: clamp(1.5rem, 3vw, 2.5rem); }
 .featured-codes-grid { gap: .75rem; margin-top: 1.3rem; }
 .code-card { padding: 1.05rem; border-radius: .25rem; }
+.section-heading { gap: 1.25rem; }
+.section-heading > a, .text-link { font-size: .85rem; }
 
 /* E-ink inspired legal reading surface, with the established MD serif voice. */
 .md-content:has(.law-hero) {
@@ -644,7 +650,7 @@ body.vmd-focus-mode .md-main__inner {
 .md-content:has(.law-hero) .md-typeset p,
 .md-content:has(.law-hero) .md-typeset li,
 .md-content:has(.law-hero) .md-typeset blockquote,
-.md-content:has(.law-hero) .md-typeset td { font-size: .92rem; line-height: 1.62; }
+.md-content:has(.law-hero) .md-typeset td { font-size: .88rem; line-height: 1.6; }
 .md-content:has(.law-hero) .md-typeset h1,
 .md-content:has(.law-hero) .md-typeset h2,
 .md-content:has(.law-hero) .md-typeset h3 { color: var(--reader-ink); }
@@ -656,7 +662,7 @@ body.vmd-focus-mode .md-main__inner {
   background: transparent;
   box-shadow: none;
 }
-.md-content:has(.law-hero) .law-hero h1 { margin: .15rem 0 .55rem; font-size: clamp(1.6rem, 2.6vw, 2.15rem); line-height: 1.12; }
+.md-content:has(.law-hero) .law-hero h1 { margin: .15rem 0 .55rem; font-size: clamp(1.55rem, 2.3vw, 1.95rem); line-height: 1.12; }
 .law-ementa { color: var(--reader-muted); font-size: .94rem; line-height: 1.5; }
 .law-status-row { gap: .35rem; margin-top: .8rem; }
 .status-chip { padding: .15rem .4rem; border: 1px solid var(--reader-rule); border-radius: 0; background: transparent; color: var(--reader-muted); font-size: .62rem; }
@@ -682,6 +688,7 @@ body.vmd-focus-mode .md-main__inner {
 }
 .law-footer-note { border-left-color: var(--reader-rule); background: transparent; color: var(--reader-muted); }
 .reader-toolbar {
+  flex-wrap: nowrap;
   gap: .5rem;
   margin: .8rem 0 1.25rem;
   padding: .5rem .65rem;
@@ -690,16 +697,23 @@ body.vmd-focus-mode .md-main__inner {
   background: transparent;
   box-shadow: none;
 }
-.reader-toolbar-group { gap: .35rem; }
+.reader-toolbar-group { gap: .3rem; }
+.reader-toolbar-group:first-child { flex: 1 1 auto; min-width: 0; }
+.reader-toolbar-group:last-child { flex: 0 0 auto; }
+.reader-icon { width: .82rem; height: .82rem; flex: none; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
 .btn-quick-jump, .btn-focus-mode, .btn-font-size, .btn-official-source {
-  min-height: 2rem;
-  padding: .3rem .55rem;
+  min-height: 1.85rem;
+  padding: .25rem .38rem;
   border-color: var(--reader-rule);
   border-radius: 0;
   background: transparent;
   color: var(--reader-ink) !important;
-  font-size: .7rem;
+  font-size: .65rem;
 }
+.btn-quick-jump, .btn-focus-mode { gap: .3rem; white-space: nowrap; }
+.btn-quick-jump kbd { padding: .08rem .2rem; font-size: .58rem; white-space: nowrap; }
+.btn-font-size { min-width: 1.8rem; }
+.btn-official-source { white-space: nowrap; }
 .btn-quick-jump kbd { border-radius: 0; background: var(--reader-ink); color: var(--reader-paper); }
 .btn-focus-mode:hover, .btn-focus-mode.is-active, .btn-quick-jump:hover, .btn-official-source:hover {
   border-color: var(--reader-ink);
@@ -707,11 +721,12 @@ body.vmd-focus-mode .md-main__inner {
   color: var(--reader-paper) !important;
 }
 .md-content:has(.law-hero) .md-typeset h2[id^="art-"] {
-  margin-top: 1.8rem;
+  margin-top: 1.5rem;
   padding-bottom: .25rem;
   border-bottom-color: var(--reader-rule);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
+.md-content:has(.law-hero) .md-typeset h2:not([id^="art-"]) { margin-top: 2rem; font-size: 1.35rem; }
 .law-relations { margin: 1.7rem 0 2rem; padding: .85rem 0; border: 0; border-top: 1px solid var(--reader-rule); border-bottom: 1px solid var(--reader-rule); background: transparent; }
 .law-relations h2 { font-size: 1.2rem !important; }
 .law-relations > p, .relation-meta, .relation-prefix, .relation-evidence, .relation-inline { color: var(--reader-muted); }
@@ -719,10 +734,10 @@ body.vmd-focus-mode .md-main__inner {
 .md-content:has(.law-hero) .relation-evidence blockquote { background: transparent; }
 .md-content:has(.law-hero) .md-typeset blockquote { border-left-color: var(--reader-rule); }
 .md-content:has(.law-hero) .md-typeset code { color: var(--reader-ink); background: rgba(34, 35, 31, .06); }
-.md-content.font-sm .md-typeset p, .md-content.font-sm .md-typeset li { font-size: .85rem; line-height: 1.58; }
-.md-content.font-md .md-typeset p, .md-content.font-md .md-typeset li { font-size: .92rem; line-height: 1.62; }
-.md-content.font-lg .md-typeset p, .md-content.font-lg .md-typeset li { font-size: 1rem; line-height: 1.68; }
-.md-content.font-xl .md-typeset p, .md-content.font-xl .md-typeset li { font-size: 1.1rem; line-height: 1.72; }
+.md-content.font-sm .md-typeset p, .md-content.font-sm .md-typeset li { font-size: .8rem; line-height: 1.58; }
+.md-content.font-md .md-typeset p, .md-content.font-md .md-typeset li { font-size: .88rem; line-height: 1.6; }
+.md-content.font-lg .md-typeset p, .md-content.font-lg .md-typeset li { font-size: .96rem; line-height: 1.65; }
+.md-content.font-xl .md-typeset p, .md-content.font-xl .md-typeset li { font-size: 1.05rem; line-height: 1.7; }
 
 [data-md-color-scheme="slate"] .md-content:has(.law-hero) {
   --reader-paper: #171a1c;

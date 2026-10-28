@@ -282,10 +282,10 @@ def law_page(metadata: dict[str, object], body: str, relations: list[dict[str, o
     reader_toolbar = f'''<div class="reader-toolbar" role="toolbar" aria-label="Ferramentas de leitura forense">
   <div class="reader-toolbar-group">
     <button type="button" class="btn-quick-jump" id="btn-quick-jump" title="Buscar e saltar para artigo (Atalho: Ctrl + K)">
-      <span class="icon-search">🔍</span> Ir para Artigo <kbd>Ctrl K</kbd>
+      <svg class="reader-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.2"/><path d="m15.4 15.4 4.2 4.2"/></svg> Ir para artigo <kbd>Ctrl K</kbd>
     </button>
     <button type="button" class="btn-focus-mode" id="btn-focus-mode" title="Alternar modo de leitura sem distrações">
-      <span class="icon-focus">📖</span> Modo Leitura
+      <svg class="reader-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5c3.2-.9 6.1-.5 8 1.2v12c-1.9-1.7-4.8-2.1-8-1.2z"/><path d="M20 5.5c-3.2-.9-6.1-.5-8 1.2v12c1.9-1.7 4.8-2.1 8-1.2z"/></svg> Modo leitura
     </button>
   </div>
   <div class="reader-toolbar-group">
