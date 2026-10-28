@@ -1,5 +1,28 @@
-# Licença do projeto
+# MIT License
 
-Os scripts, schemas, manifests e documentação autoral deste projeto são disponibilizados sob a licença MIT.
+Copyright (c) 2026 Luciano Molero
 
-Os textos normativos são organizados para consulta e permanecem sujeitos ao regime jurídico aplicável às publicações oficiais. A licença do projeto não altera a natureza ou a autoridade dos atos normativos.
+The MIT License applies only to the project's software, schemas, manifests,
+original documentation, and original brand and design assets. It does not
+license federal legal texts, reproductions of official publications, or
+third-party materials. Those materials remain subject to the laws and terms
+applicable to their respective sources. This license does not change the
+authority of any legal act.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
