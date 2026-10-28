@@ -105,6 +105,10 @@ Na release `v1.1.2`, o produto não é:
 - banco de jurisprudência, tratados ou regulamentos completos;
 - RAG ou índice semântico tratado como fonte normativa.
 
+Regulamentos, tratados e jurisprudência permanecem fora do escopo publicado.
+Não se criam diretórios vazios para essas camadas; uma proposta futura deve
+definir fonte, schema, contrato de evidência e gates antes de receber conteúdo.
+
 ## Evolução do produto
 
 | Estágio | Entrega | Condição de avanço |

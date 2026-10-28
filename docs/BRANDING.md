@@ -31,6 +31,8 @@ reforça estados, mas nunca é necessário para compreender uma norma. A políti
 `prefers-reduced-motion` remove animações decorativas e mantém a navegação
 completa por teclado.
 
-Os assets vetoriais em `site_docs/assets` são autorais e não dependem de fontes,
+Os assets visuais em `site_docs/assets` são autorais e não dependem de fontes,
 imagens ou rastreadores externos. O `logo-lockup.svg` é usado na homepage; o
-`brand-mark.svg` é reservado para favicon e navegação compacta.
+`brand-mark.svg` é usado no favicon e na navegação compacta. O `og-card.svg` é a
+origem vetorial do `og-card.png`, a imagem rasterizada usada nas prévias de
+compartilhamento; ambas devem manter a mesma assinatura da marca.

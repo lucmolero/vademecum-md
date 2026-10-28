@@ -1,59 +1,61 @@
-# Roadmap de lançamento
+# Roadmap de evolução
 
-## Estado atual
+## Baseline publicado: v1.1.2
 
-- 375 documentos canônicos;
-- 372 consolidados diretamente por fonte oficial;
-- 3 consolidados por reconciliação;
-- 33/33 P0 consolidados;
-- 15 candidatos editoriais adicionais promovidos com decisão explícita;
-- 2.177 ocorrências agrupadas em 1.491 alvos únicos; 1.408 alvos no histórico e 83 mantidos somente no grafo;
-- atualização preparada em modo de Pull Request, sem mutação direta da `main`, com publicação automatizada somente após os gates.
+A release v1.1.2 é o estado público de referência do projeto. O baseline
+reproduzível foi gerado em 2026-10-21 e os manifests da release em 2026-10-22:
 
-## 0.1 — Fundação pública
+- 375 documentos canônicos, integrais, com fonte oficial e hash;
+- 372 documentos consolidados diretamente por fonte oficial e 3 reconciliados;
+- 33/33 documentos da prioridade P0 consolidados;
+- 1.841 relações normativas materializadas;
+- 15/15 decisões da expansão editorial registradas e promovidas;
+- baseline e completude com estado `pass`, sem divergências estruturais.
 
-- schema canônico;
-- matriz neutra;
-- proveniência oficial pública;
-- ledger técnico privado;
-- CI e gates de integridade.
+Esses números descrevem o snapshot da release, não a legislação em tempo real.
+O estado atual deve ser lido nos manifests e relatórios gerados, não inferido
+deste resumo histórico.
 
-## 0.2 — Baseline estabilizado
+## Ciclo atual: auditoria de produto e arquitetura
 
-- 375 documentos com texto, hash e fonte oficial;
-- documentação sincronizada com os manifests;
-- histórico separado;
-- relatório de completude reproduzível;
-- catálogo regenerável.
+A prioridade é tornar o produto mais fácil de entender e usar sem comprometer a
+proveniência jurídica ou a simplicidade de publicação:
 
-## 0.3 — Expansão editorial fechada
+1. **Apresentação:** hierarquia editorial compacta na home, tipografia legível
+   em desktop e celular, navegação clara e leitor jurídico sem distrações.
+2. **Produto:** dar acesso rápido ao catálogo, às normas centrais, à fonte
+   oficial e às instruções de consulta para agentes.
+3. **Repositório:** manter diretórios apenas para camadas implementadas; explicar
+   em especificações quais domínios permanecem fora do escopo.
+4. **Documentação:** alinhar README, site, contratos, estado da release e
+   instruções de manutenção, evitando planos duplicados ou desatualizados.
+5. **Ferramentas:** declarar que os comandos operacionais precisam de um
+   checkout local e falhar com diagnóstico claro quando executados fora dele.
 
-- 15 candidatos editoriais decididos com análise jurídica autônoma;
-- 83 alvos do grafo classificados como histórico ou grafo, sem dependência de validação humana;
-- situação jurídica explícita em cada promoção;
-- matriz e corpus sem divergência.
+Critérios de conclusão: build estrito aprovado, testes de contrato aprovados,
+renderização conferida em viewport desktop e móvel, texto legal inalterado e
+ausência de diferenças entre os manifests e o corpus.
 
-## 0.4 — Histórico e grafo auditáveis
+## Próximo ciclo: v1.2
 
-- relações críticas P0 revisadas;
-- diffs normativos regeneráveis;
-- fila de relações sem confundir histórico com lacuna do corpus;
-- ausência de IDs inexistentes ou inversos inconsistentes.
+Priorizar manutenção verificável do snapshot e da experiência de consulta:
 
-## 0.5 — Proveniência e atualização controlada
+- repetir as auditorias de fonte, fidelidade e completude antes de publicar um
+  novo corte;
+- aprimorar busca, filtros e navegação por dispositivo sem introduzir
+  dependência do site para acessar o texto canônico;
+- manter as instruções de consumo para humanos, pipelines e agentes alinhadas ao
+  contrato dos manifests;
+- decidir a distribuição futura do CLI antes de prometer comandos operacionais
+  fora de um checkout.
 
-- repositório privado de histórico configurado;
-- sincronização privada testada;
-- coleta, comparação e Pull Request reproduzíveis;
-- publicação automatizada de artefato após gates, sem mutação direta da `main`.
+Cada entrega depende dos gates editoriais, jurídicos e técnicos já definidos.
+Relações pendentes, cobertura ampliada ou automação adicional nunca substituem
+fonte oficial nem evidência de fidelidade.
 
-## 1.0 — Lançamento público
+## Fora do escopo atual
 
-Estado: pronto para publicação automatizada.
-
-- corpus editorialmente coerente;
-- release reproduzível;
-- gates sem erro;
-- histórico e grafo auditáveis;
-- atualização por PR autônoma, sem aprovação humana de conteúdo;
-- RAG, chunks e embeddings permanecem deliberadamente pós-release.
+Regulamentos, tratados, jurisprudência, RAG, chunks e embeddings não integram a
+release v1.1.2. Só devem entrar em um ciclo futuro com fontes allowlisted,
+contratos próprios, evidência, testes e critérios de publicação. Não há
+diretórios vazios dessas camadas no produto atual.

@@ -44,9 +44,8 @@ ROOT = Path(__file__).parents[2]
 class WorkspaceTest(unittest.TestCase):
     def test_public_layers_exist(self) -> None:
         for relative in (
-            "bases/raw", "bases/curated/legislacao/federal", "bases/curated/regulamentos",
-            "bases/curated/tratados", "bases/curated/jurisprudencia", "bases/history",
-            "bases/derived", "projects", "skills", "harness", "manifests", "tools",
+            "bases/raw", "bases/curated/legislacao/federal", "bases/history",
+            "bases/derived", "skills", "manifests", "tools",
         ):
             with self.subTest(path=relative):
                 self.assertTrue((ROOT / relative).is_dir())

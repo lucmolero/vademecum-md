@@ -1,35 +1,46 @@
 # VadeMecum MD
 
-Legislação federal brasileira em Markdown, organizada para consulta, leitura e verificação de proveniência. Cada diploma tem identificador estável, metadados de curadoria, data de corte e fonte indicada.
+**Legislação federal brasileira para leitura humana e consulta com evidência.**
+Cada diploma publicado em Markdown tem identidade estável, metadados de
+curadoria, data de corte, fonte indicada e informações de proveniência.
 
-[Leitor online](https://lucmolero.github.io/vademecum-md/) · [Catálogo](https://lucmolero.github.io/vademecum-md/generated/catalog/) · [Arquivos Markdown](bases/curated/legislacao/federal/) · [Release v1.1.2](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.2)
+[Abrir o leitor](https://lucmolero.github.io/vademecum-md/) ·
+[Explorar o catálogo](https://lucmolero.github.io/vademecum-md/generated/catalog/) ·
+[Baixar a release v1.1.2](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.2) ·
+[Consultar o contrato de consumo](manifests/consumer-contract.json)
 
-> **Snapshot público:** 375 diplomas · corte do corpus em 21/10/2026. O corte identifica a coleção publicada e não representa atualização em tempo real.
+> **Snapshot v1.1.2:** 375 diplomas federais · data de corte: 21/10/2026.
+> O corte identifica esta coleção; o corpus não é atualizado em tempo real.
 
-## Consultar uma lei
+## Escolha como consultar
 
-Use o [catálogo online](https://lucmolero.github.io/vademecum-md/generated/catalog/) para pesquisar e ler no navegador. Para consultar o texto canônico, abra o arquivo Markdown no repositório ou baixe a [release versionada](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.2).
-
-| Diploma | Texto canônico |
+| Objetivo | Comece aqui |
 | --- | --- |
-| Constituição Federal de 1988 | [Markdown](bases/curated/legislacao/federal/constituicao/1988/constituicao-da-republica-federativa-do-brasil-1988.md) |
-| Código Civil — Lei nº 10.406/2002 | [Markdown](bases/curated/legislacao/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002.md) |
-| Código de Processo Civil — Lei nº 13.105/2015 | [Markdown](bases/curated/legislacao/federal/leis-ordinarias/2015/lei-ordinaria-13105-2015.md) |
-| Código Penal — Decreto-Lei nº 2.848/1940 | [Markdown](bases/curated/legislacao/federal/decretos-lei/1940/decreto-lei-2848-1940.md) |
-| Código de Processo Penal — Decreto-Lei nº 3.689/1941 | [Markdown](bases/curated/legislacao/federal/decretos-lei/1941/decreto-lei-3689-1941.md) |
-| Consolidação das Leis do Trabalho — Decreto-Lei nº 5.452/1943 | [Markdown](bases/curated/legislacao/federal/decretos-lei/1943/decreto-lei-5452-1943.md) |
+| **Ler e localizar uma norma** | Use o [catálogo e a busca do site](https://lucmolero.github.io/vademecum-md/generated/catalog/). Na página do diploma, confira o ID, a situação, o estado do texto e a data de corte. |
+| **Consultar com um agente de IA** | Forneça os arquivos ou a release ao agente e use a [skill de consulta jurídica](skills/vademecum-consulta-juridica/SKILL.md). A skill orienta a consulta e a citação; não concede acesso automático ao GitHub. |
+| **Integrar em dados ou ferramentas** | Comece por [`manifests/corpus.csv`](manifests/corpus.csv), [`manifests/consumer-contract.json`](manifests/consumer-contract.json) e o [grafo normativo](bases/derived/relacoes/normative-graph.jsonl). Fixe uma release para resultados reproduzíveis. |
 
-Para outros diplomas, navegue pelos diretórios de [legislação federal](bases/curated/legislacao/federal/) ou pelo catálogo.
+## Texto, evidência e camadas derivadas
 
-## Para agentes de IA
+O Markdown em [`bases/curated/legislacao/federal/`](bases/curated/legislacao/federal/)
+é a camada canônica de conteúdo deste projeto. Cada documento identifica a
+norma e registra os metadados disponíveis, como fonte, corte, situação,
+consolidação e hash.
 
-A [skill de consulta jurídica](skills/vademecum-consulta-juridica/SKILL.md) orienta a localização de normas, a conferência de situação e corte, a separação entre texto, metadados e relações, e a produção de citações rastreáveis.
+O leitor web, o catálogo, os índices e as relações ajudam a encontrar e navegar
+no corpus. São artefatos derivados e não substituem o texto canônico nem a
+publicação oficial. Para verificar uma norma, abra a fonte oficial indicada no
+documento.
 
-A skill não concede acesso automático ao repositório. Disponibilize ao agente os arquivos, a release ou uma ferramenta de leitura. Para cada resposta, preserve o ID do documento, o dispositivo, a release, o corte e a fonte oficial quando esses dados estiverem disponíveis.
+A release [v1.1.2](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.2)
+inclui o corpus versionado, manifesto, checksums e SBOM. Use o pacote e os
+[`SHA256SUMS.txt`](https://github.com/lucmolero/vademecum-md/releases/download/v1.1.2/SHA256SUMS.txt)
+para fixar e verificar os arquivos consultados.
 
-## Citação e proveniência
+## Citar uma consulta
 
-Exemplo de referência rastreável:
+Preserve o diploma, o dispositivo, o ID, a release, a data de corte e a fonte
+oficial. Por exemplo:
 
 ```text
 Código Civil, art. 1º
@@ -38,18 +49,33 @@ ID: br-federal-lei_ordinaria-10406-2002.
 Fonte oficial: https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406
 ```
 
-O Markdown canônico é a referência do conteúdo publicado neste repositório. O leitor web, o catálogo e o grafo são camadas derivadas para consulta e navegação; relações do grafo fornecem contexto e não substituem o texto legal.
+## Mapa do repositório
 
-## Escopo
+| Caminho | Papel |
+| --- | --- |
+| [`bases/curated/`](bases/curated/) | Textos canônicos publicados em Markdown. |
+| [`bases/derived/`](bases/derived/) | Catálogos, relações e outros artefatos regeneráveis. |
+| [`manifests/`](manifests/) | Inventário do corpus, contratos de consumo e dados de release. |
+| [`skills/`](skills/) | Instruções portáteis para consulta por agentes. |
+| [`site_docs/`](site_docs/) | Fontes do site editorial, que é gerado a partir do corpus. |
+| [`tools/`](tools/) · [`tests/`](tests/) | Ferramentas de aquisição, geração e validação; verificações automatizadas. |
+| [`docs/`](docs/) | Especificações, arquitetura e políticas do projeto. |
 
-O VadeMecum MD é uma seleção curada da legislação federal, não uma cobertura integral do Direito brasileiro nem uma publicação oficial ou aconselhamento jurídico. Situação e consolidação descrevem os metadados do documento no corte declarado. Confira a fonte oficial antes de citar ou aplicar uma norma.
+## Escopo e limites
 
-O código e os materiais autorais de marca e design seguem a [Licença MIT](LICENSE.md). Textos normativos e materiais de terceiros permanecem sujeitos ao regime aplicável a cada fonte.
+O VadeMecum MD é uma seleção curada de legislação federal, não uma cobertura
+integral do Direito brasileiro, publicação oficial ou aconselhamento jurídico.
+A situação e a consolidação descrevem os metadados publicados no corte indicado;
+confirme a fonte oficial antes de citar ou aplicar uma norma. Relações e estados
+incertos não bastam, por si só, para afirmar vigência atual.
 
-## Projeto
+## Projeto e governança
 
-- [Como contribuir](CONTRIBUTING.md)
-- [Política de segurança](SECURITY.md)
-- [Histórico de versões](CHANGELOG.md)
-- [Arquitetura](https://lucmolero.github.io/vademecum-md/architecture/)
-- [Contrato de consumo](https://lucmolero.github.io/vademecum-md/contract/)
+- [Metodologia e arquitetura](https://lucmolero.github.io/vademecum-md/architecture/)
+- [Limites jurídicos](https://lucmolero.github.io/vademecum-md/legal-limits/)
+- [Como contribuir e manter](CONTRIBUTING.md)
+- [Política de segurança](SECURITY.md) · [Histórico de versões](CHANGELOG.md)
+
+O código e os materiais autorais do projeto seguem a [Licença MIT](LICENSE.md).
+Os textos normativos e materiais de terceiros permanecem sujeitos ao regime
+aplicável às respectivas fontes.
