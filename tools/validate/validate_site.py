@@ -69,23 +69,69 @@ def validate(site: Path) -> list[str]:
             errors.append(f"{relative}: missing primary heading")
         if IMAGE_WITHOUT_ALT.search(text):
             errors.append(f"{relative}: image without alt attribute")
-    css = site / "stylesheets" / "extra.css"
-    if not css.is_file():
-        errors.append("site stylesheet missing")
-    elif ":focus" not in css.read_text(encoding="utf-8", errors="replace"):
-        errors.append("site stylesheet lacks visible focus styling")
+    css_paths = [site / "stylesheets" / name for name in ("extra.css", "launch.css")]
+    missing_css = [path.name for path in css_paths if not path.is_file()]
+    if missing_css:
+        errors.append(f"site stylesheet missing: {', '.join(missing_css)}")
     else:
-        css_text = css.read_text(encoding="utf-8", errors="replace")
-        errors.extend(validate_dark_theme_contrast(css_text))
+        css_text = "\n".join(path.read_text(encoding="utf-8", errors="replace") for path in css_paths)
+        if ":focus" not in css_text:
+            errors.append("site stylesheet lacks visible focus styling")
+        else:
+            errors.extend(validate_dark_theme_contrast(css_text))
         if "prefers-reduced-motion" not in css_text:
             errors.append("site stylesheet lacks reduced-motion policy")
-        if ".vmd-hero" not in css_text or ".law-hero" not in css_text:
-            errors.append("site stylesheet lacks product and reader surfaces")
+        if ".vmd-hero" not in css_text or ".law-hero" not in css_text or ".vmd-reader-app" not in css_text:
+            errors.append("site stylesheet lacks product, legacy and integrated reader surfaces")
+        for theme, foreground, background in (
+            ("paper", "#272b26", "#fffefa"),
+            ("sepia", "#302a21", "#f7f0e3"),
+            ("night", "#e9e7de", "#202621"),
+        ):
+            if _contrast_ratio(foreground, background) < 7:
+                errors.append(f"reader {theme} text contrast is below 7:1")
     javascript = site / "javascripts" / "portfolio.js"
     if not javascript.is_file():
         errors.append("site interaction script missing")
     elif "prefers-reduced-motion" not in javascript.read_text(encoding="utf-8", errors="replace"):
         errors.append("site interaction script lacks reduced-motion detection")
+    reader_script = site / "javascripts" / "reader.js"
+    if not reader_script.is_file() or "initIntegratedReader" not in reader_script.read_text(encoding="utf-8", errors="replace"):
+        errors.append("integrated reader interaction script is missing")
+    reader_index = site / "generated" / "reader-data" / "index.json"
+    if reader_index.is_file():
+        try:
+            index = json.loads(reader_index.read_text(encoding="utf-8"))
+            if index.get("schema") != "vademecum-reader-index/v1":
+                errors.append("reader index has an unsupported schema")
+            documents = index.get("documents", [])
+            if len(documents) != index.get("document_count"):
+                errors.append("reader index document count does not match its entries")
+            if not documents:
+                errors.append("reader index is empty")
+            data_dir = reader_index.parent / "documents"
+            if len(list(data_dir.glob("*.json"))) != len(documents):
+                errors.append("reader document payload count does not match the index")
+            for item in documents:
+                payload_path = data_dir / f'{item.get("id", "")}.json'
+                if not payload_path.is_file():
+                    errors.append(f"reader payload missing for {item.get('id', 'unknown')}")
+                    continue
+                try:
+                    payload = json.loads(payload_path.read_text(encoding="utf-8"))
+                    if payload.get("id") != item.get("id") or payload.get("schema") != "vademecum-reader-document/v1":
+                        errors.append(f"reader payload identity/schema mismatch: {payload_path.name}")
+                    if re.search(r"<(?:script|iframe|object|svg|math)\b", payload.get("article_html", ""), re.IGNORECASE):
+                        errors.append(f"reader payload contains active markup: {payload_path.name}")
+                except (OSError, json.JSONDecodeError) as error:
+                    errors.append(f"invalid reader payload {payload_path.name}: {error}")
+        except (OSError, json.JSONDecodeError) as error:
+            errors.append(f"invalid reader index: {error}")
+    else:
+        errors.append("integrated reader index is missing")
+    reader_page = site / "reader" / "index.html"
+    if not reader_page.is_file() or 'data-reader-app' not in reader_page.read_text(encoding="utf-8", errors="replace"):
+        errors.append("rendered integrated reader page is missing its app shell")
     return errors
 
 

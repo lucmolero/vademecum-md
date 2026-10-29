@@ -24,23 +24,24 @@ class SiteContractTest(unittest.TestCase):
         self.assertTrue((ROOT / "site_docs/assets/og-card.svg").is_file())
         self.assertTrue((ROOT / "site_docs/assets/og-card.png").is_file())
         self.assertTrue((ROOT / "site_docs/stylesheets/extra.css").is_file())
+        self.assertTrue((ROOT / "site_docs/stylesheets/launch.css").is_file())
         self.assertTrue((ROOT / "site_docs/javascripts/portfolio.js").is_file())
         self.assertTrue((ROOT / "site_docs/javascripts/reader.js").is_file())
+        self.assertTrue((ROOT / "site_docs/reader/index.md").is_file())
         self.assertTrue((ROOT / "site_docs/audiences.md").is_file())
         catalog = ROOT / "site_docs/generated/catalog.md"
         self.assertTrue(catalog.is_file())
         self.assertIn("Catálogo da legislação", catalog.read_text(encoding="utf-8"))
-        self.assertIn("Grandes Códigos da República", catalog.read_text(encoding="utf-8"))
+        self.assertIn("Grandes códigos e referências", catalog.read_text(encoding="utf-8"))
         homepage = ROOT / "site_docs/index.md"
         homepage_text = homepage.read_text(encoding="utf-8")
-        self.assertIn("O direito federal", homepage_text)
-        self.assertIn("Grandes Códigos da República", homepage_text)
-        self.assertIn("Leitura humana e consulta por agentes", homepage_text)
-        self.assertIn("Conhecimento para agentes", homepage_text)
+        self.assertIn("A lei,", homepage_text)
+        self.assertIn("Abrir o leitor integral", homepage_text)
+        self.assertIn("Texto. Fonte. Corte.", homepage_text)
+        self.assertIn("generated/reader-data/index.json", (ROOT / "site_docs/javascripts/portfolio.js").read_text(encoding="utf-8"))
         metrics = json.loads((ROOT / "site_docs/generated/metrics.json").read_text(encoding="utf-8"))
-        baseline = json.loads((ROOT / "manifests/baseline.json").read_text(encoding="utf-8"))
-        self.assertIn(f'{metrics["p0_ready"]}<sup>/{metrics["p0_total"]}</sup>', homepage_text)
-        self.assertEqual((metrics["p0_ready"], metrics["p0_total"]), (baseline["p0"]["ready"], baseline["p0"]["total"]))
+        self.assertEqual(metrics["corpus_count"], 375)
+        self.assertIn("snapshot", homepage_text)
         self.assertIn("Leitura jurídica", (ROOT / "site_docs/audiences.md").read_text(encoding="utf-8"))
         self.assertTrue((ROOT / "tools/release/build_sbom.py").is_file())
 
@@ -72,12 +73,22 @@ class SiteContractTest(unittest.TestCase):
     def test_generated_law_page_has_editorial_metadata_and_article_anchor(self):
         law = ROOT / "site_docs/generated/laws/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002.md"
         content = law.read_text(encoding="utf-8")
-        self.assertIn('class="law-hero"', content)
-        self.assertIn("## Art. 1º", content)
-        self.assertIn("data-copy-id=", content)
-        self.assertIn('class="reader-toolbar"', content)
-        self.assertIn('id="btn-quick-jump"', content)
-        self.assertIn('id="btn-focus-mode"', content)
+        self.assertIn('class="legacy-reader-redirect"', content)
+        self.assertIn("Abrir no leitor integrado", content)
+        self.assertIn("location.replace", content)
+
+    def test_integrated_reader_index_and_payloads_cover_the_corpus(self):
+        index = json.loads((ROOT / "site_docs/generated/reader-data/index.json").read_text(encoding="utf-8"))
+        self.assertEqual(index["schema"], "vademecum-reader-index/v1")
+        self.assertEqual(index["document_count"], 375)
+        self.assertEqual(len(index["documents"]), 375)
+        civil = ROOT / "site_docs/generated/reader-data/documents/br-federal-lei_ordinaria-10406-2002.json"
+        payload = json.loads(civil.read_text(encoding="utf-8"))
+        self.assertEqual(payload["schema"], "vademecum-reader-document/v1")
+        self.assertIn('id="art-1"', payload["article_html"])
+        self.assertNotIn("<script", payload["article_html"])
+        self.assertTrue(payload["sha256_source_raw"])
+        self.assertTrue(payload["source_url"].startswith("https://"))
 
     def test_environmental_licensing_law_uses_its_correct_public_title(self):
         self.assertEqual(

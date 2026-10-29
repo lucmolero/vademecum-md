@@ -42,6 +42,7 @@ theme:
   font: false
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/launch.css
 extra_javascript:
   - javascripts/portfolio.js
   - javascripts/reader.js
@@ -52,11 +53,12 @@ extra:
       link: https://github.com/lucmolero/vademecum-md
 nav:
   - Início: index.md
-  - Explorar legislação: generated/catalog.md
-  - Públicos e consumo: audiences.md
+  - Leitor integral: reader/index.md
+  - Catálogo: generated/catalog.md
+  - Como usar: audiences.md
   - Metodologia:
-      - Arquitetura: architecture.md
       - Visão geral: methodology.md
+      - Arquitetura: architecture.md
       - Contrato dos documentos: contract.md
       - Auditoria jurídica: legal-audit.md
       - Grafo normativo: graph.md
@@ -64,12 +66,13 @@ nav:
       - Exemplos de consumo: examples.md
       - Qualidade: quality.md
       - Atualizações: updates.md
-  - Governança:
+  - Projeto e transparência:
+      - Visão do projeto: portfolio.md
       - Proveniência: provenance.md
       - Segurança: security.md
       - Acessibilidade: accessibility.md
-      - Contribuição: contributing.md
       - Limites jurídicos: legal-limits.md
-  - Portfólio: portfolio.md
-  - Legislação: generated/laws/index.md
+  - Governança:
+      - Contribuição: contributing.md
+      - Releases e arquivos: generated/laws/index.md
   - Perguntas frequentes: faq.md

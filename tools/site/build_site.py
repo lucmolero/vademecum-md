@@ -9,7 +9,9 @@ from __future__ import annotations
 import argparse
 import csv
 import html
+from html.parser import HTMLParser
 import json
+import markdown
 import re
 import shutil
 import sys
@@ -93,17 +95,148 @@ def domain_label(value: str) -> str:
     return value.replace("_", " ").replace("-", " ").strip().title() or "Especializado"
 
 
+DOCUMENT_TYPE_LABELS = {
+    "ato_constitucional": "Ato constitucional",
+    "constituicao": "Constituição",
+    "decreto_lei": "Decreto-lei",
+    "decreto": "Decreto",
+    "lei_complementar": "Lei complementar",
+    "lei_ordinaria": "Lei ordinária",
+}
+
+
+def document_type_label(value: object) -> str:
+    key = str(value or "").strip().lower()
+    return DOCUMENT_TYPE_LABELS.get(key, key.replace("_", " ").replace("-", " ").title() or "Diploma")
+
+
+def document_number_label(value: object) -> str:
+    raw = str(value or "").strip()
+    if not raw or raw.lower() in {"none", "null", "nan"}:
+        return ""
+    if raw.isdigit():
+        return f"{int(raw):,}".replace(",", ".")
+    return raw
+
+
 def article_anchors(body: str) -> str:
-    """Add site-only headings before article lines without changing their text."""
+    """Promote article labels to headings without duplicating the legal text."""
     output: list[str] = []
     for line in body.strip().splitlines():
         match = ARTICLE_LINE.match(line) if line.lstrip().startswith(("**Art.", "Art.")) else None
         if match:
             label = re.sub(r"\s+", " ", match.group(1)).strip()
-            output.extend([f"## {label}", "", line])
+            remainder = match.group(2).strip()
+            output.extend([f"## {label}", ""])
+            if remainder:
+                output.append(remainder)
         else:
             output.append(line)
     return "\n".join(output).strip() + "\n"
+
+
+class _ReaderHTMLSanitizer(HTMLParser):
+    """Keep the semantic markup needed by the reader and discard active content."""
+
+    ALLOWED = {
+        "a", "abbr", "b", "blockquote", "br", "caption", "code", "dd", "del",
+        "details", "div", "dl", "dt", "em", "h2", "h3", "h4", "hr", "i",
+        "li", "ol", "p", "pre", "s", "small", "span", "strong", "sub", "summary",
+        "sup", "table", "tbody", "td", "th", "thead", "tr", "u", "ul",
+    }
+    VOID = {"br", "hr"}
+    DROP = {"embed", "iframe", "object", "script", "style", "svg", "math"}
+    ATTRS = {
+        "a": {"href", "rel", "target", "title"},
+        "details": {"open"},
+        "div": {"class", "id", "role", "aria-label"},
+        "h2": {"class", "id"},
+        "h3": {"class", "id"},
+        "h4": {"class", "id"},
+        "ol": {"class"},
+        "p": {"class", "id"},
+        "span": {"class", "id", "role", "aria-label"},
+        "table": {"class"},
+        "td": {"colspan", "rowspan"},
+        "th": {"colspan", "rowspan", "scope"},
+        "ul": {"class"},
+    }
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.parts: list[str] = []
+        self.stack: list[str] = []
+        self.drop_depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        tag = tag.lower()
+        if tag in self.DROP:
+            self.drop_depth += 1
+            return
+        if self.drop_depth or tag not in self.ALLOWED:
+            return
+        allowed = self.ATTRS.get(tag, set())
+        safe_attrs: list[str] = []
+        for name, value in attrs:
+            name = name.lower()
+            if name not in allowed or value is None:
+                continue
+            if name == "href":
+                compact = value.strip().lower()
+                if compact.startswith(("javascript:", "data:", "vbscript:")):
+                    continue
+            if name == "target" and value != "_blank":
+                continue
+            safe_attrs.append(f' {name}="{html.escape(value, quote=True)}"')
+        if tag == "a" and any(name == "target" and value == "_blank" for name, value in attrs):
+            if not any(item.startswith(" rel=") for item in safe_attrs):
+                safe_attrs.append(' rel="noreferrer"')
+        self.parts.append(f"<{tag}{''.join(safe_attrs)}>")
+        if tag not in self.VOID:
+            self.stack.append(tag)
+
+    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self.handle_starttag(tag, attrs)
+        if tag.lower() not in self.VOID:
+            self.handle_endtag(tag)
+
+    def handle_endtag(self, tag: str) -> None:
+        tag = tag.lower()
+        if tag in self.DROP and self.drop_depth:
+            self.drop_depth -= 1
+            return
+        if self.drop_depth or tag in self.VOID or tag not in self.stack:
+            return
+        index = len(self.stack) - 1 - self.stack[::-1].index(tag)
+        for closing in reversed(self.stack[index:]):
+            self.parts.append(f"</{closing}>")
+        del self.stack[index:]
+
+    def handle_data(self, data: str) -> None:
+        if not self.drop_depth:
+            self.parts.append(html.escape(data, quote=False))
+
+    def handle_comment(self, data: str) -> None:
+        return
+
+    def get_html(self) -> str:
+        for tag in reversed(self.stack):
+            self.parts.append(f"</{tag}>")
+        self.stack.clear()
+        return "".join(self.parts)
+
+
+def reader_html(markdown_body: str) -> str:
+    """Render trusted Markdown source into a safe HTML fragment for the single reader."""
+    rendered = markdown.markdown(
+        markdown_body,
+        extensions=["toc", "tables", "fenced_code", "footnotes", "sane_lists"],
+        output_format="html5",
+    )
+    sanitizer = _ReaderHTMLSanitizer()
+    sanitizer.feed(rendered)
+    sanitizer.close()
+    return sanitizer.get_html()
 
 
 RELATION_LABELS = {
@@ -342,6 +475,72 @@ Consulte sempre a fonte oficial e considere a data de corte antes de utilizar o 
 '''
 
 
+def reader_document(
+    metadata: dict[str, object],
+    body: str,
+    relations: list[dict[str, object]],
+    release_version: str,
+) -> dict[str, object]:
+    """Build the one-document payload loaded on demand by the integrated reader."""
+    document_id = str(metadata.get("id") or "")
+    canonical_title = str(metadata.get("titulo") or "Diploma normativo")
+    title = POPULAR_TITLES.get(document_id, canonical_title)
+    source = next(iter(metadata.get("fonte_oficial") or []), "")
+    article_body = contextualize_articles(body, relations, document_id)
+    article_body = re.sub(rf"^#\s+{re.escape(canonical_title)}\s*\n+", "", article_body, count=1, flags=re.IGNORECASE)
+    article_html = reader_html(article_anchors(article_body))
+    relation_cards = "".join(relation_markup(relation) for relation in relations)
+    relation_markup_html = (
+        f'<details class="relation-list"><summary>Exibir {len(relations)} relações registradas</summary>{relation_cards}</details>'
+        if len(relations) > 12 else relation_cards
+    )
+    return {
+        "schema": "vademecum-reader-document/v1",
+        "id": document_id,
+        "title": title,
+        "type": document_type_label(metadata.get("tipo")),
+        "number": document_number_label(metadata.get("numero")),
+        "year": str(metadata.get("ano") or ""),
+        "domain": domain_label(str(metadata.get("dominio") or "")),
+        "ementa": str(metadata.get("ementa") or ""),
+        "status": str(metadata.get("situacao") or "desconhecida"),
+        "status_label": status_label(str(metadata.get("situacao") or "desconhecida")),
+        "consolidation": str(metadata.get("consolidacao_status") or "desconhecida"),
+        "fidelity": str(metadata.get("fidelity_status") or "não informado"),
+        "cutoff": str(metadata.get("data_corte") or "não informado"),
+        "source_url": str(source),
+        "source_unit_id": str(metadata.get("source_unit_id") or ""),
+        "sha256_source_raw": str(metadata.get("sha256_source_raw") or ""),
+        "sha256_published_body": str(metadata.get("sha256_published_body") or ""),
+        "release": release_version,
+        "article_html": article_html,
+        "relations_html": reader_html(relation_markup_html),
+        "relation_count": len(relations),
+    }
+
+
+def legacy_reader_page(metadata: dict[str, object], source_path: str) -> str:
+    """Keep existing law URLs useful while moving their reading experience to /reader/."""
+    document_id = str(metadata.get("id") or "")
+    title = POPULAR_TITLES.get(document_id, str(metadata.get("titulo") or "Diploma normativo"))
+    github_path = f"https://github.com/lucmolero/vademecum-md/blob/main/bases/curated/legislacao/federal/{source_path}"
+    return f'''<div class="legacy-reader-redirect" data-document-id="{esc(document_id)}">
+<p class="eyebrow">VadeMecum MD · leitor integrado</p>
+<h1>{esc(title)}</h1>
+<p>Este diploma agora é lido no VadeMecum completo, com índice de artigos, fonte e data de corte no mesmo espaço.</p>
+<p><a class="md-button md-button--primary" href="../../../../../../reader/#/{esc(document_id)}">Abrir no leitor integrado <span aria-hidden="true">↗</span></a></p>
+<p><a href="{esc(github_path)}">Abrir o Markdown canônico no GitHub</a> · <a href="../../../../../../generated/catalog/">Voltar ao catálogo</a></p>
+</div>
+<script>
+(() => {{
+  const article = /^#(art-[a-z0-9-]+)$/i.exec(location.hash);
+  const suffix = article ? `/${{article[1]}}` : "";
+  location.replace(new URL(`../../../../../../reader/#/{esc(document_id)}${{suffix}}`, location.href).href);
+}})();
+</script>
+'''
+
+
 def load_metrics(rows: list[dict[str, str]]) -> dict[str, object]:
     release_path = ROOT / "manifests/release.json"
     baseline_path = ROOT / "manifests/baseline.json"
@@ -369,236 +568,306 @@ def load_metrics(rows: list[dict[str, str]]) -> dict[str, object]:
 
 
 def home_page(rows: list[dict[str, str]], metrics: dict[str, object]) -> str:
-    domains = Counter(domain_key(row["domain"] or "especializado") for row in rows)
-    labels = {domain_key(row["domain"] or "especializado"): domain_label(row["domain"] or "especializado") for row in rows}
-    domain_cards = "\n".join(
-        f'<a class="domain-card reveal" href="generated/catalog/#{slugify(labels[domain])}">'
-        f'<span>{esc(labels[domain])}</span><strong>{count:03d}</strong></a>'
-        for domain, count in sorted(domains.items())
-    )
-    return f'''<div class="vmd-hero">
-  <div class="hero-copy reveal">
-    <img class="hero-logo" src="assets/logo-lockup.svg" alt="VadeMecum MD" />
-    <p class="eyebrow">Corpus federal curado <span class="eyebrow-dot"></span> release {esc(metrics["version"])}</p>
-    <h1>O direito federal,<br><em>em estado legível.</em></h1>
-    <p class="hero-lede">Legislação brasileira estruturada para leitura humana, validação auditável e uso por máquinas.</p>
-    <div class="hero-actions">
-      <a class="md-button md-button--primary" href="generated/catalog/">Explorar legislação <span aria-hidden="true">↗</span></a>
-      <a class="md-button" href="methodology/">Ver metodologia</a>
+    domain_counts = Counter(domain_key(row["domain"] or "especializado") for row in rows)
+    domain_names = {domain_key(row["domain"] or "especializado"): domain_label(row["domain"] or "especializado") for row in rows}
+    by_id = {row["id"]: row for row in rows}
+    quick_specs = [
+        ("br-federal-constituicao-1988", "CF/88", "Constituição Federal"),
+        ("br-federal-lei_ordinaria-10406-2002", "CÓDIGO CIVIL", "Código Civil"),
+        ("br-federal-lei_ordinaria-13105-2015", "PROCESSO CIVIL", "Código de Processo Civil"),
+        ("br-federal-decreto_lei-2848-1940", "CÓDIGO PENAL", "Código Penal"),
+        ("br-federal-decreto_lei-3689-1941", "PROCESSO PENAL", "Código de Processo Penal"),
+        ("br-federal-decreto_lei-5452-1943", "TRABALHO", "Consolidação das Leis do Trabalho"),
+    ]
+    quick_cards = []
+    for document_id, kind, title in quick_specs:
+        row = by_id.get(document_id)
+        if not row:
+            continue
+        quick_cards.append(
+            f'<a class="vmd-quick-card" href="reader/#/{esc(document_id)}">'
+            f'<span>{esc(kind)}</span><strong>{esc(title)}</strong>'
+            f'<small>{esc(status_label(row["status"]))} no corte · abrir no leitor <b aria-hidden="true">↗</b></small></a>'
+        )
+    topic_specs = [
+        ("administrativo", "Administrativo", "Estado, gestão e políticas públicas"),
+        ("ambiental", "Ambiental", "Ambiente e recursos naturais"),
+        ("civil", "Civil", "Pessoas, bens e relações privadas"),
+        ("constitucional", "Constitucional", "Constituição e direitos fundamentais"),
+        ("direitos_sociais", "Direitos sociais", "Proteção social e direitos coletivos"),
+        ("penal", "Penal", "Crimes, garantias e processo"),
+        ("trabalhista_previdenciario", "Trabalho e previdência", "Relações de trabalho e proteção previdenciária"),
+        ("tributario_financeiro", "Tributário e financeiro", "Tributos e organização financeira"),
+    ]
+    topic_cards = []
+    for key, title, description in topic_specs:
+        count = domain_counts.get(key, 0)
+        if not count:
+            continue
+        anchor = slugify(domain_names.get(key, title))
+        topic_cards.append(
+            f'<a class="vmd-topic-card" href="generated/catalog/#{esc(anchor)}">'
+            f'<span>{esc(title)}</span><small>{count:03d} diplomas</small>'
+            f'<p>{esc(description)}</p><b aria-hidden="true">↗</b></a>'
+        )
+    return f'''<div class="vmd-home">
+  <nav class="vmd-home-nav" aria-label="Atalhos da página inicial">
+    <span>ARQUIVO NORMATIVO <i aria-hidden="true"></i> CORTE {esc(metrics["cutoff"])}</span>
+    <div><a href="reader/">Leitor completo</a><a href="generated/catalog/">Catálogo</a><a href="methodology/">Como funciona</a><a href="https://github.com/lucmolero/vademecum-md" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+  </nav>
+
+  <section class="vmd-home-hero" aria-labelledby="vmd-home-title">
+    <div class="vmd-home-copy">
+      <p class="vmd-kicker"><span aria-hidden="true"></span> VADEMECUM MD · LEGISLAÇÃO FEDERAL</p>
+      <h1 id="vmd-home-title">A lei,<br><em>sem perder</em><br>o contexto.</h1>
+      <p class="vmd-home-lede">Um leitor para atravessar o texto normativo com fonte, data de corte e estrutura sempre à vista.</p>
+      <form class="vmd-home-search" id="home-reader-search" role="search" action="reader/" method="get" data-reader-home-search>
+        <label class="vmd-visually-hidden" for="home-query">Buscar legislação por nome, número ou tipo</label>
+        <span class="vmd-search-mark" aria-hidden="true">⌕</span>
+        <input id="home-query" name="q" type="search" placeholder="Código, número ou nome da norma…" autocomplete="off" aria-controls="home-search-results" aria-expanded="false" />
+        <button type="submit">Buscar <span aria-hidden="true">↗</span></button>
+        <div class="vmd-search-results" id="home-search-results" role="listbox" aria-label="Normas encontradas" hidden></div>
+      </form>
+      <p class="vmd-search-note"><kbd>Ctrl</kbd> + <kbd>K</kbd> para buscar <span>·</span> 375 diplomas no snapshot</p>
+      <div class="vmd-home-actions"><a class="vmd-primary-action" href="reader/">Abrir o leitor integral <span aria-hidden="true">→</span></a><a class="vmd-secondary-action" href="generated/catalog/">Explorar por área</a></div>
     </div>
-    <p class="hero-disclaimer">Corpus autoral e derivado de fontes públicas oficiais. Não é publicação oficial nem aconselhamento jurídico.</p>
-  </div>
-  <div class="hero-visual reveal" aria-hidden="true">
-    <svg class="normative-constellation" viewBox="0 0 520 420" role="presentation">
-      <defs>
-        <linearGradient id="vmd-line" x1="0" x2="1">
-          <stop offset="0" stop-color="#B48A3C" stop-opacity=".12" />
-          <stop offset=".5" stop-color="#B48A3C" stop-opacity=".9" />
-          <stop offset="1" stop-color="#2D7659" stop-opacity=".15" />
-        </linearGradient>
-        <filter id="vmd-glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-      </defs>
-      <g class="constellation-lines" stroke="url(#vmd-line)" fill="none">
-        <path d="M60 250C118 82 248 68 330 180S448 326 470 100" />
-        <path d="M42 328C154 310 194 170 292 118S395 92 478 286" />
-        <path d="M82 96C170 152 190 290 318 300S425 250 474 210" />
-      </g>
-      <g class="constellation-nodes" filter="url(#vmd-glow)">
-        <circle cx="60" cy="250" r="7"/><circle cx="118" cy="126" r="4"/><circle cx="190" cy="284" r="5"/>
-        <circle cx="248" cy="72" r="6"/><circle cx="330" cy="180" r="10"/><circle cx="392" cy="292" r="5"/>
-        <circle cx="470" cy="100" r="7"/><circle cx="478" cy="286" r="4"/><circle cx="82" cy="96" r="5"/>
-      </g>
-      <g class="constellation-labels" fill="#FBF8F0" font-family="monospace" font-size="11">
-        <text x="315" y="162">ART. 01</text><text x="445" y="84">FONTE</text><text x="42" y="348">HASH</text>
-      </g>
-    </svg>
-    <div class="hero-visual-caption"><span class="signal"></span> estrutura normativa em movimento</div>
-  </div>
+    <aside class="vmd-reading-preview" aria-label="Exemplo de leitura no VadeMecum MD">
+      <div class="vmd-preview-top"><span>EXEMPLO DE LEITURA</span><span>CF · ART. 5º</span></div>
+      <div class="vmd-preview-paper">
+        <div class="vmd-preview-meta"><span>CONSTITUIÇÃO FEDERAL</span><span>1988</span></div>
+        <h2>Dos direitos e garantias fundamentais</h2>
+        <p><b>Art. 5º</b> Todos são iguais perante a lei, sem distinção de qualquer natureza…</p>
+        <div class="vmd-preview-rule"></div>
+        <div class="vmd-preview-source"><span>FONTE OFICIAL IDENTIFICADA</span><span>CORTE 2026-10-21</span></div>
+      </div>
+      <div class="vmd-preview-foot"><span>Texto com contexto verificável</span><span aria-hidden="true">↗</span></div>
+    </aside>
+  </section>
+
+  <section class="vmd-snapshot" aria-label="Estado desta coleção">
+    <div><strong>{int(metrics["corpus_count"])}</strong><span>diplomas curados</span></div>
+    <div><strong>{esc(metrics["cutoff"])}</strong><span>data de corte do corpus</span></div>
+    <div><strong>v{esc(metrics["version"])}</strong><span>release versionada</span></div>
+    <p>Snapshot fixo; não representa atualização em tempo real.</p>
+  </section>
+
+  <section class="vmd-quick-section" id="normas-essenciais">
+    <div class="vmd-section-heading"><div><p class="vmd-kicker">CONSULTA DIRETA</p><h2>Normas essenciais</h2><p>Abra um diploma no leitor e continue a consulta no mesmo espaço.</p></div><a href="reader/">Ver o acervo completo <span aria-hidden="true">↗</span></a></div>
+    <div class="vmd-quick-grid">{"".join(quick_cards)}</div>
+  </section>
+
+  <section class="vmd-subject-section" id="assuntos">
+    <div class="vmd-section-heading"><div><p class="vmd-kicker">ÍNDICE TEMÁTICO</p><h2>Entre pelo assunto</h2><p>Os totais acompanham os domínios publicados no catálogo deste snapshot.</p></div><a href="generated/catalog/">Todos os domínios <span aria-hidden="true">↗</span></a></div>
+    <div class="vmd-topic-grid">{"".join(topic_cards)}</div>
+  </section>
+
+  <section class="vmd-trust-section" aria-labelledby="vmd-trust-title">
+    <div><p class="vmd-kicker">LEITURA COM PROVENIÊNCIA</p><h2 id="vmd-trust-title">Texto. Fonte. Corte.</h2></div>
+    <div><p>O VadeMecum MD é uma coleção curada, derivada de fontes públicas oficiais. O corte identifica a versão consultada; <strong>a publicação oficial continua sendo a autoridade textual.</strong></p><a href="legal-limits/">Entenda as fontes e os limites jurídicos ↗</a></div>
+  </section>
+
+  <footer class="vmd-home-footer"><span>VadeMecum MD · release v{esc(metrics["version"])} · snapshot {esc(metrics["cutoff"])}</span><span>{esc(metrics["tests"])} verificações automatizadas · <a href="https://github.com/lucmolero/vademecum-md">código aberto ↗</a></span></footer>
 </div>
-
-<div class="metric-grid">
-  <a class="metric-card reveal" href="generated/catalog/"><span>Diplomas curados</span><strong>{metrics["corpus_count"]}</strong><small>corpus federal</small></a>
-  <a class="metric-card reveal" href="quality/"><span>Núcleo P0</span><strong>{metrics["p0_ready"]}<sup>/{metrics["p0_total"]}</sup></strong><small>consolidado</small></a>
-  <a class="metric-card reveal" href="graph/"><span>Relações</span><strong>{metrics["relations"]:,}</strong><small>registros publicados, inclui inversas</small></a>
-  <a class="metric-card reveal" href="quality/"><span>Data de corte</span><strong>{esc(metrics["cutoff"])}</strong><small>snapshot público</small></a>
-</div>
-
-<section class="featured-codes-section reveal">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Destaques do ordenamento</p>
-      <h2>Grandes Códigos da República</h2>
-    </div>
-    <a href="generated/catalog/">Explorar todos os 375 diplomas ↗</a>
-  </div>
-  <p class="snapshot-note">As situações exibidas correspondem ao corte do corpus ({esc(metrics["cutoff"])}). Confirme a fonte oficial para verificar a situação aplicável na data da consulta.</p>
-  <div class="featured-codes-grid">
-    <a class="code-card" href="generated/laws/federal/constituicao/1988/constituicao-da-republica-federativa-do-brasil-1988/">
-      <div class="code-card-badge">CF/88</div>
-      <h3>Constituição Federal</h3>
-      <p>Norma fundamental da República promulgada em 5 de outubro de 1988.</p>
-      <span class="code-card-status status-em_vigor">Em vigor</span>
-    </a>
-    <a class="code-card" href="generated/laws/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002/">
-      <div class="code-card-badge">Lei 10.406</div>
-      <h3>Código Civil</h3>
-      <p>Direitos e deveres das pessoas, bens, obrigações e contratos civis.</p>
-      <span class="code-card-status status-em_vigor">Em vigor</span>
-    </a>
-    <a class="code-card" href="generated/laws/federal/leis-ordinarias/2015/lei-ordinaria-13105-2015/">
-      <div class="code-card-badge">Lei 13.105</div>
-      <h3>Código de Processo Civil</h3>
-      <p>Normas fundamentais e ritos de tutela jurisdicional perante os tribunais.</p>
-      <span class="code-card-status status-em_vigor">Em vigor</span>
-    </a>
-    <a class="code-card" href="generated/laws/federal/decretos-lei/1940/decreto-lei-2848-1940/">
-      <div class="code-card-badge">DL 2.848</div>
-      <h3>Código Penal</h3>
-      <p>Parte Geral e tipificação de crimes e contravenções no âmbito repressivo.</p>
-      <span class="code-card-status status-em_vigor">Em vigor</span>
-    </a>
-    <a class="code-card" href="generated/laws/federal/decretos-lei/1941/decreto-lei-3689-1941/">
-      <div class="code-card-badge">DL 3.689</div>
-      <h3>Código de Processo Penal</h3>
-      <p>Inquérito policial, instrução criminal, garantias processuais e provas.</p>
-      <span class="code-card-status status-em_vigor">Em vigor</span>
-    </a>
-    <a class="code-card" href="generated/laws/federal/decretos-lei/1943/decreto-lei-5452-1943/">
-      <div class="code-card-badge">DL 5.452</div>
-      <h3>Consolidação das Leis do Trabalho</h3>
-      <p>Relações individuais e coletivas de trabalho e direito processual trabalhista.</p>
-      <span class="code-card-status status-em_vigor">Em vigor</span>
-    </a>
-  </div>
-</section>
-
-<section class="audiences-section reveal">
-  <div class="section-heading"><div><p class="eyebrow">Leitura humana e consulta por agentes</p><h2>Conhecimento normativo com evidência.</h2></div><a href="audiences/">Como usar</a></div>
-  <div class="audience-grid audience-primary-grid">
-    <a class="audience-card audience-law" href="audiences/#para-advogados-e-pesquisadores-juridicos"><span class="audience-kicker">01 · leitura humana</span><h3>Advogados e pesquisadores</h3><p>Texto integral, situação, fonte oficial e citação por dispositivo.</p><span class="audience-link">Ler com contexto →</span></a>
-    <a class="audience-card audience-agent" href="audiences/#para-agentes-de-ia"><span class="audience-kicker">02 · agentes de IA</span><h3>Conhecimento para agentes</h3><p>Corpus rastreável para localizar normas, conferir o corte e produzir referências com proveniência.</p><span class="audience-link">Ler instruções da skill →</span></a>
-  </div>
-  <p class="integration-audience"><strong>Integração:</strong> dados estruturados, IDs estáveis, hashes e manifestos para desenvolvedores conectarem o corpus a ferramentas e pipelines.</p>
-</section>
-
-<section class="editorial-section reveal">
-  <p class="eyebrow">A ponte</p>
-  <h2>Texto jurídico com estrutura de sistema.</h2>
-  <p class="section-lede">O VadeMecum MD trata o diploma como texto editorial e como unidade computável, sem confundir as duas camadas.</p>
-  <div class="split-principles">
-    <div><span class="principle-index">01</span><h3>Leitura jurídica</h3><p>Texto integral, hierarquia, ementa, vigência, fonte e data de corte em uma experiência de leitura confortável.</p></div>
-    <div><span class="principle-index">02</span><h3>Consumo computável</h3><p>IDs estáveis, hashes, manifests, relações normativas e artefatos derivados para ferramentas e agentes.</p></div>
-  </div>
-</section>
-
-<section class="pipeline-section reveal">
-  <div><p class="eyebrow">Método</p><h2>Do documento à evidência.</h2></div>
-  <div class="pipeline-list">
-    <a href="sources/"><span>01</span><strong>Fonte oficial</strong><small>aquisição pública allowlisted</small></a>
-    <a href="contract/"><span>02</span><strong>Normalização</strong><small>transformação determinística</small></a>
-    <a href="legal-audit/"><span>03</span><strong>Auditoria</strong><small>fidelidade e anomalias</small></a>
-    <a href="graph/"><span>04</span><strong>Relações</strong><small>histórico e grafo normativo</small></a>
-    <a href="quality/"><span>05</span><strong>Release</strong><small>gates e pacote reproduzível</small></a>
-  </div>
-</section>
-
-<section class="domains-section reveal">
-  <div class="section-heading"><div><p class="eyebrow">Explorar</p><h2>Uma entrada para cada domínio.</h2></div><a href="generated/catalog/">Ver catálogo completo ↗</a></div>
-  <div class="domain-grid">{domain_cards}</div>
-</section>
-
-<section class="trust-section reveal">
-  <div class="trust-mark">VMD<span>·</span>01</div>
-  <div><p class="eyebrow">Transparência por design</p><h2>Auditável não significa oficial.</h2><p>O projeto documenta fontes, transformações, decisões e limitações. A fonte oficial continua sendo a autoridade textual. O site é uma camada de leitura regenerável.</p><a class="text-link" href="legal-limits/">Conhecer os limites jurídicos ↗</a></div>
-</section>
-
-<div class="home-footer-note"><strong>Snapshot {esc(metrics["cutoff"])}</strong><span>·</span><span>{esc(metrics["tests"])} testes automatizados</span><span>·</span><a href="https://github.com/lucmolero/vademecum-md">código aberto no GitHub ↗</a></div>
 '''
-
 
 def build() -> dict[str, int]:
     release_path = ROOT / "manifests/release.json"
     release_data = json.loads(release_path.read_text(encoding="utf-8")) if release_path.is_file() else {}
     release_version = str(release_data.get("version") or "")
-    laws = GENERATED / "laws"
     if GENERATED.exists():
         for child in GENERATED.iterdir():
             if child.is_dir():
                 shutil.rmtree(child)
             else:
                 child.unlink()
+    laws = GENERATED / "laws"
+    reader_data = GENERATED / "reader-data"
+    documents_dir = reader_data / "documents"
     laws.mkdir(parents=True, exist_ok=True)
+    documents_dir.mkdir(parents=True, exist_ok=True)
+
     rows: list[dict[str, str]] = []
+    documents: list[tuple[str, dict[str, object], str]] = []
     for source in sorted((CURATED / "federal").rglob("*.md")):
         metadata, body = parse_frontmatter(source.read_text(encoding="utf-8"), strict=True)
         relative = source.relative_to(CURATED).as_posix()
-        target = laws / relative
-        target.parent.mkdir(parents=True, exist_ok=True)
+        document_id = str(metadata.get("id") or "")
+        if not re.fullmatch(r"[a-z0-9_-]+", document_id, re.IGNORECASE):
+            raise ValueError(f"Unsafe or missing document ID for reader data: {relative}")
+        documents.append((relative, metadata, body))
         rows.append({
-            "id": str(metadata.get("id", "")),
+            "id": document_id,
             "title": str(metadata.get("titulo", source.stem)),
+            "type": document_type_label(metadata.get("tipo")),
+            "number": document_number_label(metadata.get("numero")),
+            "year": str(metadata.get("ano", "")),
             "domain": str(metadata.get("dominio", "")),
             "status": str(metadata.get("situacao", "desconhecida")),
             "priority": str(metadata.get("prioridade", "P2")),
-            "source": next(iter(metadata.get("fonte_oficial") or []), ""),
+            "source": str(next(iter(metadata.get("fonte_oficial") or []), "")),
             "cutoff": str(metadata.get("data_corte", "")),
+            "consolidation": str(metadata.get("consolidacao_status", "desconhecida")),
+            "fidelity": str(metadata.get("fidelity_status", "não informado")),
+            "ementa": str(metadata.get("ementa", "")),
             "path": f"laws/{relative}",
         })
+
     graph_relations = relation_index(rows)
-    # Re-render after the full corpus index is known so both endpoints use their
-    # canonical titles and every relation is represented with its original direction.
-    for source in sorted((CURATED / "federal").rglob("*.md")):
-        metadata, body = parse_frontmatter(source.read_text(encoding="utf-8"), strict=True)
-        relative = source.relative_to(CURATED).as_posix()
-        target = laws / relative
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(
-            law_page(metadata, body, graph_relations.get(str(metadata.get("id") or ""), []), release_version),
+    by_id = {row["id"]: row for row in rows}
+    for relative, metadata, body in documents:
+        document_id = str(metadata.get("id") or "")
+        relations = graph_relations.get(document_id, [])
+        legacy_target = laws / relative
+        legacy_target.parent.mkdir(parents=True, exist_ok=True)
+        legacy_target.write_text(legacy_reader_page(metadata, relative), encoding="utf-8", newline="\n")
+        payload = reader_document(metadata, body, relations, release_version)
+        (documents_dir / f"{document_id}.json").write_text(
+            json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n",
             encoding="utf-8", newline="\n",
         )
-    by_domain: dict[str, list[dict[str, str]]] = {}
+
+    metrics = load_metrics(rows)
+    domain_rows: dict[str, list[dict[str, str]]] = {}
     for row in rows:
-        by_domain.setdefault(domain_key(row["domain"]), []).append(row)
+        domain_rows.setdefault(domain_key(row["domain"]), []).append(row)
+    domain_index = [
+        {
+            "key": key,
+            "title": domain_label(domain_rows[key][0]["domain"]),
+            "slug": slugify(domain_label(domain_rows[key][0]["domain"])),
+            "count": len(domain_rows[key]),
+        }
+        for key in sorted(domain_rows)
+    ]
+    index_documents = []
+    for row in sorted(rows, key=lambda item: (domain_label(item["domain"]).casefold(), POPULAR_TITLES.get(item["id"], item["title"]).casefold())):
+        display_title = POPULAR_TITLES.get(row["id"], row["title"])
+        index_documents.append({
+            "id": row["id"],
+            "title": display_title,
+            "canonical_title": row["title"],
+            "type": row["type"],
+            "number": row["number"],
+            "year": row["year"],
+            "domain": domain_label(row["domain"]),
+            "domain_key": domain_key(row["domain"]),
+            "status": row["status"],
+            "status_label": status_label(row["status"]),
+            "priority": row["priority"],
+            "cutoff": row["cutoff"],
+            "ementa": row["ementa"],
+            "aliases": list(dict.fromkeys([display_title, row["title"], f'{row["type"]} {row["number"]}/{row["year"]}'])),
+        })
+    reader_index = {
+        "schema": "vademecum-reader-index/v1",
+        "release": release_version,
+        "cutoff": metrics["cutoff"],
+        "document_count": len(rows),
+        "domains": domain_index,
+        "documents": index_documents,
+    }
+    (reader_data / "index.json").write_text(
+        json.dumps(reader_index, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8", newline="\n",
+    )
+
+    code_order = [
+        "br-federal-constituicao-1988",
+        "br-federal-lei_ordinaria-10406-2002",
+        "br-federal-lei_ordinaria-13105-2015",
+        "br-federal-decreto_lei-2848-1940",
+        "br-federal-decreto_lei-3689-1941",
+        "br-federal-decreto_lei-5452-1943",
+        "br-federal-lei_ordinaria-8078-1990",
+        "br-federal-lei_ordinaria-14133-2021",
+        "br-federal-lei_ordinaria-8906-1994",
+        "br-federal-lei_ordinaria-5172-1966",
+    ]
     catalog = [
         "# Catálogo da legislação",
         "",
-        "> Corpus federal curado. Cada entrada aponta para uma página de leitura derivada do Markdown canônico.",
+        '<div class="vmd-catalog-hero">',
+        '<p class="vmd-kicker">ACERVO FEDERAL · SNAPSHOT VERSIONADO</p>',
+        "<p>Encontre um diploma pelo nome, número ou área. Abra qualquer resultado no leitor integrado para ler o texto e verificar seu contexto.</p>",
+        f'<div class="vmd-catalog-facts"><span><strong>{len(rows)}</strong> diplomas</span><span>Release <strong>v{esc(metrics["version"])}</strong></span><span>Corte <strong>{esc(metrics["cutoff"])}</strong></span></div>',
+        '<a class="vmd-primary-action" href="../../reader/">Abrir o leitor completo <span aria-hidden="true">↗</span></a>',
+        "</div>",
         "",
-        f"Documentos: **{len(rows)}** · Data de corte: **{max((row['cutoff'] for row in rows), default='não informada')}**",
+        "## Grandes códigos e referências",
         "",
-        "## Grandes Códigos da República",
-        "",
-        "| Diploma | Situação registrada no corte do documento | Prioridade |",
-        "| --- | --- | --- |",
-        "| [Constituição da República Federativa do Brasil](laws/federal/constituicao/1988/constituicao-da-republica-federativa-do-brasil-1988.md) | `Em vigor` | `P0` |",
-        "| [Código Civil (Lei nº 10.406/2002)](laws/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002.md) | `Em vigor` | `P0` |",
-        "| [Código de Processo Civil (Lei nº 13.105/2015)](laws/federal/leis-ordinarias/2015/lei-ordinaria-13105-2015.md) | `Em vigor` | `P0` |",
-        "| [Código Penal (Decreto-Lei nº 2.848/1940)](laws/federal/decretos-lei/1940/decreto-lei-2848-1940.md) | `Em vigor` | `P0` |",
-        "| [Código de Processo Penal (Decreto-Lei nº 3.689/1941)](laws/federal/decretos-lei/1941/decreto-lei-3689-1941.md) | `Em vigor` | `P0` |",
-        "| [Consolidação das Leis do Trabalho (Decreto-Lei nº 5.452/1943)](laws/federal/decretos-lei/1943/decreto-lei-5452-1943.md) | `Em vigor` | `P0` |",
-        "| [Código de Defesa do Consumidor (Lei nº 8.078/1990)](laws/federal/leis-ordinarias/1990/lei-ordinaria-8078-1990.md) | `Em vigor` | `P0` |",
-        "| [Nova Lei de Licitações e Contratos (Lei nº 14.133/2021)](laws/federal/leis-ordinarias/2021/lei-ordinaria-14133-2021.md) | `Em vigor` | `P0` |",
-        "| [Estatuto da Advocacia e da OAB (Lei nº 8.906/1994)](laws/federal/leis-ordinarias/1994/lei-ordinaria-8906-1994.md) | `Em vigor` | `P0` |",
-        "| [Código Tributário Nacional (Lei nº 5.172/1966)](laws/federal/leis-ordinarias/1966/lei-ordinaria-5172-1966.md) | `Em vigor` | `P0` |",
-        "",
-        "---",
-        "",
+        '<div class="vmd-catalog-featured">',
     ]
-    for domain in sorted(by_domain):
-        slug = slugify(domain)
-        catalog.extend([f'<div id="{esc(slug)}"></div>', f"## {esc(domain_label(domain))}", "", "| Diploma | Situação registrada no corte do documento | Prioridade |", "| --- | --- | --- |"])
-        for row in by_domain[domain]:
+    for document_id in code_order:
+        row = by_id.get(document_id)
+        if not row:
+            continue
+        label = POPULAR_TITLES.get(document_id, row["title"])
+        number_year = f'{row["number"]}/{row["year"]}' if row["number"] else row["year"]
+        catalog.extend([
+            f'<a class="vmd-catalog-code" href="../../reader/#/{esc(document_id)}">',
+            f'<span>{esc(row["type"])} · {esc(number_year)}</span>',
+            f'<strong>{esc(label)}</strong>',
+            f'<small>{esc(status_label(row["status"]))} no corte <b aria-hidden="true">↗</b></small>',
+            "</a>",
+        ])
+    catalog.extend(["</div>", "", "## Navegar por área", "", '<nav class="vmd-catalog-index" aria-label="Índice de áreas">'])
+    for item in domain_index:
+        catalog.append(
+            f'<a href="#{esc(item["slug"])}"><span>{esc(item["title"])}</span><small>{int(item["count"]):03d}</small></a>'
+        )
+    catalog.extend(["</nav>", ""])
+    for domain in sorted(domain_rows, key=lambda key: domain_label(domain_rows[key][0]["domain"]).casefold()):
+        label = domain_label(domain_rows[domain][0]["domain"])
+        slug = slugify(label)
+        catalog.extend([
+            f'<div class="vmd-catalog-domain" id="{esc(slug)}"></div>',
+            f"## {esc(label)}",
+            "",
+            '<div class="vmd-table-wrap"><table class="vmd-catalog-table">',
+            '<thead><tr><th scope="col">Diploma</th><th scope="col">Situação no corte</th><th scope="col">Prioridade</th></tr></thead><tbody>',
+        ])
+        for row in sorted(domain_rows[domain], key=lambda item: POPULAR_TITLES.get(item["id"], item["title"]).casefold()):
             display_title = POPULAR_TITLES.get(row["id"], row["title"])
-            catalog.append(f"| [{display_title}]({row['path']}) | `{status_label(row['status'])}` | `{row['priority']}` |")
-        catalog.append("")
+            number_year = f'{row["number"]}/{row["year"]}' if row["number"] else row["year"]
+            catalog.append(
+                f'<tr><td><a href="../../reader/#/{esc(row["id"])}">{esc(display_title)}</a>'
+                f'<span class="vmd-catalog-subtitle">{esc(row["type"])} · {esc(number_year)}</span></td>'
+                f'<td><span class="vmd-status-text">{esc(status_label(row["status"]))}</span></td>'
+                f'<td><span class="vmd-priority">{esc(row["priority"])}</span></td></tr>'
+            )
+        catalog.extend(["</tbody></table></div>", ""])
     (GENERATED / "catalog.md").write_text("\n".join(catalog) + "\n", encoding="utf-8", newline="\n")
-    (laws / "index.md").write_text("# Legislação\n\nNavegue pelo catálogo para abrir um diploma.\n", encoding="utf-8", newline="\n")
-    metrics = load_metrics(rows)
+
+    law_index = f'''# Arquivos da legislação
+
+<div class="vmd-library-index">
+<p class="vmd-kicker">DISTRIBUIÇÃO E LEITURA</p>
+<h2>O acervo em três formas</h2>
+<p>Use o leitor para percorrer as normas no navegador, o catálogo para navegar por áreas ou a release para baixar e fixar uma cópia reproduzível.</p>
+<div class="vmd-library-links">
+<a href="../../reader/"><strong>Leitor integral</strong><span>Leia os diplomas no mesmo espaço, com índice de artigos e proveniência.</span></a>
+<a href="../catalog/"><strong>Catálogo completo</strong><span>Veja os diplomas agrupados por área, estado e prioridade.</span></a>
+<a href="https://github.com/lucmolero/vademecum-md/releases"><strong>Releases versionadas ↗</strong><span>Baixe o corpus, manifestos e checksums da versão escolhida.</span></a>
+<a href="https://github.com/lucmolero/vademecum-md/tree/main/bases/curated/legislacao/federal"><strong>Markdown canônico ↗</strong><span>Consulte os arquivos de origem do leitor no repositório.</span></a>
+</div>
+<p class="vmd-library-note">A release consultada tem corte em <strong>{esc(metrics["cutoff"])}</strong>. O site não representa atualização em tempo real nem substitui a publicação oficial.</p>
+</div>
+'''
+    (laws / "index.md").write_text(law_index, encoding="utf-8", newline="\n")
+
     home = "<!-- Generated by tools/site/build_site.py; edit the generator, not this file. -->\n\n" + home_page(rows, metrics)
     (SITE / "index.md").write_text(home, encoding="utf-8", newline="\n")
+    reader_metrics = {
+        "schema": "vademecum-reader-metrics/v1",
+        "document_count": len(rows),
+        "domain_count": len(domain_rows),
+        "article_count": sum(len(re.findall(r"^\s*(?:\*\*)?Art\.\s+[0-9]+(?:\s*[ºª°])?(?:\s*-\s*[A-Za-z])?(?:\*\*)?", body, re.IGNORECASE | re.MULTILINE)) for _, _, body in documents),
+        "reader_index_bytes": (reader_data / "index.json").stat().st_size,
+        "reader_data_bytes": sum(path.stat().st_size for path in documents_dir.glob("*.json")),
+    }
+    (reader_data / "metrics.json").write_text(json.dumps(reader_metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     (GENERATED / "metrics.json").write_text(json.dumps(metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
-    return {"documents": len(rows), "domains": len(by_domain), "relations": int(metrics["relations"])}
-
+    return {"documents": len(rows), "domains": len(domain_rows), "relations": int(metrics["relations"]), "reader_data_bytes": int(reader_metrics["reader_data_bytes"])}
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)

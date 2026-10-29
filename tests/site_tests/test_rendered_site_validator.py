@@ -2,6 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 import sys
+import json
 
 ROOT = Path(__file__).parents[2]
 sys.path.insert(0, str(ROOT / "tools" / "validate"))
@@ -30,6 +31,24 @@ class RenderedSiteValidatorTest(unittest.TestCase):
             )
             (root / "javascripts" / "portfolio.js").write_text(
                 'window.matchMedia("(prefers-reduced-motion: reduce)");', encoding="utf-8"
+            )
+            (root / "stylesheets" / "launch.css").write_text(".vmd-reader-app {}", encoding="utf-8")
+            (root / "javascripts" / "reader.js").write_text("function initIntegratedReader() {}", encoding="utf-8")
+            data = root / "generated" / "reader-data"
+            (data / "documents").mkdir(parents=True)
+            (data / "index.json").write_text(
+                json.dumps({"schema": "vademecum-reader-index/v1", "document_count": 1, "documents": [{"id": "law"}]}),
+                encoding="utf-8",
+            )
+            (data / "documents" / "law.json").write_text(
+                json.dumps({"schema": "vademecum-reader-document/v1", "id": "law", "article_html": "<p>Texto</p>"}),
+                encoding="utf-8",
+            )
+            (root / "reader").mkdir()
+            (root / "reader" / "index.html").write_text(
+                '<html lang="pt-BR"><body><a data-md-component="skip" href="#reader">Pular</a>'
+                '<main id="reader"><h1>Leitor</h1><div data-reader-app></div></main></body></html>',
+                encoding="utf-8",
             )
             self.assertEqual(validate(root), [])
 
