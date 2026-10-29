@@ -1,19 +1,19 @@
 [
   {
     "file": "literata.woff2",
-    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/literata/Literata%5Bopsz%2Cwght%5D.ttf",
+    "source": "https://github.com/google/fonts/blob/main/ofl/literata/Literata%5Bopsz%2Cwght%5D.ttf",
     "sourceSha256": "b41138c9373112f32abb589cc22e8674b06ed4048b0c513be922bdd26f274440",
     "woff2Sha256": "e7113a5bb9b3d721f20b4ba36cd6908f09ce4892d6a29ab318bfff946b6fbf5e"
   },
   {
     "file": "literata-italic.woff2",
-    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/literata/Literata-Italic%5Bopsz%2Cwght%5D.ttf",
+    "source": "https://github.com/google/fonts/blob/main/ofl/literata/Literata-Italic%5Bopsz%2Cwght%5D.ttf",
     "sourceSha256": "d483dfaeba9cbf4ce71d32a52ee65df82f7e35b15fff8d1011cdb242d1fcd465",
     "woff2Sha256": "d048595196e46d503d6ee9f6ed0237f99be53289e1b6e9cc8b47e39571d92a44"
   },
   {
     "file": "manrope.woff2",
-    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
+    "source": "https://github.com/google/fonts/blob/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
     "sourceSha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
     "woff2Sha256": "d1b5046dc2f0094b8103c43b7b2e2a1f390920e6342b3951f5b37a5739a0959b"
   }
