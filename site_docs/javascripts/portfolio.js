@@ -40,9 +40,61 @@
     });
   };
 
+  const homeReaderSearch = () => {
+    const form = document.querySelector("[data-reader-home-search]");
+    if (!form) return;
+    const input = form.querySelector("input[type='search']");
+    const results = form.querySelector("[role='listbox']");
+    if (!input || !results) return;
+    let documents = [];
+    let timer = 0;
+    const normalize = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
+    const close = () => { results.hidden = true; input.setAttribute("aria-expanded", "false"); };
+    const render = () => {
+      const query = normalize(input.value.trim());
+      results.replaceChildren();
+      if (!query || !documents.length) { close(); return; }
+      const matches = documents.filter((item) => normalize([item.title, item.canonical_title, item.type, item.number, item.year, item.domain, ...(item.aliases || [])].join(" ")).includes(query));
+      matches.sort((a, b) => {
+        const rank = (item) => { const title = normalize(item.title); const canonical = normalize(item.canonical_title); return title === query || canonical === query ? 0 : title.startsWith(query) || canonical.startsWith(query) ? 1 : title.includes(query) || canonical.includes(query) ? 2 : 3; };
+        return rank(a) - rank(b) || a.title.localeCompare(b.title, "pt-BR");
+      });
+      matches.splice(6);
+      if (!matches.length) { close(); return; }
+      matches.forEach((item) => {
+        const link = document.createElement("a");
+        link.className = "vmd-home-suggestion";
+        link.href = `reader/#/${encodeURIComponent(item.id)}`;
+        link.setAttribute("role", "option");
+        const title = document.createElement("strong"); title.textContent = item.title;
+        const meta = document.createElement("small"); meta.textContent = `${item.type} ${item.number}/${item.year} · ${item.domain}`;
+        link.append(title, meta); results.appendChild(link);
+      });
+      results.hidden = false; input.setAttribute("aria-expanded", "true");
+    };
+    input.addEventListener("input", () => {
+      window.clearTimeout(timer);
+      if (!documents.length) {
+        timer = window.setTimeout(() => fetch("generated/reader-data/index.json").then((response) => { if (!response.ok) throw new Error("Índice indisponível"); return response.json(); }).then((index) => { documents = index.documents || []; render(); }).catch(() => close()), 120);
+      } else render();
+    });
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
+      if (event.key === "ArrowDown" && !results.hidden) { event.preventDefault(); results.querySelector("a")?.focus(); }
+    });
+    results.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") { close(); input.focus(); }
+    });
+    document.addEventListener("click", (event) => { if (!form.contains(event.target)) close(); });
+    window.addEventListener("keydown", (event) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k" && !document.querySelector("[data-reader-app]")) { event.preventDefault(); input.focus(); }
+    });
+  };
+
   const boot = () => {
     reveal();
     copyIds();
+    homeReaderSearch();
   };
 
   if (document.readyState === "loading") {
