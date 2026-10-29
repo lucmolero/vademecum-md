@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="theme-color" content="#191e31"><meta name="description" content="Uma nova proposta de leitura da legislação: biblioteca, busca textual, comparação e caderno em uma única aplicação.">
+  <title>VadeMecum MD — Atlas de leitura</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="graph.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<aside class="rail" id="rail" aria-label="Navegação principal">
+  <a class="brand" href="#/home"><img src="icon.svg" width="36" height="36" alt=""><span>vademecum<span>MD / ATLAS DE LEITURA</span></span></a>
+  <button class="rail-search" data-action="search"><span data-icon="search"></span> Encontrar no acervo <kbd>⌘ K</kbd></button>
+  <p class="rail-label">SEU ESPAÇO</p>
+  <nav class="nav-list"><a href="#/home" data-nav="home"><span data-icon="home"></span>Visão geral</a><a href="#/library" data-nav="library"><span data-icon="library"></span>Biblioteca<span class="nav-count" id="nav-count">…</span></a><a href="#/graph" data-nav="graph"><span data-icon="network"></span>Grafo normativo<span class="nav-count" id="graph-count">…</span></a><a href="#/saved" data-nav="saved"><span data-icon="bookmark"></span>Meu caderno<span class="nav-count" id="saved-count">0</span></a></nav>
+  <div class="rail-divider"></div><p class="rail-label">FIOS DE CONSULTA <span title="Normas abertas nesta sessão">↗</span></p><div id="session-links" class="session-links"><p class="quiet">As normas que você abrir ficam aqui.</p></div>
+  <section class="rail-offline"><span class="offline-dot"></span><strong>Acervo offline</strong><p>Guarde o acervo no dispositivo para consultar sem conexão.</p><button data-action="offline" id="offline-button"><span data-icon="download"></span>Disponibilizar offline</button></section>
+  <div class="rail-bottom"><span class="avatar">MD</span><div><strong>Seu espaço local</strong><small>Dados neste dispositivo</small></div><button class="icon-button" data-action="settings" aria-label="Preferências de leitura"><span data-icon="settings"></span></button></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" data-action="menu" aria-label="Abrir navegação" aria-expanded="false" aria-controls="rail"><span data-icon="menu"></span></button><span>Workspace</span><span class="crumb-slash">/</span><strong id="breadcrumb">Visão geral</strong></div><div class="topbar-actions"><span class="snapshot-label"><i></i><span id="snapshot-label">Carregando acervo</span></span><button class="icon-button" data-action="theme" aria-label="Alternar tema claro e escuro"><span data-icon="moon"></span></button><button class="icon-button" data-action="help" aria-label="Ajuda e atalhos"><span data-icon="help"></span></button></div></header>
+  <main id="main" tabindex="-1"><div class="initial-loading">Preparando seu atlas normativo…</div></main>
+  <footer class="workspace-footer"><span>VadeMecum MD <span class="footer-dot">·</span> Atlas normativo / 2027</span><span><a href="architecture/">Arquitetura e metodologia ↗</a> <span class="footer-dot">·</span> Fontes oficiais</span></footer>
+</div>
+<dialog id="search-dialog" class="command-dialog" aria-labelledby="search-title"><div class="command-top"><span data-icon="search"></span><label class="sr-only" id="search-title" for="command-input">Buscar no acervo</label><input id="command-input" type="search" maxlength="200" placeholder="Nome, número ou palavras do texto…" autocomplete="off"><button class="close-dialog" data-close="search-dialog" aria-label="Fechar busca">Esc</button></div><div class="search-scopes" role="group" aria-label="Escopo da busca"><button data-scope="tudo" aria-pressed="true">Todo o acervo</button><button data-scope="normas" aria-pressed="false">Só normas</button><span>Experimente <kbd>CF art 5</kbd></span></div><p class="search-status" id="search-status" role="status">Busque pelo nome ou por palavras presentes no texto.</p><div id="command-results" class="command-results"></div><div class="command-foot"><span>Busca lexical · todos os termos · acentos normalizados</span><span>↵ abrir <span class="footer-dot">·</span> Esc fechar</span></div></dialog>
+<dialog id="settings-dialog" class="small-dialog" aria-labelledby="settings-title"><div class="dialog-heading"><h2 id="settings-title">Preferências de leitura</h2><button class="icon-button" data-close="settings-dialog" aria-label="Fechar preferências">×</button></div><p>Ajustes locais de tipografia e aparência.</p><label class="field-label" for="text-size">Tamanho do texto</label><input id="text-size" type="range" min="16" max="28" value="21"><div class="range-captions"><span>Aa</span><span id="size-value">21 px</span><span>Aa</span></div><label class="field-label" for="reading-font">Tipografia da leitura</label><select id="reading-font"><option value="serif">Literata · leitura com serifa</option><option value="sans">Manrope · leitura sem serifa</option></select><label class="field-label" for="reading-width">Largura da linha</label><select id="reading-width"><option value="normal">Confortável · 66 caracteres</option><option value="wide">Ampla · 82 caracteres</option></select><button class="solid-button full" data-action="theme">Alternar claro / escuro</button><p class="micro">Preferências guardadas neste navegador.</p></dialog>
+<dialog id="info-dialog" class="small-dialog" aria-labelledby="info-title"><div class="dialog-heading"><h2 id="info-title">Sobre esta consulta</h2><button class="icon-button" data-close="info-dialog" aria-label="Fechar detalhes">×</button></div><div id="info-content"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript>Este mock usa JavaScript para ler os pacotes do acervo. Os arquivos canônicos continuam disponíveis no <a href="https://github.com/lucmolero/vademecum-md">repositório</a>.</noscript>
+</body></html>
