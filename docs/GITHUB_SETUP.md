@@ -5,7 +5,7 @@ O `origin` esta configurado para o repositorio autoral. A `main` esta protegida 
 ## Repositorio publico
 
 - branch padrao: `main`;
-- Pull Request e check `quality` obrigatorios; a conclusao automatica depende dos checks, nao de revisao manual de conteudo;
+- Pull Request e check `quality` obrigatorios; o workflow enfileira o merge automatico com `--auto` para aguardar todos os checks concorrentes, sem depender de revisao manual de conteudo;
 - historico linear, force-push e delecao da `main` bloqueados;
 - permissoes padrao do Actions como somente leitura;
 - workflows de completude e release executados por agenda ou manualmente, com gates proprios.

@@ -78,4 +78,7 @@ jobs:
             exit 0
           fi
 
-          gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash
+          # Multiple quality runs can finish concurrently (push + pull_request).
+          # Queue the merge so GitHub waits for every required check instead of
+          # failing this workflow while another quality run is still pending.
+          gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash --auto
