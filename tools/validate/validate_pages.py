@@ -4,10 +4,34 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def _parse_gray_color(value: str) -> tuple[int, int, int] | None:
+    value = value.strip().lower()
+    if re.fullmatch(r"#[0-9a-f]{6}", value):
+        return tuple(int(value[index:index + 2], 16) for index in (1, 3, 5))
+    match = re.fullmatch(r"oklch\(\s*([0-9.]+)\s+0(?:\.0+)?\s+0(?:deg)?\s*\)", value)
+    if not match:
+        return None
+    linear = float(match.group(1)) ** 3
+    channel = 12.92 * linear if linear <= 0.0031308 else 1.055 * linear ** (1 / 2.4) - 0.055
+    value8 = round(max(0, min(1, channel)) * 255)
+    return (value8, value8, value8)
+
+
+def _contrast_ratio(left: tuple[int, int, int], right: tuple[int, int, int]) -> float:
+    def luminance(color: tuple[int, int, int]) -> float:
+        channels = [channel / 255 for channel in color]
+        linear = [item / 12.92 if item <= 0.04045 else ((item + 0.055) / 1.055) ** 2.4 for item in channels]
+        return sum(weight * item for weight, item in zip((0.2126, 0.7152, 0.0722), linear, strict=True))
+
+    a, b = sorted((luminance(left), luminance(right)), reverse=True)
+    return (a + 0.05) / (b + 0.05)
 
 
 def validate(site: Path) -> list[str]:
@@ -35,10 +59,26 @@ def validate(site: Path) -> list[str]:
     homepage_source = ROOT / "homepage/src/main.tsx"
     if not homepage_source.is_file() or "skip-link" not in homepage_source.read_text(encoding="utf-8", errors="replace") or '<main id="conteudo">' not in homepage_source.read_text(encoding="utf-8", errors="replace"):
         errors.append("homepage source lacks its skip link or main landmark")
+    homepage_css = (ROOT / "homepage/src/global.css").read_text(encoding="utf-8", errors="replace")
+    muted_match = re.search(r"--muted:\s*([^;]+);", homepage_css)
+    muted_foreground_match = re.search(r"--muted-foreground:\s*([^;]+);", homepage_css)
+    muted = _parse_gray_color(muted_match.group(1)) if muted_match else None
+    muted_foreground = _parse_gray_color(muted_foreground_match.group(1)) if muted_foreground_match else None
+    if muted is None or muted_foreground is None or _contrast_ratio(muted_foreground, muted) < 4.5:
+        errors.append("homepage muted text fails the WCAG AA contrast threshold on its muted surface")
+    hero_title = (ROOT / "homepage/src/components/hero-title.tsx").read_text(encoding="utf-8", errors="replace")
+    if "initial: { opacity: 1" not in hero_title or "animate: { opacity: 1" not in hero_title:
+        errors.append("homepage hero heading fades through low-contrast states during its entrance animation")
+    hero_source = (ROOT / "homepage/src/components/hero.tsx").read_text(encoding="utf-8", errors="replace")
+    if "initial:{opacity:1,y:20" not in hero_source or "animate:done?{opacity:1" not in hero_source:
+        errors.append("homepage hero copy fades through low-contrast states during its entrance animation")
     if '<html lang="pt-BR"' not in library_html or '<main id="library"' not in library_html:
         errors.append("library app shell or Portuguese document language is missing")
     if not (site / "biblioteca/sw.js").is_file():
         errors.append("library-scoped service worker is missing")
+    library_source = (ROOT / "biblioteca/src/library.js").read_text(encoding="utf-8", errors="replace")
+    if "cover.setAttribute('aria-hidden','true')" not in library_source or "role','progressbar'" not in library_source:
+        errors.append("library book controls expose decorative cover text or omit semantic reading progress")
 
     for document, html in (("homepage", home_html), ("biblioteca", library_html)):
         for asset in re.findall(r'(?:src|href)="(\./[^\"]+)"', html):

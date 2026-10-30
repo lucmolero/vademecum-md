@@ -2,6 +2,7 @@ name: quality
 
 on:
   push:
+    branches: [main]
   pull_request:
   schedule:
     - cron: "17 3 1 */3 *"
@@ -79,6 +80,12 @@ jobs:
         run: python tools/site/compose_pages.py --site site
       - name: Validate homepage, library and release alignment
         run: python tools/validate/validate_pages.py --site site
+      - name: Install Chromium for homepage and reader browser tests
+        run: npx playwright install --with-deps chromium
+        working-directory: homepage
+      - name: Verify Pages routes, reader navigation, mobile layout and WCAG
+        run: npm run test:e2e
+        working-directory: homepage
       - name: Classify unresolved relations
         run: python tools/relations/classify_unresolved.py
       - name: Public release gates

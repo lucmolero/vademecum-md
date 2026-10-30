@@ -10,7 +10,7 @@ import { motion } from 'motion/react';
 import { useLayoutEffect, useRef, useState } from 'react';
 
 const WORD_IN = {
-  initial: { opacity: 0, y: 24, filter: 'blur(12px)' },
+  initial: { opacity: 1, y: 24, filter: 'blur(12px)' },
   animate: { opacity: 1, y: 0, filter: 'blur(0px)' },
   transition: { duration: 0.7, ease: ease.out },
   stagger: 0.07,

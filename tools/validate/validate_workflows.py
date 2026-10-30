@@ -33,6 +33,11 @@ def main() -> int:
         errors.append("dependabot.yml: atualizações automáticas de dependências ausentes")
     for path in sorted(WORKFLOWS.glob("*.yml")):
         text = path.read_text(encoding="utf-8")
+        if path.name == "quality.yml":
+            if not re.search(r"(?m)^  push:\s*\n    branches: \[main\]", text):
+                errors.append("quality.yml: push validation should run on main; pull_request handles feature branches")
+            if "npm run test:e2e" not in text or "playwright install --with-deps chromium" not in text:
+                errors.append("quality.yml: browser accessibility and navigation tests are missing")
         for reference in ACTION_REFERENCE.findall(text):
             if reference.startswith("./"):
                 continue
