@@ -82,3 +82,26 @@ jobs:
           # Queue the merge so GitHub waits for every required check instead of
           # failing this workflow while another quality run is still pending.
           gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash --auto
+
+          # Merges completed with GITHUB_TOKEN do not trigger push workflows.
+          # Wait until GitHub applies the protected auto-merge, then dispatch the
+          # canonical Pages build explicitly through repository_dispatch.
+          merged_sha=""
+          for attempt in $(seq 1 60); do
+            merge_json=$(gh pr view "$PR_NUMBER" --repo "$GH_REPOSITORY" --json state,mergeCommit)
+            if [[ "$(jq -r '.state' <<< "$merge_json")" == "MERGED" ]]; then
+              merged_sha=$(jq -r '.mergeCommit.oid // empty' <<< "$merge_json")
+              break
+            fi
+            sleep 2
+          done
+
+          if [[ -z "$merged_sha" ]]; then
+            echo "Auto-merge has not completed within 120 seconds; refusing to report deployment queued."
+            exit 1
+          fi
+
+          echo "PR merged at $merged_sha; dispatching the canonical Pages build."
+          gh api --method POST "repos/$GH_REPOSITORY/dispatches" \
+            --field event_type=publish-pages \
+            --field "client_payload[merge_sha]=$merged_sha"

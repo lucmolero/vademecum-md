@@ -3,6 +3,8 @@ name: site
 on:
   push:
     branches: [main]
+  repository_dispatch:
+    types: [publish-pages]
   workflow_dispatch:
 
 permissions:
