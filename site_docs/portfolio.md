@@ -18,7 +18,7 @@ material que realmente estiver disponível na sessão.
 ```text
 fonte oficial → normalização e auditoria → Markdown canônico
                                       ├→ histórico e grafo com evidência
-                                      ├→ leitor estático e catálogo
+                                      ├→ biblioteca oficial e catálogo
                                       └→ release, manifestos e skills
 ```
 
@@ -31,7 +31,7 @@ skills e índices são contexto ou instruções; não substituem o texto normati
   hashes e data de corte.
 - **Camadas separadas:** corpo normativo, metadados curatoriais, histórico e
   relações não são misturados.
-- **Build estático:** MkDocs e GitHub Pages publicam o leitor sem backend.
+- **Build estático:** o GitHub Actions gera a homepage, a biblioteca em `/biblioteca/` e a documentação no mesmo artefato, sem backend. O catálogo e o leitor são compilados diretamente do Markdown canônico no checkout da release.
 - **Distribuição fixada:** ZIP, manifesto e checksums permitem identificar e
   verificar uma release.
 - **Consulta de agente delimitada:** a skill exige acesso verificável ao

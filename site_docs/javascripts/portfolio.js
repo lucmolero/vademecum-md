@@ -48,6 +48,8 @@
     if (!input || !results) return;
     let documents = [];
     let timer = 0;
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+    const siteRoot = pathParts[0] === "vademecum-md" ? `/${pathParts[0]}/` : "/";
     const normalize = (value) => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
     const close = () => { results.hidden = true; input.setAttribute("aria-expanded", "false"); };
     const render = () => {
@@ -64,10 +66,10 @@
       matches.forEach((item) => {
         const link = document.createElement("a");
         link.className = "vmd-home-suggestion";
-        link.href = `reader/#/${encodeURIComponent(item.id)}`;
+        link.href = `${siteRoot}biblioteca/#${new URLSearchParams({ documento: item.id })}`;
         link.setAttribute("role", "option");
         const title = document.createElement("strong"); title.textContent = item.title;
-        const meta = document.createElement("small"); meta.textContent = `${item.type} ${item.number}/${item.year} · ${item.domain}`;
+        const meta = document.createElement("small"); meta.textContent = `${item.typeLabel || item.type} ${item.number}/${item.year} · ${item.domain}`;
         link.append(title, meta); results.appendChild(link);
       });
       results.hidden = false; input.setAttribute("aria-expanded", "true");
@@ -75,7 +77,7 @@
     input.addEventListener("input", () => {
       window.clearTimeout(timer);
       if (!documents.length) {
-        timer = window.setTimeout(() => fetch("generated/reader-data/index.json").then((response) => { if (!response.ok) throw new Error("Índice indisponível"); return response.json(); }).then((index) => { documents = index.documents || []; render(); }).catch(() => close()), 120);
+        timer = window.setTimeout(() => fetch(`${siteRoot}biblioteca/catalog.json`).then((response) => { if (!response.ok) throw new Error("Índice indisponível"); return response.json(); }).then((catalog) => { documents = catalog.filter((item) => item.collection === "vademecum"); render(); }).catch(() => close()), 120);
       } else render();
     });
     input.addEventListener("keydown", (event) => {

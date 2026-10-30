@@ -21,6 +21,8 @@ dist/
 reports/
 tmp/
 *.log
+node_modules/
+biblioteca/leis/
 manifests/markdown-inventory.jsonl
 bases/raw/*
 !bases/raw/README.md

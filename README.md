@@ -4,7 +4,8 @@
 Cada diploma publicado em Markdown tem identidade estável, metadados de
 curadoria, data de corte, fonte indicada e informações de proveniência.
 
-[Abrir o leitor](https://lucmolero.github.io/vademecum-md/) ·
+[Página inicial](https://lucmolero.github.io/vademecum-md/) ·
+[Biblioteca e leitor](https://lucmolero.github.io/vademecum-md/biblioteca/) ·
 [Explorar o catálogo](https://lucmolero.github.io/vademecum-md/generated/catalog/) ·
 [Baixar a release v1.1.3](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.3) ·
 [Consultar o contrato de consumo](manifests/consumer-contract.json)
@@ -16,7 +17,7 @@ curadoria, data de corte, fonte indicada e informações de proveniência.
 
 | Objetivo | Comece aqui |
 | --- | --- |
-| **Ler e localizar uma norma** | Use o [catálogo e a busca do site](https://lucmolero.github.io/vademecum-md/generated/catalog/). Na página do diploma, confira o ID, a situação, o estado do texto e a data de corte. |
+| **Ler e localizar uma norma** | Use a [biblioteca e o leitor](https://lucmolero.github.io/vademecum-md/biblioteca/) ou o [catálogo](https://lucmolero.github.io/vademecum-md/generated/catalog/). Confira ID, situação do texto, fonte e data de corte. |
 | **Consultar com um agente de IA** | Forneça os arquivos ou a release ao agente e use a [skill de consulta jurídica](skills/vademecum-consulta-juridica/SKILL.md). A skill orienta a consulta e a citação; não concede acesso automático ao GitHub. |
 | **Integrar em dados ou ferramentas** | Comece por [`manifests/corpus.csv`](manifests/corpus.csv), [`manifests/consumer-contract.json`](manifests/consumer-contract.json) e o [grafo normativo](bases/derived/relacoes/normative-graph.jsonl). Fixe uma release para resultados reproduzíveis. |
 
@@ -58,6 +59,7 @@ Fonte oficial: https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;1040
 | [`manifests/`](manifests/) | Inventário do corpus, contratos de consumo e dados de release. |
 | [`skills/`](skills/) | Instruções portáteis para consulta por agentes. |
 | [`site_docs/`](site_docs/) | Fontes do site editorial, que é gerado a partir do corpus. |
+| [`homepage/`](homepage/) · [`biblioteca/`](biblioteca/) | Fontes da homepage e do leitor oficial; o workflow as compila junto com o corpus da release. |
 | [`tools/`](tools/) · [`tests/`](tests/) | Ferramentas de aquisição, geração e validação; verificações automatizadas. |
 | [`docs/`](docs/) | Especificações, arquitetura e políticas do projeto. |
 

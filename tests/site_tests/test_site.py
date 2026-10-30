@@ -26,8 +26,8 @@ class SiteContractTest(unittest.TestCase):
         self.assertTrue((ROOT / "site_docs/stylesheets/extra.css").is_file())
         self.assertTrue((ROOT / "site_docs/stylesheets/launch.css").is_file())
         self.assertTrue((ROOT / "site_docs/javascripts/portfolio.js").is_file())
-        self.assertTrue((ROOT / "site_docs/javascripts/reader.js").is_file())
-        self.assertTrue((ROOT / "site_docs/reader/index.md").is_file())
+        self.assertFalse((ROOT / "site_docs/javascripts/reader.js").exists())
+        self.assertFalse((ROOT / "site_docs/reader/index.md").exists())
         self.assertTrue((ROOT / "site_docs/audiences.md").is_file())
         catalog = ROOT / "site_docs/generated/catalog.md"
         self.assertTrue(catalog.is_file())
@@ -35,13 +35,10 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Grandes códigos e referências", catalog.read_text(encoding="utf-8"))
         homepage = ROOT / "site_docs/index.md"
         homepage_text = homepage.read_text(encoding="utf-8")
-        self.assertIn("A lei,", homepage_text)
-        self.assertIn("Abrir o leitor integral", homepage_text)
-        self.assertIn("Texto. Fonte. Corte.", homepage_text)
-        self.assertIn("generated/reader-data/index.json", (ROOT / "site_docs/javascripts/portfolio.js").read_text(encoding="utf-8"))
+        self.assertIn("biblioteca", homepage_text)
+        self.assertIn("biblioteca/catalog.json", (ROOT / "site_docs/javascripts/portfolio.js").read_text(encoding="utf-8"))
         metrics = json.loads((ROOT / "site_docs/generated/metrics.json").read_text(encoding="utf-8"))
         self.assertEqual(metrics["corpus_count"], 375)
-        self.assertIn("snapshot", homepage_text)
         self.assertIn("Leitura jurídica", (ROOT / "site_docs/audiences.md").read_text(encoding="utf-8"))
         self.assertTrue((ROOT / "tools/release/build_sbom.py").is_file())
 
@@ -74,21 +71,9 @@ class SiteContractTest(unittest.TestCase):
         law = ROOT / "site_docs/generated/laws/federal/leis-ordinarias/2002/lei-ordinaria-10406-2002.md"
         content = law.read_text(encoding="utf-8")
         self.assertIn('class="legacy-reader-redirect"', content)
-        self.assertIn("Abrir no leitor integrado", content)
+        self.assertIn("Abrir na biblioteca", content)
+        self.assertIn("biblioteca/#documento=br-federal-lei_ordinaria-10406-2002", content)
         self.assertIn("location.replace", content)
-
-    def test_integrated_reader_index_and_payloads_cover_the_corpus(self):
-        index = json.loads((ROOT / "site_docs/generated/reader-data/index.json").read_text(encoding="utf-8"))
-        self.assertEqual(index["schema"], "vademecum-reader-index/v1")
-        self.assertEqual(index["document_count"], 375)
-        self.assertEqual(len(index["documents"]), 375)
-        civil = ROOT / "site_docs/generated/reader-data/documents/br-federal-lei_ordinaria-10406-2002.json"
-        payload = json.loads(civil.read_text(encoding="utf-8"))
-        self.assertEqual(payload["schema"], "vademecum-reader-document/v1")
-        self.assertIn('id="art-1"', payload["article_html"])
-        self.assertNotIn("<script", payload["article_html"])
-        self.assertTrue(payload["sha256_source_raw"])
-        self.assertTrue(payload["source_url"].startswith("https://"))
 
     def test_environmental_licensing_law_uses_its_correct_public_title(self):
         self.assertEqual(
@@ -96,59 +81,11 @@ class SiteContractTest(unittest.TestCase):
             "Lei Geral do Licenciamento Ambiental (Lei nº 15.190/2025)",
         )
 
-    def test_graph_context_preserves_direction_and_requires_an_article_device(self):
-        relation = {
-            "source_id": "law-a",
-            "target_id": "law-b",
-            "source_title": "Lei A",
-            "target_title": "Lei B",
-            "type": "altera",
-            "dispositivo": "art. 5º",
-            "confianca": "alta",
-            "status_revisao": "aprovado_autonomamente",
-            "fonte": "https://example.gov.br/lei",
-            "evidencia_textual": "altera o art. 5º",
-            "_site_id": "normative-relation-test",
-            "_site_device_document_id": "law-b",
-        }
-        source_context = SITE_BUILDER.contextualize_articles("**Art. 5º** Texto.", [relation], "law-a")
-        target_context = SITE_BUILDER.contextualize_articles("**Art. 5º** Texto.\n\n**Art. 6º** Outro.", [relation], "law-b")
-        page = SITE_BUILDER.law_page({"id": "law-b", "titulo": "Lei B"}, "**Art. 5º** Texto.", [relation])
-        self.assertNotIn("relation-margin-note", source_context)
-        self.assertIn("relation-margin-note", target_context)
-        self.assertIn("Ver relação no grafo", target_context)
-        self.assertLess(target_context.index("Ver relação no grafo"), target_context.index("Texto."))
-        self.assertIn("Lei A", page)
-        self.assertIn("altera", page)
-        self.assertIn("altera o art. 5º", page)
-        self.assertIn('id="normative-relation-test"', page)
-        self.assertLess(page.index("## Art. 5º"), page.index('id="law-relations-title"'))
-
-        without_device = {**relation, "dispositivo": None}
-        no_article_marker = SITE_BUILDER.contextualize_articles("**Art. 5º** Texto.", [without_device])
-        no_article_page = SITE_BUILDER.law_page({"id": "law-a", "titulo": "Lei A"}, "**Art. 5º** Texto.", [without_device])
-        self.assertNotIn("relation-margin-note", no_article_marker)
-        self.assertIn("Dispositivo não identificado", no_article_page)
-
-    def test_graph_mirror_is_shown_once_with_active_direction(self):
-        active = {
-            "source_id": "amending-law",
-            "target_id": "amended-law",
-            "type": "altera",
-            "dispositivo": "art. 5º",
-            "data_efeito": "2024-01-01",
-            "evidencia_sha256": "same-evidence",
-        }
-        inverse = {
-            **active,
-            "source_id": "amended-law",
-            "target_id": "amending-law",
-            "type": "alterada_por",
-        }
-        unique = SITE_BUILDER.deduplicate_relation_mirrors([inverse, active])
-        self.assertEqual(len(unique), 1)
-        self.assertEqual(unique[0]["type"], "altera")
-        self.assertEqual(unique[0]["source_id"], "amending-law")
+    def test_old_reader_urls_redirect_to_official_library_and_keep_article_anchor(self):
+        page = SITE_BUILDER.legacy_reader_page("law-1", "Lei de teste", "federal/leis/2020/lei-1.md")
+        self.assertIn("https://lucmolero.github.io/vademecum-md/biblioteca/#documento=law-1", page)
+        self.assertIn('params.set("artigo", article[1])', page)
+        self.assertIn("location.replace", page)
 
 
 if __name__ == "__main__":
