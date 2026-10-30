@@ -45,7 +45,6 @@ extra_css:
   - stylesheets/launch.css
 extra_javascript:
   - javascripts/portfolio.js
-  - javascripts/reader.js
 extra:
   generator: false
   social:
@@ -53,7 +52,7 @@ extra:
       link: https://github.com/lucmolero/vademecum-md
 nav:
   - Início: index.md
-  - Leitor integral: reader/index.md
+  - Biblioteca: https://lucmolero.github.io/vademecum-md/biblioteca/
   - Catálogo: generated/catalog.md
   - Como usar: audiences.md
   - Metodologia:

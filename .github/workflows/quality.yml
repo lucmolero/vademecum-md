@@ -42,10 +42,43 @@ jobs:
         run: python tools/site/build_site.py
       - name: Render MkDocs site
         run: mkdocs build --strict
-      - name: Accessibility baseline
+      - name: Documentation accessibility baseline
         run: python tools/validate/validate_site.py
       - name: Validate reader site inputs
         run: test -f mkdocs.yml && test -f site_docs/generated/catalog.md
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: |
+            homepage/package-lock.json
+            biblioteca/package-lock.json
+      - name: Install homepage dependencies
+        run: npm ci
+        working-directory: homepage
+      - name: Install library dependencies
+        run: npm ci
+        working-directory: biblioteca
+      - name: Test library build and reader logic
+        run: npm test
+        working-directory: biblioteca
+      - name: Build homepage
+        run: npm run build
+        working-directory: homepage
+      - name: Build library from the checked-out Markdown release
+        working-directory: biblioteca
+        env:
+          VADE_REF: ${{ github.ref_name }}
+          VADE_COMMIT: ${{ github.sha }}
+          VADE_CORPUS_DIR: ${{ github.workspace }}/bases/curated/legislacao/federal
+          VADE_RELEASE_FILE: ${{ github.workspace }}/manifests/release.json
+        run: npm run build
+      - name: Compose the complete Pages tree
+        env:
+          VADE_COMMIT: ${{ github.sha }}
+        run: python tools/site/compose_pages.py --site site
+      - name: Validate homepage, library and release alignment
+        run: python tools/validate/validate_pages.py --site site
       - name: Classify unresolved relations
         run: python tools/relations/classify_unresolved.py
       - name: Public release gates
