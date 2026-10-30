@@ -284,8 +284,8 @@ export class Library {
     const card=node('article',null,`shelf-book${this.animateNextRender?' is-entering':''}${book.favorite?' has-favorite':''}`);card.dataset.bookId=book.id;card.draggable=true;
     card.classList.toggle('is-selected',this.selected.has(book.id));
     const select=node('button',null,'shelf-book-select');select.type='button';select.setAttribute('role','checkbox');select.setAttribute('aria-checked',String(this.selected.has(book.id)));select.setAttribute('aria-label',`${this.selected.has(book.id)?'Desmarcar':'Selecionar'} ${book.title}`);select.innerHTML=this.selected.has(book.id)?svg('check'):'';select.onclick=event=>{event.stopPropagation();this.toggleSelection(book.id);};
-    const open=node('button',null,'shelf-book-open');open.setAttribute('aria-label',`Ler ${book.title}`);
-    const cover=this.cover(book);open.append(cover);
+    const open=node('button',null,'shelf-book-open');
+    const cover=this.cover(book);cover.setAttribute('aria-hidden','true');open.append(cover);
     const name=node('div',null,'shelf-book-heading');name.append(node('span',book.title));
     const storage=node('span',null,'shelf-storage');storage.innerHTML=svg(book.kind==='local'?'local':'book');storage.title=book.kind==='local'?'Salvo neste navegador':'Documento do projeto';name.append(storage);
     const percent=Math.max(0,Math.min(100,Math.round((book.progress||0)*100)));
