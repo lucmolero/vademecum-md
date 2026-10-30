@@ -356,4 +356,4 @@ export const VIGNETTES: { title: string; Vignette: ComponentType }[] = [
   { title: 'Icons', Vignette: IconsVignette },
   { title: 'Notificações', Vignette: ToastVignette },
   { title: 'Progress', Vignette: ProgressVignette },
-];\n
+];
