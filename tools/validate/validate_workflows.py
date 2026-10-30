@@ -38,6 +38,8 @@ def main() -> int:
                 errors.append("quality.yml: push validation should run on main; pull_request handles feature branches")
             if "npm run test:e2e" not in text or "playwright install --with-deps chromium" not in text:
                 errors.append("quality.yml: browser accessibility and navigation tests are missing")
+        if path.name == "site.yml" and not re.search(r"(?m)^  repository_dispatch:\s*\n    types: \[publish-pages\]", text):
+            errors.append("site.yml: trusted auto-merges must be able to dispatch the canonical Pages build")
         for reference in ACTION_REFERENCE.findall(text):
             if reference.startswith("./"):
                 continue
@@ -54,6 +56,8 @@ def main() -> int:
             and "QUALITY_RESULT" in text
             and 'head_sha" != "$CHECKED_SHA"' in text
             and 'gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash --auto' in text
+            and "event_type=publish-pages" in text
+            and "merged_sha" in text
             and "workflow_dispatch" in text
             and "automation/update-" in text
             and "actions/checkout" not in text

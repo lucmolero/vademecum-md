@@ -4,7 +4,10 @@ O corpus federal é atualizado por um fluxo autônomo, reproduzível e auditáve
 A aquisição, a análise jurídica declarada, a aplicação e a publicação permanecem
 separadas por gates técnicos. Propostas são abertas automaticamente como Pull
 Requests; o workflow completo de qualidade é executado no commit exato da
-proposta e, se passar, a política confiável faz o merge sem ação humana.
+proposta e, se passar, a política confiável faz o merge sem ação humana. Após
+confirmar o merge protegido, a política dispara explicitamente o workflow de
+Pages; assim a publicação não depende de eventos `push` emitidos com o token do
+GitHub Actions.
 
 ## Ciclo autônomo
 
