@@ -48,7 +48,7 @@ def main() -> int:
             and "workflows: [quality]" in text
             and "QUALITY_RESULT" in text
             and 'head_sha" != "$CHECKED_SHA"' in text
-            and 'gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash' in text
+            and 'gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash --auto' in text
             and "workflow_dispatch" in text
             and "automation/update-" in text
             and "actions/checkout" not in text
