@@ -120,9 +120,9 @@ root.addEventListener('pointermove', event => {
 root.addEventListener('pointerleave', hideGraphTooltip, {passive: true});
 window.addEventListener('blur', hideGraphTooltip);
 let interactionSlow = false, interactionTimer = 0, rotationRampFrame = 0, rotationRampEndTime = 0, pointerInteractionActive = false;
-const NORMAL_ROTATION_SPEED = .3;
-const INTERACTION_ROTATION_SPEED = .025;
-const ROTATION_RAMP_HALF_MS = 760;
+const NORMAL_ROTATION_SPEED = .42;
+const INTERACTION_ROTATION_SPEED = .14;
+const ROTATION_RAMP_HALF_MS = 520;
 const ROTATION_IDLE_DELAY_MS = 0;
 let rotationSpeed = NORMAL_ROTATION_SPEED;
 let rotationTargetSpeed = NORMAL_ROTATION_SPEED;
@@ -678,14 +678,8 @@ function beginGraphPointerInteraction() {
   pointerInteractionActive = true;
   interactionSlow = true;
   clearTimeout(interactionTimer);
-  cancelAnimationFrame(rotationRampFrame);
-  rotationRampFrame = 0;
-  rotationSpeed = INTERACTION_ROTATION_SPEED;
-  rotationTargetSpeed = INTERACTION_ROTATION_SPEED;
-  rotationRampEndTime = 0;
-  const controls = graph3d?.controls();
-  if (controls) controls.autoRotateSpeed = rotationSpeed;
-  motionHint.textContent = 'Interação · rotação pausada';
+  transitionRotationSpeed(INTERACTION_ROTATION_SPEED, ROTATION_RAMP_HALF_MS);
+  motionHint.textContent = 'Interação · órbita desacelerando';
 }
 function endGraphPointerInteraction() {
   if (!pointerInteractionActive) return;
