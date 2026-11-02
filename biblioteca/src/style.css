@@ -285,7 +285,6 @@ svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 #viewport.scrolled .reader-section+.reader-section{margin-top:2.5em;padding-top:1.5em;border-top:1px solid var(--line)}
 
 /* Estado de carregamento de capítulo — animação funcional de estado */
-.document-content.is-loading{animation:chapter-loading 1.4s ease-in-out infinite}
 
 /* Rodapé */
 .reader-footer{
@@ -309,7 +308,7 @@ svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
   background:var(--accent);border:2px solid var(--surface);box-shadow:var(--shadow-2);
   transition:transform .2s var(--ease);
 }
-#progress::-webkit-slider-thumb:hover{transform:scale(1.2)}
+
 #progress::-moz-range-track{height:4px;border-radius:999px;background:color-mix(in srgb,var(--muted) 18%,transparent)}
 #progress::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--accent);border:2px solid var(--surface)}
 #page-label{min-width:72px;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
@@ -331,9 +330,9 @@ svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 .theme-options{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
 .theme-options button{
   padding:11px 4px;border:1px solid var(--line);border-radius:12px;font-size:10.5px;font-weight:600;color:var(--ink);
-  transition:transform .22s var(--ease),box-shadow .22s var(--ease);
+  transition:box-shadow .2s var(--ease),background-color .2s var(--ease);
 }
-.theme-options button:hover{transform:translateY(-2px);box-shadow:var(--shadow-2)}
+.theme-options button:hover{box-shadow:var(--shadow-2)}
 .theme-options button[data-theme=light]{background:#f3efe6;color:#1c221f}
 .theme-options button[data-theme=sepia]{background:#efe3cc;color:#453a2c}
 .theme-options button[data-theme=dark]{background:#111413;color:#ece8df}
@@ -360,7 +359,7 @@ svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 #status::before,#status::after{content:none;display:none}
 #status-message{position:relative;z-index:1;flex:1;min-width:0;overflow-wrap:anywhere}
 .toast-dismiss{position:absolute;right:9px;top:50%;z-index:2;width:30px;height:30px;padding:7px;display:grid;place-items:center;border:0;border-radius:50%;background:transparent;color:var(--muted);transform:translateY(-50%);transition:background .2s var(--ease),color .2s var(--ease),transform .2s var(--ease)}
-.toast-dismiss:hover{background:var(--hover);color:var(--ink);transform:translateY(-50%) scale(1.06)}
+.toast-dismiss:hover{background:var(--hover);color:var(--ink)}
 .toast-dismiss:active{transform:translateY(-50%) scale(.92)}
 .toast-dismiss svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .toast-progress{position:absolute;left:18px;right:18px;bottom:9px;height:2px;overflow:hidden;border-radius:999px;background:color-mix(in srgb,var(--ink) 12%,transparent);pointer-events:none}
@@ -369,7 +368,6 @@ svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 /* Animações — todas funcionais e com spring easing */
 @keyframes pop-in{from{opacity:0;transform:scale(.96) translateY(-6px)}to{opacity:1;transform:none}}
 @keyframes view-enter{from{opacity:0;transform:scale(.984) translateY(8px)}to{opacity:1;transform:none}}
-@keyframes chapter-loading{0%,100%{opacity:1}50%{opacity:.55}}
 
 /* Responsivo */
 @media(max-width:900px){

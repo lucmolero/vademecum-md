@@ -68,7 +68,7 @@ export class Library {
     this.view=['books','search-all','statistics','notes','settings','info'].includes(requestedView)?requestedView:'books';this.folder='';this.query='';this.status='all';this.tags=[];this.selected=new Set();this.selectionMode=false;this.saveTimer=null;
     const previewQuery=new URLSearchParams(location.search).get('q')||'';
     if(options.previewData&&this.view==='books')this.query=previewQuery;
-    this.visibleBooks=[];this.renderContext='';this.fullQuery=this.view==='search-all'?previewQuery:'';this.searchIndex=null;this.searchToken=0;
+    this.visibleBooks=[];this.renderContext='';this.animatedContext='';this.notesCache=new Map();this.fullQuery=this.view==='search-all'?previewQuery:'';this.searchIndex=null;this.searchToken=0;
     this.mount();
   }
   mount() {
@@ -76,20 +76,12 @@ export class Library {
     this.root.innerHTML=`
       <header class="shelf-toolbar">
         <a class="shelf-brand" href="../" aria-label="Página inicial do Vademecum"><span class="shelf-brand-mark">${svg('book')}</span><span>Vademecum</span></a>
-        <div class="shelf-toolbar-spacer"></div>
-        <nav class="shelf-project-links" aria-label="Links do projeto">
-          <a href="../" class="shelf-project-link">Início</a>
-          <a href="https://github.com/lucmolero" class="shelf-project-link shelf-github-link" target="_blank" rel="noopener noreferrer" aria-label="Perfil do Vademecum no GitHub">${svg('github')}<span>GitHub</span></a>
-          <a href="https://github.com/lucmolero/vademecum-md" class="shelf-project-link" target="_blank" rel="noopener noreferrer">${svg('repository')}<span>vademecum-md</span>${svg('external')}</a>
-          <a href="https://github.com/lucmolero/biblioteca-leis" class="shelf-project-link" target="_blank" rel="noopener noreferrer">${svg('repository')}<span>biblioteca-leis</span>${svg('external')}</a>
-        </nav>
         <label class="shelf-search">${svg('search')}<input id="library-query" type="search" placeholder="Buscar no acervo" aria-label="Buscar no acervo, autores ou anotações"><kbd class="shelf-kbd" aria-hidden="true">${/Mac|iPhone|iPad/.test(navigator.platform||'')?'⌘ K':'Ctrl K'}</kbd></label>
         <div class="shelf-toolbar-actions">
           <button class="shelf-icon" data-action="refresh" title="Atualizar biblioteca" aria-label="Atualizar biblioteca">${svg('refresh')}</button>
           <button class="shelf-icon" data-action="offline" title="Disponibilizar biblioteca offline" aria-label="Disponibilizar biblioteca offline">${svg('offline')}</button>
           <button class="shelf-icon" data-action="import" title="Importar Markdown" aria-label="Importar Markdown">${svg('plus')}</button>
           <button class="shelf-icon" data-action="sort" title="Ordenar e organizar" aria-label="Ordenar e organizar" aria-haspopup="menu" aria-expanded="false">${svg('filter')}</button>
-          <button class="shelf-toolbar-motion" data-action="motion" type="button" role="switch" aria-label="Animações da interface" aria-checked="true"><span>Animações</span><i aria-hidden="true"></i></button>
           <button class="shelf-icon" data-action="theme" title="Alternar tema claro e escuro" aria-label="Alternar tema claro e escuro">${svg('moon')}</button>
         </div>
       </header>
@@ -106,7 +98,6 @@ export class Library {
     this.find('[data-action=import]').onclick=()=>this.find('#library-import').click();
     this.find('[data-action=offline]').onclick=()=>this.options.cacheOffline?.();
     this.find('[data-action=theme]').onclick=()=>{const isDark=document.documentElement.dataset.theme==='dark';this.options.setSettings({theme:isDark?'light':'dark'});this.updateThemeButton();};
-    this.find('[data-action=motion]').onclick=()=>{const full=this.find('[data-action=motion]').getAttribute('aria-checked')==='true';this.options.setSettings({motion:full?'calm':'full'});this.updateMotionButton();};
     this.find('#library-import').onchange=async event=>{const files=[...event.target.files];event.target.value='';await this.importFiles(files);};
     this.find('[data-action=refresh]').onclick=()=>this.refresh().catch(error=>this.error(error,'Não foi possível atualizar a biblioteca.'));
     this.find('[data-action=sort]').onclick=event=>{event.stopPropagation();const menu=this.find('.shelf-sort-menu');const opening=menu.hidden;if(opening)this.find('.shelf-context-menu').hidden=true;menu.hidden=!opening;this.find('[data-action=sort]').setAttribute('aria-expanded',String(opening));};
@@ -121,7 +112,7 @@ export class Library {
         return;
       }
       if(event.key!=='Escape'||event.target.closest('dialog'))return;
-      this.find('.shelf-context-menu').hidden=true;this.find('.shelf-sort-menu').hidden=true;
+      this.find('.shelf-context-menu').hidden=true;this.find('.shelf-sort-menu').hidden=true;this.find('[data-action=sort]').setAttribute('aria-expanded','false');
       if(this.selected.size){this.selected.clear();this.render();}
     };
     document.addEventListener('keydown',this.documentKeyHandler);
@@ -217,7 +208,10 @@ export class Library {
     this.find('.shelf-filter-bar').hidden=!booksView;this.find('.shelf-breadcrumb').hidden=true;this.find('.shelf-selection').hidden=(!this.selected.size&&!this.selectionMode)||!booksView;
     const content=this.find('.shelf-content');
     const context=[this.view,this.folder,this.query,this.status,this.tags.join('\u0000'),this.state.preferences.sort,this.state.preferences.direction].join('\u0001');
-    this.animateNextRender=this.renderContext!==context;if(this.animateNextRender){this.renderContext=context;content.scrollTop=0;}
+    if(this.renderContext!==context){this.renderContext=context;content.scrollTop=0;}
+    const animatedContext=[this.view,this.folder].join('\u0001');
+    this.animateNextRender=this.animatedContext!==animatedContext;
+    if(this.animateNextRender)this.animatedContext=animatedContext;
     content.className='shelf-content';
     content.replaceChildren();
     if(booksView)this.renderBooks(content);
@@ -247,8 +241,8 @@ export class Library {
   renderBooks(content){
     const all=this.books();
     this.renderFilters(all);
-    const notesByBook=Object.fromEntries(all.map(book=>[book.id,this.options.getNotes(book.id)]));
     const searching=!!this.query;
+    const notesByBook=searching?new Map(all.map(book=>[book.id,this.notesForBook(book.id)])):new Map();
     const filtering=searching||this.tags.length>0||this.status!=='all';
     const folderScope=searching?null:(this.folder||(filtering?null:''));
     const books=filterAndSortBooks(all,{query:this.query,status:this.status,tags:this.tags,folder:folderScope,sort:this.state.preferences.sort,direction:this.state.preferences.direction},notesByBook);
@@ -279,7 +273,7 @@ export class Library {
         const card=this.folderCard(folder,members);card.style.setProperty('--i',String(index));grid.append(card);
       });
     }
-    books.forEach((book,index)=>{const card=this.bookCard(book);card.style.setProperty('--i',String(index));grid.append(card);});
+    books.forEach((book,index)=>{const card=this.bookCard(book,this.animateNextRender&&index<8);card.style.setProperty('--i',String(index));grid.append(card);});
     content.append(grid);
     if(!grid.children.length){
       const empty=node('div',null,'shelf-empty-state');
@@ -294,8 +288,8 @@ export class Library {
     }
     this.renderSelection();
   }
-  bookCard(book){
-    const card=node('article',null,`shelf-book${this.animateNextRender?' is-entering':''}${book.favorite?' has-favorite':''}`);card.dataset.bookId=book.id;card.draggable=true;
+  bookCard(book,animate=false){
+    const card=node('article',null,`shelf-book${animate?' is-entering':''}${book.favorite?' has-favorite':''}`);card.dataset.bookId=book.id;card.draggable=true;
     card.classList.toggle('is-selected',this.selected.has(book.id));
     const select=node('button',null,'shelf-book-select');select.type='button';select.setAttribute('role','checkbox');select.setAttribute('aria-checked',String(this.selected.has(book.id)));select.setAttribute('aria-label',`${this.selected.has(book.id)?'Desmarcar':'Selecionar'} ${book.title}`);select.innerHTML=this.selected.has(book.id)?svg('check'):'';select.onclick=event=>{event.stopPropagation();this.toggleSelection(book.id);};
     const open=node('button',null,'shelf-book-open');
@@ -489,13 +483,15 @@ export class Library {
   }
   async exportMarkdown(book){const data=await this.getBook(book.id);let text=data.rawMarkdown;if(text==null&&data.source){const response=await fetch(new URL(data.source.split('/').map(encodeURIComponent).join('/'),document.baseURI));if(!response.ok)throw new Error(`HTTP ${response.status}`);text=await response.text();}if(text==null)throw new Error('Fonte não disponível');this.download(text,data.filename||`${book.title.replace(/[<>:"/\\|?*]/g,'-')}.md`,'text/markdown');}
   download(content,name,type){const url=URL.createObjectURL(new Blob([content],{type}));const a=node('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);}
-  notesMatches(books=this.books()){const query=this.query.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();const matches=[];for(const book of books)for(const note of this.options.getNotes(book.id)){if(!query||`${book.title} ${note.text} ${note.note||''}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(query))matches.push({book,note});}return matches;}
+  notesForBook(id){if(!this.notesCache.has(id))this.notesCache.set(id,this.options.getNotes(id));return this.notesCache.get(id);}
+  invalidateNotes(id){if(id)this.notesCache.delete(id);else this.notesCache.clear();}
+  notesMatches(books=this.books()){const query=this.query.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();const matches=[];for(const book of books)for(const note of this.notesForBook(book.id)){if(!query||`${book.title} ${note.text} ${note.note||''}`.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(query))matches.push({book,note});}return matches;}
   noteCard({book,note}){const card=node('button',null,'shelf-note-card');card.append(node('strong',book.title),node('blockquote',note.text));if(note.note)card.append(node('p',note.note));card.onclick=()=>this.open(book.id,{section:note.section,offset:note.start});return card;}
   renderNotes(content){content.className='shelf-content shelf-dashboard';const matches=this.notesMatches();content.append(this.sectionHead('Memória','Anotações',`${matches.length} anotaç${matches.length===1?'ão':'ões'} neste navegador`));if(!matches.length){const empty=node('div',null,'shelf-empty-note');const icon=node('span',null,'shelf-empty-note-icon');icon.innerHTML=svg('notes');icon.setAttribute('aria-hidden','true');empty.append(icon,node('strong','Suas anotações aparecerão aqui'),node('p','Selecione um trecho no leitor para destacar e registrar uma anotação.'));content.append(empty);}for(const match of matches)content.append(this.noteCard(match));}
   renderStatistics(content){
     content.className='shelf-content shelf-dashboard';const books=this.books();const counts={new:0,reading:0,finished:0};for(const book of books)counts[readingStatus(book.progress)]++;
     content.append(this.sectionHead('Painel','Estatísticas',`${books.length} documento${books.length===1?'':'s'} acompanhado${books.length===1?'':'s'} neste navegador`));
-    const grid=node('div',null,'shelf-metrics');for(const [index,[label,value]]of [['Documentos',books.length],['Em leitura',counts.reading],['Concluídos',counts.finished],['Não iniciados',counts.new],['Anotações',books.reduce((sum,book)=>sum+this.options.getNotes(book.id).length,0)],['Tempo de leitura',formatTime(books.reduce((sum,book)=>sum+(this.state.records[book.id]?.readingSeconds||0),0))]].entries()){const card=node('div',null,'shelf-metric');card.style.setProperty('--i',String(index));const number=node('strong');number.setAttribute('aria-label',String(value));number.setAttribute('aria-live','polite');for(const character of String(value)){if(/\d/.test(character)){const digit=node('span',null,'metric-digit'),track=node('span',null,'metric-digit-track');track.style.setProperty('--digit-position',`-${Number(character)}em`);for(let n=0;n<=9;n++)track.append(node('span',String(n)));digit.append(track);number.append(digit);}else number.append(node('span',character,'metric-separator'));}card.append(node('small',label),number);grid.append(card);}content.append(grid);
+    const grid=node('div',null,'shelf-metrics');for(const [index,[label,value]]of [['Documentos',books.length],['Em leitura',counts.reading],['Concluídos',counts.finished],['Não iniciados',counts.new],['Anotações',books.reduce((sum,book)=>sum+this.notesForBook(book.id).length,0)],['Tempo de leitura',formatTime(books.reduce((sum,book)=>sum+(this.state.records[book.id]?.readingSeconds||0),0))]].entries()){const card=node('div',null,'shelf-metric');card.style.setProperty('--i',String(index));const number=node('strong');number.setAttribute('aria-label',String(value));number.setAttribute('aria-live','polite');for(const character of String(value)){if(/\d/.test(character)){const digit=node('span',null,'metric-digit'),track=node('span',null,'metric-digit-track');track.style.setProperty('--digit-position',`-${Number(character)}em`);for(let n=0;n<=9;n++)track.append(node('span',String(n)));digit.append(track);number.append(digit);}else number.append(node('span',character,'metric-separator'));}card.append(node('small',label),number);grid.append(card);}content.append(grid);
     if(books.length){const distribution=node('div',null,'shelf-distribution'),track=node('div',null,'shelf-distribution-track'),legend=node('div',null,'shelf-distribution-legend');track.setAttribute('role','img');track.setAttribute('aria-label',`Distribuição de leitura: ${counts.finished} concluídos, ${counts.reading} em leitura e ${counts.new} não iniciados`);for(const [status,label]of [['finished','Concluídos'],['reading','Em leitura'],['new','Não iniciados']]){const segment=node('span',null,`is-${status}`);segment.style.flexGrow=String(Math.max(0,counts[status]));segment.title=`${label}: ${counts[status]}`;track.append(segment);const item=node('span',null,`distribution-${status}`);item.append(node('i',null,'distribution-dot'),node('span',`${label} · ${counts[status]}`));legend.append(item);}distribution.append(track,legend);content.append(distribution);}
     const recent=[...books].filter(book=>book.lastReadAt).sort((a,b)=>b.lastReadAt-a.lastReadAt).slice(0,5);if(recent.length){content.append(node('h2','Leituras recentes'));for(const book of recent){const button=node('button',null,'shelf-recent');button.append(node('strong',book.title),node('span',`${Math.round(book.progress*100)}% · ${new Date(book.lastReadAt).toLocaleDateString('pt-BR')}`));button.onclick=()=>this.open(book.id);content.append(button);}}
   }
@@ -566,7 +562,7 @@ export class Library {
     for(const [index,[title,description,iconName]] of cards.entries()){const card=node('article',null,'shelf-info-card');card.style.setProperty('--i',String(index));const icon=node('span',null,'shelf-info-icon');icon.innerHTML=svg(iconName);icon.setAttribute('aria-hidden','true');card.append(icon,node('h2',title),node('p',description));grid.append(card);}
     content.append(grid);
     const links=node('nav',null,'shelf-info-links');links.setAttribute('aria-label','Links do projeto');
-    for(const [label,url] of [['Página inicial Vademecum','../'],['Repositório Vademecum MD','https://github.com/lucmolero/vademecum-md'],['Código da biblioteca','https://github.com/lucmolero/biblioteca-leis']]){const link=node('a',null,'shelf-info-link');link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.append(document.createTextNode(label));const icon=node('span',null,'shelf-info-link-icon');icon.innerHTML=svg('external');icon.setAttribute('aria-hidden','true');link.append(icon);links.append(link);}
+    for(const [label,url] of [['Página inicial Vademecum','../'],['Repositório Vademecum MD','https://github.com/lucmolero/vademecum-md'],['Código-fonte da biblioteca oficial','https://github.com/lucmolero/vademecum-md/tree/main/biblioteca']]){const link=node('a',null,'shelf-info-link');link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.append(document.createTextNode(label));const icon=node('span',null,'shelf-info-link-icon');icon.innerHTML=svg('external');icon.setAttribute('aria-hidden','true');link.append(icon);links.append(link);}
     content.append(links);
   }
   async exportBackup(){const reading={};for(const book of this.books(true))reading[book.id]=this.options.getReadingData(book.id);this.download(JSON.stringify({format:'biblioteca-local',version:1,exportedAt:new Date().toISOString(),books:this.local.map(book=>({id:book.id,rawMarkdown:book.rawMarkdown,filename:book.filename,importedAt:book.importedAt})),state:this.state,reading},null,2),'biblioteca-backup.json','application/json');}
