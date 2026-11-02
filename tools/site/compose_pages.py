@@ -152,13 +152,16 @@ def compose(site: Path) -> dict[str, object]:
     library = ROOT / "biblioteca/dist"
     home_html = (homepage / "index.html").read_text(encoding="utf-8")
     home_scripts = [homepage / item.removeprefix("./") for item in re.findall(r'<script[^>]+src="(\./assets/[^"]+\.js)"', home_html)]
-    if not home_scripts or not any("biblioteca/" in item.read_text(encoding="utf-8", errors="replace") for item in home_scripts):
+    home_bundle = "\n".join(item.read_text(encoding="utf-8", errors="replace") for item in home_scripts)
+    if not home_scripts or "biblioteca/" not in home_bundle:
         raise ValueError("Homepage compilada não aponta para /biblioteca/")
+    if "grafo-citacoes-mini" in home_bundle or "graph/viewer/" not in home_bundle:
+        raise ValueError("Homepage compilada não aponta para o grafo empacotado em /graph/viewer/")
     _release_metadata(site)
 
     for name in ("style.css", "graph.css", "app.js", "engine.js", "graph.js", "icon.svg", "sw.js"):
         (site / name).unlink(missing_ok=True)
-    for name in ("fonts", "generated/atlas", "generated/reader-data"):
+    for name in ("fonts", "generated/atlas", "generated/reader-data", "graph"):
         target = site / name
         if target.is_dir():
             shutil.rmtree(target)
@@ -177,6 +180,30 @@ def compose(site: Path) -> dict[str, object]:
 
     if not (site / "assets").is_dir() or not (site / "biblioteca/catalog.json").is_file():
         raise ValueError("Homepage ou biblioteca não foi copiada para o Pages")
+    graph_assets = (
+        "graph/index.html",
+        "graph/source.json",
+        "graph/LICENSE",
+        "graph/viewer/index.html",
+        "graph/viewer/style.css",
+        "graph/viewer/viewer.js",
+        "graph/viewer/vendor/3d-force-graph.min.js",
+        "graph/viewer/vendor/3d-force-graph-LICENSE.txt",
+        "graph/viewer/fonts/OFL-Outfit.txt",
+        "graph/data/explorer.json.gz",
+        "graph/data/search-index.json.gz",
+    )
+    missing_graph_assets = [name for name in graph_assets if not (site / name).is_file()]
+    if missing_graph_assets:
+        raise FileNotFoundError(f"Grafo oficial incompleto no Pages: {', '.join(missing_graph_assets)}")
+    graph_source = json.loads((site / "graph/source.json").read_text(encoding="utf-8"))
+    if (
+        graph_source.get("schema") != "vademecum-graph-package/v1"
+        or not re.fullmatch(r"[0-9a-f]{40}", str(graph_source.get("sourceCommit", "")))
+        or not isinstance(graph_source.get("displayedDirectedRelations"), int)
+        or graph_source["displayedDirectedRelations"] < 1
+    ):
+        raise ValueError("Manifesto do pacote do grafo ausente ou inválido")
     return release
 
 

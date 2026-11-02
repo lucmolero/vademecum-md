@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, type MouseEvent } from 'react';
 
 const graphUrl = import.meta.env.DEV
   ? 'http://127.0.0.1:8770/viewer/?home-hero=1'
-  : 'https://lucmolero.github.io/grafo-citacoes-mini/viewer/?home-hero=1';
+  : new URL('./graph/viewer/?home-hero=1', window.location.href).toString();
 
 export function CitationGraphHero() {
   const reduceMotion = useShouldReduceMotion();
