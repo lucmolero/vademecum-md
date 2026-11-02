@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#05070a">
+  <title>Grafo de citações · VadeMecum</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css?v=graph-perf-1">
+</head>
+<body data-theme="dark">
+  <header>
+    <div class="identity">
+      <div class="brand" aria-label="VadeMecum MD"><span class="brand-mark">V</span><span>vademecum</span></div>
+      <span class="identity-divider" aria-hidden="true"></span>
+      <span class="page-name">Pesquisa · Grafo de citações</span>
+    </div>
+    <div id="counts" aria-live="polite">Carregando snapshot…</div>
+  </header>
+  <main>
+    <section class="stage" aria-label="Mapa tridimensional das citações">
+      <div id="network" role="img" aria-label="Rede tridimensional: a seta aponta da norma que cita para a norma citada"></div>
+      <div class="stage-heading"><div class="stage-intro"><span class="eyebrow">Rede normativa · somente citações</span><h1>Conhecimento<br>em relação.</h1><p>Explore as conexões entre normas brasileiras.</p></div>
+        <div class="graph-toolbar" role="search" aria-label="Buscar no grafo">
+          <label class="search-wrap" aria-label="Buscar norma">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <input id="search" type="search" placeholder="Buscar uma norma..." aria-label="Buscar norma, número ou identificador" autocomplete="off">
+            <div id="suggestions" role="listbox"></div>
+          </label>
+        </div>
+      </div>
+      <div class="stage-note"><span id="view-count">Preparando rede…</span><div class="stage-guidance"><span id="motion-hint">Rotação suave · selecione uma norma para ver relações</span></div><button id="theme-toggle" class="icon-button" type="button" aria-label="Mudar para tema claro" title="Mudar para tema claro"><svg class="theme-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button></div>
+      <div id="legend"><span><i class="legal"></i>Ato do VadeMecum</span><span><i class="external"></i>Norma externa</span><span><i class="edge-candidate"></i>Norma citante → citada</span></div>
+      <div id="footnote">Relações acadêmicas candidatas, não confirmadas por fonte oficial. O recorte não representa toda a legislação brasileira.</div>
+    </section>
+    <aside id="details" class="context-card" hidden aria-live="polite" aria-label="Painel contextual do grafo">
+      <div class="drawer-top"><button id="context-expand" type="button" aria-expanded="true" aria-label="Recolher detalhes; arraste para baixo para fechar" title="Arraste para baixo para fechar"><span class="sheet-grabber" aria-hidden="true"></span></button></div>
+      <div class="empty"><h2>Normas e relações de citação</h2><p>Cada seta parte da norma que cita e aponta para a norma citada. Selecione um nó ou uma ligação para consultar os dados e a proveniência.</p><p id="network-summary" class="network-summary" aria-live="polite">Calculando a estrutura do recorte…</p></div>
+      <div id="record"></div>
+    </aside>
+  </main>
+  <script src="vendor/3d-force-graph.min.js?v=1.80.0"></script>
+  <script src="viewer.js?v=graph-perf-1"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "schema": "vademecum-graph-package/v1",
+  "sourceRepository": "lucmolero/grafo-citacoes-mini (separate source copy)",
+  "sourceCommit": "295ff7cca69d20e8f787a195b053597d0e40a687",
+  "snapshotDate": "2026-10-31",
+  "vademecumDocuments": 375,
+  "connectedNodes": 1729,
+  "displayedDirectedRelations": 1695,
+  "sourceCitationOccurrences": 3380,
+  "citationStatus": "academic candidate relations; not confirmed by official source"
+}
