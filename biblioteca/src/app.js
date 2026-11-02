@@ -58,7 +58,11 @@ const validNote = note => note&&Number.isInteger(note.section)&&note.section>=0&
 const reader = new Reader($('#viewport'));
 let library, active=null, position=null, marks=[], notes=[], selected=null, toastTimer,toastGeneration=0,tocItems=[],tocExpanded=[];
 let readingSince=0,lastInteraction=Date.now(),seeking=false,routeToken=0;
-if('serviceWorker'in navigator&&location.protocol!=='file:'&&!previewModes.has(libraryPreview))navigator.serviceWorker.register(new URL('./sw.js',document.baseURI)).catch(error=>console.warn('Modo offline indisponível:',error));
+if('serviceWorker'in navigator&&location.protocol!=='file:'&&!previewModes.has(libraryPreview)){
+  navigator.serviceWorker.register(new URL('./sw.js',document.baseURI),{updateViaCache:'none'})
+    .then(registration=>registration.update())
+    .catch(error=>console.warn('Modo offline indisponível:',error));
+}
 if('serviceWorker'in navigator&&!previewModes.has(libraryPreview))navigator.serviceWorker.addEventListener('message',event=>{
   if(event.data?.type==='OFFLINE_PROGRESS')message(`Preparando biblioteca offline · ${event.data.done} de ${event.data.total} arquivos…`);
   if(event.data?.type==='OFFLINE_READY')message(`Biblioteca disponível offline · ${event.data.total} arquivos armazenados.`);
@@ -161,7 +165,7 @@ function renderNotes(){
     const card=element('div',null,'note-card'),button=element('button'),remove=element('button','×','button');
     button.append(element('blockquote',note.text));if(note.note)button.append(element('p',note.note));
     button.onclick=()=>jump({section:note.section,offset:note.start});
-    remove.setAttribute('aria-label','Remover anotação');remove.onclick=()=>{notes=notes.filter(item=>item!==note);store.set(`notes:${active.id}`,notes);reader.notes=notes;reader.drawNotes();renderNotes();};
+    remove.setAttribute('aria-label','Remover anotação');remove.onclick=()=>{notes=notes.filter(item=>item!==note);store.set(`notes:${active.id}`,notes);library?.invalidateNotes(active.id);reader.notes=notes;reader.drawNotes();renderNotes();};
     card.append(button,remove);$('#notes').append(card);
   }
 }
@@ -270,7 +274,7 @@ $('#search-form').onsubmit=event=>{
   event.preventDefault();const results=reader.search($('#query').value);$('#results').replaceChildren();$('#search-status').textContent=`${results.length} resultado${results.length===1?'':'s'}`;
   for(const result of results){const button=element('button',null,'result-button');button.append(element('strong',result.label),element('span',result.before),element('mark',result.match),element('span',result.after));button.onclick=()=>jump(result);$('#results').append(button);}
 };
-$('#save-note').onclick=()=>{if(!selected||!active)return;notes.push({...selected,note:$('#note-text').value});store.set(`notes:${active.id}`,notes);reader.notes=notes;reader.drawNotes();renderNotes();$('#selection-popover').hidden=true;document.getSelection()?.removeAllRanges();};
+$('#save-note').onclick=()=>{if(!selected||!active)return;notes.push({...selected,note:$('#note-text').value});store.set(`notes:${active.id}`,notes);library?.invalidateNotes(active.id);reader.notes=notes;reader.drawNotes();renderNotes();$('#selection-popover').hidden=true;document.getSelection()?.removeAllRanges();};
 $('#cancel-note').onclick=()=>{$('#selection-popover').hidden=true;};
 document.addEventListener('pointerdown',event=>{if(!event.target.closest('#selection-popover'))$('#selection-popover').hidden=true;});
 $('#appearance-toggle').onclick=()=>{$('#appearance').hidden=!$('#appearance').hidden;$('#appearance-toggle').setAttribute('aria-expanded',String(!$('#appearance').hidden));};
