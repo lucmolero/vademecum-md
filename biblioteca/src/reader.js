@@ -26,14 +26,15 @@ export class Reader extends EventTarget {
     this.settings = { size: 18, spacing: 1.6, font: 'serif', flow: 'scroll' };
     this.observer = new ResizeObserver(() => this.layout());
     this.observer.observe(viewport);
-    this.article.addEventListener('click', event => {
+    this.articleClickHandler = event => {
       const a = event.target.closest('a');
       if (!a) return;
       if (a.getAttribute('href')?.startsWith('#')) {
         event.preventDefault(); this.goAnchor(a.getAttribute('href').slice(1));
       } else { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
-    });
-    this.article.addEventListener('pointerup', () => {
+    };
+    this.article.addEventListener('click', this.articleClickHandler);
+    this.articlePointerHandler = () => {
       const selection = document.getSelection();
       if (!selection?.rangeCount || selection.isCollapsed || !this.article.contains(selection.anchorNode) || !this.article.contains(selection.focusNode)) return;
       const range = selection.getRangeAt(0);
@@ -47,10 +48,12 @@ export class Reader extends EventTarget {
       const before = document.createRange(); before.selectNodeContents(root); before.setEnd(range.startContainer, range.startOffset);
       const start = before.toString().length;
       this.dispatchEvent(new CustomEvent('selection', { detail: { section, start, end: start + range.toString().length, text: range.toString() } }));
-    });
-    viewport.addEventListener('scroll', () => {
+    };
+    this.article.addEventListener('pointerup', this.articlePointerHandler);
+    this.viewportScrollHandler = () => {
       if (this.settings.flow === 'scroll') this.emitPosition();
-    });
+    };
+    viewport.addEventListener('scroll', this.viewportScrollHandler);
   }
   async open(book, position) {
     this.book = book;
@@ -322,4 +325,11 @@ export class Reader extends EventTarget {
     CSS.highlights.set('notes', new Highlight(...ranges));
   }
   clear() { this.book = null; this.currentBook = null; this.renderedFlow = null; this.sectionElements = []; this.section = 0; this.page = 0; this.pages = 1; this.viewport.scrollTo(0, 0); this.article.replaceChildren(); globalThis.CSS?.highlights?.delete('notes'); }
+  destroy() {
+    this.observer.disconnect();
+    this.article.removeEventListener('click', this.articleClickHandler);
+    this.article.removeEventListener('pointerup', this.articlePointerHandler);
+    this.viewport.removeEventListener('scroll', this.viewportScrollHandler);
+    this.clear();
+  }
 }

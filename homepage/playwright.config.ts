@@ -12,7 +12,7 @@ export default defineConfig({
     trace: 'retain-on-failure',
   },
   webServer: {
-    command: 'python -m http.server 8787 --directory ../site',
+    command: 'npm run dev -- --port 8787',
     url: 'http://127.0.0.1:8787/',
     reuseExistingServer: !process.env.CI,
     timeout: 30_000,

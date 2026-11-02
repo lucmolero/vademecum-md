@@ -5,7 +5,7 @@ import {
   RotatingTextContainer,
 } from '@animate-ui/react/primitives/texts/rotating';
 import { SplittingText } from '@animate-ui/react/primitives/texts/splitting';
-import { ease } from '@animate-ui/react/utils/motion';
+import { ease, useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import { motion } from 'motion/react';
 import { useLayoutEffect, useRef, useState } from 'react';
 
@@ -25,7 +25,9 @@ function Line({
   done: boolean;
   delay: number;
 }) {
+  const reduce = useShouldReduceMotion();
   if (!done) return <span className="invisible">{text}</span>;
+  if (reduce) return <span>{text}</span>;
   return (
     <SplittingText
       type="words"
@@ -60,8 +62,10 @@ function useOwnLine(ref: React.RefObject<HTMLElement | null>, done: boolean) {
 }
 
 function Library({ done, libraries }: { done: boolean; libraries: string[] }) {
+  const reduce = useShouldReduceMotion();
   const ref = useRef<HTMLSpanElement>(null);
   const ownLine = useOwnLine(ref, done);
+  if (reduce) return <span className="inline-block text-neutral-500 dark:text-neutral-400">{libraries[0]}</span>;
   return (
     <motion.span
       ref={ref}
@@ -93,12 +97,12 @@ export function HeroTitle({
   libraries: string[];
 }) {
   return (
-    <h1 className="flex max-w-[1100px] flex-col items-center text-[clamp(1.75rem,7vw,3.75rem)] font-medium md:text-6xl">
+    <h2 className="flex max-w-[1100px] flex-col items-center text-[clamp(1.75rem,6vw,3.75rem)] font-medium md:text-6xl">
       <span className="whitespace-normal text-center md:whitespace-nowrap">
-        <Line text="Explore sua" done={done} delay={0} />{' '}
+        <Line text="Pesquisa jurídica" done={done} delay={0} />{' '}
         <Library done={done} libraries={libraries} />
       </span>
-      <Line text="pesquisa jurídica em um só lugar" done={done} delay={300} />
-    </h1>
+      <Line text="em um só lugar." done={done} delay={300} />
+    </h2>
   );
 }

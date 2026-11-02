@@ -26,6 +26,15 @@ export const LOGO_GLIDE = {
 
 const IntroContext = createContext({ playing: false, done: true });
 
+function shouldPlayIntro() {
+  if (typeof window === 'undefined' || window.location.hash) return false;
+  try {
+    return window.sessionStorage.getItem('vademecum-home-intro-seen') !== '1';
+  } catch {
+    return false;
+  }
+}
+
 export function useIntroDone() {
   return use(IntroContext).done;
 }
@@ -57,8 +66,8 @@ export function FullLogo({
 export function IntroProvider({ children }: { children: ReactNode }) {
   const reduce = useShouldReduceMotion();
   const vue = false;
-  const [playing, setPlaying] = useState(true);
-  const [done, setDone] = useState(false);
+  const [playing, setPlaying] = useState(shouldPlayIntro);
+  const [done, setDone] = useState(() => !shouldPlayIntro());
 
   useEffect(() => {
     if (!done || !window.location.hash) return;
@@ -71,32 +80,34 @@ export function IntroProvider({ children }: { children: ReactNode }) {
   }, [done]);
 
   useEffect(() => {
-    if (reduce) return;
-    const root = document.documentElement;
-    root.style.overflow = 'hidden';
-    const glide = setTimeout(
+    if (!playing) return;
+    if (reduce) {
+      setPlaying(false);
+      setDone(true);
+      return;
+    }
+    try {
+      window.sessionStorage.setItem('vademecum-home-intro-seen', '1');
+    } catch {
+      // The intro remains optional when storage is unavailable.
+    }
+    const reveal = setTimeout(
       () => setPlaying(false),
       (DRAW + FILL + HOLD) * 1000,
     );
-    const finish = setTimeout(
-      () => {
-        root.style.overflow = '';
-        setDone(true);
-      },
-      (DRAW + FILL + HOLD + GLIDE * 0.45) * 1000,
-    );
-    return () => {
-      clearTimeout(glide);
-      clearTimeout(finish);
-      root.style.overflow = '';
-    };
-  }, [reduce]);
+    return () => clearTimeout(reveal);
+  }, [playing, reduce]);
 
   const intro = playing && !reduce;
 
   return (
     <IntroContext value={{ playing: intro, done: done || Boolean(reduce) }}>
-      <AnimatePresence>
+      <AnimatePresence
+        onExitComplete={() => {
+          if (reduce) return;
+          setDone(true);
+        }}
+      >
         {intro && (
           <motion.div
             key="intro"
@@ -129,7 +140,7 @@ export function IntroProvider({ children }: { children: ReactNode }) {
           <motion.div
             layoutId="home-logo"
             transition={{ layout: LOGO_GLIDE }}
-            className="w-[min(78vw,640px)] text-foreground"
+            className="w-fit text-[clamp(2.5rem,8vw,5rem)] text-foreground"
           >
             <FullLogo draw vue={vue} />
           </motion.div>

@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import shutil
+import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -64,6 +66,51 @@ def _release_metadata(site: Path) -> dict[str, object]:
     }
 
 
+def _validate_skill_kit(site: Path) -> None:
+    metadata_path = site / "skill-kit.json"
+    if not metadata_path.is_file():
+        raise FileNotFoundError("Homepage não contém skill-kit.json")
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    paths: dict[str, Path] = {}
+    for key in ("download", "checksum"):
+        value = metadata.get(key)
+        if not isinstance(value, str) or value.startswith(("/", "http://", "https://")):
+            raise ValueError(f"Caminho de {key} inválido no skill-kit.json")
+        target = (site / value.removeprefix("./")).resolve()
+        if not target.is_relative_to(site.resolve()) or not target.is_file():
+            raise FileNotFoundError(f"Arquivo de {key} ausente ou fora do Pages: {value}")
+        paths[key] = target
+
+    archive = paths["download"]
+    digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+    if digest != metadata.get("sha256"):
+        raise ValueError("SHA-256 do kit diverge do skill-kit.json")
+    checksum = paths["checksum"].read_text(encoding="ascii").split()
+    if not checksum or checksum[0].lower() != digest:
+        raise ValueError("Arquivo .sha256 do kit diverge do ZIP publicado")
+    try:
+        with zipfile.ZipFile(archive) as bundle:
+            if bundle.testzip() is not None:
+                raise ValueError("ZIP do kit contém um arquivo corrompido")
+            manifest = json.loads(bundle.read("KIT-MANIFEST.json"))
+            required = (
+                ".agents/skills/vademecum-consulta-juridica/SKILL.md",
+                ".claude/skills/vademecum-consulta-juridica/SKILL.md",
+                "corpus/manifests/release.json",
+            )
+            missing = [name for name in required if name not in bundle.namelist()]
+            if missing:
+                raise ValueError(f"Kit incompleto; faltam: {', '.join(missing)}")
+    except (KeyError, zipfile.BadZipFile, json.JSONDecodeError) as error:
+        raise ValueError(f"ZIP de skill inválido: {error}") from error
+
+    release = json.loads((ROOT / "manifests/release.json").read_text(encoding="utf-8"))
+    if metadata.get("version") != release.get("version") or manifest.get("release") != release.get("version"):
+        raise ValueError("Skill, ZIP e release do corpus estão desalinhados")
+    if metadata.get("documentCount") != release.get("corpus_count") or manifest.get("document_count") != release.get("corpus_count"):
+        raise ValueError("Quantidade de documentos no kit diverge da release")
+
+
 def _legacy_service_worker_migration() -> str:
     return '''"use strict";
 self.addEventListener("install", (event) => event.waitUntil(self.skipWaiting()));
@@ -117,6 +164,7 @@ def compose(site: Path) -> dict[str, object]:
             shutil.rmtree(target)
     _copy_contents(homepage, site)
     _copy_contents(library, site / "biblioteca")
+    _validate_skill_kit(site)
 
     release = _release_metadata(site)
     payload = json.dumps(release, ensure_ascii=False, indent=2) + "\n"

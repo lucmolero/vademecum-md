@@ -4,7 +4,6 @@ import { ease, useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import {
   motion,
   useAnimationFrame,
-  useInView,
   useMotionValue,
   useMotionValueEvent,
   useScroll,
@@ -28,7 +27,7 @@ import { cn } from 'cn';
 
 import { VademecumMark as AnimateUILogo } from '@/brand';
 
-import { AutoplayScope, VIGNETTES } from './vignettes';
+import { VIGNETTES } from './vignettes';
 
 const STAGE = { width: 1200, height: 780 };
 const CARD = { width: 300, height: 188 };
@@ -83,16 +82,10 @@ function useStageScale() {
   return scale;
 }
 
-const OnScreenContext = createContext(true);
-
 function Card({ title, Vignette }: { title: string; Vignette: ComponentType }) {
-  const [hovered, setHovered] = useState(false);
-  const onScreen = use(OnScreenContext);
   return (
     <div
       data-slot="orbit-card"
-      onPointerEnter={() => setHovered(true)}
-      onPointerLeave={() => setHovered(false)}
       className="flex size-full flex-col rounded-xl bg-accent p-1"
     >
       <div className="relative flex flex-1 flex-col rounded-lg bg-background">
@@ -100,9 +93,7 @@ function Card({ title, Vignette }: { title: string; Vignette: ComponentType }) {
           {title}
         </span>
         <div className="flex flex-1 items-center justify-center p-4 pt-7">
-          <AutoplayScope paused={hovered || !onScreen}>
-            <Vignette />
-          </AutoplayScope>
+          <Vignette />
         </div>
       </div>
     </div>
@@ -177,6 +168,9 @@ function OrbitCard({
     if (!element) return;
     element.style.transform = `perspective(900px) translate(${round(p.x, 1)}px, ${round(p.y, 1)}px) scale(${round(p.scale, 3)}) rotateY(${round(p.rotateY, 2)}deg)`;
     element.style.opacity = String(round(p.opacity, 3));
+    const interactive = p.opacity > 0.35;
+    element.style.pointerEvents = interactive ? 'auto' : 'none';
+    element.inert = !interactive;
     element.style.filter =
       p.blur > 0.05 ? `blur(${round(p.blur, 1)}px)` : 'none';
     element.style.zIndex = String(p.z);
@@ -194,7 +188,9 @@ function OrbitCard({
         marginLeft: -CARD.width / 2,
         marginTop: -CARD.height / 2,
         opacity: 0,
+        pointerEvents: 'none',
       }}
+      inert
     >
       <Card title={title} Vignette={Vignette} />
     </div>
@@ -231,7 +227,6 @@ function Headline({
 function OrbitStage() {
   const vignettes = use(VignettesContext);
   const ref = useRef<HTMLElement>(null);
-  const onScreen = useInView(ref);
   const scale = useStageScale();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -245,12 +240,10 @@ function OrbitStage() {
   const drift = useMotionValue(0);
 
   const enter = useTransform(progress, (p) => smooth(clamp((p - 0.12) / 0.25)));
-  const [entered, setEntered] = useState(false);
-  useMotionValueEvent(enter, 'change', (value) => setEntered(value > 0.001));
   const settle = useTransform(progress, (p) => clamp((p - 0.86) / 0.12));
   const turn = useTransform(progress, (p) => clamp(p / 0.86) * Math.PI * 1.1);
   useAnimationFrame((_, delta) => {
-    if (settle.get() === 0) drift.set(drift.get() + delta * 0.00008);
+    if (enter.get() > 0 && settle.get() === 0) drift.set(drift.get() + delta * 0.00008);
   });
 
   const logoScale = useTransform(
@@ -264,7 +257,6 @@ function OrbitStage() {
   const glow = useTransform(progress, [0, 0.3, 0.86, 0.95], [0.5, 1, 1, 0]);
 
   return (
-    <OnScreenContext value={onScreen && entered}>
       <section
         ref={ref}
         id="recursos"
@@ -281,10 +273,10 @@ function OrbitStage() {
             }}
           >
             <Headline progress={progress} range={[-0.01, 0, 0.78, 0.87]}>
-              Cada descoberta, viva.
+              O direito se revela nas relações.
             </Headline>
             <Headline progress={progress} range={[0.9, 0.97, 1, 1.01]}>
-              Explore. O próximo passo é seu.
+              Encontre o contexto de cada norma.
             </Headline>
 
             <motion.div
@@ -319,19 +311,14 @@ function OrbitStage() {
           </div>
         </div>
       </section>
-    </OnScreenContext>
   );
 }
 
 function StaticGrid() {
   const vignettes = use(VignettesContext);
   const columns = columnsOf(vignettes.length);
-  const ref = useRef<HTMLElement>(null);
-  const onScreen = useInView(ref);
   return (
-    <OnScreenContext value={onScreen}>
       <section
-        ref={ref}
         id="recursos"
         data-slot="home-orbit"
         className="mx-auto mt-24 flex w-full max-w-[1000px] flex-col gap-8 px-5"
@@ -343,7 +330,7 @@ function StaticGrid() {
           transition={{ duration: 0.6, ease: ease.out }}
           className="text-center text-3xl font-medium text-balance md:text-5xl"
         >
-          Cada descoberta, viva.
+          O direito se revela nas relações.
         </motion.h2>
         <div
           className={cn(
@@ -375,7 +362,144 @@ function StaticGrid() {
           ))}
         </div>
       </section>
-    </OnScreenContext>
+  );
+}
+
+function MobileOrbitCard({
+  index, activeIndex, enter, settle, turn, drift, viewportWidth, viewportHeight, cardWidth,
+}: {
+  index: number;
+  activeIndex: MotionValue<number>;
+  enter: MotionValue<number>;
+  settle: MotionValue<number>;
+  turn: MotionValue<number>;
+  drift: MotionValue<number>;
+  viewportWidth: number;
+  viewportHeight: number;
+  cardWidth: number;
+}) {
+  const vignettes = use(VignettesContext);
+  const { title, Vignette } = vignettes[index]!;
+  const place = useTransform(
+    [enter, settle, turn, drift, activeIndex] as MotionValue<number>[],
+    ([e, s, t, d, selected]: number[]) => {
+      const angle = (index / vignettes.length) * Math.PI * 2 + t! + d! * (1 - s!);
+      const depth = (Math.sin(angle) + 1) / 2;
+      const orbitX = Math.cos(angle) * Math.min(170, viewportWidth * .43) * (.35 + .65 * e!);
+      const orbitY = Math.sin(angle) * Math.min(210, viewportHeight * .28) * (.35 + .65 * e!);
+      const delta = index - selected!;
+      const selectedOpacity = Math.max(0, 1 - Math.abs(delta) * 1.4);
+      const k = smooth(s!);
+      return {
+        x: orbitX + (delta * viewportWidth - orbitX) * k,
+        y: orbitY + (68 - orbitY) * k,
+        scale: (.72 + .28 * depth) + ((Math.abs(delta) < .5 ? 1 : .88) - (.72 + .28 * depth)) * k,
+        blur: ((1 - depth) * 3.2 + (1 - e!) * 7) * (1 - k),
+        opacity: (.48 + .52 * depth) * e! * (1 - k) + selectedOpacity * k,
+        rotateY: -Math.cos(angle) * 18 * (1 - k),
+        z: k > .5 ? 30 - Math.round(Math.abs(delta)) : depth > .5 ? 20 : 5,
+        interactive: k > .92 && Math.abs(delta) < .5,
+      };
+    },
+  );
+
+  const ref = useRef<HTMLDivElement>(null);
+  const apply = useCallback((p: Placement & { interactive: boolean }) => {
+    const element = ref.current;
+    if (!element) return;
+    element.style.transform = `perspective(900px) translate(${round(p.x, 1)}px, ${round(p.y, 1)}px) scale(${round(p.scale, 3)}) rotateY(${round(p.rotateY, 2)}deg)`;
+    element.style.opacity = String(round(p.opacity, 3));
+    element.style.pointerEvents = p.interactive ? 'auto' : 'none';
+    element.inert = !p.interactive;
+    element.style.filter = p.blur > .05 ? `blur(${round(p.blur, 1)}px)` : 'none';
+    element.style.zIndex = String(p.z);
+  }, []);
+  useMotionValueEvent(place, 'change', apply);
+  useLayoutEffect(() => apply(place.get()), [apply, place]);
+
+  return (
+    <div
+      ref={ref}
+      role="group"
+      aria-roledescription="slide"
+      aria-label={`${index + 1} de ${vignettes.length}: ${title}`}
+      className="absolute top-1/2 left-1/2"
+      style={{ width: cardWidth, height: CARD.height, marginLeft: -cardWidth / 2, marginTop: -CARD.height / 2, opacity: 0, pointerEvents: 'none' }}
+      inert
+    >
+      <Card title={title} Vignette={Vignette} />
+    </div>
+  );
+}
+
+function MobileOrbitStage() {
+  const vignettes = use(VignettesContext);
+  const ref = useRef<HTMLElement>(null);
+  const reduce = useShouldReduceMotion();
+  const [viewport, setViewport] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [selected, setSelected] = useState(0);
+  const selectedMotion = useMotionValue(0);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end end'] });
+  const progress = useSpring(scrollYProgress, { stiffness: 160, damping: 32, mass: .4 });
+  const drift = useMotionValue(0);
+  const enter = useTransform(progress, p => smooth(clamp((p - .12) / .25)));
+  const settle = useTransform(progress, p => clamp((p - .78) / .16));
+  const turn = useTransform(progress, p => clamp(p / .78) * Math.PI * 1.1);
+  const titleOpacity = useTransform(progress, [0, .08, .68, .78], [1, 1, 1, 0]);
+  const finalTitleOpacity = useTransform(progress, [.76, .88], [0, 1]);
+  const logoScale = useTransform(progress, [0, .3, .78, .94], [.68, .84, .84, .2]);
+  const logoOpacity = useTransform(progress, [0, .78, .9], [1, 1, 0]);
+  const logoRotate = useTransform(progress, [0, .9], [-35, 170]);
+  const controlsOpacity = useTransform(progress, [.78, .9], [0, 1]);
+  const cardWidth = Math.min(340, Math.max(240, viewport.width - 32));
+
+  useEffect(() => {
+    const resize = () => setViewport({ width: window.innerWidth, height: window.innerHeight });
+    window.addEventListener('resize', resize, { passive: true });
+    return () => window.removeEventListener('resize', resize);
+  }, []);
+  useEffect(() => selectedMotion.set(selected), [selected, selectedMotion]);
+  useAnimationFrame((_, delta) => {
+    if (enter.get() > 0 && settle.get() < 1) drift.set(drift.get() + delta * .00008);
+  });
+
+  const step = (direction: -1 | 1) => setSelected(current => Math.min(vignettes.length - 1, Math.max(0, current + direction)));
+
+  return (
+    <section ref={ref} id="recursos" data-slot="home-orbit" className="relative mt-16 h-[300vh]" aria-label="Recursos do VadeMecum">
+      <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-hidden">
+        <div className="relative h-full w-full shrink-0" style={{ perspective: 1200 }}>
+          <motion.h2 style={{ opacity: titleOpacity, y: useTransform(titleOpacity, [0, 1], [-12, 0]) }} className="absolute inset-x-5 top-7 z-40 text-left text-[clamp(1.65rem,7vw,2.15rem)] font-medium leading-[1.05] tracking-tight text-balance">
+            O direito se revela nas relações.
+          </motion.h2>
+          <motion.div style={{ opacity: finalTitleOpacity }} className="absolute inset-x-5 top-7 z-40">
+            <h2 className="text-[clamp(1.65rem,7vw,2.15rem)] font-medium leading-[1.05] tracking-tight text-balance">
+              Encontre o contexto de cada norma.
+            </h2>
+            <p className="mt-2 text-sm text-muted-foreground">Explore as prévias interativas da Biblioteca e do Leitor.</p>
+          </motion.div>
+          <motion.div aria-hidden="true" style={{ scale: logoScale, opacity: logoOpacity, rotate: logoRotate }} className="absolute top-1/2 left-1/2 z-10 -mt-16 -ml-[4.5rem]">
+            <AnimateUILogo className="h-32 w-36 text-foreground drop-shadow-[0_24px_48px_rgb(0_0_0/0.24)]" />
+          </motion.div>
+          {vignettes.map(({ title }, index) => (
+            <MobileOrbitCard key={title} index={index} activeIndex={selectedMotion} enter={enter} settle={settle} turn={turn} drift={drift} viewportWidth={viewport.width} viewportHeight={viewport.height - 80} cardWidth={cardWidth} />
+          ))}
+          <motion.div style={{ opacity: controlsOpacity, pointerEvents: 'none' }} className="absolute inset-x-5 bottom-5 z-40 flex items-center justify-between gap-3">
+            <span className="text-xs font-medium text-muted-foreground" aria-live="polite" aria-atomic="true">
+              {vignettes[selected]?.title} · {String(selected + 1).padStart(2, '0')} / {String(vignettes.length).padStart(2, '0')}
+            </span>
+            <div className="flex gap-2" style={{ pointerEvents: 'auto' }}>
+              <button type="button" aria-label="Prévia anterior" disabled={selected === 0} onClick={() => step(-1)} className="flex size-10 items-center justify-center rounded-full border border-border bg-background/90 text-foreground shadow-sm transition-colors hover:bg-accent disabled:opacity-35">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" aria-hidden="true"><path d="m14.5 5-7 7 7 7" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </button>
+              <button type="button" aria-label="Próxima prévia" disabled={selected >= vignettes.length - 1} onClick={() => step(1)} className="flex size-10 items-center justify-center rounded-full border border-border bg-background/90 text-foreground shadow-sm transition-colors hover:bg-accent disabled:opacity-35">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -388,7 +512,7 @@ export function Orbit({ only }: { only?: string[] }) {
     : VIGNETTES;
   return (
     <VignettesContext value={vignettes}>
-      {wide && !reduce ? <OrbitStage /> : <StaticGrid />}
+      {wide && !reduce ? <OrbitStage /> : !wide && !reduce ? <MobileOrbitStage /> : <StaticGrid />}
     </VignettesContext>
   );
 }

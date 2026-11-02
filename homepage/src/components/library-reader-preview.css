@@ -1,0 +1,7 @@
+.library-reader-preview {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 22px;
+  contain: layout paint;
+}

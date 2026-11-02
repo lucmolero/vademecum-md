@@ -30,6 +30,8 @@ jobs:
         run: python tools/site/build_site.py
       - name: Build documentation pages
         run: mkdocs build --strict
+      - name: Package the agent skill and matching corpus release
+        run: python tools/package_skill_kit.py
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: "22"

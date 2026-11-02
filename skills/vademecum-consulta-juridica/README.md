@@ -2,11 +2,44 @@
 
 ## Ativação
 
-Copie o diretório `vademecum-consulta-juridica` para o local de skills
-reconhecido pelo seu agente, ou forneça `SKILL.md` como instrução contextual. O
-suporte e o caminho de instalação dependem do ambiente e da versão da plataforma;
-consulte a documentação atual do seu agente. Não há dependências ou scripts a
-executar.
+### Sem terminal: kit pronto para abrir no agente
+
+Baixe o [kit completo para agentes](https://lucmolero.github.io/vademecum-md/downloads/vademecum-consulta-juridica-kit.zip), extraia e abra a pasta no Codex, Claude Code, Cursor ou OpenCode. Ele contém a skill e o corpus da mesma release, em pastas próprias. A skill é descoberta pelas pastas de projeto `.agents/skills/` (Codex, Cursor e OpenCode) ou `.claude/skills/` (Claude Code); o corpus fica em `corpus/`. Não precisa de Node.js, npm ou `npx`.
+
+Para adicionar ao projeto que já está aberto, use na homepage **Copiar instrução para o agente**. O agente baixa o kit, confere o SHA-256, instala a skill na pasta de projeto do agente e coloca os dados em `.vademecum-md/releases/<versão>/`. Aponte `.vademecum-md/current.json` para a release instalada. O kit inclui `README.md` com o procedimento e o manifesto lista os hashes dos arquivos.
+
+O ponteiro do projeto tem este formato, com a versão realmente instalada:
+
+```json
+{
+  "schema": "vademecum-corpus-pointer/v1",
+  "release": "1.1.3",
+  "path": "releases/1.1.3"
+}
+```
+
+Para uma instalação pessoal, use como pasta de dados `%LOCALAPPDATA%/VadeMecumMD` no Windows, `~/Library/Application Support/VadeMecumMD` no macOS ou `${XDG_DATA_HOME:-~/.local/share}/vademecum-md` no Linux. O ponteiro `current.json` fica nessa pasta. Para usar outro local, defina `VADEMECUM_MD_DATA` para uma pasta de dados que contenha esse ponteiro.
+
+### Instalação por CLI
+
+Se já usa Node.js 22.20 ou superior, o CLI `skills` instala apenas as instruções da skill:
+
+```sh
+npx skills add lucmolero/vademecum-md --skill vademecum-consulta-juridica --agent codex --global --yes
+```
+
+Troque `codex` pelo identificador do agente (`claude-code`, `cursor` ou
+`opencode`). Remova `--global` para instalar somente no projeto atual. Esse
+comando não baixa o corpus; para isso, baixe o kit completo ou abra o repositório
+VadeMecum MD no workspace do agente. Para outros agentes compatíveis, consulte a
+[lista oficial de agentes](https://github.com/vercel-labs/skills/blob/main/docs/agents.md).
+
+### Onde a skill procura os dados
+
+A skill procura o repositório aberto no workspace, `corpus/` no kit extraído,
+`.vademecum-md/current.json` no projeto ou o diretório pessoal de dados do
+VadeMecum MD. Para personalizar o último caminho, defina
+`VADEMECUM_MD_DATA`. Instalar só a skill não concede acesso ao corpus.
 
 O formato `SKILL.md` é compartilhado por ecossistemas compatíveis com Agent
 Skills, incluindo Codex e Claude. A skill não concede acesso ao repositório. Para
@@ -48,8 +81,8 @@ verificado em vez de inventá-lo.
 
 ## Referências do projeto
 
-- Contrato machine-readable: `../../manifests/consumer-contract.json`.
-- Schema do corpus: `../../docs/SCHEMA.md`.
-- Política de proveniência: `../../docs/SOURCES.md`.
-- Guia de públicos e consumo: `../../site_docs/audiences.md`.
+- [Contrato machine-readable](https://github.com/lucmolero/vademecum-md/blob/main/manifests/consumer-contract.json).
+- [Schema do corpus](https://github.com/lucmolero/vademecum-md/blob/main/docs/SCHEMA.md).
+- [Política de proveniência](https://github.com/lucmolero/vademecum-md/blob/main/docs/SOURCES.md).
+- [Guia de públicos e consumo](https://github.com/lucmolero/vademecum-md/blob/main/site_docs/audiences.md).
 - Cenários de avaliação: [`evals.md`](evals.md).

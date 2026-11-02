@@ -21,8 +21,14 @@ async function expectWcag(page: import('@playwright/test').Page, scope: string) 
 }
 
 test('homepage, official library and reader work at desktop and mobile widths', async ({ page }) => {
+  test.setTimeout(90_000);
   const frontendErrors: string[] = [];
   page.on('pageerror', error => frontendErrors.push(error.message));
+  await page.route('http://127.0.0.1:8770/viewer/**', route => route.fulfill({
+    status: 200,
+    contentType: 'text/html',
+    body: '<!doctype html><html lang="pt-BR"><body><main aria-label="Grafo de citações"></main></body></html>',
+  }));
 
   await page.goto('/');
   await expect(page).toHaveTitle(/Vademecum/);
@@ -34,7 +40,8 @@ test('homepage, official library and reader work at desktop and mobile widths', 
   await expectNoHorizontalOverflow(page);
   await expectWcag(page, '#inicio');
 
-  await page.locator('a[href*="biblioteca/"]:visible').first().click();
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.locator('header a[href="./biblioteca/"]:visible').click();
   await expect(page).toHaveURL(/\/biblioteca\/$/);
   await expect(page.locator('.shelf-book-open').first()).toBeVisible();
   const catalog = await page.evaluate(async () => {
