@@ -64,8 +64,11 @@ export class Library {
   constructor(root, options) {
     this.root=root; this.options=options; this.db=new LibraryStore();
     this.catalog=[];this.local=[];this.state={records:Object.create(null),folders:[],preferences:{...defaultPreferences}};
-    this.view='books';this.folder='';this.query='';this.status='all';this.tags=[];this.selected=new Set();this.selectionMode=false;this.saveTimer=null;
-    this.visibleBooks=[];this.renderContext='';this.fullQuery='';this.searchIndex=null;this.searchToken=0;
+    const requestedView=new URLSearchParams(location.search).get('view');
+    this.view=['books','search-all','statistics','notes','settings','info'].includes(requestedView)?requestedView:'books';this.folder='';this.query='';this.status='all';this.tags=[];this.selected=new Set();this.selectionMode=false;this.saveTimer=null;
+    const previewQuery=new URLSearchParams(location.search).get('q')||'';
+    if(options.previewData&&this.view==='books')this.query=previewQuery;
+    this.visibleBooks=[];this.renderContext='';this.fullQuery=this.view==='search-all'?previewQuery:'';this.searchIndex=null;this.searchToken=0;
     this.mount();
   }
   mount() {
@@ -108,8 +111,10 @@ export class Library {
     this.find('[data-action=refresh]').onclick=()=>this.refresh().catch(error=>this.error(error,'Não foi possível atualizar a biblioteca.'));
     this.find('[data-action=sort]').onclick=event=>{event.stopPropagation();const menu=this.find('.shelf-sort-menu');const opening=menu.hidden;if(opening)this.find('.shelf-context-menu').hidden=true;menu.hidden=!opening;this.find('[data-action=sort]').setAttribute('aria-expanded',String(opening));};
     this.renderSortMenu();
-    document.addEventListener('click',event=>{if(!event.target.closest('.shelf-sort-menu,[data-action=sort]')){this.find('.shelf-sort-menu').hidden=true;this.find('[data-action=sort]').setAttribute('aria-expanded','false');}if(!event.target.closest('.shelf-context-menu'))this.find('.shelf-context-menu').hidden=true;});
-    document.addEventListener('keydown',event=>{
+    this.documentClickHandler=event=>{if(!this.root.isConnected)return;if(!event.target.closest('.shelf-sort-menu,[data-action=sort]')){this.find('.shelf-sort-menu').hidden=true;this.find('[data-action=sort]').setAttribute('aria-expanded','false');}if(!event.target.closest('.shelf-context-menu'))this.find('.shelf-context-menu').hidden=true;};
+    document.addEventListener('click',this.documentClickHandler);
+    this.documentKeyHandler=event=>{
+      if(!this.root.isConnected)return;
       if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'&&!event.target.closest('dialog')){
         event.preventDefault();this.view='books';this.selected.clear();this.render();
         const input=this.find('#library-query');input.focus();input.select();
@@ -118,7 +123,8 @@ export class Library {
       if(event.key!=='Escape'||event.target.closest('dialog'))return;
       this.find('.shelf-context-menu').hidden=true;this.find('.shelf-sort-menu').hidden=true;
       if(this.selected.size){this.selected.clear();this.render();}
-    });
+    };
+    document.addEventListener('keydown',this.documentKeyHandler);
     let dragDepth=0;
     this.root.addEventListener('dragenter',event=>{if([...event.dataTransfer.types].includes('Files')){event.preventDefault();dragDepth++;this.find('.shelf-drop-overlay').hidden=false;}});
     this.root.addEventListener('dragleave',()=>{dragDepth=Math.max(0,dragDepth-1);if(!dragDepth)this.find('.shelf-drop-overlay').hidden=true;});
@@ -126,7 +132,14 @@ export class Library {
     this.root.addEventListener('drop',event=>{if(event.dataTransfer.files.length){event.preventDefault();dragDepth=0;this.find('.shelf-drop-overlay').hidden=true;this.importFiles([...event.dataTransfer.files]);}});
     this.root.addEventListener('dragend',()=>this.findAll('.is-drop-target').forEach(card=>card.classList.remove('is-drop-target')));
   }
+  destroy(){
+    document.removeEventListener('click',this.documentClickHandler);
+    document.removeEventListener('keydown',this.documentKeyHandler);
+    clearTimeout(this.saveTimer);
+    this.root.replaceChildren();
+  }
   async init(){
+    if(this.options.previewData){this.state={records:Object.create(null),folders:[],preferences:{...defaultPreferences}};await this.refresh(false);return this;}
     await this.db.init();
     const stored=await this.db.getState();
     const records=Object.create(null);
@@ -142,14 +155,14 @@ export class Library {
     await this.refresh(false);
   }
   error(error,text){console.error(error);this.options.message(text);}
-  async persist(){await this.db.saveState(this.state);}
+  async persist(){if(this.options.previewData)return;await this.db.saveState(this.state);}
   async refresh(notify=true){
-    const response=await fetch(new URL('./catalog.json',document.baseURI),{cache:'no-store'});
-    if(!response.ok)throw new Error(`HTTP ${response.status}`);
-    const catalog=await response.json();
+    let catalog;
+    if(this.options.previewData)catalog=this.options.previewData.catalog;
+    else{const response=await fetch(new URL('./catalog.json',document.baseURI),{cache:'no-store'});if(!response.ok)throw new Error(`HTTP ${response.status}`);catalog=await response.json();}
     if(!Array.isArray(catalog))throw new Error('Catálogo inválido');
     this.catalog=catalog.filter(book=>book&&typeof book.id==='string'&&typeof book.title==='string'&&typeof book.file==='string');
-    this.local=(await this.db.getBooks()).filter(book=>book&&typeof book.id==='string'&&Array.isArray(book.sections)&&book.sections.length);
+    this.local=this.options.previewData?[]:(await this.db.getBooks()).filter(book=>book&&typeof book.id==='string'&&Array.isArray(book.sections)&&book.sections.length);
     this.renderSortMenu();this.render();
     if(notify)this.options.message('Biblioteca atualizada.');
   }
@@ -158,7 +171,7 @@ export class Library {
     return bases.map(book=>{
       const record=this.state.records[book.id];
       const metadata=record&&typeof record==='object'&&!Array.isArray(record)?record:{};
-      return {...book,...metadata,tags:Array.isArray(metadata.tags)?metadata.tags:(Array.isArray(book.tags)?book.tags:[]),folder:metadata.folder||'',progress:metadata.progress||0};
+      return {...book,...metadata,tags:Array.isArray(metadata.tags)?metadata.tags:(Array.isArray(book.tags)?book.tags:[]),folder:metadata.folder||'',progress:this.options.previewData?(book.progress||0):(metadata.progress||0),lastReadAt:this.options.previewData?(book.lastReadAt||0):(metadata.lastReadAt||0)};
     }).filter(book=>includeHidden||!book.hidden);
   }
   record(id){
@@ -167,6 +180,7 @@ export class Library {
     return this.state.records[id];
   }
   async getBook(id){
+    if(this.options.previewData)return this.options.previewData.books[id]||null;
     const summary=this.books(true).find(book=>book.id===id);if(!summary)return null;
     let data=this.local.find(book=>book.id===id);
     if(!data){const response=await fetch(new URL(summary.file,document.baseURI));if(!response.ok)throw new Error(`HTTP ${response.status}`);data=await response.json();}
@@ -501,7 +515,13 @@ export class Library {
     if(!query){status.textContent='Digite um termo para pesquisar no acervo.';return;}
     status.textContent='Pesquisando no acervo…';
     try{
-      if(!this.searchIndex){const response=await fetch(new URL('./search-index.json',document.baseURI));if(!response.ok)throw new Error(`HTTP ${response.status}`);this.searchIndex=await response.json();}
+      if(!this.searchIndex){
+        if(this.options.previewData){
+          this.searchIndex=Object.values(this.options.previewData.books).map(book=>({id:book.id,title:book.title,sections:book.sections.map((section,index)=>({index,label:section.label,anchor:book.toc?.find(item=>item.section===index)?.id||'',text:new DOMParser().parseFromString(section.html,'text/html').body.textContent||''}))}));
+        }else{
+          const response=await fetch(new URL('./search-index.json',document.baseURI));if(!response.ok)throw new Error(`HTTP ${response.status}`);this.searchIndex=await response.json();
+        }
+      }
       if(token!==this.searchToken)return;
       const visible=new Map(this.books().map(book=>[book.id,book]));
       const corpus=[...this.searchIndex];

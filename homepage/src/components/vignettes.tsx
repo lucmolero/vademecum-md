@@ -1,359 +1,97 @@
-'use client';
+import { useEffect, useRef, useState, type ComponentType } from 'react';
+import './vignettes.css';
 
-import { useShouldReduceMotion } from '@animate-ui/react/utils/motion';
-import { AnimateIcon } from '@animate-ui/react/icons';
-import {
-  Tabs as AnimateTabs,
-  TabsContent,
-  TabsContents,
-  TabsHighlight,
-  TabsHighlightItem,
-  TabsList,
-  TabsTrigger,
-} from '@animate-ui/react/primitives/tabs';
-import { SlidingNumber } from '@animate-ui/react/primitives/texts/sliding-number';
-import {
-  createContext,
-  use,
-  useEffect,
-  useRef,
-  useState,
-  type ComponentType,
-  type ReactNode,
-} from 'react';
+const documentId = 'br-federal-lei_ordinaria-14133-2021';
+type PreviewMode = 'catalog' | 'search' | 'toc' | 'marks' | 'notes' | 'citation' | 'source' | 'appearance' | 'resume';
 
-import {
-  Accordion, AccordionContent, AccordionItem, AccordionTrigger, Checkbox,
-  createToastManager, Toast, ToastClose, ToastContent, ToastProvider,
-  ToastTitle, ToastViewport, useToastManager, Progress, RadioGroup,
-  RadioGroupItem, Switch,
-} from './controls';
-import { Clapperboard } from '@/registry/hugeicons/clapperboard';
-import { Favourite } from '@/registry/hugeicons/favourite';
-import { Notification01 } from '@/registry/hugeicons/notification-01';
-import { Sent } from '@/registry/hugeicons/sent';
-import { Settings02 } from '@/registry/hugeicons/settings-02';
-import { Sparkles } from '@/registry/hugeicons/sparkles';
+type FeaturePreviewProps = {
+  mode: PreviewMode;
+  title: string;
+  view?: string;
+  panel?: string;
+  sidebar?: boolean;
+  query?: string;
+  appearance?: boolean;
+  sourceDialog?: boolean;
+  article?: boolean;
+};
 
-const PausedContext = createContext(false);
+function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, sourceDialog, article = true }: FeaturePreviewProps) {
+  const previewRef = useRef<HTMLDivElement>(null);
+  const [previewActive, setPreviewActive] = useState(false);
+  const libraryBase = import.meta.env.DEV
+    ? new URL('/biblioteca-demo/', document.baseURI)
+    : new URL('biblioteca/', document.baseURI);
+  const previewUrl = new URL(libraryBase);
+  previewUrl.searchParams.set('preview', mode);
+  if (view) previewUrl.searchParams.set('view', view);
+  if (panel) previewUrl.searchParams.set('panel', panel);
+  if (sidebar) previewUrl.searchParams.set('sidebar', '1');
+  if (query) previewUrl.searchParams.set('q', query);
+  if (appearance) previewUrl.searchParams.set('appearance', '1');
+  if (sourceDialog) previewUrl.searchParams.set('dialog', 'source');
+  if (mode === 'resume') {
+    previewUrl.hash = `documento=${documentId}`;
+  } else if (!['catalog', 'search', 'settings'].includes(mode)) {
+    previewUrl.hash = `documento=${documentId}${article ? '&artigo=art-5o' : ''}`;
+  }
 
-export function AutoplayScope({
-  paused,
-  children,
-}: {
-  paused: boolean;
-  children: ReactNode;
-}) {
-  return <PausedContext value={paused}>{children}</PausedContext>;
-}
+  const destination = new URL('https://lucmolero.github.io/vademecum-md/biblioteca/');
+  if (view) destination.searchParams.set('view', view);
+  if (panel) destination.searchParams.set('panel', panel);
+  if (sidebar) destination.searchParams.set('sidebar', '1');
+  if (query) destination.searchParams.set('q', query);
+  if (appearance) destination.searchParams.set('appearance', '1');
+  if (sourceDialog) destination.searchParams.set('dialog', 'source');
+  if (mode === 'resume' || !['catalog', 'search', 'settings'].includes(mode)) {
+    destination.hash = `documento=${documentId}${article && mode !== 'resume' ? '&artigo=art-5o' : ''}`;
+  }
 
-function useAutoplay(step: () => void, every: number, offset = 0) {
-  const paused = use(PausedContext);
-  const reduce = useShouldReduceMotion();
-  const stepRef = useRef(step);
   useEffect(() => {
-    stepRef.current = step;
-  });
-  useEffect(() => {
-    if (paused || reduce) return;
-    let interval: ReturnType<typeof setInterval> | undefined;
-    const start = setTimeout(() => {
-      stepRef.current();
-      interval = setInterval(() => stepRef.current(), every);
-    }, offset);
-    return () => {
-      clearTimeout(start);
-      clearInterval(interval);
-    };
-  }, [paused, reduce, every, offset]);
-}
+    const element = previewRef.current;
+    if (!element) return;
+    if (!('IntersectionObserver' in window)) {
+      setPreviewActive(true);
+      return;
+    }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      setPreviewActive(true);
+      observer.disconnect();
+    }, { rootMargin: '160px 0px' });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
 
-function SwitchVignette() {
-  const [on, setOn] = useState([true, false]);
-  useAutoplay(() => setOn(([a, b]) => [!a!, !b!]), 1600);
   return (
-    <div className="flex flex-col gap-4">
-      {['Modo avião', 'Conexão'].map((label, index) => (
-        <label key={label} className="flex items-center gap-3 text-sm">
-          <Switch
-            checked={on[index]}
-            onCheckedChange={(value) =>
-              setOn((list) => list.map((v, i) => (i === index ? value : v)))
-            }
-          />
-          {label}
-        </label>
-      ))}
-    </div>
-  );
-}
-
-const TABS = [
-  {
-    value: 'overview',
-    label: 'Visão geral',
-    text: '12 temas ativos, 3 novas atualizações.',
-  },
-  {
-    value: 'analytics',
-    label: 'Jurisprudência',
-    text: 'Novas conexões para sua pesquisa.',
-  },
-  {
-    value: 'reports',
-    label: 'Fontes',
-    text: '5 leituras salvas para consultar.',
-  },
-];
-
-function TabsVignette() {
-  const [value, setValue] = useState(TABS[0]!.value);
-  useAutoplay(
-    () =>
-      setValue((v) => {
-        const index = TABS.findIndex((tab) => tab.value === v);
-        return TABS[(index + 1) % TABS.length]!.value;
-      }),
-    1600,
-    300,
-  );
-  return (
-    <AnimateTabs value={value} onValueChange={setValue} className="w-60">
-      <TabsHighlight className="absolute inset-0 z-0 rounded-[7px] border border-transparent bg-background shadow-sm dark:border-input dark:bg-input/30">
-        <TabsList className="inline-flex h-8 w-fit items-center rounded-lg bg-muted p-[3px] text-muted-foreground">
-          {TABS.map((tab) => (
-            <TabsHighlightItem key={tab.value} value={tab.value}>
-              <TabsTrigger
-                value={tab.value}
-                className="relative z-10 inline-flex h-full items-center justify-center rounded-[7px] px-2 py-0.5 text-sm font-medium whitespace-nowrap text-foreground/60 transition-colors duration-300 hover:text-foreground data-[state=active]:text-foreground dark:text-muted-foreground dark:data-[state=active]:text-foreground"
-              >
-                {tab.label}
-              </TabsTrigger>
-            </TabsHighlightItem>
-          ))}
-        </TabsList>
-      </TabsHighlight>
-      <TabsContents className="mt-2 rounded-lg text-xs ring-1 ring-foreground/10">
-        {TABS.map((tab) => (
-          <TabsContent key={tab.value} value={tab.value} className="p-3">
-            <p className="font-medium">{tab.label}</p>
-            <p className="text-muted-foreground">{tab.text}</p>
-          </TabsContent>
-        ))}
-      </TabsContents>
-    </AnimateTabs>
-  );
-}
-
-const QUESTIONS = [
-  ['Quais fontes posso explorar?', 'Legislação, jurisprudência, doutrina e muito mais.'],
-  ['Como organizar uma pesquisa?', 'Conecte fontes, anotações e descobertas.'],
-  ['Posso salvar minhas descobertas?', 'Simule uma coleção para retomar sua leitura.'],
-];
-
-function AccordionVignette() {
-  const [value, setValue] = useState('0');
-  useAutoplay(() => setValue((v) => String((Number(v) + 1) % 3)), 2000, 600);
-  return (
-    <Accordion
-      type="single"
-      collapsible
-      value={value}
-      onValueChange={setValue}
-      className="w-64"
-    >
-      {QUESTIONS.map(([question, answer], index) => (
-        <AccordionItem key={question} value={String(index)}>
-          <AccordionTrigger className="py-2 text-sm aria-expanded:pb-1">
-            {question}
-          </AccordionTrigger>
-          <AccordionContent className="pb-2 text-xs text-muted-foreground">
-            {answer}
-          </AccordionContent>
-        </AccordionItem>
-      ))}
-    </Accordion>
-  );
-}
-
-const TASKS = ['Ler a legislação', 'Revisar a jurisprudência', 'Anotar uma descoberta'];
-
-function ChecklistVignette() {
-  const [done, setDone] = useState(0);
-  useAutoplay(
-    () => setDone((count) => (count + 1) % (TASKS.length + 1)),
-    1100,
-    200,
-  );
-  return (
-    <div className="flex flex-col gap-3">
-      {TASKS.map((task, index) => (
-        <label key={task} className="flex items-center gap-3 text-sm">
-          <Checkbox
-            checked={index < done}
-            onCheckedChange={(value) => setDone(value ? index + 1 : index)}
-          />
-          <span
-            className={
-              index < done
-                ? 'text-muted-foreground line-through transition-colors'
-                : 'transition-colors'
-            }
-          >
-            {task}
-          </span>
-        </label>
-      ))}
-    </div>
-  );
-}
-
-const DENSITIES = ['Essencial', 'Confortável', 'Compacto'];
-
-function RadioVignette() {
-  const [value, setValue] = useState(DENSITIES[1]!);
-  useAutoplay(
-    () =>
-      setValue(
-        (v) => DENSITIES[(DENSITIES.indexOf(v) + 1) % DENSITIES.length]!,
-      ),
-    1300,
-    500,
-  );
-  return (
-    <RadioGroup value={value} onValueChange={setValue}>
-      {DENSITIES.map((density) => (
-        <label key={density} className="flex items-center gap-3 text-sm">
-          <RadioGroupItem value={density} />
-          {density}
-        </label>
-      ))}
-    </RadioGroup>
-  );
-}
-
-const NOTIFICATIONS = [
-  { title: 'Nova leitura salva' },
-  { title: 'Anotações atualizadas' },
-  { title: 'Fonte adicionada' },
-];
-
-function ToastStack() {
-  const { toasts } = useToastManager();
-  return toasts.map((item) => (
-    <Toast key={item.id} toast={item}>
-      <ToastContent className="py-3">
-        <div className="flex min-w-0 flex-1 flex-col gap-1">
-          <ToastTitle />
-        </div>
-        <ToastClose />
-      </ToastContent>
-    </Toast>
-  ));
-}
-
-function ToastVignette() {
-  const [manager] = useState(() => createToastManager());
-  const nextRef = useRef(0);
-  const shownRef = useRef<string[]>([]);
-  useAutoplay(
-    () => {
-      const shown = shownRef.current;
-      shown.push(
-        manager.add({ ...NOTIFICATIONS[nextRef.current]!, timeout: 4200 }),
-      );
-      while (shown.length > 3) manager.close(shown.shift()!);
-      nextRef.current = (nextRef.current + 1) % NOTIFICATIONS.length;
-    },
-    1600,
-    300,
-  );
-  return (
-    <ToastProvider toastManager={manager} limit={2}>
-      <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-lg">
-        <ToastViewport className="absolute inset-x-4 bottom-4 w-auto max-w-none sm:right-4 sm:left-4 sm:w-auto">
-          <ToastStack />
-        </ToastViewport>
-      </div>
-    </ToastProvider>
-  );
-}
-
-function CounterVignette() {
-  const [count, setCount] = useState(12480);
-  useAutoplay(
-    () => setCount((c) => c + 37 + Math.round(Math.random() * 90)),
-    1500,
-  );
-  return (
-    <div className="flex flex-col items-center gap-1">
-      <SlidingNumber
-        number={count}
-        thousandSeparator=","
-        className="text-4xl font-semibold tabular-nums"
+    <div ref={previewRef} className="library-mini-preview">
+      <iframe
+        className="library-mini-preview-frame"
+        src={previewActive ? previewUrl.href : undefined}
+        title={`Prévia interativa: ${title}`}
+        loading="lazy"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allow="clipboard-write"
       />
-      <span className="text-xs text-muted-foreground">leituras esta semana</span>
+      <a className="library-mini-preview-open" href={destination.href}>
+        Abrir na biblioteca <span aria-hidden="true">↗</span>
+      </a>
     </div>
   );
 }
 
-const ICONS: [string, ComponentType<{ size?: number }>][] = [
-  ['notification', Notification01],
-  ['favourite', Favourite],
-  ['settings', Settings02],
-  ['sent', Sent],
-  ['sparkles', Sparkles],
-  ['clapperboard', Clapperboard],
-];
-
-function IconsVignette() {
-  const paused = use(PausedContext);
-  const reduce = useShouldReduceMotion();
-  return (
-    <div className="grid grid-cols-3 gap-x-8 gap-y-5">
-      {ICONS.map(([name, Icon], index) => (
-        <AnimateIcon
-          key={name}
-          animate={!paused && !reduce}
-          loop
-          loopDelay={600 + index * 150}
-          animateOnHover={paused}
-        >
-          <span className="inline-flex">
-            <Icon size={26} />
-          </span>
-        </AnimateIcon>
-      ))}
-    </div>
-  );
-}
-
-const STEPS = [18, 46, 74, 100];
-
-function ProgressVignette() {
-  const [step, setStep] = useState(0);
-  useAutoplay(() => setStep((s) => (s + 1) % STEPS.length), 1000, 100);
-  return (
-    <div className="flex w-56 flex-col gap-3">
-      <div className="flex justify-between text-sm">
-        <span>Leitura</span>
-        <span className="inline-flex text-muted-foreground tabular-nums">
-          <SlidingNumber number={STEPS[step]!} />%
-        </span>
-      </div>
-      <Progress value={STEPS[step]} aria-label="Progresso da leitura" />
-    </div>
-  );
-}
+const feature = (props: FeaturePreviewProps) => function LibraryFeature() {
+  return <FeaturePreview {...props} />;
+};
 
 export const VIGNETTES: { title: string; Vignette: ComponentType }[] = [
-  { title: 'Switch', Vignette: SwitchVignette },
-  { title: 'Tabs', Vignette: TabsVignette },
-  { title: 'Accordion', Vignette: AccordionVignette },
-  { title: 'Checkbox', Vignette: ChecklistVignette },
-  { title: 'Sliding Number', Vignette: CounterVignette },
-  { title: 'Radio Group', Vignette: RadioVignette },
-  { title: 'Icons', Vignette: IconsVignette },
-  { title: 'Notificações', Vignette: ToastVignette },
-  { title: 'Progress', Vignette: ProgressVignette },
+  { title: 'Acervo', Vignette: feature({ mode: 'catalog', title: 'Acervo', view: 'books' }) },
+  { title: 'Busca integral', Vignette: feature({ mode: 'search', title: 'Busca integral', view: 'search-all', query: 'igualdade' }) },
+  { title: 'Sumário do leitor', Vignette: feature({ mode: 'toc', title: 'Sumário do leitor', panel: 'toc', sidebar: true }) },
+  { title: 'Marcadores', Vignette: feature({ mode: 'marks', title: 'Marcadores', panel: 'marks', sidebar: true }) },
+  { title: 'Anotações', Vignette: feature({ mode: 'notes', title: 'Anotações', panel: 'notes', sidebar: true }) },
+  { title: 'Citação', Vignette: feature({ mode: 'citation', title: 'Citação' }) },
+  { title: 'Procedência', Vignette: feature({ mode: 'source', title: 'Procedência', sourceDialog: true }) },
+  { title: 'Aparência', Vignette: feature({ mode: 'appearance', title: 'Aparência', appearance: true }) },
+  { title: 'Retomar leitura', Vignette: feature({ mode: 'resume', title: 'Retomar leitura', article: false }) },
 ];

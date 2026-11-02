@@ -9,18 +9,29 @@ Use esta skill quando a resposta depender de localizar ou interpretar um diploma
 do VadeMecum MD. Ela orienta o uso cuidadoso do corpus; não é fonte normativa,
 ferramenta de busca ou parecer jurídico.
 
-## 1. Confirme o acesso e a versão
+## 1. Localize o corpus e confirme a versão
 
-1. Verifique se os arquivos relevantes, o site ou uma ferramenta de leitura do
-   repositório estão realmente disponíveis nesta conversa. Não alegue ter
-   consultado o VadeMecum se não consultou.
-2. Identifique a release e a data de corte em `manifests/release.json` ou nos
-   metadados do documento. Se só houver um arquivo avulso, registre a versão e
-   o corte que ele próprio declara; se não declarar, diga que não foi possível
-   confirmá-los.
-3. Use o ID estável do documento para identificar o diploma. O caminho do
+1. Procure primeiro no workspace por `manifests/release.json` e
+   `bases/curated/legislacao/federal/`. No kit baixado da homepage, os mesmos
+   dados ficam em `corpus/manifests/` e `corpus/bases/curated/legislacao/federal/`.
+2. Para uma instalação no projeto, consulte `.vademecum-md/current.json`. Leia o
+   campo `path` relativo a `.vademecum-md/` e confirme que ele contém
+   `manifests/release.json` e `bases/curated/legislacao/federal/`.
+3. Para uma instalação pessoal, procure o mesmo arquivo `current.json` em:
+   `%LOCALAPPDATA%/VadeMecumMD/` no Windows,
+   `~/Library/Application Support/VadeMecumMD/` no macOS ou
+   `${XDG_DATA_HOME:-~/.local/share}/vademecum-md/` no Linux. A variável
+   `VADEMECUM_MD_DATA` pode apontar para uma pasta de dados personalizada.
+4. Confirme que `current.json`, `manifests/release.json` e o diretório de
+   documentos apontam para a mesma release. Não alegue ter consultado o corpus
+   quando só encontrou a skill, um link ou metadados sem os documentos.
+5. Identifique a release e a data de corte em `manifests/release.json` e
+   `manifests/corpus.csv` ou nos metadados do documento. Se só houver um arquivo
+   avulso, registre a versão e o corte que ele próprio declara; se não declarar,
+   diga que não foi possível confirmá-los.
+6. Use o ID estável do documento para identificar o diploma. O caminho do
    arquivo, título aproximado ou resultado de busca isolado não substituem o ID.
-4. Se o corpus não estiver acessível, informe essa limitação e peça o documento,
+7. Se o corpus não estiver acessível, informe essa limitação e peça o documento,
    trecho ou acesso necessário. Não invente conteúdo, status, citação ou URL.
 
 ## 2. Recupere e confira a evidência
@@ -40,6 +51,15 @@ corpus não delimitar o alcance.
 Se houver conflito, ausência de dado, texto parcial ou incerteza sobre a
 vigência, apresente a limitação e não a resolva por inferência. Para conclusão
 jurídica atual, recomende conferir a publicação oficial indicada no documento.
+
+Quando houver uma skill instalada sem os dados, informe isso claramente. Se o
+agente tiver acesso à rede e ao sistema de arquivos, ofereça obter o kit completo
+na URL oficial
+`https://lucmolero.github.io/vademecum-md/downloads/vademecum-consulta-juridica-kit.zip`;
+confirme o SHA-256 no arquivo `.zip.sha256` correspondente antes de extrair. Não execute
+scripts do ZIP para instalar os dados: leia `README.md` e coloque os arquivos no
+diretório de dados configurado pelo usuário. Se não houver permissão ou
+conectividade, pare e ofereça o download manual.
 
 ## 3. Preserve as camadas de informação
 

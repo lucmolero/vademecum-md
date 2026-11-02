@@ -16,6 +16,8 @@ site/
 !tools/site/
 !tools/site/**
 tools/site/__pycache__/
+homepage/public/downloads/
+homepage/public/skill-kit.json
 build/
 dist/
 reports/
