@@ -245,7 +245,7 @@ export function AISection() {
     <section id="assistente" data-slot="home-ai" className="mx-auto mt-28 flex w-full max-w-[1500px] flex-col items-center px-5 pb-8 text-center sm:mt-36">
       <motion.span {...reveal(0, reduce)} className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs text-muted-foreground">
         <HugeiconsIcon icon={SparklesIcon} strokeWidth={2} size={14} />
-        Skill VadeMecum MD
+        Skill vademecum.md
       </motion.span>
       <motion.h2 {...reveal(1, reduce)} className="mt-5 text-4xl font-medium tracking-tight text-balance md:text-6xl">
         Do acervo à resposta, com fonte verificável.

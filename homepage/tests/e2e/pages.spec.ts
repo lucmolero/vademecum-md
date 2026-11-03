@@ -31,7 +31,7 @@ test('homepage, official library and reader work at desktop and mobile widths', 
   }));
 
   await page.goto('/');
-  await expect(page).toHaveTitle(/Vademecum/);
+  await expect(page).toHaveTitle(/vademecum\.md/i);
   await expect(page.locator('main#conteudo')).toBeVisible();
   await page.keyboard.press('Tab');
   await expect(page.locator('.skip-link')).toBeFocused();

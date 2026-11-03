@@ -45,9 +45,9 @@ export function HomeHeader() {
   }
   return <header data-slot="home-header" className="fixed inset-x-0 top-0 z-[70] h-20 bg-background text-foreground">
     <div className="mx-auto flex h-full max-w-[1200px] items-center gap-3 px-5">
-      <a href="#inicio" aria-label="Vademecum início" className="flex items-center text-foreground">
+      <a href="#inicio" aria-label="vademecum.md início" className="flex items-center text-foreground">
         {!playing && <motion.div layoutId="home-logo" transition={{layout:LOGO_GLIDE}} className="flex items-center gap-2.5">
-          <VademecumMark className="size-7"/><span className="text-[17px] font-semibold tracking-tight">vademecum</span>
+          <VademecumMark className="size-7"/><span className="text-[17px] font-semibold tracking-tight">vademecum.md</span>
         </motion.div>}
       </a>
       <motion.div className="ml-auto flex items-center gap-1" initial={playing&&!reduce?{opacity:0,x:24,filter:'blur(6px)'}:false} animate={playing&&!reduce?{opacity:0,x:24,filter:'blur(6px)'}:{opacity:1,x:0,filter:'blur(0px)'}} transition={{duration:reduce?0:.24,ease:[.23,1,.32,1],delay:playing||reduce?0:.12}}>

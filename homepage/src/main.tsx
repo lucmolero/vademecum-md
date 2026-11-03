@@ -20,7 +20,7 @@ function App() {
       </main>
       <AISection />
       <footer className="mx-auto mt-24 flex w-full max-w-[1200px] flex-wrap items-center justify-between gap-4 px-5 py-8 text-sm text-muted-foreground">
-        <a href="#inicio" className="font-medium text-foreground">Vademecum</a>
+        <a href="#inicio" className="font-medium text-foreground">vademecum.md</a>
         <span>Conhecimento jurídico em movimento.</span>
         <a href="#inicio" className="hover:text-foreground">Voltar ao início ↑</a>
         <small className="w-full text-xs">Biblioteca oficial · legislação federal com fontes e proveniência.</small>

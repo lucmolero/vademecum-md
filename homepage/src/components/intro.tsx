@@ -72,7 +72,7 @@ export function FullLogo({
     <svg viewBox="0 0 825 825" className={cn('h-[1em] w-[1em] shrink-0 transition-colors duration-300', vue && 'text-[#40B883]')}>
       <motion.path d={MARK} fill="currentColor" stroke="currentColor" strokeWidth="10" initial={draw?{pathLength:0,fillOpacity:0}:false} animate={{pathLength:1,fillOpacity:1}} transition={{pathLength:{duration:DRAW,ease:'easeInOut'},fillOpacity:{duration:FILL,delay:DRAW-.15,ease:ease.out}}}/>
     </svg>
-    <motion.span className="font-semibold tracking-tight" initial={draw?{opacity:0,filter:'blur(8px)',y:8}:false} animate={{opacity:1,filter:'blur(0px)',y:0}} transition={{duration:.55,delay:.65,ease:ease.out}}>vademecum md</motion.span>
+    <motion.span className="font-semibold tracking-tight" initial={draw?{opacity:0,filter:'blur(8px)',y:8}:false} animate={{opacity:1,filter:'blur(0px)',y:0}} transition={{duration:.55,delay:.65,ease:ease.out}}>vademecum.md</motion.span>
   </div>;
 }
 
