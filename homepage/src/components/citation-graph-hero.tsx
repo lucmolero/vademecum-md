@@ -1,6 +1,7 @@
 import { useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useEffect, useRef, useState, type MouseEvent } from 'react';
+import { useMarkGraphReady } from './intro';
 
 const graphUrl = import.meta.env.DEV
   ? 'http://127.0.0.1:8770/viewer/?home-hero=1'
@@ -8,6 +9,7 @@ const graphUrl = import.meta.env.DEV
 
 export function CitationGraphHero() {
   const reduceMotion = useShouldReduceMotion();
+  const markGraphReady = useMarkGraphReady();
   const [graphReady, setGraphReady] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const graphFrameRef = useRef<HTMLIFrameElement>(null);
@@ -19,6 +21,15 @@ export function CitationGraphHero() {
   useEffect(() => {
     const frame = graphFrameRef.current;
     if (!frame) return;
+    const graphOrigin = new URL(graphUrl, window.location.href).origin;
+
+    const handleGraphMessage = (event: MessageEvent) => {
+      if (event.source !== frame.contentWindow || event.origin !== graphOrigin) return;
+      if (event.data?.type !== 'vademecum-graph-ready') return;
+      setGraphReady(true);
+      markGraphReady();
+    };
+    window.addEventListener('message', handleGraphMessage);
 
     const publishVisibility = () => {
       frame.contentWindow?.postMessage({
@@ -49,6 +60,7 @@ export function CitationGraphHero() {
     window.addEventListener('keydown', interrupt);
     return () => {
       observer?.disconnect();
+      window.removeEventListener('message', handleGraphMessage);
       document.removeEventListener('visibilitychange', publishVisibility);
       window.removeEventListener('wheel', interrupt);
       window.removeEventListener('touchstart', interrupt);
@@ -56,7 +68,7 @@ export function CitationGraphHero() {
       window.removeEventListener('keydown', interrupt);
       if (scrollAnimation.current !== null) cancelAnimationFrame(scrollAnimation.current);
     };
-  }, []);
+  }, [markGraphReady]);
 
   const continueToSkill = (event: MouseEvent<HTMLAnchorElement>) => {
     if (reduceMotion) return;
@@ -100,11 +112,17 @@ export function CitationGraphHero() {
         loading="eager"
         allow="fullscreen"
         onLoad={() => {
+          // This only fades in the iframe document. The intro exit is gated by
+          // the separate graph-ready message after data and first camera fit.
           setGraphReady(true);
           graphFrameRef.current?.contentWindow?.postMessage({
             type: 'vademecum-graph-visibility',
             visible: graphVisibleRef.current && !document.hidden,
           }, '*');
+        }}
+        onError={() => {
+          setGraphReady(true);
+          markGraphReady();
         }}
         initial={reduceMotion ? false : { opacity: 0, scale: 1.008 }}
         animate={{ opacity: graphReady || reduceMotion ? 1 : 0, scale: 1 }}
