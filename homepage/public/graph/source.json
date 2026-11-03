@@ -1,7 +1,7 @@
 {
   "schema": "vademecum-graph-package/v1",
   "sourceRepository": "lucmolero/grafo-citacoes-mini (separate source copy)",
-  "sourceCommit": "f9b9e46b75757390e5c08f1e780f611be463d72b",
+  "sourceCommit": "f62446a356f3963de416104b6eeace9f8e737196",
   "snapshotDate": "2026-10-31",
   "vademecumDocuments": 375,
   "connectedNodes": 1729,

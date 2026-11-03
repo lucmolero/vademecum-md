@@ -38,6 +38,9 @@ let graphPageVisible = !document.hidden;
 let graphViewportVisible = !homepageEmbed;
 const GRAPH_VISIBILITY_MESSAGE = 'vademecum-graph-visibility';
 let previousMobileLayout = window.matchMedia('(max-width: 640px)').matches;
+const constrainedGraphRenderer = window.matchMedia('(max-width: 768px)').matches
+  || (Number.isFinite(navigator.deviceMemory) && navigator.deviceMemory <= 4);
+const graphPixelRatio = Math.min(window.devicePixelRatio || 1, constrainedGraphRenderer ? 1.25 : 1.5);
 let rotationEnabled = !reducedMotion.matches;
 let activeTheme = document.body.dataset.theme || 'dark';
 function syncGraphActivity() {
@@ -964,7 +967,7 @@ function initialize(data) {
   }
   graph3d = new ForceGraph3D(root, {
     controlType: 'orbit',
-    rendererConfig: {antialias: true, alpha: true}
+    rendererConfig: {antialias: !constrainedGraphRenderer, alpha: true}
   })
     .width(root.clientWidth).height(root.clientHeight)
     .backgroundColor(activeTheme === 'dark' ? '#05070a' : '#f4f4f1').showNavInfo(false)
@@ -982,6 +985,7 @@ function initialize(data) {
       showGraphTooltip(title, meta);
     })
     .nodeColor(colorForNode).nodeOpacity(.75)
+    .nodeResolution(constrainedGraphRenderer ? 6 : 8)
     .nodeVal(nodeValueByDegree)
     .nodeRelSize(3.2)
     .linkLabel(() => '')
@@ -998,7 +1002,7 @@ function initialize(data) {
     .linkColor(colorForLink).linkOpacity(.68).linkWidth(1.05)
     .linkCurvature(edge => edge.curvature || 0)
     .linkDirectionalArrowLength(edge => edge.relation !== 'cita' ? 0 : 4.4).linkDirectionalArrowRelPos(.9)
-    .linkDirectionalArrowResolution(8).linkDirectionalArrowColor(colorForLink)
+    .linkDirectionalArrowResolution(constrainedGraphRenderer ? 5 : 8).linkDirectionalArrowColor(colorForLink)
     .d3AlphaDecay(.08).d3VelocityDecay(.56)
     .cooldownTicks(48).warmupTicks(4)
     .onEngineStop(() => {
@@ -1009,6 +1013,9 @@ function initialize(data) {
       if (selectedNodeId) showPanorama();
     })
     .onLinkClick(link => showCitation(linkById.get(link.linkId) || link, true));
+  // The bundled renderer defaults to DPR 2. Capping it preserves sharp output
+  // while cutting fragment work on high-density displays, especially phones.
+  graph3d.renderer()?.setPixelRatio(graphPixelRatio);
   const charge = graph3d.d3Force('charge');
   if (charge?.distanceMax) charge.distanceMax(250);
   setRotation(rotationEnabled);
