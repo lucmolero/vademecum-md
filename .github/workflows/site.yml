@@ -71,8 +71,13 @@ jobs:
       - name: Install Chromium and WebKit for release smoke tests
         run: npx playwright install --with-deps chromium webkit
         working-directory: homepage
-      - name: Verify graph, previews, reader and responsive layouts before publishing
-        run: npm run test:e2e
+      - name: Verify browser journeys and WCAG in Chromium
+        timeout-minutes: 8
+        run: npm run test:e2e -- --project=chromium
+        working-directory: homepage
+      - name: Verify browser journeys in WebKit
+        timeout-minutes: 8
+        run: npm run test:e2e -- --project=webkit
         working-directory: homepage
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:

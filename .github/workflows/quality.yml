@@ -88,8 +88,13 @@ jobs:
       - name: Install Chromium and WebKit for homepage and reader browser tests
         run: npx playwright install --with-deps chromium webkit
         working-directory: homepage
-      - name: Verify Pages routes, reader navigation, mobile layout and WCAG
-        run: npm run test:e2e
+      - name: Verify browser journeys and WCAG in Chromium
+        timeout-minutes: 8
+        run: npm run test:e2e -- --project=chromium
+        working-directory: homepage
+      - name: Verify browser journeys in WebKit
+        timeout-minutes: 8
+        run: npm run test:e2e -- --project=webkit
         working-directory: homepage
       - name: Classify unresolved relations
         run: python tools/relations/classify_unresolved.py
