@@ -16,11 +16,9 @@ type FeaturePreviewProps = {
   sourceDialog?: boolean;
   article?: boolean;
   activationEnabled?: boolean;
-  loadDelayMs?: number;
 };
 
-function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, sourceDialog, article = true, activationEnabled = true, loadDelayMs = 0 }: FeaturePreviewProps) {
-  const previewRef = useRef<HTMLDivElement>(null);
+function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, sourceDialog, article = true, activationEnabled = true }: FeaturePreviewProps) {
   const iframeCleanup = useRef<(() => void) | null>(null);
   const [previewActive, setPreviewActive] = useState(false);
   const [previewLoaded, setPreviewLoaded] = useState(false);
@@ -83,8 +81,6 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
   };
 
   useEffect(() => {
-    const element = previewRef.current;
-    if (!element) return;
     if (!activationEnabled) {
       setPreviewActive(false);
       setPreviewLoaded(false);
@@ -92,25 +88,8 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
       iframeCleanup.current = null;
       return;
     }
-    let delayTimer: number | undefined;
-    const activate = () => {
-      delayTimer = window.setTimeout(() => setPreviewActive(true), loadDelayMs);
-    };
-    if (!('IntersectionObserver' in window)) {
-      activate();
-      return () => window.clearTimeout(delayTimer);
-    }
-    const observer = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) return;
-      observer.disconnect();
-      activate();
-    }, { rootMargin: '120px 0px' });
-    observer.observe(element);
-    return () => {
-      observer.disconnect();
-      if (delayTimer !== undefined) window.clearTimeout(delayTimer);
-    };
-  }, [activationEnabled, loadDelayMs]);
+    setPreviewActive(true);
+  }, [activationEnabled]);
 
   useEffect(() => {
     if (activationEnabled && previewActive) return;
@@ -120,12 +99,12 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
   }, [activationEnabled, previewActive]);
 
   return (
-    <div ref={previewRef} className="library-mini-preview">
+    <div className="library-mini-preview">
       <iframe
         className="library-mini-preview-frame"
         src={activationEnabled && previewActive ? previewUrl.href : undefined}
         title={`Prévia interativa: ${title}`}
-        loading="lazy"
+        loading="eager"
         referrerPolicy="strict-origin-when-cross-origin"
         allow="clipboard-write"
         onLoad={event => {
@@ -142,8 +121,8 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
   );
 }
 
-const feature = (props: FeaturePreviewProps) => function LibraryFeature({ active = true, loadDelayMs = 0 }: { active?: boolean; loadDelayMs?: number } = {}) {
-  return <FeaturePreview {...props} activationEnabled={active} loadDelayMs={loadDelayMs} />;
+const feature = (props: FeaturePreviewProps) => function LibraryFeature({ active = true }: { active?: boolean } = {}) {
+  return <FeaturePreview {...props} activationEnabled={active} />;
 };
 
 export const VIGNETTES: { title: string; Vignette: ComponentType }[] = [
