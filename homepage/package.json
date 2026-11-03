@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 8765",
-    "build": "vite build",
+    "build": "vite build --config vite.graph-batching.config.js && vite build",
     "preview": "vite preview --host 127.0.0.1 --port 8765",
     "test:e2e": "playwright test"
   },
@@ -20,7 +20,8 @@
     "radix-ui": "^1.6.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "three": "0.183.0"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",

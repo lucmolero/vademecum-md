@@ -1,3 +1,11 @@
+let createGraphBatcher = null;
+import('./vendor/graph-batching.js')
+  .then(module => {
+    createGraphBatcher = module.createGraphBatcher;
+    scheduleGraphBatches();
+  })
+  .catch(error => console.warn('Renderização agrupada indisponível; usando o renderizador completo.', error));
+
 const root = document.querySelector('#network');
 const countBox = document.querySelector('#counts');
 const viewCount = document.querySelector('#view-count');
@@ -31,7 +39,7 @@ function drawerIcon(name, className = 'drawer-icon') {
   icon.setAttribute('aria-hidden', 'true');
   return icon;
 }
-let graph3d, fullNodes = [], fullLinks = [], nodeById = new Map(), linkById = new Map(), incident = new Map(), neighborIndex = new Map(), searchIndex = null, searchPromise = null, firstFit = true, rotationReady = false, reheatFrame = 0, graphFitTimer = 0, drawerGeneration = 0, drawerFrame = 0, drawerCloseTimer = 0, visibleNodes = new Map(), selectedNodeId = null, relatedNodeIds = new Set();
+let graph3d, graphBatcher = null, graphBatchFrame = 0, fullNodes = [], fullLinks = [], nodeById = new Map(), linkById = new Map(), incident = new Map(), neighborIndex = new Map(), searchIndex = null, searchPromise = null, firstFit = true, rotationReady = false, reheatFrame = 0, graphFitTimer = 0, drawerGeneration = 0, drawerFrame = 0, drawerCloseTimer = 0, visibleNodes = new Map(), selectedNodeId = null, relatedNodeIds = new Set();
 const homepageEmbed = new URLSearchParams(window.location.search).has('home-hero');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let graphPageVisible = !document.hidden;
@@ -40,9 +48,7 @@ const GRAPH_VISIBILITY_MESSAGE = 'vademecum-graph-visibility';
 let previousMobileLayout = window.matchMedia('(max-width: 640px)').matches;
 const constrainedGraphRenderer = window.matchMedia('(max-width: 768px)').matches
   || (Number.isFinite(navigator.deviceMemory) && navigator.deviceMemory <= 4);
-const graphPixelRatio = Math.min(window.devicePixelRatio || 1, constrainedGraphRenderer ? 1 : 1.5);
-const MOBILE_GRAPH_NODE_LIMIT = 500;
-const MOBILE_OVERVIEW_EXTERNAL_LIMIT = 75;
+const graphPixelRatio = Math.min(window.devicePixelRatio || 1, constrainedGraphRenderer ? 1.25 : 1.5);
 let rotationEnabled = !reducedMotion.matches;
 let activeTheme = document.body.dataset.theme || 'dark';
 function syncGraphActivity() {
@@ -185,62 +191,6 @@ function addIncident(id, edge) {
 function nodeVisible(node) {
   return Boolean(node);
 }
-function mobileGraphPopulation(anchorId = null) {
-  if (!constrainedGraphRenderer) return fullNodes;
-  const official = fullNodes.filter(node => node.kind === 'ato');
-  const external = fullNodes.filter(node => node.kind !== 'ato')
-    .sort((left, right) => (right.degree || 0) - (left.degree || 0) || left.id.localeCompare(right.id));
-  const selected = anchorId ? nodeById.get(anchorId) : null;
-  const nodes = new Map(official.map(node => [node.id, node]));
-  if (selected) nodes.set(selected.id, selected);
-  const capacity = Math.max(0, MOBILE_GRAPH_NODE_LIMIT - nodes.size);
-  const related = anchorId
-    ? (getNeighborIndex(anchorId)?.neighborIds || []).map(id => nodeById.get(id))
-      .filter(node => node && node.kind !== 'ato' && !nodes.has(node.id))
-      .sort((left, right) => (right.degree || 0) - (left.degree || 0) || left.id.localeCompare(right.id))
-    : [];
-  const externalLimit = anchorId ? capacity : Math.min(MOBILE_OVERVIEW_EXTERNAL_LIMIT, capacity);
-  for (const node of [...related, ...external]) {
-    if (nodes.size >= official.length + (selected && selected.kind !== 'ato' ? 1 : 0) + externalLimit) break;
-    if (!nodes.has(node.id)) nodes.set(node.id, node);
-  }
-  return [...nodes.values()];
-}
-function seedMobileGraphPositions(nodes, anchorId) {
-  const anchor = nodeById.get(anchorId);
-  const related = (getNeighborIndex(anchorId)?.neighborIds || [])
-    .map(id => nodeById.get(id))
-    .filter(node => node && [node.x, node.y, node.z].every(Number.isFinite));
-  const existing = [...visibleNodes.values()].filter(node => [node.x, node.y, node.z].every(Number.isFinite));
-  const sources = related.length ? related : existing;
-  const center = sources.length
-    ? sources.reduce((sum, node) => ({x: sum.x + node.x / sources.length, y: sum.y + node.y / sources.length, z: sum.z + node.z / sources.length}), {x: 0, y: 0, z: 0})
-    : {x: 0, y: 0, z: 0};
-  if (anchor && ![anchor.x, anchor.y, anchor.z].every(Number.isFinite)) {
-    anchor.x = center.x;
-    anchor.y = center.y;
-    anchor.z = center.z;
-  }
-  for (const node of nodes) {
-    if ([node.x, node.y, node.z].every(Number.isFinite)) continue;
-    let hash = 0;
-    for (const character of node.id) hash = (hash * 31 + character.charCodeAt(0)) | 0;
-    const angle = (Math.abs(hash) % 360) * Math.PI / 180;
-    const radius = 20 + Math.abs(hash % 32);
-    node.x = center.x + Math.cos(angle) * radius;
-    node.y = center.y + Math.sin(angle) * radius;
-    node.z = center.z + ((hash % 17) - 8) * 2;
-  }
-}
-function includeMobileSearchTarget(id) {
-  if (!constrainedGraphRenderer || visibleNodes.has(id)) return false;
-  const nodes = mobileGraphPopulation(id);
-  if (!nodes.some(node => node.id === id)) return false;
-  seedMobileGraphPositions(nodes, id);
-  visibleNodes = new Map(nodes.map(node => [node.id, node]));
-  updateGraph({reheat: true});
-  return true;
-}
 function zoomGraphToFit(duration = 850, padding = 50, onComplete) {
   if (!graph3d || !fullNodes.length || root.clientWidth < 1 || root.clientHeight < 1) return false;
   const controls = graph3d.controls();
@@ -284,6 +234,10 @@ function scheduleGraphFit(delay = 1100) {
 }
 function updateGraph({reheat = false, fit = false} = {}) {
   if (!graph3d) return;
+  cancelAnimationFrame(graphBatchFrame);
+  graphBatchFrame = 0;
+  graphBatcher?.dispose();
+  graphBatcher = null;
   // Keep one stable renderer population until filters explicitly change.
   const nodes = [...visibleNodes.values()].filter(nodeVisible);
   const ids = new Set(nodes.map(node => node.id));
@@ -311,14 +265,29 @@ function updateGraph({reheat = false, fit = false} = {}) {
   const focusOccurrences = focusEdges.reduce((sum, edge) => sum + (edge.occurrence_count || 1), 0);
   viewCount.textContent = selectedNodeId
     ? `${nodes.length.toLocaleString('pt-BR')} nós · ${relatedNodeIds.size.toLocaleString('pt-BR')} vizinhos · ${focusEdges.length.toLocaleString('pt-BR')} relações · ${focusOccurrences.toLocaleString('pt-BR')} ocorrências`
-    : constrainedGraphRenderer
-      ? `${nodes.length.toLocaleString('pt-BR')} de ${fullNodes.length.toLocaleString('pt-BR')} nós · ${edges.length.toLocaleString('pt-BR')} relações · busca em toda a rede`
-      : `${nodes.length.toLocaleString('pt-BR')} nós · ${edges.length.toLocaleString('pt-BR')} ligações · somente cita`;
+    : `${nodes.length.toLocaleString('pt-BR')} nós · ${edges.length.toLocaleString('pt-BR')} ligações · somente cita`;
   if (reheat) {
     cancelAnimationFrame(reheatFrame);
     reheatFrame = requestAnimationFrame(() => graph3d?.d3ReheatSimulation());
   }
   if (fit) scheduleGraphFit();
+}
+function createGraphBatches() {
+  if (!graph3d || !createGraphBatcher) return;
+  cancelAnimationFrame(graphBatchFrame);
+  graphBatchFrame = 0;
+  graphBatcher?.dispose();
+  graphBatcher = createGraphBatcher?.(graph3d, {
+    nodeResolution: constrainedGraphRenderer ? 6 : 8,
+    arrowResolution: constrainedGraphRenderer ? 5 : 8
+  }) || null;
+}
+function scheduleGraphBatches() {
+  if (graphBatcher || graphBatchFrame) return;
+  graphBatchFrame = requestAnimationFrame(() => {
+    graphBatchFrame = 0;
+    if (!graphBatcher && graph3d) createGraphBatches();
+  });
 }
 function renderDetails(title, fields, sectionLabel = 'Dados da norma') {
   cancelDrawerSections();
@@ -671,7 +640,15 @@ function setTheme(theme) {
       ? '<circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>'
       : '<path d="M20.4 15.4A8.5 8.5 0 0 1 8.6 3.6 8.5 8.5 0 1 0 20.4 15.4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>';
     const graphBackground = activeTheme === 'dark' ? '#05070a' : '#f4f4f1';
-    if (graph3d) graph3d.backgroundColor(graphBackground).nodeColor(colorForNode).linkColor(colorForLink).linkDirectionalArrowColor(colorForLink).refresh();
+    if (graph3d) {
+      graph3d.backgroundColor(graphBackground);
+      if (graphBatcher) graphBatcher.syncColors({nodeColor: colorForNode, linkColor: colorForLink});
+      else graph3d.scene().traverse(object => {
+        if (!object.material?.color) return;
+        if (object.__graphObjType === 'node') object.material.color.set(colorForNode(object.__data));
+        else if (object.__graphObjType === 'link' || object.__linkThreeObjType === 'arrow') object.material.color.set(colorForLink(object.__data));
+      });
+    }
   };
   if (document.startViewTransition && !reducedMotion.matches) {
     try { document.startViewTransition(applyTheme); }
@@ -1007,13 +984,9 @@ function showPanorama(exitMotion = null) {
     document.body.classList.remove('context-open');
     detailsPanel.classList.remove('context-compact');
   }
-  const nodes = [...visibleNodes.values()];
-  const ids = new Set(nodes.map(node => node.id));
-  const edges = fullLinks.filter(edge => ids.has(edge.source) && ids.has(edge.target));
+  visibleNodes = new Map(fullNodes.map(node => [node.id, node]));
   const occurrences = fullLinks.reduce((sum, edge) => sum + (edge.occurrence_count || 1), 0);
-  viewCount.textContent = constrainedGraphRenderer
-    ? `${nodes.length.toLocaleString('pt-BR')} de ${fullNodes.length.toLocaleString('pt-BR')} nós · ${edges.length.toLocaleString('pt-BR')} relações · busca em toda a rede`
-    : `${fullNodes.length.toLocaleString('pt-BR')} nós · ${fullLinks.length.toLocaleString('pt-BR')} relações · ${occurrences.toLocaleString('pt-BR')} ocorrências`;
+  viewCount.textContent = `${fullNodes.length.toLocaleString('pt-BR')} nós · ${fullLinks.length.toLocaleString('pt-BR')} relações · ${occurrences.toLocaleString('pt-BR')} ocorrências`;
 }
 function initialize(data) {
   fullNodes = data.nodes;
@@ -1049,7 +1022,7 @@ function initialize(data) {
       showGraphTooltip(title, meta);
     })
     .nodeColor(colorForNode).nodeOpacity(.75)
-    .nodeResolution(constrainedGraphRenderer ? 4 : 8)
+    .nodeResolution(constrainedGraphRenderer ? 6 : 8)
     .nodeVal(nodeValueByDegree)
     .nodeRelSize(3.2)
     .linkLabel(() => '')
@@ -1065,14 +1038,24 @@ function initialize(data) {
     })
     .linkColor(colorForLink).linkOpacity(.68).linkWidth(1.05)
     .linkCurvature(edge => edge.curvature || 0)
-    .linkDirectionalArrowLength(edge => edge.relation !== 'cita' ? 0 : constrainedGraphRenderer ? 3.2 : 4.4).linkDirectionalArrowRelPos(.9)
-    .linkDirectionalArrowResolution(constrainedGraphRenderer ? 3 : 8).linkDirectionalArrowColor(colorForLink)
+    .linkDirectionalArrowLength(edge => edge.relation !== 'cita' ? 0 : 4.4).linkDirectionalArrowRelPos(.9)
+    .linkDirectionalArrowResolution(constrainedGraphRenderer ? 5 : 8).linkDirectionalArrowColor(colorForLink)
     .d3AlphaDecay(.08).d3VelocityDecay(.56)
     .cooldownTicks(48).warmupTicks(4)
+    .onEngineTick(() => {
+      if (graphBatcher) graphBatcher.syncTransforms();
+      else scheduleGraphBatches();
+    })
     .onEngineStop(() => {
       if (firstFit) fitInitialGraph();
+      if (graphBatcher) graphBatcher.syncTransforms();
+      else createGraphBatches();
     })
     .onNodeClick(node => openNorm(node.id, true))
+    .onNodeDrag(() => {
+      graphBatcher?.dispose();
+      graphBatcher = null;
+    })
     .onBackgroundClick(() => {
       if (selectedNodeId) showPanorama();
     })
@@ -1083,19 +1066,11 @@ function initialize(data) {
   const charge = graph3d.d3Force('charge');
   if (charge?.distanceMax) charge.distanceMax(250);
   setRotation(rotationEnabled);
-  visibleNodes = new Map(mobileGraphPopulation().map(node => [node.id, node]));
-  if (window.matchMedia('(max-width: 640px)').matches) {
-    const intro = document.querySelector('.stage-intro p');
-    if (intro && constrainedGraphRenderer) {
-      intro.textContent = `${visibleNodes.size.toLocaleString('pt-BR')} de ${fullNodes.length.toLocaleString('pt-BR')} nós na visão leve; busque em toda a rede.`;
-    }
-  }
+  visibleNodes = new Map(fullNodes.map(node => [node.id, node]));
   const metrics = networkMetrics();
   const componentsLabel = `${metrics.components.toLocaleString('pt-BR')} componentes`;
   countBox.textContent = `${data.vademecum_node_count.toLocaleString('pt-BR')} atos VadeMecum · ${data.external_node_count.toLocaleString('pt-BR')} externas · ${data.semantic_pair_count.toLocaleString('pt-BR')} relações · ${data.citation_assertion_count.toLocaleString('pt-BR')} ocorrências · ${componentsLabel}`;
-  document.querySelector('#network-summary').textContent = constrainedGraphRenderer
-    ? `${metrics.components.toLocaleString('pt-BR')} componentes na rede completa; ${metrics.isolates.toLocaleString('pt-BR')} atos não têm citação neste recorte. A visão móvel mantém todos os atos e prioriza as normas externas mais conectadas; a busca percorre a rede completa.`
-    : `${metrics.components.toLocaleString('pt-BR')} componentes na rede; ${metrics.isolates.toLocaleString('pt-BR')} atos não têm citação neste recorte. Nós sem ligação permanecem no mapa para tornar a cobertura do acervo visível.`;
+  document.querySelector('#network-summary').textContent = `${metrics.components.toLocaleString('pt-BR')} componentes na rede; ${metrics.isolates.toLocaleString('pt-BR')} atos não têm citação neste recorte. Nós sem ligação permanecem no mapa para tornar a cobertura do acervo visível.`;
   updateGraph({reheat: true});
   // Some browsers keep the force engine alive while the renderer is active.
   // A bounded fallback guarantees a useful initial framing even if its stop
@@ -1123,10 +1098,8 @@ function showSuggestions(rows) {
       search.value = label;
       suggestions.classList.remove('open');
       if (nodeById.has(id)) {
-        const addedToMobileGraph = includeMobileSearchTarget(id);
         openNorm(id);
-        if (addedToMobileGraph) requestAnimationFrame(() => centerOnSearchResult(id));
-        else centerOnSearchResult(id);
+        centerOnSearchResult(id);
       }
     });
     suggestions.append(item);
