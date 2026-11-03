@@ -1,0 +1,30 @@
+name: WebKit browser checks
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  webkit:
+    runs-on: windows-2025
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+      - name: Build library
+        working-directory: biblioteca
+        run: |
+          npm ci
+          npm run build
+      - name: Install homepage dependencies and WebKit
+        working-directory: homepage
+        run: |
+          npm ci
+          npx playwright install webkit
+      - name: Verify WebKit journeys and WCAG
+        working-directory: homepage
+        run: npm run test:e2e -- --project=webkit

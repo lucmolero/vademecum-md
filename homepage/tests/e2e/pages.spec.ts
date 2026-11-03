@@ -12,8 +12,6 @@ async function expectNoHorizontalOverflow(page: import('@playwright/test').Page)
 }
 
 async function expectWcag(page: import('@playwright/test').Page, scope: string) {
-  // Keep the full axe audit in Chromium. WebKit covers the same user flows.
-  if (page.context().browser()?.browserType().name() !== 'chromium') return;
   const results = await new AxeBuilder({ page }).include(scope).withTags(wcagTags).analyze();
   expect(results.violations, JSON.stringify(results.violations.map(({ id, impact, nodes }) => ({
     id,

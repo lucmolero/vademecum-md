@@ -11,6 +11,7 @@ WORKFLOWS = ROOT / ".github/workflows"
 REQUIRED = {
     "quality.yml",
     "site.yml",
+    "browser-webkit.yml",
     "monitor-legislation.yml",
     "collect-legislation.yml",
     "prepare-update-pr.yml",
@@ -37,7 +38,7 @@ def main() -> int:
         if path.name == "quality.yml":
             if not re.search(r"(?m)^  push:\s*\n    branches: \[main\]", text):
                 errors.append("quality.yml: push validation should run on main; pull_request handles feature branches")
-            if "npm run test:e2e" not in text or "playwright install --with-deps chromium webkit" not in text:
+            if "npm run test:e2e" not in text or "playwright install --with-deps chromium" not in text:
                 errors.append("quality.yml: browser accessibility and navigation tests are missing")
         if path.name == "site.yml":
             if not re.search(r"(?m)^  repository_dispatch:\s*\n    types: \[publish-pages\]", text):
@@ -46,12 +47,16 @@ def main() -> int:
             for gate in (
                 "npm run test:graph",
                 "python tools/validate/validate_pages.py --site site",
-                "playwright install --with-deps chromium webkit",
+                "playwright install --with-deps chromium",
                 "npm run test:e2e",
             ):
                 gate_position = text.find(gate)
                 if gate_position < 0 or artifact_upload < 0 or gate_position > artifact_upload:
                     errors.append(f"site.yml: required check must precede Pages artifact upload: {gate}")
+        if path.name in {"quality.yml", "site.yml"} and (
+            "uses: ./.github/workflows/browser-webkit.yml" not in text or "needs: webkit" not in text
+        ):
+            errors.append(f"{path.name}: WebKit checks must pass first")
         for reference in ACTION_REFERENCE.findall(text):
             if reference.startswith("./"):
                 continue
