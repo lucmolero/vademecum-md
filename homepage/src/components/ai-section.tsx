@@ -106,7 +106,7 @@ const STEP_IN = {
   transition: { duration: 0.28, ease: [0.23, 1, 0.32, 1] as const },
 };
 
-function useScenarioClock(scenario: Scenario, running: boolean, onDone: () => void, started: boolean) {
+function useScenarioClock(scenario: Scenario, running: boolean, onDone: () => void) {
   const reduce = useShouldReduceMotion();
   const [progress, setProgress] = useState(-1);
   const doneRef = useRef(onDone);
@@ -129,7 +129,7 @@ function useScenarioClock(scenario: Scenario, running: boolean, onDone: () => vo
     };
   }, [running, reduce, scenario]);
 
-  if (!running) return started ? scenario.steps.length : -1;
+  if (!running) return reduce ? scenario.steps.length : progress;
   return reduce ? scenario.steps.length : progress;
 }
 
@@ -155,15 +155,13 @@ function ScenarioPane({
   scenario,
   running,
   onDone,
-  started,
 }: {
   scenario: Scenario;
   running: boolean;
   onDone: () => void;
-  started: boolean;
 }) {
   const reduce = useShouldReduceMotion();
-  const progress = useScenarioClock(scenario, running, onDone, started);
+  const progress = useScenarioClock(scenario, running, onDone);
   const finished = progress >= scenario.steps.length;
 
   return (
@@ -264,15 +262,22 @@ export function AISection() {
             </TabsList>
           </TabsHighlight>
 
-          <div className="w-full overflow-hidden rounded-xl bg-accent p-1">
-            <div className="flex items-center gap-3 px-3 pb-2.5 pt-1.5">
-              <span className="flex gap-1.5" aria-hidden="true"><span className="size-2.5 rounded-full bg-foreground/15" /><span className="size-2.5 rounded-full bg-foreground/15" /><span className="size-2.5 rounded-full bg-foreground/15" /></span>
-              <span className="font-mono text-[10px] text-muted-foreground sm:text-xs">{audience === 'humanos' ? '~/biblioteca' : '~/consulta-juridica'}</span>
-              <span className="ml-auto hidden text-[9px] uppercase tracking-[.12em] text-muted-foreground sm:inline">{audience === 'humanos' ? 'Biblioteca oficial · interface interativa' : `Exemplo demonstrativo · corpus v${release.version}`}</span>
-            </div>
-            {audience === 'humanos' ? (
-              started ? <Suspense fallback={<div className="grid min-h-[650px] grid-cols-2 gap-3 p-4" aria-hidden="true"><div className={`${loadingPulse} rounded-xl bg-background motion-reduce:animate-none`} /><div className={`${loadingPulse} rounded-xl bg-background motion-reduce:animate-none`} /></div>}><LibraryReaderPreview mode="split" /></Suspense> : <div className="grid min-h-[650px] grid-cols-2 gap-3 p-4" aria-hidden="true"><div className={`${loadingPulse} rounded-xl bg-background motion-reduce:animate-none`} /><div className={`${loadingPulse} rounded-xl bg-background motion-reduce:animate-none`} /></div>
-            ) : (
+          <TabsContents className="w-full rounded-xl bg-accent p-1">
+            <TabsContent value="humanos">
+              <div className="flex items-center gap-3 px-3 pb-2.5 pt-1.5">
+                <span className="flex gap-1.5" aria-hidden="true"><span className="size-2.5 rounded-full bg-foreground/15" /><span className="size-2.5 rounded-full bg-foreground/15" /><span className="size-2.5 rounded-full bg-foreground/15" /></span>
+                <span className="font-mono text-[10px] text-muted-foreground sm:text-xs">~/biblioteca</span>
+                <span className="ml-auto hidden text-[9px] uppercase tracking-[.12em] text-muted-foreground sm:inline">Biblioteca oficial · interface interativa</span>
+              </div>
+              {audience === 'humanos' && (started ? <Suspense fallback={<div className="grid min-h-[650px] grid-cols-2 gap-3 p-4" aria-hidden="true"><div className={`${loadingPulse} rounded-xl bg-background motion-reduce:animate-none`} /><div className={`${loadingPulse} rounded-xl bg-background motion-reduce:animate-none`} /></div>}><LibraryReaderPreview mode="split" /></Suspense> : <div className="grid min-h-[650px] grid-cols-2 gap-3 p-4" aria-hidden="true"><div className={`${loadingPulse} rounded-xl bg-background motion-reduce:animate-none`} /><div className={`${loadingPulse} rounded-xl bg-background motion-reduce:animate-none`} /></div>)}
+            </TabsContent>
+            <TabsContent value="agentes">
+              <div className="flex items-center gap-3 px-3 pb-2.5 pt-1.5">
+                <span className="flex gap-1.5" aria-hidden="true"><span className="size-2.5 rounded-full bg-foreground/15" /><span className="size-2.5 rounded-full bg-foreground/15" /><span className="size-2.5 rounded-full bg-foreground/15" /></span>
+                <span className="font-mono text-[10px] text-muted-foreground sm:text-xs">~/consulta-juridica</span>
+                <span className="ml-auto hidden text-[9px] uppercase tracking-[.12em] text-muted-foreground sm:inline">Exemplo demonstrativo · corpus v{release.version}</span>
+              </div>
+              {audience === 'agentes' && (
               <Tabs value={active} onValueChange={(value) => { setAuto(false); setActive(value); }} className="flex flex-col items-center gap-4">
                 <TabsHighlight className="absolute inset-0 z-0 rounded-lg bg-background/80">
                   <TabsList aria-label="Conversas demonstrativas com a skill" className="inline-flex max-w-full flex-wrap items-center justify-center gap-1 text-xs sm:text-sm">
@@ -280,11 +285,12 @@ export function AISection() {
                   </TabsList>
                 </TabsHighlight>
                 <TabsContents className="w-full rounded-lg">
-                  {scenarios.map(scenario => <TabsContent key={scenario.id} value={scenario.id}><ScenarioPane scenario={scenario} running={started && demoInView && pageVisible && !reduce && audience === 'agentes' && active === scenario.id} onDone={advance} started={started && audience === 'agentes' && active === scenario.id} /></TabsContent>)}
+                  {scenarios.map(scenario => <TabsContent key={scenario.id} value={scenario.id}><ScenarioPane scenario={scenario} running={started && demoInView && pageVisible && !reduce && audience === 'agentes' && active === scenario.id} onDone={advance} /></TabsContent>)}
                 </TabsContents>
               </Tabs>
-            )}
-          </div>
+              )}
+            </TabsContent>
+          </TabsContents>
         </Tabs>
       </motion.div>
 

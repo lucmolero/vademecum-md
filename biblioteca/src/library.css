@@ -581,7 +581,6 @@ html[data-theme=sepia] .shelf-shell{
   .shelf-grid{grid-template-columns:repeat(auto-fill,minmax(min(var(--cover-width),132px),1fr));column-gap:16px;row-gap:30px}
   .shelf-cover strong{font-size:14px}
   .shelf-book-heading{font-size:12.5px}
-  .shelf-shelf-more{opacity:1}
   .shelf-book-more{opacity:1;transform:none}
   .shelf-dashboard{padding:4px 2px 100px}
   .shelf-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
