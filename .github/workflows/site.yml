@@ -51,6 +51,9 @@ jobs:
       - name: Build homepage
         run: npm run build
         working-directory: homepage
+      - name: Test graph geometry and rendering lifecycle
+        run: npm run test:graph
+        working-directory: homepage
       - name: Build library from this release's canonical Markdown
         working-directory: biblioteca
         env:
@@ -63,6 +66,14 @@ jobs:
         env:
           VADE_COMMIT: ${{ github.sha }}
         run: python tools/site/compose_pages.py --site site
+      - name: Validate composed routes and release alignment
+        run: python tools/validate/validate_pages.py --site site
+      - name: Install Chromium and WebKit for release smoke tests
+        run: npx playwright install --with-deps chromium webkit
+        working-directory: homepage
+      - name: Verify graph, previews, reader and responsive layouts before publishing
+        run: npm run test:e2e
+        working-directory: homepage
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: site

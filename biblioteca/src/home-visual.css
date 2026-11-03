@@ -407,7 +407,8 @@ html[data-motion=calm] *,html[data-motion=calm] *::before,html[data-motion=calm]
 .shelf-slide-number{display:inline-flex;height:1em;overflow:hidden;vertical-align:baseline;line-height:1em;font-variant-numeric:tabular-nums;color:var(--ink)}
 #status{will-change:opacity,translate,scale}
 .metric-digit{display:inline-block;height:1em;overflow:hidden;vertical-align:bottom;line-height:1em;font-variant-numeric:tabular-nums}
-.metric-digit-track{display:block;animation:digit-roll .72s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0) * 55ms + 120ms);}
+.metric-digit-track{display:block;transform:translateY(var(--digit-position));animation:digit-roll .72s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0) * 55ms + 120ms);}
+html[data-motion=calm] .metric-digit-track{animation:none!important}
 .metric-digit-track>span{display:block;height:1em;line-height:1em}
 .metric-separator{display:inline-block;white-space:pre}
 .toc-row{display:flex;align-items:stretch;gap:2px;min-width:0}

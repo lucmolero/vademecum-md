@@ -1,0 +1,47 @@
+name: Problema na interface
+description: Relate uma falha na homepage, na Biblioteca, no leitor ou no grafo.
+title: "[Interface] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Descreva o problema com o mínimo necessário para reproduzi-lo.
+        Não inclua anotações pessoais, arquivos privados, credenciais ou dados de terceiros.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área afetada
+      options:
+        - Homepage e previews
+        - Grafo de citações
+        - Biblioteca e busca
+        - Leitor e ferramentas de leitura
+        - Documentação
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Endereço da página
+      placeholder: https://lucmolero.github.io/vademecum-md/biblioteca/
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir
+      description: Descreva os passos, o resultado observado e o comportamento esperado.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Navegador e dispositivo
+      description: Informe navegador e versão, sistema e se usou celular, tablet ou computador.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Informações adicionais
+      description: Se souber, inclua a versão do acervo, orientação da tela e frequência do problema. Imagens são opcionais; oculte informações pessoais.

@@ -1,4 +1,4 @@
-# Vademecum homepage
+# Homepage VadeMecum MD
 
 Homepage estática em React, Vite, Tailwind CSS e Motion. O Vite usa caminhos relativos para suportar tanto domínio próprio quanto repositórios de projeto no GitHub Pages (`/<nome-do-repositório>/`).
 
@@ -6,6 +6,8 @@ Homepage estática em React, Vite, Tailwind CSS e Motion. O Vite usa caminhos re
 
 ```sh
 npm ci
+npm ci --prefix ../biblioteca
+npm run build --prefix ../biblioteca
 npm run dev
 ```
 
@@ -17,6 +19,34 @@ npm run preview
 ```
 
 O conteúdo pronto para hospedagem fica em `dist/`.
+
+O build executa a checagem TypeScript estrita antes de gerar os arquivos. Para verificar separadamente, use `npm run typecheck`; os testes de navegador ficam em `npm run test:e2e` e requerem o build da Biblioteca com o corpus oficial.
+
+```sh
+npm run test:graph
+npx playwright install chromium webkit
+npm run test:e2e
+```
+
+Os testes cobrem arraste e setas do grafo, busca, pausa de renderização, recuperação de WebGL, os nove previews, navegação, acessibilidade e o leitor em desktop e mobile. `npm run preview` também serve a Biblioteca já compilada na mesma origem; a publicação final adiciona as páginas documentais e os downloads.
+
+A suíte executa as jornadas de interface em Chromium e WebKit. Os testes completos
+de gestos e recuperação do grafo usam Chromium, incluindo seu protocolo nativo
+de toque. Para executar apenas um projeto, acrescente `-- --project=chromium`
+ou `-- --project=webkit` a `npm run test:e2e`. A emulação não substitui a
+homologação em aparelhos físicos.
+
+## Organização
+
+- `src/components/`: seções da página e integração com a Biblioteca.
+- `src/components/orbit.tsx`: composição e interação dos cartões de recursos.
+- `src/components/vignettes.tsx`: carregamento, confirmação de prontidão e recuperação dos previews reais.
+- `public/graph/`: pacote oficial do grafo, com proveniência e licenças.
+- `tests/`: testes da lógica do grafo e jornadas de navegador.
+
+Os nove previews são preparados quando a seção se aproxima da tela e permanecem montados para preservar as interações. O grafo pausa sua renderização quando está oculto. As animações respeitam a preferência de movimento reduzido do sistema.
+
+O hero carrega o mesmo pacote local de grafo em desenvolvimento e produção, sem depender de outro servidor. Para editar o aplicativo do grafo em um checkout separado, defina `VITE_GRAPH_URL=http://127.0.0.1:8770/viewer/?home-hero=1` antes de iniciar o Vite. Os previews da Biblioteca também usam os estilos locais deste checkout.
 
 ## Instalar a skill e acessar o corpus
 

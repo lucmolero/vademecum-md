@@ -1,6 +1,6 @@
 'use client';
 
-import { ease, useShouldReduceMotion } from '@animate-ui/react/utils/motion';
+import { useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import {
   motion,
   useAnimationFrame,
@@ -26,9 +26,10 @@ import {
 
 import { cn } from 'cn';
 
-import { VademecumMark as AnimateUILogo } from '@/brand';
+import { VademecumMark } from '@/brand';
 
 import { VIGNETTES } from './vignettes';
+import { useDocumentVisible } from './use-document-visible';
 
 const STAGE = { width: 1200, height: 780 };
 const CARD = { width: 300, height: 188 };
@@ -51,9 +52,16 @@ const clamp = (t: number) => Math.min(1, Math.max(0, t));
 const round = (value: number, digits: number) =>
   Math.round(value * 10 ** digits) / 10 ** digits;
 
+function cardTransform(p: Placement) {
+  const translation = `translate(${round(p.x, 1)}px, ${round(p.y, 1)}px)`;
+  // Flatten settled cards so native iframe focus/scroll uses a 2D coordinate space.
+  if (p.rotateY === 0 && p.scale === 1) return translation;
+  return `perspective(900px) ${translation} scale(${round(p.scale, 3)}) rotateY(${round(p.rotateY, 2)}deg)`;
+}
+
 function OrbitDrift({ drift, speed }: { drift: MotionValue<number>; speed: number }) {
   useAnimationFrame((_, delta) => {
-    drift.set(drift.get() + delta * speed);
+    drift.set(drift.get() + Math.min(delta, 64) * speed);
   });
   return null;
 }
@@ -90,18 +98,25 @@ function useStageScale() {
   return scale;
 }
 
-function Card({ title, Vignette, active = true }: { title: string; Vignette: ComponentType<{ active?: boolean }>; active?: boolean }) {
+function Card({ title, Vignette, active }: { title: string; Vignette: ComponentType<{ active?: boolean }>; active?: boolean }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const nearViewport = useInView(ref, { margin: '600px' });
+  // Mount once near the section; retaining the frame preserves demo interactions.
+  const [loaded, setLoaded] = useState(false);
+  const shouldLoad = active ?? nearViewport;
+  useEffect(() => { if (shouldLoad) setLoaded(true); }, [shouldLoad]);
   return (
     <div
+      ref={ref}
       data-slot="orbit-card"
       className="flex size-full flex-col rounded-xl bg-accent p-1"
     >
-      <div className="relative flex flex-1 flex-col rounded-lg bg-background">
+      <div className="relative flex min-h-0 flex-1 flex-col rounded-lg bg-background">
         <span className="absolute top-2.5 left-3.5 text-xs font-medium text-muted-foreground">
           {title}
         </span>
-        <div className="flex flex-1 items-center justify-center p-4 pt-7">
-          <Vignette active={active} />
+        <div className="flex min-h-0 flex-1 items-center justify-center p-4 pt-7">
+          <Vignette active={loaded} />
         </div>
       </div>
     </div>
@@ -123,14 +138,14 @@ function OrbitCard({
   settle,
   turn,
   drift,
-  stageVisible,
+  preloadPreview,
 }: {
   index: number;
   enter: MotionValue<number>;
   settle: MotionValue<number>;
   turn: MotionValue<number>;
   drift: MotionValue<number>;
-  stageVisible: boolean;
+  preloadPreview: boolean;
 }) {
   const vignettes = use(VignettesContext);
   const { title, Vignette } = vignettes[index]!;
@@ -170,33 +185,18 @@ function OrbitCard({
   );
 
   const ref = useRef<HTMLDivElement>(null);
-  const [previewEnabled, setPreviewEnabled] = useState(false);
-  const previewEnabledRef = useRef(false);
   const apply = useCallback((p: Placement) => {
     const element = ref.current;
     if (!element) return;
-    element.style.transform = `perspective(900px) translate(${round(p.x, 1)}px, ${round(p.y, 1)}px) scale(${round(p.scale, 3)}) rotateY(${round(p.rotateY, 2)}deg)`;
+    element.style.transform = cardTransform(p);
     element.style.opacity = String(round(p.opacity, 3));
     const interactive = p.opacity > 0.35;
     element.style.pointerEvents = interactive ? 'auto' : 'none';
     element.inert = !interactive;
     element.style.zIndex = String(p.z);
-    const enablePreview = stageVisible && p.opacity > 0.82;
-    if (enablePreview && !previewEnabledRef.current) {
-      previewEnabledRef.current = true;
-      setPreviewEnabled(true);
-    }
-  }, [stageVisible]);
+  }, []);
   useMotionValueEvent(place, 'change', apply);
   useLayoutEffect(() => apply(place.get()), [apply, place]);
-  useEffect(() => {
-    if (!stageVisible) {
-      previewEnabledRef.current = false;
-      setPreviewEnabled(false);
-      return;
-    }
-    apply(place.get());
-  }, [stageVisible, apply, place]);
 
   return (
     <div
@@ -212,7 +212,11 @@ function OrbitCard({
       }}
       inert
     >
-      <Card title={title} Vignette={Vignette} active={stageVisible && previewEnabled} />
+      <Card
+        title={title}
+        Vignette={Vignette}
+        active={preloadPreview}
+      />
     </div>
   );
 }
@@ -241,7 +245,10 @@ function Headline({
 function OrbitStage() {
   const vignettes = use(VignettesContext);
   const ref = useRef<HTMLElement>(null);
-  const stageInView = useInView(ref, { amount: 0.01 });
+  const inView = useInView(ref, { amount: 0.01 });
+  const preloadPreviews = useInView(ref, { margin: '600px' });
+  const pageVisible = useDocumentVisible();
+  const stageInView = inView && pageVisible;
   const scale = useStageScale();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -287,7 +294,7 @@ function OrbitStage() {
         className="relative mt-24 h-[300vh]"
       >
         {stageInView && driftActive && <OrbitDrift drift={drift} speed={0.00008} />}
-        <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-hidden">
+        <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-clip">
           <div
             className="relative shrink-0"
             style={{
@@ -319,7 +326,7 @@ function OrbitStage() {
                 transformPerspective: 1200,
               }}
             >
-              <AnimateUILogo className="h-[240px] w-[256px] text-foreground drop-shadow-[0_30px_60px_rgb(0_0_0/0.25)]" />
+              <VademecumMark className="h-[240px] w-[256px] text-foreground drop-shadow-[0_30px_60px_rgb(0_0_0/0.25)]" />
             </motion.div>
 
             {vignettes.map(({ title }, index) => (
@@ -330,7 +337,7 @@ function OrbitStage() {
                 settle={settle}
                 turn={turn}
                 drift={drift}
-                stageVisible={stageInView}
+                preloadPreview={preloadPreviews}
               />
             ))}
           </div>
@@ -348,15 +355,11 @@ function StaticGrid() {
         data-slot="home-orbit"
         className="mx-auto mt-24 flex w-full max-w-[1000px] flex-col gap-8 px-5"
       >
-        <motion.h2
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.6, ease: ease.out }}
+        <h2
           className="text-center text-3xl font-medium text-balance md:text-5xl"
         >
           O direito se revela nas relações.
-        </motion.h2>
+        </h2>
         <div
           className={cn(
             'grid gap-4',
@@ -364,7 +367,7 @@ function StaticGrid() {
           )}
         >
           {vignettes.map(({ title, Vignette }, index) => (
-            <motion.div
+            <div
               key={title}
               className={cn(
                 columns === 3 && 'md:col-span-2',
@@ -372,18 +375,10 @@ function StaticGrid() {
                   index === vignettes.length - (vignettes.length % 3) &&
                   LAST_ROW_START[vignettes.length % 3],
               )}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-60px' }}
-              transition={{
-                duration: 0.6,
-                ease: ease.out,
-                delay: (index % columns) * 0.06,
-              }}
               style={{ height: CARD.height + 20 }}
             >
               <Card title={title} Vignette={Vignette} />
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -391,7 +386,7 @@ function StaticGrid() {
 }
 
 function MobileOrbitCard({
-  index, activeIndex, enter, settle, turn, drift, viewportWidth, viewportHeight, cardWidth, stageVisible,
+  index, activeIndex, enter, settle, turn, drift, viewportWidth, viewportHeight, cardWidth, preloadPreview,
 }: {
   index: number;
   activeIndex: MotionValue<number>;
@@ -402,7 +397,7 @@ function MobileOrbitCard({
   viewportWidth: number;
   viewportHeight: number;
   cardWidth: number;
-  stageVisible: boolean;
+  preloadPreview: boolean;
 }) {
   const vignettes = use(VignettesContext);
   const { title, Vignette } = vignettes[index]!;
@@ -424,38 +419,22 @@ function MobileOrbitCard({
         rotateY: -Math.cos(angle) * 18 * (1 - k),
         z: k > .5 ? 30 - Math.round(Math.abs(delta)) : depth > .5 ? 20 : 5,
         interactive: k > .92 && Math.abs(delta) < .5,
-        preload: Math.abs(delta) <= 1,
       };
     },
   );
 
   const ref = useRef<HTMLDivElement>(null);
-  const [previewEnabled, setPreviewEnabled] = useState(false);
-  const previewEnabledRef = useRef(false);
-  const apply = useCallback((p: Placement & { interactive: boolean; preload: boolean }) => {
+  const apply = useCallback((p: Placement & { interactive: boolean }) => {
     const element = ref.current;
     if (!element) return;
-    element.style.transform = `perspective(900px) translate(${round(p.x, 1)}px, ${round(p.y, 1)}px) scale(${round(p.scale, 3)}) rotateY(${round(p.rotateY, 2)}deg)`;
+    element.style.transform = cardTransform(p);
     element.style.opacity = String(round(p.opacity, 3));
     element.style.pointerEvents = p.interactive ? 'auto' : 'none';
     element.inert = !p.interactive;
     element.style.zIndex = String(p.z);
-    const enablePreview = stageVisible && p.preload;
-    if (previewEnabledRef.current !== enablePreview) {
-      previewEnabledRef.current = enablePreview;
-      setPreviewEnabled(enablePreview);
-    }
-  }, [stageVisible]);
+  }, []);
   useMotionValueEvent(place, 'change', apply);
   useLayoutEffect(() => apply(place.get()), [apply, place]);
-  useEffect(() => {
-    if (!stageVisible) {
-      previewEnabledRef.current = false;
-      setPreviewEnabled(false);
-      return;
-    }
-    apply(place.get());
-  }, [stageVisible, apply, place]);
 
   return (
     <div
@@ -467,7 +446,11 @@ function MobileOrbitCard({
       style={{ width: cardWidth, height: CARD.height, marginLeft: -cardWidth / 2, marginTop: -CARD.height / 2, opacity: 0, pointerEvents: 'none' }}
       inert
     >
-      <Card title={title} Vignette={Vignette} active={stageVisible && previewEnabled} />
+      <Card
+        title={title}
+        Vignette={Vignette}
+        active={preloadPreview}
+      />
     </div>
   );
 }
@@ -475,13 +458,16 @@ function MobileOrbitCard({
 function MobileOrbitStage() {
   const vignettes = use(VignettesContext);
   const ref = useRef<HTMLElement>(null);
-  const stageInView = useInView(ref, { amount: 0.01 });
-  const reduce = useShouldReduceMotion();
+  const inView = useInView(ref, { amount: 0.01 });
+  const preloadPreviews = useInView(ref, { margin: '600px' });
+  const pageVisible = useDocumentVisible();
+  const stageInView = inView && pageVisible;
   const [viewport, setViewport] = useState({ width: window.innerWidth, height: window.innerHeight });
   const [selected, setSelected] = useState(0);
   const [driftActive, setDriftActive] = useState(false);
   const driftActiveRef = useRef(false);
-  const selectedMotion = useMotionValue(0);
+  const selectedTarget = useMotionValue(0);
+  const selectedMotion = useSpring(selectedTarget, { stiffness: 260, damping: 32 });
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end end'] });
   const progress = useSpring(scrollYProgress, { stiffness: 160, damping: 32, mass: .4 });
   const drift = useMotionValue(0);
@@ -494,6 +480,12 @@ function MobileOrbitStage() {
   const logoOpacity = useTransform(progress, [0, .78, .9], [1, 1, 0]);
   const logoRotate = useTransform(progress, [0, .9], [-35, 170]);
   const controlsOpacity = useTransform(progress, [.78, .9], [0, 1]);
+  const controlsRef = useRef<HTMLDivElement>(null);
+  const syncControls = useCallback((opacity: number) => {
+    if (controlsRef.current) controlsRef.current.inert = opacity < .9;
+  }, []);
+  useMotionValueEvent(controlsOpacity, 'change', syncControls);
+  useLayoutEffect(() => syncControls(controlsOpacity.get()), [controlsOpacity, syncControls]);
   const cardWidth = Math.min(340, Math.max(240, viewport.width - 32));
 
   useEffect(() => {
@@ -501,7 +493,7 @@ function MobileOrbitStage() {
     window.addEventListener('resize', resize, { passive: true });
     return () => window.removeEventListener('resize', resize);
   }, []);
-  useEffect(() => selectedMotion.set(selected), [selected, selectedMotion]);
+  useEffect(() => selectedTarget.set(selected), [selected, selectedTarget]);
   const updateDrift = useCallback(() => {
     const next = enter.get() > 0 && settle.get() < 1;
     if (driftActiveRef.current === next) return;
@@ -517,7 +509,7 @@ function MobileOrbitStage() {
   return (
     <section ref={ref} id="recursos" data-slot="home-orbit" className="relative mt-16 h-[300vh]" aria-label="Recursos do VadeMecum">
       {stageInView && driftActive && <OrbitDrift drift={drift} speed={0.00008} />}
-      <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-hidden">
+      <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-clip">
         <div className="relative h-full w-full shrink-0" style={{ perspective: 1200 }}>
           <motion.h2 style={{ opacity: titleOpacity, y: useTransform(titleOpacity, [0, 1], [-12, 0]) }} className="absolute inset-x-5 top-7 z-40 text-left text-[clamp(1.65rem,7vw,2.15rem)] font-medium leading-[1.05] tracking-tight text-balance">
             O direito se revela nas relações.
@@ -529,12 +521,12 @@ function MobileOrbitStage() {
             <p className="mt-2 text-sm text-muted-foreground">Explore as prévias interativas da Biblioteca e do Leitor.</p>
           </motion.div>
           <motion.div aria-hidden="true" style={{ scale: logoScale, opacity: logoOpacity, rotate: logoRotate }} className="absolute top-1/2 left-1/2 z-10 -mt-16 -ml-[4.5rem]">
-            <AnimateUILogo className="h-32 w-36 text-foreground drop-shadow-[0_24px_48px_rgb(0_0_0/0.24)]" />
+            <VademecumMark className="h-32 w-36 text-foreground drop-shadow-[0_24px_48px_rgb(0_0_0/0.24)]" />
           </motion.div>
           {vignettes.map(({ title }, index) => (
-            <MobileOrbitCard key={title} index={index} activeIndex={selectedMotion} enter={enter} settle={settle} turn={turn} drift={drift} viewportWidth={viewport.width} viewportHeight={viewport.height - 80} cardWidth={cardWidth} stageVisible={stageInView} />
+            <MobileOrbitCard key={title} index={index} activeIndex={selectedMotion} enter={enter} settle={settle} turn={turn} drift={drift} viewportWidth={viewport.width} viewportHeight={viewport.height - 80} cardWidth={cardWidth} preloadPreview={preloadPreviews} />
           ))}
-          <motion.div style={{ opacity: controlsOpacity, pointerEvents: 'none' }} className="absolute inset-x-5 bottom-5 z-40 flex items-center justify-between gap-3">
+          <motion.div ref={controlsRef} inert style={{ opacity: controlsOpacity, pointerEvents: 'none' }} className="absolute inset-x-5 bottom-5 z-40 flex items-center justify-between gap-3">
             <span className="text-xs font-medium text-muted-foreground" aria-live="polite" aria-atomic="true">
               {vignettes[selected]?.title} · {String(selected + 1).padStart(2, '0')} / {String(vignettes.length).padStart(2, '0')}
             </span>
@@ -562,7 +554,7 @@ export function Orbit({ only }: { only?: string[] }) {
     : VIGNETTES;
   return (
     <VignettesContext value={vignettes}>
-      {wide && !reduce ? <OrbitStage /> : !wide && !reduce ? <MobileOrbitStage /> : <StaticGrid />}
+      {reduce ? <StaticGrid /> : wide ? <OrbitStage /> : <MobileOrbitStage />}
     </VignettesContext>
   );
 }

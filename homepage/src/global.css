@@ -257,6 +257,12 @@
 }
 
 @media (max-width: 640px) {
+  .graph-continue-link {
+    left: 50%;
+    right: auto;
+    bottom: 64px;
+    transform: translateX(-50%);
+  }
   .graph-hero-frame {
     top: calc(5rem - 54px);
     height: calc(100% - 5rem + 54px);

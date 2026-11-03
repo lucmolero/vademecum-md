@@ -1,17 +1,33 @@
-# VadeMecum MD
+<p align="center">
+  <img src="homepage/public/assets/favicon.svg" width="72" height="72" alt="Símbolo do VadeMecum MD">
+</p>
 
-**Legislação federal brasileira para leitura humana e consulta com evidência.**
+<h1 align="center">VadeMecum MD</h1>
+
+<p align="center"><strong>Legislação federal brasileira para leitura humana e consulta com evidência.</strong></p>
+
+<p align="center">
+  <a href="https://lucmolero.github.io/vademecum-md/">Página inicial</a> ·
+  <a href="https://lucmolero.github.io/vademecum-md/biblioteca/">Biblioteca</a> ·
+  <a href="https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.3">Baixar acervo</a>
+</p>
+
 Cada diploma publicado em Markdown tem identidade estável, metadados de
 curadoria, data de corte, fonte indicada e informações de proveniência.
 
-[Página inicial](https://lucmolero.github.io/vademecum-md/) ·
-[Biblioteca e leitor](https://lucmolero.github.io/vademecum-md/biblioteca/) ·
-[Explorar o catálogo](https://lucmolero.github.io/vademecum-md/generated/catalog/) ·
-[Baixar a release v1.1.3](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.3) ·
-[Consultar o contrato de consumo](manifests/consumer-contract.json)
-
 > **Snapshot v1.1.3:** 375 diplomas federais · data de corte: 21/10/2026.
 > O corte identifica esta coleção; o corpus não é atualizado em tempo real.
+
+## O projeto
+
+O VadeMecum MD reúne texto, leitura e relações normativas em um mesmo acervo.
+
+- **Leitura:** busca no texto integral, navegação por dispositivos, marcadores e anotações.
+- **Relações:** grafo interativo de citações entre normas, com busca e exploração dos nós.
+- **Integração:** Markdown, manifestos e uma skill de consulta para trabalhar com a mesma release.
+
+Concebido e mantido por [Luciano Molero](https://github.com/lucmolero).
+O projeto é estático: os dados pessoais de leitura permanecem no navegador.
 
 ## Escolha como consultar
 
@@ -81,3 +97,33 @@ incertos não bastam, por si só, para afirmar vigência atual.
 O código e os materiais autorais seguem a [licença MIT](LICENSE). O escopo da
 licença e a exclusão dos textos normativos e materiais de terceiros estão
 descritos em [licenças e materiais](LICENSE.md).
+
+## Executar as interfaces
+
+Requer Node.js 22 ou posterior. A partir da raiz:
+
+```sh
+npm ci --prefix biblioteca
+npm run build --prefix biblioteca
+npm ci --prefix homepage
+npm run dev --prefix homepage
+```
+
+Abra `http://127.0.0.1:8765/`. A Biblioteca usa o corpus e o manifesto deste
+checkout por padrão. Os previews usam dados pequenos e isolados; interações
+demonstrativas não alteram a biblioteca pessoal.
+
+Para verificar as interfaces:
+
+```sh
+npm test --prefix biblioteca
+npm run build --prefix homepage
+npm run test:graph --prefix homepage
+cd homepage
+npx playwright install chromium webkit
+npm run test:e2e
+```
+
+A [documentação da homepage](homepage/README.md) explica a composição do site;
+a [documentação da Biblioteca](biblioteca/README.md) detalha leitura, dados locais
+e backup. O [guia de contribuição](CONTRIBUTING.md) reúne os validadores do corpus.

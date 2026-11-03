@@ -26,15 +26,34 @@ const previewDocumentId = 'br-federal-lei_ordinaria-14133-2021';
 const previewMarks = [{section:1,page:0,scroll:.18,scrollScope:'document',label:'Art. 5º · Princípios'}];
 const previewNotes = [{section:1,start:0,end:18,text:'Na aplicação desta Lei',note:'Revisar os princípios aplicáveis.'}];
 const store = {
+  pendingPositions: new Map(),
+  positionTimer: null,
   get(key, fallback) {
+    if(this.pendingPositions.has(key))return this.pendingPositions.get(key);
     if(previewModes.has(libraryPreview)){
       if(libraryPreview==='resume'&&key===`position:${previewDocumentId}`)return{section:1,page:0,scroll:.06,scrollScope:'document'};
       return fallback;
     }
     try { return JSON.parse(localStorage.getItem(`biblioteca:${key}`)) ?? fallback; } catch { return fallback; }
   },
-  set(key, value) { if(previewModes.has(libraryPreview))return;try { localStorage.setItem(`biblioteca:${key}`, JSON.stringify(value)); } catch { /* Browser storage may be unavailable. */ } },
+  set(key, value) {
+    if(previewModes.has(libraryPreview))return;
+    if(key.startsWith('position:')){
+      this.pendingPositions.set(key,value);
+      clearTimeout(this.positionTimer);
+      this.positionTimer=setTimeout(()=>this.flush(),400);
+      return;
+    }
+    try { localStorage.setItem(`biblioteca:${key}`, JSON.stringify(value)); } catch { /* Browser storage may be unavailable. */ }
+  },
+  flush() {
+    clearTimeout(this.positionTimer);
+    for(const [key,value] of this.pendingPositions){try{localStorage.setItem(`biblioteca:${key}`,JSON.stringify(value));}catch{/* Browser storage may be unavailable. */}}
+    this.pendingPositions.clear();
+  },
 };
+window.addEventListener('pagehide',()=>store.flush());
+document.addEventListener('visibilitychange',()=>{if(document.hidden)store.flush();});
 const settings = { theme:'light',size:18,spacing:1.6,font:'sans-serif',flow:'scroll',flowVersion:3,motion:'full' };
 const storedSettings = store.get('settings',{});
 if(storedSettings&&typeof storedSettings==='object'&&!Array.isArray(storedSettings)){
@@ -57,6 +76,7 @@ const validMark = mark => mark&&Number.isInteger(mark.section)&&mark.section>=0&
 const validNote = note => note&&Number.isInteger(note.section)&&note.section>=0&&Number.isInteger(note.start)&&note.start>=0&&Number.isInteger(note.end)&&note.end>note.start&&typeof note.text==='string';
 const reader = new Reader($('#viewport'));
 let library, active=null, position=null, marks=[], notes=[], selected=null, toastTimer,toastGeneration=0,tocItems=[],tocExpanded=[];
+let tocByAnchor=new Map(),tocBySection=new Map(),currentTocButton=null;
 let readingSince=0,lastInteraction=Date.now(),seeking=false,routeToken=0;
 if('serviceWorker'in navigator&&location.protocol!=='file:'&&!previewModes.has(libraryPreview)){
   navigator.serviceWorker.register(new URL('./sw.js',document.baseURI),{updateViaCache:'none'})
@@ -119,9 +139,13 @@ function panel(name) {
 function syncTocVisibility(revealIndex=-1,changedIndex=-1){
   if(revealIndex>=0){let level=tocItems[revealIndex]?.level||1;for(let i=revealIndex-1;i>=0;i--)if(tocItems[i].level<level){tocExpanded[i]=true;level=tocItems[i].level;}}
   const animate=document.documentElement.dataset.motion!=='calm'&&!matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const ancestors=[];
   for(let i=0;i<tocItems.length;i++){
-    const item=tocItems[i];let hidden=false;
-    for(let parent=i-1;parent>=0;parent--){if(tocItems[parent].level<item.level){if(!tocExpanded[parent])hidden=true;}}
+    const item=tocItems[i];
+    while(ancestors.length&&ancestors.at(-1).level>=item.level)ancestors.pop();
+    const hidden=ancestors.length>0&&ancestors.at(-1).collapsed;
+    item.row.inert=hidden;
+    ancestors.push({level:item.level,collapsed:hidden||!tocExpanded[i]});
     if(item.row.hidden!==hidden){
       const currentHeight=item.row.getBoundingClientRect().height;item.row.getAnimations().forEach(animation=>animation.cancel());
       const delay=changedIndex>=0&&i>changedIndex&&item.level>tocItems[changedIndex].level?Math.min((i-changedIndex-1)*16,80):0;
@@ -182,6 +206,8 @@ async function openBook(book,id,target){
     $('#toc').replaceChildren();
     const toc=book.toc?.length?book.toc:book.sections.map((section,index)=>({label:section.label,section:index,level:1}));
     tocItems=toc.map((item,index)=>{const row=element('div',null,'toc-row');row.id=`toc-item-${index}`;row.dataset.level=item.level;const button=element('button',item.label);button.dataset.level=item.level;button.dataset.section=item.section;if(item.id)button.dataset.anchor=item.id;button.onclick=()=>jump({section:item.section,anchor:item.id});row.append(button);const following=toc.slice(index+1),nextSibling=following.findIndex(next=>next.level<=item.level),children=following.slice(0,nextSibling<0?following.length:nextSibling),hasChildren=children.length>0;let disclosure=null;if(hasChildren){disclosure=element('button',null,'toc-disclosure');disclosure.type='button';disclosure.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';disclosure.setAttribute('aria-controls',children.map((_,childIndex)=>`toc-item-${index+1+childIndex}`).join(' '));disclosure.onclick=()=>{tocExpanded[index]=!tocExpanded[index];syncTocVisibility(-1,index);};row.append(disclosure);}$('#toc').append(row);return{label:item.label,level:item.level,row,disclosure};});tocExpanded=toc.map(()=>true);syncTocVisibility();
+    tocByAnchor=new Map();tocBySection=new Map();currentTocButton=null;
+    for(const item of tocItems){const button=item.row.firstElementChild;if(button.dataset.anchor)tocByAnchor.set(button.dataset.anchor,button);const section=Number(button.dataset.section);if(!tocBySection.has(section))tocBySection.set(section,button);}
     const previewOptions=new URLSearchParams(location.search);
     const requestedPanel=previewOptions.get('panel');
     panel(['toc','search','marks','notes'].includes(requestedPanel)?requestedPanel:'toc');
@@ -220,13 +246,13 @@ reader.addEventListener('position',({detail})=>{
   $('#reading').style.setProperty('--reading-progress',`${Math.round(detail.fraction*1000)/10}%`);
   $('#previous').disabled=settings.flow==='scroll'?$('#viewport').scrollTop<=1:detail.section===0&&detail.page===0;
   $('#next').disabled=settings.flow==='scroll'?$('#viewport').scrollTop+$('#viewport').clientHeight>=$('#viewport').scrollHeight-2:detail.section===active.sections.length-1&&detail.page===detail.pages-1;
-  const tocButtons=[...document.querySelectorAll('#toc button[data-section]')];
   const heading=reader.currentHeading();
-  let activeToc=heading?.id?tocButtons.find(button=>button.dataset.anchor===heading.id):null;
-  if(!activeToc)activeToc=tocButtons.find(button=>Number(button.dataset.section)===detail.section);
-  tocButtons.forEach(button=>{const current=button===activeToc;button.classList.toggle('current',current);button.setAttribute('aria-current',current?'location':'false');});
-  const activeTocIndex=activeToc?tocButtons.indexOf(activeToc):-1;if(activeTocIndex>=0)syncTocVisibility();
-  if(activeToc&&!$('#toc-panel').hidden&&!$('#sidebar').hidden){const panel=$('#toc-panel'),itemRect=activeToc.getBoundingClientRect(),panelRect=panel.getBoundingClientRect();if(itemRect.top<panelRect.top)panel.scrollTop+=itemRect.top-panelRect.top-8;else if(itemRect.bottom>panelRect.bottom)panel.scrollTop+=itemRect.bottom-panelRect.bottom+8;}
+  const activeToc=tocByAnchor.get(heading?.id)||tocBySection.get(detail.section);
+  if(activeToc!==currentTocButton){
+    currentTocButton?.classList.remove('current');currentTocButton?.removeAttribute('aria-current');
+    activeToc?.classList.add('current');activeToc?.setAttribute('aria-current','location');currentTocButton=activeToc;
+    if(activeToc&&!$('#toc-panel').hidden&&!$('#sidebar').hidden){const panel=$('#toc-panel'),itemRect=activeToc.getBoundingClientRect(),panelRect=panel.getBoundingClientRect();if(itemRect.top<panelRect.top)panel.scrollTop+=itemRect.top-panelRect.top-8;else if(itemRect.bottom>panelRect.bottom)panel.scrollTop+=itemRect.bottom-panelRect.bottom+8;}
+  }
   $('#add-mark').setAttribute('aria-pressed',String(marks.some(mark=>mark.section===detail.section&&mark.page===detail.page&&(settings.flow==='scroll'?mark.scrollScope==='document'&&mark.scroll===detail.scroll:mark.scrollScope!=='document'))));
 });
 reader.addEventListener('selection',({detail})=>{selected=detail;$('#selected-text').textContent=detail.text;$('#note-text').value='';$('#selection-popover').hidden=false;});
@@ -235,11 +261,12 @@ function currentArticle(){const heading=reader.currentHeading();return active?.t
 function articleUrl(){const hash=new URLSearchParams({documento:active.id});const article=currentArticle();if(article?.id)hash.set('artigo',article.id);return `${location.origin}${location.pathname}#${hash}`;}
 async function copyText(value,success){try{await navigator.clipboard.writeText(value);message(success);}catch{message('Não foi possível copiar. Verifique a permissão da área de transferência.');}}
 $('#copy-section-link').onclick=()=>{if(active)copyText(articleUrl(),'Link da seção copiado.');};
-$('#copy-citation').onclick=()=>{if(!active)return;const article=currentArticle();const parts=[active.author,active.title,article?.label].filter(Boolean);const date=active.sourceDate?` Consulta em ${active.sourceDate}.`:'';copyText(`${parts.join('. ')}.${date} ${articleUrl()}`,'Citação com link copiada.');};
+$('#copy-citation').onclick=()=>{if(!active)return;const article=currentArticle();const parts=[active.author,active.title,article?.label].filter(Boolean);const date=active.sourceDate?` Data da fonte: ${active.sourceDate}.`:'';const cutoff=active.cutoff?` Corte do acervo: ${active.cutoff}.`:'';copyText(`${parts.join('. ')}.${date}${cutoff} ${articleUrl()}`,'Citação com link copiada.');};
 $('#show-source').onclick=()=>{
   if(!active)return;const root=$('#source-details');root.replaceChildren();
   const fields=[['Documento',active.title],['Autor ou órgão',active.author],['Identificação',[active.number,active.year].filter(Boolean).join(' · ')],['Situação na fonte',active.legalStatus],['Data da fonte',active.sourceDate],['Data de corte',active.cutoff],['Consolidação',active.consolidationStatus],['Fidelidade',active.fidelityStatus],['SHA-256 do Markdown de origem',active.vademecumSourceHash||active.sourceHash||active.contentHash]];
-  for(const[label,value]of fields)if(value){const row=element('p');row.append(element('strong',`${label}: `),element('span',String(value)));root.append(row);}
+  const metadataLabels={consolidada_fonte_oficial:'Consolidada na fonte oficial',pass:'Verificação aprovada'};
+  for(const[label,value]of fields)if(value){const row=element('p');const displayValue=['Consolidação','Fidelidade'].includes(label)?metadataLabels[value]||value:value;row.append(element('strong',`${label}: `),element('span',String(displayValue)));root.append(row);}
   const sources=Array.isArray(active.officialSources)?active.officialSources:(active.officialUrl?[active.officialUrl]:[]);
   sources.forEach((source,index)=>{try{const url=new URL(source);if(['http:','https:'].includes(url.protocol)){const link=element('a',sources.length>1?`Abrir fonte oficial ${index+1}`:'Abrir fonte oficial');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';root.append(link);}}catch{}});
   if(!sources.length&&active.source){const link=element('a','Abrir arquivo de origem');try{const url=new URL(active.source.split('/').map(encodeURIComponent).join('/'),document.baseURI);if(['http:','https:'].includes(url.protocol)){link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';root.append(link);}}catch{}}
@@ -299,7 +326,7 @@ document.addEventListener('keydown',event=>{
 });
 function flushReadingTime(){const now=Date.now();if(!previewModes.has(libraryPreview)&&active&&readingSince&&!document.hidden&&now-lastInteraction<60000)library?.addReadingTime(active.id,Math.min(20,(now-readingSince)/1000));readingSince=active?now:0;}
 for(const name of ['pointerdown','keydown','wheel'])document.addEventListener(name,()=>{lastInteraction=Date.now();},{passive:true});
-setInterval(flushReadingTime,15000);
+if(!previewModes.has(libraryPreview))setInterval(flushReadingTime,15000);
 window.addEventListener('pagehide',flushReadingTime);
 window.addEventListener('hashchange',route);
 window.addEventListener('popstate',route);
@@ -318,4 +345,10 @@ library=new Library($('#library'),{
     if(Array.isArray(data.notes))store.set(`notes:${id}`,data.notes.filter(validNote).map(note=>({section:note.section,start:note.start,end:note.end,text:note.text,note:typeof note.note==='string'?note.note:''})));
   },
 });
-try{await library.init();await route();}catch(error){console.error(error);message('Não foi possível carregar a biblioteca. Verifique se o armazenamento do navegador está disponível.');}
+try{
+  await library.init();await route();
+  if(previewModes.has(libraryPreview)){
+    document.documentElement.dataset.previewReady='true';
+    if(window.parent!==window)window.parent.postMessage({type:'vademecum-preview-ready'},location.origin);
+  }
+}catch(error){console.error(error);message('Não foi possível carregar a biblioteca. Verifique se o armazenamento do navegador está disponível.');}

@@ -133,17 +133,14 @@ async function walkFiles(dir) {
 }
 
 export async function build() {
-  const vademecumCorpus = asText(process.env.VADEMECUM_CORPUS_DIR || process.env.VADE_CORPUS_DIR) ? path.resolve(process.env.VADEMECUM_CORPUS_DIR || process.env.VADE_CORPUS_DIR) : '';
-  const vademecumFiles = vademecumCorpus ? await walk(vademecumCorpus) : [];
-  if (vademecumCorpus && !vademecumFiles.length) throw new Error(`Nenhum Markdown do VadeMecum encontrado em ${vademecumCorpus}`);
-  let release = {};
-  const releaseFile = asText(process.env.VADEMECUM_RELEASE_FILE || process.env.VADE_RELEASE_FILE);
-  if (releaseFile) release = JSON.parse(await readFile(path.resolve(releaseFile), 'utf8'));
-  if (vademecumCorpus) {
-    const expected = Number(release.corpus_count ?? release.document_count ?? release.count);
-    if (Number.isFinite(expected) && expected > 0 && expected !== vademecumFiles.length) {
-      throw new Error(`A release declara ${expected} documentos, mas o corpus contém ${vademecumFiles.length}`);
-    }
+  const vademecumCorpus = path.resolve(asText(process.env.VADEMECUM_CORPUS_DIR || process.env.VADE_CORPUS_DIR) || path.join(root, '../bases/curated/legislacao/federal'));
+  const vademecumFiles = await walk(vademecumCorpus);
+  if (!vademecumFiles.length) throw new Error(`Nenhum Markdown do VadeMecum encontrado em ${vademecumCorpus}`);
+  const releaseFile = asText(process.env.VADEMECUM_RELEASE_FILE || process.env.VADE_RELEASE_FILE) || path.join(root, '../manifests/release.json');
+  const release = JSON.parse(await readFile(path.resolve(releaseFile), 'utf8'));
+  const expected = Number(release.corpus_count ?? release.document_count ?? release.count);
+  if (Number.isFinite(expected) && expected > 0 && expected !== vademecumFiles.length) {
+    throw new Error(`A release declara ${expected} documentos, mas o corpus contém ${vademecumFiles.length}`);
   }
   await rm(output, { recursive: true, force: true });
   await mkdir(path.join(output, 'books'), { recursive: true });
@@ -151,21 +148,17 @@ export async function build() {
   await mkdir(path.join(output, 'lib'), { recursive: true });
   await cp(createRequire(import.meta.url).resolve('markdown-it/browser'), path.join(output, 'lib/markdown-it.min.js'));
   await cp(path.join(root, 'node_modules/markdown-it/LICENSE'), path.join(output, 'lib/markdown-it-LICENSE.txt'));
-  if (vademecumCorpus) await cp(vademecumCorpus, path.join(output, 'leis/vademecum-md'), { recursive: true });
-  else await cp(path.join(root, 'leis'), path.join(output, 'leis'), { recursive: true });
+  await cp(vademecumCorpus, path.join(output, 'leis/vademecum-md'), { recursive: true });
   const catalog = [];
   const searchIndex = [];
-  const sources = vademecumCorpus
-    ? [{ root: vademecumCorpus, sourcePrefix: 'leis/vademecum-md', origin: 'vademecum', files: vademecumFiles }]
-    : [{ root: path.join(root, 'leis'), sourcePrefix: 'leis', origin: 'library', files: await walk(path.join(root, 'leis')) }];
   const seenIds = new Set();
-  for (const sourceSet of sources) for (const file of sourceSet.files) {
-    const relative = path.relative(sourceSet.root, file).split(path.sep).join('/');
-    const sourcePath = `${sourceSet.sourcePrefix}/${relative}`;
+  for (const file of vademecumFiles) {
+    const relative = path.relative(vademecumCorpus, file).split(path.sep).join('/');
+    const sourcePath = `leis/vademecum-md/${relative}`;
     const raw = await readFile(file, 'utf8');
     const sourceHash = createHash('sha256').update(raw).digest('hex');
-    const book = compile(raw, relative, { origin: sourceSet.origin });
-    const id = sourceSet.origin === 'vademecum' ? book.vademecumId : createHash('sha256').update(relative).digest('hex').slice(0, 16);
+    const book = compile(raw, relative, { origin: 'vademecum' });
+    const id = book.vademecumId;
     if (!id || !/^[a-z0-9][a-z0-9._-]*$/i.test(id)) throw new Error(`ID estável ausente ou inválido em ${sourcePath}`);
     if (seenIds.has(id)) throw new Error(`ID duplicado entre os acervos: ${id}`);
     seenIds.add(id);
@@ -176,22 +169,22 @@ export async function build() {
       const base = `../${sourceDirectory === '.' ? '' : `${sourceDirectory.split('/').map(encodeURIComponent).join('/')}/`}`;
       await writeFile(path.join(output, section.file), `<!doctype html><html lang="${book.language.replace(/[^a-zA-Z0-9-]/g, '')}"><head><meta charset="utf-8"><base href="${base}"></head><body>${section.html}</body></html>`);
     }
-    const record = { ...book, id, collection: sourceSet.origin, title: book.title, sourceHash, file: `books/${artifactId}.json`, source: sourcePath, sections: book.sections.length };
-    catalog.push(record);
+    const record = { ...book, id, collection: 'vademecum', title: book.title, sourceHash, file: `books/${artifactId}.json`, source: sourcePath, sections: book.sections.length };
+    // The shelf needs metadata only. Load the full TOC with the selected book.
+    const { toc: _toc, ...catalogRecord } = record;
+    catalog.push(catalogRecord);
     searchIndex.push({ id, title: book.title, sections: book.sections.map((section, index) => ({ index, label: section.label, anchor: book.toc.find(item => item.section === index)?.id || '', text: section.html.replace(/<[^>]*>/g, ' ').replace(/&nbsp;|&#160;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/\s+/g, ' ').trim() })) });
     await writeFile(path.join(output, record.file), JSON.stringify({ ...book, source: record.source, sourceHash }));
   }
-  if (vademecumCorpus) {
-    await writeFile(path.join(output, 'vademecum-source.json'), JSON.stringify({
-      repository: 'lucmolero/vademecum-md',
-      ref: asText(process.env.VADEMECUM_SOURCE_REF || process.env.VADE_REF) || 'main',
-      commit: asText(process.env.VADEMECUM_SOURCE_COMMIT || process.env.VADE_COMMIT),
-      version: asText(release.version), release: asText(release.version), generatedAt: asText(release.generated_at),
-      cutoff: [...new Set(catalog.filter(book => book.collection === 'vademecum').map(book => book.cutoff).filter(Boolean))].sort().at(-1) || '',
-      documentCount: vademecumFiles.length,
-    }, null, 2));
-  }
-  await writeFile(path.join(output, 'catalog.json'), JSON.stringify(catalog, null, 2));
+  await writeFile(path.join(output, 'vademecum-source.json'), JSON.stringify({
+    repository: 'lucmolero/vademecum-md',
+    ref: asText(process.env.VADEMECUM_SOURCE_REF || process.env.VADE_REF) || 'main',
+    commit: asText(process.env.VADEMECUM_SOURCE_COMMIT || process.env.VADE_COMMIT),
+    version: asText(release.version), release: asText(release.version), generatedAt: asText(release.generated_at),
+    cutoff: [...new Set(catalog.map(book => book.cutoff).filter(Boolean))].sort().at(-1) || '',
+    documentCount: vademecumFiles.length,
+  }, null, 2));
+  await writeFile(path.join(output, 'catalog.json'), JSON.stringify(catalog));
   await writeFile(path.join(output, 'search-index.json'), JSON.stringify(searchIndex));
   await writeFile(path.join(output, '.nojekyll'), '');
   const outputFiles = await walkFiles(output);

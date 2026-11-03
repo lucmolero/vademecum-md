@@ -4,3 +4,5 @@ node_modules/
 .playwright/
 test-results/
 playwright-report/
+# Capturas locais de revisão visual
+/*-review.png

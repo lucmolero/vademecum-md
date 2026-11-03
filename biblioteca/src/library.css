@@ -363,7 +363,7 @@ html[data-theme=sepia] .shelf-shell{
   box-shadow:var(--shadow-4);
   backdrop-filter:blur(26px) saturate(1.22);animation:menu-in .2s cubic-bezier(.22,1,.36,1) both;
 }
-.shelf-sort-menu{top:64px;right:24px}
+.shelf-sort-menu{top:64px;right:24px;max-height:calc(100dvh - 80px);overflow-y:auto;overscroll-behavior:contain}
 .shelf-sort-menu>strong{display:block;padding:8px 12px;font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 .shelf-sort-menu>button,.shelf-context-menu>button{
   display:block;width:100%;padding:10px 12px;border-radius:11px;text-align:left;font-size:13px;

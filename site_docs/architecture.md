@@ -2,17 +2,7 @@
 
 O produto separa a fonte normativa dos artefatos derivados:
 
-```mermaid
-flowchart LR
-  A[Fontes oficiais] --> B[Snapshots privados]
-  B --> C[Normalização]
-  C --> D[Markdown canônico]
-  D --> E[Índices e site]
-  D --> F[Grafo normativo]
-  D --> G[Auditorias]
-  G --> H[Pull Request]
-  H --> I[Release]
-```
+![Das fontes oficiais aos snapshots privados, normalização e Markdown canônico. O Markdown alimenta índices, site, grafo e auditorias. As auditorias precedem a proposta de alteração e a release.](assets/architecture.svg)
 
 `bases/curated` é a camada normativa pública. `bases/history` preserva versões,
 alterações e evidências. `bases/derived` é regenerável e nunca substitui o

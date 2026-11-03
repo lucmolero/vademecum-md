@@ -7,6 +7,7 @@ import './library-reader-preview.css';
 
 const previewSettings = { theme: 'light', size: 16, spacing: 1.65, font: 'sans-serif', flow: 'scroll', flowVersion: 3, motion: 'full' };
 const initialBook = PREVIEW_BOOKS['br-federal-lei_ordinaria-14133-2021'];
+type PreviewBook = typeof initialBook;
 const libraryStyles = ['style.css', 'library.css', 'glass.css', 'home-visual.css'];
 
 const previewMarkup = `
@@ -52,7 +53,7 @@ export function LibraryReaderPreview({ mode = 'split' }: { mode?: 'split' | 'lib
     if (!element) return;
     const shadow = element.shadowRoot || element.attachShadow({ mode: 'open' });
     shadow.replaceChildren();
-    const base = new URL('https://lucmolero.github.io/vademecum-md/biblioteca/');
+    const base = new URL(import.meta.env.DEV ? './biblioteca-demo/' : './biblioteca/', document.baseURI);
     const previewTemplate = document.createElement('template');
     previewTemplate.innerHTML = previewMarkup;
     shadow.append(previewTemplate.content);
@@ -94,7 +95,7 @@ export function LibraryReaderPreview({ mode = 'split' }: { mode?: 'split' | 'lib
       #reading.live-reading .reader-header{left:10px;right:10px;top:4px;height:42px;display:grid;grid-template-columns:34px minmax(0,1fr);align-items:center;gap:1px;padding:0}
       #reading.live-reading .reader-header .button{min-width:30px;min-height:30px;padding:5px;font-size:9px}
       #reading.live-reading .reader-header>.spacer{display:none}
-      #reading.live-reading #reader-context{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px;color:var(--muted)}
+      #reading.live-reading [data-reader-context]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px;color:var(--muted)}
       #reading.live-reading.is-sidebar-hidden>#sidebar{display:none!important}
       #reading.live-reading .page-padding{inset:54px 8px 42px}
       #reading.live-reading #viewport.scrolled .document-content{width:min(100%,560px);padding:16px 12px 30px;font-size:13px;line-height:1.65}
@@ -191,7 +192,7 @@ export function LibraryReaderPreview({ mode = 'split' }: { mode?: 'split' | 'lib
         setSettings: () => {},
         getReadingData: () => ({}),
         message: () => {},
-        open: book => selectBook(book),
+        open: (book: PreviewBook) => selectBook(book),
       });
       await library.init();
       await selectBook(initialBook);
