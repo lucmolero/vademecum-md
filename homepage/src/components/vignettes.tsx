@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type ComponentType } from 'react';
+import { libraryDestination } from './library-destination';
 import './vignettes.css';
 
 const documentId = 'br-federal-lei_ordinaria-14133-2021';
@@ -18,6 +19,7 @@ type FeaturePreviewProps = {
 
 function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, sourceDialog, article = true }: FeaturePreviewProps) {
   const previewRef = useRef<HTMLDivElement>(null);
+  const iframeCleanup = useRef<(() => void) | null>(null);
   const [previewActive, setPreviewActive] = useState(false);
   const libraryBase = import.meta.env.DEV
     ? new URL('/biblioteca-demo/', document.baseURI)
@@ -36,7 +38,11 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
     previewUrl.hash = `documento=${documentId}${article ? '&artigo=art-5o' : ''}`;
   }
 
-  const destination = new URL('https://lucmolero.github.io/vademecum-md/biblioteca/');
+  const destination = libraryDestination();
+  const searchDestination = libraryDestination({
+    view: mode === 'search' ? 'search-all' : 'books',
+    query: mode === 'search' ? query : undefined,
+  });
   if (view) destination.searchParams.set('view', view);
   if (panel) destination.searchParams.set('panel', panel);
   if (sidebar) destination.searchParams.set('sidebar', '1');
@@ -46,6 +52,32 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
   if (mode === 'resume' || !['catalog', 'search', 'settings'].includes(mode)) {
     destination.hash = `documento=${documentId}${article && mode !== 'resume' ? '&artigo=art-5o' : ''}`;
   }
+
+  useEffect(() => () => iframeCleanup.current?.(), []);
+
+  const routePreviewInteraction = (event: React.SyntheticEvent<HTMLIFrameElement>) => {
+    iframeCleanup.current?.();
+    const frameDocument = event.currentTarget.contentDocument;
+    if (!frameDocument) return;
+    const route = (interaction: Event) => {
+      const target = interaction.target as Element | null;
+      if (!target || typeof target.closest !== 'function') return;
+      const search = target.closest('.shelf-search, #library-query');
+      const book = target.closest('.shelf-book-open');
+      if (!search && !book) return;
+      interaction.preventDefault();
+      interaction.stopImmediatePropagation();
+      const documentId = book?.closest<HTMLElement>('[data-book-id]')?.dataset.bookId;
+      const next = documentId ? libraryDestination({ documentId }) : searchDestination;
+      window.location.assign(next.href);
+    };
+    frameDocument.addEventListener('click', route, true);
+    frameDocument.addEventListener('focusin', route, true);
+    iframeCleanup.current = () => {
+      frameDocument.removeEventListener('click', route, true);
+      frameDocument.removeEventListener('focusin', route, true);
+    };
+  };
 
   useEffect(() => {
     const element = previewRef.current;
@@ -72,6 +104,7 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
         loading="lazy"
         referrerPolicy="strict-origin-when-cross-origin"
         allow="clipboard-write"
+        onLoad={routePreviewInteraction}
       />
       <a className="library-mini-preview-open" href={destination.href}>
         Abrir na biblioteca <span aria-hidden="true">↗</span>

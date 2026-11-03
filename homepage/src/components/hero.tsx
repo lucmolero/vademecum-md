@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import { ease, useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import { HeroTitle } from './hero-title';
 import { useIntroDone } from './intro';
+import { libraryDestination } from './library-destination';
 
 const RISE_EASE=[.23,1,.32,1] as const;
 const rise=(index:number,done:boolean,reduce:boolean)=>reduce?{initial:false,animate:{opacity:1,y:0,filter:'none'}}:{initial:{opacity:1,y:20,filter:'blur(10px)'},animate:done?{opacity:1,y:0,filter:'blur(0px)'}:{opacity:1,y:20,filter:'blur(10px)'},transition:{duration:.7,ease:RISE_EASE,delay:index*.09}};
@@ -128,11 +129,10 @@ function CopyCommand({audience}:{audience:InstallAudience}){
           </motion.div>}</AnimatePresence>
         </div>
       </motion.div> : <motion.div id="skill-panel-human" aria-labelledby="skill-tab-human" key="human" role="tabpanel" initial={reduce?false:{opacity:0,y:8}} animate={{opacity:1,y:0}} exit={reduce?{opacity:0}:{opacity:0,y:-6}} transition={reduce?{duration:0}:{duration:.24,ease:ease.out}}>
-        <h3 className="mt-6 text-[clamp(1.65rem,4vw,2.45rem)] font-semibold leading-[1.08] tracking-[-.055em] text-foreground">Baixe e abra <span className="text-muted-foreground">no seu agente</span></h3>
-        <p className="mx-auto mt-3 max-w-[40rem] text-sm leading-relaxed text-muted-foreground sm:text-base">O kit traz a skill e o corpus da mesma release. Extraia o ZIP e abra a pasta no Codex, Claude Code, Cursor ou OpenCode.</p>
-        <div className="mx-auto mt-6 flex max-w-[40rem] flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-muted-foreground"><span><b className="mr-2 font-medium text-foreground">01</b>Baixe o kit</span><span><b className="mr-2 font-medium text-foreground">02</b>Extraia o ZIP</span><span><b className="mr-2 font-medium text-foreground">03</b>Abra a pasta no agente</span></div>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">{downloadAction}{documentationAction('Guia de instalação')}</div>
-        <div className="mt-2 flex items-center justify-center gap-3 text-[10px] text-muted-foreground"><span>{kit?`${(kit.sizeBytes/1024/1024).toFixed(1)} MB · ${kit.documentCount} normas · corte ${kit.cutoff}`:'Sem Node.js · skill + corpus'}</span><span aria-hidden="true">·</span><a href={checksumUrl} className="underline-offset-4 hover:text-foreground hover:underline">SHA-256</a></div>
+        <h3 className="mt-6 text-[clamp(1.65rem,4vw,2.45rem)] font-semibold leading-[1.08] tracking-[-.055em] text-foreground">Explore a biblioteca <span className="text-muted-foreground">diretamente</span></h3>
+        <p className="mx-auto mt-3 max-w-[40rem] text-sm leading-relaxed text-muted-foreground sm:text-base">Pesquise no acervo, abra o leitor e organize sua pesquisa jurídica. Sem instalar nada.</p>
+        <div className="mx-auto mt-6 flex max-w-[40rem] flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-muted-foreground"><span>375 normas federais</span><span>Busca no texto integral</span><span>Leitor com referências</span></div>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3"><a href={libraryDestination().href} className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-foreground px-6 text-sm font-semibold text-background transition-opacity hover:opacity-85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"><svg aria-hidden="true" viewBox="0 0 20 20" className="size-4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M2.5 5.2c2.8-.7 5.2-.2 7.5 1.5v11c-2.3-1.7-4.7-2.2-7.5-1.5zM17.5 5.2c-2.8-.7-5.2-.2-7.5 1.5v11c2.3-1.7 4.7-2.2 7.5-1.5z"/></svg>Abrir a Biblioteca <span aria-hidden="true">↗</span></a></div>
       </motion.div>}
     </AnimatePresence>
   </div>

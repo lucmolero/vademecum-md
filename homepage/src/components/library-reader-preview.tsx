@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Library } from '../../../biblioteca/src/library.js';
 import { Reader } from '../../../biblioteca/src/reader.js';
 import { PREVIEW_BOOKS, PREVIEW_CATALOG } from '../../../biblioteca/src/preview-data.js';
+import { openLibrary } from './library-destination';
 import './library-reader-preview.css';
 
 const previewSettings = { theme: 'light', size: 16, spacing: 1.65, font: 'sans-serif', flow: 'scroll', flowVersion: 3, motion: 'full' };
@@ -116,6 +117,23 @@ export function LibraryReaderPreview({ mode = 'split' }: { mode?: 'split' | 'lib
     const contextLabel = shadow.querySelector<HTMLElement>('[data-reader-context]')!;
     const readingShell = shadow.querySelector<HTMLElement>('#reading')!;
     const tocToggle = shadow.querySelector<HTMLButtonElement>('#preview-toggle-toc')!;
+    const routeLibraryInteraction = (event: Event) => {
+      const target = event.target instanceof Element ? event.target : null;
+      if (!target) return;
+      const search = target.closest('.shelf-search, #library-query');
+      const book = target.closest('.shelf-book-open');
+      if (!search && !book) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      if (book) {
+        const documentId = book.closest<HTMLElement>('[data-book-id]')?.dataset.bookId;
+        openLibrary(documentId ? { documentId } : {});
+        return;
+      }
+      openLibrary({ view: 'books' });
+    };
+    shadow.addEventListener('click', routeLibraryInteraction, true);
+    shadow.addEventListener('focusin', routeLibraryInteraction, true);
     tocToggle.addEventListener('click', () => {
       const isOpen = tocToggle.getAttribute('aria-expanded') === 'true';
       readingShell.classList.toggle('is-sidebar-hidden', isOpen);
@@ -187,6 +205,8 @@ export function LibraryReaderPreview({ mode = 'split' }: { mode?: 'split' | 'lib
 
     return () => {
       active = false;
+      shadow.removeEventListener('click', routeLibraryInteraction, true);
+      shadow.removeEventListener('focusin', routeLibraryInteraction, true);
       library?.destroy?.();
       reader?.destroy?.();
       shadow.replaceChildren();
