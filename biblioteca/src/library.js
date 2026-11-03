@@ -68,7 +68,7 @@ export class Library {
     this.view=['books','search-all','statistics','notes','settings','info'].includes(requestedView)?requestedView:'books';this.folder='';this.query='';this.status='all';this.tags=[];this.selected=new Set();this.selectionMode=false;this.saveTimer=null;
     const previewQuery=new URLSearchParams(location.search).get('q')||'';
     if(options.previewData&&this.view==='books')this.query=previewQuery;
-    this.visibleBooks=[];this.renderContext='';this.animatedContext='';this.notesCache=new Map();this.fullQuery=this.view==='search-all'?previewQuery:'';this.searchIndex=null;this.searchToken=0;
+    this.visibleBooks=[];this.renderContext='';this.animatedContext='';this.notesCache=new Map();this.fullQuery=this.view==='search-all'?previewQuery:'';this.searchIndex=null;this.searchToken=0;this.fullSearchTimer=0;this.searchWorker=null;
     this.mount();
   }
   mount() {
@@ -490,7 +490,7 @@ export class Library {
   renderNotes(content){content.className='shelf-content shelf-dashboard';const matches=this.notesMatches();content.append(this.sectionHead('Memória','Anotações',`${matches.length} anotaç${matches.length===1?'ão':'ões'} neste navegador`));if(!matches.length){const empty=node('div',null,'shelf-empty-note');const icon=node('span',null,'shelf-empty-note-icon');icon.innerHTML=svg('notes');icon.setAttribute('aria-hidden','true');empty.append(icon,node('strong','Suas anotações aparecerão aqui'),node('p','Selecione um trecho no leitor para destacar e registrar uma anotação.'));content.append(empty);}for(const match of matches)content.append(this.noteCard(match));}
   renderStatistics(content){
     content.className='shelf-content shelf-dashboard';const books=this.books();const counts={new:0,reading:0,finished:0};for(const book of books)counts[readingStatus(book.progress)]++;
-    content.append(this.sectionHead('Painel','Estatísticas',`${books.length} documento${books.length===1?'':'s'} acompanhado${books.length===1?'':'s'} neste navegador`));
+    content.append(this.sectionHead('Painel','Estatísticas',`${books.length} documento${books.length===1?'':'s'} no acervo · progresso salvo neste navegador`));
     const grid=node('div',null,'shelf-metrics');for(const [index,[label,value]]of [['Documentos',books.length],['Em leitura',counts.reading],['Concluídos',counts.finished],['Não iniciados',counts.new],['Anotações',books.reduce((sum,book)=>sum+this.notesForBook(book.id).length,0)],['Tempo de leitura',formatTime(books.reduce((sum,book)=>sum+(this.state.records[book.id]?.readingSeconds||0),0))]].entries()){const card=node('div',null,'shelf-metric');card.style.setProperty('--i',String(index));const number=node('strong');number.setAttribute('aria-label',String(value));number.setAttribute('aria-live','polite');for(const character of String(value)){if(/\d/.test(character)){const digit=node('span',null,'metric-digit'),track=node('span',null,'metric-digit-track');track.style.setProperty('--digit-position',`-${Number(character)}em`);for(let n=0;n<=9;n++)track.append(node('span',String(n)));digit.append(track);number.append(digit);}else number.append(node('span',character,'metric-separator'));}card.append(node('small',label),number);grid.append(card);}content.append(grid);
     if(books.length){const distribution=node('div',null,'shelf-distribution'),track=node('div',null,'shelf-distribution-track'),legend=node('div',null,'shelf-distribution-legend');track.setAttribute('role','img');track.setAttribute('aria-label',`Distribuição de leitura: ${counts.finished} concluídos, ${counts.reading} em leitura e ${counts.new} não iniciados`);for(const [status,label]of [['finished','Concluídos'],['reading','Em leitura'],['new','Não iniciados']]){const segment=node('span',null,`is-${status}`);segment.style.flexGrow=String(Math.max(0,counts[status]));segment.title=`${label}: ${counts[status]}`;track.append(segment);const item=node('span',null,`distribution-${status}`);item.append(node('i',null,'distribution-dot'),node('span',`${label} · ${counts[status]}`));legend.append(item);}distribution.append(track,legend);content.append(distribution);}
     const recent=[...books].filter(book=>book.lastReadAt).sort((a,b)=>b.lastReadAt-a.lastReadAt).slice(0,5);if(recent.length){content.append(node('h2','Leituras recentes'));for(const book of recent){const button=node('button',null,'shelf-recent');button.append(node('strong',book.title),node('span',`${Math.round(book.progress*100)}% · ${new Date(book.lastReadAt).toLocaleDateString('pt-BR')}`));button.onclick=()=>this.open(book.id);content.append(button);}}
@@ -505,12 +505,31 @@ export class Library {
     input.oninput=()=>{this.fullQuery=input.value;this.renderFullResults(status,results);};
     if(this.fullQuery)this.renderFullResults(status,results);
   }
-  async renderFullResults(status,results){
+  renderFullResults(status,results){
     const token=++this.searchToken,query=normalizeSearch(this.fullQuery);
+    clearTimeout(this.fullSearchTimer);
     results.replaceChildren();
     if(!query){status.textContent='Digite um termo para pesquisar no acervo.';return;}
     status.textContent='Pesquisando no acervo…';
+    this.fullSearchTimer=setTimeout(()=>this.searchFullResults(query,token,status,results),160);
+  }
+  async searchFullResults(query,token,status,results){
     try{
+      const visible=new Map(this.books().map(book=>[book.id,book]));
+      if(!this.options.previewData&&'Worker'in window){
+        this.searchWorker??=new Worker(new URL('./search-worker.js',import.meta.url),{type:'module'});
+        const worker=this.searchWorker;
+        worker.onmessage=event=>{
+          const message=event.data;
+          if(message.token!==this.searchToken)return;
+          if(message.type==='error'){status.textContent='Não foi possível carregar o índice integral. Conecte-se à internet e tente novamente.';return;}
+          this.renderFullSearchMatches(message.matches||[],status,results,token);
+        };
+        worker.onerror=()=>{if(token===this.searchToken)status.textContent='Não foi possível carregar o índice integral. Conecte-se à internet e tente novamente.';};
+        const localBooks=this.local.filter(book=>visible.has(book.id)).map(book=>({id:book.id,title:book.title,sections:book.sections.map((section,index)=>({index,label:section.label,anchor:book.toc?.find(item=>item.section===index)?.id||'',text:new DOMParser().parseFromString(section.html,'text/html').body.textContent||''}))}));
+        worker.postMessage({type:'search',token,query,visibleIds:[...visible.keys()],localBooks});
+        return;
+      }
       if(!this.searchIndex){
         if(this.options.previewData){
           this.searchIndex=Object.values(this.options.previewData.books).map(book=>({id:book.id,title:book.title,sections:book.sections.map((section,index)=>({index,label:section.label,anchor:book.toc?.find(item=>item.section===index)?.id||'',text:new DOMParser().parseFromString(section.html,'text/html').body.textContent||''}))}));
@@ -519,7 +538,6 @@ export class Library {
         }
       }
       if(token!==this.searchToken)return;
-      const visible=new Map(this.books().map(book=>[book.id,book]));
       const corpus=[...this.searchIndex];
       for(const book of this.local){
         if(!visible.has(book.id))continue;
@@ -528,15 +546,19 @@ export class Library {
       const matches=[];
       for(const book of corpus){if(!visible.has(book.id))continue;for(const section of book.sections||[]){const found=findNormalizedMatch(section.text,query);if(!found)continue;const start=Math.max(0,found.start-65),end=Math.min(section.text.length,found.end+95);matches.push({id:book.id,title:book.title,label:section.label,section:section.index,anchor:section.anchor,text:section.text,start,end,at:found.start,matchEnd:found.end});if(matches.length>=200)break;}if(matches.length>=200)break;}
       if(token!==this.searchToken)return;
-      status.textContent=`${matches.length}${matches.length===200?'+':''} resultado${matches.length===1?'':'s'} no texto integral`;
-      if(!matches.length){results.append(node('p','Nenhuma ocorrência encontrada.','shelf-muted'));return;}
-      for(const match of matches){
-        const button=node('button',null,'shelf-full-result');button.append(node('strong',match.title),node('span',match.label,'shelf-full-result-label'));
-        const snippet=node('span',null,'shelf-full-result-snippet'),before=match.text.slice(match.start,match.at),found=match.text.slice(match.at,match.matchEnd),after=match.text.slice(match.matchEnd,match.end);
-        snippet.append(document.createTextNode(`${match.start?'…':''}${before}`));if(found)snippet.append(node('mark',found));snippet.append(document.createTextNode(`${after}${match.end<match.text.length?'…':''}`));button.append(snippet);
-        button.onclick=()=>this.open(match.id,{section:match.section,anchor:match.anchor});results.append(button);
-      }
+      this.renderFullSearchMatches(matches,status,results,token);
     }catch(error){if(token!==this.searchToken)return;console.error(error);status.textContent='Não foi possível carregar o índice integral. Conecte-se à internet e tente novamente.';}
+  }
+  renderFullSearchMatches(matches,status,results,token){
+    if(token!==this.searchToken)return;
+    status.textContent=`${matches.length}${matches.length===200?'+':''} resultado${matches.length===1?'':'s'} no texto integral`;
+    if(!matches.length){results.append(node('p','Nenhuma ocorrência encontrada.','shelf-muted'));return;}
+    for(const match of matches){
+      const button=node('button',null,'shelf-full-result');button.append(node('strong',match.title),node('span',match.label,'shelf-full-result-label'));
+      const snippet=node('span',null,'shelf-full-result-snippet'),before=match.text.slice(match.start,match.at),found=match.text.slice(match.at,match.matchEnd),after=match.text.slice(match.matchEnd,match.end);
+      snippet.append(document.createTextNode(`${match.start?'…':''}${before}`));if(found)snippet.append(node('mark',found));snippet.append(document.createTextNode(`${after}${match.end<match.text.length?'…':''}`));button.append(snippet);
+      button.onclick=()=>this.open(match.id,{section:match.section,anchor:match.anchor});results.append(button);
+    }
   }
   renderSettings(content){
     content.className='shelf-content shelf-dashboard';content.append(this.sectionHead('Preferências','Configurações','Aparência, leitura e backup dos seus dados'));

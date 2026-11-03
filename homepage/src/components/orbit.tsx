@@ -4,6 +4,7 @@ import { ease, useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import {
   motion,
   useAnimationFrame,
+  useInView,
   useMotionValue,
   useMotionValueEvent,
   useScroll,
@@ -50,6 +51,13 @@ const clamp = (t: number) => Math.min(1, Math.max(0, t));
 const round = (value: number, digits: number) =>
   Math.round(value * 10 ** digits) / 10 ** digits;
 
+function OrbitDrift({ drift, speed }: { drift: MotionValue<number>; speed: number }) {
+  useAnimationFrame((_, delta) => {
+    drift.set(drift.get() + delta * speed);
+  });
+  return null;
+}
+
 function subscribeToWide(callback: () => void) {
   const query = window.matchMedia('(min-width: 768px)');
   query.addEventListener('change', callback);
@@ -82,7 +90,7 @@ function useStageScale() {
   return scale;
 }
 
-function Card({ title, Vignette }: { title: string; Vignette: ComponentType }) {
+function Card({ title, Vignette, active = true, loadDelayMs = 0 }: { title: string; Vignette: ComponentType<{ active?: boolean; loadDelayMs?: number }>; active?: boolean; loadDelayMs?: number }) {
   return (
     <div
       data-slot="orbit-card"
@@ -93,7 +101,7 @@ function Card({ title, Vignette }: { title: string; Vignette: ComponentType }) {
           {title}
         </span>
         <div className="flex flex-1 items-center justify-center p-4 pt-7">
-          <Vignette />
+          <Vignette active={active} loadDelayMs={loadDelayMs} />
         </div>
       </div>
     </div>
@@ -104,7 +112,6 @@ type Placement = {
   x: number;
   y: number;
   scale: number;
-  blur: number;
   opacity: number;
   rotateY: number;
   z: number;
@@ -116,12 +123,14 @@ function OrbitCard({
   settle,
   turn,
   drift,
+  stageVisible,
 }: {
   index: number;
   enter: MotionValue<number>;
   settle: MotionValue<number>;
   turn: MotionValue<number>;
   drift: MotionValue<number>;
+  stageVisible: boolean;
 }) {
   const vignettes = use(VignettesContext);
   const { title, Vignette } = vignettes[index]!;
@@ -145,7 +154,6 @@ function OrbitCard({
         x: Math.cos(angle) * RADIUS.x * reach,
         y: Math.sin(angle) * RADIUS.y * reach + 30,
         scale: 0.7 + 0.3 * depth,
-        blur: (1 - depth) * 1.6 + (1 - e!) * 8,
         opacity: (0.55 + 0.45 * depth) * e!,
         rotateY: -Math.cos(angle) * 24,
       };
@@ -154,7 +162,6 @@ function OrbitCard({
         x: orbit.x + (slot.x - orbit.x) * k,
         y: orbit.y + (slot.y - orbit.y) * k,
         scale: orbit.scale + (1 - orbit.scale) * k,
-        blur: orbit.blur * (1 - k),
         opacity: orbit.opacity + (1 - orbit.opacity) * k,
         rotateY: orbit.rotateY * (1 - k),
         z: k > 0.5 ? 30 : depth > 0.5 ? 20 : 5,
@@ -163,6 +170,8 @@ function OrbitCard({
   );
 
   const ref = useRef<HTMLDivElement>(null);
+  const [previewEnabled, setPreviewEnabled] = useState(false);
+  const previewEnabledRef = useRef(false);
   const apply = useCallback((p: Placement) => {
     const element = ref.current;
     if (!element) return;
@@ -171,12 +180,23 @@ function OrbitCard({
     const interactive = p.opacity > 0.35;
     element.style.pointerEvents = interactive ? 'auto' : 'none';
     element.inert = !interactive;
-    element.style.filter =
-      p.blur > 0.05 ? `blur(${round(p.blur, 1)}px)` : 'none';
     element.style.zIndex = String(p.z);
-  }, []);
+    const enablePreview = stageVisible && p.opacity > 0.82;
+    if (enablePreview && !previewEnabledRef.current) {
+      previewEnabledRef.current = true;
+      setPreviewEnabled(true);
+    }
+  }, [stageVisible]);
   useMotionValueEvent(place, 'change', apply);
   useLayoutEffect(() => apply(place.get()), [apply, place]);
+  useEffect(() => {
+    if (!stageVisible) {
+      previewEnabledRef.current = false;
+      setPreviewEnabled(false);
+      return;
+    }
+    apply(place.get());
+  }, [stageVisible, apply, place]);
 
   return (
     <div
@@ -192,7 +212,7 @@ function OrbitCard({
       }}
       inert
     >
-      <Card title={title} Vignette={Vignette} />
+      <Card title={title} Vignette={Vignette} active={stageVisible && previewEnabled} loadDelayMs={index * 150} />
     </div>
   );
 }
@@ -208,15 +228,9 @@ function Headline({
 }) {
   const opacity = useTransform(progress, range, [0, 1, 1, 0]);
   const y = useTransform(progress, range, [24, 0, 0, -24]);
-  const filter = useTransform(progress, range, [
-    'blur(8px)',
-    'blur(0px)',
-    'blur(0px)',
-    'blur(8px)',
-  ]);
   return (
     <motion.h2
-      style={{ opacity, y, filter }}
+      style={{ opacity, y }}
       className="absolute inset-x-0 top-10 text-center text-4xl font-medium text-balance md:text-5xl"
     >
       {children}
@@ -227,6 +241,7 @@ function Headline({
 function OrbitStage() {
   const vignettes = use(VignettesContext);
   const ref = useRef<HTMLElement>(null);
+  const stageInView = useInView(ref, { amount: 0.01 });
   const scale = useStageScale();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -242,9 +257,17 @@ function OrbitStage() {
   const enter = useTransform(progress, (p) => smooth(clamp((p - 0.12) / 0.25)));
   const settle = useTransform(progress, (p) => clamp((p - 0.86) / 0.12));
   const turn = useTransform(progress, (p) => clamp(p / 0.86) * Math.PI * 1.1);
-  useAnimationFrame((_, delta) => {
-    if (enter.get() > 0 && settle.get() === 0) drift.set(drift.get() + delta * 0.00008);
-  });
+  const [driftActive, setDriftActive] = useState(false);
+  const driftActiveRef = useRef(false);
+  const updateDrift = useCallback(() => {
+    const next = enter.get() > 0 && settle.get() === 0;
+    if (driftActiveRef.current === next) return;
+    driftActiveRef.current = next;
+    setDriftActive(next);
+  }, [enter, settle]);
+  useMotionValueEvent(enter, 'change', updateDrift);
+  useMotionValueEvent(settle, 'change', updateDrift);
+  useEffect(updateDrift, [updateDrift]);
 
   const logoScale = useTransform(
     progress,
@@ -263,6 +286,7 @@ function OrbitStage() {
         data-slot="home-orbit"
         className="relative mt-24 h-[300vh]"
       >
+        {stageInView && driftActive && <OrbitDrift drift={drift} speed={0.00008} />}
         <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-hidden">
           <div
             className="relative shrink-0"
@@ -306,6 +330,7 @@ function OrbitStage() {
                 settle={settle}
                 turn={turn}
                 drift={drift}
+                stageVisible={stageInView}
               />
             ))}
           </div>
@@ -324,8 +349,8 @@ function StaticGrid() {
         className="mx-auto mt-24 flex w-full max-w-[1000px] flex-col gap-8 px-5"
       >
         <motion.h2
-          initial={{ opacity: 0, y: 16, filter: 'blur(6px)' }}
-          whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6, ease: ease.out }}
           className="text-center text-3xl font-medium text-balance md:text-5xl"
@@ -347,8 +372,8 @@ function StaticGrid() {
                   index === vignettes.length - (vignettes.length % 3) &&
                   LAST_ROW_START[vignettes.length % 3],
               )}
-              initial={{ opacity: 0, y: 24, filter: 'blur(6px)' }}
-              whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{
                 duration: 0.6,
@@ -357,7 +382,7 @@ function StaticGrid() {
               }}
               style={{ height: CARD.height + 20 }}
             >
-              <Card title={title} Vignette={Vignette} />
+              <Card title={title} Vignette={Vignette} loadDelayMs={index * 150} />
             </motion.div>
           ))}
         </div>
@@ -366,7 +391,7 @@ function StaticGrid() {
 }
 
 function MobileOrbitCard({
-  index, activeIndex, enter, settle, turn, drift, viewportWidth, viewportHeight, cardWidth,
+  index, activeIndex, enter, settle, turn, drift, viewportWidth, viewportHeight, cardWidth, stageVisible,
 }: {
   index: number;
   activeIndex: MotionValue<number>;
@@ -377,6 +402,7 @@ function MobileOrbitCard({
   viewportWidth: number;
   viewportHeight: number;
   cardWidth: number;
+  stageVisible: boolean;
 }) {
   const vignettes = use(VignettesContext);
   const { title, Vignette } = vignettes[index]!;
@@ -394,7 +420,6 @@ function MobileOrbitCard({
         x: orbitX + (delta * viewportWidth - orbitX) * k,
         y: orbitY + (68 - orbitY) * k,
         scale: (.72 + .28 * depth) + ((Math.abs(delta) < .5 ? 1 : .88) - (.72 + .28 * depth)) * k,
-        blur: ((1 - depth) * 3.2 + (1 - e!) * 7) * (1 - k),
         opacity: (.48 + .52 * depth) * e! * (1 - k) + selectedOpacity * k,
         rotateY: -Math.cos(angle) * 18 * (1 - k),
         z: k > .5 ? 30 - Math.round(Math.abs(delta)) : depth > .5 ? 20 : 5,
@@ -404,6 +429,8 @@ function MobileOrbitCard({
   );
 
   const ref = useRef<HTMLDivElement>(null);
+  const [previewEnabled, setPreviewEnabled] = useState(false);
+  const previewEnabledRef = useRef(false);
   const apply = useCallback((p: Placement & { interactive: boolean }) => {
     const element = ref.current;
     if (!element) return;
@@ -411,11 +438,23 @@ function MobileOrbitCard({
     element.style.opacity = String(round(p.opacity, 3));
     element.style.pointerEvents = p.interactive ? 'auto' : 'none';
     element.inert = !p.interactive;
-    element.style.filter = p.blur > .05 ? `blur(${round(p.blur, 1)}px)` : 'none';
     element.style.zIndex = String(p.z);
-  }, []);
+    const enablePreview = stageVisible && p.interactive;
+    if (previewEnabledRef.current !== enablePreview) {
+      previewEnabledRef.current = enablePreview;
+      setPreviewEnabled(enablePreview);
+    }
+  }, [stageVisible]);
   useMotionValueEvent(place, 'change', apply);
   useLayoutEffect(() => apply(place.get()), [apply, place]);
+  useEffect(() => {
+    if (!stageVisible) {
+      previewEnabledRef.current = false;
+      setPreviewEnabled(false);
+      return;
+    }
+    apply(place.get());
+  }, [stageVisible, apply, place]);
 
   return (
     <div
@@ -427,7 +466,7 @@ function MobileOrbitCard({
       style={{ width: cardWidth, height: CARD.height, marginLeft: -cardWidth / 2, marginTop: -CARD.height / 2, opacity: 0, pointerEvents: 'none' }}
       inert
     >
-      <Card title={title} Vignette={Vignette} />
+      <Card title={title} Vignette={Vignette} active={stageVisible && previewEnabled} />
     </div>
   );
 }
@@ -435,9 +474,12 @@ function MobileOrbitCard({
 function MobileOrbitStage() {
   const vignettes = use(VignettesContext);
   const ref = useRef<HTMLElement>(null);
+  const stageInView = useInView(ref, { amount: 0.01 });
   const reduce = useShouldReduceMotion();
   const [viewport, setViewport] = useState({ width: window.innerWidth, height: window.innerHeight });
   const [selected, setSelected] = useState(0);
+  const [driftActive, setDriftActive] = useState(false);
+  const driftActiveRef = useRef(false);
   const selectedMotion = useMotionValue(0);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end end'] });
   const progress = useSpring(scrollYProgress, { stiffness: 160, damping: 32, mass: .4 });
@@ -459,14 +501,21 @@ function MobileOrbitStage() {
     return () => window.removeEventListener('resize', resize);
   }, []);
   useEffect(() => selectedMotion.set(selected), [selected, selectedMotion]);
-  useAnimationFrame((_, delta) => {
-    if (enter.get() > 0 && settle.get() < 1) drift.set(drift.get() + delta * .00008);
-  });
+  const updateDrift = useCallback(() => {
+    const next = enter.get() > 0 && settle.get() < 1;
+    if (driftActiveRef.current === next) return;
+    driftActiveRef.current = next;
+    setDriftActive(next);
+  }, [enter, settle]);
+  useMotionValueEvent(enter, 'change', updateDrift);
+  useMotionValueEvent(settle, 'change', updateDrift);
+  useEffect(updateDrift, [updateDrift]);
 
   const step = (direction: -1 | 1) => setSelected(current => Math.min(vignettes.length - 1, Math.max(0, current + direction)));
 
   return (
     <section ref={ref} id="recursos" data-slot="home-orbit" className="relative mt-16 h-[300vh]" aria-label="Recursos do VadeMecum">
+      {stageInView && driftActive && <OrbitDrift drift={drift} speed={0.00008} />}
       <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-hidden">
         <div className="relative h-full w-full shrink-0" style={{ perspective: 1200 }}>
           <motion.h2 style={{ opacity: titleOpacity, y: useTransform(titleOpacity, [0, 1], [-12, 0]) }} className="absolute inset-x-5 top-7 z-40 text-left text-[clamp(1.65rem,7vw,2.15rem)] font-medium leading-[1.05] tracking-tight text-balance">
@@ -482,7 +531,7 @@ function MobileOrbitStage() {
             <AnimateUILogo className="h-32 w-36 text-foreground drop-shadow-[0_24px_48px_rgb(0_0_0/0.24)]" />
           </motion.div>
           {vignettes.map(({ title }, index) => (
-            <MobileOrbitCard key={title} index={index} activeIndex={selectedMotion} enter={enter} settle={settle} turn={turn} drift={drift} viewportWidth={viewport.width} viewportHeight={viewport.height - 80} cardWidth={cardWidth} />
+            <MobileOrbitCard key={title} index={index} activeIndex={selectedMotion} enter={enter} settle={settle} turn={turn} drift={drift} viewportWidth={viewport.width} viewportHeight={viewport.height - 80} cardWidth={cardWidth} stageVisible={stageInView} />
           ))}
           <motion.div style={{ opacity: controlsOpacity, pointerEvents: 'none' }} className="absolute inset-x-5 bottom-5 z-40 flex items-center justify-between gap-3">
             <span className="text-xs font-medium text-muted-foreground" aria-live="polite" aria-atomic="true">

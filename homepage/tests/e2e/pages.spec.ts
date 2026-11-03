@@ -55,6 +55,26 @@ test('homepage, official library and reader work at desktop and mobile widths', 
   await expectWcag(page, '#library');
   await expectNoHorizontalOverflow(page);
 
+  for (const view of ['statistics', 'notes', 'settings', 'info']) {
+    await page.locator(`[data-view="${view}"]`).click();
+    await expect(page.locator('.shelf-content h1').first()).toBeVisible();
+    if (view === 'statistics') await expect(page.locator('.shelf-content .shelf-subtitle')).toContainText('no acervo');
+    await expectNoHorizontalOverflow(page);
+    await expectWcag(page, '#library');
+  }
+  await page.locator('[data-view="books"]').click();
+  await page.locator('[data-action="theme"]').click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expectWcag(page, '#library');
+  await page.locator('[data-action="theme"]').click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+
+  await page.locator('[data-view="search-all"]').click();
+  await page.getByRole('searchbox', { name: 'Buscar no texto de todos os documentos' }).fill('princípios');
+  await expect(page.locator('.shelf-full-result').first()).toBeVisible({ timeout: 30_000 });
+  await expect(page.locator('.shelf-full-result').first()).toContainText('princípios', { ignoreCase: true });
+
+  await page.locator('[data-view="books"]').click();
   await page.locator('article[data-book-id="br-federal-constituicao-1988"] > .shelf-book-open').click();
   await expect(page).toHaveURL(/documento=br-federal-constituicao-1988/);
   await expect(page.getByRole('heading', { name: 'PREÂMBULO', exact: true })).toBeVisible();
@@ -65,5 +85,27 @@ test('homepage, official library and reader work at desktop and mobile widths', 
 
   await page.setViewportSize({ width: 360, height: 780 });
   await expectNoHorizontalOverflow(page);
+  await expectWcag(page, '#reading');
+
+  await page.goto('/biblioteca/');
+  await expect(page.locator('.shelf-book-open').first()).toBeVisible();
+  await expectNoHorizontalOverflow(page);
+  await expectWcag(page, '#library');
+  for (const view of ['statistics', 'notes', 'settings', 'info']) {
+    await page.locator(`[data-view="${view}"]`).click();
+    await expect(page.locator('.shelf-content h1').first()).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+    await expectWcag(page, '#library');
+  }
+
+  await page.goto('/#assistente');
+  await expect(page.locator('[data-slot="home-ai"]')).toBeVisible();
+  await expect(page.locator('.live-preview-stage')).toBeVisible({ timeout: 20_000 });
+  await expect(page.locator('.live-library-panel .shelf-shell')).toBeVisible();
+  await expect(page.locator('.live-reader-panel #viewport')).toBeVisible();
+  await page.getByRole('tablist', { name: 'Demonstrações para humanos e agentes' }).getByRole('tab', { name: 'Para agentes' }).click();
+  await expect(page.getByRole('tab', { name: 'Princípios' })).toBeVisible();
+  await expectWcag(page, '#assistente');
+
   expect(frontendErrors).toEqual([]);
 });

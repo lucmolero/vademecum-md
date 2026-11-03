@@ -52,3 +52,24 @@
 @media (prefers-reduced-motion: reduce) {
   .library-mini-preview-open { transition: none; }
 }
+
+.library-mini-preview-loading {
+  position: absolute;
+  z-index: 1;
+  inset: 16px 12px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.library-mini-preview-loading i {
+  display: block;
+  height: 7px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgb(32 46 48 / 7%), rgb(32 46 48 / 12%), rgb(32 46 48 / 7%));
+}
+
+.library-mini-preview-loading i:nth-child(2) { width: 76%; }
+.library-mini-preview-loading i:nth-child(3) { width: 54%; }
