@@ -8,6 +8,35 @@ const detailsPanel = document.querySelector('#details');
 const contextExpand = document.querySelector('#context-expand');
 const motionHint = document.querySelector('#motion-hint');
 const record = document.querySelector('#record');
+const appMain = document.querySelector('main');
+const welcomeLayer = document.querySelector('#welcome-sequence');
+const welcomeStartedAt = performance.now();
+let welcomeExitScheduled = false;
+function dismissWelcome({failed = false} = {}) {
+  if (!welcomeLayer || welcomeExitScheduled) return;
+  welcomeExitScheduled = true;
+  if (failed) {
+    welcomeLayer.querySelector('.welcome-title').textContent = 'O mapa não abriu.';
+    welcomeLayer.querySelector('.welcome-copy').textContent = 'Confira os detalhes de carregamento na tela.';
+  }
+  const minimumDuration = reducedMotion.matches || failed ? 0 : 1450;
+  const remaining = Math.max(0, minimumDuration - (performance.now() - welcomeStartedAt));
+  window.setTimeout(() => {
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      welcomeLayer.classList.add('is-exiting');
+      appMain?.removeAttribute('aria-busy');
+      if (appMain) appMain.inert = false;
+      const removeLayer = () => welcomeLayer.remove();
+      welcomeLayer.addEventListener('transitionend', event => {
+        if (event.propertyName === 'opacity') removeLayer();
+      }, {once: true});
+      window.setTimeout(removeLayer, reducedMotion.matches ? 50 : 820);
+    }));
+  }, remaining);
+}
+function finishWelcomeWhenReady() {
+  if (rotationReady && graphViewportVisible) dismissWelcome();
+}
 const VADEMECUM_READER_URL = 'https://lucmolero.github.io/vademecum-md/biblioteca/#documento=';
 const esc = value => String(value ?? '—').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
@@ -58,6 +87,7 @@ window.addEventListener('message', event => {
   if (event.source !== window.parent || event.data?.type !== GRAPH_VISIBILITY_MESSAGE || typeof event.data.visible !== 'boolean') return;
   graphViewportVisible = event.data.visible;
   syncGraphActivity();
+  finishWelcomeWhenReady();
 });
 document.addEventListener('visibilitychange', () => {
   graphPageVisible = !document.hidden;
@@ -209,6 +239,7 @@ function fitInitialGraph() {
   const applied = zoomGraphToFit(1100, 50, () => {
     rotationReady = true;
     syncGraphActivity();
+    finishWelcomeWhenReady();
   });
   if (!applied) {
     firstFit = true;
@@ -1203,6 +1234,7 @@ window.addEventListener('resize', () => {
   previousMobileLayout = mobileLayout;
 });
 readGzipJson('../data/explorer.json.gz?v=audit-1').then(initialize).catch(error => {
+  dismissWelcome({failed: true});
   countBox.textContent = error.message;
   detailsPanel.hidden = false;
   detailsPanel.setAttribute('aria-label', 'Erro de carregamento do grafo');

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#05070a">
   <title>Grafo de citações · VadeMecum</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css?v=graph-perf-1">
+  <link rel="stylesheet" href="style.css?v=graph-welcome-1">
 </head>
 <body data-theme="dark">
   <header>
@@ -17,7 +17,7 @@
     </div>
     <div id="counts" aria-live="polite">Carregando snapshot…</div>
   </header>
-  <main>
+  <main aria-busy="true" inert>
     <section class="stage" aria-label="Mapa tridimensional das citações">
       <div id="network" role="img" aria-label="Rede tridimensional: a seta aponta da norma que cita para a norma citada"></div>
       <div class="stage-heading"><div class="stage-intro"><span class="eyebrow">Rede normativa · somente citações</span><h1>Conhecimento<br>em relação.</h1><p>Explore as conexões entre normas brasileiras.</p></div>
@@ -39,7 +39,16 @@
       <div id="record"></div>
     </aside>
   </main>
-  <script src="vendor/3d-force-graph.min.js?v=1.80.0"></script>
-  <script src="viewer.js?v=graph-perf-7"></script>
+  <div id="welcome-sequence" role="status" aria-live="polite" aria-label="Carregando o grafo de citações">
+    <div class="welcome-content">
+      <span class="welcome-mark" aria-hidden="true">V</span>
+      <span class="welcome-kicker">VADEMECUM MD · GRAFO DE CITAÇÕES</span>
+      <h1 class="welcome-title">Bem-vindo.</h1>
+      <p class="welcome-copy">Preparando o mapa de relações jurídicas.</p>
+      <span class="welcome-status"><i aria-hidden="true"></i>Organizando a rede</span>
+    </div>
+  </div>
+  <script defer src="vendor/3d-force-graph.min.js?v=1.80.0"></script>
+  <script defer src="viewer.js?v=graph-welcome-1"></script>
 </body>
 </html>
