@@ -18,7 +18,7 @@ body:
     id: release
     attributes:
       label: Release consultada
-      placeholder: "v1.1.2"
+      placeholder: "Versão consultada, por exemplo v1.1.3"
     validations:
       required: true
   - type: textarea

@@ -51,11 +51,16 @@ export class Reader extends EventTarget {
     };
     this.article.addEventListener('pointerup', this.articlePointerHandler);
     this.viewportScrollHandler = () => {
-      if (this.settings.flow === 'scroll') this.emitPosition();
+      if (this.settings.flow !== 'scroll' || this.positionFrame) return;
+      this.positionFrame = requestAnimationFrame(() => {
+        this.positionFrame = 0;
+        this.emitPosition();
+      });
     };
-    viewport.addEventListener('scroll', this.viewportScrollHandler);
+    viewport.addEventListener('scroll', this.viewportScrollHandler, { passive: true });
   }
   async open(book, position) {
+    this.searchSections = null;
     this.book = book;
     this.notes = [];
     await this.goTo(position || { section: 0, page: 0 });
@@ -81,6 +86,7 @@ export class Reader extends EventTarget {
     }
     for (const image of this.article.querySelectorAll('img')) image.addEventListener('load', () => this.layout(), { once: true });
     this.renderedFlow = this.settings.flow;
+    this.headingElements = [...this.article.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]')];
   }
   sectionRoot(index) {
     if (this.settings.flow === 'scroll') return this.sectionElements[index] || null;
@@ -90,12 +96,13 @@ export class Reader extends EventTarget {
     if (this.settings.flow !== 'scroll' || !this.sectionElements.length) return this.section;
     const viewportRect = this.viewport.getBoundingClientRect();
     const marker = viewportRect.top + Math.min(64, this.viewport.clientHeight * .12);
-    let current = 0;
-    for (let index = 0; index < this.sectionElements.length; index++) {
-      if (this.sectionElements[index].getBoundingClientRect().top <= marker) current = index;
-      else break;
+    let low = 0, high = this.sectionElements.length - 1;
+    while (low < high) {
+      const middle = Math.ceil((low + high) / 2);
+      if (this.sectionElements[middle].getBoundingClientRect().top <= marker) low = middle;
+      else high = middle - 1;
     }
-    return current;
+    return low;
   }
   scrollToSection(index, within = 0) {
     const element = this.sectionElements[index];
@@ -197,12 +204,17 @@ export class Reader extends EventTarget {
   }
   currentHeading() {
     if (!this.book) return null;
-    const root = this.sectionRoot(this.settings.flow === 'scroll' ? this.sectionAtScroll() : this.section) || this.article;
-    const headings = [...root.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]')];
+    const headings = this.headingElements || [];
     if (!headings.length) return null;
     if (this.settings.flow !== 'scroll') return headings.find(item => item.getBoundingClientRect().left >= this.viewport.getBoundingClientRect().left - 2) || headings[0];
     const top = this.viewport.getBoundingClientRect().top + 80;
-    return headings.filter(item => item.getBoundingClientRect().top <= top).at(-1) || headings[0];
+    let low = 0, high = headings.length - 1;
+    while (low < high) {
+      const middle = Math.ceil((low + high) / 2);
+      if (headings[middle].getBoundingClientRect().top <= top) low = middle;
+      else high = middle - 1;
+    }
+    return headings[low];
   }
   async goAnchor(id) {
     if (!this.book || !id) return;
@@ -273,7 +285,7 @@ export class Reader extends EventTarget {
     if (this.settings.flow === 'scroll') {
       this.section = this.sectionAtScroll();
       const span = this.viewport.scrollHeight - this.viewport.clientHeight;
-      scroll = span <= 0 ? 0 : Math.max(0, Math.min(1, this.viewport.scrollTop / span));
+      scroll = span <= 0 ? 1 : Math.max(0, Math.min(1, this.viewport.scrollTop / span));
       const fraction = scroll;
       const detail = { section: this.section, page: 0, pages: 1, fraction, scroll, scrollScope: 'document', label: this.book.sections[this.section].label };
       this.dispatchEvent(new CustomEvent('position', { detail }));
@@ -304,10 +316,14 @@ export class Reader extends EventTarget {
     const { folded: needle } = foldText(query.trim());
     if (!needle) return [];
     const results = [];
-    this.book.sections.forEach((section, index) => {
+    this.searchSections ??= this.book.sections.map(section => {
       const doc = new DOMParser().parseFromString(section.html, 'text/html');
       const text = doc.body.textContent || '';
-      const { folded, map } = foldText(text);
+      return { text, ...foldText(text) };
+    });
+    for (const [index, section] of this.book.sections.entries()) {
+      if (results.length >= 500) break;
+      const { text, folded, map } = this.searchSections[index];
       let offset = folded.indexOf(needle);
       while (offset !== -1 && results.length < 500) {
         const start = map[offset] ?? 0;
@@ -315,7 +331,7 @@ export class Reader extends EventTarget {
         results.push({ section: index, offset: start, label: section.label, before: text.slice(Math.max(0, start - 50), start), match: text.slice(start, end), after: text.slice(end, end + 70) });
         offset = folded.indexOf(needle, offset + Math.max(1, needle.length));
       }
-    });
+    }
     return results;
   }
   drawNotes() {
@@ -324,8 +340,16 @@ export class Reader extends EventTarget {
     const ranges = notes.filter(note => this.settings.flow === 'scroll' || note.section === this.section).map(note => this.textRange(note.start, note.end, note.section)).filter(Boolean);
     CSS.highlights.set('notes', new Highlight(...ranges));
   }
-  clear() { this.book = null; this.currentBook = null; this.renderedFlow = null; this.sectionElements = []; this.section = 0; this.page = 0; this.pages = 1; this.viewport.scrollTo(0, 0); this.article.replaceChildren(); globalThis.CSS?.highlights?.delete('notes'); }
+  clear() {
+    cancelAnimationFrame(this.positionFrame); this.positionFrame = 0;
+    this.book = null; this.currentBook = null; this.renderedFlow = null;
+    this.sectionElements = []; this.headingElements = []; this.searchSections = null;
+    this.section = 0; this.page = 0; this.pages = 1;
+    this.viewport.scrollTo(0, 0); this.article.replaceChildren();
+    globalThis.CSS?.highlights?.delete('notes');
+  }
   destroy() {
+    cancelAnimationFrame(this.positionFrame);
     this.observer.disconnect();
     this.article.removeEventListener('click', this.articleClickHandler);
     this.article.removeEventListener('pointerup', this.articlePointerHandler);

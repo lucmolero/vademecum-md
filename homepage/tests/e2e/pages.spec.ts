@@ -24,7 +24,7 @@ test('homepage, official library and reader work at desktop and mobile widths', 
   test.setTimeout(90_000);
   const frontendErrors: string[] = [];
   page.on('pageerror', error => frontendErrors.push(error.message));
-  await page.route('http://127.0.0.1:8770/viewer/**', route => route.fulfill({
+  await page.route('**/graph/viewer/index.html?home-hero=1', route => route.fulfill({
     status: 200,
     contentType: 'text/html',
     body: '<!doctype html><html lang="pt-BR"><body><main aria-label="Grafo de citações"></main></body></html>',
@@ -52,6 +52,12 @@ test('homepage, official library and reader work at desktop and mobile widths', 
   expect(catalog.status).toBe(200);
   expect(catalog.documents).toHaveLength(375);
   expect(catalog.documents.every((document: { collection: string }) => document.collection === 'vademecum')).toBe(true);
+  expect(catalog.documents.every((document: object) => !('toc' in document))).toBe(true);
+  const displayedCount = await page.locator('.shelf-subtitle .metric-digit-track').evaluateAll(tracks => tracks.slice(0, 3).map(track => {
+    const style = getComputedStyle(track);
+    return Math.round(-new DOMMatrix(style.transform).m42 / parseFloat(style.lineHeight));
+  }));
+  expect(displayedCount.join('')).toBe(String(catalog.documents.length));
   await expectWcag(page, '#library');
   await expectNoHorizontalOverflow(page);
 
@@ -108,4 +114,63 @@ test('homepage, official library and reader work at desktop and mobile widths', 
   await expectWcag(page, '#assistente');
 
   expect(frontendErrors).toEqual([]);
+});
+
+test('mobile orbit retains all previews and transitions between every feature', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/#recursos');
+  // Wait for the initial hash navigation before scrolling through the section.
+  await expect.poll(() => page.locator('#recursos').evaluate(section => Math.abs(section.getBoundingClientRect().top))).toBeLessThan(150);
+  await page.locator('#recursos').evaluate(section => {
+    window.scrollTo(0, section.getBoundingClientRect().top + window.scrollY + section.clientHeight - window.innerHeight);
+  });
+  const next = page.getByRole('button', { name: 'Próxima prévia' });
+  await expect(next).toBeEnabled();
+  await expect(page.locator('#recursos [inert]').filter({ has: next })).toHaveCount(0);
+  for (let index = 0; index < 8; index++) {
+    await next.click();
+    await expect(page.locator('#recursos [aria-live]')).toContainText(`${String(index + 2).padStart(2, '0')} / 09`);
+  }
+  await expect(next).toBeDisabled();
+  await expect(page.locator('#recursos iframe')).toHaveCount(9);
+  await expect(page.locator('#recursos [data-preview-state=ready]')).toHaveCount(9);
+  await expectNoHorizontalOverflow(page);
+});
+
+test('reader handles short documents, indexed headings and search across book changes', async ({ page }) => {
+  await page.goto('/biblioteca/?preview=toc');
+  const result = await page.evaluate(async () => {
+    const moduleUrl = '/biblioteca-demo/reader.js';
+    const { Reader } = await import(moduleUrl);
+    const viewport = document.createElement('div');
+    viewport.style.cssText = 'position:fixed;inset:0;width:320px;height:240px;overflow:auto;background:white;z-index:9999';
+    document.body.append(viewport);
+    const reader = new Reader(viewport);
+    let fraction = -1;
+    reader.addEventListener('position', (event: CustomEvent) => { fraction = event.detail.fraction; });
+    await reader.open({ sections: [{ label: 'Curto', html: '<h2 id="curto">Curto</h2><p>Ação pública.</p>' }] });
+    const shortProgress = fraction;
+    const accentedMatch = reader.search('acao')[0]?.match;
+    await reader.open({ sections: Array.from({ length: 100 }, (_, index) => ({ label: `Seção ${index}`, html: `<h2 id="sec-${index}">Seção ${index}</h2><p style="height:160px">Conteúdo ${index}</p>` })) });
+    await reader.goTo({ section: 70, anchor: 'sec-70' });
+    const heading = reader.currentHeading()?.id;
+    const staleSearch = reader.search('acao').length;
+    reader.destroy();
+    viewport.remove();
+    return { shortProgress, accentedMatch, heading, staleSearch };
+  });
+  expect(result).toEqual({ shortProgress: 1, accentedMatch: 'Ação', heading: 'sec-70', staleSearch: 0 });
+});
+
+test('collapsed TOC branches leave unrelated sibling children visible', async ({ page }) => {
+  await page.goto('/biblioteca/?preview=toc#documento=br-federal-lei_ordinaria-14133-2021');
+  await expect(page.locator('#toc .toc-disclosure').first()).toBeVisible();
+  const branch = page.locator('#toc .toc-disclosure').first();
+  const controlled = await branch.getAttribute('aria-controls');
+  await branch.click();
+  await expect(branch).toHaveAttribute('aria-expanded', 'false');
+  for (const id of controlled!.split(' ')) await expect(page.locator(`#${id}`)).toBeHidden();
+  const unrelated = page.locator('#toc .toc-row').filter({ hasText: 'Art. 5º · Princípios' });
+  await expect(unrelated).toBeVisible();
 });

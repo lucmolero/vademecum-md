@@ -127,6 +127,9 @@ export class Library {
     document.removeEventListener('click',this.documentClickHandler);
     document.removeEventListener('keydown',this.documentKeyHandler);
     clearTimeout(this.saveTimer);
+    clearTimeout(this.fullSearchTimer);
+    this.searchToken++;
+    this.searchWorker?.terminate();
     this.root.replaceChildren();
   }
   async init(){

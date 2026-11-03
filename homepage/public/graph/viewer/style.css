@@ -54,7 +54,7 @@ header {
 .brand-mark { display: grid; width: 27px; height: 27px; place-items: center; border-radius: 7px; background: #101010; color: #fff; font-size: 17px; font-weight: 600; line-height: 1; }
 .identity-divider { width: 1px; height: 32px; background: #e5e5e2; }
 .page-name { color: #73736f; font-size: 12px; letter-spacing: -.01em; }
-#counts { display: block; max-width: 480px; color: #777773; font: 11px/1.6 Outfit, "Segoe UI", sans-serif; text-align: right; }
+#counts { display: block; max-width: 480px; color: #6b6b67; font: 11px/1.6 Outfit, "Segoe UI", sans-serif; text-align: right; }
 .graph-toolbar { position: relative; z-index: 6; width: min(300px, 100%); margin-top: 20px; }
 
 .search-wrap {
@@ -526,7 +526,7 @@ aside#details.context-card {
   --muted: #a9b5c1;
   --line: rgb(226 237 247 / .10);
   top: auto; right: clamp(20px, 3vw, 42px); bottom: max(0px, env(safe-area-inset-bottom)); left: auto;
-  width: min(320px, calc(100vw - 40px)); max-height: min(60dvh, 560px);
+  width: min(364px, calc(100vw - 40px)); max-height: min(68dvh, 600px);
   overflow: auto; padding: 13px 15px max(15px, env(safe-area-inset-bottom)); border-radius: 18px 18px 0 0;
   border-color: var(--glass-edge); background: var(--glass-fallback);
   box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-highlight);
@@ -551,42 +551,42 @@ aside#details.context-card.drawer-closing { pointer-events: none; transition: no
 .context-card .drawer-hero { margin: 0 0 8px; padding: 11px 12px; border-radius: 12px; background: var(--glass-layer); }
 .context-card .drawer-hero::after { display: none; }
 .context-card .drawer-hero-top { margin-bottom: 6px; }
-.context-card .drawer-eyebrow { font-size: 7px; letter-spacing: .10em; }
+.context-card .drawer-eyebrow { font-size: 10px; letter-spacing: .10em; }
 .context-card .drawer-hero-mark { width: 21px; height: 21px; }
-.context-card .drawer-hero-mark .drawer-icon { width: 12px; height: 12px; }
-.context-card .drawer-hero h2 { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.12; }
-.context-card .drawer-subtitle { margin-top: 4px !important; font-size: 8px; line-height: 1.35; }
+.context-card .drawer-hero-mark .drawer-icon { width: 15px; height: 15px; }
+.context-card .drawer-hero h2 { font-size: clamp(20px, 1.5vw, 23px); line-height: 1.12; }
+.context-card .drawer-subtitle { margin-top: 4px !important; font-size: 11px; line-height: 1.35; }
 .context-card .drawer-actions { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 8px; }
-.context-card .drawer-action { min-height: 29px; gap: 6px; padding: 4px 8px; border-radius: 999px; background: var(--glass-action); }
-.context-card .drawer-action > .drawer-icon { width: 12px; height: 12px; }
-.context-card .drawer-action-copy strong { font-size: 8px; }
+.context-card .drawer-action { min-height: 40px; gap: 6px; padding: 4px 8px; border-radius: 999px; background: var(--glass-action); }
+.context-card .drawer-action > .drawer-icon { width: 15px; height: 15px; }
+.context-card .drawer-action-copy strong { font-size: 11px; }
 .context-card .drawer-action-primary { border-color: var(--glass-edge); background: var(--glass-primary); }
 .context-card .connection-group { margin-bottom: 6px; border-radius: 10px; background: var(--glass-layer); }
 .context-card .connection-group > summary { min-height: 43px; padding: 6px 8px; gap: 7px; }
 .context-card .connection-direction { width: 24px; height: 24px; border-radius: 7px; }
-.context-card .connection-direction .drawer-icon { width: 13px; height: 13px; }
+.context-card .connection-direction .drawer-icon { width: 16px; height: 16px; }
 .context-card .connection-summary-text { gap: 1px; }
-.context-card .connection-summary-text strong { font-size: 9px; line-height: 1.25; }
-.context-card .connection-summary-text small { font-size: 7px; line-height: 1.35; }
+.context-card .connection-summary-text strong { font-size: 12px; line-height: 1.25; }
+.context-card .connection-summary-text small { font-size: 10px; line-height: 1.35; }
 .context-card .connection-list { gap: 3px; padding: 0 6px 6px; }
-.context-card .connection { min-height: 30px; padding: 4px 6px; font-size: 8px; }
-.context-card .connection-note { padding: 4px 7px 6px; font-size: 7px; }
+.context-card .connection { min-height: 40px; padding: 4px 6px; font-size: 11px; }
+.context-card .connection-note { padding: 4px 7px 6px; font-size: 10px; }
 .context-card .drawer-more { margin-bottom: 6px; }
 .context-card .relation-summary { margin: 0 0 9px; padding: 9px 11px; }
 .context-card .relation-total { font-size: 16px; }
-.context-card .relation-summary > span, .context-card .relation-origin, .context-card .relation-state { font-size: 7px; }
+.context-card .relation-summary > span, .context-card .relation-origin, .context-card .relation-state { font-size: 10px; }
 .context-card .drawer-route { grid-template-columns: minmax(0,1fr) 54px minmax(0,1fr); gap: 5px; margin-top: 12px; padding-top: 10px; }
 .context-card .route-endpoint { min-height: 54px; padding: 7px 8px; border-radius: 9px; }
-.context-card .route-label { font-size: 7px; }
-.context-card .route-endpoint strong { font-size: 9px; }
-.context-card .route-arrow { width: 54px; font-size: 8px; }
-.context-card .route-arrow .drawer-icon { width: 13px; height: 13px; }
+.context-card .route-label { font-size: 10px; }
+.context-card .route-endpoint strong { font-size: 12px; }
+.context-card .route-arrow { width: 54px; font-size: 11px; }
+.context-card .route-arrow .drawer-icon { width: 16px; height: 16px; }
 .context-card .drawer-technical, .context-card .evidence-collection { margin-top: 5px; }
 .context-card #record > .drawer-technical:not(.drawer-relation-meta) + .connection-group { margin-top: 9px; }
-.context-card .drawer-technical > summary, .context-card .evidence-collection > summary { min-height: 30px; font-size: 7px; }
+.context-card .drawer-technical > summary, .context-card .evidence-collection > summary { min-height: 40px; font-size: 10px; }
 .context-card .drawer-technical > summary > .drawer-icon, .context-card .evidence-collection > summary > span:first-child { width: 15px; height: 15px; }
-.context-card .drawer-technical > summary > .drawer-icon svg, .context-card .evidence-collection > summary > span:first-child .drawer-icon { width: 12px; height: 12px; }
-.context-card .disclosure-label { font-size: 8px; }
+.context-card .drawer-technical > summary > .drawer-icon svg, .context-card .evidence-collection > summary > span:first-child .drawer-icon { width: 15px; height: 15px; }
+.context-card .disclosure-label { font-size: 11px; }
 aside#details.context-card { scrollbar-width: thin; scrollbar-color: rgb(226 237 247 / .22) transparent; }
 aside#details.context-card::-webkit-scrollbar { width: 3px; }
 aside#details.context-card::-webkit-scrollbar-track { margin-block: 16px; background: transparent; }
@@ -637,7 +637,7 @@ body[data-theme="light"] aside#details.context-card {
 .graph-tooltip[hidden] { display: none; }
 .graph-tooltip-title { display: block; min-width: 0; }
 .graph-tooltip-direction { color: var(--amber); white-space: pre; }
-.graph-tooltip-meta { display: block; min-width: 0; margin-top: 1px; color: rgb(214 222 226 / .72); font-size: 7px; font-weight: 400; line-height: 1.25; }
+.graph-tooltip-meta { display: block; min-width: 0; margin-top: 1px; color: rgb(214 222 226 / .72); font-size: 10px; font-weight: 400; line-height: 1.25; }
 body[data-theme="light"] .graph-tooltip { color: #edf1f0; text-shadow: 0 1px 2px rgb(0 0 0 / .82), 0 0 6px rgb(0 0 0 / .68); }
 body[data-theme="light"] .graph-tooltip-meta { color: rgb(232 238 236 / .76); }
 /* Information has its own readable surface; gaps retain the graph's depth. */
@@ -685,36 +685,36 @@ body[data-theme="light"] .context-card .drawer-action-primary { border-color: va
 @media (max-width: 640px) {
   aside#details.context-card {
     right: max(8px, env(safe-area-inset-right)); bottom: max(0px, env(safe-area-inset-bottom)); left: max(8px, env(safe-area-inset-left));
-    width: auto; max-height: min(56dvh, 500px); padding: 4px 12px max(12px, env(safe-area-inset-bottom));
+    width: auto; max-height: min(62dvh, 540px); padding: 4px 12px max(12px, env(safe-area-inset-bottom));
     border-radius: 17px 17px 0 0; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; touch-action: pan-y;
   }
   body.context-open #legend { visibility: hidden; opacity: 0; pointer-events: none; }
   .context-card .drawer-top { top: -4px; min-height: 22px; margin: -4px -12px 0; padding: 0; border: 0; background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; }
   .context-card .drawer-hero { margin-bottom: 6px; padding: 9px 10px; }
   .context-card .drawer-hero-top { margin-bottom: 5px; }
-  .context-card .drawer-hero h2 { font-size: clamp(17px, 4.5vw, 20px); line-height: 1.12; }
-  .context-card .drawer-subtitle { margin-top: 4px !important; font-size: 9px; line-height: 1.32; }
+  .context-card .drawer-hero h2 { font-size: clamp(19px, 4.8vw, 22px); line-height: 1.12; }
+  .context-card .drawer-subtitle { margin-top: 4px !important; font-size: 12px; line-height: 1.32; }
   .context-card .drawer-actions { gap: 6px; margin-bottom: 6px; }
-  .context-card .drawer-action { min-height: 34px; padding: 5px 9px; }
-  .context-card .drawer-action-copy strong { font-size: 9px; }
-  .context-card .drawer-action > .drawer-icon { width: 13px; height: 13px; }
+  .context-card .drawer-action { min-height: 44px; padding: 5px 9px; }
+  .context-card .drawer-action-copy strong { font-size: 12px; }
+  .context-card .drawer-action > .drawer-icon { width: 16px; height: 16px; }
   .context-card .connection-group { margin-bottom: 5px; }
   .context-card .connection-group > summary { min-height: 52px; padding: 7px 8px; }
   .context-card .connection-direction { width: 31px; height: 31px; }
   .context-card .connection-summary-text strong { font-size: 11px; }
-  .context-card .connection-summary-text small { font-size: 9px; }
+  .context-card .connection-summary-text small { font-size: 12px; }
   .context-card .connection-list { padding-right: 5px; padding-left: 5px; }
   .context-card .connection { min-height: 44px; padding: 7px 8px; font-size: 10px; }
-  .context-card .connection-count { font-size: 9px; }
+  .context-card .connection-count { font-size: 12px; }
   .context-card .drawer-more { min-height: 40px; padding: 8px 12px; }
   .context-card .drawer-technical > summary, .context-card .evidence-collection > summary { min-height: 44px; font-size: 11px; line-height: 1.25; }
   .context-card .drawer-route { grid-template-columns: minmax(0,1fr) 52px minmax(0,1fr); gap: 4px; margin-top: 9px; padding-top: 9px; }
   .context-card .route-endpoint { min-height: 58px; padding: 7px; }
-  .context-card .route-label { font-size: 7px; }
-  .context-card .route-endpoint strong { font-size: 9px; }
+  .context-card .route-label { font-size: 10px; }
+  .context-card .route-endpoint strong { font-size: 12px; }
   .context-card .route-arrow { width: 52px; }
   .context-card .relation-summary { margin-bottom: 7px; padding: 8px 10px; }
-  .context-card .relation-summary > span, .context-card .relation-origin, .context-card .relation-state { font-size: 9px; }
+  .context-card .relation-summary > span, .context-card .relation-origin, .context-card .relation-state { font-size: 12px; }
   .context-card .connection:hover, .context-card .drawer-action:hover { transform: none; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -734,20 +734,62 @@ body[data-theme="light"] .context-card .drawer-action-primary { border-color: va
   .stage-heading h1 { display: block; margin: 0 0 6px; font-size: clamp(23px, 6vw, 27px); font-weight: 500; letter-spacing: -.05em; line-height: 1.04; }
   .stage-heading p { display: block; max-width: 290px; font-size: 11px; line-height: 1.45; }
   body.graph-engaged .stage-intro { max-height: 0; margin: 0; opacity: 0; transform: translateY(-9px); pointer-events: none; }
-  .stage-heading .search-wrap { width: 42px; height: 40px; border-radius: 13px; transition: width .32s cubic-bezier(.2,.7,.2,1), border-color .22s ease, background .22s ease, box-shadow .22s ease; }
+  .stage-heading .search-wrap { width: 44px; height: 44px; border-radius: 13px; transition: width .32s cubic-bezier(.2,.7,.2,1), border-color .22s ease, background .22s ease, box-shadow .22s ease; }
   .stage-heading .search-wrap:focus-within,
   .stage-heading .search-wrap:has(#search:not(:placeholder-shown)) { width: min(270px, 100%); }
-  #search { font-size: 12px; color: transparent; }
+  #search { font-size: 16px; color: transparent; }
   #search::placeholder { color: transparent; }
   .search-wrap:focus-within #search, .search-wrap:has(#search:not(:placeholder-shown)) #search { color: var(--ink); }
-  .search-wrap:focus-within #search::placeholder { color: var(--muted); }
-  .search-icon { top: 11px; }
-  .stage-note { top: 15px; right: 13px; left: auto; width: 36px; height: 36px; display: block; }
+  .search-wrap:focus-within #search::placeholder { color: transparent; }
+  .search-icon { top: 14px; }
+  .stage-note { top: 12px; right: 14px; left: auto; width: 44px; height: 44px; display: block; }
   #view-count, .stage-guidance { display: none; }
-  #theme-toggle { top: 0; right: 0; width: 36px; height: 36px; transform: none; }
+  #theme-toggle { top: 0; right: 0; width: 44px; height: 44px; transform: none; }
   #theme-toggle:hover { transform: none; }
   #legend { bottom: max(12px, env(safe-area-inset-bottom)); left: 14px; right: 14px; gap: 7px 12px; font-size: 9px; }
   .context-card.context-compact { height: var(--context-compact-height, 210px); min-height: var(--context-compact-height, 210px); max-height: var(--context-compact-height, 210px); }
   .context-card #context-expand { top: -4px; width: 56px; height: 30px; }
   .sheet-grabber { width: 26px; height: 3px; }
 }
+
+
+/* Interaction surfaces share touch targets and a single focus treatment. */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.graph-actions { position: absolute; z-index: 4; top: 82px; right: 28px; display: flex; gap: 6px; }
+.graph-control { display: grid; width: 44px; height: 44px; place-items: center; padding: 0; border: 1px solid transparent; border-radius: 50%; background: transparent; color: var(--muted); transition: color 160ms ease, background-color 160ms ease; }
+.graph-control svg { width: 19px; height: 19px; }
+.graph-control .play-icon { display: none; }
+.graph-control[data-playing="false"] .pause-icon { display: none; }
+.graph-control[data-playing="false"] .play-icon { display: block; }
+.graph-control:disabled { opacity: .45; cursor: default; }
+.suggestion[aria-selected="true"] { background: var(--soft); box-shadow: inset 2px 0 var(--cyan); }
+.search-empty { padding: 16px; font-size: 13px; line-height: 1.5; color: var(--muted); }
+#suggestions { max-height: min(380px, 48dvh); overscroll-behavior: contain; }
+.context-card .drawer-top { top: -13px; min-height: 44px; margin: -13px -15px 10px; background: var(--frosted-fallback); border-bottom: 1px solid var(--line); border-radius: 17px 17px 0 0; }
+.context-card #context-expand { top: 0; width: 64px; height: 44px; }
+#context-close { position: absolute; top: 0; right: 3px; display: grid; width: 44px; height: 44px; place-items: center; border: 0; border-radius: 10px; background: transparent; color: var(--muted); }
+#context-close svg { width: 18px; height: 18px; }
+.context-card .drawer-technical-row code, .context-card .evidence-field code { font-size: 11px; line-height: 1.6; }
+.context-card .connection-copy span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; line-height: 1.4; }
+.graph-status { position: absolute; z-index: 3; top: 48%; left: 50%; display: grid; justify-items: center; gap: 12px; width: min(320px, calc(100% - 40px)); padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); color: var(--ink); text-align: center; font-size: 13px; }
+.graph-status[hidden] { display: none; }
+#retry-graph { min-height: 44px; padding: 8px 18px; border: 1px solid var(--line-strong); border-radius: 10px; background: var(--soft); color: var(--ink); }
+@media (hover: hover) and (pointer: fine) {
+  .graph-control:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 5%, transparent); }
+  #context-close:hover { background: var(--soft); color: var(--ink); }
+}
+@media (max-width: 640px) {
+  .graph-actions { top: auto; right: max(14px, env(safe-area-inset-right)); bottom: max(56px, calc(env(safe-area-inset-bottom) + 44px)); flex-direction: column; }
+  body.context-open .graph-actions { top: 70px; bottom: auto; }
+  .context-card .drawer-top { top: -4px; margin: -4px -12px 8px; }
+  .context-card #context-expand { top: 0; height: 44px; }
+  .context-card .drawer-action { min-height: 44px; }
+  .context-card .connection { min-height: 44px; font-size: 12px; }
+  .graph-status { transform: translateX(-50%); }
+}
+@media (min-width: 641px) { .graph-status { transform: translate(-50%, -50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .graph-control, .context-card, .stage-intro { transition: none !important; }
+}
+
+.context-card.context-compact #record > :not(.drawer-hero):not(.drawer-actions) { display: none; }

@@ -73,3 +73,26 @@
 
 .library-mini-preview-loading i:nth-child(2) { width: 76%; }
 .library-mini-preview-loading i:nth-child(3) { width: 54%; }
+
+.library-mini-preview-error {
+  position: absolute;
+  inset: 0 0 26px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background: #f6f7f7;
+  color: #56615f;
+  font-size: 10px;
+  text-align: center;
+}
+
+.library-mini-preview-error button {
+  padding: 5px 9px;
+  border: 1px solid rgb(30 56 62 / 16%);
+  border-radius: 999px;
+  cursor: pointer;
+}

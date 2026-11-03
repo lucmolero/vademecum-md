@@ -1,9 +1,11 @@
 # Contribuir e manter
 
 O VadeMecum MD publica um corpus curado para leitura humana e consulta por
-agentes. As alterações aceitas vêm de `lucmolero` e do Dependabot. Pull requests
+agentes. As alterações aceitas vêm de `lucmolero` e do Dependabot. A rotina
+interna de atualização legislativa também publica propostas por
+`github-actions[bot]`, após validação de proveniência e fidelidade. Pull requests
 de outras contas são fechados automaticamente; use as issues públicas para
-relatar problemas de texto ou navegação.
+relatar problemas de texto, navegação ou funcionamento das interfaces.
 
 Pull requests desses autores para `main` são integrados por squash depois que o
 workflow `quality` passa e a branch está atualizada. O fluxo mantém os checks
@@ -15,8 +17,10 @@ da proposta e que a autoria está na lista permitida.
 ## Relatar divergências e problemas de navegação
 
 Use os formulários de issue para apontar uma divergência em relação à fonte
-oficial ou um link quebrado. Inclua o ID do diploma, dispositivo afetado, URL
-oficial e data de consulta. Não envie dados pessoais, documentos privados ou
+oficial, um link quebrado ou um problema na homepage, na Biblioteca ou no grafo.
+Em relatos de conteúdo, inclua o ID do diploma, dispositivo afetado, URL
+oficial e data de consulta. Em problemas de interface, descreva os passos,
+o navegador e o tamanho de tela. Não envie dados pessoais, documentos privados ou
 pedidos de orientação jurídica. Issues fora desses escopos podem ser fechadas
 com indicação do canal apropriado.
 
@@ -59,6 +63,10 @@ python -m unittest discover -s tests -v
 
 O CI é a validação final. Não publique manualmente arquivos gerados sem
 regenerá-los a partir dos artefatos canônicos.
+
+O workflow de Pages também executa os testes do grafo e as jornadas de navegador
+antes de disponibilizar o artefato para publicação. O Dependabot acompanha
+GitHub Actions, Python e os dois módulos JavaScript.
 
 ## Licenças e citação
 

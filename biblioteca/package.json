@@ -1,9 +1,9 @@
 {
-  "name": "biblioteca-leis",
+  "name": "vademecum-biblioteca",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Biblioteca e leitor independente de documentos Markdown",
+  "description": "Biblioteca e leitor do acervo oficial VadeMecum MD",
   "license": "MIT",
   "scripts": {
     "build": "node scripts/build.mjs",

@@ -8,7 +8,6 @@ import { libraryDestination } from './library-destination';
 const RISE_EASE=[.23,1,.32,1] as const;
 const rise=(index:number,done:boolean,reduce:boolean)=>reduce?{initial:false,animate:{opacity:1,y:0,filter:'none'}}:{initial:{opacity:1,y:20,filter:'blur(10px)'},animate:done?{opacity:1,y:0,filter:'blur(0px)'}:{opacity:1,y:20,filter:'blur(10px)'},transition:{duration:.7,ease:RISE_EASE,delay:index*.09}};
 const selectionTransition=(reduce:boolean)=>reduce?{duration:0}:{type:'spring' as const,stiffness:520,damping:38,mass:.7};
-export function useHomeFramework(){return 'react' as const}
 
 const AGENTS = [
   { label: 'Codex', id: 'codex', project: '.agents/skills', global: '~/.agents/skills' },

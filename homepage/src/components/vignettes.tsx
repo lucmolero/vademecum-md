@@ -20,8 +20,9 @@ type FeaturePreviewProps = {
 
 function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, sourceDialog, article = true, activationEnabled = true }: FeaturePreviewProps) {
   const iframeCleanup = useRef<(() => void) | null>(null);
-  const [previewActive, setPreviewActive] = useState(false);
-  const [previewLoaded, setPreviewLoaded] = useState(false);
+  const iframe = useRef<HTMLIFrameElement>(null);
+  const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
+  const [attempt, setAttempt] = useState(0);
   const libraryBase = import.meta.env.DEV
     ? new URL('/biblioteca-demo/', document.baseURI)
     : new URL('biblioteca/', document.baseURI);
@@ -81,39 +82,42 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
   };
 
   useEffect(() => {
-    if (!activationEnabled) {
-      setPreviewActive(false);
-      setPreviewLoaded(false);
+    if (!activationEnabled) return;
+    const receive = (event: MessageEvent) => {
+      if (event.origin !== location.origin || event.source !== iframe.current?.contentWindow) return;
+      if (event.data?.type === 'vademecum-preview-ready') setStatus('ready');
+    };
+    window.addEventListener('message', receive);
+    const timeout = window.setTimeout(() => setStatus(current => current === 'ready' ? current : 'error'), 15000);
+    return () => {
+      window.removeEventListener('message', receive);
+      window.clearTimeout(timeout);
       iframeCleanup.current?.();
-      iframeCleanup.current = null;
-      return;
-    }
-    setPreviewActive(true);
-  }, [activationEnabled]);
-
-  useEffect(() => {
-    if (activationEnabled && previewActive) return;
-    iframeCleanup.current?.();
-    iframeCleanup.current = null;
-    if (!activationEnabled) setPreviewLoaded(false);
-  }, [activationEnabled, previewActive]);
+    };
+  }, [activationEnabled, attempt]);
 
   return (
-    <div className="library-mini-preview">
-      <iframe
+    <div className="library-mini-preview" data-preview-state={status}>
+      {activationEnabled && <iframe
+        ref={iframe}
+        key={attempt}
         className="library-mini-preview-frame"
-        src={activationEnabled && previewActive ? previewUrl.href : undefined}
+        src={previewUrl.href}
         title={`Prévia interativa: ${title}`}
         loading="eager"
         referrerPolicy="strict-origin-when-cross-origin"
         allow="clipboard-write"
         onLoad={event => {
-          if (!activationEnabled || !previewActive) return;
-          setPreviewLoaded(true);
+          if (!activationEnabled) return;
+          if (event.currentTarget.contentDocument?.documentElement.dataset.previewReady === 'true') setStatus('ready');
           routePreviewInteraction(event);
         }}
-      />
-      {activationEnabled && !previewLoaded && <div className="library-mini-preview-loading" aria-hidden="true"><i /><i /><i /></div>}
+      />}
+      {status === 'loading' && <div className="library-mini-preview-loading" aria-hidden="true"><i /><i /><i /></div>}
+      {status === 'error' && <div className="library-mini-preview-error" role="status">
+        <span>Não foi possível carregar a prévia.</span>
+        <button type="button" onClick={() => { setStatus('loading'); setAttempt(value => value + 1); }}>Tentar novamente</button>
+      </div>}
       <a className="library-mini-preview-open" href={destination.href}>
         Abrir na biblioteca <span aria-hidden="true">↗</span>
       </a>
@@ -121,11 +125,13 @@ function FeaturePreview({ mode, title, view, panel, sidebar, query, appearance, 
   );
 }
 
-const feature = (props: FeaturePreviewProps) => function LibraryFeature({ active = true }: { active?: boolean } = {}) {
+type VignetteProps = { active?: boolean };
+
+const feature = (props: FeaturePreviewProps) => function LibraryFeature({ active = true }: VignetteProps = {}) {
   return <FeaturePreview {...props} activationEnabled={active} />;
 };
 
-export const VIGNETTES: { title: string; Vignette: ComponentType }[] = [
+export const VIGNETTES: { title: string; Vignette: ComponentType<VignetteProps> }[] = [
   { title: 'Acervo', Vignette: feature({ mode: 'catalog', title: 'Acervo', view: 'books' }) },
   { title: 'Busca integral', Vignette: feature({ mode: 'search', title: 'Busca integral', view: 'search-all', query: 'igualdade' }) },
   { title: 'Sumário do leitor', Vignette: feature({ mode: 'toc', title: 'Sumário do leitor', panel: 'toc', sidebar: true }) },

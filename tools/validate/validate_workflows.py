@@ -10,6 +10,8 @@ ROOT = Path(__file__).parents[2]
 WORKFLOWS = ROOT / ".github/workflows"
 REQUIRED = {
     "quality.yml",
+    "site.yml",
+    "browser-webkit.yml",
     "monitor-legislation.yml",
     "collect-legislation.yml",
     "prepare-update-pr.yml",
@@ -38,8 +40,23 @@ def main() -> int:
                 errors.append("quality.yml: push validation should run on main; pull_request handles feature branches")
             if "npm run test:e2e" not in text or "playwright install --with-deps chromium" not in text:
                 errors.append("quality.yml: browser accessibility and navigation tests are missing")
-        if path.name == "site.yml" and not re.search(r"(?m)^  repository_dispatch:\s*\n    types: \[publish-pages\]", text):
-            errors.append("site.yml: trusted auto-merges must be able to dispatch the canonical Pages build")
+        if path.name == "site.yml":
+            if not re.search(r"(?m)^  repository_dispatch:\s*\n    types: \[publish-pages\]", text):
+                errors.append("site.yml: trusted auto-merges must be able to dispatch the canonical Pages build")
+            artifact_upload = text.find("uses: actions/upload-pages-artifact@")
+            for gate in (
+                "npm run test:graph",
+                "python tools/validate/validate_pages.py --site site",
+                "playwright install --with-deps chromium",
+                "npm run test:e2e",
+            ):
+                gate_position = text.find(gate)
+                if gate_position < 0 or artifact_upload < 0 or gate_position > artifact_upload:
+                    errors.append(f"site.yml: required check must precede Pages artifact upload: {gate}")
+        if path.name in {"quality.yml", "site.yml"} and (
+            "uses: ./.github/workflows/browser-webkit.yml" not in text or "needs: webkit" not in text
+        ):
+            errors.append(f"{path.name}: WebKit checks must pass first")
         for reference in ACTION_REFERENCE.findall(text):
             if reference.startswith("./"):
                 continue

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="670" viewBox="0 0 520 670" role="img" aria-labelledby="title description">
+  <title id="title">Arquitetura do VadeMecum MD</title>
+  <desc id="description">Fontes oficiais passam por snapshots privados e normalização até o Markdown canônico. Dele derivam índices, site, grafo normativo e auditorias. As auditorias precedem o pull request e a release.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="m1 1 8 4-8 4" fill="none" stroke="#68736c" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="520" height="670" rx="18" fill="#f9faf7"/>
+  <g fill="none" stroke="#68736c" stroke-width="1.5" marker-end="url(#arrow)">
+    <path d="M260 75v30M260 160v30M260 245v30"/>
+    <path d="M260 330v38H82v32M260 330v70M260 330v38h178v32"/>
+    <path d="M438 455v22H260v23M260 555v35"/>
+  </g>
+  <g fill="#fff" stroke="#c7cec8">
+    <rect x="140" y="20" width="240" height="55" rx="12"/>
+    <rect x="140" y="105" width="240" height="55" rx="12"/>
+    <rect x="140" y="190" width="240" height="55" rx="12"/>
+    <rect x="140" y="275" width="240" height="55" rx="12" stroke="#a16e42"/>
+    <rect x="12" y="400" width="140" height="55" rx="12"/>
+    <rect x="190" y="400" width="140" height="55" rx="12"/>
+    <rect x="368" y="400" width="140" height="55" rx="12"/>
+    <rect x="140" y="500" width="240" height="55" rx="12"/>
+    <rect x="140" y="590" width="240" height="55" rx="12"/>
+  </g>
+  <g fill="#202923" font-family="system-ui,sans-serif" font-size="17" text-anchor="middle" dominant-baseline="middle">
+    <text x="260" y="48">Fontes oficiais</text>
+    <text x="260" y="133">Snapshots privados</text>
+    <text x="260" y="218">Normalização</text>
+    <text x="260" y="303" font-weight="600">Markdown canônico</text>
+    <text x="82" y="428" font-size="15">Índices e site</text>
+    <text x="260" y="428" font-size="15">Grafo normativo</text>
+    <text x="438" y="428" font-size="15">Auditorias</text>
+    <text x="260" y="528">Pull request</text>
+    <text x="260" y="618">Release</text>
+  </g>
+</svg>

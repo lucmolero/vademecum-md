@@ -81,7 +81,14 @@ jobs:
           # Multiple quality runs can finish concurrently (push + pull_request).
           # Queue the merge so GitHub waits for every required check instead of
           # failing this workflow while another quality run is still pending.
-          gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash --auto
+          if ! gh pr merge "$PR_NUMBER" --repo "$GH_REPOSITORY" --squash --auto; then
+            # A concurrent quality run may already have merged this proposal.
+            # Preserve failures unless GitHub confirms that exact outcome.
+            current_state=$(gh pr view "$PR_NUMBER" --repo "$GH_REPOSITORY" --json state --jq '.state')
+            if [[ "$current_state" != "MERGED" ]]; then
+              exit 1
+            fi
+          fi
 
           # Merges completed with GITHUB_TOKEN do not trigger push workflows.
           # Wait until GitHub applies the protected auto-merge, then dispatch the

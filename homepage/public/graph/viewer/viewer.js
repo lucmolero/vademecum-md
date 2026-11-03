@@ -1,3 +1,7 @@
+import { createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js';
+import { createRenderScheduler } from './render-scheduler.js';
+import { createSearchController } from './search-controller.js';
+
 const root = document.querySelector('#network');
 const countBox = document.querySelector('#counts');
 const viewCount = document.querySelector('#view-count');
@@ -43,10 +47,10 @@ function dismissWelcome({failed = false} = {}) {
 function finishWelcomeWhenReady() {
   if (rotationReady && graphViewportVisible) dismissWelcome();
 }
-const VADEMECUM_READER_URL = 'https://lucmolero.github.io/vademecum-md/biblioteca/#documento=';
+const VADEMECUM_READER_URL = new URL('../../biblioteca/#documento=', location.href).href;
 const esc = value => String(value ?? '—').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const norm = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
-const idOf = value => typeof value === 'object' ? value.id : value;
+const norm = normalizeText;
+const idOf = endpointId;
 const EDGE_COLORS = {candidate_unverified: '#91836d', validated_deterministically: '#268f67', snapshot_structure: '#71839b'};
 const DRAWER_ICONS = {
   law: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3.75h8l4 4v12.5H6z" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round"/><path d="M14 3.75v4h4M9 12h6M9 15.5h6" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/></svg>',
@@ -66,7 +70,7 @@ function drawerIcon(name, className = 'drawer-icon') {
   icon.setAttribute('aria-hidden', 'true');
   return icon;
 }
-let graph3d, fullNodes = [], fullLinks = [], nodeById = new Map(), linkById = new Map(), incident = new Map(), neighborIndex = new Map(), searchIndex = null, searchPromise = null, firstFit = true, rotationReady = false, reheatFrame = 0, graphFitTimer = 0, drawerGeneration = 0, drawerFrame = 0, drawerCloseTimer = 0, visibleNodes = new Map(), selectedNodeId = null, relatedNodeIds = new Set();
+let graph3d, fullNodes = [], fullLinks = [], nodeById = new Map(), linkById = new Map(), firstFit = true, rotationReady = false, graphFitTimer = 0, drawerCloseTimer = 0, selectedNodeId = null, relatedNodeIds = new Set();
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let graphPageVisible = !document.hidden;
 let graphViewportVisible = !homepageEmbed;
@@ -77,28 +81,96 @@ function notifyHomepageGraphReady(error = false) {
 }
 let previousMobileLayout = window.matchMedia('(max-width: 640px)').matches;
 // Keep identical geometry, antialiasing and pixel-ratio policy across viewport sizes.
-const graphPixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
+let renderScheduler, dataIndex;
+let pointerInteractionActive = false;
+const ROTATION_SPEED = RENDER_POLICY.rotationSpeed;
+let contextAvailable = true;
+const isMobile = () => window.matchMedia('(max-width: 640px)').matches;
+const requestGraphRender = (duration = 120) => renderScheduler?.invalidate(duration);
+function showGraphStatus(message, retry = false) {
+  const status = document.querySelector('#graph-status');
+  status.hidden = false; status.querySelector('span').textContent = message;
+  document.querySelector('#retry-graph').hidden = !retry;
+}
+function hideGraphStatus() { document.querySelector('#graph-status').hidden = true; }
+function updateCameraViewport() {
+  if (!graph3d) return;
+  const camera = graph3d.camera(), width = root.clientWidth, height = root.clientHeight;
+  if (!width || !height) return;
+  if (selectedNodeId && !detailsPanel.hidden) {
+    const panel = detailsPanel.getBoundingClientRect();
+    camera.setViewOffset(width, height, isMobile() ? 0 : panel.width / 2, isMobile() ? Math.min(panel.height / 2, height * .28) : 0, width, height);
+  } else camera.clearViewOffset();
+  requestGraphRender();
+}
+function resizeGraph() {
+  if (!graph3d || !root.clientWidth || !root.clientHeight) return;
+  const renderer = graph3d.renderer();
+  const ratio = renderPixelRatio(root.clientWidth, root.clientHeight, window.devicePixelRatio);
+  if (renderer.getPixelRatio() !== ratio) renderer.setPixelRatio(ratio);
+  if (graph3d.width() !== root.clientWidth) graph3d.width(root.clientWidth);
+  if (graph3d.height() !== root.clientHeight) graph3d.height(root.clientHeight);
+  updateCameraViewport();
+  const mobile = isMobile();
+  if (!detailsPanel.hidden && mobile !== previousMobileLayout) setContextExpanded(!detailsPanel.classList.contains('context-compact'));
+  previousMobileLayout = mobile;
+  requestGraphRender(180);
+}
+
+/** Read-only runtime measurements for regression tests and performance audits. */
+export function getGraphDiagnostics() {
+  const renderer = graph3d?.renderer();
+  return {
+    ready: rotationReady, nodes: fullNodes.length, links: fullLinks.length,
+    selectedId: selectedNodeId, contextAvailable, rotating: rotationEnabled,
+    rendering: renderScheduler?.isRunning() || false,
+    activity: renderScheduler?.snapshot(),
+    pixelRatio: renderer?.getPixelRatio(), frame: renderer?.info.render.frame,
+    calls: renderer?.info.render.calls, triangles: renderer?.info.render.triangles,
+    geometries: renderer?.info.memory.geometries,
+    draggingEnabled: graph3d?.enableNodeDrag(),
+    arrowHeads: fullLinks.filter(edge => arrowLength(edge) > 0).length,
+    canvas: renderer ? [renderer.domElement.width, renderer.domElement.height] : [],
+    camera: graph3d ? { x: graph3d.camera().position.x, y: graph3d.camera().position.y, z: graph3d.camera().position.z } : null,
+    bounds: fullNodes.length ? { x: [Math.min(...fullNodes.map(node => node.x)), Math.max(...fullNodes.map(node => node.x))], y: [Math.min(...fullNodes.map(node => node.y)), Math.max(...fullNodes.map(node => node.y))], z: [Math.min(...fullNodes.map(node => node.z)), Math.max(...fullNodes.map(node => node.z))] } : null,
+  };
+}
+export function getNodePosition(id) {
+  const node = nodeById.get(id);
+  if (!node || !graph3d) return null;
+  const point = graph3d.graph2ScreenCoords(node.x, node.y, node.z);
+  const viewport = root.getBoundingClientRect();
+  return { x: node.x, y: node.y, z: node.z, screenX: point.x + viewport.left, screenY: point.y + viewport.top };
+}
 let rotationEnabled = !reducedMotion.matches;
 let activeTheme = document.body.dataset.theme || 'dark';
 function syncGraphActivity() {
-  if (!graph3d) return;
-  const active = graphPageVisible && graphViewportVisible;
+  if (!graph3d || !renderScheduler) return;
   const controls = graph3d.controls();
-  if (!active) {
-    if (controls) controls.autoRotate = false;
-    graph3d.pauseAnimation?.();
-    return;
+  const visible = graphPageVisible && graphViewportVisible;
+  if (controls) {
+    controls.autoRotate = visible && rotationEnabled && rotationReady && !pointerInteractionActive;
+    controls.autoRotateSpeed = ROTATION_SPEED;
   }
-  graph3d.resumeAnimation?.();
-  if (controls) controls.autoRotate = rotationEnabled && rotationReady && !pointerInteractionActive;
+  renderScheduler.setContinuous(rotationEnabled && rotationReady);
+  renderScheduler.setVisible(visible);
 }
 window.addEventListener('message', event => {
-  if (event.source !== window.parent || event.data?.type !== GRAPH_VISIBILITY_MESSAGE || typeof event.data.visible !== 'boolean') return;
+  const parentOrigin = document.referrer ? new URL(document.referrer).origin : location.origin;
+  if (event.source !== window.parent || event.origin !== parentOrigin || event.data?.type !== GRAPH_VISIBILITY_MESSAGE || typeof event.data.visible !== 'boolean') return;
   graphViewportVisible = event.data.visible;
   syncGraphActivity();
   finishWelcomeWhenReady();
 });
 document.addEventListener('visibilitychange', () => {
+  graphPageVisible = !document.hidden;
+  syncGraphActivity();
+});
+window.addEventListener('pagehide', () => {
+  graphPageVisible = false;
+  syncGraphActivity();
+});
+window.addEventListener('pageshow', () => {
   graphPageVisible = !document.hidden;
   syncGraphActivity();
 });
@@ -109,6 +181,7 @@ graphTooltip.setAttribute('role', 'tooltip');
 graphTooltip.hidden = true;
 document.body.append(graphTooltip);
 let graphPointer = {x: 0, y: 0};
+let pointerInsideGraph = false;
 let graphTooltipWidth = 0;
 let graphTooltipHeight = 0;
 let graphTooltipContent = '';
@@ -125,6 +198,7 @@ function hideGraphTooltip() {
   graphTooltipContent = '';
 }
 function showGraphTooltip(title, meta, target) {
+  if (!pointerInsideGraph || pointerInteractionActive || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return hideGraphTooltip();
   const contentKey = JSON.stringify([title || 'Norma sem título', meta || '', target || '']);
   if (contentKey === graphTooltipContent) {
     graphTooltip.hidden = false;
@@ -155,18 +229,14 @@ function showGraphTooltip(title, meta, target) {
   positionGraphTooltip();
 }
 root.addEventListener('pointermove', event => {
+  pointerInsideGraph = event.pointerType !== 'touch';
   graphPointer = {x: event.clientX, y: event.clientY};
+  // The engine performs hit-testing in its render loop, including while paused.
+  requestGraphRender(100);
   positionGraphTooltip();
 }, {passive: true});
-root.addEventListener('pointerleave', hideGraphTooltip, {passive: true});
+root.addEventListener('pointerleave', () => { pointerInsideGraph = false; hideGraphTooltip(); }, {passive: true});
 window.addEventListener('blur', hideGraphTooltip);
-let interactionSlow = false, interactionTimer = 0, rotationRampFrame = 0, rotationRampEndTime = 0, pointerInteractionActive = false;
-const NORMAL_ROTATION_SPEED = .42;
-const INTERACTION_ROTATION_SPEED = .14;
-const ROTATION_RAMP_HALF_MS = 520;
-const ROTATION_IDLE_DELAY_MS = 0;
-let rotationSpeed = NORMAL_ROTATION_SPEED;
-let rotationTargetSpeed = NORMAL_ROTATION_SPEED;
 let contextHeightCleanupTimer = 0;
 
 function setContextExpanded(expanded) {
@@ -175,7 +245,7 @@ function setContextExpanded(expanded) {
     clearTimeout(contextHeightCleanupTimer);
     const startHeight = detailsPanel.getBoundingClientRect().height;
     const mobile = window.matchMedia('(max-width: 640px)').matches;
-    const expandedLimit = Math.min(window.innerHeight * (mobile ? .56 : .60), mobile ? 500 : 560);
+    const expandedLimit = Math.min(window.innerHeight * (mobile ? .62 : .68), mobile ? 540 : 600);
     detailsPanel.style.height = `${startHeight}px`;
     detailsPanel.style.removeProperty('max-height');
     detailsPanel.classList.remove('context-compact');
@@ -199,12 +269,17 @@ function setContextExpanded(expanded) {
 function sizeCompactCard() {
   if (detailsPanel.hidden || !detailsPanel.classList.contains('context-compact')) return;
   const mobile = window.matchMedia('(max-width: 640px)').matches;
-  const expandedLimit = Math.min(window.innerHeight * (mobile ? .56 : .60), mobile ? 500 : 560);
-  // Measure the full card before applying the compact viewport, then show its first half.
+  const expandedLimit = Math.min(window.innerHeight * (mobile ? .62 : .68), mobile ? 540 : 600);
+  // Compact mode exposes the title and actions only; hidden sections must not
+  // remain keyboard-focusable beneath a clipped viewport.
+  detailsPanel.scrollTop = 0;
   detailsPanel.classList.remove('context-compact');
-  const fullCardHeight = Math.min(detailsPanel.scrollHeight, expandedLimit);
+  const summary = record.querySelector('.drawer-actions') || record.querySelector('.drawer-hero');
+  const top = detailsPanel.getBoundingClientRect().top;
+  const summaryHeight = summary ? summary.getBoundingClientRect().bottom - top + 16 : 200;
   detailsPanel.classList.add('context-compact');
-  detailsPanel.style.setProperty('--context-compact-height', `${Math.ceil(fullCardHeight * .5)}px`);
+  detailsPanel.style.setProperty('--context-compact-height', `${Math.ceil(Math.min(summaryHeight, expandedLimit))}px`);
+
 }
 
 async function readGzipJson(path) {
@@ -216,26 +291,19 @@ async function readGzipJson(path) {
   if (!('DecompressionStream' in window)) throw Error('Este navegador não oferece suporte à leitura gzip necessária ao grafo.');
   return await new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).json();
 }
-function addIncident(id, edge) {
-  let edges = incident.get(id);
-  if (!edges) incident.set(id, edges = []);
-  edges.push(edge);
-}
-function nodeVisible(node) {
-  return Boolean(node);
-}
 function zoomGraphToFit(duration = 850, padding = 50, onComplete) {
   if (!graph3d || !fullNodes.length || root.clientWidth < 1 || root.clientHeight < 1) return false;
   const controls = graph3d.controls();
   if (controls) controls.autoRotate = false;
-  let fitPadding = padding;
-  if (homepageEmbed) {
-    // Keep the homepage's closer composition in the same camera tween instead
-    // of chaining zoomToFit() and a second cameraPosition() animation.
-    const fitScale = .62;
-    fitPadding = Math.round(root.clientHeight / 2 * (1 - (1 - 2 * padding / root.clientHeight) / fitScale));
-  }
-  graph3d.zoomToFit(duration, fitPadding);
+  const { position, center } = fitCameraToNodes(fullNodes, {
+    width: root.clientWidth, height: root.clientHeight, fov: graph3d.camera().fov,
+    padding, scale: homepageEmbed ? RENDER_POLICY.homeFitRatio : 1,
+  });
+  duration = reducedMotion.matches ? 0 : duration;
+  requestGraphRender(duration + 100);
+  // Fit actual coordinates, not meshes whose initial world matrices may still
+  // be empty after a synchronous simulation warmup.
+  graph3d.cameraPosition(position, center, duration);
   setTimeout(() => {
     if (rotationReady && rotationEnabled && graphPageVisible && graphViewportVisible && controls) controls.autoRotate = true;
     onComplete?.();
@@ -252,6 +320,7 @@ function fitInitialGraph() {
     rotationReady = true;
     syncGraphActivity();
     notifyHomepageGraphReady();
+    hideGraphStatus();
     finishWelcomeWhenReady();
   });
   if (!applied) {
@@ -267,51 +336,27 @@ function scheduleGraphFit(delay = 1100) {
     else zoomGraphToFit(850, 50);
   }, delay);
 }
-function updateGraph({reheat = false, fit = false} = {}) {
-  if (!graph3d) return;
-  // Keep one stable renderer population until filters explicitly change.
-  const nodes = [...visibleNodes.values()].filter(nodeVisible);
-  const ids = new Set(nodes.map(node => node.id));
-  const edges = fullLinks.filter(edge => ids.has(edge.source) && ids.has(edge.target));
+function updateGraph() {
   graph3d.graphData({
-    nodes,
-    // Evidence remains indexed in fullLinks/linkById; geometry receives only the
-    // fields it needs, avoiding a second set of nested occurrence records.
-    links: edges.map(edge => ({
-      id: edge.id, linkId: edge.id, source: edge.source, target: edge.target,
+    nodes: fullNodes,
+    // Geometry receives small copies; evidence stays in the source index.
+    links: fullLinks.map(edge => ({
+      id: edge.id, linkId: edge.id, source: idOf(edge.source), target: idOf(edge.target),
       relation: edge.relation, state: edge.state, occurrence_count: edge.occurrence_count, curvature: edge.curvature
-    }))
+    })),
   });
-  graph3d.linkOpacity(edges.length > 15000 ? .32 : .68);
-  if (selectedNodeId && !ids.has(selectedNodeId)) {
-    focusNode(null);
-    cancelDrawerSections();
-    document.querySelector('#details .empty').hidden = false;
-    record.replaceChildren();
-    document.body.classList.remove('context-open');
-    scheduleGraphFit();
-  }
-  if (selectedNodeId) focusNode(selectedNodeId);
-  const focusEdges = selectedNodeId ? edges.filter(edge => edge.source === selectedNodeId || edge.target === selectedNodeId) : [];
-  const focusOccurrences = focusEdges.reduce((sum, edge) => sum + (edge.occurrence_count || 1), 0);
-  viewCount.textContent = selectedNodeId
-    ? `${nodes.length.toLocaleString('pt-BR')} nós · ${relatedNodeIds.size.toLocaleString('pt-BR')} vizinhos · ${focusEdges.length.toLocaleString('pt-BR')} relações · ${focusOccurrences.toLocaleString('pt-BR')} ocorrências`
-    : `${nodes.length.toLocaleString('pt-BR')} nós · ${edges.length.toLocaleString('pt-BR')} ligações · somente cita`;
-  if (reheat) {
-    cancelAnimationFrame(reheatFrame);
-    reheatFrame = requestAnimationFrame(() => graph3d?.d3ReheatSimulation());
-  }
-  if (fit) scheduleGraphFit();
+  viewCount.textContent = `${fullNodes.length.toLocaleString('pt-BR')} nós · ${fullLinks.length.toLocaleString('pt-BR')} ligações`;
 }
 function renderDetails(title, fields, sectionLabel = 'Dados da norma') {
-  cancelDrawerSections();
   clearTimeout(drawerCloseTimer);
   drawerCloseTimer = 0;
   detailsPanel.classList.remove('drawer-closing');
   detailsPanel.hidden = false;
+  detailsPanel.scrollTop = 0;
+  detailsPanel.inert = false;
   document.body.classList.add('context-open');
   detailsPanel.style.removeProperty('max-height');
-  setContextExpanded(false);
+  setContextExpanded(!isMobile());
   detailsPanel.querySelector('.empty').hidden = true;
   const values = new Map(fields);
   const isRelation = sectionLabel.startsWith('Relação');
@@ -336,6 +381,7 @@ function renderDetails(title, fields, sectionLabel = 'Dados da norma') {
   heroMark.append(drawerIcon(isRelation ? 'cite' : 'law'));
   heroTop.append(eyebrow, heroMark);
   const heading = document.createElement('h2');
+  heading.id = 'context-title';
   heading.textContent = isRelation ? 'Citação entre normas' : title;
   hero.append(heroTop, heading);
 
@@ -385,7 +431,7 @@ function renderDetails(title, fields, sectionLabel = 'Dados da norma') {
       const link = document.createElement('a');
       link.className = `drawer-action${key.includes('Leitor') ? ' drawer-action-primary' : ''}`;
       link.href = href.href;
-      link.target = '_blank';
+      link.target = key.includes('Leitor') ? (homepageEmbed ? '_top' : '_self') : '_blank';
       link.rel = 'noopener noreferrer';
       const accessibleName = key.includes('Leitor') ? 'Abrir no leitor do VadeMecum MD' : 'Abrir fonte oficial';
       const icon = drawerIcon(key.includes('Leitor') ? 'reader' : 'source');
@@ -590,54 +636,52 @@ function relationStateLabel(state) {
   if (state === 'snapshot_structure') return 'Relação estrutural do snapshot';
   return state || 'Não informado';
 }
-function cancelDrawerSections() {
-  drawerGeneration++;
-  if (drawerFrame) cancelAnimationFrame(drawerFrame);
-  drawerFrame = 0;
-}
 function scheduleDrawerSections(sections) {
   // There are only two directional groups, each capped to eight initial rows.
   // Render both together so the drawer never appears half empty while waiting
   // for another animation frame (which browsers may throttle in background tabs).
-  const generation = drawerGeneration;
   for (const [connections, title] of sections) {
-    if (generation !== drawerGeneration) return;
     appendConnectionSection(connections, title);
   }
 }
 function colorForNode(node) {
+  if (selectedNodeId) {
+    if (node.id === selectedNodeId) return activeTheme === 'light' ? '#143c39' : '#ffffff';
+    if (!relatedNodeIds.has(node.id)) return activeTheme === 'light' ? '#bac2c1' : '#34424b';
+  }
   if (activeTheme === 'light') return node.kind === 'dispositivo' ? '#496ca5' : node.kind === 'ato' ? '#168f82' : '#a96d25';
   return node.kind === 'dispositivo' ? '#84aaff' : node.kind === 'ato' ? '#43d9c2' : '#f4b64b';
 }
 function colorForLink(edge) {
+  if (selectedNodeId && !isFocusedLink(edge)) return activeTheme === 'light' ? '#cbd0cd' : '#26313a';
   if (activeTheme === 'light') return EDGE_COLORS[edge.state] || '#a96d25';
   return edge.state === 'validated_deterministically' ? '#57d6a0' : edge.state === 'snapshot_structure' ? '#90a3ba' : '#a99a80';
 }
+function isFocusedLink(edge) {
+  return selectedNodeId && (idOf(edge.source) === selectedNodeId || idOf(edge.target) === selectedNodeId);
+}
+const linkWidth = edge => isFocusedLink(edge) ? RENDER_POLICY.focusedLinkWidth : RENDER_POLICY.linkWidth;
+const arrowLength = edge => edge.relation === 'cita' ? (isFocusedLink(edge) ? RENDER_POLICY.focusedArrowLength : RENDER_POLICY.arrowLength) : 0;
+function refreshSelection() {
+  if (!graph3d) return;
+  graph3d.nodeColor(colorForNode).nodeVal(nodeValueByDegree).linkColor(colorForLink)
+    .linkWidth(linkWidth).linkDirectionalArrowLength(arrowLength).linkDirectionalArrowColor(colorForLink).refresh();
+  updateCameraViewport();
+  requestGraphRender(200);
+}
 function nodeValueByDegree(node) {
-  const degree = Math.max(0, Number(node.degree) || 0);
-  // A logarithmic size scale keeps hubs distinct without letting them engulf
-  // neighboring nodes when the user zooms into a dense cluster.
-  const value = Math.max(1, Math.min(7, 1 + Math.log2(degree + 1)));
-  return value;
+  return nodeValue(node.degree) * (node.id === selectedNodeId ? 1.35 : 1);
 }
 function setRotation(enabled) {
-  rotationEnabled = Boolean(enabled);
-  if (!rotationEnabled) {
-    clearTimeout(interactionTimer);
-    cancelAnimationFrame(rotationRampFrame);
-    interactionSlow = false;
-    rotationTargetSpeed = rotationSpeed;
-    rotationRampEndTime = 0;
-  }
-  const controls = graph3d?.controls();
-  if (controls) {
-    controls.autoRotate = rotationEnabled && rotationReady && graphPageVisible && graphViewportVisible && !pointerInteractionActive;
-    controls.autoRotateSpeed = rotationSpeed;
-  }
-  if (rotationEnabled && graphPageVisible && graphViewportVisible) transitionRotationSpeed(interactionSlow ? INTERACTION_ROTATION_SPEED : NORMAL_ROTATION_SPEED, ROTATION_RAMP_HALF_MS);
-  motionHint.textContent = rotationEnabled
-    ? 'Rotação suave · selecione uma norma para ver relações'
-    : 'Movimento reduzido · selecione uma norma para ver relações';
+  rotationEnabled = Boolean(enabled) && !reducedMotion.matches;
+  const button = document.querySelector('#rotation-toggle');
+  button.disabled = reducedMotion.matches;
+  button.setAttribute('aria-pressed', String(rotationEnabled));
+  button.setAttribute('aria-label', rotationEnabled ? 'Pausar rotação' : 'Ativar rotação');
+  button.title = reducedMotion.matches ? 'Rotação desativada pela preferência de movimento reduzido' : button.getAttribute('aria-label');
+  button.dataset.playing = String(rotationEnabled);
+  motionHint.textContent = reducedMotion.matches ? 'Movimento reduzido · selecione uma norma' : rotationEnabled ? 'Arraste para explorar · selecione uma norma' : 'Rotação pausada · arraste para explorar';
+  syncGraphActivity(); requestGraphRender();
 }
 function setTheme(theme) {
   const nextTheme = theme === 'light' ? 'light' : 'dark';
@@ -655,177 +699,51 @@ function setTheme(theme) {
       : '<path d="M20.4 15.4A8.5 8.5 0 0 1 8.6 3.6 8.5 8.5 0 1 0 20.4 15.4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>';
     const graphBackground = activeTheme === 'dark' ? '#05070a' : '#f4f4f1';
     if (graph3d) graph3d.backgroundColor(graphBackground).nodeColor(colorForNode).linkColor(colorForLink).linkDirectionalArrowColor(colorForLink).refresh();
+    requestGraphRender(200);
   };
   if (document.startViewTransition && !reducedMotion.matches) {
     try { document.startViewTransition(applyTheme); }
     catch { applyTheme(); }
   } else applyTheme();
 }
-function transitionRotationSpeed(target, duration, onComplete) {
-  if (Math.abs(target - rotationTargetSpeed) < .0001) return;
-  rotationTargetSpeed = target;
-  cancelAnimationFrame(rotationRampFrame);
-  const startSpeed = rotationSpeed;
-  const startTime = performance.now();
-  const speedRange = Math.max(NORMAL_ROTATION_SPEED - INTERACTION_ROTATION_SPEED, .001);
-  const transitionDuration = Math.max(280, duration * Math.min(1, Math.abs(target - startSpeed) / speedRange));
-  rotationRampEndTime = startTime + transitionDuration;
-  function step(now) {
-    const progress = Math.min(1, (now - startTime) / transitionDuration);
-    if (target < startSpeed) {
-      const remaining = 1 - progress;
-      rotationSpeed = target + (startSpeed - target) * remaining ** 2;
-    } else {
-      rotationSpeed = startSpeed + (target - startSpeed) * progress ** 2;
-    }
-    const controls = graph3d?.controls();
-    if (controls) controls.autoRotateSpeed = rotationSpeed;
-    if (progress < 1) rotationRampFrame = requestAnimationFrame(step);
-    else {
-      rotationSpeed = target;
-      rotationRampFrame = 0;
-      rotationRampEndTime = 0;
-      onComplete?.();
-    }
-  }
-  rotationRampFrame = requestAnimationFrame(step);
-}
 function markGraphInteraction() {
-  if (window.matchMedia('(max-width: 640px)').matches) document.body.classList.add('graph-engaged');
-  if (!rotationEnabled || pointerInteractionActive) return;
-  interactionSlow = true;
-  motionHint.textContent = 'Interação · rotação desacelerando';
-  clearTimeout(interactionTimer);
-  const controls = graph3d?.controls();
-  if (controls) controls.autoRotate = true;
-  transitionRotationSpeed(INTERACTION_ROTATION_SPEED, ROTATION_RAMP_HALF_MS, () => {
-    if (interactionSlow) motionHint.textContent = 'Interação · rotação estabilizada';
-  });
-  const resumeRotation = () => {
-    interactionSlow = false;
-    motionHint.textContent = 'Retomando a rotação suave';
-    transitionRotationSpeed(NORMAL_ROTATION_SPEED, ROTATION_RAMP_HALF_MS, () => {
-      if (rotationEnabled && !interactionSlow) {
-        motionHint.textContent = 'Rotação suave · selecione uma norma para explorar';
-      }
-    });
-  };
-  interactionTimer = setTimeout(() => {
-    const rampRemaining = rotationTargetSpeed === INTERACTION_ROTATION_SPEED
-      ? Math.max(0, rotationRampEndTime - performance.now())
-      : 0;
-    if (rampRemaining > 0) interactionTimer = setTimeout(resumeRotation, rampRemaining);
-    else resumeRotation();
-  }, ROTATION_IDLE_DELAY_MS);
+  if (isMobile()) document.body.classList.add('graph-engaged');
+  requestGraphRender(250);
 }
 function beginGraphPointerInteraction() {
-  if (window.matchMedia('(max-width: 640px)').matches) document.body.classList.add('graph-engaged');
-  if (!rotationEnabled || pointerInteractionActive) return;
+  if (pointerInteractionActive) return;
   pointerInteractionActive = true;
-  interactionSlow = true;
-  clearTimeout(interactionTimer);
-  transitionRotationSpeed(INTERACTION_ROTATION_SPEED, ROTATION_RAMP_HALF_MS);
-  motionHint.textContent = 'Interação · órbita desacelerando';
+  hideGraphTooltip();
+  markGraphInteraction();
+  renderScheduler?.setDragging(true);
+  syncGraphActivity();
 }
 function endGraphPointerInteraction() {
   if (!pointerInteractionActive) return;
   pointerInteractionActive = false;
-  if (!rotationEnabled) return;
-  interactionSlow = false;
-  motionHint.textContent = 'Retomando a rotação suave';
-  transitionRotationSpeed(NORMAL_ROTATION_SPEED, ROTATION_RAMP_HALF_MS, () => {
-    if (rotationEnabled && !interactionSlow) {
-      motionHint.textContent = 'Rotação suave · selecione uma norma para explorar';
-    }
-  });
+  requestGraphRender(250);
+  renderScheduler?.setDragging(false);
+  syncGraphActivity();
 }
-function networkMetrics() {
-  const visited = new Set();
-  let components = 0;
-  let isolates = 0;
-  for (const node of fullNodes) {
-    const id = node.id;
-    const edges = incident.get(id) || [];
-    if (!edges.length) isolates++;
-    if (visited.has(id)) continue;
-    components++;
-    const stack = [id];
-    visited.add(id);
-    while (stack.length) {
-      const current = stack.pop();
-      for (const edge of incident.get(current) || []) {
-        const neighbor = edge.source === current ? edge.target : edge.source;
-        if (!visited.has(neighbor)) {
-          visited.add(neighbor);
-          stack.push(neighbor);
-        }
-      }
-    }
-  }
-  return {components, isolates};
-}
+const networkMetrics = () => dataIndex.metrics();
+const getNeighborIndex = id => dataIndex.connections(id);
 function focusNode(id) {
   selectedNodeId = id || null;
   relatedNodeIds = new Set();
   if (selectedNodeId) {
     const connections = getNeighborIndex(selectedNodeId);
     for (const neighborId of connections?.neighborIds || []) {
-      if (nodeVisible(nodeById.get(neighborId))) relatedNodeIds.add(neighborId);
+      relatedNodeIds.add(neighborId);
     }
   }
   if (selectedNodeId) {
-    const nodeCount = [...visibleNodes.values()].filter(nodeVisible).length;
+    const nodeCount = fullNodes.length;
     const connections = getNeighborIndex(selectedNodeId);
-    const edgeCount = (connections?.outgoing.relationCount || 0) + (connections?.incoming.relationCount || 0);
+    const edgeCount = dataIndex.incident.get(selectedNodeId).length;
     const occurrenceCount = (connections?.outgoing.occurrenceCount || 0) + (connections?.incoming.occurrenceCount || 0);
     viewCount.textContent = `${nodeCount.toLocaleString('pt-BR')} nós · ${relatedNodeIds.size.toLocaleString('pt-BR')} vizinhos · ${edgeCount.toLocaleString('pt-BR')} relações · ${occurrenceCount.toLocaleString('pt-BR')} ocorrências`;
   }
-}
-function indexConnections(edges, neighborFor) {
-  const grouped = new Map();
-  for (const edge of edges) {
-    const neighborId = neighborFor(edge);
-    const item = grouped.get(neighborId) || {id: neighborId, count: 0, node: nodeById.get(neighborId)};
-    item.count += edge.occurrence_count || 1;
-    grouped.set(neighborId, item);
-  }
-  const rows = [...grouped.values()].sort((a, b) => (b.node?.degree || 0) - (a.node?.degree || 0) || (a.node?.label || a.id).localeCompare(b.node?.label || b.id, 'pt-BR'));
-  return {
-    rows,
-    neighborCount: rows.length,
-    relationCount: edges.length,
-    occurrenceCount: edges.reduce((sum, edge) => sum + (edge.occurrence_count || 1), 0)
-  };
-}
-function indexNodeNeighbors(node) {
-    const edges = incident.get(node.id) || [];
-    const outgoing = edges.filter(edge => edge.source === node.id);
-    const incoming = edges.filter(edge => edge.target === node.id);
-    const outgoingIndex = indexConnections(outgoing, edge => edge.target);
-    const incomingIndex = indexConnections(incoming, edge => edge.source);
-    const neighborIds = [...new Set([...outgoingIndex.rows, ...incomingIndex.rows].map(row => row.id))];
-    return {
-      outgoing: outgoingIndex,
-      incoming: incomingIndex,
-      neighborIds,
-      neighborCount: neighborIds.length
-    };
-}
-function getNeighborIndex(id) {
-  let connections = neighborIndex.get(id);
-  if (!connections) {
-    const node = nodeById.get(id);
-    if (node) {
-      connections = indexNodeNeighbors(node);
-      neighborIndex.set(id, connections);
-    }
-  }
-  return connections;
-}
-function buildNeighborIndex() {
-  for (const node of fullNodes) {
-    if (!neighborIndex.has(node.id)) neighborIndex.set(node.id, indexNodeNeighbors(node));
-  }
+  refreshSelection();
 }
 function appendConnectionSection(connections, title) {
   const {rows, neighborCount, relationCount, occurrenceCount} = connections;
@@ -845,7 +763,6 @@ function appendConnectionSection(connections, title) {
   counts.textContent = `${neighborCount.toLocaleString('pt-BR')} normas · ${relationCount.toLocaleString('pt-BR')} relações · ${occurrenceCount.toLocaleString('pt-BR')} registros`;
   summaryText.append(name, counts);
   summary.append(direction, summaryText);
-  summary.setAttribute('aria-label', `${title}: ${neighborCount} normas, ${relationCount} relações, ${occurrenceCount} registros do corpus`);
   section.append(summary);
   const list = document.createElement('div');
   list.className = 'connection-list';
@@ -898,7 +815,7 @@ function openNorm(id, interactionAlreadyMarked = false) {
   if (!interactionAlreadyMarked) markGraphInteraction();
   const node = nodeById.get(id);
   if (!node) return;
-  const connections = getNeighborIndex(id) || {outgoing: indexConnections([], edge => edge.target), incoming: indexConnections([], edge => edge.source)};
+  const connections = getNeighborIndex(id);
   const {outgoing, incoming} = connections;
   focusNode(id);
   const identityStatus = node.identity_resolution?.status === 'catalogued_vademecum'
@@ -936,6 +853,7 @@ function centerOnSearchResult(id) {
   // Preserve the user's current viewing direction while moving the selected
   // norm into the center of the viewport at a useful, readable scale.
   const distance = Math.min(240, Math.max(145, currentDistance * .3));
+  requestGraphRender(reducedMotion.matches ? 150 : 1050);
   graph3d.cameraPosition(
     {x: node.x + dx * distance, y: node.y + dy * distance, z: node.z + dz * distance},
     {x: node.x, y: node.y, z: node.z},
@@ -964,8 +882,9 @@ function showCitation(edge, interactionAlreadyMarked = false) {
 }
 function showPanorama(exitMotion = null) {
   if (!detailsPanel.hidden && detailsPanel.classList.contains('drawer-closing')) return;
+  if (detailsPanel.contains(document.activeElement)) search.focus({ preventScroll: true });
+  detailsPanel.inert = true;
   focusNode(null);
-  cancelDrawerSections();
   clearTimeout(drawerCloseTimer);
   if (!detailsPanel.hidden) {
     detailsPanel.style.setProperty('--context-out-y', `${exitMotion?.distance || 0}px`);
@@ -990,19 +909,19 @@ function showPanorama(exitMotion = null) {
     document.body.classList.remove('context-open');
     detailsPanel.classList.remove('context-compact');
   }
-  visibleNodes = new Map(fullNodes.map(node => [node.id, node]));
   const occurrences = fullLinks.reduce((sum, edge) => sum + (edge.occurrence_count || 1), 0);
   viewCount.textContent = `${fullNodes.length.toLocaleString('pt-BR')} nós · ${fullLinks.length.toLocaleString('pt-BR')} relações · ${occurrences.toLocaleString('pt-BR')} ocorrências`;
 }
 function initialize(data) {
   fullNodes = data.nodes;
   fullLinks = data.links;
-  nodeById = new Map(fullNodes.map(node => [node.id, node]));
-  linkById = new Map(fullLinks.map(edge => [edge.id, edge]));
+  dataIndex = createGraphIndex(fullNodes, fullLinks);
+  // Settle the seeded layout before the first visible frame. This preserves the
+  // original 4 warmup + 48 simulation steps without spending 48 GPU frames.
+  nodeById = dataIndex.nodeById;
+  linkById = dataIndex.linkById;
   const parallel = new Map();
   for (const edge of fullLinks) {
-    addIncident(edge.source, edge);
-    addIncident(edge.target, edge);
     const key = `${edge.source}\0${edge.target}`;
     const index = parallel.get(key) || 0;
     parallel.set(key, index + 1);
@@ -1015,6 +934,7 @@ function initialize(data) {
     .width(root.clientWidth).height(root.clientHeight)
     .backgroundColor(activeTheme === 'dark' ? '#05070a' : '#f4f4f1').showNavInfo(false)
     .nodeId('id').linkSource('source').linkTarget('target')
+    .enableNodeDrag(true)
     .nodeLabel(() => '')
     .onNodeHover(node => {
       if (!node) return hideGraphTooltip();
@@ -1027,8 +947,8 @@ function initialize(data) {
       ].filter(Boolean).join(' · ');
       showGraphTooltip(title, meta);
     })
-    .nodeColor(colorForNode).nodeOpacity(.75)
-    .nodeResolution(8)
+    .nodeColor(colorForNode).nodeOpacity(RENDER_POLICY.nodeOpacity)
+    .nodeResolution(RENDER_POLICY.nodeResolution)
     .nodeVal(nodeValueByDegree)
     .nodeRelSize(3.2)
     .linkLabel(() => '')
@@ -1042,109 +962,83 @@ function initialize(data) {
       const state = edge.state === 'candidate_unverified' ? 'Não verificada em fonte oficial' : relationStateLabel(edge.state);
       showGraphTooltip(source?.label || source?.source_label || sourceId, `${count.toLocaleString('pt-BR')} ${count === 1 ? 'ocorrência' : 'ocorrências'} · ${state}`, target?.label || target?.source_label || targetId);
     })
-    .linkColor(colorForLink).linkOpacity(.68).linkWidth(1.05)
+    .linkColor(colorForLink).linkOpacity(.65).linkWidth(linkWidth)
     .linkCurvature(edge => edge.curvature || 0)
-    .linkDirectionalArrowLength(edge => edge.relation !== 'cita' ? 0 : 4.4).linkDirectionalArrowRelPos(.9)
+    .linkDirectionalArrowLength(arrowLength).linkDirectionalArrowRelPos(.9)
     .linkDirectionalArrowResolution(8).linkDirectionalArrowColor(colorForLink)
     .d3AlphaDecay(.08).d3VelocityDecay(.56)
-    .cooldownTicks(48).warmupTicks(4)
+    .cooldownTicks(0).warmupTicks(RENDER_POLICY.initialLayoutTicks)
     .onEngineStop(() => {
-      if (firstFit) fitInitialGraph();
+      // Subsequent node drags retain the original live force simulation.
+      graph3d?.cooldownTicks(RENDER_POLICY.dragSettleTicks).cooldownTime(RENDER_POLICY.dragSettleMs);
+      if (firstFit) {
+        // The engine callback precedes mesh-position updates. Fit on the next
+        // frame, after the renderer has a valid world-space bounding box.
+        requestGraphRender(150);
+        requestAnimationFrame(fitInitialGraph);
+      }
+      renderScheduler?.setSettled(true);
     })
+    .onEngineTick(() => renderScheduler?.setSettled(false))
+    .onNodeDrag(() => { renderScheduler?.setSettled(false); requestGraphRender(250); })
+    .onNodeDragEnd(() => requestGraphRender(250))
     .onNodeClick(node => openNorm(node.id, true))
     .onBackgroundClick(() => {
       if (selectedNodeId) showPanorama();
     })
     .onLinkClick(link => showCitation(linkById.get(link.linkId) || link, true));
-  // The bundled renderer defaults to DPR 2. Capping it preserves sharp output
-  // while cutting fragment work on high-density displays, especially phones.
-  graph3d.renderer()?.setPixelRatio(graphPixelRatio);
+  renderScheduler = createRenderScheduler({
+    resume: () => graph3d.resumeAnimation(),
+    // onEngineStop runs inside the renderer's frame. Let that frame finish
+    // scheduling before cancelling it, otherwise it can restart after pause.
+    pause: () => queueMicrotask(() => { if (!renderScheduler.isRunning()) graph3d.pauseAnimation(); }),
+  });
+  const canvas = graph3d.renderer().domElement;
+  canvas.addEventListener('webglcontextlost', event => {
+    event.preventDefault(); contextAvailable = false; renderScheduler.setContextAvailable(false);
+    showGraphStatus('Restaurando a visualização…');
+  });
+  canvas.addEventListener('webglcontextrestored', () => {
+    contextAvailable = true; renderScheduler.setContextAvailable(true);
+    graph3d.refresh(); resizeGraph(); requestGraphRender(300); hideGraphStatus();
+  });
+  graph3d.controls().addEventListener('start', beginGraphPointerInteraction);
+  graph3d.controls().addEventListener('end', endGraphPointerInteraction);
+  graph3d.controls().addEventListener('change', () => requestGraphRender(100));
+  resizeGraph();
   const charge = graph3d.d3Force('charge');
   if (charge?.distanceMax) charge.distanceMax(250);
   setRotation(rotationEnabled);
-  visibleNodes = new Map(fullNodes.map(node => [node.id, node]));
   const metrics = networkMetrics();
   const componentsLabel = `${metrics.components.toLocaleString('pt-BR')} componentes`;
   countBox.textContent = `${data.vademecum_node_count.toLocaleString('pt-BR')} atos VadeMecum · ${data.external_node_count.toLocaleString('pt-BR')} externas · ${data.semantic_pair_count.toLocaleString('pt-BR')} relações · ${data.citation_assertion_count.toLocaleString('pt-BR')} ocorrências · ${componentsLabel}`;
   document.querySelector('#network-summary').textContent = `${metrics.components.toLocaleString('pt-BR')} componentes na rede; ${metrics.isolates.toLocaleString('pt-BR')} atos não têm citação neste recorte. Nós sem ligação permanecem no mapa para tornar a cobertura do acervo visível.`;
-  updateGraph({reheat: true});
+  updateGraph();
   // Some browsers keep the force engine alive while the renderer is active.
   // A bounded fallback guarantees a useful initial framing even if its stop
   // callback is delayed; the normal callback still fits as soon as it fires.
   scheduleGraphFit(1800);
-  if ('requestIdleCallback' in window) requestIdleCallback(buildNeighborIndex, {timeout: 1200});
-  else setTimeout(buildNeighborIndex, 250);
   syncGraphActivity();
 }
-async function loadSearchIndex() {
-  if (searchIndex) return searchIndex;
-  if (!searchPromise) searchPromise = readGzipJson('../data/search-index.json.gz?v=audit-1').then(rows => (searchIndex = rows));
-  return searchPromise;
-}
-function showSuggestions(rows) {
-  suggestions.replaceChildren();
-  for (const [id, label, type, iri, connected] of rows) {
-    const item = document.createElement('button');
-    item.type = 'button';
-    item.className = 'suggestion';
-    item.dataset.nodeId = id;
-    item.setAttribute('role', 'option');
-    item.innerHTML = `${esc(label)}<small>${esc(type)} · ${esc(id)} · ${connected ? 'no recorte exibido' : 'sem citação direta ao VadeMecum neste snapshot'}</small>`;
-    item.addEventListener('click', () => {
-      search.value = label;
-      suggestions.classList.remove('open');
-      if (nodeById.has(id)) {
-        openNorm(id);
-        centerOnSearchResult(id);
-      }
-    });
-    suggestions.append(item);
-  }
-  suggestions.classList.toggle('open', rows.length > 0);
-}
+const searchController = createSearchController({
+  input: search, list: suggestions, status: document.querySelector('#search-status'),
+  load: () => readGzipJson('../data/search-index.json.gz?v=audit-1'),
+  select: id => { openNorm(id); centerOnSearchResult(id); },
+});
 
-let timer = 0;
-search.addEventListener('input', event => {
-  clearTimeout(timer);
-  const query = norm(search.value.trim());
-  if (query.length < 2) { showSuggestions([]); return; }
-  timer = setTimeout(async () => {
-    try {
-      const rows = await loadSearchIndex();
-      showSuggestions(rows.filter(row => norm(`${row[1]} ${row[0]} ${row[3] || ''}`).includes(query)).slice(0, 12));
-    } catch (error) { viewCount.textContent = error.message; }
-  }, 180);
-});
-search.addEventListener('keydown', event => {
-  if (event.key === 'Enter' && suggestions.classList.contains('open')) {
-    event.preventDefault();
-    suggestions.querySelector('.suggestion')?.click();
-  } else if (event.key === 'ArrowDown' && suggestions.classList.contains('open')) {
-    event.preventDefault();
-    suggestions.querySelector('.suggestion')?.focus();
-  } else if (event.key === 'Escape') {
-    const hadOpenSuggestions = suggestions.classList.contains('open');
-    suggestions.classList.remove('open');
-    if (hadOpenSuggestions) event.stopPropagation();
-  }
-});
-suggestions.addEventListener('keydown', event => {
-  if (event.key !== 'Escape') return;
-  suggestions.classList.remove('open');
-  search.focus({preventScroll: true});
-  event.stopPropagation();
-});
-document.addEventListener('pointerdown', event => {
-  if (detailsPanel.hidden || detailsPanel.contains(event.target) || !event.isPrimary || event.button !== 0) return;
-  showPanorama();
-}, true);
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && !detailsPanel.hidden && !suggestions.classList.contains('open')) showPanorama();
 });
-document.addEventListener('click', event => {
-  if (!event.target.closest('.search-wrap')) suggestions.classList.remove('open');
-});
 themeToggle.addEventListener('click', () => setTheme(activeTheme === 'dark' ? 'light' : 'dark'));
+document.querySelector('#rotation-toggle').addEventListener('click', () => setRotation(!rotationEnabled));
+document.querySelector('#reset-view').addEventListener('click', () => {
+  showPanorama(); searchController.close(); search.value = '';
+  document.body.classList.remove('graph-engaged');
+  zoomGraphToFit(650, 50);
+});
+document.querySelector('#context-close').addEventListener('click', () => showPanorama());
+document.querySelector('#retry-graph').addEventListener('click', () => location.reload());
+new ResizeObserver(updateCameraViewport).observe(detailsPanel);
 contextExpand?.addEventListener('click', () => {
   setContextExpanded(detailsPanel.classList.contains('context-compact'));
 });
@@ -1180,7 +1074,7 @@ contextExpand?.addEventListener('pointermove', event => {
   const pullScale = 1 - Math.min(Math.abs(swipeState.distance) / swipeState.height, 1) * .024;
   if (swipeState.compact && swipeState.distance < 0) {
     const mobile = window.matchMedia('(max-width: 640px)').matches;
-    const expandedLimit = Math.min(window.innerHeight * (mobile ? .56 : .60), mobile ? 500 : 560);
+    const expandedLimit = Math.min(window.innerHeight * (mobile ? .62 : .68), mobile ? 540 : 600);
     const dragHeight = Math.min(swipeState.height - swipeState.distance, expandedLimit);
     detailsPanel.style.height = `${dragHeight}px`;
     detailsPanel.style.maxHeight = `${dragHeight}px`;
@@ -1231,6 +1125,7 @@ contextExpand?.addEventListener('click', event => {
 }, true);
 root.addEventListener('pointerdown', beginGraphPointerInteraction, {passive: true});
 root.addEventListener('pointerup', endGraphPointerInteraction, {passive: true});
+window.addEventListener('pointerup', endGraphPointerInteraction, {passive: true});
 root.addEventListener('pointercancel', endGraphPointerInteraction, {passive: true});
 root.addEventListener('lostpointercapture', endGraphPointerInteraction, {passive: true});
 root.addEventListener('wheel', markGraphInteraction, {passive: true});
@@ -1238,15 +1133,12 @@ root.addEventListener('keydown', markGraphInteraction);
 reducedMotion.addEventListener?.('change', event => {
   if (event.matches) setRotation(false);
 });
+let resizeFrame = 0;
 window.addEventListener('resize', () => {
-  graph3d?.width(root.clientWidth).height(root.clientHeight);
-  const mobileLayout = window.matchMedia('(max-width: 640px)').matches;
-  if (!detailsPanel.hidden && mobileLayout !== previousMobileLayout) {
-    setContextExpanded(!detailsPanel.classList.contains('context-compact'));
-  }
-  previousMobileLayout = mobileLayout;
+  cancelAnimationFrame(resizeFrame); resizeFrame = requestAnimationFrame(resizeGraph);
 });
 readGzipJson('../data/explorer.json.gz?v=audit-1').then(initialize).catch(error => {
+  showGraphStatus('Não foi possível abrir o mapa. Verifique a conexão e tente novamente.', true);
   notifyHomepageGraphReady(true);
   dismissWelcome({failed: true});
   countBox.textContent = error.message;

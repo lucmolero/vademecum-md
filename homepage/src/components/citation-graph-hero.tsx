@@ -1,15 +1,18 @@
 import { useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useEffect, useRef, useState, type MouseEvent } from 'react';
-import { useMarkGraphReady } from './intro';
 
-const graphUrl = import.meta.env.DEV
-  ? 'http://127.0.0.1:8770/viewer/?home-hero=1'
-  : new URL('./graph/viewer/?home-hero=1', window.location.href).toString();
+// Exercise the shipped graph in development too. An external source checkout
+// remains available explicitly while editing the standalone graph application.
+const graphUrl = new URL(
+  import.meta.env.DEV && import.meta.env.VITE_GRAPH_URL
+    ? import.meta.env.VITE_GRAPH_URL
+    : './graph/viewer/index.html?home-hero=1',
+  document.baseURI,
+).href;
 
 export function CitationGraphHero() {
   const reduceMotion = useShouldReduceMotion();
-  const markGraphReady = useMarkGraphReady();
   const [graphReady, setGraphReady] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const graphFrameRef = useRef<HTMLIFrameElement>(null);
@@ -27,7 +30,6 @@ export function CitationGraphHero() {
       if (event.source !== frame.contentWindow || event.origin !== graphOrigin) return;
       if (event.data?.type !== 'vademecum-graph-ready') return;
       setGraphReady(true);
-      markGraphReady();
     };
     window.addEventListener('message', handleGraphMessage);
 
@@ -68,7 +70,7 @@ export function CitationGraphHero() {
       window.removeEventListener('keydown', interrupt);
       if (scrollAnimation.current !== null) cancelAnimationFrame(scrollAnimation.current);
     };
-  }, [markGraphReady]);
+  }, []);
 
   const continueToSkill = (event: MouseEvent<HTMLAnchorElement>) => {
     if (reduceMotion) return;
@@ -112,18 +114,14 @@ export function CitationGraphHero() {
         loading="eager"
         allow="fullscreen"
         onLoad={() => {
-          // This only fades in the iframe document. The intro exit is gated by
-          // the separate graph-ready message after data and first camera fit.
+          // Reveal the document while the graph prepares its first camera fit.
           setGraphReady(true);
           graphFrameRef.current?.contentWindow?.postMessage({
             type: 'vademecum-graph-visibility',
             visible: graphVisibleRef.current && !document.hidden,
           }, '*');
         }}
-        onError={() => {
-          setGraphReady(true);
-          markGraphReady();
-        }}
+        onError={() => setGraphReady(true)}
         initial={reduceMotion ? false : { opacity: 0, scale: 1.008 }}
         animate={{ opacity: graphReady || reduceMotion ? 1 : 0, scale: 1 }}
         transition={{ duration: reduceMotion ? 0 : 0.9, ease: [0.22, 1, 0.36, 1] }}

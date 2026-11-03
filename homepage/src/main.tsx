@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReducedMotionConfig } from '@animate-ui/react/utils/motion';
 import { createRoot } from 'react-dom/client';
 import { IntroProvider } from './components/intro';
 import { HomeHeader } from './components/header';
@@ -11,14 +12,14 @@ import './global.css';
 function App() {
   return (
     <IntroProvider>
-      <a className="skip-link" href="#conteudo">Ir para o conteúdo</a>
+      <a className="skip-link" href="#conteudo" tabIndex={0}>Ir para o conteúdo</a>
       <HomeHeader />
       <main id="conteudo">
         <CitationGraphHero />
         <Hero />
         <Orbit />
+        <AISection />
       </main>
-      <AISection />
       <footer className="mx-auto mt-24 flex w-full max-w-[1200px] flex-wrap items-center justify-between gap-4 px-5 py-8 text-sm text-muted-foreground">
         <a href="#inicio" className="font-medium text-foreground">vademecum.md</a>
         <span>Conhecimento jurídico em movimento.</span>
@@ -62,6 +63,6 @@ function App() {
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <ReducedMotionConfig><App /></ReducedMotionConfig>
   </React.StrictMode>,
 );

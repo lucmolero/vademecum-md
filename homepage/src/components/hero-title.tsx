@@ -6,8 +6,9 @@ import {
 } from '@animate-ui/react/primitives/texts/rotating';
 import { SplittingText } from '@animate-ui/react/primitives/texts/splitting';
 import { ease, useShouldReduceMotion } from '@animate-ui/react/utils/motion';
-import { motion } from 'motion/react';
+import { motion, useInView } from 'motion/react';
 import { useLayoutEffect, useRef, useState } from 'react';
+import { useDocumentVisible } from './use-document-visible';
 
 const WORD_IN = {
   initial: { opacity: 1, y: 24, filter: 'blur(12px)' },
@@ -46,6 +47,7 @@ function useOwnLine(ref: React.RefObject<HTMLElement | null>, done: boolean) {
     const line = element?.parentElement;
     if (!element || !line) return;
     const measure = () => {
+      if (!element.isConnected) return;
       const first = line.firstElementChild as HTMLElement | null;
       if (!first) return;
       const size = parseFloat(getComputedStyle(element).fontSize);
@@ -65,23 +67,26 @@ function Library({ done, libraries }: { done: boolean; libraries: string[] }) {
   const reduce = useShouldReduceMotion();
   const ref = useRef<HTMLSpanElement>(null);
   const ownLine = useOwnLine(ref, done);
+  const inView = useInView(ref);
+  const pageVisible = useDocumentVisible();
   if (reduce) return <span className="inline-block text-neutral-500 dark:text-neutral-400">{libraries[0]}</span>;
   return (
     <motion.span
       ref={ref}
       data-slot="hero-library"
       data-own-line={ownLine ? '' : undefined}
-      className="inline-block"
+      className="inline-grid align-bottom"
       initial={WORD_IN.initial}
       animate={done ? WORD_IN.animate : WORD_IN.initial}
       transition={{ ...WORD_IN.transition, delay: 2 * WORD_IN.stagger }}
     >
+      {libraries.map(library => <span key={library} aria-hidden="true" className="invisible col-start-1 row-start-1">{library}</span>)}
       <RotatingTextContainer
-        text={done ? libraries : libraries.slice(0, 1)}
+        text={done && inView && pageVisible ? libraries : libraries.slice(0, 1)}
         duration={2600}
         delay={1400}
         align={ownLine ? 'center' : 'start'}
-        style={{ display: 'inline-block', overflow: 'clip' }}
+        style={{ display: 'inline-block', overflow: 'clip', gridColumn: 1, gridRow: 1 }}
       >
         <RotatingText className="text-neutral-500 dark:text-neutral-400" />
       </RotatingTextContainer>
@@ -98,7 +103,7 @@ export function HeroTitle({
 }) {
   return (
     <h2 className="flex max-w-[1100px] flex-col items-center text-[clamp(1.75rem,6vw,3.75rem)] font-medium md:text-6xl">
-      <span className="whitespace-normal text-center md:whitespace-nowrap">
+      <span className="whitespace-normal text-center lg:whitespace-nowrap">
         <Line text="Pesquisa jurídica" done={done} delay={0} />{' '}
         <Library done={done} libraries={libraries} />
       </span>

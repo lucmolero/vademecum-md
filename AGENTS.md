@@ -17,5 +17,5 @@ Este é o repositório oficial que contém o corpus e também as fontes da homep
 3. Alterações de publicação devem considerar o workflow Pages do repositório, que integra homepage, grafo e Biblioteca. Não assuma publicação independente da homepage.
 4. Previews leves da Biblioteca devem usar os modos de demonstração de `biblioteca/src/preview-data.js`, sem carregar o corpus completo nem persistir estado demonstrativo. A referência visual publicada é `https://lucmolero.github.io/vademecum-md/biblioteca/`.
 5. O Vite em `homepage/` tem porta padrão `8765`. A instância em `8771` é uma segunda execução do mesmo checkout com override de porta, não outro projeto.
-6. O hero usa o grafo local em `127.0.0.1:8770` durante desenvolvimento; em produção usa o pacote da mesma origem em `/graph/viewer/`. Ao sincronizar do repositório separado, atualize `homepage/public/graph/source.json` e mantenha licenças e proveniência do pacote.
+6. O hero usa o pacote oficial da mesma origem em `/graph/viewer/index.html` no desenvolvimento e na produção. Para trabalhar no checkout separado do grafo, configure `VITE_GRAPH_URL=http://127.0.0.1:8770/viewer/?home-hero=1`. Ao sincronizar do repositório separado, atualize `homepage/public/graph/source.json` e mantenha licenças e proveniência do pacote.
 7. Não publique, faça push ou altere dados versionados sem pedido explícito.

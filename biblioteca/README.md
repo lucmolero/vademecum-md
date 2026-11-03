@@ -1,6 +1,6 @@
-# Biblioteca de leis
+# Biblioteca VadeMecum MD
 
-Aplicativo estático para organizar e ler documentos Markdown, em português. Não precisa de servidor de aplicação: o build gera `dist/`, e o navegador guarda a biblioteca local. Não inclui conteúdo de demonstração.
+Biblioteca e leitor oficiais do VadeMecum MD. A aplicação oferece busca integral, sumário, marcadores, anotações e consulta à procedência dos documentos. O build gera arquivos estáticos em `dist/`; preferências e dados pessoais de leitura ficam no navegador.
 
 ## Desenvolvimento
 
@@ -19,7 +19,9 @@ Abra http://127.0.0.1:4173. Os arquivos publicáveis são gerados em `dist/`.
 
 O workflow único de Pages compila esta biblioteca em `/biblioteca/` e usa diretamente `bases/curated/legislacao/federal` e `manifests/release.json` do checkout atual. A homepage e a biblioteca recebem a mesma versão, contagem e data de corte do acervo. Não há checkout de uma branch externa da biblioteca nem publicação separada.
 
-Quando `VADE_CORPUS_DIR` está definido, o build inclui apenas esse corpus oficial. Arquivos Markdown locais de teste não são copiados nem entram no catálogo. O manifesto `vademecum-source.json` registra a versão e o commit que alimentaram o leitor; histórico e dados brutos não são publicados.
+Por padrão, `npm run build` lê `../bases/curated/legislacao/federal` e `../manifests/release.json`. `VADE_CORPUS_DIR` e `VADE_RELEASE_FILE` permitem informar outros caminhos explicitamente. O build confere a contagem antes de substituir a saída e inclui apenas o corpus selecionado. O manifesto `vademecum-source.json` registra a versão e o commit informado pelo workflow; histórico e dados brutos não são publicados.
+
+Os modos `?preview=catalog`, `search`, `toc`, `marks`, `notes`, `citation`, `source`, `appearance` e `resume` alimentam as demonstrações interativas da homepage com fixtures de `src/preview-data.js`. Não carregam o corpus integral, não registram service worker e não persistem o estado demonstrativo.
 
 > **Dados locais:** marcadores, anotações e progresso ficam no IndexedDB/localStorage do navegador de cada usuário — não são enviados a nenhum servidor.
 
@@ -27,7 +29,7 @@ Em ambientes que bloqueiam subprocessos (alguns sandboxes), `npm test` pode falh
 
 ## Conteúdo
 
-Coloque seus arquivos `.md` em `leis/`. Subpastas são reconhecidas. O acervo pode combinar esses documentos com o corpus curado do VadeMecum MD. Também é possível importar Markdown pelo botão de importação ou arrastando arquivos para a estante — os arquivos ficam salvos apenas neste navegador.
+O acervo publicado vem do corpus curado deste repositório. Para acrescentar documentos pessoais, importe Markdown pelo botão de importação ou arraste arquivos para a estante. Esses arquivos ficam salvos apenas neste navegador e não são incorporados ao corpus oficial.
 
 Cada arquivo é um documento. Títulos de primeiro e segundo nível separam capítulos. Os demais títulos aparecem no sumário. Metadados opcionais no início do arquivo:
 
@@ -68,7 +70,7 @@ A estante organiza documentos por estado de leitura, etiquetas e pastas, com ord
 - `src/style.css` e `src/library.css`: interface do leitor e da estante.
 - `scripts/build.mjs`: conversão de Markdown, sanitização e geração do catálogo.
 - `tests/`: testes do compilador e das funções da biblioteca.
-- `leis/`: seus documentos.
+- `src/preview-data.js`: fixtures isoladas para demonstrações da homepage.
 
 ## Limitações conhecidas
 
@@ -78,4 +80,4 @@ A estante organiza documentos por estado de leitura, etiquetas e pastas, com ord
 
 ## Dependências
 
-Markdown-it, sanitize-html e gray-matter são usados para processar Markdown. Seus termos de licença permanecem com os pacotes. O código do projeto não recebe uma licença de redistribuição automática; a escolha de licença fica para o proprietário.
+Markdown-it, sanitize-html e gray-matter são usados para processar Markdown. Seus termos de licença permanecem com os pacotes. O código autoral segue a [licença MIT do repositório](../LICENSE); o escopo dos textos normativos e de materiais de terceiros está descrito em [licenças e materiais](../LICENSE.md).
