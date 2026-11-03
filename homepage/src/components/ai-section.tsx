@@ -222,7 +222,8 @@ export function AISection() {
   const [auto, setAuto] = useState(true);
   const [audience, setAudience] = useState<'humanos' | 'agentes'>('humanos');
   const demoRef = useRef<HTMLDivElement>(null);
-  const started = useInView(demoRef, { margin: '-120px', once: true });
+  // Warm the real library/reader preview before the section reaches the viewport.
+  const started = useInView(demoRef, { margin: '600px', once: true });
   const demoInView = useInView(demoRef, { margin: '-120px' });
   const [pageVisible, setPageVisible] = useState(true);
 

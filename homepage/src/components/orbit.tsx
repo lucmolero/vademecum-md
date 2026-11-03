@@ -90,7 +90,7 @@ function useStageScale() {
   return scale;
 }
 
-function Card({ title, Vignette, active = true, loadDelayMs = 0 }: { title: string; Vignette: ComponentType<{ active?: boolean; loadDelayMs?: number }>; active?: boolean; loadDelayMs?: number }) {
+function Card({ title, Vignette, active = true }: { title: string; Vignette: ComponentType<{ active?: boolean }>; active?: boolean }) {
   return (
     <div
       data-slot="orbit-card"
@@ -101,7 +101,7 @@ function Card({ title, Vignette, active = true, loadDelayMs = 0 }: { title: stri
           {title}
         </span>
         <div className="flex flex-1 items-center justify-center p-4 pt-7">
-          <Vignette active={active} loadDelayMs={loadDelayMs} />
+          <Vignette active={active} />
         </div>
       </div>
     </div>
@@ -212,7 +212,7 @@ function OrbitCard({
       }}
       inert
     >
-      <Card title={title} Vignette={Vignette} active={stageVisible && previewEnabled} loadDelayMs={index * 150} />
+      <Card title={title} Vignette={Vignette} active={stageVisible && previewEnabled} />
     </div>
   );
 }
@@ -382,7 +382,7 @@ function StaticGrid() {
               }}
               style={{ height: CARD.height + 20 }}
             >
-              <Card title={title} Vignette={Vignette} loadDelayMs={index * 150} />
+              <Card title={title} Vignette={Vignette} />
             </motion.div>
           ))}
         </div>
@@ -424,6 +424,7 @@ function MobileOrbitCard({
         rotateY: -Math.cos(angle) * 18 * (1 - k),
         z: k > .5 ? 30 - Math.round(Math.abs(delta)) : depth > .5 ? 20 : 5,
         interactive: k > .92 && Math.abs(delta) < .5,
+        preload: Math.abs(delta) <= 1,
       };
     },
   );
@@ -431,7 +432,7 @@ function MobileOrbitCard({
   const ref = useRef<HTMLDivElement>(null);
   const [previewEnabled, setPreviewEnabled] = useState(false);
   const previewEnabledRef = useRef(false);
-  const apply = useCallback((p: Placement & { interactive: boolean }) => {
+  const apply = useCallback((p: Placement & { interactive: boolean; preload: boolean }) => {
     const element = ref.current;
     if (!element) return;
     element.style.transform = `perspective(900px) translate(${round(p.x, 1)}px, ${round(p.y, 1)}px) scale(${round(p.scale, 3)}) rotateY(${round(p.rotateY, 2)}deg)`;
@@ -439,7 +440,7 @@ function MobileOrbitCard({
     element.style.pointerEvents = p.interactive ? 'auto' : 'none';
     element.inert = !p.interactive;
     element.style.zIndex = String(p.z);
-    const enablePreview = stageVisible && p.interactive;
+    const enablePreview = stageVisible && p.preload;
     if (previewEnabledRef.current !== enablePreview) {
       previewEnabledRef.current = enablePreview;
       setPreviewEnabled(enablePreview);
