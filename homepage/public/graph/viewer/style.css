@@ -125,6 +125,9 @@ main { position: relative; height: calc(100dvh - 76px); min-height: 420px; backg
   visibility: visible;
   transition: opacity .72s cubic-bezier(.22,1,.36,1), visibility 0s linear .72s;
 }
+
+/* The homepage owns the one full-screen intro; never stack the graph's loader. */
+html.home-hero-embed #welcome-sequence { display: none !important; }
 #welcome-sequence::before {
   content: "";
   position: absolute;

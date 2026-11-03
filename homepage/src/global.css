@@ -237,7 +237,7 @@
   animation: graph-arrow-drift 2.8s cubic-bezier(.45, 0, .25, 1) infinite;
 }
 
-.graph-continue-link:hover { color: #a6e6dc; }
+.graph-continue-link:hover { color: rgb(214 219 224 / .96); }
 .graph-continue-link:hover svg { animation-play-state: paused; transform: translateY(2px); }
 .graph-continue-link:focus-visible {
   border-radius: 6px;

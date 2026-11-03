@@ -4,7 +4,7 @@ import { ease, useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import { AnimatePresence, motion } from 'motion/react';
 import { cn } from 'cn';
 
-import { createContext, use, useEffect, useState, type ReactNode } from 'react';
+import { createContext, use, useCallback, useEffect, useState, type ReactNode } from 'react';
 
 
 
@@ -24,7 +24,12 @@ export const LOGO_GLIDE = {
   mass: 0.9,
 } as const;
 
-const IntroContext = createContext({ playing: false, done: true });
+const IntroContext = createContext({
+  playing: false,
+  done: true,
+  preloadPreviews: false,
+  markGraphReady: () => {},
+});
 
 function shouldPlayIntro() {
   if (typeof window === 'undefined' || window.location.hash) return false;
@@ -43,6 +48,14 @@ export function useIntroPlaying() {
   return use(IntroContext).playing;
 }
 
+export function useMarkGraphReady() {
+  return use(IntroContext).markGraphReady;
+}
+
+export function usePreloadOrbitPreviews() {
+  return use(IntroContext).preloadPreviews;
+}
+
 // On Vue pages the mark takes Vue's green.
 const VUE_LOGO = ['text-[#40B883]'];
 
@@ -59,7 +72,7 @@ export function FullLogo({
     <svg viewBox="0 0 825 825" className={cn('h-[1em] w-[1em] shrink-0 transition-colors duration-300', vue && 'text-[#40B883]')}>
       <motion.path d={MARK} fill="currentColor" stroke="currentColor" strokeWidth="10" initial={draw?{pathLength:0,fillOpacity:0}:false} animate={{pathLength:1,fillOpacity:1}} transition={{pathLength:{duration:DRAW,ease:'easeInOut'},fillOpacity:{duration:FILL,delay:DRAW-.15,ease:ease.out}}}/>
     </svg>
-    <motion.span className="font-semibold tracking-tight" initial={draw?{opacity:0,filter:'blur(8px)',y:8}:false} animate={{opacity:1,filter:'blur(0px)',y:0}} transition={{duration:.55,delay:.65,ease:ease.out}}>vademecum</motion.span>
+    <motion.span className="font-semibold tracking-tight" initial={draw?{opacity:0,filter:'blur(8px)',y:8}:false} animate={{opacity:1,filter:'blur(0px)',y:0}} transition={{duration:.55,delay:.65,ease:ease.out}}>vademecum md</motion.span>
   </div>;
 }
 
@@ -68,6 +81,7 @@ export function IntroProvider({ children }: { children: ReactNode }) {
   const vue = false;
   const [playing, setPlaying] = useState(shouldPlayIntro);
   const [done, setDone] = useState(() => !shouldPlayIntro());
+  const markGraphReady = useCallback(() => {}, []);
 
   useEffect(() => {
     if (!done || !window.location.hash) return;
@@ -101,7 +115,12 @@ export function IntroProvider({ children }: { children: ReactNode }) {
   const intro = playing && !reduce;
 
   return (
-    <IntroContext value={{ playing: intro, done: done || Boolean(reduce) }}>
+    <IntroContext value={{
+      playing: intro,
+      done: done || Boolean(reduce),
+      preloadPreviews: false,
+      markGraphReady,
+    }}>
       <AnimatePresence
         onExitComplete={() => {
           if (reduce) return;

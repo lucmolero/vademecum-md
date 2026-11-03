@@ -10,6 +10,12 @@ const motionHint = document.querySelector('#motion-hint');
 const record = document.querySelector('#record');
 const appMain = document.querySelector('main');
 const welcomeLayer = document.querySelector('#welcome-sequence');
+const homepageEmbed = new URLSearchParams(window.location.search).has('home-hero');
+if (homepageEmbed) {
+  welcomeLayer?.remove();
+  appMain?.removeAttribute('aria-busy');
+  if (appMain) appMain.inert = false;
+}
 const welcomeStartedAt = performance.now();
 let welcomeExitScheduled = false;
 function dismissWelcome({failed = false} = {}) {
@@ -61,11 +67,14 @@ function drawerIcon(name, className = 'drawer-icon') {
   return icon;
 }
 let graph3d, fullNodes = [], fullLinks = [], nodeById = new Map(), linkById = new Map(), incident = new Map(), neighborIndex = new Map(), searchIndex = null, searchPromise = null, firstFit = true, rotationReady = false, reheatFrame = 0, graphFitTimer = 0, drawerGeneration = 0, drawerFrame = 0, drawerCloseTimer = 0, visibleNodes = new Map(), selectedNodeId = null, relatedNodeIds = new Set();
-const homepageEmbed = new URLSearchParams(window.location.search).has('home-hero');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let graphPageVisible = !document.hidden;
 let graphViewportVisible = !homepageEmbed;
 const GRAPH_VISIBILITY_MESSAGE = 'vademecum-graph-visibility';
+function notifyHomepageGraphReady(error = false) {
+  if (!homepageEmbed) return;
+  window.parent.postMessage({type: 'vademecum-graph-ready', ready: true, error}, '*');
+}
 let previousMobileLayout = window.matchMedia('(max-width: 640px)').matches;
 // Keep identical geometry, antialiasing and pixel-ratio policy across viewport sizes.
 const graphPixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
@@ -201,6 +210,9 @@ function sizeCompactCard() {
 async function readGzipJson(path) {
   const response = await fetch(path);
   if (!response.ok) throw Error(`Falha ao carregar ${path} (${response.status})`);
+  // Some static servers transparently decode .gz assets before fetch exposes
+  // the body. In that case a second DecompressionStream fails on valid JSON.
+  if (response.headers.get('content-encoding')?.toLowerCase().includes('gzip')) return response.json();
   if (!('DecompressionStream' in window)) throw Error('Este navegador não oferece suporte à leitura gzip necessária ao grafo.');
   return await new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).json();
 }
@@ -239,6 +251,7 @@ function fitInitialGraph() {
   const applied = zoomGraphToFit(1100, 50, () => {
     rotationReady = true;
     syncGraphActivity();
+    notifyHomepageGraphReady();
     finishWelcomeWhenReady();
   });
   if (!applied) {
@@ -1234,6 +1247,7 @@ window.addEventListener('resize', () => {
   previousMobileLayout = mobileLayout;
 });
 readGzipJson('../data/explorer.json.gz?v=audit-1').then(initialize).catch(error => {
+  notifyHomepageGraphReady(true);
   dismissWelcome({failed: true});
   countBox.textContent = error.message;
   detailsPanel.hidden = false;
