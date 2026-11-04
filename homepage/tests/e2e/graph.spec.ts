@@ -7,11 +7,16 @@ test.describe('phone requesting desktop homepage', () => {
     screen: { width: 390, height: 844 },
     hasTouch: true,
     deviceScaleFactor: 3,
+    reducedMotion: 'no-preference',
   });
 
   test('skill deep link defers the graph and touch devices remain idle until interaction', async ({ page }) => {
-    await page.emulateMedia({ reducedMotion: 'no-preference' });
     const graphRequests: string[] = [];
+    let obsoleteModuleRequested = false;
+    await page.route('**/graph-core.js', route => {
+      obsoleteModuleRequested = true;
+      return route.fulfill({ contentType: 'text/javascript', body: 'export {}' });
+    });
     page.on('request', request => {
       if (request.isNavigationRequest() && request.url().includes('/graph/viewer/')) graphRequests.push(request.url());
     });
@@ -29,6 +34,9 @@ test.describe('phone requesting desktop homepage', () => {
       const app = await import(document.querySelector<HTMLScriptElement>('script[data-graph-app]')!.src);
       return app.getGraphDiagnostics().ready;
     }), { timeout: 30_000 }).toBe(true);
+    expect(await frame.locator('body').evaluate(() =>
+      matchMedia('(prefers-reduced-motion: reduce)').matches,
+    )).toBe(false);
     const activity = () => frame.locator('body').evaluate(async () => {
       const app = await import(document.querySelector<HTMLScriptElement>('script[data-graph-app]')!.src);
       return app.getGraphDiagnostics();
@@ -38,9 +46,11 @@ test.describe('phone requesting desktop homepage', () => {
     const before = (await activity()).frame;
     await page.waitForTimeout(200);
     expect((await activity()).frame).toBe(before);
-    await frame.getByRole('button', { name: 'Ativar rotação' }).click();
+    await expect(hero).toHaveCSS('transform', 'none');
+    await frame.getByRole('button', { name: 'Ativar rotação' }).tap();
     await expect.poll(async () => (await activity()).rotating).toBe(true);
     expect(graphRequests).toHaveLength(1);
+    expect(obsoleteModuleRequested).toBe(false);
   });
 });
 

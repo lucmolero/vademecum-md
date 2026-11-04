@@ -11,7 +11,7 @@ for (const width of [1440, 390]) {
       if (request.isNavigationRequest() && request.url().includes('preview=')) documents.push(request.url());
       expect(request.url()).not.toMatch(/\/(catalog|search-index)\.json/);
     });
-    await page.route('**/graph/viewer/index.html?home-hero=1', route => route.fulfill({ contentType: 'text/html', body: '<html></html>' }));
+    await page.route('**/graph/viewer/index.html?home-hero=1*', route => route.fulfill({ contentType: 'text/html', body: '<html></html>' }));
     await page.goto('/');
     const orbit = page.locator('#recursos');
     await orbit.waitFor({ state: 'attached' });
