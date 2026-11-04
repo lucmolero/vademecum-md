@@ -15,6 +15,7 @@ dependencies = [
 
 [project.optional-dependencies]
 docs = ["mkdocs-material>=9.5,<10"]
+media = ["numpy>=1.26,<3"]
 
 [project.scripts]
 vademecum = "vademecum_md.cli:main"

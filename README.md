@@ -4,7 +4,7 @@
 
 <h1 align="center">VadeMecum MD</h1>
 
-<p align="center"><strong>Legislação federal brasileira para leitura humana e consulta com evidência.</strong></p>
+<p align="center"><strong>Legislação federal, uma skill para agentes e o conhecimento normativo em relação — com fontes à vista.</strong></p>
 
 <p align="center">
   <a href="https://lucmolero.github.io/vademecum-md/">Página inicial</a> ·
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/media/launch/banner.png" alt="VadeMecum MD: normas em contexto, com biblioteca, leitor e grafo de citações" width="100%">
+  <img src="docs/media/launch/banner.png" alt="VadeMecum MD: skill para agentes, Biblioteca, Leitor e grafo do conhecimento normativo" width="100%">
 </p>
 
 Cada diploma publicado em Markdown tem identidade estável, metadados de
@@ -28,22 +28,23 @@ curadoria, data de corte, fonte indicada e informações de proveniência.
 O VadeMecum MD reúne texto, leitura e relações normativas em um mesmo acervo.
 
 - **Leitura:** busca no texto integral, navegação por dispositivos, marcadores e anotações.
-- **Relações:** grafo interativo de citações entre normas, com busca e exploração dos nós.
-- **Integração:** Markdown, manifestos e uma skill de consulta para trabalhar com a mesma release.
+- **Conhecimento em relação:** grafo interativo que representa citações normativas como uma rede navegável, com busca, nós exploráveis e acesso ao Leitor.
+- **Skill para agentes:** instruções de consulta que orientam a recuperação do diploma, a conferência do dispositivo e a resposta com referência e data de corte.
+- **Acervo versionado:** Markdown, manifestos e interfaces consultam a mesma release; cada resposta demonstrativa mantém a fonte indicada e os limites do corte visíveis.
 
-A tela completa do grafo está disponível em [`/graph/`](https://lucmolero.github.io/vademecum-md/graph/); ela também pode ser aberta pelo menu da homepage e pelos links do projeto na Biblioteca.
+A tela completa do grafo está disponível em [`/graph/`](https://lucmolero.github.io/vademecum-md/graph/). Ela representa as relações de citação entre normas e pode ser aberta pelo menu da homepage ou pelos links da Biblioteca.
 
 Concebido e mantido por [Luciano Molero](https://github.com/lucmolero).
 O projeto é estático: os dados pessoais de leitura permanecem no navegador.
 
 ## Demonstrações e telas
 
-Os vídeos registram o produto em uso, com mouse, cliques, busca, arraste e
-pausas para acompanhar cada etapa. O percurso do grafo termina com a abertura da
-norma no Leitor; a demonstração da skill percorre os quatro exemplos da homepage.
+O filme de lançamento (1080p, 1:48) reúne a consulta demonstrativa da skill, a busca na Biblioteca, a conferência de fonte no Leitor e o grafo como representação navegável do conhecimento normativo. As cenas de abertura e transição usam animações vetoriais em código; os clipes mostram a interface real, com mouse, cliques, arraste e pausas para acompanhar cada etapa. A trilha e os sinais sonoros foram sintetizados para este filme. A conversa da homepage é demonstrativa; ela não representa uma resposta ao vivo de um modelo de IA.
 
 - [Assistir às demonstrações](https://lucmolero.github.io/vademecum-md/demos/)
-- [Grafo: busca, arraste, cartão e Leitor](homepage/public/demos/media/grafo-em-uso.webm)
+- [Filme completo — skill, Biblioteca, Leitor e grafo do conhecimento](homepage/public/demos/media/vademecum-tour.mp4)
+- [Biblioteca e Leitor: localizar a Lei nº 14.133/2021, abrir o art. 5º e conferir a procedência](homepage/public/demos/media/biblioteca-e-leitor.webm)
+- [Grafo: busca, arraste, cartão e abertura do Leitor](homepage/public/demos/media/grafo-em-uso.webm)
 - [Skill: princípios, transparência, data de corte e referência](homepage/public/demos/media/consultas-para-agentes.webm)
 
 Capturas em alta resolução das telas reais. Selecione uma imagem para abri-la
@@ -51,10 +52,10 @@ em tamanho integral.
 
 <p align="center">
   <a href="docs/media/launch/homepage-desktop.png"><img src="docs/media/launch/homepage-desktop.png" alt="Homepage VadeMecum MD em desktop" width="48%"></a>
-  <a href="docs/media/launch/simulacao-agentes.png"><img src="docs/media/launch/simulacao-agentes.png" alt="Simulação da skill para agentes com resposta e fonte" width="48%"></a>
+  <a href="docs/media/launch/skill-chat.png"><img src="docs/media/launch/skill-chat.png" alt="Componente real da homepage renderizado com a demonstração da skill para agentes e resposta com fonte" width="48%"></a>
 </p>
 
-<p align="center"><sub>Homepage · Resposta da skill com fonte</sub></p>
+<p align="center"><sub>Homepage · componente da skill renderizado pela interface real</sub></p>
 
 <p align="center">
   <a href="docs/media/launch/biblioteca-desktop.png"><img src="docs/media/launch/biblioteca-desktop.png" alt="Biblioteca do VadeMecum MD em desktop" width="32%"></a>

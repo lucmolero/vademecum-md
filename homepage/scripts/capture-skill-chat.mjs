@@ -1,0 +1,12 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch({headless:true});
+const context=await browser.newContext({viewport:{width:1600,height:1000},deviceScaleFactor:2,reducedMotion:'no-preference'});
+const page=await context.newPage();
+await page.goto('http://127.0.0.1:8787/#assistente',{waitUntil:'networkidle'});
+await page.locator('[data-slot="home-ai"]').scrollIntoViewIfNeeded();
+await page.getByRole('tablist',{name:/Demonstrações para humanos/}).getByRole('tab',{name:'Para agentes'}).click();
+await page.locator('[data-slot="ai-demo"]').scrollIntoViewIfNeeded();
+await page.getByText('RESPOSTA COM FONTE',{exact:false}).waitFor({state:'visible',timeout:20000});
+await page.waitForTimeout(1000);
+await page.locator('[data-slot="ai-demo"]').screenshot({path:'docs/media/launch/skill-chat.png',animations:'disabled'});
+await browser.close();
