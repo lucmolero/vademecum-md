@@ -1,7 +1,24 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createGraphIndex, fitCameraToNodes, prepareSearch, searchNorms, renderPixelRatio } from '../public/graph/viewer/graph-core.js';
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { gunzipSync } from 'node:zlib';
+import { applyInitialLayout, createGraphIndex, fitCameraToNodes, prepareSearch, searchNorms, renderPixelRatio } from '../public/graph/viewer/graph-core.js';
 import { createRenderScheduler } from '../public/graph/viewer/render-scheduler.js';
+
+test('packaged initial layout matches the graph snapshot and rejects incomplete caches atomically', () => {
+  const compressed = readFileSync(new URL('../public/graph/data/explorer.json.gz', import.meta.url));
+  const { nodes } = JSON.parse(gunzipSync(compressed));
+  const layout = JSON.parse(readFileSync(new URL('../public/graph/viewer/initial-layout.json', import.meta.url)));
+  assert.equal(layout.sourceSha256, createHash('sha256').update(compressed).digest('hex'));
+  assert.equal(applyInitialLayout(nodes, layout), true);
+  assert.deepEqual(nodes.map(node => [node.id, node.x, node.y, node.z]), layout.nodes);
+  for (const rows of [layout.nodes.slice(1), [null, ...layout.nodes.slice(1)], [['missing', 1, 2, 3], ...layout.nodes.slice(1)]]) {
+    const before = structuredClone(nodes);
+    assert.equal(applyInitialLayout(nodes, { ...layout, nodes: rows }), false);
+    assert.deepEqual(nodes, before);
+  }
+});
 
 test('HD pixel budget preserves phone density without allocating an unbounded desktop buffer', () => {
   assert.equal(renderPixelRatio(390, 790, 3), 3);

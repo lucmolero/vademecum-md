@@ -1,6 +1,49 @@
 import { expect, test, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
+test.describe('phone requesting desktop homepage', () => {
+  test.use({
+    viewport: { width: 980, height: 900 },
+    screen: { width: 390, height: 844 },
+    hasTouch: true,
+    deviceScaleFactor: 3,
+  });
+
+  test('skill deep link defers the graph and touch devices remain idle until interaction', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'no-preference' });
+    const graphRequests: string[] = [];
+    page.on('request', request => {
+      if (request.isNavigationRequest() && request.url().includes('/graph/viewer/')) graphRequests.push(request.url());
+    });
+    await page.goto('/#skill');
+    await expect(page.locator('#skill')).toBeInViewport({ ratio: .5 });
+    const hero = page.locator('.graph-hero-frame');
+    await expect(hero).not.toHaveAttribute('src');
+    await page.getByRole('button', { name: 'Ativar tema escuro', exact: true }).click();
+    await expect(page.locator('html')).toHaveClass(/dark/);
+    expect(graphRequests).toEqual([]);
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await expect(hero).toHaveAttribute('src', /graph\/viewer/);
+    const frame = page.frameLocator('.graph-hero-frame');
+    await expect.poll(() => frame.locator('body').evaluate(async () => {
+      const app = await import(document.querySelector<HTMLScriptElement>('script[data-graph-app]')!.src);
+      return app.getGraphDiagnostics().ready;
+    }), { timeout: 30_000 }).toBe(true);
+    const activity = () => frame.locator('body').evaluate(async () => {
+      const app = await import(document.querySelector<HTMLScriptElement>('script[data-graph-app]')!.src);
+      return app.getGraphDiagnostics();
+    });
+    await expect.poll(async () => (await activity()).rendering).toBe(false);
+    expect(await activity()).toMatchObject({ nodes: 1729, links: 1695, arrowHeads: 1695, rotating: false });
+    const before = (await activity()).frame;
+    await page.waitForTimeout(200);
+    expect((await activity()).frame).toBe(before);
+    await frame.getByRole('button', { name: 'Ativar rotação' }).click();
+    await expect.poll(async () => (await activity()).rotating).toBe(true);
+    expect(graphRequests).toHaveLength(1);
+  });
+});
+
 async function diagnostics(page: Page) {
   return page.evaluate(async () => {
     const script = document.querySelector<HTMLScriptElement>('script[data-graph-app]')!;

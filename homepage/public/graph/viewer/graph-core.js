@@ -10,6 +10,23 @@ export const RENDER_POLICY = Object.freeze({
 export const normalizeText = value => String(value ?? '').normalize('NFD').replace(/\p{M}/gu, '').toLocaleLowerCase('pt-BR');
 export const endpointId = value => value && typeof value === 'object' ? value.id : value;
 
+export function applyInitialLayout(nodes, layout) {
+  if (layout?.schema !== 'vademecum-graph-layout/v1'
+      || layout.warmupTicks !== RENDER_POLICY.initialLayoutTicks
+      || !Array.isArray(layout.nodes) || layout.nodes.length !== nodes.length
+      || layout.nodes.some(row => !Array.isArray(row) || row.length !== 4)) return false;
+  const positions = new Map(layout.nodes.map(row => [row[0], row.slice(1)]));
+  if (positions.size !== nodes.length || nodes.some(node => {
+    const position = positions.get(node.id);
+    return position?.length !== 3 || !position.every(Number.isFinite);
+  })) return false;
+  for (const node of nodes) {
+    const [x, y, z] = positions.get(node.id);
+    Object.assign(node, { x, y, z });
+  }
+  return true;
+}
+
 export function renderPixelRatio(width, height, density = 1) {
   // Native phone density up to 3×; cap the drawing buffer at 4K on large screens.
   return Math.max(1, Math.min(density || 1, RENDER_POLICY.maxPixelRatio, Math.sqrt(RENDER_POLICY.maxBufferPixels / Math.max(1, width * height))));
