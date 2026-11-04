@@ -81,12 +81,14 @@ class WorkspaceTest(unittest.TestCase):
 
     def test_trusted_pull_request_policy_includes_only_repository_update_bot(self) -> None:
         policy = (ROOT / ".github/workflows/pr-policy.yml").read_text(encoding="utf-8")
-        condition = next(line for line in policy.splitlines() if 'if [[ "$author"' in line)
+        condition = next(line for line in policy.splitlines() if 'if [[ "$author" != "lucmolero"' in line)
         self.assertIn('"lucmolero"', condition)
         self.assertIn('"dependabot[bot]"', condition)
         self.assertIn('"app/dependabot"', condition)
         self.assertIn('"github-actions[bot]"', condition)
         self.assertNotIn('"*"', condition)
+        self.assertIn('.isCrossRepository', policy)
+        self.assertIn('"$(jq -r \'.headRefName\' <<< "$pr_json")" != automation/update-*', policy)
 
     def test_autonomous_update_workflow_records_exact_fidelity_before_pr_creation(self) -> None:
         workflow = (ROOT / ".github/workflows/prepare-update-pr.yml").read_text(encoding="utf-8")
@@ -119,7 +121,7 @@ class WorkspaceTest(unittest.TestCase):
         citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
         package_builder = (ROOT / "tools/release/build_release.py").read_text(encoding="utf-8")
         package_version = next(line.split(":", 1)[1].strip() for line in citation.splitlines() if line.startswith("version:"))
-        self.assertEqual({project_version, release_version, consumer_version, package_version}, {"1.1.3"})
+        self.assertEqual({release_version, consumer_version, package_version}, {project_version})
         self.assertTrue((ROOT / "LICENSE").is_file())
         self.assertIn('Path("LICENSE")', package_builder)
 

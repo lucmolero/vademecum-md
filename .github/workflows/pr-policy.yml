@@ -44,11 +44,19 @@ jobs:
           fi
 
           pr_json=$(gh pr view "$PR_NUMBER" --repo "$GH_REPOSITORY" \
-            --json state,isDraft,baseRefName,headRefOid,author,mergeStateStatus)
+            --json state,isDraft,baseRefName,headRefName,headRefOid,author,mergeStateStatus,isCrossRepository)
           state=$(jq -r '.state' <<< "$pr_json")
           author=$(jq -r '.author.login' <<< "$pr_json")
 
           if [[ "$state" != "OPEN" ]]; then
+            exit 0
+          fi
+
+          # Privileged merges accept only branches from this repository.
+          if [[ "$(jq -r '.isCrossRepository' <<< "$pr_json")" == "true" ]]; then
+            exit 0
+          fi
+          if [[ "$author" == "github-actions[bot]" && "$(jq -r '.headRefName' <<< "$pr_json")" != automation/update-* ]]; then
             exit 0
           fi
 

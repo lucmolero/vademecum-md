@@ -1,6 +1,6 @@
 {
   "schema": "completeness/v1",
-  "generated_at": "2026-10-22",
+  "generated_at": "2026-11-04",
   "corpus_count": 375,
   "checks": {
     "text_integral": 375,

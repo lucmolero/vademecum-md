@@ -8,6 +8,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: public-release
+  cancel-in-progress: false
+
 jobs:
   release-gates:
     runs-on: ubuntu-latest

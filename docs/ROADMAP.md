@@ -1,8 +1,8 @@
 # Roadmap de evolução
 
-## Estado público — v1.1.3
+## Estado público — v1.2.0
 
-A release v1.1.3 é a referência pública do produto e do pacote de consulta. O
+A release v1.2.0 integra homepage, Biblioteca, Leitor, Grafo e pacote de consulta. O
 corpus mantém o corte jurídico de 2026-10-21; o monitor de 2026-10-28 confirmou
 375 documentos dentro das respectivas políticas de frescor, sem fonte ausente.
 
@@ -30,14 +30,14 @@ norma.
 - Builds estritos, validação HTML e suíte automatizada executados nos fluxos de
   qualidade, completude e release.
 
-## Próximo ciclo — v1.2
+## Próximo ciclo — pós-lançamento
 
 Priorizar melhorias que reforcem a consulta e a confiança sem aumentar o escopo
 do corpus:
 
 1. executar verificação de teclado, reflow e leitor de tela sobre as rotas
    principais e uma lei extensa;
-2. medir desempenho em condições reais e manter o orçamento de bytes das páginas;
+2. medir desempenho em condições reais e definir um orçamento de bytes para os módulos atuais;
 3. ensaiar recuperação de uma publicação com falha e confirmar o rollback dos
    artefatos estáticos;
 4. manter monitoramento diário, análise semanal de completude e coleta oficial
@@ -48,6 +48,6 @@ do corpus:
 ## Fora do escopo publicado
 
 Regulamentos, tratados, jurisprudência, RAG, chunks e embeddings não integram a
-release v1.1.3. Uma ampliação futura requer fontes allowlisted, contratos
+release v1.2.0. Uma ampliação futura requer fontes allowlisted, contratos
 próprios, evidência, testes e critérios de publicação. A cobertura atual não é
 exaustiva e não substitui fonte oficial nem orientação jurídica.

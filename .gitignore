@@ -24,6 +24,8 @@ reports/
 tmp/
 *.log
 node_modules/
+homepage/test-results/
+homepage/playwright-report/
 biblioteca/leis/
 manifests/markdown-inventory.jsonl
 bases/raw/*
