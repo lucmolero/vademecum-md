@@ -32,7 +32,7 @@ export function createSearchController({ input, list, status, load, select }) {
       const title = document.createElement('span'), meta = document.createElement('small');
       title.textContent = row[1]; meta.textContent = `${row[2] || 'Norma'} · ${row[4] ? 'Com relações no recorte' : 'Sem citação direta neste recorte'}`;
       option.append(title, meta);
-      option.addEventListener('pointerdown', event => event.preventDefault());
+      option.addEventListener('mousedown', event => event.preventDefault());
       option.addEventListener('click', () => choose(index)); list.append(option);
     }
     if (!rows.length) {
