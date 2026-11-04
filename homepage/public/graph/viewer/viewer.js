@@ -1,6 +1,6 @@
 import { applyInitialLayout, createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js?v=graph-startup-3';
 import { createRenderScheduler } from './render-scheduler.js?v=graph-startup-3';
-import { createSearchController } from './search-controller.js?v=graph-startup-3';
+import { createSearchController } from './search-controller.js?v=graph-search-4';
 
 const root = document.querySelector('#network');
 const countBox = document.querySelector('#counts');
@@ -136,7 +136,7 @@ export function getNodePosition(id) {
   const viewport = root.getBoundingClientRect();
   return { x: node.x, y: node.y, z: node.z, screenX: point.x + viewport.left, screenY: point.y + viewport.top };
 }
-let rotationEnabled = !reducedMotion.matches && !window.matchMedia('(pointer: coarse)').matches;
+let rotationEnabled = !reducedMotion.matches;
 let activeTheme = document.body.dataset.theme || 'dark';
 function syncGraphActivity() {
   if (!graph3d || !renderScheduler) return;

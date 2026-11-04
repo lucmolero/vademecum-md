@@ -10,7 +10,7 @@ test.describe('phone requesting desktop homepage', () => {
     reducedMotion: 'no-preference',
   });
 
-  test('skill deep link defers the graph and touch devices remain idle until interaction', async ({ page }) => {
+  test('skill deep link defers the graph and touch devices start rotating when visible', async ({ page }) => {
     const graphRequests: string[] = [];
     let obsoleteModuleRequested = false;
     await page.route('**/graph-core.js', route => {
@@ -41,14 +41,14 @@ test.describe('phone requesting desktop homepage', () => {
       const app = await import(document.querySelector<HTMLScriptElement>('script[data-graph-app]')!.src);
       return app.getGraphDiagnostics();
     });
+    await expect.poll(async () => (await activity()).rotating).toBe(true);
+    expect(await activity()).toMatchObject({ nodes: 1729, links: 1695, arrowHeads: 1695 });
+    await expect(hero).toHaveCSS('transform', 'none');
+    await frame.getByRole('button', { name: 'Pausar rotação' }).tap();
     await expect.poll(async () => (await activity()).rendering).toBe(false);
-    expect(await activity()).toMatchObject({ nodes: 1729, links: 1695, arrowHeads: 1695, rotating: false });
     const before = (await activity()).frame;
     await page.waitForTimeout(200);
     expect((await activity()).frame).toBe(before);
-    await expect(hero).toHaveCSS('transform', 'none');
-    await frame.getByRole('button', { name: 'Ativar rotação' }).tap();
-    await expect.poll(async () => (await activity()).rotating).toBe(true);
     expect(graphRequests).toHaveLength(1);
     expect(obsoleteModuleRequested).toBe(false);
   });
