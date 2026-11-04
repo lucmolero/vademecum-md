@@ -500,6 +500,18 @@ class WorkspaceTest(unittest.TestCase):
         self.assertTrue(all(item["current_sha256"] is None for item in plan))
         self.assertNotIn("EXP-004", {item["matrix_id"] for item in plan})
 
+    def test_unknown_collection_id_fails_before_network_or_empty_success(self) -> None:
+        with TemporaryDirectory() as directory:
+            report = Path(directory) / "report.json"
+            result = subprocess.run([
+                sys.executable, "tools/acquire/collect_legislation.py",
+                "--mode", "proposal", "--matrix-id", "DOES-NOT-EXIST",
+                "--report", str(report),
+            ], cwd=ROOT, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 2)
+            self.assertIn("unknown matrix IDs", result.stderr)
+            self.assertFalse(report.exists())
+
     def test_freshness_policy_is_explicit(self) -> None:
         self.assertEqual(stale_after_days("P0"), 100)
         self.assertEqual(stale_after_days("P1"), 100)
