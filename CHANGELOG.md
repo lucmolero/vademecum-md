@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0 — lançamento integrado — 2026-11-04
+
+- Homepage, Biblioteca, Leitor, Grafo e kit de consulta publicados pelo mesmo fluxo Pages.
+- Jornadas de navegador em Chromium e WebKit, verificações de acessibilidade e alinhamento de corpus e release.
+- Dependências de ícones e setup-node atualizadas; validação de SHA das Actions corrigida.
+- Merge privilegiado limitado a branches do próprio repositório e namespace de propostas do bot.
+- Publicação de releases serializada, com artefatos imutáveis e recuperação documentada.
+- Os 375 textos canônicos e o corte jurídico de 2026-10-21 permanecem preservados.
+
 ## 1.1.3 — leitura compacta e prontidão operacional
 
 - Leitor e home refinados para consulta direta, com tipografia compacta e identidade e-ink.

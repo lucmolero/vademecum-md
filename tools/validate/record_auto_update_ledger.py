@@ -5,10 +5,12 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
-from validate_release import ROOT, official_url, registry_hosts
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from validate_release import ROOT, official_url, registry_hosts  # noqa: E402
 
 
 LEDGER = ROOT / "manifests/automatic-update-ledger.json"

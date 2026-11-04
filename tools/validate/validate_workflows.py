@@ -21,7 +21,7 @@ REQUIRED = {
     "sync-private-history.yml",
     "pr-policy.yml",
 }
-ACTION_REFERENCE = re.compile(r"^\s*uses:\s*([^#\s]+)", re.MULTILINE)
+ACTION_REFERENCE = re.compile(r"^\s*(?:-\s+)?uses:\s*([^#\s]+)", re.MULTILINE)
 
 
 def main() -> int:

@@ -251,8 +251,12 @@ def is_unusable_official_response(text: str, content_type: str) -> str | None:
     if "html" not in content_type.lower() and "<html" not in text[:1000].lower():
         return None
     lowered = text.lower()
-    if "<app-root" in lowered and not re.search(r"\b(?:art\.?\s*\d+|lei\s+n[ºo°]?\.?\s*\d)", text, re.I):
-        return "application_shell_without_legal_body"
+    soup = BeautifulSoup(text, "html.parser")
+    for tag in soup.find_all(("script", "style", "noscript")):
+        tag.decompose()
+    visible_text = soup.get_text(" ", strip=True)
+    if not re.search(r"\b(?:art\.?\s*\d+|artigo\s+\d+|lei\s+n[ºo°]?\.?\s*\d)", visible_text, re.I):
+        return "application_shell_without_legal_body" if "<app-root" in lowered else "html_without_legal_body"
     return None
 
 
@@ -498,7 +502,12 @@ def main() -> int:
     plan = select_plan(all_plan, args.priority)
     if args.matrix_id:
         selected_ids = set(args.matrix_id)
+        unknown_ids = selected_ids - {item["matrix_id"] for item in all_plan}
+        if unknown_ids:
+            parser.error("unknown matrix IDs: " + ", ".join(sorted(unknown_ids)))
         plan = [item for item in plan if item["matrix_id"] in selected_ids]
+        if not plan:
+            parser.error("selected matrix IDs do not match the priority filter")
     if args.limit:
         plan = plan[:args.limit]
     report: dict[str, object] = {"schema": "legislation-collection-report/v1", "generated_at": datetime.now(timezone.utc).isoformat(), "mode": mode, "command": " ".join(sys.argv), "python": sys.version.split()[0], "as_of": args.as_of.isoformat(), "input_path": args.input.relative_to(ROOT).as_posix() if args.input.is_relative_to(ROOT) else str(args.input), "matrix_count": len(all_plan), "planned_count": len(plan), "priority_filter": args.priority or ["P0", "P1", "P2"], "source_registry": REGISTRY.relative_to(ROOT).as_posix(), "source_registry_sha256": hashlib.sha256(REGISTRY.read_bytes()).hexdigest(), "plan": plan}

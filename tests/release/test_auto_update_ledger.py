@@ -1,5 +1,6 @@
 import hashlib
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -12,6 +13,15 @@ import validate_release  # noqa: E402
 
 
 class AutomaticUpdateLedgerTest(unittest.TestCase):
+    def test_ledger_cli_resolves_imports_without_test_runner_paths(self):
+        with tempfile.TemporaryDirectory() as directory:
+            result = subprocess.run([
+                sys.executable, str(ROOT / "tools/validate/record_auto_update_ledger.py"),
+                "--help",
+            ], cwd=directory, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertIn("--application", result.stdout)
+
     def test_ledger_requires_exact_official_source_and_current_body(self):
         body = "**Art. 1º** Texto oficial.\n"
         digest = hashlib.sha256("Art. 1º Texto oficial.".encode()).hexdigest()

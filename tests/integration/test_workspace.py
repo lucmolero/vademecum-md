@@ -81,12 +81,14 @@ class WorkspaceTest(unittest.TestCase):
 
     def test_trusted_pull_request_policy_includes_only_repository_update_bot(self) -> None:
         policy = (ROOT / ".github/workflows/pr-policy.yml").read_text(encoding="utf-8")
-        condition = next(line for line in policy.splitlines() if 'if [[ "$author"' in line)
+        condition = next(line for line in policy.splitlines() if 'if [[ "$author" != "lucmolero"' in line)
         self.assertIn('"lucmolero"', condition)
         self.assertIn('"dependabot[bot]"', condition)
         self.assertIn('"app/dependabot"', condition)
         self.assertIn('"github-actions[bot]"', condition)
         self.assertNotIn('"*"', condition)
+        self.assertIn('.isCrossRepository', policy)
+        self.assertIn('"$(jq -r \'.headRefName\' <<< "$pr_json")" != automation/update-*', policy)
 
     def test_autonomous_update_workflow_records_exact_fidelity_before_pr_creation(self) -> None:
         workflow = (ROOT / ".github/workflows/prepare-update-pr.yml").read_text(encoding="utf-8")
@@ -119,7 +121,7 @@ class WorkspaceTest(unittest.TestCase):
         citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
         package_builder = (ROOT / "tools/release/build_release.py").read_text(encoding="utf-8")
         package_version = next(line.split(":", 1)[1].strip() for line in citation.splitlines() if line.startswith("version:"))
-        self.assertEqual({project_version, release_version, consumer_version, package_version}, {"1.1.3"})
+        self.assertEqual({release_version, consumer_version, package_version}, {project_version})
         self.assertTrue((ROOT / "LICENSE").is_file())
         self.assertIn('Path("LICENSE")', package_builder)
 
@@ -370,6 +372,21 @@ class WorkspaceTest(unittest.TestCase):
             self.assertEqual(result["status"], "invalid_source")
             self.assertEqual(result["reason"], "application_shell_without_legal_body")
 
+    def test_http_200_error_page_is_not_accepted_as_a_legal_snapshot(self) -> None:
+        with patch("collect_legislation.urlopen") as opener:
+            response = opener.return_value.__enter__.return_value
+            response.geturl.return_value = "https://www.planalto.gov.br/example"
+            response.headers = {"Content-Type": "text/html; charset=utf-8"}
+            response.status = 200
+            response.read.return_value = (
+                b"<html><title>Request Rejected</title><body>Access denied. "
+                b"Support ID: 12345<script>const bait = 'Art. 1';</script></body></html>"
+            )
+            result = fetch_one("https://www.planalto.gov.br/example", load_registry())
+            self.assertEqual(result["status"], "invalid_source")
+            self.assertEqual(result["reason"], "html_without_legal_body")
+            self.assertNotIn("sha256_body", result)
+
     def test_normas_source_uses_current_public_compilation(self) -> None:
         registry = load_registry()
         metadata = MagicMock()
@@ -497,6 +514,18 @@ class WorkspaceTest(unittest.TestCase):
         self.assertTrue(all(item["status"] == "planned" for item in plan))
         self.assertTrue(all(item["current_sha256"] is None for item in plan))
         self.assertNotIn("EXP-004", {item["matrix_id"] for item in plan})
+
+    def test_unknown_collection_id_fails_before_network_or_empty_success(self) -> None:
+        with TemporaryDirectory() as directory:
+            report = Path(directory) / "report.json"
+            result = subprocess.run([
+                sys.executable, "tools/acquire/collect_legislation.py",
+                "--mode", "proposal", "--matrix-id", "DOES-NOT-EXIST",
+                "--report", str(report),
+            ], cwd=ROOT, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 2)
+            self.assertIn("unknown matrix IDs", result.stderr)
+            self.assertFalse(report.exists())
 
     def test_freshness_policy_is_explicit(self) -> None:
         self.assertEqual(stale_after_days("P0"), 100)

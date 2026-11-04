@@ -11,6 +11,7 @@ test.describe('phone requesting desktop homepage', () => {
   });
 
   test('skill deep link defers the graph and touch devices start rotating when visible', async ({ page }) => {
+    test.setTimeout(90_000);
     const graphRequests: string[] = [];
     let obsoleteModuleRequested = false;
     await page.route('**/graph-core.js', route => {
@@ -41,7 +42,8 @@ test.describe('phone requesting desktop homepage', () => {
       const app = await import(document.querySelector<HTMLScriptElement>('script[data-graph-app]')!.src);
       return app.getGraphDiagnostics();
     });
-    await expect.poll(async () => (await activity()).rotating).toBe(true);
+    // Software WebGL can occupy the CI main thread while the first frame compiles.
+    await expect.poll(async () => (await activity()).rotating, { timeout: 30_000 }).toBe(true);
     expect(await activity()).toMatchObject({ nodes: 1729, links: 1695, arrowHeads: 1695 });
     await expect(hero).toHaveCSS('transform', 'none');
     await frame.getByRole('button', { name: 'Pausar rotação' }).tap();

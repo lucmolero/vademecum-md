@@ -4,6 +4,10 @@ site_url: https://lucmolero.github.io/vademecum-md/
 repo_url: https://github.com/lucmolero/vademecum-md
 repo_name: lucmolero/vademecum-md
 docs_dir: site_docs
+exclude_docs: |
+  hooks.py
+  __pycache__/
+  **/*.pyc
 hooks:
   - site_docs/hooks.py
 validation:

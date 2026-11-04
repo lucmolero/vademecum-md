@@ -8,6 +8,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: public-release
+  cancel-in-progress: false
+
 jobs:
   release-gates:
     runs-on: ubuntu-latest
@@ -87,6 +91,7 @@ jobs:
             dist/vademecum-md-"${version}".zip \
             dist/sbom.cdx.json \
             dist/release-manifest.json \
+            dist/CHANGELOG.md \
             dist/SHA256SUMS.txt \
             --title "vademecum-md ${version}" \
             --notes-file dist/CHANGELOG.md \
