@@ -137,6 +137,7 @@ export function getNodePosition(id) {
   return { x: node.x, y: node.y, z: node.z, screenX: point.x + viewport.left, screenY: point.y + viewport.top };
 }
 let rotationEnabled = !reducedMotion.matches;
+let rotationUserOverride = false;
 let activeTheme = document.body.dataset.theme || 'dark';
 function syncGraphActivity() {
   if (!graph3d || !renderScheduler) return;
@@ -1025,7 +1026,10 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && !detailsPanel.hidden && !suggestions.classList.contains('open')) showPanorama();
 });
 themeToggle.addEventListener('click', () => setTheme(activeTheme === 'dark' ? 'light' : 'dark'));
-document.querySelector('#rotation-toggle').addEventListener('click', () => setRotation(!rotationEnabled));
+document.querySelector('#rotation-toggle').addEventListener('click', () => {
+  rotationUserOverride = true;
+  setRotation(!rotationEnabled);
+});
 document.querySelector('#reset-view').addEventListener('click', () => {
   showPanorama(); searchController.close(); search.value = '';
   document.body.classList.remove('graph-engaged');
@@ -1127,6 +1131,7 @@ root.addEventListener('wheel', markGraphInteraction, {passive: true});
 root.addEventListener('keydown', markGraphInteraction);
 reducedMotion.addEventListener?.('change', event => {
   if (event.matches) setRotation(false);
+  else if (!rotationUserOverride) setRotation(true);
 });
 let resizeFrame = 0;
 window.addEventListener('resize', () => {
