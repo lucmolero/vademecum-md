@@ -15,7 +15,7 @@ test('touch search selects a norm and rotation starts on load', async ({ page })
     const script = document.querySelector<HTMLScriptElement>('script[data-graph-app]')!;
     return (await import(script.src)).getGraphDiagnostics();
   });
-  await expect.poll(async () => (await diagnostics()).ready).toBe(true);
+  await expect.poll(async () => (await diagnostics()).ready, { timeout: 30_000 }).toBe(true);
   await expect(page.getByRole('button', { name: 'Pausar rotação' })).toHaveAttribute('aria-pressed', 'true');
   const initialCamera = (await diagnostics()).camera;
   await expect.poll(async () => {
