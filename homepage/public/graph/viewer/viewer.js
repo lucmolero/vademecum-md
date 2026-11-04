@@ -1,6 +1,6 @@
-import { applyInitialLayout, createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js?v=graph-startup-2';
-import { createRenderScheduler } from './render-scheduler.js?v=graph-startup-2';
-import { createSearchController } from './search-controller.js?v=graph-startup-2';
+import { applyInitialLayout, createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js?v=graph-startup-3';
+import { createRenderScheduler } from './render-scheduler.js?v=graph-startup-3';
+import { createSearchController } from './search-controller.js?v=graph-startup-3';
 
 const root = document.querySelector('#network');
 const countBox = document.querySelector('#counts');
@@ -15,28 +15,22 @@ const record = document.querySelector('#record');
 const appMain = document.querySelector('main');
 const welcomeLayer = document.querySelector('#welcome-sequence');
 const homepageEmbed = new URLSearchParams(window.location.search).has('home-hero');
-if (homepageEmbed) {
-  welcomeLayer?.remove();
-  appMain?.removeAttribute('aria-busy');
-  if (appMain) appMain.inert = false;
-}
+if (homepageEmbed) welcomeLayer?.remove();
+else if (appMain) { appMain.inert = true; appMain.setAttribute('aria-busy', 'true'); }
 const welcomeStartedAt = performance.now();
 let welcomeExitScheduled = false;
-function dismissWelcome({failed = false} = {}) {
+function dismissWelcome(immediate = false) {
   if (!welcomeLayer || welcomeExitScheduled) return;
   welcomeExitScheduled = true;
-  if (failed) {
-    welcomeLayer.querySelector('.welcome-title').textContent = 'O mapa não abriu.';
-    welcomeLayer.querySelector('.welcome-copy').textContent = 'Confira os detalhes de carregamento na tela.';
-  }
-  const minimumDuration = reducedMotion.matches || failed ? 0 : 1450;
-  const remaining = Math.max(0, minimumDuration - (performance.now() - welcomeStartedAt));
+  const minimumDuration = reducedMotion.matches ? 0 : 1050;
+  const remaining = immediate ? 0 : Math.max(0, minimumDuration - (performance.now() - welcomeStartedAt));
   window.setTimeout(() => {
     requestAnimationFrame(() => requestAnimationFrame(() => {
       welcomeLayer.classList.add('is-exiting');
-      appMain?.removeAttribute('aria-busy');
-      if (appMain) appMain.inert = false;
-      const removeLayer = () => welcomeLayer.remove();
+      const removeLayer = () => {
+        welcomeLayer.remove();
+        if (appMain) { appMain.inert = false; appMain.removeAttribute('aria-busy'); }
+      };
       welcomeLayer.addEventListener('transitionend', event => {
         if (event.propertyName === 'opacity') removeLayer();
       }, {once: true});
@@ -1146,7 +1140,7 @@ Promise.all([
 ]).then(([data, layout]) => initialize(data, layout)).catch(error => {
   showGraphStatus('Não foi possível abrir o mapa. Verifique a conexão e tente novamente.', true);
   notifyHomepageGraphReady(true);
-  dismissWelcome({failed: true});
+  dismissWelcome(true);
   countBox.textContent = error.message;
   detailsPanel.hidden = false;
   detailsPanel.setAttribute('aria-label', 'Erro de carregamento do grafo');

@@ -10,6 +10,7 @@ const links = [
   ['Skill', '#skill'],
   ['Recursos', '#recursos'],
   ['Assistente', '#assistente'],
+  ['Grafo', './graph/'],
   ['Biblioteca', './biblioteca/'],
 ] as const;
 

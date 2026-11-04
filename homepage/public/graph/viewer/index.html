@@ -8,18 +8,24 @@
   <link rel="icon" href="data:,">
   <script>if(new URLSearchParams(location.search).has('home-hero'))document.documentElement.classList.add('home-hero-embed')</script>
   <link rel="preload" href="fonts/outfit-regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="style.css?v=graph-refine-1">
+  <link rel="stylesheet" href="style.css?v=graph-welcome-1">
 </head>
 <body data-theme="dark">
   <header>
     <div class="identity">
-      <div class="brand" aria-label="VadeMecum MD"><span class="brand-mark">V</span><span>vademecum</span></div>
+      <a class="brand" href="../../"><span class="brand-mark">V</span><span>vademecum.md</span></a>
       <span class="identity-divider" aria-hidden="true"></span>
       <span class="page-name">Pesquisa · Grafo de citações</span>
     </div>
+    <nav class="project-links" aria-label="Links do projeto">
+      <a href="../../#skill">Skill</a>
+      <a href="../../biblioteca/">Biblioteca</a>
+      <a href="https://github.com/lucmolero/vademecum-md" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/luciano-molero/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
     <div id="counts" aria-live="polite">Carregando snapshot…</div>
   </header>
-  <main aria-busy="true" inert>
+  <main>
     <section class="stage" aria-label="Mapa tridimensional das citações">
       <div id="network" role="img" aria-label="Rede tridimensional: a seta aponta da norma que cita para a norma citada"></div>
       <div class="stage-heading"><div class="stage-intro"><span class="eyebrow">Rede normativa · somente citações</span><h1>Conhecimento<br>em relação.</h1><p>Explore as conexões entre normas brasileiras.</p></div>
@@ -50,13 +56,10 @@
   <div id="welcome-sequence" role="status" aria-live="polite" aria-label="Carregando o grafo de citações">
     <div class="welcome-content">
       <span class="welcome-mark" aria-hidden="true">V</span>
-      <span class="welcome-kicker">VADEMECUM MD · GRAFO DE CITAÇÕES</span>
       <h1 class="welcome-title">Bem-vindo.</h1>
-      <p class="welcome-copy">Preparando o mapa de relações jurídicas.</p>
-      <span class="welcome-status"><i aria-hidden="true"></i>Organizando a rede</span>
     </div>
   </div>
   <script defer src="vendor/3d-force-graph.min.js?v=1.80.0"></script>
-  <script type="module" data-graph-app src="viewer.js?v=graph-startup-2"></script>
+  <script type="module" data-graph-app src="viewer.js?v=graph-startup-3"></script>
 </body>
 </html>
