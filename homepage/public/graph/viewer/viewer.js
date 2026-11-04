@@ -1,6 +1,6 @@
-import { applyInitialLayout, createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js';
-import { createRenderScheduler } from './render-scheduler.js';
-import { createSearchController } from './search-controller.js';
+import { applyInitialLayout, createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js?v=graph-startup-2';
+import { createRenderScheduler } from './render-scheduler.js?v=graph-startup-2';
+import { createSearchController } from './search-controller.js?v=graph-startup-2';
 
 const root = document.querySelector('#network');
 const countBox = document.querySelector('#counts');

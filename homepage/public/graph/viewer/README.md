@@ -14,6 +14,8 @@ Após atualizar o snapshot ou os parâmetros da física, inicie o Vite e execute
 
 Em dispositivos com ponteiro de toque, a rotação começa pausada. O botão de rotação permite ativá-la. A homepage prepara o grafo quando ele entra na tela ao abrir por uma seção interna, como `#skill`.
 
+O endereço do iframe e os módulos do viewer usam a versão de URL `graph-startup-2`. Ao mudar o contrato entre esses módulos, atualize essa versão em conjunto para que navegadores com arquivos em cache recebam o pacote compatível.
+
 Quando a rotação está pausada ou o sistema solicita movimento reduzido, a renderização para após a simulação e as transições terminarem. Interações e alterações visuais a reativam. A pausa solicitada de dentro do callback do motor ocorre em uma microtask para cancelar também o próximo frame agendado pelo motor.
 
 A resolução acompanha a densidade do dispositivo até 3×, limitada a um drawing buffer de 4K. A mesma regra vale para todas as larguras. Antialiasing e representação tridimensional são preservados.

@@ -24,7 +24,7 @@ test('homepage, official library and reader work at desktop and mobile widths', 
   test.setTimeout(90_000);
   const frontendErrors: string[] = [];
   page.on('pageerror', error => frontendErrors.push(error.message));
-  await page.route('**/graph/viewer/index.html?home-hero=1', route => route.fulfill({
+  await page.route('**/graph/viewer/index.html?home-hero=1*', route => route.fulfill({
     status: 200,
     contentType: 'text/html',
     body: '<!doctype html><html lang="pt-BR"><body><main aria-label="Grafo de citações"></main></body></html>',

@@ -12,6 +12,11 @@ test.describe('phone requesting desktop homepage', () => {
   test('skill deep link defers the graph and touch devices remain idle until interaction', async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'no-preference' });
     const graphRequests: string[] = [];
+    let obsoleteModuleRequested = false;
+    await page.route('**/graph-core.js', route => {
+      obsoleteModuleRequested = true;
+      return route.fulfill({ contentType: 'text/javascript', body: 'export {}' });
+    });
     page.on('request', request => {
       if (request.isNavigationRequest() && request.url().includes('/graph/viewer/')) graphRequests.push(request.url());
     });
@@ -42,6 +47,7 @@ test.describe('phone requesting desktop homepage', () => {
     await frame.getByRole('button', { name: 'Ativar rotação' }).tap();
     await expect.poll(async () => (await activity()).rotating).toBe(true);
     expect(graphRequests).toHaveLength(1);
+    expect(obsoleteModuleRequested).toBe(false);
   });
 });
 
