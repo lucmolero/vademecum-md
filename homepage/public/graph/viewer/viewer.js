@@ -137,9 +137,15 @@ export function getNodePosition(id) {
   return { x: node.x, y: node.y, z: node.z, screenX: point.x + viewport.left, screenY: point.y + viewport.top };
 }
 let rotationEnabled = !reducedMotion.matches;
+let rotationUserOverride = false;
 let activeTheme = document.body.dataset.theme || 'dark';
 function syncGraphActivity() {
   if (!graph3d || !renderScheduler) return;
+  if (reducedMotion.matches) {
+    if (rotationEnabled) setRotation(false);
+  } else if (!rotationUserOverride && !rotationEnabled) {
+    setRotation(true);
+  }
   const controls = graph3d.controls();
   const visible = graphPageVisible && graphViewportVisible;
   if (controls) {
@@ -1003,6 +1009,9 @@ function initialize(data, layout) {
   resizeGraph();
   const charge = graph3d.d3Force('charge');
   if (charge?.distanceMax) charge.distanceMax(250);
+  // Re-read the live preference after the graph payload has loaded. Embedded
+  // browsers can update matchMedia while this async initialization is pending.
+  if (!rotationUserOverride) rotationEnabled = !reducedMotion.matches;
   setRotation(rotationEnabled);
   const metrics = networkMetrics();
   const componentsLabel = `${metrics.components.toLocaleString('pt-BR')} componentes`;
@@ -1025,7 +1034,10 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && !detailsPanel.hidden && !suggestions.classList.contains('open')) showPanorama();
 });
 themeToggle.addEventListener('click', () => setTheme(activeTheme === 'dark' ? 'light' : 'dark'));
-document.querySelector('#rotation-toggle').addEventListener('click', () => setRotation(!rotationEnabled));
+document.querySelector('#rotation-toggle').addEventListener('click', () => {
+  rotationUserOverride = true;
+  setRotation(!rotationEnabled);
+});
 document.querySelector('#reset-view').addEventListener('click', () => {
   showPanorama(); searchController.close(); search.value = '';
   document.body.classList.remove('graph-engaged');
@@ -1127,6 +1139,7 @@ root.addEventListener('wheel', markGraphInteraction, {passive: true});
 root.addEventListener('keydown', markGraphInteraction);
 reducedMotion.addEventListener?.('change', event => {
   if (event.matches) setRotation(false);
+  else if (!rotationUserOverride) setRotation(true);
 });
 let resizeFrame = 0;
 window.addEventListener('resize', () => {
