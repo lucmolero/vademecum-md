@@ -41,6 +41,7 @@ test.describe('phone requesting desktop homepage', () => {
       const app = await import(document.querySelector<HTMLScriptElement>('script[data-graph-app]')!.src);
       return app.getGraphDiagnostics();
     });
+    console.log('Graph startup diagnostics:', await activity());
     await expect.poll(async () => (await activity()).rotating).toBe(true);
     expect(await activity()).toMatchObject({ nodes: 1729, links: 1695, arrowHeads: 1695 });
     await expect(hero).toHaveCSS('transform', 'none');
