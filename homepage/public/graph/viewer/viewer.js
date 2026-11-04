@@ -1004,6 +1004,9 @@ function initialize(data, layout) {
   resizeGraph();
   const charge = graph3d.d3Force('charge');
   if (charge?.distanceMax) charge.distanceMax(250);
+  // Re-read the live preference after the graph payload has loaded. Embedded
+  // browsers can update matchMedia while this async initialization is pending.
+  if (!rotationUserOverride) rotationEnabled = !reducedMotion.matches;
   setRotation(rotationEnabled);
   const metrics = networkMetrics();
   const componentsLabel = `${metrics.components.toLocaleString('pt-BR')} componentes`;
