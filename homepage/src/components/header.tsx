@@ -12,6 +12,7 @@ const mobileLinks = [
   ['Skill', '#skill'],
   ['Recursos', '#recursos'],
   ['Assistente', '#assistente'],
+  ['Grafo', './graph/'],
   ['Biblioteca', './biblioteca/'],
 ] as const;
 
@@ -56,6 +57,7 @@ export function HomeHeader() {
           <a href="#recursos" className="hidden h-8 items-center rounded-md px-3 text-sm text-muted-foreground transition-colors hover:text-foreground sm:inline-flex">Recursos</a>
           <a href="#assistente" className="hidden h-8 items-center rounded-md px-3 text-sm text-muted-foreground transition-colors hover:text-foreground sm:inline-flex">Assistente</a>
           <a href="#skill" className="hidden h-8 items-center rounded-md px-3 text-sm text-muted-foreground transition-colors hover:text-foreground sm:inline-flex">Skill</a>
+          <a href="./graph/" className="hidden h-8 items-center rounded-md px-3 text-sm text-muted-foreground transition-colors hover:text-foreground sm:inline-flex">Grafo</a>
           <a href="./biblioteca/" className="hidden h-8 items-center rounded-md px-3 text-sm text-muted-foreground transition-colors hover:text-foreground sm:inline-flex">Biblioteca</a>
         </nav>
         <button type="button" onClick={toggleTheme} aria-pressed={dark} aria-label={dark?'Ativar tema claro':'Ativar tema escuro'} className="flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-foreground">
