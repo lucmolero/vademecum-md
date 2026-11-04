@@ -14,6 +14,10 @@
   <a href="skills/vademecum-consulta-juridica/SKILL.md">Usar a Skill</a>
 </p>
 
+<p align="center">
+  <a href="docs/media/launch/banner.png"><img src="docs/media/launch/banner.png" alt="VadeMecum MD: legislação em contexto, com Skill, Biblioteca, Leitor e Grafo" width="100%"></a>
+</p>
+
 O VadeMecum MD organiza legislação federal em Markdown com identificadores
 estáveis, fonte e data de corte. O mesmo acervo serve à leitura no navegador
 e à consulta por agentes.
@@ -21,11 +25,37 @@ e à consulta por agentes.
 **Edição v1.1.3** · 375 diplomas federais · corte em 21 de outubro de 2026.
 [Baixar a edição](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.3)
 
+---
+
 ## Para pessoas · Biblioteca, Leitor e Grafo
 
 1. **Encontre a norma.** Na [Biblioteca](https://lucmolero.github.io/vademecum-md/biblioteca/), pesquise pelo nome, pelo número ou pelo texto integral.
+
 2. **Vá direto ao dispositivo.** No [Leitor](https://lucmolero.github.io/vademecum-md/biblioteca/#documento=br-federal-lei_ordinaria-14133-2021), use o sumário e o botão **Fonte** para conferir a procedência. Marcadores e anotações ficam no navegador.
+
 3. **Siga as citações.** No [Grafo](https://lucmolero.github.io/vademecum-md/graph/), selecione uma norma para explorar suas relações e abrir o texto pelo card. O painel indica o estado de verificação das relações.
+
+<p align="center">
+  <a href="docs/media/launch/homepage-desktop.png"><img src="docs/media/launch/homepage-desktop.png" alt="Homepage VadeMecum MD no desktop, com acesso ao grafo e às demais áreas" width="24%"></a>
+  <a href="docs/media/launch/biblioteca-desktop.png"><img src="docs/media/launch/biblioteca-desktop.png" alt="Biblioteca VadeMecum MD no desktop, com busca e acervo de normas" width="24%"></a>
+  <a href="docs/media/launch/leitor-desktop.png"><img src="docs/media/launch/leitor-desktop.png" alt="Leitor VadeMecum MD no desktop, aberto no art. 5º da Lei nº 14.133/2021" width="24%"></a>
+  <a href="docs/media/launch/grafo-desktop.png"><img src="docs/media/launch/grafo-desktop.png" alt="Grafo interativo de relações normativas no desktop" width="24%"></a>
+</p>
+
+<p align="center"><sub>Homepage · Biblioteca · Leitor · Grafo — telas desktop do produto</sub></p>
+
+<details>
+  <summary>Ver as interfaces em telas mobile</summary>
+  <br>
+  <p align="center">
+    <a href="docs/media/launch/homepage-mobile.png"><img src="docs/media/launch/homepage-mobile.png" alt="Homepage VadeMecum MD em tela mobile" width="18%"></a>
+    <a href="docs/media/launch/biblioteca-mobile.png"><img src="docs/media/launch/biblioteca-mobile.png" alt="Biblioteca VadeMecum MD em tela mobile" width="18%"></a>
+    <a href="docs/media/launch/leitor-mobile.png"><img src="docs/media/launch/leitor-mobile.png" alt="Leitor VadeMecum MD em tela mobile" width="18%"></a>
+    <a href="docs/media/launch/grafo-mobile.png"><img src="docs/media/launch/grafo-mobile.png" alt="Grafo VadeMecum MD em tela mobile" width="18%"></a>
+  </p>
+</details>
+
+---
 
 ## Para agentes · Skill de consulta jurídica
 
@@ -34,6 +64,7 @@ dispositivo e responder com referência, fonte e data de corte. O Grafo oferece
 uma visão interativa das relações normativas desse acervo.
 
 - [Baixe o kit da Skill e do corpus](https://lucmolero.github.io/vademecum-md/downloads/vademecum-consulta-juridica-kit.zip) e confira o [SHA-256](https://lucmolero.github.io/vademecum-md/downloads/vademecum-consulta-juridica-kit.zip.sha256).
+
 - Disponibilize o corpus no ambiente do agente e siga as [instruções da Skill](skills/vademecum-consulta-juridica/SKILL.md).
 
 > **Experimente:** “Localize o art. 5º da Lei nº 14.133/2021 no acervo. Indique
@@ -41,6 +72,14 @@ uma visão interativa das relações normativas desse acervo.
 
 Veja como esse percurso aparece na [demonstração da homepage](https://lucmolero.github.io/vademecum-md/#assistente).
 
+<p align="center">
+  <a href="docs/media/launch/skill-chat.png"><img src="docs/media/launch/skill-chat.png" alt="Demonstração da Skill: consulta à Lei nº 14.133/2021 com etapas de verificação, resposta com fonte e acesso ao Leitor" width="88%"></a>
+</p>
+
+<p align="center"><sub>Skill em ação: localizar, conferir e responder com referência e fonte verificável.</sub></p>
+
+
+---
 
 ## Texto, evidência e camadas derivadas
 
@@ -71,6 +110,8 @@ ID: br-federal-lei_ordinaria-10406-2002.
 Fonte oficial: https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406
 ```
 
+---
+
 ## Mapa do repositório
 
 | Caminho | Papel |
@@ -86,10 +127,11 @@ Fonte oficial: https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;1040
 
 ## Escopo e limites
 
-O VadeMecum MD é uma seleção curada de legislação federal, não uma cobertura
+O VadeMecum MD é uma seleção curada de legislação federal. Não é uma cobertura
 integral do Direito brasileiro, publicação oficial ou aconselhamento jurídico.
-A situação e a consolidação descrevem os metadados publicados no corte indicado;
-confirme a fonte oficial antes de citar ou aplicar uma norma. Relações e estados
+
+A situação e a consolidação descrevem os metadados publicados no corte indicado.
+Confirme a fonte oficial antes de citar ou aplicar uma norma. Relações e estados
 incertos não bastam, por si só, para afirmar vigência atual.
 
 ## Projeto e governança

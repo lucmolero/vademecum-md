@@ -117,6 +117,7 @@ export function getGraphDiagnostics() {
   return {
     ready: rotationReady, nodes: fullNodes.length, links: fullLinks.length,
     selectedId: selectedNodeId, contextAvailable, rotating: rotationEnabled,
+    reducedMotion: reducedMotion.matches, rotationUserOverride, graphViewportVisible, graphPageVisible,
     rendering: renderScheduler?.isRunning() || false,
     activity: renderScheduler?.snapshot(),
     pixelRatio: renderer?.getPixelRatio(), frame: renderer?.info.render.frame,
