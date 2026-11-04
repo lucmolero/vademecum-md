@@ -77,6 +77,13 @@ jobs:
             mkdir -p reports
             printf '{"schema":"reviewed-update-application/v1","mode":"apply_reviewed","priority":"P0","applied_count":0,"skipped_count":0,"applied":[],"skipped":[]}\n' > reports/reviewed-update-application.json
           fi
+          # Do not rewrite the complete fidelity contract with a partial/no-op
+          # acquisition report. Keep the committed corpus and provenance intact.
+          if python -c "import json, sys; p=json.load(open('reports/reviewed-update-application.json', encoding='utf-8')); sys.exit(0 if p['applied_count'] == 0 else 1)"; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "No reviewed corpus changes; retaining acquisition evidence as artifacts."
+            exit 0
+          fi
           python tools/build_public_indexes.py --apply
           python tools/audit_fidelity.py \
             --report reports/legislation-collection.json \
