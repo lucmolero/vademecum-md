@@ -91,6 +91,7 @@ jobs:
             dist/vademecum-md-"${version}".zip \
             dist/sbom.cdx.json \
             dist/release-manifest.json \
+            dist/CHANGELOG.md \
             dist/SHA256SUMS.txt \
             --title "vademecum-md ${version}" \
             --notes-file dist/CHANGELOG.md \
