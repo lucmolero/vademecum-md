@@ -372,6 +372,21 @@ class WorkspaceTest(unittest.TestCase):
             self.assertEqual(result["status"], "invalid_source")
             self.assertEqual(result["reason"], "application_shell_without_legal_body")
 
+    def test_http_200_error_page_is_not_accepted_as_a_legal_snapshot(self) -> None:
+        with patch("collect_legislation.urlopen") as opener:
+            response = opener.return_value.__enter__.return_value
+            response.geturl.return_value = "https://www.planalto.gov.br/example"
+            response.headers = {"Content-Type": "text/html; charset=utf-8"}
+            response.status = 200
+            response.read.return_value = (
+                b"<html><title>Request Rejected</title><body>Access denied. "
+                b"Support ID: 12345<script>const bait = 'Art. 1';</script></body></html>"
+            )
+            result = fetch_one("https://www.planalto.gov.br/example", load_registry())
+            self.assertEqual(result["status"], "invalid_source")
+            self.assertEqual(result["reason"], "html_without_legal_body")
+            self.assertNotIn("sha256_body", result)
+
     def test_normas_source_uses_current_public_compilation(self) -> None:
         registry = load_registry()
         metadata = MagicMock()

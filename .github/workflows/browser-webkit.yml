@@ -28,3 +28,11 @@ jobs:
       - name: Verify WebKit journeys and WCAG
         working-directory: homepage
         run: npm run test:e2e -- --project=webkit
+      - name: Preserve failed browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: webkit-diagnostics
+          path: homepage/test-results/
+          retention-days: 14
+          if-no-files-found: ignore

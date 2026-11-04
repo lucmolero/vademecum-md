@@ -251,8 +251,12 @@ def is_unusable_official_response(text: str, content_type: str) -> str | None:
     if "html" not in content_type.lower() and "<html" not in text[:1000].lower():
         return None
     lowered = text.lower()
-    if "<app-root" in lowered and not re.search(r"\b(?:art\.?\s*\d+|lei\s+n[ºo°]?\.?\s*\d)", text, re.I):
-        return "application_shell_without_legal_body"
+    soup = BeautifulSoup(text, "html.parser")
+    for tag in soup.find_all(("script", "style", "noscript")):
+        tag.decompose()
+    visible_text = soup.get_text(" ", strip=True)
+    if not re.search(r"\b(?:art\.?\s*\d+|artigo\s+\d+|lei\s+n[ºo°]?\.?\s*\d)", visible_text, re.I):
+        return "application_shell_without_legal_body" if "<app-root" in lowered else "html_without_legal_body"
     return None
 
 

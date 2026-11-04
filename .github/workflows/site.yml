@@ -82,6 +82,14 @@ jobs:
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: site
+      - name: Preserve failed browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: chromium-pages-diagnostics
+          path: homepage/test-results/
+          retention-days: 14
+          if-no-files-found: ignore
 
   deploy:
     needs: build
