@@ -22,7 +22,7 @@ novos eventos de push.
 3. Executar `gh workflow run release.yml --ref main`. O fluxo regenera os
    índices, valida o corpus, executa os testes e publica ZIP, manifesto, SBOM
    e checksums. Releases existentes são imutáveis. Publicações são serializadas.
-4. Conferir o commit e a versão em `pages-release.json`, a Biblioteca em
+4. Conferir o commit e a versão em `vademecum-release.json`, a Biblioteca em
    `/biblioteca/`, o Grafo em `/graph/` e o kit em `/downloads/`.
 5. Conferir os checksums dos arquivos da nova GitHub Release.
 
@@ -60,7 +60,7 @@ GitHub Release.
 Em recuperação urgente, crie uma branch temporária apontando ao SHA de uma
 execução `site` comprovadamente bem-sucedida e dispare `site.yml` nessa branch.
 O workflow recompila e verifica aquele estado antes do deploy. Confirme
-`pages-release.json` e as rotas após a recuperação. Corrija main por PR e
+`vademecum-release.json` e as rotas após a recuperação. Corrija main por PR e
 publique novamente; elimine a branch temporária quando a recuperação terminar.
 
 ## Higiene de branches
