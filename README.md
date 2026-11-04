@@ -1,84 +1,46 @@
 <p align="center">
-  <img src="homepage/public/assets/favicon.svg" width="72" height="72" alt="Símbolo do VadeMecum MD">
+  <a href="https://lucmolero.github.io/vademecum-md/"><img src="homepage/public/assets/favicon.svg" width="64" height="64" alt="VadeMecum MD"></a>
+  &nbsp;&nbsp;
+  <a href="https://lucmolero.github.io/vademecum-md/biblioteca/"><img src="biblioteca/src/icon.svg" width="64" height="64" alt="Biblioteca VadeMecum MD"></a>
 </p>
 
 <h1 align="center">VadeMecum MD</h1>
 
-<p align="center"><strong>Legislação federal brasileira para leitura humana e consulta com evidência.</strong></p>
+<p align="center"><strong>Legislação federal para ler, explorar e consultar com agentes.</strong></p>
 
 <p align="center">
-  <a href="https://lucmolero.github.io/vademecum-md/">Página inicial</a> ·
-  <a href="https://lucmolero.github.io/vademecum-md/biblioteca/">Biblioteca</a> ·
-  <a href="https://lucmolero.github.io/vademecum-md/demos/">Demonstrações</a> ·
-  <a href="https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.3">Baixar acervo</a>
+  <a href="https://lucmolero.github.io/vademecum-md/biblioteca/"><strong>Abrir a Biblioteca</strong></a> ·
+  <a href="https://lucmolero.github.io/vademecum-md/graph/">Explorar o Grafo</a> ·
+  <a href="skills/vademecum-consulta-juridica/SKILL.md">Usar a Skill</a>
 </p>
 
-<p align="center">
-  <img src="docs/media/launch/banner.png" alt="VadeMecum MD: normas em contexto, com biblioteca, leitor e grafo de citações" width="100%">
-</p>
+O VadeMecum MD organiza legislação federal em Markdown com identificadores
+estáveis, fonte e data de corte. O mesmo acervo serve à leitura no navegador
+e à consulta por agentes.
 
-Cada diploma publicado em Markdown tem identidade estável, metadados de
-curadoria, data de corte, fonte indicada e informações de proveniência.
+**Edição v1.1.3** · 375 diplomas federais · corte em 21 de outubro de 2026.
+[Baixar a edição](https://github.com/lucmolero/vademecum-md/releases/tag/v1.1.3)
 
-> **Snapshot v1.1.3:** 375 diplomas federais · data de corte: 21/10/2026.
-> O corte identifica esta coleção; o corpus não é atualizado em tempo real.
+## Para pessoas · Biblioteca, Leitor e Grafo
 
-## O projeto
+1. **Encontre a norma.** Na [Biblioteca](https://lucmolero.github.io/vademecum-md/biblioteca/), pesquise pelo nome, pelo número ou pelo texto integral.
+2. **Vá direto ao dispositivo.** No [Leitor](https://lucmolero.github.io/vademecum-md/biblioteca/#documento=br-federal-lei_ordinaria-14133-2021), use o sumário e o botão **Fonte** para conferir a procedência. Marcadores e anotações ficam no navegador.
+3. **Siga as citações.** No [Grafo](https://lucmolero.github.io/vademecum-md/graph/), selecione uma norma para explorar suas relações e abrir o texto pelo card. O painel indica o estado de verificação das relações.
 
-O VadeMecum MD reúne texto, leitura e relações normativas em um mesmo acervo.
+## Para agentes · Skill de consulta jurídica
 
-- **Leitura:** busca no texto integral, navegação por dispositivos, marcadores e anotações.
-- **Relações:** grafo interativo de citações entre normas, com busca e exploração dos nós.
-- **Integração:** Markdown, manifestos e uma skill de consulta para trabalhar com a mesma release.
+A **Skill** orienta o agente a localizar o diploma no corpus, conferir o
+dispositivo e responder com referência, fonte e data de corte. O Grafo oferece
+uma visão interativa das relações normativas desse acervo.
 
-A tela completa do grafo está disponível em [`/graph/`](https://lucmolero.github.io/vademecum-md/graph/); ela também pode ser aberta pelo menu da homepage e pelos links do projeto na Biblioteca.
+- [Baixe o kit da Skill e do corpus](https://lucmolero.github.io/vademecum-md/downloads/vademecum-consulta-juridica-kit.zip) e confira o [SHA-256](https://lucmolero.github.io/vademecum-md/downloads/vademecum-consulta-juridica-kit.zip.sha256).
+- Disponibilize o corpus no ambiente do agente e siga as [instruções da Skill](skills/vademecum-consulta-juridica/SKILL.md).
 
-Concebido e mantido por [Luciano Molero](https://github.com/lucmolero).
-O projeto é estático: os dados pessoais de leitura permanecem no navegador.
+> **Experimente:** “Localize o art. 5º da Lei nº 14.133/2021 no acervo. Indique
+> a referência, a edição consultada, a data de corte e a fonte oficial.”
 
-## Demonstrações e telas
+Veja como esse percurso aparece na [demonstração da homepage](https://lucmolero.github.io/vademecum-md/#assistente).
 
-Os vídeos registram o produto em uso, com mouse, cliques, busca, arraste e
-pausas para acompanhar cada etapa. O percurso do grafo termina com a abertura da
-norma no Leitor; a demonstração da skill percorre os quatro exemplos da homepage.
-
-- [Assistir às demonstrações](https://lucmolero.github.io/vademecum-md/demos/)
-- [Grafo: busca, arraste, cartão e Leitor](homepage/public/demos/media/grafo-em-uso.webm)
-- [Skill: princípios, transparência, data de corte e referência](homepage/public/demos/media/consultas-para-agentes.webm)
-
-Capturas em alta resolução das telas reais. Selecione uma imagem para abri-la
-em tamanho integral.
-
-<p align="center">
-  <a href="docs/media/launch/homepage-desktop.png"><img src="docs/media/launch/homepage-desktop.png" alt="Homepage VadeMecum MD em desktop" width="48%"></a>
-  <a href="docs/media/launch/simulacao-agentes.png"><img src="docs/media/launch/simulacao-agentes.png" alt="Simulação da skill para agentes com resposta e fonte" width="48%"></a>
-</p>
-
-<p align="center"><sub>Homepage · Resposta da skill com fonte</sub></p>
-
-<p align="center">
-  <a href="docs/media/launch/biblioteca-desktop.png"><img src="docs/media/launch/biblioteca-desktop.png" alt="Biblioteca do VadeMecum MD em desktop" width="32%"></a>
-  <a href="docs/media/launch/leitor-desktop.png"><img src="docs/media/launch/leitor-desktop.png" alt="Leitor com o art. 5º da Lei nº 14.133/2021 em desktop" width="32%"></a>
-  <a href="docs/media/launch/grafo-desktop.png"><img src="docs/media/launch/grafo-desktop.png" alt="Grafo de citações em desktop" width="32%"></a>
-</p>
-
-<p align="center"><sub>Biblioteca · Leitor · Grafo — desktop</sub></p>
-
-<p align="center">
-  <a href="docs/media/launch/biblioteca-mobile.png"><img src="docs/media/launch/biblioteca-mobile.png" alt="Biblioteca do VadeMecum MD em celular" width="16%"></a>
-  <a href="docs/media/launch/leitor-mobile.png"><img src="docs/media/launch/leitor-mobile.png" alt="Leitor do VadeMecum MD em celular" width="16%"></a>
-  <a href="docs/media/launch/grafo-mobile.png"><img src="docs/media/launch/grafo-mobile.png" alt="Grafo de citações em celular" width="16%"></a>
-</p>
-
-<p align="center"><sub>Biblioteca · Leitor · Grafo — celular</sub></p>
-
-## Escolha como consultar
-
-| Objetivo | Comece aqui |
-| --- | --- |
-| **Ler e localizar uma norma** | Use a [biblioteca e o leitor](https://lucmolero.github.io/vademecum-md/biblioteca/) ou o [catálogo](https://lucmolero.github.io/vademecum-md/generated/catalog/). Confira ID, situação do texto, fonte e data de corte. |
-| **Consultar com um agente de IA** | Forneça os arquivos ou a release ao agente e use a [skill de consulta jurídica](skills/vademecum-consulta-juridica/SKILL.md). A skill orienta a consulta e a citação; não concede acesso automático ao GitHub. |
-| **Integrar em dados ou ferramentas** | Comece por [`manifests/corpus.csv`](manifests/corpus.csv), [`manifests/consumer-contract.json`](manifests/consumer-contract.json) e o [grafo normativo](bases/derived/relacoes/normative-graph.jsonl). Fixe uma release para resultados reproduzíveis. |
 
 ## Texto, evidência e camadas derivadas
 
