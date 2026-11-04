@@ -38,7 +38,8 @@ test.describe('phone requesting desktop homepage', () => {
     const before = (await activity()).frame;
     await page.waitForTimeout(200);
     expect((await activity()).frame).toBe(before);
-    await frame.getByRole('button', { name: 'Ativar rotação' }).click();
+    await expect(hero).toHaveCSS('transform', 'none');
+    await frame.getByRole('button', { name: 'Ativar rotação' }).tap();
     await expect.poll(async () => (await activity()).rotating).toBe(true);
     expect(graphRequests).toHaveLength(1);
   });
