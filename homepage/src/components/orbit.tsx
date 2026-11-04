@@ -35,6 +35,7 @@ const STAGE = { width: 1200, height: 780 };
 const CARD = { width: 300, height: 188 };
 const GAP = 16;
 const RADIUS = { x: 400, y: 240 };
+const allowAmbientDrift = !window.matchMedia('(pointer: coarse)').matches;
 
 type Vignettes = typeof VIGNETTES;
 const VignettesContext = createContext<Vignettes>(VIGNETTES);
@@ -293,7 +294,7 @@ function OrbitStage() {
         data-slot="home-orbit"
         className="relative mt-24 h-[300vh]"
       >
-        {stageInView && driftActive && <OrbitDrift drift={drift} speed={0.00008} />}
+        {allowAmbientDrift && stageInView && driftActive && <OrbitDrift drift={drift} speed={0.00008} />}
         <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-clip">
           <div
             className="relative shrink-0"
@@ -508,7 +509,7 @@ function MobileOrbitStage() {
 
   return (
     <section ref={ref} id="recursos" data-slot="home-orbit" className="relative mt-16 h-[300vh]" aria-label="Recursos do VadeMecum">
-      {stageInView && driftActive && <OrbitDrift drift={drift} speed={0.00008} />}
+      {allowAmbientDrift && stageInView && driftActive && <OrbitDrift drift={drift} speed={0.00008} />}
       <div className="sticky top-20 flex h-[calc(100dvh-5rem)] items-center justify-center overflow-clip">
         <div className="relative h-full w-full shrink-0" style={{ perspective: 1200 }}>
           <motion.h2 style={{ opacity: titleOpacity, y: useTransform(titleOpacity, [0, 1], [-12, 0]) }} className="absolute inset-x-5 top-7 z-40 text-left text-[clamp(1.65rem,7vw,2.15rem)] font-medium leading-[1.05] tracking-tight text-balance">

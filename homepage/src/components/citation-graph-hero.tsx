@@ -13,6 +13,9 @@ const graphUrl = new URL(
 
 export function CitationGraphHero() {
   const reduceMotion = useShouldReduceMotion();
+  const [graphRequested, setGraphRequested] = useState(() =>
+    !location.hash || ['#inicio', '#conteudo'].includes(location.hash),
+  );
   const [graphReady, setGraphReady] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const graphFrameRef = useRef<HTMLIFrameElement>(null);
@@ -41,13 +44,26 @@ export function CitationGraphHero() {
     };
     if (!('IntersectionObserver' in window)) graphVisibleRef.current = true;
     const visibilityThreshold = 0.35;
-    const observer = 'IntersectionObserver' in window
-      ? new IntersectionObserver(([entry]) => {
+    let observer: IntersectionObserver | null = null;
+    let observationFrame = 0;
+    const observeGraph = () => {
+      if (!('IntersectionObserver' in window)) {
+        setGraphRequested(true);
+        return;
+      }
+      observer = new IntersectionObserver(([entry]) => {
           graphVisibleRef.current = entry.isIntersecting && entry.intersectionRatio >= visibilityThreshold;
+          if (graphVisibleRef.current) setGraphRequested(true);
           publishVisibility();
-        }, { threshold: visibilityThreshold })
-      : null;
-    if (observer) observer.observe(frame);
+        }, { threshold: visibilityThreshold });
+      observer.observe(frame);
+    };
+    // Initial hash navigation settles in IntroProvider before observing the hero.
+    observationFrame = requestAnimationFrame(() => {
+      observationFrame = requestAnimationFrame(() => {
+        observationFrame = requestAnimationFrame(observeGraph);
+      });
+    });
     document.addEventListener('visibilitychange', publishVisibility);
     publishVisibility();
 
@@ -62,6 +78,7 @@ export function CitationGraphHero() {
     window.addEventListener('keydown', interrupt);
     return () => {
       observer?.disconnect();
+      cancelAnimationFrame(observationFrame);
       window.removeEventListener('message', handleGraphMessage);
       document.removeEventListener('visibilitychange', publishVisibility);
       window.removeEventListener('wheel', interrupt);
@@ -109,11 +126,12 @@ export function CitationGraphHero() {
       <motion.iframe
         ref={graphFrameRef}
         title="Grafo interativo de citações do VadeMecum MD"
-        src={graphUrl}
+        src={graphRequested ? graphUrl : undefined}
         className="graph-hero-frame"
         loading="eager"
         allow="fullscreen"
         onLoad={() => {
+          if (!graphRequested) return;
           // Reveal the document while the graph prepares its first camera fit.
           setGraphReady(true);
           graphFrameRef.current?.contentWindow?.postMessage({

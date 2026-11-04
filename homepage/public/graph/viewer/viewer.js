@@ -1,4 +1,4 @@
-import { createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js';
+import { applyInitialLayout, createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js';
 import { createRenderScheduler } from './render-scheduler.js';
 import { createSearchController } from './search-controller.js';
 
@@ -142,7 +142,7 @@ export function getNodePosition(id) {
   const viewport = root.getBoundingClientRect();
   return { x: node.x, y: node.y, z: node.z, screenX: point.x + viewport.left, screenY: point.y + viewport.top };
 }
-let rotationEnabled = !reducedMotion.matches;
+let rotationEnabled = !reducedMotion.matches && !window.matchMedia('(pointer: coarse)').matches;
 let activeTheme = document.body.dataset.theme || 'dark';
 function syncGraphActivity() {
   if (!graph3d || !renderScheduler) return;
@@ -912,12 +912,13 @@ function showPanorama(exitMotion = null) {
   const occurrences = fullLinks.reduce((sum, edge) => sum + (edge.occurrence_count || 1), 0);
   viewCount.textContent = `${fullNodes.length.toLocaleString('pt-BR')} nós · ${fullLinks.length.toLocaleString('pt-BR')} relações · ${occurrences.toLocaleString('pt-BR')} ocorrências`;
 }
-function initialize(data) {
+function initialize(data, layout) {
   fullNodes = data.nodes;
+  const layoutPrepared = applyInitialLayout(fullNodes, layout);
   fullLinks = data.links;
   dataIndex = createGraphIndex(fullNodes, fullLinks);
-  // Settle the seeded layout before the first visible frame. This preserves the
-  // original 4 warmup + 48 simulation steps without spending 48 GPU frames.
+  // Reuse the packaged 52-tick layout instead of repeating its physics on phones.
+  // If that cache is unavailable, the original warmup still prepares the graph.
   nodeById = dataIndex.nodeById;
   linkById = dataIndex.linkById;
   const parallel = new Map();
@@ -967,7 +968,7 @@ function initialize(data) {
     .linkDirectionalArrowLength(arrowLength).linkDirectionalArrowRelPos(.9)
     .linkDirectionalArrowResolution(8).linkDirectionalArrowColor(colorForLink)
     .d3AlphaDecay(.08).d3VelocityDecay(.56)
-    .cooldownTicks(0).warmupTicks(RENDER_POLICY.initialLayoutTicks)
+    .cooldownTicks(0).warmupTicks(layoutPrepared ? 0 : RENDER_POLICY.initialLayoutTicks)
     .onEngineStop(() => {
       // Subsequent node drags retain the original live force simulation.
       graph3d?.cooldownTicks(RENDER_POLICY.dragSettleTicks).cooldownTime(RENDER_POLICY.dragSettleMs);
@@ -1137,7 +1138,12 @@ let resizeFrame = 0;
 window.addEventListener('resize', () => {
   cancelAnimationFrame(resizeFrame); resizeFrame = requestAnimationFrame(resizeGraph);
 });
-readGzipJson('../data/explorer.json.gz?v=audit-1').then(initialize).catch(error => {
+Promise.all([
+  readGzipJson('../data/explorer.json.gz?v=audit-1'),
+  fetch(new URL('./initial-layout.json', import.meta.url))
+    .then(response => response.ok ? response.json() : null)
+    .catch(() => null),
+]).then(([data, layout]) => initialize(data, layout)).catch(error => {
   showGraphStatus('Não foi possível abrir o mapa. Verifique a conexão e tente novamente.', true);
   notifyHomepageGraphReady(true);
   dismissWelcome({failed: true});
