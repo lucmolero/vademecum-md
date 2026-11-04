@@ -141,6 +141,11 @@ let rotationUserOverride = false;
 let activeTheme = document.body.dataset.theme || 'dark';
 function syncGraphActivity() {
   if (!graph3d || !renderScheduler) return;
+  if (reducedMotion.matches) {
+    if (rotationEnabled) setRotation(false);
+  } else if (!rotationUserOverride && !rotationEnabled) {
+    setRotation(true);
+  }
   const controls = graph3d.controls();
   const visible = graphPageVisible && graphViewportVisible;
   if (controls) {
