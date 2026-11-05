@@ -10,6 +10,22 @@ test.describe('phone requesting desktop homepage', () => {
     reducedMotion: 'no-preference',
   });
 
+  test('starts the graph after the first-visit introduction', async ({ page }) => {
+    await page.route('**/graph/viewer/index.html?*', route => route.fulfill({
+      contentType: 'text/html',
+      body: '<title>Grafo</title>',
+    }));
+    await page.goto('/');
+    const intro = page.locator('[data-slot="home-intro"]');
+    const hero = page.locator('.graph-hero-frame');
+    await expect(intro).toBeVisible();
+    await expect(hero).not.toHaveAttribute('src');
+    await expect(intro).toHaveCount(0);
+    await expect(hero).toHaveAttribute('src', /graph\/viewer/);
+    await expect(hero).toHaveCSS('opacity', '1');
+    await expect(hero).toHaveCSS('transform', 'none');
+  });
+
   test('skill deep link defers the graph and touch devices start rotating when visible', async ({ page }) => {
     test.setTimeout(90_000);
     const graphRequests: string[] = [];
@@ -25,6 +41,8 @@ test.describe('phone requesting desktop homepage', () => {
     await expect(page.locator('#skill')).toBeInViewport({ ratio: .5 });
     const hero = page.locator('.graph-hero-frame');
     await expect(hero).not.toHaveAttribute('src');
+    await expect(hero).toHaveCSS('opacity', '1');
+    await expect(hero).toHaveCSS('transform', 'none');
     await page.getByRole('button', { name: 'Ativar tema escuro', exact: true }).click();
     await expect(page.locator('html')).toHaveClass(/dark/);
     expect(graphRequests).toEqual([]);

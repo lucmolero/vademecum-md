@@ -22,8 +22,8 @@ O VadeMecum MD organiza legislação federal em Markdown com identificadores
 estáveis, fonte e data de corte. O mesmo acervo serve à leitura no navegador
 e à consulta por agentes.
 
-**Edição v1.2.1** · 375 diplomas federais · corte em 21 de outubro de 2026.
-[Baixar a edição](https://github.com/lucmolero/vademecum-md/releases/tag/v1.2.1)
+**Edição v1.2.2** · 375 diplomas federais · corte em 21 de outubro de 2026.
+[Baixar a edição](https://github.com/lucmolero/vademecum-md/releases/tag/v1.2.2)
 
 ---
 
@@ -93,9 +93,9 @@ no corpus. São artefatos derivados e não substituem o texto canônico nem a
 publicação oficial. Para verificar uma norma, abra a fonte oficial indicada no
 documento.
 
-A release [v1.2.1](https://github.com/lucmolero/vademecum-md/releases/tag/v1.2.1)
+A release [v1.2.2](https://github.com/lucmolero/vademecum-md/releases/tag/v1.2.2)
 inclui o corpus versionado, manifesto, checksums e SBOM. Use o pacote e os
-[`SHA256SUMS.txt`](https://github.com/lucmolero/vademecum-md/releases/download/v1.2.1/SHA256SUMS.txt)
+[`SHA256SUMS.txt`](https://github.com/lucmolero/vademecum-md/releases/download/v1.2.2/SHA256SUMS.txt)
 para fixar e verificar os arquivos consultados.
 
 ## Citar uma consulta
@@ -105,7 +105,7 @@ oficial. Por exemplo:
 
 ```text
 Código Civil, art. 1º
-VadeMecum MD, release v1.2.1, corte 2026-10-21.
+VadeMecum MD, release v1.2.2, corte 2026-10-21.
 ID: br-federal-lei_ordinaria-10406-2002.
 Fonte oficial: https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406
 ```
