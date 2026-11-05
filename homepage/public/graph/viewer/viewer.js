@@ -1,6 +1,6 @@
-import { applyInitialLayout, createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js?v=graph-startup-3';
-import { createRenderScheduler } from './render-scheduler.js?v=graph-startup-3';
-import { createSearchController } from './search-controller.js?v=graph-search-4';
+import { applyInitialLayout, createGraphIndex, endpointId, fitCameraToNodes, nodeValue, normalizeText, renderPixelRatio, RENDER_POLICY } from './graph-core.js?v=graph-buffer-1';
+import { createRenderScheduler } from './render-scheduler.js?v=graph-buffer-1';
+import { createSearchController } from './search-controller.js?v=graph-buffer-1';
 
 const root = document.querySelector('#network');
 const countBox = document.querySelector('#counts');
@@ -87,6 +87,16 @@ function showGraphStatus(message, retry = false) {
   document.querySelector('#retry-graph').hidden = !retry;
 }
 function hideGraphStatus() { document.querySelector('#graph-status').hidden = true; }
+let graphBufferDimension = RENDER_POLICY.maxBufferDimension;
+function graphPixelRatio(width, height) {
+  let viewportWidth = window.innerWidth;
+  try { viewportWidth = window.top.innerWidth; } catch { /* Cross-origin standalone embeds. */ }
+  return renderPixelRatio(width, height, window.devicePixelRatio, {
+    screenWidth: navigator.maxTouchPoints > 0 ? window.screen.width : undefined,
+    viewportWidth,
+    maxDimension: graphBufferDimension,
+  });
+}
 function updateCameraViewport() {
   if (!graph3d) return;
   const camera = graph3d.camera(), width = root.clientWidth, height = root.clientHeight;
@@ -100,7 +110,7 @@ function updateCameraViewport() {
 function resizeGraph() {
   if (!graph3d || !root.clientWidth || !root.clientHeight) return;
   const renderer = graph3d.renderer();
-  const ratio = renderPixelRatio(root.clientWidth, root.clientHeight, window.devicePixelRatio);
+  const ratio = graphPixelRatio(root.clientWidth, root.clientHeight);
   if (renderer.getPixelRatio() !== ratio) renderer.setPixelRatio(ratio);
   if (graph3d.width() !== root.clientWidth) graph3d.width(root.clientWidth);
   if (graph3d.height() !== root.clientHeight) graph3d.height(root.clientHeight);
@@ -928,9 +938,20 @@ function initialize(data, layout) {
     parallel.set(key, index + 1);
     edge.curvature = index === 0 ? 0 : (index % 2 ? 1 : -1) * (.06 + Math.floor(index / 2) * .018);
   }
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = 1;
+  const context = canvas.getContext('webgl2', { antialias: true, alpha: true });
+  if (!context) throw new Error('O navegador não disponibilizou um contexto WebGL para o grafo.');
+  graphBufferDimension = Math.min(
+    RENDER_POLICY.maxBufferDimension,
+    context.getParameter(context.MAX_RENDERBUFFER_SIZE),
+    context.getParameter(context.MAX_TEXTURE_SIZE),
+    ...context.getParameter(context.MAX_VIEWPORT_DIMS),
+  );
   graph3d = new ForceGraph3D(root, {
     controlType: 'orbit',
-    rendererConfig: {antialias: true, alpha: true}
+    // Apply the budget before the engine allocates its first drawing buffer.
+    rendererConfig: {canvas, context, antialias: true, alpha: true, pixelRatio: graphPixelRatio(root.clientWidth, root.clientHeight)}
   })
     .width(root.clientWidth).height(root.clientHeight)
     .backgroundColor(activeTheme === 'dark' ? '#05070a' : '#f4f4f1').showNavInfo(false)
@@ -994,7 +1015,6 @@ function initialize(data, layout) {
     // scheduling before cancelling it, otherwise it can restart after pause.
     pause: () => queueMicrotask(() => { if (!renderScheduler.isRunning()) graph3d.pauseAnimation(); }),
   });
-  const canvas = graph3d.renderer().domElement;
   canvas.addEventListener('webglcontextlost', event => {
     event.preventDefault(); contextAvailable = false; renderScheduler.setContextAvailable(false);
     showGraphStatus('Restaurando a visualização…');

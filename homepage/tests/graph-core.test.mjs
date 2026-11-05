@@ -27,6 +27,19 @@ test('HD pixel budget preserves phone density without allocating an unbounded de
   assert.equal(renderPixelRatio(300, 200, 1), 1);
 });
 
+test('desktop layout on a phone stays within physical density and GPU dimensions', () => {
+  const ratio = renderPixelRatio(980, 2120, 3, { screenWidth: 390, viewportWidth: 980 });
+  assert.ok(ratio <= 3 * 390 / 980);
+  assert.ok(980 * 2120 * ratio ** 2 <= 390 * 844 * 9 + 1);
+  const tall = renderPixelRatio(980, 6000, 3);
+  assert.ok(6000 * tall <= 4096);
+  assert.ok(tall < 1);
+  const limitedGpu = renderPixelRatio(390, 844, 3, { maxDimension: 2048 });
+  assert.ok(844 * limitedGpu <= 2048);
+  // A normal phone viewport still receives its native density.
+  assert.equal(renderPixelRatio(390, 844, 3, { screenWidth: 390, viewportWidth: 390 }), 3);
+});
+
 test('search ignores accents, prioritizes titles and requires all query terms', () => {
   const index = prepareSearch([
     ['lei', 'Lei de organização da Constituição', 'Lei'],

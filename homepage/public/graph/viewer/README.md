@@ -12,13 +12,13 @@ O arquivo `initial-layout.json` armazena as posições resultantes dos 52 passos
 
 Após atualizar o snapshot ou os parâmetros da física, inicie o Vite e execute `node scripts/capture-graph-layout.mjs` a partir de `homepage/`. Para outra porta, defina `GRAPH_LAYOUT_URL` com o endereço completo do viewer. O script ignora o cache durante a captura e registra o hash do snapshot.
 
-Em dispositivos com ponteiro de toque, a rotação começa pausada. O botão de rotação permite ativá-la. A homepage prepara o grafo quando ele entra na tela ao abrir por uma seção interna, como `#skill`.
+A rotação respeita a preferência de movimento reduzido; o botão permite pausá-la ou ativá-la. A homepage prepara o grafo quando ele entra na tela ao abrir por uma seção interna, como `#skill`.
 
-O endereço do iframe e os módulos do viewer usam a versão de URL `graph-startup-3`. Ao mudar o contrato entre esses módulos, atualize essa versão em conjunto para que navegadores com arquivos em cache recebam o pacote compatível.
+O endereço do iframe e os módulos do viewer usam a versão de URL `graph-buffer-1`. Ao mudar o contrato entre esses módulos, atualize essa versão em conjunto para que navegadores com arquivos em cache recebam o pacote compatível.
 
 Quando a rotação está pausada ou o sistema solicita movimento reduzido, a renderização para após a simulação e as transições terminarem. Interações e alterações visuais a reativam. A pausa solicitada de dentro do callback do motor ocorre em uma microtask para cancelar também o próximo frame agendado pelo motor.
 
-A resolução acompanha a densidade do dispositivo até 3×, limitada a um drawing buffer de 4K. A mesma regra vale para todas as larguras. Antialiasing e representação tridimensional são preservados.
+A resolução acompanha a densidade do dispositivo até 3×, limitada a um drawing buffer de 4K. Em celulares solicitando versão desktop, a densidade considera a largura física da tela e o viewport virtual; cada eixo também respeita o limite da GPU. Antialiasing e representação tridimensional são preservados. O motor distribuído recebe `rendererConfig.pixelRatio` antes da primeira alocação; essa pequena extensão local está registrada em `source.json` e deve ser preservada ao atualizar o vendor.
 
 Executar a partir de `homepage/`:
 

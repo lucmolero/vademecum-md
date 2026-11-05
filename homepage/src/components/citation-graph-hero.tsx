@@ -7,7 +7,7 @@ import { useEffect, useRef, useState, type MouseEvent } from 'react';
 const graphUrl = new URL(
   import.meta.env.DEV && import.meta.env.VITE_GRAPH_URL
     ? import.meta.env.VITE_GRAPH_URL
-    : './graph/viewer/index.html?home-hero=1&v=graph-search-4',
+    : './graph/viewer/index.html?home-hero=1&v=graph-buffer-1',
   document.baseURI,
 ).href;
 

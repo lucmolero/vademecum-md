@@ -1,6 +1,6 @@
 /** Data and presentation rules, independent of the DOM and the 3D engine. */
 export const RENDER_POLICY = Object.freeze({
-  maxPixelRatio: 3, maxBufferPixels: 3840 * 2160,
+  maxPixelRatio: 3, maxBufferPixels: 3840 * 2160, maxBufferDimension: 4096,
   nodeResolution: 10, nodeOpacity: .75,
   linkWidth: 1.05, focusedLinkWidth: 1.15,
   arrowLength: 4.4, focusedArrowLength: 5,
@@ -27,9 +27,18 @@ export function applyInitialLayout(nodes, layout) {
   return true;
 }
 
-export function renderPixelRatio(width, height, density = 1) {
-  // Native phone density up to 3×; cap the drawing buffer at 4K on large screens.
-  return Math.max(1, Math.min(density || 1, RENDER_POLICY.maxPixelRatio, Math.sqrt(RENDER_POLICY.maxBufferPixels / Math.max(1, width * height))));
+export function renderPixelRatio(width, height, density = 1, {
+  screenWidth, viewportWidth = width, maxDimension = RENDER_POLICY.maxBufferDimension,
+} = {}) {
+  // A phone's desktop layout is wider than its physical screen. Render at its
+  // actual displayed density rather than multiplying that virtual layout by DPR.
+  const displayScale = screenWidth > 0 && viewportWidth > screenWidth
+    ? screenWidth / viewportWidth : 1;
+  return Math.min(
+    (density || 1) * displayScale, RENDER_POLICY.maxPixelRatio,
+    Math.sqrt(RENDER_POLICY.maxBufferPixels / Math.max(1, width * height)),
+    Math.min(maxDimension, RENDER_POLICY.maxBufferDimension) / Math.max(1, width, height),
+  );
 }
 
 export function fitCameraToNodes(nodes, { width, height, fov, padding = 50, scale = 1 }) {

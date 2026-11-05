@@ -19,7 +19,7 @@ test('search result touch activates the controller callback', async ({ page }) =
     const input = document.querySelector<HTMLInputElement>('#search')!;
     const list = document.querySelector('#suggestions')!;
     const status = document.querySelector('#search-status')!;
-    const controllerUrl = new URL('./search-controller.js?v=graph-search-4', location.href).href;
+    const controllerUrl = new URL('./search-controller.js?v=graph-buffer-1', location.href).href;
     const { createSearchController } = await import(controllerUrl);
     createSearchController({
       input, list, status,
