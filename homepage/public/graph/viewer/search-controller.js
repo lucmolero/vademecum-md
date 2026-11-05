@@ -1,4 +1,4 @@
-import { prepareSearch, searchNorms } from './graph-core.js?v=graph-startup-3';
+import { prepareSearch, searchNorms } from './graph-core.js?v=graph-buffer-1';
 
 /** Accessible combobox: one focus target, cancellable requests, cached normalization. */
 export function createSearchController({ input, list, status, load, select }) {

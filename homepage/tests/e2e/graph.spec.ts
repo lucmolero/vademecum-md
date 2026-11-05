@@ -56,6 +56,51 @@ test.describe('phone requesting desktop homepage', () => {
   });
 });
 
+test.describe('phone GPU budget with a desktop layout', () => {
+  test.use({
+    viewport: { width: 980, height: 2120 },
+    screen: { width: 390, height: 844 },
+    hasTouch: true,
+    deviceScaleFactor: 3,
+  });
+
+  test('fits the physical screen from the first WebGL allocation', async ({ page }) => {
+    test.setTimeout(90_000);
+    await page.addInitScript(() => {
+      const canvases = new WeakSet<HTMLCanvasElement>();
+      const getContext = HTMLCanvasElement.prototype.getContext;
+      HTMLCanvasElement.prototype.getContext = function (this: HTMLCanvasElement, ...args: any[]) {
+        if (String(args[0]).startsWith('webgl')) canvases.add(this);
+        return (getContext as any).apply(this, args);
+      } as typeof getContext;
+      const budget = screen.width * screen.height * devicePixelRatio ** 2;
+      for (const axis of ['width', 'height'] as const) {
+        const descriptor = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, axis)!;
+        Object.defineProperty(HTMLCanvasElement.prototype, axis, {
+          ...descriptor,
+          set(value: number) {
+            const pixels = axis === 'width' ? value * this.height : value * this.width;
+            if (canvases.has(this) && pixels > budget * 1.01) {
+              throw new RangeError(`Phone GPU canvas budget exceeded: ${pixels} > ${budget}`);
+            }
+            descriptor.set!.call(this, value);
+          },
+        });
+      }
+    });
+    await page.goto('/graph/viewer/index.html');
+    await expect.poll(async () => (await diagnostics(page)).ready, { timeout: 60_000 }).toBe(true);
+    const graph = await diagnostics(page);
+    expect(graph.canvas![0] * graph.canvas![1]).toBeLessThanOrEqual(390 * 844 * 9 * 1.01);
+    expect(graph).toMatchObject({ nodes: 1729, links: 1695, arrowHeads: 1695 });
+    await page.getByRole('combobox').click();
+    await page.getByRole('combobox').fill('14.133');
+    await page.getByRole('option').first().tap();
+    await expect(page.locator('#details')).toBeVisible();
+    await expect(page.locator('#graph-status')).toBeHidden();
+  });
+});
+
 async function diagnostics(page: Page) {
   return page.evaluate(async () => {
     const script = document.querySelector<HTMLScriptElement>('script[data-graph-app]')!;

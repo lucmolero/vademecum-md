@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.1 — grafo no modo desktop do celular
+
+- Buffer WebGL dimensionado pela tela física quando o celular solicita layout desktop, com limites por eixo da GPU.
+- A política de resolução passa a valer antes da primeira alocação do motor; nós, citações, setas, transparência e arraste são preservados.
+- Cache do iframe e módulos atualizado em conjunto; regressão cobre a inicialização com limite de recursos equivalente ao celular.
+- Corpus e corte jurídico de 2026-10-21 preservados.
+
 ## 1.2.0 — lançamento integrado — 2026-11-04
 
 - Homepage, Biblioteca, Leitor, Grafo e kit de consulta publicados pelo mesmo fluxo Pages.
