@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.2 — grafo incorporado à homepage
+
+- O grafo abre em um iframe sem animação de escala ou opacidade, após a introdução da homepage.
+- A altura da área do grafo fica estável durante o movimento das barras do navegador.
+
 ## 1.2.1 — grafo no modo desktop do celular
 
 - Buffer WebGL dimensionado pela tela física quando o celular solicita layout desktop, com limites por eixo da GPU.

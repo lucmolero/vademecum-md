@@ -13,8 +13,8 @@ O ponteiro do projeto tem este formato, com a versão realmente instalada:
 ```json
 {
   "schema": "vademecum-corpus-pointer/v1",
-  "release": "1.2.1",
-  "path": "releases/1.2.1"
+  "release": "1.2.2",
+  "path": "releases/1.2.2"
 }
 ```
 

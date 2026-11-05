@@ -1,8 +1,8 @@
 # Roadmap de evolução
 
-## Estado público — v1.2.1
+## Estado público — v1.2.2
 
-A release v1.2.1 integra homepage, Biblioteca, Leitor, Grafo e pacote de consulta. O
+A release v1.2.2 integra homepage, Biblioteca, Leitor, Grafo e pacote de consulta. O
 corpus mantém o corte jurídico de 2026-10-21; o monitor de 2026-10-28 confirmou
 375 documentos dentro das respectivas políticas de frescor, sem fonte ausente.
 
@@ -48,6 +48,6 @@ do corpus:
 ## Fora do escopo publicado
 
 Regulamentos, tratados, jurisprudência, RAG, chunks e embeddings não integram a
-release v1.2.1. Uma ampliação futura requer fontes allowlisted, contratos
+release v1.2.2. Uma ampliação futura requer fontes allowlisted, contratos
 próprios, evidência, testes e critérios de publicação. A cobertura atual não é
 exaustiva e não substitui fonte oficial nem orientação jurídica.

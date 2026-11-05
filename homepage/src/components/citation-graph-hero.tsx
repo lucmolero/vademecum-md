@@ -1,6 +1,7 @@
 import { useShouldReduceMotion } from '@animate-ui/react/utils/motion';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useEffect, useRef, useState, type MouseEvent } from 'react';
+import { useIntroDone } from './intro';
 
 // Exercise the shipped graph in development too. An external source checkout
 // remains available explicitly while editing the standalone graph application.
@@ -13,10 +14,11 @@ const graphUrl = new URL(
 
 export function CitationGraphHero() {
   const reduceMotion = useShouldReduceMotion();
+  const introDone = useIntroDone();
   const [graphRequested, setGraphRequested] = useState(() =>
     !location.hash || ['#inicio', '#conteudo'].includes(location.hash),
   );
-  const [graphReady, setGraphReady] = useState(false);
+  const graphActive = graphRequested && introDone;
   const sectionRef = useRef<HTMLElement>(null);
   const graphFrameRef = useRef<HTMLIFrameElement>(null);
   const graphVisibleRef = useRef(false);
@@ -27,14 +29,6 @@ export function CitationGraphHero() {
   useEffect(() => {
     const frame = graphFrameRef.current;
     if (!frame) return;
-    const graphOrigin = new URL(graphUrl, window.location.href).origin;
-
-    const handleGraphMessage = (event: MessageEvent) => {
-      if (event.source !== frame.contentWindow || event.origin !== graphOrigin) return;
-      if (event.data?.type !== 'vademecum-graph-ready') return;
-      setGraphReady(true);
-    };
-    window.addEventListener('message', handleGraphMessage);
 
     const publishVisibility = () => {
       frame.contentWindow?.postMessage({
@@ -79,7 +73,6 @@ export function CitationGraphHero() {
     return () => {
       observer?.disconnect();
       cancelAnimationFrame(observationFrame);
-      window.removeEventListener('message', handleGraphMessage);
       document.removeEventListener('visibilitychange', publishVisibility);
       window.removeEventListener('wheel', interrupt);
       window.removeEventListener('touchstart', interrupt);
@@ -123,26 +116,20 @@ export function CitationGraphHero() {
       className="graph-hero-section"
     >
       <h1 className="sr-only">Explore o grafo de citações do VadeMecum MD</h1>
-      <motion.iframe
+      <iframe
         ref={graphFrameRef}
         title="Grafo interativo de citações do VadeMecum MD"
-        src={graphRequested ? graphUrl : undefined}
+        src={graphActive ? graphUrl : undefined}
         className="graph-hero-frame"
         loading="eager"
         allow="fullscreen"
         onLoad={() => {
-          if (!graphRequested) return;
-          // Reveal the document while the graph prepares its first camera fit.
-          setGraphReady(true);
+          if (!graphActive) return;
           graphFrameRef.current?.contentWindow?.postMessage({
             type: 'vademecum-graph-visibility',
             visible: graphVisibleRef.current && !document.hidden,
           }, '*');
         }}
-        onError={() => setGraphReady(true)}
-        initial={reduceMotion ? false : { opacity: 0, scale: 1.008 }}
-        animate={{ opacity: graphReady || reduceMotion ? 1 : 0, scale: 1 }}
-        transition={{ duration: reduceMotion ? 0 : 0.9, ease: [0.22, 1, 0.36, 1] }}
       />
       <motion.div
         aria-hidden="true"
